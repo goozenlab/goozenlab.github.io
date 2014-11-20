@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: server | goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/blog/categories/server/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[家鯖をownCloudでクラウド化]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2012/12/05/owncloud/"/>
+    <updated>2012-12-05T12:47:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2012/12/05/owncloud</id>
+    <content type="html"><![CDATA[<p>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。</p>
+
+<p>現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。</p>
+
+<p>aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。</p>
+
+<!-- more -->
+
+
+<p>実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。</p>
+
+<h3>au光ヤドカリ家鯖 (ownCloud)</h3>
+
+<p>$ wget http://ヤドカリ家鯖/photo/R0011168.jpg<br/>
+2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [767950/767950] @ pushkar<br/>
+2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [767950/767950] @ KL</p>
+
+<h3>DropBox</h3>
+
+<p>$ wget https://dl.dropbox.com/u/163521/photo/R0011168.jpg<br/>
+2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [767950/767950] <br/>
+2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [767950/767950]</p>
+
+<h3>GitHub Page</h3>
+
+<p>$ wget http://goozenlab.com/images/R0011168.jpg<br/>
+2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [767950/767950] <br/>
+2012-12-04 12:18:47 (179 KB/s) - ‘R0011168.jpg’ saved [767950/767950]</p>
+
+<p>と、やはり、au光回線の圧勝です。</p>
+
+<h3>おまけ：悪魔のささやき。</h3>
+
+<p>デビアンのwheezyもフリーズされ、ふと魔が差しました。家鯖を一気にアップデートしちゃお、と。<br/>
+dist-upgrade自体は問題なく終了したように思えましたが、再起動したころ起動せず。</p>
+
+<p>実家に戻る春先まで手が付けられません。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ドメインをゲット]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2012/10/17/domain-goozenlab/"/>
+    <updated>2012-10-17T07:00:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2012/10/17/domain-goozenlab</id>
+    <content type="html"><![CDATA[<p>iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルなバルで生ハムと赤ワインを飲みながら地元の人とサッカーについて語り合う。。<!-- more -->といった予定であったはずが、、それにはとぉーーーーーく及ばず。</p>
+
+<p>インドでベジタリアン、お酒も抜き、体重も高校入学時ぐらいに戻りました。ちょっと面倒なインドの人たちを冷たくあしらい、貯金を切り崩し、修行僧のようにくらしてます。抜け毛が気になる今日この頃です。来週から20日間のリトリート。</p>
+
+<p>ドメインにお金をかけるのもなぁ、なんて思っていましたが、アプリも公開しているし、費用もそれほどではないので、今更ながらお名前ドットコムでgoozenlab.comをとりました。github pageに紐付けします。</p>
+
+<h3>DNSの設定</h3>
+
+<p>IPナンバーはターミナルにて、nslookupで調べます。</p>
+
+<p>```
+$ nslookup gozenlab.github.com
+Server:     192.168.1.1
+Address:    192.168.1.1#53</p>
+
+<p>Non-authoritative answer:
+Name:   gozenlab.github.com
+Address: 204.232.175.78
+$
+```</p>
+
+<p>そしてお名前.comのレンタルDNSレコード設定にてDNSサーバーの設定をします。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/ScreenShot-dns-setting.png" alt="DNS設定" /></p>
+
+<p>待つ事10分。無事に表示されました。</p>
+
+<p>そして、オクトプレスのフッターをgithubへの感謝に気持ちを込めて<code>source/_includes/footer.html</code>を調整しました。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>octopress/source/_includes/footer.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;credit&quot;</span><span class="nt">&gt;</span>Powered by <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://octopress.org&quot;</span><span class="nt">&gt;</span>Octopress<span class="nt">&lt;/a&gt;</span> and
+</span><span class='line'>  Hosted by github Page<span class="nt">&lt;/span&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[家鯖]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2011/05/18/home-server/"/>
+    <updated>2011-05-18T19:41:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2011/05/18/home-server</id>
+    <content type="html"><![CDATA[<p>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブックが不思議な体勢になっています。 SSDという事もあって問題は無い事と。。。</p>
+
+<p>お茶菓子を入れる小さな木製のお皿の上に本体をのせ、さらにモニター部には箸置きを二つ。 その上に無線ルーター機が置いてあります。 近くには蚊取り線香のベープアース。 横には100均で買った、電源とケーブルを入れたピンクメッシュ書類ケース。 その横には電話帳となぜか子鹿物語の本。</p>
+
+<!-- more -->
+
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2011-05-18-home-server.jpg" alt="Home server" /></p>
+
+<p>生活感があふれています。 ホームアプライアンス感が滲んでます。</p>
+
+<p>手を指し入れるとほのかに暖かみを感じる事ができます。コンピューターの温度は50度後半で推移。 23区内ですからこの夏の計画停電実施の可能性は低いと思いますが、どうにか夏を落ちずに乗り切ってもらいたい。。。</p>
+
+<p>で、私は節電！節約？のためカナダに旅立ちます。 バンフという町に逗留予定です。山に引きこもりにいってきます。 厄年、天災続きのここ最近ですが、 くれぐれもグリズリーベアの餌にならないように気をつけたいと思います。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Appでメールサーバーの運用]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2011/02/10/google-app/"/>
+    <updated>2011-02-10T19:41:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2011/02/10/google-app</id>
+    <content type="html"><![CDATA[<p>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。<br/>
+気がつかないとかなりの時間アクセスできない事があります。 Webサーバーはまだ良いとしても、メールサーバーが止まってしまうのはちょっといただけないという事で、</p>
+
+<p>メールサーバーをGoogleAppに移行しました。</p>
+
+<p>ずっと有料のサービスだと思っていたので存在は知っていたのですが使わずじまいでした。 ドメインはDynDNSで管理していて、少々MXサーバー変更設定に戸惑いましたが無事動いているようです。どんどん、クラウド化が進んでいくのだろうかと、なるべく自力でやっていきたいと思っている自分にとってはちょっと悲しい気にもなります。</p>
+]]></content>
+  </entry>
+  
+</feed>

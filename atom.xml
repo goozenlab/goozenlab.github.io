@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.2]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262/"/>
+    <updated>2014-11-18T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262</id>
+    <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
+
+<p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ohayo v2.8.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280/"/>
+    <updated>2014-11-05T05:04:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280</id>
+    <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。現在申請中。</p>
+
+<p><img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-01.png" width="320"></p>
+
+<p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
+
+<p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
+
+<p><img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-02.png" width="320">
+<img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-03.png" width="320"></p>
+
+<p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
+
+<p>余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[littlist v2.6.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260/"/>
+    <updated>2014-10-30T20:04:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260</id>
+    <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
+
+<p>ちょっとした使い勝手の変更
++ 赤ドットが入るときにセルの背景が赤色にフラッシュします。
++ セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）</p>
+
+<p>アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。（月に数回無料化してますので、タイミングを伺ってゲットしてください。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.1]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260/"/>
+    <updated>2014-10-27T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260</id>
+    <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
+
+<h3>オマケ</h3>
+
+<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
+
+<p><img src="http://http://goozenlab.github.io/images/2014-10-27-dandori-export.png" width="320"></p>
+
+<p>方法は以下。</p>
+
+<ul>
+<li>プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。</li>
+<li>書出し確認のアラートが上がります。OKを選択。</li>
+<li>始めての書出時には認証の確認のアラートが上がります。OKを選択。</li>
+<li>静かにリマインダーへ書き込まれてます。
+
+<ul>
+<li>リマインダーへは
+
+<ul>
+<li>プロジェクト名はリスト名</li>
+<li>アイテム（タスク）
+
+<ul>
+<li>赤ドットの入っているアイテムはプライオリティが付き (やはりやめ)</li>
+<li>文字の色が一番薄いグレーのアイテムは書出しされません。<strong>！！要注意！！</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。</p>
+
+<p>※ただし、同じプロジェクト複数回書き出すと<strong>同じ名前のリストに追加</strong>されます。<strong>上書き</strong>はされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/10/update/"/>
+    <updated>2014-10-10T13:08:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/10/update</id>
+    <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
+
+<p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.5.7]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/09/20/sati-v157/"/>
+    <updated>2014-09-20T13:08:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/09/20/sati-v157</id>
+    <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
+久しぶりに以下の調整および修正を行いました。</p>
+
+<h3>メイン</h3>
+
+<ul>
+<li>瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。</li>
+<li>中断アラートが複数あがらないようにする。</li>
+<li>ちょっと物足りない背景に、オームのアイコンを追加。</li>
+</ul>
+
+
+<h3>設定ページ</h3>
+
+<ul>
+<li>時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。</li>
+</ul>
+
+
+<h3>履歴ページ</h3>
+
+<ul>
+<li>メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.5.5]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/08/08/sati-v155/"/>
+    <updated>2013-08-08T13:08:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/08/08/sati-v155</id>
+    <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
+（キャンセルしますか -> はい -> 変化無し。。。）</p>
+
+<ul>
+<li>瞑想時間が切れるまでほっておく</li>
+<li>３０分以上たってキャンセルする</li>
+<li>プログラムを終了させる</li>
+</ul>
+
+
+<p>で、スタートの状態に戻ります。
+確りテストをするのを忘れてました。</p>
+
+<p>まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、
+あまり気分のよい物では無いと思います。</p>
+
+<p>修正版が申請中です。
+それまでは途中キャンセル無しに瞑想生活を送ってください。</p>
+
+<p>よろしくお願いします。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sati v1.5.4]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/08/06/sati-v154/"/>
+    <updated>2013-08-06T18:29:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/08/06/sati-v154</id>
+    <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
+ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
+
+<p>そして、割と厳しかった途中でのキャンセル時の処理を変更。
+３０分以上時間が経った時には瞑想をカウントするようにしました。</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png" width="320"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[listaria v1.5.4]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/30/listaria-v154/"/>
+    <updated>2013-07-30T16:33:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/30/listaria-v154</id>
+    <content type="html"><![CDATA[<p>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
+パパイヤリリースです。</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-icons.png" title="" ></p>
+
+<h3>使い方</h3>
+
+<p>メモ欄下の数字の入ったボックスをタップ、スワイプにて設定をします。<br/>
+タップではちょっと細かい設定ができます。（無し、フル、上旬、下旬の順）<br/>
+スワイプは一気に設定したり設定を解除したりできます。
+（灰色からスワイプした時はオンになり、オンのグリーンからスワイプした時はオフになります。）</p>
+
+<p>食材リストでは、旬の設置がされている時期には左肩に緑のドットが表示されます。
+ショッピングリストではちょっと表示がうざったくなってしまうと思ったので<strong>食材リスト</strong>のページでのみ表示されます。</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-detail.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-season.png" width="320"></p>
+
+<p>※ 夏と言えば枝豆ですよね。</p>
+
+<p>これで、取りあえずiOS6向けのアップデートは終了。iOS7に向けて移行作業に入ります。（ついでにカンボジアに移動の予定）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[viriya v1.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/30/viriya-v150/"/>
+    <updated>2013-07-30T11:14:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/30/viriya-v150</id>
+    <content type="html"><![CDATA[<p>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、
+拙作の他のソフトに合わしてマイナーアップデートしました。</p>
+
+<ul>
+<li>編集画面デザインを更新。</li>
+<li>カラーモードを変更できるようにしました。</li>
+<li>フォントを変更できるようにしました。</li>
+<li>バグの修正：1分前のベル設定、アプリケーションバッジ表示の不具合。</li>
+<li>項目削除時に（せっかちな人は沢山）落ちる不具合を直しました。</li>
+<li>ARCに対応（故にiOS5.1以降の対応に）安定すると思います。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[doop v1.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/29/doop-v150/"/>
+    <updated>2013-07-29T10:41:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/29/doop-v150</id>
+    <content type="html"><![CDATA[<p>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。</p>
+
+<ul>
+<li>アイコンを変更。髪の毛とひげを濃くしました。おでこにカラータイマーを付けました（別段意味無し）</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-icons.png" title="" ></p>
+
+<ul>
+<li>編集画面デザインを更新。<br/>
+カラーロックは上部の色のドットになります。タップで中心部に白い穴（ロック状態）が開きます。</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-new.png" width="320"></p>
+
+<ul>
+<li>履歴ページを更新。無駄な情報をとりのぞき、シンプルにしました。
+
+<ol>
+<li>日付表示も開始日か終了日かに切り替えることができます。  （横線周辺のタップ）</li>
+<li>右の横線は最小時間と最長時間の長さになっています。タップにより使用期間によるソートが可能です。
+ソート時には白い横線が表示されます。もう一回クリックすることで解除されます。
+（丸2の右下にみえる白い点は平均時間の表示になります。)</li>
+</ol>
+</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-new.png" width="320"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250/"/>
+    <updated>2013-07-27T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250</id>
+    <content type="html"><![CDATA[<p>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。
+出し惜しみをしている訳ではありません。</p>
+
+<p>iOS7に向けての準備第一弾としての編集画面の変更をしました。
+（iOS7のシミュレーターで試験中ですが少しのバグと幾つかの厄介な不具合がありました。）</p>
+
+<ul>
+<li>編集画面デザインを更新。</li>
+<li>プロジェクトリストページにて、右のバー周辺をロングタップで一番上に移動するようにしました。（下層では機能しません）</li>
+<li>グリッドに合わせてアイコンを変更。そんなに変わっていません。ちょっとだけ背が高くなったような感じです。</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-27-dandori-detail-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-27-dandori-detail-new.png" width="320"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update/"/>
+    <updated>2013-07-27T10:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update</id>
+    <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
+ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png" width="800" title="" ></p>
+
+<p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
+
+<p>ちょっと調べてみたところ、最新版をビルドしまくっている<a href="https://chromium-build.appspot.com/p/chromium/console">サイト</a>があり、スクリプトを使って最新版に更新できることを<a href="http://hints.macworld.com/article.php?story=20090604081030791">MacWorld</a>で見つけました。（スクリプトは少し調整してます。）</p>
+
+<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br/>
+　情報元:<a href="http://www.chromium.org/getting-involved/download-chromium">http://www.chromium.org/getting-involved/download-chromium</a></p>
+
+<p>ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
+</span><span class='line'>Setup...
+</span><span class='line'>Checking current version...
+</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf
+</span><span class='line'>Downloading and unpacking...
+</span><span class='line'>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span><span class='line'>                                 Dload  Upload   Total   Spent    Left  Speed
+</span><span class='line'>100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
+</span><span class='line'>Installing...
+</span><span class='line'>Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
+
+
+<p>ローカルのアプリが最新であれば、</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
+</span><span class='line'>Setup...
+</span><span class='line'>Checking current version...
+</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
+</span><span class='line'> * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
+</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
+
+
+<p>と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。</p>
+
+<figure class='code'><figcaption><span>chromium_update.sh </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/sh</span>
+</span><span class='line'><span class="c"># Get current build for Chromium on Mac.</span>
+</span><span class='line'><span class="c"># </span>
+</span><span class='line'><span class="c"># @version  2009-05-22</span>
+</span><span class='line'><span class="c"># @author   XXXX </span>
+</span><span class='line'><span class="c"># @todo     Nothing yet</span>
+</span><span class='line'><span class="c"># http://hints.macworld.com/article.php?story=20090604081030791</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># setup ------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nv">tempDir</span><span class="o">=</span><span class="s2">&quot;/tmp/`whoami`/chrome-nightly/&quot;</span>;
+</span><span class='line'><span class="nv">baseURL</span><span class="o">=</span><span class="s2">&quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&quot;</span>;
+</span><span class='line'><span class="nv">baseName</span><span class="o">=</span><span class="s2">&quot;chrome-mac&quot;</span>;
+</span><span class='line'><span class="nv">baseExt</span><span class="o">=</span><span class="s2">&quot;zip&quot;</span>;
+</span><span class='line'><span class="nv">appName</span><span class="o">=</span><span class="s2">&quot;Chromium.app&quot;</span>;
+</span><span class='line'><span class="nv">appDir</span><span class="o">=</span><span class="s2">&quot;/Applications&quot;</span>;
+</span><span class='line'><span class="nv">version</span><span class="o">=</span>~/.CURRENT_CHROME;
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="k">function </span>checkForErrors <span class="o">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$?&quot;</span> !<span class="o">=</span> <span class="s2">&quot;0&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">        </span><span class="nb">echo</span> <span class="s2">&quot;Unkown error (see above for help)!&quot;</span>;
+</span><span class='line'>        <span class="nb">exit </span>3;
+</span><span class='line'>    <span class="k">fi</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Setup...&quot;</span>;
+</span><span class='line'>mkdir -p <span class="s2">&quot;$tempDir&quot;</span>;
+</span><span class='line'><span class="nb">cd</span> <span class="s2">&quot;$tempDir&quot;</span>;
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Checking current version...&quot;</span>;
+</span><span class='line'>touch <span class="nv">$version</span>
+</span><span class='line'><span class="nv">currentVersion</span><span class="o">=</span><span class="sb">`</span>cat <span class="nv">$version</span><span class="sb">`</span>;
+</span><span class='line'><span class="nv">latestVersion</span><span class="o">=</span><span class="sb">`</span>curl -s <span class="nv">$baseURL</span>/LAST_CHANGE<span class="sb">`</span>;
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot; * your/latest build: $currentVersion / $latestVersion&quot;</span>;
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$currentVersion&quot;</span> <span class="o">==</span> <span class="s2">&quot;$latestVersion&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot; * build $currentVersion is the latest one.&quot;</span>;
+</span><span class='line'>    <span class="nb">exit </span>1;
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Downloading and unpacking...&quot;</span>;
+</span><span class='line'><span class="nv">chromePID</span><span class="o">=</span><span class="sb">`</span>ps wwaux|grep -v grep|grep <span class="s2">&quot;$appName&quot;</span>|awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>;
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$chromePID&quot;</span> !<span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]</span>;<span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot; * chromium is running. Please stop it first.&quot;</span>;
+</span><span class='line'>    <span class="nb">exit </span>2;
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>curl -o <span class="nv">$baseName</span>.<span class="nv">$baseExt</span> <span class="s2">&quot;$baseURL/$latestVersion/$baseName.$baseExt&quot;</span>;
+</span><span class='line'>
+</span><span class='line'>unzip -qo <span class="nv">$baseName</span>.<span class="nv">$baseExt</span>;
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Installing...&quot;</span>;
+</span><span class='line'>cp -r <span class="nv">$baseName</span>/<span class="nv">$appName</span> <span class="nv">$appDir</span>
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="nb">echo</span> <span class="nv">$latestVersion</span> &gt; <span class="nv">$version</span>;
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Done. You&#39;re now running build $latestVersion&quot;</span>;
+</span><span class='line'><span class="c"># ------------------------------------------------------------------------------</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[tapas v1.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/24/tapas-v150/"/>
+    <updated>2013-07-24T14:57:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/24/tapas-v150</id>
+    <content type="html"><![CDATA[<p>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
+大幅なアップデートではありませんが、少し手をいれました。</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-icon-tapas.png" title="" ></p>
+
+<ul>
+<li>ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。</li>
+<li>フォントを変更できるようにしました。<br/>
+（日本語は太字にだけ対応。怪我の功名でHelveticaNeue-CondensedBoldで日本語が太字に。濃い表示になります。）</li>
+<li>タイマー画面にてキャンセル、そして再スタート時に背景の色が変わらないバグの修正</li>
+<li>一分前に背景が数回フラッシュします。（目を離していても、気がつきやすいようになると、、思います。）</li>
+<li>編集画面デザインを更新。</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-bold.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png" width="320"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[littlis v2.5.6]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/20/littlist-v256/"/>
+    <updated>2013-07-20T08:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/20/littlist-v256</id>
+    <content type="html"><![CDATA[<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
+タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
+
+<ol>
+<li>フラットなデザインに変更。日付けボタン／日時設定をメモ欄の下に</li>
+<li>メモフラグを左のコーナーに。（タップでオンオフ：角が折られます。）</li>
+<li>ロックを色ドットに変更。（タップで色ロック：中心に白ドットが表示）</li>
+</ol>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png" width="320"></p>
+
+<p>※ 久しぶりに無料提供中です。（7/25まで）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ohayo v2.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/18/ohayo-v250/"/>
+    <updated>2013-07-18T14:13:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/18/ohayo-v250</id>
+    <content type="html"><![CDATA[<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
+
+<ol>
+<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
+<li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
+<li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
+<img src="http://http://goozenlab.github.io/images/manual-ohayo-setting-old.png" width="320">
+<img src="http://http://goozenlab.github.io/images/manual-ohayo-setting.png" width="320"></li>
+<li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
+<img src="http://http://goozenlab.github.io/images/manual-ohayo-detail.png" width="320"><br/>
+※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
+<li>iOS7に向け表示に不具合がある所を調整。</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[cosper v1.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150/"/>
+    <updated>2013-07-17T08:15:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150</id>
+    <content type="html"><![CDATA[<p>入力画面のリニューがメインのアップデートです。</p>
+
+<ol>
+<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-17-cosper-icon.png" alt="cosper New Icon" /></li>
+<li>フォントを太字、ノーマル、細字に変更できるようにしました。（日本語は変わりません。）</li>
+<li>入力画面をリデザイン、フォントを変更してメリハリを付けました。</li>
+<li>色ロック方法が変わります。  <a href="http://goozenlab.dev/blog/2013/07/10/color-lock/">参照</a>
+（前：右下の鍵をタップでオンオフ、新：ナビバーのしたの色ドットをタップでオンオフ（オン時にはドットに白い穴があきます））</li>
+<li>入力画面でカウンター設定時に表示の順が正しく表示されないバグの修正。</li>
+</ol>
+
+
+<p>そして、恥ずかしながらDairy Use は間違いでして、Daily Useが正しく、毎日利用の意味。
+（ちなみに今までは牛乳利用？もしくは乳製品利用になってました。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sati v1.5.3]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/13/sati-v153/"/>
+    <updated>2013-07-13T00:59:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/13/sati-v153</id>
+    <content type="html"><![CDATA[<p>これといった新機能は追加してません。変更点は以下、</p>
+
+<ol>
+<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-13-sati-icon.png" alt="Sati New Icon" /></li>
+<li>背景イメージを選択できるようにしました。<br/>
+デフォルトは花、今までの仏様に戻したい方は設定より選択してください。<br/>
+（本当は数種から選択できるようにしたかったのですが、、イスラム模様、中世の十字架模様など。割と探したのですが良い物が見つかりませんでした。）</li>
+<li>設定ページを白基調にしました。（見た目がちょっと質素ですので次のバージョンで手を加えます。）</li>
+</ol>
+
+
+<p>の３つです。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[カラーロック]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/10/color-lock/"/>
+    <updated>2013-07-10T17:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/10/color-lock</id>
+    <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
+
+<p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
+不具合は無いのですが、変更しました。</p>
+
+<p>新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。
+ロックしている時には白いドットが中心に付きます。
+ロックされていない時は単色の色で表示されます。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Listaria v1.5.3]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/08/listaria-v153/"/>
+    <updated>2013-07-08T22:57:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/08/listaria-v153</id>
+    <content type="html"><![CDATA[<p>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。
+プロジェクト名もランブータン(Ranbutan)に変更。<br/>
+タイでは１キロ、25バーツくらいで売りに出てます。
+見た目ちょっと愛嬌があって、味はライチーと似ています。剥くのはライチーより楽です。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-07-listaria-icons.png" alt="Listaria Image" /></p>
+
+<!-- more -->
+
+
+<h3>アップデートリスト</h3>
+
+<ol>
+<li>アイコンをアップル推奨のグリッドに合わせて微調整</li>
+<li>入力画面をクリーンにしました。</li>
+<li>Display Bug on Recent Bought List<br/>
+本来買った時間で色づけが変わるようになるはずでしたが、、、ちょっとした勘違いにより思っていたように表示されていませんでした。コッソリ修正物です。ソフトの安定性には影響はありません。</li>
+<li>リストページの左のバーに買った回数に合わせて濃淡を付けました。<br/>
+パラッーーと見た時に自分が良く買っている食材を把握する事ができます。
+濃いほど良く買っているという事になります
+そのカテゴリー内で一番多く買った回数を最大数として使って計算しています。<br/>
+※ 使い込めばそれだけ濃淡の幅が出てきます。</li>
+</ol>
+
+
+<p><img src="https://dl.dropbox.com/u/163521/images/SS-listaria-list.png" width="320">
+<img src="https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png" width="320"></p>
+
+<p>ぜひバランス良く日々の生活を送ってください。</p>
+
+<h3>オマケ</h3>
+
+<p>次期アップデートでは旬の機能を付けます。</p>
+
+<ol>
+<li>その時期を入力（1/2月単位）</li>
+<li>旬の時期が来たら左肩にドットを表示</li>
+</ol>
+
+
+<p>のようにしたいと思ってます。表示が騒々しくならなければ採用の予定です。
+ただ入力が面倒なので、プレロードのDBに入れておきたい気もするのですが、、
+気力が、、、。。。</p>
+
+<p>こんな感じです</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-07-listaria-work-on-season.png" alt="旬機能" /></p>
+]]></content>
+  </entry>
+  
+</feed>

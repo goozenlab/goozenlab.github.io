@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cosper | goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/blog/categories/cosper/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/10/update/"/>
+    <updated>2014-10-10T13:08:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/10/update</id>
+    <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
+
+<p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[cosper v1.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150/"/>
+    <updated>2013-07-17T08:15:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150</id>
+    <content type="html"><![CDATA[<p>入力画面のリニューがメインのアップデートです。</p>
+
+<ol>
+<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-17-cosper-icon.png" alt="cosper New Icon" /></li>
+<li>フォントを太字、ノーマル、細字に変更できるようにしました。（日本語は変わりません。）</li>
+<li>入力画面をリデザイン、フォントを変更してメリハリを付けました。</li>
+<li>色ロック方法が変わります。  <a href="http://goozenlab.dev/blog/2013/07/10/color-lock/">参照</a>
+（前：右下の鍵をタップでオンオフ、新：ナビバーのしたの色ドットをタップでオンオフ（オン時にはドットに白い穴があきます））</li>
+<li>入力画面でカウンター設定時に表示の順が正しく表示されないバグの修正。</li>
+</ol>
+
+
+<p>そして、恥ずかしながらDairy Use は間違いでして、Daily Useが正しく、毎日利用の意味。
+（ちなみに今までは牛乳利用？もしくは乳製品利用になってました。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[カラーロック]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/10/color-lock/"/>
+    <updated>2013-07-10T17:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/10/color-lock</id>
+    <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
+
+<p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
+不具合は無いのですが、変更しました。</p>
+
+<p>新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。
+ロックしている時には白いドットが中心に付きます。
+ロックされていない時は単色の色で表示されます。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/05/25/datepicker-update/"/>
+    <updated>2013-05-25T13:39:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/05/25/datepicker-update</id>
+    <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
+iOS5では問題はなく、二三日前に気が付きました。</p>
+
+<p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Update AdMob 6.4.1 for lite version]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/05/23/admob-update/"/>
+    <updated>2013-05-23T16:13:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/05/23/admob-update</id>
+    <content type="html"><![CDATA[<p>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。</p>
+
+<p>たぶん落ちる事も少なくなるかな？。。</p>
+]]></content>
+  </entry>
+  
+</feed>

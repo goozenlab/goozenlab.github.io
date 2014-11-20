@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mac | goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update/"/>
+    <updated>2013-07-27T10:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update</id>
+    <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
+ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png" width="800" title="" ></p>
+
+<p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
+
+<p>ちょっと調べてみたところ、最新版をビルドしまくっている<a href="https://chromium-build.appspot.com/p/chromium/console">サイト</a>があり、スクリプトを使って最新版に更新できることを<a href="http://hints.macworld.com/article.php?story=20090604081030791">MacWorld</a>で見つけました。（スクリプトは少し調整してます。）</p>
+
+<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br/>
+　情報元:<a href="http://www.chromium.org/getting-involved/download-chromium">http://www.chromium.org/getting-involved/download-chromium</a></p>
+
+<p>ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）</p>
+
+<p>```
+gallo% sh ./chromium_update.sh
+Setup...
+Checking current version...
+ * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf
+Downloading and unpacking...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</p>
+
+<pre><code>                             Dload  Upload   Total   Spent    Left  Speed
+</code></pre>
+
+<p>100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
+Installing...
+Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+gallo%
+```</p>
+
+<p>ローカルのアプリが最新であれば、</p>
+
+<p><code>
+gallo% sh ./chromium_update.sh
+Setup...
+Checking current version...
+ * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
+ * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
+gallo%
+</code></p>
+
+<!-- more -->
+
+
+<p>と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>chromium_update.sh </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;!/bin/sh&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;Get current build <span class="k">for </span>Chromium on Mac.&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;@version  2009-05-22&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;@author   XXXX&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;@todo     Nothing yet&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;http://hints.macworld.com/article.php?story<span class="o">=</span>20090604081030791&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;setup ------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;tempDir<span class="o">=</span><span class="s2">&quot;/tmp/&lt;code&gt;whoami&lt;/code&gt;/chrome-nightly/&quot;</span>;
+</span><span class='line'><span class="nv">baseURL</span><span class="o">=</span><span class="s2">&quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&quot;</span>;
+</span><span class='line'><span class="nv">baseName</span><span class="o">=</span><span class="s2">&quot;chrome-mac&quot;</span>;
+</span><span class='line'><span class="nv">baseExt</span><span class="o">=</span><span class="s2">&quot;zip&quot;</span>;
+</span><span class='line'><span class="nv">appName</span><span class="o">=</span><span class="s2">&quot;Chromium.app&quot;</span>;
+</span><span class='line'><span class="nv">appDir</span><span class="o">=</span><span class="s2">&quot;/Applications&quot;</span>;
+</span><span class='line'><span class="nv">version</span><span class="o">=</span>~/.CURRENT_CHROME;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;function checkForErrors <span class="o">{</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;if <span class="o">[</span> <span class="s2">&quot;$?&quot;</span> !<span class="o">=</span> <span class="s2">&quot;0&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;Unkown error (see above for help)!&quot;</span>;
+</span><span class='line'>    <span class="nb">exit </span>3;
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;<span class="o">}</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Setup...&quot;</span>;
+</span><span class='line'>mkdir -p <span class="s2">&quot;$tempDir&quot;</span>;
+</span><span class='line'><span class="nb">cd</span> <span class="s2">&quot;$tempDir&quot;</span>;
+</span><span class='line'>checkForErrors;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Checking current version...&quot;</span>;
+</span><span class='line'>touch <span class="nv">$version</span>
+</span><span class='line'><span class="nv">currentVersion</span><span class="o">=</span>&lt;code&gt;cat <span class="nv">$version</span>&lt;/code&gt;;
+</span><span class='line'><span class="nv">latestVersion</span><span class="o">=</span>&lt;code&gt;curl -s <span class="nv">$baseURL</span>/LAST_CHANGE&lt;/code&gt;;
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot; * your/latest build: $currentVersion / $latestVersion&quot;</span>;
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$currentVersion&quot;</span> <span class="o">==</span> <span class="s2">&quot;$latestVersion&quot;</span> <span class="o">]</span>; <span class="k">then</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;echo <span class="s2">&quot; * build $currentVersion is the latest one.&quot;</span>;
+</span><span class='line'><span class="nb">exit </span>1;
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;fi&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Downloading and unpacking...&quot;</span>;
+</span><span class='line'><span class="nv">chromePID</span><span class="o">=</span>&lt;code&gt;ps wwaux|grep -v grep|grep <span class="s2">&quot;$appName&quot;</span>|awk <span class="s1">&#39;{print $2}&#39;</span>&lt;/code&gt;;
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$chromePID&quot;</span> !<span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]</span>;<span class="k">then</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;echo <span class="s2">&quot; * chromium is running. Please stop it first.&quot;</span>;
+</span><span class='line'><span class="nb">exit </span>2;
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;fi
+</span><span class='line'>curl -o <span class="nv">$baseName</span>.<span class="nv">$baseExt</span> <span class="s2">&quot;$baseURL/$latestVersion/$baseName.$baseExt&quot;</span>;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;unzip -qo <span class="nv">$baseName</span>.<span class="nv">$baseExt</span>;
+</span><span class='line'>checkForErrors;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Installing...&quot;</span>;
+</span><span class='line'>cp -r <span class="nv">$baseName</span>/<span class="nv">$appName</span> <span class="nv">$appDir</span>
+</span><span class='line'>checkForErrors;
+</span><span class='line'><span class="nb">echo</span> <span class="nv">$latestVersion</span> &gt; <span class="nv">$version</span>;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Done. You&#39;re now running build $latestVersion&quot;</span>;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[眼精疲労と白黒モニター]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2012/11/20/use-gray-mode/"/>
+    <updated>2012-11-20T16:43:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2012/11/20/use-gray-mode</id>
+    <content type="html"><![CDATA[<p>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png" width="480"></p>
+
+<p>高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）</p>
+
+<p>※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）</p>
+
+<p>文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。</p>
+
+<!--エロい画像を見るとなんか昭和な古き良きエロ本のようです。-->
+
+
+<!-- more -->
+
+
+<p>で、画面はこのようになります。お試しあれ。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png" width="800"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Macの追加設定]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2012/08/20/mac-setting/"/>
+    <updated>2012-08-20T19:41:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2012/08/20/mac-setting</id>
+    <content type="html"><![CDATA[<p>File /Volumes/dev/Sites/goozenlab@github.com/octopress/source/computing/mac-my-hidden-setting.markdown could not be found</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[マックで自分が使っているおすすめソフト]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2012/01/30/best-mac-software/"/>
+    <updated>2012-01-30T19:41:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2012/01/30/best-mac-software</id>
+    <content type="html"><![CDATA[<p>マック歴もずいぶんたちました（最初のマックは PowerBook 160）。色んなソフトを試してきました。コンピューターこそ早くなりましたが、そこまで劇的にコンピューターライフが変わったようには思えません。OSXそのものも成熟期を迎え、コンピューターの役目もどんどんタブレットに移行していっています。とはいえども、キーボード付きのコンピューターが無くなるまではまだまだ時間がかかりそうです。
+
+私がこよなく愛するソフトは以下。
+
+![猫写真](https://dl.dropbox.com/u/163521/animal/r0010542.jpg)
+
+## 有料ソフト
+- 1Password：パスワードの管理には最適です。
+- Tree：シンプルかつデザインの良いアウトラインソフト。
+- Adobe CS3：まぁじつはテピートで買ったやつが今でも使えるのでそのまま。GIMPがもうちょっと頑張ってもらえればかなり幸せになれるのだけど。。
+- エクセル：numbersで代用できると思いましたが、悔しいですがこいつはやはり欠かせません。
+- [Hazel](http://www.noodlesoft.com)：地味に役に立つ自動化ソフト。デスクトップに散らばりがちなファイルを整理するのに使ったりしてます。でもちょと高いです。
+
+## 無料で配布されてます。有料にてさらに使いやすくなります。
+- Alfred：最強ランチャーソフト。フリーでここまで使えれば言う事ありません。
+- Dash：高速Docビューワー。レジストはまだ。アイコンが怖いのがかなりのマイナス。
+
+## フリーソフト
+- TextMate v2：テキストエディタ。他のソフトも色々試しましたがこれで行きます。
+- The Unarchiver：アーカイブソフト、MacOSが対応していない圧縮ファイルの解凍に必須です。
+- [NetNewsWire](http://netnewswireapp.com/mac)：RSSリーダー
+- [Cyberduck](http://cyberduck.ch)：ftpクライアント
+- [xType](http://www.adnx.com/redirect/xtype4mac.html)：タイピング補助ソフトです。
+- [xtraFinder](http://www.trankynam.com/xtrafinder/)：FinderをTab表示できるようにするソフト。
+- [Pelian](http://perian.org/)
+- [coconat battery](http://www.coconut-flavour.com/coconutbattery/)
+- [app cleaner](http://www.freemacsoft.net/appcleaner/)
+- Carbon Copy Cloner：バックアップ関連はこのソフトでしてますが、最近有料化しました。いずれrsyncで代用します。
+
+### メニューバー
+- [Sprited Away](http://drikin.com)：使っていないWindowを一定の時間で隠すソフト、アイコンもかわいい。
+- [f.lux](http://stereopsis.com/flux/)：ディスプレイーの色温度を時間で変更します。
+
+## 娯楽
+- [Stellarium](http://www.stellarium.org)：天体ソフトというのでしょうか、星好きの人は。
+- [Celestia](http://www.shatters.net/celestia/)：こちらも上と同様ですが、こちらは宇宙を駆け巡る事ができます。
+- VM Player：VMWareの無料版。linuxを走らせてます。
+
+※開発者の方々ありがとうございます。
+
+## Web service
+- Dropbox：
+- Xmarks for Safari：ブラウザ間でのブックマーク共有サービス。
+- Simplenote + Notational Velocity：テキストメモのスクラップノートして最高です。
+- Evernote：ウェブクリップ、持っている物のPDF説明書、気になる物のPDFカタログのスクラップノート。
+- owncloud：自分でDropboxのようなサービスを構築しましょう。サーバーのある方はぜひ。
+
+## 開発
+- Xcode：iOSアプリ開発のためのソフト
+- [Snipetts](http://snippets.me)：ちょっとしたコードの切れ端の管理に。でも似たようなソフトが一杯あります。
+- [Mou](http://mouapp.com)：シンプルなmarkdownエディタ、ブログをmarkdownで書いているので重宝してます。
+- Octopress：ブログのシステム、自分の中ではかなり理想に近いブログのシステムです。
+- Pow：Octopress（ruby関連ウェブアプリ）を簡単にローカルで走らせるためのソフト
+- Simplenote + nvALT：ブログの記事の管理
+
+※ 買ったソフトや実際に端末の中に入っているソフトはまだ有りますが、オススメといえば、こんな具合です。入っていないソフトがあったらぜひお試しを、、
+
+</p>
+]]></content>
+  </entry>
+  
+</feed>

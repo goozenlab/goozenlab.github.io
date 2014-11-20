@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dandori | goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/blog/categories/dandori/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.2]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262/"/>
+    <updated>2014-11-18T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262</id>
+    <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
+
+<p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.1]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260/"/>
+    <updated>2014-10-27T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260</id>
+    <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
+
+<h3>オマケ</h3>
+
+<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
+
+<p><img src="/images/2014-10-27-dandori-export.png" width="320"></p>
+
+<p>方法は以下。</p>
+
+<ul>
+<li>プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。</li>
+<li>書出し確認のアラートが上がります。OKを選択。</li>
+<li>始めての書出時には認証の確認のアラートが上がります。OKを選択。</li>
+<li>静かにリマインダーへ書き込まれてます。
+
+<ul>
+<li>リマインダーへは
+
+<ul>
+<li>プロジェクト名はリスト名</li>
+<li>アイテム（タスク）
+
+<ul>
+<li>赤ドットの入っているアイテムはプライオリティが付き (やはりやめ)</li>
+<li>文字の色が一番薄いグレーのアイテムは書出しされません。<strong>！！要注意！！</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。</p>
+
+<p>※ただし、同じプロジェクト複数回書き出すと<strong>同じ名前のリストに追加</strong>されます。<strong>上書き</strong>はされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.5.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250/"/>
+    <updated>2013-07-27T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250</id>
+    <content type="html"><![CDATA[<p>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。
+出し惜しみをしている訳ではありません。</p>
+
+<p>iOS7に向けての準備第一弾としての編集画面の変更をしました。
+（iOS7のシミュレーターで試験中ですが少しのバグと幾つかの厄介な不具合がありました。）</p>
+
+<ul>
+<li>編集画面デザインを更新。</li>
+<li>プロジェクトリストページにて、右のバー周辺をロングタップで一番上に移動するようにしました。（下層では機能しません）</li>
+<li>グリッドに合わせてアイコンを変更。そんなに変わっていません。ちょっとだけ背が高くなったような感じです。</li>
+</ul>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-27-dandori-detail-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-27-dandori-detail-new.png" width="320"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[カラーロック]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/07/10/color-lock/"/>
+    <updated>2013-07-10T17:07:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/07/10/color-lock</id>
+    <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
+
+<p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
+不具合は無いのですが、変更しました。</p>
+
+<p>新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。
+ロックしている時には白いドットが中心に付きます。
+ロックされていない時は単色の色で表示されます。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kawaii ColorMode x.4.2]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2013/04/27/colormode/"/>
+    <updated>2013-04-27T12:27:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2013/04/27/colormode</id>
+    <content type="html"><![CDATA[<p>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留）
+ちょっと雰囲気を変えたい時に使ってみてください。細かい内容はこちらの<a href="http://goozenlab.com/blog/2013/03/03/littlist-v253/">ポスト</a>を参照のほど。</p>
+
+<p>同時に削除時にたまに落ちるバグも取り除きました。</p>
+]]></content>
+  </entry>
+  
+</feed>

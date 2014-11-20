@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: update | goozenlab]]></title>
+  <link href="http://http://goozenlab.github.io/blog/categories/update/atom.xml" rel="self"/>
+  <link href="http://http://goozenlab.github.io/"/>
+  <updated>2014-11-20T15:46:22+07:00</updated>
+  <id>http://http://goozenlab.github.io/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.2]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262/"/>
+    <updated>2014-11-18T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262</id>
+    <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
+
+<p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ohayo v2.8.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280/"/>
+    <updated>2014-11-05T05:04:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280</id>
+    <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。現在申請中。</p>
+
+<p><img src="/images/2014-11-05-ohayo-280-01.png" width="320"></p>
+
+<p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
+
+<p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
+
+<p><img src="/images/2014-11-05-ohayo-280-02.png" width="320">
+<img src="/images/2014-11-05-ohayo-280-03.png" width="320"></p>
+
+<p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
+
+<p>余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[littlist v2.6.0]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260/"/>
+    <updated>2014-10-30T20:04:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260</id>
+    <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
+
+<p>ちょっとした使い勝手の変更
++ 赤ドットが入るときにセルの背景が赤色にフラッシュします。
++ セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）</p>
+
+<p>アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。（月に数回無料化してますので、タイミングを伺ってゲットしてください。）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dandori v2.6.1]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260/"/>
+    <updated>2014-10-27T17:20:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260</id>
+    <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
+
+<h3>オマケ</h3>
+
+<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
+
+<p><img src="/images/2014-10-27-dandori-export.png" width="320"></p>
+
+<p>方法は以下。</p>
+
+<ul>
+<li>プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。</li>
+<li>書出し確認のアラートが上がります。OKを選択。</li>
+<li>始めての書出時には認証の確認のアラートが上がります。OKを選択。</li>
+<li>静かにリマインダーへ書き込まれてます。
+
+<ul>
+<li>リマインダーへは
+
+<ul>
+<li>プロジェクト名はリスト名</li>
+<li>アイテム（タスク）
+
+<ul>
+<li>赤ドットの入っているアイテムはプライオリティが付き (やはりやめ)</li>
+<li>文字の色が一番薄いグレーのアイテムは書出しされません。<strong>！！要注意！！</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。</p>
+
+<p>※ただし、同じプロジェクト複数回書き出すと<strong>同じ名前のリストに追加</strong>されます。<strong>上書き</strong>はされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
+    <link href="http://http://goozenlab.github.io/blog/2014/10/10/update/"/>
+    <updated>2014-10-10T13:08:00+07:00</updated>
+    <id>http://http://goozenlab.github.io/blog/2014/10/10/update</id>
+    <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
+
+<p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
+]]></content>
+  </entry>
+  
+</feed>

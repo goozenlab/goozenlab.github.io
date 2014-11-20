@@ -1,0 +1,246 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>家鯖をownCloudでクラウド化  | goozenlab</title>
+
+<meta name="author" content="jin"> 
+
+<meta name="description" content="ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。 現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、 &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="goozenlab" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+      <!--  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script> -->
+	<meta name="google-site-verification" content="zRArvI9q2p-0UNtsXG84wSNFwaHQDoCLkjLOHFpRTy0" />
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">goozenlab</a></h1>
+<h4>. . .</h4>
+<nav id="main-nav"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:http://goozenlab.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">家鯖をownCloudでクラウド化</h2>
+	<div class="entry-content"><p>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。</p>
+
+<p>現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。</p>
+
+<p>aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。</p>
+
+<!-- more -->
+
+
+<p>実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。</p>
+
+<h3>au光ヤドカリ家鯖 (ownCloud)</h3>
+
+<p>$ wget http://ヤドカリ家鯖/photo/R0011168.jpg<br/>
+2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [767950/767950] @ pushkar<br/>
+2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [767950/767950] @ KL</p>
+
+<h3>DropBox</h3>
+
+<p>$ wget https://dl.dropbox.com/u/163521/photo/R0011168.jpg<br/>
+2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [767950/767950] <br/>
+2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [767950/767950]</p>
+
+<h3>GitHub Page</h3>
+
+<p>$ wget http://goozenlab.com/images/R0011168.jpg<br/>
+2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [767950/767950] <br/>
+2012-12-04 12:18:47 (179 KB/s) - ‘R0011168.jpg’ saved [767950/767950]</p>
+
+<p>と、やはり、au光回線の圧勝です。</p>
+
+<h3>おまけ：悪魔のささやき。</h3>
+
+<p>デビアンのwheezyもフリーズされ、ふと魔が差しました。家鯖を一気にアップデートしちゃお、と。<br/>
+dist-upgrade自体は問題なく終了したように思えましたが、再起動したころ起動せず。</p>
+
+<p>実家に戻る春先まで手が付けられません。。</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-05T12:47:00+07:00" pubdate data-updated="true">Dec 5<span>th</span>, 2012</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/server/'>server</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+	<footer id="footer" class="inner"><!-- Revolver Maps
+<script type="text/javascript" src="http://jh.revolvermaps.com/2/4.js?i=7uoq4kl5qsl&amp;m=5&amp;h=85&amp;c=ffc000&amp;r=30" async="async"></script>
+-->
+<!-- Who's among us
+<script id="_wauhvo">var _wau = _wau || []; _wau.push(["small", "xtunim1mxx66", "hvo"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+ -->
+<br />
+Powered by Octopress and design theme of <a href="http://github.com/macjasp/cleanpress">CleanPress</a> by carmo.org.uk.
+<br />
+Copyright &copy; 2014
+
+    jin
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'goozenlabgh';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://http://goozenlab.github.io/blog/2012/12/05/owncloud/';
+        var disqus_url = 'http://http://goozenlab.github.io/blog/2012/12/05/owncloud/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+</body>
+</html>
