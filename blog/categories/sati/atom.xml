@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: sati | goozenlab]]></title>
-  <link href="http://http://goozenlab.github.io/blog/categories/sati/atom.xml" rel="self"/>
-  <link href="http://http://goozenlab.github.io/"/>
-  <updated>2014-11-20T15:46:22+07:00</updated>
-  <id>http://http://goozenlab.github.io/</id>
+  <link href="http://goozenlab.github.com/goozenlab/blog/categories/sati/atom.xml" rel="self"/>
+  <link href="http://goozenlab.github.com/goozenlab/"/>
+  <updated>2014-11-20T22:45:42+07:00</updated>
+  <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.7]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/09/20/sati-v157/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157/"/>
     <updated>2014-09-20T13:08:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/09/20/sati-v157</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157</id>
     <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
 久しぶりに以下の調整および修正を行いました。</p>
 
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.5]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/08/08/sati-v155/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155/"/>
     <updated>2013-08-08T13:08:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/08/08/sati-v155</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155</id>
     <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
 （キャンセルしますか -> はい -> 変化無し。。。）</p>
 
@@ -76,9 +76,9 @@
   
   <entry>
     <title type="html"><![CDATA[sati v1.5.4]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/08/06/sati-v154/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154/"/>
     <updated>2013-08-06T18:29:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/08/06/sati-v154</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154</id>
     <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
 
@@ -92,9 +92,9 @@
   
   <entry>
     <title type="html"><![CDATA[sati v1.5.3]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/13/sati-v153/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153/"/>
     <updated>2013-07-13T00:59:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/13/sati-v153</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153</id>
     <content type="html"><![CDATA[<p>これといった新機能は追加してません。変更点は以下、</p>
 
 <ol>
@@ -113,9 +113,9 @@
   
   <entry>
     <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/05/25/datepicker-update/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update/"/>
     <updated>2013-05-25T13:39:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/05/25/datepicker-update</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update</id>
     <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
 iOS5では問題はなく、二三日前に気が付きました。</p>
 

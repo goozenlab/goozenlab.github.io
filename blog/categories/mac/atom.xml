@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: mac | goozenlab]]></title>
-  <link href="http://http://goozenlab.github.io/blog/categories/mac/atom.xml" rel="self"/>
-  <link href="http://http://goozenlab.github.io/"/>
-  <updated>2014-11-20T15:46:22+07:00</updated>
-  <id>http://http://goozenlab.github.io/</id>
+  <link href="http://goozenlab.github.com/goozenlab/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://goozenlab.github.com/goozenlab/"/>
+  <updated>2014-11-20T22:45:42+07:00</updated>
+  <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update/"/>
     <updated>2013-07-27T10:07:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update</id>
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
 
@@ -278,9 +278,9 @@ gallo%
   
   <entry>
     <title type="html"><![CDATA[眼精疲労と白黒モニター]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2012/11/20/use-gray-mode/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode/"/>
     <updated>2012-11-20T16:43:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2012/11/20/use-gray-mode</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode</id>
     <content type="html"><![CDATA[<p>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。</p>
 
 <p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png" width="480"></p>
@@ -305,18 +305,18 @@ gallo%
   
   <entry>
     <title type="html"><![CDATA[Macの追加設定]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2012/08/20/mac-setting/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting/"/>
     <updated>2012-08-20T19:41:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2012/08/20/mac-setting</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting</id>
     <content type="html"><![CDATA[<p>File /Volumes/dev/Sites/goozenlab@github.com/octopress/source/computing/mac-my-hidden-setting.markdown could not be found</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[マックで自分が使っているおすすめソフト]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2012/01/30/best-mac-software/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2012/01/30/best-mac-software/"/>
     <updated>2012-01-30T19:41:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2012/01/30/best-mac-software</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2012/01/30/best-mac-software</id>
     <content type="html"><![CDATA[<p>マック歴もずいぶんたちました（最初のマックは PowerBook 160）。色んなソフトを試してきました。コンピューターこそ早くなりましたが、そこまで劇的にコンピューターライフが変わったようには思えません。OSXそのものも成熟期を迎え、コンピューターの役目もどんどんタブレットに移行していっています。とはいえども、キーボード付きのコンピューターが無くなるまではまだまだ時間がかかりそうです。
 
 私がこよなく愛するソフトは以下。

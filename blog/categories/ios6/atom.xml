@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iOS6 | goozenlab]]></title>
-  <link href="http://http://goozenlab.github.io/blog/categories/ios6/atom.xml" rel="self"/>
-  <link href="http://http://goozenlab.github.io/"/>
-  <updated>2014-11-20T15:46:22+07:00</updated>
-  <id>http://http://goozenlab.github.io/</id>
+  <link href="http://goozenlab.github.com/goozenlab/blog/categories/ios6/atom.xml" rel="self"/>
+  <link href="http://goozenlab.github.com/goozenlab/"/>
+  <updated>2014-11-20T22:45:42+07:00</updated>
+  <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Smart App Banner]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2012/09/29/smart-app-banner/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2012/09/29/smart-app-banner/"/>
     <updated>2012-09-29T08:37:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2012/09/29/smart-app-banner</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2012/09/29/smart-app-banner</id>
     <content type="html"><![CDATA[<p>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。</p>
 
 <p>ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号です。）</p>

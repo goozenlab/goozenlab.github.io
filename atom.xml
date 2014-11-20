@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[goozenlab]]></title>
-  <link href="http://http://goozenlab.github.io/atom.xml" rel="self"/>
-  <link href="http://http://goozenlab.github.io/"/>
-  <updated>2014-11-20T15:46:22+07:00</updated>
-  <id>http://http://goozenlab.github.io/</id>
+  <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
+  <link href="http://goozenlab.github.com/goozenlab/"/>
+  <updated>2014-11-20T22:45:42+07:00</updated>
+  <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[dandori v2.6.2]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/18/dandori-v262/"/>
     <updated>2014-11-18T17:20:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/11/18/dandori-v262</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/18/dandori-v262</id>
     <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
 
 <p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
@@ -26,19 +26,19 @@
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-280/"/>
     <updated>2014-11-05T05:04:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/11/05/ohayo-280</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。現在申請中。</p>
 
-<p><img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-01.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-01.png" width="320"></p>
 
 <p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
 
 <p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
 
-<p><img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-02.png" width="320">
-<img src="http://http://goozenlab.github.io/images/2014-11-05-ohayo-280-03.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-02.png" width="320">
+<img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-03.png" width="320"></p>
 
 <p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
 
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[littlist v2.6.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260/"/>
     <updated>2014-10-30T20:04:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/10/30/littlist-v260</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260</id>
     <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
 
 <p>ちょっとした使い勝手の変更
@@ -63,16 +63,16 @@
   
   <entry>
     <title type="html"><![CDATA[dandori v2.6.1]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260/"/>
     <updated>2014-10-27T17:20:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/10/27/dandori-v260</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260</id>
     <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
 
 <h3>オマケ</h3>
 
 <p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
 
-<p><img src="http://http://goozenlab.github.io/images/2014-10-27-dandori-export.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-10-27-dandori-export.png" width="320"></p>
 
 <p>方法は以下。</p>
 
@@ -109,9 +109,9 @@
   
   <entry>
     <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/10/10/update/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/10/update/"/>
     <updated>2014-10-10T13:08:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/10/10/update</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/10/update</id>
     <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
 
 <p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
@@ -120,9 +120,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.7]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2014/09/20/sati-v157/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157/"/>
     <updated>2014-09-20T13:08:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2014/09/20/sati-v157</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157</id>
     <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
 久しぶりに以下の調整および修正を行いました。</p>
 
@@ -153,9 +153,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.5]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/08/08/sati-v155/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155/"/>
     <updated>2013-08-08T13:08:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/08/08/sati-v155</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155</id>
     <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
 （キャンセルしますか -> はい -> 変化無し。。。）</p>
 
@@ -181,9 +181,9 @@
   
   <entry>
     <title type="html"><![CDATA[sati v1.5.4]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/08/06/sati-v154/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154/"/>
     <updated>2013-08-06T18:29:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/08/06/sati-v154</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154</id>
     <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
 
@@ -197,9 +197,9 @@
   
   <entry>
     <title type="html"><![CDATA[listaria v1.5.4]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/30/listaria-v154/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154/"/>
     <updated>2013-07-30T16:33:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/30/listaria-v154</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154</id>
     <content type="html"><![CDATA[<p>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
 パパイヤリリースです。</p>
 
@@ -226,9 +226,9 @@
   
   <entry>
     <title type="html"><![CDATA[viriya v1.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/30/viriya-v150/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/30/viriya-v150/"/>
     <updated>2013-07-30T11:14:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/30/viriya-v150</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/30/viriya-v150</id>
     <content type="html"><![CDATA[<p>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、
 拙作の他のソフトに合わしてマイナーアップデートしました。</p>
 
@@ -246,9 +246,9 @@
   
   <entry>
     <title type="html"><![CDATA[doop v1.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/29/doop-v150/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150/"/>
     <updated>2013-07-29T10:41:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/29/doop-v150</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150</id>
     <content type="html"><![CDATA[<p>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。</p>
 
 <ul>
@@ -287,9 +287,9 @@
   
   <entry>
     <title type="html"><![CDATA[dandori v2.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/27/dandori-v250/"/>
     <updated>2013-07-27T17:20:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/27/dandori-v250</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/27/dandori-v250</id>
     <content type="html"><![CDATA[<p>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。
 出し惜しみをしている訳ではありません。</p>
 
@@ -310,9 +310,9 @@
   
   <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update/"/>
     <updated>2013-07-27T10:07:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/27/chromium-auto-update</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update</id>
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
 
@@ -534,9 +534,9 @@
   
   <entry>
     <title type="html"><![CDATA[tapas v1.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/24/tapas-v150/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150/"/>
     <updated>2013-07-24T14:57:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/24/tapas-v150</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150</id>
     <content type="html"><![CDATA[<p>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
 大幅なアップデートではありませんが、少し手をいれました。</p>
 
@@ -559,9 +559,9 @@
   
   <entry>
     <title type="html"><![CDATA[littlis v2.5.6]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/20/littlist-v256/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256/"/>
     <updated>2013-07-20T08:07:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/20/littlist-v256</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256</id>
     <content type="html"><![CDATA[<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
 タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
 
@@ -581,9 +581,9 @@
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/18/ohayo-v250/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250/"/>
     <updated>2013-07-18T14:13:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/18/ohayo-v250</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250</id>
     <content type="html"><![CDATA[<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
 
 <ol>
@@ -591,10 +591,10 @@
 <img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
 <li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
 <li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
-<img src="http://http://goozenlab.github.io/images/manual-ohayo-setting-old.png" width="320">
-<img src="http://http://goozenlab.github.io/images/manual-ohayo-setting.png" width="320"></li>
+<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-setting-old.png" width="320">
+<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-setting.png" width="320"></li>
 <li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
-<img src="http://http://goozenlab.github.io/images/manual-ohayo-detail.png" width="320"><br/>
+<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-detail.png" width="320"><br/>
 ※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
 <li>iOS7に向け表示に不具合がある所を調整。</li>
 </ol>
@@ -604,9 +604,9 @@
   
   <entry>
     <title type="html"><![CDATA[cosper v1.5.0]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/17/cosper-v150/"/>
     <updated>2013-07-17T08:15:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/17/cosper-v150</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/17/cosper-v150</id>
     <content type="html"><![CDATA[<p>入力画面のリニューがメインのアップデートです。</p>
 
 <ol>
@@ -627,9 +627,9 @@
   
   <entry>
     <title type="html"><![CDATA[sati v1.5.3]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/13/sati-v153/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153/"/>
     <updated>2013-07-13T00:59:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/13/sati-v153</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153</id>
     <content type="html"><![CDATA[<p>これといった新機能は追加してません。変更点は以下、</p>
 
 <ol>
@@ -648,9 +648,9 @@
   
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/10/color-lock/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock/"/>
     <updated>2013-07-10T17:07:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/10/color-lock</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
 <p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
@@ -667,9 +667,9 @@
   
   <entry>
     <title type="html"><![CDATA[Listaria v1.5.3]]></title>
-    <link href="http://http://goozenlab.github.io/blog/2013/07/08/listaria-v153/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/08/listaria-v153/"/>
     <updated>2013-07-08T22:57:00+07:00</updated>
-    <id>http://http://goozenlab.github.io/blog/2013/07/08/listaria-v153</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/08/listaria-v153</id>
     <content type="html"><![CDATA[<p>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。
 プロジェクト名もランブータン(Ranbutan)に変更。<br/>
 タイでは１キロ、25バーツくらいで売りに出てます。

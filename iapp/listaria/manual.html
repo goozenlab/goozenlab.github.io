@@ -9,8 +9,8 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="File /Users/jin/Development/listaria/listaria/ja.lproj/README.md could not be found □ ■   with metta  ♥□
-"> <meta name="keywords" content="">
+<meta name="description" content="買い物に行っていつもなぜか数品買い忘れをしてしまう人、
+そんな人のために簡単に使える買物帳を作りました。 文字を大きく見やすくして、使い勝手も出来るだけシンプルにしました。 250品目が登録済です。 □ 買い物リストページ 買い物リストは買い物チェックとメモを見る機能がメインです。 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -99,7 +99,7 @@ $(document).ready(
 		<div class="container">
 			<form action="http://google.com/search" method="get">
 				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:http://goozenlab.github.io">
+				<input type="hidden" name="q" value="site:goozenlab.github.com/goozenlab">
 			</form>
 		</div>
 	</div>
@@ -131,7 +131,88 @@ $(document).ready(
 	</div>
     
     
-	<div class="entry-content"><p>File /Users/jin/Development/listaria/listaria/ja.lproj/README.md could not be found</p>
+	<div class="entry-content"><p>買い物に行っていつもなぜか数品買い忘れをしてしまう人、
+そんな人のために簡単に使える買物帳を作りました。</p>
+
+<p>文字を大きく見やすくして、使い勝手も出来るだけシンプルにしました。</p>
+
+<p>250品目が登録済です。</p>
+
+<h2>□ 買い物リストページ</h2>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/SS-listaria-main.png" width="320">
+<img src="https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png" width="320"></p>
+
+<p>買い物リストは<strong>買い物チェック</strong>と<strong>メモを見る機能</strong>がメインです。<strong>品物の追加</strong>は上部右の”リスト”から行います。品物の並びはカテゴリ毎になります。 <br/>
+ (順：野菜・フルーツ・生鮮食品・バルクフード・調味料・飲み物・パーソナルケア・赤ちゃん・キッチン・その他)</p>
+
+<h3>◆ ナビゲーションバーの操作</h3>
+
+<ol>
+<li>ダブルタップ：買い物リスト、最近買った品のリストへの切り替え。</li>
+<li>リストボタン：リストページへ</li>
+<li>左にスワイプ：リストページへ</li>
+</ol>
+
+
+<h3>◆ セルの操作</h3>
+
+<p><img src="/images/manual-listaria-cell-shoppinglist.png" width="480"></p>
+
+<ol>
+<li>左側タップ：買い物を終えたらタップします。背景が赤くかわりリストから消去されます。</li>
+<li>その他のエリアのタップ：メモがある場合背景色が変わりメモが表示されます。 メモがないときは反応しません。</li>
+</ol>
+
+
+<p>※ 左側タップ領域はすこし狭いと思われるかもしれません。誤動作防止のためです。<br/>
+※ 間違えて買い物済みにしてしまったときはナビゲーションバーをダブルタップして最近買った物リストへ移動し元に戻したい商品をタップします。背景が赤く変わりもとの買い物リストに戻すことができます。<strong>10分以内</strong>にリストに戻した場合は購入回数も元に戻ります。</p>
+
+<h2>□ 品物リストページ</h2>
+
+<p><img class="right" src="https://dl.dropbox.com/u/163521/images/SS-listaria-list.png" width="320">
+<img class="right" src="https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png" width="320"></p>
+
+<p>買い物リストへの追加はこのページにより行います。<br/>
+新しい品物は右のプラスマークより追加してください。</p>
+
+<h3>◆ ナビゲーションバーの操作</h3>
+
+<ol>
+<li>左・右にスワイプ：次・前のカテゴリーページに移動。</li>
+<li>ダブルタップ：次のカテゴリーページに移動。</li>
+<li>ロングタップ：ソートの切り替え（買った回数順、買った日時順：タイトルに•が付きます。•野菜•）</li>
+</ol>
+
+
+<h3>◆ セルの操作</h3>
+
+<p><img src="/images/manual-listaria-cell-list.png" width="480"></p>
+
+<ol>
+<li>左側シングルタップ：背景色が変わり買い物リストに追加。</li>
+<li>中央ダブルタップ：品物の編集、メモの追加。</li>
+<li>右側シングルタップ：右バーの色が変更されます。買う店によって色を変えてみてください。</li>
+</ol>
+
+
+<p>背景色がある品物は買い物リストに入っています。<br/>
+左バーは買った回数より濃淡が付きます。（濃いほど買った回数が多い。）</p>
+
+<p>※ 品数が多いという理由で並びを入れ替える機能はつけていませんが、買った回数と日時でのソートにより使い込むうちに利用者の傾向に馴染んでいくと思います。食材をパラーっと流してみていくのも悪くないと思ってます。（ひらめきが有るかもしれないので）</p>
+
+<h2>□ 設定 [ホーム＞設定＞リスタリア]</h2>
+
+<p><img src="/images/manual-listaria-setting.png" width="320"></p>
+
+<ul>
+<li>フォントの変更（残念ですが日本語には適用されません）</li>
+<li>紫色（赤ちゃん･ペット）と青色（その他）の表示の有無とタイトルの変更。</li>
+</ul>
+
+
+<p>◇ 不具合およびご提案などはお使いの機種とiOSのバージョンをご記入の上、”問題をレポートする”よりかサポートページよりご連絡ください。<br/>
+◇ 食材のリストも大歓迎です。</p>
 
 <p>□ ■   with metta  ♥□</p>
 </div>
@@ -183,8 +264,8 @@ Copyright &copy; 2014
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://http://goozenlab.github.io/iapp/listaria/manual.html';
-        var disqus_url = 'http://http://goozenlab.github.io/iapp/listaria/manual.html';
+        var disqus_identifier = 'http://goozenlab.github.com/goozenlab/iapp/listaria/manual.html';
+        var disqus_url = 'http://goozenlab.github.com/goozenlab/iapp/listaria/manual.html';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -9,8 +9,9 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="File /Users/jin/Development/doop/doop/ja.lproj/README.md could not be found
-"> <meta name="keywords" content="">
+<meta name="description" content="エコリサイクリング関連のツール
+定期的にしなければいけないこと、電池の交換時期など、出来事がサイクルする物事を把握するソフトです。 以前行ってからどのくらい経ったかを知りたかったり、ちょっと引き延ばしがちな事を確りと出来るようにと、、
+そして、電球や乾電池の交換、歯医者の定期検診、トイレ掃除、 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -99,7 +100,7 @@ $(document).ready(
 		<div class="container">
 			<form action="http://google.com/search" method="get">
 				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:http://goozenlab.github.io">
+				<input type="hidden" name="q" value="site:goozenlab.github.com/goozenlab">
 			</form>
 		</div>
 	</div>
@@ -131,7 +132,146 @@ $(document).ready(
 	</div>
     
     
-	<div class="entry-content"><p>File /Users/jin/Development/doop/doop/ja.lproj/README.md could not be found</p>
+	<div class="entry-content"><p>エコリサイクリング関連のツール<br/>
+定期的にしなければいけないこと、電池の交換時期など、出来事がサイクルする物事を把握するソフトです。</p>
+
+<p>以前行ってからどのくらい経ったかを知りたかったり、ちょっと引き延ばしがちな事を確りと出来るようにと、、<br/>
+そして、電球や乾電池の交換、歯医者の定期検診、トイレ掃除、コンピューターのメインテナンス・リブートなど、ある程度の期間で定期的に行っていることを管理するために作りました。</p>
+
+<p>その他：<br/>
+ペットボトルに入れた非常用の水の入替え日時記録、プリンターインクの型番などのメモにも使えます。</p>
+
+<h2>□ リスト画面</h2>
+
+<p><img class="right" src="https://dl.dropbox.com/u/163521/images/SS-doop-main.png" width="320"></p>
+
+<h3>◆ ナビゲーションバーの操作</h3>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png" alt="Doop Navigation Bar" /></p>
+
+<p>・右上のプラスマーク:新規項目追加<br/>
+・左・右にスワイプ：次・前のソート画面へ移動 <br/>
+　ナビゲーションバー：メインは、使用中の物のリスト<br/>
+　ナビゲーションバー：赤はバー：赤•オレンジ•黄•グレーで使用中の物<br/>
+　ナビゲーションバー：青はバー：黄緑•緑•青•グレーで使用中の物<br/>
+　ナビゲーションバー：桃はバー：水色•紫•ピンク•グレーで使用中の物<br/>
+　ナビゲーションバー：灰は、使用停止中の物のリスト<br/>
+・ロングタップ：ソートの変更（平均時間または色順、平均値に達する日時順：タイトルの両側にドットが入ります。）</p>
+
+<p>色によるソートの色組は以下のように３種ごとにまとめてます。<br/>
+<img src="/images/manual-color-sort.png"></p>
+
+<h3>◆ セルの操作</h3>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/doop_cell.png" alt="Doop Cell" /></p>
+
+<p>・左タップ：バーの色を変更（使用停止中の項目はバーの色の変更が出来ません）<br/>
+<img src="/images/manual-color-default.png"><br />
+<img src="/images/manual-color-kawaii.png">（Kawaii）</p>
+
+<p>・右タップ：表示スタイルの変更（3種類）<br/>
+・中心をダブルタップ：項目の編集</p>
+
+<h3>表示スタイル</h3>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/doop_cellstyles.png" alt="Doop CellStyles" /></p>
+
+<p>１）シンプル：タイトルとメモ<br/>
+２）カウントアップ：使い始めてどのくらいたったかがメインの表示<br/>
+　左上に使い始めの日付、右のパーセントは平均使用時間を100とした経過パーセント。<br/>
+３）カウントダウン：平均値に達するまでこれからおよそどのくらい掛かるかを表示。<br/>
+　パーセントの下に平均使用日数、タイトルの上下には平均使用日数にたどり着くまでの日時と日数。</p>
+
+<p>※ 経過パーセント：パソコンのバッテーリーのパーセント表示と思ってもらえれば分かりやすいと思います。
+（１００％は満充電、０％は替え時：平均使用時間が満たされた時）</p>
+
+<h3>※ バー表示/アクセサリの意味</h3>
+
+<ul>
+<li>左バー：アクセサリー
+
+<ul>
+<li>上部：取り替えを行った回数</li>
+<li>中部：お気に入りフラグ</li>
+<li>下部：ドットは色を固定</li>
+</ul>
+</li>
+<li>右バー：残量のパーセントバー
+
+<ul>
+<li>濃淡も残量にあわせて変わります。（濃：多 ＞ 薄：小）</li>
+<li>設定よりバーグラフ表示設定で、グラフで表示</li>
+<li>指定のパーセント（基本値15％）を下回ると<strong>赤色</strong>に変化</li>
+<li>平均時間がまだ設定されていない物は<strong>青色</strong>で表示</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>画面</h3>
+
+<p>・メインのソート：平均使用日数でソートされます。無い物が一番上で、短い期間の物が上から長い物が下にならびます。<br/>
+・その他：色別にソートされます。</p>
+
+<p>※ ナビゲーションバーのロングタップでソートを変更：平均使用時間に到達日時が近い物から表示されます。平均時間が設定されていない物は一番最後に表示されます。</p>
+
+<p>※ 推定残量が設定の%を切ったら右のバーが赤色に変わります。<br/>
+※ 初回使用時には期間のデーターがないため、平均値は表示されません。右端バー色は青で表示されます。2回目以降から最初のデーターをもとに表示がされます。</p>
+
+<h2>□ 編集画面</h2>
+
+<p><img src="/images/manual-doop-detail.png" width="320"></p>
+
+<p>アイテムの編集や更新<br/>
+・星付け(お気に入り)<br/>
+・品物の名<br/>
+・品物のメモ：電池のタイプと本数や交換品の型番などの一口メモとして<br/>
+・ボタン：<br/>
+・・1 インストール：新規（使用開始）<br/>
+・・2 取り替え<br/>
+・・3 取り出し（使用中止）<br/>
+の3つが状況に応じて表示されます。
+(新規項目追加時にボタンを押してスタートになります。)</p>
+
+<p>・履歴ボタン：履歴画面へ移動</p>
+
+<p>※ 日付をタップする事で使用開始日時の変更ができます。</p>
+
+<h2>□ 履歴画面</h2>
+
+<p>アイテムの取り替え履歴、平均・最大・最小交換時間を表示。</p>
+
+<h3>セルのタップ</h3>
+
+<p>・左タップ：バーの色を変更<br/>
+・その他のエリアのタップ<br/>
+・・項目の編集<br/>
+・・ちょっとメモの追加･編集<br/>
+・・時間の変更<br/>
+・・削除<br/>
+・スワイプ：削除</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/doop-historyview.png" alt="Doop History Page" /></p>
+
+<h2>□ 設定 [ホーム>設定>doop]</h2>
+
+<p>・カラーモードの変更  <br/>
+・バーのスタイル変更：ノーマル、棒グラフ、表示無し<br/>
+・赤色になるパーセントの設定：5%,10%,15%,20%<br/>
+・ナビゲーションバーのタイトルを変更<br/>
+・アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/doop-setting.png" alt="Doop Setting" /></p>
+
+<p>◇ Lite版<br/>
+・ソート画面数が限定されます。<br/>
+・広告がリスト上部に入ります。使用上少々 目障りかもしれませんがご理解のほどよろしくお願いします。</p>
+
+<p>※ 不具合およびご提案などはお使いの機種とiOSのバージョンをご記入の上、”問題をレポートする”よりかサポートページよりご連絡ください。</p>
+
+<p>◇ 補足：ecoの気持ちを込めくるっと回転させても同じく読めるようにネーミングしました。向かいから見るとロゴの印象が少々変わります。</p>
+
+<h3>□ ■ Thank you &amp; Be Happy ■□</h3>
 </div>
 
 
@@ -181,8 +321,8 @@ Copyright &copy; 2014
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://http://goozenlab.github.io/iapp/doop/manual.html';
-        var disqus_url = 'http://http://goozenlab.github.io/iapp/doop/manual.html';
+        var disqus_identifier = 'http://goozenlab.github.com/goozenlab/iapp/doop/manual.html';
+        var disqus_url = 'http://goozenlab.github.com/goozenlab/iapp/doop/manual.html';
         var disqus_script = 'embed.js';
       
     (function () {
