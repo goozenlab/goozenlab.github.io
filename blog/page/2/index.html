@@ -9,11 +9,10 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="30分以内のキャンセルが効かないバグがある事に気がつきました。
-（キャンセルしますか -> はい -> 変化無し。。。） 瞑想時間が切れるまでほっておく
-３０分以上たってキャンセルする
-プログラムを終了させる で、スタートの状態に戻ります。
-確りテストをするのを忘れてました。 まぁ、 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="一年近くコンピューターを持たずにふらふらしてました。
+久しぶりに以下の調整および修正を行いました。 メイン 瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。
+中断アラートが複数あがらないようにする。
+ちょっと物足りない背景に、オームのアイコンを追加。 設定ページ &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -112,6 +111,71 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/09/20/sati-v157/">
+		
+			Sati v1.5.7</a>
+	</h2>
+	<div class="entry-content">
+		<p>一年近くコンピューターを持たずにふらふらしてました。
+久しぶりに以下の調整および修正を行いました。</p>
+
+<h3>メイン</h3>
+
+<ul>
+<li>瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。</li>
+<li>中断アラートが複数あがらないようにする。</li>
+<li>ちょっと物足りない背景に、オームのアイコンを追加。</li>
+</ul>
+
+
+<h3>設定ページ</h3>
+
+<ul>
+<li>時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。</li>
+</ul>
+
+
+<h3>履歴ページ</h3>
+
+<ul>
+<li>メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。</li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-20T13:08:00+07:00" pubdate data-updated="true">Sep 20<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -662,61 +726,6 @@ $(document).ready(
 
 
 	<a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/18/ohayo-v250/">
-		
-			Ohayo v2.5.0</a>
-	</h2>
-	<div class="entry-content">
-		<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
-
-<ol>
-<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
-<li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
-<li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
-<img src="/images/manual-ohayo-setting-old.png" width="320">
-<img src="/images/manual-ohayo-setting.png" width="320"></li>
-<li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
-<img src="/images/manual-ohayo-detail.png" width="320"><br/>
-※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
-<li>iOS7に向け表示に不具合がある所を調整。</li>
-</ol>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-18T14:13:00+07:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/ohayo/'>ohayo</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>

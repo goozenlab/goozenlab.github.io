@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cosper | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/cosper/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T05:19:57+07:00</updated>
+  <updated>2014-11-22T05:31:46+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cosper v1.6.2]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162/"/>
+    <updated>2014-11-22T08:15:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162</id>
+    <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでに</p>
+
+<ol>
+<li>タップ時のアニメーションもiOS8での新機能を追加。</li>
+<li>新しいボタンの追加。</li>
+</ol>
+
+
+<p>と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方には必須ですので、よろしくお願いいたします。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
@@ -75,17 +92,6 @@
 iOS5では問題はなく、二三日前に気が付きました。</p>
 
 <p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Update AdMob 6.4.1 for lite version]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/23/admob-update/"/>
-    <updated>2013-05-23T16:13:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/23/admob-update</id>
-    <content type="html"><![CDATA[<p>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。</p>
-
-<p>たぶん落ちる事も少なくなるかな？。。</p>
 ]]></content>
   </entry>
   

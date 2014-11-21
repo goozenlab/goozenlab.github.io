@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T05:19:57+07:00</updated>
+  <updated>2014-11-22T05:31:46+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cosper v1.6.2]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162/"/>
+    <updated>2014-11-22T08:15:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162</id>
+    <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでに</p>
+
+<ol>
+<li>タップ時のアニメーションもiOS8での新機能を追加。</li>
+<li>新しいボタンの追加。</li>
+</ol>
+
+
+<p>と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方には必須ですので、よろしくお願いいたします。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
@@ -660,29 +677,6 @@
 <img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png" width="320"></p>
 
 <p>※ 久しぶりに無料提供中です。（7/25まで）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ohayo v2.5.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250/"/>
-    <updated>2013-07-18T14:13:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250</id>
-    <content type="html"><![CDATA[<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
-
-<ol>
-<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
-<li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
-<li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
-<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-setting-old.png" width="320">
-<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-setting.png" width="320"></li>
-<li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
-<img src="http://goozenlab.github.com/goozenlab/images/manual-ohayo-detail.png" width="320"><br/>
-※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
-<li>iOS7に向け表示に不具合がある所を調整。</li>
-</ol>
-
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T05:19:57+07:00</updated>
+  <updated>2014-11-22T05:31:46+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cosper v1.6.2]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162/"/>
+    <updated>2014-11-22T08:15:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162</id>
+    <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでに</p>
+
+<ol>
+<li>タップ時のアニメーションもiOS8での新機能を追加。</li>
+<li>新しいボタンの追加。</li>
+</ol>
+
+
+<p>と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方には必須ですので、よろしくお願いいたします。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
@@ -76,55 +93,6 @@
 + セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）</p>
 
 <p>アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。（月に数回無料化してますので、タイミングを伺ってゲットしてください。）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[dandori v2.6.1]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260/"/>
-    <updated>2014-10-27T17:20:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260</id>
-    <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
-
-<h3>オマケ</h3>
-
-<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
-
-<p><img src="/images/2014-10-27-dandori-export.png" width="320"></p>
-
-<!-- more -->
-
-
-<p>方法は以下。</p>
-
-<ul>
-<li>プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。</li>
-<li>書出し確認のアラートが上がります。OKを選択。</li>
-<li>始めての書出時には認証の確認のアラートが上がります。OKを選択。</li>
-<li>静かにリマインダーへ書き込まれてます。
-
-<ul>
-<li>リマインダーへは
-
-<ul>
-<li>プロジェクト名はリスト名</li>
-<li>アイテム（タスク）
-
-<ul>
-<li>赤ドットの入っているアイテムはプライオリティが付き (やはりやめ)</li>
-<li>文字の色が一番薄いグレーのアイテムは書出しされません。<strong>！！要注意！！</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<p>私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。</p>
-
-<p>※ただし、同じプロジェクト複数回書き出すと<strong>同じ名前のリストに追加</strong>されます。<strong>上書き</strong>はされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</p>
 ]]></content>
   </entry>
   
