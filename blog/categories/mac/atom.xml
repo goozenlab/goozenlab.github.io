@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-20T22:53:56+07:00</updated>
+  <updated>2014-11-22T05:19:57+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review/"/>
+    <updated>2014-11-21T20:20:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review</id>
+    <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
+
+<ol>
+<li>軽い。</li>
+<li>電池の保ちが期待以上によい。ほぼ一日使える。</li>
+<li>付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。</li>
+<li>キーの感じは最初はすごく薄くペタペタな感じがしたが、違和感は減り馴染む。</li>
+<li>液晶はやはり小さい。が、肩こりにはならず。</li>
+<li>テカテカ液晶は自分が反射したりして好きではないが、ギラギラはしてないのでギリギリセーフ。</li>
+<li>RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はない。</li>
+<li>パフォーマンスも期待以上によい。起動も速く、Xcodeでのビルドなどもストレスなく行える。</li>
+<li>128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないかもしれない。（私は現時点で残り45GB)</li>
+<li>キーボードに印字されているタイ語にちょっと愛着がわく。</li>
+<li>スピーカーの音質は悪い。</li>
+<li>結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）</li>
+<li>お腹の上にのっけて使ってもそこまで熱くなく、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。</li>
+</ol>
+
+
+<p>と、期待をよい意味で裏切られました、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思います。ちょっとうれしかったのでポストする。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[さよならMBP15、サワディクラップMBA11]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/10/mabbookair9/"/>
+    <updated>2014-11-10T14:20:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/10/mabbookair9</id>
+    <content type="html"><![CDATA[<p>さよなら、MBP15、サワディクラップ、MBA11。</p>
+
+<p>タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日の変調があり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。</p>
+
+<!-- more -->
+
+
+<p>本当は来年の２月頃発表になる12インチのMBA Retinaで機材をフルリニューアルするつもりでいた。思わぬ出来事に２•３日どうしようかと悩む。ここタイで直すという選択肢もあるが、タイには正規なアップルショップはまだなく、時間もかなりかかり信頼もできない。</p>
+
+<p>MBP15は開発が一段落終えたらタイに置いて出るつもりでいたので、旅に持っていく事を理由付けにして、MBA11 w/US Keyboard+RAM8GBを目当てにタイのアップル代理店iStudioへ行く。カスタム仕様だとアメリカに注文を出すらしく２週間はかかるらしく、在庫はノーマルのタイ語キーボードの物しかないとの事。さすが王国だけあって外人には媚びていない。ある意味商売べたでもある。金額は免税の処置をしても昨今の急激な円安のせいでタイで買うお得感が全くない。日銀に恨み節。。無駄遣い感がぬぐい去れない。購入意欲が一気に減少する。</p>
+
+<p>ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。</p>
+
+<p>店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yosemite]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/20/yosemite/"/>
+    <updated>2014-10-20T14:20:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/20/yosemite</id>
+    <content type="html"><![CDATA[<p>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。</p>
+
+<p>本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。</p>
+
+<p>Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemite自体の印象は悪くないのでもう少し落ち着いたらじわじわ移行するつもり。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
@@ -277,104 +340,130 @@ gallo%
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[眼精疲労と白黒モニター]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode/"/>
-    <updated>2012-11-20T16:43:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode</id>
-    <content type="html"><![CDATA[<p>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。</p>
+    <title type="html"><![CDATA[画面のグレー/カラーのスイッチ]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2013/02/25/applescript-switch-grayscale/"/>
+    <updated>2013-02-25T10:15:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2013/02/25/applescript-switch-grayscale</id>
+    <content type="html"><![CDATA[<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png" width="480"></p>
+<p>ただ一連の作業がちょっと面倒なので、<strong>アップルスクリプト</strong>＋Alfredを使って作業を簡略化しました。</p>
 
-<p>高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）</p>
+<p>まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。</p>
 
-<p>※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）</p>
-
-<p>文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。</p>
-
-<!--エロい画像を見るとなんか昭和な古き良きエロ本のようです。-->
-
+<p><strong>※</strong> MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。</p>
 
 <!-- more -->
 
 
-<p>で、画面はこのようになります。お試しあれ。</p>
+<p>``` applescript SwitchBW/Color</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png" width="800"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Macの追加設定]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting/"/>
-    <updated>2012-08-20T19:41:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting</id>
-    <content type="html"><![CDATA[<p>File /Volumes/dev/Sites/goozenlab@github.com/octopress/source/computing/mac-my-hidden-setting.markdown could not be found</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[マックで自分が使っているおすすめソフト]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/01/30/best-mac-software/"/>
-    <updated>2012-01-30T19:41:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/01/30/best-mac-software</id>
-    <content type="html"><![CDATA[<p>マック歴もずいぶんたちました（最初のマックは PowerBook 160）。色んなソフトを試してきました。コンピューターこそ早くなりましたが、そこまで劇的にコンピューターライフが変わったようには思えません。OSXそのものも成熟期を迎え、コンピューターの役目もどんどんタブレットに移行していっています。とはいえども、キーボード付きのコンピューターが無くなるまではまだまだ時間がかかりそうです。
+<p>tell application "System Preferences"</p>
 
-私がこよなく愛するソフトは以下。
+<pre><code>activate
+set current pane to pane "com.apple.preference.universalaccess"
+</code></pre>
 
-![猫写真](https://dl.dropbox.com/u/163521/animal/r0010542.jpg)
+<p>end tell</p>
 
-## 有料ソフト
-- 1Password：パスワードの管理には最適です。
-- Tree：シンプルかつデザインの良いアウトラインソフト。
-- Adobe CS3：まぁじつはテピートで買ったやつが今でも使えるのでそのまま。GIMPがもうちょっと頑張ってもらえればかなり幸せになれるのだけど。。
-- エクセル：numbersで代用できると思いましたが、悔しいですがこいつはやはり欠かせません。
-- [Hazel](http://www.noodlesoft.com)：地味に役に立つ自動化ソフト。デスクトップに散らばりがちなファイルを整理するのに使ったりしてます。でもちょと高いです。
+<p>tell application "System Events"</p>
 
-## 無料で配布されてます。有料にてさらに使いやすくなります。
-- Alfred：最強ランチャーソフト。フリーでここまで使えれば言う事ありません。
-- Dash：高速Docビューワー。レジストはまだ。アイコンが怖いのがかなりのマイナス。
+<pre><code>tell first window of process "System Preferences"
 
-## フリーソフト
-- TextMate v2：テキストエディタ。他のソフトも色々試しましたがこれで行きます。
-- The Unarchiver：アーカイブソフト、MacOSが対応していない圧縮ファイルの解凍に必須です。
-- [NetNewsWire](http://netnewswireapp.com/mac)：RSSリーダー
-- [Cyberduck](http://cyberduck.ch)：ftpクライアント
-- [xType](http://www.adnx.com/redirect/xtype4mac.html)：タイピング補助ソフトです。
-- [xtraFinder](http://www.trankynam.com/xtrafinder/)：FinderをTab表示できるようにするソフト。
-- [Pelian](http://perian.org/)
-- [coconat battery](http://www.coconut-flavour.com/coconutbattery/)
-- [app cleaner](http://www.freemacsoft.net/appcleaner/)
-- Carbon Copy Cloner：バックアップ関連はこのソフトでしてますが、最近有料化しました。いずれrsyncで代用します。
+    tell table 1 of scroll area 1
+        set selected of row 2 to true
+    end tell
+    tell group 1
+        click checkbox "Use grayscale"
+    end tell
 
-### メニューバー
-- [Sprited Away](http://drikin.com)：使っていないWindowを一定の時間で隠すソフト、アイコンもかわいい。
-- [f.lux](http://stereopsis.com/flux/)：ディスプレイーの色温度を時間で変更します。
+end tell
+</code></pre>
 
-## 娯楽
-- [Stellarium](http://www.stellarium.org)：天体ソフトというのでしょうか、星好きの人は。
-- [Celestia](http://www.shatters.net/celestia/)：こちらも上と同様ですが、こちらは宇宙を駆け巡る事ができます。
-- VM Player：VMWareの無料版。linuxを走らせてます。
+<p>end tell</p>
 
-※開発者の方々ありがとうございます。
+<p>do shell script "terminal-notifier -message \"Color mode has been changed.\" -title \"Diplay\""</p>
 
-## Web service
-- Dropbox：
-- Xmarks for Safari：ブラウザ間でのブックマーク共有サービス。
-- Simplenote + Notational Velocity：テキストメモのスクラップノートして最高です。
-- Evernote：ウェブクリップ、持っている物のPDF説明書、気になる物のPDFカタログのスクラップノート。
-- owncloud：自分でDropboxのようなサービスを構築しましょう。サーバーのある方はぜひ。
+<p>tell application "System Preferences" to quit</p>
 
-## 開発
-- Xcode：iOSアプリ開発のためのソフト
-- [Snipetts](http://snippets.me)：ちょっとしたコードの切れ端の管理に。でも似たようなソフトが一杯あります。
-- [Mou](http://mouapp.com)：シンプルなmarkdownエディタ、ブログをmarkdownで書いているので重宝してます。
-- Octopress：ブログのシステム、自分の中ではかなり理想に近いブログのシステムです。
-- Pow：Octopress（ruby関連ウェブアプリ）を簡単にローカルで走らせるためのソフト
-- Simplenote + nvALT：ブログの記事の管理
+<p>```</p>
 
-※ 買ったソフトや実際に端末の中に入っているソフトはまだ有りますが、オススメといえば、こんな具合です。入っていないソフトがあったらぜひお試しを、、
+<p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
 
-</p>
+<p>``` applescript UIElementのリスト
+tell application "System Preferences"</p>
+
+<pre><code>activate
+set current pane to pane "com.apple.preference.universalaccess"
+--  set current pane to pane "com.apple.preference.sound"
+</code></pre>
+
+<p>end tell</p>
+
+<p>tell application "System Events"</p>
+
+<pre><code>if UI elements enabled then
+    tell process "System Preferences"
+        get every UI element
+        --tell tab group 1 of window "Sound" of application process "System Preferences" of application "System Events"
+        tell window 1 of application process "System Preferences" of application "System Events"
+            --  tell table 1 of scroll area 1 of window 1 of application process "System Preferences" of application "System Events" これで左にあるテーブルの情報が見れます
+            get every UI element
+            get every UI element of every UI element
+        end tell
+    end tell
+else
+    tell application "System Preferences"
+        activate
+        set current pane to pane "com.apple.preference.universalaccess"
+        display dialog "UI element scripting is not enabled."
+    end tell
+end if
+</code></pre>
+
+<p>end tell
+```</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png" alt="UIElement" /></p>
+
+<p><code>checkbox "Use grayscale" of group 1 of window "Accessibility" of application process "System Preferences" of application "System Events"</code>でこのgroup 1の"Use grayscale"をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox "Use grayscale"はclick checkbox 2、window "Accessibility"はwindow 1, first windowでも動きます。</p>
+
+<p>後はそのパーツに値を入れてあげれば良し。</p>
+
+<p>そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。</p>
+
+<p>スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。</p>
+
+<p>アップルスクリプトでいろんな事が出来るのにちょっと驚きです。</p>
+
+<p>ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず</p>
+
+<p>、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。</p>
+
+<p>と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。</p>
+
+<h2>おまけ</h2>
+
+<p>ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある<code>Info.plist</code>に</p>
+
+<p>``` plain</p>
+
+<pre><code>&lt;key&gt;LSUIElement&lt;/key&gt;
+&lt;true/&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
+
+<p>そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに</p>
+
+<p><code>
+do shell script "terminal-notifier -message \"Color mode has been changed.\" -title \"Diplay\""
+</code></p>
+
+<p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
+
+<p>お次ぎはUSBオーディオの選択/解除かな。。</p>
 ]]></content>
   </entry>
   

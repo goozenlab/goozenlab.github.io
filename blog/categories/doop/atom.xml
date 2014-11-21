@@ -4,7 +4,7 @@
   <title><![CDATA[Category: doop | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/doop/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-20T22:53:56+07:00</updated>
+  <updated>2014-11-22T05:19:57+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[doop v1.6.2]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162/"/>
+    <updated>2014-11-20T17:20:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162</id>
+    <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
+
+<p>入力部のアイコンも新しくしました。</p>
+
+<p>マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。</p>
+
+<p>次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.5.0]]></title>
@@ -108,18 +123,6 @@
 <p><img src="https://dl.dropbox.com/u/163521/images/20130529-bargraph.png" alt="BarGraph" /></p>
 
 <p>現在レビューの最中、数日中にアップされると思います。フライング投稿です。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update/"/>
-    <updated>2013-05-25T13:39:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update</id>
-    <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
-iOS5では問題はなく、二三日前に気が付きました。</p>
-
-<p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
 ]]></content>
   </entry>
   

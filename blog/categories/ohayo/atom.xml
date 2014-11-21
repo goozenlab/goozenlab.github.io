@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/ohayo/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-20T22:53:56+07:00</updated>
+  <updated>2014-11-22T05:19:57+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -15,14 +15,17 @@
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-280/"/>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280/"/>
     <updated>2014-11-05T05:04:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-280</id>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。現在申請中。</p>
 
 <p><img src="/images/2014-11-05-ohayo-280-01.png" width="320"></p>
 
 <p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
+
+<!-- more -->
+
 
 <p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
 
