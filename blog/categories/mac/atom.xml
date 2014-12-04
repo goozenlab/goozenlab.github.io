@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T11:05:08+07:00</updated>
+  <updated>2014-12-04T13:31:06+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -20,19 +20,22 @@
     <id>http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review</id>
     <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
 
+<p><img src="/images/2014-11-21-mba11.jpg" alt="MBA11" /></p>
+
 <ol>
 <li>軽い。</li>
+<li>小さい。</li>
 <li>電池の保ちが期待以上によい。ほぼ一日使える。</li>
 <li>付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。</li>
 <li>キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。</li>
-<li>液晶はやはり小さい。が、肩こりはこらない 。</li>
+<li>液晶はやはり小さい。懸念の肩こりも現状維持。</li>
 <li>テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。</li>
 <li>RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。</li>
 <li>CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。</li>
 <li>128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB)</li>
 <li>SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。</li>
 <li>スピーカーの音質は悪い。</li>
-<li>お腹の上にのっけて使ってもそこまで熱くなく、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。</li>
+<li>お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。</li>
 <li>キーボードに印字されているタイ語にちょっと愛着がわく。</li>
 <li>OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）</li>
 </ol>

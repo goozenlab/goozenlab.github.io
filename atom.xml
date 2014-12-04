@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T11:05:08+07:00</updated>
+  <updated>2014-12-04T13:31:06+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Release Pranatice]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release/"/>
+    <updated>2014-12-01T14:20:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release</id>
+    <content type="html"><![CDATA[<p>久しぶりに新しいソフトを申請しました。</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
+
+<p>ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。</p>
+
+<blockquote><p><strong><em>Prāṇāyāma</em></strong> (Sanskrit: प्राणायाम prāṇāyāma) is a Sanskrit word meaning &#8220;extension of the prāṇa or breath&#8221; or &#8220;extension of the life force&#8221;. The word is composed of two Sanskrit words: prana, life force, or vital energy, (noted particularly as the breath), and ayāma, to extend or draw out. (Not &#8220;restrain, or control&#8221; as is often translated from yam instead of ayāma). It is a yogic discipline with origins in ancient India.<br/>
+<em>&#8212;&#8212;&#8211; from wikipedia</em></p></blockquote>
+
+<p>仕事の合間のイライラしているときや、瞑想後の落ち着いた雰囲気の中でも、心を落ち着かせたいときや、集中したいときなどに、</p>
+
+<p>KYOKOさんが、ちょっと地味で事務的にカウントしてくれます。</p>
+
+<p>本当はiOS6からの対応を考えていたのですが、端末を喋らせる機能ではiOS7が最低限になってしまう。最近のデーターではiOS6以前のユーザーは5%(私も含む）ぐらいだそうなので、色々試した後、iOS7以降の対応にしました。バージョンも0.7.0スタートです。</p>
+
+<p>おまけ：<br/>
+　KYOKOさんに英語を喋らせると、モロにジャパンニーズイングリッシュになります。帰国子女風に格好よく喋ってくれると思っていたので、びっくり＆ばくしょう。</p>
+
+<!-- more -->
+
+
+<p>READMEより、</p>
+
+<p>ヨガプラクティスの中でちょっと面倒な呼吸トレーニングのプラナヤマ。<br/>
+自分でカウントして行う人が多いとおもいます。
+ただし、自分で秒数をカウントするのが少々面倒なので、結局やらない人も多いのではないでしょうか？</p>
+
+<p>そこで、Kyokoさんに手伝っていただく事にしました。</p>
+
+<p>ちょっと地味で事務的な感じでKyokoさんがカウントしてくれます。プラナヤマにより集中できるとおもいます。</p>
+
+<p>仕事の合間に、イライラしているときや、瞑想後の落ち着いた雰囲気の中でも、<br/>
+心を落ち着かせたいときや、集中したいとき、元気が無いときなどなど、、</p>
+
+<p>そして、ヨガや瞑想のお供ににも、</p>
+
+<p>どこでも短時間でできますので、ご活用のほど。</p>
+
+<h3>□ メイン画面</h3>
+
+<p>メイン画面上には以下のアイテムがあります。</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-main.png" alt="pranatice" /></p>
+
+<ol>
+<li>歯車のボタン：細かい練習の設定</li>
+<li>目のボタン：練習の履歴表示</li>
+<li>練習のアイテム</li>
+<li>直近約50回の練習状況</li>
+<li>総練習回数</li>
+<li>1週間の練習状況（表示するしないの設定可能）</li>
+</ol>
+
+
+<p>練習のアイテムからは、チェックマークのオンオフができます。時間の設定は歯車のボタンより行ってください。</p>
+
+<h3>□ 使い方</h3>
+
+<p>画面の<strong>ロングタップ</strong>により練習が開始します。<br/>
+(キャンセルをしたいときにはもう一度の<strong>ロングタップ</strong>、アラートがあがりキャンセルします。)</p>
+
+<p>練習が終わり、呼吸と整える少しの時間が経過後、練習状況のボタンが出てきます。</p>
+
+<p>華丸、丸、三角、バツから選択し終了します。</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-mood.png" alt="pranatice" /></p>
+
+<h3>□ 設定</h3>
+
+<p>各種設定の変更ができます。</p>
+
+<ol>
+<li>プラナヤマの時間と回数の設定</li>
+<li>音声の英語への変更。（英語設定の声になります。）</li>
+<li>最近一週間の状況を印すアイコンの表示設定。</li>
+<li>メモがあるときの印の設定</li>
+<li>カレンダーへの書き込み、カレンダー名の設定</li>
+</ol>
+
+
+<p>※シバナンダヨガのプラクティスに基づいて制作しています。</p>
+
+<p>無料化時の関心を得るために月に数日間有料化しますが、ほとんどの時期において無料で提供します。（寄付をしていただける方はもちろん大歓迎です。）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cosper v1.6.2]]></title>
@@ -29,19 +120,22 @@
     <id>http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review</id>
     <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
 
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-21-mba11.jpg" alt="MBA11" /></p>
+
 <ol>
 <li>軽い。</li>
+<li>小さい。</li>
 <li>電池の保ちが期待以上によい。ほぼ一日使える。</li>
 <li>付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。</li>
 <li>キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。</li>
-<li>液晶はやはり小さい。が、肩こりはこらない 。</li>
+<li>液晶はやはり小さい。懸念の肩こりも現状維持。</li>
 <li>テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。</li>
 <li>RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。</li>
 <li>CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。</li>
 <li>128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB)</li>
 <li>SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。</li>
 <li>スピーカーの音質は悪い。</li>
-<li>お腹の上にのっけて使ってもそこまで熱くなく、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。</li>
+<li>お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。</li>
 <li>キーボードに印字されているタイ語にちょっと愛着がわく。</li>
 <li>OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）</li>
 </ol>
@@ -108,7 +202,7 @@
     <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-01.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
 
 <p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
 
@@ -117,8 +211,8 @@
 
 <p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-02.png" width="320">
-<img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-03.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-02.png" alt="ohayo screenshot" />
+<img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-03.png" alt="ohayo screenshot" /></p>
 
 <p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
 
@@ -152,7 +246,7 @@
 
 <p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-10-27-dandori-export.png" width="320"></p>
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-10-27-dandori-export.png" alt="dandori export screenshot" /></p>
 
 <!-- more -->
 
@@ -650,28 +744,6 @@
 
 <p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-bold.png" width="320">
 <img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png" width="320"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[littlis v2.5.6]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256/"/>
-    <updated>2013-07-20T08:07:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256</id>
-    <content type="html"><![CDATA[<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
-タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
-
-<ol>
-<li>フラットなデザインに変更。日付けボタン／日時設定をメモ欄の下に</li>
-<li>メモフラグを左のコーナーに。（タップでオンオフ：角が折られます。）</li>
-<li>ロックを色ドットに変更。（タップで色ロック：中心に白ドットが表示）</li>
-</ol>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png" width="320"></p>
-
-<p>※ 久しぶりに無料提供中です。（7/25まで）</p>
 ]]></content>
   </entry>
   

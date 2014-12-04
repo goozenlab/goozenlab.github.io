@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/ohayo/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-11-22T11:05:08+07:00</updated>
+  <updated>2014-12-04T13:31:06+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -20,7 +20,7 @@
     <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。</p>
 
-<p><img src="/images/2014-11-05-ohayo-280-01.png" width="320"></p>
+<p><img src="/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
 
 <p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
 
@@ -29,8 +29,8 @@
 
 <p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
 
-<p><img src="/images/2014-11-05-ohayo-280-02.png" width="320">
-<img src="/images/2014-11-05-ohayo-280-03.png" width="320"></p>
+<p><img src="/images/2014-11-05-ohayo-280-02.png" alt="ohayo screenshot" />
+<img src="/images/2014-11-05-ohayo-280-03.png" alt="ohayo screenshot" /></p>
 
 <p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
 

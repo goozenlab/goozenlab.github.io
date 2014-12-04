@@ -53,10 +53,6 @@
         <lastmod>2013-06-18T19:53:03+07:00</lastmod>
     </url>
     <url>
-        <loc>http://goozenlab.github.com/goozenlab/blog/2012/01/30/best-mac-software/</loc>
-        <lastmod>2013-06-18T19:53:03+07:00</lastmod>
-    </url>
-    <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2012/02/09/xcode42-update/</loc>
         <lastmod>2013-06-18T19:53:03+07:00</lastmod>
     </url>
@@ -346,7 +342,7 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260/</loc>
-        <lastmod>2014-11-21T05:04:30+07:00</lastmod>
+        <lastmod>2014-11-22T18:59:47+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260/</loc>
@@ -354,7 +350,7 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280/</loc>
-        <lastmod>2014-11-22T07:30:29+07:00</lastmod>
+        <lastmod>2014-11-22T18:59:04+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/11/10/mabbookair9/</loc>
@@ -370,15 +366,19 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review/</loc>
-        <lastmod>2014-11-22T09:04:15+07:00</lastmod>
+        <lastmod>2014-12-01T12:23:14+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162/</loc>
         <lastmod>2014-11-22T08:52:05+07:00</lastmod>
     </url>
     <url>
+        <loc>http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release/</loc>
+        <lastmod>2014-11-29T22:14:52+07:00</lastmod>
+    </url>
+    <url>
         <loc>http://goozenlab.github.com/goozenlab/about/</loc>
-        <lastmod>2014-11-20T17:25:46+07:00</lastmod>
+        <lastmod>2014-11-29T10:22:10+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/about/me.html</loc>
@@ -390,15 +390,15 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/archives/</loc>
-        <lastmod>2014-11-22T09:04:15+07:00</lastmod>
+        <lastmod>2014-12-01T12:23:14+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/archives/</loc>
-        <lastmod>2014-11-22T09:04:15+07:00</lastmod>
+        <lastmod>2014-12-01T12:23:14+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/blog/</loc>
-        <lastmod>2014-11-22T09:04:15+07:00</lastmod>
+        <lastmod>2014-12-01T12:23:14+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/bohemia/index-backpacker.html</loc>
@@ -507,6 +507,10 @@
     <url>
         <loc>http://goozenlab.github.com/goozenlab/en/iapp/ohayo/manual.html</loc>
         <lastmod>2013-06-18T17:47:02+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://goozenlab.github.com/goozenlab/en/iapp/pranatice/</loc>
+        <lastmod>2014-11-28T13:28:36+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/en/iapp/sati/</loc>
@@ -802,7 +806,7 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/iapp/ohayo/</loc>
-        <lastmod>2014-11-05T06:15:55+07:00</lastmod>
+        <lastmod>2014-12-01T12:28:06+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/iapp/ohayo/manual.html</loc>
@@ -811,6 +815,10 @@
     <url>
         <loc>http://goozenlab.github.com/goozenlab/iapp/ohayo/readme.html</loc>
         <lastmod>2014-10-24T14:47:10+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://goozenlab.github.com/goozenlab/iapp/pranatice/</loc>
+        <lastmod>2014-11-28T13:29:28+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/iapp/sati/</loc>
@@ -850,7 +858,7 @@
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/</loc>
-        <lastmod>2014-11-22T09:04:15+07:00</lastmod>
+        <lastmod>2014-12-01T12:23:14+07:00</lastmod>
     </url>
     <url>
         <loc>http://goozenlab.github.com/goozenlab/robots.txt</loc>
