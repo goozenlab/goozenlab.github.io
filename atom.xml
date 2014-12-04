@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:31:06+07:00</updated>
+  <updated>2014-12-04T13:58:07+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Satiでの不具合]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati/"/>
+    <updated>2014-12-04T13:55:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati</id>
+    <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
+
+<p>瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
+を使っています。</p>
+
+<p>iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
+
+<p>ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。</p>
+
+<p>設定＞サティ＞通知＞「通知を許可する」をオンにしてください。</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-settting.png" alt="Setting" />
+<img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
+<img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Release Pranatice]]></title>
@@ -719,31 +743,6 @@
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tapas v1.5.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150/"/>
-    <updated>2013-07-24T14:57:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150</id>
-    <content type="html"><![CDATA[<p>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
-大幅なアップデートではありませんが、少し手をいれました。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-icon-tapas.png" title="" ></p>
-
-<ul>
-<li>ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。</li>
-<li>フォントを変更できるようにしました。<br/>
-（日本語は太字にだけ対応。怪我の功名でHelveticaNeue-CondensedBoldで日本語が太字に。濃い表示になります。）</li>
-<li>タイマー画面にてキャンセル、そして再スタート時に背景の色が変わらないバグの修正</li>
-<li>一分前に背景が数回フラッシュします。（目を離していても、気がつきやすいようになると、、思います。）</li>
-<li>編集画面デザインを更新。</li>
-</ul>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-bold.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png" width="320"></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:31:06+07:00</updated>
+  <updated>2014-12-04T13:58:07+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Satiでの不具合]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati/"/>
+    <updated>2014-12-04T13:55:00+07:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati</id>
+    <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
+
+<p>瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
+を使っています。</p>
+
+<p>iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）</p>
+
+<p><img src="/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
+
+<p>ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。</p>
+
+<p>設定＞サティ＞通知＞「通知を許可する」をオンにしてください。</p>
+
+<p><img src="/images/2014-12-04-settting.png" alt="Setting" />
+<img src="/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
+<img src="/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.7]]></title>
@@ -108,18 +132,6 @@
 
 
 <p>の３つです。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update/"/>
-    <updated>2013-05-25T13:39:00+07:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update</id>
-    <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
-iOS5では問題はなく、二三日前に気が付きました。</p>
-
-<p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
 ]]></content>
   </entry>
   
