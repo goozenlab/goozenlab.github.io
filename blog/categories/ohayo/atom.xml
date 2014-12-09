@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/ohayo/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -50,10 +50,10 @@
 <img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
 <li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
 <li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
-<img src="/images/manual-ohayo-setting-old.png" width="320">
-<img src="/images/manual-ohayo-setting.png" width="320"></li>
+{% img  /images/manual-ohayo-setting-old.png  320 %}
+{% img  /images/manual-ohayo-setting.png  320 %}</li>
 <li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
-<img src="/images/manual-ohayo-detail.png" width="320"><br/>
+{% img  /images/manual-ohayo-detail.png  320 %}<br/>
 ※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
 <li>iOS7に向け表示に不具合がある所を調整。</li>
 </ol>

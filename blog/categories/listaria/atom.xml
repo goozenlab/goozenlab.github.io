@@ -4,7 +4,7 @@
   <title><![CDATA[Category: listaria | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/listaria/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
 パパイヤリリースです。</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-icons.png" title="" ></p>
+<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-icons.png   %}</p>
 
 <h3>使い方</h3>
 
@@ -33,8 +33,8 @@
 <p>食材リストでは、旬の設置がされている時期には左肩に緑のドットが表示されます。
 ショッピングリストではちょっと表示がうざったくなってしまうと思ったので<strong>食材リスト</strong>のページでのみ表示されます。</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-detail.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-season.png" width="320"></p>
+<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-detail.png  320 %}
+{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-season.png  320 %}</p>
 
 <p>※ 夏と言えば枝豆ですよね。</p>
 
@@ -72,8 +72,8 @@
 </ol>
 
 
-<p><img src="https://dl.dropbox.com/u/163521/images/SS-listaria-list.png" width="320">
-<img src="https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png" width="320"></p>
+<p>{% img  https://dl.dropbox.com/u/163521/images/SS-listaria-list.png  320 %}
+{% img  https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png  320 %}</p>
 
 <p>ぜひバランス良く日々の生活を送ってください。</p>
 

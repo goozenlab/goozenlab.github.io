@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -90,7 +90,7 @@
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png" width="800" title="" ></p>
+<p>{% img  https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png 800  %}</p>
 
 <p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
 
@@ -134,214 +134,109 @@ gallo%
 
 <p>と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>chromium_update.sh </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-<span class='line-number'>87</span>
-<span class='line-number'>88</span>
-<span class='line-number'>89</span>
-<span class='line-number'>90</span>
-<span class='line-number'>91</span>
-<span class='line-number'>92</span>
-<span class='line-number'>93</span>
-<span class='line-number'>94</span>
-<span class='line-number'>95</span>
-<span class='line-number'>96</span>
-<span class='line-number'>97</span>
-<span class='line-number'>98</span>
-<span class='line-number'>99</span>
-<span class='line-number'>100</span>
-<span class='line-number'>101</span>
-<span class='line-number'>102</span>
-<span class='line-number'>103</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;!/bin/sh&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;Get current build <span class="k">for </span>Chromium on Mac.&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;@version  2009-05-22&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;@author   XXXX&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;@todo     Nothing yet&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;http://hints.macworld.com/article.php?story<span class="o">=</span>20090604081030791&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;setup ------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;tempDir<span class="o">=</span><span class="s2">&quot;/tmp/&lt;code&gt;whoami&lt;/code&gt;/chrome-nightly/&quot;</span>;
-</span><span class='line'><span class="nv">baseURL</span><span class="o">=</span><span class="s2">&quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&quot;</span>;
-</span><span class='line'><span class="nv">baseName</span><span class="o">=</span><span class="s2">&quot;chrome-mac&quot;</span>;
-</span><span class='line'><span class="nv">baseExt</span><span class="o">=</span><span class="s2">&quot;zip&quot;</span>;
-</span><span class='line'><span class="nv">appName</span><span class="o">=</span><span class="s2">&quot;Chromium.app&quot;</span>;
-</span><span class='line'><span class="nv">appDir</span><span class="o">=</span><span class="s2">&quot;/Applications&quot;</span>;
-</span><span class='line'><span class="nv">version</span><span class="o">=</span>~/.CURRENT_CHROME;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;function checkForErrors <span class="o">{</span>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;if <span class="o">[</span> <span class="s2">&quot;$?&quot;</span> !<span class="o">=</span> <span class="s2">&quot;0&quot;</span> <span class="o">]</span>; <span class="k">then</span>
-</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;Unkown error (see above for help)!&quot;</span>;
-</span><span class='line'>    <span class="nb">exit </span>3;
-</span><span class='line'><span class="k">fi</span>
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;<span class="o">}</span>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Setup...&quot;</span>;
-</span><span class='line'>mkdir -p <span class="s2">&quot;$tempDir&quot;</span>;
-</span><span class='line'><span class="nb">cd</span> <span class="s2">&quot;$tempDir&quot;</span>;
-</span><span class='line'>checkForErrors;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Checking current version...&quot;</span>;
-</span><span class='line'>touch <span class="nv">$version</span>
-</span><span class='line'><span class="nv">currentVersion</span><span class="o">=</span>&lt;code&gt;cat <span class="nv">$version</span>&lt;/code&gt;;
-</span><span class='line'><span class="nv">latestVersion</span><span class="o">=</span>&lt;code&gt;curl -s <span class="nv">$baseURL</span>/LAST_CHANGE&lt;/code&gt;;
-</span><span class='line'>checkForErrors;
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot; * your/latest build: $currentVersion / $latestVersion&quot;</span>;
-</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$currentVersion&quot;</span> <span class="o">==</span> <span class="s2">&quot;$latestVersion&quot;</span> <span class="o">]</span>; <span class="k">then</span>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;echo <span class="s2">&quot; * build $currentVersion is the latest one.&quot;</span>;
-</span><span class='line'><span class="nb">exit </span>1;
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;fi&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Downloading and unpacking...&quot;</span>;
-</span><span class='line'><span class="nv">chromePID</span><span class="o">=</span>&lt;code&gt;ps wwaux|grep -v grep|grep <span class="s2">&quot;$appName&quot;</span>|awk <span class="s1">&#39;{print $2}&#39;</span>&lt;/code&gt;;
-</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$chromePID&quot;</span> !<span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]</span>;<span class="k">then</span>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;echo <span class="s2">&quot; * chromium is running. Please stop it first.&quot;</span>;
-</span><span class='line'><span class="nb">exit </span>2;
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;fi
-</span><span class='line'>curl -o <span class="nv">$baseName</span>.<span class="nv">$baseExt</span> <span class="s2">&quot;$baseURL/$latestVersion/$baseName.$baseExt&quot;</span>;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;unzip -qo <span class="nv">$baseName</span>.<span class="nv">$baseExt</span>;
-</span><span class='line'>checkForErrors;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Installing...&quot;</span>;
-</span><span class='line'>cp -r <span class="nv">$baseName</span>/<span class="nv">$appName</span> <span class="nv">$appDir</span>
-</span><span class='line'>checkForErrors;
-</span><span class='line'><span class="nb">echo</span> <span class="nv">$latestVersion</span> &gt; <span class="nv">$version</span>;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;echo <span class="s2">&quot;Done. You&#39;re now running build $latestVersion&quot;</span>;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;------------------------------------------------------------------------------&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock chromium_update.sh %}</p>
+
+<h1>!/bin/sh</h1>
+
+<h1>Get current build for Chromium on Mac.</h1>
+
+<h1></h1>
+
+<h1>@version  2009-05-22</h1>
+
+<h1>@author   XXXX</h1>
+
+<h1>@todo     Nothing yet</h1>
+
+<h1>http://hints.macworld.com/article.php?story=20090604081030791</h1>
+
+<h1>setup ------------------------------------------------------------------------</h1>
+
+<p>tempDir="/tmp/<code>whoami</code>/chrome-nightly/";
+baseURL="http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac";
+baseName="chrome-mac";
+baseExt="zip";
+appName="Chromium.app";
+appDir="/Applications";
+version=~/.CURRENT_CHROME;</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>function checkForErrors {</p>
+
+<pre><code>if [ "$?" != "0" ]; then
+    echo "Unkown error (see above for help)!";
+    exit 3;
+fi
+</code></pre>
+
+<p>}</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>echo "Setup...";
+mkdir -p "$tempDir";
+cd "$tempDir";
+checkForErrors;</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>echo "Checking current version...";
+touch $version
+currentVersion=<code>cat $version</code>;
+latestVersion=<code>curl -s $baseURL/LAST_CHANGE</code>;
+checkForErrors;
+echo " * your/latest build: $currentVersion / $latestVersion";
+if [ "$currentVersion" == "$latestVersion" ]; then</p>
+
+<pre><code>echo " * build $currentVersion is the latest one.";
+exit 1;
+</code></pre>
+
+<p>fi</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>echo "Downloading and unpacking...";
+chromePID=<code>ps wwaux|grep -v grep|grep "$appName"|awk '{print $2}'</code>;
+if [ "$chromePID" != "" ];then</p>
+
+<pre><code>echo " * chromium is running. Please stop it first.";
+exit 2;
+</code></pre>
+
+<p>fi
+curl -o $baseName.$baseExt "$baseURL/$latestVersion/$baseName.$baseExt";</p>
+
+<p>unzip -qo $baseName.$baseExt;
+checkForErrors;</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>echo "Installing...";
+cp -r $baseName/$appName $appDir
+checkForErrors;
+echo $latestVersion > $version;</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>echo "Done. You're now running build $latestVersion";</p>
+
+<h1>------------------------------------------------------------------------------</h1>
+
+<p>{% endcodeblock %}</p>
 ]]></content>
   </entry>
   

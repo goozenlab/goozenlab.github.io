@@ -4,7 +4,7 @@
   <title><![CDATA[Category: viriya | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/viriya/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -47,8 +47,8 @@
 ロックしている時には白いドットが中心に付きます。
 ロックされていない時は単色の色で表示されます。</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
-<img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
+<p>{% img  https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png   %}<br/>
+{% img  https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png   %}</p>
 ]]></content>
   </entry>
   

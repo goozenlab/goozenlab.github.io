@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ippuku | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/ippuku/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -118,10 +118,10 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
 
 <p>上部オレンジの点が午後0:00で下部ブルーの点が午前0:00の印になります。真ん中の色付きは午前／午後6:00です。</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png" width="180">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png" width="180">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png" width="180">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png" width="180"></p>
+<p>{% img https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png 180 %}
+{% img https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png 180 %}
+{% img https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png 180 %}
+{% img https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png 180 %}</p>
 
 <p>※アプストアでの説明に33時間って書いてました。ほんとは29時間でした。。。一年近く気がつきませんでした。。</p>
 ]]></content>

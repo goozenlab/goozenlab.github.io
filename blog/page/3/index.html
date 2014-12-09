@@ -9,10 +9,8 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
-大幅なアップデートではありませんが、少し手をいれました。 ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。
-フォントを変更できるようにしました。
-（日本語は太字にだけ対応。 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
+ということで、Chromeから余計な機能を抜いたChromiumに変更しました。 ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -111,6 +109,102 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2013/07/27/chromium-auto-update/">
+		
+			Chromiumの半自動更新</a>
+	</h2>
+	<div class="entry-content">
+		<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
+ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png" width="800" title="" ></p>
+
+<p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
+
+<p>ちょっと調べてみたところ、最新版をビルドしまくっている<a href="https://chromium-build.appspot.com/p/chromium/console">サイト</a>があり、スクリプトを使って最新版に更新できることを<a href="http://hints.macworld.com/article.php?story=20090604081030791">MacWorld</a>で見つけました。（スクリプトは少し調整してます。）</p>
+
+<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br/>
+　情報元:<a href="http://www.chromium.org/getting-involved/download-chromium">http://www.chromium.org/getting-involved/download-chromium</a></p>
+
+<p>ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
+</span><span class='line'>Setup...
+</span><span class='line'>Checking current version...
+</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf
+</span><span class='line'>Downloading and unpacking...
+</span><span class='line'>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span><span class='line'>                                 Dload  Upload   Total   Spent    Left  Speed
+</span><span class='line'>100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
+</span><span class='line'>Installing...
+</span><span class='line'>Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
+
+
+<p>ローカルのアプリが最新であれば、</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
+</span><span class='line'>Setup...
+</span><span class='line'>Checking current version...
+</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
+</span><span class='line'> * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
+</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
+
+
+
+
+
+		
+		<a href="/blog/2013/07/27/chromium-auto-update/" class="more-link">Read on &rarr;</a>
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-27T10:07:00+07:00" pubdate data-updated="true">Jul 27<span>th</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/tips/'>Tips</a>, <a class='category' href='/blog/categories/mac/'>mac</a>
+
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -581,51 +675,6 @@ iOS7のSimulatorを使っている時、アイコンを指定していないア�
 
 
 	<a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/06/18/octopress-theme/">
-		
-			Octopressのテーマを変更</a>
-	</h2>
-	<div class="entry-content">
-		<p>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家の<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">こちら</a>にテーマのリストがあります。まだ登録数が少ないですが<a href="http://octopressthemes.com">octopressthemes.com</a>というサイトもあります。ぜひ充実していってもらいたいですね。</p>
-
-<p>いくつか気に入った物があるのですが、<a href="http://github.com/macjasp/cleanpress">CleanPress</a>を選びました。zshではインストールでこけます。<code>rake install\['cleanpress'\]</code>で試しましょう。</p>
-
-<p>シングルページはちょっとテーマを弄らないと、、日本語のフォントが少々大きめでバランスが、、、うーーん、全てが一発でうまくいくという事は無いのね。。</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-18T22:06:00+07:00" pubdate data-updated="true">Jun 18<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/web/'>web</a>
 
 
 </div>

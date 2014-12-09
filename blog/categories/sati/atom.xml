@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-04T13:58:07+07:00</updated>
+  <updated>2014-12-09T22:20:31+07:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -109,8 +109,8 @@
 <p>そして、割と厳しかった途中でのキャンセル時の処理を変更。
 ３０分以上時間が経った時には瞑想をカウントするようにしました。</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png" width="320"></p>
+<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png  320 %}
+{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png  320 %}</p>
 ]]></content>
   </entry>
   
