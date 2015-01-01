@@ -4,7 +4,7 @@
   <title><![CDATA[Category: web | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-09T22:20:31+07:00</updated>
+  <updated>2015-01-01T20:22:47+08:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Octopressのテーマを変更]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/06/18/octopress-theme/"/>
-    <updated>2013-06-18T22:06:00+07:00</updated>
+    <updated>2013-06-18T22:06:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/06/18/octopress-theme</id>
     <content type="html"><![CDATA[<p>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家の<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">こちら</a>にテーマのリストがあります。まだ登録数が少ないですが<a href="http://octopressthemes.com">octopressthemes.com</a>というサイトもあります。ぜひ充実していってもらいたいですね。</p>
 
@@ -29,7 +29,7 @@
   <entry>
     <title type="html"><![CDATA[rake generateでエラー]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/02/24/generate-error/"/>
-    <updated>2013-02-24T14:23:00+07:00</updated>
+    <updated>2013-02-24T14:23:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/02/24/generate-error</id>
     <content type="html"><![CDATA[<p>オクトプレスにて<code>rake generate</code>でどかっとエラーが出ました。</p>
 
@@ -51,7 +51,7 @@
   <entry>
     <title type="html"><![CDATA[ヘイロク引越]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2012/09/30/moving-site-heroku/"/>
-    <updated>2012-09-30T16:10:00+07:00</updated>
+    <updated>2012-09-30T16:10:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2012/09/30/moving-site-heroku</id>
     <content type="html"><![CDATA[<p>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。）</p>
 
@@ -67,7 +67,7 @@
   <entry>
     <title type="html"><![CDATA[Smart App Banner]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2012/09/29/smart-app-banner/"/>
-    <updated>2012-09-29T08:37:00+07:00</updated>
+    <updated>2012-09-29T08:37:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2012/09/29/smart-app-banner</id>
     <content type="html"><![CDATA[<p>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。</p>
 
@@ -77,7 +77,7 @@
 
 <p>百聞は一見に如かず、iOS端末にてこのように表示されます。あら不思議。</p>
 
-<p>{% img https://dl.dropbox.com/u/163521/images/2012-09-29-appbanner.png 320 %}</p>
+<p><img src="https://dl.dropbox.com/u/163521/images/2012-09-29-appbanner.png" width="320"></p>
 
 <p>簡易広告のようなものです。ダウンロードが増えるとは思わないけど、開発者にとってはありがたいことだとおもいます。</p>
 
@@ -122,7 +122,7 @@ sharing: true</p>
   <entry>
     <title type="html"><![CDATA[デカ文字調整]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2012/09/28/font-change/"/>
-    <updated>2012-09-28T10:02:00+07:00</updated>
+    <updated>2012-09-28T10:02:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2012/09/28/font-change</id>
     <content type="html"><![CDATA[<p>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整は<code>source/stylesheets/screen.css</code> を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。
 （デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）</p>
@@ -136,26 +136,38 @@ sharing: true</p>
 
 <p>で、取りあえずフォントの変更は<code>sass/layput/_typography.sass</code>の40行目のbodyのfont-sizeを変えあげればよし、全体のフォントのサイズが変わり?ます。（1.15emから1.0emで10％程縮小されます。）</p>
 
-<p>{% codeblock octopress/sass/layput/_typography.sass %}
-h1 {
-  font-size: 2.2em; // ここを変えてもなにも変わらない。  <br/>
-  line-height: 1.2em;
-}</p>
-
-<p>@media only screen and (min-width: 992px) {
-  body { font-size: 1.0em; } // 全てのフォントの大きさが変わる default:1.15em
-  h1 { font-size: 2.2em; line-height: 1.2em; } // 本文でのh1 default:2.6em
-}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>octopress/sass/layput/_typography.sass </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='sass'><span class='line'><span class="nt">h1</span> <span class="err">{</span>
+</span><span class='line'>  <span class="na">font-size</span><span class="o">:</span> <span class="mi">2</span><span class="mf">.2</span><span class="kt">em</span><span class="err">;</span> <span class="c1">// ここを変えてもなにも変わらない。  &lt;br/&gt;</span>
+</span><span class='line'>  <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.2</span><span class="kt">em</span><span class="err">;</span>
+</span><span class='line'><span class="err">}</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="na">&lt;p&gt;@media</span><span class="err"> </span><span class="na">only</span><span class="err"> </span><span class="na">screen</span><span class="err"> </span><span class="na">and</span><span class="err"> </span><span class="na">(min-width</span><span class="o">:</span> <span class="mi">992</span><span class="kt">px</span><span class="p">)</span> <span class="err">{</span>
+</span><span class='line'>  <span class="na">body</span><span class="err"> </span><span class="na">{</span><span class="err"> </span><span class="na">font-size</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.0</span><span class="kt">em</span><span class="err">;</span> <span class="err">}</span> <span class="c1">// 全てのフォントの大きさが変わる default:1.15em</span>
+</span><span class='line'>  <span class="na">h1</span><span class="err"> </span><span class="na">{</span><span class="err"> </span><span class="na">font-size</span><span class="o">:</span> <span class="mi">2</span><span class="mf">.2</span><span class="kt">em</span><span class="err">;</span> <span class="no">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.2</span><span class="kt">em</span><span class="err">;</span> <span class="err">}</span> <span class="c1">// 本文でのh1 default:2.6em</span>
+</span><span class='line'><span class="err">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。</p>
 
 <p>追記：出発前に <code>sass/custom/_colors.scss</code> をアプリで使う色にちょっと変更してみました。
-{% codeblock octopress/sass/custom/_colors.scss %}
-$page-bg: #c0c6c9;      // 灰青
-$header-bg: #9ea1a3;    // 錫色
-$text-color: #383c3c;       // 羊羹色
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>octopress/sass/custom/_colors.scss </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="na">$page-bg</span><span class="o">:</span> <span class="mh">#c0c6c9</span><span class="p">;</span>      <span class="c1">// 灰青</span>
+</span><span class='line'><span class="na">$header-bg</span><span class="o">:</span> <span class="mh">#9ea1a3</span><span class="p">;</span>    <span class="c1">// 錫色</span>
+</span><span class='line'><span class="na">$text-color</span><span class="o">:</span> <span class="mh">#383c3c</span><span class="p">;</span>       <span class="c1">// 羊羹色</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

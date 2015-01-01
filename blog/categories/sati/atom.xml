@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-09T22:20:31+07:00</updated>
+  <updated>2015-01-01T20:22:47+08:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Satiでの不具合]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati/"/>
-    <updated>2014-12-04T13:55:00+07:00</updated>
+    <updated>2014-12-04T13:55:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati</id>
     <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
 
@@ -40,7 +40,7 @@
   <entry>
     <title type="html"><![CDATA[Sati v1.5.7]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157/"/>
-    <updated>2014-09-20T13:08:00+07:00</updated>
+    <updated>2014-09-20T13:08:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157</id>
     <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
 久しぶりに以下の調整および修正を行いました。</p>
@@ -73,7 +73,7 @@
   <entry>
     <title type="html"><![CDATA[Sati v1.5.5]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155/"/>
-    <updated>2013-08-08T13:08:00+07:00</updated>
+    <updated>2013-08-08T13:08:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155</id>
     <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
 （キャンセルしますか -> はい -> 変化無し。。。）</p>
@@ -101,7 +101,7 @@
   <entry>
     <title type="html"><![CDATA[sati v1.5.4]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154/"/>
-    <updated>2013-08-06T18:29:00+07:00</updated>
+    <updated>2013-08-06T18:29:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154</id>
     <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
@@ -109,15 +109,15 @@
 <p>そして、割と厳しかった途中でのキャンセル時の処理を変更。
 ３０分以上時間が経った時には瞑想をカウントするようにしました。</p>
 
-<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png  320 %}
-{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png  320 %}</p>
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png" width="320"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[sati v1.5.3]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153/"/>
-    <updated>2013-07-13T00:59:00+07:00</updated>
+    <updated>2013-07-13T00:59:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/07/13/sati-v153</id>
     <content type="html"><![CDATA[<p>これといった新機能は追加してません。変更点は以下、</p>
 

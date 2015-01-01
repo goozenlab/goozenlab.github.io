@@ -4,7 +4,7 @@
   <title><![CDATA[Category: doop | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/doop/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2014-12-09T22:20:31+07:00</updated>
+  <updated>2015-01-01T20:22:47+08:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162/"/>
-    <updated>2014-11-20T17:20:00+07:00</updated>
+    <updated>2014-11-20T17:20:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162</id>
     <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
 
@@ -31,7 +31,7 @@
   <entry>
     <title type="html"><![CDATA[doop v1.5.0]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150/"/>
-    <updated>2013-07-29T10:41:00+07:00</updated>
+    <updated>2013-07-29T10:41:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150</id>
     <content type="html"><![CDATA[<p>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。</p>
 
@@ -40,7 +40,7 @@
 </ul>
 
 
-<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-icons.png   %}</p>
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-icons.png" title="" ></p>
 
 <ul>
 <li>編集画面デザインを更新。<br/>
@@ -48,8 +48,8 @@
 </ul>
 
 
-<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-old.png  320 %}
-{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-new.png  320 %}</p>
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-new.png" width="320"></p>
 
 <ul>
 <li>履歴ページを更新。無駄な情報をとりのぞき、シンプルにしました。
@@ -64,15 +64,15 @@
 </ul>
 
 
-<p>{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-old.png  320 %}
-{% img  https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-new.png  320 %}</p>
+<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-old.png" width="320">
+<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-new.png" width="320"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock/"/>
-    <updated>2013-07-10T17:07:00+07:00</updated>
+    <updated>2013-07-10T17:07:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
@@ -83,15 +83,15 @@
 ロックしている時には白いドットが中心に付きます。
 ロックされていない時は単色の色で表示されます。</p>
 
-<p>{% img  https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png   %}<br/>
-{% img  https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png   %}</p>
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
+<img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.4.4]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/06/27/doop-v144/"/>
-    <updated>2013-06-27T18:47:00+07:00</updated>
+    <updated>2013-06-27T18:47:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/06/27/doop-v144</id>
     <content type="html"><![CDATA[<p>ナビゲーションバーの長押しでソートを切り替える機能を追加しました。
 今まで通りのソート（メインでは平均時間順、他のページでは色毎）と平均時間を迎える予定日時が近くある物のソート順に切り替えができます。
@@ -99,8 +99,8 @@
 
 <p>期日が近い物のソート時にはタイトルの両端に•（点）が付きます。長押しで元のソートに切り替わります。</p>
 
-<p>{% img  https://dl.dropbox.com/u/163521/images/2013-06-27-doop-sort1.png 320  [doop Sort] %}
-{% img  https://dl.dropbox.com/u/163521/images/2013-06-27-doop-sort2.png 320  [doop Sort2] %}</p>
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-06-27-doop-sort1.png" width="320" title="[doop Sort]" >
+<img src="https://dl.dropbox.com/u/163521/images/2013-06-27-doop-sort2.png" width="320" title="[doop Sort2]" ></p>
 
 <p>そして、平均時間がないものはバーに青色の色を付けました。</p>
 ]]></content>
@@ -109,7 +109,7 @@
   <entry>
     <title type="html"><![CDATA[doop v1.4.3]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/29/doop-v143/"/>
-    <updated>2013-05-29T09:32:00+07:00</updated>
+    <updated>2013-05-29T09:32:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2013/05/29/doop-v143</id>
     <content type="html"><![CDATA[<p>久しくアップデートしていないdoopに少し手を入れました。</p>
 
