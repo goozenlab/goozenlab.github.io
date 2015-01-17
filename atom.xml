@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-01T20:22:47+08:00</updated>
+  <updated>2015-01-17T21:23:25+08:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,195 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[littlist 2.6.3]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning/"/>
+    <updated>2015-01-17T20:15:00+08:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning</id>
+    <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してアップしました。ついでにアプリの名前も小文字に変更。</p>
+
+<!-- more -->
+
+
+<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
+ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>agvtool bump
+</span><span class='line'># agvtool bump -all #Info.plistも更新したいとき
+</span><span class='line'>
+</span><span class='line'>infoPlistFileSource="${SRCROOT}/${INFOPLIST_FILE}"
+</span><span class='line'>#infoPlistFileDestination="${TEMP_DIR}/Preprocessed-Info.plist"
+</span><span class='line'>rootPlistFileDestination="${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist"
+</span><span class='line'>
+</span><span class='line'>if [ ${CONFIGURATION} = "Debug" ]; then
+</span><span class='line'>  # Version 2.6.3
+</span><span class='line'>  # Build @ 2014-01-16 12:16 (dev.298)
+</span><span class='line'>  versionPrefix=" (dev."
+</span><span class='line'>  date=$(date "+@ %Y-%m-%d %H:%M")
+</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)
+</span><span class='line'>  BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}")"
+</span><span class='line'>else
+</span><span class='line'>  # Version 2.6.3 @ 2014.01.16
+</span><span class='line'>  # Build  276
+</span><span class='line'>  date=$(date "+ @ %Y.%m.%d")
+</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)$date
+</span><span class='line'>  BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFileSource)
+</span><span class='line'>fi
+</span><span class='line'>
+</span><span class='line'># ここのPreferenceSpecifiers:16, 17は各アプリによって変更
+</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION" $rootPlistFileDestination
+</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER" $rootPlistFileDestination
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
+
+<p><img src="http://goozenlab.github.com/goozenlab/images/2015-01-26_versionning_dev.png" width="300">
+<img src="http://goozenlab.github.com/goozenlab/images/2015-01-26_versionning_app.png" width="300"></p>
+
+<p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;About&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;FooterText&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;
+</span><span class='line'>  &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;1.0&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Version&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;app_version_number&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;
+</span><span class='line'>  &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;1&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Build&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;app_build_number&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[コタバル、マレーシアのインターネット事情]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru/"/>
+    <updated>2015-01-17T10:58:00+08:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru</id>
+    <content type="html"><![CDATA[<p>クリスマスから年末にかけて大洪水に見舞われたコタバルにくる。宿にも胸のあたりまで水があがってきたようで一階の客室部分はまだ手入れが必要の事だが、宿のおいちゃんはあまり奇麗にする気が無いように見える。キャメロンハイランドより内部をちょっと回ってきたけれど、奥地の森林伐採が少なからず影響しているように思える。</p>
+
+<p>町も、他の都市と同じく、ただ単にゴーストタウン化をしているのか、洪水の影響なのかが分からないが、人は少し多めだが経済活動は控えめな感じに見える。でも、スーパーは一カ所100メーター四方に４つある。
+インフォメーションセンターもモンスーンシーズンの12月から2月は閉鎖と書いてあるので、ローシーズンまっただ中という事だけなのだろう。</p>
+
+<p>しかしながら、幸運な事に天気はマレーシアに来て一番良い。午後四時、29℃/49%と快適。</p>
+
+<!-- more -->
+
+
+<p>宿にて（洪水後、放置状態なっていたネット環境を、なぜか私がコンピューターとルーター設定をする。）<br/>
+下り：3.42Mps<br/>
+上り：0.40Mps</p>
+
+<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[キャメロンハイランド、マレーシアのインターネット事情]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands/"/>
+    <updated>2015-01-06T19:00:00+08:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands</id>
+    <content type="html"><![CDATA[<p>マレーシアの避暑地、キャメロンハイランドにくる。涼しいが曇りがち、夕立も多い。</p>
+
+<p>図書館では日本の書籍を発見し、個人商店の冷蔵庫内にちくわと納豆が売っているのを見つける。妙な組み合わせだ。棚にはそばと昆布だしのもと、これは正しい、なぜかほっとする。</p>
+
+<p>ちょっと、ここでゆっくりと思っていたのだが、中華素食屋はないし、インド料理もここの町の物はあまり美味しくない。宿は高いし、飯も高い。しかも、天気も悪い。しかし、行きたいところが無いし、見つからない。タイに居れば良かったと激しく後悔。</p>
+
+<p>２月の初めにKLからカトマンズ行きのチケットがあるが、マレーシアにいなくてはいけない訳ではないので、タイの南部にでも行くかな、と思い始める。</p>
+
+<!-- more -->
+
+
+<p>宿にて<br/>
+下り：1.24Mps<br/>
+上り：0.26Mps</p>
+
+<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+
+<p>で、ふとネット上で、
+<a href="http://www.huffingtonpost.com/minube/the-top-50-cities-to-see_b_5547308.html">The Top 50 Cities To See In Your Lifetime</a>
+という記事を見つける。行ってないところが６カ所、でも旅のモーティベーションにはならん。</p>
+
+<!--![Melaka]()-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2015年の海外年明け]]></title>
@@ -47,11 +236,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[マラッカ、イポーのインターネット事情]]></title>
+    <title type="html"><![CDATA[イポー、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh/"/>
     <updated>2014-12-31T19:04:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh</id>
-    <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
+    <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
 
 <p>マレーシア第四の都市だそうです。中華系の人たちが多いのか、リトルインディアがすごくリトルです。レストランも少ない。しかも、仏教徒も少ないのか、経済素食屋（ベジタリアン）も見つけられん。。食うのに困ってます。</p>
 
@@ -266,7 +455,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 </ol>
 
 
-<p>と、期待をよい意味で裏切られました、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思います。（特にセカンドマシーンして）</p>
+<p>と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）</p>
 
 <p>ちょっとうれしかったのでポストする。</p>
 ]]></content>
@@ -463,79 +652,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 <li>メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sati v1.5.5]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155/"/>
-    <updated>2013-08-08T13:08:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/08/sati-v155</id>
-    <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
-（キャンセルしますか -> はい -> 変化無し。。。）</p>
-
-<ul>
-<li>瞑想時間が切れるまでほっておく</li>
-<li>３０分以上たってキャンセルする</li>
-<li>プログラムを終了させる</li>
-</ul>
-
-
-<p>で、スタートの状態に戻ります。
-確りテストをするのを忘れてました。</p>
-
-<p>まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、
-あまり気分のよい物では無いと思います。</p>
-
-<p>修正版が申請中です。
-それまでは途中キャンセル無しに瞑想生活を送ってください。</p>
-
-<p>よろしくお願いします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sati v1.5.4]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154/"/>
-    <updated>2013-08-06T18:29:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/08/06/sati-v154</id>
-    <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
-ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
-
-<p>そして、割と厳しかった途中でのキャンセル時の処理を変更。
-３０分以上時間が経った時には瞑想をカウントするようにしました。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png" width="320"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[listaria v1.5.4]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154/"/>
-    <updated>2013-07-30T16:33:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154</id>
-    <content type="html"><![CDATA[<p>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
-パパイヤリリースです。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-icons.png" title="" ></p>
-
-<h3>使い方</h3>
-
-<p>メモ欄下の数字の入ったボックスをタップ、スワイプにて設定をします。<br/>
-タップではちょっと細かい設定ができます。（無し、フル、上旬、下旬の順）<br/>
-スワイプは一気に設定したり設定を解除したりできます。
-（灰色からスワイプした時はオンになり、オンのグリーンからスワイプした時はオフになります。）</p>
-
-<p>食材リストでは、旬の設置がされている時期には左肩に緑のドットが表示されます。
-ショッピングリストではちょっと表示がうざったくなってしまうと思ったので<strong>食材リスト</strong>のページでのみ表示されます。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-detail.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-season.png" width="320"></p>
-
-<p>※ 夏と言えば枝豆ですよね。</p>
-
-<p>これで、取りあえずiOS6向けのアップデートは終了。iOS7に向けて移行作業に入ります。（ついでにカンボジアに移動の予定）</p>
 ]]></content>
   </entry>
   

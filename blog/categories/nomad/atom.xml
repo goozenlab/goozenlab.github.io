@@ -4,7 +4,7 @@
   <title><![CDATA[Category: nomad | goozenlab]]></title>
   <link href="http://goozenlab.github.com/goozenlab/blog/categories/nomad/atom.xml" rel="self"/>
   <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-01T20:22:47+08:00</updated>
+  <updated>2015-01-17T21:23:25+08:00</updated>
   <id>http://goozenlab.github.com/goozenlab/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,11 +14,65 @@
 
   
   <entry>
-    <title type="html"><![CDATA[マラッカ、イポーのインターネット事情]]></title>
+    <title type="html"><![CDATA[コタバル、マレーシアのインターネット事情]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru/"/>
+    <updated>2015-01-17T10:58:00+08:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru</id>
+    <content type="html"><![CDATA[<p>クリスマスから年末にかけて大洪水に見舞われたコタバルにくる。宿にも胸のあたりまで水があがってきたようで一階の客室部分はまだ手入れが必要の事だが、宿のおいちゃんはあまり奇麗にする気が無いように見える。キャメロンハイランドより内部をちょっと回ってきたけれど、奥地の森林伐採が少なからず影響しているように思える。</p>
+
+<p>町も、他の都市と同じく、ただ単にゴーストタウン化をしているのか、洪水の影響なのかが分からないが、人は少し多めだが経済活動は控えめな感じに見える。でも、スーパーは一カ所100メーター四方に４つある。
+インフォメーションセンターもモンスーンシーズンの12月から2月は閉鎖と書いてあるので、ローシーズンまっただ中という事だけなのだろう。</p>
+
+<p>しかしながら、幸運な事に天気はマレーシアに来て一番良い。午後四時、29℃/49%と快適。</p>
+
+<!-- more -->
+
+
+<p>宿にて（洪水後、放置状態なっていたネット環境を、なぜか私がコンピューターとルーター設定をする。）<br/>
+下り：3.42Mps<br/>
+上り：0.40Mps</p>
+
+<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[キャメロンハイランド、マレーシアのインターネット事情]]></title>
+    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands/"/>
+    <updated>2015-01-06T19:00:00+08:00</updated>
+    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands</id>
+    <content type="html"><![CDATA[<p>マレーシアの避暑地、キャメロンハイランドにくる。涼しいが曇りがち、夕立も多い。</p>
+
+<p>図書館では日本の書籍を発見し、個人商店の冷蔵庫内にちくわと納豆が売っているのを見つける。妙な組み合わせだ。棚にはそばと昆布だしのもと、これは正しい、なぜかほっとする。</p>
+
+<p>ちょっと、ここでゆっくりと思っていたのだが、中華素食屋はないし、インド料理もここの町の物はあまり美味しくない。宿は高いし、飯も高い。しかも、天気も悪い。しかし、行きたいところが無いし、見つからない。タイに居れば良かったと激しく後悔。</p>
+
+<p>２月の初めにKLからカトマンズ行きのチケットがあるが、マレーシアにいなくてはいけない訳ではないので、タイの南部にでも行くかな、と思い始める。</p>
+
+<!-- more -->
+
+
+<p>宿にて<br/>
+下り：1.24Mps<br/>
+上り：0.26Mps</p>
+
+<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+
+<p>で、ふとネット上で、
+<a href="http://www.huffingtonpost.com/minube/the-top-50-cities-to-see_b_5547308.html">The Top 50 Cities To See In Your Lifetime</a>
+という記事を見つける。行ってないところが６カ所、でも旅のモーティベーションにはならん。</p>
+
+<!--![Melaka]()-->
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[イポー、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh/"/>
     <updated>2014-12-31T19:04:00+08:00</updated>
     <id>http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh</id>
-    <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
+    <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
 
 <p>マレーシア第四の都市だそうです。中華系の人たちが多いのか、リトルインディアがすごくリトルです。レストランも少ない。しかも、仏教徒も少ないのか、経済素食屋（ベジタリアン）も見つけられん。。食うのに困ってます。</p>
 
@@ -77,54 +131,6 @@
 <p>街に居る近くの村からでてきた物売りのおばちゃん達が気合いが入ってます。</p>
 
 <p><img src="https://dl.dropbox.com/u/163521/photo/R0012078.jpg" alt="MuangSing" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ルアンナムタ、ラオスのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/13/internet-luangnamtha/"/>
-    <updated>2013-05-13T19:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/13/internet-luangnamtha</id>
-    <content type="html"><![CDATA[<p>昔は穏やかな街であったそうなルアンナムタ。タにアクセントがきます。道ゆくトラックを除けば静かなもの。平日でも日曜のような雰囲気があります。</p>
-
-<p>フェイサイというタイとの国境の街からも以前は７時間とか掛かっていたらしいですが、いまでは道も整備され移動時間３時間半。
-半分に短縮されてます。中国からの道も同様に整備され中国からのトラックが激増中です。</p>
-
-<p>Wifi付きの宿は増えてきているようですがスピーはちょっと遅めです。</p>
-
-<!-- more -->
-
-
-<p>下り：0.50Mps<br/>
-上り：0.22Mps<br/>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-
-<p>日曜の午後なのに誰もいないサッカーグラウンド。</p>
-
-<p><img src="https://dl.dropbox.com/u/163521/photo/R0012079.jpg" alt="Field of Luang NamTha" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[チェンライ、タイのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/04/23/internet-chianrai/"/>
-    <updated>2013-04-23T20:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/04/23/internet-chianrai</id>
-    <content type="html"><![CDATA[<p>酷暑のタイ、ソンクランはチェンマイで過ごし、ちょっと避暑のためちょっと北のチェンライにいます。
-ここ数日、知らずにタガメをすり潰したペーストを野菜に付けて毎日たべていました。ステンレスボールの中のペーストに思わせぶりに数匹ペッタと張り付いてるのを見て発覚。これが割と美味しいのですよ。。２重のショックで今日の夕飯はパイナップルと豆乳。小さなおだやかな街です。</p>
-
-<p>そして、ここにもありました沈没宿。ネットは部屋では入りませんが共有エリアでwifiの利用が可能。速度のほうは、</p>
-
-<!-- more -->
-
-
-<p>下り：1.84Mps<br/>
-上り：0.42Mps<br/>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-
-<p>で、サーバーが何故かお隣のラオス、ビエンチャンになっていました。ちょっと不思議。</p>
-
-<p><img src="https://dl.dropbox.com/u/163521/photo/R0012065.jpg" alt="Clock Tower at Chiangrai" /></p>
 ]]></content>
   </entry>
   

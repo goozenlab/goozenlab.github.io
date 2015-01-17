@@ -1,0 +1,441 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>(a)のちょっと詳しい使い方  | goozenlab</title>
+
+<meta name="author" content="jin"> 
+
+<meta name="description" content="使い方ページ アプリについて 使い勝手は拙作のリトリストを踏襲し、タスクをテキスト形式で管理したいとの事からのスタート、ネット上で &#8221;todo.txt&#8221; という物を見つけそのクライアントを作ることがプロジェクトの始まり。 しかしながら、&#8221;todo.txt&# &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="goozenlab" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+      <!--  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script> -->
+	<meta name="google-site-verification" content="zRArvI9q2p-0UNtsXG84wSNFwaHQDoCLkjLOHFpRTy0" />
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">goozenlab</a></h1>
+<h4>. . .</h4>
+<nav id="main-nav"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:goozenlab.github.com/goozenlab">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="page">    
+	<h2 class="title">(A)のちょっと詳しい使い方</h2>
+    
+	<div class="meta">
+        <span>v0.8.0 タスク管理をマークダウンで</span>
+        <span>
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2015-01-08T14:42:00+08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2015</time></span>
+	</div>
+    
+    
+	<div class="entry-content"><h1>使い方ページ</h1>
+
+<h2>アプリについて</h2>
+
+<p>使い勝手は拙作のリトリストを踏襲し、タスクをテキスト形式で管理したいとの事からのスタート、ネット上で &#8221;<strong>todo.txt</strong>&#8221; という物を見つけそのクライアントを作ることがプロジェクトの始まり。</p>
+
+<p>しかしながら、&#8221;todo.txt&#8221; の形式がちょっと好きになれず、書式は結局、ブログの更新でも使っている、<strong>マークダウン形式</strong>に変更。少しtodo.txtの要素を取り込み、シンプルな形に整えました。</p>
+
+<p>入力はコンピューターをメイン、閲覧はiOS端末。 一日の始めや、終わりに、ジーーッとリストを眺め、サッとやる事の整理をコンピューターを使って書き出し、日中はiOS端末でタスクの確認・更新  というような使い方を想定して作りました。</p>
+
+<h2>Dropboxへの認証</h2>
+
+<p>初回のアプリケーション起動時に認証のプロセスの画面が立ち上がります。キャンセルし、使い続ける事もできます。ファイルをアップロードする前に使い勝手を確認する事ができます。</p>
+
+<p>それ以降のDropboxへの接続はナビゲーションバーの左側のボタンを押して認証プロセスを行います。</p>
+
+<p>Dropboxに接続に成功するとDropboxフォルダーに新しいAppsフォルダーとその中に(a)フォルダーが作られ、さらにその中にtodo.mdというファイルが端末よりコピーされます。</p>
+
+<p>ファイルの保管場所は<code>~/Dropbox/Apps/(a)/todo.md</code>です（固定）</p>
+
+<h2>todo.md 書式の説明</h2>
+
+<p>マークダウンの形式にそっていますので、ブログをマークダウンで書いている人などは違和感無く使うことができると思います。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'># メインタイトル
+</span><span class='line'>
+</span><span class='line'>## 簡単な説明
+</span><span class='line'>3. 左の番号は色番号です: 3は黄色
+</span><span class='line'>6. **強調**：左肩に赤いドットが表示されます
+</span><span class='line'>1. タスク：メモメモメモ付き 
+</span><span class='line'>4. 期限付きタスク BY! 2015/03/10 17:00
+</span><span class='line'>*  イベントの日時等は @2015-02-25 12:00
+</span><span class='line'>6. x 2015-01-15 14:00 完了タスク 
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>4. 並び順は iOSでの端末の表示順と同じ
+</span><span class='line'>1. 2行以上あける： プロジェクトなしのタスクして扱われます
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="left" src="/images/manual-a-todomd-MouSnapShot.png">
+※下のスクリーンショットはこのFileをつかってます</p>
+
+<p><img class="left" src="/images/manual-a-MainView.png" width="300">
+<img class="left" src="/images/manual-a-MainView-Cataegory.png" width="300">
+<img class="left" src="/images/manual-a-MainView-etc.png" width="300"></p>
+
+<ol>
+<li><code>#</code> h1ヘッダーはナビゲーションバーのメインタイトルになります</li>
+<li><code>##</code>のh2はプロジェクトとしてナビゲーションバーのタイトルになります</li>
+<li><code>1-9.</code> はバーの色を表します</li>
+<li><code>*, +</code> で入力したタスクはバーがグレーになります</li>
+<li><code>タイトル</code>：<code>メモ</code>（:または：）</li>
+<li>メモがある時は<code>左のバーに切り込み</code>が入ります</li>
+<li>強調されたタスクは左肩に赤いドットが表示され、RedHot Listとアプバッジに登録されます</li>
+<li>日付のフォーマットは <code>2015-11-11 12:30</code> がデフォルトです。読み込みは <code>2015/11/11 12:30</code> でも可能です（-の代わりに/でも）</li>
+<li>期日の設定は &#8221;<code>@日付</code>&#8221; もしくは &#8221;<code>BY! 日付</code>&#8220;で表します</li>
+<li>終了したタスクは、タスクの前に &#8221;<code>x 完了日時</code>&#8220;がつきます</li>
+</ol>
+
+
+<h2>(a)の使い方</h2>
+
+<h3>ナビゲーションバー</h3>
+
+<ol>
+<li>左右へのスワイプ：プロジェクトリスト間の移動<br/>
+<img class="left" src="/images/manual-a-MainView-NavBar.png" width="250">
+<img class="left" src="/images/manual-a-MainView-Cataegory-NavBar.png" width="250">
+<img class="left" src="/images/manual-a-MainView-etc-NavBar.png" width="250"></li>
+<li>ロングタップ：左肩にドットの表示されたタスクのリスト、ロングタップでもとにリストに戻る<br/>
+<img class="left" src="/images/manual-a-MainView-RedDot-NavBar.png" title="" ></li>
+<li>上方向にスワイプ：期日の設定がされたタスクのリスト、左スワイプかロングタップでもとにリストに戻る<br/>
+<img class="left" src="/images/manual-a-MainView-DueDate-NavBar.png" title="" ></li>
+</ol>
+
+
+<h3>テーブルセル</h3>
+
+<h4>タップ</h4>
+
+<p><img src="/images/manual-a-cell-detail.png" title="" ></p>
+
+<ol>
+<li>シングルタップ：メモ -(ローテーション-)> 期日の表示</li>
+<li>ダブルタップ：タスクの編集</li>
+<li>ロングタップ：左肩に赤ドット、強調表示に変更</li>
+<li>右へスワイプ：左のバーよりスワイプで色の変更<br/>
+<img src="/images/manual-a-color-swipe.png" width="400"></li>
+<li>左へスワイプ：削除と完了ボタン<br/>
+<img src="/images/manual-a-SwipeLeft.png" width="400">
+
+<ol>
+<li>完了のボタンを押すと、ボタンを押した時間が完了時間として登録されます。</li>
+<li>※ 完了の解除方法
+
+<ol>
+<li>完了済みのタスクに再度完了のボタンをタップ</li>
+<li>編集ページにてもチェックマークの入ったボタンをタップ</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+
+<h4>左バーの色変更の順番</h4>
+
+<p><img class="left" src="/images/manual-color-default.png"> <-Normal , Kawaii ->
+<img class="left" src="/images/manual-color-kawaii.png"></p>
+
+<h4>期日と色の変化</h4>
+
+<p>期日設定がある時は右端に色がつきます。期日が近づくとともに色が変化します。最後の赤ドットは期日を超えた印になります。
+<img class="left" src="/images/manual-a-color-duedate.png" title="" ></p>
+
+<h2>タスクの追加と編集</h2>
+
+<p> 追加は、ナビゲーションバーの<strong>＋</strong>ボタンより、編集はタスクの<strong>ダブルタップ</strong>で編集画面に移行します。</p>
+
+<p>期日の設定は<br/>
+ 色のついたドットが期日のオン・オフのボタンの役割しています。(色は期日に合わせ変化します)<br/>
+ そして、オンになった時に表示される日付をタップすると日時を設定する事ができます。</p>
+
+<p><img class="left" src="/images/manual-a-DetailView.png" width="300">
+<img class="left" src="/images/manual-a-DetailView-DatePicker.png" width="300"></p>
+
+<h2>同期について</h2>
+
+<p>スリープ・ロック時にクラウドにアップロードし、アンロック・スリープから立上がる時に更新があればダウンロードします。
+少し慣れが必要かもしれませんが、特に複数のiOS端末で利用する場合は</p>
+
+<ul>
+<li>「ホームボタンを押す」＝「クラウドに保存」</li>
+<li>「スリープ・ロックから復帰」＝「クラウドからファイル更新」</li>
+</ul>
+
+
+<p>という事を、念頭において使ってください。完全な同期ではありませんので、ファイルの更新のタイミングをほんの少し意識しつつ使ってもらえるとありがたいです。</p>
+
+<h3>リンクの解除方法</h3>
+
+<p>ホーム> 設定> (a) よりDropboxのリンクを解除を<strong>オン</strong>します。次回立ち上げ時にリンクが解除されます。ナビゲーションバーの左に接続のボタンが表示されます。再接続、アカウントの変更等をするときはこのボタンより行います。（画面上にボタンを配置する事も考えましたが、頻繁にアクセスする物でなく見た目も余計なボタンが入るのを嫌って設定より行う事にしています。）</p>
+
+<p><img src="/images/manual-a-Setting-unlink.png" alt="Unlink" /></p>
+
+<h2>ホーム> 設定> (a)</h2>
+
+<h3>表示の設定</h3>
+
+<ol>
+<li>フォントを選択</li>
+<li>カラーモードの選択<br/>
+<img class="left" src="/images/manual-a-MainView.png" width="300">
+<img class="left" src="/images/manual-a-ColorModeDark.png" width="300">
+<img class="left" src="/images/manual-a-ColorModeKawaii.png" width="300"><br/>
+※ Kawaiiモードでの赤ドットはピンクな<strong>ハートマーク</strong>になります。</li>
+</ol>
+
+
+<h3>書出し・読み込み書式の設定</h3>
+
+<p>設定よりいくつかの項目は書式を変更する事ができます。ご自身が見やすいと思われる物に変更してください。</p>
+
+<ol>
+<li>日付書式：2015-12-31, 12-31-2015, 31-12-2015 の３種類</li>
+<li>強調の表記を **強調** か __強調__ の選択</li>
+<li>左のバーがクレーのタスクの表記：*, +, -のどれか</li>
+</ol>
+
+
+<!-- 3. 日付のヘッダーを"BY!"を自分好みに（例、"期限："とか？）-->
+
+
+<h3>その他</h3>
+
+<ol>
+<li>Dropboxのリンクを解除：次回のアプリの立ち上げ時に解除されます。</li>
+</ol>
+
+
+<h2>なんかよく分からない状況になってしまった時</h2>
+
+<p>データーが自分が思っているファイルに定まらず、勝手に同期をされてしまっている時は、</p>
+
+<ol>
+<li>iOS端末の通信が生きている事を確認</li>
+<li>アプリとdropboxの接続ができているかの確認はアプリのナビゲーションバーの左に何も無ければ同期ができているという事です</li>
+<li>iOS端末にてアプリを立ち上げ、データーを確認し、ホームボタンを押しスリープ状態にします</li>
+<li>この作業によって iOS端末のデーターがdropboxにアップロードされます</li>
+<li>コンピューターにてホームディレクトリのDropbox/Apps/(a)/todo.mdを編集、保存します</li>
+<li>iOS端末にてアプリを立ち上げます</li>
+<li>画面に進行中画面が表示され、Dropbox上のファイルがダウンロードされます</li>
+<li>データーが更新され、コンピューターとiOS端末のファイルが同期されます</li>
+</ol>
+
+
+<p>※同期における注意点※</p>
+
+<ul>
+<li>「ホームボタンを押す」＝「クラウドに保存」  (※ ローカルのファイルが優先されます)</li>
+<li>「スリープ・ロックから復帰」＝「クラウドからファイル更新」</li>
+</ul>
+
+
+<h3>おまけ</h3>
+
+<h4>ちょっとしたこだわり</h4>
+
+<p>一画面になるべくビッタリにテーブルセルが収まるようにセルの高さは端末によって微調整 (ip4:60, ip5:63, ip6:67px) してます。一番下のところが欠けてたり、少しだけ表示されていたりするとあまり美しくないと、、妙なところにこだわりました。</p>
+
+<h4>アプリの名前</h4>
+
+<p>アプリ名は珍しく初期段階で思いつきました。todo.txtで使われる書式の優先順位：高に付けられる (A) 。で、ちょっと柔らかく小文字の <strong>(a)</strong> に。</p>
+
+<p>書式の変更とともにアプリ名を変更しようかとも思いましたが、(a) が日本語だと、<strong>「かっこ、えー」</strong> -> <strong>「格好えー」</strong>と「格好いい」と響きが近い事に気づき、そのままにしました。</p>
+
+<p>アプリのネーミングは個人開発者としてはかなりの悩みどころ、シンプルで響きも良いの物はなかなか出てこないので、名前とアプリ自体の関連性が薄くなってしまうが玉にきずだが、ご勘弁のほど。（そんなに難しい事ではないので、いずれ対応するかも？使いたい人います？）</p>
+
+<h4>ぼやき</h4>
+
+<p>終わったタスクをどうすべきか、、自動で消してしまうか、ログブックを作って放り込むか。。。自分は捨てる派なんだが、これをやったっけという意味での確認には必要な気もするが、、とっておく人の方が多いのでしょうか？？、</p>
+
+<p>終了済みのタスクの表示の仕方ももう少し分かりやすくスマートな方法があるような気がする。。</p>
+
+<p>テキストにてダァーーとリストが並んでいるの眺めると全体がイメージできるような気がします。全体がイメージできると何かこう、、、何かが浮かんでくるような、、、気がしていて、、、</p>
+
+<p>とは言っても、ノマド中の私にはやるべき事が沢山ある訳では全くないのですが、、</p>
+</div>
+
+
+    
+
+</article>
+
+
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+
+</div>
+	<footer id="footer" class="inner"><!-- Revolver Maps
+<script type="text/javascript" src="http://jh.revolvermaps.com/2/4.js?i=7uoq4kl5qsl&amp;m=5&amp;h=85&amp;c=ffc000&amp;r=30" async="async"></script>
+-->
+<!-- Who's among us
+<script id="_wauhvo">var _wau = _wau || []; _wau.push(["small", "xtunim1mxx66", "hvo"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+ -->
+<br />
+Powered by Octopress and design theme of <a href="http://github.com/macjasp/cleanpress">CleanPress</a> by carmo.org.uk.
+<br />
+Copyright &copy; 2015
+
+    jin
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'goozenlabgh';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://goozenlab.github.com/goozenlab/iapp/a/manual.html';
+        var disqus_url = 'http://goozenlab.github.com/goozenlab/iapp/a/manual.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+</body>
+</html>
