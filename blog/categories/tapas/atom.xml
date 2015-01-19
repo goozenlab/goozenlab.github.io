@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tapas | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/tapas/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/tapas/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/10/update/"/>
+    <link href="http://goozenlab.com/blog/2014/10/10/update/"/>
     <updated>2014-10-10T13:08:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/10/update</id>
+    <id>http://goozenlab.com/blog/2014/10/10/update</id>
     <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
 
 <p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[tapas v1.5.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150/"/>
+    <link href="http://goozenlab.com/blog/2013/07/24/tapas-v150/"/>
     <updated>2013-07-24T14:57:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/24/tapas-v150</id>
+    <id>http://goozenlab.com/blog/2013/07/24/tapas-v150</id>
     <content type="html"><![CDATA[<p>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
 大幅なアップデートではありませんが、少し手をいれました。</p>
 
@@ -51,9 +51,9 @@
   
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock/"/>
+    <link href="http://goozenlab.com/blog/2013/07/10/color-lock/"/>
     <updated>2013-07-10T17:07:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock</id>
+    <id>http://goozenlab.com/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
 <p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
@@ -70,9 +70,9 @@
   
   <entry>
     <title type="html"><![CDATA[Update AdMob 6.2.1 for lite version]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/01/14/admob-update/"/>
+    <link href="http://goozenlab.com/blog/2013/01/14/admob-update/"/>
     <updated>2013-01-14T14:53:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/01/14/admob-update</id>
+    <id>http://goozenlab.com/blog/2013/01/14/admob-update</id>
     <content type="html"><![CDATA[<p>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。</p>
 
 <p>そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。</p>
@@ -89,9 +89,9 @@
   
   <entry>
     <title type="html"><![CDATA[年末感謝週末セール]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/11/19/sale-on-weekend/"/>
+    <link href="http://goozenlab.com/blog/2012/11/19/sale-on-weekend/"/>
     <updated>2012-11-19T00:10:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/11/19/sale-on-weekend</id>
+    <id>http://goozenlab.com/blog/2012/11/19/sale-on-weekend</id>
     <content type="html"><![CDATA[<p>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。</p>
 
 <p>そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</p>

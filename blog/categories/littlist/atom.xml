@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: littlist | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/littlist/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/littlist/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[littlist 2.6.3]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning/"/>
+    <link href="http://goozenlab.com/blog/2015/01/17/versionning/"/>
     <updated>2015-01-17T20:15:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning</id>
+    <id>http://goozenlab.com/blog/2015/01/17/versionning</id>
     <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してアップしました。ついでにアプリの名前も小文字に変更。</p>
 
 <!-- more -->
@@ -110,9 +110,9 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
   
   <entry>
     <title type="html"><![CDATA[littlist v2.6.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260/"/>
+    <link href="http://goozenlab.com/blog/2014/10/30/littlist-v260/"/>
     <updated>2014-10-30T20:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260</id>
+    <id>http://goozenlab.com/blog/2014/10/30/littlist-v260</id>
     <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
 
 <p>ちょっとした使い勝手の変更
@@ -125,9 +125,9 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
   
   <entry>
     <title type="html"><![CDATA[littlis v2.5.6]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256/"/>
+    <link href="http://goozenlab.com/blog/2013/07/20/littlist-v256/"/>
     <updated>2013-07-20T08:07:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/20/littlist-v256</id>
+    <id>http://goozenlab.com/blog/2013/07/20/littlist-v256</id>
     <content type="html"><![CDATA[<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
 タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
 
@@ -147,9 +147,9 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
   
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock/"/>
+    <link href="http://goozenlab.com/blog/2013/07/10/color-lock/"/>
     <updated>2013-07-10T17:07:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock</id>
+    <id>http://goozenlab.com/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
 <p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
@@ -166,9 +166,9 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
   
   <entry>
     <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update/"/>
+    <link href="http://goozenlab.com/blog/2013/05/25/datepicker-update/"/>
     <updated>2013-05-25T13:39:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/25/datepicker-update</id>
+    <id>http://goozenlab.com/blog/2013/05/25/datepicker-update</id>
     <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
 iOS5では問題はなく、二三日前に気が付きました。</p>
 

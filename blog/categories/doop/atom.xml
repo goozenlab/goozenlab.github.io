@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: doop | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/doop/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/doop/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162/"/>
+    <link href="http://goozenlab.com/blog/2014/11/20/doop-v162/"/>
     <updated>2014-11-20T17:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162</id>
+    <id>http://goozenlab.com/blog/2014/11/20/doop-v162</id>
     <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
 
 <p>入力部のアイコンも新しくしました。</p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[doop v1.5.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150/"/>
+    <link href="http://goozenlab.com/blog/2013/07/29/doop-v150/"/>
     <updated>2013-07-29T10:41:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/29/doop-v150</id>
+    <id>http://goozenlab.com/blog/2013/07/29/doop-v150</id>
     <content type="html"><![CDATA[<p>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。</p>
 
 <ul>
@@ -71,9 +71,9 @@
   
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock/"/>
+    <link href="http://goozenlab.com/blog/2013/07/10/color-lock/"/>
     <updated>2013-07-10T17:07:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/10/color-lock</id>
+    <id>http://goozenlab.com/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
 <p>以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
@@ -90,9 +90,9 @@
   
   <entry>
     <title type="html"><![CDATA[doop v1.4.4]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/06/27/doop-v144/"/>
+    <link href="http://goozenlab.com/blog/2013/06/27/doop-v144/"/>
     <updated>2013-06-27T18:47:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/06/27/doop-v144</id>
+    <id>http://goozenlab.com/blog/2013/06/27/doop-v144</id>
     <content type="html"><![CDATA[<p>ナビゲーションバーの長押しでソートを切り替える機能を追加しました。
 今まで通りのソート（メインでは平均時間順、他のページでは色毎）と平均時間を迎える予定日時が近くある物のソート順に切り替えができます。
 パーセントによるソートにしようかとも思いましたが、それですと平均時間が長い物と少ない物で期日を迎えるまでの日付でバラツキが出てしまいます。少し混乱するように思えます。パーセントはあくまでの目安なので期日が近いものを前に持ってきてます。</p>
@@ -108,9 +108,9 @@
   
   <entry>
     <title type="html"><![CDATA[doop v1.4.3]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/29/doop-v143/"/>
+    <link href="http://goozenlab.com/blog/2013/05/29/doop-v143/"/>
     <updated>2013-05-29T09:32:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/29/doop-v143</id>
+    <id>http://goozenlab.com/blog/2013/05/29/doop-v143</id>
     <content type="html"><![CDATA[<p>久しくアップデートしていないdoopに少し手を入れました。</p>
 
 <p>カラーモードの追加と右のバーを単色とグラフ表示の切り替え可能にしました。

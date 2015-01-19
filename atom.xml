@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[littlist 2.6.3]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning/"/>
+    <link href="http://goozenlab.com/blog/2015/01/17/versionning/"/>
     <updated>2015-01-17T20:15:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/versionning</id>
+    <id>http://goozenlab.com/blog/2015/01/17/versionning</id>
     <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してアップしました。ついでにアプリの名前も小文字に変更。</p>
 
 <!-- more -->
@@ -81,8 +81,8 @@
 
 <p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2015-01-26_versionning_dev.png" width="300">
-<img src="http://goozenlab.github.com/goozenlab/images/2015-01-26_versionning_app.png" width="300"></p>
+<p><img src="http://goozenlab.com/images/2015-01-26_versionning_dev.png" width="300">
+<img src="http://goozenlab.com/images/2015-01-26_versionning_app.png" width="300"></p>
 
 <p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
 
@@ -150,9 +150,9 @@
   
   <entry>
     <title type="html"><![CDATA[コタバル、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru/"/>
+    <link href="http://goozenlab.com/blog/2015/01/17/internet-kotabaru/"/>
     <updated>2015-01-17T10:58:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/17/internet-kotabaru</id>
+    <id>http://goozenlab.com/blog/2015/01/17/internet-kotabaru</id>
     <content type="html"><![CDATA[<p>クリスマスから年末にかけて大洪水に見舞われたコタバルにくる。宿にも胸のあたりまで水があがってきたようで一階の客室部分はまだ手入れが必要の事だが、宿のおいちゃんはあまり奇麗にする気が無いように見える。キャメロンハイランドより内部をちょっと回ってきたけれど、奥地の森林伐採が少なからず影響しているように思える。</p>
 
 <p>町も、他の都市と同じく、ただ単にゴーストタウン化をしているのか、洪水の影響なのかが分からないが、人は少し多めだが経済活動は控えめな感じに見える。でも、スーパーは一カ所100メーター四方に４つある。
@@ -173,9 +173,9 @@
   
   <entry>
     <title type="html"><![CDATA[キャメロンハイランド、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands/"/>
+    <link href="http://goozenlab.com/blog/2015/01/06/internet-cameron_highlands/"/>
     <updated>2015-01-06T19:00:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/06/internet-cameron_highlands</id>
+    <id>http://goozenlab.com/blog/2015/01/06/internet-cameron_highlands</id>
     <content type="html"><![CDATA[<p>マレーシアの避暑地、キャメロンハイランドにくる。涼しいが曇りがち、夕立も多い。</p>
 
 <p>図書館では日本の書籍を発見し、個人商店の冷蔵庫内にちくわと納豆が売っているのを見つける。妙な組み合わせだ。棚にはそばと昆布だしのもと、これは正しい、なぜかほっとする。</p>
@@ -204,9 +204,9 @@
   
   <entry>
     <title type="html"><![CDATA[2015年の海外年明け]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2015/01/01/new-year/"/>
+    <link href="http://goozenlab.com/blog/2015/01/01/new-year/"/>
     <updated>2015-01-01T20:00:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2015/01/01/new-year</id>
+    <id>http://goozenlab.com/blog/2015/01/01/new-year</id>
     <content type="html"><![CDATA[<p>年が明けた。旅・ノマドライフも、日本への出入りはあるのだが10年が経った。光陰矢の如しというか、十年一日というか。３０を超えてからの時間の流れが早くなり、４０を超えたあたりからはスザマしい速さで過ぎていきます。びっくりですな。</p>
 
 <p>同じところで年は越さないと決めていて、居心地のよかったチェンマイをでて、本当はカンボジアに行くつもりだったのだが、何にも無いマレーシアへくる。そして、さらに何も無い、もやしで有名なイポーで年越。カラオケバーからカウントダウンの音が聞こえたり、小さな花火の音もきこえた。別に何かを期待していた訳ではないが、地味な年越しでした。</p>
@@ -237,9 +237,9 @@
   
   <entry>
     <title type="html"><![CDATA[イポー、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh/"/>
+    <link href="http://goozenlab.com/blog/2014/12/31/internet-ipoh/"/>
     <updated>2014-12-31T19:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/31/internet-ipoh</id>
+    <id>http://goozenlab.com/blog/2014/12/31/internet-ipoh</id>
     <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
 
 <p>マレーシア第四の都市だそうです。中華系の人たちが多いのか、リトルインディアがすごくリトルです。レストランも少ない。しかも、仏教徒も少ないのか、経済素食屋（ベジタリアン）も見つけられん。。食うのに困ってます。</p>
@@ -260,9 +260,9 @@
   
   <entry>
     <title type="html"><![CDATA[マラッカ、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/24/internet-melaka/"/>
+    <link href="http://goozenlab.com/blog/2014/12/24/internet-melaka/"/>
     <updated>2014-12-24T18:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/24/internet-melaka</id>
+    <id>http://goozenlab.com/blog/2014/12/24/internet-melaka</id>
     <content type="html"><![CDATA[<p>１０年近く前にきた事のあるマラッカ。穏やかな地方都市のイメージがあったのですが、見事なかわりようです、都市です。無用にでかいショッピングモールがあります。観光客もいっぱいいます。そして、１２月の末ですが蒸し暑いです。日本の梅雨のようで雨もよく降ります。（ベストシーズンのチェンマイからきた事に激しく後悔。）</p>
 
 <p>良い点は英語が通じる事と食環境。南インドの料理がローカルプライスで本場物が食べられます。ロティチャナイやミールス、マサラドーサ等、ベジタリアンの私としては中華素食（ベジタリアン）と合わせて、幸せな食環境があります。日本食屋は大戸屋ぐらいはあっても良さそうだけども、無いに等しいくらい見かけません。
@@ -284,9 +284,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android studioをダウンロード]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/09/androidstudio-install/"/>
+    <link href="http://goozenlab.com/blog/2014/12/09/androidstudio-install/"/>
     <updated>2014-12-09T20:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/09/androidstudio-install</id>
+    <id>http://goozenlab.com/blog/2014/12/09/androidstudio-install</id>
     <content type="html"><![CDATA[<p>Android studioをダウンロードする。そして、最初につまずいたところ。</p>
 
 <p>JAVAがインストールされていないと起動できず。<br/>
@@ -299,15 +299,15 @@
 JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8*</code>に変更する。
 で、起動する。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-09-androidstudio-jdk-setting.png" alt="JVM Setting for Android studio" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-09-androidstudio-jdk-setting.png" alt="JVM Setting for Android studio" /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Satiでの不具合]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati/"/>
+    <link href="http://goozenlab.com/blog/2014/12/04/nosound-sati/"/>
     <updated>2014-12-04T13:55:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/04/nosound-sati</id>
+    <id>http://goozenlab.com/blog/2014/12/04/nosound-sati</id>
     <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
 
 <p>瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
@@ -315,26 +315,26 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 
 <p>iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
 
 <p>ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。</p>
 
 <p>設定＞サティ＞通知＞「通知を許可する」をオンにしてください。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-settting.png" alt="Setting" />
-<img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
-<img src="http://goozenlab.github.com/goozenlab/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-04-settting.png" alt="Setting" />
+<img src="http://goozenlab.com/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
+<img src="http://goozenlab.com/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Release Pranatice]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release/"/>
+    <link href="http://goozenlab.com/blog/2014/12/01/pranatice-release/"/>
     <updated>2014-12-01T14:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release</id>
+    <id>http://goozenlab.com/blog/2014/12/01/pranatice-release</id>
     <content type="html"><![CDATA[<p>久しぶりに新しいソフトを申請しました。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
 
 <p>ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。</p>
 
@@ -374,7 +374,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 
 <p>メイン画面上には以下のアイテムがあります。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-main.png" alt="pranatice" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-main.png" alt="pranatice" /></p>
 
 <ol>
 <li>歯車のボタン：細かい練習の設定</li>
@@ -397,7 +397,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 
 <p>華丸、丸、三角、バツから選択し終了します。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-12-01-pranatice-mood.png" alt="pranatice" /></p>
+<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-mood.png" alt="pranatice" /></p>
 
 <h3>□ 設定</h3>
 
@@ -420,21 +420,21 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[cosper v1.6.2]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162/"/>
+    <link href="http://goozenlab.com/blog/2014/11/22/cosper-v162/"/>
     <updated>2014-11-22T08:15:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/22/cosper-v162</id>
+    <id>http://goozenlab.com/blog/2014/11/22/cosper-v162</id>
     <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review/"/>
+    <link href="http://goozenlab.com/blog/2014/11/21/mba11-review/"/>
     <updated>2014-11-21T20:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/21/mba11-review</id>
+    <id>http://goozenlab.com/blog/2014/11/21/mba11-review</id>
     <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-21-mba11.jpg" alt="MBA11" /></p>
+<p><img src="http://goozenlab.com/images/2014-11-21-mba11.jpg" alt="MBA11" /></p>
 
 <ol>
 <li>軽い。</li>
@@ -463,9 +463,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162/"/>
+    <link href="http://goozenlab.com/blog/2014/11/20/doop-v162/"/>
     <updated>2014-11-20T17:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/20/doop-v162</id>
+    <id>http://goozenlab.com/blog/2014/11/20/doop-v162</id>
     <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
 
 <p>入力部のアイコンも新しくしました。</p>
@@ -478,9 +478,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[dandori v2.6.2]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/18/dandori-v262/"/>
+    <link href="http://goozenlab.com/blog/2014/11/18/dandori-v262/"/>
     <updated>2014-11-18T17:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/18/dandori-v262</id>
+    <id>http://goozenlab.com/blog/2014/11/18/dandori-v262</id>
     <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
 
 <p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
@@ -489,9 +489,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[さよならMBP15、サワディクラップMBA11]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/10/mabbookair9/"/>
+    <link href="http://goozenlab.com/blog/2014/11/10/mabbookair9/"/>
     <updated>2014-11-10T14:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/10/mabbookair9</id>
+    <id>http://goozenlab.com/blog/2014/11/10/mabbookair9</id>
     <content type="html"><![CDATA[<p>さよなら、MBP15、サワディクラップ、MBA11。</p>
 
 <p>タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変調の兆しがあり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。</p>
@@ -511,12 +511,12 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280/"/>
+    <link href="http://goozenlab.com/blog/2014/11/05/ohayo-v280/"/>
     <updated>2014-11-05T05:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280</id>
+    <id>http://goozenlab.com/blog/2014/11/05/ohayo-v280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
+<p><img src="http://goozenlab.com/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
 
 <p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
 
@@ -525,8 +525,8 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 
 <p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-02.png" alt="ohayo screenshot" />
-<img src="http://goozenlab.github.com/goozenlab/images/2014-11-05-ohayo-280-03.png" alt="ohayo screenshot" /></p>
+<p><img src="http://goozenlab.com/images/2014-11-05-ohayo-280-02.png" alt="ohayo screenshot" />
+<img src="http://goozenlab.com/images/2014-11-05-ohayo-280-03.png" alt="ohayo screenshot" /></p>
 
 <p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
 
@@ -536,9 +536,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[littlist v2.6.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260/"/>
+    <link href="http://goozenlab.com/blog/2014/10/30/littlist-v260/"/>
     <updated>2014-10-30T20:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/30/littlist-v260</id>
+    <id>http://goozenlab.com/blog/2014/10/30/littlist-v260</id>
     <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
 
 <p>ちょっとした使い勝手の変更
@@ -551,16 +551,16 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[dandori v2.6.1]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260/"/>
+    <link href="http://goozenlab.com/blog/2014/10/27/dandori-v260/"/>
     <updated>2014-10-27T17:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/27/dandori-v260</id>
+    <id>http://goozenlab.com/blog/2014/10/27/dandori-v260</id>
     <content type="html"><![CDATA[<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
 
 <h3>オマケ</h3>
 
 <p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
 
-<p><img src="http://goozenlab.github.com/goozenlab/images/2014-10-27-dandori-export.png" alt="dandori export screenshot" /></p>
+<p><img src="http://goozenlab.com/images/2014-10-27-dandori-export.png" alt="dandori export screenshot" /></p>
 
 <!-- more -->
 
@@ -600,9 +600,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[Yosemite]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/20/yosemite/"/>
+    <link href="http://goozenlab.com/blog/2014/10/20/yosemite/"/>
     <updated>2014-10-20T14:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/20/yosemite</id>
+    <id>http://goozenlab.com/blog/2014/10/20/yosemite</id>
     <content type="html"><![CDATA[<p>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。</p>
 
 <p>本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。</p>
@@ -613,9 +613,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/10/10/update/"/>
+    <link href="http://goozenlab.com/blog/2014/10/10/update/"/>
     <updated>2014-10-10T13:08:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/10/10/update</id>
+    <id>http://goozenlab.com/blog/2014/10/10/update</id>
     <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
 
 <p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
@@ -624,9 +624,9 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   
   <entry>
     <title type="html"><![CDATA[Sati v1.5.7]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157/"/>
+    <link href="http://goozenlab.com/blog/2014/09/20/sati-v157/"/>
     <updated>2014-09-20T13:08:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/09/20/sati-v157</id>
+    <id>http://goozenlab.com/blog/2014/09/20/sati-v157</id>
     <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
 久しぶりに以下の調整および修正を行いました。</p>
 

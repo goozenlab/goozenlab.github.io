@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Tips, | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/tips-/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/tips-/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[コンピューターの名前]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2011/12/13/naming-computer/"/>
+    <link href="http://goozenlab.com/blog/2011/12/13/naming-computer/"/>
     <updated>2011-12-13T19:41:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2011/12/13/naming-computer</id>
+    <id>http://goozenlab.com/blog/2011/12/13/naming-computer</id>
     <content type="html"><![CDATA[<p>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。</p>
 
 <p>マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。</p>

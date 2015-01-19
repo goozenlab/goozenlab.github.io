@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: listaria | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/listaria/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/listaria/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[listaria v1.5.4]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154/"/>
+    <link href="http://goozenlab.com/blog/2013/07/30/listaria-v154/"/>
     <updated>2013-07-30T16:33:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/30/listaria-v154</id>
+    <id>http://goozenlab.com/blog/2013/07/30/listaria-v154</id>
     <content type="html"><![CDATA[<p>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
 パパイヤリリースです。</p>
 
@@ -44,9 +44,9 @@
   
   <entry>
     <title type="html"><![CDATA[Listaria v1.5.3]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/08/listaria-v153/"/>
+    <link href="http://goozenlab.com/blog/2013/07/08/listaria-v153/"/>
     <updated>2013-07-08T22:57:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/08/listaria-v153</id>
+    <id>http://goozenlab.com/blog/2013/07/08/listaria-v153</id>
     <content type="html"><![CDATA[<p>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。
 プロジェクト名もランブータン(Ranbutan)に変更。<br/>
 タイでは１キロ、25バーツくらいで売りに出てます。
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[Icon Renew and minor update]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/05/24/icon-renew/"/>
+    <link href="http://goozenlab.com/blog/2013/05/24/icon-renew/"/>
     <updated>2013-05-24T16:13:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/05/24/icon-renew</id>
+    <id>http://goozenlab.com/blog/2013/05/24/icon-renew</id>
     <content type="html"><![CDATA[<p>ちょっと気になっていたアイコンにちょっと手を入れました。
 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
 サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
@@ -128,9 +128,9 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
   
   <entry>
     <title type="html"><![CDATA[Listaria v1.5.1]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/10/20/listaria-v151/"/>
+    <link href="http://goozenlab.com/blog/2012/10/20/listaria-v151/"/>
     <updated>2012-10-20T07:59:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/10/20/listaria-v151</id>
+    <id>http://goozenlab.com/blog/2012/10/20/listaria-v151</id>
     <content type="html"><![CDATA[<p>リスタリア、マイナーバクフィクスのアップデートを申請しました。</p>
 
 <ul>
@@ -146,9 +146,9 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
   
   <entry>
     <title type="html"><![CDATA[4系と5系]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/09/27/version4-5/"/>
+    <link href="http://goozenlab.com/blog/2012/09/27/version4-5/"/>
     <updated>2012-09-27T05:16:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/09/27/version4-5</id>
+    <id>http://goozenlab.com/blog/2012/09/27/version4-5</id>
     <content type="html"><![CDATA[<p>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。</p>
 

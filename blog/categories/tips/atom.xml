@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Tips | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/tips/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update/"/>
+    <link href="http://goozenlab.com/blog/2013/07/27/chromium-auto-update/"/>
     <updated>2013-07-27T10:07:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/27/chromium-auto-update</id>
+    <id>http://goozenlab.com/blog/2013/07/27/chromium-auto-update</id>
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
 
@@ -278,9 +278,9 @@ gallo%
   
   <entry>
     <title type="html"><![CDATA[画面のグレー/カラーのスイッチ]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/02/25/applescript-switch-grayscale/"/>
+    <link href="http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale/"/>
     <updated>2013-02-25T10:15:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/02/25/applescript-switch-grayscale</id>
+    <id>http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale</id>
     <content type="html"><![CDATA[<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
 
 <p>ただ一連の作業がちょっと面倒なので、<strong>アップルスクリプト</strong>＋Alfredを使って作業を簡略化しました。</p>
@@ -406,9 +406,9 @@ do shell script "terminal-notifier -message \"Color mode has been changed.\" -ti
   
   <entry>
     <title type="html"><![CDATA[眼精疲労と白黒モニター]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode/"/>
+    <link href="http://goozenlab.com/blog/2012/11/20/use-gray-mode/"/>
     <updated>2012-11-20T16:43:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/11/20/use-gray-mode</id>
+    <id>http://goozenlab.com/blog/2012/11/20/use-gray-mode</id>
     <content type="html"><![CDATA[<p>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。</p>
 
 <p><img src="https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png" width="480"></p>
@@ -433,9 +433,9 @@ do shell script "terminal-notifier -message \"Color mode has been changed.\" -ti
   
   <entry>
     <title type="html"><![CDATA[Macの追加設定]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting/"/>
+    <link href="http://goozenlab.com/blog/2012/08/20/mac-setting/"/>
     <updated>2012-08-20T19:41:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2012/08/20/mac-setting</id>
+    <id>http://goozenlab.com/blog/2012/08/20/mac-setting</id>
     <content type="html"><![CDATA[<p>File /Volumes/dev/Sites/octopress.goozenlab.io/source/computing/mac-my-hidden-setting.markdown could not be found</p>
 ]]></content>
   </entry>

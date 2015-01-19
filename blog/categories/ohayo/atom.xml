@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/ohayo/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/ohayo/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280/"/>
+    <link href="http://goozenlab.com/blog/2014/11/05/ohayo-v280/"/>
     <updated>2014-11-05T05:04:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/11/05/ohayo-v280</id>
+    <id>http://goozenlab.com/blog/2014/11/05/ohayo-v280</id>
     <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。</p>
 
 <p><img src="/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.5.0]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250/"/>
+    <link href="http://goozenlab.com/blog/2013/07/18/ohayo-v250/"/>
     <updated>2013-07-18T14:13:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2013/07/18/ohayo-v250</id>
+    <id>http://goozenlab.com/blog/2013/07/18/ohayo-v250</id>
     <content type="html"><![CDATA[<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
 
 <ol>

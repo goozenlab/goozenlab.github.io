@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pranatice | goozenlab]]></title>
-  <link href="http://goozenlab.github.com/goozenlab/blog/categories/pranatice/atom.xml" rel="self"/>
-  <link href="http://goozenlab.github.com/goozenlab/"/>
-  <updated>2015-01-19T09:05:37+08:00</updated>
-  <id>http://goozenlab.github.com/goozenlab/</id>
+  <link href="http://goozenlab.com/blog/categories/pranatice/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-19T09:11:37+08:00</updated>
+  <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Release Pranatice]]></title>
-    <link href="http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release/"/>
+    <link href="http://goozenlab.com/blog/2014/12/01/pranatice-release/"/>
     <updated>2014-12-01T14:20:00+08:00</updated>
-    <id>http://goozenlab.github.com/goozenlab/blog/2014/12/01/pranatice-release</id>
+    <id>http://goozenlab.com/blog/2014/12/01/pranatice-release</id>
     <content type="html"><![CDATA[<p>久しぶりに新しいソフトを申請しました。</p>
 
 <p><img src="/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
