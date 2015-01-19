@@ -4,7 +4,7 @@
   <title><![CDATA[Category: littlist | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/littlist/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-19T09:11:37+08:00</updated>
+  <updated>2015-01-19T21:33:40+08:00</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,101 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[littlist 2.6.3]]></title>
-    <link href="http://goozenlab.com/blog/2015/01/17/versionning/"/>
-    <updated>2015-01-17T20:15:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2015/01/17/versionning</id>
-    <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してアップしました。ついでにアプリの名前も小文字に変更。</p>
-
-<!-- more -->
-
-
-<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
-ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
-
-<p>```
-agvtool bump</p>
-
-<h1>agvtool bump -all #Info.plistも更新したいとき</h1>
-
-<p>infoPlistFileSource="${SRCROOT}/${INFOPLIST_FILE}"</p>
-
-<h1>infoPlistFileDestination="${TEMP_DIR}/Preprocessed-Info.plist"</h1>
-
-<p>rootPlistFileDestination="${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist"</p>
-
-<p>if [ ${CONFIGURATION} = "Debug" ]; then</p>
-
-<pre><code># Version 2.6.3
-# Build @ 2014-01-16 12:16 (dev.298)
-versionPrefix=" (dev."
-date=$(date "+@ %Y-%m-%d %H:%M")
-APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)
-BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}")"
-</code></pre>
-
-<p>else</p>
-
-<pre><code># Version 2.6.3 @ 2014.01.16
-# Build  276
-date=$(date "+ @ %Y.%m.%d")
-APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)$date
-BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFileSource)
-</code></pre>
-
-<p>fi</p>
-
-<h1>ここのPreferenceSpecifiers:16, 17は各アプリによって変更</h1>
-
-<p>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION" $rootPlistFileDestination
-/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER" $rootPlistFileDestination</p>
-
-<p>```</p>
-
-<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
-
-<p><img src="/images/2015-01-26_versionning_dev.png" width="300">
-<img src="/images/2015-01-26_versionning_app.png" width="300"></p>
-
-<p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
-
-<p>```</p>
-
-<pre><code>    &lt;dict&gt;
-        &lt;key&gt;Title&lt;/key&gt;
-        &lt;string&gt;About&lt;/string&gt;
-        &lt;key&gt;Type&lt;/key&gt;
-        &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
-        &lt;key&gt;FooterText&lt;/key&gt;
-        &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
-    &lt;/dict&gt;
-    &lt;dict&gt;
-        &lt;key&gt;Type&lt;/key&gt;
-        &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-        &lt;key&gt;DefaultValue&lt;/key&gt;
-        &lt;string&gt;1.0&lt;/string&gt;
-        &lt;key&gt;Title&lt;/key&gt;
-        &lt;string&gt;Version&lt;/string&gt;
-        &lt;key&gt;Key&lt;/key&gt;
-        &lt;string&gt;app_version_number&lt;/string&gt;
-    &lt;/dict&gt;
-    &lt;dict&gt;
-        &lt;key&gt;Type&lt;/key&gt;
-        &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-        &lt;key&gt;DefaultValue&lt;/key&gt;
-        &lt;string&gt;1&lt;/string&gt;
-        &lt;key&gt;Title&lt;/key&gt;
-        &lt;string&gt;Build&lt;/string&gt;
-        &lt;key&gt;Key&lt;/key&gt;
-        &lt;string&gt;app_build_number&lt;/string&gt;
-    &lt;/dict&gt;
-</code></pre>
-
-<p>```</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[littlist v2.6.0]]></title>
@@ -173,6 +78,19 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
 iOS5では問題はなく、二三日前に気が付きました。</p>
 
 <p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[littlist v2.5.4]]></title>
+    <link href="http://goozenlab.com/blog/2013/04/25/littlist-v254/"/>
+    <updated>2013-04-25T20:04:00+08:00</updated>
+    <id>http://goozenlab.com/blog/2013/04/25/littlist-v254</id>
+    <content type="html"><![CDATA[<p>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので、長らく放置状態でしたが、これでようやくのこと解決！？したと思います。（Kawaiiモードなんか追加してる場合ではなかった。。）</p>
+
+<p>ちょっとスッキリしたようなそうでないような。。割と簡単な所に問題があったし、時間を取って書き直そうかなと思ってみたりしてます。</p>
+
+<p>アプストアーに近日中にアップされると思います。</p>
 ]]></content>
   </entry>
   

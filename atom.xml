@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-19T09:11:37+08:00</updated>
+  <updated>2015-01-19T21:33:40+08:00</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,137 +14,36 @@
 
   
   <entry>
-    <title type="html"><![CDATA[littlist 2.6.3]]></title>
-    <link href="http://goozenlab.com/blog/2015/01/17/versionning/"/>
-    <updated>2015-01-17T20:15:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2015/01/17/versionning</id>
-    <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してアップしました。ついでにアプリの名前も小文字に変更。</p>
+    <title type="html"><![CDATA[Sati v1.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/01/19/sati-v163/"/>
+    <updated>2015-01-19T20:09:00+08:00</updated>
+    <id>http://goozenlab.com/blog/2015/01/19/sati-v163</id>
+    <content type="html"><![CDATA[<h2>長押しスタート</h2>
 
-<!-- more -->
+<p>マイナーアップデートですが、使用方法に変更があります。</p>
 
+<ul>
+<li>瞑想の始まりを<strong>長押し（ロングタップ）</strong>に変更しました。
 
-<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
-ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>agvtool bump
-</span><span class='line'># agvtool bump -all #Info.plistも更新したいとき
-</span><span class='line'>
-</span><span class='line'>infoPlistFileSource="${SRCROOT}/${INFOPLIST_FILE}"
-</span><span class='line'>#infoPlistFileDestination="${TEMP_DIR}/Preprocessed-Info.plist"
-</span><span class='line'>rootPlistFileDestination="${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist"
-</span><span class='line'>
-</span><span class='line'>if [ ${CONFIGURATION} = "Debug" ]; then
-</span><span class='line'>  # Version 2.6.3
-</span><span class='line'>  # Build @ 2014-01-16 12:16 (dev.298)
-</span><span class='line'>  versionPrefix=" (dev."
-</span><span class='line'>  date=$(date "+@ %Y-%m-%d %H:%M")
-</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)
-</span><span class='line'>  BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}")"
-</span><span class='line'>else
-</span><span class='line'>  # Version 2.6.3 @ 2014.01.16
-</span><span class='line'>  # Build  276
-</span><span class='line'>  date=$(date "+ @ %Y.%m.%d")
-</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)$date
-</span><span class='line'>  BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFileSource)
-</span><span class='line'>fi
-</span><span class='line'>
-</span><span class='line'># ここのPreferenceSpecifiers:16, 17は各アプリによって変更
-</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION" $rootPlistFileDestination
-</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER" $rootPlistFileDestination
-</span></code></pre></td></tr></table></div></figure>
+<ul>
+<li>誤動作をさけるためと他のソフトとの操作性の統一のためです。</li>
+<li>キャンセルはシングルタップで変わりありません。</li>
+</ul>
+</li>
+</ul>
 
 
-<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
+<p><img src="http://goozenlab.com/images/2015-01-19_sati_163.png" width="300"></p>
 
-<p><img src="http://goozenlab.com/images/2015-01-26_versionning_dev.png" width="300">
-<img src="http://goozenlab.com/images/2015-01-26_versionning_app.png" width="300"></p>
-
-<p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> &lt;dict&gt;
-</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;About&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;FooterText&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
-</span><span class='line'>  &lt;/dict&gt;
-</span><span class='line'>  &lt;dict&gt;
-</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;1.0&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;Version&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;app_version_number&lt;/string&gt;
-</span><span class='line'>  &lt;/dict&gt;
-</span><span class='line'>  &lt;dict&gt;
-</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;1&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;Build&lt;/string&gt;
-</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
-</span><span class='line'>      &lt;string&gt;app_build_number&lt;/string&gt;
-</span><span class='line'>  &lt;/dict&gt;</span></code></pre></td></tr></table></div></figure>
+<ul>
+<li>設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、不出来や。。)</li>
+<li>ホーム> 設定> サティにて日本語表示</li>
+</ul>
 
 
+<h3>おまけ</h3>
 
+<p>隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。</p>
 ]]></content>
   </entry>
   
