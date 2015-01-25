@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-19T21:47:57+08:00</updated>
+  <updated>2015-01-25T13:27:55+08:00</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[マラッカに戻る]]></title>
+    <link href="http://goozenlab.com/blog/2015/01/25/melaka/"/>
+    <updated>2015-01-25T10:17:00+08:00</updated>
+    <id>http://goozenlab.com/blog/2015/01/25/melaka</id>
+    <content type="html"><![CDATA[<p>コタバルでネパール出発日まで滞在する積もりでいたのだが、KLまでの飛行機チケットが思ったより高かったのと（まぁ、実際高くはないのだが、前後では34リンギット、当日だと94リンギットと気分的な要素）ロティチャナイがちょっと塩っ辛いのと、町が洪水の影響でホコリっぽいので来た方向に陸路で戻る事にする。</p>
+
+<p>コタバルに向かう途中バスターミナルの近くで安宿が見つからず飛ばしたテレンガヌに再訪し、川の向こうのジャングル宿に行くも、ローシーズンなのか、誰もいない。しかし勝手に入れる、で勝手に宿内を徘徊。。</p>
+
+<!-- more -->
+
+
+<p>折角なのでキッチンで勝手にお湯を沸かし、お茶を飲んで一服する。コンピューターを開きちょっと作業。「静かだと、捗るわー」と冷凍庫の中に入っている氷で持っているジンでも飲んじゃおうかな思うが止めておく。結局３時間近く待つも誰も来ず、、主人が戻ってこなくても泊まれそうな感じもするが、近くに食べるところも無いし数泊の自炊もちょっと面倒なので、ターミナルに逆戻り、夜9時半発の夜行バスでマラッカに戻ってくる。朝６時頃着。（バス代：17＋47.3＋空港行き24.3、計89MYR）</p>
+
+<p><img src="http://goozenlab.com/images/2015-01-25_gannu.jpg" alt="Awi's Yellow House" /><br/>
+※ 宿の写真</p>
+
+<p>宿はふらっと入ったところが20リンギット朝食付き、珍しく即決。タミルから送られてきたコーヒーが飲み放題と、キッチンも使える。しかもビールは６リンギットで売っています。宿は暗く、部屋に少しにおいが残っているし、床がホコリっぽいが、よりどりみどりの宿です。しかも、シングルは値段が上がり30というのがちょっと変な感じ、、。</p>
+
+<p>そして、懸念していた天気もよくなっている。あとは、近くに図書館があれば。。。と、結局近くのショッピングセンターのフードコートでブログを書いている。</p>
+
+<p>ロティチャナイを食べまくり、アップ予定のアプリを仕上げて、３年ぶりのネパールへ。お次ぎはダルバートだぜよ。太るぜ、ふふふっ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sati v1.6.3]]></title>
@@ -33,10 +58,11 @@
 </ul>
 
 
-<p><img src="http://goozenlab.com/images/2015-01-19_sati_163.png" width="300"></p>
+<p><img src="http://goozenlab.com/images/2015-01-19_sati_163.png" width="300">
+<img src="http://goozenlab.com/images/2015-01-19_sati_163_setting.png" width="300"></p>
 
 <ul>
-<li>設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるやけど、不出来や。。)</li>
+<li>設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるやけど、不出来や。もうひとひねり欲しい。。)</li>
 <li>ホーム> 設定> サティにて日本語表示</li>
 </ul>
 
@@ -56,7 +82,7 @@
 
 <ol>
 <li>MacBookAir 9</li>
-<li>Kindle PaperLight</li>
+<li>Kindle Paperwhite</li>
 <li>iPhone 4S</li>
 <li>iPod 240GB</li>
 <li>HeadPhone</li>
@@ -84,9 +110,10 @@
 <!-- more -->
 
 
-<p>宿にて（洪水後、放置状態なっていたネット環境を、なぜか私がコンピューターとルーター設定をする。）<br/>
+<p>宿（IDEAL Treveler&#8217;s GH）にて<br/>
 下り：3.42Mps<br/>
-上り：0.40Mps</p>
+上り：0.40Mps <br/>
+（洪水後、放置状態なっていたネット環境を、なぜか私がコンピューターとルーター設定をする。宿の息子は働かん。。）</p>
 
 <p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
 ]]></content>
@@ -529,17 +556,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 <p>本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。</p>
 
 <p>Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemite自体の印象は悪くないのでもう少し落ち着いたらじわじわ移行するつもり。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
-    <link href="http://goozenlab.com/blog/2014/10/10/update/"/>
-    <updated>2014-10-10T13:08:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2014/10/10/update</id>
-    <content type="html"><![CDATA[<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
-
-<p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
 ]]></content>
   </entry>
   
