@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: (a) | goozenlab]]></title>
+  <link href="http://goozenlab.com/blog/categories/-a-/atom.xml" rel="self"/>
+  <link href="http://goozenlab.com/"/>
+  <updated>2015-01-28T20:32:48+08:00</updated>
+  <id>http://goozenlab.com/</id>
+  <author>
+    <name><![CDATA[jin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[(a)をリリース]]></title>
+    <link href="http://goozenlab.com/blog/2015/01/28/release-a/"/>
+    <updated>2015-01-28T16:00:00+08:00</updated>
+    <id>http://goozenlab.com/blog/2015/01/28/release-a</id>
+    <content type="html"><![CDATA[<p>！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。シンク以外の機能は問題なく使えますので、ご迷惑をおかけしますが、しばしお待ちください。！！！</p>
+
+<p>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！</p>
+
+<p><img src="/images/manual-a-ColorModeDark.png" width="300"></p>
+
+<ol>
+<li><strong>制作理由</strong>：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、<strong>テキストベース</strong>で管理をしたい、との理由から作りました。</li>
+<li><strong>誰のため</strong>：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄</li>
+<li><strong>他のアプリとの違い</strong>：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。</li>
+</ol>
+
+
+<!-- more -->
+
+
+<p><img src="/images/manual-a-todomd-MouSnapShot.png" alt="todo.md" /></p>
+
+<p>詳しい使い方は<a href="/iapp/a/">こちら</a>にて</p>
+]]></content>
+  </entry>
+  
+</feed>

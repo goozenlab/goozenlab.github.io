@@ -9,7 +9,7 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。 そして、AdMobを6.12にアップデート。ソースも少し弄りました。毎度の事 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -110,6 +110,51 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/10/20/yosemite/">
+		
+			Yosemite</a>
+	</h2>
+	<div class="entry-content">
+		<p>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。</p>
+
+<p>本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。</p>
+
+<p>Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemite自体の印象は悪くないのでもう少し落ち着いたらじわじわ移行するつもり。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-20T14:20:00+08:00" pubdate data-updated="true">Oct 20<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/mac/'>mac</a>
+
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -605,102 +650,6 @@ $(document).ready(
 
 
 	<a class='category' href='/blog/categories/dandori/'>dandori</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/27/chromium-auto-update/">
-		
-			Chromiumの半自動更新</a>
-	</h2>
-	<div class="entry-content">
-		<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
-ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
-
-<p><img src="https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png" width="800" title="" ></p>
-
-<p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
-
-<p>ちょっと調べてみたところ、最新版をビルドしまくっている<a href="https://chromium-build.appspot.com/p/chromium/console">サイト</a>があり、スクリプトを使って最新版に更新できることを<a href="http://hints.macworld.com/article.php?story=20090604081030791">MacWorld</a>で見つけました。（スクリプトは少し調整してます。）</p>
-
-<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br/>
-　情報元:<a href="http://www.chromium.org/getting-involved/download-chromium">http://www.chromium.org/getting-involved/download-chromium</a></p>
-
-<p>ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
-</span><span class='line'>Setup...
-</span><span class='line'>Checking current version...
-</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf
-</span><span class='line'>Downloading and unpacking...
-</span><span class='line'>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-</span><span class='line'>                                 Dload  Upload   Total   Spent    Left  Speed
-</span><span class='line'>100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
-</span><span class='line'>Installing...
-</span><span class='line'>Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
-</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
-
-
-<p>ローカルのアプリが最新であれば、</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gallo% sh ./chromium_update.sh
-</span><span class='line'>Setup...
-</span><span class='line'>Checking current version...
-</span><span class='line'> * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
-</span><span class='line'> * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
-</span><span class='line'>gallo% </span></code></pre></td></tr></table></div></figure>
-
-
-
-
-
-		
-		<a href="/blog/2013/07/27/chromium-auto-update/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-27T10:07:00+08:00" pubdate data-updated="true">Jul 27<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/tips/'>Tips</a>, <a class='category' href='/blog/categories/mac/'>mac</a>
 
 
 </div>
