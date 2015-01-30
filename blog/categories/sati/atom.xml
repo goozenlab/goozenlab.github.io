@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-28T20:45:48+08:00</updated>
+  <updated>2015-01-30T20:36:51+08:00</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
+    <link href="http://goozenlab.com/blog/2015/01/30/sati-no-sound/"/>
+    <updated>2015-01-30T17:02:00+08:00</updated>
+    <id>http://goozenlab.com/blog/2015/01/30/sati-no-sound</id>
+    <content type="html"><![CDATA[<p>以前指摘していただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
+勘違いとケアレスミスのダブルパンチです。</p>
+
+<p>しばし、お待ちのほど、、</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sati v1.6.3]]></title>
@@ -130,22 +142,6 @@
 それまでは途中キャンセル無しに瞑想生活を送ってください。</p>
 
 <p>よろしくお願いします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sati v1.5.4]]></title>
-    <link href="http://goozenlab.com/blog/2013/08/06/sati-v154/"/>
-    <updated>2013-08-06T18:29:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2013/08/06/sati-v154</id>
-    <content type="html"><![CDATA[<p>見た目が質素だった設定ページを更新しました。
-ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。</p>
-
-<p>そして、割と厳しかった途中でのキャンセル時の処理を変更。
-３０分以上時間が経った時には瞑想をカウントするようにしました。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png" width="320"></p>
 ]]></content>
   </entry>
   
