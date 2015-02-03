@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,12 +16,12 @@
   <entry>
     <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
     <link href="http://goozenlab.com/blog/2015/01/30/sati-no-sound/"/>
-    <updated>2015-01-30T17:02:00+08:00</updated>
+    <updated>2015-01-30T17:02:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/30/sati-no-sound</id>
     <content type="html"><![CDATA[<p>以前指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
 勘違いとケアレスミスのダブルパンチです。</p>
 
-<p>アプリをストアーから削除しました。<br/>
+<p>アプリをストアーから一時削除しました。<br/>
 対応したバージョンを申請しています。</p>
 
 <p>なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。</p>
@@ -31,7 +31,7 @@
   <entry>
     <title type="html"><![CDATA[Sati v1.6.3]]></title>
     <link href="http://goozenlab.com/blog/2015/01/28/sati-v163/"/>
-    <updated>2015-01-28T08:54:00+08:00</updated>
+    <updated>2015-01-28T08:54:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/28/sati-v163</id>
     <content type="html"><![CDATA[<h3><strong>長押しスタート</strong></h3>
 
@@ -66,7 +66,7 @@
   <entry>
     <title type="html"><![CDATA[cosper v1.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/22/cosper-v162/"/>
-    <updated>2014-11-22T08:15:00+08:00</updated>
+    <updated>2014-11-22T08:15:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/22/cosper-v162</id>
     <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</p>
 ]]></content>
@@ -75,7 +75,7 @@
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/20/doop-v162/"/>
-    <updated>2014-11-20T17:20:00+08:00</updated>
+    <updated>2014-11-20T17:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/20/doop-v162</id>
     <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
 
@@ -90,7 +90,7 @@
   <entry>
     <title type="html"><![CDATA[dandori v2.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/18/dandori-v262/"/>
-    <updated>2014-11-18T17:20:00+08:00</updated>
+    <updated>2014-11-18T17:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/18/dandori-v262</id>
     <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
 

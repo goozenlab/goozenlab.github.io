@@ -4,7 +4,7 @@
   <title><![CDATA[Category: viriya | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/viriya/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[viriya v1.5.0]]></title>
     <link href="http://goozenlab.com/blog/2013/07/30/viriya-v150/"/>
-    <updated>2013-07-30T11:14:00+08:00</updated>
+    <updated>2013-07-30T11:14:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/30/viriya-v150</id>
     <content type="html"><![CDATA[<p>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、
 拙作の他のソフトに合わしてマイナーアップデートしました。</p>
@@ -36,7 +36,7 @@
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
     <link href="http://goozenlab.com/blog/2013/07/10/color-lock/"/>
-    <updated>2013-07-10T17:07:00+08:00</updated>
+    <updated>2013-07-10T17:07:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
@@ -55,7 +55,7 @@
   <entry>
     <title type="html"><![CDATA[Update AdMob 6.2.1 for lite version]]></title>
     <link href="http://goozenlab.com/blog/2013/01/14/admob-update/"/>
-    <updated>2013-01-14T14:53:00+08:00</updated>
+    <updated>2013-01-14T14:53:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/01/14/admob-update</id>
     <content type="html"><![CDATA[<p>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。</p>
 
@@ -74,7 +74,7 @@
   <entry>
     <title type="html"><![CDATA[年末感謝週末セール]]></title>
     <link href="http://goozenlab.com/blog/2012/11/19/sale-on-weekend/"/>
-    <updated>2012-11-19T00:10:00+08:00</updated>
+    <updated>2012-11-19T00:10:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/11/19/sale-on-weekend</id>
     <content type="html"><![CDATA[<p>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。</p>
 
@@ -85,7 +85,7 @@
   <entry>
     <title type="html"><![CDATA[Update AdMob 6.2.0 for lite version]]></title>
     <link href="http://goozenlab.com/blog/2012/10/19/admob-update/"/>
-    <updated>2012-10-19T21:53:00+08:00</updated>
+    <updated>2012-10-19T21:53:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/10/19/admob-update</id>
     <content type="html"><![CDATA[<p>AdMobをiOS6対応6.2.0にアップデートしました。
 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。</p>

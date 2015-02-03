@@ -4,7 +4,7 @@
   <title><![CDATA[Category: web | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Octopressのテーマを変更]]></title>
     <link href="http://goozenlab.com/blog/2013/06/18/octopress-theme/"/>
-    <updated>2013-06-18T22:06:00+08:00</updated>
+    <updated>2013-06-18T22:06:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/06/18/octopress-theme</id>
     <content type="html"><![CDATA[<p>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家の<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">こちら</a>にテーマのリストがあります。まだ登録数が少ないですが<a href="http://octopressthemes.com">octopressthemes.com</a>というサイトもあります。ぜひ充実していってもらいたいですね。</p>
 
@@ -29,7 +29,7 @@
   <entry>
     <title type="html"><![CDATA[rake generateでエラー]]></title>
     <link href="http://goozenlab.com/blog/2013/02/24/generate-error/"/>
-    <updated>2013-02-24T14:23:00+08:00</updated>
+    <updated>2013-02-24T14:23:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/02/24/generate-error</id>
     <content type="html"><![CDATA[<p>オクトプレスにて<code>rake generate</code>でどかっとエラーが出ました。</p>
 
@@ -51,7 +51,7 @@
   <entry>
     <title type="html"><![CDATA[ヘイロク引越]]></title>
     <link href="http://goozenlab.com/blog/2012/09/30/moving-site-heroku/"/>
-    <updated>2012-09-30T16:10:00+08:00</updated>
+    <updated>2012-09-30T16:10:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/09/30/moving-site-heroku</id>
     <content type="html"><![CDATA[<p>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。）</p>
 
@@ -67,7 +67,7 @@
   <entry>
     <title type="html"><![CDATA[Smart App Banner]]></title>
     <link href="http://goozenlab.com/blog/2012/09/29/smart-app-banner/"/>
-    <updated>2012-09-29T08:37:00+08:00</updated>
+    <updated>2012-09-29T08:37:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/09/29/smart-app-banner</id>
     <content type="html"><![CDATA[<p>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。</p>
 
@@ -122,7 +122,7 @@ sharing: true</p>
   <entry>
     <title type="html"><![CDATA[デカ文字調整]]></title>
     <link href="http://goozenlab.com/blog/2012/09/28/font-change/"/>
-    <updated>2012-09-28T10:02:00+08:00</updated>
+    <updated>2012-09-28T10:02:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/09/28/font-change</id>
     <content type="html"><![CDATA[<p>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整は<code>source/stylesheets/screen.css</code> を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。
 （デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）</p>

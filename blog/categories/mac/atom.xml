@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,9 +14,25 @@
 
   
   <entry>
+    <title type="html"><![CDATA[iTuneで他母艦接続のiPod音楽ファイルを再生]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/02/play-ipod-library/"/>
+    <updated>2015-02-02T15:35:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/02/play-ipod-library</id>
+    <content type="html"><![CDATA[<p>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA9のiTuneで再生できることに気がつきました！</p>
+
+<p>充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
+なんか得をした気分。</p>
+
+<p><img src="/images/2015-02-02_itune.png" alt="iTune with iPod" /></p>
+
+<p>※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
     <link href="http://goozenlab.com/blog/2014/11/21/mba11-review/"/>
-    <updated>2014-11-21T20:20:00+08:00</updated>
+    <updated>2014-11-21T20:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/21/mba11-review</id>
     <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
 
@@ -50,7 +66,7 @@
   <entry>
     <title type="html"><![CDATA[さよならMBP15、サワディクラップMBA11]]></title>
     <link href="http://goozenlab.com/blog/2014/11/10/mabbookair9/"/>
-    <updated>2014-11-10T14:20:00+08:00</updated>
+    <updated>2014-11-10T14:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/10/mabbookair9</id>
     <content type="html"><![CDATA[<p>さよなら、MBP15、サワディクラップ、MBA11。</p>
 
@@ -72,7 +88,7 @@
   <entry>
     <title type="html"><![CDATA[Yosemite]]></title>
     <link href="http://goozenlab.com/blog/2014/10/20/yosemite/"/>
-    <updated>2014-10-20T14:20:00+08:00</updated>
+    <updated>2014-10-20T14:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/10/20/yosemite</id>
     <content type="html"><![CDATA[<p>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。</p>
 
@@ -85,7 +101,7 @@
   <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
     <link href="http://goozenlab.com/blog/2013/07/27/chromium-auto-update/"/>
-    <updated>2013-07-27T10:07:00+08:00</updated>
+    <updated>2013-07-27T10:07:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/27/chromium-auto-update</id>
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
@@ -342,134 +358,6 @@ gallo%
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[画面のグレー/カラーのスイッチ]]></title>
-    <link href="http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale/"/>
-    <updated>2013-02-25T10:15:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale</id>
-    <content type="html"><![CDATA[<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
-
-<p>ただ一連の作業がちょっと面倒なので、<strong>アップルスクリプト</strong>＋Alfredを使って作業を簡略化しました。</p>
-
-<p>まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。</p>
-
-<p><strong>※</strong> MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。</p>
-
-<!-- more -->
-
-
-<p>``` applescript SwitchBW/Color</p>
-
-<p>tell application "System Preferences"</p>
-
-<pre><code>activate
-set current pane to pane "com.apple.preference.universalaccess"
-</code></pre>
-
-<p>end tell</p>
-
-<p>tell application "System Events"</p>
-
-<pre><code>tell first window of process "System Preferences"
-
-    tell table 1 of scroll area 1
-        set selected of row 2 to true
-    end tell
-    tell group 1
-        click checkbox "Use grayscale"
-    end tell
-
-end tell
-</code></pre>
-
-<p>end tell</p>
-
-<p>do shell script "terminal-notifier -message \"Color mode has been changed.\" -title \"Diplay\""</p>
-
-<p>tell application "System Preferences" to quit</p>
-
-<p>```</p>
-
-<p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
-
-<p>``` applescript UIElementのリスト
-tell application "System Preferences"</p>
-
-<pre><code>activate
-set current pane to pane "com.apple.preference.universalaccess"
---  set current pane to pane "com.apple.preference.sound"
-</code></pre>
-
-<p>end tell</p>
-
-<p>tell application "System Events"</p>
-
-<pre><code>if UI elements enabled then
-    tell process "System Preferences"
-        get every UI element
-        --tell tab group 1 of window "Sound" of application process "System Preferences" of application "System Events"
-        tell window 1 of application process "System Preferences" of application "System Events"
-            --  tell table 1 of scroll area 1 of window 1 of application process "System Preferences" of application "System Events" これで左にあるテーブルの情報が見れます
-            get every UI element
-            get every UI element of every UI element
-        end tell
-    end tell
-else
-    tell application "System Preferences"
-        activate
-        set current pane to pane "com.apple.preference.universalaccess"
-        display dialog "UI element scripting is not enabled."
-    end tell
-end if
-</code></pre>
-
-<p>end tell
-```</p>
-
-<p><img src="https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png" alt="UIElement" /></p>
-
-<p><code>checkbox "Use grayscale" of group 1 of window "Accessibility" of application process "System Preferences" of application "System Events"</code>でこのgroup 1の"Use grayscale"をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox "Use grayscale"はclick checkbox 2、window "Accessibility"はwindow 1, first windowでも動きます。</p>
-
-<p>後はそのパーツに値を入れてあげれば良し。</p>
-
-<p>そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。</p>
-
-<p>スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。</p>
-
-<p>アップルスクリプトでいろんな事が出来るのにちょっと驚きです。</p>
-
-<p>ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず</p>
-
-<p>、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。</p>
-
-<p>と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。</p>
-
-<h2>おまけ</h2>
-
-<p>ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある<code>Info.plist</code>に</p>
-
-<p>``` plain</p>
-
-<pre><code>&lt;key&gt;LSUIElement&lt;/key&gt;
-&lt;true/&gt;
-</code></pre>
-
-<p>```</p>
-
-<p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
-
-<p>そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに</p>
-
-<p><code>
-do shell script "terminal-notifier -message \"Color mode has been changed.\" -title \"Diplay\""
-</code></p>
-
-<p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
-
-<p>お次ぎはUSBオーディオの選択/解除かな。。</p>
 ]]></content>
   </entry>
   

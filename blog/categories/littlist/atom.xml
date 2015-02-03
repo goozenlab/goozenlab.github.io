@@ -4,7 +4,7 @@
   <title><![CDATA[Category: littlist | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/littlist/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[littlist v2.6.0]]></title>
     <link href="http://goozenlab.com/blog/2014/10/30/littlist-v260/"/>
-    <updated>2014-10-30T20:04:00+08:00</updated>
+    <updated>2014-10-30T20:04:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/10/30/littlist-v260</id>
     <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
 
@@ -31,7 +31,7 @@
   <entry>
     <title type="html"><![CDATA[littlis v2.5.6]]></title>
     <link href="http://goozenlab.com/blog/2013/07/20/littlist-v256/"/>
-    <updated>2013-07-20T08:07:00+08:00</updated>
+    <updated>2013-07-20T08:07:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/20/littlist-v256</id>
     <content type="html"><![CDATA[<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
 タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
@@ -53,7 +53,7 @@
   <entry>
     <title type="html"><![CDATA[カラーロック]]></title>
     <link href="http://goozenlab.com/blog/2013/07/10/color-lock/"/>
-    <updated>2013-07-10T17:07:00+08:00</updated>
+    <updated>2013-07-10T17:07:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/10/color-lock</id>
     <content type="html"><![CDATA[<p>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。</p>
 
@@ -72,7 +72,7 @@
   <entry>
     <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
     <link href="http://goozenlab.com/blog/2013/05/25/datepicker-update/"/>
-    <updated>2013-05-25T13:39:00+08:00</updated>
+    <updated>2013-05-25T13:39:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/05/25/datepicker-update</id>
     <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
 iOS5では問題はなく、二三日前に気が付きました。</p>
@@ -84,7 +84,7 @@ iOS5では問題はなく、二三日前に気が付きました。</p>
   <entry>
     <title type="html"><![CDATA[littlist v2.5.4]]></title>
     <link href="http://goozenlab.com/blog/2013/04/25/littlist-v254/"/>
-    <updated>2013-04-25T20:04:00+08:00</updated>
+    <updated>2013-04-25T20:04:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/04/25/littlist-v254</id>
     <content type="html"><![CDATA[<p>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので、長らく放置状態でしたが、これでようやくのこと解決！？したと思います。（Kawaiiモードなんか追加してる場合ではなかった。。）</p>
 

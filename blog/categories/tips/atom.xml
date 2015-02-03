@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tips | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,9 +14,25 @@
 
   
   <entry>
+    <title type="html"><![CDATA[iTuneで他母艦接続のiPod音楽ファイルを再生]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/02/play-ipod-library/"/>
+    <updated>2015-02-02T15:35:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/02/play-ipod-library</id>
+    <content type="html"><![CDATA[<p>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA9のiTuneで再生できることに気がつきました！</p>
+
+<p>充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
+なんか得をした気分。</p>
+
+<p><img src="/images/2015-02-02_itune.png" alt="iTune with iPod" /></p>
+
+<p>※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Chromiumの半自動更新]]></title>
     <link href="http://goozenlab.com/blog/2013/07/27/chromium-auto-update/"/>
-    <updated>2013-07-27T10:07:00+08:00</updated>
+    <updated>2013-07-27T10:07:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/07/27/chromium-auto-update</id>
     <content type="html"><![CDATA[<p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
@@ -279,7 +295,7 @@ gallo%
   <entry>
     <title type="html"><![CDATA[画面のグレー/カラーのスイッチ]]></title>
     <link href="http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale/"/>
-    <updated>2013-02-25T10:15:00+08:00</updated>
+    <updated>2013-02-25T10:15:00+05:45</updated>
     <id>http://goozenlab.com/blog/2013/02/25/applescript-switch-grayscale</id>
     <content type="html"><![CDATA[<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
 
@@ -407,7 +423,7 @@ do shell script "terminal-notifier -message \"Color mode has been changed.\" -ti
   <entry>
     <title type="html"><![CDATA[眼精疲労と白黒モニター]]></title>
     <link href="http://goozenlab.com/blog/2012/11/20/use-gray-mode/"/>
-    <updated>2012-11-20T16:43:00+08:00</updated>
+    <updated>2012-11-20T16:43:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/11/20/use-gray-mode</id>
     <content type="html"><![CDATA[<p>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。</p>
 
@@ -434,7 +450,7 @@ do shell script "terminal-notifier -message \"Color mode has been changed.\" -ti
   <entry>
     <title type="html"><![CDATA[Macの追加設定]]></title>
     <link href="http://goozenlab.com/blog/2012/08/20/mac-setting/"/>
-    <updated>2012-08-20T19:41:00+08:00</updated>
+    <updated>2012-08-20T19:41:00+05:45</updated>
     <id>http://goozenlab.com/blog/2012/08/20/mac-setting</id>
     <content type="html"><![CDATA[<p>File /Volumes/dev/Sites/octopress.goozenlab.io/source/computing/mac-my-hidden-setting.markdown could not be found</p>
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-01-31T12:26:40+08:00</updated>
+  <updated>2015-02-03T08:56:23+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,14 +14,53 @@
 
   
   <entry>
+    <title type="html"><![CDATA[カトマンズ、ネパールのインターネット事情]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/03/internet-kathmandu/"/>
+    <updated>2015-02-03T08:41:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/03/internet-kathmandu</id>
+    <content type="html"><![CDATA[<p>マレーシア空港の免税店での誘惑に耐え、お酒を買わずにネパールに到着。お酒抜きスタート。３年ぶりのネパールだ。</p>
+
+<p>電力事情は以前とさほど改善されていないし、タクシーの運ちゃん曰くクッキングガスもかなり値上がっているとのこと。そして、相変わらず週にかなりの時間の計画（たまに無計画な）停電があります。</p>
+
+<p>宿には簡易な電源バックアップがあり、とりあえず無線インターネットルーターの電源は確保してくれる。
+今回持ってきたMBA11は動画を見なければ一日問題なく使えるので、充電の時間を間違えないようにすることにちょっと気を使うだけ。</p>
+
+<p>ネットのスピードはある意味別世界、</p>
+
+<p>下り：0.22Mps<br/>
+上り：0.37Mps</p>
+
+<p>タイ、マレーシアと温暖な所から来たので、少し寒いのがつらいのだが、後もう少しで、一気に気温が上がってくるはず、、。</p>
+
+<p>カトマンズは少し騒々しいので、脱出を計画、、取り合えず、ナガルコットあたりから滞在して、ちょっと居心地の良い空気のきれいな町を探しにでるつもりだ。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iTuneで他母艦接続のiPod音楽ファイルを再生]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/02/play-ipod-library/"/>
+    <updated>2015-02-02T15:35:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/02/play-ipod-library</id>
+    <content type="html"><![CDATA[<p>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA9のiTuneで再生できることに気がつきました！</p>
+
+<p>充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
+なんか得をした気分。</p>
+
+<p><img src="http://goozenlab.com/images/2015-02-02_itune.png" alt="iTune with iPod" /></p>
+
+<p>※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
     <link href="http://goozenlab.com/blog/2015/01/30/sati-no-sound/"/>
-    <updated>2015-01-30T17:02:00+08:00</updated>
+    <updated>2015-01-30T17:02:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/30/sati-no-sound</id>
     <content type="html"><![CDATA[<p>以前指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
 勘違いとケアレスミスのダブルパンチです。</p>
 
-<p>アプリをストアーから削除しました。<br/>
+<p>アプリをストアーから一時削除しました。<br/>
 対応したバージョンを申請しています。</p>
 
 <p>なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。</p>
@@ -31,11 +70,11 @@
   <entry>
     <title type="html"><![CDATA[(a)をリリース]]></title>
     <link href="http://goozenlab.com/blog/2015/01/28/release-a/"/>
-    <updated>2015-01-28T16:00:00+08:00</updated>
+    <updated>2015-01-28T16:00:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/28/release-a</id>
     <content type="html"><![CDATA[<p>！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。！！！</p>
 
-<p>※ ちょっと頭の整理が必要な感じがしたので、アプストアから登録を削除しました。思ったより潰しがきかない。。@ 2015-01-29 19:07</p>
+<p>※ ちょっと頭の整理が必要な感じがしたので、<strong>アプストアから登録を削除</strong>しました。思ったより潰しがきかない。。@ 2015-01-29 19:07</p>
 
 <p>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！</p>
 
@@ -60,7 +99,7 @@
   <entry>
     <title type="html"><![CDATA[Sati v1.6.3]]></title>
     <link href="http://goozenlab.com/blog/2015/01/28/sati-v163/"/>
-    <updated>2015-01-28T08:54:00+08:00</updated>
+    <updated>2015-01-28T08:54:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/28/sati-v163</id>
     <content type="html"><![CDATA[<h3><strong>長押しスタート</strong></h3>
 
@@ -95,7 +134,7 @@
   <entry>
     <title type="html"><![CDATA[マラッカに戻る]]></title>
     <link href="http://goozenlab.com/blog/2015/01/25/melaka/"/>
-    <updated>2015-01-25T10:17:00+08:00</updated>
+    <updated>2015-01-25T10:17:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/25/melaka</id>
     <content type="html"><![CDATA[<p>コタバルでネパール出発日まで滞在する積もりでいたのだが、KLまでの飛行機チケットが思ったより高かったのと（まぁ、実際高くはないのだが、前後では34リンギット、当日だと94リンギットと気分的な要素）ロティチャナイがちょっと塩っ辛いのと、町が洪水の影響でホコリっぽいので来た方向に陸路で戻る事にする。</p>
 
@@ -120,7 +159,7 @@
   <entry>
     <title type="html"><![CDATA[ブリーフケースの中身（2015年冬）]]></title>
     <link href="http://goozenlab.com/blog/2015/01/17/inside-biefcase/"/>
-    <updated>2015-01-17T12:47:00+08:00</updated>
+    <updated>2015-01-17T12:47:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/17/inside-biefcase</id>
     <content type="html"><![CDATA[<p>2015年1月の時点で入っている物は以下。</p>
 
@@ -142,7 +181,7 @@
   <entry>
     <title type="html"><![CDATA[コタバル、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.com/blog/2015/01/17/internet-kotabaru/"/>
-    <updated>2015-01-17T10:58:00+08:00</updated>
+    <updated>2015-01-17T10:58:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/17/internet-kotabaru</id>
     <content type="html"><![CDATA[<p>クリスマスから年末にかけて大洪水に見舞われたコタバルにくる。宿にも胸のあたりまで水があがってきたようで一階の客室部分はまだ手入れが必要の事だが、宿のおいちゃんはあまり奇麗にする気が無いように見える。キャメロンハイランドより内部をちょっと回ってきたけれど、奥地の森林伐採が少なからず影響しているように思える。</p>
 
@@ -166,7 +205,7 @@
   <entry>
     <title type="html"><![CDATA[キャメロンハイランド、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.com/blog/2015/01/06/internet-cameron_highlands/"/>
-    <updated>2015-01-06T19:00:00+08:00</updated>
+    <updated>2015-01-06T19:00:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/06/internet-cameron_highlands</id>
     <content type="html"><![CDATA[<p>マレーシアの避暑地、キャメロンハイランドにくる。涼しというより寒い、そして曇りがち、夕立も多い。</p>
 
@@ -197,7 +236,7 @@
   <entry>
     <title type="html"><![CDATA[2015年の海外年明け]]></title>
     <link href="http://goozenlab.com/blog/2015/01/01/new-year/"/>
-    <updated>2015-01-01T20:00:00+08:00</updated>
+    <updated>2015-01-01T20:00:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/01/new-year</id>
     <content type="html"><![CDATA[<p>年が明けた。旅・ノマドライフも、日本への出入りはあるのだが10年が経った。光陰矢の如しというか、十年一日というか。３０を超えてからの時間の流れが早くなり、４０を超えたあたりからはスザマしい速さで過ぎていきます。びっくりですな。</p>
 
@@ -230,7 +269,7 @@
   <entry>
     <title type="html"><![CDATA[イポー、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.com/blog/2014/12/31/internet-ipoh/"/>
-    <updated>2014-12-31T19:04:00+08:00</updated>
+    <updated>2014-12-31T19:04:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/12/31/internet-ipoh</id>
     <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
 
@@ -253,7 +292,7 @@
   <entry>
     <title type="html"><![CDATA[マラッカ、マレーシアのインターネット事情]]></title>
     <link href="http://goozenlab.com/blog/2014/12/24/internet-melaka/"/>
-    <updated>2014-12-24T18:04:00+08:00</updated>
+    <updated>2014-12-24T18:04:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/12/24/internet-melaka</id>
     <content type="html"><![CDATA[<p>１０年近く前にきた事のあるマラッカ。穏やかな地方都市のイメージがあったのですが、見事なかわりようです、都市です。無用にでかいショッピングモールがあります。観光客もいっぱいいます。そして、１２月の末ですが蒸し暑いです。日本の梅雨のようで雨もよく降ります。（ベストシーズンのチェンマイからきた事に激しく後悔。）</p>
 
@@ -277,7 +316,7 @@
   <entry>
     <title type="html"><![CDATA[Android studioをダウンロード]]></title>
     <link href="http://goozenlab.com/blog/2014/12/09/androidstudio-install/"/>
-    <updated>2014-12-09T20:20:00+08:00</updated>
+    <updated>2014-12-09T20:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/12/09/androidstudio-install</id>
     <content type="html"><![CDATA[<p>Android studioをダウンロードする。そして、最初につまずいたところ。</p>
 
@@ -298,7 +337,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[Satiでの不具合]]></title>
     <link href="http://goozenlab.com/blog/2014/12/04/nosound-sati/"/>
-    <updated>2014-12-04T13:55:00+08:00</updated>
+    <updated>2014-12-04T13:55:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/12/04/nosound-sati</id>
     <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
 
@@ -322,7 +361,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[Release Pranatice]]></title>
     <link href="http://goozenlab.com/blog/2014/12/01/pranatice-release/"/>
-    <updated>2014-12-01T14:20:00+08:00</updated>
+    <updated>2014-12-01T14:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/12/01/pranatice-release</id>
     <content type="html"><![CDATA[<p>久しぶりに新しいソフトを申請しました。</p>
 
@@ -413,7 +452,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[cosper v1.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/22/cosper-v162/"/>
-    <updated>2014-11-22T08:15:00+08:00</updated>
+    <updated>2014-11-22T08:15:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/22/cosper-v162</id>
     <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</p>
 ]]></content>
@@ -422,7 +461,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
     <link href="http://goozenlab.com/blog/2014/11/21/mba11-review/"/>
-    <updated>2014-11-21T20:20:00+08:00</updated>
+    <updated>2014-11-21T20:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/21/mba11-review</id>
     <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
 
@@ -456,7 +495,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/20/doop-v162/"/>
-    <updated>2014-11-20T17:20:00+08:00</updated>
+    <updated>2014-11-20T17:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/20/doop-v162</id>
     <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
 
@@ -471,7 +510,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[dandori v2.6.2]]></title>
     <link href="http://goozenlab.com/blog/2014/11/18/dandori-v262/"/>
-    <updated>2014-11-18T17:20:00+08:00</updated>
+    <updated>2014-11-18T17:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/18/dandori-v262</id>
     <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
 
@@ -482,7 +521,7 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
   <entry>
     <title type="html"><![CDATA[さよならMBP15、サワディクラップMBA11]]></title>
     <link href="http://goozenlab.com/blog/2014/11/10/mabbookair9/"/>
-    <updated>2014-11-10T14:20:00+08:00</updated>
+    <updated>2014-11-10T14:20:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/10/mabbookair9</id>
     <content type="html"><![CDATA[<p>さよなら、MBP15、サワディクラップ、MBA11。</p>
 
@@ -498,46 +537,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 <p>ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。</p>
 
 <p>店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ohayo v2.8.0]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/05/ohayo-v280/"/>
-    <updated>2014-11-05T05:04:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2014/11/05/ohayo-v280</id>
-    <content type="html"><![CDATA[<p>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。</p>
-
-<p><img src="http://goozenlab.com/images/2014-11-05-ohayo-280-01.png" alt="Healthcare screenshot" /></p>
-
-<p>※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。</p>
-
-<!-- more -->
-
-
-<p>書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。</p>
-
-<p><img src="http://goozenlab.com/images/2014-11-05-ohayo-280-02.png" alt="ohayo screenshot" />
-<img src="http://goozenlab.com/images/2014-11-05-ohayo-280-03.png" alt="ohayo screenshot" /></p>
-
-<p>※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。</p>
-
-<p>余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[littlist v2.6.0]]></title>
-    <link href="http://goozenlab.com/blog/2014/10/30/littlist-v260/"/>
-    <updated>2014-10-30T20:04:00+08:00</updated>
-    <id>http://goozenlab.com/blog/2014/10/30/littlist-v260</id>
-    <content type="html"><![CDATA[<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
-
-<p>ちょっとした使い勝手の変更
-+ 赤ドットが入るときにセルの背景が赤色にフラッシュします。
-+ セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）</p>
-
-<p>アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。月に数回無料化してますので、タイミングを伺ってゲットしてください。</p>
 ]]></content>
   </entry>
   
