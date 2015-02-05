@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-03T11:02:49+05:45</updated>
+  <updated>2015-02-05T07:38:21+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,13 +14,175 @@
 
   
   <entry>
+    <title type="html"><![CDATA[littlist 2.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/06/versionning/"/>
+    <updated>2015-02-06T13:06:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/06/versionning</id>
+    <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。</p>
+
+<!-- more -->
+
+
+<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
+ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>agvtool bump
+</span><span class='line'># agvtool bump -all #Info.plistも更新したいとき
+</span><span class='line'>
+</span><span class='line'>infoPlistFileSource="${SRCROOT}/${INFOPLIST_FILE}"
+</span><span class='line'>#infoPlistFileDestination="${TEMP_DIR}/Preprocessed-Info.plist"
+</span><span class='line'>rootPlistFileDestination="${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist"
+</span><span class='line'>
+</span><span class='line'>if [ ${CONFIGURATION} = "Debug" ]; then
+</span><span class='line'>  # Version 2.6.3
+</span><span class='line'>  # Build @ 2014-01-16 12:16 (dev.298)
+</span><span class='line'>  versionPrefix=" (dev."
+</span><span class='line'>  date=$(date "+@ %Y-%m-%d %H:%M")
+</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)
+</span><span class='line'>  BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}")"
+</span><span class='line'>else
+</span><span class='line'>  # Version 2.6.3 @ 2014.01.16
+</span><span class='line'>  # Build  276
+</span><span class='line'>  date=$(date "+ @ %Y.%m.%d")
+</span><span class='line'>  APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)$date
+</span><span class='line'>  BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFileSource)
+</span><span class='line'>fi
+</span><span class='line'>
+</span><span class='line'># ここのPreferenceSpecifiers:16, 17は各アプリによって変更
+</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION" $rootPlistFileDestination
+</span><span class='line'>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER" $rootPlistFileDestination
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
+
+<p><img src="http://goozenlab.com/images/2015-01-26_versionning_dev.png" width="300">
+<img src="http://goozenlab.com/images/2015-01-26_versionning_app.png" width="300"></p>
+
+<p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;About&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;FooterText&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;
+</span><span class='line'>  &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;1.0&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Version&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;app_version_number&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;
+</span><span class='line'>  &lt;dict&gt;
+</span><span class='line'>      &lt;key&gt;Type&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;DefaultValue&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;1&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Title&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;Build&lt;/string&gt;
+</span><span class='line'>      &lt;key&gt;Key&lt;/key&gt;
+</span><span class='line'>      &lt;string&gt;app_build_number&lt;/string&gt;
+</span><span class='line'>  &lt;/dict&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>追記：<br/>
+少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。</p>
+
+<p><img src="http://goozenlab.com/images/2015-01-19_a_release.png" width="300"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pinocul v1.7.1]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/05/pinocul-v171/"/>
+    <updated>2015-02-05T07:35:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/05/pinocul-v171</id>
+    <content type="html"><![CDATA[<p>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。</p>
+
+<p>最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。</p>
+
+<p>折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）</p>
+
+<!-- more -->
+
+
+<p>新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は <code>Bundle display name</code> を <code>Info.plist</code> 追加で変更します。</p>
+
+<p>という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）</p>
+
+<p>ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）</p>
+
+<p>※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[カトマンズ、ネパールのインターネット事情]]></title>
     <link href="http://goozenlab.com/blog/2015/02/03/internet-kathmandu/"/>
     <updated>2015-02-03T08:41:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/02/03/internet-kathmandu</id>
-    <content type="html"><![CDATA[<p>マレーシア空港の免税店での誘惑に耐え、お酒を買わずにネパールに到着。お酒抜きスタート。３年ぶりのネパールだ。</p>
+    <content type="html"><![CDATA[<p>マレーシア空港の免税店での誘惑に耐え、お酒を買わずにネパールに到着。お酒抜きスタート。３年ぶりのネパール。</p>
 
-<p>電力事情は以前とさほど改善されていないし、タクシーの運ちゃん曰くクッキングガスもかなり値上がっているとのこと。そして、相変わらず週にかなりの時間の計画（たまに無計画な）停電があり。</p>
+<p>電力事情は以前と変わらず、あまり改善されていないし、タクシーの運ちゃん曰くクッキングガスもかなり値上がっているとのこと。そして、相変わらず週にかなり長い計画＋無計画停電があり。</p>
 
 <p>宿には簡易な電源バックアップがあり、とりあえず無線インターネットルーターの電源は確保してくれる。
 今回持ってきたMBA11は動画を見なければ一日問題なく使えるので、充電の時間を間違えないようにすることにちょっと気を使うだけ。</p>
@@ -34,7 +196,7 @@
 
 <p>カトマンズは少し騒々しいので、脱出を計画、、取り合えず、ナガルコットあたりから滞在して、ちょっと居心地の良い空気のきれいな町を探しにでるつもり。</p>
 
-<p>追記：両替は、銀行：￥10,000 = NPR 8,380、町中両替商：￥10,000 = NPR 8,250 と若干の手間がかかるが銀行がよい。</p>
+<p>追記：両替は、銀行：￥10,000 = NPR 8,380、町中両替商：￥10,000 = NPR 8,250 と若干の手間がかかるが銀行がよい。マレーシアは野良猫天国だったのがこちらでは、野良犬地獄です。ジャーマンシェパードの野良犬なんて、最悪。</p>
 ]]></content>
   </entry>
   
@@ -506,39 +668,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 <p>マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。</p>
 
 <p>次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[dandori v2.6.2]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/18/dandori-v262/"/>
-    <updated>2014-11-18T17:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/18/dandori-v262</id>
-    <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
-
-<p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[さよならMBP15、サワディクラップMBA11]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/10/mabbookair9/"/>
-    <updated>2014-11-10T14:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/10/mabbookair9</id>
-    <content type="html"><![CDATA[<p>さよなら、MBP15、サワディクラップ、MBA11。</p>
-
-<p>タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変調の兆しがあり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。</p>
-
-<!-- more -->
-
-
-<p>本当は来年の２月頃発表になる12インチのMBA Retinaで機材をフルリニューアルするつもりでいた。思わぬ出来事に２•３日どうしようかと悩む。ここタイで直すという選択肢もあるが、タイには正規なアップルショップはまだなく、時間もかなりかかり信頼もできない。</p>
-
-<p>MBP15は開発が一段落終えたらタイに置いて出るつもりでいたので、旅に持っていく事を理由付けにして、MBA11 w/US Keyboard+RAM8GBを目当てにタイのアップル代理店iStudioへ行く。カスタム仕様だとアメリカに注文を出すらしく２週間はかかるらしく、在庫はノーマルのタイ語キーボードの物しかないとの事。さすが王国だけあって外人には媚びていない。ある意味商売べたでもある。金額は免税の処置をしても昨今の急激な円安のせいでタイで買うお得感が全くない。日銀に恨み節。。無駄遣い感がぬぐい去れない。購入意欲が一気に減少する。</p>
-
-<p>ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。</p>
-
-<p>店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。</p>
 ]]></content>
   </entry>
   

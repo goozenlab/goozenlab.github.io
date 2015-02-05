@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-03T11:02:49+05:45</updated>
+  <updated>2015-02-05T07:38:21+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,130 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[littlist 2.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/06/versionning/"/>
+    <updated>2015-02-06T13:06:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/06/versionning</id>
+    <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。</p>
+
+<!-- more -->
+
+
+<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
+ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
+
+<p>```
+agvtool bump</p>
+
+<h1>agvtool bump -all #Info.plistも更新したいとき</h1>
+
+<p>infoPlistFileSource="${SRCROOT}/${INFOPLIST_FILE}"</p>
+
+<h1>infoPlistFileDestination="${TEMP_DIR}/Preprocessed-Info.plist"</h1>
+
+<p>rootPlistFileDestination="${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist"</p>
+
+<p>if [ ${CONFIGURATION} = "Debug" ]; then</p>
+
+<pre><code># Version 2.6.3
+# Build @ 2014-01-16 12:16 (dev.298)
+versionPrefix=" (dev."
+date=$(date "+@ %Y-%m-%d %H:%M")
+APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)
+BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}")"
+</code></pre>
+
+<p>else</p>
+
+<pre><code># Version 2.6.3 @ 2014.01.16
+# Build  276
+date=$(date "+ @ %Y.%m.%d")
+APP_VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" $infoPlistFileSource)$date
+BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFileSource)
+</code></pre>
+
+<p>fi</p>
+
+<h1>ここのPreferenceSpecifiers:16, 17は各アプリによって変更</h1>
+
+<p>/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION" $rootPlistFileDestination
+/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER" $rootPlistFileDestination</p>
+
+<p>```</p>
+
+<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
+
+<p><img src="/images/2015-01-26_versionning_dev.png" width="300">
+<img src="/images/2015-01-26_versionning_app.png" width="300"></p>
+
+<p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
+
+<p>```</p>
+
+<pre><code>    &lt;dict&gt;
+        &lt;key&gt;Title&lt;/key&gt;
+        &lt;string&gt;About&lt;/string&gt;
+        &lt;key&gt;Type&lt;/key&gt;
+        &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
+        &lt;key&gt;FooterText&lt;/key&gt;
+        &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Type&lt;/key&gt;
+        &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+        &lt;key&gt;DefaultValue&lt;/key&gt;
+        &lt;string&gt;1.0&lt;/string&gt;
+        &lt;key&gt;Title&lt;/key&gt;
+        &lt;string&gt;Version&lt;/string&gt;
+        &lt;key&gt;Key&lt;/key&gt;
+        &lt;string&gt;app_version_number&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Type&lt;/key&gt;
+        &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+        &lt;key&gt;DefaultValue&lt;/key&gt;
+        &lt;string&gt;1&lt;/string&gt;
+        &lt;key&gt;Title&lt;/key&gt;
+        &lt;string&gt;Build&lt;/string&gt;
+        &lt;key&gt;Key&lt;/key&gt;
+        &lt;string&gt;app_build_number&lt;/string&gt;
+    &lt;/dict&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>追記：<br/>
+少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。</p>
+
+<p><img src="/images/2015-01-19_a_release.png" width="300"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pinocul v1.7.1]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/05/pinocul-v171/"/>
+    <updated>2015-02-05T07:35:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/05/pinocul-v171</id>
+    <content type="html"><![CDATA[<p>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。</p>
+
+<p>最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。</p>
+
+<p>折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）</p>
+
+<!-- more -->
+
+
+<p>新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は <code>Bundle display name</code> を <code>Info.plist</code> 追加で変更します。</p>
+
+<p>という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）</p>
+
+<p>ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）</p>
+
+<p>※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
@@ -69,32 +193,6 @@
     <updated>2014-11-22T08:15:00+05:45</updated>
     <id>http://goozenlab.com/blog/2014/11/22/cosper-v162</id>
     <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[doop v1.6.2]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/20/doop-v162/"/>
-    <updated>2014-11-20T17:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/20/doop-v162</id>
-    <content type="html"><![CDATA[<p>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。</p>
-
-<p>入力部のアイコンも新しくしました。</p>
-
-<p>マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。</p>
-
-<p>次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[dandori v2.6.2]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/18/dandori-v262/"/>
-    <updated>2014-11-18T17:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/18/dandori-v262</id>
-    <content type="html"><![CDATA[<p>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。</p>
-
-<p>次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</p>
 ]]></content>
   </entry>
   

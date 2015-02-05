@@ -1,0 +1,229 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>pinocul v1.7.1  | goozenlab</title>
+
+<meta name="author" content="jin"> 
+
+<meta name="description" content="放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。 最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（ &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="goozenlab" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+      <!--  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script> -->
+	<meta name="google-site-verification" content="zRArvI9q2p-0UNtsXG84wSNFwaHQDoCLkjLOHFpRTy0" />
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">goozenlab</a></h1>
+<h4>. . .</h4>
+<nav id="main-nav"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+	  <li><a href="/iapp/a/">(a)</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+      <li><a href="/iapp/littlist">littlist</a></li>
+	  <li><a href="/iapp/a/">(a)</a></li>
+      <li><a href="/iapp/dandori/">dandori</a></li>
+      <li><a href="/iapp/doop/">doop</a></li>
+      <li><a href="/iapp/tapas/">tapas</a></li>
+      <li><a href="/iapp/cosper/">cosper</a></li>
+      <li><a href="/iapp/listaria/">listaria</a></li>
+      <li><a href="/iapp/ippuku/">ippuku</a></li>
+      <li><a href="/iapp/ohayo/">ohayo</a></li>
+      <li><a href="/iapp/sati/">sati</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:goozenlab.com">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Pinocul v1.7.1</h2>
+	<div class="entry-content"><p>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。</p>
+
+<p>最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。</p>
+
+<p>折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）</p>
+
+<!-- more -->
+
+
+<p>新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は <code>Bundle display name</code> を <code>Info.plist</code> 追加で変更します。</p>
+
+<p>という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）</p>
+
+<p>ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）</p>
+
+<p>※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-05T07:35:00+05:45" pubdate data-updated="true">Feb 5<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/pinocle/'>pinocle</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+	<footer id="footer" class="inner"><!-- Revolver Maps
+<script type="text/javascript" src="http://jh.revolvermaps.com/2/4.js?i=7uoq4kl5qsl&amp;m=5&amp;h=85&amp;c=ffc000&amp;r=30" async="async"></script>
+-->
+<!-- Who's among us
+<script id="_wauhvo">var _wau = _wau || []; _wau.push(["small", "xtunim1mxx66", "hvo"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+ -->
+<br />
+Powered by Octopress and design theme of <a href="http://github.com/macjasp/cleanpress">CleanPress</a> by carmo.org.uk.
+<br />
+Copyright &copy; 2015
+
+    jin
+
+.kathmandu.nepal
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'goozenlabgh';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/05/pinocul-v171/';
+        var disqus_url = 'http://goozenlab.com/blog/2015/02/05/pinocul-v171/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+</body>
+</html>
