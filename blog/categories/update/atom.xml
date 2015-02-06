@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-05T14:50:27+05:45</updated>
+  <updated>2015-02-06T19:32:17+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -16,14 +16,15 @@
   <entry>
     <title type="html"><![CDATA[littlist 2.6.3]]></title>
     <link href="http://goozenlab.com/blog/2015/02/06/versionning/"/>
-    <updated>2015-02-06T13:06:00+05:45</updated>
+    <updated>2015-02-06T06:55:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/02/06/versionning</id>
     <content type="html"><![CDATA[<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。</p>
 
 <!-- more -->
 
 
-<p>ついでに、ネット各所に載っていますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
+<p>ついでに、ネット各所に載って
+いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
 ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
 
 <p>```
@@ -142,7 +143,7 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
     <link href="http://goozenlab.com/blog/2015/01/30/sati-no-sound/"/>
     <updated>2015-01-30T17:02:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/01/30/sati-no-sound</id>
-    <content type="html"><![CDATA[<p>以前指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
+    <content type="html"><![CDATA[<p>以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
 勘違いとケアレスミスのダブルパンチです。</p>
 
 <p>アプリをストアーから一時削除しました。<br/>
