@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/ohayo/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-06T19:32:17+05:45</updated>
+  <updated>2015-02-10T19:39:56+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ohayo v2.8.1]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/10/ohayo-v281/"/>
+    <updated>2015-02-10T13:06:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/10/ohayo-v281</id>
+    <content type="html"><![CDATA[<h3><strong>ロングタップ</strong>で記録の開始、<strong>音が出ない</strong>バグ</h3>
+
+<p>の変更といくつかのバグ、修正と追加があります。</p>
+
+<ul>
+<li><p>バグ</p>
+
+<ul>
+<li>アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ</li>
+<li><strong>音が出ないバグ</strong>、iOS8。ホーム＞設定＞ohayo: <strong>通知</strong>にてサウンドのスウィッチをオンにしてください</li>
+<li>初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる<br/>
+（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）</li>
+</ul>
+</li>
+<li><p>修正・調整</p>
+
+<ul>
+<li><strong>ロングタップ</strong>で記録の開始（ボタンとの誤作動をさけるため）</li>
+<li>シェイクがかなり繊細なのを少し調整</li>
+</ul>
+</li>
+<li>追加
+
+<ul>
+<li>ヘルスケアへの書出し<strong>設定が有効時</strong>に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。<br/>
+データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）</p>
+
+<p>この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。</p>
+
+<p><img src="/images/2015-01-27-ohayo-export.png" alt="ヘルスケアへ書出しのオン・オフのスウィッチ" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.0]]></title>

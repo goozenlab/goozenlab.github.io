@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-06T19:32:17+05:45</updated>
+  <updated>2015-02-10T19:39:56+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[次のアップデート進行状況]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/11/sati-upcomming/"/>
+    <updated>2015-02-11T08:54:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/11/sati-upcomming</id>
+    <content type="html"><![CDATA[<p>1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。</p>
+
+<h3>変更および追加</h3>
+
+<p><img src="/images/2015-02-11_sati_main_pre165.png" width="230">
+<img src="/images/2015-02-11_sati_setting_pre165.png" width="230">
+<img src="/images/2015-02-11_sati_history_pre165.png" width="230"></p>
+
+<ul>
+<li><p>メインページの透明度等のデザインの微調整</p>
+
+<ul>
+<li>英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）</li>
+</ul>
+</li>
+<li><p>設定ページのデザイン微調整</p>
+
+<ul>
+<li>戻るボタンを下に配置</li>
+<li>QuietModeのアイコンを追加</li>
+</ul>
+</li>
+<li><p>履歴ページのデザイン変更</p>
+
+<ul>
+<li>戻るボタンを下に配置</li>
+</ul>
+</li>
+<li><p>瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）<br/>
+<img src="/images/manual-sati-timeline-all.png" title="" ></p>
+
+<ul>
+<li>静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）<br/>
+<img src="/images/manual-sati-timeline-quietmode.png" width="600"></li>
+<li>音の鳴るおよその位置にドットが描かれます（左からスタート）<br/>
+<img src="/images/manual-sati-timeline-simple.png" width="600"></li>
+</ul>
+</li>
+<li><p>画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.6.4]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/10/sati-v164/"/>
+    <updated>2015-02-10T19:30:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/10/sati-v164</id>
+    <content type="html"><![CDATA[<h3>iOS8上での<strong>音が鳴らない不具合</strong>は</h3>
+
+<p>ホーム＞設定＞サティ＞通知より、</p>
+
+<p>サウンドのスウィッチをオンにしてください。
+これで、問題は解消するはずです。</p>
+
+<h3>for Bug that you don't get any sounds on <strong>iOS8</strong>,</h3>
+
+<p>go Home > Setting > <strong><em>Sati: Notification</em></strong>  <br/>
+and turn <strong>Sound</strong> ON.  This solves this problem...
+I'm sorry so taking looong time to fix it.</p>
+
+<p><img src="/images/2015-01-30-alert.png"></p>
+
+<p>長らくご迷惑おかけしました。</p>
+
+<p>そして、次のアップデートに入れる予定のものが少し入り込みます。</p>
+
+<ul>
+<li>アイコンだらけになっていたメイン画面をスッキリとさせました。</li>
+</ul>
+
+
+<p><img src="/images/2015-02-01_sati_163.png" width="300">
+<img src="/images/2015-02-01_sati_164.png" width="300"></p>
+
+<ul>
+<li>最近の状況を示すアイコンを中心の円の内側に入れました。
+
+<ul>
+<li>今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。</li>
+<li>瞑想回数により白が濃くなります。</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li>設定画面も少し手を入れて、
+
+<ul>
+<li>静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。</li>
+<li>下は終了音の選択</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="/images/manual-sati-settingView.png" width="300"></p>
+
+<ul>
+<li>ホーム＞設定＞サティで設定できる項目を追加しました。
+
+<ul>
+<li>瞑想中の音のオン・オフ</li>
+<li>カレンダー書出し時のフォーマット</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="/images/manual-sati-setting.png" width="300"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
@@ -84,67 +207,6 @@
 <p><img src="/images/2014-12-04-settting.png" alt="Setting" />
 <img src="/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
 <img src="/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sati v1.5.7]]></title>
-    <link href="http://goozenlab.com/blog/2014/09/20/sati-v157/"/>
-    <updated>2014-09-20T13:08:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/09/20/sati-v157</id>
-    <content type="html"><![CDATA[<p>一年近くコンピューターを持たずにふらふらしてました。
-久しぶりに以下の調整および修正を行いました。</p>
-
-<h3>メイン</h3>
-
-<ul>
-<li>瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。</li>
-<li>中断アラートが複数あがらないようにする。</li>
-<li>ちょっと物足りない背景に、オームのアイコンを追加。</li>
-</ul>
-
-
-<h3>設定ページ</h3>
-
-<ul>
-<li>時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。</li>
-</ul>
-
-
-<h3>履歴ページ</h3>
-
-<ul>
-<li>メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sati v1.5.5]]></title>
-    <link href="http://goozenlab.com/blog/2013/08/08/sati-v155/"/>
-    <updated>2013-08-08T13:08:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2013/08/08/sati-v155</id>
-    <content type="html"><![CDATA[<p>30分以内のキャンセルが効かないバグがある事に気がつきました。<br/>
-（キャンセルしますか -> はい -> 変化無し。。。）</p>
-
-<ul>
-<li>瞑想時間が切れるまでほっておく</li>
-<li>３０分以上たってキャンセルする</li>
-<li>プログラムを終了させる</li>
-</ul>
-
-
-<p>で、スタートの状態に戻ります。
-確りテストをするのを忘れてました。</p>
-
-<p>まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、
-あまり気分のよい物では無いと思います。</p>
-
-<p>修正版が申請中です。
-それまでは途中キャンセル無しに瞑想生活を送ってください。</p>
-
-<p>よろしくお願いします。</p>
 ]]></content>
   </entry>
   

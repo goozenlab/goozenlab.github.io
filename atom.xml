@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-06T19:32:17+05:45</updated>
+  <updated>2015-02-10T19:39:56+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,176 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[次のアップデート進行状況]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/11/sati-upcomming/"/>
+    <updated>2015-02-11T08:54:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/11/sati-upcomming</id>
+    <content type="html"><![CDATA[<p>1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。</p>
+
+<h3>変更および追加</h3>
+
+<p><img src="http://goozenlab.com/images/2015-02-11_sati_main_pre165.png" width="230">
+<img src="http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png" width="230">
+<img src="http://goozenlab.com/images/2015-02-11_sati_history_pre165.png" width="230"></p>
+
+<ul>
+<li><p>メインページの透明度等のデザインの微調整</p>
+
+<ul>
+<li>英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）</li>
+</ul>
+</li>
+<li><p>設定ページのデザイン微調整</p>
+
+<ul>
+<li>戻るボタンを下に配置</li>
+<li>QuietModeのアイコンを追加</li>
+</ul>
+</li>
+<li><p>履歴ページのデザイン変更</p>
+
+<ul>
+<li>戻るボタンを下に配置</li>
+</ul>
+</li>
+<li><p>瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）<br/>
+<img src="http://goozenlab.com/images/manual-sati-timeline-all.png" title="" ></p>
+
+<ul>
+<li>静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）<br/>
+<img src="http://goozenlab.com/images/manual-sati-timeline-quietmode.png" width="600"></li>
+<li>音の鳴るおよその位置にドットが描かれます（左からスタート）<br/>
+<img src="http://goozenlab.com/images/manual-sati-timeline-simple.png" width="600"></li>
+</ul>
+</li>
+<li><p>画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.6.4]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/10/sati-v164/"/>
+    <updated>2015-02-10T19:30:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/10/sati-v164</id>
+    <content type="html"><![CDATA[<h3>iOS8上での<strong>音が鳴らない不具合</strong>は</h3>
+
+<p>ホーム＞設定＞サティ＞通知より、</p>
+
+<p>サウンドのスウィッチをオンにしてください。
+これで、問題は解消するはずです。</p>
+
+<h3>for Bug that you don&#8217;t get any sounds on <strong>iOS8</strong>,</h3>
+
+<p>go Home > Setting > <strong><em>Sati: Notification</em></strong>  <br/>
+and turn <strong>Sound</strong> ON.  This solves this problem&#8230;
+I&#8217;m sorry so taking looong time to fix it.</p>
+
+<p><img src="http://goozenlab.com/images/2015-01-30-alert.png"></p>
+
+<p>長らくご迷惑おかけしました。</p>
+
+<p>そして、次のアップデートに入れる予定のものが少し入り込みます。</p>
+
+<ul>
+<li>アイコンだらけになっていたメイン画面をスッキリとさせました。</li>
+</ul>
+
+
+<p><img src="http://goozenlab.com/images/2015-02-01_sati_163.png" width="300">
+<img src="http://goozenlab.com/images/2015-02-01_sati_164.png" width="300"></p>
+
+<ul>
+<li>最近の状況を示すアイコンを中心の円の内側に入れました。
+
+<ul>
+<li>今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。</li>
+<li>瞑想回数により白が濃くなります。</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li>設定画面も少し手を入れて、
+
+<ul>
+<li>静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。</li>
+<li>下は終了音の選択</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="http://goozenlab.com/images/manual-sati-settingView.png" width="300"></p>
+
+<ul>
+<li>ホーム＞設定＞サティで設定できる項目を追加しました。
+
+<ul>
+<li>瞑想中の音のオン・オフ</li>
+<li>カレンダー書出し時のフォーマット</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="http://goozenlab.com/images/manual-sati-setting.png" width="300"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ohayo v2.8.1]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/10/ohayo-v281/"/>
+    <updated>2015-02-10T13:06:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/10/ohayo-v281</id>
+    <content type="html"><![CDATA[<h3><strong>ロングタップ</strong>で記録の開始、<strong>音が出ない</strong>バグ</h3>
+
+<p>の変更といくつかのバグ、修正と追加があります。</p>
+
+<ul>
+<li><p>バグ</p>
+
+<ul>
+<li>アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ</li>
+<li><strong>音が出ないバグ</strong>、iOS8。ホーム＞設定＞ohayo: <strong>通知</strong>にてサウンドのスウィッチをオンにしてください</li>
+<li>初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる<br/>
+（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）</li>
+</ul>
+</li>
+<li><p>修正・調整</p>
+
+<ul>
+<li><strong>ロングタップ</strong>で記録の開始（ボタンとの誤作動をさけるため）</li>
+<li>シェイクがかなり繊細なのを少し調整</li>
+</ul>
+</li>
+<li>追加
+
+<ul>
+<li>ヘルスケアへの書出し<strong>設定が有効時</strong>に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。<br/>
+データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）</p>
+
+<p>この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。</p>
+
+<p><img src="http://goozenlab.com/images/2015-01-27-ohayo-export.png" alt="ヘルスケアへ書出しのオン・オフのスウィッチ" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ドゥリケル、ネパールのインターネット事情]]></title>
@@ -553,140 +723,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 <p><img src="http://goozenlab.com/images/2014-12-04-settting.png" alt="Setting" />
 <img src="http://goozenlab.com/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
 <img src="http://goozenlab.com/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Release Pranatice]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/01/pranatice-release/"/>
-    <updated>2014-12-01T14:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/01/pranatice-release</id>
-    <content type="html"><![CDATA[<p>久しぶりに新しいソフトを申請しました。</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
-
-<p>ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。</p>
-
-<blockquote><p><strong><em>Prāṇāyāma</em></strong> (Sanskrit: प्राणायाम prāṇāyāma) is a Sanskrit word meaning &#8220;extension of the prāṇa or breath&#8221; or &#8220;extension of the life force&#8221;. The word is composed of two Sanskrit words: prana, life force, or vital energy, (noted particularly as the breath), and ayāma, to extend or draw out. (Not &#8220;restrain, or control&#8221; as is often translated from yam instead of ayāma). It is a yogic discipline with origins in ancient India.<br/>
-<em>&#8212;&#8212;&#8211; from wikipedia</em></p></blockquote>
-
-<p>仕事の合間のイライラしているときや、瞑想後の落ち着いた雰囲気の中でも、心を落ち着かせたいときや、集中したいときなどに、</p>
-
-<p>KYOKOさんが、ちょっと地味で事務的にカウントしてくれます。</p>
-
-<p>本当はiOS6からの対応を考えていたのですが、端末を喋らせる機能ではiOS7が最低限になってしまう。最近のデーターではiOS6以前のユーザーは5%(私も含む）ぐらいだそうなので、色々試した後、iOS7以降の対応にしました。バージョンも0.7.0スタートです。</p>
-
-<p>おまけ：<br/>
-　KYOKOさんに英語を喋らせると、モロにジャパンニーズイングリッシュになります。帰国子女風に格好よく喋ってくれると思っていたので、びっくり＆ばくしょう。</p>
-
-<!-- more -->
-
-
-<p>READMEより、</p>
-
-<p>ヨガプラクティスの中でちょっと面倒な呼吸トレーニングのプラナヤマ。<br/>
-自分でカウントして行う人が多いとおもいます。
-ただし、自分で秒数をカウントするのが少々面倒なので、結局やらない人も多いのではないでしょうか？</p>
-
-<p>そこで、Kyokoさんに手伝っていただく事にしました。</p>
-
-<p>ちょっと地味で事務的な感じでKyokoさんがカウントしてくれます。プラナヤマにより集中できるとおもいます。</p>
-
-<p>仕事の合間に、イライラしているときや、瞑想後の落ち着いた雰囲気の中でも、<br/>
-心を落ち着かせたいときや、集中したいとき、元気が無いときなどなど、、</p>
-
-<p>そして、ヨガや瞑想のお供ににも、</p>
-
-<p>どこでも短時間でできますので、ご活用のほど。</p>
-
-<h3>□ メイン画面</h3>
-
-<p>メイン画面上には以下のアイテムがあります。</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-main.png" alt="pranatice" /></p>
-
-<ol>
-<li>歯車のボタン：細かい練習の設定</li>
-<li>目のボタン：練習の履歴表示</li>
-<li>練習のアイテム</li>
-<li>直近約50回の練習状況</li>
-<li>総練習回数</li>
-<li>1週間の練習状況（表示するしないの設定可能）</li>
-</ol>
-
-
-<p>練習のアイテムからは、チェックマークのオンオフができます。時間の設定は歯車のボタンより行ってください。</p>
-
-<h3>□ 使い方</h3>
-
-<p>画面の<strong>ロングタップ</strong>により練習が開始します。<br/>
-(キャンセルをしたいときにはもう一度の<strong>ロングタップ</strong>、アラートがあがりキャンセルします。)</p>
-
-<p>練習が終わり、呼吸と整える少しの時間が経過後、練習状況のボタンが出てきます。</p>
-
-<p>華丸、丸、三角、バツから選択し終了します。</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-01-pranatice-mood.png" alt="pranatice" /></p>
-
-<h3>□ 設定</h3>
-
-<p>各種設定の変更ができます。</p>
-
-<ol>
-<li>プラナヤマの時間と回数の設定</li>
-<li>音声の英語への変更。（英語設定の声になります。）</li>
-<li>最近一週間の状況を印すアイコンの表示設定。</li>
-<li>メモがあるときの印の設定</li>
-<li>カレンダーへの書き込み、カレンダー名の設定</li>
-</ol>
-
-
-<p>※シバナンダヨガのプラクティスに基づいて制作しています。</p>
-
-<p>無料化時の関心を得るために月に数日間有料化しますが、ほとんどの時期において無料で提供します。（寄付をしていただける方はもちろん大歓迎です。）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[cosper v1.6.2]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/22/cosper-v162/"/>
-    <updated>2014-11-22T08:15:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/22/cosper-v162</id>
-    <content type="html"><![CDATA[<p>cosper v1.6.2をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MBA11を10日間使ってみて]]></title>
-    <link href="http://goozenlab.com/blog/2014/11/21/mba11-review/"/>
-    <updated>2014-11-21T20:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/11/21/mba11-review</id>
-    <content type="html"><![CDATA[<p>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。</p>
-
-<p><img src="http://goozenlab.com/images/2014-11-21-mba11.jpg" alt="MBA11" /></p>
-
-<ol>
-<li>軽い。</li>
-<li>小さい。</li>
-<li>電池の保ちが期待以上によい。ほぼ一日使える。</li>
-<li>付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。</li>
-<li>キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。</li>
-<li>液晶はやはり小さい。懸念の肩こりも現状維持。</li>
-<li>テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。</li>
-<li>RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。</li>
-<li>CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。</li>
-<li>128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB)</li>
-<li>SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。</li>
-<li>スピーカーの音質は悪い。</li>
-<li>お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。</li>
-<li>キーボードに印字されているタイ語にちょっと愛着がわく。次はシンハラ文字版が欲しくなってきてる。。</li>
-<li>OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）</li>
-</ol>
-
-
-<p>と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）</p>
-
-<p>ちょっとうれしかったのでポストする。</p>
 ]]></content>
   </entry>
   
