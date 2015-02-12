@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-10T19:39:56+05:45</updated>
+  <updated>2015-02-12T21:26:48+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tapas v1.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/12/tapas-v163/"/>
+    <updated>2015-02-12T16:33:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/12/tapas-v163</id>
+    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日(2/11/2015)に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
+
+<p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
+
+<p>最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。</p>
+
+<ul>
+<li>アイテムの削除でアプリが落ちます。</li>
+<li>ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。</li>
+</ul>
+
+
+<p>両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。</p>
+
+<p>修正版を<strong>申請</strong>しました。10日後ぐらいにはアプストアにアップされると思います。
+ほかにも不具合がありましたら、コメントなどよろしくお願いします。</p>
+
+<p> 追記：<br/>
+ 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。<br/>
+ ただし、メモの表示方法にちょっと手を入れようと思ってます。</p>
+
+<ul>
+<li>リスト画面：メモを少し見やすく、選択された時は表示の高さを変える</li>
+<li>タイマ画面：左のテキストをタップで数秒間メモを表示する</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[次のアップデート進行状況]]></title>
@@ -699,30 +733,6 @@ JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8
 で、起動する。</p>
 
 <p><img src="http://goozenlab.com/images/2014-12-09-androidstudio-jdk-setting.png" alt="JVM Setting for Android studio" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Satiでの不具合]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/04/nosound-sati/"/>
-    <updated>2014-12-04T13:55:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/04/nosound-sati</id>
-    <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
-
-<p>瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
-を使っています。</p>
-
-<p>iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
-
-<p>ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。</p>
-
-<p>設定＞サティ＞通知＞「通知を許可する」をオンにしてください。</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-04-settting.png" alt="Setting" />
-<img src="http://goozenlab.com/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
-<img src="http://goozenlab.com/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
 ]]></content>
   </entry>
   

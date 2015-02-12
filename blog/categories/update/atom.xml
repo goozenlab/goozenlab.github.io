@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-10T19:39:56+05:45</updated>
+  <updated>2015-02-12T21:26:48+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tapas v1.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/12/tapas-v163/"/>
+    <updated>2015-02-12T16:33:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/12/tapas-v163</id>
+    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日(2/11/2015)に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
+
+<p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
+
+<p>最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。</p>
+
+<ul>
+<li>アイテムの削除でアプリが落ちます。</li>
+<li>ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。</li>
+</ul>
+
+
+<p>両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。</p>
+
+<p>修正版を<strong>申請</strong>しました。10日後ぐらいにはアプストアにアップされると思います。
+ほかにも不具合がありましたら、コメントなどよろしくお願いします。</p>
+
+<p> 追記：<br/>
+ 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。<br/>
+ ただし、メモの表示方法にちょっと手を入れようと思ってます。</p>
+
+<ul>
+<li>リスト画面：メモを少し見やすく、選択された時は表示の高さを変える</li>
+<li>タイマ画面：左のテキストをタップで数秒間メモを表示する</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[次のアップデート進行状況]]></title>
@@ -281,30 +315,6 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
 少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。</p>
 
 <p><img src="/images/2015-01-19_a_release.png" width="300"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[pinocul v1.7.1]]></title>
-    <link href="http://goozenlab.com/blog/2015/02/05/pinocul-v171/"/>
-    <updated>2015-02-05T07:35:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/02/05/pinocul-v171</id>
-    <content type="html"><![CDATA[<p>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。</p>
-
-<p>最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。</p>
-
-<p>折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）</p>
-
-<!-- more -->
-
-
-<p>新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は <code>Bundle display name</code> を <code>Info.plist</code> 追加で変更します。</p>
-
-<p>という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）</p>
-
-<p>ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）</p>
-
-<p>※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</p>
 ]]></content>
   </entry>
   

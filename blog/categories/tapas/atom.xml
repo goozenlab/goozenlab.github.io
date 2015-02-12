@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tapas | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/tapas/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-10T19:39:56+05:45</updated>
+  <updated>2015-02-12T21:26:48+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tapas v1.6.3]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/12/tapas-v163/"/>
+    <updated>2015-02-12T16:33:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/12/tapas-v163</id>
+    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日(2/11/2015)に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
+
+<p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
+
+<p>最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。</p>
+
+<ul>
+<li>アイテムの削除でアプリが落ちます。</li>
+<li>ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。</li>
+</ul>
+
+
+<p>両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。</p>
+
+<p>修正版を<strong>申請</strong>しました。10日後ぐらいにはアプストアにアップされると思います。
+ほかにも不具合がありましたら、コメントなどよろしくお願いします。</p>
+
+<p> 追記：<br/>
+ 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。<br/>
+ ただし、メモの表示方法にちょっと手を入れようと思ってます。</p>
+
+<ul>
+<li>リスト画面：メモを少し見やすく、選択された時は表示の高さを変える</li>
+<li>タイマ画面：左のテキストをタップで数秒間メモを表示する</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[x.6.0にアップデート中]]></title>
@@ -84,17 +118,6 @@
 
 <p>タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。
 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[年末感謝週末セール]]></title>
-    <link href="http://goozenlab.com/blog/2012/11/19/sale-on-weekend/"/>
-    <updated>2012-11-19T00:10:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2012/11/19/sale-on-weekend</id>
-    <content type="html"><![CDATA[<p>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。</p>
-
-<p>そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</p>
 ]]></content>
   </entry>
   
