@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-12T21:26:48+05:45</updated>
+  <updated>2015-02-16T15:37:55+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -18,7 +18,7 @@
     <link href="http://goozenlab.com/blog/2015/02/12/tapas-v163/"/>
     <updated>2015-02-12T16:33:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/02/12/tapas-v163</id>
-    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日(2/11/2015)に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
+    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
 
 <p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
 
@@ -71,6 +71,7 @@
 
 <ul>
 <li>戻るボタンを下に配置</li>
+<li>終了音の追加（短めの鐘と風鈴）</li>
 <li>QuietModeのアイコンを追加</li>
 </ul>
 </li>

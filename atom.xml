@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-12T21:26:48+05:45</updated>
+  <updated>2015-02-16T15:37:55+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -14,11 +14,71 @@
 
   
   <entry>
+    <title type="html"><![CDATA[バクタプル、ネパールのインターネット事情]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/16/internet-bhaktapur/"/>
+    <updated>2015-02-16T15:23:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/16/internet-bhaktapur</id>
+    <content type="html"><![CDATA[<p>ドゥリケルに飽きた訳ではないが、若干カトマンズに近づき古都バクタプル。入域料に1,500ルピー（1,800円くらい）を徴収される、外人は来てくれるなというメッセージなのか？。ダルバート３食無料チケットとか、宿１泊無料券とか付けてはくれないものか、、と思う。。</p>
+
+<p>貧乏性なので、何泊かしないと入域料がもったいないと、ちょっと滞在する予定。ナガルコットまで一時間くらいなので、天気の良い日に日帰りトレッキングにいく。</p>
+
+<p>町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。</p>
+
+<p>下り：0.04Mps<br/>
+上り：0.15Mps <br/>
+(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+
+<!-- more -->
+
+
+<p>パノラマ写真に若干ハマりつつ、
+<img src="http://goozenlab.com/images/2015-02-16_bhaktapur1.jpg" alt="Bhaktapur City" /><br/>
+<img src="http://goozenlab.com/images/2015-02-16_bhaktapur2.jpg" alt="Bhaktapur City" />  　
+<img src="http://goozenlab.com/images/2015-02-16_bhaktapur3.jpg" alt="Bhaktapur City" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[(a)をようやくリリースしました。]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/16/release-a/"/>
+    <updated>2015-02-16T15:18:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/16/release-a</id>
+    <content type="html"><![CDATA[<p>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！</p>
+
+<p><img src="http://goozenlab.com/images/manual-a-ColorModeDark.png" width="300"></p>
+
+<ol>
+<li><strong>制作理由</strong>：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、<strong>テキストベース</strong>で管理をしたい、との理由から作りました。</li>
+<li><strong>誰のため</strong>：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄</li>
+<li><strong>他のアプリとの違い</strong>：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。</li>
+</ol>
+
+
+<!-- more -->
+
+
+<p><img src="http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png" alt="todo.md" /></p>
+
+<p>詳しい使い方は<a href="http://goozenlab.com/iapp/a/">こちら</a>にて</p>
+
+<p>おまけ</p>
+
+<p>※ 審査を通りアプストアにアップされました。有料スタートです。＠2015-02-16 15:18</p>
+
+<p>※ ありがたい事に致命的なバグを見つけ、寝かしておいても仕方が無いので、再申請しました。@ 2015-02-06 07:08</p>
+
+<p>※ ちょっと頭の整理が必要な感じがしたので、<strong>アプストアから登録を削除</strong>しました。思ったより潰しがきかない。。@ 2015-01-29 19:07</p>
+
+<p>！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。！！！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Tapas v1.6.3]]></title>
     <link href="http://goozenlab.com/blog/2015/02/12/tapas-v163/"/>
     <updated>2015-02-12T16:33:00+05:45</updated>
     <id>http://goozenlab.com/blog/2015/02/12/tapas-v163</id>
-    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日(2/11/2015)に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
+    <content type="html"><![CDATA[<p>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
 
 <p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
 
@@ -71,6 +131,7 @@
 
 <ul>
 <li>戻るボタンを下に配置</li>
+<li>終了音の追加（短めの鐘と風鈴）</li>
 <li>QuietModeのアイコンを追加</li>
 </ul>
 </li>
@@ -244,37 +305,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 <p><img src="http://goozenlab.com/images/2015-02-05_dhulikhel3.jpg" alt="Dhulikhel City" /></p>
 
 <p>※町中はこんな感じ。iPhone4Sでパノラマ、と、、今更ながらiPhoneってすごいのねと、開発者とは思えないコメント。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[(a)を再申請中]]></title>
-    <link href="http://goozenlab.com/blog/2015/02/06/release-a/"/>
-    <updated>2015-02-06T07:09:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/02/06/release-a</id>
-    <content type="html"><![CDATA[<p>※ ありがたい事に致命的なバグを見つけ、寝かしておいても仕方が無いので、再申請しました。@ 2015-02-06 07:08</p>
-
-<p>※ ちょっと頭の整理が必要な感じがしたので、<strong>アプストアから登録を削除</strong>しました。思ったより潰しがきかない。。@ 2015-01-29 19:07</p>
-
-<p>！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。！！！</p>
-
-<p>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！</p>
-
-<p><img src="http://goozenlab.com/images/manual-a-ColorModeDark.png" width="300"></p>
-
-<ol>
-<li><strong>制作理由</strong>：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、<strong>テキストベース</strong>で管理をしたい、との理由から作りました。</li>
-<li><strong>誰のため</strong>：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄</li>
-<li><strong>他のアプリとの違い</strong>：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。</li>
-</ol>
-
-
-<!-- more -->
-
-
-<p><img src="http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png" alt="todo.md" /></p>
-
-<p>詳しい使い方は<a href="http://goozenlab.com/iapp/a/">こちら</a>にて</p>
 ]]></content>
   </entry>
   
@@ -712,27 +742,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 <!--![Melaka]()-->
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Android studioをダウンロード]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/09/androidstudio-install/"/>
-    <updated>2014-12-09T20:20:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/09/androidstudio-install</id>
-    <content type="html"><![CDATA[<p>Android studioをダウンロードする。そして、最初につまずいたところ。</p>
-
-<p>JAVAがインストールされていないと起動できず。<br/>
-オラクルより最新のJDK8をダウンロードしインストール。</p>
-
-<p>しかし、相変わらず起動しない。</p>
-
-<p>ばばっ、とグーグルを一回りする。      <br/>
-ターミナルで設定の書き出しなどはしたくなかったので、Android studio.app中の<code>Info.plist</code>を修正。
-JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8*</code>に変更する。
-で、起動する。</p>
-
-<p><img src="http://goozenlab.com/images/2014-12-09-androidstudio-jdk-setting.png" alt="JVM Setting for Android studio" /></p>
 ]]></content>
   </entry>
   
