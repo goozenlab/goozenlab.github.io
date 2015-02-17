@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ohayo | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/ohayo/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-16T15:52:07+05:45</updated>
+  <updated>2015-02-17T19:21:22+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[旅先での睡眠]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/17/sleep-on-travel/"/>
+    <updated>2015-02-17T19:41:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/17/sleep-on-travel</id>
+    <content type="html"><![CDATA[<p>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。</p>
+
+<p>ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。</p>
+
+<p>ひげに白髪が混じってきたし、積年の疲れということか。。</p>
+
+<p>で、拙作の睡眠ログアプリ「ohaYo」の紹介を含め、睡眠傾向を見てみると、</p>
+
+<p><img src="/images/2015-02-18_ohayo_thai.png" width="230">
+<img src="/images/2015-02-18_ohayo_malaysia.png" width="230">
+<img src="/images/2015-02-18_ohayo_nepal.png" width="230"></p>
+
+<ul>
+<li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
+<li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
+<li><strong>ネパール</strong>：寝てます。<br/>
+(左から)</li>
+</ul>
+
+
+<p>と、睡眠の傾向が出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
+
+<p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
+
+<p>旅のお供に、ぜひ、</p>
+
+<p>追記：
+ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ohayo v2.8.1]]></title>

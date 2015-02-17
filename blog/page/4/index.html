@@ -9,7 +9,9 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。 オマケ マイナーアップデートで申請しましたが、 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。） ちょっとした使い勝手の変更
++ 赤ドットが入るときにセルの背景が赤色にフラッシュします。
++ セルを選択したときに、 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -110,6 +112,53 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/10/30/littlist-v260/">
+		
+			Littlist v2.6.0</a>
+	</h2>
+	<div class="entry-content">
+		<p>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）</p>
+
+<p>ちょっとした使い勝手の変更
++ 赤ドットが入るときにセルの背景が赤色にフラッシュします。
++ セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）</p>
+
+<p>アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。月に数回無料化してますので、タイミングを伺ってゲットしてください。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-30T20:04:00+05:45" pubdate data-updated="true">Oct 30<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -577,79 +626,6 @@ $(document).ready(
 </div>
 </article>
 
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/29/doop-v150/">
-		
-			Doop v1.5.0</a>
-	</h2>
-	<div class="entry-content">
-		<p>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。</p>
-
-<ul>
-<li>アイコンを変更。髪の毛とひげを濃くしました。おでこにカラータイマーを付けました（別段意味無し）</li>
-</ul>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-icons.png" title="" ></p>
-
-<ul>
-<li>編集画面デザインを更新。<br/>
-カラーロックは上部の色のドットになります。タップで中心部に白い穴（ロック状態）が開きます。</li>
-</ul>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-edit-new.png" width="320"></p>
-
-<ul>
-<li>履歴ページを更新。無駄な情報をとりのぞき、シンプルにしました。
-
-<ol>
-<li>日付表示も開始日か終了日かに切り替えることができます。  （横線周辺のタップ）</li>
-<li>右の横線は最小時間と最長時間の長さになっています。タップにより使用期間によるソートが可能です。
-ソート時には白い横線が表示されます。もう一回クリックすることで解除されます。
-（丸2の右下にみえる白い点は平均時間の表示になります。)</li>
-</ol>
-</li>
-</ul>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-29-doop-history-new.png" width="320"></p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-29T10:41:00+05:45" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
 <nav id="pagenavi">
     
         <a href="/blog/page/3/" class="prev">Prev</a>
@@ -676,7 +652,7 @@ Copyright &copy; 2015
 
     jin
 
-.dhulikhel.nepal
+.bhaktapur.nepal
 </footer>
 	<script src="/javascripts/slash.js"></script>
 <script src="/javascripts/jquery.fancybox.pack.js"></script>

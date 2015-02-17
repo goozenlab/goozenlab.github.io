@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-16T15:52:07+05:45</updated>
+  <updated>2015-02-17T19:21:22+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[旅先での睡眠]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/17/sleep-on-travel/"/>
+    <updated>2015-02-17T19:41:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/17/sleep-on-travel</id>
+    <content type="html"><![CDATA[<p>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。</p>
+
+<p>ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。</p>
+
+<p>ひげに白髪が混じってきたし、積年の疲れということか。。</p>
+
+<p>で、拙作の睡眠ログアプリ「ohaYo」の紹介を含め、睡眠傾向を見てみると、</p>
+
+<p><img src="http://goozenlab.com/images/2015-02-18_ohayo_thai.png" width="230">
+<img src="http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png" width="230">
+<img src="http://goozenlab.com/images/2015-02-18_ohayo_nepal.png" width="230"></p>
+
+<ul>
+<li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
+<li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
+<li><strong>ネパール</strong>：寝てます。<br/>
+(左から)</li>
+</ul>
+
+
+<p>と、睡眠の傾向が出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
+
+<p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
+
+<p>旅のお供に、ぜひ、</p>
+
+<p>追記：
+ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[バクタプル、ネパールのインターネット事情]]></title>
@@ -22,9 +58,9 @@
 
 <p>貧乏性なので、何泊かしないと入域料がもったいないと、ちょっと滞在する予定。ナガルコットまで一時間くらいなので、天気の良い日に日帰りトレッキングにいく。</p>
 
-<p>町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。</p>
+<p>町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街の雰囲気は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。</p>
 
-<p>ネットは以下の通り、、部屋から繋がるとはいえ、、</p>
+<p>ネットは以下の通り、、繋がっているか繋がっていないか、分からなくなるくらいのスピード。</p>
 
 <p>下り：0.04Mps<br/>
 上り：0.15Mps <br/>
@@ -716,30 +752,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 <p>下り：4.15Mps<br/>
 上り：0.38Mps<br/>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-
-<!--![Melaka]()-->
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[マラッカ、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/24/internet-melaka/"/>
-    <updated>2014-12-24T18:04:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/24/internet-melaka</id>
-    <content type="html"><![CDATA[<p>１０年近く前にきた事のあるマラッカ。穏やかな地方都市のイメージがあったのですが、見事なかわりようです、都市です。無用にでかいショッピングモールがあります。観光客もいっぱいいます。そして、１２月の末ですが蒸し暑いです。日本の梅雨のようで雨もよく降ります。（ベストシーズンのチェンマイからきた事に激しく後悔。）</p>
-
-<p>良い点は英語が通じる事と食環境。南インドの料理がローカルプライスで本場物が食べられます。ロティチャナイやミールス、マサラドーサ等、ベジタリアンの私としては中華素食（ベジタリアン）と合わせて、幸せな食環境があります。日本食屋は大戸屋ぐらいはあっても良さそうだけども、無いに等しいくらい見かけません。
-そして、非常に残念なことに、酒が高い、日本より高い、炭酸水すら高い。免税店で購入したボンベイサファイアをチビチビ水で割って飲んでます。</p>
-
-<p>ネット環境は当然のごとく宿、カフェどこでもつながります。下のスピードはiPodでのアクセスなので、マックブックではもう少しスピードは出ているような気がします。WWDCのビデオを見ても問題ありませんでした。</p>
-
-<!-- more -->
-
-
-<p>下り：2.08Mps<br/>
-上り：0.18Mps<br/>
 (<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
 
 <!--![Melaka]()-->
