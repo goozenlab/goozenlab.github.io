@@ -4,7 +4,7 @@
   <title><![CDATA[Category: doop | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/doop/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-17T19:21:22+05:45</updated>
+  <updated>2015-02-20T07:39:34+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[doop v1.6.4]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/20/doop-v164/"/>
+    <updated>2015-02-20T07:36:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/20/doop-v164</id>
+    <content type="html"><![CDATA[<p>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）</p>
+
+<p>書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました</p>
+
+<ul>
+<li>だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。</li>
+<li>同時にタップしてスクロール時に落ちるバグも修正しました。</li>
+</ul>
+
+
+<p>指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。</p>
+
+<p>iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</p>
+
+<!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.2]]></title>
@@ -103,26 +131,6 @@
 <img src="https://dl.dropbox.com/u/163521/images/2013-06-27-doop-sort2.png" width="320" title="[doop Sort2]" ></p>
 
 <p>そして、平均時間がないものはバーに青色の色を付けました。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[doop v1.4.3]]></title>
-    <link href="http://goozenlab.com/blog/2013/05/29/doop-v143/"/>
-    <updated>2013-05-29T09:32:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2013/05/29/doop-v143</id>
-    <content type="html"><![CDATA[<p>久しくアップデートしていないdoopに少し手を入れました。</p>
-
-<p>カラーモードの追加と右のバーを単色とグラフ表示の切り替え可能にしました。
-少しだけ見た感じが騒々しくなるように思えますが、可視性がアップしたと思います。</p>
-
-<p>※ デフォルトは今まで通りの単色のバーになってます。グラフ表示にするには<strong>設定より変更</strong>をしてください。</p>
-
-<p>もう一つはセルの３つ目のスタイルを若干変更しました。カウントダウンが目的のスタイルでしたが表示がまとまっていなかったのをタイトルの上下に平均使用日数にたどり着くまでの日時と日数を表示するようにしました。</p>
-
-<p><img src="https://dl.dropbox.com/u/163521/images/20130529-bargraph.png" alt="BarGraph" /></p>
-
-<p>現在レビューの最中、数日中にアップされると思います。フライング投稿です。</p>
 ]]></content>
   </entry>
   

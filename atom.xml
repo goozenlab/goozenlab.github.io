@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-17T19:21:22+05:45</updated>
+  <updated>2015-02-20T07:39:34+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[doop v1.6.4]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/20/doop-v164/"/>
+    <updated>2015-02-20T07:36:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/20/doop-v164</id>
+    <content type="html"><![CDATA[<p>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）</p>
+
+<p>書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました</p>
+
+<ul>
+<li>だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。</li>
+<li>同時にタップしてスクロール時に落ちるバグも修正しました。</li>
+</ul>
+
+
+<p>指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。</p>
+
+<p>iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</p>
+
+<!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[旅先での睡眠]]></title>
@@ -24,7 +52,7 @@
 
 <p>ひげに白髪が混じってきたし、積年の疲れということか。。</p>
 
-<p>で、拙作の睡眠ログアプリ「ohaYo」の紹介を含め、睡眠傾向を見てみると、</p>
+<p>で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、</p>
 
 <p><img src="http://goozenlab.com/images/2015-02-18_ohayo_thai.png" width="230">
 <img src="http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png" width="230">
@@ -33,12 +61,12 @@
 <ul>
 <li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
 <li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
-<li><strong>ネパール</strong>：寝てます。<br/>
+<li><strong>ネパール</strong>：がっつり寝てます。<br/>
 (左から)</li>
 </ul>
 
 
-<p>と、睡眠の傾向が出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
+<p>と、見事に違いが出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
 
 <p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
 
@@ -733,29 +761,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 <p>見てみると移動のサークルがどんどん狭くなってる。</p>
 
 <p>これからキャメロンハイランドに向かってしばし逗留。２月にはネパール。そしてインド（今回はシッキム）でタイに戻り日本へ帰国？、しばし滞在後、久しぶりに南米に行くかな。。。当ての無い放浪が続きます。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[イポー、マレーシアのインターネット事情]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/31/internet-ipoh/"/>
-    <updated>2014-12-31T19:04:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/31/internet-ipoh</id>
-    <content type="html"><![CDATA[<p>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。</p>
-
-<p>マレーシア第四の都市だそうです。中華系の人たちが多いのか、リトルインディアがすごくリトルです。レストランも少ない。しかも、仏教徒も少ないのか、経済素食屋（ベジタリアン）も見つけられん。。食うのに困ってます。</p>
-
-<p>ネットは部屋からも問題なく使えてます。</p>
-
-<!-- more -->
-
-
-<p>下り：4.15Mps<br/>
-上り：0.38Mps<br/>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-
-<!--![Melaka]()-->
-
 ]]></content>
   </entry>
   

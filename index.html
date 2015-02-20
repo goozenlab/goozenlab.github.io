@@ -9,7 +9,7 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。 ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。） 書き直すつもりで、じっくりと取り組んでみると、履歴 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -115,6 +115,66 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2015/02/20/doop-v164/">
+		
+			Doop v1.6.4</a>
+	</h2>
+	<div class="entry-content">
+		<p>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）</p>
+
+<p>書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました</p>
+
+<ul>
+<li>だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。</li>
+<li>同時にタップしてスクロール時に落ちるバグも修正しました。</li>
+</ul>
+
+
+<p>指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。</p>
+
+<p>iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</p>
+
+<!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+-->
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-20T07:36:00+05:45" pubdate data-updated="true">Feb 20<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2015/02/17/sleep-on-travel/">
 		
 			旅先での睡眠</a>
@@ -126,7 +186,7 @@ $(document).ready(
 
 <p>ひげに白髪が混じってきたし、積年の疲れということか。。</p>
 
-<p>で、拙作の睡眠ログアプリ「ohaYo」の紹介を含め、睡眠傾向を見てみると、</p>
+<p>で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、</p>
 
 <p><img src="/images/2015-02-18_ohayo_thai.png" width="230">
 <img src="/images/2015-02-18_ohayo_malaysia.png" width="230">
@@ -135,12 +195,12 @@ $(document).ready(
 <ul>
 <li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
 <li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
-<li><strong>ネパール</strong>：寝てます。<br/>
+<li><strong>ネパール</strong>：がっつり寝てます。<br/>
 (左から)</li>
 </ul>
 
 
-<p>と、睡眠の傾向が出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
+<p>と、見事に違いが出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
 
 <p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
 
@@ -667,52 +727,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 
 	<a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/05/pinocul-v171/">
-		
-			Pinocul v1.7.1</a>
-	</h2>
-	<div class="entry-content">
-		<p>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。</p>
-
-<p>最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。</p>
-
-<p>折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）</p>
-
-
-		
-		<a href="/blog/2015/02/05/pinocul-v171/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-05T07:35:00+05:45" pubdate data-updated="true">Feb 5<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/pinocle/'>pinocle</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>

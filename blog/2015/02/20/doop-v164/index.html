@@ -5,11 +5,11 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Release Pranatice  | goozenlab</title>
+	<title>doop v1.6.4  | goozenlab</title>
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="久しぶりに新しいソフトを申請しました。 ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。 Prāṇāyāma (Sanskrit: प्राणायाम prāṇāyāma) is a Sanskrit word meaning &#8220;extension &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。） 書き直すつもりで、じっくりと取り組んでみると、履歴・ &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -110,31 +110,27 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Release Pranatice</h2>
-	<div class="entry-content"><p>久しぶりに新しいソフトを申請しました。</p>
+	<h2 class="title">Doop v1.6.4</h2>
+	<div class="entry-content"><p>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）</p>
 
-<p><img src="/images/2014-12-01-pranatice-icon.png" alt="icon" /></p>
+<p>書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました</p>
 
-<p>ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。</p>
-
-<blockquote><p><strong><em>Prāṇāyāma</em></strong> (Sanskrit: प्राणायाम prāṇāyāma) is a Sanskrit word meaning &#8220;extension of the prāṇa or breath&#8221; or &#8220;extension of the life force&#8221;. The word is composed of two Sanskrit words: prana, life force, or vital energy, (noted particularly as the breath), and ayāma, to extend or draw out. (Not &#8220;restrain, or control&#8221; as is often translated from yam instead of ayāma). It is a yogic discipline with origins in ancient India.<br/>
-<em>&#8212;&#8212;&#8211; from wikipedia</em></p></blockquote>
-
-<p>仕事の合間のイライラしているときや、瞑想後の落ち着いた雰囲気の中でも、心を落ち着かせたいときや、集中したいときなどに、</p>
-
-<p>KYOKOさんが、ちょっと地味で事務的にカウントしてくれます。</p>
-
-<p>本当はiOS6からの対応を考えていたのですが、端末を喋らせる機能ではiOS7が最低限になってしまう。最近のデーターではiOS6以前のユーザーは5%(私も含む）ぐらいだそうなので、色々試した後、iOS7以降の対応にしました。バージョンも0.7.0スタートです。</p>
-
-<p>おまけ：<br/>
-　KYOKOさんに英語を喋らせると、モロにジャパンニーズイングリッシュになります。帰国子女風に格好よく喋ってくれると思っていたので、びっくり＆ばくしょう。</p>
-
-<!-- more -->
+<ul>
+<li>だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。</li>
+<li>同時にタップしてスクロール時に落ちるバグも修正しました。</li>
+</ul>
 
 
-<p>READMEより、</p>
+<p>指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。</p>
 
-<p>File /Volumes/dev/iApps/pranatice/pranatice/ja.lproj/README.md could not be found</p>
+<p>iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</p>
+
+<!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+-->
+
 </div>
 
 
@@ -151,11 +147,11 @@ $(document).ready(
   
 
 
-<time datetime="2014-12-01T14:20:00+05:45" pubdate data-updated="true">Dec 1<span>st</span>, 2014</time></div>
+<time datetime="2015-02-20T07:36:00+05:45" pubdate data-updated="true">Feb 20<span>th</span>, 2015</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/pranatice/'>pranatice</a>
+	<a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>
@@ -218,8 +214,8 @@ Copyright &copy; 2015
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://goozenlab.com/blog/2014/12/01/pranatice-release/';
-        var disqus_url = 'http://goozenlab.com/blog/2014/12/01/pranatice-release/';
+        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/20/doop-v164/';
+        var disqus_url = 'http://goozenlab.com/blog/2015/02/20/doop-v164/';
         var disqus_script = 'embed.js';
       
     (function () {
