@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-20T07:39:34+05:45</updated>
+  <updated>2015-02-23T00:01:43+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reminderからの読込ではまる]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/22/reminder-completion/"/>
+    <updated>2015-02-22T23:47:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/22/reminder-completion</id>
+    <content type="html"><![CDATA[<p>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。</p>
+
+<p>見事にハマったのが、取込みの <code>- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))</code> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
+
+<p>いろいろと試し、ネットで探したところ、見つかりました。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'>    // 事前に calendar の設定等をして、
+</span><span class='line'>  
+</span><span class='line'>    __block NSArray *remindersToImport = nil;
+</span><span class='line'>    __block BOOL fetching = YES;
+</span><span class='line'>    
+</span><span class='line'>    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
+</span><span class='line'>    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
+</span><span class='line'>        LOG_METHOD;
+</span><span class='line'>        remindersToImport = ekReminders;
+</span><span class='line'>        fetching = NO;
+</span><span class='line'>    }];
+</span><span class='line'>    
+</span><span class='line'>    while (fetching) {
+</span><span class='line'>        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
+</span><span class='line'>    }
+</span><span class='line'>    
+</span><span class='line'>    // 作業がつづく
+</span><span class='line'>    </span></code></pre></td></tr></table></div></figure>
+
+
+<p>と、<strong>while</strong> の所で、ちと一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりません）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.4]]></title>
@@ -61,16 +116,12 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 <ul>
 <li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
 <li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
-<li><strong>ネパール</strong>：がっつり寝てます。<br/>
+<li><strong>ネパール</strong>：がっつり寝る。<br/>
 (左から)</li>
 </ul>
 
 
-<p>と、見事に違いが出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
-
-<p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
-
-<p>旅のお供に、ぜひ、</p>
+<p>と、見事に違いが出る。</p>
 
 <p>追記：
 ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</p>
@@ -728,39 +779,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 <!--![Melaka]()-->
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2015年の海外年明け]]></title>
-    <link href="http://goozenlab.com/blog/2015/01/01/new-year/"/>
-    <updated>2015-01-01T20:00:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/01/01/new-year</id>
-    <content type="html"><![CDATA[<p>年が明けた。旅・ノマドライフも、日本への出入りはあるのだが10年が経った。光陰矢の如しというか、十年一日というか。３０を超えてからの時間の流れが早くなり、４０を超えたあたりからはスザマしい速さで過ぎていきます。びっくりですな。</p>
-
-<p>同じところで年は越さないと決めていて、居心地のよかったチェンマイをでて、本当はカンボジアに行くつもりだったのだが、何にも無いマレーシアへくる。そして、さらに何も無い、もやしで有名なイポーで年越。カラオケバーからカウントダウンの音が聞こえたり、小さな花火の音もきこえた。別に何かを期待していた訳ではないが、地味な年越しでした。</p>
-
-<!-- more -->
-
-
-<ul>
-<li><strong>2015</strong>: Ipoh, Malaysia</li>
-<li><strong>2014</strong>: Trivandrum, India</li>
-<li><strong>2013</strong>: Penan, Malaysia</li>
-<li><strong>2012</strong>: Pokhara, Nepal</li>
-<li><strong>2011</strong>: ChiangMai, Thailand</li>
-<li><strong>2010</strong>: Adis Ababa, Ethiopia</li>
-<li><strong>2009</strong>: Cairo, Egipt</li>
-<li><strong>2008</strong>: Vientian, Laos</li>
-<li><strong>2007</strong>: Managua, Nicaragua</li>
-<li><strong>2006</strong>: Oaxaca, Mexico</li>
-<li><strong>2005</strong>: Sao Paulo, Brazil</li>
-</ul>
-
-
-<p>見てみると移動のサークルがどんどん狭くなってる。</p>
-
-<p>これからキャメロンハイランドに向かってしばし逗留。２月にはネパール。そしてインド（今回はシッキム）でタイに戻り日本へ帰国？、しばし滞在後、久しぶりに南米に行くかな。。。当ての無い放浪が続きます。</p>
 ]]></content>
   </entry>
   

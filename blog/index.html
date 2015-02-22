@@ -9,7 +9,7 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。） 書き直すつもりで、じっくりと取り組んでみると、履歴 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -115,6 +115,93 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2015/02/22/reminder-completion/">
+		
+			Reminderからの読込ではまる</a>
+	</h2>
+	<div class="entry-content">
+		<p>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。</p>
+
+<p>見事にハマったのが、取込みの <code>- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))</code> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
+
+<p>いろいろと試し、ネットで探したところ、見つかりました。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'>    // 事前に calendar の設定等をして、
+</span><span class='line'>  
+</span><span class='line'>    __block NSArray *remindersToImport = nil;
+</span><span class='line'>    __block BOOL fetching = YES;
+</span><span class='line'>    
+</span><span class='line'>    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
+</span><span class='line'>    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
+</span><span class='line'>        LOG_METHOD;
+</span><span class='line'>        remindersToImport = ekReminders;
+</span><span class='line'>        fetching = NO;
+</span><span class='line'>    }];
+</span><span class='line'>    
+</span><span class='line'>    while (fetching) {
+</span><span class='line'>        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
+</span><span class='line'>    }
+</span><span class='line'>    
+</span><span class='line'>    // 作業がつづく
+</span><span class='line'>    </span></code></pre></td></tr></table></div></figure>
+
+
+<p>と、<strong>while</strong> の所で、ちと一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりません）</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-22T23:47:00+05:45" pubdate data-updated="true">Feb 22<span>nd</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/littlist/'>littlist</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2015/02/20/doop-v164/">
 		
 			Doop v1.6.4</a>
@@ -195,16 +282,12 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 <ul>
 <li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
 <li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
-<li><strong>ネパール</strong>：がっつり寝てます。<br/>
+<li><strong>ネパール</strong>：がっつり寝る。<br/>
 (左から)</li>
 </ul>
 
 
-<p>と、見事に違いが出てます。（まぁ、こうゆうのを把握したくて作ったのですが）</p>
-
-<p>長期旅行者、移動する長期海外滞在者にはおすすめのソフトです。</p>
-
-<p>旅のお供に、ぜひ、</p>
+<p>と、見事に違いが出る。</p>
 
 <p>追記：
 ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</p>
@@ -685,48 +768,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 
 	<a class='category' href='/blog/categories/nomad/'>nomad</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/06/versionning/">
-		
-			Littlist 2.6.3</a>
-	</h2>
-	<div class="entry-content">
-		<p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。</p>
-
-
-		
-		<a href="/blog/2015/02/06/versionning/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-06T06:55:00+05:45" pubdate data-updated="true">Feb 6<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>

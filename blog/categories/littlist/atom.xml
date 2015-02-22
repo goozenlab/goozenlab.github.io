@@ -4,7 +4,7 @@
   <title><![CDATA[Category: littlist | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/littlist/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-20T07:39:34+05:45</updated>
+  <updated>2015-02-23T00:01:43+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reminderからの読込ではまる]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/22/reminder-completion/"/>
+    <updated>2015-02-22T23:47:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/22/reminder-completion</id>
+    <content type="html"><![CDATA[<p>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。</p>
+
+<p>見事にハマったのが、取込みの <code>- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))</code> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
+
+<p>いろいろと試し、ネットで探したところ、見つかりました。</p>
+
+<p>```</p>
+
+<pre><code>// 事前に calendar の設定等をして、
+
+__block NSArray *remindersToImport = nil;
+__block BOOL fetching = YES;
+
+NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
+[eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
+    LOG_METHOD;
+    remindersToImport = ekReminders;
+    fetching = NO;
+}];
+
+while (fetching) {
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
+}
+
+// 作業がつづく
+</code></pre>
+
+<p>```</p>
+
+<p>と、<strong>while</strong> の所で、ちと一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりません）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[littlist 2.6.3]]></title>
@@ -167,18 +205,6 @@ BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" $infoPlistFile
 
 <p><img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png" title="" ><br/>
 <img src="https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png" title="" ></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[DatePickerでの表示バグの修正]]></title>
-    <link href="http://goozenlab.com/blog/2013/05/25/datepicker-update/"/>
-    <updated>2013-05-25T13:39:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2013/05/25/datepicker-update</id>
-    <content type="html"><![CDATA[<p>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
-iOS5では問題はなく、二三日前に気が付きました。</p>
-
-<p>OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</p>
 ]]></content>
   </entry>
   
