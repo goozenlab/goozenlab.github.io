@@ -9,7 +9,8 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている） インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。） 下り：0.62Mps
+上り：0.13Mps で、今回は、 下り：0. &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -115,6 +116,145 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2015/02/25/internet-pokhara/">
+		
+			ネパール、ポカラのインターネット事情</a>
+	</h2>
+	<div class="entry-content">
+		<p>バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている）</p>
+
+<p>インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。）</p>
+
+<p>下り：0.62Mps<br/>
+上り：0.13Mps</p>
+
+<p>で、今回は、</p>
+
+<p>下り：0.14Mps<br/>
+上り：0.11Mps</p>
+
+<p>と、、同じ宿にも関わらず、、遅くなってます。。</p>
+
+<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+
+<p>しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。</p>
+
+<p>6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
+で、ちょっとその前に温泉地へ、断酒を解禁しビールと温泉を。。。</p>
+
+<p>なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-25T20:12:00+05:45" pubdate data-updated="true">Feb 25<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/nomad/'>nomad</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2015/02/23/reminder-duedatecomponents/">
+		
+			Reminder：日時の書き込み</a>
+	</h2>
+	<div class="entry-content">
+		<p>リマインダーへの日時の書き込み</p>
+
+<p>読み込み時には</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">event</span><span class="p">.</span><span class="n">dueDate</span> <span class="o">=</span> <span class="n">eventToRead</span><span class="p">.</span><span class="n">dueDateComponents</span><span class="p">.</span><span class="n">date</span><span class="p">;</span>
+</span><span class='line'>      <span class="n">event</span><span class="p">.</span><span class="n">timeZone</span> <span class="o">=</span> <span class="n">eventToRead</span><span class="p">.</span><span class="n">dueDateComponents</span><span class="p">.</span><span class="n">timeZone</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>と、あっさりと行くのですが、<code>.dueDateComponents.date</code> は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>            <span class="n">NSCalendar</span> <span class="o">*</span><span class="n">gregorian</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSCalendar</span> <span class="n">alloc</span><span class="p">]</span>
+</span><span class='line'>                                     <span class="nl">initWithCalendarIdentifier:</span><span class="n">NSGregorianCalendar</span><span class="p">];</span>
+</span><span class='line'>            <span class="kt">unsigned</span> <span class="n">unitFlags</span><span class="o">=</span> <span class="n">NSYearCalendarUnit</span><span class="o">|</span><span class="n">NSMonthCalendarUnit</span> <span class="o">|</span> <span class="n">NSDayCalendarUnit</span> <span class="o">|</span>
+</span><span class='line'>             <span class="n">NSHourCalendarUnit</span> <span class="o">|</span> <span class="n">NSMinuteCalendarUnit</span> <span class="o">|</span> <span class="n">NSSecondCalendarUnit</span> <span class="o">|</span><span class="n">NSTimeZoneCalendarUnit</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="n">NSDateComponents</span> <span class="o">*</span><span class="n">dailyComponents</span><span class="o">=</span><span class="p">[</span><span class="n">gregorian</span> <span class="nl">components:</span><span class="n">unitFlags</span> <span class="nl">fromDate:</span><span class="n">eventToExport</span><span class="p">.</span><span class="n">dueDate</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="n">eventToWrite</span><span class="p">.</span><span class="n">dueDateComponents</span> <span class="o">=</span> <span class="n">dailyComponents</span><span class="p">;</span>
+</span><span class='line'>            <span class="n">eventToWrite</span><span class="p">.</span><span class="n">timeZone</span> <span class="o">=</span> <span class="n">eventToExport</span><span class="p">.</span><span class="n">timeZone</span><span class="p">;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-23T06:50:00+05:45" pubdate data-updated="true">Feb 23<span>rd</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/develop/'>develop</a>, <a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/objective-c/'>objective-c</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2015/02/22/reminder-completion/">
 		
 			Reminderからの読込ではまる</a>
@@ -122,11 +262,18 @@ $(document).ready(
 	<div class="entry-content">
 		<p>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。</p>
 
-<p>見事にハマったのが、取込みの <code>- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))</code> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
+<p>見事にハマったのが、取込みの</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nf">fetchRemindersMatchingPredicate:</span><span class="p">(</span><span class="n">NSPredicate</span> <span class="o">*</span><span class="p">)</span><span class="nv">predicate</span> <span class="nf">completion:</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">reminders</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
 
 <p>いろいろと試し、ネットで探したところ、見つかりました。</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -143,30 +290,27 @@ $(document).ready(
 <span class='line-number'>15</span>
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>
-</span><span class='line'>    // 事前に calendar の設定等をして、
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="c1">// 事前に calendar の設定等をして、</span>
 </span><span class='line'>  
-</span><span class='line'>    __block NSArray *remindersToImport = nil;
-</span><span class='line'>    __block BOOL fetching = YES;
-</span><span class='line'>    
-</span><span class='line'>    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
-</span><span class='line'>    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
-</span><span class='line'>        LOG_METHOD;
-</span><span class='line'>        remindersToImport = ekReminders;
-</span><span class='line'>        fetching = NO;
-</span><span class='line'>    }];
-</span><span class='line'>    
-</span><span class='line'>    while (fetching) {
-</span><span class='line'>        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
-</span><span class='line'>    }
-</span><span class='line'>    
-</span><span class='line'>    // 作業がつづく
-</span><span class='line'>    </span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    <span class="n">__block</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">remindersToImport</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">__block</span> <span class="kt">BOOL</span> <span class="n">fetching</span> <span class="o">=</span> <span class="n">YES</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">NSPredicate</span> <span class="o">*</span><span class="n">predicate</span> <span class="o">=</span> <span class="p">[</span><span class="n">eventStore</span> <span class="nl">predicateForRemindersInCalendars:</span><span class="err">@</span><span class="p">[</span><span class="n">calendar</span><span class="p">]];</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">eventStore</span> <span class="nl">fetchRemindersMatchingPredicate:</span><span class="n">predicate</span> <span class="nl">completion:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">ekReminders</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">LOG_METHOD</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">remindersToImport</span> <span class="o">=</span> <span class="n">ekReminders</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">fetching</span> <span class="o">=</span> <span class="n">NO</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">while</span> <span class="p">(</span><span class="n">fetching</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="p">[[</span><span class="n">NSRunLoop</span> <span class="n">currentRunLoop</span><span class="p">]</span> <span class="nl">runUntilDate:</span><span class="p">[</span><span class="n">NSDate</span> <span class="nl">dateWithTimeIntervalSinceNow:</span><span class="mf">0.05</span><span class="p">]];</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// 作業がつづく</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<p>と、<strong>while</strong> の所で、ちと一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりません）</p>
+<p>と、<strong>while</strong> の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）</p>
 
 		
 		
@@ -190,7 +334,7 @@ $(document).ready(
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/littlist/'>littlist</a>
+	<a class='category' href='/blog/categories/develop/'>develop</a>, <a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/objective-c/'>objective-c</a>
 
 
 </div>
@@ -644,130 +788,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 
 
 	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/10/ohayo-v281/">
-		
-			Ohayo v2.8.1</a>
-	</h2>
-	<div class="entry-content">
-		<h3><strong>ロングタップ</strong>で記録の開始、<strong>音が出ない</strong>バグ</h3>
-
-<p>の変更といくつかのバグ、修正と追加があります。</p>
-
-<ul>
-<li><p>バグ</p>
-
-<ul>
-<li>アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ</li>
-<li><strong>音が出ないバグ</strong>、iOS8。ホーム＞設定＞ohayo: <strong>通知</strong>にてサウンドのスウィッチをオンにしてください</li>
-<li>初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる<br/>
-（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）</li>
-</ul>
-</li>
-<li><p>修正・調整</p>
-
-<ul>
-<li><strong>ロングタップ</strong>で記録の開始（ボタンとの誤作動をさけるため）</li>
-<li>シェイクがかなり繊細なのを少し調整</li>
-</ul>
-</li>
-<li>追加
-
-<ul>
-<li>ヘルスケアへの書出し<strong>設定が有効時</strong>に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）</li>
-</ul>
-</li>
-</ul>
-
-
-
-		
-		<a href="/blog/2015/02/10/ohayo-v281/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-10T13:06:00+05:45" pubdate data-updated="true">Feb 10<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/ohayo/'>ohayo</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/07/internet-dhulikhel/">
-		
-			ドゥリケル、ネパールのインターネット事情</a>
-	</h2>
-	<div class="entry-content">
-		<p>カトマンズの喧騒を逃れ、ヒマラヤビューポイントタウンの一つ、ドゥリケルに着く。ナガルコットに行こうかとも思ったが、ドゥリケルの方が町で、宿代等もお手頃らしい、ちょっとのんびりする予定なのでこちらを選択。<br/>
-トレッキングのコースも割とあるようだし、雰囲気も割と好き。インドビザもカトマンズに滞在しないでここから取りにいくかなと思ったりする。（カトマンズからのバス：２時間くらい、60NPR）<br/>
-とりあえず、町近くの宿をとり、居心地の良い宿を物色し移動する予定。</p>
-
-<p>ネットのスピードはまぁ、、宿で繋がるだけありがたいと、贅沢は言いません、<br/>
-計画停電と同じでだんだん慣れていく自分に気づく。</p>
-
-<p>下り：0.11Mps<br/>
-上り：0.17Mps <br/>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-
-<p><img src="/images/2015-02-05_dhulikhel.jpg" alt="Himalaya View from Dhulikhel" /><br/>
-※白く横に一線に並んでいるのは雲ではなく、ヒマラヤ山景。ちょっとテンションが上がる。</p>
-
-
-		
-		<a href="/blog/2015/02/07/internet-dhulikhel/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-07T10:00:00+05:45" pubdate data-updated="true">Feb 7<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/nomad/'>nomad</a>
 
 
 </div>

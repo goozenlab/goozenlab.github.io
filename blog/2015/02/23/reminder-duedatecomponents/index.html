@@ -5,12 +5,12 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Reminderからの読込ではまる  | goozenlab</title>
+	<title>Reminder：日時の書き込み  | goozenlab</title>
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの 1
-- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:( &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="リマインダーへの日時の書き込み 読み込み時には 1
+2 event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone; と、 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -111,19 +111,19 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Reminderからの読込ではまる</h2>
-	<div class="entry-content"><p>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。</p>
+	<h2 class="title">Reminder：日時の書き込み</h2>
+	<div class="entry-content"><p>リマインダーへの日時の書き込み</p>
 
-<p>見事にハマったのが、取込みの</p>
+<p>読み込み時には</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nf">fetchRemindersMatchingPredicate:</span><span class="p">(</span><span class="n">NSPredicate</span> <span class="o">*</span><span class="p">)</span><span class="nv">predicate</span> <span class="nf">completion:</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">reminders</span><span class="p">))</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>     <span class="n">event</span><span class="p">.</span><span class="n">dueDate</span> <span class="o">=</span> <span class="n">eventToRead</span><span class="p">.</span><span class="n">dueDateComponents</span><span class="p">.</span><span class="n">date</span><span class="p">;</span>
+</span><span class='line'>      <span class="n">event</span><span class="p">.</span><span class="n">timeZone</span> <span class="o">=</span> <span class="n">eventToRead</span><span class="p">.</span><span class="n">dueDateComponents</span><span class="p">.</span><span class="n">timeZone</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。</p>
-
-<p>いろいろと試し、ネットで探したところ、見つかりました。</p>
+<p>と、あっさりと行くのですが、<code>.dueDateComponents.date</code> は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -135,34 +135,20 @@ $(document).ready(
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'>    <span class="c1">// 事前に calendar の設定等をして、</span>
-</span><span class='line'>  
-</span><span class='line'>    <span class="n">__block</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">remindersToImport</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
-</span><span class='line'>    <span class="n">__block</span> <span class="kt">BOOL</span> <span class="n">fetching</span> <span class="o">=</span> <span class="n">YES</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'>            <span class="n">NSCalendar</span> <span class="o">*</span><span class="n">gregorian</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSCalendar</span> <span class="n">alloc</span><span class="p">]</span>
+</span><span class='line'>                                     <span class="nl">initWithCalendarIdentifier:</span><span class="n">NSGregorianCalendar</span><span class="p">];</span>
+</span><span class='line'>            <span class="kt">unsigned</span> <span class="n">unitFlags</span><span class="o">=</span> <span class="n">NSYearCalendarUnit</span><span class="o">|</span><span class="n">NSMonthCalendarUnit</span> <span class="o">|</span> <span class="n">NSDayCalendarUnit</span> <span class="o">|</span>
+</span><span class='line'>             <span class="n">NSHourCalendarUnit</span> <span class="o">|</span> <span class="n">NSMinuteCalendarUnit</span> <span class="o">|</span> <span class="n">NSSecondCalendarUnit</span> <span class="o">|</span><span class="n">NSTimeZoneCalendarUnit</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="n">NSPredicate</span> <span class="o">*</span><span class="n">predicate</span> <span class="o">=</span> <span class="p">[</span><span class="n">eventStore</span> <span class="nl">predicateForRemindersInCalendars:</span><span class="err">@</span><span class="p">[</span><span class="n">calendar</span><span class="p">]];</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">eventStore</span> <span class="nl">fetchRemindersMatchingPredicate:</span><span class="n">predicate</span> <span class="nl">completion:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">ekReminders</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="n">LOG_METHOD</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">remindersToImport</span> <span class="o">=</span> <span class="n">ekReminders</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">fetching</span> <span class="o">=</span> <span class="n">NO</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}];</span>
+</span><span class='line'>            <span class="n">NSDateComponents</span> <span class="o">*</span><span class="n">dailyComponents</span><span class="o">=</span><span class="p">[</span><span class="n">gregorian</span> <span class="nl">components:</span><span class="n">unitFlags</span> <span class="nl">fromDate:</span><span class="n">eventToExport</span><span class="p">.</span><span class="n">dueDate</span><span class="p">];</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="k">while</span> <span class="p">(</span><span class="n">fetching</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="p">[[</span><span class="n">NSRunLoop</span> <span class="n">currentRunLoop</span><span class="p">]</span> <span class="nl">runUntilDate:</span><span class="p">[</span><span class="n">NSDate</span> <span class="nl">dateWithTimeIntervalSinceNow:</span><span class="mf">0.05</span><span class="p">]];</span>
-</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>            <span class="n">eventToWrite</span><span class="p">.</span><span class="n">dueDateComponents</span> <span class="o">=</span> <span class="n">dailyComponents</span><span class="p">;</span>
+</span><span class='line'>            <span class="n">eventToWrite</span><span class="p">.</span><span class="n">timeZone</span> <span class="o">=</span> <span class="n">eventToExport</span><span class="p">.</span><span class="n">timeZone</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="c1">// 作業がつづく</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>と、<strong>while</strong> の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）</p>
+
 </div>
 
 
@@ -179,7 +165,7 @@ $(document).ready(
   
 
 
-<time datetime="2015-02-22T23:47:00+05:45" pubdate data-updated="true">Feb 22<span>nd</span>, 2015</time></div>
+<time datetime="2015-02-23T06:50:00+05:45" pubdate data-updated="true">Feb 23<span>rd</span>, 2015</time></div>
 	<div class="tags">
 
 
@@ -246,8 +232,8 @@ Copyright &copy; 2015
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/22/reminder-completion/';
-        var disqus_url = 'http://goozenlab.com/blog/2015/02/22/reminder-completion/';
+        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/23/reminder-duedatecomponents/';
+        var disqus_url = 'http://goozenlab.com/blog/2015/02/23/reminder-duedatecomponents/';
         var disqus_script = 'embed.js';
       
     (function () {
