@@ -9,11 +9,7 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="30分以内のキャンセルが効かないバグがある事に気がつきました。
-（キャンセルしますか -> はい -> 変化無し。。。） 瞑想時間が切れるまでほっておく
-３０分以上たってキャンセルする
-プログラムを終了させる で、スタートの状態に戻ります。
-確りテストをするのを忘れてました。 まぁ、 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。 そして、AdMobを6.12にアップデート。ソースも少し弄りました。毎度の事 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -114,6 +110,158 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/10/10/update/">
+		
+			x.6.0にアップデート中</a>
+	</h2>
+	<div class="entry-content">
+		<p>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。</p>
+
+<p>そして、AdMobを<strong>6.12</strong>にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-10T13:08:00+05:45" pubdate data-updated="true">Oct 10<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/cosper/'>cosper</a>, <a class='category' href='/blog/categories/tapas/'>tapas</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/09/20/sati-v157/">
+		
+			Sati v1.5.7</a>
+	</h2>
+	<div class="entry-content">
+		<p>一年近くコンピューターを持たずにふらふらしてました。
+久しぶりに以下の調整および修正を行いました。</p>
+
+<h3>メイン</h3>
+
+<ul>
+<li>瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。</li>
+<li>中断アラートが複数あがらないようにする。</li>
+<li>ちょっと物足りない背景に、オームのアイコンを追加。</li>
+</ul>
+
+
+<h3>設定ページ</h3>
+
+<ul>
+<li>時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。</li>
+</ul>
+
+
+<h3>履歴ページ</h3>
+
+<ul>
+<li>メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。</li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-20T13:08:00+05:45" pubdate data-updated="true">Sep 20<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/08/20/iphone4s/">
+		
+			検証端末をアップグレード</a>
+	</h2>
+	<div class="entry-content">
+		<p>検証端末をアップグレードしました。が未だ２年ビハインドです。</p>
+
+<p>アプリのテスト用の端末は今まで液晶がひび割れた、４世代iPodを使っていました。iOS5で動かしていて、iOS6以降のテストはシミュレーターでのみ行っていました。新しいOSが動く端末を持っていなかったので、新しいOSへの対応は消極的でした。アプリの更新も去年の秋から今年の夏に至ってはほとんど放置状態、コンピューターをおいてインドに行ったりしてました。（戻ってきたらバッテリーが膨張してました。）</p>
+
+<p>しかし最近、母から契約満期により必要無くなったソフトバンクのiPhone4Sをいただきました。（母はドコモのiPhone5に変更。）
+これで、ようやく、私の端末をアップデートする事ができました。（アプリが全然売れないのですよ、兄ぃーさん。）iOS5環境から一気に最新のiOS8になりました。</p>
+
+<p>新しいiOSに向けて作業をするモーチベーションが出てきました。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-20T19:00:00+05:45" pubdate data-updated="true">Aug 20<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -553,172 +701,6 @@ $(document).ready(
 
 
 	<a class='category' href='/blog/categories/tips/'>Tips</a>, <a class='category' href='/blog/categories/mac/'>mac</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/24/tapas-v150/">
-		
-			Tapas v1.5.0</a>
-	</h2>
-	<div class="entry-content">
-		<p>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
-大幅なアップデートではありませんが、少し手をいれました。</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-icon-tapas.png" title="" ></p>
-
-<ul>
-<li>ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。</li>
-<li>フォントを変更できるようにしました。<br/>
-（日本語は太字にだけ対応。怪我の功名でHelveticaNeue-CondensedBoldで日本語が太字に。濃い表示になります。）</li>
-<li>タイマー画面にてキャンセル、そして再スタート時に背景の色が変わらないバグの修正</li>
-<li>一分前に背景が数回フラッシュします。（目を離していても、気がつきやすいようになると、、思います。）</li>
-<li>編集画面デザインを更新。</li>
-</ul>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-bold.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png" width="320"></p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-24T14:57:00+05:45" pubdate data-updated="true">Jul 24<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/tapas/'>tapas</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/20/littlist-v256/">
-		
-			Littlis v2.5.6</a>
-	</h2>
-	<div class="entry-content">
-		<p>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。
-タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。</p>
-
-<ol>
-<li>フラットなデザインに変更。日付けボタン／日時設定をメモ欄の下に</li>
-<li>メモフラグを左のコーナーに。（タップでオンオフ：角が折られます。）</li>
-<li>ロックを色ドットに変更。（タップで色ロック：中心に白ドットが表示）</li>
-</ol>
-
-
-<p><img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-old.png" width="320">
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png" width="320"></p>
-
-<p>※ 久しぶりに無料提供中です。（7/25まで）</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-20T08:07:00+05:45" pubdate data-updated="true">Jul 20<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/07/18/ohayo-v250/">
-		
-			Ohayo v2.5.0</a>
-	</h2>
-	<div class="entry-content">
-		<p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
-
-<ol>
-<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br/>
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
-<li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
-<li>設定ページをリデザイン。さっぱり奇麗になりました。<br/>
-<img src="/images/manual-ohayo-setting-old.png" width="320">
-<img src="/images/manual-ohayo-setting.png" width="320"></li>
-<li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br/>
-<img src="/images/manual-ohayo-detail.png" width="320"><br/>
-※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
-<li>iOS7に向け表示に不具合がある所を調整。</li>
-</ol>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-18T14:13:00+05:45" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/ohayo/'>ohayo</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>

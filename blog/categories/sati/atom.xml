@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sati | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/sati/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-25T20:15:10+05:45</updated>
+  <updated>2015-02-26T06:13:53+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.6.5]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/26/sati-v165/"/>
+    <updated>2015-02-26T06:00:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/26/sati-v165</id>
+    <content type="html"><![CDATA[<p>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には<strong>最後のアップデート</strong>になります。</p>
+
+<h3>最終的なデザイン</h3>
+
+<p><img src="/images/manual-sati-main-165.png" width="230">
+<img src="/images/manual-sati-setting-165.png" width="230">
+<img src="/images/manual-sati-history-165.png" width="230"></p>
+
+<ul>
+<li>いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。</li>
+<li>設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。</li>
+<li>データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）</li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li>瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）<br/>
+<img src="/images/manual-sati-timeline-all.png" title="" >
+
+<ul>
+<li>静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）<br/>
+<img src="/images/manual-sati-timeline-quietmode.png" width="600"></li>
+<li>音の鳴るおよその位置にドットが描かれます（左からスタート）<br/>
+<img src="/images/manual-sati-timeline-simple.png" width="600"></li>
+</ul>
+</li>
+</ul>
+
+
+<p>次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[次のアップデート進行状況]]></title>
@@ -184,30 +225,6 @@ I'm sorry so taking looong time to fix it.</p>
 <h3>おまけ</h3>
 
 <p>隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Satiでの不具合]]></title>
-    <link href="http://goozenlab.com/blog/2014/12/04/nosound-sati/"/>
-    <updated>2014-12-04T13:55:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2014/12/04/nosound-sati</id>
-    <content type="html"><![CDATA[<p>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。</p>
-
-<p>瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
-を使っています。</p>
-
-<p>iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）</p>
-
-<p><img src="/images/2014-12-04-alert.png" alt="Notification Alert" /></p>
-
-<p>ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。</p>
-
-<p>設定＞サティ＞通知＞「通知を許可する」をオンにしてください。</p>
-
-<p><img src="/images/2014-12-04-settting.png" alt="Setting" />
-<img src="/images/2014-12-04-sati-setting.png" alt="Sati Setting" />
-<img src="/images/2014-12-04-notification-setting.png" alt="Notificaton Setting" /></p>
 ]]></content>
   </entry>
   

@@ -5,12 +5,11 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>ネパール、ポカラのインターネット事情  | goozenlab</title>
+	<title>ニブレスプロジェクト  | goozenlab</title>
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている） インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。） 下り：0.62Mps
-上り：0.13Mps で、今回は、 下り：0. &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。 ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、 まずは storyboard/xib &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -111,27 +110,81 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">ネパール、ポカラのインターネット事情</h2>
-	<div class="entry-content"><p>バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている）</p>
+	<h2 class="title">ニブレスプロジェクト</h2>
+	<div class="entry-content"><p>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。</p>
 
-<p>インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。）</p>
+<p>ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、</p>
 
-<p>下り：0.62Mps<br/>
-上り：0.13Mps</p>
+<ul>
+<li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。</li>
+</ul>
 
-<p>で、今回は、</p>
 
-<p>下り：0.14Mps<br/>
-上り：0.11Mps</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+</span><span class='line'>        // Override point for customization after application launch.
+</span><span class='line'>
+</span><span class='line'>        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+</span><span class='line'>        let navigationController = UINavigationController(rootViewController: ListViewController())
+</span><span class='line'>        
+</span><span class='line'>        let controller = navigationController.topViewController as ListViewController
+</span><span class='line'>        controller.managedObjectContext = self.managedObjectContext
+</span><span class='line'>
+</span><span class='line'>        self.window!.rootViewController = navigationController
+</span><span class='line'>        self.window!.makeKeyAndVisible()
+</span><span class='line'>        return true
+</span><span class='line'>    }
+</span></code></pre></td></tr></table></div></figure>
 
-<p>と、、同じ宿にも関わらず、、遅くなってる。。</p>
 
-<p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+<ul>
+<li>お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。</li>
+</ul>
 
-<p>しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。</p>
 
-<p>6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
-なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。</p>
+<p>、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+</span><span class='line'>    // Override point for customization after application launch.
+</span><span class='line'>    
+</span><span class='line'>    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+</span><span class='line'>
+</span><span class='line'>    let mainViewController = MainViewController()
+</span><span class='line'>    mainViewController.managedObjectContext = self.managedObjectContext
+</span><span class='line'>
+</span><span class='line'>    self.window!.rootViewController = mainViewController
+</span><span class='line'>    self.window!.makeKeyAndVisible()
+</span><span class='line'>    
+</span><span class='line'>    return true
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。</p>
 </div>
 
 
@@ -148,11 +201,11 @@ $(document).ready(
   
 
 
-<time datetime="2015-02-25T20:12:00+05:45" pubdate data-updated="true">Feb 25<span>th</span>, 2015</time></div>
+<time datetime="2015-02-26T07:25:00+05:45" pubdate data-updated="true">Feb 26<span>th</span>, 2015</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/nomad/'>nomad</a>
+	<a class='category' href='/blog/categories/develop/'>develop</a>, <a class='category' href='/blog/categories/swift/'>swift</a>
 
 
 </div>
@@ -215,8 +268,8 @@ Copyright &copy; 2015
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/25/internet-pokhara/';
-        var disqus_url = 'http://goozenlab.com/blog/2015/02/25/internet-pokhara/';
+        var disqus_identifier = 'http://goozenlab.com/blog/2015/02/26/xibless-project/';
+        var disqus_url = 'http://goozenlab.com/blog/2015/02/26/xibless-project/';
         var disqus_script = 'embed.js';
       
     (function () {

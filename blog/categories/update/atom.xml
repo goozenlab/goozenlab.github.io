@@ -4,7 +4,7 @@
   <title><![CDATA[Category: update | goozenlab]]></title>
   <link href="http://goozenlab.com/blog/categories/update/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-25T20:15:10+05:45</updated>
+  <updated>2015-02-26T06:13:53+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sati v1.6.5]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/26/sati-v165/"/>
+    <updated>2015-02-26T06:00:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/26/sati-v165</id>
+    <content type="html"><![CDATA[<p>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には<strong>最後のアップデート</strong>になります。</p>
+
+<h3>最終的なデザイン</h3>
+
+<p><img src="/images/manual-sati-main-165.png" width="230">
+<img src="/images/manual-sati-setting-165.png" width="230">
+<img src="/images/manual-sati-history-165.png" width="230"></p>
+
+<ul>
+<li>いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。</li>
+<li>設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。</li>
+<li>データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）</li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li>瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）<br/>
+<img src="/images/manual-sati-timeline-all.png" title="" >
+
+<ul>
+<li>静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）<br/>
+<img src="/images/manual-sati-timeline-quietmode.png" width="600"></li>
+<li>音の鳴るおよその位置にドットが描かれます（左からスタート）<br/>
+<img src="/images/manual-sati-timeline-simple.png" width="600"></li>
+</ul>
+</li>
+</ul>
+
+
+<p>次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pranatice v0.7.1]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/26/pranatice-v071/"/>
+    <updated>2015-02-26T06:00:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/26/pranatice-v071</id>
+    <content type="html"><![CDATA[<p>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。</p>
+
+<p><img src="/images/manual-pranatice-main-071.png" width="230">
+<img src="/images/manual-pranatice-history-071.png" width="230">
+<img src="/images/manual-pranatice-setting-071.png" width="230"></p>
+
+<ul>
+<li>メインページのデザインの微調整
+
+<ul>
+<li>下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）</li>
+<li>ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。</li>
+<li>月の位置、フォントの調整・変更</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="/images/manual-pranatice-setting.png" width="300"></p>
+
+<ul>
+<li><p>ホーム＞設定＞ Pranatice</p>
+
+<ul>
+<li>カレンダーの詳細設定</li>
+<li>書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）</li>
+</ul>
+</li>
+<li><p>その他</p>
+
+<ul>
+<li>Iconを少し濃く</li>
+<li>最初の状態でタップをすると周りにある雲等の透明度が変化します</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[doop v1.6.4]]></title>
@@ -122,127 +208,6 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 <li><p>画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。</p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sati v1.6.4]]></title>
-    <link href="http://goozenlab.com/blog/2015/02/10/sati-v164/"/>
-    <updated>2015-02-10T19:30:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/02/10/sati-v164</id>
-    <content type="html"><![CDATA[<h3>iOS8上での<strong>音が鳴らない不具合</strong>は</h3>
-
-<p>ホーム＞設定＞サティ＞通知より、</p>
-
-<p>サウンドのスウィッチをオンにしてください。
-これで、問題は解消するはずです。</p>
-
-<h3>for Bug that you don't get any sounds on <strong>iOS8</strong>,</h3>
-
-<p>go Home > Setting > <strong><em>Sati: Notification</em></strong>  <br/>
-and turn <strong>Sound</strong> ON.  This solves this problem...
-I'm sorry so taking looong time to fix it.</p>
-
-<p><img src="/images/2015-01-30-alert.png"></p>
-
-<p>長らくご迷惑おかけしました。</p>
-
-<p>そして、次のアップデートに入れる予定のものが少し入り込みます。</p>
-
-<ul>
-<li>アイコンだらけになっていたメイン画面をスッキリとさせました。</li>
-</ul>
-
-
-<p><img src="/images/2015-02-01_sati_163.png" width="300">
-<img src="/images/2015-02-01_sati_164.png" width="300"></p>
-
-<ul>
-<li>最近の状況を示すアイコンを中心の円の内側に入れました。
-
-<ul>
-<li>今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。</li>
-<li>瞑想回数により白が濃くなります。</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li>設定画面も少し手を入れて、
-
-<ul>
-<li>静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。</li>
-<li>下は終了音の選択</li>
-</ul>
-</li>
-</ul>
-
-
-<p><img src="/images/manual-sati-settingView.png" width="300"></p>
-
-<ul>
-<li>ホーム＞設定＞サティで設定できる項目を追加しました。
-
-<ul>
-<li>瞑想中の音のオン・オフ</li>
-<li>カレンダー書出し時のフォーマット</li>
-</ul>
-</li>
-</ul>
-
-
-<p><img src="/images/manual-sati-setting.png" width="300"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ohayo v2.8.1]]></title>
-    <link href="http://goozenlab.com/blog/2015/02/10/ohayo-v281/"/>
-    <updated>2015-02-10T13:06:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/02/10/ohayo-v281</id>
-    <content type="html"><![CDATA[<h3><strong>ロングタップ</strong>で記録の開始、<strong>音が出ない</strong>バグ</h3>
-
-<p>の変更といくつかのバグ、修正と追加があります。</p>
-
-<ul>
-<li><p>バグ</p>
-
-<ul>
-<li>アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ</li>
-<li><strong>音が出ないバグ</strong>、iOS8。ホーム＞設定＞ohayo: <strong>通知</strong>にてサウンドのスウィッチをオンにしてください</li>
-<li>初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる<br/>
-（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）</li>
-</ul>
-</li>
-<li><p>修正・調整</p>
-
-<ul>
-<li><strong>ロングタップ</strong>で記録の開始（ボタンとの誤作動をさけるため）</li>
-<li>シェイクがかなり繊細なのを少し調整</li>
-</ul>
-</li>
-<li>追加
-
-<ul>
-<li>ヘルスケアへの書出し<strong>設定が有効時</strong>に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- more -->
-
-
-<p>※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。<br/>
-データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）</p>
-
-<p>この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。</p>
-
-<p><img src="/images/2015-01-27-ohayo-export.png" alt="ヘルスケアへ書出しのオン・オフのスウィッチ" /></p>
 ]]></content>
   </entry>
   

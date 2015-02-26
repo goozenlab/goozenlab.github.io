@@ -9,8 +9,7 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている） インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。） 下り：0.62Mps
-上り：0.13Mps で、今回は、 下り：0. &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。 ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、 まずは storyboard/ &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -116,6 +115,252 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2015/02/26/xibless-project/">
+		
+			ニブレスプロジェクト</a>
+	</h2>
+	<div class="entry-content">
+		<p>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。</p>
+
+<p>ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、</p>
+
+<ul>
+<li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+</span><span class='line'>        // Override point for customization after application launch.
+</span><span class='line'>
+</span><span class='line'>        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+</span><span class='line'>        let navigationController = UINavigationController(rootViewController: ListViewController())
+</span><span class='line'>        
+</span><span class='line'>        let controller = navigationController.topViewController as ListViewController
+</span><span class='line'>        controller.managedObjectContext = self.managedObjectContext
+</span><span class='line'>
+</span><span class='line'>        self.window!.rootViewController = navigationController
+</span><span class='line'>        self.window!.makeKeyAndVisible()
+</span><span class='line'>        return true
+</span><span class='line'>    }
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。</li>
+</ul>
+
+
+<p>、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+</span><span class='line'>    // Override point for customization after application launch.
+</span><span class='line'>    
+</span><span class='line'>    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+</span><span class='line'>
+</span><span class='line'>    let mainViewController = MainViewController()
+</span><span class='line'>    mainViewController.managedObjectContext = self.managedObjectContext
+</span><span class='line'>
+</span><span class='line'>    self.window!.rootViewController = mainViewController
+</span><span class='line'>    self.window!.makeKeyAndVisible()
+</span><span class='line'>    
+</span><span class='line'>    return true
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-26T07:25:00+05:45" pubdate data-updated="true">Feb 26<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/develop/'>develop</a>, <a class='category' href='/blog/categories/swift/'>swift</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2015/02/26/sati-v165/">
+		
+			Sati v1.6.5</a>
+	</h2>
+	<div class="entry-content">
+		<p>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には<strong>最後のアップデート</strong>になります。</p>
+
+<h3>最終的なデザイン</h3>
+
+<p><img src="/images/manual-sati-main-165.png" width="230">
+<img src="/images/manual-sati-setting-165.png" width="230">
+<img src="/images/manual-sati-history-165.png" width="230"></p>
+
+<ul>
+<li>いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。</li>
+<li>設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。</li>
+<li>データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）</li>
+</ul>
+
+
+
+		
+		<a href="/blog/2015/02/26/sati-v165/" class="more-link">Read on &rarr;</a>
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-26T06:00:00+05:45" pubdate data-updated="true">Feb 26<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2015/02/26/pranatice-v071/">
+		
+			Pranatice v0.7.1</a>
+	</h2>
+	<div class="entry-content">
+		<p>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。</p>
+
+<p><img src="/images/manual-pranatice-main-071.png" width="230">
+<img src="/images/manual-pranatice-history-071.png" width="230">
+<img src="/images/manual-pranatice-setting-071.png" width="230"></p>
+
+<ul>
+<li>メインページのデザインの微調整
+
+<ul>
+<li>下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）</li>
+<li>ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。</li>
+<li>月の位置、フォントの調整・変更</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="/images/manual-pranatice-setting.png" width="300"></p>
+
+<ul>
+<li><p>ホーム＞設定＞ Pranatice</p>
+
+<ul>
+<li>カレンダーの詳細設定</li>
+<li>書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）</li>
+</ul>
+</li>
+<li><p>その他</p>
+
+<ul>
+<li>Iconを少し濃く</li>
+<li>最初の状態でタップをすると周りにある雲等の透明度が変化します</li>
+</ul>
+</li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-26T06:00:00+05:45" pubdate data-updated="true">Feb 26<span>th</span>, 2015</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/pranatice/'>pranatice</a>, <a class='category' href='/blog/categories/update/'>update</a>
+
+
+</div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2015/02/25/internet-pokhara/">
 		
 			ネパール、ポカラのインターネット事情</a>
@@ -133,16 +378,14 @@ $(document).ready(
 <p>下り：0.14Mps<br/>
 上り：0.11Mps</p>
 
-<p>と、、同じ宿にも関わらず、、遅くなってます。。</p>
+<p>と、、同じ宿にも関わらず、、遅くなってる。。</p>
 
 <p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
 
 <p>しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。</p>
 
 <p>6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
-で、ちょっとその前に温泉地へ、断酒を解禁しビールと温泉を。。。</p>
-
-<p>なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。</p>
+なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。</p>
 
 		
 		
@@ -562,232 +805,6 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 
 
 	<a class='category' href='/blog/categories/-a-/'>(a)</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/12/tapas-v163/">
-		
-			Tapas v1.6.3</a>
-	</h2>
-	<div class="entry-content">
-		<p>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、<strong>ありがとうございます</strong>。</p>
-
-<p>しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。</p>
-
-<p>最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。</p>
-
-<ul>
-<li>アイテムの削除でアプリが落ちます。</li>
-<li>ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。</li>
-</ul>
-
-
-<p>両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。</p>
-
-<p>修正版を<strong>申請</strong>しました。10日後ぐらいにはアプストアにアップされると思います。
-ほかにも不具合がありましたら、コメントなどよろしくお願いします。</p>
-
-<p> 追記：<br/>
- 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。<br/>
- ただし、メモの表示方法にちょっと手を入れようと思ってます。</p>
-
-<ul>
-<li>リスト画面：メモを少し見やすく、選択された時は表示の高さを変える</li>
-<li>タイマ画面：左のテキストをタップで数秒間メモを表示する</li>
-</ul>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-12T16:33:00+05:45" pubdate data-updated="true">Feb 12<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/tapas/'>tapas</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/11/sati-upcomming/">
-		
-			次のアップデート進行状況</a>
-	</h2>
-	<div class="entry-content">
-		<p>1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。</p>
-
-<h3>変更および追加</h3>
-
-<p><img src="/images/2015-02-11_sati_main_pre165.png" width="230">
-<img src="/images/2015-02-11_sati_setting_pre165.png" width="230">
-<img src="/images/2015-02-11_sati_history_pre165.png" width="230"></p>
-
-<ul>
-<li><p>メインページの透明度等のデザインの微調整</p>
-
-<ul>
-<li>英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）</li>
-</ul>
-</li>
-<li><p>設定ページのデザイン微調整</p>
-
-<ul>
-<li>戻るボタンを下に配置</li>
-<li>終了音の追加（短めの鐘と風鈴）</li>
-<li>QuietModeのアイコンを追加</li>
-</ul>
-</li>
-<li><p>履歴ページのデザイン変更</p>
-
-<ul>
-<li>戻るボタンを下に配置</li>
-</ul>
-</li>
-<li><p>瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）<br/>
-<img src="/images/manual-sati-timeline-all.png" title="" ></p>
-
-<ul>
-<li>静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）<br/>
-<img src="/images/manual-sati-timeline-quietmode.png" width="600"></li>
-<li>音の鳴るおよその位置にドットが描かれます（左からスタート）<br/>
-<img src="/images/manual-sati-timeline-simple.png" width="600"></li>
-</ul>
-</li>
-<li><p>画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。</p></li>
-</ul>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-11T08:54:00+05:45" pubdate data-updated="true">Feb 11<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2015/02/10/sati-v164/">
-		
-			Sati v1.6.4</a>
-	</h2>
-	<div class="entry-content">
-		<h3>iOS8上での<strong>音が鳴らない不具合</strong>は</h3>
-
-<p>ホーム＞設定＞サティ＞通知より、</p>
-
-<p>サウンドのスウィッチをオンにしてください。
-これで、問題は解消するはずです。</p>
-
-<h3>for Bug that you don&#8217;t get any sounds on <strong>iOS8</strong>,</h3>
-
-<p>go Home > Setting > <strong><em>Sati: Notification</em></strong>  <br/>
-and turn <strong>Sound</strong> ON.  This solves this problem&#8230;
-I&#8217;m sorry so taking looong time to fix it.</p>
-
-<p><img src="/images/2015-01-30-alert.png"></p>
-
-<p>長らくご迷惑おかけしました。</p>
-
-<p>そして、次のアップデートに入れる予定のものが少し入り込みます。</p>
-
-<ul>
-<li>アイコンだらけになっていたメイン画面をスッキリとさせました。</li>
-</ul>
-
-
-<p><img src="/images/2015-02-01_sati_163.png" width="300">
-<img src="/images/2015-02-01_sati_164.png" width="300"></p>
-
-<ul>
-<li>最近の状況を示すアイコンを中心の円の内側に入れました。
-
-<ul>
-<li>今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。</li>
-<li>瞑想回数により白が濃くなります。</li>
-</ul>
-</li>
-</ul>
-
-
-
-		
-		<a href="/blog/2015/02/10/sati-v164/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-10T19:30:00+05:45" pubdate data-updated="true">Feb 10<span>th</span>, 2015</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
 
 
 </div>
