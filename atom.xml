@@ -4,7 +4,7 @@
   <title><![CDATA[goozenlab]]></title>
   <link href="http://goozenlab.com/atom.xml" rel="self"/>
   <link href="http://goozenlab.com/"/>
-  <updated>2015-02-26T06:13:53+05:45</updated>
+  <updated>2015-02-27T18:10:01+05:45</updated>
   <id>http://goozenlab.com/</id>
   <author>
     <name><![CDATA[jin]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[マレーシア ラップアップ]]></title>
+    <link href="http://goozenlab.com/blog/2015/02/27/malaysia-wrapup/"/>
+    <updated>2015-02-27T18:00:00+05:45</updated>
+    <id>http://goozenlab.com/blog/2015/02/27/malaysia-wrapup</id>
+    <content type="html"><![CDATA[<p>マレーシア滞在をちょっとまとめる。（50日間で~7万円：８万両替（10,000円が290MYR）してMYR400くらい残る）</p>
+
+<ul>
+<li>言葉：東南アジアでは問題なく英語が通じる国の一つ。</li>
+<li>治安：KLは分からないが、かなり良い方。</li>
+<li>天候：ちょっと湿っぽい。東は少し湿度が低く感じられた。</li>
+<li>宿：シンプルなシングル（シャワートイレ共有）MYR15~35、朝食付きの宿もある。</li>
+<li>移動：たまに寂れたバスもあるが、大きい国でもなく、移動における体の負担もそれほどなし。夜行バスも座席がかなり倒れるので熟睡でる。（個人差あり）　</li>
+<li>食事
+
+<ul>
+<li>朝：ロティチャナイ、イドリ+チャイ（MYR3~4）</li>
+<li>昼：中華素食屋＋中国茶（MYR4~5) 、インドミールス（MYR4~5)</li>
+<li>夜：マサラトーサイ＋チャイ、菜包＋お茶（MYR3.5~4)</li>
+<li>酒：ビール大瓶（MYR16~日本とほぼ同じ)</li>
+<li>その他
+
+<ul>
+<li>豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。で、ほぼベジタリアンの私にとっては食事に関してはかなり幸せ、理想に近いとも言える。個人的にはペナンとマラッカが良い。マレー系の食事なら東側の街が良い感じ。肉食系は多分30％増し？くらい。</p>
+
+<p>宿の質は当たり前だが、値段によりけり、安かろう悪かろう。ただし、悪いといっても、暗いとか臭うとかの問題。南京虫に食われた事もあるが、汚い宿というのは今のところほとんど無い。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ニブレスプロジェクト]]></title>
@@ -202,10 +239,55 @@
 
 <p>(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
 
-<p>しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。</p>
+<p>しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。というか、観光客自体は増えていると思うのだが、ダムサイドに滞在する旅行者がすごく少ないように思える。</p>
 
 <p>6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
 なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。</p>
+
+<!-- more -->
+
+
+<p>ちなみに<strong>停電</strong>スケジュールはこんな感じ、週<strong>77時間</strong>停電。しかし、スケジュールも曖昧で無計画な感すらある。</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="left"> 月 </th>
+<th align="left"> 火 </th>
+<th align="left"> 水 </th>
+<th align="left"> 木 </th>
+<th align="left"> 金 </th>
+<th align="left"> 土 </th>
+<th align="left"> 日 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="left">5:00~12:00</td>
+<td align="left">6:00~13:00</td>
+<td align="left">9:00~16:00</td>
+<td align="left">10:00~17:00</td>
+<td align="left">7:00~14:00</td>
+<td align="left">4:00~9:00</td>
+<td align="left">4:00~10:00</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">16:00~20:00　</td>
+<td align="left">17:00~21:00　</td>
+<td align="left">19:00~23:00　</td>
+<td align="left">20:00~24:00　</td>
+<td align="left">18:00~22:00　</td>
+<td align="left">12:00~18:00　</td>
+<td align="left">14:00~19:00　</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>と、夜型の人間であれば影響無しだが、、、まぁ慣れます。</p>
 ]]></content>
   </entry>
   
@@ -359,7 +441,7 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 <img src="http://goozenlab.com/images/2015-02-18_ohayo_nepal.png" width="230"></p>
 
 <ul>
-<li><strong>タイ</strong>：早起きかつ睡眠時間も短め。</li>
+<li><strong>タイ</strong>：早起きかつ睡眠時間も短め。ヨジラーです。</li>
 <li><strong>マレーシア</strong>：生活のサイクルが代わりちょっと波がある。</li>
 <li><strong>ネパール</strong>：がっつり寝る。<br/>
 (左から)</li>
@@ -872,21 +954,6 @@ I&#8217;m sorry so taking looong time to fix it.</p>
 <p><img src="http://goozenlab.com/images/2015-02-02_itune.png" alt="iTune with iPod" /></p>
 
 <p>※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Satiにて音が出ない件]]></title>
-    <link href="http://goozenlab.com/blog/2015/01/30/sati-no-sound/"/>
-    <updated>2015-01-30T17:02:00+05:45</updated>
-    <id>http://goozenlab.com/blog/2015/01/30/sati-no-sound</id>
-    <content type="html"><![CDATA[<p>以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
-勘違いとケアレスミスのダブルパンチです。</p>
-
-<p>アプリをストアーから一時削除しました。<br/>
-対応したバージョンを申請しています。</p>
-
-<p>なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。</p>
 ]]></content>
   </entry>
   
