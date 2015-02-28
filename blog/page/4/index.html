@@ -9,8 +9,8 @@
 
 <meta name="author" content="jin"> 
 
-<meta name="description" content="iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。 瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
-を使っています。 iOS8からNotificationを使うのに許可が必要になり、 &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="Android studioをダウンロードする。そして、最初につまずいたところ。 JAVAがインストールされていないと起動できず。
+オラクルより最新のJDK8をダウンロードしインストール。 しかし、相変わらず起動しない。 ばばっ、とグーグルを一回りする。 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -111,6 +111,59 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/12/09/androidstudio-install/">
+		
+			Android Studioをダウンロード</a>
+	</h2>
+	<div class="entry-content">
+		<p>Android studioをダウンロードする。そして、最初につまずいたところ。</p>
+
+<p>JAVAがインストールされていないと起動できず。<br/>
+オラクルより最新のJDK8をダウンロードしインストール。</p>
+
+<p>しかし、相変わらず起動しない。</p>
+
+<p>ばばっ、とグーグルを一回りする。      <br/>
+ターミナルで設定の書き出しなどはしたくなかったので、Android studio.app中の<code>Info.plist</code>を修正。
+JVM設定の部分の<code>1.6*</code>をインストールしたJDKの<code>1.8*</code>に変更する。
+で、起動する。</p>
+
+<p><img src="/images/2014-12-09-androidstudio-jdk-setting.png" alt="JVM Setting for Android studio" /></p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-09T20:20:00+05:45" pubdate data-updated="true">Dec 9<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/android/'>android</a>
+
+
+</div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -560,54 +613,6 @@ $(document).ready(
 </div>
 </article>
 
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/10/27/dandori-v260/">
-		
-			Dandori v2.6.1</a>
-	</h2>
-	<div class="entry-content">
-		<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
-
-<h3>オマケ</h3>
-
-<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
-
-<p><img src="/images/2014-10-27-dandori-export.png" alt="dandori export screenshot" /></p>
-
-
-		
-		<a href="/blog/2014/10/27/dandori-v260/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-27T17:20:00+05:45" pubdate data-updated="true">Oct 27<span>th</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/dandori/'>dandori</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</div>
-	
-</div>
-</article>
-
 <nav id="pagenavi">
     
         <a href="/blog/page/3/" class="prev">Prev</a>
@@ -634,7 +639,7 @@ Copyright &copy; 2015
 
     jin
 
-.bhaktapur.nepal
+.pokhara.nepal
 </footer>
 	<script src="/javascripts/slash.js"></script>
 <script src="/javascripts/jquery.fancybox.pack.js"></script>
