@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>画面のグレー/カラーのスイッチ</title>
+  <meta name="description" content="画面のグレー/カラーのスイッチ">
+  <meta name="author" content="jin">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com//css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/custom.css">
+  
+  
+  <script src="http://goozenlab.com//js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com//css/hybrid.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2013-02-25</time>
+		  
+		  
+		  |
+		  
+		  
+
+		  
+		  categories:<a href="http://goozenlab.com//categories/tips">Tips</a> <a href="http://goozenlab.com//categories/mac">mac</a> 
+		  
+
+		  
+
+		</p>
+		<h5>画面のグレー/カラーのスイッチ</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
+
+<p>ただ一連の作業がちょっと面倒なので、<strong>アップルスクリプト</strong>＋Alfredを使って作業を簡略化しました。</p>
+
+<p>まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。</p>
+
+<p><strong>※</strong> MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。</p>
+
+<!-- more -->
+
+<pre><code>
+tell application &quot;System Preferences&quot;
+    activate
+    set current pane to pane &quot;com.apple.preference.universalaccess&quot;
+end tell
+
+tell application &quot;System Events&quot;
+    tell first window of process &quot;System Preferences&quot;
+        
+        tell table 1 of scroll area 1
+            set selected of row 2 to true
+        end tell
+        tell group 1
+            click checkbox &quot;Use grayscale&quot;
+        end tell
+        
+    end tell
+end tell
+
+do shell script &quot;terminal-notifier -message \&quot;Color mode has been changed.\&quot; -title \&quot;Diplay\&quot;&quot;
+
+tell application &quot;System Preferences&quot; to quit
+
+</code></pre>
+
+<p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
+
+<pre><code>tell application &quot;System Preferences&quot;
+    activate
+    set current pane to pane &quot;com.apple.preference.universalaccess&quot;
+    --  set current pane to pane &quot;com.apple.preference.sound&quot;
+end tell
+
+
+tell application &quot;System Events&quot;
+    if UI elements enabled then
+        tell process &quot;System Preferences&quot;
+            get every UI element
+            --tell tab group 1 of window &quot;Sound&quot; of application process &quot;System Preferences&quot; of application &quot;System Events&quot;
+            tell window 1 of application process &quot;System Preferences&quot; of application &quot;System Events&quot;
+                --  tell table 1 of scroll area 1 of window 1 of application process &quot;System Preferences&quot; of application &quot;System Events&quot; これで左にあるテーブルの情報が見れます
+                get every UI element
+                get every UI element of every UI element
+            end tell
+        end tell
+    else
+        tell application &quot;System Preferences&quot;
+            activate
+            set current pane to pane &quot;com.apple.preference.universalaccess&quot;
+            display dialog &quot;UI element scripting is not enabled.&quot;
+        end tell
+    end if
+end tell
+</code></pre>
+
+<p><img src="https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png" alt="UIElement" />
+</p>
+
+<p><code>checkbox &quot;Use grayscale&quot; of group 1 of window &quot;Accessibility&quot; of application process &quot;System Preferences&quot; of application &quot;System Events&quot;</code>でこのgroup 1の&rdquo;Use grayscale&rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &ldquo;Use grayscale&rdquo;はclick checkbox 2、window &ldquo;Accessibility&rdquo;はwindow 1, first windowでも動きます。</p>
+
+<p>後はそのパーツに値を入れてあげれば良し。</p>
+
+<p>そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。</p>
+
+<p>スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。</p>
+
+<p>アップルスクリプトでいろんな事が出来るのにちょっと驚きです。</p>
+
+<p>ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず</p>
+
+<p>、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。</p>
+
+<p>と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。</p>
+
+<h2 id="おまけ:a27a07d26f088c8e8b578be3ff56e440">おまけ</h2>
+
+<p>ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある<code>Info.plist</code>に</p>
+
+<pre><code class="language-plain">    &lt;key&gt;LSUIElement&lt;/key&gt;
+    &lt;true/&gt;
+</code></pre>
+
+<p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
+
+<p>そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに</p>
+
+<pre><code>do shell script &quot;terminal-notifier -message \&quot;Color mode has been changed.\&quot; -title \&quot;Diplay\&quot;&quot;
+</code></pre>
+
+<p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
+
+<p>お次ぎはUSBオーディオの選択/解除かな。。</p>
+
+  	  	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2013\/02\/grayscale-switch\/';
+    var disqus_title = '画面のグレー\/カラーのスイッチ';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2013\/02\/grayscale-switch\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="two columns offset-by-ten">
+		<p class="footnote">
+		  
+		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://goozenlab.com//js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com//js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

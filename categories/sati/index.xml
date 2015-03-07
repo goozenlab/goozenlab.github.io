@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sati on goozenlab</title>
+    <link>http://goozenlab.com/categories/sati/</link>
+    <description>Recent content in Sati on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Thu, 26 Feb 2015 06:00:00 +0545</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-165/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-165/</guid>
+      <description>
+
+&lt;p&gt;このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には&lt;strong&gt;最後のアップデート&lt;/strong&gt;になります。&lt;/p&gt;
+
+&lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
+&lt;li&gt;設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。&lt;/li&gt;
+&lt;li&gt;データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>次のアップデート進行状況</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-upcomming/</link>
+      <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-upcomming/</guid>
+      <description>
+
+&lt;p&gt;1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。&lt;/p&gt;
+
+&lt;h3 id=&#34;変更および追加:02b34a8499a527797a12ccf4ce4b3a52&#34;&gt;変更および追加&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_main_pre165.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_history_pre165.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;メインページの透明度等のデザインの微調整&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;設定ページのデザイン微調整&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
+&lt;li&gt;終了音の追加（短めの鐘と風鈴）&lt;/li&gt;
+&lt;li&gt;QuietModeのアイコンを追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;履歴ページのデザイン変更&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-164/</link>
+      <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-164/</guid>
+      <description>
+
+&lt;h3 id=&#34;ios8上での-音が鳴らない不具合-は:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;iOS8上での&lt;strong&gt;音が鳴らない不具合&lt;/strong&gt;は&lt;/h3&gt;
+
+&lt;p&gt;ホーム＞設定＞サティ＞通知より、&lt;/p&gt;
+
+&lt;p&gt;サウンドのスウィッチをオンにしてください。
+これで、問題は解消するはずです。&lt;/p&gt;
+
+&lt;h3 id=&#34;for-bug-that-you-don-t-get-any-sounds-on-ios8:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;for Bug that you don&amp;rsquo;t get any sounds on &lt;strong&gt;iOS8&lt;/strong&gt;,&lt;/h3&gt;
+
+&lt;p&gt;go Home &amp;gt; Setting &amp;gt; &lt;strong&gt;&lt;em&gt;Sati: Notification&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+and turn &lt;strong&gt;Sound&lt;/strong&gt; ON.  This solves this problem&amp;hellip;
+I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-30-alert.png&#34; alt=&#34;Alert&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;長らくご迷惑おかけしました。&lt;/p&gt;
+
+&lt;p&gt;そして、次のアップデートに入れる予定のものが少し入り込みます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンだらけになっていたメイン画面をスッキリとさせました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_163.png&#34; alt=&#34;Sati 163&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_164.png&#34; alt=&#34;Sati 164&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;最近の状況を示すアイコンを中心の円の内側に入れました。&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;瞑想回数により白が濃くなります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定画面も少し手を入れて、&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;下は終了音の選択&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Sati SettingView&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ホーム＞設定＞サティで設定できる項目を追加しました。&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想中の音のオン・オフ&lt;/li&gt;
+&lt;li&gt;カレンダー書出し時のフォーマット&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Satiにて音が出ない件</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</link>
+      <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</guid>
+      <description>&lt;p&gt;以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
+勘違いとケアレスミスのダブルパンチです。&lt;/p&gt;
+
+&lt;p&gt;アプリをストアーから一時削除しました。&lt;br /&gt;
+対応したバージョンを申請しています。&lt;/p&gt;
+
+&lt;p&gt;なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.3</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-163/</link>
+      <pubDate>Wed, 28 Jan 2015 08:54:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-163/</guid>
+      <description>
+
+&lt;h3 id=&#34;長押しスタート:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;&lt;strong&gt;長押しスタート&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;マイナーアップデートですが、使用方法に変更があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想の始まりを&lt;strong&gt;長押し（ロングタップ）&lt;/strong&gt;に変更しました。
+
+&lt;ul&gt;
+&lt;li&gt;誤動作をさけるためと他のソフトとの操作性の統一のためです。&lt;/li&gt;
+&lt;li&gt;キャンセルはシングルタップで変わりありません。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163.png&#34; alt=&#34;sati&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163_setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるや、よくいえば瞑想的ともいえるが、不出来。もうひとひねり欲しい。。)&lt;/li&gt;
+&lt;li&gt;ホーム&amp;gt; 設定&amp;gt; サティにて日本語表示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;おまけ:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;おまけ&lt;/h3&gt;
+
+&lt;p&gt;隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Satiでの不具合</title>
+      <link>http://goozenlab.com/blog/2014/12/sati-nosound/</link>
+      <pubDate>Thu, 04 Dec 2014 13:55:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/12/sati-nosound/</guid>
+      <description>&lt;p&gt;iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。&lt;/p&gt;
+
+&lt;p&gt;瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notification)
+を使っています。&lt;/p&gt;
+
+&lt;p&gt;iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-alert.png&#34; alt=&#34;Notification Alert&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。&lt;/p&gt;
+
+&lt;p&gt;設定＞サティ＞通知＞「通知を許可する」をオンにしてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-settting.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-notification-setting.png&#34; alt=&#34;Notificaton Setting&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.7</title>
+      <link>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</link>
+      <pubDate>Sat, 20 Sep 2014 13:08:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</guid>
+      <description>
+
+&lt;p&gt;一年近くコンピューターを持たずにふらふらしてました。
+久しぶりに以下の調整および修正を行いました。&lt;/p&gt;
+
+&lt;h3 id=&#34;メイン:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;メイン&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。&lt;/li&gt;
+&lt;li&gt;中断アラートが複数あがらないようにする。&lt;/li&gt;
+&lt;li&gt;ちょっと物足りない背景に、オームのアイコンを追加。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;設定ページ:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;設定ページ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;履歴ページ:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;履歴ページ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.5</title>
+      <link>http://goozenlab.com/blog/2013/08/sati-155/</link>
+      <pubDate>Thu, 08 Aug 2013 13:08:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/08/sati-155/</guid>
+      <description>&lt;p&gt;30分以内のキャンセルが効かないバグがある事に気がつきました。&lt;br /&gt;
+（キャンセルしますか -&amp;gt; はい -&amp;gt; 変化無し。。。）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想時間が切れるまでほっておく&lt;/li&gt;
+&lt;li&gt;３０分以上たってキャンセルする&lt;/li&gt;
+&lt;li&gt;プログラムを終了させる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;で、スタートの状態に戻ります。
+確りテストをするのを忘れてました。&lt;/p&gt;
+
+&lt;p&gt;まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、
+あまり気分のよい物では無いと思います。&lt;/p&gt;
+
+&lt;p&gt;修正版が申請中です。
+それまでは途中キャンセル無しに瞑想生活を送ってください。&lt;/p&gt;
+
+&lt;p&gt;よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sati v1.5.4</title>
+      <link>http://goozenlab.com/blog/2013/08/sati-154/</link>
+      <pubDate>Tue, 06 Aug 2013 18:29:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/08/sati-154/</guid>
+      <description>&lt;p&gt;見た目が質素だった設定ページを更新しました。
+ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。&lt;/p&gt;
+
+&lt;p&gt;そして、割と厳しかった途中でのキャンセル時の処理を変更。
+３０分以上時間が経った時には瞑想をカウントするようにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png&#34; alt=&#34;New Setting&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sati v1.5.3</title>
+      <link>http://goozenlab.com/blog/2013/07/sati-153/</link>
+      <pubDate>Sat, 13 Jul 2013 00:59:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/sati-153/</guid>
+      <description>&lt;p&gt;これといった新機能は追加してません。変更点は以下、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-13-sati-icon.png&#34; alt=&#34;Sati New Icon&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;背景イメージを選択できるようにしました。&lt;br /&gt;
+デフォルトは花、今までの仏様に戻したい方は設定より選択してください。&lt;br /&gt;
+（本当は数種から選択できるようにしたかったのですが、、イスラム模様、中世の十字架模様など。割と探したのですが良い物が見つかりませんでした。）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;設定ページを白基調にしました。（見た目がちょっと質素ですので次のバージョンで手を加えます。）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;の３つです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DatePickerでの表示バグの修正</title>
+      <link>http://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <description>&lt;p&gt;デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
+iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
+
+&lt;p&gt;OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Icon Renew and minor update</title>
+      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <description>&lt;p&gt;ちょっと気になっていたアイコンにちょっと手を入れました。
+リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
+サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
+ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-IconRenew.png&#34; alt=&#34;Renew Icons&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;そして、ソフトの中身も少しだけアップデートしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;sati&lt;/strong&gt;：履歴の表示のセルとデザインをちょっと変更しました。&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew2.png&#34; alt=&#34;Renew &#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;リスタリア&lt;/strong&gt;：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ListariaRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ippuku&lt;/strong&gt;：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ippukuRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.1</title>
+      <link>http://goozenlab.com/blog/2012/12/sati-151/</link>
+      <pubDate>Fri, 21 Dec 2012 12:47:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/12/sati-151/</guid>
+      <description>&lt;p&gt;サティ（旧名：サティマ）のプチアップデート。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ちょっとパーリー語を勘違いしてたかもしれないのでアプリの名前を変更（サティマからサティに）&lt;/li&gt;
+&lt;li&gt;メイン画面に日付を表示と少しのデザイン更新&lt;/li&gt;
+&lt;li&gt;ちょいと派手目だったスプラッシュスクリーンを地味な画像に変更&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;年内にアップデートされると思います。そして年が明けたらオープンソース化します。
+で、わたしは年明けまで街からちょっと離れます。&lt;/p&gt;
+
+&lt;p&gt;※ ちなみに「サティ」とは日本語で「気付き、記憶」の意味。仏教語では「念」だそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

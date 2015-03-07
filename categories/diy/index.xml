@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diy on goozenlab</title>
+    <link>http://goozenlab.com/categories/diy/</link>
+    <description>Recent content in Diy on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Wed, 05 Dec 2012 12:47:00 +0600</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/diy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>家鯖をownCloudでクラウド化</title>
+      <link>http://goozenlab.com/blog/2012/12/owncloud/</link>
+      <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/12/owncloud/</guid>
+      <description>
+
+&lt;p&gt;ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。&lt;/p&gt;
+
+&lt;p&gt;現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。&lt;/p&gt;
+
+&lt;p&gt;aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。&lt;/p&gt;
+
+&lt;h3 id=&#34;au光ヤドカリ家鯖-owncloud:6931df79a910db4a00c9086f5238af08&#34;&gt;au光ヤドカリ家鯖 (ownCloud)&lt;/h3&gt;
+
+&lt;p&gt;$ wget http://ヤドカリ家鯖/photo/R0011168.jpg&lt;br /&gt;
+2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;] @ pushkar&lt;br /&gt;
+2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;] @ KL&lt;/p&gt;
+
+&lt;h3 id=&#34;dropbox:6931df79a910db4a00c9086f5238af08&#34;&gt;DropBox&lt;/h3&gt;
+
+&lt;p&gt;$ wget &lt;a href=&#34;https://dl.dropbox.com/u/163521/photo/R0011168.jpg&#34;&gt;https://dl.dropbox.com/u/163521/photo/R0011168.jpg&lt;/a&gt;&lt;br /&gt;
+2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;br /&gt;
+2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;/p&gt;
+
+&lt;h3 id=&#34;github-page:6931df79a910db4a00c9086f5238af08&#34;&gt;GitHub Page&lt;/h3&gt;
+
+&lt;p&gt;$ wget &lt;a href=&#34;http://goozenlab.com/images/R0011168.jpg&#34;&gt;http://goozenlab.com/images/R0011168.jpg&lt;/a&gt;&lt;br /&gt;
+2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;br /&gt;
+2012-12-04 12:18:47 (179 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;/p&gt;
+
+&lt;p&gt;と、やはり、au光回線の圧勝です。&lt;/p&gt;
+
+&lt;h3 id=&#34;おまけ-悪魔のささやき:6931df79a910db4a00c9086f5238af08&#34;&gt;おまけ：悪魔のささやき。&lt;/h3&gt;
+
+&lt;p&gt;デビアンのwheezyもフリーズされ、ふと魔が差しました。家鯖を一気にアップデートしちゃお、と。&lt;br /&gt;
+dist-upgrade自体は問題なく終了したように思えましたが、再起動したころ起動せず。&lt;/p&gt;
+
+&lt;p&gt;実家に戻る春先まで手が付けられません。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ドメインをゲット</title>
+      <link>http://goozenlab.com/blog/2012/10/domein-goozenlab/</link>
+      <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
+      <description>
+
+&lt;p&gt;iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルなバルで生ハムと赤ワインを飲みながら地元の人とサッカーについて語り合う。。&amp;lt;!&amp;ndash; more &amp;ndash;&amp;gt;といった予定であったはずが、、それにはとぉーーーーーく及ばず。&lt;/p&gt;
+
+&lt;p&gt;インドでベジタリアン、お酒も抜き、体重も高校入学時ぐらいに戻りました。ちょっと面倒なインドの人たちを冷たくあしらい、貯金を切り崩し、修行僧のようにくらしてます。抜け毛が気になる今日この頃です。来週から20日間のリトリート。&lt;/p&gt;
+
+&lt;p&gt;ドメインにお金をかけるのもなぁ、なんて思っていましたが、アプリも公開しているし、費用もそれほどではないので、今更ながらお名前ドットコムでgoozenlab.comをとりました。github pageに紐付けします。&lt;/p&gt;
+
+&lt;h3 id=&#34;dnsの設定:58f6c266e0afd922377437714283baae&#34;&gt;DNSの設定&lt;/h3&gt;
+
+&lt;p&gt;IPナンバーはターミナルにて、nslookupで調べます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup gozenlab.github.com
+Server:     192.168.1.1
+Address:    192.168.1.1#53
+
+Non-authoritative answer:
+Name:   gozenlab.github.com
+Address: 204.232.175.78
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そしてお名前.comのレンタルDNSレコード設定にてDNSサーバーの設定をします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/ScreenShot-dns-setting.png&#34; alt=&#34;DNS設定&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;待つ事10分。無事に表示されました。&lt;/p&gt;
+
+&lt;p&gt;そして、オクトプレスのフッターをgithubへの感謝に気持ちを込めて&lt;code&gt;source/_includes/footer.html&lt;/code&gt;を調整しました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;span class=&amp;quot;credit&amp;quot;&amp;gt;Powered by &amp;lt;a href=&amp;quot;http://octopress.org&amp;quot;&amp;gt;Octopress&amp;lt;/a&amp;gt; and 
+  Hosted by github Page&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>家鯖</title>
+      <link>http://goozenlab.com/blog/2011/05/home-server/</link>
+      <pubDate>Wed, 18 May 2011 19:41:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2011/05/home-server/</guid>
+      <description>&lt;p&gt;友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブックが不思議な体勢になっています。 SSDという事もあって問題は無い事と。。。&lt;/p&gt;
+
+&lt;p&gt;お茶菓子を入れる小さな木製のお皿の上に本体をのせ、さらにモニター部には箸置きを二つ。 その上に無線ルーター機が置いてあります。 近くには蚊取り線香のベープアース。 横には100均で買った、電源とケーブルを入れたピンクメッシュ書類ケース。 その横には電話帳となぜか子鹿物語の本。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2011-05-18-home-server.jpg&#34; alt=&#34;Home server&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;生活感があふれています。 ホームアプライアンス感が滲んでます。&lt;/p&gt;
+
+&lt;p&gt;手を指し入れるとほのかに暖かみを感じる事ができます。コンピューターの温度は50度後半で推移。 23区内ですからこの夏の計画停電実施の可能性は低いと思いますが、どうにか夏を落ちずに乗り切ってもらいたい。。。&lt;/p&gt;
+
+&lt;p&gt;で、私は節電！節約？のためカナダに旅立ちます。 バンフという町に逗留予定です。山に引きこもりにいってきます。 厄年、天災続きのここ最近ですが、 くれぐれもグリズリーベアの餌にならないように気をつけたいと思います。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

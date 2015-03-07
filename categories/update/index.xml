@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on goozenlab</title>
+    <link>http://goozenlab.com/categories/update/</link>
+    <description>Recent content in Update on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Thu, 26 Feb 2015 06:00:00 +0545</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pranatice v0.7.1</title>
+      <link>http://goozenlab.com/blog/2015/02/pranatice-071/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/pranatice-071/</guid>
+      <description>&lt;p&gt;他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-main-071.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-history-071.png&#34; alt=&#34;History&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;メインページのデザインの微調整
+
+&lt;ul&gt;
+&lt;li&gt;下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）&lt;/li&gt;
+&lt;li&gt;ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。&lt;/li&gt;
+&lt;li&gt;月の位置、フォントの調整・変更&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ホーム＞設定＞ Pranatice&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カレンダーの詳細設定&lt;/li&gt;
+&lt;li&gt;書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;その他&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Iconを少し濃く&lt;/li&gt;
+&lt;li&gt;最初の状態でタップをすると周りにある雲等の透明度が変化します&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-165/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-165/</guid>
+      <description>
+
+&lt;p&gt;このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には&lt;strong&gt;最後のアップデート&lt;/strong&gt;になります。&lt;/p&gt;
+
+&lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
+&lt;li&gt;設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。&lt;/li&gt;
+&lt;li&gt;データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
+      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
+      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
+
+&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
+&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
+
+&lt;!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tapas v1.6.3</title>
+      <link>http://goozenlab.com/blog/2015/02/tapas-163/</link>
+      <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/tapas-163/</guid>
+      <description>&lt;p&gt;ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、&lt;strong&gt;ありがとうございます&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。&lt;/p&gt;
+
+&lt;p&gt;最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイテムの削除でアプリが落ちます。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。&lt;/p&gt;
+
+&lt;p&gt;修正版を&lt;strong&gt;申請&lt;/strong&gt;しました。10日後ぐらいにはアプストアにアップされると思います。
+ほかにも不具合がありましたら、コメントなどよろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;追記：&lt;br /&gt;
+ 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。&lt;br /&gt;
+ ただし、メモの表示方法にちょっと手を入れようと思ってます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト画面：メモを少し見やすく、選択された時は表示の高さを変える&lt;/li&gt;
+&lt;li&gt;タイマ画面：左のテキストをタップで数秒間メモを表示する&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>次のアップデート進行状況</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-upcomming/</link>
+      <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-upcomming/</guid>
+      <description>
+
+&lt;p&gt;1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。&lt;/p&gt;
+
+&lt;h3 id=&#34;変更および追加:02b34a8499a527797a12ccf4ce4b3a52&#34;&gt;変更および追加&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_main_pre165.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_history_pre165.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;メインページの透明度等のデザインの微調整&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;設定ページのデザイン微調整&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
+&lt;li&gt;終了音の追加（短めの鐘と風鈴）&lt;/li&gt;
+&lt;li&gt;QuietModeのアイコンを追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;履歴ページのデザイン変更&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-164/</link>
+      <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-164/</guid>
+      <description>
+
+&lt;h3 id=&#34;ios8上での-音が鳴らない不具合-は:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;iOS8上での&lt;strong&gt;音が鳴らない不具合&lt;/strong&gt;は&lt;/h3&gt;
+
+&lt;p&gt;ホーム＞設定＞サティ＞通知より、&lt;/p&gt;
+
+&lt;p&gt;サウンドのスウィッチをオンにしてください。
+これで、問題は解消するはずです。&lt;/p&gt;
+
+&lt;h3 id=&#34;for-bug-that-you-don-t-get-any-sounds-on-ios8:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;for Bug that you don&amp;rsquo;t get any sounds on &lt;strong&gt;iOS8&lt;/strong&gt;,&lt;/h3&gt;
+
+&lt;p&gt;go Home &amp;gt; Setting &amp;gt; &lt;strong&gt;&lt;em&gt;Sati: Notification&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+and turn &lt;strong&gt;Sound&lt;/strong&gt; ON.  This solves this problem&amp;hellip;
+I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-30-alert.png&#34; alt=&#34;Alert&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;長らくご迷惑おかけしました。&lt;/p&gt;
+
+&lt;p&gt;そして、次のアップデートに入れる予定のものが少し入り込みます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンだらけになっていたメイン画面をスッキリとさせました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_163.png&#34; alt=&#34;Sati 163&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_164.png&#34; alt=&#34;Sati 164&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;最近の状況を示すアイコンを中心の円の内側に入れました。&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;瞑想回数により白が濃くなります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定画面も少し手を入れて、&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;下は終了音の選択&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Sati SettingView&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ホーム＞設定＞サティで設定できる項目を追加しました。&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想中の音のオン・オフ&lt;/li&gt;
+&lt;li&gt;カレンダー書出し時のフォーマット&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.1</title>
+      <link>http://goozenlab.com/blog/2015/02/ohayo-281/</link>
+      <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/ohayo-281/</guid>
+      <description>
+
+&lt;h3 id=&#34;ロングタップ-で記録の開始-音が出ない-バグ:ea44213d358d50f4f8d2eeea0430c3ac&#34;&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始、&lt;strong&gt;音が出ない&lt;/strong&gt;バグ&lt;/h3&gt;
+
+&lt;p&gt;の変更といくつかのバグ、修正と追加があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;バグ&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;音が出ないバグ&lt;/strong&gt;、iOS8。ホーム＞設定＞ohayo: &lt;strong&gt;通知&lt;/strong&gt;にてサウンドのスウィッチをオンにしてください&lt;/li&gt;
+&lt;li&gt;初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる&lt;br /&gt;
+（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;修正・調整&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始（ボタンとの誤作動をさけるため）&lt;/li&gt;
+&lt;li&gt;シェイクがかなり繊細なのを少し調整&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;追加&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ヘルスケアへの書出し&lt;strong&gt;設定が有効時&lt;/strong&gt;に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。&lt;br /&gt;
+データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）&lt;/p&gt;
+
+&lt;p&gt;この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>littlist 2.6.3</title>
+      <link>http://goozenlab.com/blog/2015/02/littlist-263/</link>
+      <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/littlist-263/</guid>
+      <description>&lt;p&gt;いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;ついでに、ネット各所に載って
+いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
+ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;agvtool bump
+# agvtool bump -all #Info.plistも更新したいとき
+
+infoPlistFileSource=&amp;quot;${SRCROOT}/${INFOPLIST_FILE}&amp;quot;
+#infoPlistFileDestination=&amp;quot;${TEMP_DIR}/Preprocessed-Info.plist&amp;quot;
+rootPlistFileDestination=&amp;quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&amp;quot;
+
+if [ ${CONFIGURATION} = &amp;quot;Debug&amp;quot; ]; then
+	# Version 2.6.3
+	# Build @ 2014-01-16 12:16 (dev.298)
+	versionPrefix=&amp;quot; (dev.&amp;quot;
+	date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;)
+	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)
+	BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot;
+else
+	# Version 2.6.3 @ 2014.01.16
+	# Build  276
+	date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;)
+	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date
+	BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource)
+fi
+
+# ここのPreferenceSpecifiers:16, 17は各アプリによって変更
+/usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&amp;quot; $rootPlistFileDestination
+/usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&amp;quot; $rootPlistFileDestination
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_dev.png&#34; alt=&#34;Dev&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_app.png&#34; alt=&#34;App&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;以下を Setting.bundle/Root.plistに加える事もお忘れなく。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;		&amp;lt;dict&amp;gt;
+			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;About&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;PSGroupSpecifier&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;FooterText&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;Copyright © 2015 XXXX All Rights Reserved.&amp;lt;/string&amp;gt;
+		&amp;lt;/dict&amp;gt;
+		&amp;lt;dict&amp;gt;
+			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;1.0&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;Version&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;app_version_number&amp;lt;/string&amp;gt;
+		&amp;lt;/dict&amp;gt;
+		&amp;lt;dict&amp;gt;
+			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;1&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;Build&amp;lt;/string&amp;gt;
+			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
+			&amp;lt;string&amp;gt;app_build_number&amp;lt;/string&amp;gt;
+		&amp;lt;/dict&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;追記：&lt;br /&gt;
+少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_a_release.png&#34; alt=&#34;Release&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>pinocul v1.7.1</title>
+      <link>http://goozenlab.com/blog/2015/02/pinocul-171/</link>
+      <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/pinocul-171/</guid>
+      <description>&lt;p&gt;放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。&lt;/p&gt;
+
+&lt;p&gt;最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。&lt;/p&gt;
+
+&lt;p&gt;折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は &lt;code&gt;Bundle display name&lt;/code&gt; を &lt;code&gt;Info.plist&lt;/code&gt; 追加で変更します。&lt;/p&gt;
+
+&lt;p&gt;という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）&lt;/p&gt;
+
+&lt;p&gt;ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）&lt;/p&gt;
+
+&lt;p&gt;※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Satiにて音が出ない件</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</link>
+      <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</guid>
+      <description>&lt;p&gt;以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
+勘違いとケアレスミスのダブルパンチです。&lt;/p&gt;
+
+&lt;p&gt;アプリをストアーから一時削除しました。&lt;br /&gt;
+対応したバージョンを申請しています。&lt;/p&gt;
+
+&lt;p&gt;なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.3</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-163/</link>
+      <pubDate>Wed, 28 Jan 2015 08:54:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-163/</guid>
+      <description>
+
+&lt;h3 id=&#34;長押しスタート:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;&lt;strong&gt;長押しスタート&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;マイナーアップデートですが、使用方法に変更があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想の始まりを&lt;strong&gt;長押し（ロングタップ）&lt;/strong&gt;に変更しました。
+
+&lt;ul&gt;
+&lt;li&gt;誤動作をさけるためと他のソフトとの操作性の統一のためです。&lt;/li&gt;
+&lt;li&gt;キャンセルはシングルタップで変わりありません。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163.png&#34; alt=&#34;sati&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163_setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるや、よくいえば瞑想的ともいえるが、不出来。もうひとひねり欲しい。。)&lt;/li&gt;
+&lt;li&gt;ホーム&amp;gt; 設定&amp;gt; サティにて日本語表示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;おまけ:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;おまけ&lt;/h3&gt;
+
+&lt;p&gt;隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/cosper-162/</link>
+      <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/cosper-162/</guid>
+      <description>&lt;p&gt;cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/doop-162/</link>
+      <pubDate>Thu, 20 Nov 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/doop-162/</guid>
+      <description>&lt;p&gt;iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。&lt;/p&gt;
+
+&lt;p&gt;入力部のアイコンも新しくしました。&lt;/p&gt;
+
+&lt;p&gt;マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/dandori-262/</link>
+      <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/dandori-262/</guid>
+      <description>&lt;p&gt;隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。&lt;/p&gt;
+
+&lt;p&gt;次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.0</title>
+      <link>http://goozenlab.com/blog/2014/11/ohayo-280/</link>
+      <pubDate>Wed, 05 Nov 2014 05:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/ohayo-280/</guid>
+      <description>&lt;p&gt;ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-01.png&#34; alt=&#34;Healthcare screenshot&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-02.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-03.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。&lt;/p&gt;
+
+&lt;p&gt;余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

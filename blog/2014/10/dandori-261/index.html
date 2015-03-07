@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>dandori v2.6.1</title>
+  <meta name="description" content="dandori v2.6.1">
+  <meta name="author" content="jin">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com//css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/custom.css">
+  
+  
+  <script src="http://goozenlab.com//js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com//css/hybrid.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2014-10-27</time>
+		  
+		  
+		  |
+		  
+		  
+
+		  
+		  categories:<a href="http://goozenlab.com//categories/dandori">dandori</a> <a href="http://goozenlab.com//categories/update">update</a> 
+		  
+
+		  
+
+		</p>
+		<h5>dandori v2.6.1</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。</p>
+
+<h3 id="オマケ:93776ebb9fdd00b9c85eda7c741fe2ad">オマケ</h3>
+
+<p>マイナーアップデートで申請しましたが、じつは<strong>リマインダーへの書出し</strong>の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。</p>
+
+<p><img src="/images/2014-10-27-dandori-export.png" alt="dandori export screenshot" />
+</p>
+
+<!-- more -->
+
+<p>方法は以下。</p>
+
+<ul>
+<li>プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。</li>
+<li>書出し確認のアラートが上がります。OKを選択。</li>
+<li>始めての書出時には認証の確認のアラートが上がります。OKを選択。</li>
+
+<li><p>静かにリマインダーへ書き込まれてます。</p></li>
+
+<li><p>リマインダーへは</p>
+
+<ul>
+<li>プロジェクト名はリスト名</li>
+<li>アイテム（タスク）
+
+<ul>
+<li>文字の色が一番薄いグレーのアイテムは書出しされません。<strong>！！要注意！！</strong></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。</p>
+
+<p>※ただし、同じプロジェクト複数回書き出すと<strong>同じ名前のリストに追加</strong>されます。<strong>上書き</strong>はされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</p>
+
+  	  	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2014\/10\/dandori-261\/';
+    var disqus_title = 'dandori v2.6.1';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2014\/10\/dandori-261\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="two columns offset-by-ten">
+		<p class="footnote">
+		  
+		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://goozenlab.com//js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com//js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Viriya on goozenlab</title>
+    <link>http://goozenlab.com/categories/viriya/</link>
+    <description>Recent content in Viriya on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Tue, 30 Jul 2013 11:14:00 +0900</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/viriya/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>viriya v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/viriya-150/</link>
+      <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/viriya-150/</guid>
+      <description>&lt;p&gt;ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、
+拙作の他のソフトに合わしてマイナーアップデートしました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;編集画面デザインを更新。&lt;/li&gt;
+&lt;li&gt;カラーモードを変更できるようにしました。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;フォントを変更できるようにしました。&lt;/li&gt;
+&lt;li&gt;バグの修正：1分前のベル設定、アプリケーションバッジ表示の不具合。&lt;/li&gt;
+&lt;li&gt;項目削除時に（せっかちな人は沢山）落ちる不具合を直しました。&lt;/li&gt;
+&lt;li&gt;ARCに対応（故にiOS5.1以降の対応に）安定すると思います。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>カラーロック</title>
+      <link>http://goozenlab.com/blog/2013/07/color-lock/</link>
+      <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <description>&lt;p&gt;入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。&lt;/p&gt;
+
+&lt;p&gt;以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
+不具合は無いのですが、変更しました。&lt;/p&gt;
+
+&lt;p&gt;新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。
+ロックしている時には白いドットが中心に付きます。
+ロックされていない時は単色の色で表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.1 for lite version</title>
+      <link>http://goozenlab.com/blog/2013/01/admob-update/</link>
+      <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <description>&lt;p&gt;不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。&lt;/p&gt;
+
+&lt;p&gt;そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。&lt;/p&gt;
+
+&lt;p&gt;広告がらみの変更。ご理解のほど。。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。
+ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>年末感謝週末セール</title>
+      <link>http://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
+      <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
+      <description>&lt;p&gt;そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。&lt;/p&gt;
+
+&lt;p&gt;そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.0 for lite version</title>
+      <link>http://goozenlab.com/blog/2012/10/admob-update/</link>
+      <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <description>&lt;p&gt;AdMobをiOS6対応6.2.0にアップデートしました。
+今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しく&lt;code&gt;AdSupport.framework&lt;/code&gt;を追加で問題解決します。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Viriya Release</title>
+      <link>http://goozenlab.com/blog/2012/10/viriya-release/</link>
+      <pubDate>Mon, 01 Oct 2012 13:43:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/viriya-release/</guid>
+      <description>&lt;p&gt;パーリ語シリーズ第二弾のビリヤ（努力/精進という意味）をアップしました。今週中にはストアーにアップされると思います。（第一弾はサティマという瞑想タイマー）少し前に出来上がっていたのだけど、自分で使う機会もあまり多くなく、アップする気もちょっと失せていたのですが。。。&lt;/p&gt;
+
+&lt;p&gt;新しいアップルのiOS6のMapのダメダメをレビューで見て、あんなに大きな会社が、あんな中途半端なソフトをリリースするぐらいなら、自分のような個人デベロッパーがソフトの出来に臆してリリースをためらう必要はないと思い、アップしました。どなたかのお役に立てば幸いです。&lt;/p&gt;
+
+&lt;p&gt;※iOS6のMap、シュールすぎます。ある意味実用を超えてエンターテイメントなソフトになってますな。。&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

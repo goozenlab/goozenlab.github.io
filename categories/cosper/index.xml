@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cosper on goozenlab</title>
+    <link>http://goozenlab.com/categories/cosper/</link>
+    <description>Recent content in Cosper on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Sat, 22 Nov 2014 08:15:00 +0700</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/cosper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosper v1.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/cosper-162/</link>
+      <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/cosper-162/</guid>
+      <description>&lt;p&gt;cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>x.6.0にアップデート中</title>
+      <link>http://goozenlab.com/blog/2014/10/update-x60/</link>
+      <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/10/update-x60/</guid>
+      <description>&lt;p&gt;一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。&lt;/p&gt;
+
+&lt;p&gt;そして、AdMobを&lt;strong&gt;6.12&lt;/strong&gt;にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/cosper-150/</link>
+      <pubDate>Wed, 17 Jul 2013 08:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/cosper-150/</guid>
+      <description>&lt;p&gt;入力画面のリニューがメインのアップデートです。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-17-cosper-icon.png&#34; alt=&#34;cosper New Icon&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;フォントを太字、ノーマル、細字に変更できるようにしました。（日本語は変わりません。）&lt;/li&gt;
+&lt;li&gt;入力画面をリデザイン、フォントを変更してメリハリを付けました。&lt;/li&gt;
+&lt;li&gt;色ロック方法が変わります。  &lt;a href=&#34;http://goozenlab.dev/blog/2013/07/10/color-lock/&#34;&gt;参照&lt;/a&gt;
+（前：右下の鍵をタップでオンオフ、新：ナビバーのしたの色ドットをタップでオンオフ（オン時にはドットに白い穴があきます））&lt;/li&gt;
+&lt;li&gt;入力画面でカウンター設定時に表示の順が正しく表示されないバグの修正。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;そして、恥ずかしながらDairy Use は間違いでして、Daily Useが正しく、毎日利用の意味。
+（ちなみに今までは牛乳利用？もしくは乳製品利用になってました。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>カラーロック</title>
+      <link>http://goozenlab.com/blog/2013/07/color-lock/</link>
+      <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <description>&lt;p&gt;入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。&lt;/p&gt;
+
+&lt;p&gt;以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。
+不具合は無いのですが、変更しました。&lt;/p&gt;
+
+&lt;p&gt;新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。
+ロックしている時には白いドットが中心に付きます。
+ロックされていない時は単色の色で表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DatePickerでの表示バグの修正</title>
+      <link>http://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <description>&lt;p&gt;デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
+iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
+
+&lt;p&gt;OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.4.1 for lite version</title>
+      <link>http://goozenlab.com/blog/2013/05/admob-update/</link>
+      <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/admob-update/</guid>
+      <description>&lt;p&gt;ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。&lt;/p&gt;
+
+&lt;p&gt;たぶん落ちる事も少なくなるかな？。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kawaii ColorMode x.4.2</title>
+      <link>http://goozenlab.com/blog/2013/04/colormode/</link>
+      <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/04/colormode/</guid>
+      <description>&lt;p&gt;dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留）
+ちょっと雰囲気を変えたい時に使ってみてください。細かい内容はこちらの&lt;a href=&#34;http://goozenlab.com/blog/2013/03/03/littlist-v253/&#34;&gt;ポスト&lt;/a&gt;を参照のほど。&lt;/p&gt;
+
+&lt;p&gt;同時に削除時にたまに落ちるバグも取り除きました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.1 for lite version</title>
+      <link>http://goozenlab.com/blog/2013/01/admob-update/</link>
+      <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <description>&lt;p&gt;不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。&lt;/p&gt;
+
+&lt;p&gt;そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。&lt;/p&gt;
+
+&lt;p&gt;広告がらみの変更。ご理解のほど。。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。
+ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>年末感謝週末セール</title>
+      <link>http://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
+      <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
+      <description>&lt;p&gt;そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。&lt;/p&gt;
+
+&lt;p&gt;そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.0 for lite version</title>
+      <link>http://goozenlab.com/blog/2012/10/admob-update/</link>
+      <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <description>&lt;p&gt;AdMobをiOS6対応6.2.0にアップデートしました。
+今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しく&lt;code&gt;AdSupport.framework&lt;/code&gt;を追加で問題解決します。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>4系と5系</title>
+      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <description>&lt;p&gt;機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
+4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。&lt;/p&gt;
+
+&lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
+クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update for Retina4</title>
+      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
+      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
+      <description>&lt;p&gt;とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Update for Navbar</title>
+      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
+      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
+      <description>&lt;p&gt;一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。
+これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。
+今まで手に付けてなかったのが不思議なくらいです。。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;設定方法は、&lt;/p&gt;
+
+&lt;p&gt;アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。&lt;/p&gt;
+
+&lt;p&gt;頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）&lt;/p&gt;
+
+&lt;p&gt;今週中にはポコポコとアップされると思います。
+セールもやっていますので、なにとぞ、よろしく。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XCode4.2と怒濤のアップデート</title>
+      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
+      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
+      <description>&lt;p&gt;インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。&lt;/p&gt;
+
+&lt;p&gt;Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。&lt;/p&gt;
+
+&lt;p&gt;不具合のほとんどはテーブルセル部の&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[self.nextResponder touchesBegan:touches withEvent:event]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;が問題だったようで、（既知の問題でした。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[super touchesBegan:touches withEvent:event];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;に修正しました。シミュレーター上では動いてます。&lt;/p&gt;
+
+&lt;p&gt;去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。&lt;/p&gt;
+
+&lt;p&gt;※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

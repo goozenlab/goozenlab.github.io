@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>家鯖をownCloudでクラウド化</title>
+  <meta name="description" content="家鯖をownCloudでクラウド化">
+  <meta name="author" content="jin">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com//css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/custom.css">
+  
+  
+  <script src="http://goozenlab.com//js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com//css/hybrid.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2012-12-05</time>
+		  
+		  
+		  |
+		  
+		  
+
+		  
+		  categories:<a href="http://goozenlab.com//categories/server">server</a> <a href="http://goozenlab.com//categories/diy">DIY</a> 
+		  
+
+		  
+
+		</p>
+		<h5>家鯖をownCloudでクラウド化</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。</p>
+
+<p>現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。</p>
+
+<p>aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。</p>
+
+<!-- more -->
+
+<p>実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。</p>
+
+<h3 id="au光ヤドカリ家鯖-owncloud:6931df79a910db4a00c9086f5238af08">au光ヤドカリ家鯖 (ownCloud)</h3>
+
+<p>$ wget http://ヤドカリ家鯖/photo/R0011168.jpg<br />
+2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>] @ pushkar<br />
+2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>] @ KL</p>
+
+<h3 id="dropbox:6931df79a910db4a00c9086f5238af08">DropBox</h3>
+
+<p>$ wget <a href="https://dl.dropbox.com/u/163521/photo/R0011168.jpg">https://dl.dropbox.com/u/163521/photo/R0011168.jpg</a><br />
+2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>]<br />
+2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>]</p>
+
+<h3 id="github-page:6931df79a910db4a00c9086f5238af08">GitHub Page</h3>
+
+<p>$ wget <a href="http://goozenlab.com/images/R0011168.jpg">http://goozenlab.com/images/R0011168.jpg</a><br />
+2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>]<br />
+2012-12-04 12:18:47 (179 KB/s) - ‘R0011168.jpg’ saved [<sup>767950</sup>&frasl;<sub>767950</sub>]</p>
+
+<p>と、やはり、au光回線の圧勝です。</p>
+
+<h3 id="おまけ-悪魔のささやき:6931df79a910db4a00c9086f5238af08">おまけ：悪魔のささやき。</h3>
+
+<p>デビアンのwheezyもフリーズされ、ふと魔が差しました。家鯖を一気にアップデートしちゃお、と。<br />
+dist-upgrade自体は問題なく終了したように思えましたが、再起動したころ起動せず。</p>
+
+<p>実家に戻る春先まで手が付けられません。。</p>
+
+  	  	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2012\/12\/owncloud\/';
+    var disqus_title = '家鯖をownCloudでクラウド化';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2012\/12\/owncloud\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="two columns offset-by-ten">
+		<p class="footnote">
+		  
+		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://goozenlab.com//js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com//js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iapps on goozenlab</title>
+    <link>http://goozenlab.com/iapp/</link>
+    <description>Recent content in Iapps on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://goozenlab.com/iapp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>(a)</title>
+      <link>http://goozenlab.com/iapp/a/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/a/</guid>
+      <description>
+
+&lt;h2 id=&#34;アプリについて:64294511a1cb5d54d61cc32437d0db91&#34;&gt;アプリについて&lt;/h2&gt;
+
+&lt;p&gt;使い勝手は拙作のリトリストを踏襲し、タスクをテキスト形式で管理したいとの事からのスタート、ネット上で &amp;ldquo;&lt;strong&gt;todo.txt&lt;/strong&gt;&amp;rdquo; という物を見つけそのクライアントを作ることがプロジェクトの始まり。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、&amp;rdquo;todo.txt&amp;rdquo; の形式がちょっと好きになれず、書式は結局、ブログの更新でも使っている、&lt;strong&gt;マークダウン形式&lt;/strong&gt;に変更。少しtodo.txtの要素を取り込み、シンプルな形に整えました。&lt;/p&gt;
+
+&lt;p&gt;入力はコンピューターをメイン、閲覧はiOS端末。(コンピューター(6.5:3.5)iOS端末)   一日の始めや、終わりに、ジーーッとリストを眺め、サッとやる事の整理をコンピューターを使って書き出し、日中はiOS端末でタスクの確認・更新  というような使い方を想定して作りました。&lt;/p&gt;
+
+&lt;h2 id=&#34;dropboxへの認証:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Dropboxへの認証&lt;/h2&gt;
+
+&lt;p&gt;Dropboxへの接続はナビゲーションバーの左側のボタンを押して認証プロセスを行います。&lt;/p&gt;
+
+&lt;p&gt;Dropboxに接続に成功するとDropboxフォルダーに新しいAppsフォルダーとその中に&lt;code&gt;(a)&lt;/code&gt;フォルダーが作られ、さらにその中にtodo.mdというファイルが端末よりコピーされます。アプリからはこの&lt;strong&gt;フォルダー内のみアクセス&lt;/strong&gt;が可能になっています。ほかのディレクトリーには、移動は不可、勝手にファイルを置いたり読み込んだりもできません。&lt;/p&gt;
+
+&lt;p&gt;ファイルの保管場所は &lt;code&gt;~/Dropbox/Apps/(a)/todo.md&lt;/code&gt; です（固定）&lt;/p&gt;
+
+&lt;h2 id=&#34;todo-md-書式の説明:64294511a1cb5d54d61cc32437d0db91&#34;&gt;todo.md 書式の説明&lt;/h2&gt;
+
+&lt;p&gt;マークダウンの形式にそっていますので、ブログをマークダウンで書いている人などは違和感無く使うことができると思います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+# メインタイトル
+
+## 簡単な説明
+3. 左の番号は色番号です: 3は黄色
+6. **強調**：左肩に赤いドットが表示されます
+1. タスク：メモメモメモ付き 
+4. 期限付きタスク BY! 2015/03/10 17:00
+*  イベントの日時等は @2015-02-25 12:00
+6. x 2015-01-15 14:00 完了タスク 
+
+
+4. 並び順は iOSでの端末の表示順と同じ
+1. 2行以上あける： プロジェクトなしのタスクして扱われます
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;Mou&#34; /&gt;
+
+※下のスクリーンショットはこのFileをつかってます（マークダウンの編集ソフトはかなり優秀でおすすめの &lt;a href=&#34;http://25.io/mou/&#34;&gt;Mou&lt;/a&gt;。が最近商売かかってます）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory.png&#34; alt=&#34;Main category&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc.png&#34; alt=&#34;Main etc&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt; h1ヘッダーはナビゲーションバーのメインタイトルになります&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;##&lt;/code&gt;のh2はプロジェクトとしてナビゲーションバーのタイトルになります&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1-9.&lt;/code&gt; はバーの色を表します&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*, +&lt;/code&gt; で入力したタスクはバーがグレーになります&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;タイトル&lt;/code&gt;：&lt;code&gt;メモ&lt;/code&gt;（:または：）&lt;/li&gt;
+&lt;li&gt;メモがある時は&lt;code&gt;左のバーに切り込み&lt;/code&gt;が入ります&lt;/li&gt;
+&lt;li&gt;強調されたタスクは左肩に赤いドットが表示され、RedHot Listとアプバッジに登録されます&lt;/li&gt;
+&lt;li&gt;日付のフォーマットは &lt;code&gt;2015-11-11 12:30&lt;/code&gt; がデフォルトです。読み込みは &lt;code&gt;2015/11/11 12:30&lt;/code&gt; でも可能です（-の代わりに/でも）&lt;/li&gt;
+&lt;li&gt;期日の設定は &amp;ldquo;&lt;code&gt;@日付&lt;/code&gt;&amp;rdquo; もしくは &amp;ldquo;&lt;code&gt;BY! 日付&lt;/code&gt;&amp;ldquo;で表します&lt;/li&gt;
+&lt;li&gt;終了したタスクは、タスクの前に &amp;ldquo;&lt;code&gt;x 完了日時&lt;/code&gt;&amp;ldquo;がつきます&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;a-の使い方:64294511a1cb5d54d61cc32437d0db91&#34;&gt;(a)の使い方&lt;/h2&gt;
+
+&lt;h3 id=&#34;ナビゲーションバー:64294511a1cb5d54d61cc32437d0db91&#34;&gt;ナビゲーションバー&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左右へのスワイプ：プロジェクトリスト間の移動&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;ロングタップ：左肩にドットの表示されたタスクのリスト、ロングタップでもとにリストに戻る&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-RedDot-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;上方向にスワイプ：期日の設定がされたタスクのリスト、左スワイプかロングタップでもとにリストに戻る&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-DueDate-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;テーブルセル:64294511a1cb5d54d61cc32437d0db91&#34;&gt;テーブルセル&lt;/h2&gt;
+
+&lt;h3 id=&#34;タップ:64294511a1cb5d54d61cc32437d0db91&#34;&gt;タップ&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-cell-detail.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;シングルタップ：メモ -(ローテーション-)&amp;gt; 期日の表示&lt;/li&gt;
+&lt;li&gt;ダブルタップ：タスクの編集&lt;/li&gt;
+&lt;li&gt;ロングタップ：左肩に赤ドット、強調表示に変更&lt;/li&gt;
+&lt;li&gt;右へスワイプ：左のバーよりスワイプで色の変更&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-swipe.png&#34; alt=&#34;Cell swipe&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;左へスワイプ：削除と完了ボタン&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-SwipeLeft.png&#34; alt=&#34;Cell swipe&#34; /&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;完了のボタンを押すと、ボタンを押した時間が完了時間として登録されます。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;※ 完了の解除方法
+
+&lt;ol&gt;
+&lt;li&gt;完了済みのタスクに再度完了のボタンをタップ&lt;/li&gt;
+&lt;li&gt;編集ページにてチェックマークの入ったボタンをタップ&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;左バーの色変更の順番:64294511a1cb5d54d61cc32437d0db91&#34;&gt;左バーの色変更の順番&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+ &amp;lt;-Normal , Kawaii -&amp;gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;期日と色の変化:64294511a1cb5d54d61cc32437d0db91&#34;&gt;期日と色の変化&lt;/h3&gt;
+
+&lt;p&gt;期日設定がある時は右端に色がつきます。期日が近づくとともに色が変化します。最後の赤ドットは期日を超えた印になります。
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-duedate.png&#34; alt=&#34;Due date&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;タスクの追加と編集:64294511a1cb5d54d61cc32437d0db91&#34;&gt;タスクの追加と編集&lt;/h2&gt;
+
+&lt;p&gt;追加は、ナビゲーションバーの&lt;strong&gt;＋&lt;/strong&gt;ボタンより、編集はタスクの&lt;strong&gt;ダブルタップ&lt;/strong&gt;で編集画面に移行します。&lt;/p&gt;
+
+&lt;p&gt;期日の設定は&lt;br /&gt;
+ 色のついたドットが期日のオン・オフのボタンの役割しています。(色は期日に合わせ変化します)&lt;br /&gt;
+ そして、オンになった時に表示される日付をタップすると日時を設定する事ができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView.png&#34; alt=&#34;Due date&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView-DatePicke.png&#34; alt=&#34;Due date&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;同期について:64294511a1cb5d54d61cc32437d0db91&#34;&gt;同期について&lt;/h2&gt;
+
+&lt;p&gt;スリープ・ロック時にクラウドにアップロードし、アンロック・スリープから立上がる時に更新があればダウンロードします。
+少し慣れが必要かもしれませんが、特に複数のiOS端末で利用する場合は&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「ホームボタンを押す」＝「クラウドに保存」&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;「スリープ・ロックから復帰」＝「クラウドからファイル更新」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;という事を、念頭において使ってください。完全な同期ではありませんので、ファイルの更新のタイミングをほんの少し意識しつつ使ってもらえるとありがたいです。&lt;/p&gt;
+
+&lt;p&gt;##リンクの解除方法
+ホーム&amp;gt; 設定&amp;gt; (a) よりDropboxのリンクを解除を&lt;strong&gt;オン&lt;/strong&gt;します。次回立ち上げ時にリンクが解除されます。ナビゲーションバーの左に接続のボタンが表示されます。再接続、アカウントの変更等をするときはこのボタンより行います。（画面上にボタンを配置する事も考えましたが、頻繁にアクセスする物でなく見た目も余計なボタンが入るのを嫌って設定より行う事にしています。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-Setting-unlink.png&#34; alt=&#34;Unlink&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ホーム-設定-a:64294511a1cb5d54d61cc32437d0db91&#34;&gt;ホーム&amp;gt; 設定&amp;gt; (a)&lt;/h2&gt;
+
+&lt;h3 id=&#34;表示の設定:64294511a1cb5d54d61cc32437d0db91&#34;&gt;表示の設定&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;フォントを選択&lt;/li&gt;
+&lt;li&gt;カラーモードの選択&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Color mode&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Color mode&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeKawaii.png&#34; alt=&#34;Color mode&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※ Kawaiiモードでの赤ドットはピンクな&lt;strong&gt;ハートマーク&lt;/strong&gt;になります。&lt;/p&gt;
+
+&lt;h3 id=&#34;書出し-読み込み書式の設定:64294511a1cb5d54d61cc32437d0db91&#34;&gt;書出し・読み込み書式の設定&lt;/h3&gt;
+
+&lt;p&gt;設定よりいくつかの項目は書式を変更する事ができます。ご自身が見やすいと思われる物に変更してください。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;日付書式：2015-12-31, 12-31-2015, 31-12-2015 の３種類&lt;/li&gt;
+&lt;li&gt;強調の表記を **強調** か __強調__ の選択&lt;/li&gt;
+&lt;li&gt;左のバーがクレーのタスクの表記：*, +, -のどれか
+&amp;lt;!&amp;ndash; 3. 日付のヘッダーを&amp;rdquo;BY!&amp;ldquo;を自分好みに（例、&amp;rdquo;期限：&amp;rdquo;とか？）&amp;ndash;&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;その他:64294511a1cb5d54d61cc32437d0db91&#34;&gt;その他&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Dropboxのリンクを解除：次回のアプリの立ち上げ時に解除されます。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;なんかよく分からない状況になってしまった時:64294511a1cb5d54d61cc32437d0db91&#34;&gt;なんかよく分からない状況になってしまった時&lt;/h2&gt;
+
+&lt;p&gt;データーが自分が思っているファイルに定まらず、勝手に同期をされてしまっている時は、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;iOS端末の通信が生きている事を確認&lt;/li&gt;
+&lt;li&gt;アプリとdropboxの接続ができているかの確認はアプリのナビゲーションバーの左に何も無ければ同期ができているという事です&lt;/li&gt;
+&lt;li&gt;iOS端末にてアプリを立ち上げ、データーを確認し、ホームボタンを押しスリープ状態にします&lt;/li&gt;
+&lt;li&gt;この作業によって iOS端末のデーターがdropboxにアップロードされます&lt;/li&gt;
+&lt;li&gt;コンピューターにてホームディレクトリのDropbox/Apps/(a)/todo.mdを編集、保存します&lt;/li&gt;
+&lt;li&gt;iOS端末にてアプリを立ち上げます&lt;/li&gt;
+&lt;li&gt;画面に進行中画面が表示され、Dropbox上のファイルがダウンロードされます&lt;/li&gt;
+&lt;li&gt;データーが更新され、コンピューターとiOS端末のファイルが同期されます&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※同期における注意点※&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「ホームボタンを押す」＝「クラウドに保存」  (※ ローカルのファイルが優先されます)&lt;/li&gt;
+&lt;li&gt;「スリープ・ロックから復帰」＝「クラウドからファイル更新」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;おまけ:64294511a1cb5d54d61cc32437d0db91&#34;&gt;おまけ&lt;/h3&gt;
+
+&lt;h4 id=&#34;ちょっとしたこだわり:64294511a1cb5d54d61cc32437d0db91&#34;&gt;ちょっとしたこだわり&lt;/h4&gt;
+
+&lt;p&gt;一画面になるべくビッタリにテーブルセルが収まるようにセルの高さは端末によって微調整 (ip4:60, ip5:63, ip6:67px) してます。一番下のところが欠けてたり、少しだけ表示されていたりするとあまり美しくないと、、妙なところにこだわりってます。&lt;/p&gt;
+
+&lt;h4 id=&#34;アプリの名前:64294511a1cb5d54d61cc32437d0db91&#34;&gt;アプリの名前&lt;/h4&gt;
+
+&lt;p&gt;アプリ名は珍しく初期段階で思いつきました。todo.txtで使われる書式の優先順位：高に付けられる (A) 。で、ちょっと柔らかく小文字の &lt;strong&gt;(a)&lt;/strong&gt; に。書式の変更とともにアプリ名を変更しようかとも思いましたが、(a) が日本語だと、&lt;strong&gt;「かっこ、えー」&lt;/strong&gt; -&amp;gt; &lt;strong&gt;「格好えー」&lt;/strong&gt;と「格好いい」と響きが近い事に気づき、そのままにしました。アプリのネーミングは個人開発者としてはかなりの悩みどころ、シンプルで響きも良いの物はなかなか出てこないので、名前とアプリ自体の関連性が薄くなってしまうが玉にきずだが、ご勘弁のほど。（そんなに難しい事ではないので、いずれ対応するかも？使いたい人います？）最後のiTuneConnectに申請時になってカッコは使ってはだめとアップロード時にエラーがでる。ターゲット名を変更し、Info.plistに Bunle Display Name に (a) を入れてなんとか通りました。かなりドキッっとしました。&lt;/p&gt;
+
+&lt;h4 id=&#34;ぼやき:64294511a1cb5d54d61cc32437d0db91&#34;&gt;ぼやき&lt;/h4&gt;
+
+&lt;p&gt;終わったタスクをどうすべきか、、自動で消してしまうか、ログブックを作って放り込むか。。。自分は捨てる派なんだが、これをやったっけという意味での確認には必要な気もするが、、とっておく人の方が多いのでしょうか？？、完了時に使うxを大文字と小文字で（捨てる、取っておく）フラグにする事までは浮かんだのだけど、、&lt;/p&gt;
+
+&lt;p&gt;終了済みタスクの表示方法ももう少し分かりやすくスマートな方法があるような気がする。。&lt;/p&gt;
+
+&lt;p&gt;テキストにてダァーーとリストが並んでいるの眺めると全体がイメージできるような気がします。全体がイメージできると何かこう、、、何かが浮かんでくるような、、、気がしていて、、、 とは言っても、ノマド中の私にはやるべき事が沢山ある訳では全くないのですが、、&lt;/p&gt;
+
+&lt;p&gt;画面が大きくなって編集画面が質素に見える。。。&lt;/p&gt;
+
+&lt;p&gt;旅には役に立ちそうなマップも &lt;code&gt;MAP: location name @ 6.1234618,102.2403237&lt;/code&gt; こんな形で取り入れるか。。どうするか。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>pinocul</title>
+      <link>http://goozenlab.com/iapp/pinocul/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/pinocul/</guid>
+      <description>&lt;p&gt;ピンホールカメラ制作時にフィルムよりピンホールまでの距離を出す計算機です。&lt;/p&gt;
+
+&lt;p&gt;ピンホールカメラを自作するとき、フィルム大きさはこのくらいで、レンズだとだいたい25ミリくらいというイメージがあると思います。&lt;/p&gt;
+
+&lt;p&gt;しかし実際作るとなるとその厚みをどうするかがちょっと分からなかったりします。&lt;/p&gt;
+
+&lt;p&gt;このアプリで、フィルムのサイズと画角(35ミリ換算のボタンもあります)を入力すると、そのカメラの厚さ(フィルム面よりピンホールまでの長さ)を計算する事が出来ます。&lt;/p&gt;
+
+&lt;p&gt;自作ピンホールカメラを作る際に役に立てれば幸いです。&lt;/p&gt;
+
+&lt;p&gt;When you make (box) Pinhole Camera, you know the size of film but are not  quite sure how thick you&amp;rsquo;re going to make.&lt;/p&gt;
+
+&lt;p&gt;This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.&lt;/p&gt;
+
+&lt;p&gt;※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;I hope this app helps..&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>pranatice</title>
+      <link>http://goozenlab.com/iapp/pranatice/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/pranatice/</guid>
+      <description>
+
+&lt;p&gt;ヨガプラクティスの中でちょっと面倒な呼吸トレーニングのプラナヤマ。&lt;br /&gt;
+自分でカウントして行う人が多いとおもいます。
+ただし、自分で秒数をカウントするのが少々面倒なので、結局やらない人も多いのではないでしょうか？&lt;/p&gt;
+
+&lt;p&gt;そこで、Kyokoさんに手伝っていただく事にしました。&lt;/p&gt;
+
+&lt;p&gt;ちょっと地味で事務的な感じでKyokoさんがカウントしてくれます。プラナヤマにより集中できるとおもいます。&lt;/p&gt;
+
+&lt;p&gt;仕事の合間に、イライラしているときや、瞑想後の落ち着いた雰囲気の中でも、&lt;br /&gt;
+心を落ち着かせたいときや、集中したいとき、元気が無いときなどなど、、&lt;/p&gt;
+
+&lt;p&gt;そして、ヨガや瞑想のお供ににも、&lt;/p&gt;
+
+&lt;p&gt;どこでも短時間でできますので、ご活用のほど。&lt;/p&gt;
+
+&lt;h2 id=&#34;メイン画面:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ メイン画面&lt;/h2&gt;
+
+&lt;p&gt;メイン画面上には以下のアイテムがあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;歯車のボタン：細かい練習の設定&lt;/li&gt;
+&lt;li&gt;目のボタン：練習の履歴表示&lt;/li&gt;
+&lt;li&gt;練習のアイテム&lt;/li&gt;
+&lt;li&gt;直近約50回の練習状況&lt;/li&gt;
+&lt;li&gt;総練習回数&lt;/li&gt;
+&lt;li&gt;1週間の練習状況（表示するしないの設定可能）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;練習のアイテムからは、チェックマークのオンオフができます。時間の設定は歯車のボタンより行ってください。&lt;/p&gt;
+
+&lt;h3 id=&#34;使い方:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ 使い方&lt;/h3&gt;
+
+&lt;p&gt;画面の&lt;strong&gt;ロングタップ&lt;/strong&gt;により練習が開始します。&lt;br /&gt;
+(キャンセルをしたいときにはもう一度の&lt;strong&gt;ロングタップ&lt;/strong&gt;、アラートがあがりキャンセルします。)&lt;/p&gt;
+
+&lt;p&gt;練習が終わり、呼吸と整える少しの時間が経過後、練習状況のボタンが出てきます。&lt;/p&gt;
+
+&lt;p&gt;華丸、丸、三角、バツから選択し終了します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;設定:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ 設定&lt;/h3&gt;
+
+&lt;p&gt;各種設定の変更ができます。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;プラナヤマの時間と回数の設定&lt;/li&gt;
+&lt;li&gt;音声の英語への変更。（英語設定の声になります。）&lt;/li&gt;
+&lt;li&gt;最近一週間の状況を印すアイコンの表示設定。&lt;/li&gt;
+&lt;li&gt;メモがあるときの印の設定&lt;/li&gt;
+&lt;li&gt;カレンダーへの書き込み、カレンダー名の設定&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※シバナンダヨガのプラクティスに基づいて制作しています。&lt;/p&gt;
+
+&lt;p&gt;無料化時の関心を得るために月に数日間有料化しますが、ほとんどの時期において無料で提供します。（寄付をしていただける方はもちろん大歓迎です。）&lt;/p&gt;
+
+&lt;p&gt;AppStoreにて&lt;a href=&#34;http://itunes.com/app/pranatice&#34;&gt;ダウンロード&lt;/a&gt;  ：iTunesが開きます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>viriya</title>
+      <link>http://goozenlab.com/iapp/viriya/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/viriya/</guid>
+      <description>
+
+&lt;p&gt;ちょっとずつ、色んな物につい手を出してしまう、気が分散しがちなあなたに、&lt;/p&gt;
+
+&lt;h3 id=&#34;時間を区切り-タスクに集中するためのアプリです:0570675119f43546b944340c6d790af6&#34;&gt;時間を区切り、タスクに集中するためのアプリです。&lt;/h3&gt;
+
+&lt;p&gt;ポモドーロメソッドなど、ご自分の集中メソッドにあわせて使ってください。&lt;/p&gt;
+
+&lt;h2 id=&#34;メインページ-項目のリスト:0570675119f43546b944340c6d790af6&#34;&gt;□メインページ（項目のリスト）&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-main.png&#34; alt=&#34;Main&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;◆ ナビゲーションバー&lt;br /&gt;
+・右上のプラスマーク：新規項目追加&lt;br /&gt;
+・ダブルタップ/スワイプ：ソート画面の変更&lt;/p&gt;
+
+&lt;p&gt;◆ セル&lt;br /&gt;
+・左タップ：バーの色を変更&lt;br /&gt;
+・右タップ：タイマーリストページに移動&lt;br /&gt;
+・中心をダブルタップ：項目の編集&lt;/p&gt;
+
+&lt;p&gt;☆ バーの表示/アクセサリの意味&lt;br /&gt;
+・左バーの上部：行った回数が表示されます。&lt;br /&gt;
+・白いドット：カラーの変更をロック&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;タイマーリストページ-メインページの下層:0570675119f43546b944340c6d790af6&#34;&gt;□タイマーリストページ（メインページの下層）&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-items.png&#34; alt=&#34;Timer List&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;◆ ナビゲーションバー&lt;br /&gt;
+・スワイプ／ダブルタップ:色別のソート表示&lt;br /&gt;
+・編集ボタンで順序の変更と追加、削除&lt;br /&gt;
+◆ セル&lt;br /&gt;
+・左タップ：バーの色を変更&lt;br /&gt;
+・右タップ：グレー階調の変更&lt;br /&gt;
+・中心をダブルタップ：項目の編集&lt;/p&gt;
+
+&lt;p&gt;▽ 上部のスタートボタンよりタイマーページに移動&lt;br /&gt;
+▷ 上部のグレーのボックスをタップすることにより履歴ページに移動&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;タイマーページ:0570675119f43546b944340c6d790af6&#34;&gt;□タイマーページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-timer.png&#34; alt=&#34;Timer&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;シェイクまたはストップマークよりタイマーの中断&lt;br /&gt;
+・時間表示下のベルマークで1分前の音をオンオフします。&lt;/p&gt;
+
+&lt;p&gt;・操作ボタンは音楽系などと同じです。&lt;/p&gt;
+
+&lt;p&gt;☆ 一つのタイマーが終了すると、次のタイマーの準備ができ、開始待ちになります。&lt;br /&gt;
+ ※ 自動には更新されませんのでご注意のほど。&lt;/p&gt;
+
+&lt;p&gt;・終了後にメモを追加できます。&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;履歴ページ:0570675119f43546b944340c6d790af6&#34;&gt;□履歴ページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-history.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;・今までの履歴が見れます。&lt;br /&gt;
+・メモを追加・編集&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-viriya:0570675119f43546b944340c6d790af6&#34;&gt;□設定 [ホーム&amp;gt;設定&amp;gt;viriya]&lt;/h2&gt;
+
+&lt;p&gt;・ナビゲーションバーのタイトルを変更&lt;br /&gt;
+・星印とハートマークの透明度を変更&lt;br /&gt;
+（星印やハートマークもっと目立たせたい方は白く。）&lt;/p&gt;
+
+&lt;p&gt;◇ Lite版では広告がリスト上部に入ります。使用上目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;※ viriyaとはパーリー語で&amp;rdquo;努力&amp;rdquo;という意味です。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ohayo</title>
+      <link>http://goozenlab.com/iapp/ohayo/</link>
+      <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/ohayo/</guid>
+      <description>
+
+&lt;p&gt;自分がいつ、どのくらい寝ているかをシンプルに管理するソフトです。&lt;br /&gt;
+日々就寝前、起床後にメッセージを追加する事が出来ます。睡眠の傾向をつかみ、自分に最適な睡眠を見つけるのに役にたてていただければ幸いです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg&#34; alt=&#34;ohayo Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ &lt;strong&gt;タイムゾーン&lt;/strong&gt;にも対応しているので、海外旅行時にも問題なく利用できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;メイン画面:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;メイン画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;タイマー&lt;/strong&gt;: 画面上部のグレーのエリアを&lt;strong&gt;ロングタップ:長押し&lt;/strong&gt;することによりスタートします。&lt;br /&gt;
+　1：スタート確認ページ（メッセージを表示:例)薬を飲む。)&lt;br /&gt;
+（以降は&lt;strong&gt;シングルタップ&lt;/strong&gt;で画面移行）&lt;br /&gt;
+　2：睡眠時間が表示されます。&lt;br /&gt;
+　3：起床時のメッセージ表示:例)水を一杯のむ。&lt;br /&gt;
+　4：気分を選択(花丸・丸・三角・バツ)&lt;/p&gt;
+
+&lt;p&gt;※ グラフの表示範囲を超えてしまうので、記録可能な開始時間は19時から10時までになっています。&lt;/p&gt;
+
+&lt;p&gt;端末によって表示される範囲が変わります。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w320.png&#34; alt=&#34;iPhone4&#34; /&gt;
+: iPhone4,5(21:30-09:30)&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w375.png&#34; alt=&#34;iPhone4&#34; /&gt;
+: iPhone6(20:30-10:30)&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w414.png&#34; alt=&#34;iPhone4&#34; /&gt;
+: iPhone6+(20:00-11:30)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;グラフ上での操作(タップ)&lt;/strong&gt;&lt;br /&gt;
+・&lt;strong&gt;左端&lt;/strong&gt;：気分の変更。&lt;br /&gt;
+・&lt;strong&gt;中央&lt;/strong&gt;：就寝・起床時間の編集または削除、ヘルスケアへのデーター書出し。&lt;br /&gt;
+・&lt;strong&gt;右端&lt;/strong&gt;：グラフの色づけのスウィッチ(オン・オフ)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;グレーエリアの目のような2つのアイコン&lt;/strong&gt;&lt;br /&gt;
+◁・左：&lt;strong&gt;簡易設定画面&lt;/strong&gt;：就寝前メッセージ編集・バー色設定や起床時間設定が行えます。&lt;br /&gt;
+▷・右：&lt;strong&gt;詳細画面&lt;/strong&gt;：気分別の平均就寝・起床時間、直近の睡眠時間の棒グラフ（ピンク線：快眠時間、青線：平均睡眠時間）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;詳細設定-ホーム-設定-ohayo:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;詳細設定 [ホーム&amp;gt;設定&amp;gt;ohayo]&lt;/h2&gt;
+
+&lt;p&gt;・&lt;strong&gt;ヘルスケアへの書出し&lt;/strong&gt;： 初回設定時にヘルスケア書出しをオフにした場合は、ホーム&amp;gt;設定でのヘルスケア設定も必要になるときもあります。&lt;br /&gt;
+・&lt;strong&gt;寝過ぎ・夜更かし&lt;/strong&gt;：時間と時間の詳細設定&lt;br /&gt;
+・&lt;strong&gt;タイの曜日カラー&lt;/strong&gt;：日付の間のドットに色が付きます。オフ時には土日のみ色が付きます。&lt;br /&gt;
+・&lt;strong&gt;メッセージ&lt;/strong&gt;：曜日毎のメッセージの編集 （就寝前の薬のとり忘れなどに）&lt;br /&gt;
+・&lt;strong&gt;風鈴の音での知らせ&lt;/strong&gt;チリーーンと音がします：快眠設定時間、就寝５分後、起床５分後&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-appsetting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ タイの曜日カラー(日:赤、月:黄色、火:桃色、水:緑色、木:オレンジ色、金:青、土:紫色)&lt;/p&gt;
+
+&lt;h2 id=&#34;プライバシーポリシー:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;プライバシーポリシー&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ohayoではヘルスキットへのアクセスが行われます。
+
+&lt;ul&gt;
+&lt;li&gt;ヘルスキットにohoyoで得た睡眠の時間のデーターを書き込みます。（ユーザーの同意を得た後）&lt;/li&gt;
+&lt;li&gt;ヘルスキットよりデーターの読み込みは行いません。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ohayoのデーターはそのアプリ内でのみ利用されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;将来のアップデート:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;将来のアップデート&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バックアップ機能&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sati</title>
+      <link>http://goozenlab.com/iapp/sati/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/sati/</guid>
+      <description>
+
+&lt;p&gt;瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-sati.jpg&#34; alt=&#34;Sati Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;メイン画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ メイン画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati.png&#34; alt=&#34;Main&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;画面構成:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;画面構成&lt;/h3&gt;
+
+&lt;p&gt;・上部には今日の日付&lt;br /&gt;
+・大きい数字は今までの瞑想の回数&lt;br /&gt;
+・中心のサークルは瞑想時間を表示&lt;br /&gt;
+・瞑想時間外周に近況の瞑想状況が表示されます。&lt;br /&gt;
+・下部の帯は最近（62回分）の瞑想の状況を表示します。　　&lt;br /&gt;
+・二つある丸いボタンは瞑想時に上にくる足のログに使ってください。&lt;/p&gt;
+
+&lt;p&gt;背景の色はタイの曜日色に従って付いています。&lt;br /&gt;
+（月：黄、火：ピンク、水：緑、木：オレンジ、金：水色、土：紫、日：赤）&lt;/p&gt;
+
+&lt;h3 id=&#34;画面移行:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;画面移行&lt;/h3&gt;
+
+&lt;p&gt;・設定画面：中心の花の様なボタンをタップ&lt;br /&gt;
+・履歴画面：帯をタップ&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;使い方:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;使い方&lt;/h3&gt;
+
+&lt;p&gt;・&lt;strong&gt;ロングタップ（長押し）&lt;/strong&gt;する事で瞑想の開始します。&lt;/p&gt;
+
+&lt;p&gt;アラートを閉じ、&lt;strong&gt;電源ボタンを押してスリープ状態&lt;/strong&gt;にしてください。&lt;/p&gt;
+
+&lt;p&gt;・タップでキャンセル&lt;/p&gt;
+
+&lt;p&gt;※ 瞑想中に長短の鐘がなります。&lt;br /&gt;
+◇ 開始音：30秒後&lt;br /&gt;
+◇ 五分後&lt;br /&gt;
+◇ 瞑想時間に合わせて数回の鐘(鳴るタイミングは毎回少し違ってます)&lt;br /&gt;
+　　〜20分：無し、〜55分：１回&lt;br /&gt;
+　　〜60分：２回、〜120分：３回、〜180分：４回&lt;/p&gt;
+
+&lt;p&gt;◇ 終了三分前&lt;br /&gt;
+◇ 終了&lt;/p&gt;
+
+&lt;p&gt;※ ホーム＞設定＞サティより細かい設定をする事ができます&lt;/p&gt;
+
+&lt;h2 id=&#34;瞑想履歴画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ 瞑想履歴画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history.png&#34; alt=&#34;History View&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;今までの瞑想の履歴を見る事ができます。&lt;/p&gt;
+
+&lt;p&gt;・リストのタップによって、削除。時間などの変更。&lt;br /&gt;
+・メモの追加･編集が出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; メモが存在する場合、右側にアイコンが表示されます。&lt;br /&gt;
+アイコンをタップする事によりメモが数秒間表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;設定画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ 設定画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;簡単な設定をする事ができます。（細かい設定はホーム＞設定＞サティより）&lt;/p&gt;
+
+&lt;p&gt;・瞑想時間の設定；15分から３時間まで&lt;br /&gt;
+・背景の設定：はな、ブッダ、オーム&lt;br /&gt;
+・&lt;strong&gt;静寂モード&lt;/strong&gt;：終了時にのみ風鈴の音がします。（周りに気を使いたい時などに）&lt;br /&gt;
+・瞑想終了音の選択（太鼓の音はノイズが多い所では聞き逃してしまうかも。）&lt;/p&gt;
+
+&lt;p&gt;※ 初期設定は60分、終了音：長いベルになってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ホーム-設定-サティ:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ ホーム＞設定＞サティ&lt;/h2&gt;
+
+&lt;p&gt;瞑想のより細かい設定と、カレンダーへの書出しの設定をする事ができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;・瞑想近況のオン・オフ：外周にうっすらと入っているライン&lt;br /&gt;
+ ・瞑想の音設定（音のオン・オフや選択ができます）&lt;br /&gt;
+　◇ 開始音のオン・オフ：30秒後&lt;br /&gt;
+　◇ 五分後のオン・オフ&lt;br /&gt;
+　◇ 瞑想時間に合わせてなる途中の音のオン・オフ&lt;br /&gt;
+　（20分未満：無し、55分以下：１回、60分以下：２回、120分以下：３回、180分以下：４回）&lt;br /&gt;
+　◇ 終了三分前のオン・オフ&lt;br /&gt;
+　◇ 終了音の選択&lt;/p&gt;
+
+&lt;p&gt;・背景の設定（はな、ブッダ、オーム、無し）&lt;br /&gt;
+・カレンダーの設定&lt;br /&gt;
+　◇ カレンダーの書出し&lt;br /&gt;
+　◇ カレンダーのタイトル&lt;br /&gt;
+　◇ カレンダーの書出しフォーマット&lt;br /&gt;
+　　（&lt;code&gt;$MIN&lt;/code&gt;の所に瞑想の時間が代入されます。）&lt;br /&gt;
+　　　例：　瞑想を$MIN分する。 -&amp;gt;  瞑想を10分する。&lt;br /&gt;
+　　　　　　$MIN分瞑想 -&amp;gt;  10分瞑想&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;!--
+## License
+The MIT License
+Copyright (c) 2013 
+
+以下に定める条件に従い、本ソフトウェアおよび関連文書のファイル（以下「ソフトウェア」）の複製を取得するすべての人に対し、ソフトウェアを無制限に扱うことを無償で許可します。これには、ソフトウェアの複製を使用、複写、変更、結合、掲載、頒布、サブライセンス、および/または販売する権利、およびソフトウェアを提供する相手に同じことを許可する権利も無制限に含まれます。
+
+上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または重要な部分に記載するものとします。
+
+ソフトウェアは「現状のまま」で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます。ここでいう保証とは、商品性、特定の目的への適合性、および権利非侵害についての保証も含みますが、それに限定されるものではありません。 作者または著作権者は、契約行為、不法行為、またはそれ以外であろうと、ソフトウェアに起因または関連し、あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。
+
+--&gt;
+
+&lt;h3 id=&#34;おまけ:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;おまけ&lt;/h3&gt;
+
+&lt;p&gt;ちなみに「サティ」とは日本語で「気付き、記憶」の意味。仏教語では「念」だそうです。「今」という時に積極的に関わる事＝気づき。瞑想にて非常に重要な要素です&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goozenlab.com/about/vipassana.html&#34;&gt;ピパサナの紹介&lt;/a&gt;：良い所と悪い所、オススメのセンターをちょっと書き出いてみました。&lt;br /&gt;
+&lt;a href=&#34;http://dhamma.org&#34;&gt;本家ピパサナ by SN Goenka&lt;/a&gt;：ゴエンカ氏によるビパサナ瞑想センターのサイト。&lt;br /&gt;
+AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロード&lt;/a&gt;  ：iTunesが開きます。&lt;/p&gt;
+
+&lt;h2 id=&#34;将来のアップデート:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;将来のアップデート&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;どこでどのくらいの人が瞑想しているかを視覚化できたら良いなと。（ヒートマップのような。）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>listaria</title>
+      <link>http://goozenlab.com/iapp/listaria/</link>
+      <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/listaria/</guid>
+      <description>
+
+&lt;p&gt;買い物に行っていつもなぜか数品買い忘れをしてしまう人、
+そんな人のために簡単に使える買物帳を作りました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-listaria.jpg&#34; alt=&#34;Listaria Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;文字を大きく見やすくして、使い勝手も出来るだけシンプルにしました。&lt;/p&gt;
+
+&lt;p&gt;※ 都会的な雰囲気な写真ですが、ショッピングリストはむちゃ和風。。。&lt;br /&gt;
+250品目が登録済です。&lt;/p&gt;
+
+&lt;h2 id=&#34;買い物リストページ:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 買い物リストページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-main.png&#34; alt=&#34;main&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png&#34; alt=&#34;Recent&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;買い物リストは&lt;strong&gt;買い物チェック&lt;/strong&gt;と&lt;strong&gt;メモを見る機能&lt;/strong&gt;がメインです。&lt;strong&gt;品物の追加&lt;/strong&gt;は上部右の”リスト”から行います。品物の並びはカテゴリ毎になります。&lt;br /&gt;
+ (順：野菜・フルーツ・生鮮食品・バルクフード・調味料・飲み物・パーソナルケア・赤ちゃん・キッチン・その他)&lt;/p&gt;
+
+&lt;h2 id=&#34;ナビゲーションバーの操作:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ ナビゲーションバーの操作&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ダブルタップ：買い物リスト、最近買った品のリストへの切り替え。&lt;/li&gt;
+&lt;li&gt;リストボタン：リストページへ&lt;/li&gt;
+&lt;li&gt;左にスワイプ：リストページへ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;セルの操作:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ セルの操作&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-shoppinglist.png&#34; alt=&#34;Shopping List&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左側タップ：買い物を終えたらタップします。背景が赤くかわりリストから消去されます。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;その他のエリアのタップ：メモがある場合背景色が変わりメモが表示されます。 メモがないときは反応しません。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※ 左側タップ領域はすこし狭いと思われるかもしれません。誤動作防止のためです。&lt;br /&gt;
+※ 間違えて買い物済みにしてしまったときはナビゲーションバーをダブルタップして最近買った物リストへ移動し元に戻したい商品をタップします。背景が赤く変わりもとの買い物リストに戻すことができます。&lt;strong&gt;10分以内&lt;/strong&gt;にリストに戻した場合は購入回数も元に戻ります。&lt;/p&gt;
+
+&lt;h2 id=&#34;品物リストページ:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 品物リストページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list.png&#34; alt=&#34;Item View&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;Item&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;買い物リストへの追加はこのページにより行います。&lt;br /&gt;
+新しい品物は右のプラスマークより追加してください。&lt;/p&gt;
+
+&lt;h2 id=&#34;ナビゲーションバーの操作-1:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ ナビゲーションバーの操作&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左・右にスワイプ：次・前のカテゴリーページに移動。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ダブルタップ：次のカテゴリーページに移動。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ロングタップ：ソートの切り替え（買った回数順、買った日時順：タイトルに•が付きます。•野菜•）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;セルの操作-1:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ セルの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-list.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左側シングルタップ：背景色が変わり買い物リストに追加。&lt;/li&gt;
+&lt;li&gt;中央ダブルタップ：品物の編集、メモの追加。&lt;/li&gt;
+&lt;li&gt;右側シングルタップ：右バーの色が変更されます。買う店によって色を変えてみてください。&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;背景色がある品物は買い物リストに入っています。&lt;br /&gt;
+左バーは買った回数より濃淡が付きます。（濃いほど買った回数が多い。）&lt;/p&gt;
+
+&lt;p&gt;※ 品数が多いという理由で並びを入れ替える機能はつけていませんが、買った回数と日時でのソートにより使い込むうちに利用者の傾向に馴染んでいくと思います。食材をパラーっと流してみていくのも悪くないと思ってます。（ひらめきが有るかもしれないので）&lt;/p&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-リスタリア:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 設定 [ホーム＞設定＞リスタリア]&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フォントの変更（残念ですが日本語には適用されません）&lt;/li&gt;
+&lt;li&gt;紫色（赤ちゃん･ペット）と青色（その他）の表示の有無とタイトルの変更。&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop</title>
+      <link>http://goozenlab.com/iapp/doop/</link>
+      <pubDate>Sun, 26 Jun 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/doop/</guid>
+      <description>
+
+&lt;p&gt;エコリサイクリング関連のツール&lt;br /&gt;
+定期的にしなければいけないこと、電池の交換時期など、出来事がサイクルする物事を把握するソフトです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-doop.jpg&#34; alt=&#34;doop Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;以前行ってからどのくらい経ったかを知りたかったり、ちょっと引き延ばしがちな事を確りと出来るようにと、、&lt;br /&gt;
+そして、電球や乾電池の交換、歯医者の定期検診、トイレ掃除、コンピューターのメインテナンス・リブートなど、ある程度の期間で定期的に行っていることを管理するために作りました。&lt;/p&gt;
+
+&lt;p&gt;その他：&lt;br /&gt;
+ペットボトルに入れた非常用の水の入替え日時記録、プリンターインクの型番などのメモにも使えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;リスト画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ リスト画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-doop-main.png&#34; alt=&#34;Main&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;ナビゲーションバーの操作:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png&#34; alt=&#34;Doop Navigation Bar&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;・右上のプラスマーク:新規項目追加&lt;br /&gt;
+・左・右にスワイプ：次・前のソート画面へ移動&lt;br /&gt;
+　ナビゲーションバー：メインは、使用中の物のリスト&lt;br /&gt;
+　ナビゲーションバー：赤はバー：赤•オレンジ•黄•グレーで使用中の物&lt;br /&gt;
+　ナビゲーションバー：青はバー：黄緑•緑•青•グレーで使用中の物&lt;br /&gt;
+　ナビゲーションバー：桃はバー：水色•紫•ピンク•グレーで使用中の物&lt;br /&gt;
+　ナビゲーションバー：灰は、使用停止中の物のリスト&lt;br /&gt;
+・ロングタップ：ソートの変更（平均時間または色順、平均値に達する日時順：タイトルの両側にドットが入ります。）&lt;/p&gt;
+
+&lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Cell Color&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;セルの操作:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;◆ セルの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cell.png&#34; alt=&#34;Doop Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;・左タップ：バーの色を変更（使用停止中の項目はバーの色の変更が出来ません）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;
+&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;ColorMode&#34; /&gt;
+（Kawaii）&lt;/p&gt;
+
+&lt;p&gt;・右タップ：表示スタイルの変更（3種類）&lt;br /&gt;
+・中心をダブルタップ：項目の編集&lt;/p&gt;
+
+&lt;h3 id=&#34;表示スタイル:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;表示スタイル&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cellstyles.png&#34; alt=&#34;Doop CellStyles&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;１）シンプル：タイトルとメモ&lt;br /&gt;
+２）カウントアップ：使い始めてどのくらいたったかがメインの表示&lt;br /&gt;
+　左上に使い始めの日付、右のパーセントは平均使用時間を100とした経過パーセント。&lt;br /&gt;
+３）カウントダウン：平均値に達するまでこれからおよそどのくらい掛かるかを表示。&lt;br /&gt;
+　パーセントの下に平均使用日数、タイトルの上下には平均使用日数にたどり着くまでの日時と日数。&lt;/p&gt;
+
+&lt;p&gt;※ 経過パーセント：パソコンのバッテーリーのパーセント表示と思ってもらえれば分かりやすいと思います。
+（１００％は満充電、０％は替え時：平均使用時間が満たされた時）&lt;/p&gt;
+
+&lt;h3 id=&#34;バー表示-アクセサリの意味:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;※ バー表示/アクセサリの意味&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左バー：アクセサリー
+
+&lt;ul&gt;
+&lt;li&gt;上部：取り替えを行った回数&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;中部：お気に入りフラグ&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;下部：ドットは色を固定&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;右バー：残量のパーセントバー&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;濃淡も残量にあわせて変わります。（濃：多 ＞ 薄：小）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;設定よりバーグラフ表示設定で、グラフで表示&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;指定のパーセント（基本値15％）を下回ると&lt;strong&gt;赤色&lt;/strong&gt;に変化&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;平均時間がまだ設定されていない物は&lt;strong&gt;青色&lt;/strong&gt;で表示&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;画面&lt;/h3&gt;
+
+&lt;p&gt;・メインのソート：平均使用日数でソートされます。無い物が一番上で、短い期間の物が上から長い物が下にならびます。&lt;br /&gt;
+・その他：色別にソートされます。&lt;/p&gt;
+
+&lt;p&gt;※ ナビゲーションバーのロングタップでソートを変更：平均使用時間に到達日時が近い物から表示されます。平均時間が設定されていない物は一番最後に表示されます。&lt;/p&gt;
+
+&lt;p&gt;※ 推定残量が設定の%を切ったら右のバーが赤色に変わります。&lt;br /&gt;
+※ 初回使用時には期間のデーターがないため、平均値は表示されません。右端バー色は青で表示されます。2回目以降から最初のデーターをもとに表示がされます。&lt;/p&gt;
+
+&lt;h2 id=&#34;編集画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ 編集画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-doop-detail.png&#34; alt=&#34;Detail&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;アイテムの編集や更新&lt;br /&gt;
+・星付け(お気に入り)&lt;br /&gt;
+・品物の名&lt;br /&gt;
+・品物のメモ：電池のタイプと本数や交換品の型番などの一口メモとして&lt;br /&gt;
+・ボタン：&lt;br /&gt;
+・・1 インストール：新規（使用開始）&lt;br /&gt;
+・・2 取り替え&lt;br /&gt;
+・・3 取り出し（使用中止）&lt;br /&gt;
+の3つが状況に応じて表示されます。
+(新規項目追加時にボタンを押してスタートになります。)&lt;/p&gt;
+
+&lt;p&gt;・履歴ボタン：履歴画面へ移動&lt;/p&gt;
+
+&lt;p&gt;※ 日付をタップする事で使用開始日時の変更ができます。&lt;/p&gt;
+
+&lt;h2 id=&#34;履歴画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ 履歴画面&lt;/h2&gt;
+
+&lt;p&gt;アイテムの取り替え履歴、平均・最大・最小交換時間を表示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-historyview.png&#34; alt=&#34;Doop History Page&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;セルのタップ:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;セルのタップ&lt;/h3&gt;
+
+&lt;p&gt;・左タップ：バーの色を変更&lt;br /&gt;
+・その他のエリアのタップ&lt;br /&gt;
+・・項目の編集&lt;br /&gt;
+・・ちょっとメモの追加･編集&lt;br /&gt;
+・・時間の変更&lt;br /&gt;
+・・削除&lt;br /&gt;
+・スワイプ：削除&lt;/p&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-doop:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;doop]&lt;/h2&gt;
+
+&lt;p&gt;・カラーモードの変更&lt;br /&gt;
+・バーのスタイル変更：ノーマル、棒グラフ、表示無し&lt;br /&gt;
+・赤色になるパーセントの設定：5%,10%,15%,20%&lt;br /&gt;
+・ナビゲーションバーのタイトルを変更&lt;br /&gt;
+・アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-setting.png&#34; alt=&#34;Doop Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;◇ Lite版&lt;br /&gt;
+・ソート画面数が限定されます。&lt;br /&gt;
+・広告がリスト上部に入ります。使用上少々 目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;◇ 補足：ecoの気持ちを込めくるっと回転させても同じく読めるようにネーミングしました。向かいから見るとロゴの印象が少々変わります。&lt;/p&gt;
+
+&lt;h2 id=&#34;将来のアップデート:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;将来のアップデート&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ナビゲーションバーの長押しによりソート順の変更&lt;/li&gt;
+&lt;li&gt;手動平均時間設定&lt;/li&gt;
+&lt;li&gt;ダークモード（白黒反転モード）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ippuku</title>
+      <link>http://goozenlab.com/iapp/ippuku/</link>
+      <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/ippuku/</guid>
+      <description>
+
+&lt;p&gt;29時間という長いスパンのグラフで見つめる簡易行動ログ帳。&lt;br /&gt;
+何にどのくらい時間を当てているかをざっくりと大雑把に把握するためのソフトです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg&#34; alt=&#34;ippuku Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;タイマーのスタートはナビゲーションバーのプラスのマークから:5b89f527080bd576a91ef79ce811581e&#34;&gt;！タイマーのスタートはナビゲーションバーのプラスのマークから！&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;下部よりスタートボタンが上がってきます。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;スタートボタンのタップでタイマーが動き始めます。
+
+&lt;ul&gt;
+&lt;li&gt;シェイクでタイマーのキャンセル&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ストップボタンをタップの後、気分、状況（バーの色になります）を選択し終了&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;ナビゲーションバー:5b89f527080bd576a91ef79ce811581e&#34;&gt;◇ナビゲーションバー&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左・右にスワイプ：次・前のソート画面(メイン、赤系、青系、ピンク系)変更。&lt;/li&gt;
+&lt;li&gt;ロングタップ：表示スタイル(表示する時間帯)の変更&lt;br /&gt;
+（Default:4:30 - 9:30, 22:00 - 8:00, 5:00 - 19:30, 13:00 - 23:00）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png&#34; alt=&#34;Default&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png&#34; alt=&#34;AM&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png&#34; alt=&#34;Day&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png&#34; alt=&#34;PM&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ タイトルに•が付く事で表示の時間帯を確認できます。(AM: •title, DAY: •title•, PM: title•)&lt;/p&gt;
+
+&lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;表示部セルの操作:5b89f527080bd576a91ef79ce811581e&#34;&gt;◇ 表示部セルの操作&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左側：カテゴリカラーの変更。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color&#34; /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;中心：項目の削除および編集。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;右側：バーの気分による色付けのオンオフ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;編集:5b89f527080bd576a91ef79ce811581e&#34;&gt;編集&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-edit.png&#34; alt=&#34;Edit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;セルの中心部をタップすることで時間などの編集ができます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-ippuku:5b89f527080bd576a91ef79ce811581e&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;ippuku]&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ナビバーのタイトルを変更することができます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※ 使用例&lt;br /&gt;
+ソフトリストに入る色には睡眠関連のログに、クールリストでは仕事に、ホットリストでは健康エクササイズ関連などに。&lt;/p&gt;
+
+&lt;p&gt;※ シフト勤務の方々には、勤務ログもしくは睡眠管理帳としてもお使いになれます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>meagen</title>
+      <link>http://goozenlab.com/iapp/meagen/</link>
+      <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/meagen/</guid>
+      <description>
+
+&lt;p&gt;見ないうちにドンドン大きくなっていく子供達のサイズを管理する為のソフトです。（大人の方にも対応しています）
+旅先で見つけたかわいらしい服や帽子など、姪や甥に買ってあげたくても年齢以外は分からない時がよくあり、そんな時に重宝するかなと思い作りました。
+子供や姪甥、フォスターチルドレンの沢山いらっしゃる方にぜひ。&lt;/p&gt;
+
+&lt;h2 id=&#34;使用方法:5f75ffa3bd57d7dd695d343dce4c183e&#34;&gt;使用方法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;タップ左:カラーの変更。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ダブルタップ中心:身長・体重・誕生日・名前の編集画面へ。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;タップ右:詳細画面へ（サイズの編集が出来ます）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ナビゲーションバーをダブルタップ/シェイクでソート画面(メイン、お気に入り、赤系、青系、ピンク系)変更。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;☆誕生日の30日前になるとリスト表示画面の右の性別アイコンの上部にビックリマークが出ます。&lt;/p&gt;
+
+&lt;p&gt;Lite版では&lt;br /&gt;
+-ソート画面数が限定されます。&lt;br /&gt;
+-広告がリストページに表示されます。&lt;br /&gt;
+（入力数などには限定はありません）&lt;/p&gt;
+
+&lt;p&gt;◇ 無料ソフトのため広告がリスト上部に入ります。使用上少々 目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tapas</title>
+      <link>http://goozenlab.com/iapp/tapas/</link>
+      <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/tapas/</guid>
+      <description>
+
+&lt;h3 id=&#34;食材リスト付き-マルチキッチンタイマー:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;食材リスト付き、マルチキッチンタイマー。&lt;/h3&gt;
+
+&lt;p&gt;麺好きな人であれば、パスタ数種、うどん、蕎麦など様々な種類かつブランドの物を取り揃えていると思います。
+麺の種類やブランドにより茹で時間が違いますし、作るたびにパッケージを確認したりするのがちょっとした手間だったりします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-tapas.jpg&#34; alt=&#34;tapas Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;そんな不満を解消すべく、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ちょっとしたメモ。(アルデンテにはマイナスxx分とか)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;複数タイマー(ほかの物も一緒に料理するので)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;作った日や回数の記録&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;シンプルかつシック&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;をコンセプトにして作りました。&lt;/p&gt;
+
+&lt;h2 id=&#34;リストページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ リストページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-main.png&#34; alt=&#34;List&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;ナビゲーションバーの操作:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左右にスワイプ：次のソートに変更&lt;/li&gt;
+&lt;li&gt;ダブルタップ：次のソートに変更&lt;br /&gt;
+(メイン、お気に入り、色によるソートx3, 使用回数順)&lt;/li&gt;
+&lt;li&gt;プラスマーク：新規項目の追加&lt;/li&gt;
+&lt;li&gt;右のタイマーボタン：タイマーページへ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;セルの操作方法:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
+
+&lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-cell.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;
+&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Kawaii&#34; /&gt;
+ （Kawaii）&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;中央エリア
+
+&lt;ol&gt;
+&lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;右エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：タイマーに追加、背景色が変わり、メモが表示されます。。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-tap-center.png&#34; alt=&#34;Tap center&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;その他の操作
+
+&lt;ol&gt;
+&lt;li&gt;スワイプ：削除&lt;/li&gt;
+&lt;li&gt;左右バーを一番薄いグレー：一番下に移動します。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;アクセサリの意味:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;アクセサリの意味&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-accesories.png&#34; alt=&#34;Accesory&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左上部の数字：使用回数&lt;/li&gt;
+&lt;li&gt;左下部の切り込み：メモがある時に切り込みが入ります&lt;/li&gt;
+&lt;li&gt;左下部の白ドット：色変更の防止ロック&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;タイマーページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ タイマーページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-timer.png&#34; alt=&#34;Timer&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;画面はスクロールされず、5つ又は6つまで表示されます。
+最初の画面ではグレーのオフの状態になっています。&lt;/p&gt;
+
+&lt;p&gt;-1- 最初のタップで色がつき、準備完了状態。&lt;br /&gt;
+-2- 次のタップでスタート、時間終了時に、色が変わり、アラームが鳴ります。&lt;br /&gt;
+-3- タップで元の状態に戻る。&lt;/p&gt;
+
+&lt;p&gt;残り時間により背景の色が変わります。&lt;/p&gt;
+
+&lt;h3 id=&#34;アプリケーションバッジ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;◆ アプリケーションバッジ&lt;/h3&gt;
+
+&lt;p&gt;現在使用中のタイマーの数を表示します。&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;編集ページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ 編集ページ&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-edit.png&#34; alt=&#34;Edit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;星・ハートマーク付け(お気に入りリストに登録されます)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;アイテムの名前とメモの編集&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;時間設定(数字をタップして変更します)&lt;/li&gt;
+&lt;li&gt;ロックをクリックで色固定 (思わず色を(誤タップで)変えてしまう方は。)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-tapas:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;tapas]&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ナビゲーションバーのタイトルを変更&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;◇ Lite版では&lt;br /&gt;
+・タイマーは同時に3つまでご利用いただけます。&lt;br /&gt;
+・リスト画面はメイン、お気に入り、回数順の3つ。&lt;br /&gt;
+・リスト表示の上部に広告が入ります。使用上目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper</title>
+      <link>http://goozenlab.com/iapp/cosper/</link>
+      <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/cosper/</guid>
+      <description>
+
+&lt;p&gt;ちょっとした高額な物を購入したけど思ったほど使用していない品物、
+高価な物だけど日々使っているもの等を、 日割り、もしくは使用回数のコストを計算してそのパフォーマンスをはかるソフトです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-cosper.jpg&#34; alt=&#34;cosper Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;無駄遣いの抑止に、、&lt;/p&gt;
+
+&lt;p&gt;でも実は逆に毎日使うものであれば少し奮発してもよいように思えてきてます。。&lt;/p&gt;
+
+&lt;h2 id=&#34;メイン画面:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ メイン画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-cosper-main.png&#34; alt=&#34;Main&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ナビゲーションバーの操作:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;◆ ナビゲーションバーの操作&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;：ソートを変更（価格順）と（日割り/回数割順）&lt;/li&gt;
+&lt;li&gt;プラスマーク：新規項目の追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ 日割り/回数割でのソート時にはタイトルの両端に･がつきます。&lt;br /&gt;
+（例）･コスパ･&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;☆&lt;/strong&gt; 使用例(ソート画面を品のカテゴリー分けとして使ってください。)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ソフト系では(ピンク：アクセサリ、水色：上着、紫：ボトムス)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;青系には(黄緑:コンピューター、青：趣味関連、緑：家電)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;セルの操作方法:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
+
+&lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-cell.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+（Kawaii）
+. 中央エリア&lt;/li&gt;
+&lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;右エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;毎日使う物の時:右下に保有日数が表示&lt;/li&gt;
+&lt;li&gt;使用回数を設定する品:使用回数が右上部に表示&lt;br /&gt;
+※ 表示後クリックすることによりカウントアップ&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;その他の操作
+
+&lt;ol&gt;
+&lt;li&gt;スワイプ：削除&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;アクセサリの意味:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;アクセサリの意味&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左下部の白ドット：色変更の防止ロック&lt;/li&gt;
+&lt;li&gt;右バーのグレー階調は使用頻度/保有期間が長いほど薄くなります&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;編集画面:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ 編集画面&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-edit.png&#34; alt=&#34;Edit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;星付け(お気に入りに登録)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;品物の名&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;品物のメモ&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;購入日：日付をタップする事により編集&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;購入金額&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;毎日使用するかのスイッチ&lt;br /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;オン：購入日からの日で購入金額を割ります&lt;/li&gt;
+&lt;li&gt;オフ：使用回数で購入金額を割ります&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;使用回数&lt;/li&gt;
+&lt;li&gt;カラーロック：色の変更をロックします（誤動作防止）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-cosper:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;cosper]&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;カラーモードの変更&lt;/li&gt;
+&lt;li&gt;表示フォントの変更（日本語のフォントは変わりません。）&lt;/li&gt;
+&lt;li&gt;ナビゲーションバーのタイトルを変更&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;◇ Lite版
+・ソート画面数に制限があります。(メイン、星付き、価格順)。
+・広告がリスト上部に入ります。使用上目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+
+&lt;h2 id=&#34;将来のアップデート:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;将来のアップデート&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダークモード（白黒反転モード）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>dandori</title>
+      <link>http://goozenlab.com/iapp/dandori/</link>
+      <pubDate>Fri, 19 Nov 2010 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/dandori/</guid>
+      <description>
+
+&lt;p&gt;ポストイット感覚で使えるカラフルでパーソナルなプロジェクトマネージャ。
+シンプルな使い勝手で、簡単にタスクを管理する事ができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-dandori.jpg&#34; alt=&#34;dandori Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;プロジェクトの段取り、簡単なアイディア帳としても。
+抱負や夢、欲しい物をちょっと書き出してみたりしてみてください。&lt;/p&gt;
+
+&lt;h2 id=&#34;全体像:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;全体像&lt;/h2&gt;
+
+&lt;p&gt;プロジェクトとタスクのページが有ります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-dandori-main.png&#34; alt=&#34;Project Page&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;プロジェクトページ:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ プロジェクトページ&lt;/h2&gt;
+
+&lt;h3 id=&#34;ナビゲーションバーの操作:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
+&lt;li&gt;ダブルタップ：上に同じ&lt;/li&gt;
+&lt;li&gt;プラスマーク：新規項目の追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;セルの操作方法:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
+
+&lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-cell.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
+（Kawaii）&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;中央エリア
+
+&lt;ol&gt;
+&lt;li&gt;ロングタップ：左肩に赤いドットが表示。アプリケーションバッジに登録されます&lt;/li&gt;
+&lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;右エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：タスクページに移行&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;その他の操作
+
+&lt;ol&gt;
+&lt;li&gt;スワイプ：削除&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;アクセサリの意味:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;アクセサリの意味&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左上部の数字：そのプロジェクトのタスクの数が表示されます。&lt;/li&gt;
+&lt;li&gt;左下部の白ドット：色変更の防止ロック&lt;/li&gt;
+&lt;li&gt;左肩の赤ドット：アプリケーションバッジに登録（中央のロングタップでオンオフ）&lt;/li&gt;
+&lt;li&gt;右下部の赤ドット：下層のタスクページにて赤ドットのタスクがある場合&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;アプリケーションバッジ:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;アプリケーションバッジ&lt;/h4&gt;
+
+&lt;p&gt;左肩に赤いドットが表示されている項目の数がアプリケーションバッジに表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-badge.png&#34; alt=&#34;Badge&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;タスクページ-下層:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ タスクページ（下層）&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;ナビゲーションバーの操作-1:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-navigation-bar.png&#34; alt=&#34;Navigation Bar on Task Page&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
+&lt;li&gt;ダブルタップ：色順でのソート表示の切り替え&lt;br /&gt;
+タイトルの両端にドットがつき、並び替えはできないために編集ボタンは一時なくなります。ナビゲーションバーのダブルタップでもとに戻ります。&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-navigation-bar-doted.png&#34; alt=&#34;Hot Dot on Task Page&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;編集ボタンで&lt;strong&gt;順序の変更&lt;/strong&gt;と追加、削除&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;セルの操作方法-1:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
+
+&lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-cell.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：色の変更。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;中央エリア
+
+&lt;ol&gt;
+&lt;li&gt;ロングタップ：左肩に赤いドットが表示。プロジェクトページの右下に赤ドットが表示されます&lt;/li&gt;
+&lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;右エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：グレー階調の変更&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;その他の操作
+
+&lt;ol&gt;
+&lt;li&gt;スワイプ：削除&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;設定-ホーム-設定-dandori:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;dandori]&lt;/h2&gt;
+
+&lt;p&gt;・ナビゲーションバーのタイトルを変更&lt;br /&gt;
+・アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）
+・フォントの変更（日本語のフォントは変わりません。相性が良いのはHelvetica Nue Light）&lt;/p&gt;
+
+&lt;h3 id=&#34;ナビゲーションバーのタイトルの設定:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;ナビゲーションバーのタイトルの設定&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-title.png&#34; alt=&#34;Title on NavBar&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-title-named.png&#34; alt=&#34;Title on NavBar&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;###マークの透明度設定
+星とハートマークの透明度を設定できます。目立たせてせたい人は白めに、控えめにしたい方は薄めにしてください。
+デフォルトは控えめ、薄めにしてあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-mark1.png&#34; alt=&#34;Setting mark&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell1.png&#34; alt=&#34;Setting mark&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-mark2.png&#34; alt=&#34;Setting mark&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell2.png&#34; alt=&#34;Setting mark&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;◇ Lite版&lt;br /&gt;
+・プロジェクト入力項目数の限定はありませんが、ソートページ表示種類が限定されます。&lt;br /&gt;
+・広告がリスト上部に入ります。使用上目障りかもしれませんがご理解のほどよろしくお願いします。&lt;/p&gt;
+
+&lt;h2 id=&#34;将来のアップデート:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;将来のアップデート&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダークモード（白黒反転モード）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>littlist</title>
+      <link>http://goozenlab.com/iapp/littlist/</link>
+      <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/littlist/</guid>
+      <description>
+
+&lt;h2 id=&#34;小ないリストを大きな文字で-ちょっとした事を気持ち良く:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;小ないリストを大きな文字で。ちょっとした事を気持ち良く。&lt;/h2&gt;
+
+&lt;p&gt;カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。&lt;br /&gt;
+ビジネスが中心のタスク管理ソフトを、生活に近くし、誰でも簡単かつ気楽に扱える、
+使っていて楽しく感じられるtoDoアプリケーションを目指して作りました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-littlist.jpg&#34; alt=&#34;littlsit Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;手帳にペタペタとポストイットを貼り付けているような人やザッピング好きには最適なTodoソフトです。&lt;/p&gt;
+
+&lt;p&gt;右脳を刺激し、色とグレーの階調を使って、モンドリアンの絵画のように楽しみながら自分好みの画面にしてください。&lt;/p&gt;
+
+&lt;p&gt;使い勝手に少し慣れが必要かもしれませんが、簡易かつ軽快なソフトです。&lt;/p&gt;
+
+&lt;!-- ![Main](https://dl.dropbox.com/u/163521/images/SS-littlist-main.png) --&gt;
+
+&lt;h2 id=&#34;ナビゲーションバーの操作方法:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;ナビゲーションバーの操作方法&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-navigation-bar.png&#34; alt=&#34;NavigationBar&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左右にスワイプ：次のソートに変更&lt;/li&gt;
+&lt;li&gt;ロングタップ：ホットリストにジャンプ&lt;/li&gt;
+&lt;li&gt;上にスワイプ：期日付きリストにジャンプ&lt;/li&gt;
+&lt;li&gt;プラスマーク：新規項目の追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;セルの操作方法:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;セルの操作方法&lt;/h3&gt;
+
+&lt;p&gt;右•左•中央の三つのエリアをタップの方法で使い分けています。
+&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell.png&#34; alt=&#34;Cell&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：色の変更&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;中央エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：期日かメモがあれば、数秒間背景色が変わり期限、メモが表示されます&lt;/li&gt;
+&lt;li&gt;ロングタップ：左肩に赤いドットが表示。アプリケーションバッジに登録されます&lt;/li&gt;
+&lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;右エリア
+
+&lt;ol&gt;
+&lt;li&gt;タップ：グレー階調の変更&lt;/li&gt;
+&lt;li&gt;ロングタップ：項目を一番上に移動します&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;中央エリアタップ時-期日-メモがある場合:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;中央エリアタップ時（期日、メモがある場合）&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell2.png&#34; alt=&#34;Cell 2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;アクセサリの意味:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;アクセサリの意味&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;左上部の切り込み：メモがある時に切り込みが入ります&lt;/li&gt;
+&lt;li&gt;左下部の白ドット：色変更の防止ロック&lt;/li&gt;
+&lt;li&gt;左肩の赤ドット：アプリケーションバッジに登録（中央のロングタップでオンオフ）&lt;/li&gt;
+&lt;li&gt;右下部の色ドット：期日が設定されているとき表示されます。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;期日:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;期日&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-duedot.png&#34; alt=&#34;Red Dot&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;期日が迫ってくるほど、赤に近い色がつきます。
+期日が過ぎるとバー自体が赤くなります。（白ドット）&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;設定方法:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;設定方法&lt;/h3&gt;
+
+&lt;p&gt;ダブルタップで編集画面へ行き、丸ボタンで期日のオンオフ、日付をタップして日時を設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due1.png&#34; alt=&#34;Due 1&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due2.png&#34; alt=&#34;Due 2&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due3.png&#34; alt=&#34;Due 3&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;新規項目追加:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;新規項目追加&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-quick-entry.png&#34; alt=&#34;New&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;完了：追加の終了&lt;/li&gt;
+&lt;li&gt;詳細へ：日時の設定やメモを入力する必要のある場合は&lt;/li&gt;
+&lt;li&gt;取消：項目の入力をキャンセルします&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;設定:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;設定&lt;/h2&gt;
+
+&lt;p&gt;フォントの変更とナビゲーションバーのタイトルを変更できます&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;フォントの変更:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;フォントの変更&lt;/h3&gt;
+
+&lt;p&gt;間隔が詰まって太めから、柔らかめゆったりの順になっています。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting-font.png&#34; alt=&#34;Font&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;その他:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;その他&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

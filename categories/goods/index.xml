@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goods on goozenlab</title>
+    <link>http://goozenlab.com/categories/goods/</link>
+    <description>Recent content in Goods on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Wed, 16 Jan 2013 20:35:00 +0600</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/goods/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SEIKO目覚まし時計の海外での自動電波受信</title>
+      <link>http://goozenlab.com/blog/2013/01/seiko-alarmclock/</link>
+      <pubDate>Wed, 16 Jan 2013 20:35:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/01/seiko-alarmclock/</guid>
+      <description>
+
+&lt;p&gt;旅のお供の温度•湿度計付きの目覚まし時計（SEIKO SQ669W）&lt;/p&gt;
+
+&lt;p&gt;日本国内では、電波を受け取り時間を合わせてくれます。海外に行く時には電池の無駄になるので電波受信機能をオフにします。&lt;/p&gt;
+
+&lt;p&gt;インドのジョードプルにて時計を落としその衝撃で電池が抜けてしまい、少しの時間なら時間を記憶してても良いのにと思いつつ、面倒ながら時間を再設定しました。&lt;/p&gt;
+
+&lt;p&gt;夕方、気がついてみると、何と、どっから拾ったか、日本の時刻に変わってます。電波を受信しているようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-01-16-seiko-alerm.png&#34; alt=&#34;電波受信範囲&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;まさかと思って、もう一度電池を抜き試してみましたが、時間が調整されます。しかし表示されるのはもちろん日本時間。でも、電波受信を切る方法が分からず、、直しても次の朝には日本時間になってしまいます。仕方ないのでしばし中途半端な3.5時間をマイナスしつつ、滞在してました。（ネット屋に行ってもつい調べるのを忘れてしまうんですよね、そんなに重要な事ではないので。）&lt;/p&gt;
+
+&lt;p&gt;マニュアルだとかなり狭い範囲でしか受信できない事になっているんだけど。（まさか九州の電波等の電波を拾ってるとは思いずらいし、さぁ一体。）行く先々でちょっとチェック。&lt;/p&gt;
+
+&lt;h3 id=&#34;インド:69f287c1e385ab29afb7897797847d36&#34;&gt;インド&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ジョードプル：受信&lt;/li&gt;
+&lt;li&gt;プシュカル：NG&lt;/li&gt;
+&lt;li&gt;デリー：NG&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ネパール:69f287c1e385ab29afb7897797847d36&#34;&gt;ネパール&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ポカラ：NG&lt;/li&gt;
+&lt;li&gt;バクタプル：NG&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;マレーシア:69f287c1e385ab29afb7897797847d36&#34;&gt;マレーシア&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クアラルンプール：NG&lt;/li&gt;
+&lt;li&gt;ペナン：受信（数泊後、朝起きると日本時間になってました。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;タイ:69f287c1e385ab29afb7897797847d36&#34;&gt;タイ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バンコク：？？&lt;/li&gt;
+&lt;li&gt;チェンマイ：受信（一週間して日本時間になっていたのに気がつきました。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ラオス:69f287c1e385ab29afb7897797847d36&#34;&gt;ラオス&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ルアンナムタ：受信（最初の３泊は機能しなくて駄目だと思いきや、ムアンシンから戻ってきたら日本時間になってました。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;と、受信できるのに数日かかったり、なんか不思議な感じ。（私の日本に帰りたい念波でも受信しているんかな。。）&lt;/p&gt;
+
+&lt;p&gt;という事は、少しのファームウェア変更（タイムゾーンの設定追加）で世界対応にできるのではないかと、セイコーさんよろしくです。&lt;/p&gt;
+
+&lt;p&gt;※随時更新する予定。&lt;/p&gt;
+
+&lt;p&gt;追記：2015-03-06 　
+電池のもちが良いです、２年以上経ちますがまだ使えてます。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

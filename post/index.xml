@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on goozenlab</title>
+    <link>http://goozenlab.com/post/</link>
+    <description>Recent content in Posts on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Sat, 07 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugoを少し弄る</title>
+      <link>http://goozenlab.com/blog/2015/03/hugo-template/</link>
+      <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/hugo-template/</guid>
+      <description>
+
+&lt;p&gt;移行のためHugoを&lt;code&gt;nofancy&lt;/code&gt;を基にして色々と調整しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;テンプレート:3664db9b35118110eccce63f298c0cae&#34;&gt;テンプレート&lt;/h2&gt;
+
+&lt;p&gt;このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout: app_page
+title: &amp;quot;(a)のちょっと詳しい使い方&amp;quot;
+subtitle: &amp;quot;タスク管理をマークダウンで&amp;quot;
+appid: &amp;quot;929324285&amp;quot;
+date: &amp;quot;2015-01-25&amp;quot;
+updated: &amp;quot;2015-01-25&amp;quot;
+footer: true
+---
+
+# アプリページのオクトプレスより移行のyaml
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;layout: app_page&lt;/code&gt; がある事で &lt;code&gt;layout/_default/app_page.html&lt;/code&gt; を探しにいき、もしくはコンテンツファイルを別のフォルダー&lt;code&gt;iapp&lt;/code&gt;に入れておくと、&lt;code&gt;layout: app_page&lt;/code&gt;が無くても&lt;code&gt;layout/iapp/single.html&lt;/code&gt;があれば優先して使われるよう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template.png&#34; alt=&#34;Hugo Template&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template2.png&#34; alt=&#34;Hugo Template&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;yaml内のカスタム項目を取り込む:3664db9b35118110eccce63f298c0cae&#34;&gt;Yaml内のカスタム項目を取り込む&lt;/h2&gt;
+
+&lt;p&gt;yaml内にあるスマートバナー広告で使う&lt;code&gt;appid: &amp;quot;929324285&amp;quot;&lt;/code&gt;は
+以下のようにして &lt;code&gt;partials/header.html&lt;/code&gt; に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、&lt;code&gt;.Params&lt;/code&gt;を使うのが正解のようです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ if .Params.appid }}
+  &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ .Params.appid }}&amp;quot;&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gem地獄で Hugo に移行</title>
+      <link>http://goozenlab.com/blog/2015/03/moving-hugo/</link>
+      <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/moving-hugo/</guid>
+      <description>&lt;p&gt;ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。&lt;/p&gt;
+
+&lt;p&gt;ちょっと開発が一段落し一息。温泉に行こうと思ったが、Webの移行をしています。&lt;/p&gt;
+
+&lt;p&gt;そもそもの始まりは、オクトプレスでSWIFTのシンタックスカラーリングで、色々試すも、これのバージョンがどうで、あっちで出るエラーはそのバージョンが問題でと、Ruby野郎でない私はGem地獄に陥る。Jekyllをちょっと試すが、これがまたGem関連でエラー連発。&lt;/p&gt;
+
+&lt;p&gt;仕舞にはオクトプレスのアップデートでファイルが消える。バックアップは取っているのだが、気分は良くない。オクトプレスに不満がある訳ではないが、もう一度インストールするのも気が進まないので、移行する事にする。&lt;/p&gt;
+
+&lt;p&gt;幾つかの選択肢があったのですが、Hugoに決定！もテーマにピンとくるものがありません。シンプルでグリッドな感じのやつで良いのだけど（jekyllでデフォルトの様な）。。。&lt;/p&gt;
+
+&lt;p&gt;帯に短し、襷に、、、、で、オクトプレス時代は字がデケーなと思っていたのにHugoでは文字ちっちゃ、表示範囲がせまっ、みたいな事になっています。ただし、HugoのほうはCSSベースなのでSassで弄るのを断念した私でも弄れそう。ちなみに選んだテーマは&lt;code&gt;nofancy&lt;/code&gt;です。&lt;/p&gt;
+
+&lt;p&gt;でも、ページングの処理がよく分からんから、とりあえずすべてのポストがメインページに羅列されています。。。66KBだからそんなに重くはないので。。。そして、画像もでかいです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
+      <link>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</link>
+      <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
+      <description>&lt;p&gt;タイトルが長げーーーーーーな。。&lt;/p&gt;
+
+&lt;p&gt;さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）&lt;/p&gt;
+
+&lt;p&gt;そんなときは、マッピングファイルを作成して、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ファイルを訂正、追加して（source, destinationに注意）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;あとは、optionsの設定を加え、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
+                              NSInferMappingModelAutomaticallyOption: @(YES)}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
+
+	# options:nil の箇所を options:options に変更
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;pre&gt;&lt;code&gt;- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
+    }
+    
+    // Create the coordinator and store
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&amp;quot;Littlist.sqlite&amp;quot;];
+   
+    // Performing automatic lightweight migration by passing the following dictionary as the options parameter:
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
+                              NSInferMappingModelAutomaticallyOption: @(YES)};
+
+    NSError *error = nil;
+    NSString *failureReason = @&amp;quot;There was an error creating or loading the application&#39;s saved data.&amp;quot;;
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
+        // Report any error we got.
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        dict[NSLocalizedDescriptionKey] = @&amp;quot;Failed to initialize the application&#39;s saved data&amp;quot;;
+        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
+        dict[NSUnderlyingErrorKey] = error;
+        error = [NSError errorWithDomain:@&amp;quot;YOUR_ERROR_DOMAIN&amp;quot; code:9999 userInfo:dict];
+        // Replace this with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@&amp;quot;Unresolved error %@, %@&amp;quot;, error, [error userInfo]);
+        abort();
+    }
+    return _persistentStoreCoordinator;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
+
+&lt;p&gt;でも、これで変更の流れもつかめるしありがたや。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>旅仕様 iOS</title>
+      <link>http://goozenlab.com/blog/2015/02/travel-home/</link>
+      <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/travel-home/</guid>
+      <description>&lt;p&gt;iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_travel-home.png&#34; alt=&#34;Home&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;ドック&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Google Maps：GPSと合わせて便利です。でも旅ですし、たまには現地の人に聞きましょう。&lt;/li&gt;
+&lt;li&gt;SimpleNote：ちょっとしたメモには最適、呟かずメモってます。&lt;/li&gt;
+&lt;li&gt;littlist：ToDoソフト、入国日や出発日の把握、イベント日、お土産リストとして使ってます。&lt;/li&gt;
+&lt;li&gt;PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。別のものに帰る理由が見つからない。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ホーム画面には、これらのソフトが置いてあります。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;カレンダー：カレンダー自体は使っていないのですが、日付表示のため&lt;/li&gt;
+&lt;li&gt;時計：目覚まし&lt;/li&gt;
+&lt;li&gt;Currency：定番の外貨為替ソフト。&lt;/li&gt;
+&lt;li&gt;Evernote：ちょっと旅情報のメモなどを入れたりしてます。&lt;/li&gt;
+&lt;li&gt;写真：&lt;/li&gt;
+&lt;li&gt;Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。&lt;/li&gt;
+&lt;li&gt;ohaYo：睡眠ログのソフト&lt;/li&gt;
+&lt;li&gt;計算機：昨今計算能力が低下気味ということで、&lt;/li&gt;
+&lt;li&gt;設定：&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ちなみに、その他は、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_2nd-Screen.png&#34; alt=&#34;2nd Page&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_3rd-Screen.png&#34; alt=&#34;3rd Page&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;という感じ。2ページ目はアプリ検証ページ。そんなに沢山のソフトは入れてません。シンプルです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>マレーシア ラップアップ</title>
+      <link>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</link>
+      <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</guid>
+      <description>&lt;p&gt;マレーシア滞在をちょっとまとめる。（50日間で~7万円：８万両替（10,000円が290MYR）してMYR400くらい残る）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;言葉：東南アジアでは問題なく英語が通じる国の一つ。&lt;/li&gt;
+&lt;li&gt;治安：KLは分からないが、かなり良い方。&lt;/li&gt;
+&lt;li&gt;天候：ちょっと湿っぽい。東は少し湿度が低く感じられた。&lt;/li&gt;
+&lt;li&gt;宿：シンプルなシングル（シャワートイレ共有）MYR15~35、朝食付きの宿もある。&lt;/li&gt;
+&lt;li&gt;移動：たまに寂れたバスもあるが、大きい国でもなく、移動における体の負担もそれほどなし。夜行バスも座席がかなり倒れるので熟睡できる。（個人差あり）　&lt;/li&gt;
+&lt;li&gt;食事
+
+&lt;ul&gt;
+&lt;li&gt;朝：ロティチャナイ、イドリ+チャイ（MYR3~4）&lt;/li&gt;
+&lt;li&gt;昼：中華素食屋＋中国茶（MYR4~5) 、インドミールス（MYR4~5)&lt;/li&gt;
+&lt;li&gt;夜：マサラトーサイ＋チャイ、菜包＋お茶（MYR3.5~4)&lt;/li&gt;
+&lt;li&gt;酒：ビール大瓶（MYR16~日本とほぼ同じ)&lt;/li&gt;
+&lt;li&gt;その他&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。で、ほぼベジタリアンの私にとっては食事に関してはかなり幸せ、理想に近いとも言える。ちなみに個人的にはペナンとマラッカが良い。マレー系の食事なら東側の街が良い感じ。肉食系は多分30％増し？くらい。&lt;/p&gt;
+
+&lt;p&gt;宿の質は当たり前だが、値段によりけり、安かろう悪かろう。ただし、悪いといっても、暗いとか臭うとかの問題。南京虫に食われた事もあるが、汚い宿というのは今のところほとんど無い。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ニブレスプロジェクト</title>
+      <link>http://goozenlab.com/blog/2015/02/xibless-project/</link>
+      <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/xibless-project/</guid>
+      <description>&lt;p&gt;swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。&lt;/p&gt;
+
+&lt;p&gt;ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
+        // Override point for customization after application launch.
+
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let navigationController = UINavigationController(rootViewController: ListViewController())
+        
+        let controller = navigationController.topViewController as ListViewController
+        controller.managedObjectContext = self.managedObjectContext
+
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        return true
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
+        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+        let mainViewController = MainViewController()
+        mainViewController.managedObjectContext = self.managedObjectContext
+
+        self.window!.rootViewController = mainViewController
+        self.window!.makeKeyAndVisible()
+        
+        return true
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pranatice v0.7.1</title>
+      <link>http://goozenlab.com/blog/2015/02/pranatice-071/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/pranatice-071/</guid>
+      <description>&lt;p&gt;他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-main-071.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-history-071.png&#34; alt=&#34;History&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;メインページのデザインの微調整
+
+&lt;ul&gt;
+&lt;li&gt;下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）&lt;/li&gt;
+&lt;li&gt;ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。&lt;/li&gt;
+&lt;li&gt;月の位置、フォントの調整・変更&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ホーム＞設定＞ Pranatice&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カレンダーの詳細設定&lt;/li&gt;
+&lt;li&gt;書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;その他&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Iconを少し濃く&lt;/li&gt;
+&lt;li&gt;最初の状態でタップをすると周りにある雲等の透明度が変化します&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-165/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-165/</guid>
+      <description>
+
+&lt;p&gt;このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には&lt;strong&gt;最後のアップデート&lt;/strong&gt;になります。&lt;/p&gt;
+
+&lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
+&lt;li&gt;設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。&lt;/li&gt;
+&lt;li&gt;データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ネパール、ポカラのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/02/internet-pokhara/</link>
+      <pubDate>Wed, 25 Feb 2015 20:12:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/internet-pokhara/</guid>
+      <description>&lt;p&gt;バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている）&lt;/p&gt;
+
+&lt;p&gt;インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。）&lt;/p&gt;
+
+&lt;p&gt;下り：0.62Mps&lt;br /&gt;
+上り：0.13Mps&lt;/p&gt;
+
+&lt;p&gt;で、今回は、&lt;/p&gt;
+
+&lt;p&gt;下り：0.14Mps&lt;br /&gt;
+上り：0.11Mps&lt;/p&gt;
+
+&lt;p&gt;と、、同じ宿にも関わらず、、遅くなってる。。&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。というか、観光客自体は増えていると思うのだが、ダムサイドに滞在する旅行者がすごく少ないように思える。&lt;/p&gt;
+
+&lt;p&gt;6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
+なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;ちなみに&lt;strong&gt;停電&lt;/strong&gt;スケジュールはこんな感じ、週&lt;strong&gt;77時間&lt;/strong&gt;停電。しかし、スケジュールも曖昧で無計画な感すらある。&lt;/p&gt;
+
+&lt;p&gt;| 月 | 火 | 水 | 木 | 金 | 土 | 日 |
+|:-|:-|:-|:-|:-|:-|:-|:-|
+|5:00~12:00|6:00~13:00|9:00~16:00|10:00~17:00|7:00~14:00|4:00~9:00|4:00~10:00
+|16:00~20:00　|17:00~21:00　|19:00~23:00　|20:00~24:00　|18:00~22:00　|12:00~18:00　|14:00~19:00　&lt;/p&gt;
+
+&lt;p&gt;と、夜型の人間であれば影響無しだが、、、まぁ慣れます。&lt;/p&gt;
+
+&lt;p&gt;そして、恒例のiPhoneパノラマ写真、街の至る所から山が見えます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_pokhara1.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reminder：日時の書き込み</title>
+      <link>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
+      <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
+      <description>&lt;p&gt;リマインダーへの日時の書き込み&lt;/p&gt;
+
+&lt;p&gt;読み込み時には&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;event.dueDate = eventToRead.dueDateComponents.date;
+event.timeZone = eventToRead.dueDateComponents.timeZone;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と、あっさりと行くのですが、&lt;code&gt;.dueDateComponents.date&lt;/code&gt; は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+  NSCalendar *gregorian = [[NSCalendar alloc]
+                           initWithCalendarIdentifier:NSGregorianCalendar];
+  unsigned unitFlags= NSYearCalendarUnit|NSMonthCalendarUnit | NSDayCalendarUnit |
+   NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |NSTimeZoneCalendarUnit;
+  
+  NSDateComponents *dailyComponents=[gregorian components:unitFlags fromDate:eventToExport.dueDate];
+  
+  eventToWrite.dueDateComponents = dailyComponents;
+  eventToWrite.timeZone = eventToExport.timeZone;
+  
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reminderからの読込ではまる</title>
+      <link>http://goozenlab.com/blog/2015/02/reminder-completion/</link>
+      <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/reminder-completion/</guid>
+      <description>&lt;p&gt;ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。&lt;/p&gt;
+
+&lt;p&gt;見事にハマったのが、取込みの&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。&lt;/p&gt;
+
+&lt;p&gt;いろいろと試し、ネットで探したところ、見つかりました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+    // 事前に calendar の設定等をして、
+	
+    __block NSArray *remindersToImport = nil;
+    __block BOOL fetching = YES;
+    
+    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
+    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
+        LOG_METHOD;
+        remindersToImport = ekReminders;
+        fetching = NO;
+    }];
+    
+    while (fetching) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
+    }
+    
+    // 作業がつづく
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と、&lt;strong&gt;while&lt;/strong&gt; の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
+      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
+      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
+
+&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
+&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
+
+&lt;!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>旅先での睡眠</title>
+      <link>http://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
+      <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
+      <description>&lt;p&gt;ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。&lt;/p&gt;
+
+&lt;p&gt;ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。&lt;/p&gt;
+
+&lt;p&gt;ひげに白髪が混じってきたし、積年の疲れということか。。&lt;/p&gt;
+
+&lt;p&gt;で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_thai.png&#34; alt=&#34;Sleep in Thai&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png&#34; alt=&#34;Sleep in Malaysia&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_nepal.png&#34; alt=&#34;Sleep in Nepal&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;タイ&lt;/strong&gt;：早起きかつ睡眠時間も短め。ヨジラーです。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;マレーシア&lt;/strong&gt;：生活のサイクルが代わりちょっと波がある。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ネパール&lt;/strong&gt;：がっつり寝る。&lt;br /&gt;
+(左から)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;と、見事に違いが出る。&lt;/p&gt;
+
+&lt;p&gt;追記：
+ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>バクタプル、ネパールのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</link>
+      <pubDate>Mon, 16 Feb 2015 15:23:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</guid>
+      <description>&lt;p&gt;ドゥリケルに飽きた訳ではないが、若干カトマンズに近づき古都バクタプル。入域料に1,500ルピー（1,800円くらい）を徴収される、外人は来てくれるなというメッセージなのか？。ダルバート３食無料チケットとか、宿１泊無料券とか付けてはくれないものか、、と思う。。&lt;/p&gt;
+
+&lt;p&gt;貧乏性なので、何泊かしないと入域料がもったいないと、ちょっと滞在する予定。ナガルコットまで一時間くらいなので、天気の良い日に日帰りトレッキングにいく。&lt;/p&gt;
+
+&lt;p&gt;町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街の雰囲気は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。&lt;/p&gt;
+
+&lt;p&gt;ネットは以下の通り、、繋がっているか繋がっていないか、分からなくなるくらいのスピード。&lt;/p&gt;
+
+&lt;p&gt;下り：0.04Mps&lt;br /&gt;
+上り：0.15Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;パノラマ写真に若干ハマりつつ、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur1.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur2.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur3.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>(a)をようやくリリース</title>
+      <link>http://goozenlab.com/blog/2015/02/release-a/</link>
+      <pubDate>Mon, 16 Feb 2015 15:18:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/release-a/</guid>
+      <description>&lt;p&gt;littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Main&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;制作理由&lt;/strong&gt;：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、&lt;strong&gt;テキストベース&lt;/strong&gt;で管理をしたい、との理由から作りました。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;誰のため&lt;/strong&gt;：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;他のアプリとの違い&lt;/strong&gt;：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;todo.md&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;詳しい使い方は&lt;a href=&#34;http://goozenlab.com/iapp/a/&#34;&gt;こちら&lt;/a&gt;にて&lt;/p&gt;
+
+&lt;p&gt;おまけ&lt;/p&gt;
+
+&lt;p&gt;※ 審査を通りアプストアにアップされました。有料スタートです。＠2015-02-16 15:18&lt;/p&gt;
+
+&lt;p&gt;※ ありがたい事に致命的なバグを見つけ、寝かしておいても仕方が無いので、再申請しました。@ 2015-02-06 07:08&lt;/p&gt;
+
+&lt;p&gt;※ ちょっと頭の整理が必要な感じがしたので、&lt;strong&gt;アプストアから登録を削除&lt;/strong&gt;しました。思ったより潰しがきかない。。@ 2015-01-29 19:07&lt;/p&gt;
+
+&lt;p&gt;！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。！！！&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,449 +1,219 @@
-
-<!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
-	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<meta charset="utf-8">
-	<title>ippuku  | goozenlab</title>
 
-<meta name="author" content="jin"> 
+  
+  <meta charset="utf-8">
+  <title>ippuku</title>
+  <meta name="description" content="ippuku">
+  <meta name="author" content="jin">
 
-<meta name="description" content="29時間という長いスパンのグラフで見つめる簡易行動ログ帳。
-何にどのくらい時間を当てているかをざっくりと大雑把に把握するためのソフトです。 □ 使用方法 ◇ タイマーのスタートはナビゲーションバーのプラスのマークから、 下部よりスタートボタンが上がってきます。 &hellip;"> <meta name="keywords" content="">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-itunes-app" content="app-id=424755953">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link href="/atom.xml" rel="alternate" title="goozenlab" type="application/atom+xml">
-	<link rel="canonical" href="">
-	<link href="/favicon.png" rel="shortcut icon">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
-      <!--  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
-
-<script language="Javascript" type="text/javascript">
-$(document).ready(
-  function() {
-    (function($) {
-      $(".fancybox[data-content-id]").each(function() {
-        this.href = $(this).data('content-id');
-      });
-      $(".fancybox").fancybox({
-        beforeLoad: function() {
-          var el, 
-              id = $(this.element).data('title-id');
-
-          if (id) {
-            el = $('#' + id);
-
-            if (el.length) {
-              this.title = el.html();
-            }
-          }
-          if ($(this).data('content')) {
-            this.content = $(this).data('content');
-          }
-        },
-        helpers: {
-          title: {
-            type: 'inside'
-          }
-        }
-      });
-    })(jQuery);
-  }
-);
-</script> -->
-	<meta name="google-site-verification" content="zRArvI9q2p-0UNtsXG84wSNFwaHQDoCLkjLOHFpRTy0" />
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com//css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/custom.css">
+  
+  
+  <script src="http://goozenlab.com//js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com//css/hybrid.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
 </head>
-
 <body>
-	<header id="header" class="inner"><h1><a href="/">goozenlab</a></h1>
-<h4>. . .</h4>
-<nav id="main-nav"><ul>
-      <li><a href="/iapp/littlist">littlist</a></li>
-	  <li><a href="/iapp/a/">(a)</a></li>
-      <li><a href="/iapp/dandori/">dandori</a></li>
-      <li><a href="/iapp/doop/">doop</a></li>
-      <li><a href="/iapp/tapas/">tapas</a></li>
-      <li><a href="/iapp/cosper/">cosper</a></li>
-      <li><a href="/iapp/listaria/">listaria</a></li>
-      <li><a href="/iapp/ippuku/">ippuku</a></li>
-      <li><a href="/iapp/ohayo/">ohayo</a></li>
-      <li><a href="/iapp/sati/">sati</a></li>
-      <li><a href="/blog/archives">Archives</a></li>
-</ul>
 
-</nav>
-<nav id="mobile-nav">
-	<div class="alignleft menu">
-		<a class="button">Menu</a>
-		<div class="container"><ul>
-      <li><a href="/iapp/littlist">littlist</a></li>
-	  <li><a href="/iapp/a/">(a)</a></li>
-      <li><a href="/iapp/dandori/">dandori</a></li>
-      <li><a href="/iapp/doop/">doop</a></li>
-      <li><a href="/iapp/tapas/">tapas</a></li>
-      <li><a href="/iapp/cosper/">cosper</a></li>
-      <li><a href="/iapp/listaria/">listaria</a></li>
-      <li><a href="/iapp/ippuku/">ippuku</a></li>
-      <li><a href="/iapp/ohayo/">ohayo</a></li>
-      <li><a href="/iapp/sati/">sati</a></li>
-      <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</div>
-	</div>
-	<div class="alignright search">
-		<a class="button"></a>
-		<div class="container">
-			<form action="http://google.com/search" method="get">
-				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:goozenlab.com">
-			</form>
-		</div>
-	</div>
-</nav>
-
-
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
 </header>
 
-	<div id="content" class="inner"><article class="page">    
-	<h2 class="title">Ippuku</h2>
-    
-	<div class="meta">
-        <span></span>
-        <span>
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-<time datetime="2011-03-03T00:00:00+05:45" pubdate data-updated="true">Mar 3<span>rd</span>, 2011</time></span>
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
+		</ul>
+	  </div>
 	</div>
-    
-    
-	<div class="entry-content"><p><img src="https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg" alt="ippuku Image" /></p>
-
-<!--[ippukuのちょっと詳しい使い方](manual.html)  -->
+  </div>
+</nav>
 
 
-<p>29時間という長いスパンのグラフで見つめる簡易行動ログ帳。<br/>
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="ten columns offset-by-one">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2011-03-03</time>
+		  
+		  
+		  
+
+		  
+
+		  
+
+		</p>
+		<h5>ippuku</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>29時間という長いスパンのグラフで見つめる簡易行動ログ帳。<br />
 何にどのくらい時間を当てているかをざっくりと大雑把に把握するためのソフトです。</p>
 
-<h2>□ 使用方法</h2>
+<p><img src="https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg" alt="ippuku Image" />
+</p>
 
-<h3>◇ タイマーのスタートはナビゲーションバーのプラスのマークから、</h3>
+<h2 id="タイマーのスタートはナビゲーションバーのプラスのマークから:5b89f527080bd576a91ef79ce811581e">！タイマーのスタートはナビゲーションバーのプラスのマークから！</h2>
 
-<ul>
-<li>下部よりスタートボタンが上がってきます。</li>
+<ol>
+<li>下部よりスタートボタンが上がってきます。<br /></li>
 <li>スタートボタンのタップでタイマーが動き始めます。
 
 <ul>
 <li>シェイクでタイマーのキャンセル</li>
-</ul>
-</li>
+</ul></li>
 <li>ストップボタンをタップの後、気分、状況（バーの色になります）を選択し終了</li>
-</ul>
+</ol>
 
-
-<h3>◇ナビゲーションバー</h3>
+<h3 id="ナビゲーションバー:5b89f527080bd576a91ef79ce811581e">◇ナビゲーションバー</h3>
 
 <ul>
 <li>左・右にスワイプ：次・前のソート画面(メイン、赤系、青系、ピンク系)変更。</li>
-<li>ロングタップ：表示スタイル(表示する時間帯)の変更（Default:4:30 - 9:30, 22:00 - 8:00, 5:00 - 19:30, 13:00 - 23:00）</li>
+<li>ロングタップ：表示スタイル(表示する時間帯)の変更<br />
+（Default:4:30 - 9:30, 22:00 - 8:00, 5:00 - 19:30, 13:00 - 23:00）</li>
 </ul>
 
+<p><img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png" alt="Default" />
 
-<p><img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png" width="200">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png" width="200">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png" width="200">
-<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png" width="200"></p>
+<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png" alt="AM" />
+
+<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png" alt="Day" />
+
+<img src="https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png" alt="PM" />
+</p>
 
 <p>※ タイトルに•が付く事で表示の時間帯を確認できます。(AM: •title, DAY: •title•, PM: title•)</p>
 
-<p>色によるソートの色組は以下のように３種ごとにまとめてます。<br/>
-<img src="/images/manual-color-sort.png"></p>
+<p>色によるソートの色組は以下のように３種ごとにまとめてます。<br />
+<img src="/images/manual-color-sort.png" alt="Sort" />
+</p>
 
-<h3>◇ 表示部セルの操作</h3>
+<h3 id="表示部セルの操作:5b89f527080bd576a91ef79ce811581e">◇ 表示部セルの操作</h3>
 
 <ul>
-<li>左側：カテゴリカラーの変更。　　
-  <img src="/images/manual-color-default.png"></li>
-<li>中心：項目の削除および編集。</li>
+<li>左側：カテゴリカラーの変更。<br />
+<img src="/images/manual-color-default.png" alt="Color" />
+<br /></li>
+<li>中心：項目の削除および編集。<br /></li>
 <li>右側：バーの気分による色付けのオンオフ</li>
 </ul>
 
+<h3 id="編集:5b89f527080bd576a91ef79ce811581e">編集</h3>
 
-<h3>編集</h3>
-
-<p><img src="/images/manual-ippuku-edit.png" width="300"></p>
+<p><img src="/images/manual-ippuku-edit.png" alt="Edit" />
+</p>
 
 <ul>
 <li>セルの中心部をタップすることで時間などの編集ができます。</li>
 </ul>
 
+<h2 id="設定-ホーム-設定-ippuku:5b89f527080bd576a91ef79ce811581e">□ 設定 [ホーム&gt;設定&gt;ippuku]</h2>
 
-<h2>□ 設定 [ホーム>設定>ippuku]</h2>
-
-<p><img src="/images/manual-ippuku-setting.png" width="320"></p>
+<p><img src="/images/manual-ippuku-setting.png" alt="Setting" />
+</p>
 
 <ul>
 <li>ナビバーのタイトルを変更することができます。</li>
 </ul>
 
-
-<p>※ 使用例<br/>
+<p>※ 使用例<br />
 ソフトリストに入る色には睡眠関連のログに、クールリストでは仕事に、ホットリストでは健康エクササイズ関連などに。</p>
 
 <p>※ シフト勤務の方々には、勤務ログもしくは睡眠管理帳としてもお使いになれます。</p>
 
-<p>※ ※ 不具合およびご提案などはお使いの機種とiOSのバージョンをご記入の上、”問題をレポートする”よりかサポートページよりご連絡ください。</p>
-
-<h2>既知のバグ</h2>
-
-<p>File /Volumes/dev/Sites/octopress.goozenlab.io/source/_posts/2012-11-15-known-bugs.markdown could not be found</p>
-
-<h2>将来のアップデート</h2>
-
-<ul>
-<li>アイコンももう少し格好良くしたい。</li>
-<li>CSVのインポート。</li>
-<li>拙作ohayoのデーターの取り込み。</li>
-<li>ナビバーのダブルタップで表示を変更（午前•午後•一日）v1.4.3で実装しました。</li>
-</ul>
-
-
-<h2>最近の動き</h2>
-</div>
-
-
-    
+		<p>
+	◇ 不具合およびご提案などはお使いの機種とiOSのバージョンをご記入の上、こちらのコメント欄か、メールにてご連絡ください。<br />
+	◇ If there are Bugs and suggestions, please contact me from "Report a Problem" or Support Page with your iOS version and model.
 	
-
-
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article>
-	<h2 class="title"><a href="/blog/2013/07/08/ippuku-v150/">ippuku v1.5.0</a></h2>
-	<div class="meta">
-		<span class="date">Jul  8</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2013/05/25/datepicker-update/">DatePickerでの表示バグの修正</a></h2>
-	<div class="meta">
-		<span class="date">May 25</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/cosper/'>cosper</a>, <a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/littlist/'>littlist</a>, <a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2013/05/24/icon-renew/">Icon Renew and minor update</a></h2>
-	<div class="meta">
-		<span class="date">May 24</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/listaria/'>listaria</a>, <a class='category' href='/blog/categories/sati/'>sati</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2013/05/23/admob-update/">Update AdMob 6.4.1 for lite version</a></h2>
-	<div class="meta">
-		<span class="date">May 23</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/cosper/'>cosper</a>, <a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2013/02/22/ippuku-v432/">ippuku v1.4.3</a></h2>
-	<div class="meta">
-		<span class="date">Feb 22</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2013/01/14/admob-update/">Update AdMob 6.2.1 for lite version</a></h2>
-	<div class="meta">
-		<span class="date">Jan 14</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/cosper/'>cosper</a>, <a class='category' href='/blog/categories/dandori/'>dandori</a>, <a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/tapas/'>tapas</a>, <a class='category' href='/blog/categories/update/'>update</a>, <a class='category' href='/blog/categories/viriya/'>viriya</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-	
-	
-		</section>
-	
-	<section class="archives"><h1 class="year">2012</h1>
-
-<article>
-	<h2 class="title"><a href="/blog/2012/10/19/admob-update/">Update AdMob 6.2.0 for lite version</a></h2>
-	<div class="meta">
-		<span class="date">Oct 19</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/cosper/'>cosper</a>, <a class='category' href='/blog/categories/dandori/'>dandori</a>, <a class='category' href='/blog/categories/doop/'>doop</a>, <a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/tapas/'>tapas</a>, <a class='category' href='/blog/categories/update/'>update</a>, <a class='category' href='/blog/categories/viriya/'>viriya</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-	
-
-
-<article>
-	<h2 class="title"><a href="/blog/2012/01/25/ippuku-v106/">ippuku v1.0.6</a></h2>
-	<div class="meta">
-		<span class="date">Jan 25</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/ippuku/'>ippuku</a>, <a class='category' href='/blog/categories/update/'>update</a>
-
-
-</span>
-	    
-	</div>
-</article>
-    
-
-</article>
-
-
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-
-
-</div>
-	<footer id="footer" class="inner"><!-- Revolver Maps
-<script type="text/javascript" src="http://jh.revolvermaps.com/2/4.js?i=7uoq4kl5qsl&amp;m=5&amp;h=85&amp;c=ffc000&amp;r=30" async="async"></script>
--->
-<!-- Who's among us
-<script id="_wauhvo">var _wau = _wau || []; _wau.push(["small", "xtunim1mxx66", "hvo"]);
-(function() {var s=document.createElement("script"); s.async=true;
-s.src="http://widgets.amung.us/small.js";
-document.getElementsByTagName("head")[0].appendChild(s);
-})();</script>
- -->
-<br />
-Powered by Octopress and design theme of <a href="http://github.com/macjasp/cleanpress">CleanPress</a> by carmo.org.uk.
-<br />
-Copyright &copy; 2015
-
-    jin
-
-.pokhara.nepal
-</footer>
-	<script src="/javascripts/slash.js"></script>
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
+</p>
+  	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/iapp\/ippuku\/';
+    var disqus_title = 'ippuku';
+    var disqus_url = 'http:\/\/goozenlab.com\/iapp\/ippuku\/';
 
-
-<script type="text/javascript">
-      var disqus_shortname = 'goozenlabgh';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://goozenlab.com/iapp/ippuku/index.html';
-        var disqus_url = 'http://goozenlab.com/iapp/ippuku/index.html';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+   
+	
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="two columns offset-by-ten">
+		<p class="footnote">
+		  
+		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
 
 
-
-
+<script src="http://goozenlab.com//js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com//js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
 
 </body>
 </html>
+

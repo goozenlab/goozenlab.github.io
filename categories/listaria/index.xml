@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Listaria on goozenlab</title>
+    <link>http://goozenlab.com/categories/listaria/</link>
+    <description>Recent content in Listaria on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Tue, 30 Jul 2013 16:33:00 +0900</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/listaria/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>listaria v1.5.4</title>
+      <link>http://goozenlab.com/blog/2013/07/listaria-154/</link>
+      <pubDate>Tue, 30 Jul 2013 16:33:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/listaria-154/</guid>
+      <description>
+
+&lt;p&gt;旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。）
+パパイヤリリースです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-icons.png&#34; alt=&#34;icon&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;使い方:fdf3ab7708557a125a0b77e8defd6c47&#34;&gt;使い方&lt;/h3&gt;
+
+&lt;p&gt;メモ欄下の数字の入ったボックスをタップ、スワイプにて設定をします。&lt;br /&gt;
+タップではちょっと細かい設定ができます。（無し、フル、上旬、下旬の順）&lt;br /&gt;
+スワイプは一気に設定したり設定を解除したりできます。
+（灰色からスワイプした時はオンになり、オンのグリーンからスワイプした時はオフになります。）&lt;/p&gt;
+
+&lt;p&gt;食材リストでは、旬の設置がされている時期には左肩に緑のドットが表示されます。
+ショッピングリストではちょっと表示がうざったくなってしまうと思ったので&lt;strong&gt;食材リスト&lt;/strong&gt;のページでのみ表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-detail.png&#34; alt=&#34;detail&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-30-listaria-season.png&#34; alt=&#34;season&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ 夏と言えば枝豆ですよね。&lt;/p&gt;
+
+&lt;p&gt;これで、取りあえずiOS6向けのアップデートは終了。iOS7に向けて移行作業に入ります。（ついでにカンボジアに移動の予定）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Listaria v1.5.3</title>
+      <link>http://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <description>
+
+&lt;p&gt;ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。
+プロジェクト名もランブータン(Ranbutan)に変更。&lt;br /&gt;
+タイでは１キロ、25バーツくらいで売りに出てます。
+見た目ちょっと愛嬌があって、味はライチーと似ています。剥くのはライチーより楽です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-07-listaria-icons.png&#34; alt=&#34;Listaria Image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;アップデートリスト:e0aeea92a6a5f3c34c39c42eb327b4f2&#34;&gt;アップデートリスト&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;アイコンをアップル推奨のグリッドに合わせて微調整&lt;/li&gt;
+&lt;li&gt;入力画面をクリーンにしました。&lt;/li&gt;
+&lt;li&gt;Display Bug on Recent Bought List&lt;br /&gt;
+本来買った時間で色づけが変わるようになるはずでしたが、、、ちょっとした勘違いにより思っていたように表示されていませんでした。コッソリ修正物です。ソフトの安定性には影響はありません。&lt;/li&gt;
+&lt;li&gt;リストページの左のバーに買った回数に合わせて濃淡を付けました。&lt;br /&gt;
+パラッーーと見た時に自分が良く買っている食材を把握する事ができます。
+濃いほど良く買っているという事になります
+そのカテゴリー内で一番多く買った回数を最大数として使って計算しています。&lt;br /&gt;
+※ 使い込めばそれだけ濃淡の幅が出てきます。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list.png&#34; alt=&#34;list&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;list 2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ぜひバランス良く日々の生活を送ってください。&lt;/p&gt;
+
+&lt;h3 id=&#34;オマケ:e0aeea92a6a5f3c34c39c42eb327b4f2&#34;&gt;オマケ&lt;/h3&gt;
+
+&lt;p&gt;次期アップデートでは旬の機能を付けます。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;その時期を入力（1/2月単位）&lt;/li&gt;
+&lt;li&gt;旬の時期が来たら左肩にドットを表示&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;のようにしたいと思ってます。表示が騒々しくならなければ採用の予定です。
+ただ入力が面倒なので、プレロードのDBに入れておきたい気もするのですが、、
+気力が、、、。。。&lt;/p&gt;
+
+&lt;p&gt;こんな感じです&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-07-listaria-work-on-season.png&#34; alt=&#34;旬機能&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Icon Renew and minor update</title>
+      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <description>&lt;p&gt;ちょっと気になっていたアイコンにちょっと手を入れました。
+リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
+サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
+ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-IconRenew.png&#34; alt=&#34;Renew Icons&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;そして、ソフトの中身も少しだけアップデートしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;sati&lt;/strong&gt;：履歴の表示のセルとデザインをちょっと変更しました。&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew2.png&#34; alt=&#34;Renew &#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;リスタリア&lt;/strong&gt;：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ListariaRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ippuku&lt;/strong&gt;：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。&lt;br /&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ippukuRenew.png&#34; alt=&#34;Renew&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Listaria v1.5.1</title>
+      <link>http://goozenlab.com/blog/2012/10/listaria-151/</link>
+      <pubDate>Sat, 20 Oct 2012 07:59:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/listaria-151/</guid>
+      <description>&lt;p&gt;リスタリア、マイナーバクフィクスのアップデートを申請しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ロングタップ時の挙動が不安定なのを改善。（未だたまーーに落ちます）&lt;/li&gt;
+&lt;li&gt;リスト表示時にナビゲーションバーをロングタップするとソートが最近買った順、買った回数順に切り替わります。その状態を保持できるようにしました。&lt;/li&gt;
+&lt;li&gt;ARCにほぼ対応&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここ最近無料で提供していたので、ダウンロード数がぐっと一時的に上がりました。有料だと、全くでません。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>4系と5系</title>
+      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <description>&lt;p&gt;機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
+4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。&lt;/p&gt;
+
+&lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
+クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

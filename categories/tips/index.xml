@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on goozenlab</title>
+    <link>http://goozenlab.com/categories/tips/</link>
+    <description>Recent content in Tips on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Mon, 02 Feb 2015 15:35:00 +0800</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
+      <link>http://goozenlab.com/blog/2015/02/play-ipod-library/</link>
+      <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/play-ipod-library/</guid>
+      <description>&lt;p&gt;MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！&lt;/p&gt;
+
+&lt;p&gt;充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
+なんか得をした気分。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chromiumの半自動更新</title>
+      <link>http://goozenlab.com/blog/2013/07/chromium-autoupdate/</link>
+      <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/chromium-autoupdate/</guid>
+      <description>&lt;p&gt;ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
+ということで、Chromeから余計な機能を抜いたChromiumに変更しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png&#34; alt=&#34;Chromium&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。&lt;/p&gt;
+
+&lt;p&gt;ちょっと調べてみたところ、最新版をビルドしまくっている&lt;a href=&#34;https://chromium-build.appspot.com/p/chromium/console&#34;&gt;サイト&lt;/a&gt;があり、スクリプトを使って最新版に更新できることを&lt;a href=&#34;http://hints.macworld.com/article.php?story=20090604081030791&#34;&gt;MacWorld&lt;/a&gt;で見つけました。（スクリプトは少し調整してます。）&lt;/p&gt;
+
+&lt;p&gt;※ 普通にサイトよりダウンロードも出来ます。&lt;a href=&#34;https://download-chromium.appspot.com/&#34;&gt;こちら&lt;/a&gt;から。ずいぶん控えめなところにダウンロードのリンクがあります。&lt;br /&gt;
+　情報元:&lt;a href=&#34;http://www.chromium.org/getting-involved/download-chromium&#34;&gt;http://www.chromium.org/getting-involved/download-chromium&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gallo% sh ./chromium_update.sh
+Setup...
+Checking current version...
+ * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf
+Downloading and unpacking...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
+Installing...
+Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+gallo% 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ローカルのアプリが最新であれば、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gallo% sh ./chromium_update.sh
+Setup...
+Checking current version...
+ * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
+ * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
+gallo% 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+# Get current build for Chromium on Mac.
+# 
+# @version  2009-05-22
+# @author   XXXX 
+# @todo     Nothing yet
+# http://hints.macworld.com/article.php?story=20090604081030791
+
+# setup ------------------------------------------------------------------------
+tempDir=&amp;quot;/tmp/`whoami`/chrome-nightly/&amp;quot;;
+baseURL=&amp;quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&amp;quot;;
+baseName=&amp;quot;chrome-mac&amp;quot;;
+baseExt=&amp;quot;zip&amp;quot;;
+appName=&amp;quot;Chromium.app&amp;quot;;
+appDir=&amp;quot;/Applications&amp;quot;;
+version=~/.CURRENT_CHROME;
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+function checkForErrors {
+    if [ &amp;quot;$?&amp;quot; != &amp;quot;0&amp;quot; ]; then
+        echo &amp;quot;Unkown error (see above for help)!&amp;quot;;
+        exit 3;
+    fi
+}
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+echo &amp;quot;Setup...&amp;quot;;
+mkdir -p &amp;quot;$tempDir&amp;quot;;
+cd &amp;quot;$tempDir&amp;quot;;
+checkForErrors;
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+echo &amp;quot;Checking current version...&amp;quot;;
+touch $version
+currentVersion=`cat $version`;
+latestVersion=`curl -s $baseURL/LAST_CHANGE`;
+checkForErrors;
+echo &amp;quot; * your/latest build: $currentVersion / $latestVersion&amp;quot;;
+if [ &amp;quot;$currentVersion&amp;quot; == &amp;quot;$latestVersion&amp;quot; ]; then
+    echo &amp;quot; * build $currentVersion is the latest one.&amp;quot;;
+    exit 1;
+fi
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+echo &amp;quot;Downloading and unpacking...&amp;quot;;
+chromePID=`ps wwaux|grep -v grep|grep &amp;quot;$appName&amp;quot;|awk &#39;{print $2}&#39;`;
+if [ &amp;quot;$chromePID&amp;quot; != &amp;quot;&amp;quot; ];then
+    echo &amp;quot; * chromium is running. Please stop it first.&amp;quot;;
+    exit 2;
+fi
+curl -o $baseName.$baseExt &amp;quot;$baseURL/$latestVersion/$baseName.$baseExt&amp;quot;;
+
+unzip -qo $baseName.$baseExt;
+checkForErrors;
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+echo &amp;quot;Installing...&amp;quot;;
+cp -r $baseName/$appName $appDir
+checkForErrors;
+echo $latestVersion &amp;gt; $version;
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+echo &amp;quot;Done. You&#39;re now running build $latestVersion&amp;quot;;
+# ------------------------------------------------------------------------------
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>画面のグレー/カラーのスイッチ</title>
+      <link>http://goozenlab.com/blog/2013/02/grayscale-switch/</link>
+      <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
+      <description>
+
+&lt;p&gt;最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。&lt;/p&gt;
+
+&lt;p&gt;ただ一連の作業がちょっと面倒なので、&lt;strong&gt;アップルスクリプト&lt;/strong&gt;＋Alfredを使って作業を簡略化しました。&lt;/p&gt;
+
+&lt;p&gt;まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;pre&gt;&lt;code&gt;
+tell application &amp;quot;System Preferences&amp;quot;
+    activate
+    set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
+end tell
+
+tell application &amp;quot;System Events&amp;quot;
+    tell first window of process &amp;quot;System Preferences&amp;quot;
+        
+        tell table 1 of scroll area 1
+            set selected of row 2 to true
+        end tell
+        tell group 1
+            click checkbox &amp;quot;Use grayscale&amp;quot;
+        end tell
+        
+    end tell
+end tell
+
+do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot;
+
+tell application &amp;quot;System Preferences&amp;quot; to quit
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &amp;quot;System Preferences&amp;quot;
+    activate
+    set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
+    --  set current pane to pane &amp;quot;com.apple.preference.sound&amp;quot;
+end tell
+
+
+tell application &amp;quot;System Events&amp;quot;
+    if UI elements enabled then
+        tell process &amp;quot;System Preferences&amp;quot;
+            get every UI element
+            --tell tab group 1 of window &amp;quot;Sound&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;
+            tell window 1 of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;
+                --  tell table 1 of scroll area 1 of window 1 of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot; これで左にあるテーブルの情報が見れます
+                get every UI element
+                get every UI element of every UI element
+            end tell
+        end tell
+    else
+        tell application &amp;quot;System Preferences&amp;quot;
+            activate
+            set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
+            display dialog &amp;quot;UI element scripting is not enabled.&amp;quot;
+        end tell
+    end if
+end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;checkbox &amp;quot;Use grayscale&amp;quot; of group 1 of window &amp;quot;Accessibility&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;&lt;/code&gt;でこのgroup 1の&amp;rdquo;Use grayscale&amp;rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &amp;ldquo;Use grayscale&amp;rdquo;はclick checkbox 2、window &amp;ldquo;Accessibility&amp;rdquo;はwindow 1, first windowでも動きます。&lt;/p&gt;
+
+&lt;p&gt;後はそのパーツに値を入れてあげれば良し。&lt;/p&gt;
+
+&lt;p&gt;そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。&lt;/p&gt;
+
+&lt;p&gt;スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。&lt;/p&gt;
+
+&lt;p&gt;アップルスクリプトでいろんな事が出来るのにちょっと驚きです。&lt;/p&gt;
+
+&lt;p&gt;ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず&lt;/p&gt;
+
+&lt;p&gt;、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。&lt;/p&gt;
+
+&lt;p&gt;と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。&lt;/p&gt;
+
+&lt;h2 id=&#34;おまけ:a27a07d26f088c8e8b578be3ff56e440&#34;&gt;おまけ&lt;/h2&gt;
+
+&lt;p&gt;ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある&lt;code&gt;Info.plist&lt;/code&gt;に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;    &amp;lt;key&amp;gt;LSUIElement&amp;lt;/key&amp;gt;
+    &amp;lt;true/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加すると、ドックにアプリケーションのアイコンは表示されません。&lt;/p&gt;
+
+&lt;p&gt;そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの&lt;a href=&#34;http://news.mynavi.jp/column/osxhack/060/index.html&#34;&gt;こちらの記事&lt;/a&gt;を参照してください。&lt;/p&gt;
+
+&lt;p&gt;お次ぎはUSBオーディオの選択/解除かな。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>眼精疲労と白黒モニター</title>
+      <link>http://goozenlab.com/blog/2012/11/gray-mode/</link>
+      <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/11/gray-mode/</guid>
+      <description>&lt;p&gt;最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）&lt;/p&gt;
+
+&lt;p&gt;※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）&lt;/p&gt;
+
+&lt;p&gt;文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。
+&amp;lt;!&amp;ndash;エロい画像を見るとなんか昭和な古き良きエロ本のようです。&amp;ndash;&amp;gt;
+&amp;lt;!&amp;ndash; more &amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;で、画面はこのようになります。お試しあれ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Macの追加設定</title>
+      <link>http://goozenlab.com/blog/2012/08/mac-setting/</link>
+      <pubDate>Mon, 20 Aug 2012 19:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/08/mac-setting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>コンピューターの名前</title>
+      <link>http://goozenlab.com/blog/2011/12/computer-naming/</link>
+      <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2011/12/computer-naming/</guid>
+      <description>
+
+&lt;p&gt;外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。&lt;/p&gt;
+
+&lt;p&gt;マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。&lt;/p&gt;
+
+&lt;p&gt;ぜひコンピューターに名前をつけましょう。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;私はしっかり名前をつける人で、分野別で付けてます。&lt;/p&gt;
+
+&lt;h3 id=&#34;computer-ビールの名前:682875cc1839b260a5c5a174e0f7e800&#34;&gt;Computer：ビールの名前&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MacBookPro15：gallo(グアテマラのビール)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;黒Thinkpad：Guiness&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;白iBook：Hoegarden&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;緑Vaio P：Ebisu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※実家の父母機はアサガオとヒマワリ。ファイルサーバーはモス（苔）という名前。&lt;/p&gt;
+
+&lt;h3 id=&#34;ipod-kindle-まめ類:682875cc1839b260a5c5a174e0f7e800&#34;&gt;iPod / Kindle：まめ類&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;赤iPod Nano：Azuki&lt;/li&gt;
+&lt;li&gt;iPod：DaizuとEdamame。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ストレージ-つまみ:682875cc1839b260a5c5a174e0f7e800&#34;&gt;ストレージ：つまみ&lt;/h3&gt;
+
+&lt;p&gt;moroQ、 umeQ、ikaMaru、など。&lt;/p&gt;
+
+&lt;p&gt;だから何なのといわれればそれまでかもしれませんが、、&lt;/p&gt;
+
+&lt;p&gt;ペット気分でかわいいコンピューターに名前をつけてみてはどうでしょうか。（ストレージとかに愛着が湧くとは思いませんけどね。）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
