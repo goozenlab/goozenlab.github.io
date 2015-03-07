@@ -12,6 +12,11 @@ body {
 	background-color: rgb(249,249,249);
 }
 
+code {
+	font-size:13px;
+	line-height:17px;
+}
+
 .navbar {
 	top:0;
 	left:0;
@@ -104,7 +109,7 @@ body {
 	color:#484848;
 	overflow:auto;
 	padding:0;
-	padding-bottom:1em;
+	padding-bottom:4.5em;
 	padding-top:1em;
 	font-size:16px;
 	line-height:25px;

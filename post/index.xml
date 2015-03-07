@@ -7,8 +7,116 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 07 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2015 15:06:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.8.2</title>
+      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
+      <pubDate>Sun, 08 Mar 2015 15:06:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
+      <description>&lt;p&gt;うーーーん、ホットフィックスです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バグ
+
+&lt;ul&gt;
+&lt;li&gt;朝のメッセージがずれてました。。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UserDefaultの初期値設定</title>
+      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
+      <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
+      <description>&lt;p&gt;AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; // UserDefault Initial values
+ var userDefaultsDefaults = NSMutableDictionary()
+ userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING)
+ userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2)
+ NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;数値も文字も気にせず書き込んでよいようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ポカラの水汲み場&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.2</title>
+      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
+      <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
+      <description>&lt;p&gt;うーーーん、ホットフィックスです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バグ
+
+&lt;ul&gt;
+&lt;li&gt;朝のメッセージがずれてました。。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HugoのPagenate</title>
+      <link>http://goozenlab.com/blog/2015/03/hugo-pagenate/</link>
+      <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
+      <description>&lt;p&gt;ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;の&lt;code&gt;{{ range $name, $page := .Site.Recent }}&lt;/code&gt; の所を &lt;code&gt;{{ range $name, $page := .Paginator.Pages }}&lt;/code&gt; に変更。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt;
+  &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt;
+
+  &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt;
+	{{ $baseurl := .Site.BaseUrl }}
+	{{ range $name, $page := .Site.Recent }} 
+	{{ if eq .Type &amp;quot;post&amp;quot; }}		
+	&amp;lt;li&amp;gt;
+	  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、&lt;code&gt;config.toml&lt;/code&gt; に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# number of posts shows on MainPage
+paginate = 28
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;yamlだtomlだと、一体yamlの何が問題なんだろうか。。&lt;/p&gt;
+
+&lt;p&gt;で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、&lt;code&gt;rsync&lt;/code&gt; と &lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; をまとめてスクリプトで動かせば良いだけのことか。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-05-pokhara-damside2.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugoを少し弄る</title>
@@ -107,9 +215,9 @@ footer: true
                               NSInferMappingModelAutomaticallyOption: @(YES)}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
+&lt;pre&gt;&lt;code&gt;if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
 
-	# options:nil の箇所を options:options に変更
+# options:nil の箇所を options:options に変更
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
@@ -146,6 +254,7 @@ footer: true
     }
     return _persistentStoreCoordinator;
 }
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
@@ -167,7 +276,7 @@ footer: true
 
 &lt;!-- more --&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;ドック&lt;/p&gt;
 
 &lt;ol&gt;
@@ -190,7 +299,7 @@ footer: true
 &lt;li&gt;計算機：昨今計算能力が低下気味ということで、&lt;/li&gt;
 &lt;li&gt;設定：&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;ちなみに、その他は、&lt;/p&gt;
 
@@ -224,11 +333,7 @@ footer: true
 &lt;li&gt;昼：中華素食屋＋中国茶（MYR4~5) 、インドミールス（MYR4~5)&lt;/li&gt;
 &lt;li&gt;夜：マサラトーサイ＋チャイ、菜包＋お茶（MYR3.5~4)&lt;/li&gt;
 &lt;li&gt;酒：ビール大瓶（MYR16~日本とほぼ同じ)&lt;/li&gt;
-&lt;li&gt;その他&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;その他：豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -252,19 +357,19 @@ footer: true
 &lt;li&gt;まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
-        // Override point for customization after application launch.
+&lt;pre&gt;&lt;code&gt;func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
+      // Override point for customization after application launch.
 
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let navigationController = UINavigationController(rootViewController: ListViewController())
-        
-        let controller = navigationController.topViewController as ListViewController
-        controller.managedObjectContext = self.managedObjectContext
+      self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+      let navigationController = UINavigationController(rootViewController: ListViewController())
+      
+      let controller = navigationController.topViewController as ListViewController
+      controller.managedObjectContext = self.managedObjectContext
 
-        self.window!.rootViewController = navigationController
-        self.window!.makeKeyAndVisible()
-        return true
-    }
+      self.window!.rootViewController = navigationController
+      self.window!.makeKeyAndVisible()
+      return true
+}
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -274,19 +379,19 @@ footer: true
 
 &lt;p&gt;、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
-        // Override point for customization after application launch.
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+&lt;pre&gt;&lt;code&gt;func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
+    // Override point for customization after application launch.
+    
+    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
-        let mainViewController = MainViewController()
-        mainViewController.managedObjectContext = self.managedObjectContext
+    let mainViewController = MainViewController()
+    mainViewController.managedObjectContext = self.managedObjectContext
 
-        self.window!.rootViewController = mainViewController
-        self.window!.makeKeyAndVisible()
-        
-        return true
-    }
+    self.window!.rootViewController = mainViewController
+    self.window!.makeKeyAndVisible()
+    
+    return true
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。&lt;/p&gt;
@@ -497,137 +602,6 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;と、&lt;strong&gt;while&lt;/strong&gt; の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.4</title>
-      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
-      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
-      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
-
-&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
-&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
-
-&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
-
-&lt;!--
-
-ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
-MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>旅先での睡眠</title>
-      <link>http://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
-      <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
-      <description>&lt;p&gt;ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。&lt;/p&gt;
-
-&lt;p&gt;ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。&lt;/p&gt;
-
-&lt;p&gt;ひげに白髪が混じってきたし、積年の疲れということか。。&lt;/p&gt;
-
-&lt;p&gt;で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_thai.png&#34; alt=&#34;Sleep in Thai&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png&#34; alt=&#34;Sleep in Malaysia&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_nepal.png&#34; alt=&#34;Sleep in Nepal&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;タイ&lt;/strong&gt;：早起きかつ睡眠時間も短め。ヨジラーです。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;マレーシア&lt;/strong&gt;：生活のサイクルが代わりちょっと波がある。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ネパール&lt;/strong&gt;：がっつり寝る。&lt;br /&gt;
-(左から)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;と、見事に違いが出る。&lt;/p&gt;
-
-&lt;p&gt;追記：
-ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>バクタプル、ネパールのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</link>
-      <pubDate>Mon, 16 Feb 2015 15:23:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</guid>
-      <description>&lt;p&gt;ドゥリケルに飽きた訳ではないが、若干カトマンズに近づき古都バクタプル。入域料に1,500ルピー（1,800円くらい）を徴収される、外人は来てくれるなというメッセージなのか？。ダルバート３食無料チケットとか、宿１泊無料券とか付けてはくれないものか、、と思う。。&lt;/p&gt;
-
-&lt;p&gt;貧乏性なので、何泊かしないと入域料がもったいないと、ちょっと滞在する予定。ナガルコットまで一時間くらいなので、天気の良い日に日帰りトレッキングにいく。&lt;/p&gt;
-
-&lt;p&gt;町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街の雰囲気は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。&lt;/p&gt;
-
-&lt;p&gt;ネットは以下の通り、、繋がっているか繋がっていないか、分からなくなるくらいのスピード。&lt;/p&gt;
-
-&lt;p&gt;下り：0.04Mps&lt;br /&gt;
-上り：0.15Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;パノラマ写真に若干ハマりつつ、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur1.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur2.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-16_bhaktapur3.jpg&#34; alt=&#34;Bhaktapur City&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>(a)をようやくリリース</title>
-      <link>http://goozenlab.com/blog/2015/02/release-a/</link>
-      <pubDate>Mon, 16 Feb 2015 15:18:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/release-a/</guid>
-      <description>&lt;p&gt;littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;制作理由&lt;/strong&gt;：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、&lt;strong&gt;テキストベース&lt;/strong&gt;で管理をしたい、との理由から作りました。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;誰のため&lt;/strong&gt;：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;他のアプリとの違い&lt;/strong&gt;：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;todo.md&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;詳しい使い方は&lt;a href=&#34;http://goozenlab.com/iapp/a/&#34;&gt;こちら&lt;/a&gt;にて&lt;/p&gt;
-
-&lt;p&gt;おまけ&lt;/p&gt;
-
-&lt;p&gt;※ 審査を通りアプストアにアップされました。有料スタートです。＠2015-02-16 15:18&lt;/p&gt;
-
-&lt;p&gt;※ ありがたい事に致命的なバグを見つけ、寝かしておいても仕方が無いので、再申請しました。@ 2015-02-06 07:08&lt;/p&gt;
-
-&lt;p&gt;※ ちょっと頭の整理が必要な感じがしたので、&lt;strong&gt;アプストアから登録を削除&lt;/strong&gt;しました。思ったより潰しがきかない。。@ 2015-01-29 19:07&lt;/p&gt;
-
-&lt;p&gt;！！！Dropboxでのレビューが必要だと気がつかずに、アプストアーにアップされてしまいました。すっかり忘れていました。！！！&lt;/p&gt;
 </description>
     </item>
     

@@ -7,8 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 07 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2015 17:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HugoのPagenate</title>
+      <link>http://goozenlab.com/blog/2015/03/hugo-pagenate/</link>
+      <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
+      <description>&lt;p&gt;ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;の&lt;code&gt;{{ range $name, $page := .Site.Recent }}&lt;/code&gt; の所を &lt;code&gt;{{ range $name, $page := .Paginator.Pages }}&lt;/code&gt; に変更。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt;
+  &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt;
+
+  &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt;
+	{{ $baseurl := .Site.BaseUrl }}
+	{{ range $name, $page := .Site.Recent }} 
+	{{ if eq .Type &amp;quot;post&amp;quot; }}		
+	&amp;lt;li&amp;gt;
+	  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、&lt;code&gt;config.toml&lt;/code&gt; に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# number of posts shows on MainPage
+paginate = 28
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;yamlだtomlだと、一体yamlの何が問題なんだろうか。。&lt;/p&gt;
+
+&lt;p&gt;で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、&lt;code&gt;rsync&lt;/code&gt; と &lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; をまとめてスクリプトで動かせば良いだけのことか。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-05-pokhara-damside2.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugoを少し弄る</title>

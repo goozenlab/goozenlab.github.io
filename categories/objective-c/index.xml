@@ -36,9 +36,9 @@
                               NSInferMappingModelAutomaticallyOption: @(YES)}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
+&lt;pre&gt;&lt;code&gt;if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
 
-	# options:nil の箇所を options:options に変更
+# options:nil の箇所を options:options に変更
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
@@ -75,6 +75,7 @@
     }
     return _persistentStoreCoordinator;
 }
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;

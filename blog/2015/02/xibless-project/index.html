@@ -21,7 +21,7 @@
   
   
   <script src="http://goozenlab.com//js/highlight.pack.js"></script>
-  <link rel="stylesheet" href="http://goozenlab.com//css/hybrid.css">
+  <link rel="stylesheet" href="http://goozenlab.com//css/tomorrow.css">
   <script>
    hljs.configure({ tabReplace: "  " });
    hljs.initHighlightingOnLoad();
@@ -46,8 +46,9 @@
 		  
 		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
-		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/web" class=""> web </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
 		</ul>
 	  </div>
@@ -88,19 +89,19 @@
 <li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。</li>
 </ul>
 
-<pre><code>  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
-        // Override point for customization after application launch.
+<pre><code>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+      // Override point for customization after application launch.
 
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let navigationController = UINavigationController(rootViewController: ListViewController())
-        
-        let controller = navigationController.topViewController as ListViewController
-        controller.managedObjectContext = self.managedObjectContext
+      self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+      let navigationController = UINavigationController(rootViewController: ListViewController())
+      
+      let controller = navigationController.topViewController as ListViewController
+      controller.managedObjectContext = self.managedObjectContext
 
-        self.window!.rootViewController = navigationController
-        self.window!.makeKeyAndVisible()
-        return true
-    }
+      self.window!.rootViewController = navigationController
+      self.window!.makeKeyAndVisible()
+      return true
+}
 
 </code></pre>
 
@@ -110,19 +111,19 @@
 
 <p>、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）</p>
 
-<pre><code>    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
-        // Override point for customization after application launch.
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+<pre><code>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+    // Override point for customization after application launch.
+    
+    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
-        let mainViewController = MainViewController()
-        mainViewController.managedObjectContext = self.managedObjectContext
+    let mainViewController = MainViewController()
+    mainViewController.managedObjectContext = self.managedObjectContext
 
-        self.window!.rootViewController = mainViewController
-        self.window!.makeKeyAndVisible()
-        
-        return true
-    }
+    self.window!.rootViewController = mainViewController
+    self.window!.makeKeyAndVisible()
+    
+    return true
+}
 </code></pre>
 
 <p>割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。</p>
