@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 09 Mar 2015 14:50:00 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2015 05:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>新しいMacbook</title>
+      <link>http://goozenlab.com/blog/2015/03/new-macbook/</link>
+      <pubDate>Tue, 10 Mar 2015 05:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/new-macbook/</guid>
+      <description>
+
+&lt;p&gt;早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ちょっと、高いのでは、、&lt;/li&gt;
+&lt;li&gt;いや、高い。&lt;/li&gt;
+&lt;li&gt;単体では使えない&lt;/li&gt;
+&lt;li&gt;対応しているiPhoneを持っていない。&lt;strong&gt;（極め手）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;そして、かーーーなーり期待していた「新しいMacbook」ですが、&lt;/p&gt;
+
+&lt;h2 id=&#34;良い点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;良い点は、&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;キーボードに手が加えられた&lt;/li&gt;
+&lt;li&gt;レティナでいながら電池は持つ&lt;/li&gt;
+&lt;li&gt;色のオプションがある&lt;/li&gt;
+&lt;li&gt;軽い&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;で-あまり好きになれない点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;で、あまり好きになれない点は、&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。）&lt;/li&gt;
+&lt;li&gt;プロセッサー（多分充分に速いのだろうけど。。）&lt;/li&gt;
+&lt;li&gt;ポート（シンプルさとポートを削るというのは意味合いが少し違うと思う。何も無くなるというのなら（非接触充電で）分かるけど。。）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。
+昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-pokhara-damside-bw.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ricoh GR用てるてる坊主カメララップ</title>
@@ -334,7 +378,9 @@ footer: true
       <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/travel-home/</guid>
-      <description>&lt;p&gt;iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。&lt;/p&gt;
+      <description>
+
+&lt;p&gt;iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_travel-home.png&#34; alt=&#34;Home&#34; /&gt;
 &lt;/p&gt;
@@ -357,7 +403,7 @@ footer: true
 &lt;li&gt;カレンダー：カレンダー自体は使っていないのですが、日付表示のため&lt;/li&gt;
 &lt;li&gt;時計：目覚まし&lt;/li&gt;
 &lt;li&gt;Currency：定番の外貨為替ソフト。&lt;/li&gt;
-&lt;li&gt;Evernote：ちょっと旅情報のメモなどを入れたりしてます。&lt;/li&gt;
+&lt;li&gt;Evernote：ちょっと旅情報のメモなどを入れたりしてます。ちょっと重たい物はシンプルノートよりevernoteのほうが良いです。海外で怪我、病気をして病院にお世話になった時に必要な書類（診断書や請求書のフォーム）をPDFで入れておくと便利です。&lt;/li&gt;
 &lt;li&gt;写真：&lt;/li&gt;
 &lt;li&gt;Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。&lt;/li&gt;
 &lt;li&gt;ohaYo：睡眠ログのソフト&lt;/li&gt;
@@ -374,6 +420,18 @@ footer: true
 &lt;/p&gt;
 
 &lt;p&gt;という感じ。2ページ目はアプリ検証ページ。そんなに沢山のソフトは入れてません。シンプルです。&lt;/p&gt;
+
+&lt;h3 id=&#34;おまけ-simplenote:d99df43cef69261e36b7f08354f499c5&#34;&gt;おまけ：Simplenote&lt;/h3&gt;
+
+&lt;p&gt;パスポート番号やクレジットカード・トラベラーズチェック紛失時の電話番号などを入力しておきましょう。もし、強盗などにあったときに必要な番号などを記録しておきましょう。&lt;/p&gt;
+
+&lt;p&gt;もし最悪、全ての持ち物をとられてしまったときのために、パスワードを。。。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;どこかに書き込んでおく。（ズボンのポケットの裏地とか）&lt;/li&gt;
+&lt;li&gt;実家にメモを置いておく。（ある意味アナログクラウド、母親に捨てられないようにしてくださいね。）&lt;/li&gt;
+&lt;li&gt;日本語の文章にして、メールアドレスとともに覚えておく。&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -595,37 +653,6 @@ footer: true
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_pokhara1.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reminder：日時の書き込み</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
-      <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
-      <description>&lt;p&gt;リマインダーへの日時の書き込み&lt;/p&gt;
-
-&lt;p&gt;読み込み時には&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;event.dueDate = eventToRead.dueDateComponents.date;
-event.timeZone = eventToRead.dueDateComponents.timeZone;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と、あっさりと行くのですが、&lt;code&gt;.dueDateComponents.date&lt;/code&gt; は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-  NSCalendar *gregorian = [[NSCalendar alloc]
-                           initWithCalendarIdentifier:NSGregorianCalendar];
-  unsigned unitFlags= NSYearCalendarUnit|NSMonthCalendarUnit | NSDayCalendarUnit |
-   NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |NSTimeZoneCalendarUnit;
-  
-  NSDateComponents *dailyComponents=[gregorian components:unitFlags fromDate:eventToExport.dueDate];
-  
-  eventToWrite.dueDateComponents = dailyComponents;
-  eventToWrite.timeZone = eventToExport.timeZone;
-  
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
