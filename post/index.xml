@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 08 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2015 14:50:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ricoh GR用てるてる坊主カメララップ</title>
+      <link>http://goozenlab.com/blog/2015/03/wrapcase-gr/</link>
+      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/wrapcase-gr/</guid>
+      <description>&lt;p&gt;電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、
+デジカメも光学のビューファインダーが無いとどうもだめ。&lt;/p&gt;
+
+&lt;p&gt;GRのファインダーは持っているのだが、GRにファインダーを付けてしまうとケースに収まらない。素で持っていると、手で触ってしまったりと気がついたらべとべとでホコリだらけになる。折角のファインダーが曇ってたりすると、興ざめする。写真からえらく遠ざかってました。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、ポカラは山が奇麗で街の至る所から山が見渡せるので、フラフラするのが割と楽しい。
+そのおかげで久しぶりにカメラを持ち出す機会が増えて、最初は液晶で撮ってたが、ちょっと思いついた。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr1.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;手持ちのヘアバンド（以前長髪でした）と手拭（郡上踊手拭）で、、、首（ファインダー）をバンドで絞め即席ながら完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr2.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
+
+&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr3.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;あまり引っかかりが無く、スッと撮れるので割といい感じ。戻すのがちょっと面倒いが、、&lt;/p&gt;
+
+&lt;p&gt;ただし、左手で手拭を持ったまま写真を撮るとごくたまに手拭が映り込んでしまう事がちょっと難点というか注意点。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr4.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;でも、思った以上に快適。ネックストラップが欲しくなってきた。&lt;/p&gt;
+
+&lt;p&gt;普通にそのままテーブルに置いておいても違和感が無いし、ホコリよけにもなると良い事ずくめ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr5.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;（ちょっと、形を整えてこちらの布地で作ってもらうかな。。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>UserDefaultの初期値設定</title>
@@ -53,7 +95,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
 &lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -584,47 +626,6 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
   eventToWrite.timeZone = eventToExport.timeZone;
   
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reminderからの読込ではまる</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-completion/</link>
-      <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-completion/</guid>
-      <description>&lt;p&gt;ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。&lt;/p&gt;
-
-&lt;p&gt;見事にハマったのが、取込みの&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。&lt;/p&gt;
-
-&lt;p&gt;いろいろと試し、ネットで探したところ、見つかりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-    // 事前に calendar の設定等をして、
-	
-    __block NSArray *remindersToImport = nil;
-    __block BOOL fetching = YES;
-    
-    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
-    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
-        LOG_METHOD;
-        remindersToImport = ekReminders;
-        fetching = NO;
-    }];
-    
-    while (fetching) {
-        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
-    }
-    
-    // 作業がつづく
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と、&lt;strong&gt;while&lt;/strong&gt; の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）&lt;/p&gt;
 </description>
     </item>
     
