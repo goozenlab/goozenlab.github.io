@@ -7,8 +7,75 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 10 Mar 2015 05:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2015 07:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist v2.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
+      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
+      <description>&lt;p&gt;ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加
+
+&lt;ul&gt;
+&lt;li&gt;バックアップを兼ねた、エクスポート&lt;/li&gt;
+&lt;li&gt;リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;変更&lt;/strong&gt;：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、&lt;strong&gt;シェイク&lt;/strong&gt;で行います。&lt;/li&gt;
+&lt;li&gt;DBの構造を整理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。&lt;/p&gt;
+
+&lt;p&gt;間にリマンダーを挟みますが、簡易な方法として悪くないと思います。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;取込み&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;littlist にて＋のボタンより取り込む&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;書出し&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ホーム＞設定＞littlist より、書出しのスウィッチを&lt;strong&gt;オン&lt;/strong&gt;にします。&lt;/li&gt;
+&lt;li&gt;次回 littlist 起動時に確認アラートが上がり実行します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※ リストのデフォルトは ”&lt;strong&gt;littlist&lt;/strong&gt;&amp;rdquo; になっています。ホーム＞設定＞littlistより変更できます。&lt;/p&gt;
+
+&lt;p&gt;※ 簡単な重複のチェックをしてます。取り込んで、右側のバーの色を変更しなければ、重複チェックの項目として扱われます。（再度取り込んでも重複と見なされて取り込みされません）&lt;/p&gt;
+
+&lt;p&gt;バックアップはついでというか、、折角なので、、、控えめに追加しました。本当はDBの移行がうまく行かなかったのでバージョンアップ時での利用を考え追加したのだが、問題は解決したので、将来的に消すか残すかちょっと考えてます。&lt;/p&gt;
+
+&lt;p&gt;このアプリも最近アップデートしているアプリと同様にiOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tapas v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/tapas-165/</link>
+      <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/tapas-165/</guid>
+      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
+
+&lt;p&gt;次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
+iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DBの調整&lt;/li&gt;
+&lt;li&gt;iOS8での通知許可の設定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>新しいMacbook</title>
@@ -564,95 +631,6 @@ footer: true
 &lt;li&gt;最初の状態でタップをすると周りにある雲等の透明度が変化します&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.6.5</title>
-      <link>http://goozenlab.com/blog/2015/02/sati-165/</link>
-      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sati-165/</guid>
-      <description>
-
-&lt;p&gt;このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には&lt;strong&gt;最後のアップデート&lt;/strong&gt;になります。&lt;/p&gt;
-
-&lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
-&lt;li&gt;設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。&lt;/li&gt;
-&lt;li&gt;データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- more --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ネパール、ポカラのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-pokhara/</link>
-      <pubDate>Wed, 25 Feb 2015 20:12:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-pokhara/</guid>
-      <description>&lt;p&gt;バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている）&lt;/p&gt;
-
-&lt;p&gt;インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。）&lt;/p&gt;
-
-&lt;p&gt;下り：0.62Mps&lt;br /&gt;
-上り：0.13Mps&lt;/p&gt;
-
-&lt;p&gt;で、今回は、&lt;/p&gt;
-
-&lt;p&gt;下り：0.14Mps&lt;br /&gt;
-上り：0.11Mps&lt;/p&gt;
-
-&lt;p&gt;と、、同じ宿にも関わらず、、遅くなってる。。&lt;/p&gt;
-
-&lt;p&gt;(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;しかし、宿代は前回泊まっていたのを覚えてくれて、かなり安くしてもらう。多分このダムサイド最安ではないだろうか。というか、観光客自体は増えていると思うのだが、ダムサイドに滞在する旅行者がすごく少ないように思える。&lt;/p&gt;
-
-&lt;p&gt;6系の最後のリリースと、Swiftへの移行に向けて作業をするつもり。
-なんか、ネパールに来て最悪の電力・インターネット環境でいながら気合いが入ってる、気がする。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;ちなみに&lt;strong&gt;停電&lt;/strong&gt;スケジュールはこんな感じ、週&lt;strong&gt;77時間&lt;/strong&gt;停電。しかし、スケジュールも曖昧で無計画な感すらある。&lt;/p&gt;
-
-&lt;p&gt;| 月 | 火 | 水 | 木 | 金 | 土 | 日 |
-|:-|:-|:-|:-|:-|:-|:-|:-|
-|5:00~12:00|6:00~13:00|9:00~16:00|10:00~17:00|7:00~14:00|4:00~9:00|4:00~10:00
-|16:00~20:00　|17:00~21:00　|19:00~23:00　|20:00~24:00　|18:00~22:00　|12:00~18:00　|14:00~19:00　&lt;/p&gt;
-
-&lt;p&gt;と、夜型の人間であれば影響無しだが、、、まぁ慣れます。&lt;/p&gt;
-
-&lt;p&gt;そして、恒例のiPhoneパノラマ写真、街の至る所から山が見えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_pokhara1.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     

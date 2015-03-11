@@ -7,8 +7,75 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 08 Mar 2015 07:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2015 07:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist v2.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
+      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
+      <description>&lt;p&gt;ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加
+
+&lt;ul&gt;
+&lt;li&gt;バックアップを兼ねた、エクスポート&lt;/li&gt;
+&lt;li&gt;リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;変更&lt;/strong&gt;：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、&lt;strong&gt;シェイク&lt;/strong&gt;で行います。&lt;/li&gt;
+&lt;li&gt;DBの構造を整理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。&lt;/p&gt;
+
+&lt;p&gt;間にリマンダーを挟みますが、簡易な方法として悪くないと思います。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;取込み&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;littlist にて＋のボタンより取り込む&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;書出し&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ホーム＞設定＞littlist より、書出しのスウィッチを&lt;strong&gt;オン&lt;/strong&gt;にします。&lt;/li&gt;
+&lt;li&gt;次回 littlist 起動時に確認アラートが上がり実行します。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※ リストのデフォルトは ”&lt;strong&gt;littlist&lt;/strong&gt;&amp;rdquo; になっています。ホーム＞設定＞littlistより変更できます。&lt;/p&gt;
+
+&lt;p&gt;※ 簡単な重複のチェックをしてます。取り込んで、右側のバーの色を変更しなければ、重複チェックの項目として扱われます。（再度取り込んでも重複と見なされて取り込みされません）&lt;/p&gt;
+
+&lt;p&gt;バックアップはついでというか、、折角なので、、、控えめに追加しました。本当はDBの移行がうまく行かなかったのでバージョンアップ時での利用を考え追加したのだが、問題は解決したので、将来的に消すか残すかちょっと考えてます。&lt;/p&gt;
+
+&lt;p&gt;このアプリも最近アップデートしているアプリと同様にiOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tapas v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/tapas-165/</link>
+      <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/tapas-165/</guid>
+      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
+
+&lt;p&gt;次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
+iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DBの調整&lt;/li&gt;
+&lt;li&gt;iOS8での通知許可の設定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.6.5</title>
@@ -570,32 +637,6 @@ fi
 &lt;h3 id=&#34;おまけ:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;おまけ&lt;/h3&gt;
 
 &lt;p&gt;隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cosper v1.6.2</title>
-      <link>http://goozenlab.com/blog/2014/11/cosper-162/</link>
-      <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/cosper-162/</guid>
-      <description>&lt;p&gt;cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.2</title>
-      <link>http://goozenlab.com/blog/2014/11/doop-162/</link>
-      <pubDate>Thu, 20 Nov 2014 17:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/doop-162/</guid>
-      <description>&lt;p&gt;iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。&lt;/p&gt;
-
-&lt;p&gt;入力部のアイコンも新しくしました。&lt;/p&gt;
-
-&lt;p&gt;マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。&lt;/p&gt;
 </description>
     </item>
     
