@@ -7,8 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 11 Mar 2015 07:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2015 16:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>クラスが読み込めず</title>
+      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
+      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
+      <description>&lt;p&gt;TapasをSwiftに移行中です。ビルドにて、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Class not found, using default NSManagedObject instead.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;というエラーがでる。ファイルはあるのだが、、&lt;/p&gt;
+
+&lt;p&gt;これは、動く。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
+    var cell = cell as ListViewCell
+    cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、動かない。。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
+    var cell = cell as ListViewCell
+    cell.textLabel?.text = item.name
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
+解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist v2.6.5</title>
@@ -455,25 +492,24 @@ footer: true
 &lt;!-- more --&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ドック&lt;/p&gt;
+&lt;li&gt;ドック
 
 &lt;ol&gt;
 &lt;li&gt;Google Maps：GPSと合わせて便利です。でも旅ですし、たまには現地の人に聞きましょう。&lt;/li&gt;
 &lt;li&gt;SimpleNote：ちょっとしたメモには最適、呟かずメモってます。&lt;/li&gt;
 &lt;li&gt;littlist：ToDoソフト、入国日や出発日の把握、イベント日、お土産リストとして使ってます。&lt;/li&gt;
-&lt;li&gt;PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。別のものに帰る理由が見つからない。&lt;/li&gt;
+&lt;li&gt;PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。お小遣い帳です。カードや日本の銀行の使用、残高状況がつかめます。外国の為替にも対応しています。別のものに帰る理由が見つからない。&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;ホーム画面には、これらのソフトが置いてあります。&lt;/p&gt;
+&lt;li&gt;ホーム画面には、これらのソフトが置いてあります。
 
 &lt;ol&gt;
 &lt;li&gt;カレンダー：カレンダー自体は使っていないのですが、日付表示のため&lt;/li&gt;
 &lt;li&gt;時計：目覚まし&lt;/li&gt;
-&lt;li&gt;Currency：定番の外貨為替ソフト。&lt;/li&gt;
+&lt;li&gt;Currency：定番の外貨為替ソフト。外国通貨為替のレートを知るにはこれで十分です。日本円で10,000円が現地でいくらになるかを設定してます。&lt;/li&gt;
 &lt;li&gt;Evernote：ちょっと旅情報のメモなどを入れたりしてます。ちょっと重たい物はシンプルノートよりevernoteのほうが良いです。海外で怪我、病気をして病院にお世話になった時に必要な書類（診断書や請求書のフォーム）をPDFで入れておくと便利です。&lt;/li&gt;
 &lt;li&gt;写真：&lt;/li&gt;
 &lt;li&gt;Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。&lt;/li&gt;
-&lt;li&gt;ohaYo：睡眠ログのソフト&lt;/li&gt;
+&lt;li&gt;ohaYo：睡眠ログのソフト。ちょっと睡眠が安定しない旅先、睡眠時間の管理に使います。タイムゾーンにも対応しているので大陸をドカッと動いても問題なく使えます。&lt;/li&gt;
 &lt;li&gt;計算機：昨今計算能力が低下気味ということで、&lt;/li&gt;
 &lt;li&gt;設定：&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
@@ -585,52 +621,6 @@ footer: true
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pranatice v0.7.1</title>
-      <link>http://goozenlab.com/blog/2015/02/pranatice-071/</link>
-      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/pranatice-071/</guid>
-      <description>&lt;p&gt;他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-main-071.png&#34; alt=&#34;Main&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-history-071.png&#34; alt=&#34;History&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;メインページのデザインの微調整
-
-&lt;ul&gt;
-&lt;li&gt;下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）&lt;/li&gt;
-&lt;li&gt;ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。&lt;/li&gt;
-&lt;li&gt;月の位置、フォントの調整・変更&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ホーム＞設定＞ Pranatice&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;カレンダーの詳細設定&lt;/li&gt;
-&lt;li&gt;書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;その他&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Iconを少し濃く&lt;/li&gt;
-&lt;li&gt;最初の状態でタップをすると周りにある雲等の透明度が変化します&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

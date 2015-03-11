@@ -99,7 +99,7 @@
 
 <h2 id="intellij-idea:d47689774691501be97468f6c1758b56">IntelliJ IDEA</h2>
 
-<p>ダウンロードして立ち上げると、Javaはオラクルの1.8系のものが既にダウンロードされているにもかかわらずJavaSEが必要とのアラートが上がる。(Not Now) をおしキャンセルする。</p>
+<p>ダウンロードして立ち上げると、Javaはオラクルのものが既にダウンロードされているにもかかわらずJavaSEが必要とのアラートが上がる。(Not Now) をおしキャンセルする。</p>
 
 <p><img src="/images/2015-03-10-intellij-java-alert.png" alt="alert to download Java" />
 </p>
@@ -109,20 +109,20 @@
 <p><img src="/images/2015-03-10-intellij-infopilst.png" alt="info.plist" />
 </p>
 
-<p>色が反転している所を書き換え（写真は書き換え済みで、元は<code>1.6*</code>）るとすぅーーっと起動します。AndroidStudioより機敏な感じがする。</p>
+<p>色が反転している所を書き換え（写真は書き換え済みで、元は<code>1.6*</code>）るとすぅーーっと起動します。</p>
 
 <h2 id="android-sdk:d47689774691501be97468f6c1758b56">Android SDK</h2>
 
-<p>次にダウンロードした <code>android-sdk_r24.0.2-macosx</code> は解凍し所定の場所に保存します。そして、必要なファイルをインストールします。</p>
+<p>次にダウンロードした <code>android-sdk_r24.0.2-macosx</code> は解凍し所定の場所に保存します。(AndroidStudioでは<code>~/Library/Android/sdk/</code>の中がデフォルトのようです）そして、<code>~/Library/Android/sdk/tools/android update sdk</code> を実行して必要なファイルをインストールします。</p>
 
 <pre><code>$ インストールのディレクトリ/android-sdk-macosx/tools/android update sdk
 </code></pre>
 
 <h2 id="kotlin:d47689774691501be97468f6c1758b56">Kotlin</h2>
 
-<p>もう一丁、<code>Kotlin</code> を入れる。</p>
+<p>もう一丁、<code>Kotlin</code> をpluginsより入れる。</p>
 
-<p><img src="/images/2015-03-09-intellij-kotlin.png" alt="" />
+<p><img src="/images/2015-03-09-intellij-kotlin.png" alt="Kotlin Install" />
 </p>
 
 <h2 id="golang-plugin:d47689774691501be97468f6c1758b56">GoLang Plugin</h2>

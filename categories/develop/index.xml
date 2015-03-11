@@ -7,8 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 08 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2015 16:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>クラスが読み込めず</title>
+      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
+      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
+      <description>&lt;p&gt;TapasをSwiftに移行中です。ビルドにて、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Class not found, using default NSManagedObject instead.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;というエラーがでる。ファイルはあるのだが、、&lt;/p&gt;
+
+&lt;p&gt;これは、動く。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
+    var cell = cell as ListViewCell
+    cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、動かない。。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
+    var cell = cell as ListViewCell
+    cell.textLabel?.text = item.name
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
+解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>UserDefaultの初期値設定</title>
