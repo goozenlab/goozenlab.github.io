@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 11 Mar 2015 07:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2015 19:00:47 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/littlist/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlistでのバグ</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
+      <pubDate>Fri, 13 Mar 2015 19:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
+      <description>&lt;p&gt;iOSを8.2にアップデートして自分の端末を色々と弄っていると、
+littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。&lt;/p&gt;
+
+&lt;p&gt;OSアプデートのせいかなと、ちょっとソースを見てみると、、またもやケアレスミス。。&lt;br /&gt;
+というか、思い込みがあったのか、、DB移行のため同じような作業を数度行ったせいなのか、、&lt;/p&gt;
+
+&lt;p&gt;アプストアから登録を外し、ちょっと他にも漏れが無いか調べて新しいバージョンを申請します。&lt;br /&gt;
+アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist v2.6.5</title>
@@ -415,20 +432,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Update for Retina4</title>
-      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
-      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
-      <description>&lt;p&gt;とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。&lt;/p&gt;
 </description>
     </item>
     

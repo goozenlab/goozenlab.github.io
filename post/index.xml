@@ -7,8 +7,211 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 12 Mar 2015 16:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2015 09:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IntelliJ IDEA 14 CEとJavaSE</title>
+      <link>http://goozenlab.com/blog/2015/03/intellij-setup/</link>
+      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/intellij-setup/</guid>
+      <description>
+
+&lt;p&gt;Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませんでした。（Javaがどうもねぇ〜。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-intellij.png&#34; alt=&#34;IntelliJ&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;最近、サイトのブログエンジンを変更するにあたって色々とリサーチをしていて、goLangやKotlinという新しい言語の事を知る。そしてそのKotlinという言語は見た目すごくSwiftに似ている。しかもアンドロイドのアプリも作れるらしい。
+「これはSwiftのついでに両方勉強すれば一石二鳥では、あわよくばアプリを移植できるかも、、、」と軽率な考えにおされ、Kotlin の開発元から出ているIDE、しかもAndroidStudioの元になっているIntelliJ IDEA でやってみるべと、、ちょっとスウィッチが入りました。&lt;/p&gt;
+
+&lt;p&gt;ダウンロードする物は以下の４つ。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;IntelliJ IDEA（無料版）：&lt;a href=&#34;http://www.jetbrains.com/idea/download/&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Android SDK：[ダウンロードサイト]()&lt;/li&gt;
+&lt;li&gt;Kotlin： IntelliJ IDEA の pluginsよりインストール。&lt;/li&gt;
+&lt;li&gt;GoLang Plugin：&lt;a href=&#34;https://github.com/go-lang-plugin-org/go-lang-idea-plugin/releases/tag/%23164&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;intellij-idea:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;IntelliJ IDEA&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードして立ち上げると、Javaはオラクルのものが既にダウンロードされているにもかかわらずJavaSEが必要とのアラートが上がる。(Not Now) をおしキャンセルする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-intellij-java-alert.png&#34; alt=&#34;alert to download Java&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;以前AndroidStudioをインストールした時と同じ問題で、これはちょこっとアプリのパッケージに入り込んで &lt;code&gt;info.plist&lt;/code&gt;を修正します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-intellij-infopilst.png&#34; alt=&#34;info.plist&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;色が反転している所を書き換え（写真は書き換え済みで、元は&lt;code&gt;1.6*&lt;/code&gt;）るとすぅーーっと起動します。でも、これだと、アップデートした時にまた書き直さなければいけないのか？？&lt;/p&gt;
+
+&lt;h2 id=&#34;android-sdk:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Android SDK&lt;/h2&gt;
+
+&lt;p&gt;次にダウンロードした &lt;code&gt;android-sdk_r24.0.2-macosx&lt;/code&gt; は解凍し所定の場所に保存します。(AndroidStudioでは&lt;code&gt;~/Library/Android/sdk/&lt;/code&gt;の中がデフォルトのようです）そして、&lt;code&gt;/インストール先/tools/android update sdk&lt;/code&gt; を実行して必要なファイルをインストールします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ インストールのディレクトリ/android-sdk-macosx/tools/android update sdk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;kotlin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Kotlin&lt;/h2&gt;
+
+&lt;p&gt;もう一丁、&lt;code&gt;Kotlin&lt;/code&gt; をpluginsより入れる。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-intellij-kotlin.png&#34; alt=&#34;Kotlin Install&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;golang-plugin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;GoLang Plugin&lt;/h2&gt;
+
+&lt;p&gt;おまけに、ダウンロードした &lt;code&gt;Go.164.zip&lt;/code&gt; を plugins から読み込みます。&lt;/p&gt;
+
+&lt;p&gt;これで、一端な2015年Android開発環境が整いました。さぁーー、何から始めよう。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>littlistでのバグ</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
+      <pubDate>Fri, 13 Mar 2015 19:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
+      <description>&lt;p&gt;iOSを8.2にアップデートして自分の端末を色々と弄っていると、
+littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。&lt;/p&gt;
+
+&lt;p&gt;OSアプデートのせいかなと、ちょっとソースを見てみると、、またもやケアレスミス。。&lt;br /&gt;
+というか、思い込みがあったのか、、DB移行のため同じような作業を数度行ったせいなのか、、&lt;/p&gt;
+
+&lt;p&gt;アプストアから登録を外し、ちょっと他にも漏れが無いか調べて新しいバージョンを申請します。&lt;br /&gt;
+アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HugoとSimplenoteでgitHub-page</title>
+      <link>http://goozenlab.com/blog/2015/03/hugo-simplenote/</link>
+      <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
+      <description>
+
+&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携を再設定しました。&lt;/p&gt;
+
+&lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
+
+&lt;p&gt;まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。&lt;/p&gt;
+
+&lt;p&gt;（鍵の登録を行っておくとよいです）&lt;/p&gt;
+
+&lt;h2 id=&#34;github-と-bitbucket-の登録:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rm -rf public/
+$ git init
+$ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
+$ git add -A
+$ git commit -m &amp;quot;initial commit&amp;quot;
+$ git push origin master
+Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;:
+Counting objects: 166, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (163/163), done.
+Writing objects: 100% (166/166), 322.06 KiB | 0 bytes/s, done.
+Total 166 (delta 3), reused 0 (delta 0)
+To https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
+ * [new branch]      master -&amp;gt; master
+$ git submodule add https://github.com/YOUR_ACCOUNT/goozenlab.github.io.git public
+Cloning into &#39;public&#39;...
+remote: Counting objects: 9437, done.
+remote: Compressing objects: 100% (419/419), done.
+remote: Total 9437 (delta 271), reused 0 (delta 0), pack-reused 8762
+Receiving objects: 100% (9437/9437), 47.41 MiB | 30.00 KiB/s, done.
+Resolving deltas: 100% (4319/4319), done.
+Checking connectivity... done.
+$ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;プレビュー方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;プレビュー方法&lt;/h2&gt;
+
+&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内のNote &amp;amp; Setting ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-11-hugo-alt.png&#34; alt=&#34;nvALT:Simplenote&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;nvALT:SimpleNoteの保存先フォルダーをサイトの外部にし、preview時にrsyncで一方通行の同期を行います。&lt;/p&gt;
+
+&lt;p&gt;※ nvALT、あまり知名度が無いように思えるけれどお勧めです。（ctlキーの長押しでプレビューが表示[離すと消える]されたり（数日前に発見！）する。）&lt;/p&gt;
+
+&lt;p&gt;これも簡単なスクリプトで行います。&lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; のテーマ部分は自身の設定に合わせてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;hugo_preview.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+echo -e &amp;quot;\033[0;32m---- rsync ----\033[0m&amp;quot;
+
+rsync -avz --delete --exclude &#39;Notes &amp;amp; Settings&#39; --exclude &#39;Untitled*&#39; --exclude &#39;.*&#39; /&amp;quot;保存先のフォルダ&amp;quot;/ /&amp;quot;HugoSites&amp;quot;/content/post
+
+echo -e &amp;quot;\033[0;32mhugo preview...\033[0m&amp;quot;
+
+hugo server --buildDrafts --theme=default
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;デプロイの方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;デプロイの方法&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;deploy.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
+
+# Build the project. 
+# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`
+hugo
+
+# Go To Public folder
+cd public
+
+# Copy CNAME 
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&amp;quot;rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+  then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back
+cd ..
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;その他のファイルの更新は、タイミングを計って手動でdeployしています。自動でbitbukket にも更新を入れたい時は&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo -e &amp;quot;\033[0;32mDeploying updates to Bitbukket...\033[0m&amp;quot;
+
+git add -A
+git commit -m &amp;quot;$msg&amp;quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;をdeploy.sh に追加すれば良いのかな。&lt;/p&gt;
+
+&lt;p&gt;実行のフラグを付けておしまい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ chmod +x deploy.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>クラスが読み込めず</title>
@@ -16,9 +219,12 @@
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>&lt;p&gt;TapasをSwiftに移行中です。ビルドにて、&lt;/p&gt;
+      <description>&lt;p&gt;TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+&lt;p&gt;さて、さて、まずは、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
+Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
 Class not found, using default NSManagedObject instead.
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -33,7 +239,7 @@ Class not found, using default NSManagedObject instead.
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;で、動かない。。。&lt;/p&gt;
+&lt;p&gt;で、動かなーーーーい。。。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
@@ -44,6 +250,9 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
 解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -473,154 +682,6 @@ footer: true
 &lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
 
 &lt;p&gt;でも、これで変更の流れもつかめるしありがたや。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>旅仕様 iOS</title>
-      <link>http://goozenlab.com/blog/2015/02/travel-home/</link>
-      <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/travel-home/</guid>
-      <description>
-
-&lt;p&gt;iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_travel-home.png&#34; alt=&#34;Home&#34; /&gt;
-&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ドック
-
-&lt;ol&gt;
-&lt;li&gt;Google Maps：GPSと合わせて便利です。でも旅ですし、たまには現地の人に聞きましょう。&lt;/li&gt;
-&lt;li&gt;SimpleNote：ちょっとしたメモには最適、呟かずメモってます。&lt;/li&gt;
-&lt;li&gt;littlist：ToDoソフト、入国日や出発日の把握、イベント日、お土産リストとして使ってます。&lt;/li&gt;
-&lt;li&gt;PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。お小遣い帳です。カードや日本の銀行の使用、残高状況がつかめます。外国の為替にも対応しています。別のものに帰る理由が見つからない。&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;ホーム画面には、これらのソフトが置いてあります。
-
-&lt;ol&gt;
-&lt;li&gt;カレンダー：カレンダー自体は使っていないのですが、日付表示のため&lt;/li&gt;
-&lt;li&gt;時計：目覚まし&lt;/li&gt;
-&lt;li&gt;Currency：定番の外貨為替ソフト。外国通貨為替のレートを知るにはこれで十分です。日本円で10,000円が現地でいくらになるかを設定してます。&lt;/li&gt;
-&lt;li&gt;Evernote：ちょっと旅情報のメモなどを入れたりしてます。ちょっと重たい物はシンプルノートよりevernoteのほうが良いです。海外で怪我、病気をして病院にお世話になった時に必要な書類（診断書や請求書のフォーム）をPDFで入れておくと便利です。&lt;/li&gt;
-&lt;li&gt;写真：&lt;/li&gt;
-&lt;li&gt;Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。&lt;/li&gt;
-&lt;li&gt;ohaYo：睡眠ログのソフト。ちょっと睡眠が安定しない旅先、睡眠時間の管理に使います。タイムゾーンにも対応しているので大陸をドカッと動いても問題なく使えます。&lt;/li&gt;
-&lt;li&gt;計算機：昨今計算能力が低下気味ということで、&lt;/li&gt;
-&lt;li&gt;設定：&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ちなみに、その他は、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_2nd-Screen.png&#34; alt=&#34;2nd Page&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-28_3rd-Screen.png&#34; alt=&#34;3rd Page&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;という感じ。2ページ目はアプリ検証ページ。そんなに沢山のソフトは入れてません。シンプルです。&lt;/p&gt;
-
-&lt;h3 id=&#34;おまけ-simplenote:d99df43cef69261e36b7f08354f499c5&#34;&gt;おまけ：Simplenote&lt;/h3&gt;
-
-&lt;p&gt;パスポート番号やクレジットカード・トラベラーズチェック紛失時の電話番号などを入力しておきましょう。もし、強盗などにあったときに必要な番号などを記録しておきましょう。&lt;/p&gt;
-
-&lt;p&gt;もし最悪、全ての持ち物をとられてしまったときのために、パスワードを。。。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;どこかに書き込んでおく。（ズボンのポケットの裏地とか）&lt;/li&gt;
-&lt;li&gt;実家にメモを置いておく。（ある意味アナログクラウド、母親に捨てられないようにしてくださいね。）&lt;/li&gt;
-&lt;li&gt;日本語の文章にして、メールアドレスとともに覚えておく。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>マレーシア ラップアップ</title>
-      <link>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</link>
-      <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</guid>
-      <description>&lt;p&gt;マレーシア滞在をちょっとまとめる。（50日間で~7万円：８万両替（10,000円が290MYR）してMYR400くらい残る）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;言葉：東南アジアでは問題なく英語が通じる国の一つ。&lt;/li&gt;
-&lt;li&gt;治安：KLは分からないが、かなり良い方。&lt;/li&gt;
-&lt;li&gt;天候：ちょっと湿っぽい。東は少し湿度が低く感じられた。&lt;/li&gt;
-&lt;li&gt;宿：シンプルなシングル（シャワートイレ共有）MYR15~35、朝食付きの宿もある。&lt;/li&gt;
-&lt;li&gt;移動：たまに寂れたバスもあるが、大きい国でもなく、移動における体の負担もそれほどなし。夜行バスも座席がかなり倒れるので熟睡できる。（個人差あり）　&lt;/li&gt;
-&lt;li&gt;食事
-
-&lt;ul&gt;
-&lt;li&gt;朝：ロティチャナイ、イドリ+チャイ（MYR3~4）&lt;/li&gt;
-&lt;li&gt;昼：中華素食屋＋中国茶（MYR4~5) 、インドミールス（MYR4~5)&lt;/li&gt;
-&lt;li&gt;夜：マサラトーサイ＋チャイ、菜包＋お茶（MYR3.5~4)&lt;/li&gt;
-&lt;li&gt;酒：ビール大瓶（MYR16~日本とほぼ同じ)&lt;/li&gt;
-&lt;li&gt;その他：豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。で、ほぼベジタリアンの私にとっては食事に関してはかなり幸せ、理想に近いとも言える。ちなみに個人的にはペナンとマラッカが良い。マレー系の食事なら東側の街が良い感じ。肉食系は多分30％増し？くらい。&lt;/p&gt;
-
-&lt;p&gt;宿の質は当たり前だが、値段によりけり、安かろう悪かろう。ただし、悪いといっても、暗いとか臭うとかの問題。南京虫に食われた事もあるが、汚い宿というのは今のところほとんど無い。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ニブレスプロジェクト</title>
-      <link>http://goozenlab.com/blog/2015/02/xibless-project/</link>
-      <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/xibless-project/</guid>
-      <description>&lt;p&gt;swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。&lt;/p&gt;
-
-&lt;p&gt;ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
-      // Override point for customization after application launch.
-
-      self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-      let navigationController = UINavigationController(rootViewController: ListViewController())
-      
-      let controller = navigationController.topViewController as ListViewController
-      controller.managedObjectContext = self.managedObjectContext
-
-      self.window!.rootViewController = navigationController
-      self.window!.makeKeyAndVisible()
-      return true
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool {
-    // Override point for customization after application launch.
-    
-    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-
-    let mainViewController = MainViewController()
-    mainViewController.managedObjectContext = self.managedObjectContext
-
-    self.window!.rootViewController = mainViewController
-    self.window!.makeKeyAndVisible()
-    
-    return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;割と簡単に行きましたが、こんなものまで、調べつつやってます。。。let なのか var なのか、！なのか？なのか。。&lt;/p&gt;
 </description>
     </item>
     

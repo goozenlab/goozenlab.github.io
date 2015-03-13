@@ -47,6 +47,7 @@
 		  <li class="u-pull-left"> <a href="http://goozenlab.com/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//about/" class=""> About </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/mac" class=""> mac </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/update" class=""> update </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/web" class=""> web </a></li>
 		  <li class="u-pull-right cate"> <a href="http://goozenlab.com//categories/develop" class=""> dev </a></li>
@@ -81,9 +82,12 @@
 	  </div>
 
 	  <div class="post">
-		<p>TapasをSwiftに移行中です。ビルドにて、</p>
+		<p>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。</p>
 
-<pre><code>2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named 'Item' for entity 'Item'.  
+<p>さて、さて、まずは、</p>
+
+<pre><code>2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
+Unable to load class named 'Item' for entity 'Item'.  
 Class not found, using default NSManagedObject instead.
 </code></pre>
 
@@ -98,7 +102,7 @@ Class not found, using default NSManagedObject instead.
 }
 </code></pre>
 
-<p>で、動かない。。。</p>
+<p>で、動かなーーーーい。。。</p>
 
 <pre><code>func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
@@ -109,6 +113,9 @@ Class not found, using default NSManagedObject instead.
 
 <p>ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
 解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）</p>
+
+<p><img src="/images/2015-03-12-pockhara.jpg" alt="Pokhara street" />
+</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -130,6 +137,7 @@ Class not found, using default NSManagedObject instead.
 	</div>
   </div>
 </div>
+
 
 <div class="footer">
   <div class="container">

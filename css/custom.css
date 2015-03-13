@@ -17,14 +17,41 @@ code {
 	line-height:17px;
 }
 
+
+
+.app_list {
+	width: 100%;
+	image: /images/footer.gif;
+}
+.app_list ul {
+	list-style-type:none;
+	display: block;
+	margin:0;
+	padding:6;
+	background-color: rgb(255,255,255);	
+}
+
+.app_list li {
+	display: inline-block;
+	position: relative;
+	margin-right:0px;
+	margin-bottom: 0;
+}
+
+.app_list img {
+	width: 40px;
+	height: 40px;
+}
+
 .navbar {
 	top:0;
 	left:0;
 	display:block;
 	border-bottom: 1px solid #eee;
 	margin-bottom:10px;
-	height:2em;
+	height:3em;
 	width:100%;
+	background-color: rgb(252,252,252);	
 }
 
 .navbar ul {
@@ -33,7 +60,7 @@ code {
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	height:100%;
+	height:130%;
 }
 
 .navbar li {
@@ -100,6 +127,7 @@ code {
 	width:100%;
 	bottom:0;
 	padding-top:0.1em;
+	background-color: rgb(251,251,251);	
 }
 
 .post {
@@ -133,6 +161,8 @@ code {
 .post h2 {
 	font-size:22px;
 	letter-spacing:normal;
+	border-top: 1px dotted #dedede;
+	padding-top: 0.6em;
 }
 
 .post h3 {
@@ -141,12 +171,12 @@ code {
 }
 
 .post h4 {
-	font-size:20px;
+	font-size:21px;
 	letter-spacing:normal;
 }
 
 .post h5 {
-	font-size:19px;
+	font-size:11px;
 	letter-spacing:normal;
 }
 

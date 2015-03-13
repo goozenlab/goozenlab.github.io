@@ -16,9 +16,12 @@
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>&lt;p&gt;TapasをSwiftに移行中です。ビルドにて、&lt;/p&gt;
+      <description>&lt;p&gt;TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+&lt;p&gt;さて、さて、まずは、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
+Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
 Class not found, using default NSManagedObject instead.
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -33,7 +36,7 @@ Class not found, using default NSManagedObject instead.
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;で、動かない。。。&lt;/p&gt;
+&lt;p&gt;で、動かなーーーーい。。。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
@@ -44,6 +47,9 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
 解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
+&lt;/p&gt;
 </description>
     </item>
     
