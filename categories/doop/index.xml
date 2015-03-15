@@ -57,6 +57,52 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
     </item>
     
     <item>
+      <title>doop v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/doop-165/</link>
+      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/doop-165/</guid>
+      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
+
+&lt;p&gt;そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
+iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DBの調整&lt;/li&gt;
+&lt;li&gt;編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;よろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
+&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;doopのソートについて考えています。&lt;/p&gt;
+
+&lt;p&gt;今現在のソートパターンは&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;サイクルにかかる平均時間&lt;/li&gt;
+&lt;li&gt;0%にたどり着くであろう日付&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;によるソートをナビゲーションバーのロングタップで切り分けています。&lt;/p&gt;
+
+&lt;p&gt;①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。&lt;/p&gt;
+
+&lt;p&gt;両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。&lt;/p&gt;
+
+&lt;p&gt;色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。&lt;/p&gt;
+
+&lt;p&gt;では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。&lt;/p&gt;
+
+&lt;p&gt;画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>doop v1.6.4</title>
       <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
       <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
@@ -311,38 +357,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;今週中にはポコポコとアップされると思います。
 セールもやっていますので、なにとぞ、よろしく。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>XCode4.2と怒濤のアップデート</title>
-      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
-      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
-      <description>&lt;p&gt;インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。&lt;/p&gt;
-
-&lt;p&gt;Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。&lt;/p&gt;
-
-&lt;p&gt;不具合のほとんどはテーブルセル部の&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[self.nextResponder touchesBegan:touches withEvent:event]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;が問題だったようで、（既知の問題でした。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[super touchesBegan:touches withEvent:event];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;に修正しました。シミュレーター上では動いてます。&lt;/p&gt;
-
-&lt;p&gt;去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。&lt;/p&gt;
-
-&lt;p&gt;※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。&lt;/p&gt;
 </description>
     </item>
     

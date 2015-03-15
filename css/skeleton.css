@@ -401,11 +401,6 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-/* Added 2015-03-05 22:45 for goozenlab */
-  img {
-      max-width: 100%;
-      height: auto;
-  }  
  
 /* Larger than mobile */
 @media (min-width: 400px) {}

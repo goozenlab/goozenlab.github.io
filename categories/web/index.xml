@@ -18,7 +18,7 @@
       <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
       <description>
 
-&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携を再設定しました。&lt;/p&gt;
+&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。&lt;/p&gt;
 
 &lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
 

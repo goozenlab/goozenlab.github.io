@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 14 Mar 2015 09:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
       <link>http://goozenlab.com/blog/2015/03/intellij-setup/</link>
-      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
+      <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/intellij-setup/</guid>
       <description>
@@ -30,7 +30,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;IntelliJ IDEA（無料版）：&lt;a href=&#34;http://www.jetbrains.com/idea/download/&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Android SDK：[ダウンロードサイト]()&lt;/li&gt;
+&lt;li&gt;Android SDK：&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kotlin： IntelliJ IDEA の pluginsよりインストール。&lt;/li&gt;
 &lt;li&gt;GoLang Plugin：&lt;a href=&#34;https://github.com/go-lang-plugin-org/go-lang-idea-plugin/releases/tag/%23164&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;

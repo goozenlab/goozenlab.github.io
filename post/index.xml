@@ -7,13 +7,117 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 14 Mar 2015 09:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2015 08:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo のデザイン</title>
+      <link>http://goozenlab.com/blog/2015/03/ohayo-pop/</link>
+      <pubDate>Mon, 16 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
+      <description>&lt;p&gt;ちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo3.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo4.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Satiがブレイク！Thanks alot！</title>
+      <link>http://goozenlab.com/blog/2015/03/sati-14k-dowload/</link>
+      <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/sati-14k-dowload/</guid>
+      <description>&lt;p&gt;!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!&lt;/p&gt;
+
+&lt;p&gt;Satiのダウンロードがドカーーンと一気に大ブレイク。ダンンャバーッ。たまにどかっとダウンロードが増える事があっても500ぐらいが頭打ちでしたが今回は14,600ダウンロードと桁違い、、ちとビックリする。おかげで、ダウンロードグラフが見づらくなりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-download.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;・ &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;12&lt;/sub&gt; 3件 -&amp;gt; &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;13&lt;/sub&gt; 42件 -&amp;gt; &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;14&lt;/sub&gt; 14.6K件&lt;/p&gt;
+
+&lt;p&gt;どこかしらで、紹介されたのだろうけど、かなり影響力のある人？なのでしょう、すごいな。&lt;br /&gt;
+詳細は以下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-europe.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-southamerica.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia-east.png&#34; alt=&#34;Sati Download&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!&lt;/p&gt;
+
+&lt;p&gt;あとは、皆さん瞑想続けてくださいね。というか、英語のREAMEを書き換えなければ。。。&lt;/p&gt;
+
+&lt;p&gt;感謝。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Xcode 6.1とiOS8.2</title>
+      <link>http://goozenlab.com/blog/2015/03/xcode611-ios82/</link>
+      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
+      <description>&lt;p&gt;検証機を何の迷いも無くiOS8.2にアップデートする。&lt;/p&gt;
+
+&lt;p&gt;で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。
+このXCodeではサポートしないとの親切なエラーメッセージがでる。新しいバージョンのXCodeをインストールするにも、今いるネパールのネット環境ではXcode:2.58GBを落とすのにかなり時間がかかりそう。。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-14-ios82.png&#34; alt=&#34;Xcode 6.1 with ios8.2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;まぁ仕方ない。。タイもしくはインドに行くまで、シミュレータでしのぐしか無いな。。&lt;/p&gt;
+
+&lt;p&gt;と思ったが、取りあえず試す。（随時アップデート）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2015-03-15 17:30　ルーターとの接続が10分おきに切れる。で、諦める。&lt;/li&gt;
+&lt;li&gt;2015-03-15 13:00　再開するも、ダウンロードにはXCodeを落とせと、、で最初からやり直しになる。。&lt;/li&gt;
+&lt;li&gt;2015-03-15 06:00　停電中&lt;/li&gt;
+&lt;li&gt;2015-03-14 22:45　ルーターの電源を切られる。&lt;/li&gt;
+&lt;li&gt;2015-03-14 22:16　59MB 残り７時間くらいと表示&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StatusBarをSwiftで隠す</title>
+      <link>http://goozenlab.com/blog/2015/03/statusbar-swift/</link>
+      <pubDate>Sun, 15 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/statusbar-swift/</guid>
+      <description>&lt;p&gt;iOSやXCodeのバーションが上がったりすると必ず分からなくなる。statusbarの扱い。&lt;/p&gt;
+
+&lt;p&gt;iOS8とswiftでは&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
+    return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
       <link>http://goozenlab.com/blog/2015/03/intellij-setup/</link>
-      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
+      <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/intellij-setup/</guid>
       <description>
@@ -30,7 +134,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;IntelliJ IDEA（無料版）：&lt;a href=&#34;http://www.jetbrains.com/idea/download/&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Android SDK：[ダウンロードサイト]()&lt;/li&gt;
+&lt;li&gt;Android SDK：&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kotlin： IntelliJ IDEA の pluginsよりインストール。&lt;/li&gt;
 &lt;li&gt;GoLang Plugin：&lt;a href=&#34;https://github.com/go-lang-plugin-org/go-lang-idea-plugin/releases/tag/%23164&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -72,6 +176,48 @@
     </item>
     
     <item>
+      <title>SwiftでConstantを扱う</title>
+      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
+      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
+      <description>&lt;p&gt;Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。
+ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。&lt;/p&gt;
+
+&lt;p&gt;分からないことが多々あるが、進めていかないと、、&lt;/p&gt;
+
+&lt;p&gt;さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+//  LocalConstants.swift
+//
+
+import Foundation
+
+    let ONE_DAY = 86400
+
+struct UDKey {
+    static let DisplayColorMode = &amp;quot;color_mode&amp;quot;
+}
+
+struct Default {
+    static let ColorMode = &amp;quot;kawaii&amp;quot;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、他からのアクセスは&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;のようにしています。&lt;/p&gt;
+
+&lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>littlistでのバグ</title>
       <link>http://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
       <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
@@ -101,7 +247,7 @@ littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp
       <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
       <description>
 
-&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携を再設定しました。&lt;/p&gt;
+&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。&lt;/p&gt;
 
 &lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
 
@@ -381,7 +527,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
       <description>&lt;p&gt;電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、
 デジカメも光学のビューファインダーが無いとどうもだめ。&lt;/p&gt;
 
-&lt;p&gt;GRのファインダーは持っているのだが、GRにファインダーを付けてしまうとケースに収まらない。素で持っていると、手で触ってしまったりと気がついたらべとべとでホコリだらけになる。折角のファインダーが曇ってたりすると、興ざめする。写真からえらく遠ざかってました。&lt;/p&gt;
+&lt;p&gt;GRのファインダーを持っているのだが、GRにファインダーを付けてしまうとケースに収まらない。素で持っていると、手で触ってしまったりと気がついたらべとべとでホコリだらけになる。折角のファインダーが曇ってたりすると、興ざめする。写真からえらく遠ざかってました。&lt;/p&gt;
 
 &lt;p&gt;しかしながら、ポカラは山が奇麗で街の至る所から山が見渡せるので、フラフラするのが割と楽しい。
 そのおかげで久しぶりにカメラを持ち出す機会が増えて、最初は液晶で撮ってたが、ちょっと思いついた。&lt;/p&gt;
@@ -482,211 +628,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;p&gt;では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。&lt;/p&gt;
 
 &lt;p&gt;画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.8.2</title>
-      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
-      <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
-      <description>&lt;p&gt;うーーーん、ホットフィックスです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;バグ
-
-&lt;ul&gt;
-&lt;li&gt;朝のメッセージがずれてました。。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HugoのPagenate</title>
-      <link>http://goozenlab.com/blog/2015/03/hugo-pagenate/</link>
-      <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
-      <description>&lt;p&gt;ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;の&lt;code&gt;{{ range $name, $page := .Site.Recent }}&lt;/code&gt; の所を &lt;code&gt;{{ range $name, $page := .Paginator.Pages }}&lt;/code&gt; に変更。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt;
-  &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt;
-
-  &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt;
-	{{ $baseurl := .Site.BaseUrl }}
-	{{ range $name, $page := .Site.Recent }} 
-	{{ if eq .Type &amp;quot;post&amp;quot; }}		
-	&amp;lt;li&amp;gt;
-	  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、&lt;code&gt;config.toml&lt;/code&gt; に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# number of posts shows on MainPage
-paginate = 28
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;yamlだtomlだと、一体yamlの何が問題なんだろうか。。&lt;/p&gt;
-
-&lt;p&gt;で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、&lt;code&gt;rsync&lt;/code&gt; と &lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; をまとめてスクリプトで動かせば良いだけのことか。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-05-pokhara-damside2.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugoを少し弄る</title>
-      <link>http://goozenlab.com/blog/2015/03/hugo-template/</link>
-      <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/hugo-template/</guid>
-      <description>
-
-&lt;p&gt;移行のためHugoを&lt;code&gt;nofancy&lt;/code&gt;を基にして色々と調整しています。&lt;/p&gt;
-
-&lt;h2 id=&#34;テンプレート:3664db9b35118110eccce63f298c0cae&#34;&gt;テンプレート&lt;/h2&gt;
-
-&lt;p&gt;このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: app_page
-title: &amp;quot;(a)のちょっと詳しい使い方&amp;quot;
-subtitle: &amp;quot;タスク管理をマークダウンで&amp;quot;
-appid: &amp;quot;929324285&amp;quot;
-date: &amp;quot;2015-01-25&amp;quot;
-updated: &amp;quot;2015-01-25&amp;quot;
-footer: true
----
-
-# アプリページのオクトプレスより移行のyaml
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;layout: app_page&lt;/code&gt; がある事で &lt;code&gt;layout/_default/app_page.html&lt;/code&gt; を探しにいき、もしくはコンテンツファイルを別のフォルダー&lt;code&gt;iapp&lt;/code&gt;に入れておくと、&lt;code&gt;layout: app_page&lt;/code&gt;が無くても&lt;code&gt;layout/iapp/single.html&lt;/code&gt;があれば優先して使われるよう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template.png&#34; alt=&#34;Hugo Template&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template2.png&#34; alt=&#34;Hugo Template&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;yaml内のカスタム項目を取り込む:3664db9b35118110eccce63f298c0cae&#34;&gt;Yaml内のカスタム項目を取り込む&lt;/h2&gt;
-
-&lt;p&gt;yaml内にあるスマートバナー広告で使う&lt;code&gt;appid: &amp;quot;929324285&amp;quot;&lt;/code&gt;は
-以下のようにして &lt;code&gt;partials/header.html&lt;/code&gt; に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、&lt;code&gt;.Params&lt;/code&gt;を使うのが正解のようです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{ if .Params.appid }}
-  &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ .Params.appid }}&amp;quot;&amp;gt;
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Gem地獄で Hugo に移行</title>
-      <link>http://goozenlab.com/blog/2015/03/moving-hugo/</link>
-      <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/moving-hugo/</guid>
-      <description>&lt;p&gt;ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。&lt;/p&gt;
-
-&lt;p&gt;ちょっと開発が一段落し一息。温泉に行こうと思ったが、Webの移行をしています。&lt;/p&gt;
-
-&lt;p&gt;そもそもの始まりは、オクトプレスでSWIFTのシンタックスカラーリングで、色々試すも、これのバージョンがどうで、あっちで出るエラーはそのバージョンが問題でと、Ruby野郎でない私はGem地獄に陥る。Jekyllをちょっと試すが、これがまたGem関連でエラー連発。&lt;/p&gt;
-
-&lt;p&gt;仕舞にはオクトプレスのアップデートでファイルが消える。バックアップは取っているのだが、気分は良くない。オクトプレスに不満がある訳ではないが、もう一度インストールするのも気が進まないので、移行する事にする。&lt;/p&gt;
-
-&lt;p&gt;幾つかの選択肢があったのですが、Hugoに決定！もテーマにピンとくるものがありません。シンプルでグリッドな感じのやつで良いのだけど（jekyllでデフォルトの様な）。。。&lt;/p&gt;
-
-&lt;p&gt;帯に短し、襷に、、、、で、オクトプレス時代は字がデケーなと思っていたのにHugoでは文字ちっちゃ、表示範囲がせまっ、みたいな事になっています。ただし、HugoのほうはCSSベースなのでSassで弄るのを断念した私でも弄れそう。ちなみに選んだテーマは&lt;code&gt;nofancy&lt;/code&gt;です。&lt;/p&gt;
-
-&lt;p&gt;でも、ページングの処理がよく分からんから、とりあえずすべてのポストがメインページに羅列されています。。。66KBだからそんなに重くはないので。。。そして、画像もでかいです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
-      <link>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</link>
-      <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
-      <description>&lt;p&gt;タイトルが長げーーーーーーな。。&lt;/p&gt;
-
-&lt;p&gt;さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）&lt;/p&gt;
-
-&lt;p&gt;そんなときは、マッピングファイルを作成して、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ファイルを訂正、追加して（source, destinationに注意）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;あとは、optionsの設定を加え、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-
-# options:nil の箇所を options:options に変更
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;pre&gt;&lt;code&gt;- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
-    
-    // Create the coordinator and store
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&amp;quot;Littlist.sqlite&amp;quot;];
-   
-    // Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)};
-
-    NSError *error = nil;
-    NSString *failureReason = @&amp;quot;There was an error creating or loading the application&#39;s saved data.&amp;quot;;
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-        // Report any error we got.
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        dict[NSLocalizedDescriptionKey] = @&amp;quot;Failed to initialize the application&#39;s saved data&amp;quot;;
-        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
-        dict[NSUnderlyingErrorKey] = error;
-        error = [NSError errorWithDomain:@&amp;quot;YOUR_ERROR_DOMAIN&amp;quot; code:9999 userInfo:dict];
-        // Replace this with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@&amp;quot;Unresolved error %@, %@&amp;quot;, error, [error userInfo]);
-        abort();
-    }
-    return _persistentStoreCoordinator;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
-
-&lt;p&gt;でも、これで変更の流れもつかめるしありがたや。&lt;/p&gt;
 </description>
     </item>
     

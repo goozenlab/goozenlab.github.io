@@ -90,10 +90,22 @@ buttonMoodExecelent.tag = TagButtonMood.Execelent
 buttonMoodExecelent.addTarget(self, action: &quot;selectedMood:&quot;, forControlEvents: .TouchUpInside)
 buttonMoodExecelent.setBackgroundImage(UIImage(named: &quot;MoodExecelent&quot;), forState: UIControlState.Normal)
 
-self.addSubview(buttonMoodExecelent)
+self.vew.addSubview(buttonMoodExecelent)
 </code></pre>
 
-<p>となるらしい。</p>
+<p>テキストタイトルの時には</p>
+
+<pre><code>buttonCancel.setTitle(&quot;cancel&quot;, forState: UIControlState.Normal)
+</code></pre>
+
+<p>テキストの色を変えるには、</p>
+
+<pre><code>buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
+</code></pre>
+
+<p>もっと細かく、フォント等も弄りたい時には、</p>
+
+<p><code>setAttributedTitle:forState</code>を使うとさ。</p>
 
 <p>※ ソースは拙作のohayoからコピペ。</p>
 
@@ -122,10 +134,11 @@ self.addSubview(buttonMoodExecelent)
 <div class="footer">
   <div class="container">
 	<div class="row">
-	  <div class="two columns offset-by-ten">
+	  <div class="ten columns offset-by-one">
 		<p class="footnote">
+		   Using <a href="http://gohugo.io/">Hugo</a> with nofancy theme. Hosted on githubPage.
 		  
-		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  All right reserved by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
 		  
 		  
 		</p>

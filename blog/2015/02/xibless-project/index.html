@@ -87,21 +87,19 @@
 <p>ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、</p>
 
 <ul>
-<li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、ListViewController (UITableViewController) がMainViewController です。</li>
+<li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。</li>
 </ul>
 
 <pre><code>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
-      // Override point for customization after application launch.
+   // Override point for customization after application launch.
 
-      self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-      let navigationController = UINavigationController(rootViewController: ListViewController())
-      
-      let controller = navigationController.topViewController as ListViewController
-      controller.managedObjectContext = self.managedObjectContext
-
-      self.window!.rootViewController = navigationController
-      self.window!.makeKeyAndVisible()
-      return true
+   self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+   let masterViewController: MasterViewController = MasterViewController()
+   masterViewController.managedObjectContext = self.managedObjectContext
+   let navigationController = UINavigationController(rootViewController: masterViewController)
+   self.window!.rootViewController = navigationController
+   self.window!.makeKeyAndVisible()
+   return true
 }
 
 </code></pre>
@@ -154,10 +152,11 @@
 <div class="footer">
   <div class="container">
 	<div class="row">
-	  <div class="two columns offset-by-ten">
+	  <div class="ten columns offset-by-one">
 		<p class="footnote">
+		   Using <a href="http://gohugo.io/">Hugo</a> with nofancy theme. Hosted on githubPage.
 		  
-		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  All right reserved by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
 		  
 		  
 		</p>
