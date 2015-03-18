@@ -7,8 +7,85 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 16 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2015 08:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NotificationSettings認証設定</title>
+      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
+      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
+      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
+
+&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
+  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
+  categories: nil))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのですが。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ビューサイクルとアプリ復帰時の処理</title>
+      <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
+      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
+      <description>
+
+&lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
+
+&lt;h2 id=&#34;起動時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;起動時&lt;/h2&gt;
+
+&lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;viewDidLoad()&lt;/li&gt;
+&lt;li&gt;viewWillAppear&lt;/li&gt;
+&lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
+
+&lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;viewWillAppear&lt;/li&gt;
+&lt;li&gt;viewDidAppear&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
+
+&lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
+viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Notification Center
+let app: UIApplication = UIApplication.sharedApplication()
+NSNotificationCenter.defaultCenter().addObserver(self, 
+		selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
+		object: app)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と処理を追加する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func applicationWillEnterForeground(notification: NSNotification) {
+    println(__FUNCTION__)
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
+
+&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。（私はアプバッジの登録はAppDelegateで行ってます。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo のデザイン</title>
@@ -69,7 +146,11 @@ please be meditation part of your life, into a life. i hope meditation will help
 
 &lt;p&gt;感謝。&lt;/p&gt;
 
-&lt;p&gt;一日たち25.2Kダウンドード。南米、アフリカでは下降線で、ヨーロッパ、アメリカはまだのびる！&lt;/p&gt;
+&lt;p&gt;追記：&lt;/p&gt;
+
+&lt;p&gt;3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。&lt;/p&gt;
+
+&lt;p&gt;3/16：一日たち25.2Kダウンドード。南米、アフリカでは下降線で、ヨーロッパ、アメリカはまだのびる！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-16-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;
 &lt;/p&gt;
@@ -566,77 +647,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/p&gt;
 
 &lt;p&gt;（ちょっと、形を整えてこちらの布地で作ってもらうかな。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UserDefaultの初期値設定</title>
-      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
-      <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
-      <description>&lt;p&gt;AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; // UserDefault Initial values
- var userDefaultsDefaults = NSMutableDictionary()
- userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING)
- userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2)
- NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;数値も文字も気にせず書き込んでよいようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ポカラの水汲み場&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/doop-165/</link>
-      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/doop-165/</guid>
-      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
-
-&lt;p&gt;そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
-iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DBの調整&lt;/li&gt;
-&lt;li&gt;編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;よろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;doopのソートについて考えています。&lt;/p&gt;
-
-&lt;p&gt;今現在のソートパターンは&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;サイクルにかかる平均時間&lt;/li&gt;
-&lt;li&gt;0%にたどり着くであろう日付&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;によるソートをナビゲーションバーのロングタップで切り分けています。&lt;/p&gt;
-
-&lt;p&gt;①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。&lt;/p&gt;
-
-&lt;p&gt;両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。&lt;/p&gt;
-
-&lt;p&gt;色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。&lt;/p&gt;
-
-&lt;p&gt;では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。&lt;/p&gt;
-
-&lt;p&gt;画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。&lt;/p&gt;
 </description>
     </item>
     

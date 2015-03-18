@@ -93,14 +93,18 @@
 <li><code>__FUNCTION__</code> ：ファンクション名</li>
 </ul>
 
-<p>そして、値を表示したい時は<code>\(...)</code>で囲み適当に放り込んでよいよう。もはや%dや%@は必要ないらしい。</p>
+<p>そして、値を表示したい時はそのままかそのままか<code>\(...)</code>で囲み適当に放り込む。もはや%dや%@は必要ないらしい。</p>
 
-<pre><code>println(__FUNCTION__,&quot;screen is \(self.frame)&quot;)
+<pre><code>println(__FUNCTION__, self.frame)
+println(__FUNCTION__, self.frame)
+println(__FUNCTION__,&quot;screen is \(self.frame)&quot;)
 </code></pre>
 
 <p>戻りは以下</p>
 
-<pre><code>(function, screen is (0.0,706.0,414.0,30.0))
+<pre><code>(function, (0.0,706.0,414.0,30.0))
+(function, (0.0,706.0,414.0,30.0))
+(function, screen is (0.0,706.0,414.0,30.0))
 </code></pre>
 
 <p>Swift Programming Language に書いてあるらしいので読むべ。</p>

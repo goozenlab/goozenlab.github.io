@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>！Thanks alot for downloading Sati！</title>
-  <meta name="description" content="！Thanks alot for downloading Sati！">
+  <title>ビューサイクルとアプリ復帰時の処理</title>
+  <meta name="description" content="ビューサイクルとアプリ復帰時の処理">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-03-15</time>
+		  <time class="">2015-03-21</time>
 		  
 		  
 		  |
@@ -72,68 +72,72 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com//categories/sati">sati</a> 
+		  categories:<a href="http://goozenlab.com//categories/swift">swift</a> <a href="http://goozenlab.com//categories/develop">develop</a> 
 		  
 
 		  
 
 		</p>
-		<h5>！Thanks alot for downloading Sati！</h5>
+		<h5>ビューサイクルとアプリ復帰時の処理</h5>
 	  </div>
 
 	  <div class="post">
-		<p>!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!</p>
+		
 
-<p>Satiのダウンロードがドカーーンと一気に増えました。ダンンャバーッ。たまにどかっとダウンロードが増える事があっても500ぐらいが頭打ちでしたが今回は14,600ダウンロードと桁違い、、ちとビックリです。エラーも無いしちょっと安心。おかげさまで、ダウンロードグラフが見づらくなりました。</p>
+<p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
 
-<p><img src="/images/2015-03-15-sati-download.png" alt="Sati Download" />
-</p>
+<h2 id="起動時:205901421f8bb17c75d7ebf5b8a21af9">起動時</h2>
 
-<p>・ 通常時のサティダウンロード：3とかたまに二桁 &mdash;&ndash;&gt; 3/13：42 &mdash;&gt; 3/14：14,600。</p>
+<p>アプリの起動時には以下の順で呼ばれる。</p>
 
-<p>どこかしらで、紹介されたのだろうけど、アプストアーか？かなり影響力のある人？なのでしょうか、すごいです。▲&gt;999%とアップの限界値。</p>
+<ol>
+<li>viewDidLoad()</li>
+<li>viewWillAppear</li>
+<li>viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。</li>
+</ol>
 
-<p>ダウンロードの詳細は以下。USとCanadaが2Kダウンロードずつと飛び抜けてて、ブラジル、メキシコ、タイと続きます。眠れる巨人、中国ではダウンロードされていない様子。トルコがヨーロッパ圏で一番なのがちょっと意外。カザフスタンとか不思議でもある、行ってみるかな。。</p>
+<h2 id="モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9">モーダルビューより復帰</h2>
 
-<p><img src="/images/2015-03-15-sati-world.png" alt="Sati Download" />
-</p>
+<p>モーダルビューより戻ってくると以下の処理が再び呼ばれる。</p>
 
-<p><img src="/images/2015-03-15-sati-europe.png" alt="Sati Download" />
-</p>
+<ol>
+<li>viewWillAppear</li>
+<li>viewDidAppear</li>
+</ol>
 
-<p><img src="/images/2015-03-15-sati-southamerica.png" alt="Sati Download" />
-</p>
+<h2 id="ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9">ロック・スリープからの復帰時</h2>
 
-<p><img src="/images/2015-03-15-sati-asia.png" alt="Sati Download" />
-</p>
+<p>ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
+viewDidLoadに通知の設定する事で可能になる。<code>Setting.bundle</code>でフォントの設定等を変更し、アプリに戻ってきた時に使う。</p>
 
-<p><img src="/images/2015-03-15-sati-asia-east.png" alt="Sati Download" />
-</p>
+<pre><code>// Notification Center
+let app: UIApplication = UIApplication.sharedApplication()
+NSNotificationCenter.defaultCenter().addObserver(self, 
+		selector: &quot;applicationWillEnterForeground:&quot;, name: UIApplicationWillEnterForegroundNotification, 
+		object: app)
+</code></pre>
 
-<p>!! Thanks again, Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!</p>
+<p>と処理を追加する。</p>
 
-<p>thank you very much for downloading sati.<br />
-please be meditation part of your life, into a life. i hope meditation will help nourishing on compassion within us.</p>
+<pre><code>func applicationWillEnterForeground(notification: NSNotification) {
+    println(__FUNCTION__)
+    
+}
+</code></pre>
 
-<p>あとは、皆さん瞑想続けてくださいね。というか、英語のREAMEを書き換えなければ。。。ローカライズがボロボロなんですよね。。。</p>
+<h2 id="スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9">スリープに移行時</h2>
 
-<p>感謝。</p>
+<p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。（私はアプバッジの登録はAppDelegateで行ってます。）</p>
 
-<p>追記：</p>
-
-<p>3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。</p>
-
-<p>3/16：一日たち25.2Kダウンドード。南米、アフリカでは下降線で、ヨーロッパ、アメリカはまだのびる！</p>
-
-<p><img src="/images/2015-03-16-sati-world.png" alt="Sati Download" />
-</p>
+<pre><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &quot;applicationDidEnterBackground:&quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
+</code></pre>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/03\/thanx-dowload-sati\/';
-    var disqus_title = '！Thanks alot for downloading Sati！';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/03\/thanx-dowload-sati\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/03\/view-cycle\/';
+    var disqus_title = 'ビューサイクルとアプリ復帰時の処理';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/03\/view-cycle\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
