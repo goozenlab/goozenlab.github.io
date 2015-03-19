@@ -11,25 +11,6 @@
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>NotificationSettings認証設定</title>
-      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
-      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
-      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
-
-&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
-  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
-  categories: nil))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのですが。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
       <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
@@ -84,6 +65,108 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 
 &lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NSLocalizedString on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
+      <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
+      <description>&lt;p&gt;NSLocalizedStringでエラーがでる&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;nil&lt;/code&gt;を&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;空白に変更する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。&lt;/p&gt;
+
+&lt;p&gt;ついでに中に入れる文言をかえる。以前は普通に&lt;code&gt;&amp;quot;Timer&amp;quot;&lt;/code&gt;と書いていたところを今回からはドコゾの何某か分かるように&lt;code&gt;&amp;quot;NavigationBar.Button.Timer&amp;quot;&lt;/code&gt;と少し詳しく書き込むようにする。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>delegate on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
+      <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
+      <description>
+
+&lt;h2 id=&#34;デレゲートするクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートするクラス&lt;/h2&gt;
+
+&lt;p&gt;以下の３つを書き加えればよい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;protocol MainHeaderViewDelegate {
+    func sleepingTimerDidFinish(controller: MainHeaderView)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;var delegate:MainHeaderViewDelegate? = nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt; self.delegate!.sleepingTimerDidFinish(self)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;デレゲートで値を受け取るクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートで値を受け取るクラス&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;MainHeaderViewDelegate&lt;/code&gt; と、functionを追加、処理を書き込みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class MainViewController: UIViewController, MainHeaderViewDelegate {
+
+   //////
+
+   func sleepingTimerDidFinish(controller: MainHeaderView) {
+        // 処理
+    }
+
+   /////
+   
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UIButttonをSwiftで書く</title>
+      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
+      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
+      <description>&lt;p&gt;UIButttonをSwiftでプログラム的に書くと&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+buttonMoodExecelent.tag = TagButtonMood.Execelent
+buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside)
+buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal)
+
+self.vew.addSubview(buttonMoodExecelent)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テキストタイトルの時には&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テキストの色を変えるには、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もっと細かく、フォント等も弄りたい時には、&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
+
+&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>
     </item>
     

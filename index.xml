@@ -69,21 +69,104 @@ NSNotificationCenter.defaultCenter().addObserver(self,
     </item>
     
     <item>
-      <title>NotificationSettings認証設定</title>
-      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
-      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <title>NSLocalizedString on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
+      <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
-      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
+      <description>&lt;p&gt;NSLocalizedStringでエラーがでる&lt;/p&gt;
 
-&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
-  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
-  categories: nil))
+&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのですが。。）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nil&lt;/code&gt;を&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;空白に変更する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。&lt;/p&gt;
+
+&lt;p&gt;ついでに中に入れる文言をかえる。以前は普通に&lt;code&gt;&amp;quot;Timer&amp;quot;&lt;/code&gt;と書いていたところを今回からはドコゾの何某か分かるように&lt;code&gt;&amp;quot;NavigationBar.Button.Timer&amp;quot;&lt;/code&gt;と少し詳しく書き込むようにする。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>delegate on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
+      <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
+      <description>
+
+&lt;h2 id=&#34;デレゲートするクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートするクラス&lt;/h2&gt;
+
+&lt;p&gt;以下の３つを書き加えればよい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;protocol MainHeaderViewDelegate {
+    func sleepingTimerDidFinish(controller: MainHeaderView)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;var delegate:MainHeaderViewDelegate? = nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt; self.delegate!.sleepingTimerDidFinish(self)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;デレゲートで値を受け取るクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートで値を受け取るクラス&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;MainHeaderViewDelegate&lt;/code&gt; と、functionを追加、処理を書き込みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class MainViewController: UIViewController, MainHeaderViewDelegate {
+
+   //////
+
+   func sleepingTimerDidFinish(controller: MainHeaderView) {
+        // 処理
+    }
+
+   /////
+   
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UIButttonをSwiftで書く</title>
+      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
+      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
+      <description>&lt;p&gt;UIButttonをSwiftでプログラム的に書くと&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+buttonMoodExecelent.tag = TagButtonMood.Execelent
+buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside)
+buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal)
+
+self.vew.addSubview(buttonMoodExecelent)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テキストタイトルの時には&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テキストの色を変えるには、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もっと細かく、フォント等も弄りたい時には、&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
+
+&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>
     </item>
     
@@ -561,92 +644,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>新しいMacbook</title>
-      <link>http://goozenlab.com/blog/2015/03/new-macbook/</link>
-      <pubDate>Tue, 10 Mar 2015 05:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/new-macbook/</guid>
-      <description>
-
-&lt;p&gt;早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ちょっと、高いのでは、、&lt;/li&gt;
-&lt;li&gt;いや、高い。&lt;/li&gt;
-&lt;li&gt;単体では使えない&lt;/li&gt;
-&lt;li&gt;対応しているiPhoneを持っていない。&lt;strong&gt;（極め手）&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;そして、かーーーなーり期待していた「新しいMacbook」ですが、&lt;/p&gt;
-
-&lt;h2 id=&#34;良い点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;良い点は、&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;キーボードに手が加えられた&lt;/li&gt;
-&lt;li&gt;レティナでいながら電池は持つ&lt;/li&gt;
-&lt;li&gt;色のオプションがある&lt;/li&gt;
-&lt;li&gt;軽い&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;で-あまり好きになれない点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;で、あまり好きになれない点は、&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。）&lt;/li&gt;
-&lt;li&gt;プロセッサー（多分充分に速いのだろうけど。。）&lt;/li&gt;
-&lt;li&gt;ポート（シンプルさとポートを削るというのは意味合いが少し違うと思う。何も無くなるというのなら（非接触充電で）分かるけど。。）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。
-昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-pokhara-damside-bw.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ricoh GR用てるてる坊主カメララップ</title>
-      <link>http://goozenlab.com/blog/2015/03/wrapcase-gr/</link>
-      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/wrapcase-gr/</guid>
-      <description>&lt;p&gt;電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、
-デジカメも光学のビューファインダーが無いとどうもだめ。&lt;/p&gt;
-
-&lt;p&gt;GRのファインダーを持っているのだが、GRにファインダーを付けてしまうとケースに収まらない。素で持っていると、手で触ってしまったりと気がついたらべとべとでホコリだらけになる。折角のファインダーが曇ってたりすると、興ざめする。写真からえらく遠ざかってました。&lt;/p&gt;
-
-&lt;p&gt;しかしながら、ポカラは山が奇麗で街の至る所から山が見渡せるので、フラフラするのが割と楽しい。
-そのおかげで久しぶりにカメラを持ち出す機会が増えて、最初は液晶で撮ってたが、ちょっと思いついた。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr1.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;手持ちのヘアバンド（以前長髪でした）と手拭（郡上踊手拭）で、、、首（ファインダー）をバンドで絞め即席ながら完成。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr2.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr3.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;あまり引っかかりが無く、スッと撮れるので割といい感じ。戻すのがちょっと面倒いが、、&lt;/p&gt;
-
-&lt;p&gt;ただし、左手で手拭を持ったまま写真を撮るとごくたまに手拭が映り込んでしまう事がちょっと難点というか注意点。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr4.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;でも、思った以上に快適。ネックストラップが欲しくなってきた。&lt;/p&gt;
-
-&lt;p&gt;普通にそのままテーブルに置いておいても違和感が無いし、ホコリよけにもなると良い事ずくめ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-wrap-gr5.jpg&#34; alt=&#34;WrapCase for GR&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;（ちょっと、形を整えてこちらの布地で作ってもらうかな。。）&lt;/p&gt;
 </description>
     </item>
     

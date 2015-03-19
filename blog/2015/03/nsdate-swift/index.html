@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>printlnをSwiftで</title>
-  <meta name="description" content="printlnをSwiftで">
+  <title>NSDateをSwiftで</title>
+  <meta name="description" content="NSDateをSwiftで">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-03-25</time>
+		  <time class="">2015-03-22</time>
 		  
 		  
 		  |
@@ -78,41 +78,39 @@
 		  
 
 		</p>
-		<h5>printlnをSwiftで</h5>
+		<h5>NSDateをSwiftで</h5>
 	  </div>
 
 	  <div class="post">
-		<p>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 <code>__PRETTY_FUNCTION__</code> は</p>
+		<p>NSDateでの</p>
 
-<p>Swift では <code>__FILE__, __FUNCTION__, __LINE__ and __COLUMN__</code> のようになります。
-使えそうなのは</p>
-
-<ul>
-<li><code>__FILE__</code>  ：ファイル名</li>
-<li><code>__LINE__</code> ：ライン番号</li>
-<li><code>__FUNCTION__</code> ：ファンクション名</li>
-</ul>
-
-<p>そして、値を表示したい時はそのままかそのままか<code>\(...)</code>で囲み適当に放り込む。もはや%dや%@は必要ないらしい。</p>
-
-<pre><code>println(__FUNCTION__, self.frame)
-println(__FUNCTION__,&quot;screen is \(self.frame)&quot;)
+<pre><code>[NSDate date]
 </code></pre>
 
-<p>戻りは以下</p>
+<p>はシンプルにイニシャライザーに統合され、Swiftでは</p>
 
-<pre><code>(function, (0.0,706.0,414.0,30.0))
-(function, screen is (0.0,706.0,414.0,30.0))
+<pre><code>NSDate()
 </code></pre>
 
-<p>Swift Programming Language に書いてあるらしいので読むべ。</p>
+<p>でよろしいらしい。</p>
+
+<pre><code>[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
+</code></pre>
+
+<p>Swiftで書いてみると、</p>
+
+<pre><code>NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
+</code></pre>
+
+<p>エラーが出る。hoursGoodSleep は Float だし抜かりは無いような気がするが。。<br />
+正しくは、Doubleでエラーは消える。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/03\/println-swift\/';
-    var disqus_title = 'printlnをSwiftで';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/03\/println-swift\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/03\/nsdate-swift\/';
+    var disqus_title = 'NSDateをSwiftで';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/03\/nsdate-swift\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
