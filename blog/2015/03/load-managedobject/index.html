@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>ビューサイクルとアプリ復帰時の処理</title>
-  <meta name="description" content="ビューサイクルとアプリ復帰時の処理">
+  <title>クラスが読み込めず [解決]</title>
+  <meta name="description" content="クラスが読み込めず [解決]">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-03-21</time>
+		  <time class="">2015-03-20</time>
 		  
 		  
 		  |
@@ -78,66 +78,57 @@
 		  
 
 		</p>
-		<h5>ビューサイクルとアプリ復帰時の処理</h5>
+		<h5>クラスが読み込めず [解決]</h5>
 	  </div>
 
 	  <div class="post">
 		
 
-<p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
+<p>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、<a href="/blog/2015/03/unable-to-load-class/">クラスが読み込めず</a>で書いた問題が解決しました。</p>
 
-<h2 id="起動時:205901421f8bb17c75d7ebf5b8a21af9">起動時</h2>
+<p>問題のエラーログ</p>
 
-<p>アプリの起動時には以下の順で呼ばれる。</p>
+<pre><code>CoreData: warning: 
+Unable to load class named 'Item' for entity 'Item'.  
+Class not found, using default NSManagedObject instead.
+</code></pre>
+
+<p>もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。</p>
+
+<p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1" />
+</p>
 
 <ol>
-<li>viewDidLoad()</li>
-<li>viewWillAppear</li>
-<li>viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。</li>
+<li>xcdatamodeldファイルを選択</li>
+<li>CONFIGURATIONSを選択</li>
+<li>右に出てくるEntitiies以下のClass名を<code>ディレクトリー名.Entity名</code>にする</li>
 </ol>
 
-<h2 id="モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9">モーダルビューより復帰</h2>
+<p><img src="/images/2015-03-20-class-unload2.png" alt="Class unload2" />
+</p>
 
-<p>モーダルビューより戻ってくると以下の処理が再び呼ばれる。</p>
+<p>※ 注意点は上記の場合<code>kitchen.Item</code>では無く<code>tapas.Item</code>と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。<br />
+（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ<code>kitchen.xcdatamodeld</code>という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）</p>
+
+<h2 id="うまく行かない場合:dada94b1ca17e9c7da1ee195804dcefb">うまく行かない場合</h2>
 
 <ol>
-<li>viewWillAppear</li>
-<li>viewDidAppear</li>
+<li>キャッシュをクリアーする</li>
+<li>DerivedDataのデーターを消す</li>
+<li>新しいプロジェクトを作って、Modelを移行して試す</li>
 </ol>
 
-<h2 id="ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9">ロック・スリープからの復帰時</h2>
+<p>※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。</p>
 
-<p>ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
-viewDidLoadに通知の設定する事で可能になる。<code>Setting.bundle</code>でフォントの設定等を変更し、アプリに戻ってきた時に使う。</p>
-
-<pre><code>// Notification Center
-let app: UIApplication = UIApplication.sharedApplication()
-NSNotificationCenter.defaultCenter().addObserver(self, 
-        selector: &quot;applicationWillEnterForeground:&quot;, name: UIApplicationWillEnterForegroundNotification, 
-        object: app)
-</code></pre>
-
-<p>と処理を追加する。</p>
-
-<pre><code>func applicationWillEnterForeground(notification: NSNotification) {
-    println(__FUNCTION__)
-    
-}
-</code></pre>
-
-<h2 id="スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9">スリープに移行時</h2>
-
-<p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。</p>
-
-<pre><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &quot;applicationDidEnterBackground:&quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
-</code></pre>
+<p>蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
+小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/03\/view-cycle\/';
-    var disqus_title = 'ビューサイクルとアプリ復帰時の処理';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/03\/view-cycle\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/03\/load-managedobject\/';
+    var disqus_title = 'クラスが読み込めず [解決]';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/03\/load-managedobject\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 21 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2015 12:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
       <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
-      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
       <description>
@@ -47,8 +47,8 @@ viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.b
 &lt;pre&gt;&lt;code&gt;// Notification Center
 let app: UIApplication = UIApplication.sharedApplication()
 NSNotificationCenter.defaultCenter().addObserver(self, 
-		selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
-		object: app)
+        selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
+        object: app)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;と処理を追加する。&lt;/p&gt;
@@ -61,10 +61,59 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 
 &lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
 
-&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。（私はアプバッジの登録はAppDelegateで行ってます。）&lt;/p&gt;
+&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>クラスが読み込めず [解決]</title>
+      <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
+      <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
+      <description>
+
+&lt;p&gt;もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、&lt;a href=&#34;http://goozenlab.com/blog/2015/03/unable-to-load-class/&#34;&gt;クラスが読み込めず&lt;/a&gt;で書いた問題が解決しました。&lt;/p&gt;
+
+&lt;p&gt;問題のエラーログ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CoreData: warning: 
+Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Class not found, using default NSManagedObject instead.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
+&lt;li&gt;CONFIGURATIONSを選択&lt;/li&gt;
+&lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
+（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
+
+&lt;h2 id=&#34;うまく行かない場合:dada94b1ca17e9c7da1ee195804dcefb&#34;&gt;うまく行かない場合&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
+&lt;li&gt;DerivedDataのデーターを消す&lt;/li&gt;
+&lt;li&gt;新しいプロジェクトを作って、Modelを移行して試す&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。&lt;/p&gt;
+
+&lt;p&gt;蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
+小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。&lt;/p&gt;
 </description>
     </item>
     
@@ -296,6 +345,8 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
 解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
+
+&lt;p&gt;追記 @ 3/20：解決しました。詳細は&lt;a href=&#34;http://goozenlab.com/blog/2015/03/load-managedobject/&#34;&gt;こちら&lt;/a&gt;より。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
 &lt;/p&gt;

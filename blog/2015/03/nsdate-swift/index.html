@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>NSDateをSwiftで</title>
-  <meta name="description" content="NSDateをSwiftで">
+  <title>NSDate()は[NSDate date]</title>
+  <meta name="description" content="NSDate()は[NSDate date]">
   <meta name="author" content="jin">
 
   
@@ -78,7 +78,7 @@
 		  
 
 		</p>
-		<h5>NSDateをSwiftで</h5>
+		<h5>NSDate()は[NSDate date]</h5>
 	  </div>
 
 	  <div class="post">
@@ -87,29 +87,29 @@
 <pre><code>[NSDate date]
 </code></pre>
 
-<p>はシンプルにイニシャライザーに統合され、Swiftでは</p>
+<p>はシンプルにイニシャライザーに統合され？、Swiftでは</p>
 
 <pre><code>NSDate()
 </code></pre>
 
-<p>でよろしいらしい。</p>
+<p>でよろしい。</p>
 
 <pre><code>[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
 </code></pre>
 
-<p>Swiftで書いてみると、</p>
+<p>を、Swiftで書いてみると、</p>
 
 <pre><code>NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
 </code></pre>
 
-<p>エラーが出る。hoursGoodSleep は Float だし抜かりは無いような気がするが。。<br />
+<p>エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、<br />
 正しくは、Doubleでエラーは消える。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
     var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/03\/nsdate-swift\/';
-    var disqus_title = 'NSDateをSwiftで';
+    var disqus_title = 'NSDate()は[NSDate date]';
     var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/03\/nsdate-swift\/';
 
     (function() {

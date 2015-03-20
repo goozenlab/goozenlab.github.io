@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>littlistでのバグ</title>
-  <meta name="description" content="littlistでのバグ">
+  <title>littlist v2.6.6</title>
+  <meta name="description" content="littlist v2.6.6">
   <meta name="author" content="jin">
 
   
@@ -47,6 +47,7 @@
 		  <li class="u-pull-left"> <a href="http://localhost:1313/" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
 		  <li class="u-pull-right cate"> <a href="http://localhost:1313//about/" class=""> About </a></li>
 		  <li class="u-pull-right cate"> <a href="http://localhost:1313//categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://localhost:1313//categories/mac" class=""> mac </a></li>
 		  <li class="u-pull-right cate"> <a href="http://localhost:1313//categories/update" class=""> update </a></li>
 		  <li class="u-pull-right cate"> <a href="http://localhost:1313//categories/web" class=""> web </a></li>
 		  <li class="u-pull-right cate"> <a href="http://localhost:1313//categories/develop" class=""> dev </a></li>
@@ -63,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-03-13</time>
+		  <time class="">2015-03-30</time>
 		  
 		  
 		  |
@@ -71,30 +72,31 @@
 		  
 
 		  
-		  categories:<a href="http://localhost:1313//categories/littlist">littlist</a> <a href="http://localhost:1313//categories/update">update</a> 
+		  categories:<a href="http://localhost:1313//categories/littlist">littlist</a> 
 		  
 
 		  
 
 		</p>
-		<h5>littlistでのバグ</h5>
+		<h5>littlist v2.6.6</h5>
 	  </div>
 
 	  <div class="post">
-		<p>iOSを8.2にアップデートして自分の検証端末を色々と弄っていると、
-littlistにて &ldquo;RedHot List&rdquo; と &ldquo;期日付き&rdquo; の表示で落ちます。</p>
+		<p>データーベースの更新により起きた、幾つかのバグを修正しました。
+どちらもあまり気分の良くない、ケアレスミスなバグです。</p>
 
-<p>OSアプデートのせいかなと、ちょっとソースを見てみると、、またもやケアレスミス。。<br />
-というか、思い込みがあるのか、、DB移行のため同じような作業を数度行ったせいなのか、、</p>
+<ol>
+<li>&ldquo;RedHot List&rdquo; と &ldquo;期日付き&rdquo; の表示で落ちるバグ</li>
+<li>編集画面で、期日をオフにしてもオフにならないバグ</li>
+</ol>
 
-<p>アプストアからは登録を外し、ちょっと他にも漏れが無いか調べて新しいバージョンを申請します。<br />
-アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、</p>
+<p>申請が通り、アプストアに復帰しました。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
     var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/03\/littlist-266\/';
-    var disqus_title = 'littlistでのバグ';
+    var disqus_title = 'littlist v2.6.6';
     var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/03\/littlist-266\/';
 
     (function() {
@@ -115,10 +117,11 @@ littlistにて &ldquo;RedHot List&rdquo; と &ldquo;期日付き&rdquo; の表�
 <div class="footer">
   <div class="container">
 	<div class="row">
-	  <div class="two columns offset-by-ten">
+	  <div class="ten columns offset-by-one">
 		<p class="footnote">
+		   Using <a href="http://gohugo.io/">Hugo</a> with nofancy theme. Hosted on githubPage.
 		  
-		  by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
+		  All right reserved by <a href="mailto:goozenlab@gmail.com">jin.pokhara.nepal</a>.
 		  
 		  
 		</p>
