@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 21 Mar 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2015 08:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>performSelectorは無くなる</title>
+      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
+      <pubDate>Mon, 23 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
+      <description>&lt;p&gt;拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[self performSelector:@selector(notifiyUpdate) 
+  withObject:nil
+  afterDelay:kUpdateCellInterval];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、
+幾つかの方法があるようですが、タイマーを使った方法が簡易でよい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSTimer.scheduledTimerWithTimeInterval(UpdateCellInterval,
+  target: self, 
+  selector:  Selector(&amp;quot;notifiyUpdate:&amp;quot;), 
+  userInfo: nil, 
+  repeats: false)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
@@ -626,53 +651,6 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist v2.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
-      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
-      <description>&lt;p&gt;ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加
-
-&lt;ul&gt;
-&lt;li&gt;バックアップを兼ねた、エクスポート&lt;/li&gt;
-&lt;li&gt;リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;変更&lt;/strong&gt;：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、&lt;strong&gt;シェイク&lt;/strong&gt;で行います。&lt;/li&gt;
-&lt;li&gt;DBの構造を整理&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。&lt;/p&gt;
-
-&lt;p&gt;間にリマンダーを挟みますが、簡易な方法として悪くないと思います。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;取込み&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;littlist にて＋のボタンより取り込む&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;書出し&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ホーム＞設定＞littlist より、書出しのスウィッチを&lt;strong&gt;オン&lt;/strong&gt;にします。&lt;/li&gt;
-&lt;li&gt;次回 littlist 起動時に確認アラートが上がり実行します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;※ リストのデフォルトは ”&lt;strong&gt;littlist&lt;/strong&gt;&amp;rdquo; になっています。ホーム＞設定＞littlistより変更できます。&lt;/p&gt;
-
-&lt;p&gt;※ 簡単な重複のチェックをしてます。取り込んで、右側のバーの色を変更しなければ、重複チェックの項目として扱われます。（再度取り込んでも重複と見なされて取り込みされません）&lt;/p&gt;
-
-&lt;p&gt;バックアップはついでというか、、折角なので、、、控えめに追加しました。本当はDBの移行がうまく行かなかったのでバージョンアップ時での利用を考え追加したのだが、問題は解決したので、将来的に消すか残すかちょっと考えてます。&lt;/p&gt;
-
-&lt;p&gt;このアプリも最近アップデートしているアプリと同様にiOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
 </description>
     </item>
     

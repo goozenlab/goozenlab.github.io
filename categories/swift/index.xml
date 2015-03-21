@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 21 Mar 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2015 08:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>performSelectorは無くなる</title>
+      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
+      <pubDate>Mon, 23 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
+      <description>&lt;p&gt;拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[self performSelector:@selector(notifiyUpdate) 
+  withObject:nil
+  afterDelay:kUpdateCellInterval];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、
+幾つかの方法があるようですが、タイマーを使った方法が簡易でよい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSTimer.scheduledTimerWithTimeInterval(UpdateCellInterval,
+  target: self, 
+  selector:  Selector(&amp;quot;notifiyUpdate:&amp;quot;), 
+  userInfo: nil, 
+  repeats: false)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>

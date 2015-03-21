@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 21 Mar 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2015 08:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>performSelectorは無くなる</title>
+      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
+      <pubDate>Mon, 23 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
+      <description>&lt;p&gt;拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[self performSelector:@selector(notifiyUpdate) 
+  withObject:nil
+  afterDelay:kUpdateCellInterval];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、
+幾つかの方法があるようですが、タイマーを使った方法が簡易でよい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSTimer.scheduledTimerWithTimeInterval(UpdateCellInterval,
+  target: self, 
+  selector:  Selector(&amp;quot;notifiyUpdate:&amp;quot;), 
+  userInfo: nil, 
+  repeats: false)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
@@ -216,34 +241,6 @@ self.vew.addSubview(buttonMoodExecelent)
 &lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
 
 &lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Xcode 6.1とiOS8.2</title>
-      <link>http://goozenlab.com/blog/2015/03/xcode611-ios82/</link>
-      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
-      <description>&lt;p&gt;検証機を何の迷いも無くiOS8.2にアップデートする。&lt;/p&gt;
-
-&lt;p&gt;で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。
-このXCodeではサポートしないとの親切なエラーメッセージがでる。新しいバージョンのXCodeをインストールするにも、今いるネパールのネット環境ではXcode:2.58GBを落とすのにかなり時間がかかりそう。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-14-ios82.png&#34; alt=&#34;Xcode 6.1 with ios8.2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;まぁ仕方ない。。タイもしくはインドに行くまで、シミュレータでしのぐしか無いな。。&lt;/p&gt;
-
-&lt;p&gt;と思ったが、取りあえず試す。（随時アップデート）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-03-15 17:30　ルーターとの接続が10分おきに切れる。で、諦める。&lt;/li&gt;
-&lt;li&gt;2015-03-15 13:00　再開するも、ダウンロードにはXCodeを落とせと、、で最初からやり直しになる。。&lt;/li&gt;
-&lt;li&gt;2015-03-15 06:00　停電中&lt;/li&gt;
-&lt;li&gt;2015-03-14 22:45　ルーターの電源を切られる。&lt;/li&gt;
-&lt;li&gt;2015-03-14 22:16　59MB 残り７時間くらいと表示&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
