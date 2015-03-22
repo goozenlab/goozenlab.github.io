@@ -7,44 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 25 Mar 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>コトリンの事始め</title>
-      <link>http://goozenlab.com/blog/2015/03/kotlin-project-setup/</link>
-      <pubDate>Wed, 25 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/kotlin-project-setup/</guid>
-      <description>
-
-&lt;p&gt;Kotlin+IntelliJ でandroidの開発を、初めの一歩の新規プロジェジェク作成から始める。&lt;/p&gt;
-
-&lt;h2 id=&#34;新規プロジェクト:d08d479540bef18fd217cb53979c348e&#34;&gt;新規プロジェクト&lt;/h2&gt;
-
-&lt;p&gt;新規プロジェクト作成は、コトリンサイトの
-&lt;a href=&#34;http://kotlinlang.org/docs/tutorials/kotlin-android.html&#34;&gt;こちら&lt;/a&gt;
-に一連の流れが奇麗にまとまっている。下記メモは自分がやってみてつまずいた所等が書いてあります。&lt;/p&gt;
-
-&lt;p&gt;自分の為のメモ&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;New Project | Android | Gradle: Android Module to create a new project.&lt;/li&gt;
-&lt;li&gt;Converting Java code to Kotlin: Memu - Code - Convert Java File to Kotlin File  ( &amp;lt;⌥⇧⌘ J&amp;gt; on Mac OS)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;途中に何かしらをダウンロードする。（ネパールだと時間がかかる、、、55MBのファイルのダウンロードになぜこんなに苦労しなければいかないのか、、）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;file:///Users/jin/Desktop/2015-03-22-kotlin-makeing-project.png&#34; alt=&#34;ダウンロード&#34; /&gt;
-新規プロジェクト作成は、コトリンサイトの&lt;a href=&#34;http://kotlinlang.org/docs/tutorials/kotlin-android.html&#34;&gt;こちら&lt;/a&gt;に奇麗にまとまっている。&lt;/p&gt;
-
-&lt;p&gt;途中でキャンセル。&lt;/p&gt;
-
-&lt;p&gt;Error:Distribution download cancelled. Using distribution from &amp;lsquo;&lt;a href=&#34;https://services.gradle.org/distributions/gradle-2.2.1-all.zip&#39;&#34;&gt;https://services.gradle.org/distributions/gradle-2.2.1-all.zip&#39;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;拙作のSati（瞑想タイマー）を移行しようと思っているので、取りあえず次は簡単なタイマーを作ろうと思ってます。&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
