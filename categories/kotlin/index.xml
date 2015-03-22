@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on goozenlab</title>
-    <link>http://goozenlab.com/categories/android/</link>
-    <description>Recent content in Android on goozenlab</description>
+    <title>Kotlin on goozenlab</title>
+    <link>http://goozenlab.com/categories/kotlin/</link>
+    <description>Recent content in Kotlin on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Wed, 25 Mar 2015 12:30:00 +0545</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://goozenlab.com/categories/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>コトリンの事始め</title>
@@ -104,29 +104,6 @@
 &lt;p&gt;おまけに、ダウンロードした &lt;code&gt;Go.164.zip&lt;/code&gt; を plugins から読み込みます。&lt;/p&gt;
 
 &lt;p&gt;これで、一端な2015年Android開発環境が整いました。さぁーー、何から始めよう。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Android studioをダウンロード</title>
-      <link>http://goozenlab.com/blog/2014/12/androidstudio-install/</link>
-      <pubDate>Tue, 09 Dec 2014 20:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/12/androidstudio-install/</guid>
-      <description>&lt;p&gt;Android studioをダウンロードする。そして、最初につまずいたところ。&lt;/p&gt;
-
-&lt;p&gt;JAVAがインストールされていないと起動できず。&lt;br /&gt;
-オラクルより最新のJDK8をダウンロードしインストール。&lt;/p&gt;
-
-&lt;p&gt;しかし、相変わらず起動しない。&lt;/p&gt;
-
-&lt;p&gt;ばばっ、とグーグルを一回りする。&lt;br /&gt;
-ターミナルで設定の書き出しなどはしたくなかったので、Android studio.app中の&lt;code&gt;Info.plist&lt;/code&gt;を修正。
-JVM設定の部分の&lt;code&gt;1.6*&lt;/code&gt;をインストールしたJDKの&lt;code&gt;1.8*&lt;/code&gt;に変更する。
-で、起動する。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-09-androidstudio-jdk-setting.png&#34; alt=&#34;JVM Setting for Android studio&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     

@@ -7,8 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 23 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2015 12:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>コトリンの事始め</title>
+      <link>http://goozenlab.com/blog/2015/03/kotlin-project-setup/</link>
+      <pubDate>Wed, 25 Mar 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/kotlin-project-setup/</guid>
+      <description>
+
+&lt;p&gt;Kotlin+IntelliJ でandroidの開発を、初めの一歩の新規プロジェジェク作成から始める。&lt;/p&gt;
+
+&lt;h2 id=&#34;新規プロジェクト:d08d479540bef18fd217cb53979c348e&#34;&gt;新規プロジェクト&lt;/h2&gt;
+
+&lt;p&gt;新規プロジェクト作成は、コトリンサイトの
+&lt;a href=&#34;http://kotlinlang.org/docs/tutorials/kotlin-android.html&#34;&gt;こちら&lt;/a&gt;
+に一連の流れが奇麗にまとまっている。下記メモは自分がやってみてつまずいた所等が書いてあります。&lt;/p&gt;
+
+&lt;p&gt;自分の為のメモ&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;New Project | Android | Gradle: Android Module to create a new project.&lt;/li&gt;
+&lt;li&gt;Converting Java code to Kotlin: Memu - Code - Convert Java File to Kotlin File  ( &amp;lt;⌥⇧⌘ J&amp;gt; on Mac OS)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;途中に何かしらをダウンロードする。（ネパールだと時間がかかる、、、55MBのファイルのダウンロードになぜこんなに苦労しなければいかないのか、、）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;file:///Users/jin/Desktop/2015-03-22-kotlin-makeing-project.png&#34; alt=&#34;ダウンロード&#34; /&gt;
+新規プロジェクト作成は、コトリンサイトの&lt;a href=&#34;http://kotlinlang.org/docs/tutorials/kotlin-android.html&#34;&gt;こちら&lt;/a&gt;に奇麗にまとまっている。&lt;/p&gt;
+
+&lt;p&gt;途中でキャンセル。&lt;/p&gt;
+
+&lt;p&gt;Error:Distribution download cancelled. Using distribution from &amp;lsquo;&lt;a href=&#34;https://services.gradle.org/distributions/gradle-2.2.1-all.zip&#39;&#34;&gt;https://services.gradle.org/distributions/gradle-2.2.1-all.zip&#39;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;拙作のSati（瞑想タイマー）を移行しようと思っているので、取りあえず次は簡単なタイマーを作ろうと思ってます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>performSelectorは無くなる</title>
@@ -32,6 +68,23 @@
   userInfo: nil, 
   repeats: false)
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Xcode 6.2</title>
+      <link>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</link>
+      <pubDate>Sun, 22 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</guid>
+      <description>&lt;p&gt;ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。&lt;/p&gt;
+
+&lt;p&gt;宿のネットがスピードは相変わらずだが、割と安定しているようなのでXcodeのダウンロードを再びチャレンジする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-22-xcode62-downloaded.png&#34; alt=&#34;XCode 6.2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;二日掛かりました。これで、iOS8.2にアップデートしてしまった実機にアプリをインストールできる。。&lt;/p&gt;
 </description>
     </item>
     
@@ -480,176 +533,6 @@ littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp
 &lt;p&gt;アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-itunesconnect.png&#34; alt=&#34;itunesconnetct&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HugoとSimplenoteでgitHub-page</title>
-      <link>http://goozenlab.com/blog/2015/03/hugo-simplenote/</link>
-      <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
-      <description>
-
-&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。&lt;/p&gt;
-
-&lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
-
-&lt;p&gt;まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。&lt;/p&gt;
-
-&lt;p&gt;（鍵の登録を行っておくとよいです）&lt;/p&gt;
-
-&lt;h2 id=&#34;github-と-bitbucket-の登録:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rm -rf public/
-$ git init
-$ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-$ git add -A
-$ git commit -m &amp;quot;initial commit&amp;quot;
-$ git push origin master
-Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;:
-Counting objects: 166, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (163/163), done.
-Writing objects: 100% (166/166), 322.06 KiB | 0 bytes/s, done.
-Total 166 (delta 3), reused 0 (delta 0)
-To https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
- * [new branch]      master -&amp;gt; master
-$ git submodule add https://github.com/YOUR_ACCOUNT/goozenlab.github.io.git public
-Cloning into &#39;public&#39;...
-remote: Counting objects: 9437, done.
-remote: Compressing objects: 100% (419/419), done.
-remote: Total 9437 (delta 271), reused 0 (delta 0), pack-reused 8762
-Receiving objects: 100% (9437/9437), 47.41 MiB | 30.00 KiB/s, done.
-Resolving deltas: 100% (4319/4319), done.
-Checking connectivity... done.
-$ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;プレビュー方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;プレビュー方法&lt;/h2&gt;
-
-&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内のNote &amp;amp; Setting ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-11-hugo-alt.png&#34; alt=&#34;nvALT:Simplenote&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;nvALT:SimpleNoteの保存先フォルダーをサイトの外部にし、preview時にrsyncで一方通行の同期を行います。&lt;/p&gt;
-
-&lt;p&gt;※ nvALT、あまり知名度が無いように思えるけれどお勧めです。（ctlキーの長押しでプレビューが表示[離すと消える]されたり（数日前に発見！）する。）&lt;/p&gt;
-
-&lt;p&gt;これも簡単なスクリプトで行います。&lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; のテーマ部分は自身の設定に合わせてください。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hugo_preview.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32m---- rsync ----\033[0m&amp;quot;
-
-rsync -avz --delete --exclude &#39;Notes &amp;amp; Settings&#39; --exclude &#39;Untitled*&#39; --exclude &#39;.*&#39; /&amp;quot;保存先のフォルダ&amp;quot;/ /&amp;quot;HugoSites&amp;quot;/content/post
-
-echo -e &amp;quot;\033[0;32mhugo preview...\033[0m&amp;quot;
-
-hugo server --buildDrafts --theme=default
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;デプロイの方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;デプロイの方法&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;deploy.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
-
-# Build the project. 
-# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`
-hugo
-
-# Go To Public folder
-cd public
-
-# Copy CNAME 
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg=&amp;quot;rebuilding site `date`&amp;quot;
-if [ $# -eq 1 ]
-  then msg=&amp;quot;$1&amp;quot;
-fi
-git commit -m &amp;quot;$msg&amp;quot;
-
-# Push source and build repos.
-git push origin master
-
-# Come Back
-cd ..
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;その他のファイルの更新は、タイミングを計って手動でdeployしています。自動でbitbukket にも更新を入れたい時は&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;echo -e &amp;quot;\033[0;32mDeploying updates to Bitbukket...\033[0m&amp;quot;
-
-git add -A
-git commit -m &amp;quot;$msg&amp;quot;
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;をdeploy.sh に追加すれば良いのかな。&lt;/p&gt;
-
-&lt;p&gt;実行のフラグを付けておしまい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ chmod +x deploy.sh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>クラスが読み込めず</title>
-      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
-      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>&lt;p&gt;TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。&lt;/p&gt;
-
-&lt;p&gt;さて、さて、まずは、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
-Class not found, using default NSManagedObject instead.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;というエラーがでる。ファイルはあるのだが、、&lt;/p&gt;
-
-&lt;p&gt;これは、動く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、動かなーーーーい。。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.name
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
-解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
-
-&lt;p&gt;追記 @ 3/20：解決しました。詳細は&lt;a href=&#34;http://goozenlab.com/blog/2015/03/load-managedobject/&#34;&gt;こちら&lt;/a&gt;より。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

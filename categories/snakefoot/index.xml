@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 15 Mar 2015 23:50:00 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2015 17:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Xcode 6.2</title>
+      <link>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</link>
+      <pubDate>Sun, 22 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</guid>
+      <description>&lt;p&gt;ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。&lt;/p&gt;
+
+&lt;p&gt;宿のネットがスピードは相変わらずだが、割と安定しているようなのでXcodeのダウンロードを再びチャレンジする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-22-xcode62-downloaded.png&#34; alt=&#34;XCode 6.2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;二日掛かりました。これで、iOS8.2にアップデートしてしまった実機にアプリをインストールできる。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>！Thanks alot for downloading Sati！</title>
