@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 13 Mar 2015 20:00:47 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2015 10:00:47 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/littlist/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist v2.6.6</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <description>&lt;p&gt;データーベースの更新により起きた、幾つかのバグを修正しました。
+どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ&lt;/li&gt;
+&lt;li&gt;編集画面で、期日をオフにしてもオフにならないバグ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;申請が通り、アプストアに復帰しました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlistでのバグ</title>
@@ -423,20 +441,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 &lt;p&gt;そして、サポートページもちょっと手を加えてます。
 久しぶりにコメントを見たら、落ちまくっているとのレビューがありました。プレロードDBが良くないのだろうか。。そんなに複雑な事は内部ではしていないの、落ちまくるほどではないと、、でちょっと気になります。
 もし頻繁に落ちる方がいらっしゃったら、iOSのバージョン、その時の状況、を教えていただけると非常にありがたいです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
-      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>&lt;p&gt;機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
-4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。&lt;/p&gt;
-
-&lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
-クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
 </description>
     </item>
     

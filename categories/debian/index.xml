@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on goozenlab</title>
+    <link>http://localhost:1313/categories/debian/</link>
+    <description>Recent content in Debian on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Thu, 20 Aug 2015 19:41:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Boot Debian with EFI</title>
+      <link>http://localhost:1313/blog/2015/08/efi-boot-debian/</link>
+      <pubDate>Thu, 20 Aug 2015 19:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://localhost:1313/blog/2015/08/efi-boot-debian/</guid>
+      <description>&lt;p&gt;ヨセミテは改悪なOSだと思っている。自由を求めてデビアンをMBP15-2011にインストールする。アップルも段々信用が置けなくなってきている。。&lt;/p&gt;
+
+&lt;p&gt;Within the system&amp;rsquo;s chroot and after having mounted /boot, install the &lt;code&gt;grub-efi-amd64-bin&lt;/code&gt; package and do the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mount Apple&amp;rsquo;s EFI partition in /boot/efi: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir /boot/efi
+mount /dev/sda1 /boot/efi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create the relevant dir&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir /boot/efi/EFI/BOOT
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;compile the grub EFI binary: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /usr/lib/grub/x86_64-efi/
+grub-mkimage -O x86_64-efi -d . -o /boot/efi/EFI/BOOT/BOOTX64.EFI \
+ -p &amp;quot;&amp;quot; part_gpt part_msdos ntfs ntfscomp hfsplus fat ext2 normal \
+      chain boot configfile linux multiboot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;copy the relevant files to the EFI partition: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; cp *.mod *.lst /boot/efi/EFI/BOOT/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+You now have a grub EFI binary (named &lt;code&gt;BOOTX64.EFI&lt;/code&gt; so the Apple EFI bootloader can see it - upon reboot press left alt to show the bootmenu) and its modules, and you only lack a &lt;code&gt;/boot/efi/EFI/BOOT/grub.cfg&lt;/code&gt; configuration file containing the following (to be adapted to your setup):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;menuentry &#39;Debian GNU/Linux, with Linux 3.1.1&#39; {
+    insmod gzio
+    insmod part_gpt
+    insmod ext2
+    set gfxpayload=keep
+    # Switch gmux to IGD
+    outb 0x728 1
+    outb 0x710 2
+    outb 0x740 2
+    # Power down ATI
+    outb 0x750 0
+    set root=&#39;(hd0,gpt5)&#39;
+    echo    &#39;Loading Linux 3.1.1...&#39;
+    linux   /vmlinuz-3.1.1+i915+lvds+bl root=/dev/mapper/system-root ro \
+        i915.lvds_channels=2 i915.modeset=1 i915.lvds_use_ssc=0 i915.i915_enable_rc6=1 \
+        acpi_backlight=vendor elevator=noop
+    echo    &#39;Loading initial ramdisk ...&#39;
+    initrd  /initrd.img-3.1.1+i915+lvds+bl
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: the important lines are the outb lines which switch the Intel card on and the ATI card off, as well as the options on the linux line:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;i915.lvds_channels=2 i915.modeset=1 i915.lvds_use_ssc=0&lt;/code&gt; are needed to get the intel graphics functionning correctly;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i915.i915_enable_rc6=1&lt;/code&gt; may not be needed anymore soon but related to a power consumption bug introduced in 3.x kernels, see &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/818830&#34;&gt;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/818830&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;acpi_backlight=vendor&lt;/code&gt; seems to make backlight adjustment work better (to be confirmed);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;elevator=noop&lt;/code&gt; is only intesting when running off a SSD rather than a HDD;
+Configuring&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

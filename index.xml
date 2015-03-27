@@ -7,31 +7,124 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 23 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2015 11:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ShakeはUIEventで</title>
+      <link>http://goozenlab.com/blog/2015/03/swift-shake/</link>
+      <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/swift-shake/</guid>
+      <description>&lt;p&gt;色々と書き込んでいたシェイクの判別は&lt;code&gt;UIEvent&lt;/code&gt;を使うようになります。
+えらく簡単になりました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.becomeFirstResponder()
+    }
+    
+    override func canBecomeFirstResponder() -&amp;gt; Bool {
+        return true
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
+        if(event.subtype == UIEventSubtype.MotionShake) {
+            // 
+            // 処理
+            //
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;※まぁ、間違っちゃーいね〜な。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.6</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <description>&lt;p&gt;データーベースの更新により起きた、幾つかのバグを修正しました。
+どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ&lt;/li&gt;
+&lt;li&gt;編集画面で、期日をオフにしてもオフにならないバグ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;申請が通り、アプストアに復帰しました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>performSelectorは無くなる</title>
       <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
-      <pubDate>Mon, 23 Mar 2015 08:30:00 +0545</pubDate>
+      <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
-      <description>&lt;p&gt;拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
+      <description>&lt;p&gt;ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[self performSelector:@selector(notifiyUpdate) 
-  withObject:nil
-  afterDelay:kUpdateCellInterval];
+&lt;pre&gt;&lt;code&gt;[NSObject cancelPreviousPerformRequestsWithTarget:self
+                                         selector:@selector(notifiyUpdate)
+                                           object:nil];
+[self performSelector:@selector(notifiyUpdate)
+           withObject:nil
+           afterDelay:kUpdateCellShortInterval];
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、
-幾つかの方法があるようですが、タイマーを使った方法が簡易でよい。&lt;/p&gt;
+&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、以下のコードでは動かない。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;NSTimer.scheduledTimerWithTimeInterval(UpdateCellInterval,
-  target: self, 
-  selector:  Selector(&amp;quot;notifiyUpdate:&amp;quot;), 
-  userInfo: nil, 
-  repeats: false)
+&lt;pre&gt;&lt;code&gt; NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil)
+ NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、&lt;code&gt;cancelPreviousPerformRequestsWithTarget&lt;/code&gt;が無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private var tapTimer: NSTimer?
+
+// 処理
+cancelTimer()
+tapTimer = NSTimer.scheduledTimerWithTimeInterval(Interval.UpdateCell, target: self, selector:  notify, userInfo: nil, repeats: false)
+//
+
+func cancelTimer() {
+    if tappingTimer != nil {
+        tappingTimer!.invalidate()
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NSDate() = [NSDate date]</title>
+      <link>http://goozenlab.com/blog/2015/03/nsdate-swift/</link>
+      <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
+      <description>&lt;p&gt;NSDateでの &lt;code&gt;[NSDate date]&lt;/code&gt; はシンプルにイニシャライザーに統合され？、Swiftでは&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSDate()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でよろしい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を、Swiftで書いてみると、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、&lt;br /&gt;
+正しくは、&lt;code&gt;Double&lt;/code&gt;でエラーは消える。こうゆう所は割と厳しいのね。。&lt;/p&gt;
 </description>
     </item>
     
@@ -49,6 +142,8 @@
 &lt;/p&gt;
 
 &lt;p&gt;二日掛かりました。これで、iOS8.2にアップデートしてしまった実機にアプリをインストールできる。。&lt;/p&gt;
+
+&lt;p&gt;追記：１ヶ月ぶりに戻ってきて、いつも朝にお世話になっているサモサ屋のサモサが一回り半くらい近く小さくなっている。。衝撃。。でも、まぁ10ルピーですし、、&lt;/p&gt;
 </description>
     </item>
     
@@ -434,195 +529,6 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;p&gt;おまけに、ダウンロードした &lt;code&gt;Go.164.zip&lt;/code&gt; を plugins から読み込みます。&lt;/p&gt;
 
 &lt;p&gt;これで、一端な2015年Android開発環境が整いました。さぁーー、何から始めよう。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SwiftでConstantを扱う</title>
-      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
-      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
-      <description>&lt;p&gt;Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。
-ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。&lt;/p&gt;
-
-&lt;p&gt;分からないことが多々あるが、進めていかないと、、&lt;/p&gt;
-
-&lt;p&gt;さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  LocalConstants.swift
-//
-
-import Foundation
-
-    let ONE_DAY = 86400
-
-struct UDKey {
-    static let DisplayColorMode = &amp;quot;color_mode&amp;quot;
-}
-
-struct Default {
-    static let ColorMode = &amp;quot;kawaii&amp;quot;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、他からのアクセスは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;のようにしています。&lt;/p&gt;
-
-&lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlistでのバグ</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
-      <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
-      <description>&lt;p&gt;iOSを8.2にアップデートして自分の端末を色々と弄っていると、
-littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。&lt;/p&gt;
-
-&lt;p&gt;OSアプデートのせいかなと、ちょっとソースを見てみると、、またもやケアレスミス。。&lt;br /&gt;
-というか、思い込みがあったのか、、DB移行のため同じような作業を数度行ったせいなのか、、&lt;/p&gt;
-
-&lt;p&gt;アプストアから登録を外しそうと思ったがitunesconnetctに繋がらず、、、&lt;br /&gt;
-ちょっと他にも漏れが無いか調べて新しいバージョンを申請します。&lt;/p&gt;
-
-&lt;p&gt;アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-itunesconnect.png&#34; alt=&#34;itunesconnetct&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HugoとSimplenoteでgitHub-page</title>
-      <link>http://goozenlab.com/blog/2015/03/hugo-simplenote/</link>
-      <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
-      <description>
-
-&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。&lt;/p&gt;
-
-&lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
-
-&lt;p&gt;まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。&lt;/p&gt;
-
-&lt;p&gt;（鍵の登録を行っておくとよいです）&lt;/p&gt;
-
-&lt;h2 id=&#34;github-と-bitbucket-の登録:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rm -rf public/
-$ git init
-$ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-$ git add -A
-$ git commit -m &amp;quot;initial commit&amp;quot;
-$ git push origin master
-Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;:
-Counting objects: 166, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (163/163), done.
-Writing objects: 100% (166/166), 322.06 KiB | 0 bytes/s, done.
-Total 166 (delta 3), reused 0 (delta 0)
-To https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
- * [new branch]      master -&amp;gt; master
-$ git submodule add https://github.com/YOUR_ACCOUNT/goozenlab.github.io.git public
-Cloning into &#39;public&#39;...
-remote: Counting objects: 9437, done.
-remote: Compressing objects: 100% (419/419), done.
-remote: Total 9437 (delta 271), reused 0 (delta 0), pack-reused 8762
-Receiving objects: 100% (9437/9437), 47.41 MiB | 30.00 KiB/s, done.
-Resolving deltas: 100% (4319/4319), done.
-Checking connectivity... done.
-$ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;プレビュー方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;プレビュー方法&lt;/h2&gt;
-
-&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内のNote &amp;amp; Setting ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-11-hugo-alt.png&#34; alt=&#34;nvALT:Simplenote&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;nvALT:SimpleNoteの保存先フォルダーをサイトの外部にし、preview時にrsyncで一方通行の同期を行います。&lt;/p&gt;
-
-&lt;p&gt;※ nvALT、あまり知名度が無いように思えるけれどお勧めです。（ctlキーの長押しでプレビューが表示[離すと消える]されたり（数日前に発見！）する。）&lt;/p&gt;
-
-&lt;p&gt;これも簡単なスクリプトで行います。&lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; のテーマ部分は自身の設定に合わせてください。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hugo_preview.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32m---- rsync ----\033[0m&amp;quot;
-
-rsync -avz --delete --exclude &#39;Notes &amp;amp; Settings&#39; --exclude &#39;Untitled*&#39; --exclude &#39;.*&#39; /&amp;quot;保存先のフォルダ&amp;quot;/ /&amp;quot;HugoSites&amp;quot;/content/post
-
-echo -e &amp;quot;\033[0;32mhugo preview...\033[0m&amp;quot;
-
-hugo server --buildDrafts --theme=default
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;デプロイの方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;デプロイの方法&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;deploy.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
-
-# Build the project. 
-# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`
-hugo
-
-# Go To Public folder
-cd public
-
-# Copy CNAME 
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg=&amp;quot;rebuilding site `date`&amp;quot;
-if [ $# -eq 1 ]
-  then msg=&amp;quot;$1&amp;quot;
-fi
-git commit -m &amp;quot;$msg&amp;quot;
-
-# Push source and build repos.
-git push origin master
-
-# Come Back
-cd ..
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;その他のファイルの更新は、タイミングを計って手動でdeployしています。自動でbitbukket にも更新を入れたい時は&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;echo -e &amp;quot;\033[0;32mDeploying updates to Bitbukket...\033[0m&amp;quot;
-
-git add -A
-git commit -m &amp;quot;$msg&amp;quot;
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;をdeploy.sh に追加すれば良いのかな。&lt;/p&gt;
-
-&lt;p&gt;実行のフラグを付けておしまい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ chmod +x deploy.sh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
