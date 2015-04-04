@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>コトリンの事始め</title>
-  <meta name="description" content="コトリンの事始め">
+  <title>Boot Debian with EFI</title>
+  <meta name="description" content="Boot Debian with EFI">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-04-25</time>
+		  <time class="">2015-05-20</time>
 		  
 		  
 		  |
@@ -72,53 +72,58 @@
 		  
 
 		  
-		  categories:<a href="http://localhost:1313//categories/android">android</a> <a href="http://localhost:1313//categories/kotlin">Kotlin</a> 
+		  categories:<a href="http://localhost:1313//categories/server">server</a> <a href="http://localhost:1313//categories/diy">DIY</a> 
 		  
 
 		  
 
 		</p>
-		<h5>コトリンの事始め</h5>
+		<h5>Boot Debian with EFI</h5>
 	  </div>
 
 	  <div class="post">
 		
 
-<p>Kotlin+IntelliJ でandroidの開発を、初めの一歩の新規プロジェジェク作成から始める。</p>
+<p>BitTorrent Sync というピアツーピアの同期ソフトがあります。最近のバージョンで有料化され、無料のバージョンだと同期のフォルダー数が限定されます。</p>
 
-<h2 id="新規プロジェクト:70306a3210d6e72778487ef38507f6fa">新規プロジェクト</h2>
+<p>オープンソースの物を探してみた所、みごと <code>SyncThing</code> というソフトがありました。</p>
 
-<p>新規プロジェクト作成は、コトリンサイトの
-<a href="http://kotlinlang.org/docs/tutorials/kotlin-android.html">こちら</a>
-に一連の流れが奇麗にまとまっている。下記メモは自分がやってみてつまずいた所等が書いてあります。</p>
+<p>実家NASのSynoogyにインストールします。</p>
 
-<p>途中に何かしらをダウンロードする。（ネパールだと時間がかかる、、、ダウンロードになぜこんなに苦労しなければいかないのか、、）</p>
+<h2 id="インストール:c40228a18b78bd099c15700a96a9d9c1">インストール</h2>
 
-<p><img src="file:///Users/jin/Desktop/2015-03-22-kotlin-makeing-project.png" alt="ダウンロード" />
-</p>
+<p>Step 1</p>
 
-<p>自分の為のメモ</p>
+<p>Log into your NAS as administrator and go to
+Main Menu → Package Center → Settings
+and set Trust Level to Synology Inc. and trusted publishers.</p>
 
-<ol>
-<li>New Project | Android | Gradle: Android Module to create a new project.</li>
+<p>Step 2
+In the Package Sources tab, click Add,</p>
 
-<li><p>Converting Java code to Kotlin: Memu - Code - Convert Java File to Kotlin File  ( &lt;⌥⇧⌘ J&gt; on Mac OS)</p></li>
+<p>type SynoCommunity as Name
+<a href="http://packages.synocommunity.com/">http://packages.synocommunity.com/</a> as Location</p>
 
-<li><p>フォルダーはkotlinの追加よりjavaフォルダーのリネームのほうがうまく行く。</p></li>
-</ol>
+<p>and then press OK to validate.</p>
 
-<p>移行の作業はつまらないし、少々イライラする事がある。気分転換に</p>
+<p>Step 3</p>
 
-<p>少し新しい事を学んでいるような感があり、ちょっと充実感を感じる事ができる。</p>
+<p>Go back to the Package Center and enjoy SynoCommunity&rsquo;s packages in the Community tab.</p>
 
-<p>拙作のSati（瞑想タイマー）を移行しようと思っているので、取りあえず次は簡単なタイマーから作ろうと思ってます。</p>
+<p><a href="https://synocommunity.com/">https://synocommunity.com/</a></p>
+
+<p>より、パッケージをインストールして終了</p>
+
+<p>マックでのインストールと設定は[こちら]() に書いてあります。</p>
+
+<p>姉宅にも置かせてもらうかな。。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/04\/kotlin-project-setup\/';
-    var disqus_title = 'コトリンの事始め';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/04\/kotlin-project-setup\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/syncthing-synology\/';
+    var disqus_title = 'Boot Debian with EFI';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/syncthing-synology\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

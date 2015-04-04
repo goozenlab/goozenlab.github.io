@@ -7,8 +7,197 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 27 Mar 2015 11:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2015 14:20:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>syncthingをマックにインストール</title>
+      <link>http://goozenlab.com/blog/2015/05/brew-syncthing/</link>
+      <pubDate>Sun, 17 May 2015 14:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/05/brew-syncthing/</guid>
+      <description>
+
+&lt;p&gt;Dropboxの容量が中途半端だったり、ちょっとうまく動かなかったりでオープンソースで代替の物を探していたら、ownCloudとSyncthingというソフトを見つけました。&lt;/p&gt;
+
+&lt;p&gt;ownCloudは速度に問題があるようなので、ピアツーピアでの同期オープンソースアプリ、Syncthingをマックにインストールすることにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;Syncthing&#34;&gt;Syncthing: open source bittorrentSync&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;バイナリーがサイトよりダウンロードする事ができますが、brewより一発でインストールできます。&lt;/p&gt;
+
+&lt;p&gt;常時稼働のサーバーor端末が必要なので、SynologyのNASを使います。簡単にインストールできます。詳細は[こちら]()&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew install syncthing
+==&amp;gt; Downloading https://homebrew.bintray.com/bottles/syncthing-0.10.30.mavericks
+######################################################################## 100.0%
+==&amp;gt; Pouring syncthing-0.10.30.mavericks.bottle.tar.gz
+==&amp;gt; Caveats
+To have launchd start syncthing at login:
+    ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
+Then to load syncthing now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+==&amp;gt; Summary
+🍺  /usr/local/Cellar/syncthing/0.10.30: 6 files,  10M
+$ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;起動時にスタートするには上にある通り、LaunchAgentsに登録します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
+ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ターミナルより、&lt;code&gt;syncthing&lt;/code&gt; でプログラムがスタート。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ syncthing 
+[monitor] 07:40:48 INFO: Starting syncthing
+07:40:48 INFO: Generating RSA key and certificate for syncthing...
+[4GOP7] 07:40:51 INFO: syncthing v0.10.30 (go1.4.2 darwin-amd64 default) brew@mavericksvm.local 2015-03-29 07:46:44 UTC
+[4GOP7] 07:40:51 INFO: My ID: XXX.生成された鍵.XXX
+[4GOP7] 07:40:51 INFO: No config file; starting with empty defaults
+[4GOP7] 07:40:51 INFO: Edit /Users/jin/Library/Application Support/Syncthing/config.xml to taste or use the GUI
+[4GOP7] 07:40:51 INFO: Starting web GUI on http://127.0.0.1:8080/
+[4GOP7] 07:40:51 INFO: Loading HTTPS certificate: open /Users/jin/Library/Application Support/Syncthing/https-cert.pem: no such file or directory
+[4GOP7] 07:40:51 INFO: Creating new HTTPS certificate
+[4GOP7] 07:40:51 INFO: Generating RSA key and certificate for shingha.local...
+[4GOP7] 07:40:56 INFO: Starting UPnP discovery...
+[4GOP7] 07:41:02 INFO: UPnP discovery complete (found 0 devices).
+[4GOP7] 07:41:02 INFO: Starting local discovery announcements
+[4GOP7] 07:41:02 INFO: Local discovery over IPv6 unavailable
+[4GOP7] 07:41:02 INFO: Starting global discovery announcements
+[4GOP7] 07:41:02 OK: Ready to synchronize default (read-write)
+[4GOP7] 07:41:02 INFO: Device XXX.生成された鍵.XXX is &amp;quot;shingha.local&amp;quot; at [dynamic]
+[4GOP7] 07:41:02 INFO: Completed initial scan (rw) of folder default
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、Web Browserが立上がります。もしくは &lt;a href=&#34;http://127.0.0.1:8080/&#34;&gt;http://127.0.0.1:8080/&lt;/a&gt; にアクセスする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-01-syncthing-setting.png&#34; alt=&#34;Syncthing&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;同期ファイルの設定:a4884284e61d1718723493edc3050235&#34;&gt;同期ファイルの設定&lt;/h2&gt;
+
+&lt;p&gt;デスクトップとダウンロードフォルダーを同期します。&lt;/p&gt;
+
+&lt;p&gt;ブラウザーより終了すると。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[4GOP7] 07:42:59 INFO: Shutting down
+[4GOP7] 07:42:59 OK: Exiting
+$
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>バックパックの中身</title>
+      <link>http://goozenlab.com/blog/2015/04/inside-hackpack/</link>
+      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/inside-hackpack/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-bags.jpg&#34; alt=&#34;写真：全て&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ちょっと自分でも整理をしたかったので、今回の約４ヶ月間マレーシア・ネパール旅行での持ち物リストを書き出してみました。バックパックを新しくしようかなと、、
+全部で多分15キロぐらい、バックパックとブリーフケースに荷物がパツパツに入ってます。
+一年の旅行でもリストはほとんど同じだと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブリーフケース:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;ブリーフケース&lt;/h2&gt;
+
+&lt;p&gt;MBP15が入るブリーフケース。昨年MBP15が故障。MBA11 (-1.4kg)になったというのになにか、まだずっしりとした重さがある。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-briefcase.jpg&#34; alt=&#34;写真：ブリーフケースの中身&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ポケットトートバックのような物にMBA 11と封筒ケース&lt;/li&gt;
+&lt;li&gt;Kindle PaperLight&lt;/li&gt;
+&lt;li&gt;リコー GR + ViewFinder&lt;/li&gt;
+&lt;li&gt;iPhone 4S&lt;/li&gt;
+&lt;li&gt;iPod 240GBとヘッドフォン&lt;/li&gt;
+&lt;li&gt;A6 システム手帳&lt;/li&gt;
+&lt;li&gt;ナカバヤシのノート&lt;/li&gt;
+&lt;li&gt;マネーベルト&lt;/li&gt;
+&lt;li&gt;長財布と小銭入れ&lt;/li&gt;
+&lt;li&gt;書類入れ：A4シート、三折り書類入オレッタ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;バックパック:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;バックパック&lt;/h2&gt;
+
+&lt;p&gt;人から譲ってもらった物ですが、サイズはパーフェクト、40L?くらい、REI社製。人に切られたり、ネズミに齧られたりでボロボロ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-backpack.jpg&#34; alt=&#34;写真：バックパックの中身&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;服飾類:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;服飾類&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ハンガー x 3&lt;/li&gt;
+&lt;li&gt;衣服メッシュケース（着ている物は除外）
+
+&lt;ol&gt;
+&lt;li&gt;タオル、手拭 x 4&lt;/li&gt;
+&lt;li&gt;Tシャツ x 2、シャツ x 2&lt;/li&gt;
+&lt;li&gt;ズボン、パジャマ&lt;/li&gt;
+&lt;li&gt;インドのドーティ(2m x 1.2mくらいの腰巻）&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;寝袋とショール&lt;/li&gt;
+&lt;li&gt;眼鏡ケース&lt;/li&gt;
+&lt;li&gt;サンダル&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;生活:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;生活&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ネティポッドとサプリメント類&lt;/li&gt;
+&lt;li&gt;洗顔キット：垢こすり、シャンプー、石けん&lt;/li&gt;
+&lt;li&gt;ヘッドライト&lt;/li&gt;
+&lt;li&gt;鍵 x 3&lt;/li&gt;
+&lt;li&gt;ZipLockやプラスチック数種&lt;/li&gt;
+&lt;li&gt;コクヨの筆箱：生活グッズ
+
+&lt;ol&gt;
+&lt;li&gt;耳かき、爪切り、髭剃り&lt;/li&gt;
+&lt;li&gt;はさみ、定規&lt;/li&gt;
+&lt;li&gt;替芯：シャープペンとボールペン&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;デジタル関連:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;デジタル関連&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;MacBook用電源とユニバーサルアダプター&lt;/li&gt;
+&lt;li&gt;Sony GSPロガー&lt;/li&gt;
+&lt;li&gt;小型BTスピーカー&lt;/li&gt;
+&lt;li&gt;eneloop： charger、AA x 5、AAA x4&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;外付けHD：バックアップ用として持ってくるも、壊れる。&lt;/li&gt;
+&lt;li&gt;コクヨの筆箱：デジタルグッズ
+
+&lt;ol&gt;
+&lt;li&gt;ケーブル類&lt;/li&gt;
+&lt;li&gt;USBアダプタ&lt;/li&gt;
+&lt;li&gt;USBメモリースティック&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;etc:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;etc&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ユニクロのバッグ：移動時はバックインバックになっている&lt;/li&gt;
+&lt;li&gt;防水性のバッグ：バックパックのカバーが無いので、&lt;/li&gt;
+&lt;li&gt;マグカップ&lt;/li&gt;
+&lt;li&gt;Beefeaterのペットボトル&lt;/li&gt;
+&lt;li&gt;塩や香辛料：ほとんど使わず&lt;/li&gt;
+&lt;li&gt;ジェットボイルとガス：今回特別参加&lt;/li&gt;
+&lt;li&gt;液晶・レンズクリーナー&lt;/li&gt;
+&lt;li&gt;ベッド兼ヨガマット&lt;/li&gt;
+&lt;li&gt;文具： Kurutoga、消しゴム、Pilotのボールペン&lt;/li&gt;
+&lt;li&gt;メッシュケース：S字フックやクリップ等が入ってます&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>ShakeはUIEventで</title>
@@ -373,14 +562,14 @@ self.vew.addSubview(buttonMoodExecelent)
     </item>
     
     <item>
-      <title>！Thanks alot for downloading Sati！</title>
+      <title>！Thanks alot for download Sati！</title>
       <link>http://goozenlab.com/blog/2015/03/thanx-dowload-sati/</link>
       <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/thanx-dowload-sati/</guid>
       <description>&lt;p&gt;!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!&lt;/p&gt;
 
-&lt;p&gt;Satiのダウンロードがドカーーンと一気に増えました。ダンンャバーッ。たまにどかっとダウンロードが増える事があっても500ぐらいが頭打ちでしたが今回は14,600ダウンロードと桁違い、、ちとビックリです。エラーも無いしちょっと安心。おかげさまで、ダウンロードグラフが見づらくなりました。&lt;/p&gt;
+&lt;p&gt;Satiのダウンロードがドカーーンと一気に増えました。ダンニャバーッ。たまにどかっとダウンロードが増える事があっても500ぐらいが頭打ちでしたが今回は14,600ダウンロードと桁違い、、ちとビックリです。エラーも無いしちょっと安心。おかげさまで、ダウンロードグラフが見づらくなりました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-download.png&#34; alt=&#34;Sati Download&#34; /&gt;
 &lt;/p&gt;
@@ -416,11 +605,12 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;p&gt;感謝。&lt;/p&gt;
 
 &lt;p&gt;追記：&lt;br /&gt;
-3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。&lt;br /&gt;
 3/16：一日たち25.2Kダウンドード。南米、アフリカでは下降線で、ヨーロッパ、アメリカはまだのびる！&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-16-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;
 &lt;/p&gt;
+
+&lt;p&gt;3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。&lt;/p&gt;
 </description>
     </item>
     
@@ -449,86 +639,6 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;li&gt;2015-03-14 22:45　ルーターの電源を切られる。&lt;/li&gt;
 &lt;li&gt;2015-03-14 22:16　59MB 残り７時間くらいと表示&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>StatusBarをSwiftで隠す</title>
-      <link>http://goozenlab.com/blog/2015/03/statusbar-swift/</link>
-      <pubDate>Sun, 15 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/statusbar-swift/</guid>
-      <description>&lt;p&gt;iOSやXCodeのバーションが上がったりすると必ず分からなくなる。statusbarの扱い。&lt;/p&gt;
-
-&lt;p&gt;iOS8とswiftでは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
-    return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>IntelliJ IDEA 14 CEとJavaSE</title>
-      <link>http://goozenlab.com/blog/2015/03/intellij-setup/</link>
-      <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/intellij-setup/</guid>
-      <description>
-
-&lt;p&gt;Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませんでした。（Javaがどうもねぇ〜。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-intellij.png&#34; alt=&#34;IntelliJ&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;最近、サイトのブログエンジンを変更するにあたって色々とリサーチをしていて、goLangやKotlinという新しい言語の事を知る。そしてそのKotlinという言語は見た目すごくSwiftに似ている。しかもアンドロイドのアプリも作れるらしい。
-「これはSwiftのついでに両方勉強すれば一石二鳥では、あわよくばアプリを移植できるかも、、、」と軽率な考えにおされ、Kotlin の開発元から出ているIDE、しかもAndroidStudioの元になっているIntelliJ IDEA でやってみるべと、、ちょっとスウィッチが入りました。&lt;/p&gt;
-
-&lt;p&gt;ダウンロードする物は以下の４つ。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;IntelliJ IDEA（無料版）：&lt;a href=&#34;http://www.jetbrains.com/idea/download/&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Android SDK：&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kotlin： IntelliJ IDEA の pluginsよりインストール。&lt;/li&gt;
-&lt;li&gt;GoLang Plugin：&lt;a href=&#34;https://github.com/go-lang-plugin-org/go-lang-idea-plugin/releases/tag/%23164&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;intellij-idea:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;IntelliJ IDEA&lt;/h2&gt;
-
-&lt;p&gt;ダウンロードして立ち上げると、Javaはオラクルのものが既にダウンロードされているにもかかわらずJavaSEが必要とのアラートが上がる。(Not Now) をおしキャンセルする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-intellij-java-alert.png&#34; alt=&#34;alert to download Java&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;以前AndroidStudioをインストールした時と同じ問題で、これはちょこっとアプリのパッケージに入り込んで &lt;code&gt;info.plist&lt;/code&gt;を修正します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-intellij-infopilst.png&#34; alt=&#34;info.plist&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;色が反転している所を書き換え（写真は書き換え済みで、元は&lt;code&gt;1.6*&lt;/code&gt;）るとすぅーーっと起動します。でも、これだと、アップデートした時にまた書き直さなければいけないのか？？&lt;/p&gt;
-
-&lt;h2 id=&#34;android-sdk:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Android SDK&lt;/h2&gt;
-
-&lt;p&gt;次にダウンロードした &lt;code&gt;android-sdk_r24.0.2-macosx&lt;/code&gt; は解凍し所定の場所に保存します。(AndroidStudioでは&lt;code&gt;~/Library/Android/sdk/&lt;/code&gt;の中がデフォルトのようです）そして、&lt;code&gt;/インストール先/tools/android update sdk&lt;/code&gt; を実行して必要なファイルをインストールします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ インストールのディレクトリ/android-sdk-macosx/tools/android update sdk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;kotlin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Kotlin&lt;/h2&gt;
-
-&lt;p&gt;もう一丁、&lt;code&gt;Kotlin&lt;/code&gt; をpluginsより入れる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-intellij-kotlin.png&#34; alt=&#34;Kotlin Install&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;golang-plugin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;GoLang Plugin&lt;/h2&gt;
-
-&lt;p&gt;おまけに、ダウンロードした &lt;code&gt;Go.164.zip&lt;/code&gt; を plugins から読み込みます。&lt;/p&gt;
-
-&lt;p&gt;これで、一端な2015年Android開発環境が整いました。さぁーー、何から始めよう。。&lt;/p&gt;
 </description>
     </item>
     
