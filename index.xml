@@ -7,87 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 17 May 2015 14:20:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2015 12:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>syncthingをマックにインストール</title>
-      <link>http://goozenlab.com/blog/2015/05/brew-syncthing/</link>
-      <pubDate>Sun, 17 May 2015 14:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/05/brew-syncthing/</guid>
-      <description>
-
-&lt;p&gt;Dropboxの容量が中途半端だったり、ちょっとうまく動かなかったりでオープンソースで代替の物を探していたら、ownCloudとSyncthingというソフトを見つけました。&lt;/p&gt;
-
-&lt;p&gt;ownCloudは速度に問題があるようなので、ピアツーピアでの同期オープンソースアプリ、Syncthingをマックにインストールすることにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;Syncthing&#34;&gt;Syncthing: open source bittorrentSync&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;バイナリーがサイトよりダウンロードする事ができますが、brewより一発でインストールできます。&lt;/p&gt;
-
-&lt;p&gt;常時稼働のサーバーor端末が必要なので、SynologyのNASを使います。簡単にインストールできます。詳細は[こちら]()&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew install syncthing
-==&amp;gt; Downloading https://homebrew.bintray.com/bottles/syncthing-0.10.30.mavericks
-######################################################################## 100.0%
-==&amp;gt; Pouring syncthing-0.10.30.mavericks.bottle.tar.gz
-==&amp;gt; Caveats
-To have launchd start syncthing at login:
-    ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
-Then to load syncthing now:
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
-==&amp;gt; Summary
-🍺  /usr/local/Cellar/syncthing/0.10.30: 6 files,  10M
-$ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;起動時にスタートするには上にある通り、LaunchAgentsに登録します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
- launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ターミナルより、&lt;code&gt;syncthing&lt;/code&gt; でプログラムがスタート。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ syncthing 
-[monitor] 07:40:48 INFO: Starting syncthing
-07:40:48 INFO: Generating RSA key and certificate for syncthing...
-[4GOP7] 07:40:51 INFO: syncthing v0.10.30 (go1.4.2 darwin-amd64 default) brew@mavericksvm.local 2015-03-29 07:46:44 UTC
-[4GOP7] 07:40:51 INFO: My ID: XXX.生成された鍵.XXX
-[4GOP7] 07:40:51 INFO: No config file; starting with empty defaults
-[4GOP7] 07:40:51 INFO: Edit /Users/jin/Library/Application Support/Syncthing/config.xml to taste or use the GUI
-[4GOP7] 07:40:51 INFO: Starting web GUI on http://127.0.0.1:8080/
-[4GOP7] 07:40:51 INFO: Loading HTTPS certificate: open /Users/jin/Library/Application Support/Syncthing/https-cert.pem: no such file or directory
-[4GOP7] 07:40:51 INFO: Creating new HTTPS certificate
-[4GOP7] 07:40:51 INFO: Generating RSA key and certificate for shingha.local...
-[4GOP7] 07:40:56 INFO: Starting UPnP discovery...
-[4GOP7] 07:41:02 INFO: UPnP discovery complete (found 0 devices).
-[4GOP7] 07:41:02 INFO: Starting local discovery announcements
-[4GOP7] 07:41:02 INFO: Local discovery over IPv6 unavailable
-[4GOP7] 07:41:02 INFO: Starting global discovery announcements
-[4GOP7] 07:41:02 OK: Ready to synchronize default (read-write)
-[4GOP7] 07:41:02 INFO: Device XXX.生成された鍵.XXX is &amp;quot;shingha.local&amp;quot; at [dynamic]
-[4GOP7] 07:41:02 INFO: Completed initial scan (rw) of folder default
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、Web Browserが立上がります。もしくは &lt;a href=&#34;http://127.0.0.1:8080/&#34;&gt;http://127.0.0.1:8080/&lt;/a&gt; にアクセスする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-01-syncthing-setting.png&#34; alt=&#34;Syncthing&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;同期ファイルの設定:a4884284e61d1718723493edc3050235&#34;&gt;同期ファイルの設定&lt;/h2&gt;
-
-&lt;p&gt;デスクトップとダウンロードフォルダーを同期します。&lt;/p&gt;
-
-&lt;p&gt;ブラウザーより終了すると。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[4GOP7] 07:42:59 INFO: Shutting down
-[4GOP7] 07:42:59 OK: Exiting
-$
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
     
     <item>
       <title>バックパックの中身</title>
@@ -639,6 +560,25 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;li&gt;2015-03-14 22:45　ルーターの電源を切られる。&lt;/li&gt;
 &lt;li&gt;2015-03-14 22:16　59MB 残り７時間くらいと表示&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StatusBarをSwiftで隠す</title>
+      <link>http://goozenlab.com/blog/2015/03/statusbar-swift/</link>
+      <pubDate>Sun, 15 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/statusbar-swift/</guid>
+      <description>&lt;p&gt;iOSやXCodeのバーションが上がったりすると必ず分からなくなる。statusbarの扱い。&lt;/p&gt;
+
+&lt;p&gt;iOS8とswiftでは&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
+    return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
 </description>
     </item>
     
