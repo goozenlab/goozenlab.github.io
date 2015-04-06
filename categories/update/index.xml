@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 11 Mar 2015 07:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2015 10:00:47 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist v2.6.6</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <description>&lt;p&gt;データーベースの更新により起きた、幾つかのバグを修正しました。
+どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ&lt;/li&gt;
+&lt;li&gt;編集画面で、期日をオフにしてもオフにならないバグ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;申請が通り、アプストアに復帰しました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist v2.6.5</title>
@@ -630,22 +648,6 @@ fi
 &lt;p&gt;ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）&lt;/p&gt;
 
 &lt;p&gt;※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Satiにて音が出ない件</title>
-      <link>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</link>
-      <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</guid>
-      <description>&lt;p&gt;以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。
-勘違いとケアレスミスのダブルパンチです。&lt;/p&gt;
-
-&lt;p&gt;アプリをストアーから一時削除しました。&lt;br /&gt;
-対応したバージョンを申請しています。&lt;/p&gt;
-
-&lt;p&gt;なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。&lt;/p&gt;
 </description>
     </item>
     

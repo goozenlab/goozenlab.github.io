@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://goozenlab.com/</loc>
-    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
+    <lastmod>2015-04-06T19:30:00+05:45</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/04/tableview-separator/</loc>
+    <lastmod>2015-04-06T19:30:00+05:45</lastmod>
   </url>
   
   <url>
@@ -25,6 +30,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2015/03/performselector-timer/</loc>
     <lastmod>2015-03-26T10:30:00+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/03/println-swift/</loc>
+    <lastmod>2015-03-25T08:30:00+05:45</lastmod>
   </url>
   
   <url>

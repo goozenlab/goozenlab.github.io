@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 04 Apr 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2015 19:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>テーブルビューセルの境界線を消す</title>
+      <link>http://goozenlab.com/blog/2015/04/tableview-separator/</link>
+      <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
+      <description>&lt;p&gt;テーブルビューセルの境界線を消すには下記のコードを追加。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;StoryBoardを使っている時は以下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>バックパックの中身</title>
@@ -209,6 +227,40 @@ func cancelTimer() {
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>printlnは気楽</title>
+      <link>http://goozenlab.com/blog/2015/03/println-swift/</link>
+      <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/println-swift/</guid>
+      <description>&lt;p&gt;NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 &lt;code&gt;__PRETTY_FUNCTION__&lt;/code&gt; は&lt;/p&gt;
+
+&lt;p&gt;Swift では &lt;code&gt;__FILE__, __FUNCTION__, __LINE__ and __COLUMN__&lt;/code&gt; のようになります。
+使えそうなのは&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;__FILE__&lt;/code&gt;  ：ファイル名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__LINE__&lt;/code&gt; ：ライン番号&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__FUNCTION__&lt;/code&gt; ：ファンクション名&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;そして、値を表示したい時はそのままかそのままか&lt;code&gt;\(...)&lt;/code&gt;で囲み適当に放り込む。もはや%dや%@は必要ないらしい。
+小賢しいウォーニングも出なくなる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;println(__FUNCTION__, self.frame)
+println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;戻りは以下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(function, (0.0,706.0,414.0,30.0))
+(function, screen is (0.0,706.0,414.0,30.0))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swift Programming Language に書いてあるらしいので読むべ。&lt;/p&gt;
 </description>
     </item>
     
@@ -532,53 +584,6 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;/p&gt;
 
 &lt;p&gt;3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Xcode 6.1とiOS8.2</title>
-      <link>http://goozenlab.com/blog/2015/03/xcode611-ios82/</link>
-      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
-      <description>&lt;p&gt;検証機を何の迷いも無くiOS8.2にアップデートする。&lt;/p&gt;
-
-&lt;p&gt;で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。
-このXCodeではサポートしないとの親切なエラーメッセージがでる。新しいバージョンのXCodeをインストールするにも、今いるネパールのネット環境ではXcode:2.58GBを落とすのにかなり時間がかかりそう。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-14-ios82.png&#34; alt=&#34;Xcode 6.1 with ios8.2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;まぁ仕方ない。。タイもしくはインドに行くまで、シミュレータでしのぐしか無いな。。&lt;/p&gt;
-
-&lt;p&gt;と思ったが、取りあえず試す。（随時アップデート）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015-03-15 17:30　ルーターとの接続が10分おきに切れる。で、諦める。&lt;/li&gt;
-&lt;li&gt;2015-03-15 13:00　再開するも、ダウンロードにはXCodeを落とせと、、で最初からやり直しになる。。&lt;/li&gt;
-&lt;li&gt;2015-03-15 06:00　停電中&lt;/li&gt;
-&lt;li&gt;2015-03-14 22:45　ルーターの電源を切られる。&lt;/li&gt;
-&lt;li&gt;2015-03-14 22:16　59MB 残り７時間くらいと表示&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>StatusBarをSwiftで隠す</title>
-      <link>http://goozenlab.com/blog/2015/03/statusbar-swift/</link>
-      <pubDate>Sun, 15 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/statusbar-swift/</guid>
-      <description>&lt;p&gt;iOSやXCodeのバーションが上がったりすると必ず分からなくなる。statusbarの扱い。&lt;/p&gt;
-
-&lt;p&gt;iOS8とswiftでは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
-    return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
 </description>
     </item>
     
