@@ -7,8 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 08 Apr 2015 18:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2015 20:12:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>メーソート、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/04/internet-maesot/</link>
+      <pubDate>Fri, 10 Apr 2015 20:12:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/internet-maesot/</guid>
+      <description>&lt;p&gt;カトマンズを出てタイへ。フライ時間は割と短く、スケジュールの30分遅れで離陸し、30分前に到着。機内で久しぶりに飲んだビールが苦かった。&lt;/p&gt;
+
+&lt;p&gt;バンコクには泊まるつもりは無いので、事前に調べた、空港ー＞公共バスステーションー＞モーチットバスステーションのルートでバンコクを脱出。無料のシャトルバスに乗り公共バスステーションに向かう。確認のためモーチットまでの行き方を聞くと、555番のバスをのり77番に乗り換えてモーチットまでと書かれたメモをくれる。調べていた通りには行かず。かつ、バスの料金徴収のおねいさん曰く「チェ〜ン バス、ワン、ツ（リ）ー、エイト」（138番）。それに従い２時間弱でモーチットに着く。ドムアン空港が見えたり、ウィークエンドマーケットの近くを通ったりでかなり遠回り？か？。&lt;/p&gt;
+
+&lt;p&gt;モーチットでは、来週に迎えるタイの新年の為人が多いように感じる。チケットは、取れたらメーソット、だめならスコータイ、それでもだめならピナヌロックと優先順を付けていたけど、人の多さを見たらちょっと無理かなと少し懸念が走る。&lt;/p&gt;
+
+&lt;p&gt;心配をよそに、行く予定のメーソットはミャンマーへのボーダーがあるという理由から出稼ぎ諸々でタイに着ているミャンマーの人たちの帰省ラッシュのためにバスがかなり増発していて、チケットも問題なくとれる。&lt;/p&gt;
+
+&lt;p&gt;出発まで２時間半くらい。コンビニでビールでも買ってゆっくりしようかと思うが、売っていない。。しかたなく、ぽけっ〜と、時間をつぶし出発。そして、朝７時半頃到着。&lt;/p&gt;
+
+&lt;p&gt;宿は歩いている途中見つけ、どこかでお勧めと聞いていたLucy&amp;rsquo;sHouseGHの別館のPumpkinGH。&lt;/p&gt;
+
+&lt;p&gt;宿のネットは、&lt;/p&gt;
+
+&lt;p&gt;下り：8.22Mps&lt;br /&gt;
+上り：0.60Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;ありがたみが身にしみます。&lt;/p&gt;
+
+&lt;p&gt;酷暑でマンゴの季節です。大きさによりますがキロで20~30バーツ！。
+黄色くなるまで食うぜ。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ネパール ラップアップ</title>
@@ -557,22 +588,6 @@ self.vew.addSubview(buttonMoodExecelent)
 &lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
 
 &lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo のデザイン</title>
-      <link>http://goozenlab.com/blog/2015/03/ohayo-pop/</link>
-      <pubDate>Mon, 16 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
-      <description>&lt;p&gt;Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo3.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo4.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
