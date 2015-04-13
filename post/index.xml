@@ -7,8 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 10 Apr 2015 20:12:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2015 22:20:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>dandori v2.6.4</title>
+      <link>http://goozenlab.com/blog/2015/04/dandori-264/</link>
+      <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/dandori-264/</guid>
+      <description>&lt;p&gt;またまた、ケアレスミスのホットフィックスです。&lt;/p&gt;
+
+&lt;p&gt;タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>メーソート、タイのインターネット事情</title>
@@ -22,7 +34,7 @@
 
 &lt;p&gt;モーチットでは、来週に迎えるタイの新年の為人が多いように感じる。チケットは、取れたらメーソット、だめならスコータイ、それでもだめならピナヌロックと優先順を付けていたけど、人の多さを見たらちょっと無理かなと少し懸念が走る。&lt;/p&gt;
 
-&lt;p&gt;心配をよそに、行く予定のメーソットはミャンマーへのボーダーがあるという理由から出稼ぎ諸々でタイに着ているミャンマーの人たちの帰省ラッシュのためにバスがかなり増発していて、チケットも問題なくとれる。&lt;/p&gt;
+&lt;p&gt;心配をよそに、行く予定のメーソットはミャンマーへのボーダーがある為タイにいるミャンマーの人たちの帰省ラッシュのためにバスがかなり増発していて、チケットも問題なくとれる。&lt;/p&gt;
 
 &lt;p&gt;出発まで２時間半くらい。コンビニでビールでも買ってゆっくりしようかと思うが、売っていない。。しかたなく、ぽけっ〜と、時間をつぶし出発。そして、朝７時半頃到着。&lt;/p&gt;
 
@@ -551,41 +563,6 @@ Class not found, using default NSManagedObject instead.
    
 }
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UIButttonをSwiftで書く</title>
-      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
-      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
-      <description>&lt;p&gt;UIButttonをSwiftでプログラム的に書くと&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-buttonMoodExecelent.tag = TagButtonMood.Execelent
-buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside)
-buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal)
-
-self.vew.addSubview(buttonMoodExecelent)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストタイトルの時には&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストの色を変えるには、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もっと細かく、フォント等も弄りたい時には、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
 
 &lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>
