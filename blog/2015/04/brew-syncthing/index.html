@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-05-17</time>
+		  <time class="">2015-04-23</time>
 		  
 		  
 		  |
@@ -92,7 +92,7 @@
 
 <p>バイナリーがサイトよりダウンロードする事ができますが、brewより一発でインストールできます。</p>
 
-<p>常時稼働のサーバーか同時に動いている別の端末が必要なので、elementaryOSのVaioPを取りあえず使います。SynologyのNASは実家にほったらかしになっているので後々追加します。</p>
+<p>常時稼働のサーバーか同時に動いている別の端末が必要なので、elementaryOSのVaioPを取りあえず使います。SynologyのNASは実家にほったらかしになっているので後々追加予定。</p>
 
 <pre><code>$ brew install syncthing
 ==&gt; Downloading https://homebrew.bintray.com/bottles/syncthing-0.10.30.mavericks
@@ -110,8 +110,8 @@ $
 
 <p>起動時にスタートするには上にある通り、LaunchAgentsに登録します。</p>
 
-<pre><code> ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
- launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+<pre><code>$ ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
 </code></pre>
 
 <p>ターミナルより、<code>syncthing</code> でプログラムがスタート。</p>
@@ -142,7 +142,7 @@ $
 <p><img src="/images/2015-04-01-syncthing-setting.png" alt="Syncthing" />
 </p>
 
-<h2 id="同期ファイルの設定:a4884284e61d1718723493edc3050235">同期ファイルの設定</h2>
+<h2 id="同期ファイルの設定:e316f07ad520c27f6fefcdc2ddc2a1e2">同期ファイルの設定</h2>
 
 <p>デスクトップとダウンロードフォルダーを同期します。</p>
 
@@ -156,9 +156,9 @@ $
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/brew-syncthing\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/04\/brew-syncthing\/';
     var disqus_title = 'syncthingをマックにインストール';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/brew-syncthing\/';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/04\/brew-syncthing\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

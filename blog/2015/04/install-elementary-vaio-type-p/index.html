@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>メーサリアン、タイのインターネット事情</title>
-  <meta name="description" content="メーサリアン、タイのインターネット事情">
+  <title>elementaryOSをインストール</title>
+  <meta name="description" content="elementaryOSをインストール">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-04-14</time>
+		  <time class="">2015-04-21</time>
 		  
 		  
 		  |
@@ -72,41 +72,53 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com//categories/nomad">nomad</a> 
+		  categories:<a href="http://goozenlab.com//categories/diy">DIY</a> 
 		  
 
 		  
 
 		</p>
-		<h5>メーサリアン、タイのインターネット事情</h5>
+		<h5>elementaryOSをインストール</h5>
 	  </div>
 
 	  <div class="post">
-		<p>ソンクラン恐怖の水掛祭りの日に移動する。</p>
+		
 
-<p>バスと行ってもソンテウというピックアップの大きくなった乗り物。
-外からの攻撃には脆弱。街に入る度に待ってましたとばかりに水掛の犠牲になる。</p>
+<p>デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCPUで復活しないものか。。）に再インストールする。</p>
 
-<p>ある意味途中の街の雰囲気が分かるので面白かったといえば面白かったのだが、ひえひえかつホコリだらけの６時間。</p>
+<p>以前のバージョンのLunaを入れた事があったのだが、Liveでは動くものの、インストール後のgrubが正しく設定されず、修正もできなかったので起動しなかった。</p>
 
-<p>ちなみにソンテウ代は200バーツ。最初から最後まで乗っていたのはドライバーと私だけでした。</p>
+<p>今回はオフライン気味な端末として、物書き、お小遣い帳などとして活用する。そしてファイルの共有は下記のお勧めソフトのSyncthingを使う。なるべくサードパーティーのサービスは使わない。（勝手なマイポリシー）</p>
 
-<p>宿 (200B)のネットは、</p>
+<h2 id="事前準備:6e0ef499bcc5fa0f4cc410f9946a8a85">事前準備</h2>
 
-<p>下り：8.32Mps<br />
-上り：0.66Mps<br />
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
+<ol>
+<li>isoファイルのダウンロード。</li>
+<li>USB起動ディスクの作成ソフトのダウンロード</li>
+<li>USB起動ディスクの作成</li>
+</ol>
 
-<p>タイに戻ってきて、観光をせずにスタンフォード大の講義を日に幾つか聞いている。</p>
+<h2 id="インストール:6e0ef499bcc5fa0f4cc410f9946a8a85">インストール</h2>
 
-<p>ストーリーボードは使いたくないのだが、激しくストーリーボードを勧めてきている感じがある。オートレイアウトはやはり好きになれない。。もう少しSwiftの解説があったらありがたいのだが、、。（未だ、オプショナルやクロージャーについて理解していない）</p>
+<p>USBメモリースティックを入れて起動。後はそのまま手順にそっていけば問題ない。パーティションの所だけ、各自の設定により変える必要がある。（本機はLinuxオンリーマシーンなのですべてをデフォルトの構成）</p>
+
+<h2 id="追加ソフト:6e0ef499bcc5fa0f4cc410f9946a8a85">追加ソフト</h2>
+
+<p>長い事Linuxを使っている訳では有りませんが、お勧めのソフトは以下、</p>
+
+<ol>
+<li>Syncthing: P2P同期ソフト（BittorrentSyncのオープンソース判）</li>
+<li>Mozc: 日本語の変換ソフト</li>
+<li>Editor: 集中して物を書くときのソフト</li>
+<li></li>
+</ol>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/04\/internet-maesariang\/';
-    var disqus_title = 'メーサリアン、タイのインターネット事情';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/04\/internet-maesariang\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2015\/04\/install-elementary-vaio-type-p\/';
+    var disqus_title = 'elementaryOSをインストール';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2015\/04\/install-elementary-vaio-type-p\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

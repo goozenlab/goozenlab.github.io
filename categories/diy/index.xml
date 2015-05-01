@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 09 Mar 2015 14:50:00 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2015 14:50:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/diy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>elementaryOSをインストール</title>
+      <link>http://goozenlab.com/blog/2015/04/install-elementary-vaio-type-p/</link>
+      <pubDate>Tue, 21 Apr 2015 14:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/install-elementary-vaio-type-p/</guid>
+      <description>
+
+&lt;p&gt;デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCPUで復活しないものか。。）に再インストールする。&lt;/p&gt;
+
+&lt;p&gt;以前のバージョンのLunaを入れた事があったのだが、Liveでは動くものの、インストール後のgrubが正しく設定されず、修正もできなかったので起動しなかった。&lt;/p&gt;
+
+&lt;p&gt;今回はオフライン気味な端末として、物書き、お小遣い帳などとして活用する。そしてファイルの共有は下記のお勧めソフトのSyncthingを使う。なるべくサードパーティーのサービスは使わない。（勝手なマイポリシー）&lt;/p&gt;
+
+&lt;h2 id=&#34;事前準備:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;事前準備&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;isoファイルのダウンロード。&lt;/li&gt;
+&lt;li&gt;USB起動ディスクの作成ソフトのダウンロード&lt;/li&gt;
+&lt;li&gt;USB起動ディスクの作成&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;インストール:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;インストール&lt;/h2&gt;
+
+&lt;p&gt;USBメモリースティックを入れて起動。後はそのまま手順にそっていけば問題ない。パーティションの所だけ、各自の設定により変える必要がある。（本機はLinuxオンリーマシーンなのですべてをデフォルトの構成）&lt;/p&gt;
+
+&lt;h2 id=&#34;追加ソフト:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;追加ソフト&lt;/h2&gt;
+
+&lt;p&gt;長い事Linuxを使っている訳では有りませんが、お勧めのソフトは以下、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Syncthing: P2P同期ソフト（BittorrentSyncのオープンソース判）&lt;/li&gt;
+&lt;li&gt;Mozc: 日本語の変換ソフト&lt;/li&gt;
+&lt;li&gt;Editor: 集中して物を書くときのソフト&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Ricoh GR用てるてる坊主カメララップ</title>
