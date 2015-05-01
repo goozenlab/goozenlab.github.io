@@ -11,7 +11,7 @@
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>バックパックの買換</title>
+      <title>バックパックの買換思案中</title>
       <link>http://goozenlab.com/blog/2015/05/new-backpack/</link>
       <pubDate>Fri, 01 May 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -23,7 +23,7 @@
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-01-rei.jpg&#34; alt=&#34;REI &#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;大きさはもうほーーんの少し小さくても良いが、理想に近い。フラットに開くし鍵も付けられる。かなり気に入っているのだけれど、穴だらけでパッチだらけ。ほつれは無いし、ジッパーもスイスイ動いてるので買い替えるのはちょっと勿体ない気もするが、そろそろお役御免（物欲の勝利）。ヨガマットがうまく付かないのと、デザインが一寸なのが、数少ないマイナスポイント。&lt;/p&gt;
+&lt;p&gt;大きさはもうほーーんの少し小さくても良いが、理想に近い。フラットに開くし鍵も付けられる。かなり気に入っているのだけれど、穴だらけでパッチだらけ。ほつれは無いし、ジッパーもスイスイ動いてるので買い替えるのはちょっと勿体ない気もするが、そろそろお役御免（物欲の勝利）。ヨガマットがうまく付かないのと、デザインが一寸△なのが、数少ないマイナスポイント。&lt;/p&gt;
 
 &lt;p&gt;REI社の新しい物を探してみると同じようなタイプの物はもう売っていなく、あまり気に入った物がない。&lt;/p&gt;
 
@@ -33,7 +33,7 @@
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-01-gr-1.png&#34; alt=&#34;GR-1&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;シンプルで格好良い。で数種類あるうち、GR-0とGR-1が候補。身長183センチ以下はGR0を推奨とサイトに書いてあるが、外寸なのか内寸なのか、5Lの違いがどんなもんだか、、黒か灰色か、、悩みどころである。&lt;/p&gt;
+&lt;p&gt;シンプルで格好良い。で数種類あるうち、GR-0とGR-1が候補。身長183センチ以下はGR-0を推奨とサイトに書いてあるがすこし小さすぎるし、、外寸なのか内寸なのか、5Lの違いがどんなもんだか、、黒か灰色か、、悩みどころである。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;GR-0 (21L): 29.2 x 45.7 x 14&lt;br /&gt;&lt;/li&gt;
@@ -62,45 +62,6 @@
 &lt;p&gt;ただし、日本では販売されていないようなので、実際の物を見て買う事ができない、値段もそれなりだし。。。&lt;/p&gt;
 
 &lt;p&gt;両方買ってみるか？。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>elementaryOSをインストール</title>
-      <link>http://goozenlab.com/blog/2015/04/install-elementary-vaio-type-p/</link>
-      <pubDate>Tue, 21 Apr 2015 14:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/install-elementary-vaio-type-p/</guid>
-      <description>
-
-&lt;p&gt;デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCPUで復活しないものか。。）に再インストールする。&lt;/p&gt;
-
-&lt;p&gt;以前のバージョンのLunaを入れた事があったのだが、Liveでは動くものの、インストール後のgrubが正しく設定されず、修正もできなかったので起動しなかった。&lt;/p&gt;
-
-&lt;p&gt;今回はオフライン気味な端末として、物書き、お小遣い帳などとして活用する。そしてファイルの共有は下記のお勧めソフトのSyncthingを使う。なるべくサードパーティーのサービスは使わない。（勝手なマイポリシー）&lt;/p&gt;
-
-&lt;h2 id=&#34;事前準備:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;事前準備&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;isoファイルのダウンロード。&lt;/li&gt;
-&lt;li&gt;USB起動ディスクの作成ソフトのダウンロード&lt;/li&gt;
-&lt;li&gt;USB起動ディスクの作成&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;インストール:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;インストール&lt;/h2&gt;
-
-&lt;p&gt;USBメモリースティックを入れて起動。後はそのまま手順にそっていけば問題ない。パーティションの所だけ、各自の設定により変える必要がある。（本機はLinuxオンリーマシーンなのですべてをデフォルトの構成）&lt;/p&gt;
-
-&lt;h2 id=&#34;追加ソフト:6e0ef499bcc5fa0f4cc410f9946a8a85&#34;&gt;追加ソフト&lt;/h2&gt;
-
-&lt;p&gt;長い事Linuxを使っている訳では有りませんが、お勧めのソフトは以下、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Syncthing: P2P同期ソフト（BittorrentSyncのオープンソース判）&lt;/li&gt;
-&lt;li&gt;Mozc: 日本語の変換ソフト&lt;/li&gt;
-&lt;li&gt;Editor: 集中して物を書くときのソフト&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
@@ -533,6 +494,64 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;p&gt;二日掛かりました。これで、iOS8.2にアップデートしてしまった実機にアプリをインストールできる。。&lt;/p&gt;
 
 &lt;p&gt;追記：１ヶ月ぶりに戻ってきて、いつも朝にお世話になっているサモサ屋のサモサが一回り半くらい近く小さくなっている。。衝撃。。でも、まぁ10ルピーですし、、&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ビューサイクルとアプリ復帰時の処理</title>
+      <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
+      <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
+      <description>
+
+&lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
+
+&lt;h2 id=&#34;起動時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;起動時&lt;/h2&gt;
+
+&lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;viewDidLoad()&lt;/li&gt;
+&lt;li&gt;viewWillAppear&lt;/li&gt;
+&lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
+
+&lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;viewWillAppear&lt;/li&gt;
+&lt;li&gt;viewDidAppear&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
+
+&lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
+viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Notification Center
+let app: UIApplication = UIApplication.sharedApplication()
+NSNotificationCenter.defaultCenter().addObserver(self, 
+        selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
+        object: app)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と処理を追加する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;func applicationWillEnterForeground(notification: NSNotification) {
+    println(__FUNCTION__)
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
+
+&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
