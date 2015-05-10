@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>タイ ラップアップ</title>
-  <meta name="description" content="タイ ラップアップ">
+  <title>Macの追加設定</title>
+  <meta name="description" content="Macの追加設定">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-05-14</time>
+		  <time class="">2015-05-20</time>
 		  
 		  
 		  |
@@ -72,47 +72,66 @@
 		  
 
 		  
-		  categories:<a href="http://localhost:1313//categories/nomad">nomad</a> 
+		  categories:<a href="http://localhost:1313//categories/mac">mac</a> <a href="http://localhost:1313//categories/tips">Tips</a> 
 		  
 
 		  
 
 		</p>
-		<h5>タイ ラップアップ</h5>
+		<h5>Macの追加設定</h5>
 	  </div>
 
 	  <div class="post">
-		<p>暑くて何もできなかった、非生産的であったタイ滞在をちょっとまとめる。滞在期間40日、使ったお金は移動費込みで6万円くらい。</p>
+		
 
-<ul>
-<li>言葉：英語があまり通じません、タイ語を覚えましょう。</li>
-<li>治安：チェンマイ、北部は比較的良いです。バンコクはかなり危険、ハジャイや南部の都市もあまり良くはない。</li>
-<li>天候：チェンマイは９・１０月の日本の梅雨のような雨期の終わり、２・３月の野焼きの時期と４・５月の酷暑期（暑くて何もできない）以外は快適です。秋冬の天候は晴れの日がほとんどで、朝晩は少し冷え、昼は湿気も無く３０℃近くと理想的です。</li>
-<li>宿：シンプルなシングルでTHB150~250。アパートは月4,000THB+水道・光熱費くらいから、月借りができます。</li>
-<li>移動：カオサンからの夜行バスは盗難が多い、バスでバンコクからチェンマイに向かうならナコンチャイエアーがお勧め。国内のLCCは充実しているし、寝台列車も快適。　</li>
-<li>食事
+<p>MBP15がビデオカード関連の不具合によっての無償修理を経て戻ってくる。</p>
 
-<ul>
-<li>朝：タイベジ+ジュース（THB20~40）</li>
-<li>昼：タイベジ（THB25~40)</li>
-<li>夜：豆腐（THB10~20)</li>
-<li>酒：ビール大瓶（THB~55)</li>
-<li>その他：豆乳（THB5~）、ヨーグルト（THB14~20）、フルーツシェイク（THB15~25)</li>
-</ul></li>
-</ul>
+<p>かなり環境がぐじゃぐじゃになっているようなので、全てをクリーンインストールする。</p>
 
-<p>シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。雨期のタイは果物天国です。</p>
+<p>ついでにマック（X.9, X.10)、DEBIANのデュアルブートにする。とうとう完全にテピートで購入のCS3から卒業。</p>
 
-<p>すごくタイでありがたいのは、コンビニも24時間営業していますが、市場が早くからやってる事。朝４時頃からおばちゃん達が集まりだし、５時には全快。</p>
+<p>マーベリックをメイン、ヨセミテはXCode6.3用にする。</p>
 
-<p>チェンマイはすごく良いのですが、長くいるとだんだん、長期滞在者の人間関係に取り込まれたり、巻き込まれたりと、ちと面倒くさくなります。</p>
+<h2 id="インストールの順-ディスク構成:2ff53a04767999afbb61dca534de9e51">インストールの順＋ディスク構成</h2>
+
+<ol>
+<li>Mac OSX.10  (40GB)</li>
+<li>Mac OSX.9   (100GB)</li>
+<li>Debian 7.2  (30GB)</li>
+<li>dev             (20GB)</li>
+<li>share           (20GB)</li>
+</ol>
+
+<h2 id="mac-osx-10:2ff53a04767999afbb61dca534de9e51">Mac OSX.10</h2>
+
+<p>ヨセミテはインストール時にディスクのパーティションを勝手に変えてしまうので、インストール後にちょっと変更する必要があります。</p>
+
+<p>vifsコマンドを使ってfstabを書き換え、ユーザ領域(パーティション)を/Usersにマウントする様にしています。その際、UUIDで指定します。Yosemiteになって、diskutil infoの出力フォーマットが変わりました。UUIDが二つ出てきます。Volume用のUUIDを使えば大丈夫です。</p>
+
+<ol>
+<li>diskutilで、ディスクのUUIDを得る</li>
+<li>sudo vifsで/etc/fstabに追加</li>
+<li>再起動</li>
+</ol>
+
+<pre><code> % diskutil info /Volumes/Home/ | grep UUID
+Volume UUID:              1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678
+% sudo vifs
+UUID=1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678 /Users hfs rw 1 0
+</code></pre>
+
+<h2 id="mac-osx-9:2ff53a04767999afbb61dca534de9e51">Mac OSX.9</h2>
+
+<h2 id="debian-7-2:2ff53a04767999afbb61dca534de9e51">Debian 7.2</h2>
+
+<p>RAMを16ギガ積んでいるのでスワップ無しのシステムで動かします。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/wrapup-chiangmai\/';
-    var disqus_title = 'タイ ラップアップ';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/wrapup-chiangmai\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
+    var disqus_title = 'Macの追加設定';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

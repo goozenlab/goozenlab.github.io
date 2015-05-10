@@ -82,17 +82,15 @@
 	  </div>
 
 	  <div class="post">
-		
+		<p>Dropboxの容量が中途半端だったり、ちょっとうまく動かなかったりでオープンソースで代替の物を探していたら、ownCloudとSyncthingというソフトを見つける。</p>
 
-<p>Dropboxの容量が中途半端だったり、ちょっとうまく動かなかったりでオープンソースで代替の物を探していたら、ownCloudとSyncthingというソフトを見つけました。</p>
-
-<p>ownCloudは速度に問題があるようなので、ピアツーピアでの同期オープンソースアプリ、Syncthingをマックにインストールすることにしました。</p>
+<p>ownCloudは速度に問題があるようなので、ピアツーピアでの同期オープンソースアプリ、Syncthingをマックにインストールする。</p>
 
 <p><a href="https://syncthing.net/">Syncthing: open source bittorrentSync</a></p>
 
-<p>バイナリーがサイトよりダウンロードする事ができますが、brewより一発でインストールできます。</p>
+<p>バイナリーがサイトよりダウンロードする事がでるが、brewより一発でインストール。</p>
 
-<p>常時稼働のサーバーか同時に動いている別の端末が必要なので、elementaryOSのVaioPを取りあえず使います。SynologyのNASは実家にほったらかしになっているので後々追加予定。</p>
+<p>常時稼働のサーバーか同時に動いている別の端末が必要なので、Debian-VaioPを取りあえず使う。SynologyのNASは実家にほったらかしになっているので後々追加予定。</p>
 
 <pre><code>$ brew install syncthing
 ==&gt; Downloading https://homebrew.bintray.com/bottles/syncthing-0.10.30.mavericks
@@ -142,11 +140,7 @@ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
 <p><img src="/images/2015-04-01-syncthing-setting.png" alt="Syncthing" />
 </p>
 
-<h2 id="同期ファイルの設定:e316f07ad520c27f6fefcdc2ddc2a1e2">同期ファイルの設定</h2>
-
-<p>デスクトップとダウンロードフォルダーを同期します。</p>
-
-<p>ブラウザーより終了すると。</p>
+<p>ブラウザーより終了すると、プログラムが停止する。</p>
 
 <pre><code>[4GOP7] 07:42:59 INFO: Shutting down
 [4GOP7] 07:42:59 OK: Exiting
