@@ -7,8 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 22 Mar 2015 17:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2015 14:41:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>メインマシーンの悩み</title>
+      <link>http://goozenlab.com/blog/2015/05/main-notebook/</link>
+      <pubDate>Sat, 16 May 2015 14:41:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/05/main-notebook/</guid>
+      <description>&lt;p&gt;日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。&lt;/p&gt;
+
+&lt;p&gt;昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思った以上に快適。（SSDの容量が少ないのが難だが、、RAM4GBも不都合は、、（ギリギリ）無い。。。）MBP15はビデオカードの問題での故障だったので、無償での修理が可能になる。&lt;/p&gt;
+
+&lt;p&gt;さて、次に日本を出る時にどちらのマシーンを持ち出すか悩む。使わないMBは姪御にあげてしまう予定。&lt;/p&gt;
+
+&lt;p&gt;いったん軽さになれると、、、でも久しぶりに15インチの液晶を見たとき衝撃「デカっっ」のどちらを優先するのか、、&lt;/p&gt;
+
+&lt;p&gt;旅先ではそんなに外に端末を持って出る事は無いので、作業の効率を考えたら大きい方が良いのだが、移動時の重さが、、気楽さはMBAの圧勝。&lt;/p&gt;
+
+&lt;p&gt;2キロを切ったMBP15-Retinaが出れば即乗り換えるのだが、、WWDCでサプライズがないかしらん。。&lt;/p&gt;
+
+&lt;p&gt;追記：MBA11ではXcode6.2にして少しもっさり感が出始める。アンドロイド開発のために入れてみたIntelliJはとろくてやる気が起きない。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Xcode 6.2</title>

@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>Macの追加設定</title>
-  <meta name="description" content="Macの追加設定">
+  <title>SurfacePad</title>
+  <meta name="description" content="SurfacePad">
   <meta name="author" content="jin">
 
   
@@ -78,60 +78,34 @@
 		  
 
 		</p>
-		<h5>Macの追加設定</h5>
+		<h5>SurfacePad</h5>
 	  </div>
 
 	  <div class="post">
-		
+		<p>MBP15でも使っていたSurfacePadをMBA11にも付ける。</p>
 
-<p>MBP15がビデオカード関連の不具合によっての無償修理を経て戻ってくる。</p>
+<p>日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。</p>
 
-<p>かなり環境がぐじゃぐじゃになっているようなので、全てをクリーンインストールする。</p>
+<p>全体写真</p>
 
-<p>ついでにマック（X.9, X.10)、DEBIANのデュアルブートにする。とうとう完全にテピートで購入のCS3から卒業。</p>
+<p>新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。</p>
 
-<p>マーベリックをメイン、ヨセミテはXCode6.3用にする。</p>
+<p>黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。</p>
 
-<h2 id="インストールの順-ディスク構成:2ff53a04767999afbb61dca534de9e51">インストールの順＋ディスク構成</h2>
+<p>MBA11写真</p>
 
-<ol>
-<li>Mac OSX.10  (40GB)</li>
-<li>Mac OSX.9   (100GB)</li>
-<li>Debian 8  (30GB)</li>
-<li>dev             (20GB)</li>
-<li>share           (20GB)</li>
-</ol>
+<p>アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。</p>
 
-<h2 id="mac-osx-10:2ff53a04767999afbb61dca534de9e51">Mac OSX.10</h2>
+<p>途中で数回張り直すも３年くらい使っている物も未だすり切れる事も無く奇麗かつ、のりの残りも無い。</p>
 
-<p>ヨセミテはインストール時にディスクのパーティションを勝手に変えてしまうので、インストール後にちょっと変更する必要があります。</p>
-
-<p>vifsコマンドを使ってfstabを書き換え、ユーザ領域(パーティション)を/Usersにマウントする様にしています。その際、UUIDで指定します。Yosemiteになって、diskutil infoの出力フォーマットが変わりました。UUIDが二つ出てきます。Volume用のUUIDを使えば大丈夫です。</p>
-
-<ol>
-<li>diskutilで、ディスクのUUIDを得る</li>
-<li>sudo vifsで/etc/fstabに追加</li>
-<li>再起動</li>
-</ol>
-
-<pre><code> % diskutil info /Volumes/Home/ | grep UUID
-Volume UUID:              1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678
-% sudo vifs
-UUID=1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678 /Users hfs rw 1 0
-</code></pre>
-
-<h2 id="mac-osx-9:2ff53a04767999afbb61dca534de9e51">Mac OSX.9</h2>
-
-<h2 id="debian-7-2:2ff53a04767999afbb61dca534de9e51">Debian 7.2</h2>
-
-<p>RAMを16ギガ積んでいるのでスワップ無しのシステムで動かします。</p>
+<p>MBP15-OLD写真</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
-    var disqus_title = 'Macの追加設定';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/surfacepad\/';
+    var disqus_title = 'SurfacePad';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/surfacepad\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

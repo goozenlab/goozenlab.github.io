@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>Macの追加設定</title>
-  <meta name="description" content="Macの追加設定">
+  <title>コトリンの事始め</title>
+  <meta name="description" content="コトリンの事始め">
   <meta name="author" content="jin">
 
   
@@ -64,7 +64,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2015-05-20</time>
+		  <time class="">2015-05-25</time>
 		  
 		  
 		  |
@@ -72,66 +72,53 @@
 		  
 
 		  
-		  categories:<a href="http://localhost:1313//categories/mac">mac</a> <a href="http://localhost:1313//categories/tips">Tips</a> 
+		  categories:<a href="http://localhost:1313//categories/android">android</a> <a href="http://localhost:1313//categories/kotlin">Kotlin</a> 
 		  
 
 		  
 
 		</p>
-		<h5>Macの追加設定</h5>
+		<h5>コトリンの事始め</h5>
 	  </div>
 
 	  <div class="post">
 		
 
-<p>MBP15がビデオカード関連の不具合によっての無償修理を経て戻ってくる。</p>
+<p>タイに戻ってKotlin+IntelliJ でandroidの開発を、初めの一歩の新規プロジェジェク作成から始める。</p>
 
-<p>かなり環境がぐじゃぐじゃになっているようなので、全てをクリーンインストールする。</p>
+<h2 id="新規プロジェクト:b2394b11998d2dd00ca149678c5dbefc">新規プロジェクト</h2>
 
-<p>ついでにマック（X.9, X.10)、DEBIANのデュアルブートにする。とうとう完全にテピートで購入のCS3から卒業。</p>
+<p>新規プロジェクト作成は、コトリンサイトの
+<a href="http://kotlinlang.org/docs/tutorials/kotlin-android.html">こちら</a>
+に一連の流れが奇麗にまとまっている。下記メモは自分がやってみてつまずいた所等が書いてあります。</p>
 
-<p>マーベリックをメイン、ヨセミテはXCode6.3用にする。</p>
+<p>途中に何かしらをダウンロードする。（ネパールだと時間がかかる、、、ダウンロードになぜこんなに苦労しなければいかないのか、、）</p>
 
-<h2 id="インストールの順-ディスク構成:2ff53a04767999afbb61dca534de9e51">インストールの順＋ディスク構成</h2>
+<p><img src="file:///Users/jin/Desktop/2015-03-22-kotlin-makeing-project.png" alt="ダウンロード" />
+</p>
 
-<ol>
-<li>Mac OSX.10  (40GB)</li>
-<li>Mac OSX.9   (100GB)</li>
-<li>Debian 8  (30GB)</li>
-<li>dev             (20GB)</li>
-<li>share           (20GB)</li>
-</ol>
-
-<h2 id="mac-osx-10:2ff53a04767999afbb61dca534de9e51">Mac OSX.10</h2>
-
-<p>ヨセミテはインストール時にディスクのパーティションを勝手に変えてしまうので、インストール後にちょっと変更する必要があります。</p>
-
-<p>vifsコマンドを使ってfstabを書き換え、ユーザ領域(パーティション)を/Usersにマウントする様にしています。その際、UUIDで指定します。Yosemiteになって、diskutil infoの出力フォーマットが変わりました。UUIDが二つ出てきます。Volume用のUUIDを使えば大丈夫です。</p>
+<p>自分の為のメモ</p>
 
 <ol>
-<li>diskutilで、ディスクのUUIDを得る</li>
-<li>sudo vifsで/etc/fstabに追加</li>
-<li>再起動</li>
+<li>New Project | Android | Gradle: Android Module to create a new project.</li>
+
+<li><p>Converting Java code to Kotlin: Memu - Code - Convert Java File to Kotlin File  ( &lt;⌥⇧⌘ J&gt; on Mac OS)</p></li>
+
+<li><p>フォルダーはkotlinの追加よりjavaフォルダーのリネームのほうがうまく行く。</p></li>
 </ol>
 
-<pre><code> % diskutil info /Volumes/Home/ | grep UUID
-Volume UUID:              1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678
-% sudo vifs
-UUID=1111AAAA-BBBB-CCCC-DDDD-1234ABCD5678 /Users hfs rw 1 0
-</code></pre>
+<p>移行の作業はつまらないし、少々イライラする事がある。気分転換に</p>
 
-<h2 id="mac-osx-9:2ff53a04767999afbb61dca534de9e51">Mac OSX.9</h2>
+<p>少し新しい事を学んでいるような感があり、ちょっと充実感を感じる事ができる。</p>
 
-<h2 id="debian-7-2:2ff53a04767999afbb61dca534de9e51">Debian 7.2</h2>
-
-<p>RAMを16ギガ積んでいるのでスワップ無しのシステムで動かします。</p>
+<p>拙作のSati（瞑想タイマー）を移行しようと思っているので、取りあえず次は簡単なタイマーから作ろうと思ってます。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
-    var disqus_title = 'Macの追加設定';
-    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/mac-reinstall\/';
+    var disqus_identifier = 'http:\/\/localhost:1313\/blog\/2015\/05\/kotlin-project-setup\/';
+    var disqus_title = 'コトリンの事始め';
+    var disqus_url = 'http:\/\/localhost:1313\/blog\/2015\/05\/kotlin-project-setup\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

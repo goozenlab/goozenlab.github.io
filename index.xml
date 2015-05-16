@@ -7,8 +7,81 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 01 May 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2015 14:41:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>メインマシーンの悩み</title>
+      <link>http://goozenlab.com/blog/2015/05/main-notebook/</link>
+      <pubDate>Sat, 16 May 2015 14:41:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/05/main-notebook/</guid>
+      <description>&lt;p&gt;日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。&lt;/p&gt;
+
+&lt;p&gt;昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思った以上に快適。（SSDの容量が少ないのが難だが、、RAM4GBも不都合は、、（ギリギリ）無い。。。）MBP15はビデオカードの問題での故障だったので、無償での修理が可能になる。&lt;/p&gt;
+
+&lt;p&gt;さて、次に日本を出る時にどちらのマシーンを持ち出すか悩む。使わないMBは姪御にあげてしまう予定。&lt;/p&gt;
+
+&lt;p&gt;いったん軽さになれると、、、でも久しぶりに15インチの液晶を見たとき衝撃「デカっっ」のどちらを優先するのか、、&lt;/p&gt;
+
+&lt;p&gt;旅先ではそんなに外に端末を持って出る事は無いので、作業の効率を考えたら大きい方が良いのだが、移動時の重さが、、気楽さはMBAの圧勝。&lt;/p&gt;
+
+&lt;p&gt;2キロを切ったMBP15-Retinaが出れば即乗り換えるのだが、、WWDCでサプライズがないかしらん。。&lt;/p&gt;
+
+&lt;p&gt;追記：MBA11ではXcode6.2にして少しもっさり感が出始める。アンドロイド開発のために入れてみたIntelliJはとろくてやる気が起きない。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>タイ ラップアップ</title>
+      <link>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</link>
+      <pubDate>Thu, 14 May 2015 18:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</guid>
+      <description>&lt;p&gt;暑くて何もできなかった、非生産的であったタイ滞在をちょっとまとめる。滞在期間40日、使ったお金は移動費込みで6万円で余りが少々ある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;言葉：英語があまり通じません、タイ語を覚えるべし。&lt;/li&gt;
+&lt;li&gt;治安：チェンマイ、北部は比較的良いです。バンコクはかなり危険、ハジャイや南部の都市もあまり良くはない。&lt;/li&gt;
+&lt;li&gt;天候：チェンマイは９・１０月の日本の梅雨のような雨期の終わり、２・３月の野焼きの時期と４・５月の酷暑期（暑くて何もできない）以外は快適。秋冬の天候は晴れの日がほとんどで、朝晩は少し冷え、昼は湿気も無く３０℃近くと理想的です。&lt;/li&gt;
+&lt;li&gt;宿：シンプルなシングルでTHB150~250。アパートは月4,000THB+水道・光熱費くらいから、月借りができます。&lt;/li&gt;
+&lt;li&gt;移動：カオサンからの夜行バスは盗難が多い、バスでバンコクからチェンマイに向かうならナコンチャイエアーがお勧め。国内のLCCは充実しているし、寝台列車も快適。　&lt;/li&gt;
+&lt;li&gt;食事
+
+&lt;ul&gt;
+&lt;li&gt;朝：タイベジ+ジュース（THB20~40）&lt;/li&gt;
+&lt;li&gt;昼：タイベジ（THB25~40)&lt;/li&gt;
+&lt;li&gt;夜：豆腐（THB10~20)&lt;/li&gt;
+&lt;li&gt;酒：ビール大瓶（THB~55)&lt;/li&gt;
+&lt;li&gt;その他：豆乳（THB5~）、ヨーグルト（THB14~20）、フルーツシェイク（THB15~25)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。雨期のタイは果物天国。&lt;/p&gt;
+
+&lt;p&gt;すごくタイでありがたいのは、コンビニも24時間営業していますが、市場が早くからやってる事。朝４時頃からおばちゃん達が集まりだし、５時には全快。&lt;/p&gt;
+
+&lt;p&gt;チェンマイはすごく良いのだが、長くいるとだんだん、長期滞在者の人間関係に取り込まれたり、巻き込まれたりと、ちと面倒くさくなる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>elementaryOSをインストール</title>
+      <link>http://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</link>
+      <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</guid>
+      <description>&lt;p&gt;デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCPUで復活しないものか。。）に再インストールする。&lt;/p&gt;
+
+&lt;p&gt;以前のバージョンのLunaを入れた事があったのだが、Liveでは動くものの、インストール後のgrubが正しく設定されず、修正もできなかったので起動しなかった。&lt;/p&gt;
+
+&lt;p&gt;。。。で、問題なくインストールはでき、無線LANも使える。。。が遅くて使い物にならず、、残念。&lt;/p&gt;
+
+&lt;p&gt;結局タイミング良く出た、Debian8を再インストールする。こちらは及第点、ギリギリセーフ。&lt;/p&gt;
+
+&lt;p&gt;タイにてオフライン端末として使う。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>バックパックの買換思案中</title>
@@ -449,109 +522,6 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Swift Programming Language に書いてあるらしいので読むべ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NSDate() = [NSDate date]</title>
-      <link>http://goozenlab.com/blog/2015/03/nsdate-swift/</link>
-      <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
-      <description>&lt;p&gt;NSDateでの &lt;code&gt;[NSDate date]&lt;/code&gt; はシンプルにイニシャライザーに統合され？、Swiftでは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でよろしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を、Swiftで書いてみると、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、&lt;br /&gt;
-正しくは、&lt;code&gt;Double&lt;/code&gt;でエラーは消える。こうゆう所は割と厳しいのね。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Xcode 6.2</title>
-      <link>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</link>
-      <pubDate>Sun, 22 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/xcode62-downloaded/</guid>
-      <description>&lt;p&gt;ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。&lt;/p&gt;
-
-&lt;p&gt;宿のネットがスピードは相変わらずだが、割と安定しているようなのでXcodeのダウンロードを再びチャレンジする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-22-xcode62-downloaded.png&#34; alt=&#34;XCode 6.2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;二日掛かりました。これで、iOS8.2にアップデートしてしまった実機にアプリをインストールできる。。&lt;/p&gt;
-
-&lt;p&gt;追記：１ヶ月ぶりに戻ってきて、いつも朝にお世話になっているサモサ屋のサモサが一回り半くらい近く小さくなっている。。衝撃。。でも、まぁ10ルピーですし、、&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ビューサイクルとアプリ復帰時の処理</title>
-      <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
-      <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
-      <description>
-
-&lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
-
-&lt;h2 id=&#34;起動時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;起動時&lt;/h2&gt;
-
-&lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;viewDidLoad()&lt;/li&gt;
-&lt;li&gt;viewWillAppear&lt;/li&gt;
-&lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
-
-&lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;viewWillAppear&lt;/li&gt;
-&lt;li&gt;viewDidAppear&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
-
-&lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
-viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Notification Center
-let app: UIApplication = UIApplication.sharedApplication()
-NSNotificationCenter.defaultCenter().addObserver(self, 
-        selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
-        object: app)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と処理を追加する。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func applicationWillEnterForeground(notification: NSNotification) {
-    println(__FUNCTION__)
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
-
-&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

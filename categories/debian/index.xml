@@ -18,6 +18,8 @@
       <guid>http://localhost:1313/blog/2015/08/efi-boot-debian/</guid>
       <description>&lt;p&gt;ヨセミテは改悪なOSだと思っているし、アップルも段々信用が置けなくなってきている。。ということで、自由を求めてデビアンをMBP15-2011にインストールする。&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&#34;http://blog.einval.com/debian/CDs&#34;&gt;http://blog.einval.com/debian/CDs&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;Within the system&amp;rsquo;s chroot and after having mounted /boot, install the &lt;code&gt;grub-efi-amd64-bin&lt;/code&gt; package and do the following:&lt;/p&gt;
 
 &lt;ul&gt;
