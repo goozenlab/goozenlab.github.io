@@ -11,12 +11,12 @@
     <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>テーブルビューセの境界線を消す</title>
+      <title>テーブルビューセルの境界線を消す</title>
       <link>http://goozenlab.com/blog/2015/04/tableview-separator/</link>
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
-      <description>&lt;p&gt;テーブルビューセの境界線を消すには下記のコードを追加。&lt;/p&gt;
+      <description>&lt;p&gt;テーブルビューセルの境界線を消すには下記のコードを追加。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
 &lt;/code&gt;&lt;/pre&gt;

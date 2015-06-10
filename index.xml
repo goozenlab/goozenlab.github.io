@@ -7,8 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 01 Jun 2015 12:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2015 17:30:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>エル・キャピタンを入れる</title>
+      <link>http://goozenlab.com/blog/2015/06/elcapitn-beta/</link>
+      <pubDate>Wed, 10 Jun 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/elcapitn-beta/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan.jpg&#34; alt=&#34;El Capitan X.11&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落とす事ができるようになる。XCode7を使う為、あまり容量の無いMBA11-128GBに無理矢理スペースつくり、&lt;strong&gt;El Capitan&lt;/strong&gt;を入れてみる事にする。（発表されてこの文章を書いている途中まで&lt;strong&gt;&lt;em&gt;El Captain&lt;/em&gt;&lt;/strong&gt;だと、ヨセミテ隊の大尉だと、、勘違いをする。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-disk.jpg&#34; alt=&#34;128GB SSD X.11&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ちなみに、SafariにAdBlockのエクステンションが入っていると、ダウンロードのサイトがうまく機能しないよう、AdBlockを一時停止して機能する。（分からず、Firefoxでダウンロード。）&lt;/p&gt;
+
+&lt;p&gt;現在の開発機は去年秋にアップデートしたマーベリックがメインの環境で、多分ヨセミテはスキップする事になりそう。ヨセミテの使用時間は多分数時間にも満たない、良い印象はあまり無い。。。
+ちまたではWindows10が新しいMacbookではヨセミテより軽快に動いているとネットで見聞きする。エルキャプテンではパフォーマンスが向上するとの触れ込みなので、ちょっと期待しダウンロードする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-installer.jpg&#34; alt=&#34;Installer&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;インストラーを起動+再起動後、20分ほどで作業終了。初期ディスク占有容量は&lt;strong&gt;7.08GB&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan-installed.jpg&#34; alt=&#34;El Capitan&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-about.jpg&#34; alt=&#34;About&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;なぜか、未だヨセミテの名前がついている。一瞬別の物を入れてしまったと思った。。再起動後直る。&lt;/p&gt;
+
+&lt;p&gt;さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、&lt;/p&gt;
+
+&lt;h2 id=&#34;良い点:dd668fb4cf7938e3a692cfa3bca5bf1c&#34;&gt;良い点&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フラットなデザインがようやく落ち着いた感じになる。&lt;/li&gt;
+&lt;li&gt;ことえりの自動変換が割りと心地よい！&lt;/li&gt;
+&lt;li&gt;上部メニューを「自動で隠す」ことができる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;悪い点:dd668fb4cf7938e3a692cfa3bca5bf1c&#34;&gt;悪い点&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;メニューバーでのバッテリーの残量表示時間がかなり短くなる&lt;/li&gt;
+&lt;li&gt;フォルダーの色が好きになれない。&lt;/li&gt;
+&lt;li&gt;20GBを割り当ててインストールしたものの、唯一使いたいXCode7（8.76GB）が、容量が足らず入らない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;と、マイナーアップデートで可もなく不可もない、まだベーターなのでこれからさらにブラッシュアップされる事を期待。移行するにはまだ個人的にいくつかの要件が満たされないとできないが、XCode7を使う開発環境という事で当分はDualOSで使う。完全な移行は多分メインのMBA15-2011を買い替えるとき、、来年か。。&lt;/p&gt;
+
+&lt;h3 id=&#34;おまけ-近況:dd668fb4cf7938e3a692cfa3bca5bf1c&#34;&gt;おまけ：近況&lt;/h3&gt;
+
+&lt;p&gt;中央アジアに呼ばれているようなので、旅に出ます。スタン・スタンの４+1カ国を２ヶ月半くらいで周遊。そして訪問国が100カ国に到達！。
+イスラム圏ではラマダン月が今年は6月18日からなので、大人しく回ってきます。ついでに、数年前に洪水の影響でギルギット止まりだった、パキのフンザへもリベンジするつもりです。
+アップルウォッチのアイディアが出れば良いな、と期待しつつ。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ラッゲージタグをリサイクル</title>
@@ -32,14 +94,14 @@
       <pubDate>Thu, 28 May 2015 15:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/05/donation/</guid>
-      <description>&lt;p&gt;日本に帰った時には(厄払いも含め)少なくとも必ずどこかに寄付をするようにしている。&lt;/p&gt;
+      <description>&lt;p&gt;日本に戻った時には(厄払いも含め)小額でもどこかに寄付をするようにしている。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-28-donation.jpg&#34; alt=&#34;ドネーション伝票&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;今回は４月初旬までいたネパールの震災支援に寄付をしようかと思っていた。しかし昨今のFIFAの問題で、以前から感じている大きな諸々の協会に対する不信感がさらに増大。&lt;/p&gt;
 
-&lt;p&gt;今回は、以前も寄付した事もある「&lt;a href=&#34;http://www.msf.or.jp&#34;&gt;国境なき医師団&lt;/a&gt;」へ寄付をする。&lt;/p&gt;
+&lt;p&gt;今回は、以前寄付した事がある「&lt;a href=&#34;http://www.msf.or.jp&#34;&gt;国境なき医師団&lt;/a&gt;」へ寄付をする。&lt;/p&gt;
 
 &lt;p&gt;少しだけ人に役に立てたような、ほんの少しお金のしがらみから自由になれるような、そんな気になれるのが寄付の良い所だと思ったりする。&lt;/p&gt;
 </description>
@@ -80,7 +142,7 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;第一印象
-ウェブサイトでかなりリサーチをしたのでデザイン等の、サイズは自分が思ってたほどズレは無い。作りは値段の割にはかなり雑。ジッパーは小振りだが、使用用途とYKKである事を見ると頑丈であろう。&lt;/p&gt;&lt;/li&gt;
+ウェブサイトでかなりリサーチをしたのでデザイン等の、サイズは自分が思ってたほどズレは無いがちょっと小さいかもと不安になる。作りは値段の割にはかなり雑。ジッパーは小振りだが、使用用途とYKKである事を見ると頑丈であろう。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;フラットオープン&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -150,21 +212,21 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
       <pubDate>Wed, 20 May 2015 19:41:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/05/surfacepad/</guid>
-      <description>&lt;p&gt;MBP15でも使っていたSurfacePadをMBA11にも付ける。&lt;/p&gt;
+      <description>&lt;p&gt;MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。&lt;/p&gt;
+&lt;p&gt;日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。&lt;/p&gt;
 
 &lt;p&gt;黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。&lt;/p&gt;
@@ -433,12 +495,12 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
     </item>
     
     <item>
-      <title>テーブルビューセの境界線を消す</title>
+      <title>テーブルビューセルの境界線を消す</title>
       <link>http://goozenlab.com/blog/2015/04/tableview-separator/</link>
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
-      <description>&lt;p&gt;テーブルビューセの境界線を消すには下記のコードを追加。&lt;/p&gt;
+      <description>&lt;p&gt;テーブルビューセルの境界線を消すには下記のコードを追加。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
 &lt;/code&gt;&lt;/pre&gt;
@@ -447,116 +509,6 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>バックパックの中身</title>
-      <link>http://goozenlab.com/blog/2015/04/inside-hackpack/</link>
-      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/inside-hackpack/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-bags.jpg&#34; alt=&#34;写真：全て&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ちょっと自分でも整理をしたかったので、今回の約４ヶ月間マレーシア・ネパール旅行での持ち物リストを書き出してみました。バックパックを新しくしようかなと、、
-全部で多分15キロぐらい、バックパックとブリーフケースに荷物がパツパツに入ってます。
-一年の旅行でもリストはほとんど同じだと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;ブリーフケース:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;ブリーフケース&lt;/h2&gt;
-
-&lt;p&gt;MBP15が入るブリーフケース。昨年MBP15が故障。MBA11 (-1.4kg)になったというのになにか、まだずっしりとした重さがある。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-briefcase.jpg&#34; alt=&#34;写真：ブリーフケースの中身&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ポケットトートバックのような物にMBA 11と封筒ケース&lt;/li&gt;
-&lt;li&gt;Kindle PaperLight&lt;/li&gt;
-&lt;li&gt;リコー GR + ViewFinder&lt;/li&gt;
-&lt;li&gt;iPhone 4S&lt;/li&gt;
-&lt;li&gt;iPod 240GBとヘッドフォン&lt;/li&gt;
-&lt;li&gt;A6 システム手帳&lt;/li&gt;
-&lt;li&gt;ナカバヤシのノート&lt;/li&gt;
-&lt;li&gt;マネーベルト&lt;/li&gt;
-&lt;li&gt;長財布と小銭入れ&lt;/li&gt;
-&lt;li&gt;書類入れ：A4シート、三折り書類入オレッタ&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;バックパック:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;バックパック&lt;/h2&gt;
-
-&lt;p&gt;人から譲ってもらった物ですが、サイズはパーフェクト、40L?くらい、REI社製。人に切られたり、ネズミに齧られたりでボロボロ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-04-backpack.jpg&#34; alt=&#34;写真：バックパックの中身&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;服飾類:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;服飾類&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ハンガー x 3&lt;/li&gt;
-&lt;li&gt;衣服メッシュケース（着ている物は除外）
-
-&lt;ol&gt;
-&lt;li&gt;タオル、手拭 x 4&lt;/li&gt;
-&lt;li&gt;Tシャツ x 2、シャツ x 2&lt;/li&gt;
-&lt;li&gt;ズボン、パジャマ&lt;/li&gt;
-&lt;li&gt;インドのドーティ(2m x 1.2mくらいの腰巻）&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;寝袋とショール&lt;/li&gt;
-&lt;li&gt;眼鏡ケース&lt;/li&gt;
-&lt;li&gt;サンダル&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;生活:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;生活&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ネティポッドとサプリメント類&lt;/li&gt;
-&lt;li&gt;洗顔キット：垢こすり、シャンプー、石けん&lt;/li&gt;
-&lt;li&gt;ヘッドライト&lt;/li&gt;
-&lt;li&gt;鍵 x 3&lt;/li&gt;
-&lt;li&gt;ZipLockやプラスチック数種&lt;/li&gt;
-&lt;li&gt;コクヨの筆箱：生活グッズ
-
-&lt;ol&gt;
-&lt;li&gt;耳かき、爪切り、髭剃り&lt;/li&gt;
-&lt;li&gt;はさみ、定規&lt;/li&gt;
-&lt;li&gt;替芯：シャープペンとボールペン&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;デジタル関連:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;デジタル関連&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;MacBook用電源とユニバーサルアダプター&lt;/li&gt;
-&lt;li&gt;Sony GSPロガー&lt;/li&gt;
-&lt;li&gt;小型BTスピーカー&lt;/li&gt;
-&lt;li&gt;eneloop： charger、AA x 5、AAA x4&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;外付けHD：バックアップ用として持ってくるも、壊れる。&lt;/li&gt;
-&lt;li&gt;コクヨの筆箱：デジタルグッズ
-
-&lt;ol&gt;
-&lt;li&gt;ケーブル類&lt;/li&gt;
-&lt;li&gt;USBアダプタ&lt;/li&gt;
-&lt;li&gt;USBメモリースティック&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;etc:d0186ebfd0ba8f0330384d473d6e61be&#34;&gt;etc&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ユニクロのバッグ：移動時はバックインバックになっている&lt;/li&gt;
-&lt;li&gt;防水性のバッグ：バックパックのカバーが無いので、&lt;/li&gt;
-&lt;li&gt;マグカップ&lt;/li&gt;
-&lt;li&gt;Beefeaterのペットボトル&lt;/li&gt;
-&lt;li&gt;塩や香辛料：ほとんど使わず&lt;/li&gt;
-&lt;li&gt;ジェットボイルとガス：今回特別参加&lt;/li&gt;
-&lt;li&gt;液晶・レンズクリーナー&lt;/li&gt;
-&lt;li&gt;ベッド兼ヨガマット&lt;/li&gt;
-&lt;li&gt;文具： Kurutoga、消しゴム、Pilotのボールペン&lt;/li&gt;
-&lt;li&gt;メッシュケース：S字フックやクリップ等が入ってます&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     

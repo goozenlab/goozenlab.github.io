@@ -55,7 +55,7 @@ $
 
 &lt;h2 id=&#34;プレビュー方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;プレビュー方法&lt;/h2&gt;
 
-&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内のNote &amp;amp; Setting ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
+&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内の&lt;strong&gt;Note &amp;amp; Setting&lt;/strong&gt; ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-11-hugo-alt.png&#34; alt=&#34;nvALT:Simplenote&#34; /&gt;
 &lt;/p&gt;
@@ -149,11 +149,11 @@ git push origin master
   &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt;
 
   &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt;
-	{{ $baseurl := .Site.BaseUrl }}
-	{{ range $name, $page := .Site.Recent }} 
-	{{ if eq .Type &amp;quot;post&amp;quot; }}		
-	&amp;lt;li&amp;gt;
-	  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
+    {{ $baseurl := .Site.BaseUrl }}
+    {{ range $name, $page := .Site.Recent }} 
+    {{ if eq .Type &amp;quot;post&amp;quot; }}        
+    &amp;lt;li&amp;gt;
+      &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;そして、&lt;code&gt;config.toml&lt;/code&gt; に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。&lt;/p&gt;

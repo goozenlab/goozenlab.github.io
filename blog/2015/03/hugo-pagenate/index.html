@@ -90,11 +90,11 @@
   &lt;p style=&quot;margin-bottom:1em;font-weight:bold;color:#333&quot;&gt;posts:&lt;/p&gt;
 
   &lt;ul class=&quot;posts&quot;&gt;
-	{{ $baseurl := .Site.BaseUrl }}
-	{{ range $name, $page := .Site.Recent }} 
-	{{ if eq .Type &quot;post&quot; }}		
-	&lt;li&gt;
-	  &lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ $page.Title }}&lt;/a&gt;
+    {{ $baseurl := .Site.BaseUrl }}
+    {{ range $name, $page := .Site.Recent }} 
+    {{ if eq .Type &quot;post&quot; }}        
+    &lt;li&gt;
+      &lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ $page.Title }}&lt;/a&gt;
 </code></pre>
 
 <p>そして、<code>config.toml</code> に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。</p>
