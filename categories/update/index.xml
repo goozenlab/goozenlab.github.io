@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 13 Apr 2015 22:20:00 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2015 10:00:47 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist lite 復活</title>
+      <link>http://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
+      <pubDate>Thu, 18 Jun 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
+      <description>&lt;p&gt;リトリストのライト判を復活させました。&lt;/p&gt;
+
+&lt;p&gt;かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョン言って良いのか分からないけれど、機能はそのままフルバージョンと同等です。
+&lt;strong&gt;広告&lt;/strong&gt;がつくのが唯一の違いです。（ちょっとライト版でのみ起きるバグもあるのですが、、、放置、すいません。）&lt;/p&gt;
+
+&lt;p&gt;広告が邪魔でフルバージョンへ移行したいユーザーの方は、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ライトバージョンの設定より項目の書出し&lt;/li&gt;
+&lt;li&gt;フルバージョンのインストール&lt;/li&gt;
+&lt;li&gt;フルバージョンを立ち上げ、新規項目を追加（+ボタンより）&lt;/li&gt;
+&lt;li&gt;取込みボタンでライトバージョンで書き出した項目を読み込む。&lt;/li&gt;
+&lt;li&gt;ライトバージョンの削除&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;の作業になります。リトリスト間データーは共有されませんので、ライトバージョンはアンインストールする事をお勧めします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>dandori v2.6.4</title>
@@ -546,95 +571,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;p&gt;この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist 2.6.3</title>
-      <link>http://goozenlab.com/blog/2015/02/littlist-263/</link>
-      <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/littlist-263/</guid>
-      <description>&lt;p&gt;いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;ついでに、ネット各所に載って
-いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
-ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;agvtool bump
-# agvtool bump -all #Info.plistも更新したいとき
-
-infoPlistFileSource=&amp;quot;${SRCROOT}/${INFOPLIST_FILE}&amp;quot;
-#infoPlistFileDestination=&amp;quot;${TEMP_DIR}/Preprocessed-Info.plist&amp;quot;
-rootPlistFileDestination=&amp;quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&amp;quot;
-
-if [ ${CONFIGURATION} = &amp;quot;Debug&amp;quot; ]; then
-	# Version 2.6.3
-	# Build @ 2014-01-16 12:16 (dev.298)
-	versionPrefix=&amp;quot; (dev.&amp;quot;
-	date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)
-	BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot;
-else
-	# Version 2.6.3 @ 2014.01.16
-	# Build  276
-	date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date
-	BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource)
-fi
-
-# ここのPreferenceSpecifiers:16, 17は各アプリによって変更
-/usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&amp;quot; $rootPlistFileDestination
-/usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&amp;quot; $rootPlistFileDestination
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_dev.png&#34; alt=&#34;Dev&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_app.png&#34; alt=&#34;App&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;以下を Setting.bundle/Root.plistに加える事もお忘れなく。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;About&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSGroupSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;FooterText&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Copyright © 2015 XXXX All Rights Reserved.&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
-		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;1.0&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Version&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;app_version_number&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
-		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;1&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Build&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;app_build_number&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;追記：&lt;br /&gt;
-少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_a_release.png&#34; alt=&#34;Release&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>
