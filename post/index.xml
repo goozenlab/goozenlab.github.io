@@ -7,8 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 18 Jun 2015 10:00:47 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2015 20:12:00 +0600</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ウルムチ、中国のインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/06/internet-urumuqi/</link>
+      <pubDate>Sat, 27 Jun 2015 20:12:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/internet-urumuqi/</guid>
+      <description>&lt;p&gt;名前はモンゴル語から来ているらしい新疆ウイグル自治区の首都？ウルムチ。
+思っていた以上に都市で、ウイグルらしさはあまり感じられないし、バブル感がある。暇を持て余し、人民公園で時間の大半を過ごす。&lt;/p&gt;
+
+&lt;p&gt;ネットは高速だが、グーグル関連はシャットダウンされている模様。
+検索はヤフーかBingを使う事になる。痛いのは、グーグルマップが使えない事。（後に会った旅行者は使えたとの事。。）アップルの地図はウルムチは良いのだが、次に訪問するお隣カザフのアルマトイという都市は大きな通りが一本のみしか表示されない。。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-27-map-almaty.png&#34; alt=&#34;アルマトイ&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;インターネットのスピードはちょっと違うが、２つのYHを利用したが同じような感じ、&lt;/p&gt;
+
+&lt;p&gt;麦田国際青年旅社（百盛デパートの横）&lt;/p&gt;
+
+&lt;p&gt;下り：5.83Mps&lt;br /&gt;
+上り：0.14Mps&lt;/p&gt;
+
+&lt;p&gt;雷鳥国際青年旅社（中国南方航空ホテルの裏）&lt;/p&gt;
+
+&lt;p&gt;下り：2.84Mps&lt;br /&gt;
+上り：0.35Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;雷鳥はスタッフがフレンドリーでした、麦田の左側にある部屋は明るくてグッド。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop v1.8.0</title>
+      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
+      <pubDate>Thu, 25 Jun 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
+      <description>
+
+&lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;追加機能:846f46160724fec170c33cf28f2c39bd&#34;&gt;追加機能&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。&lt;/p&gt;
+
+&lt;p&gt;バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSが&lt;strong&gt;iOS8以降&lt;/strong&gt;になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist lite 復活</title>
@@ -486,57 +543,6 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
 &lt;p&gt;ただし、日本では販売されていないようなので、実際の物を見て買う事ができない、値段もそれなりだし。。。&lt;/p&gt;
 
 &lt;p&gt;両方買ってみるか？。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>メーホンソン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/04/internet-maehongson/</link>
-      <pubDate>Fri, 17 Apr 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/internet-maehongson/</guid>
-      <description>&lt;p&gt;メーサリアンからミニバンで３時間掛からずメーホンソンに着く。
-メーソットよりは街ですが、ベジ屋が見つからない。。。&lt;/p&gt;
-
-&lt;p&gt;近郊の村々を回る訳ではないので、宿からまさに一歩出れば池に出るので、お寺と池を眺めつつ時間をつぶす。&lt;/p&gt;
-
-&lt;p&gt;午前はなんか眠いし、午後になると熱くて何もできない。。夜も明け方まで眠れず。。。&lt;/p&gt;
-
-&lt;p&gt;宿 JohniesGH (150B)のネットは、&lt;/p&gt;
-
-&lt;p&gt;下り：8.66Mps&lt;br /&gt;
-上り：0.60Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-17-maehongson.jpg&#34; alt=&#34;maehongson&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>メーサリアン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/04/internet-maesariang/</link>
-      <pubDate>Tue, 14 Apr 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/internet-maesariang/</guid>
-      <description>&lt;p&gt;ソンクラン恐怖の水掛祭りの日に移動する。&lt;/p&gt;
-
-&lt;p&gt;バスと行ってもソンテウというピックアップの大きくなった乗り物。
-外からの攻撃には脆弱。街に入る度に待ってましたとばかりに水掛の犠牲になる。&lt;/p&gt;
-
-&lt;p&gt;ある意味途中の街の雰囲気が分かるので面白かったといえば面白かったのだが、ひえひえかつホコリだらけの６時間。&lt;/p&gt;
-
-&lt;p&gt;ちなみにソンテウ代は200バーツ。最初から最後まで乗っていたのはドライバーと私だけでした。&lt;/p&gt;
-
-&lt;p&gt;宿 (200B)のネットは、&lt;/p&gt;
-
-&lt;p&gt;下り：8.32Mps&lt;br /&gt;
-上り：0.66Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;タイに戻ってきて、観光をせずにスタンフォード大の講義を日に幾つか聞いている。&lt;/p&gt;
-
-&lt;p&gt;ストーリーボードは使いたくないのだが、激しくストーリーボードを勧めてきている感じがある。オートレイアウトはやはり好きになれない。。もう少しSwiftの解説があったらありがたいのだが、、。（未だ、オプショナルやクロージャーについて理解していない）&lt;/p&gt;
 </description>
     </item>
     

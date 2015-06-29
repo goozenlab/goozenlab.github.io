@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 18 Jun 2015 10:00:47 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2015 07:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.8.0</title>
+      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
+      <pubDate>Thu, 25 Jun 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
+      <description>
+
+&lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;追加機能:846f46160724fec170c33cf28f2c39bd&#34;&gt;追加機能&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。&lt;/p&gt;
+
+&lt;p&gt;バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSが&lt;strong&gt;iOS8以降&lt;/strong&gt;になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist lite 復活</title>
@@ -523,54 +548,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.8.1</title>
-      <link>http://goozenlab.com/blog/2015/02/ohayo-281/</link>
-      <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/ohayo-281/</guid>
-      <description>
-
-&lt;h3 id=&#34;ロングタップ-で記録の開始-音が出ない-バグ:ea44213d358d50f4f8d2eeea0430c3ac&#34;&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始、&lt;strong&gt;音が出ない&lt;/strong&gt;バグ&lt;/h3&gt;
-
-&lt;p&gt;の変更といくつかのバグ、修正と追加があります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;バグ&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;音が出ないバグ&lt;/strong&gt;、iOS8。ホーム＞設定＞ohayo: &lt;strong&gt;通知&lt;/strong&gt;にてサウンドのスウィッチをオンにしてください&lt;/li&gt;
-&lt;li&gt;初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる&lt;br /&gt;
-（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;修正・調整&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始（ボタンとの誤作動をさけるため）&lt;/li&gt;
-&lt;li&gt;シェイクがかなり繊細なのを少し調整&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;追加&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ヘルスケアへの書出し&lt;strong&gt;設定が有効時&lt;/strong&gt;に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。&lt;br /&gt;
-データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）&lt;/p&gt;
-
-&lt;p&gt;この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>

@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 08 Mar 2015 07:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2015 07:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/doop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.8.0</title>
+      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
+      <pubDate>Thu, 25 Jun 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
+      <description>
+
+&lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;追加機能:846f46160724fec170c33cf28f2c39bd&#34;&gt;追加機能&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。&lt;/p&gt;
+
+&lt;p&gt;バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSが&lt;strong&gt;iOS8以降&lt;/strong&gt;になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.6.5</title>
@@ -334,29 +359,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Update for Navbar</title>
-      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
-      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
-      <description>&lt;p&gt;一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。
-これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。
-今まで手に付けてなかったのが不思議なくらいです。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;設定方法は、&lt;/p&gt;
-
-&lt;p&gt;アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。&lt;/p&gt;
-
-&lt;p&gt;頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）&lt;/p&gt;
-
-&lt;p&gt;今週中にはポコポコとアップされると思います。
-セールもやっていますので、なにとぞ、よろしく。&lt;/p&gt;
 </description>
     </item>
     
