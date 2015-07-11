@@ -7,8 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 06 Apr 2015 19:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2015 09:30:00 +0600</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>midXで中心を求める</title>
+      <link>http://goozenlab.com/blog/2015/07/midx-swift/</link>
+      <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
+      <description>&lt;p&gt;今までは中心を求めるのに素直に、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.width / 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と行ってきたけれども、.midX/midY&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.midX
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とスマート、かつ格好良くできます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>テーブルビューセルの境界線を消す</title>
@@ -502,80 +522,6 @@ Class not found, using default NSManagedObject instead.
 &lt;/p&gt;
 
 &lt;p&gt;ポカラの水汲み場&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
-      <link>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</link>
-      <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
-      <description>&lt;p&gt;タイトルが長げーーーーーーな。。&lt;/p&gt;
-
-&lt;p&gt;さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）&lt;/p&gt;
-
-&lt;p&gt;そんなときは、マッピングファイルを作成して、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ファイルを訂正、追加して（source, destinationに注意）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;あとは、optionsの設定を加え、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-
-# options:nil の箇所を options:options に変更
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;pre&gt;&lt;code&gt;- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
-    
-    // Create the coordinator and store
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&amp;quot;Littlist.sqlite&amp;quot;];
-   
-    // Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)};
-
-    NSError *error = nil;
-    NSString *failureReason = @&amp;quot;There was an error creating or loading the application&#39;s saved data.&amp;quot;;
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-        // Report any error we got.
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        dict[NSLocalizedDescriptionKey] = @&amp;quot;Failed to initialize the application&#39;s saved data&amp;quot;;
-        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
-        dict[NSUnderlyingErrorKey] = error;
-        error = [NSError errorWithDomain:@&amp;quot;YOUR_ERROR_DOMAIN&amp;quot; code:9999 userInfo:dict];
-        // Replace this with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@&amp;quot;Unresolved error %@, %@&amp;quot;, error, [error userInfo]);
-        abort();
-    }
-    return _persistentStoreCoordinator;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
-
-&lt;p&gt;でも、これで変更の流れもつかめるしありがたや。&lt;/p&gt;
 </description>
     </item>
     
