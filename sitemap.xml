@@ -3,8 +3,33 @@
   
   <url>
     <loc>http://goozenlab.com/</loc>
-    <lastmod>2015-07-15T19:30:00+06:00</lastmod>
+    <lastmod>2015-08-02T20:30:00+06:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/08/internet-osh/</loc>
+    <lastmod>2015-08-02T20:30:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</loc>
+    <lastmod>2015-07-27T18:30:00+05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/07/internet-dushanbe/</loc>
+    <lastmod>2015-07-26T20:30:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/07/oshu-khojand/</loc>
+    <lastmod>2015-07-22T19:30:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/07/toktogul-oshu/</loc>
+    <lastmod>2015-07-21T19:30:00+06:00</lastmod>
   </url>
   
   <url>
@@ -1100,6 +1125,10 @@
   <url>
     <loc>http://goozenlab.com/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/1/01/</loc>
   </url>
   
 </urlset>

@@ -7,8 +7,122 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 15 Jul 2015 19:30:00 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2015 20:30:00 +0600</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>オシュ、キルギスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/08/internet-osh/</link>
+      <pubDate>Sun, 02 Aug 2015 20:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/internet-osh/</guid>
+      <description>&lt;p&gt;前回滞在時に忘れたオシュのインターネットスピードは、&lt;/p&gt;
+
+&lt;p&gt;下り：XX.XXMps&lt;br /&gt;
+上り：XX.XX Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NSUserDefaultsのキーの削除</title>
+      <link>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
+      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
+      <description>&lt;p&gt;アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。&lt;/p&gt;
+
+&lt;p&gt;既に設定してしまったUserDefaultsのキーを削除する方法は以下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>デゥシャンベ、タジキスタンのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/07/internet-dushanbe/</link>
+      <pubDate>Sun, 26 Jul 2015 20:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/internet-dushanbe/</guid>
+      <description>&lt;p&gt;イストラフシャンからデゥシャンベへの移動はシェアタクシー。朝早く行ったのにも関わらず、運転手の営業不足で２時間待ち。８０ソムニで６時間（途中タイヤの空気調整数回）かかる。現地の人は５０ソムを支払っていたように見えた。&lt;/p&gt;
+
+&lt;p&gt;宿はビシュケクにて南から流れてきた旅行者に「デゥシャンベの宿はグリーンの一択でしょ！」という言葉につられて、Green GuestHouse。&lt;/p&gt;
+
+&lt;p&gt;非常に立派な建物で空調も建物全体に入っている。US$15にも関わらず人気宿のようで、最後のベッドを幸運にもゲット。庭でねている人やリビングの隙間で寝ている人もいました。入口横に雑魚寝大広間もあるように見えました。&lt;/p&gt;
+
+&lt;p&gt;しかし、ビシュケクでは沢山見かけた日本人はここでは、チャリーダーマンの一人。ホーローグに向かうパーティーがいるだろうと思っていたのだが、しかも２泊目の宿は一気に宿泊客の入れ替えのようで、同乗者は見つけられず、独りで行く事になる。&lt;/p&gt;
+
+&lt;p&gt;ネットは高速と聞いていたが、さすがに宿が一杯の状態（３５人くらいと言ってました。）だと、かなり遅い。&lt;/p&gt;
+
+&lt;p&gt;下り：1.82Mps&lt;br /&gt;
+上り：0.05 Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;宿の周辺情報：宿を出て右へ、大きい通りを右折して南下。まず、焼きたてのナンを売っている店、さらに南へ行くと学食風安レストラン（入口が南向）、そして大きい十字路を越えるとスパーマーケットが、さらに歩くとホーローグ行きのタクシースタンドの裏口があります。（右手奥の水色ゲートが目印）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>オシュからホジャンドまで</title>
+      <link>http://goozenlab.com/blog/2015/07/oshu-khojand/</link>
+      <pubDate>Wed, 22 Jul 2015 19:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/oshu-khojand/</guid>
+      <description>&lt;p&gt;オシュからタジキスタンに公共バスを乗り継いで（安く）向かうには、バトケン（キルギス）〜 国境 〜 イスファラ（タジキスタン）、を経由してホジャンドになる。&lt;/p&gt;
+
+&lt;p&gt;オシュの東西に走るメインロードが２０１５年夏の現在リコンストラクションの為、ロンリープラネットに乗っているマルシュルートカのターミナルが移動しているかもしれないと宿の人が言っていた。無くてもその辺の人が教えてくれると思うし、すぐ近くに乗合タクシー乗り場もあるので、またまた早起きをして最初の７：１５発のマルシュルートカに間に合うように宿を出る。&lt;/p&gt;
+
+&lt;p&gt;ターミナルがあるだろう所の少し前で声をかけられる。専業タクシーではなくバトケンの人が帰るついでの小銭稼ぎのようで、３００ソムと安く、すぐ出るというので即決。早起きは三文の得。同乗者：オッサンだと思ったが私の弟と同い年の運転手と高校教師２９歳の友人、そして子供が５人と孫沢山の老夫婦と独り者の私。
+道の舗装も良くバトケンまで３時間半くらいで到着。ウズベキスタンの飛び地を通過しているか分からないけれど、パスポートチェック等は無く、しているのも見かけなかった。
+（※対向車でバトケンからオシュ行きのマルシュルートカを数台見かけたので逆方向もあると思う。）&lt;/p&gt;
+
+&lt;p&gt;バトケンからは同乗の老夫婦がホジャンドへ向かうらしく、イスファラまでタクシーを一人100ソムで話をつけてくれる。（公園の横より）ホジャンドからは国境までは３０分ぐらい？国境も空いていてイスファラまでもそんなに掛からず、あっという間。&lt;/p&gt;
+
+&lt;p&gt;イスファラではタクシーの運ちゃんが気を利かせてかホジャンド行きのタクシーを勝手に捕まえ、（ロシア語で：多分）「これで行け！値段はXXだ！」と、良い流れであったのでそのタクシーでホジャンドまで（３０ソモニ：ぼられた感あり）。老夫婦は昼食を取ってから移動というのでお別れ。１時間半ぐらい走り中心街に入る前のバスターミナルで下ろされる。（キルギス時間14時前に着）適当なマルシュルートカに乗って市内まで（１ソモニ）。ちょっと中央アジアをなめてました、ホジャンドも大きな街です。ここもソフトクリームが美味しい。両替所の多くキルギスの１０００ソムが１００ソムニになる、物価の比較が楽。&lt;/p&gt;
+
+&lt;p&gt;で、人ですが、眉毛が繋がりました！！ゲジケジ、ヒゲモジャです。インドやパキ辺りの色が濃くなり始め、逆にアジアの色は薄くなりました。&lt;/p&gt;
+
+&lt;p&gt;※ ベルギービールの Duvel の偽物？ラベルが似ている duel が 1L:TJS4.40-5.00(JPY90) で飲めます。背の低い太ったリッターのペットボトル。（デゥシャンベでは売ってませんでした。）種類は分からないが、カフェで飲める中生は TJS3.00なり。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>トクトグルからオシュまで</title>
+      <link>http://goozenlab.com/blog/2015/07/toktogul-oshu/</link>
+      <pubDate>Tue, 21 Jul 2015 19:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/toktogul-oshu/</guid>
+      <description>
+
+&lt;p&gt;ビシュケクから一気にオシュというのも味気ないし、移動時間も１０時間くらいと少々長い。景観も良いらしいし途中一息を入れるため、貯水池のあるトクトグルによることにする。&lt;/p&gt;
+
+&lt;h2 id=&#34;トクトグル:d120af18d651ad0f5016847798a3be51&#34;&gt;トクトグル&lt;/h2&gt;
+
+&lt;p&gt;ビシュケクのオシュバザール南にて、シェアータクシーに乗る。&lt;/p&gt;
+
+&lt;p&gt;先日聞いた値段だと、トクトグルまでは500ソムというはなしだったのだが、聞くと1000ソム、、、
+しばし悩むが他のタクシーに切り替え数時間待ちというのは嫌なので、出発が15分後というので渋々了解。
+同乗のお客さんは４人の子供とおばあちゃん二人、割と余裕のあるメンバー。途中、ドライバーが免許を忘れ途中の街を少しよる。５時間後、トクトグルのバザール前でおろしてもらう。&lt;/p&gt;
+
+&lt;p&gt;いきなり酔っ払いの親父に絡まれ、ホテル探しがちょっと難だったけれど、結局ほぼ廃墟状態のバスターミナル南２0メーターくらいの所に厄介になる。５００ソム。ネット環境は無い、というか１泊なのでチェックしていない。。&lt;/p&gt;
+
+&lt;p&gt;街をフラフラ歩く。かなり昔に発行された旅行人に載っている使われていない観覧車は未だ健在。湖まで散歩しようと歩くが途中６・７匹の野良犬が通りを占領、人通りも少ないし断念。別に悔しくはない。&lt;/p&gt;
+
+&lt;h2 id=&#34;オシュ行きマルシュルートカ:d120af18d651ad0f5016847798a3be51&#34;&gt;オシュ行きマルシュルートカ&lt;/h2&gt;
+
+&lt;p&gt;次のオシュ行きは宿の人曰くAM６：３０発という事で５：００に起き、６：１５分ごろ向かうも、ターミナル横にある商店のおじさん曰く、７：１５発と教えてくれる。現地の若い男の子もその時に待っていたので、最近変更？なのか、近くのベンチでビシュケク行きのタクシーの運ちゃんと身振手振談笑し時間をつぶす。（ミニバスは一日に一本でこれを逃すとシャアタクシーになる。速いが値段も相応。）&lt;/p&gt;
+
+&lt;p&gt;途中、８：００頃着いた街で朝ご飯休憩と、ジャララバードで昼ご飯休憩があり、思ったより時間が掛かり、午後４時にオシュに到着。４４０ソム。&lt;/p&gt;
+
+&lt;p&gt;※ 子供が横にいたら要注意！運転が荒いし、ワインディングロードなので、乗り物に弱い子は！吐きます！&lt;/p&gt;
+
+&lt;p&gt;で、、オシュにて１時間時計が先走っている事に気づく。。。
+なんか変だ。。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>宮崎駿氏記者会見</title>
@@ -48,7 +162,7 @@
 &lt;p&gt;秘密保護法の強引な成立の辺りから不穏な雰囲気が出始め、一気に暴走。
 安全保障関連法案、原発の再稼働、国立競技場の建設と国民を全く無視し、誰かしらの利権とアメリカのための政治運営が淡々と行われていく。&lt;/p&gt;
 
-&lt;p&gt;これは、安倍政権誕生時からも危惧していた事。ここまで、権力をいびつな形で使われるとは誰も思っていなかったのだろうが、あまりにもひどすぎる。。。&lt;/p&gt;
+&lt;p&gt;これは、安倍政権誕生時からも危惧していた事。ここまで、権力をいびつな形で使われるとは思っていなかったが、あまりにもひどすぎる。。。&lt;/p&gt;
 
 &lt;p&gt;（ぼやき）まぁ今更言っても始まらず、、でも、まぁ次の選挙でも自民党が勝ってしまうのだろう。。まぁ、政治的にまともな国なんてそうないのだけど、。おいらは在日なので選挙権は無いし。。&lt;/p&gt;
 
@@ -286,273 +400,6 @@
 &lt;li&gt;車窓は。。。途中に通る湖の大きさにちょっとビックリ、水平線も少し高く見える。動物が見えたりはしません。。&lt;/li&gt;
 &lt;li&gt;チケット代は手数料込みで804元。（昔の歩き方より安くなっている）&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ウルムチ、中国のインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/06/internet-urumuqi/</link>
-      <pubDate>Sat, 27 Jun 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/internet-urumuqi/</guid>
-      <description>&lt;p&gt;名前はモンゴル語から来ているらしい新疆ウイグル自治区の首都？ウルムチ。
-思っていた以上に都市で、ウイグルらしさはあまり感じられないし、バブル感がある。暇を持て余し、人民公園で時間の大半を過ごす。&lt;/p&gt;
-
-&lt;p&gt;ネットは高速だが、グーグル関連はシャットダウンされている模様。
-検索はヤフーかBingを使う事になる。痛いのは、グーグルマップが使えない事。（後に会った旅行者は使えたとの事。。）アップルの地図はウルムチは良いのだが、次に訪問するお隣カザフのアルマトイという都市は大きな通りが一本のみしか表示されない。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-27-map-almaty.png&#34; alt=&#34;アルマトイの地図&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;インターネットのスピードはちょっと違うが、２つのYHを利用したが同じような感じ、&lt;/p&gt;
-
-&lt;p&gt;麦田国際青年旅社（百盛デパートの横）&lt;/p&gt;
-
-&lt;p&gt;下り：5.83Mps&lt;br /&gt;
-上り：0.14Mps&lt;/p&gt;
-
-&lt;p&gt;雷鳥国際青年旅社（中国南方航空ホテルの裏）&lt;/p&gt;
-
-&lt;p&gt;下り：2.84Mps&lt;br /&gt;
-上り：0.35Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;雷鳥はスタッフがフレンドリーでした、麦田の左側にある部屋は明るくてグッド。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.8.0</title>
-      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
-      <pubDate>Thu, 25 Jun 2015 07:00:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
-      <description>
-
-&lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;追加機能:846f46160724fec170c33cf28f2c39bd&#34;&gt;追加機能&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。&lt;/p&gt;
-
-&lt;p&gt;バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSが&lt;strong&gt;iOS8以降&lt;/strong&gt;になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>パックリスト 2015</title>
-      <link>http://goozenlab.com/blog/2015/06/centralasia-packlist/</link>
-      <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/centralasia-packlist/</guid>
-      <description>
-
-&lt;p&gt;中央アジアに呼ばれているようなので、旅に出る。スタン・スタンの４+1カ国を２ヶ月半くらいで周遊。そして訪問国が100カ国に到達！。&lt;br /&gt;
-イスラム圏ではラマダン月が今年は6月18日から始まっているので、大人しく回ってきます。ついでに、数年前に洪水の影響でギルギット止まりだった、パキのフンザへもリベンジするかも。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-20-all.jpg&#34; alt=&#34;Bags&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;さて、年齢とともに少なくなってくるバックパックの荷物。今回の旅行で持っていく物のリストを書き出す。パックライトを心がけ、必要ない物は極力持ち出さず。服に関しては必要があらば現地で買い足す。バッグはすごく久しぶりに新しくなり、バックパッカー初心者の様。&lt;/p&gt;
-
-&lt;h2 id=&#34;サブバッグ:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;サブバッグ&lt;/h2&gt;
-
-&lt;p&gt;本来ならワンバッグ旅行にしたいのだが、ラコステのボディバッグをサブバッグとして持っていく。マレーシア、マラッカのデパートで見て気に入り、日本にてセール中に購入。MBA11がギリギリ入る。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-lacoste.jpg&#34; alt=&#34;BodyBag&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;PassPort：普段はコピーを持ち歩くが中央アジアでは常時携帯必須らしい&lt;/li&gt;
-&lt;li&gt;Macbook Air 11：Digio MacBook Air11用 スリップインケース&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Kindle Paperwhite&lt;/strong&gt;：封筒にビールのラベルを貼付ける&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ricoh GR&lt;/strong&gt;：ホコリっぽい国もあるのでケースより手拭でぐるぐる巻き&lt;/li&gt;
-&lt;li&gt;iPhone 4S：SIMアンロックの下駄を付けてSIMフリー化&lt;/li&gt;
-&lt;li&gt;iPodVideo 5thGen：単体ではiPodシリーズで一番音質が良い＋240GBに換装&lt;/li&gt;
-&lt;li&gt;HeadPhone：ちょっと良いやつを&lt;/li&gt;
-&lt;li&gt;単三電池とデジカメバッテリー&lt;/li&gt;
-&lt;li&gt;筆記具とB6ノート：100ノートメモ術＋Bulletダイアリー風に使う&lt;/li&gt;
-&lt;li&gt;インヘラー：タイでハマる、決して怪しいブツではないがひっそりと忍ばす&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;フロス&lt;/strong&gt;と歯ブラシ&lt;/li&gt;
-&lt;li&gt;財布、書類&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ 割と重い。もしかしたらメインのバッグと同じくらいの重さかも知れない。&lt;/p&gt;
-
-&lt;h2 id=&#34;メインバッグ-gr-0:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;メインバッグ：GR-0&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-16-gr-0.jpeg&#34; alt=&#34;GoRuck GR-0&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;GoRuck社の&lt;strong&gt;21L&lt;/strong&gt;バックパック：レビューと詳細は&lt;a href=&#34;http://goozenlab.com/blog/2015/05/new-backpack-gr0/&#34;&gt;こちら&lt;/a&gt;。荷は絞る。ちょっと大きさが不安だったが、入れてみると、まぁ充分でもあるし、思ったより入る。 ジャケット等他必要な物があれば現地調達。&lt;/p&gt;
-
-&lt;h3 id=&#34;袋類:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;袋類&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Iska 防水袋：バックパックの中で使ったり、バックパック自体を入れる事もできる&lt;/li&gt;
-&lt;li&gt;ジップロック、巾着、100均メッシュケース、ビニール袋など袋マニアです。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;服など:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;服など&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;バスタオル、 Tシャツx3、下着x4、シャツx2、ポロシャツ、麻のズボン、パジャマ、ドーティ：腰巻き（着ている物を含む）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ビーチサンダル&lt;/strong&gt;：ちょーっとかさ張るけれど必須アイテム、Muji製&lt;/li&gt;
-&lt;li&gt;コクーンのトラベルシーツ：寝袋の代わり&lt;/li&gt;
-&lt;li&gt;アンゴラウールの&lt;strong&gt;ショール&lt;/strong&gt;：毛布になったり、LCCで使ったりする&lt;/li&gt;
-&lt;li&gt;携帯座布団：Logosの物&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;電子機器:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;電子機器&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;GPS Logger：古いSonyの物、もういらんか。。&lt;/li&gt;
-&lt;li&gt;iPodNano：正方形のやつ&lt;/li&gt;
-&lt;li&gt;ポータブルアンプ：デノンの&lt;a href=&#34;http://goozenlab.com/blog/2015/06/denon-da10/&#34;&gt;DA-10&lt;/a&gt;（不覚にも、持っているiPodVideoでは使えないが良い製品）&lt;/li&gt;
-&lt;li&gt;MBA、USB電源アダプター、eneloop充電器、アウトレット変換器&lt;/li&gt;
-&lt;li&gt;ケーブル類&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-20-digital-tools.jpg&#34; alt=&#34;電子機器&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;文具:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;文具&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;B6-Muji方眼ノート&lt;/strong&gt;：丸められて、気楽に使える。B6のサイズが個人的にはベスト&lt;/li&gt;
-&lt;li&gt;筆記具、クリップ等：&lt;strong&gt;クルトガシャープペン&lt;/strong&gt;とLamy４色ボールペン&lt;/li&gt;
-&lt;li&gt;クリヤーファイル、クリヤーケース：パスポートのコピー等をいれている&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;小物類:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;小物類&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ハンガー x2&lt;/li&gt;
-&lt;li&gt;保温水筒+マグカップ：中国にいくので持っていく。水筒の中にお茶をジップロックに入れておく。&lt;/li&gt;
-&lt;li&gt;ヌテラの容器：大きさと口が広いのでキープ、サプリ入。&lt;/li&gt;
-&lt;li&gt;眼鏡ケース：PC眼鏡が入っている。&lt;/li&gt;
-&lt;li&gt;セイコー目覚まし時計：気温表示付き、電池がえらく長く持つし、国によっては勝手に日本時間に調整されてしまう。&lt;/li&gt;
-&lt;li&gt;ヘッドライト&lt;/li&gt;
-&lt;li&gt;鍵：大きめの物と小さいもの&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-20-small-goods.jpg&#34; alt=&#34;小物類&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;洗顔用品:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;洗顔用品&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;くし、耳かき、爪切り、ひげ剃り&lt;/li&gt;
-&lt;li&gt;石けん、シャンプー、百均垢すり&lt;/li&gt;
-&lt;li&gt;歯磨き粉、歯ブラシ：オムロンの電池で動く電動歯ブラシ&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;その他:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;その他&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;洗剤と重曹：眼鏡クリーナー、洗剤、歯磨き代用など使い道は多彩&lt;/li&gt;
-&lt;li&gt;粉サプリ、小さいスプーン：ニーム、ブラーミなどのアユルベーダブレンド&lt;/li&gt;
-&lt;li&gt;ニベア青缶：まぶたに塗ると二重になると聞き買ってみる&lt;/li&gt;
-&lt;li&gt;常備薬：目薬と以前旅先で買ってあまった数枚のバンドエイド&lt;/li&gt;
-&lt;li&gt;S字フック：必須とは言えないし、あまり使う機会は無いのだけど、、大中小の三つ&lt;/li&gt;
-&lt;li&gt;ナッツの蜂蜜漬：余った食材で作る、ずっしりと重いとかさ張る。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ 太字はお勧め&lt;/p&gt;
-
-&lt;h2 id=&#34;外に付いている物:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;外に付いている物&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ヨガマット＋ケース：スペースが少しあるのでビーチサンダルを一緒に入れる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;持って出ない物:82d6f691b91d5819b9e1b6a0f3ff958f&#34;&gt;持って出ない物&lt;/h2&gt;
-
-&lt;p&gt;バックパックが小さくなった事で、持っていくのを断念した物。またはいつもはもっていくけど今回は必要がないもの等。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;携帯スピーカー：ノマド時は使うけれど旅の時はあまり使わない&lt;/li&gt;
-&lt;li&gt;寝袋：スペース的に入れようと思えば入るが、、&lt;/li&gt;
-&lt;li&gt;鼻うがいポッド：まぁ、、かさ張るのでいらない&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist lite 復活</title>
-      <link>http://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
-      <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
-      <description>&lt;p&gt;リトリストのライト判を復活させました。&lt;/p&gt;
-
-&lt;p&gt;かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョン言って良いのか分からないけれど、機能はそのままフルバージョンと同等です。
-&lt;strong&gt;広告&lt;/strong&gt;がつくのが唯一の違いです。（ちょっとライト版でのみ起きるバグもあるのですが、、、放置、すいません。）&lt;/p&gt;
-
-&lt;p&gt;広告が邪魔でフルバージョンへ移行したいユーザーの方は、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ライトバージョンの設定より項目の書出し&lt;/li&gt;
-&lt;li&gt;フルバージョンのインストール&lt;/li&gt;
-&lt;li&gt;フルバージョンを立ち上げ、新規項目を追加（+ボタンより）&lt;/li&gt;
-&lt;li&gt;取込みボタンでライトバージョンで書き出した項目を読み込む。&lt;/li&gt;
-&lt;li&gt;ライトバージョンの削除&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;の作業になります。リトリスト間データーは共有されませんので、ライトバージョンはアンインストールする事をお勧めします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>デノンのDA-10</title>
-      <link>http://goozenlab.com/blog/2015/06/denon-da10/</link>
-      <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/denon-da10/</guid>
-      <description>
-
-&lt;p&gt;快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。&lt;/p&gt;
-
-&lt;p&gt;以前は iBassoのD2を使っていた。iPodと同じ大きさでオペアンプも交換可能、USBでMacBookに繋げばDACとしても機能する。大きな不具合は無いのだが、iPodとの接続はアナログラインのみ、かつちょっと大きい&lt;strong&gt;充電アダプター&lt;/strong&gt;を持ち歩かなくては行けないのがかなりのネック。&lt;/p&gt;
-
-&lt;p&gt;ここ数年Hi-Fiオーディオの流行により新しいアンプが幾つか売りに出てきたので機種変更。iPodにデジタル対応しているものはSony PHA1, Fostex HP-P1, Denon DA-10、他幾つか。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-EL_da10_front.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1は大きいしデザインがあまり好きなれない、後発になるDENONがちょっと太り気味感じではあるが気になっていた。値段も３万円を切りお手頃な感じになり、そろそろ市場から消えてしまう前に購入をする。&lt;/p&gt;
-
-&lt;p&gt;※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート１-小お出かけ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-lite.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート２-中お出かけ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-middle.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート３-ノマドデスクトップ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-desktop.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ノマドマシーンMBA11にはiTuneのライブラリは入っていないので。右にiPodVideo、左にDA-10を接続してiPodのライブラリに入っている曲を聴く。&lt;/p&gt;
-
-&lt;p&gt;でもいい音で聞くと、思わず聞き入ってしまうので、ながら聴はできないのが問題か。。。&lt;/p&gt;
 </description>
     </item>
     

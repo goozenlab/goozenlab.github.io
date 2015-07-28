@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 11 Jul 2015 09:30:00 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NSUserDefaultsのキーの削除</title>
+      <link>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
+      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
+      <description>&lt;p&gt;アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。&lt;/p&gt;
+
+&lt;p&gt;既に設定してしまったUserDefaultsのキーを削除する方法は以下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>midXで中心を求める</title>
@@ -497,31 +514,6 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UserDefaultの初期値設定</title>
-      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
-      <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
-      <description>&lt;p&gt;AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; // UserDefault Initial values
- var userDefaultsDefaults = NSMutableDictionary()
- userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING)
- userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2)
- NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;数値も文字も気にせず書き込んでよいようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;ポカラの水汲み場&lt;/p&gt;
 </description>
     </item>
     
