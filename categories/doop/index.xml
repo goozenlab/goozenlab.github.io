@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 25 Jun 2015 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2015 16:00:00 +0600</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/doop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.8.1</title>
+      <link>http://goozenlab.com/blog/2015/08/doop-181/</link>
+      <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/doop-181/</guid>
+      <description>&lt;p&gt;項目が削除できないケアレスミスのバグフィックスです。&lt;/p&gt;
+
+&lt;p&gt;連絡いただいた、そらのはサン、ありがとうございました。&lt;/p&gt;
+
+&lt;p&gt;対応が遅れましたが、アプストアに申請しました。今週中にはアップされると思います。&lt;/p&gt;
+
+&lt;p&gt;PS：なぜだか分からないけれど、ビルドが全然通りませんでした。。。どうした事か？？&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.8.0</title>
@@ -345,20 +361,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Update for Retina4</title>
-      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
-      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
-      <description>&lt;p&gt;とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。&lt;/p&gt;
 </description>
     </item>
     

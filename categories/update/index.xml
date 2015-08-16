@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 25 Jun 2015 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2015 16:00:00 +0600</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.8.1</title>
+      <link>http://goozenlab.com/blog/2015/08/doop-181/</link>
+      <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/doop-181/</guid>
+      <description>&lt;p&gt;項目が削除できないケアレスミスのバグフィックスです。&lt;/p&gt;
+
+&lt;p&gt;連絡いただいた、そらのはサン、ありがとうございました。&lt;/p&gt;
+
+&lt;p&gt;対応が遅れましたが、アプストアに申請しました。今週中にはアップされると思います。&lt;/p&gt;
+
+&lt;p&gt;PS：なぜだか分からないけれど、ビルドが全然通りませんでした。。。どうした事か？？&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.8.0</title>
@@ -475,80 +491,6 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 
 &lt;li&gt;&lt;p&gt;画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.6.4</title>
-      <link>http://goozenlab.com/blog/2015/02/sati-164/</link>
-      <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sati-164/</guid>
-      <description>
-
-&lt;h3 id=&#34;ios8上での-音が鳴らない不具合-は:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;iOS8上での&lt;strong&gt;音が鳴らない不具合&lt;/strong&gt;は&lt;/h3&gt;
-
-&lt;p&gt;ホーム＞設定＞サティ＞通知より、&lt;/p&gt;
-
-&lt;p&gt;サウンドのスウィッチをオンにしてください。
-これで、問題は解消するはずです。&lt;/p&gt;
-
-&lt;h3 id=&#34;for-bug-that-you-don-t-get-any-sounds-on-ios8:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;for Bug that you don&amp;rsquo;t get any sounds on &lt;strong&gt;iOS8&lt;/strong&gt;,&lt;/h3&gt;
-
-&lt;p&gt;go Home &amp;gt; Setting &amp;gt; &lt;strong&gt;&lt;em&gt;Sati: Notification&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
-and turn &lt;strong&gt;Sound&lt;/strong&gt; ON.  This solves this problem&amp;hellip;
-I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-30-alert.png&#34; alt=&#34;Alert&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;長らくご迷惑おかけしました。&lt;/p&gt;
-
-&lt;p&gt;そして、次のアップデートに入れる予定のものが少し入り込みます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンだらけになっていたメイン画面をスッキリとさせました。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_163.png&#34; alt=&#34;Sati 163&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_164.png&#34; alt=&#34;Sati 164&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;最近の状況を示すアイコンを中心の円の内側に入れました。&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;瞑想回数により白が濃くなります。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- more --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;設定画面も少し手を入れて、&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;下は終了音の選択&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Sati SettingView&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ホーム＞設定＞サティで設定できる項目を追加しました。&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;瞑想中の音のオン・オフ&lt;/li&gt;
-&lt;li&gt;カレンダー書出し時のフォーマット&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
