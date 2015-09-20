@@ -112,6 +112,18 @@
     </item>
     
     <item>
+      <title>dandori v2.6.3</title>
+      <link>http://goozenlab.com/blog/2015/03/dandori-263/</link>
+      <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/dandori-263/</guid>
+      <description>&lt;p&gt;Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。&lt;/p&gt;
+
+&lt;p&gt;ついでに編集時に出る左の削除のボタンを削ろうかと思いましたが、保留。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>littlist v2.6.5</title>
       <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
       <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
@@ -439,62 +451,6 @@ MainViewのReCalcurationに追加して解決はするもシックリとこな�
 &lt;ul&gt;
 &lt;li&gt;リスト画面：メモを少し見やすく、選択された時は表示の高さを変える&lt;/li&gt;
 &lt;li&gt;タイマ画面：左のテキストをタップで数秒間メモを表示する&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>次のアップデート進行状況</title>
-      <link>http://goozenlab.com/blog/2015/02/sati-upcomming/</link>
-      <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sati-upcomming/</guid>
-      <description>
-
-&lt;p&gt;1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。&lt;/p&gt;
-
-&lt;h3 id=&#34;変更および追加:02b34a8499a527797a12ccf4ce4b3a52&#34;&gt;変更および追加&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_main_pre165.png&#34; alt=&#34;Main&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_history_pre165.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;メインページの透明度等のデザインの微調整&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;設定ページのデザイン微調整&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
-&lt;li&gt;終了音の追加（短めの鐘と風鈴）&lt;/li&gt;
-&lt;li&gt;QuietModeのアイコンを追加&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;履歴ページのデザイン変更&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;戻るボタンを下に配置&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

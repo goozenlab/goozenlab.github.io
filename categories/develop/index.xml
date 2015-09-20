@@ -281,6 +281,25 @@ NSNotificationCenter.defaultCenter().addObserver(self,
     </item>
     
     <item>
+      <title>NotificationSettings認証設定</title>
+      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
+      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
+      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
+
+&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
+  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
+  categories: nil))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>クラスが読み込めず [解決]</title>
       <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
@@ -447,51 +466,6 @@ self.vew.addSubview(buttonMoodExecelent)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SwiftでConstantを扱う</title>
-      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
-      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
-      <description>&lt;p&gt;Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。
-ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。&lt;/p&gt;
-
-&lt;p&gt;分からないことが多々あるが、進めていかないと、、&lt;/p&gt;
-
-&lt;p&gt;さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  LocalConstants.swift
-//
-
-import Foundation
-import UIKit
-
-    let ONE_DAY = 86400
-
-struct UDKey {
-    static let DisplayColorMode = &amp;quot;color_mode&amp;quot;
-}
-
-struct Default {
-    static let ColorMode = &amp;quot;kawaii&amp;quot;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、他からのアクセスは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;のようにしています。&lt;/p&gt;
-
-&lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
-
-&lt;p&gt;追記 (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;22&lt;/sub&gt;)：&lt;code&gt;import UIKit&lt;/code&gt;を追加する。&lt;/p&gt;
 </description>
     </item>
     
