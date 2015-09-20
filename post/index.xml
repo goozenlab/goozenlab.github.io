@@ -7,8 +7,161 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 16 Aug 2015 16:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2015 09:30:00 +0800</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iOS9にて気になる機能の3DTouch</title>
+      <link>http://goozenlab.com/blog/2015/09/3dtouch/</link>
+      <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/3dtouch/</guid>
+      <description>&lt;p&gt;スマートフォンのアプリケーションでは機能と操作性のバランスが大切だと思っている。&lt;/p&gt;
+
+&lt;p&gt;iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。
+アップルの使い方のガイドラインではピーク＆ポップという形。
+その対象に対しての関心の度合いを操作にしたいう感じ。&lt;/p&gt;
+
+&lt;p&gt;自分のアプリで使っている長押しと被るような感じがあるのだが、どう追加して行くか考えている。&lt;/p&gt;
+
+&lt;p&gt;例）リトリスト（todoアプリ）にて、&lt;br /&gt;
+メニューバーの長押しでリストからホットリスト（重要項目のリスト）に移動するようになっている。
+これは、強押しで重要項目の表示、さらに押して移動という形にできる。&lt;/p&gt;
+
+&lt;p&gt;：おまけ：&lt;br /&gt;
+自分の検証端末はいまだに iPhone4S （自分の中ではデザイン的に理想の携帯。母から契約終了端末を引き継ぐ）。iPhone6Sは機能的には惹かれるが、どうもハードのデザインに魅力を感じない。次のiphone7でフルモデルチェンジを期待。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ノヴォシビルスク、ロシアのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</link>
+      <pubDate>Sun, 13 Sep 2015 17:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</guid>
+      <description>&lt;p&gt;バルナウルよりバスで５時間、雨がちらついているなかノヴォシビルスクに着く。&lt;/p&gt;
+
+&lt;p&gt;動物園に行きたくて寄ったのだが、天候が不良。。。
+宿に滞在していた自分と同じくらいの身長のモンゴル系の女子に一緒に行きましょうよと珍しく誘われるが、雨の中の回るのは気が向かず遠慮する、、その辺をフラフラッと歩いて観光終了。&lt;/p&gt;
+
+&lt;p&gt;天気予報を見てみると、９月の中旬から一気に気温が急降下。夏は終わり冬に突入、風が刺さる。&lt;/p&gt;
+
+&lt;p&gt;残念だが宿でビールを片手にユラユラしながら、キノコとお惣菜の豆を買ってきてカレーを作る。&lt;/p&gt;
+
+&lt;p&gt;ネットの環境は&lt;/p&gt;
+
+&lt;p&gt;下り：15.40Mps&lt;br /&gt;
+上り：18.26Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;と、まぁロシアのど真ん中の古びた公団住宅のような所でもこんなに速度が出る。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-13-novosibirsk.jpg&#34; alt=&#34;Novosibirsk&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>バルナウル、ロシアのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/09/internet-barnaul/</link>
+      <pubDate>Fri, 11 Sep 2015 17:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/internet-barnaul/</guid>
+      <description>&lt;p&gt;定番のアスタナからオムスク・エカテリンブルグには向かわず、カザフスタンのセメイという街からロコットというロシアのボーダータウンで列車を乗り換えバルナウルに向かう。&lt;/p&gt;
+
+&lt;p&gt;カザフスタンの出国手続きは車内で行われ、ロシアのロコットに到着してしばし経ち、入国手続きは一体どうなっているんだろうと待っていると、なぜかお客が入ってくる。そして、入ってきたお客がカザフスタンの真っ新な入国カードを持っている。車掌に「おいらはロシアのバルナウルに行くんだが、本当にこの列車に乗っていていいのか？？」問うと、外のロシア風の職員と話をして、出てパスポートコントロールに行けと、、、それまでに何回かロシアのドキュメントがどうだや何らと聞きにきて、携帯電話で誰かと話をして何かしら確認を取っていたように見え、座ってろといっていたのだが、、危うくそのまま乗ったままになる所だった。次の列車の発車時間が近づいてくる。&lt;/p&gt;
+
+&lt;p&gt;セメイから乗ったこの列車は、この街で人を拾ってまたカザフに戻って行くようだ。&lt;/p&gt;
+
+&lt;p&gt;さてロシアの入国審査はスムースに問題なく思えたのだが、、&lt;/p&gt;
+
+&lt;p&gt;最初の数ページ目パキスタンのビザで指が止まったの見て、、、
+何かしらヒソヒソと相談をしばしして、、&lt;/p&gt;
+
+&lt;p&gt;、、、時間もそんなに無いし、、、&lt;/p&gt;
+
+&lt;p&gt;少し不安がよぎる、、、&lt;/p&gt;
+
+&lt;p&gt;パスポート全てのページのコピーを取られる。&lt;/p&gt;
+
+&lt;p&gt;まぁ別に色々と調べられたりはしなかったので良かったのだが。（次の列車の出発１０分前）&lt;/p&gt;
+
+&lt;p&gt;そこから、バルナウルへのチケットを買おうにも、キャッシャーで理解のできないロシア語での諸々の質問を浴びせられ、結局列車に行けと言われる。&lt;/p&gt;
+
+&lt;p&gt;列車に勝手に乗るも、チケットが無いなら出ろと無愛想に「ニエッッ」。車両を移動して、これはこのままではいかんと、今回は意地でも引き下がらず、「コンピューターが悪いのだか、キャッシャーの女性が列車に乗れ」といわれてたと、制服をきた女性に英語で畳み掛けてみる。結局車掌らしき人が出てきて「金は持っているのか？」見たいな事を聞かれ、「ダーー、ダァー、ダ」と答えると、料金表を持ってきて２等の値段を指す。しかし手元にはそれには足りない金額しか無いので、３等にしてくれと値切ってみる。&lt;/p&gt;
+
+&lt;p&gt;で、持ち金を少し足りないぐらい出すと、すっと取っていき、結局ネットで確認した値段より安くのせてもらう。カザフスタンの出稼ぎ労働者だと思われたのか。。&lt;/p&gt;
+
+&lt;p&gt;で、街の印象は、、、、スーパーが多い！どこを歩いていてもスーパーに当たる。買い物好きが多いのだろうか？そして、アジア人をあまり見かけなくなる。。異国に来た感じがあるが、うーーん、ちと残念。&lt;/p&gt;
+
+&lt;p&gt;ネットはここもままよい。ソビエト時代、結構頑張ったのね。。と印象がちょっと変わる。&lt;/p&gt;
+
+&lt;p&gt;下り：15.68Mps&lt;br /&gt;
+上り：18.65Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-11-barnaul.jpg&#34; alt=&#34;Barnaul Mammoth&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;変な写真ですいません。マンモスの作り物。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>アスタナ、カザフスタンのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/09/internet-astana/</link>
+      <pubDate>Sun, 06 Sep 2015 10:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/internet-astana/</guid>
+      <description>&lt;p&gt;私たちに近い東洋人がロシア語を喋っていることに未だ違和感が拭えない、中央アジア。&lt;/p&gt;
+
+&lt;p&gt;中央アジアの優等生ことカザフスタン。国立新美術館をデザインした黒川紀章氏が
+1998年30万人より、2030年の100万人都市へ向けての&lt;a href=&#34;http://www.kisho.co.jp/page/120.html&#34;&gt;都市計画&lt;/a&gt;
+に携わった首都アスタナ。
+計画のほぼ半分の期間を過ぎましたが、現在も進行中です。シムシティの街のようだ。
+ちょっと退屈です。&lt;/p&gt;
+
+&lt;p&gt;物価は最近行われた通貨の自由化によるプチ暴落（一日で２５％位）で、物価が東南アジア並みと言われるお隣のキルギスと同程度になる。（個人的にはこれぐらいの物価が適当ではないかと。。イスラムの国なのに、ロシアの影響からなのかビールが安いのが嬉しい！！）&lt;/p&gt;
+
+&lt;p&gt;お世話になっている宿：Hotel Nochelogは、大きく、天井も高く、奇麗。建物も古いのか新しいのかがよく分からない不思議な大きな建物内の２階。お湯もガンガン出る。人間嫌いな猫がいて、うっかり手を出すと引っ掻かれる。&lt;/p&gt;
+
+&lt;p&gt;期待した以上に速いインターネット環境のある中央アジアで、その中でもここは飛び抜けて速い。&lt;/p&gt;
+
+&lt;p&gt;下り：25.90Mps&lt;br /&gt;
+上り：30.26Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-actana.jpg&#34; alt=&#34;Actana&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>チョルポンアタ、キルギスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
+      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
+      <description>&lt;p&gt;ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。&lt;/p&gt;
+
+&lt;p&gt;イシククル湖：&lt;/p&gt;
+
+&lt;p&gt;湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。&lt;/p&gt;
+
+&lt;p&gt;シーズンがちょうど終わりかけの頃に行ったので、人がいる割にちょっと風が強く肌寒かった。&lt;/p&gt;
+
+&lt;p&gt;でも、宿代も割と安く、キッチンも使える宿もあるので、沈没するにも良いかなと思ったりもする。&lt;/p&gt;
+
+&lt;p&gt;ネットの環境は&lt;/p&gt;
+
+&lt;p&gt;下り：8.49Mps&lt;br /&gt;
+上り：0.56Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-26-cholpon.jpg&#34; alt=&#34;Beach&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.8.1</title>
@@ -23,6 +176,8 @@
 &lt;p&gt;対応が遅れましたが、アプストアに申請しました。今週中にはアップされると思います。&lt;/p&gt;
 
 &lt;p&gt;PS：なぜだか分からないけれど、ビルドが全然通りませんでした。。。どうした事か？？&lt;/p&gt;
+
+&lt;p&gt;追記：8/22にアプストアにアップされました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-16-arakol.jpg&#34; alt=&#34;アラコル湖&#34; /&gt;
 &lt;/p&gt;
@@ -272,120 +427,6 @@
 &lt;p&gt;※ 注意：このような情報はあっという間に変わる可能性があります。&lt;/p&gt;
 
 &lt;p&gt;追記（2015/08/10)：で、残念ながらやはりあっという間に終わってしまったそうです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>midXで中心を求める</title>
-      <link>http://goozenlab.com/blog/2015/07/midx-swift/</link>
-      <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
-      <description>&lt;p&gt;今までは中心を求めるのに素直に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.width / 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と行ってきたけれども、.midX/midY&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.midX
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とスマート、かつ格好良くできます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>タジキスタンビザの申請</title>
-      <link>http://goozenlab.com/blog/2015/07/visa-tajikistan/</link>
-      <pubDate>Wed, 08 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/visa-tajikistan/</guid>
-      <description>&lt;p&gt;紹介状の手配が面倒になりウズベキスタンへ行く事を諦め、ちょっとした住宅街の突き当たりにあるタジキスタン大使館へビザの申請に行く。&lt;/p&gt;
-
-&lt;p&gt;ビザの申請オフィスはフランス、ベルギー、オーストリア旅行者の数名がいただけで、そんなに忙しい雰囲気はない。その場でもらえる申請書類２枚と写真、パスポートのコピーが必要、パスポートは申請期間中預けます。受付のおばさんは、空白にしてある所が割とある申請書類を軽く見る程度で何も聞かず。体つきからは想像がつかないほどか細い声で対応してもらう。パミール高原へのパーミットも合わせて申請。&lt;/p&gt;
-
-&lt;p&gt;引き取りは思ったより時間が掛かり、水曜提出の翌週金曜になる。（プラスUS$20で即日発行も可能）ここ、中央アジアではパスポート（身分証）の常時携帯が必要なので、パスポートのコピーは、余白に何かしら書かれ、戻ってくる。警察のチェックの時にこれを見せれば良い、はず。&lt;/p&gt;
-
-&lt;p&gt;さて、ここ、ビシュケクで何をするか。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>韓国籍ではウズベキスタンビザ申請にLOIが必要</title>
-      <link>http://goozenlab.com/blog/2015/07/visa-uzbek-loi/</link>
-      <pubDate>Mon, 06 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/visa-uzbek-loi/</guid>
-      <description>&lt;p&gt;月曜の午後、ウズベキスタンのビザ申請ためウズベキスタン大使館の予約の電話をいれる。韓国籍である事を告げると、「紹介状は持っているか？」と聞かれ、必要との事。愛想の無いおねいさんとのやり取り、ちょっと質問をしようかと思うつかの間に無遠慮に電話を切られる。&lt;/p&gt;
-
-&lt;p&gt;ウズベキスタン国内の旅行社にてネットを通し書類を作ってもらう事ができるようだが、US$70と高いし、時間もかかる。宿からちょっと遠い中心街に繰り出し、イランの紹介状を手配している旅行会社を訪ねるがNG。旅行会社の集まるエリアで７・８社に聞いて回るも何処もその手のサービスはやっていない。。。&lt;/p&gt;
-
-&lt;p&gt;さて、キルギスまできて中央アジアの観光メインでもあるウズベキスタンに行かないのも、、、スーパーで生ビールを買ってきて考えるか。&lt;/p&gt;
-
-&lt;p&gt;日本の人は紹介状は必要ありません。まぁ普通調べていくとは思いますが、在日の同志、お気をつけのほど。&lt;/p&gt;
-
-&lt;p&gt;※ LOI = Letter of Invitation：紹介状のこと&lt;br /&gt;
-来年あたりには必要が無くなりそうな予感もする。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ビシュケク、キルギスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/07/internet-bishkek/</link>
-      <pubDate>Sun, 05 Jul 2015 07:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/internet-bishkek/</guid>
-      <description>&lt;p&gt;ビシケク、沈没宿の南旅館に到着。人に聞ききまくり、心優しい化粧品店勤務の女性に玄関先までついてきてもらう。。（迷子になった子供のような気分。。。）&lt;/p&gt;
-
-&lt;p&gt;宿には沈没宿に必須の高速ネット環境があり、通信速度も光がごとく爆速。おじさんチャリダーや、50泊目に突入している16歳の若者も居ます。で、一体何処にいたんだかと思うほどの旅行者の数、男子寮状態でほぼフル。&lt;/p&gt;
-
-&lt;p&gt;ネットで見た謎のシェフF氏も健在。&lt;/p&gt;
-
-&lt;p&gt;ここで、ウズベキスタンとタジキスタンのビザを取る予定。。しばし滞在（沈没ではない。）予定。&lt;/p&gt;
-
-&lt;p&gt;下り：22.28Mps&lt;br /&gt;
-上り：29.72 Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-07-05-minamiryokan.jpg&#34; alt=&#34;南旅館&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/maps/place/42°49&#39;44.2%22N+74°36&#39;34.6%22E/@42.8377982,74.6125829,15z/data=!4m2!3m1!1s0x0:0x0&#34;&gt;南旅館の位置（ピンポイント）&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;追記：韓国籍はロシアビザが不必要！との情報を得る。パキの北部ボーダーでのビザ所得はできなくなっているとの事で予定を変更。中央アジアをくるりと回り、一路ロシアへ、バイカル湖、でモンゴルから中国にする、、か？。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>カザフスタンでの滞在登録</title>
-      <link>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</link>
-      <pubDate>Wed, 01 Jul 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</guid>
-      <description>
-
-&lt;p&gt;去年から一年限定でビザは免除になったが（2015/07/15にて終了）、相変わらず５日以上滞在時にはレジストレーションの必要がある。１５日は滞在できるが５日以上居るなら登録せよと、、来てほしいのだか、来てほしくないのやら、、。文句を言っても仕方が無いので、イミグレーションポリスにいきレジストする。&lt;/p&gt;
-
-&lt;p&gt;国境では、入国カードはもらえず、文句を言われると思いきや、書き込む必要書類は無く、パスポートのコピーと滞在先の住所のみで登録を受理され、一時間後にピックアップ。と、思った以上に簡単。オフィスは登録待ちの東アジア系の人たちで一杯かと思いきや、朝一は割と空いていて待っている人も他のスタン系の人たちが多い。パスポートと入国カードを含む３つの書類が付き戻ってくる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-07-01-registration-kazakhstan.jpg&#34; alt=&#34;Registration at Almaty&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;滞在５日目の明日ビシケクに向かおうと思っていたけれど、折角なので数日滞在を延ばす事にする。&lt;/p&gt;
-
-&lt;h2 id=&#34;外国人登録について-外務省のページより:2b2994c55fb518ff7775c881e09387ca&#34;&gt;外国人登録について（外務省のページより）&lt;/h2&gt;
-
-&lt;p&gt;カザフスタンに5日以上（出入国日を含む）滞在する外国人には、外国人登録の義務があります
-(「登録手続きの概要」を参考としてください。)。&lt;br /&gt;
-&lt;strong&gt;登録していない場合&lt;/strong&gt;、出国を拒否され、&lt;br /&gt;
-&lt;strong&gt;登録期限経過後の手続き&lt;/strong&gt;には、罰金のほかに、弁護士費用と通訳費用が別途必要となります。&lt;/p&gt;
-
-&lt;p&gt;※ こりゃ、容赦ないですな。。。&lt;/p&gt;
-
-&lt;h2 id=&#34;追記-ビシケク:2b2994c55fb518ff7775c881e09387ca&#34;&gt;追記@ビシケク&lt;/h2&gt;
-
-&lt;p&gt;他の旅行者曰く、滞在登録の必要は無いとの事。そして、2015/07/15までのビザ免除も引き続き継続されるらしい。&lt;/p&gt;
 </description>
     </item>
     

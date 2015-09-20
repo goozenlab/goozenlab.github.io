@@ -7,8 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2015 09:30:00 +0800</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iOS9にて気になる機能の3DTouch</title>
+      <link>http://goozenlab.com/blog/2015/09/3dtouch/</link>
+      <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/3dtouch/</guid>
+      <description>&lt;p&gt;スマートフォンのアプリケーションでは機能と操作性のバランスが大切だと思っている。&lt;/p&gt;
+
+&lt;p&gt;iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。
+アップルの使い方のガイドラインではピーク＆ポップという形。
+その対象に対しての関心の度合いを操作にしたいう感じ。&lt;/p&gt;
+
+&lt;p&gt;自分のアプリで使っている長押しと被るような感じがあるのだが、どう追加して行くか考えている。&lt;/p&gt;
+
+&lt;p&gt;例）リトリスト（todoアプリ）にて、&lt;br /&gt;
+メニューバーの長押しでリストからホットリスト（重要項目のリスト）に移動するようになっている。
+これは、強押しで重要項目の表示、さらに押して移動という形にできる。&lt;/p&gt;
+
+&lt;p&gt;：おまけ：&lt;br /&gt;
+自分の検証端末はいまだに iPhone4S （自分の中ではデザイン的に理想の携帯。母から契約終了端末を引き継ぐ）。iPhone6Sは機能的には惹かれるが、どうもハードのデザインに魅力を感じない。次のiphone7でフルモデルチェンジを期待。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NSUserDefaultsのキーの削除</title>
@@ -469,51 +492,6 @@ struct Default {
 &lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
 
 &lt;p&gt;追記 (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;22&lt;/sub&gt;)：&lt;code&gt;import UIKit&lt;/code&gt;を追加する。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>クラスが読み込めず</title>
-      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
-      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>&lt;p&gt;TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。&lt;/p&gt;
-
-&lt;p&gt;さて、さて、まずは、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
-Class not found, using default NSManagedObject instead.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;というエラーがでる。ファイルはあるのだが、、&lt;/p&gt;
-
-&lt;p&gt;これは、動く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、動かなーーーーい。。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.name
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
-解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
-
-&lt;p&gt;追記 @ 3/20：解決しました。詳細は&lt;a href=&#34;http://goozenlab.com/blog/2015/03/load-managedobject/&#34;&gt;こちら&lt;/a&gt;より。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
