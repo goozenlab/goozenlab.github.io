@@ -7,8 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 24 Sep 2015 13:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2015 06:30:00 +0800</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iOS 9.0.1</title>
+      <link>http://goozenlab.com/blog/2015/09/ios901/</link>
+      <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/ios901/</guid>
+      <description>&lt;p&gt;未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-25-ios901.jpg&#34; alt=&#34;iOS9.0.1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;修正点の中でも気になるのは、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アラームやタイマーが鳴らないことがある問題を修正&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これが、拙作のサティで問題になっている音が出ない問題の解決になっていることをちょと期待。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>XCode7とElCapitan</title>
@@ -411,51 +432,6 @@ Class not found, using default NSManagedObject instead.
 &lt;p&gt;Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。&lt;/p&gt;
 
 &lt;p&gt;ついでに中に入れる文言をかえる。以前は普通に&lt;code&gt;&amp;quot;Timer&amp;quot;&lt;/code&gt;と書いていたところを今回からはドコゾの何某か分かるように&lt;code&gt;&amp;quot;NavigationBar.Button.Timer&amp;quot;&lt;/code&gt;と少し詳しく書き込むようにする。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>delegate on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
-      <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
-      <description>
-
-&lt;h2 id=&#34;デレゲートするクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートするクラス&lt;/h2&gt;
-
-&lt;p&gt;以下の３つを書き加えればよい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;protocol MainHeaderViewDelegate {
-    func sleepingTimerDidFinish(controller: MainHeaderView)
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;var delegate:MainHeaderViewDelegate? = nil
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt; self.delegate!.sleepingTimerDidFinish(self)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;デレゲートで値を受け取るクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートで値を受け取るクラス&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;MainHeaderViewDelegate&lt;/code&gt; と、functionを追加、処理を書き込みます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class MainViewController: UIViewController, MainHeaderViewDelegate {
-
-   //////
-
-   func sleepingTimerDidFinish(controller: MainHeaderView) {
-        // 処理
-    }
-
-   /////
-   
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>
     </item>
     
