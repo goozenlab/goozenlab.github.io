@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2015 15:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2015 13:30:00 +0800</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCode7とElCapitan</title>
+      <link>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
+      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
+      <description>&lt;p&gt;アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。&lt;/p&gt;
+
+&lt;p&gt;まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）&lt;/p&gt;
+
+&lt;p&gt;メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、
+うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
@@ -16,7 +34,7 @@
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
-      <description>&lt;p&gt;瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
+      <description>&lt;p&gt;マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
 
 &lt;p&gt;iOS8がリリースされた時にも、通知で音を出すには事前認証が必須になり、認証のプロセスを追加していなかったので、新規ユーザーの人たちには音が出ないという致命的なバグがありました。OSをアップデートしたインストール済のユーザーには不具合は無かったので、３ヶ月くらい放置していました。&lt;/p&gt;
 
@@ -30,7 +48,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;何か他にも不具合等が起こりましたら、連絡のほどよろしくお願いします。&lt;/p&gt;
 
-&lt;p&gt;ロシアより愛を込めて、&lt;/p&gt;
+&lt;p&gt;では、ロシアより愛を込めて、&lt;/p&gt;
 </description>
     </item>
     
@@ -436,41 +454,6 @@ Class not found, using default NSManagedObject instead.
    
 }
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UIButttonをSwiftで書く</title>
-      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
-      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
-      <description>&lt;p&gt;UIButttonをSwiftでプログラム的に書くと&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-buttonMoodExecelent.tag = TagButtonMood.Execelent
-buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside)
-buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal)
-
-self.vew.addSubview(buttonMoodExecelent)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストタイトルの時には&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストの色を変えるには、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もっと細かく、フォント等も弄りたい時には、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
 
 &lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>

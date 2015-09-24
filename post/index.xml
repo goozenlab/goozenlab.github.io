@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2015 15:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2015 13:30:00 +0800</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCode7とElCapitan</title>
+      <link>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
+      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
+      <description>&lt;p&gt;アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。&lt;/p&gt;
+
+&lt;p&gt;まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）&lt;/p&gt;
+
+&lt;p&gt;メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、
+うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
@@ -16,7 +34,7 @@
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
-      <description>&lt;p&gt;瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
+      <description>&lt;p&gt;マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
 
 &lt;p&gt;iOS8がリリースされた時にも、通知で音を出すには事前認証が必須になり、認証のプロセスを追加していなかったので、新規ユーザーの人たちには音が出ないという致命的なバグがありました。OSをアップデートしたインストール済のユーザーには不具合は無かったので、３ヶ月くらい放置していました。&lt;/p&gt;
 
@@ -30,7 +48,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;何か他にも不具合等が起こりましたら、連絡のほどよろしくお願いします。&lt;/p&gt;
 
-&lt;p&gt;ロシアより愛を込めて、&lt;/p&gt;
+&lt;p&gt;では、ロシアより愛を込めて、&lt;/p&gt;
 </description>
     </item>
     
@@ -69,7 +87,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;私が乗ったのは、シンプルなロシア鉄道の車両の解放寝台。シーツもブランケットもあるので快適。おしゃべり好きなおじさんに捕まり、ロシア語の講習を受けるが、結局なーーんも覚えていない。。&lt;/p&gt;
 
-&lt;p&gt;バイカル湖に行き戻ってきて沈没。というか寒くて観光意欲がなくなる。タイへの飛行機チケットが来週なので、ウランウデも行かずにここ、シベリアの！パリ！と言われるイルクーツクでのんびりする事にする。（宿代は他の街に比べ少々高いのがちと、、なんつってもパリだからな、、シベリアの、、しゃーない。。）&lt;/p&gt;
+&lt;p&gt;バイカル湖に行き戻ってきて沈没。というか寒くて観光意欲がなくなる。タイへの飛行機チケットが来週なので、ウランウデに行かずにここ、シベリアの！パリ！と言われるイルクーツクでのんびりする事にする。（宿代は他の街に比べ少々高いのがちと、、なんつってもパリだからな、、シベリアの、、しゃーない。。）&lt;/p&gt;
 
 &lt;p&gt;バイカル湖にもう少し長く滞在しようかと思ったのだが、、悪い所ではないのだけど、思っていたのとちょっと違った。。&lt;/p&gt;
 
@@ -96,7 +114,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
       <pubDate>Sun, 13 Sep 2015 17:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</guid>
-      <description>&lt;p&gt;バルナウルよりバスで５時間、雨がちらついているなかノヴォシビルスクに着く。&lt;/p&gt;
+      <description>&lt;p&gt;バルナウルよりバスで５時間、雨がちらついているなか、国内に10時間の時差を持つ広大なロシアの真ん中辺の街、ノヴォシビルスクに着く。&lt;/p&gt;
 
 &lt;p&gt;動物園に行きたくて寄ったのだが、天候が不良。。。
 宿に滞在していた自分と同じくらいの身長のモンゴル系の女子に一緒に行きましょうよと珍しく誘われるが、雨の中の回るのは気が向かず遠慮する、、その辺をフラフラッと歩いて観光終了。&lt;/p&gt;
@@ -388,33 +406,6 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;で、、オシュにて１時間時計が先走っている事に気づく。。。
 なんか変だ。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>宮崎駿氏記者会見</title>
-      <link>http://goozenlab.com/blog/2015/07/peace-miyazaki/</link>
-      <pubDate>Wed, 15 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/peace-miyazaki/</guid>
-      <description>
-
-&lt;p&gt;基地問題も日本の政府はアメリカの言いなり。メディアは自民党政権による雁字搦めなのか、こういった会見については距離を置いている感じがある。&lt;/p&gt;
-
-&lt;h2 id=&#34;県民の願いは基地撤去:f48d7986d668463cbb8d22fa4a3f5948&#34;&gt;「県民の願いは基地撤去」&lt;/h2&gt;
-
-&lt;p&gt;日本外国特派員協会主催の会見、&lt;a href=&#34;https://www.youtube.com/watch?v=aHC98qy7UPo&#34;&gt;動画&lt;/a&gt; と &lt;a href=&#34;http://blogos.com/article/122316/&#34;&gt;書き起こし&lt;/a&gt;。
-以下抜粋。&lt;/p&gt;
-
-&lt;p&gt;実際いつかは富士山が爆発して巨大な阿蘇山のようになるんですから、この国は本当にわからないんです。&lt;strong&gt;わからないということを前提に生きないといけないところ&lt;/strong&gt;なんです。&lt;/p&gt;
-
-&lt;p&gt;日本人であるということは僕にはよくわかりません。わかりませんが、&lt;strong&gt;本当の必要な知恵&lt;/strong&gt;は、世界の隅っこでひそやかにいようというのが一番正しいと僕は思っています。&lt;/p&gt;
-
-&lt;p&gt;Q：今までのアニメ制作につきまして、監督としてはまた実現していないことはありますか。オタク向けの作品がたくさん出てきていますが、この状況についてどう思いますか？&lt;/p&gt;
-
-&lt;p&gt;A：フィルムがなくなって、私たちが使っていたセルもなくなって、絵の具で塗ることもなくなりました。それから背景を描く時にはポスターカラーを使っていましたが、ポスターカラーすら、もう生産は終わるだろうと言われています。筆も、良い筆が手に入りません。それから、紙がこの１、２年で急速に悪くなりました。私はイギリスの「BBケント」というケント紙を、ペンで描くときは愛用していました。とても素晴らしい、僕にとっては宝者のような紙が、すっと線を引くと、インクが滲むようになりました。インクが使えなくなりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;何か、世界がもっと根元の方でみしみしと悪くなっていくようです。&lt;/strong&gt;ですから、アニメーションのことだけ論じてもしょうがないんじゃないかなと思います。&lt;/p&gt;
 </description>
     </item>
     
