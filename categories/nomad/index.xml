@@ -7,8 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 19 Sep 2015 17:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2015 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>タイにてプリペイド</title>
+      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
+      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
+      <description>
+
+&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
+タイも物騒になってきているので、Sim購入時に本人確認が必要。
+私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
+
+&lt;h2 id=&#34;サービスの確認:19a7c455124953d3f89683740cb17ac0&#34;&gt;サービスの確認&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
+&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
+&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信&lt;/h2&gt;
+
+&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
+&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
+&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
+
+&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
+
+&lt;h2 id=&#34;金額の追加-top-up:19a7c455124953d3f89683740cb17ac0&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
+
+&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
+
+&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;利用有効期限延長:19a7c455124953d3f89683740cb17ac0&#34;&gt;利用有効期限延長&lt;/h2&gt;
+
+&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
+２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
+&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
+&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信速度:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信速度&lt;/h2&gt;
+
+&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
+
+&lt;p&gt;下り：4.26Mps&lt;br /&gt;
+上り：1.46Mps&lt;br /&gt;
+(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>イルクーツク、ロシアのインターネット事情</title>
@@ -143,6 +200,33 @@
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-actana.jpg&#34; alt=&#34;Actana&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>チョルポンアタ、キルギスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
+      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
+      <description>&lt;p&gt;ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。&lt;/p&gt;
+
+&lt;p&gt;イシククル湖：&lt;/p&gt;
+
+&lt;p&gt;湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。&lt;/p&gt;
+
+&lt;p&gt;シーズンがちょうど終わりかけの頃に行ったので、人がいる割にちょっと風が強く肌寒かった。&lt;/p&gt;
+
+&lt;p&gt;でも、宿代も割と安く、キッチンも使える宿もあるので、沈没するにも良いかなと思ったりもする。&lt;/p&gt;
+
+&lt;p&gt;ネットの環境は&lt;/p&gt;
+
+&lt;p&gt;下り：8.49Mps&lt;br /&gt;
+上り：0.56Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-26-cholpon.jpg&#34; alt=&#34;Beach&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>
@@ -601,94 +685,6 @@ TomBhin社のAeronaut 30と511社のRUSH 12、GoRuck社のGR1/GR0が最終候補
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; 会社もしくは、オフィシャルサイトの商品ページにリンクしています。Aeronaut 30は個人輸入の必要、他は日本で購入可。今でもAeronaut 30が欲しい。。（中にGR-0をバッグインバッグとして入れることができる。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>タイ ラップアップ</title>
-      <link>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</link>
-      <pubDate>Thu, 14 May 2015 18:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</guid>
-      <description>&lt;p&gt;暑くて何もできなかった、非生産的であったタイ滞在をちょっとまとめる。滞在期間40日、使ったお金は移動費込みで6万円で余りが少々ある。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;言葉：英語があまり通じません、タイ語を覚えるべし。&lt;/li&gt;
-&lt;li&gt;治安：チェンマイ、北部は比較的良いです。バンコクはかなり危険、ハジャイや南部の都市もあまり良くはない。&lt;/li&gt;
-&lt;li&gt;天候：チェンマイは９・１０月の日本の梅雨のような雨期の終わり、２・３月の野焼きの時期と４・５月の酷暑期（暑くて何もできない）以外は快適。秋冬の天候は晴れの日がほとんどで、朝晩は少し冷え、昼は湿気も無く３０℃近くと理想的です。&lt;/li&gt;
-&lt;li&gt;宿：シンプルなシングルでTHB150~250。アパートは月4,000THB+水道・光熱費くらいから、月借りができます。&lt;/li&gt;
-&lt;li&gt;移動：カオサンからの夜行バスは盗難が多い、バスでバンコクからチェンマイに向かうならナコンチャイエアーがお勧め。国内のLCCは充実しているし、寝台列車も快適。　&lt;/li&gt;
-&lt;li&gt;食事
-
-&lt;ul&gt;
-&lt;li&gt;朝：タイベジ+ジュース（THB20~40）&lt;/li&gt;
-&lt;li&gt;昼：タイベジ（THB25~40)&lt;/li&gt;
-&lt;li&gt;夜：豆腐（THB10~20)&lt;/li&gt;
-&lt;li&gt;酒：ビール大瓶（THB~55)&lt;/li&gt;
-&lt;li&gt;その他：豆乳（THB5~）、ヨーグルト（THB14~20）、フルーツシェイク（THB15~25)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。雨期のタイは果物天国。&lt;/p&gt;
-
-&lt;p&gt;すごくタイでありがたいのは、コンビニも24時間営業していますが、市場が早くからやってる事。朝４時頃からおばちゃん達が集まりだし、５時には全快。&lt;/p&gt;
-
-&lt;p&gt;チェンマイはすごく良いのだが、長くいるとだんだん、長期滞在者の人間関係に取り込まれたり、巻き込まれたりと、ちと面倒くさくなる。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>バックパックの買換思案中</title>
-      <link>http://goozenlab.com/blog/2015/05/new-backpack/</link>
-      <pubDate>Fri, 01 May 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/05/new-backpack/</guid>
-      <description>&lt;p&gt;グアテマラでアメリカ在住九州男児の料理人から1500円くらいで引き継いだ使用年数7年訪問国は50を超えた、なかなか壊れないバックパックを新らしくしようと物色中。&lt;/p&gt;
-
-&lt;p&gt;今使っているのはアメリカのアウトドアカンパニーREI社のバックパック、名称は不明、下にAlpineとだけ刺繍がある。大きさは30 x 53 x 18cm と両サイドにちょっとしたコンパートメントがある。黒の布地は日焼けで紫色っぽくなる。なかなか頑丈。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-01-rei.jpg&#34; alt=&#34;REI &#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;大きさはもうほーーんの少し小さくても良いが、理想に近い。フラットに開くし鍵も付けられる。かなり気に入っているのだけれど、穴だらけでパッチだらけ。ほつれは無いし、ジッパーもスイスイ動いてるので買い替えるのはちょっと勿体ない気もするが、そろそろお役御免（物欲の勝利）。ヨガマットがうまく付かないのと、デザインが一寸△なのが数少ないマイナスポイント。&lt;/p&gt;
-
-&lt;p&gt;REI社の新しい物を探してみると同じようなタイプの物はもう売っていなく、登山用のバックパックにはあまり気に入った物がない。&lt;/p&gt;
-
-&lt;p&gt;ひょんな所、テック系のサイトでチラッと出ていたデイパックが気になって、ちょっとその会社のウェブサイトを見てみると、バックパックも売っている。体育会系会社の&lt;a href=&#34;http://www.goruck.com/&#34;&gt;GoRuck&lt;/a&gt;
-。軍隊上がりの社長は犬好きで、リペア担当のお兄さんはバドワイザーを飲み作業を始める、アットホームな会社。（リックサックに重りを入れて何をする？？理解できん。。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-01-gr-1.png&#34; alt=&#34;GR-1&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;シンプルで格好良い。で数種類あるうち、GR-0とGR-1が候補。身長183センチ以下はGR-0を推奨とサイトに書いてあるがすこし小さすぎるし、、外寸なのか内寸なのか、5Lの違いがどんなもんだか、、黒か灰色か、、悩みどころである。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GR-0 (21L): 29.2 x 45.7 x 14&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;GR-1 (26L): 30.5 x 50.8 x 17.2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;そして、YouTubやウェブサイトでレビューを見てて、他の強力な候補を発見する。バックパックはちょっと肩に辛くなってきている自分にグッと来た&lt;a href=&#34;http://www.tombihn.com/&#34;&gt;Tom Bihn&lt;/a&gt;
-社の3Wayボストンバッグ &lt;a href=&#34;http://www.tombihn.com/backpacks/aeronaut30.html&#34;&gt;Aeronaut 30&lt;/a&gt;
-。こちらはちょっと文科系の香りがする、サイトもおしゃれ。オーナーは猫好きっぽい（ポイント高し）。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-01-seronaut_30.png&#34; alt=&#34;Aeronaut30&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Aeronaut 30L:       32 x 50 x 20&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;旅人の事を考えられて作られている感じが有り、かなり好印象。ヨガマットも取手の所につけられそう。色のオプションも多々あるのも良い。今のバッグとほとんど同じ容量になる。&lt;/p&gt;
-
-&lt;p&gt;両方ともMADE IN USA、かつ永久保証。値段もほぼ同じ。
-２社とも小さい会社というのも良い点。&lt;/p&gt;
-
-&lt;p&gt;※ ただアメリカ製といえども、Tom Bihn社の&lt;a href=&#34;http://www.tombihn.com/ABUS.html&#34;&gt;AboutUs&lt;/a&gt;
-をみると、働いているおばさん達はほぼアジアの方々。逆にこっちほうが安心でもある。&lt;/p&gt;
-
-&lt;p&gt;ただし、日本では販売されていないようなので、実際の物を見て買う事ができない、値段もそれなりだし。。。&lt;/p&gt;
-
-&lt;p&gt;両方買ってみるか？。。&lt;/p&gt;
 </description>
     </item>
     

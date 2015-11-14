@@ -3,8 +3,18 @@
   
   <url>
     <loc>http://goozenlab.com/</loc>
-    <lastmod>2015-09-25T06:30:00+08:00</lastmod>
+    <lastmod>2015-10-30T09:30:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/10/thai-dtac/</loc>
+    <lastmod>2015-10-30T09:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/10/dust-gv1/</loc>
+    <lastmod>2015-10-18T13:15:00+09:00</lastmod>
   </url>
   
   <url>
@@ -45,6 +55,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2015/09/internet-astana/</loc>
     <lastmod>2015-09-06T10:30:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2015/08/internet-cholpon/</loc>
+    <lastmod>2015-08-26T07:30:00+06:00</lastmod>
   </url>
   
   <url>
@@ -1118,12 +1133,12 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/ippuku/</loc>
+    <loc>http://goozenlab.com/en/iapp/meagen/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/meagen/</loc>
+    <loc>http://goozenlab.com/en/iapp/ippuku/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
   </url>
   

@@ -7,8 +7,88 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 25 Sep 2015 06:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2015 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>タイにてプリペイド</title>
+      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
+      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
+      <description>
+
+&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
+タイも物騒になってきているので、Sim購入時に本人確認が必要。
+私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
+
+&lt;h2 id=&#34;サービスの確認:19a7c455124953d3f89683740cb17ac0&#34;&gt;サービスの確認&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
+&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
+&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信&lt;/h2&gt;
+
+&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
+&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
+&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
+
+&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
+
+&lt;h2 id=&#34;金額の追加-top-up:19a7c455124953d3f89683740cb17ac0&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
+
+&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
+
+&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;利用有効期限延長:19a7c455124953d3f89683740cb17ac0&#34;&gt;利用有効期限延長&lt;/h2&gt;
+
+&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
+２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
+&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
+&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信速度:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信速度&lt;/h2&gt;
+
+&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
+
+&lt;p&gt;下り：4.26Mps&lt;br /&gt;
+上り：1.46Mps&lt;br /&gt;
+(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GV-1についたゴミのクリーンアップ</title>
+      <link>http://goozenlab.com/blog/2015/10/dust-gv1/</link>
+      <pubDate>Sun, 18 Oct 2015 13:15:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/10/dust-gv1/</guid>
+      <description>&lt;p&gt;GRに付けている外付けファインダーGV-1にゴミが見えるようになる。ホコリというよりも、ゴミ。
+黒いゴミが中心部に張り付いている。ケースに入れて、ベッドに叩き付け、ゴミの位置をずらし使っている。&lt;/p&gt;
+
+&lt;p&gt;久しぶりに日本に戻り、リコーのサービスセンターに行く。以前は銀座にこじんまりとあったのが、ペンタックスとの統合により、新宿西口のビル街に移動している。&lt;/p&gt;
+
+&lt;p&gt;見てもらうと、「内部剥離からのゴミのようですが、こちらの商品は分解ができず、買い替えをお勧めします。」とあっさりビジネスライクに言われる、申し訳なさの微塵も感じられない。リコーのサービスセンターは何回か利用させてもらった事があるのだけど、親切でアットホームな感じのあるサービスセンターだったので、ちょっと寂しいような腹立たしいような（製品も無骨な感じだし）、それともリコー製品への嫌がらせか？？。２万円近くの商品はどう考えても消耗品では無いので、簡単に買い直すような品物ではない。
+せめて買い替え時には５０％オフとか、そういう心遣いあっても良い物だと思うが、ごねても仕方が無いと思いぐっと苛立ちを抑える。&lt;/p&gt;
+
+&lt;p&gt;家に戻り、GV-1を眺めてみると、ネジ穴があり、だめ元で分解を、だめならクレームメールということで、試みる。&lt;/p&gt;
+
+&lt;p&gt;結果：ピッシリした作りになっているので、サービスセンターでも言われた通り無理かと思いきや、割とあっさり分解成功。ブローワーでゴミを吹き飛ばしスッキリする。５分もかからず、あまりに簡単だったので、これだったら、やってくれても良いと思うのだが。。&lt;/p&gt;
+
+&lt;p&gt;でも、これでペンタックスのサービスは期待ができないと、、。。リコーもカプリオからお世話になってたけどこのGRで最後にするかなと思ったりする。次は富士かフォクトレンダーからでてくるであろうBESSAデジタルかな。。
+（※ でもGRに光学ファインダーを入れてくれたら、買ってまうだろうなぁ。。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iOS 9.0.1</title>
@@ -266,6 +346,33 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
     </item>
     
     <item>
+      <title>チョルポンアタ、キルギスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
+      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
+      <description>&lt;p&gt;ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。&lt;/p&gt;
+
+&lt;p&gt;イシククル湖：&lt;/p&gt;
+
+&lt;p&gt;湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。&lt;/p&gt;
+
+&lt;p&gt;シーズンがちょうど終わりかけの頃に行ったので、人がいる割にちょっと風が強く肌寒かった。&lt;/p&gt;
+
+&lt;p&gt;でも、宿代も割と安く、キッチンも使える宿もあるので、沈没するにも良いかなと思ったりもする。&lt;/p&gt;
+
+&lt;p&gt;ネットの環境は&lt;/p&gt;
+
+&lt;p&gt;下り：8.49Mps&lt;br /&gt;
+上り：0.56Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-26-cholpon.jpg&#34; alt=&#34;Beach&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>doop v1.8.1</title>
       <link>http://goozenlab.com/blog/2015/08/doop-181/</link>
       <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
@@ -333,71 +440,6 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 &lt;p&gt;朝四時頃、礼拝の為人が流れてくる音で目が覚める。空は一転曇空になっている。後で知ったが、礼拝所がロッジの敷地内にあり、ロッジ自体がその運営費用に充てられているらしい。&lt;/p&gt;
 
 &lt;p&gt;街を流れる川は粘土色の濁流。天気はすこし悪い。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NSUserDefaultsのキーの削除</title>
-      <link>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
-      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
-      <description>&lt;p&gt;アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。&lt;/p&gt;
-
-&lt;p&gt;既に設定してしまったUserDefaultsのキーを削除する方法は以下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>デゥシャンベ、タジキスタンのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/07/internet-dushanbe/</link>
-      <pubDate>Sun, 26 Jul 2015 20:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/internet-dushanbe/</guid>
-      <description>&lt;p&gt;イストラフシャンからデゥシャンベへの移動はシェアタクシー。朝早く行ったのにも関わらず、運転手の営業不足で２時間待ち。８０ソムニで６時間（途中タイヤの空気調整数回）かかる。現地の人は５０ソムを支払っていたように見えた。&lt;/p&gt;
-
-&lt;p&gt;宿はビシュケクにて南から流れてきた旅行者に「デゥシャンベの宿はグリーンの一択でしょ！」という言葉につられて、Green House Hostel。&lt;/p&gt;
-
-&lt;p&gt;非常に立派な建物で空調も建物全体に入っている。US$15にも関わらず人気宿のようで、最後のベッドを幸運にもゲット。庭でねている人やリビングの隙間で寝ている人もいました。入口横に雑魚寝大広間もあるように見えました。&lt;/p&gt;
-
-&lt;p&gt;しかし、ビシュケクでは沢山見かけた日本人はここでは、チャリーダーマンの一人。ホーローグに向かうパーティーがいるだろうと思っていたのだが、しかも２泊目の宿は一気に宿泊客の入れ替えのようで、同乗者は見つけられず、独りで行く事になる。&lt;/p&gt;
-
-&lt;p&gt;ネットは高速と聞いていたが、さすがに宿が一杯の状態（３５人くらいと言ってました。）だと、かなり遅い。&lt;/p&gt;
-
-&lt;p&gt;下り：1.82Mps&lt;br /&gt;
-上り：0.05 Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;宿の周辺情報：宿を出て右へ、大きい通りを右折して南下。まず、焼きたてのナンを売っている店、さらに南へ行くと学食風安レストラン（入口が南向）、そして大きい十字路を越えるとスパーマーケットが、さらに歩くとホーローグ行きのタクシースタンドの裏口があります。（右手奥の水色ゲートが目印）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>オシュからホジャンドまで</title>
-      <link>http://goozenlab.com/blog/2015/07/oshu-khojand/</link>
-      <pubDate>Wed, 22 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/oshu-khojand/</guid>
-      <description>&lt;p&gt;オシュからタジキスタンに公共バスを乗り継いで（安く）向かうには、バトケン（キルギス）〜 国境 〜 イスファラ（タジキスタン）、を経由してホジャンドになる。&lt;/p&gt;
-
-&lt;p&gt;オシュの東西に走るメインロードが２０１５年夏の現在リコンストラクションの為、ロンリープラネットに乗っているマルシュルートカのターミナルが移動しているかもしれないと宿の人が言っていた。無くてもその辺の人が教えてくれると思うし、すぐ近くに乗合タクシー乗り場もあるので、またまた早起きをして最初の７：１５発のマルシュルートカに間に合うように宿を出る。&lt;/p&gt;
-
-&lt;p&gt;ターミナルがあるだろう所の少し前で声をかけられる。専業タクシーではなくバトケンの人が帰るついでの小銭稼ぎのようで、３００ソムと安く、すぐ出るというので即決。早起きは三文の得。同乗者：オッサンだと思ったが私の弟と同い年の運転手と高校教師２９歳の友人、そして子供が５人と孫沢山の老夫婦と独り者の私。
-道の舗装も良くバトケンまで３時間半くらいで到着。ウズベキスタンの飛び地を通過しているか分からないけれど、パスポートチェック等は無く、しているのも見かけなかった。
-（※対向車でバトケンからオシュ行きのマルシュルートカを数台見かけたので逆方向もあると思う。）&lt;/p&gt;
-
-&lt;p&gt;バトケンからは同乗の老夫婦がホジャンドへ向かうらしく、イスファラまでタクシーを一人100ソムで話をつけてくれる。（公園の横より）ホジャンドからは国境までは３０分ぐらい？国境も空いていてイスファラまでもそんなに掛からず、あっという間。&lt;/p&gt;
-
-&lt;p&gt;イスファラではタクシーの運ちゃんが気を利かせてかホジャンド行きのタクシーを勝手に捕まえ、（ロシア語で：多分）「これで行け！値段はXXだ！」と、良い流れであったのでそのタクシーでホジャンドまで（３０ソモニ：ぼられた感あり）。老夫婦は昼食を取ってから移動というのでお別れ。１時間半ぐらい走り中心街に入る前のバスターミナルで下ろされる。（キルギス時間14時前に着）適当なマルシュルートカに乗って市内まで（１ソモニ）。ちょっと中央アジアをなめてました、ホジャンドも大きな街です。ここもソフトクリームが美味しい。両替所の多くキルギスの１０００ソムが１００ソムニになる、物価の比較が楽。&lt;/p&gt;
-
-&lt;p&gt;で、人ですが、眉毛が繋がりました！！ゲジケジ、ヒゲモジャです。インドやパキ辺りの色が濃くなり始め、逆にアジアの色は薄くなりました。&lt;/p&gt;
-
-&lt;p&gt;※ ベルギービールの Duvel の偽物？ラベルが似ている duel が 1L:TJS4.40-5.00(JPY90) で飲めます。背の低い太ったリッターのペットボトル。（デゥシャンベでは売ってませんでした。）種類は分からないが、カフェで飲める中生は TJS3.00なり。&lt;/p&gt;
 </description>
     </item>
     
