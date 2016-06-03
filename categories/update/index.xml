@@ -7,45 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 10 Jun 2016 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Sati v1.8.0</title>
-      <link>http://goozenlab.com/blog/2016/06/sati-180/</link>
-      <pubDate>Fri, 10 Jun 2016 19:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/sati-180/</guid>
-      <description>
-
-&lt;p&gt;2015の2月以来のアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iOS9で表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
-
-&lt;p&gt;機能的にはたくさんのアップデートはありませんが、無難に動くと思います。少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-8-0-swift-release-2016-06-10-nonkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.8.0 - Swift release] - 2016-06-10 @ Nonkhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。どちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンを少し変更&lt;/li&gt;
-&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Iconを作り替え中</title>
@@ -432,6 +395,33 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
+      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
+      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
+
+&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
+&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
+
+&lt;!--
+
+ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
+MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
+--&gt;
 </description>
     </item>
     

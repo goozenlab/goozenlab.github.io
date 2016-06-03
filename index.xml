@@ -7,45 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 10 Jun 2016 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jun 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Sati v1.8.0</title>
-      <link>http://goozenlab.com/blog/2016/06/sati-180/</link>
-      <pubDate>Fri, 10 Jun 2016 19:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/sati-180/</guid>
-      <description>
-
-&lt;p&gt;2015の2月以来のアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iOS9で表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
-
-&lt;p&gt;機能的にはたくさんのアップデートはありませんが、無難に動くと思います。少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-8-0-swift-release-2016-06-10-nonkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.8.0 - Swift release] - 2016-06-10 @ Nonkhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。どちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンを少し変更&lt;/li&gt;
-&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>ムクダハン、タイのインターネット事情</title>
@@ -452,6 +415,63 @@ shingha:~ $
 &lt;p&gt;下り：3.68Mps&lt;br /&gt;
 上り：3.86Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>タイにてプリペイド</title>
+      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
+      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
+      <description>
+
+&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
+タイも物騒になってきているので、Sim購入時に本人確認が必要。
+私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
+
+&lt;h2 id=&#34;サービスの確認:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;サービスの確認&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
+&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
+&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信&lt;/h2&gt;
+
+&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
+&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
+&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
+
+&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
+
+&lt;h2 id=&#34;金額の追加-top-up:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
+
+&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
+
+&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;利用有効期限延長:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;利用有効期限延長&lt;/h2&gt;
+
+&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
+２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。最長１年。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
+&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
+&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
+
+&lt;h2 id=&#34;データ通信速度:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信速度&lt;/h2&gt;
+
+&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
+
+&lt;p&gt;下り：4.26Mps&lt;br /&gt;
+上り：1.46Mps&lt;br /&gt;
+(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
 </description>
     </item>
     
