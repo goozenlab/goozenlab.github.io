@@ -39,13 +39,11 @@
 
 &lt;p&gt;そんなときは、マッピングファイルを作成して、&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ファイルを訂正、追加して（source, destinationに注意）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;あとは、optionsの設定を加え、&lt;/p&gt;
 
@@ -151,7 +149,7 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
 
 &lt;pre&gt;&lt;code&gt;
     // 事前に calendar の設定等をして、
-	
+    
     __block NSArray *remindersToImport = nil;
     __block BOOL fetching = YES;
     

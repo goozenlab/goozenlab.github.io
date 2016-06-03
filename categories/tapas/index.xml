@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 11 Mar 2015 03:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/tapas/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（左３つのアプリ）を少しいじってます。iOS8にアップデートした頃から少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
+
+&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>tapas v1.6.5</title>
@@ -84,8 +100,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
       <description>&lt;p&gt;最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。
 大幅なアップデートではありませんが、少し手をいれました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-icon-tapas.png&#34; alt=&#34;Icon&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-icon-tapas.png&#34; alt=&#34;Icon&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。&lt;/li&gt;
@@ -97,9 +112,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-bold.png&#34; alt=&#34;Bold&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png&#34; alt=&#34;Light&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-24-tapas-edit-light.png&#34; alt=&#34;Light&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -118,11 +131,9 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 ロックしている時には白いドットが中心に付きます。
 ロックされていない時は単色の色で表示されます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

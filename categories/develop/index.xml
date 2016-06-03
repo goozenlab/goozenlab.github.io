@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 25 Sep 2015 06:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Mar 2016 11:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>乱数を発生させる</title>
+      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
+      <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
+      <description>
+
+&lt;h2 id=&#34;rand:dc776821942516eb940a9f207846a213&#34;&gt;rand()&lt;/h2&gt;
+
+&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; srand(time(nil));
+ rand()%300;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;arc4random-uniform:dc776821942516eb940a9f207846a213&#34;&gt;arc4random_uniform()&lt;/h2&gt;
+
+&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>iOS 9.0.1</title>
@@ -18,8 +43,7 @@
       <guid>http://goozenlab.com/blog/2015/09/ios901/</guid>
       <description>&lt;p&gt;未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-25-ios901.jpg&#34; alt=&#34;iOS9.0.1&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-25-ios901.jpg&#34; alt=&#34;iOS9.0.1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;修正点の中でも気になるのは、&lt;/p&gt;
 
@@ -41,14 +65,12 @@
 
 &lt;p&gt;まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-disk.jpg&#34; alt=&#34;Disk&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-disk.jpg&#34; alt=&#34;Disk&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、
 うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -96,8 +118,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 自分の検証端末はいまだに iPhone4S （自分の中ではデザイン的に理想の携帯。母から契約終了端末を引き継ぐ）。iPhone6Sは機能的には惹かれるが、どうもハードのデザインに魅力を感じない。次のiphone7でフルモデルチェンジを期待。&lt;/p&gt;
 
 &lt;p&gt;バイカル湖、オリフォン島
-&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-baikal.jpg&#34; alt=&#34;Olphon&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-baikal.jpg&#34; alt=&#34;Olphon&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -151,8 +172,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;StoryBoardを使っている時は以下。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -183,8 +203,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※まぁ、間違っちゃーいね〜な。。&lt;/p&gt;
 </description>
@@ -300,7 +319,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 
 &lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
 
-&lt;h2 id=&#34;起動時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;起動時&lt;/h2&gt;
+&lt;h2 id=&#34;起動時:e0af111a0289018acd229891e1617ab3&#34;&gt;起動時&lt;/h2&gt;
 
 &lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
 
@@ -310,7 +329,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
+&lt;h2 id=&#34;モーダルビューより復帰:e0af111a0289018acd229891e1617ab3&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
 
 &lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
 
@@ -319,7 +338,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;li&gt;viewDidAppear&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
+&lt;h2 id=&#34;ロック-スリープからの復帰時:e0af111a0289018acd229891e1617ab3&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
 
 &lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
 viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
@@ -339,7 +358,7 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
+&lt;h2 id=&#34;スリープに移行時:e0af111a0289018acd229891e1617ab3&#34;&gt;スリープに移行時&lt;/h2&gt;
 
 &lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
 
@@ -386,8 +405,7 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
@@ -395,13 +413,12 @@ Class not found, using default NSManagedObject instead.
 &lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
 （散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
 
-&lt;h2 id=&#34;うまく行かない場合:dada94b1ca17e9c7da1ee195804dcefb&#34;&gt;うまく行かない場合&lt;/h2&gt;
+&lt;h2 id=&#34;うまく行かない場合:eb5cad654ed1068004ef41ecc88e3a81&#34;&gt;うまく行かない場合&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
@@ -413,28 +430,6 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
 小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NSLocalizedString on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
-      <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
-      <description>&lt;p&gt;NSLocalizedStringでエラーがでる&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;nil&lt;/code&gt;を&lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;空白に変更する。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。&lt;/p&gt;
-
-&lt;p&gt;ついでに中に入れる文言をかえる。以前は普通に&lt;code&gt;&amp;quot;Timer&amp;quot;&lt;/code&gt;と書いていたところを今回からはドコゾの何某か分かるように&lt;code&gt;&amp;quot;NavigationBar.Button.Timer&amp;quot;&lt;/code&gt;と少し詳しく書き込むようにする。&lt;/p&gt;
 </description>
     </item>
     

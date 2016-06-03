@@ -70,8 +70,7 @@ littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp
 
 &lt;p&gt;アップデートしてしまったユーザーの方々はしばしご勘弁のほど、、&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-itunesconnect.png&#34; alt=&#34;itunesconnetct&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-itunesconnect.png&#34; alt=&#34;itunesconnetct&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -172,7 +171,7 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
 
 &lt;pre&gt;&lt;code&gt;
     // 事前に calendar の設定等をして、
-	
+    
     __block NSArray *remindersToImport = nil;
     __block BOOL fetching = YES;
     
@@ -216,18 +215,18 @@ infoPlistFileSource=&amp;quot;${SRCROOT}/${INFOPLIST_FILE}&amp;quot;
 rootPlistFileDestination=&amp;quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&amp;quot;
 
 if [ ${CONFIGURATION} = &amp;quot;Debug&amp;quot; ]; then
-	# Version 2.6.3
-	# Build @ 2014-01-16 12:16 (dev.298)
-	versionPrefix=&amp;quot; (dev.&amp;quot;
-	date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)
-	BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot;
+    # Version 2.6.3
+    # Build @ 2014-01-16 12:16 (dev.298)
+    versionPrefix=&amp;quot; (dev.&amp;quot;
+    date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)
+    BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot;
 else
-	# Version 2.6.3 @ 2014.01.16
-	# Build  276
-	date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date
-	BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource)
+    # Version 2.6.3 @ 2014.01.16
+    # Build  276
+    date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date
+    BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource)
 fi
 
 # ここのPreferenceSpecifiers:16, 17は各アプリによって変更
@@ -239,47 +238,44 @@ fi
 &lt;p&gt;検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_dev.png&#34; alt=&#34;Dev&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_app.png&#34; alt=&#34;App&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-01-26_versionning_app.png&#34; alt=&#34;App&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;以下を Setting.bundle/Root.plistに加える事もお忘れなく。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;About&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSGroupSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;FooterText&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Copyright © 2015 XXXX All Rights Reserved.&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
-		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;1.0&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Version&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;app_version_number&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
-		&amp;lt;dict&amp;gt;
-			&amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;1&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;Build&amp;lt;/string&amp;gt;
-			&amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
-			&amp;lt;string&amp;gt;app_build_number&amp;lt;/string&amp;gt;
-		&amp;lt;/dict&amp;gt;
+&lt;pre&gt;&lt;code&gt;        &amp;lt;dict&amp;gt;
+            &amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;About&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;PSGroupSpecifier&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;FooterText&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;Copyright © 2015 XXXX All Rights Reserved.&amp;lt;/string&amp;gt;
+        &amp;lt;/dict&amp;gt;
+        &amp;lt;dict&amp;gt;
+            &amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;1.0&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;Version&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;app_version_number&amp;lt;/string&amp;gt;
+        &amp;lt;/dict&amp;gt;
+        &amp;lt;dict&amp;gt;
+            &amp;lt;key&amp;gt;Type&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;PSTitleValueSpecifier&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;DefaultValue&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;1&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;Title&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;Build&amp;lt;/string&amp;gt;
+            &amp;lt;key&amp;gt;Key&amp;lt;/key&amp;gt;
+            &amp;lt;string&amp;gt;app_build_number&amp;lt;/string&amp;gt;
+        &amp;lt;/dict&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;追記：&lt;br /&gt;
 少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_a_release.png&#34; alt=&#34;Release&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_a_release.png&#34; alt=&#34;Release&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -318,9 +314,7 @@ fi
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-old.png&#34; alt=&#34;Old Edit&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png&#34; alt=&#34;New Edit&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-20-littlist-edit-new.png&#34; alt=&#34;New Edit&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 久しぶりに無料提供中です。（7/25まで）&lt;/p&gt;
 </description>
@@ -341,11 +335,9 @@ fi
 ロックしている時には白いドットが中心に付きます。
 ロックされていない時は単色の色で表示されます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-New.png&#34; alt=&#34;New ColorLock&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-10-ColorLock-OLD.png&#34; alt=&#34;Old ColorLock&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -387,20 +379,17 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;色のスキームは、赤系を４つ、オレンジ、グリーンを２つ、青と紫です。黄色は抜きました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-03-02-kawaii-color.jpg/&#34; alt=&#34;Kawaii ColorScheme&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-03-02-kawaii-color.jpg/&#34; alt=&#34;Kawaii ColorScheme&#34; /&gt;&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;p&gt;で、見た感じはこんなようになります。ナビゲーションバーの色も変更しています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-littlist-kawaii.png&#34; alt=&#34;カワイイモードのスクリーンショット&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-littlist-kawaii.png&#34; alt=&#34;カワイイモードのスクリーンショット&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;使っているとちょっと分かりづらいと思いますが、背景色もすこし付けてます。設定はホームから設定&amp;gt;littlist&amp;gt;表示設定のカラーモードからになります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-littlist-setting-colormode.png&#34; alt=&#34;設定&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-littlist-setting-colormode.png&#34; alt=&#34;設定&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;オッサンの暴走アップデートですので、もし他のお勧めのカワイイ色合いがありましたらご教授のほどよろしくお願いします。申請中ですのでアプストアーには来週にはアップされると思います。&lt;/p&gt;
 </description>
@@ -416,8 +405,7 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;見た目こんな感じになります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-06-darkmode.png&#34; alt=&#34;dark mode&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-06-darkmode.png&#34; alt=&#34;dark mode&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ホーム＞設定より変更してください。&lt;/p&gt;
 

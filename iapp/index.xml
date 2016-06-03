@@ -56,15 +56,11 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;Mou&#34; /&gt;
-
 ※下のスクリーンショットはこのFileをつかってます（マークダウンの編集ソフトはかなり優秀でおすすめの &lt;a href=&#34;http://25.io/mou/&#34;&gt;Mou&lt;/a&gt;。が最近商売かかってます）。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Main&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory.png&#34; alt=&#34;Main category&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc.png&#34; alt=&#34;Main etc&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc.png&#34; alt=&#34;Main etc&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;#&lt;/code&gt; h1ヘッダーはナビゲーションバーのメインタイトルになります&lt;/li&gt;
@@ -86,9 +82,7 @@
 &lt;ol&gt;
 &lt;li&gt;左右へのスワイプ：プロジェクトリスト間の移動&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;ロングタップ：左肩にドットの表示されたタスクのリスト、ロングタップでもとにリストに戻る&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-RedDot-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
@@ -100,8 +94,7 @@
 
 &lt;h3 id=&#34;タップ:64294511a1cb5d54d61cc32437d0db91&#34;&gt;タップ&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-cell-detail.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-cell-detail.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;シングルタップ：メモ -(ローテーション-)&amp;gt; 期日の表示&lt;/li&gt;
@@ -111,7 +104,6 @@
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-color-swipe.png&#34; alt=&#34;Cell swipe&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;左へスワイプ：削除と完了ボタン&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-SwipeLeft.png&#34; alt=&#34;Cell swipe&#34; /&gt;
-
 
 &lt;ol&gt;
 &lt;li&gt;完了のボタンを押すと、ボタンを押した時間が完了時間として登録されます。&lt;br /&gt;&lt;/li&gt;
@@ -126,16 +118,13 @@
 
 &lt;h3 id=&#34;左バーの色変更の順番:64294511a1cb5d54d61cc32437d0db91&#34;&gt;左バーの色変更の順番&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
- &amp;lt;-Normal , Kawaii -&amp;gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt; &amp;lt;-Normal , Kawaii -&amp;gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;期日と色の変化:64294511a1cb5d54d61cc32437d0db91&#34;&gt;期日と色の変化&lt;/h3&gt;
 
 &lt;p&gt;期日設定がある時は右端に色がつきます。期日が近づくとともに色が変化します。最後の赤ドットは期日を超えた印になります。
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-duedate.png&#34; alt=&#34;Due date&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-duedate.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;タスクの追加と編集:64294511a1cb5d54d61cc32437d0db91&#34;&gt;タスクの追加と編集&lt;/h2&gt;
 
@@ -146,9 +135,7 @@
  そして、オンになった時に表示される日付をタップすると日時を設定する事ができます。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView.png&#34; alt=&#34;Due date&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView-DatePicke.png&#34; alt=&#34;Due date&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView-DatePicke.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;同期について:64294511a1cb5d54d61cc32437d0db91&#34;&gt;同期について&lt;/h2&gt;
 
@@ -165,8 +152,7 @@
 &lt;p&gt;##リンクの解除方法
 ホーム&amp;gt; 設定&amp;gt; (a) よりDropboxのリンクを解除を&lt;strong&gt;オン&lt;/strong&gt;します。次回立ち上げ時にリンクが解除されます。ナビゲーションバーの左に接続のボタンが表示されます。再接続、アカウントの変更等をするときはこのボタンより行います。（画面上にボタンを配置する事も考えましたが、頻繁にアクセスする物でなく見た目も余計なボタンが入るのを嫌って設定より行う事にしています。）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-Setting-unlink.png&#34; alt=&#34;Unlink&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-Setting-unlink.png&#34; alt=&#34;Unlink&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ホーム-設定-a:64294511a1cb5d54d61cc32437d0db91&#34;&gt;ホーム&amp;gt; 設定&amp;gt; (a)&lt;/h2&gt;
 
@@ -176,9 +162,7 @@
 &lt;li&gt;フォントを選択&lt;/li&gt;
 &lt;li&gt;カラーモードの選択&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Color mode&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Color mode&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeKawaii.png&#34; alt=&#34;Color mode&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -192,7 +176,7 @@
 &lt;li&gt;日付書式：2015-12-31, 12-31-2015, 31-12-2015 の３種類&lt;/li&gt;
 &lt;li&gt;強調の表記を **強調** か __強調__ の選択&lt;/li&gt;
 &lt;li&gt;左のバーがクレーのタスクの表記：*, +, -のどれか
-&amp;lt;!&amp;ndash; 3. 日付のヘッダーを&amp;rdquo;BY!&amp;ldquo;を自分好みに（例、&amp;rdquo;期限：&amp;rdquo;とか？）&amp;ndash;&amp;gt;&lt;/li&gt;
+&lt;!-- 3. 日付のヘッダーを&#34;BY!&#34;を自分好みに（例、&#34;期限：&#34;とか？）--&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;その他:64294511a1cb5d54d61cc32437d0db91&#34;&gt;その他&lt;/h3&gt;
@@ -300,8 +284,7 @@
 
 &lt;p&gt;メイン画面上には以下のアイテムがあります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;歯車のボタン：細かい練習の設定&lt;/li&gt;
@@ -323,8 +306,7 @@
 
 &lt;p&gt;華丸、丸、三角、バツから選択し終了します。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;設定:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ 設定&lt;/h3&gt;
 
@@ -362,8 +344,7 @@
 
 &lt;h2 id=&#34;メインページ-項目のリスト:0570675119f43546b944340c6d790af6&#34;&gt;□メインページ（項目のリスト）&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-main.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;◆ ナビゲーションバー&lt;br /&gt;
 ・右上のプラスマーク：新規項目追加&lt;br /&gt;
@@ -382,8 +363,7 @@
 
 &lt;h2 id=&#34;タイマーリストページ-メインページの下層:0570675119f43546b944340c6d790af6&#34;&gt;□タイマーリストページ（メインページの下層）&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-items.png&#34; alt=&#34;Timer List&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-items.png&#34; alt=&#34;Timer List&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;◆ ナビゲーションバー&lt;br /&gt;
 ・スワイプ／ダブルタップ:色別のソート表示&lt;br /&gt;
@@ -400,8 +380,7 @@
 
 &lt;h2 id=&#34;タイマーページ:0570675119f43546b944340c6d790af6&#34;&gt;□タイマーページ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-timer.png&#34; alt=&#34;Timer&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;シェイクまたはストップマークよりタイマーの中断&lt;br /&gt;
 ・時間表示下のベルマークで1分前の音をオンオフします。&lt;/p&gt;
@@ -417,8 +396,7 @@
 
 &lt;h2 id=&#34;履歴ページ:0570675119f43546b944340c6d790af6&#34;&gt;□履歴ページ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-history.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-history.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・今までの履歴が見れます。&lt;br /&gt;
 ・メモを追加・編集&lt;/p&gt;
@@ -448,8 +426,7 @@
 &lt;p&gt;自分がいつ、どのくらい寝ているかをシンプルに管理するソフトです。&lt;br /&gt;
 日々就寝前、起床後にメッセージを追加する事が出来ます。睡眠の傾向をつかみ、自分に最適な睡眠を見つけるのに役にたてていただければ幸いです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg&#34; alt=&#34;ohayo Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg&#34; alt=&#34;ohayo Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ &lt;strong&gt;タイムゾーン&lt;/strong&gt;にも対応しているので、海外旅行時にも問題なく利用できます。&lt;/p&gt;
 
@@ -465,12 +442,9 @@
 &lt;p&gt;※ グラフの表示範囲を超えてしまうので、記録可能な開始時間は19時から10時までになっています。&lt;/p&gt;
 
 &lt;p&gt;端末によって表示される範囲が変わります。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w320.png&#34; alt=&#34;iPhone4&#34; /&gt;
-: iPhone4,5(21:30-09:30)&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w375.png&#34; alt=&#34;iPhone4&#34; /&gt;
-: iPhone6(20:30-10:30)&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w414.png&#34; alt=&#34;iPhone4&#34; /&gt;
-: iPhone6+(20:00-11:30)&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w320.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone4,5(21:30-09:30)&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w375.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6(20:30-10:30)&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w414.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6+(20:00-11:30)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;グラフ上での操作(タップ)&lt;/strong&gt;&lt;br /&gt;
 ・&lt;strong&gt;左端&lt;/strong&gt;：気分の変更。&lt;br /&gt;
@@ -482,9 +456,7 @@
 ▷・右：&lt;strong&gt;詳細画面&lt;/strong&gt;：気分別の平均就寝・起床時間、直近の睡眠時間の棒グラフ（ピンク線：快眠時間、青線：平均睡眠時間）&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;詳細設定-ホーム-設定-ohayo:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;詳細設定 [ホーム&amp;gt;設定&amp;gt;ohayo]&lt;/h2&gt;
 
@@ -494,8 +466,7 @@
 ・&lt;strong&gt;メッセージ&lt;/strong&gt;：曜日毎のメッセージの編集 （就寝前の薬のとり忘れなどに）&lt;br /&gt;
 ・&lt;strong&gt;風鈴の音での知らせ&lt;/strong&gt;チリーーンと音がします：快眠設定時間、就寝５分後、起床５分後&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-appsetting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-appsetting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ タイの曜日カラー(日:赤、月:黄色、火:桃色、水:緑色、木:オレンジ色、金:青、土:紫色)&lt;/p&gt;
 
@@ -529,13 +500,11 @@
 
 &lt;p&gt;瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-sati.jpg&#34; alt=&#34;Sati Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-sati.jpg&#34; alt=&#34;Sati Image&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;メイン画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ メイン画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;画面構成:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;画面構成&lt;/h3&gt;
 
@@ -578,8 +547,7 @@
 
 &lt;h2 id=&#34;瞑想履歴画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ 瞑想履歴画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history.png&#34; alt=&#34;History View&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history.png&#34; alt=&#34;History View&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;今までの瞑想の履歴を見る事ができます。&lt;/p&gt;
 
@@ -593,8 +561,7 @@
 
 &lt;h2 id=&#34;設定画面:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ 設定画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;簡単な設定をする事ができます。（細かい設定はホーム＞設定＞サティより）&lt;/p&gt;
 
@@ -611,8 +578,7 @@
 
 &lt;p&gt;瞑想のより細かい設定と、カレンダーへの書出しの設定をする事ができます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・瞑想近況のオン・オフ：外周にうっすらと入っているライン&lt;br /&gt;
  ・瞑想の音設定（音のオン・オフや選択ができます）&lt;br /&gt;
@@ -674,8 +640,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;買い物に行っていつもなぜか数品買い忘れをしてしまう人、
 そんな人のために簡単に使える買物帳を作りました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-listaria.jpg&#34; alt=&#34;Listaria Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-listaria.jpg&#34; alt=&#34;Listaria Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;文字を大きく見やすくして、使い勝手も出来るだけシンプルにしました。&lt;/p&gt;
 
@@ -685,9 +650,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;h2 id=&#34;買い物リストページ:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 買い物リストページ&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-main.png&#34; alt=&#34;main&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png&#34; alt=&#34;Recent&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png&#34; alt=&#34;Recent&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;買い物リストは&lt;strong&gt;買い物チェック&lt;/strong&gt;と&lt;strong&gt;メモを見る機能&lt;/strong&gt;がメインです。&lt;strong&gt;品物の追加&lt;/strong&gt;は上部右の”リスト”から行います。品物の並びはカテゴリ毎になります。&lt;br /&gt;
  (順：野菜・フルーツ・生鮮食品・バルクフード・調味料・飲み物・パーソナルケア・赤ちゃん・キッチン・その他)&lt;/p&gt;
@@ -702,8 +665,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;セルの操作:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ セルの操作&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-shoppinglist.png&#34; alt=&#34;Shopping List&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-shoppinglist.png&#34; alt=&#34;Shopping List&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左側タップ：買い物を終えたらタップします。背景が赤くかわりリストから消去されます。&lt;br /&gt;&lt;/li&gt;
@@ -716,9 +678,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;h2 id=&#34;品物リストページ:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 品物リストページ&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list.png&#34; alt=&#34;Item View&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;Item&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;Item&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;買い物リストへの追加はこのページにより行います。&lt;br /&gt;
 新しい品物は右のプラスマークより追加してください。&lt;/p&gt;
@@ -733,8 +693,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h3 id=&#34;セルの操作-1:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ セルの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-list.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-list.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左側シングルタップ：背景色が変わり買い物リストに追加。&lt;/li&gt;
@@ -749,8 +708,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;設定-ホーム-設定-リスタリア:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ 設定 [ホーム＞設定＞リスタリア]&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フォントの変更（残念ですが日本語には適用されません）&lt;/li&gt;
@@ -770,8 +728,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;エコリサイクリング関連のツール&lt;br /&gt;
 定期的にしなければいけないこと、電池の交換時期など、出来事がサイクルする物事を把握するソフトです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-doop.jpg&#34; alt=&#34;doop Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-doop.jpg&#34; alt=&#34;doop Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;以前行ってからどのくらい経ったかを知りたかったり、ちょっと引き延ばしがちな事を確りと出来るようにと、、&lt;br /&gt;
 そして、電球や乾電池の交換、歯医者の定期検診、トイレ掃除、コンピューターのメインテナンス・リブートなど、ある程度の期間で定期的に行っていることを管理するために作りました。&lt;/p&gt;
@@ -781,13 +738,11 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;リスト画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ リスト画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-doop-main.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-doop-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;ナビゲーションバーの操作:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png&#34; alt=&#34;Doop Navigation Bar&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png&#34; alt=&#34;Doop Navigation Bar&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・右上のプラスマーク:新規項目追加&lt;br /&gt;
 ・左・右にスワイプ：次・前のソート画面へ移動&lt;br /&gt;
@@ -799,27 +754,22 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 ・ロングタップ：ソートの変更（平均時間または色順、平均値に達する日時順：タイトルの両側にドットが入ります。）&lt;/p&gt;
 
 &lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Cell Color&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Cell Color&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;セルの操作:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;◆ セルの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cell.png&#34; alt=&#34;Doop Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cell.png&#34; alt=&#34;Doop Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・左タップ：バーの色を変更（使用停止中の項目はバーの色の変更が出来ません）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;
-&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;ColorMode&#34; /&gt;
-（Kawaii）&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;ColorMode&#34; /&gt;（Kawaii）&lt;/p&gt;
 
 &lt;p&gt;・右タップ：表示スタイルの変更（3種類）&lt;br /&gt;
 ・中心をダブルタップ：項目の編集&lt;/p&gt;
 
 &lt;h3 id=&#34;表示スタイル:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;表示スタイル&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cellstyles.png&#34; alt=&#34;Doop CellStyles&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cellstyles.png&#34; alt=&#34;Doop CellStyles&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;１）シンプル：タイトルとメモ&lt;br /&gt;
 ２）カウントアップ：使い始めてどのくらいたったかがメインの表示&lt;br /&gt;
@@ -862,8 +812,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;編集画面:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ 編集画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-doop-detail.png&#34; alt=&#34;Detail&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-doop-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;アイテムの編集や更新&lt;br /&gt;
 ・星付け(お気に入り)&lt;br /&gt;
@@ -884,8 +833,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;p&gt;アイテムの取り替え履歴、平均・最大・最小交換時間を表示。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-historyview.png&#34; alt=&#34;Doop History Page&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-historyview.png&#34; alt=&#34;Doop History Page&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;セルのタップ:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;セルのタップ&lt;/h3&gt;
 
@@ -905,8 +853,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 ・ナビゲーションバーのタイトルを変更&lt;br /&gt;
 ・アイコンの透明度を設定（目立たせたい方は白く、控えめにしたい人は薄めに）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-setting.png&#34; alt=&#34;Doop Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-setting.png&#34; alt=&#34;Doop Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;◇ Lite版&lt;br /&gt;
 ・ソート画面数が限定されます。&lt;br /&gt;
@@ -935,8 +882,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;29時間という長いスパンのグラフで見つめる簡易行動ログ帳。&lt;br /&gt;
 何にどのくらい時間を当てているかをざっくりと大雑把に把握するためのソフトです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg&#34; alt=&#34;ippuku Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg&#34; alt=&#34;ippuku Image&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;タイマーのスタートはナビゲーションバーのプラスのマークから:5b89f527080bd576a91ef79ce811581e&#34;&gt;！タイマーのスタートはナビゲーションバーのプラスのマークから！&lt;/h2&gt;
 
@@ -959,34 +905,27 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png&#34; alt=&#34;Default&#34; /&gt;
-
 &lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png&#34; alt=&#34;AM&#34; /&gt;
-
 &lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png&#34; alt=&#34;Day&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png&#34; alt=&#34;PM&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png&#34; alt=&#34;PM&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ タイトルに•が付く事で表示の時間帯を確認できます。(AM: •title, DAY: •title•, PM: title•)&lt;/p&gt;
 
 &lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;表示部セルの操作:5b89f527080bd576a91ef79ce811581e&#34;&gt;◇ 表示部セルの操作&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;左側：カテゴリカラーの変更。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color&#34; /&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color&#34; /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;中心：項目の削除および編集。&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;右側：バーの気分による色付けのオンオフ&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;編集:5b89f527080bd576a91ef79ce811581e&#34;&gt;編集&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-edit.png&#34; alt=&#34;Edit&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-edit.png&#34; alt=&#34;Edit&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;セルの中心部をタップすることで時間などの編集ができます。&lt;/li&gt;
@@ -994,8 +933,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;設定-ホーム-設定-ippuku:5b89f527080bd576a91ef79ce811581e&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;ippuku]&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ナビバーのタイトルを変更することができます。&lt;/li&gt;
@@ -1053,8 +991,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;麺好きな人であれば、パスタ数種、うどん、蕎麦など様々な種類かつブランドの物を取り揃えていると思います。
 麺の種類やブランドにより茹で時間が違いますし、作るたびにパッケージを確認したりするのがちょっとした手間だったりします。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-tapas.jpg&#34; alt=&#34;tapas Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-tapas.jpg&#34; alt=&#34;tapas Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;そんな不満を解消すべく、&lt;/p&gt;
 
@@ -1070,13 +1007,11 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;リストページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ リストページ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-main.png&#34; alt=&#34;List&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-main.png&#34; alt=&#34;List&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;ナビゲーションバーの操作:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左右にスワイプ：次のソートに変更&lt;/li&gt;
@@ -1087,25 +1022,21 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;/ol&gt;
 
 &lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Sort&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;セルの操作方法:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
 
 &lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-cell.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左エリア
 
 &lt;ol&gt;
 &lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;
-&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Kawaii&#34; /&gt;
- （Kawaii）&lt;/li&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;ColorMode&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Kawaii&#34; /&gt; （Kawaii）&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;中央エリア
 
@@ -1128,8 +1059,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h4 id=&#34;アクセサリの意味:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;アクセサリの意味&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-accesories.png&#34; alt=&#34;Accesory&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-accesories.png&#34; alt=&#34;Accesory&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左上部の数字：使用回数&lt;/li&gt;
@@ -1141,8 +1071,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;タイマーページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ タイマーページ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-timer.png&#34; alt=&#34;Timer&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;画面はスクロールされず、5つ又は6つまで表示されます。
 最初の画面ではグレーのオフの状態になっています。&lt;/p&gt;
@@ -1161,8 +1090,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;編集ページ:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ 編集ページ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-edit.png&#34; alt=&#34;Edit&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-edit.png&#34; alt=&#34;Edit&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;星・ハートマーク付け(お気に入りリストに登録されます)&lt;br /&gt;&lt;/li&gt;
@@ -1173,8 +1101,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;設定-ホーム-設定-tapas:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;tapas]&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ナビゲーションバーのタイトルを変更&lt;br /&gt;&lt;/li&gt;
@@ -1199,8 +1126,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;ちょっとした高額な物を購入したけど思ったほど使用していない品物、
 高価な物だけど日々使っているもの等を、 日割り、もしくは使用回数のコストを計算してそのパフォーマンスをはかるソフトです。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-cosper.jpg&#34; alt=&#34;cosper Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-cosper.jpg&#34; alt=&#34;cosper Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;無駄遣いの抑止に、、&lt;/p&gt;
 
@@ -1208,13 +1134,11 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;メイン画面:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ メイン画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-cosper-main.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-cosper-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ナビゲーションバーの操作:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;◆ ナビゲーションバーの操作&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
@@ -1223,8 +1147,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;/ol&gt;
 
 &lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 日割り/回数割でのソート時にはタイトルの両端に･がつきます。&lt;br /&gt;
 （例）･コスパ･&lt;/p&gt;
@@ -1240,18 +1163,15 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-cell.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左エリア
 
 &lt;ol&gt;
 &lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-（Kawaii）
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;（Kawaii）
 . 中央エリア&lt;/li&gt;
 &lt;li&gt;ダブルタップ：項目の編集&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
@@ -1275,8 +1195,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h3 id=&#34;アクセサリの意味:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;アクセサリの意味&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左下部の白ドット：色変更の防止ロック&lt;/li&gt;
@@ -1287,8 +1206,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;編集画面:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ 編集画面&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-edit.png&#34; alt=&#34;Edit&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-edit.png&#34; alt=&#34;Edit&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;星付け(お気に入りに登録)&lt;br /&gt;&lt;/li&gt;
@@ -1308,8 +1226,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;設定-ホーム-設定-cosper:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ 設定 [ホーム&amp;gt;設定&amp;gt;cosper]&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-cosper-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;カラーモードの変更&lt;/li&gt;
@@ -1341,8 +1258,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;ポストイット感覚で使えるカラフルでパーソナルなプロジェクトマネージャ。
 シンプルな使い勝手で、簡単にタスクを管理する事ができます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-dandori.jpg&#34; alt=&#34;dandori Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-dandori.jpg&#34; alt=&#34;dandori Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;プロジェクトの段取り、簡単なアイディア帳としても。
 抱負や夢、欲しい物をちょっと書き出してみたりしてみてください。&lt;/p&gt;
@@ -1352,16 +1268,13 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;プロジェクトとタスクのページが有ります。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-dandori-main.png&#34; alt=&#34;Project Page&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;プロジェクトページ:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ プロジェクトページ&lt;/h2&gt;
 
 &lt;h3 id=&#34;ナビゲーションバーの操作:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-navigation-bar.png&#34; alt=&#34;Navigation&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
@@ -1370,25 +1283,21 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;/ol&gt;
 
 &lt;p&gt;色によるソートの色組は以下のように３種ごとにまとめてます。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-sort.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;セルの操作方法:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ セルの操作方法&lt;/h3&gt;
 
 &lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-cell.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左エリア
 
 &lt;ol&gt;
 &lt;li&gt;タップ：色の変更、左から順にかわります。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;
-（Kawaii）&lt;/li&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;（Kawaii）&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;中央エリア
 
@@ -1410,8 +1319,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h4 id=&#34;アクセサリの意味:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;アクセサリの意味&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左上部の数字：そのプロジェクトのタスクの数が表示されます。&lt;/li&gt;
@@ -1424,20 +1332,17 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;p&gt;左肩に赤いドットが表示されている項目の数がアプリケーションバッジに表示されます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-badge.png&#34; alt=&#34;Badge&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-badge.png&#34; alt=&#34;Badge&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;タスクページ-下層:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ タスクページ（下層）&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;ナビゲーションバーの操作-1:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;◆ ナビゲーションバーの操作&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-navigation-bar.png&#34; alt=&#34;Navigation Bar on Task Page&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-navigation-bar.png&#34; alt=&#34;Navigation Bar on Task Page&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左・右にスワイプ：次・前のソート画面へ移動&lt;/li&gt;
@@ -1451,8 +1356,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;p&gt;左•中央•右の三つのエリアをタップの方法で使い分けています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-cell.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左エリア
@@ -1489,23 +1393,17 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;h3 id=&#34;ナビゲーションバーのタイトルの設定:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;ナビゲーションバーのタイトルの設定&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-title.png&#34; alt=&#34;Title on NavBar&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-title-named.png&#34; alt=&#34;Title on NavBar&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-title-named.png&#34; alt=&#34;Title on NavBar&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;###マークの透明度設定
 星とハートマークの透明度を設定できます。目立たせてせたい人は白めに、控えめにしたい方は薄めにしてください。
 デフォルトは控えめ、薄めにしてあります。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-mark1.png&#34; alt=&#34;Setting mark&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell1.png&#34; alt=&#34;Setting mark&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell1.png&#34; alt=&#34;Setting mark&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-setting-mark2.png&#34; alt=&#34;Setting mark&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell2.png&#34; alt=&#34;Setting mark&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-mark-cell2.png&#34; alt=&#34;Setting mark&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;◇ Lite版&lt;br /&gt;
 ・プロジェクト入力項目数の限定はありませんが、ソートページ表示種類が限定されます。&lt;br /&gt;
@@ -1533,8 +1431,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 ビジネスが中心のタスク管理ソフトを、生活に近くし、誰でも簡単かつ気楽に扱える、
 使っていて楽しく感じられるtoDoアプリケーションを目指して作りました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-littlist.jpg&#34; alt=&#34;littlsit Image&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-littlist.jpg&#34; alt=&#34;littlsit Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;手帳にペタペタとポストイットを貼り付けているような人やザッピング好きには最適なTodoソフトです。&lt;/p&gt;
 
@@ -1546,8 +1443,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;ナビゲーションバーの操作方法:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;ナビゲーションバーの操作方法&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-navigation-bar.png&#34; alt=&#34;NavigationBar&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-navigation-bar.png&#34; alt=&#34;NavigationBar&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左右にスワイプ：次のソートに変更&lt;/li&gt;
@@ -1559,8 +1455,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;h3 id=&#34;セルの操作方法:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;セルの操作方法&lt;/h3&gt;
 
 &lt;p&gt;右•左•中央の三つのエリアをタップの方法で使い分けています。
-&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell.png&#34; alt=&#34;Cell&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左エリア
@@ -1585,13 +1480,11 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h4 id=&#34;中央エリアタップ時-期日-メモがある場合:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;中央エリアタップ時（期日、メモがある場合）&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell2.png&#34; alt=&#34;Cell 2&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell2.png&#34; alt=&#34;Cell 2&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;アクセサリの意味:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;アクセサリの意味&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-accesories.png&#34; alt=&#34;Accesories&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;左上部の切り込み：メモがある時に切り込みが入ります&lt;/li&gt;
@@ -1604,8 +1497,7 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;h2 id=&#34;期日:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;期日&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-duedot.png&#34; alt=&#34;Red Dot&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-duedot.png&#34; alt=&#34;Red Dot&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;期日が迫ってくるほど、赤に近い色がつきます。
 期日が過ぎるとバー自体が赤くなります。（白ドット）&lt;/p&gt;
@@ -1617,18 +1509,14 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 &lt;p&gt;ダブルタップで編集画面へ行き、丸ボタンで期日のオンオフ、日付をタップして日時を設定します。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due1.png&#34; alt=&#34;Due 1&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due2.png&#34; alt=&#34;Due 2&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due3.png&#34; alt=&#34;Due 3&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-due3.png&#34; alt=&#34;Due 3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=both /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;新規項目追加:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;新規項目追加&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-quick-entry.png&#34; alt=&#34;New&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-quick-entry.png&#34; alt=&#34;New&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;完了：追加の終了&lt;/li&gt;
@@ -1640,15 +1528,13 @@ AppStoreにて&lt;a href=&#34;http://itunes.com/app/satima&#34;&gt;ダウンロ�
 
 &lt;p&gt;フォントの変更とナビゲーションバーのタイトルを変更できます&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;フォントの変更:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;フォントの変更&lt;/h3&gt;
 
 &lt;p&gt;間隔が詰まって太めから、柔らかめゆったりの順になっています。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting-font.png&#34; alt=&#34;Font&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-setting-font.png&#34; alt=&#34;Font&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;その他:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;その他&lt;/h2&gt;
 </description>

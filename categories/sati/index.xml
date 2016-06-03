@@ -7,8 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2015 15:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jun 2016 19:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-180/</link>
+      <pubDate>Fri, 10 Jun 2016 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/sati-180/</guid>
+      <description>
+
+&lt;p&gt;2015の2月以来のアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iOS9で表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
+
+&lt;p&gt;機能的にはたくさんのアップデートはありませんが、無難に動くと思います。少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-8-0-swift-release-2016-06-10-nonkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.8.0 - Swift release] - 2016-06-10 @ Nonkhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。どちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンを少し変更&lt;/li&gt;
+&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（左３つのアプリ）を少しいじってます。iOS8にアップデートした頃から少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
+
+&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
@@ -44,8 +97,7 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;Satiのダウンロードがドカーーンと一気に増えました。ダンニャバーッ。たまにどかっとダウンロードが増える事があっても500ぐらいが頭打ちでしたが今回は14,600ダウンロードと桁違い、、ちとビックリです。エラーも無いしちょっと安心。おかげさまで、ダウンロードグラフが見づらくなりました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-download.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-download.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・ 通常時のサティダウンロード：3とかたまに二桁 &amp;mdash;&amp;ndash;&amp;gt; 3/13：42 &amp;mdash;&amp;gt; 3/14：14,600。&lt;/p&gt;
 
@@ -53,20 +105,15 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;ダウンロードの詳細は以下。USとCanadaが2Kダウンロードずつと飛び抜けてて、ブラジル、メキシコ、タイと続きます。眠れる巨人、中国ではダウンロードされていない様子。トルコがヨーロッパ圏で一番なのがちょっと意外。カザフスタンとか不思議でもある、行ってみるかな。。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-europe.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-europe.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-southamerica.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-southamerica.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia-east.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-sati-asia-east.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;!! Thanks again, Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !!&lt;/p&gt;
 
@@ -80,8 +127,7 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;p&gt;追記：&lt;br /&gt;
 3/16：一日たち25.2Kダウンドード。南米、アフリカでは下降線で、ヨーロッパ、アメリカはまだのびる！&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-16-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-16-sati-world.png&#34; alt=&#34;Sati Download&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;3/18：いつものパターンのホップ・ステップ・玉砕。ダウンロード数が急降下。システムエラーだったのか？と思わせるくらいです。&lt;/p&gt;
 </description>
@@ -100,11 +146,8 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
@@ -117,7 +160,6 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;ul&gt;
 &lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
@@ -144,11 +186,8 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;h3 id=&#34;変更および追加:02b34a8499a527797a12ccf4ce4b3a52&#34;&gt;変更および追加&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_main_pre165.png&#34; alt=&#34;Main&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_history_pre165.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_history_pre165.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;メインページの透明度等のデザインの微調整&lt;/p&gt;
@@ -172,8 +211,7 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
@@ -208,8 +246,7 @@ please be meditation part of your life, into a life. i hope meditation will help
 and turn &lt;strong&gt;Sound&lt;/strong&gt; ON.  This solves this problem&amp;hellip;
 I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-30-alert.png&#34; alt=&#34;Alert&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-30-alert.png&#34; alt=&#34;Alert&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;長らくご迷惑おかけしました。&lt;/p&gt;
 
@@ -220,9 +257,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_163.png&#34; alt=&#34;Sati 163&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_164.png&#34; alt=&#34;Sati 164&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-01_sati_164.png&#34; alt=&#34;Sati 164&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;最近の状況を示すアイコンを中心の円の内側に入れました。&lt;br /&gt;
@@ -244,8 +279,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Sati SettingView&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Sati SettingView&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ホーム＞設定＞サティで設定できる項目を追加しました。&lt;br /&gt;
@@ -256,8 +290,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -299,9 +332,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163.png&#34; alt=&#34;sati&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163_setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-01-19_sati_163_setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるや、よくいえば瞑想的ともいえるが、不出来。もうひとひねり欲しい。。)&lt;/li&gt;
@@ -327,19 +358,15 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 
 &lt;p&gt;iOS8からNotificationを使うのに許可が必要になり、iOS8使用時はアプリが立ち上がる時に通知許可のアラートがあがるようにしています。（許可をしないと音が出ません。）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-alert.png&#34; alt=&#34;Notification Alert&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-alert.png&#34; alt=&#34;Notification Alert&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ユーザーの方によってアップデート以後音が出なくなってしまったというかたは、お手数ですが、通知の設定を変更してください。&lt;/p&gt;
 
 &lt;p&gt;設定＞サティ＞通知＞「通知を許可する」をオンにしてください。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-settting.png&#34; alt=&#34;Setting&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/2014-12-04-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-notification-setting.png&#34; alt=&#34;Notificaton Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-notification-setting.png&#34; alt=&#34;Notificaton Setting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -416,11 +443,9 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;p&gt;そして、割と厳しかった途中でのキャンセル時の処理を変更。
 ３０分以上時間が経った時には瞑想をカウントするようにしました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png&#34; alt=&#34;New Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png&#34; alt=&#34;New Setting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -455,61 +480,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Icon Renew and minor update</title>
-      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
-      <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
-      <description>&lt;p&gt;ちょっと気になっていたアイコンにちょっと手を入れました。
-リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
-サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
-ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-IconRenew.png&#34; alt=&#34;Renew Icons&#34; /&gt;
-&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;そして、ソフトの中身も少しだけアップデートしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;sati&lt;/strong&gt;：履歴の表示のセルとデザインをちょっと変更しました。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew.png&#34; alt=&#34;Renew&#34; /&gt;
-
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew2.png&#34; alt=&#34;Renew &#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;リスタリア&lt;/strong&gt;：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ListariaRenew.png&#34; alt=&#34;Renew&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ippuku&lt;/strong&gt;：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ippukuRenew.png&#34; alt=&#34;Renew&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.5.1</title>
-      <link>http://goozenlab.com/blog/2012/12/sati-151/</link>
-      <pubDate>Fri, 21 Dec 2012 12:47:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/12/sati-151/</guid>
-      <description>&lt;p&gt;サティ（旧名：サティマ）のプチアップデート。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ちょっとパーリー語を勘違いしてたかもしれないのでアプリの名前を変更（サティマからサティに）&lt;/li&gt;
-&lt;li&gt;メイン画面に日付を表示と少しのデザイン更新&lt;/li&gt;
-&lt;li&gt;ちょいと派手目だったスプラッシュスクリーンを地味な画像に変更&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;年内にアップデートされると思います。そして年が明けたらオープンソース化します。
-で、わたしは年明けまで街からちょっと離れます。&lt;/p&gt;
-
-&lt;p&gt;※ ちなみに「サティ」とは日本語で「気付き、記憶」の意味。仏教語では「念」だそうです。&lt;/p&gt;
 </description>
     </item>
     

@@ -7,8 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 16 Aug 2015 16:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jun 2016 19:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-180/</link>
+      <pubDate>Fri, 10 Jun 2016 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/sati-180/</guid>
+      <description>
+
+&lt;p&gt;2015の2月以来のアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iOS9で表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
+
+&lt;p&gt;機能的にはたくさんのアップデートはありませんが、無難に動くと思います。少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-8-0-swift-release-2016-06-10-nonkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.8.0 - Swift release] - 2016-06-10 @ Nonkhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。どちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンを少し変更&lt;/li&gt;
+&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（左３つのアプリ）を少しいじってます。iOS8にアップデートした頃から少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
+
+&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.8.1</title>
@@ -26,8 +79,7 @@
 
 &lt;p&gt;追記：8/22にアプストアにアップされました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-16-arakol.jpg&#34; alt=&#34;アラコル湖&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-16-arakol.jpg&#34; alt=&#34;アラコル湖&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -41,10 +93,9 @@
 
 &lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;追加機能:846f46160724fec170c33cf28f2c39bd&#34;&gt;追加機能&lt;/h2&gt;
+&lt;h2 id=&#34;追加機能:6a9b7eb3f63da5cc45b6f2405945c2e7&#34;&gt;追加機能&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
@@ -208,8 +259,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -254,8 +304,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -300,8 +349,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 
 &lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -314,11 +362,8 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
       <description>&lt;p&gt;他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-main-071.png&#34; alt=&#34;Main&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-history-071.png&#34; alt=&#34;History&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;メインページのデザインの微調整
@@ -330,8 +375,7 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;ホーム＞設定＞ Pranatice&lt;/p&gt;
@@ -364,11 +408,8 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history-165.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。&lt;/li&gt;
@@ -382,7 +423,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;li&gt;瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-all.png&#34; alt=&#34;TimeLine&#34; /&gt;
 
-
 &lt;ul&gt;
 &lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
@@ -392,66 +432,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.4</title>
-      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
-      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
-      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
-
-&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
-&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
-
-&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
-
-&lt;!--
-
-ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
-MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Tapas v1.6.3</title>
-      <link>http://goozenlab.com/blog/2015/02/tapas-163/</link>
-      <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/tapas-163/</guid>
-      <description>&lt;p&gt;ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、&lt;strong&gt;ありがとうございます&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。&lt;/p&gt;
-
-&lt;p&gt;最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイテムの削除でアプリが落ちます。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。&lt;/p&gt;
-
-&lt;p&gt;修正版を&lt;strong&gt;申請&lt;/strong&gt;しました。10日後ぐらいにはアプストアにアップされると思います。
-ほかにも不具合がありましたら、コメントなどよろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;追記：&lt;br /&gt;
- 完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。&lt;br /&gt;
- ただし、メモの表示方法にちょっと手を入れようと思ってます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;リスト画面：メモを少し見やすく、選択された時は表示の高さを変える&lt;/li&gt;
-&lt;li&gt;タイマ画面：左のテキストをタップで数秒間メモを表示する&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

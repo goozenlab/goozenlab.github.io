@@ -7,8 +7,161 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 15 Jun 2015 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jun 2016 22:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MBP15/2016の勝手な推測</title>
+      <link>http://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <description>
+
+&lt;p&gt;フルリニューアルのMBP15の勝手な推測、希望を書いてみる&lt;/p&gt;
+
+&lt;p&gt;そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。
+かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。&lt;/p&gt;
+
+&lt;h2 id=&#34;そこで-勝手な推測をしたいと:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そこで、勝手な推測をしたいと、&lt;/h2&gt;
+
+&lt;p&gt;まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、&lt;/p&gt;
+
+&lt;p&gt;で、勝手な推測ではOLEDタッチバーの部分には、追加で&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;TouchIDの機能&lt;/li&gt;
+&lt;li&gt;モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど））&lt;/li&gt;
+&lt;li&gt;サプライズ：こりゃ気がつかなかった凄い的ななんか。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと&lt;strong&gt;非常&lt;/strong&gt;に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。&lt;/p&gt;
+
+&lt;p&gt;※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。&lt;/p&gt;
+
+&lt;h2 id=&#34;そして-希望とボヤき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そして、希望とボヤき&lt;/h2&gt;
+
+&lt;h3 id=&#34;希望:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;希望、&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ヘナペナキーボードはやーーめて&lt;/li&gt;
+&lt;li&gt;分解しやすい作りでよろしく、直付けとかなしね&lt;/li&gt;
+&lt;li&gt;ノングレア液晶&lt;/li&gt;
+&lt;li&gt;10時間はもってね&lt;/li&gt;
+&lt;li&gt;1.5kg以下ならパーフェクト&lt;/li&gt;
+&lt;li&gt;私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ&lt;/li&gt;
+&lt;li&gt;円高プライス&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;ぼやき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;ぼやき、、&lt;/h3&gt;
+
+&lt;p&gt;USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。
+どんなユーザーが４つのポートを必要としているのか理解できない。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;電源&lt;/li&gt;
+&lt;li&gt;外部モニター&lt;/li&gt;
+&lt;li&gt;iPhone&lt;/li&gt;
+&lt;li&gt;ハードディスク&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。&lt;/p&gt;
+
+&lt;p&gt;ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！&lt;/p&gt;
+
+&lt;p&gt;！！！SDカードスロットは必須じゃろーー！！！&lt;/p&gt;
+
+&lt;p&gt;と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fusion drive を作る</title>
+      <link>http://goozenlab.com/blog/2016/03/create-fusiondrive/</link>
+      <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
+      <description>
+
+&lt;p&gt;MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ディスク番号確認：diskutil list&lt;/li&gt;
+&lt;li&gt;フュージョンドライブ作成：diskutil cs create&lt;/li&gt;
+&lt;li&gt;ボリューム作成：diskutil coreStorage createVolume&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;詳細:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;詳細&lt;/h2&gt;
+
+&lt;p&gt;Fusion化を行うディスクの番号を &lt;code&gt;diskutil list&lt;/code&gt; にて把握。そして &lt;code&gt;diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2&lt;/code&gt; にてLogical Volume Groupを構築。&lt;/p&gt;
+
+&lt;p&gt;※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2
+Started CoreStorage operation
+Unmounting disk1
+Repartitioning disk1
+Unmounting disk
+Creating the partition map
+Rediscovering disk1
+Adding disk1s2 to Logical Volume Group
+Unmounting disk2
+Repartitioning disk2
+Unmounting disk
+Creating the partition map
+Rediscovering disk2
+Adding disk2s2 to Logical Volume Group
+Creating Core Storage Logical Volume Group
+Switching disk1s2 to Core Storage
+Switching disk2s2 to Core Storage
+Waiting for Logical Volume Group to appear
+Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
+Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
+Finished CoreStorage operation
+shingha:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Volumeを &lt;code&gt;diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%&lt;/code&gt; で作成。Fusion.11がファインダーで表示される。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs createVolume &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%
+The Core Storage Logical Volume Group UUID is 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
+Started CoreStorage operation
+Waiting for Logical Volume to appear
+Formatting file system for Logical Volume
+Initialized /dev/rdisk3 as a 2 TB case-insensitive HFS Plus volume with a 139264k journal
+Mounting disk
+Core Storage LV UUID: E61D3EA0-4744-4B23-XXXX-533D19B9D00C
+Core Storage disk: disk3
+Finished CoreStorage operation
+shingha:~ $
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;フュージョン化の解除:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;フュージョン化の解除&lt;/h2&gt;
+
+&lt;p&gt;一つになったドライブの解除方法は &lt;code&gt;diskutil cs deleteVolume&lt;/code&gt; というコマンドもあるが&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;diskutil cs delete &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;の一発で行けると、思う・・。&lt;/p&gt;
+
+&lt;h2 id=&#34;リカバリーusb-stick:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
+
+&lt;p&gt;次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&amp;hellip; で動きが止まり思ったより時間が掛かる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
+Password:
+Erasing Disk: 0%... 10%... 20%... 30%...100%...
+Copying installer files to disk...
+Copy complete.
+Making disk bootable...
+Copying boot files...
+Copy complete.
+Done.
+shingha:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>デノンのDA-10</title>
@@ -24,31 +177,27 @@
 
 &lt;p&gt;ここ数年Hi-Fiオーディオの流行により新しいアンプが幾つか売りに出てきたので機種変更。iPodにデジタル対応しているものはSony PHA1, Fostex HP-P1, Denon DA-10、他幾つか。。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-EL_da10_front.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-EL_da10_front.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1は大きいしデザインがあまり好きなれない、後発になるDENONがちょっと太り気味感じではあるが気になっていた。値段も３万円を切りお手頃な感じになり、そろそろ市場から消えてしまう前に購入をする。&lt;/p&gt;
 
 &lt;p&gt;※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート１-小お出かけ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
+&lt;h2 id=&#34;パート１-小お出かけ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-lite.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-lite.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート２-中お出かけ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
+&lt;h2 id=&#34;パート２-中お出かけ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-middle.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-middle.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート３-ノマドデスクトップ:9e0eb3b54b5e110a82989f80574d2ba3&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
+&lt;h2 id=&#34;パート３-ノマドデスクトップ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-desktop.jpg&#34; alt=&#34;DA-10&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-desktop.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ノマドマシーンMBA11にはiTuneのライブラリは入っていないので。右にiPodVideo、左にDA-10を接続してiPodのライブラリに入っている曲を聴く。&lt;/p&gt;
 
@@ -64,35 +213,30 @@
       <guid>http://goozenlab.com/blog/2015/06/elcapitan-beta/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan.jpg&#34; alt=&#34;El Capitan X.11&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan.jpg&#34; alt=&#34;El Capitan X.11&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落とす事ができるようになる。XCode7を使う為、あまり容量の無いMBA11-128GBに無理矢理スペースつくり、&lt;strong&gt;El Capitan&lt;/strong&gt;を入れてみる事にする。（発表されてこの文章を書いている途中まで&lt;strong&gt;&lt;em&gt;El Captain&lt;/em&gt;&lt;/strong&gt;だと、ヨセミテ隊の大尉だと、、勘違いをする。）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-disk.jpg&#34; alt=&#34;128GB SSD X.11&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-disk.jpg&#34; alt=&#34;128GB SSD X.11&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ちなみに、SafariにAdBlockのエクステンションが入っていると、ダウンロードのサイトがうまく機能しないよう、AdBlockを一時停止して機能する。（分からず、Firefoxでダウンロード。）&lt;/p&gt;
 
 &lt;p&gt;現在の開発機は去年秋にアップデートしたマーベリックがメインの環境で、多分ヨセミテはスキップする事になりそう。ヨセミテの使用時間は多分数時間にも満たない、良い印象はあまり無い。。。
 ちまたではWindows10が新しいMacbookではヨセミテより軽快に動いているとネットで見聞きする。エルキャプテンではパフォーマンスが向上するとの触れ込みなので、ちょっと期待しダウンロードする。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-installer.jpg&#34; alt=&#34;Installer&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-installer.jpg&#34; alt=&#34;Installer&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;インストラーを起動+再起動後、20分ほどで作業終了。初期ディスク占有容量は&lt;strong&gt;7.08GB&lt;/strong&gt;。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan-installed.jpg&#34; alt=&#34;El Capitan&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan-installed.jpg&#34; alt=&#34;El Capitan&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-about.jpg&#34; alt=&#34;About&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-about.jpg&#34; alt=&#34;About&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;なぜか、未だヨセミテの名前がついている。一瞬別の物を入れてしまったと思った。。再起動後直る。&lt;/p&gt;
 
 &lt;p&gt;さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、&lt;/p&gt;
 
-&lt;h2 id=&#34;良い点:dd668fb4cf7938e3a692cfa3bca5bf1c&#34;&gt;良い点&lt;/h2&gt;
+&lt;h2 id=&#34;良い点:b544164a5a31a77e1c671eebe5824ecc&#34;&gt;良い点&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フラットなデザインがようやく落ち着いた感じになる。&lt;/li&gt;
@@ -100,7 +244,7 @@
 &lt;li&gt;上部メニューを「自動で隠す」ことができる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;悪い点:dd668fb4cf7938e3a692cfa3bca5bf1c&#34;&gt;悪い点&lt;/h2&gt;
+&lt;h2 id=&#34;悪い点:b544164a5a31a77e1c671eebe5824ecc&#34;&gt;悪い点&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;メニューバーでのバッテリーの残量表示時間がかなり短くなる&lt;/li&gt;
@@ -120,20 +264,17 @@
       <guid>http://goozenlab.com/blog/2015/05/surfacepad/</guid>
       <description>&lt;p&gt;MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。&lt;/p&gt;
 
 &lt;p&gt;黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。&lt;/p&gt;
 </description>
@@ -178,8 +319,7 @@
 &lt;p&gt;本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。
 昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-pokhara-damside-bw.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-pokhara-damside-bw.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -194,8 +334,7 @@
 &lt;p&gt;充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
 なんか得をした気分。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。&lt;/p&gt;
 </description>
@@ -209,8 +348,7 @@
       <guid>http://goozenlab.com/blog/2014/11/mba-review/</guid>
       <description>&lt;p&gt;10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-21-mba11.jpg&#34; alt=&#34;MBA11&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-21-mba11.jpg&#34; alt=&#34;MBA11&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;軽い。&lt;/li&gt;
@@ -281,8 +419,7 @@
       <description>&lt;p&gt;ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png&#34; alt=&#34;Chromium&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png&#34; alt=&#34;Chromium&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。&lt;/p&gt;
 
@@ -422,8 +559,7 @@ echo &amp;quot;Done. You&#39;re now running build $latestVersion&amp;quot;;
 
 &lt;p&gt;アプリケーションの環境設定から変えるものだと思っていましたが、システム環境のキーボードの所から変更します。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-shortcut-memu.png&#34; alt=&#34;Menu Shortcut&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-shortcut-memu.png&#34; alt=&#34;Menu Shortcut&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;恥ずかしながらこのように設定をする事が出来るとは知りませんでした。他のソフトでも使えそうですし、ちょっと便利です。自分が慣れ親しんだように色々と変更してみるといいです。&lt;/p&gt;
 
@@ -436,18 +572,15 @@ Textのバンドルに追加したものは全てのファイルに適用され�
 
 &lt;p&gt;簡単なタイムスタンプはnowとタイピングしてタブキーを押して挿入の形にします。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-timestamp.png&#34; alt=&#34;TimeStamp&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-timestamp.png&#34; alt=&#34;TimeStamp&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;オクトプレスをブログに使っているのでそのイメージタグの挿入は&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-octopress-shortcut.png&#34; alt=&#34;Octopress Snipet&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-octopress-shortcut.png&#34; alt=&#34;Octopress Snipet&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;キーの登録はオクトプレス関連は全てControl+oに割り当ててます。これでショートカットを押すと複数ある場合そのリストが表示されます。別々に名前を割り当てるのは覚えるのがちょっと、、なので一作業増えますがこのような形にしました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-snipet-selection.png&#34; alt=&#34;スニペットの選択&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-snipet-selection.png&#34; alt=&#34;スニペットの選択&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;その他:0430dfb299360927fc735c73f9527560&#34;&gt;その他&lt;/h2&gt;
 
@@ -528,8 +661,7 @@ tell application &amp;quot;System Events&amp;quot;
 end tell
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;checkbox &amp;quot;Use grayscale&amp;quot; of group 1 of window &amp;quot;Accessibility&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;&lt;/code&gt;でこのgroup 1の&amp;rdquo;Use grayscale&amp;rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &amp;ldquo;Use grayscale&amp;rdquo;はclick checkbox 2、window &amp;ldquo;Accessibility&amp;rdquo;はwindow 1, first windowでも動きます。&lt;/p&gt;
 
@@ -576,8 +708,7 @@ end tell
       <guid>http://goozenlab.com/blog/2012/11/gray-mode/</guid>
       <description>&lt;p&gt;最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）&lt;/p&gt;
 
@@ -591,8 +722,7 @@ end tell
 
 &lt;p&gt;で、画面はこのようになります。お試しあれ。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -608,8 +738,7 @@ end tell
 
 &lt;p&gt;マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。&lt;/p&gt;
 

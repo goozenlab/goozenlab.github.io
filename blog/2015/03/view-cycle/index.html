@@ -86,7 +86,7 @@
 
 <p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
 
-<h2 id="起動時:205901421f8bb17c75d7ebf5b8a21af9">起動時</h2>
+<h2 id="起動時:e0af111a0289018acd229891e1617ab3">起動時</h2>
 
 <p>アプリの起動時には以下の順で呼ばれる。</p>
 
@@ -96,7 +96,7 @@
 <li>viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。</li>
 </ol>
 
-<h2 id="モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9">モーダルビューより復帰</h2>
+<h2 id="モーダルビューより復帰:e0af111a0289018acd229891e1617ab3">モーダルビューより復帰</h2>
 
 <p>モーダルビューより戻ってくると以下の処理が再び呼ばれる。</p>
 
@@ -105,7 +105,7 @@
 <li>viewDidAppear</li>
 </ol>
 
-<h2 id="ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9">ロック・スリープからの復帰時</h2>
+<h2 id="ロック-スリープからの復帰時:e0af111a0289018acd229891e1617ab3">ロック・スリープからの復帰時</h2>
 
 <p>ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
 viewDidLoadに通知の設定する事で可能になる。<code>Setting.bundle</code>でフォントの設定等を変更し、アプリに戻ってきた時に使う。</p>
@@ -125,7 +125,7 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 }
 </code></pre>
 
-<h2 id="スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9">スリープに移行時</h2>
+<h2 id="スリープに移行時:e0af111a0289018acd229891e1617ab3">スリープに移行時</h2>
 
 <p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。</p>
 

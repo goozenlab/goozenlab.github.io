@@ -18,20 +18,17 @@
       <guid>http://goozenlab.com/blog/2015/05/surfacepad/</guid>
       <description>&lt;p&gt;MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。&lt;/p&gt;
 
 &lt;p&gt;黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。&lt;/p&gt;
 </description>
@@ -48,8 +45,7 @@
 &lt;p&gt;充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して）
 なんか得をした気分。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。&lt;/p&gt;
 </description>
@@ -64,8 +60,7 @@
       <description>&lt;p&gt;ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png&#34; alt=&#34;Chromium&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-27-chromium.png&#34; alt=&#34;Chromium&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。&lt;/p&gt;
 
@@ -256,8 +251,7 @@ tell application &amp;quot;System Events&amp;quot;
 end tell
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;checkbox &amp;quot;Use grayscale&amp;quot; of group 1 of window &amp;quot;Accessibility&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;&lt;/code&gt;でこのgroup 1の&amp;rdquo;Use grayscale&amp;rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &amp;ldquo;Use grayscale&amp;rdquo;はclick checkbox 2、window &amp;ldquo;Accessibility&amp;rdquo;はwindow 1, first windowでも動きます。&lt;/p&gt;
 
@@ -304,8 +298,7 @@ end tell
       <guid>http://goozenlab.com/blog/2012/11/gray-mode/</guid>
       <description>&lt;p&gt;最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）&lt;/p&gt;
 
@@ -319,8 +312,7 @@ end tell
 
 &lt;p&gt;で、画面はこのようになります。お試しあれ。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -336,8 +328,7 @@ end tell
 
 &lt;p&gt;マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。&lt;/p&gt;
 

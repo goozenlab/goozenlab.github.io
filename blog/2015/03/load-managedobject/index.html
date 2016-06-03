@@ -95,8 +95,7 @@ Class not found, using default NSManagedObject instead.
 
 <p>もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。</p>
 
-<p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1" />
-</p>
+<p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1" /></p>
 
 <ol>
 <li>xcdatamodeldファイルを選択</li>
@@ -104,13 +103,12 @@ Class not found, using default NSManagedObject instead.
 <li>右に出てくるEntitiies以下のClass名を<code>ディレクトリー名.Entity名</code>にする</li>
 </ol>
 
-<p><img src="/images/2015-03-20-class-unload2.png" alt="Class unload2" />
-</p>
+<p><img src="/images/2015-03-20-class-unload2.png" alt="Class unload2" /></p>
 
 <p>※ 注意点は上記の場合<code>kitchen.Item</code>では無く<code>tapas.Item</code>と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。<br />
 （散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ<code>kitchen.xcdatamodeld</code>という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）</p>
 
-<h2 id="うまく行かない場合:dada94b1ca17e9c7da1ee195804dcefb">うまく行かない場合</h2>
+<h2 id="うまく行かない場合:eb5cad654ed1068004ef41ecc88e3a81">うまく行かない場合</h2>
 
 <ol>
 <li>キャッシュをクリアーする</li>

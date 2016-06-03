@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 16 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（左３つのアプリ）を少しいじってます。iOS8にアップデートした頃から少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
+
+&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo のデザイン</title>
@@ -18,11 +34,9 @@
       <guid>http://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
       <description>&lt;p&gt;Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo3.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo3.png&#34; alt=&#34;Pop ohayo&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo4.png&#34; alt=&#34;Pop ohayo&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo4.png&#34; alt=&#34;Pop ohayo&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -44,8 +58,7 @@
 
 &lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -64,11 +77,8 @@
 &lt;p&gt;で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_thai.png&#34; alt=&#34;Sleep in Thai&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png&#34; alt=&#34;Sleep in Malaysia&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_nepal.png&#34; alt=&#34;Sleep in Nepal&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_nepal.png&#34; alt=&#34;Sleep in Nepal&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;タイ&lt;/strong&gt;：早起きかつ睡眠時間も短め。ヨジラーです。&lt;/li&gt;
@@ -127,8 +137,7 @@
 
 &lt;p&gt;この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -140,8 +149,7 @@
       <guid>http://goozenlab.com/blog/2014/11/ohayo-280/</guid>
       <description>&lt;p&gt;ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-01.png&#34; alt=&#34;Healthcare screenshot&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-01.png&#34; alt=&#34;Healthcare screenshot&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。&lt;/p&gt;
 
@@ -150,9 +158,7 @@
 &lt;p&gt;書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-02.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;
-
-&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-03.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;
-&lt;/p&gt;
+&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-03.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。&lt;/p&gt;
 
@@ -174,11 +180,9 @@
 &lt;li&gt;デザインリニュー：フォントを変更。（日本語には影響無し）&lt;/li&gt;
 &lt;li&gt;設定ページをリデザイン。さっぱり奇麗になりました。&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;
-
 &lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;New setting&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;
-&lt;br /&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;br /&gt;
 ※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）&lt;/li&gt;
 &lt;li&gt;iOS7に向け表示に不具合がある所を調整。&lt;/li&gt;
 &lt;/ol&gt;

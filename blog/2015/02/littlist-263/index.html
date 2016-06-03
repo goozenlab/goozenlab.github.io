@@ -98,18 +98,18 @@ infoPlistFileSource=&quot;${SRCROOT}/${INFOPLIST_FILE}&quot;
 rootPlistFileDestination=&quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&quot;
 
 if [ ${CONFIGURATION} = &quot;Debug&quot; ]; then
-	# Version 2.6.3
-	# Build @ 2014-01-16 12:16 (dev.298)
-	versionPrefix=&quot; (dev.&quot;
-	date=$(date &quot;+@ %Y-%m-%d %H:%M&quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)
-	BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&quot;)&quot;
+    # Version 2.6.3
+    # Build @ 2014-01-16 12:16 (dev.298)
+    versionPrefix=&quot; (dev.&quot;
+    date=$(date &quot;+@ %Y-%m-%d %H:%M&quot;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)
+    BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&quot;)&quot;
 else
-	# Version 2.6.3 @ 2014.01.16
-	# Build  276
-	date=$(date &quot;+ @ %Y.%m.%d&quot;)
-	APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)$date
-	BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; $infoPlistFileSource)
+    # Version 2.6.3 @ 2014.01.16
+    # Build  276
+    date=$(date &quot;+ @ %Y.%m.%d&quot;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)$date
+    BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; $infoPlistFileSource)
 fi
 
 # ここのPreferenceSpecifiers:16, 17は各アプリによって変更
@@ -121,47 +121,44 @@ fi
 <p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
 
 <p><img src="/images/2015-01-26_versionning_dev.png" alt="Dev" />
-
-<img src="/images/2015-01-26_versionning_app.png" alt="App" />
-</p>
+<img src="/images/2015-01-26_versionning_app.png" alt="App" /></p>
 
 <p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
 
-<pre><code>		&lt;dict&gt;
-			&lt;key&gt;Title&lt;/key&gt;
-			&lt;string&gt;About&lt;/string&gt;
-			&lt;key&gt;Type&lt;/key&gt;
-			&lt;string&gt;PSGroupSpecifier&lt;/string&gt;
-			&lt;key&gt;FooterText&lt;/key&gt;
-			&lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
-		&lt;/dict&gt;
-		&lt;dict&gt;
-			&lt;key&gt;Type&lt;/key&gt;
-			&lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-			&lt;key&gt;DefaultValue&lt;/key&gt;
-			&lt;string&gt;1.0&lt;/string&gt;
-			&lt;key&gt;Title&lt;/key&gt;
-			&lt;string&gt;Version&lt;/string&gt;
-			&lt;key&gt;Key&lt;/key&gt;
-			&lt;string&gt;app_version_number&lt;/string&gt;
-		&lt;/dict&gt;
-		&lt;dict&gt;
-			&lt;key&gt;Type&lt;/key&gt;
-			&lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
-			&lt;key&gt;DefaultValue&lt;/key&gt;
-			&lt;string&gt;1&lt;/string&gt;
-			&lt;key&gt;Title&lt;/key&gt;
-			&lt;string&gt;Build&lt;/string&gt;
-			&lt;key&gt;Key&lt;/key&gt;
-			&lt;string&gt;app_build_number&lt;/string&gt;
-		&lt;/dict&gt;
+<pre><code>        &lt;dict&gt;
+            &lt;key&gt;Title&lt;/key&gt;
+            &lt;string&gt;About&lt;/string&gt;
+            &lt;key&gt;Type&lt;/key&gt;
+            &lt;string&gt;PSGroupSpecifier&lt;/string&gt;
+            &lt;key&gt;FooterText&lt;/key&gt;
+            &lt;string&gt;Copyright © 2015 XXXX All Rights Reserved.&lt;/string&gt;
+        &lt;/dict&gt;
+        &lt;dict&gt;
+            &lt;key&gt;Type&lt;/key&gt;
+            &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+            &lt;key&gt;DefaultValue&lt;/key&gt;
+            &lt;string&gt;1.0&lt;/string&gt;
+            &lt;key&gt;Title&lt;/key&gt;
+            &lt;string&gt;Version&lt;/string&gt;
+            &lt;key&gt;Key&lt;/key&gt;
+            &lt;string&gt;app_version_number&lt;/string&gt;
+        &lt;/dict&gt;
+        &lt;dict&gt;
+            &lt;key&gt;Type&lt;/key&gt;
+            &lt;string&gt;PSTitleValueSpecifier&lt;/string&gt;
+            &lt;key&gt;DefaultValue&lt;/key&gt;
+            &lt;string&gt;1&lt;/string&gt;
+            &lt;key&gt;Title&lt;/key&gt;
+            &lt;string&gt;Build&lt;/string&gt;
+            &lt;key&gt;Key&lt;/key&gt;
+            &lt;string&gt;app_build_number&lt;/string&gt;
+        &lt;/dict&gt;
 </code></pre>
 
 <p>追記：<br />
 少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。</p>
 
-<p><img src="/images/2015-01-19_a_release.png" alt="Release" />
-</p>
+<p><img src="/images/2015-01-19_a_release.png" alt="Release" /></p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">

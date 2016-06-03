@@ -7,8 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 11 Jul 2015 09:30:00 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 18 Mar 2016 11:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>乱数を発生させる</title>
+      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
+      <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
+      <description>
+
+&lt;h2 id=&#34;rand:dc776821942516eb940a9f207846a213&#34;&gt;rand()&lt;/h2&gt;
+
+&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; srand(time(nil));
+ rand()%300;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;arc4random-uniform:dc776821942516eb940a9f207846a213&#34;&gt;arc4random_uniform()&lt;/h2&gt;
+
+&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>midXで中心を求める</title>
@@ -43,8 +68,7 @@
 
 &lt;p&gt;StoryBoardを使っている時は以下。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -75,8 +99,7 @@
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※まぁ、間違っちゃーいね〜な。。&lt;/p&gt;
 </description>
@@ -192,7 +215,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 
 &lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
 
-&lt;h2 id=&#34;起動時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;起動時&lt;/h2&gt;
+&lt;h2 id=&#34;起動時:e0af111a0289018acd229891e1617ab3&#34;&gt;起動時&lt;/h2&gt;
 
 &lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
 
@@ -202,7 +225,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;モーダルビューより復帰:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
+&lt;h2 id=&#34;モーダルビューより復帰:e0af111a0289018acd229891e1617ab3&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
 
 &lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
 
@@ -211,7 +234,7 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;li&gt;viewDidAppear&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;ロック-スリープからの復帰時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
+&lt;h2 id=&#34;ロック-スリープからの復帰時:e0af111a0289018acd229891e1617ab3&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
 
 &lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
 viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
@@ -231,7 +254,7 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;スリープに移行時:205901421f8bb17c75d7ebf5b8a21af9&#34;&gt;スリープに移行時&lt;/h2&gt;
+&lt;h2 id=&#34;スリープに移行時:e0af111a0289018acd229891e1617ab3&#34;&gt;スリープに移行時&lt;/h2&gt;
 
 &lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
 
@@ -278,8 +301,7 @@ Class not found, using default NSManagedObject instead.
 
 &lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
@@ -287,13 +309,12 @@ Class not found, using default NSManagedObject instead.
 &lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
 （散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
 
-&lt;h2 id=&#34;うまく行かない場合:dada94b1ca17e9c7da1ee195804dcefb&#34;&gt;うまく行かない場合&lt;/h2&gt;
+&lt;h2 id=&#34;うまく行かない場合:eb5cad654ed1068004ef41ecc88e3a81&#34;&gt;うまく行かない場合&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
@@ -338,7 +359,7 @@ Class not found, using default NSManagedObject instead.
       <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
       <description>
 
-&lt;h2 id=&#34;デレゲートするクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートするクラス&lt;/h2&gt;
+&lt;h2 id=&#34;デレゲートするクラス:2972d9b535ebd3441c632e429578ed11&#34;&gt;デレゲートするクラス&lt;/h2&gt;
 
 &lt;p&gt;以下の３つを書き加えればよい。&lt;/p&gt;
 
@@ -354,7 +375,7 @@ Class not found, using default NSManagedObject instead.
 &lt;pre&gt;&lt;code&gt; self.delegate!.sleepingTimerDidFinish(self)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;デレゲートで値を受け取るクラス:b75dbc75cf3a32d046705843360e6789&#34;&gt;デレゲートで値を受け取るクラス&lt;/h2&gt;
+&lt;h2 id=&#34;デレゲートで値を受け取るクラス:2972d9b535ebd3441c632e429578ed11&#34;&gt;デレゲートで値を受け取るクラス&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;MainHeaderViewDelegate&lt;/code&gt; と、functionを追加、処理を書き込みます。&lt;/p&gt;
 
@@ -471,51 +492,6 @@ struct Default {
 &lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
 
 &lt;p&gt;追記 (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;22&lt;/sub&gt;)：&lt;code&gt;import UIKit&lt;/code&gt;を追加する。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>クラスが読み込めず</title>
-      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
-      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>&lt;p&gt;TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。&lt;/p&gt;
-
-&lt;p&gt;さて、さて、まずは、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
-Class not found, using default NSManagedObject instead.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;というエラーがでる。ファイルはあるのだが、、&lt;/p&gt;
-
-&lt;p&gt;これは、動く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、動かなーーーーい。。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-    let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
-    var cell = cell as ListViewCell
-    cell.textLabel?.text = item.name
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
-解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）&lt;/p&gt;
-
-&lt;p&gt;追記 @ 3/20：解決しました。詳細は&lt;a href=&#34;http://goozenlab.com/blog/2015/03/load-managedobject/&#34;&gt;こちら&lt;/a&gt;より。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-12-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     

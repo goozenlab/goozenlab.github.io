@@ -7,439 +7,451 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 30 Oct 2015 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jun 2016 19:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>タイにてプリペイド</title>
-      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
-      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
+      <title>Sati v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-180/</link>
+      <pubDate>Fri, 10 Jun 2016 19:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
+      <guid>http://goozenlab.com/blog/2016/06/sati-180/</guid>
       <description>
 
-&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
-タイも物騒になってきているので、Sim購入時に本人確認が必要。
-私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
+&lt;p&gt;2015の2月以来のアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iOS9で表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
 
-&lt;h2 id=&#34;サービスの確認:19a7c455124953d3f89683740cb17ac0&#34;&gt;サービスの確認&lt;/h2&gt;
+&lt;p&gt;機能的にはたくさんのアップデートはありませんが、無難に動くと思います。少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
-&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
-&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
+&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;データ通信:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信&lt;/h2&gt;
+&lt;h2 id=&#34;1-8-0-swift-release-2016-06-10-nonkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.8.0 - Swift release] - 2016-06-10 @ Nonkhai&lt;/h2&gt;
 
-&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
-&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
-&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
-
-&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
-
-&lt;h2 id=&#34;金額の追加-top-up:19a7c455124953d3f89683740cb17ac0&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
-
-&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
-
-&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;利用有効期限延長:19a7c455124953d3f89683740cb17ac0&#34;&gt;利用有効期限延長&lt;/h2&gt;
-
-&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
-２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
-&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
-&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
-
-&lt;h2 id=&#34;データ通信速度:19a7c455124953d3f89683740cb17ac0&#34;&gt;データ通信速度&lt;/h2&gt;
-
-&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
-
-&lt;p&gt;下り：4.26Mps&lt;br /&gt;
-上り：1.46Mps&lt;br /&gt;
-(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GV-1についたゴミのクリーンアップ</title>
-      <link>http://goozenlab.com/blog/2015/10/dust-gv1/</link>
-      <pubDate>Sun, 18 Oct 2015 13:15:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/10/dust-gv1/</guid>
-      <description>&lt;p&gt;GRに付けている外付けファインダーGV-1にゴミが見えるようになる。ホコリというよりも、ゴミ。
-黒いゴミが中心部に張り付いている。ケースに入れて、ベッドに叩き付け、ゴミの位置をずらし使っている。&lt;/p&gt;
-
-&lt;p&gt;久しぶりに日本に戻り、リコーのサービスセンターに行く。以前は銀座にこじんまりとあったのが、ペンタックスとの統合により、新宿西口のビル街に移動している。&lt;/p&gt;
-
-&lt;p&gt;見てもらうと、「内部剥離からのゴミのようですが、こちらの商品は分解ができず、買い替えをお勧めします。」とあっさりビジネスライクに言われる、申し訳なさの微塵も感じられない。リコーのサービスセンターは何回か利用させてもらった事があるのだけど、親切でアットホームな感じのあるサービスセンターだったので、ちょっと寂しいような腹立たしいような（製品も無骨な感じだし）、それともリコー製品への嫌がらせか？？。２万円近くの商品はどう考えても消耗品では無いので、簡単に買い直すような品物ではない。
-せめて買い替え時には５０％オフとか、そういう心遣いあっても良い物だと思うが、ごねても仕方が無いと思いぐっと苛立ちを抑える。&lt;/p&gt;
-
-&lt;p&gt;家に戻り、GV-1を眺めてみると、ネジ穴があり、だめ元で分解を、だめならクレームメールということで、試みる。&lt;/p&gt;
-
-&lt;p&gt;結果：ピッシリした作りになっているので、サービスセンターでも言われた通り無理かと思いきや、割とあっさり分解成功。ブローワーでゴミを吹き飛ばしスッキリする。５分もかからず、あまりに簡単だったので、これだったら、やってくれても良いと思うのだが。。&lt;/p&gt;
-
-&lt;p&gt;でも、これでペンタックスのサービスは期待ができないと、、。。リコーもカプリオからお世話になってたけどこのGRで最後にするかなと思ったりする。次は富士かフォクトレンダーからでてくるであろうBESSAデジタルかな。。
-（※ でもGRに光学ファインダーを入れてくれたら、買ってまうだろうなぁ。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>iOS 9.0.1</title>
-      <link>http://goozenlab.com/blog/2015/09/ios901/</link>
-      <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios901/</guid>
-      <description>&lt;p&gt;未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-25-ios901.jpg&#34; alt=&#34;iOS9.0.1&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;修正点の中でも気になるのは、&lt;/p&gt;
+&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;アラームやタイマーが鳴らないことがある問題を修正&lt;/li&gt;
+&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。どちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;これが、拙作のサティで問題になっている音が出ない問題の解決になっていることをちょっと期待。&lt;/p&gt;
+&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンを少し変更&lt;/li&gt;
+&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>XCode7とElCapitan</title>
-      <link>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
-      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
+      <title>ムクダハン、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/06/internet-mukdahan/</link>
+      <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
-      <description>&lt;p&gt;アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/06/internet-mukdahan/</guid>
+      <description>&lt;p&gt;ベジタリアンレストランもあり、快適なタイに戻る。ラオ出国時にK10,000徴収されるが賄賂にしては変な感じ。サワナケートからのバスは全行程１時間とちょっと、思ったよりスムース。&lt;/p&gt;
 
-&lt;p&gt;まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）&lt;/p&gt;
+&lt;p&gt;ムクダハンはサワナケートの対岸の町、お互いがよく見えます。なにか特筆すべきことは無いのだけど、、、宿でのインターネットの環境は以下。地獄から天国。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-disk.jpg&#34; alt=&#34;Disk&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、
-うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;下り：24.Mps&lt;br /&gt;
+上り：1.6Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>iOS9での不具合：Satiの通知音</title>
-      <link>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</link>
-      <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
+      <title>MBP15/2016の勝手な推測</title>
+      <link>http://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
-      <description>&lt;p&gt;マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <description>
 
-&lt;p&gt;iOS8がリリースされた時にも、通知で音を出すには事前認証が必須になり、認証のプロセスを追加していなかったので、新規ユーザーの人たちには音が出ないという致命的なバグがありました。OSをアップデートしたインストール済のユーザーには不具合は無かったので、３ヶ月くらい放置していました。&lt;/p&gt;
+&lt;p&gt;フルリニューアルのMBP15の勝手な推測、希望を書いてみる&lt;/p&gt;
 
-&lt;p&gt;そして、今回もappleの新しい省電力モードや通知機能の拡張により（多分）、同様の不具合が発生。&lt;/p&gt;
+&lt;p&gt;そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。
+かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。&lt;/p&gt;
 
-&lt;p&gt;自分の検証端末がiPhone4S/iOS8.1のため、iOS9へのアップデートはちょっと悩んでいて、、
-しかも、開発環境は未だマーベリックスを使っているため、iOS9向けの開発環境が未だ整っていない状態です。
-iOS9自体はブラッシュアップ的なアプデートだと認識していたので、まぁ、大丈夫だろうとたかを括ってました。&lt;/p&gt;
+&lt;h2 id=&#34;そこで-勝手な推測をしたいと:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そこで、勝手な推測をしたいと、&lt;/h2&gt;
 
-&lt;p&gt;ネットでちょっと調べて見た所、似たような現象が起こっているのを幾つか発見しました。音の出ない瞑想タイマーではまるっきり体のなさないので、環境を整えて、なるべく速くアップデートしたいと思います。&lt;/p&gt;
+&lt;p&gt;まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、&lt;/p&gt;
 
-&lt;p&gt;何か他にも不具合等が起こりましたら、連絡のほどよろしくお願いします。&lt;/p&gt;
+&lt;p&gt;で、勝手な推測ではOLEDタッチバーの部分には、追加で&lt;/p&gt;
 
-&lt;p&gt;では、ロシアより愛を込めて、&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TouchIDの機能&lt;/li&gt;
+&lt;li&gt;モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど））&lt;/li&gt;
+&lt;li&gt;サプライズ：こりゃ気がつかなかった凄い的ななんか。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと&lt;strong&gt;非常&lt;/strong&gt;に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。&lt;/p&gt;
+
+&lt;p&gt;※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。&lt;/p&gt;
+
+&lt;h2 id=&#34;そして-希望とボヤき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そして、希望とボヤき&lt;/h2&gt;
+
+&lt;h3 id=&#34;希望:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;希望、&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ヘナペナキーボードはやーーめて&lt;/li&gt;
+&lt;li&gt;分解しやすい作りでよろしく、直付けとかなしね&lt;/li&gt;
+&lt;li&gt;ノングレア液晶&lt;/li&gt;
+&lt;li&gt;10時間はもってね&lt;/li&gt;
+&lt;li&gt;1.5kg以下ならパーフェクト&lt;/li&gt;
+&lt;li&gt;私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ&lt;/li&gt;
+&lt;li&gt;円高プライス&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;ぼやき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;ぼやき、、&lt;/h3&gt;
+
+&lt;p&gt;USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。
+どんなユーザーが４つのポートを必要としているのか理解できない。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;電源&lt;/li&gt;
+&lt;li&gt;外部モニター&lt;/li&gt;
+&lt;li&gt;iPhone&lt;/li&gt;
+&lt;li&gt;ハードディスク&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。&lt;/p&gt;
+
+&lt;p&gt;ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！&lt;/p&gt;
+
+&lt;p&gt;！！！SDカードスロットは必須じゃろーー！！！&lt;/p&gt;
+
+&lt;p&gt;と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>iOS9にて気になる機能の3DTouch</title>
-      <link>http://goozenlab.com/blog/2015/09/3dtouch/</link>
-      <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
+      <title>サワナケート、ラオスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/06/internet-savannakhet/</link>
+      <pubDate>Wed, 01 Jun 2016 17:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/3dtouch/</guid>
-      <description>&lt;p&gt;iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。
-アップルの使い方のガイドラインではピーク＆ポップという形。
-その対象に対しての関心の度合いを操作にしたいう感じ。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/06/internet-savannakhet/</guid>
+      <description>&lt;p&gt;パクセを出てサワナケート。ここでもベジ屋が見つからず。。タイとほとんど同じような文化圏にいるにもかかわらず何故だ？（インドとネパールみたい。）結局チーズ・野菜のサンドイッチとビールですます。宿に戻る途中、氷のいっぱい入った大きな激しい緑色をした抹茶オレを買う。&lt;/p&gt;
 
-&lt;p&gt;自分のアプリで使っている長押しと被るような感じがあるのだが、どう追加して行くか考えている。&lt;/p&gt;
+&lt;p&gt;そういえば、以前来たな、、ベトナムのビザを申請したなここで、、で、犬に噛まれたな、、とふと思い出した。（発症しなくてよかったなと。。）
+タイに比べラオで安いものはビールくらいで、、、もうラオスはいいわ、食べ物がこんなに困るとは思わなかった。ラオスのお金が余っているがタイに向かうことにする。&lt;/p&gt;
 
-&lt;p&gt;例）リトリスト（todoアプリ）にて、&lt;br /&gt;
-メニューバーの長押しでリストからホットリスト（重要項目のリスト）に移動するようになっている。
-これは、強押しで重要項目の表示、さらに押して移動という形にできる。&lt;/p&gt;
+&lt;p&gt;以前は船でメコンを渡って国境を越えられたようだけれど、外人は陸路での橋にあるイミグレしか利用できないと船着場近くにいた職員らしき人が言っていた。&lt;/p&gt;
 
-&lt;p&gt;：おまけ：&lt;br /&gt;
-自分の検証端末はいまだに iPhone4S （自分の中ではデザイン的に理想の携帯。母から契約終了端末を引き継ぐ）。iPhone6Sは機能的には惹かれるが、どうもハードのデザインに魅力を感じない。次のiphone7でフルモデルチェンジを期待。&lt;/p&gt;
+&lt;p&gt;ムクダハン行きの国境越えバスはほぼ毎時バスターミナルより出ている。(K13,000-14,000)&lt;/p&gt;
 
-&lt;p&gt;バイカル湖、オリフォン島
-&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-baikal.jpg&#34; alt=&#34;Olphon&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;下り：2.Mps&lt;br /&gt;
+上り：0.36Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>イルクーツク、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-irkutsk/</link>
-      <pubDate>Sat, 19 Sep 2015 17:30:00 +0800</pubDate>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-irkutsk/</guid>
-      <description>&lt;p&gt;紅葉をしているシベリア平原を列車で３０時間掛け、イルクーツクへ、シベリア特急鉄道の一部分を走る。途中途中で見かける列車の車両が、観光車両、カザフスタン、中国、ハングルの入った北朝鮮？、だったりとちょっと旅情がある。昔の目蒲線の車両とか走ってたら衝撃なのだけど、、まっ無理だな。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;私が乗ったのは、シンプルなロシア鉄道の車両の解放寝台。シーツもブランケットもあるので快適。おしゃべり好きなおじさんに捕まり、ロシア語の講習を受けるが、結局なーーんも覚えていない。。&lt;/p&gt;
+&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（左３つのアプリ）を少しいじってます。iOS8にアップデートした頃から少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
 
-&lt;p&gt;バイカル湖に行き戻ってきて沈没。というか寒くて観光意欲がなくなる。タイへの飛行機チケットが来週なので、ウランウデに行かずにここ、シベリアの！パリ！と言われるイルクーツクでのんびりする事にする。（宿代は他の街に比べ少々高いのがちと、、なんつってもパリだからな、、シベリアの、、しゃーない。。）町中でも中国語と韓国語を耳にする。観光都市という訳ではないけれど、それに向けて準備中な感じがある。&lt;/p&gt;
+&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
 
-&lt;p&gt;バイカル湖にもう少し長く滞在しようかと思ったのだが、、悪い所ではないのだけど、思っていたのとちょっと違った。。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>パクセ、ラオスのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/05/internet-pakse/</link>
+      <pubDate>Sat, 28 May 2016 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/internet-pakse/</guid>
+      <description>&lt;p&gt;タイビザの更新のためラオスに来ました。&lt;/p&gt;
 
-&lt;p&gt;※ オリフォン島のフジルまではイルクーツクのバスターミナルから9:00と10:00に発、所要時間５時間半(475R)。
-イルクーツクへの戻りは到着した所より同様に9:00と10:00がある(505R）。&lt;br /&gt;
-注）荷物代も取ったり取らなかったりするし、帰りのバスでは一つ200Rとか言ってたように聞こえた。
-他の旅行社からもミニバスが運行されているが金額が800Rと。席数も少ないので、日程が決まっているなら早めのブッキングがお勧め。&lt;/p&gt;
+&lt;p&gt;ウボンラチャタニから国境越えのバスでパクセに。バスが本来街に近いバスターミナルを通過し、かなり町外れにあるターミナルまで行く。待ってましたと待ち受けているソンテウと結託しているよう。言い値も無茶苦茶だし、もちろんそんなソンテウは無視。同乗していたラオの人に街までの行き方など色々聞くと、友人が来るからと、街まで同乗させてもらう。国境では賄賂を要求されるし、物価も昔からかなり上がったという話なので、ラオスよ。。。&lt;/p&gt;
 
-&lt;p&gt;で、バイカル湖の宿で「ロシアの滞在が一週間を越える場合は滞在登録が必要：代行料２００ルーブル」という張り紙を見る。が、時既に遅し。罰金は５０〜１００ドルと書いてあるが、、ビザが免除になってこういうのは意味が分からない訳で、、はた面倒だが仕方がなし。。取られたとしても、ビザ代だと思えば良いか。。。（あとで追記します）&lt;/p&gt;
+&lt;p&gt;ラオスと言ったら、評判の高いビアラオ。舌が肥えたのか、品質が落ちたのかわからないが、以前ほど美味しいとは感じない。ベジレストランはインド料理屋を除き、皆無。残念だらけのラオスだけどしばし逗留。（物価：宿K50,000, BeerLao大瓶 K9,000)&lt;/p&gt;
 
-&lt;p&gt;空港内での追記：滞在登録は結局する必要ないようで、質問もなく無事に出国。イルクーツクの飛行場は国内線と国際線の２つあり。国内線のターミナルは近代的な建物で、国際線は昔ながらの建物とコントラストがある。市場のまえから80番バス（もしくは20番マルシュ）で20分くらい。&lt;/p&gt;
+&lt;p&gt;宿やレストランにはFreeWiFiの文字が見えます。環境はタイに比べてしまうと、ちょっと残念な結果になるが、ちょっとした調べ物をする程度なら十分。&lt;/p&gt;
 
-&lt;p&gt;ネット環境はちょっと他の地域と比べると遅いと思ったが、改めて計ってみたら他所と同様に快適な環境。&lt;/p&gt;
-
-&lt;p&gt;下り：30.22Mps&lt;br /&gt;
-上り：17.06Mps&lt;br /&gt;
+&lt;p&gt;下り：2.26Mps&lt;br /&gt;
+上り：0.31Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-20-irkutsk.jpg&#34; alt=&#34;irkutsk&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-28-pakse.jpg&#34; alt=&#34;Pakse&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>ノヴォシビルスク、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</link>
-      <pubDate>Sun, 13 Sep 2015 17:30:00 +0600</pubDate>
+      <title>ウボンラチャタニ、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/05/internet-ubon/</link>
+      <pubDate>Thu, 26 May 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</guid>
-      <description>&lt;p&gt;バルナウルよりバスで５時間、雨がちらついているなか、国内に10時間の時差を持つ広大なロシアの真ん中辺の街、ノヴォシビルスクに着く。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/05/internet-ubon/</guid>
+      <description>&lt;p&gt;スリンから気分転換を兼ね列車でウボンラチャタニまで移動する。３時間くらいかかりTHB31とバス代の多分３分の１程度。ウボンの駅からは白ソンテウに乗り街まで移動。&lt;/p&gt;
 
-&lt;p&gt;動物園に行きたくて寄ったのだが、天候が不良。。。
-宿に滞在していた自分と同じくらいの身長のモンゴル系の女子に一緒に行きましょうよと珍しく誘われるが、雨の中の回るのは気が向かず遠慮する、、その辺をフラフラッと歩いて観光終了。&lt;/p&gt;
+&lt;p&gt;雨季に近づいてきているので夕方に雷雨が激しく降る。ちょっと蒸し暑い感じが出始める、昼歩きが少し辛く、冷房の効いたコンビニで一息付き外に出るとメガネが曇る。&lt;/p&gt;
 
-&lt;p&gt;天気予報を見てみると、９月の中旬から一気に気温が急降下。夏は終わり冬に突入、風が刺さる。&lt;/p&gt;
+&lt;p&gt;近くのお寺をフラフラ回り、観光は終了。ベジタリアンのレストランもかろうじて一つ見つけるが、
+クオリティーがあまり良く無いのが残念。&lt;/p&gt;
 
-&lt;p&gt;残念だが宿でビールを片手にユラユラしながら、キノコとお惣菜の豆を買ってきてカレーを作る。&lt;/p&gt;
+&lt;p&gt;のんびりするつもりでいたのだが、早めにラオス、パクセに向かうことにする。&lt;/p&gt;
 
-&lt;p&gt;ネットの環境は&lt;/p&gt;
+&lt;p&gt;ネット環境はかなり高速。しかし、端っこの部屋には電波が届かず。。&lt;/p&gt;
 
-&lt;p&gt;下り：15.40Mps&lt;br /&gt;
-上り：18.26Mps&lt;br /&gt;
+&lt;p&gt;下り：14.81Mps&lt;br /&gt;
+上り：3.07Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;と、まぁロシアのど真ん中の古びた公団住宅のような所でもこんなに速度が出る。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-13-novosibirsk.jpg&#34; alt=&#34;Novosibirsk&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>バルナウル、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-barnaul/</link>
-      <pubDate>Fri, 11 Sep 2015 17:30:00 +0600</pubDate>
+      <title>スリン、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/05/internet-surin/</link>
+      <pubDate>Mon, 23 May 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-barnaul/</guid>
-      <description>&lt;p&gt;定番のアスタナからオムスク・エカテリンブルグには向かわず、カザフスタンのセメイという街からロコットというロシアのボーダータウンで列車を乗り換えバルナウルに向かう。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/05/internet-surin/</guid>
+      <description>&lt;p&gt;象のお祭りで有名な町のスリンですが、シーズンオフに向かうとこれといったものもない小都市。観光客もあまり見かけず。&lt;/p&gt;
 
-&lt;p&gt;カザフスタンの出国手続きは車内で行われ、ロシアのロコットに到着してしばし経ち、入国手続きは一体どうなっているんだろうと待っていると、なぜかお客が入ってくる。そして、入ってきたお客がカザフスタンの真っ新な入国カードを持っている。車掌に「おいらはロシアのバルナウルに行くんだが、本当にこの列車に乗っていていいのか？？」問うと、外のロシア風の職員と話をして、出てパスポートコントロールに行けと、、、それまでに何回かロシアのドキュメントがどうだや何らと聞きにきて、携帯電話で誰かと話をして何かしら確認を取っていたように見え、座ってろといっていたのだが、、危うくそのまま乗ったままになる所だった。次の列車の発車時間が近づいてくる。&lt;/p&gt;
+&lt;p&gt;裕福でない県らしく、ホテルも今時THB150で十分すぎるほど快適。外見が新しくなりつつあるのでもしかしたら近く値上げする予定か。。&lt;/p&gt;
 
-&lt;p&gt;セメイから乗ったこの列車は、この街で人を拾ってまたカザフに戻って行くようだ。&lt;/p&gt;
+&lt;p&gt;市場の近くに良心的なベジ屋さんがあったのがせめてもの救い。テスコで缶ビヤシンがTHB33で売っているのも良し。
+ホテルの近くに夕方からでる豆乳屋の豆乳がすごく濃い、というかズシッと重い。&lt;/p&gt;
 
-&lt;p&gt;さてロシアの入国審査はスムースに問題なく思えたのだが、、&lt;/p&gt;
+&lt;p&gt;3階の部屋内にまで電波が届く。上りのスピードを見ると、人が使っていない時であればもっとスピードが出るはず。ユーチューブを見てみたけど非常に快適。&lt;/p&gt;
 
-&lt;p&gt;最初の数ページ目パキスタンのビザで指が止まったの見て、、、
-何かしらヒソヒソと相談をしばしして、、&lt;/p&gt;
-
-&lt;p&gt;、、、時間もそんなに無いし、、、&lt;/p&gt;
-
-&lt;p&gt;少し不安がよぎる、、、&lt;/p&gt;
-
-&lt;p&gt;パスポート全てのページのコピーを取られる。&lt;/p&gt;
-
-&lt;p&gt;まぁ別に色々と調べられたりはしなかったので良かったのだが。（次の列車の出発１０分前）&lt;/p&gt;
-
-&lt;p&gt;そこから、バルナウルへのチケットを買おうにも、キャッシャーで理解のできないロシア語での諸々の質問を浴びせられ、結局列車に行けと言われる。&lt;/p&gt;
-
-&lt;p&gt;列車に勝手に乗るも、チケットが無いなら出ろと無愛想に「ニエッッ」。車両を移動して、これはこのままではいかんと、今回は意地でも引き下がらず、「コンピューターが悪いのだか、キャッシャーの女性が列車に乗れ」といわれてたと、制服をきた女性に英語で畳み掛けてみる。結局車掌らしき人が出てきて「金は持っているのか？」見たいな事を聞かれ、「ダーー、ダァー、ダ」と答えると、料金表を持ってきて２等の値段を指す。しかし手元にはそれには足りない金額しか無いので、３等にしてくれと値切ってみる。&lt;/p&gt;
-
-&lt;p&gt;で、持ち金を少し足りないぐらい出すと、すっと取っていき、結局ネットで確認した値段より安くのせてもらう。カザフスタンの出稼ぎ労働者だと思われたのか。。&lt;/p&gt;
-
-&lt;p&gt;で、街の印象は、、、、スーパーが多い！どこを歩いていてもスーパーに当たる。買い物好きが多いのだろうか？そして、アジア人をあまり見かけなくなる。。異国に来た感じがあるが、うーーん、ちと残念。&lt;/p&gt;
-
-&lt;p&gt;ネットはここもままよい。ソビエト時代、結構頑張ったのね。。と印象がちょっと変わる。&lt;/p&gt;
-
-&lt;p&gt;下り：15.68Mps&lt;br /&gt;
-上り：18.65Mps&lt;br /&gt;
+&lt;p&gt;下り：7.19Mps&lt;br /&gt;
+上り：10.83Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-11-barnaul.jpg&#34; alt=&#34;Barnaul Mammoth&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;変な写真ですいません。マンモスの作り物。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>アスタナ、カザフスタンのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-astana/</link>
-      <pubDate>Sun, 06 Sep 2015 10:30:00 +0600</pubDate>
+      <title>乱数を発生させる</title>
+      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
+      <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-astana/</guid>
-      <description>&lt;p&gt;私たちに近い東洋人がロシア語を喋っていることに未だ違和感が拭えない、中央アジア。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
+      <description>
 
-&lt;p&gt;中央アジアの優等生ことカザフスタン。国立新美術館をデザインした黒川紀章氏が
-1998年30万人より、2030年の100万人都市へ向けての&lt;a href=&#34;http://www.kisho.co.jp/page/120.html&#34;&gt;都市計画&lt;/a&gt;
-に携わった首都アスタナ。
-計画のほぼ半分の期間を過ぎましたが、現在も進行中です。シムシティの街のようだ。
-ちょっと退屈です。&lt;/p&gt;
+&lt;h2 id=&#34;rand:dc776821942516eb940a9f207846a213&#34;&gt;rand()&lt;/h2&gt;
 
-&lt;p&gt;物価は最近行われた通貨の自由化によるプチ暴落（一日で２５％位）で、物価が東南アジア並みと言われるお隣のキルギスと同程度になる。（個人的にはこれぐらいの物価が適当ではないかと。。イスラムの国なのに、ロシアの影響からなのかビールが安いのが嬉しい！！）&lt;/p&gt;
+&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
 
-&lt;p&gt;お世話になっている宿：Hotel Nochelogは、大きく、天井も高く、奇麗。建物も古いのか新しいのかがよく分からない不思議な大きな建物内の２階。お湯もガンガン出る。人間嫌いな猫がいて、うっかり手を出すと引っ掻かれる。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; srand(time(nil));
+ rand()%300;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;期待した以上に速いインターネット環境のある中央アジアで、その中でもここは飛び抜けて速い。&lt;/p&gt;
+&lt;h2 id=&#34;arc4random-uniform:dc776821942516eb940a9f207846a213&#34;&gt;arc4random_uniform()&lt;/h2&gt;
 
-&lt;p&gt;下り：25.90Mps&lt;br /&gt;
-上り：30.26Mps&lt;br /&gt;
+&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fusion drive を作る</title>
+      <link>http://goozenlab.com/blog/2016/03/create-fusiondrive/</link>
+      <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
+      <description>
+
+&lt;p&gt;MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ディスク番号確認：diskutil list&lt;/li&gt;
+&lt;li&gt;フュージョンドライブ作成：diskutil cs create&lt;/li&gt;
+&lt;li&gt;ボリューム作成：diskutil coreStorage createVolume&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;詳細:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;詳細&lt;/h2&gt;
+
+&lt;p&gt;Fusion化を行うディスクの番号を &lt;code&gt;diskutil list&lt;/code&gt; にて把握。そして &lt;code&gt;diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2&lt;/code&gt; にてLogical Volume Groupを構築。&lt;/p&gt;
+
+&lt;p&gt;※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2
+Started CoreStorage operation
+Unmounting disk1
+Repartitioning disk1
+Unmounting disk
+Creating the partition map
+Rediscovering disk1
+Adding disk1s2 to Logical Volume Group
+Unmounting disk2
+Repartitioning disk2
+Unmounting disk
+Creating the partition map
+Rediscovering disk2
+Adding disk2s2 to Logical Volume Group
+Creating Core Storage Logical Volume Group
+Switching disk1s2 to Core Storage
+Switching disk2s2 to Core Storage
+Waiting for Logical Volume Group to appear
+Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
+Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
+Finished CoreStorage operation
+shingha:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Volumeを &lt;code&gt;diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%&lt;/code&gt; で作成。Fusion.11がファインダーで表示される。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs createVolume &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%
+The Core Storage Logical Volume Group UUID is 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
+Started CoreStorage operation
+Waiting for Logical Volume to appear
+Formatting file system for Logical Volume
+Initialized /dev/rdisk3 as a 2 TB case-insensitive HFS Plus volume with a 139264k journal
+Mounting disk
+Core Storage LV UUID: E61D3EA0-4744-4B23-XXXX-533D19B9D00C
+Core Storage disk: disk3
+Finished CoreStorage operation
+shingha:~ $
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;フュージョン化の解除:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;フュージョン化の解除&lt;/h2&gt;
+
+&lt;p&gt;一つになったドライブの解除方法は &lt;code&gt;diskutil cs deleteVolume&lt;/code&gt; というコマンドもあるが&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;diskutil cs delete &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;の一発で行けると、思う・・。&lt;/p&gt;
+
+&lt;h2 id=&#34;リカバリーusb-stick:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
+
+&lt;p&gt;次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&amp;hellip; で動きが止まり思ったより時間が掛かる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;shingha:~ $ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
+Password:
+Erasing Disk: 0%... 10%... 20%... 30%...100%...
+Copying installer files to disk...
+Copy complete.
+Making disk bootable...
+Copying boot files...
+Copy complete.
+Done.
+shingha:~ $ 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>海外キャッシングの比較</title>
+      <link>http://goozenlab.com/blog/2016/01/cashing-hongkong/</link>
+      <pubDate>Sun, 17 Jan 2016 12:00:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/01/cashing-hongkong/</guid>
+      <description>&lt;p&gt;ちょっと寄った、香港にてキャッシングの比較をしてみる。&lt;/p&gt;
+
+&lt;p&gt;手元にある、新生銀行と東京三菱UFJで立て続けに、HK$1,500を引き落す。後日引き落し金額を比較すると、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;新生銀行：￥23,812&lt;/li&gt;
+&lt;li&gt;東京三菱UFJ：￥23,623 [￥23,515(23,582 - 67) + ￥108(手数料) ]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;新生銀行は海外での引き落とし手数料無料とうたっていたような気がするが、東京三菱の方が￥189安い結果になる。大体0.8%の違い。まぁ締め日が近ければ、クレジットカードのキャッシングが一番安いように思える。
+（数分の違いで為替の違いが出ている可能性も有り？。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>スコータイ、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/01/internet-skhotai/</link>
+      <pubDate>Fri, 15 Jan 2016 12:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/01/internet-skhotai/</guid>
+      <description>&lt;p&gt;２度目の訪問、今回はちょっとのんびり、且つロングステイのリサーチにきたスコータイ。観光客の皆さんは世界遺産の旧市街に観光のところですが、新市街の宿でのんびりしています。&lt;/p&gt;
+
+&lt;p&gt;１月だというのに日中は３０度オーバーとかなり暑いです。乾燥しているからまだよいものの、、&lt;/p&gt;
+
+&lt;p&gt;宿は古い民家の２階で市場に近く安い。看板も出ていないし隠れ家指数が高い。部屋は３つしか無いが５泊しベストシーズンでいながら私一人と、ちょっと寂しい。ジャンボという名前の警戒心の強いチワワがいる。部屋も古いけれど奇麗にされているし、タオルもついてくる。夜になると屋根伝いに猫がふらっと通り過ぎて行く。&lt;/p&gt;
+
+&lt;p&gt;宿のおばさんは親切で、たまにフルーツ等を差し入れしてくれる。&lt;/p&gt;
+
+&lt;p&gt;ネットは宿の外見からは想像もつかないが、ネットは割と速い。家人がYouTubeなどを見ていなければかなりスピードが出ます。&lt;/p&gt;
+
+&lt;p&gt;下り：15.19Mps&lt;br /&gt;
+上り：3.14Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-06-actana.jpg&#34; alt=&#34;Actana&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>チョルポンアタ、キルギスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
-      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
+      <title>チェンカーン、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</link>
+      <pubDate>Sun, 10 Jan 2016 12:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
-      <description>&lt;p&gt;ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。&lt;/p&gt;
+      <guid>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</guid>
+      <description>&lt;p&gt;タイの軽井沢。メコン川沿いの街、チェンカーン。
+バンコクの人たちの避暑地でもあるらしいと聞いていたが、夜は思いの外冷え込みます。&lt;/p&gt;
 
-&lt;p&gt;イシククル湖：&lt;/p&gt;
+&lt;p&gt;外国人観光客がそんなに多くない所はよいが、新しいホテルが川沿いにできていてちょっとバブルな感じがある。昔ながらの町並みを期待してきたのだが少し残念ではある。宿はボロボロで300バーツと観光地価格。&lt;/p&gt;
 
-&lt;p&gt;湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。&lt;/p&gt;
+&lt;p&gt;今の時期だと、朝日も夕日も中途半端な所になる。夜市と朝の托鉢は割とにぎわってます。&lt;/p&gt;
 
-&lt;p&gt;シーズンがちょうど終わりかけの頃に行ったので、人がいる割にちょっと風が強く肌寒かった。&lt;/p&gt;
+&lt;p&gt;と、バンコクから直通のバスも出ているのでバンコク在住なら涼みにきても良いかな。。&lt;/p&gt;
 
-&lt;p&gt;でも、宿代も割と安く、キッチンも使える宿もあるので、沈没するにも良いかなと思ったりもする。&lt;/p&gt;
+&lt;p&gt;ネットもそれなりの速度が出ていたと思うが、記録するのを忘れる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2016年の海外年明け</title>
+      <link>http://goozenlab.com/blog/2016/01/new-year/</link>
+      <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/01/new-year/</guid>
+      <description>&lt;p&gt;去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。&lt;/p&gt;
 
-&lt;p&gt;ネットの環境は&lt;/p&gt;
+&lt;p&gt;そんな中、未だ続く放浪。。&lt;/p&gt;
 
-&lt;p&gt;下り：8.49Mps&lt;br /&gt;
-上り：0.56Mps&lt;br /&gt;
+&lt;p&gt;今年は清めの年という事で、年末年始はカンボジアのバッタンバンにてリトリート。&lt;/p&gt;
+
+&lt;p&gt;一年一年があっという間に過ぎて行く。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2016&lt;/strong&gt;: Battambang, Cambodia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2015&lt;/strong&gt;: Ipoh, Malaysia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2014&lt;/strong&gt;: Trivandrum, India&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2013&lt;/strong&gt;: Penan, Malaysia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2012&lt;/strong&gt;: Pokhara, Nepal&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt;: ChiangMai, Thailand&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt;: Adis Ababa, Ethiopia&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt;: Cairo, Egipt&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2008&lt;/strong&gt;: Vientian, Laos&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2007&lt;/strong&gt;: Managua, Nicaragua&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2006&lt;/strong&gt;: Oaxaca, Mexico&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2005&lt;/strong&gt;: Sao Paulo, Brazil&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>バッタンバン、カンボジアのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2015/12/internet-battambang/</link>
+      <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/12/internet-battambang/</guid>
+      <description>&lt;p&gt;カンボジアの第二の都市のバッタンバン。現地の発音だと、バッタンボーーッンって感じ。
+ほんの少しだけクリスマスの雰囲気があります。そして、12月末なのにかなり暑い。。330mlが50セント（米ドル）とタイに比べビールが安いのがちょっと良い所。おかげで冷蔵庫付きのホテルに泊まって篭城してます。（一泊：６ドル）&lt;/p&gt;
+
+&lt;p&gt;宿はシングルで扇風機とWC付きで３ドルからあり、10ドル出せばエアコンがつく。食事はローカルのベジ屋さんで、一食１ドルくらい、これはタイより少し高い。そして、タイではあちらこちらで見つかるコンビニはこちらでは全くありません。&lt;/p&gt;
+
+&lt;p&gt;ネットの環境はタイと同様な感じで、&lt;/p&gt;
+
+&lt;p&gt;下り：3.68Mps&lt;br /&gt;
+上り：3.86Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-26-cholpon.jpg&#34; alt=&#34;Beach&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>チョルポンアタ、キルギスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
-      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
-      <description>&lt;p&gt;ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。&lt;/p&gt;
-
-&lt;p&gt;イシククル湖：&lt;/p&gt;
-
-&lt;p&gt;湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。&lt;/p&gt;
-
-&lt;p&gt;シーズンがちょうど終わりかけの頃に行ったので、人がいる割にちょっと風が強く肌寒かった。&lt;/p&gt;
-
-&lt;p&gt;でも、宿代も割と安く、キッチンも使える宿もあるので、沈没するにも良いかなと思ったりもする。&lt;/p&gt;
-
-&lt;p&gt;ネットの環境は&lt;/p&gt;
-
-&lt;p&gt;下り：8.49Mps&lt;br /&gt;
-上り：0.56Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-26-cholpon.jpg&#34; alt=&#34;Beach&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.8.1</title>
-      <link>http://goozenlab.com/blog/2015/08/doop-181/</link>
-      <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/08/doop-181/</guid>
-      <description>&lt;p&gt;項目が削除できないケアレスミスのバグフィックスです。&lt;/p&gt;
-
-&lt;p&gt;連絡いただいた、そらのはサン、ありがとうございました。&lt;/p&gt;
-
-&lt;p&gt;対応が遅れましたが、アプストアに申請しました。今週中にはアップされると思います。&lt;/p&gt;
-
-&lt;p&gt;PS：なぜだか分からないけれど、ビルドが全然通りませんでした。。。どうした事か？？&lt;/p&gt;
-
-&lt;p&gt;追記：8/22にアプストアにアップされました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-16-arakol.jpg&#34; alt=&#34;アラコル湖&#34; /&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ホーローグ滞在中</title>
-      <link>http://goozenlab.com/blog/2015/07/at-khorog/</link>
-      <pubDate>Thu, 30 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/at-khorog/</guid>
-      <description>&lt;p&gt;宿に猫もいるし天気も悪いので移動はさけ、南下してくるデゥシャンベで会った旅行者を待つのに良いタイミングでもあるので、しばしホーローグに滞在する。&lt;/p&gt;
-
-&lt;p&gt;物価はデゥシャンベに＋１ソムス足した感じか。物流のコストを考えたら仕方が無い。&lt;/p&gt;
-
-&lt;p&gt;２９日は大統領が訪問し、ここ数日天気は悪い。そして、ネットも繋がらなくなる。課金制なのだろうか、こんな画面が出てくる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-07-30-at-khorog.jpg&#34; alt=&#34;Alert&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;そして、情報を整理する。&lt;/p&gt;
-
-&lt;p&gt;まずは、アフガンバザールだが、ビシュケクで会った旅行者に言わせると、ラマダン中は中止で、それが終われば普通に行われるのではという話。ここで会った旅行者は国境の危険度が上がり、中止になっていると。。。&lt;/p&gt;
-
-&lt;p&gt;で、ナイス？なタイミングで、バスで英語で会話する女性数人の会話が耳に入り、ちょうど国境沿いの状況について話をしていたのを盗み聞く。話では、ラマダンあけにデゥシャンベ、キルギスでテロが起きたこともあり、タジキスタンもテロの標的になりつつあり、アフガニスタンとの国境でもあるPyanj川の警備にかなりの軍人を配置し警戒に当たっている、ということ。（川の流れを見ると、さすがに越境してくるとは思い辛いのだが、、。）日が暮れ川沿いを走るホーローグ向かうタクシーから４人組で歩きつつ警戒にあたる軍人達をかなり見かけ、ちょっと気になっていたので妙に納得。&lt;/p&gt;
-
-&lt;p&gt;ついでに観光案内所で聞いてみる。&lt;/p&gt;
-
-&lt;p&gt;で、あとは流れてくる旅行者に任せる。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>デゥシャンベからホーローグ</title>
-      <link>http://goozenlab.com/blog/2015/07/dushanbe-khorog/</link>
-      <pubDate>Tue, 28 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/dushanbe-khorog/</guid>
-      <description>&lt;p&gt;デゥシャンベからのシェアタクシーは、気合いを入れて５時起床、Green House Hostel からは５分ぐらいのタクシースタンドへ６時頃向かう。一人だと値段交渉はほぼ無理、しかし、許容範囲のUS$45。既に一人のおじさんが乗っていて、これは割と速く出発できるかもと期待をするが、、、&lt;/p&gt;
-
-&lt;p&gt;出発は結局９時。しかも座る位置はフロントローの真ん中に移動させられる。。。&lt;br /&gt;
-そして、別にトロトロと走っていたようには思えないが、、&lt;br /&gt;
-（途中、食事休憩２回とパスポートチェックが数回ある。）&lt;br /&gt;
-到着は深夜２時（17時間）になる。&lt;/p&gt;
-
-&lt;p&gt;途中チャリダーを１０人くらい見かける。道がもっと良ければ、やっても良いかなと思ったりする。&lt;/p&gt;
-
-&lt;p&gt;安宿のパミールロッジ前で降ろしてもらい、そろーーりと中に入る。敷地内はもちろん真っ暗、レセプション前のベンチで横になって朝を待つ。気が付かなかったけれど、割と奇麗な夜空が拝める。&lt;/p&gt;
-
-&lt;p&gt;朝四時頃、礼拝の為人が流れてくる音で目が覚める。空は一転曇空になっている。後で知ったが、礼拝所がロッジの敷地内にあり、ロッジ自体がその運営費用に充てられているらしい。&lt;/p&gt;
-
-&lt;p&gt;街を流れる川は粘土色の濁流。天気はすこし悪い。&lt;/p&gt;
 </description>
     </item>
     
