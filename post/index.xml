@@ -11,6 +11,30 @@
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ナコンパノム、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</link>
+      <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</guid>
+      <description>&lt;p&gt;ムクダハンより最近タイで見かけるチョット大きめVan(15人）でナコンパノムまで、途中タートパノムにより1時間45分で着く。&lt;/p&gt;
+
+&lt;p&gt;メコン川の向こうに切り立った丘が見えちょっと他のメコン川沿いの街とは雰囲気が違う。川沿いには自転車専用の通路がある。土曜日だからなのか通り沿いにナイトマーケットが行われていた。&lt;/p&gt;
+
+&lt;p&gt;街に数件のベジタリアンレストランを見つけちょっとびっくり、割合としてはかなり多い。しばし逗留するかなと思うが、ホテルの部屋には割と綺麗なのだけど、アウトレットが無い。。&lt;/p&gt;
+
+&lt;p&gt;次に向かう、ノンカイ（これまたメコン川沿いの国境の町）には朝8時と11時にバスがあるとの事。&lt;/p&gt;
+
+&lt;p&gt;ネットは２階の部屋なので部屋内でも使用可能。スピードもまぁまぁ出る。&lt;/p&gt;
+
+&lt;p&gt;下り：10.79Mps&lt;br /&gt;
+上り：1.71Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-03-nakhonphanom.jpg&#34; alt=&#34;NakhonPhanom Mekon River&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ムクダハン、タイのインターネット事情</title>
       <link>http://goozenlab.com/blog/2016/06/internet-mukdahan/</link>
       <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
@@ -97,7 +121,7 @@
       <pubDate>Wed, 01 Jun 2016 17:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/06/internet-savannakhet/</guid>
-      <description>&lt;p&gt;パクセを出てサワナケート。ここでもベジ屋が見つからず。。タイとほとんど同じような文化圏にいるにもかかわらず何故だ？（インドとネパールみたい。）結局チーズ・野菜のサンドイッチとビールですます。宿に戻る途中、氷のいっぱい入った大きな激しい緑色をした抹茶オレを買う。&lt;/p&gt;
+      <description>&lt;p&gt;パクセを出てサワナケート。ここでもベジ屋が見つからず。。タイとほとんど同じような文化圏にいるにもかかわらず何故だ？結局チーズ・野菜のサンドイッチとビールですます。宿に戻る途中、氷のいっぱい入った大きな激しい緑色をした抹茶オレを買う。&lt;/p&gt;
 
 &lt;p&gt;そういえば、以前来たな、、ベトナムのビザを申請したなここで、、で、犬に噛まれたな、、とふと思い出した。（発症しなくてよかったなと。。）
 タイに比べラオで安いものはビールくらいで、、、もうラオスはいいわ、食べ物がこんなに困るとは思わなかった。ラオスのお金が余っているがタイに向かうことにする。&lt;/p&gt;
@@ -415,63 +439,6 @@ shingha:~ $
 &lt;p&gt;下り：3.68Mps&lt;br /&gt;
 上り：3.86Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>タイにてプリペイド</title>
-      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
-      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
-      <description>
-
-&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
-タイも物騒になってきているので、Sim購入時に本人確認が必要。
-私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
-
-&lt;h2 id=&#34;サービスの確認:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;サービスの確認&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
-&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
-&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
-
-&lt;h2 id=&#34;データ通信:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信&lt;/h2&gt;
-
-&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
-&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
-&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
-
-&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
-
-&lt;h2 id=&#34;金額の追加-top-up:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
-
-&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
-
-&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;利用有効期限延長:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;利用有効期限延長&lt;/h2&gt;
-
-&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
-２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。最長１年。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
-&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
-&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
-
-&lt;h2 id=&#34;データ通信速度:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信速度&lt;/h2&gt;
-
-&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
-
-&lt;p&gt;下り：4.26Mps&lt;br /&gt;
-上り：1.46Mps&lt;br /&gt;
-(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
 </description>
     </item>
     
