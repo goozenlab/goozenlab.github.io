@@ -7,8 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jun 2016 12:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iPhone4SをiOS9にアップデート</title>
+      <link>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
+      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
+      <description>&lt;p&gt;ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。
+複数のソフトで共有しているデートピッカーが問題のよう。XCode7でのシミュレータ(iOS9)では素直に動いたので、ちょっと驚き。もしかしてiOS8.2による特有の問題かもしれないと、試しにXCodeにiOS8.2とiOS8.4のシュミレーターをインストール。しかしながら、実機と同じView関連でnillが戻って来るエラーが起き落ちる。。。チョットこれはやな予感（大幅な変更を余儀なくされる）がする。&lt;/p&gt;
+
+&lt;p&gt;検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。&lt;/p&gt;
+
+&lt;p&gt;サポートもそろそろiOS10が出る頃だしiOS9以降のサポートで良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
+
+&lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
+
+&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出る。。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Iconを作り替え中</title>
@@ -395,33 +414,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.4</title>
-      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
-      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
-      <description>&lt;p&gt;iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）&lt;/p&gt;
-
-&lt;p&gt;書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。&lt;/li&gt;
-&lt;li&gt;同時にタップしてスクロール時に落ちるバグも修正しました。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。&lt;/p&gt;
-
-&lt;p&gt;iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）&lt;/p&gt;
-
-&lt;!--
-
-ExchangeViewController: ViewWillDisapear にて計算された item.hoursAverageUse がMainViewControllerに戻った時に値は維持されていない。（Saveされていない）
-MainViewのReCalcurationに追加して解決はするもシックリとこない。 @ 2015-02-10 09:09
---&gt;
 </description>
     </item>
     

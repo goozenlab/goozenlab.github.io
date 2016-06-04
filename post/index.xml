@@ -7,8 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 03 Jun 2016 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jun 2016 12:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iPhone4SをiOS9にアップデート</title>
+      <link>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
+      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
+      <description>&lt;p&gt;ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。
+複数のソフトで共有しているデートピッカーが問題のよう。XCode7でのシミュレータ(iOS9)では素直に動いたので、ちょっと驚き。もしかしてiOS8.2による特有の問題かもしれないと、試しにXCodeにiOS8.2とiOS8.4のシュミレーターをインストール。しかしながら、実機と同じView関連でnillが戻って来るエラーが起き落ちる。。。チョットこれはやな予感（大幅な変更を余儀なくされる）がする。&lt;/p&gt;
+
+&lt;p&gt;検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。&lt;/p&gt;
+
+&lt;p&gt;サポートもそろそろiOS10が出る頃だしiOS9以降のサポートで良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
+
+&lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
+
+&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出る。。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ナコンパノム、タイのインターネット事情</title>
@@ -420,25 +439,6 @@ shingha:~ $
 &lt;li&gt;&lt;strong&gt;2006&lt;/strong&gt;: Oaxaca, Mexico&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;2005&lt;/strong&gt;: Sao Paulo, Brazil&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>バッタンバン、カンボジアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/12/internet-battambang/</link>
-      <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/12/internet-battambang/</guid>
-      <description>&lt;p&gt;カンボジアの第二の都市のバッタンバン。現地の発音だと、バッタンボーーッンって感じ。
-ほんの少しだけクリスマスの雰囲気があります。そして、12月末なのにかなり暑い。。330mlが50セント（米ドル）とタイに比べビールが安いのがちょっと良い所。おかげで冷蔵庫付きのホテルに泊まって篭城してます。（一泊：６ドル）&lt;/p&gt;
-
-&lt;p&gt;宿はシングルで扇風機とWC付きで３ドルからあり、10ドル出せばエアコンがつく。食事はローカルのベジ屋さんで、一食１ドルくらい、これはタイより少し高い。そして、タイではあちらこちらで見つかるコンビニはこちらでは全くありません。&lt;/p&gt;
-
-&lt;p&gt;ネットの環境はタイと同様な感じで、&lt;/p&gt;
-
-&lt;p&gt;下り：3.68Mps&lt;br /&gt;
-上り：3.86Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     
