@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 08 Jun 2016 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jun 2016 19:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-190/</link>
+      <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/sati-190/</guid>
+      <description>
+
+&lt;p&gt;2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iPhone6など大きい液晶の端末では表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
+
+&lt;p&gt;バージョンは一気に上がってますが、機能的には少しのアップデートしかありません。瞑想履歴のページはちょっとシンプルになり、表示する項目が多く無いのでちょっと貧弱です。これまた利用者の方にはあまり関係がありませんが、少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
+
+&lt;p&gt;数日中に公開されると思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンを少し変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
+&lt;li&gt;もしかしたらiOS9で起動しなかったならば、このリリースで動くようになります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-sati-190.png&#34; alt=&#34;Sati 1.9.0&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ノンカイ、タイのインターネット事情</title>
@@ -412,25 +454,6 @@ shingha:~ $
 &lt;p&gt;下り：15.19Mps&lt;br /&gt;
 上り：3.14Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>チェンカーン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</link>
-      <pubDate>Sun, 10 Jan 2016 12:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</guid>
-      <description>&lt;p&gt;タイの軽井沢。メコン川沿いの街、チェンカーン。
-バンコクの人たちの避暑地でもあるらしいと聞いていたが、夜は思いの外冷え込みます。&lt;/p&gt;
-
-&lt;p&gt;外国人観光客がそんなに多くない所はよいが、新しいホテルが川沿いにできていてちょっとバブルな感じがある。昔ながらの町並みを期待してきたのだが少し残念ではある。宿はボロボロで300バーツと観光地価格。&lt;/p&gt;
-
-&lt;p&gt;今の時期だと、朝日も夕日も中途半端な所になる。夜市と朝の托鉢は割とにぎわってます。&lt;/p&gt;
-
-&lt;p&gt;と、バンコクから直通のバスも出ているのでバンコク在住なら涼みにきても良いかな。。&lt;/p&gt;
-
-&lt;p&gt;ネットもそれなりの速度が出ていたと思うが、記録するのを忘れる。&lt;/p&gt;
 </description>
     </item>
     

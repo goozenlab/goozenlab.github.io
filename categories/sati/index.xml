@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jun 2016 19:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-190/</link>
+      <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/sati-190/</guid>
+      <description>
+
+&lt;p&gt;2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iPhone6など大きい液晶の端末では表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
+
+&lt;p&gt;バージョンは一気に上がってますが、機能的には少しのアップデートしかありません。瞑想履歴のページはちょっとシンプルになり、表示する項目が多く無いのでちょっと貧弱です。これまた利用者の方にはあまり関係がありませんが、少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
+
+&lt;p&gt;数日中に公開されると思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンを少し変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
+&lt;li&gt;もしかしたらiOS9で起動しなかったならば、このリリースで動くようになります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-sati-190.png&#34; alt=&#34;Sati 1.9.0&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Iconを作り替え中</title>
@@ -443,35 +485,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Icon Renew and minor update</title>
-      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
-      <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
-      <description>&lt;p&gt;ちょっと気になっていたアイコンにちょっと手を入れました。
-リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
-サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
-ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-IconRenew.png&#34; alt=&#34;Renew Icons&#34; /&gt;&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;そして、ソフトの中身も少しだけアップデートしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;sati&lt;/strong&gt;：履歴の表示のセルとデザインをちょっと変更しました。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew.png&#34; alt=&#34;Renew&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew2.png&#34; alt=&#34;Renew &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;リスタリア&lt;/strong&gt;：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ListariaRenew.png&#34; alt=&#34;Renew&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ippuku&lt;/strong&gt;：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ippukuRenew.png&#34; alt=&#34;Renew&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
