@@ -7,8 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 04 Jun 2016 12:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jun 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ノンカイ、タイのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2016/06/internet-nongkhai/</link>
+      <pubDate>Wed, 08 Jun 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/internet-nongkhai/</guid>
+      <description>&lt;p&gt;ナコンパノムからのんびり、ラオスとの国境に沿ってぐるっとまわり６時間半くらいかかり、これまたラオスとの国境の街ノンカイに着く。ちょっと天気が荒れ模様。ベジ屋も発見できず、夜は豆乳とパイナップル。&lt;/p&gt;
+
+&lt;p&gt;一夜明け街をぶらぶらする。観光客は少ない、遠くに国境の橋があるので宿のあるバスターミナル近くはいたって穏やか。ベジ屋も街はずれに２件発見し安堵。そして、徒歩圏内に大き目のテスコ（スーパーマーケット）があったので行ってみると、割と賑わっている。&lt;/p&gt;
+
+&lt;p&gt;うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので独占。&lt;/p&gt;
+
+&lt;p&gt;下り：20.72Mps&lt;br /&gt;
+上り：1.87Mps&lt;br /&gt;
+(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-03-nakhonphanom.jpg&#34; alt=&#34;NongKhai Mecon River&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iPhone4SをiOS9にアップデート</title>
@@ -25,7 +45,9 @@
 
 &lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
 
-&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出る。。。&lt;/p&gt;
+&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。電池の持ちも悪くなった。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出ていたようだ。。。全滅ということか、、え〜らいこっちゃな。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-04-ios9.png&#34; alt=&#34;errors&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -37,11 +59,12 @@
       <guid>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</guid>
       <description>&lt;p&gt;ムクダハンより最近タイで見かけるチョット大きめVan(15人）でナコンパノムまで、途中タートパノムにより1時間45分で着く。&lt;/p&gt;
 
-&lt;p&gt;メコン川の向こうに切り立った丘が見えちょっと他のメコン川沿いの街とは雰囲気が違う。川沿いには自転車専用の通路がある。土曜日だからなのか通り沿いにナイトマーケットが行われていた。&lt;/p&gt;
+&lt;p&gt;メコン川の向こうに切り立った丘が見えちょっと他のメコン川沿いの街とは雰囲気が違う。川沿いには自転車専用の通路がある。土曜日だからなのか通り沿いにナイトマーケットが行われていた。（週末は行われていました。）&lt;/p&gt;
 
 &lt;p&gt;街に数件のベジタリアンレストランを見つけちょっとびっくり、割合としてはかなり多い。しばし逗留するかなと思うが、ホテルの部屋には割と綺麗なのだけど、アウトレットが無い。。&lt;/p&gt;
 
-&lt;p&gt;次に向かう、ノンカイ（これまたメコン川沿いの国境の町）には朝8時と11時にバスがあるとの事。&lt;/p&gt;
+&lt;p&gt;次に向かう、ノンカイ（これまたメコン川沿いの国境の町）には朝8時と11時にバスがあるとの事、
+ラオス、ターケーク行きの国際バスも出ている。&lt;/p&gt;
 
 &lt;p&gt;ネットは２階の部屋なので部屋内でも使用可能。スピードもまぁまぁ出る。&lt;/p&gt;
 
@@ -408,37 +431,6 @@ shingha:~ $
 &lt;p&gt;と、バンコクから直通のバスも出ているのでバンコク在住なら涼みにきても良いかな。。&lt;/p&gt;
 
 &lt;p&gt;ネットもそれなりの速度が出ていたと思うが、記録するのを忘れる。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2016年の海外年明け</title>
-      <link>http://goozenlab.com/blog/2016/01/new-year/</link>
-      <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/new-year/</guid>
-      <description>&lt;p&gt;去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。&lt;/p&gt;
-
-&lt;p&gt;そんな中、未だ続く放浪。。&lt;/p&gt;
-
-&lt;p&gt;今年は清めの年という事で、年末年始はカンボジアのバッタンバンにてリトリート。&lt;/p&gt;
-
-&lt;p&gt;一年一年があっという間に過ぎて行く。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;2016&lt;/strong&gt;: Battambang, Cambodia&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2015&lt;/strong&gt;: Ipoh, Malaysia&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2014&lt;/strong&gt;: Trivandrum, India&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2013&lt;/strong&gt;: Penan, Malaysia&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2012&lt;/strong&gt;: Pokhara, Nepal&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt;: ChiangMai, Thailand&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt;: Adis Ababa, Ethiopia&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt;: Cairo, Egipt&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2008&lt;/strong&gt;: Vientian, Laos&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2007&lt;/strong&gt;: Managua, Nicaragua&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2006&lt;/strong&gt;: Oaxaca, Mexico&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2005&lt;/strong&gt;: Sao Paulo, Brazil&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
