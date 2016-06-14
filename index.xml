@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 08 Jun 2016 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
+
+&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
+
+&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
+&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
+&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
+&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
+&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.0</title>
@@ -24,26 +68,26 @@
 
 &lt;p&gt;数日中に公開されると思います。。&lt;/p&gt;
 
-&lt;p&gt;追記：申請から公開までのプロセスが早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
+&lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:68efa7ce510c269f5dabb0213c1566df&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンを少し変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
@@ -64,13 +108,13 @@
 
 &lt;p&gt;一夜明け街をぶらぶらする。観光客は少ない、遠くに国境の橋があるので宿のあるバスターミナル近くはいたって穏やか。ベジ屋も街はずれに２件発見し安堵。そして、徒歩圏内に大き目のテスコ（スーパーマーケット）があったので行ってみると、割と賑わっている。&lt;/p&gt;
 
-&lt;p&gt;うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので独占。&lt;/p&gt;
+&lt;p&gt;うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので家を独占。&lt;/p&gt;
 
 &lt;p&gt;下り：20.72Mps&lt;br /&gt;
 上り：1.87Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-03-nakhonphanom.jpg&#34; alt=&#34;NongKhai Mecon River&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-nongkhai.jpg&#34; alt=&#34;NongKhai Mecon River&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -434,28 +478,6 @@ shingha:~ $
 
 &lt;p&gt;新生銀行は海外での引き落とし手数料無料とうたっていたような気がするが、東京三菱の方が￥189安い結果になる。大体0.8%の違い。まぁ締め日が近ければ、クレジットカードのキャッシングが一番安いように思える。
 （数分の違いで為替の違いが出ている可能性も有り？。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>スコータイ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/01/internet-skhotai/</link>
-      <pubDate>Fri, 15 Jan 2016 12:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/internet-skhotai/</guid>
-      <description>&lt;p&gt;２度目の訪問、今回はちょっとのんびり、且つロングステイのリサーチにきたスコータイ。観光客の皆さんは世界遺産の旧市街に観光のところですが、新市街の宿でのんびりしています。&lt;/p&gt;
-
-&lt;p&gt;１月だというのに日中は３０度オーバーとかなり暑いです。乾燥しているからまだよいものの、、&lt;/p&gt;
-
-&lt;p&gt;宿は古い民家の２階で市場に近く安い。看板も出ていないし隠れ家指数が高い。部屋は３つしか無いが５泊しベストシーズンでいながら私一人と、ちょっと寂しい。ジャンボという名前の警戒心の強いチワワがいる。部屋も古いけれど奇麗にされているし、タオルもついてくる。夜になると屋根伝いに猫がふらっと通り過ぎて行く。&lt;/p&gt;
-
-&lt;p&gt;宿のおばさんは親切で、たまにフルーツ等を差し入れしてくれる。&lt;/p&gt;
-
-&lt;p&gt;ネットは宿の外見からは想像もつかないが、ネットは割と速い。家人がYouTubeなどを見ていなければかなりスピードが出ます。&lt;/p&gt;
-
-&lt;p&gt;下り：15.19Mps&lt;br /&gt;
-上り：3.14Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     

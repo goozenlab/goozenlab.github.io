@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 31 May 2016 16:13:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
+
+&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
+
+&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
+&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
+&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
+&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
+&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Iconを作り替え中</title>

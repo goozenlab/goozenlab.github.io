@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 08 Jun 2016 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
+
+&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
+
+&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
+&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
+&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
+&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
+&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.0</title>
@@ -24,26 +68,26 @@
 
 &lt;p&gt;数日中に公開されると思います。。&lt;/p&gt;
 
-&lt;p&gt;追記：申請から公開までのプロセスが早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
+&lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:6e167dcff639cb6ba67392a064716e9d&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:68efa7ce510c269f5dabb0213c1566df&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンを少し変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:6e167dcff639cb6ba67392a064716e9d&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
@@ -378,48 +422,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pranatice v0.7.1</title>
-      <link>http://goozenlab.com/blog/2015/02/pranatice-071/</link>
-      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/pranatice-071/</guid>
-      <description>&lt;p&gt;他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-main-071.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-history-071.png&#34; alt=&#34;History&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting-071.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;メインページのデザインの微調整
-
-&lt;ul&gt;
-&lt;li&gt;下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。）&lt;/li&gt;
-&lt;li&gt;ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。&lt;/li&gt;
-&lt;li&gt;月の位置、フォントの調整・変更&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-pranatice-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ホーム＞設定＞ Pranatice&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;カレンダーの詳細設定&lt;/li&gt;
-&lt;li&gt;書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;その他&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Iconを少し濃く&lt;/li&gt;
-&lt;li&gt;最初の状態でタップをすると周りにある雲等の透明度が変化します&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
