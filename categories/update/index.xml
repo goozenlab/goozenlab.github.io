@@ -7,8 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jun 2016 03:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>tapas v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/tapas-190/</link>
+      <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/tapas-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。今回も追加の機能はありません。ちょっとした調整のみのアップデートです。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai:776b68eace8f43e5bce5801672cee7b2&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
+&lt;li&gt;詳細ページにて入力時のレイアウト調整&lt;/li&gt;
+&lt;li&gt;リストページにて長いタイトル名をしっかりと表示&lt;/li&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.0</title>
@@ -400,28 +426,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;p&gt;では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。&lt;/p&gt;
 
 &lt;p&gt;画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.8.2</title>
-      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
-      <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
-      <description>&lt;p&gt;うーーーん、ホットフィックスです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;バグ
-
-&lt;ul&gt;
-&lt;li&gt;朝のメッセージがずれてました。。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

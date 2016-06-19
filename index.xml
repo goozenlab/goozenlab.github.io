@@ -7,8 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jun 2016 03:00:00 +0545</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>tapas v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/tapas-190/</link>
+      <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/tapas-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。今回も追加の機能はありません。ちょっとした調整のみのアップデートです。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai:776b68eace8f43e5bce5801672cee7b2&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
+&lt;li&gt;詳細ページにて入力時のレイアウト調整&lt;/li&gt;
+&lt;li&gt;リストページにて長いタイトル名をしっかりと表示&lt;/li&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ノンカイからラオスへ日帰りビザラン</title>
+      <link>http://goozenlab.com/blog/2016/06/nongkhai-laos/</link>
+      <pubDate>Sun, 19 Jun 2016 15:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/nongkhai-laos/</guid>
+      <description>&lt;p&gt;ビザを更新しにノンカイからラオスへ日帰りする。&lt;/p&gt;
+
+&lt;p&gt;バスターミナルに近い宿からイミグレーションまで、だいたい３キロ強、途中に毎朝行くベジタリアン屋があるので、8時ごろ宿を出、そのベジ屋で朝食を食べて国境に向かう。&lt;/p&gt;
+
+&lt;p&gt;今日は日曜日、週末は混むとのネット情報ですが、非常にスムースにタイを出国。ラオスに向かうバスは40バーツ、ちょっと待って出発する。&lt;/p&gt;
+
+&lt;p&gt;ラオス側もそんなに混雑していなく入国にはK12,000（通常時はK11,000）を払いゲートを通過。&lt;/p&gt;
+
+&lt;p&gt;本当は久しぶりにビエンチャンに行く予定でしたが、なーーんか気が向かない。往復で日本から流れてきた都営バスにK12,000を払うなら、まーここでビール(大瓶:K10,000)でも飲んで戻るべ。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを朝から数本のみ、昼頃、ちょっと人の流れが落ち着いてきた頃に免税店でお酒を補充しタイに戻る。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;帰りもまた出国税がかかるのかと思いきや、無料でした。（タイに向かう方は割と人が多かったです。）でも、ゲート通過のためのカードは必要なので並ぶ必要があります。&lt;/p&gt;
+
+&lt;p&gt;国境を越え、またベジ屋に寄り昼ご飯を食べ、宿に戻る。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.0</title>
@@ -370,114 +424,6 @@
 
 &lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fusion drive を作る</title>
-      <link>http://goozenlab.com/blog/2016/03/create-fusiondrive/</link>
-      <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
-      <description>
-
-&lt;p&gt;MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ディスク番号確認：diskutil list&lt;/li&gt;
-&lt;li&gt;フュージョンドライブ作成：diskutil cs create&lt;/li&gt;
-&lt;li&gt;ボリューム作成：diskutil coreStorage createVolume&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;詳細:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;詳細&lt;/h2&gt;
-
-&lt;p&gt;Fusion化を行うディスクの番号を &lt;code&gt;diskutil list&lt;/code&gt; にて把握。そして &lt;code&gt;diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2&lt;/code&gt; にてLogical Volume Groupを構築。&lt;/p&gt;
-
-&lt;p&gt;※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2
-Started CoreStorage operation
-Unmounting disk1
-Repartitioning disk1
-Unmounting disk
-Creating the partition map
-Rediscovering disk1
-Adding disk1s2 to Logical Volume Group
-Unmounting disk2
-Repartitioning disk2
-Unmounting disk
-Creating the partition map
-Rediscovering disk2
-Adding disk2s2 to Logical Volume Group
-Creating Core Storage Logical Volume Group
-Switching disk1s2 to Core Storage
-Switching disk2s2 to Core Storage
-Waiting for Logical Volume Group to appear
-Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
-Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
-Finished CoreStorage operation
-shingha:~ $ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Volumeを &lt;code&gt;diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%&lt;/code&gt; で作成。Fusion.11がファインダーで表示される。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs createVolume &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%
-The Core Storage Logical Volume Group UUID is 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
-Started CoreStorage operation
-Waiting for Logical Volume to appear
-Formatting file system for Logical Volume
-Initialized /dev/rdisk3 as a 2 TB case-insensitive HFS Plus volume with a 139264k journal
-Mounting disk
-Core Storage LV UUID: E61D3EA0-4744-4B23-XXXX-533D19B9D00C
-Core Storage disk: disk3
-Finished CoreStorage operation
-shingha:~ $
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;フュージョン化の解除:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;フュージョン化の解除&lt;/h2&gt;
-
-&lt;p&gt;一つになったドライブの解除方法は &lt;code&gt;diskutil cs deleteVolume&lt;/code&gt; というコマンドもあるが&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;diskutil cs delete &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;の一発で行けると、思う・・。&lt;/p&gt;
-
-&lt;h2 id=&#34;リカバリーusb-stick:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
-
-&lt;p&gt;次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&amp;hellip; で動きが止まり思ったより時間が掛かる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
-Password:
-Erasing Disk: 0%... 10%... 20%... 30%...100%...
-Copying installer files to disk...
-Copy complete.
-Making disk bootable...
-Copying boot files...
-Copy complete.
-Done.
-shingha:~ $ 
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>海外キャッシングの比較</title>
-      <link>http://goozenlab.com/blog/2016/01/cashing-hongkong/</link>
-      <pubDate>Sun, 17 Jan 2016 12:00:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/cashing-hongkong/</guid>
-      <description>&lt;p&gt;ちょっと寄った、香港にてキャッシングの比較をしてみる。&lt;/p&gt;
-
-&lt;p&gt;手元にある、新生銀行と東京三菱UFJで立て続けに、HK$1,500を引き落す。後日引き落し金額を比較すると、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;新生銀行：￥23,812&lt;/li&gt;
-&lt;li&gt;東京三菱UFJ：￥23,623 [￥23,515(23,582 - 67) + ￥108(手数料) ]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;新生銀行は海外での引き落とし手数料無料とうたっていたような気がするが、東京三菱の方が￥189安い結果になる。大体0.8%の違い。まぁ締め日が近ければ、クレジットカードのキャッシングが一番安いように思える。
-（数分の違いで為替の違いが出ている可能性も有り？。）&lt;/p&gt;
 </description>
     </item>
     
