@@ -7,8 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 20 Jun 2016 03:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ippuku v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ippuku-190/</link>
+      <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ippuku-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。&lt;/p&gt;
+
+&lt;p&gt;不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。&lt;/p&gt;
+
+&lt;p&gt;大きな機能上の変更はありませんが、細かな調整が多々有ります。&lt;/p&gt;
+
+&lt;p&gt;バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。
+そして、新らしく、ダークモードを追加しました。&lt;/p&gt;
+
+&lt;p&gt;次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:d52049f793527062a29d4b07de8b3297&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai:d52049f793527062a29d4b07de8b3297&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:d52049f793527062a29d4b07de8b3297&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダークモード&lt;/li&gt;
+&lt;li&gt;iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）
+
+&lt;ul&gt;
+&lt;li&gt;4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5)&lt;/li&gt;
+&lt;li&gt;4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6)&lt;/li&gt;
+&lt;li&gt;3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:d52049f793527062a29d4b07de8b3297&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;左バーの色変更はスワイプに変更&lt;/li&gt;
+&lt;li&gt;上記の変更により、タップにてメモ表示&lt;/li&gt;
+&lt;li&gt;StarterViewのデザイン変更&lt;/li&gt;
+&lt;li&gt;ローカライズを追加&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>tapas v1.9.0</title>
@@ -336,51 +387,6 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/doop-165/</link>
-      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/doop-165/</guid>
-      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
-
-&lt;p&gt;そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
-iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DBの調整&lt;/li&gt;
-&lt;li&gt;編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;よろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07-pokhara-damside.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;doopのソートについて考えています。&lt;/p&gt;
-
-&lt;p&gt;今現在のソートパターンは&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;サイクルにかかる平均時間&lt;/li&gt;
-&lt;li&gt;0%にたどり着くであろう日付&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;によるソートをナビゲーションバーのロングタップで切り分けています。&lt;/p&gt;
-
-&lt;p&gt;①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。&lt;/p&gt;
-
-&lt;p&gt;両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。&lt;/p&gt;
-
-&lt;p&gt;色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。&lt;/p&gt;
-
-&lt;p&gt;では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。&lt;/p&gt;
-
-&lt;p&gt;画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。&lt;/p&gt;
 </description>
     </item>
     

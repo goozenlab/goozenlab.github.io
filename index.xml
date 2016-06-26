@@ -7,8 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 20 Jun 2016 03:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ippuku v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ippuku-190/</link>
+      <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ippuku-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。&lt;/p&gt;
+
+&lt;p&gt;不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。&lt;/p&gt;
+
+&lt;p&gt;大きな機能上の変更はありませんが、細かな調整が多々有ります。&lt;/p&gt;
+
+&lt;p&gt;バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。
+そして、新らしく、ダークモードを追加しました。&lt;/p&gt;
+
+&lt;p&gt;次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:d52049f793527062a29d4b07de8b3297&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai:d52049f793527062a29d4b07de8b3297&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:d52049f793527062a29d4b07de8b3297&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダークモード&lt;/li&gt;
+&lt;li&gt;iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）
+
+&lt;ul&gt;
+&lt;li&gt;4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5)&lt;/li&gt;
+&lt;li&gt;4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6)&lt;/li&gt;
+&lt;li&gt;3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:d52049f793527062a29d4b07de8b3297&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更&lt;/li&gt;
+&lt;li&gt;左バーの色変更はスワイプに変更&lt;/li&gt;
+&lt;li&gt;上記の変更により、タップにてメモ表示&lt;/li&gt;
+&lt;li&gt;StarterViewのデザイン変更&lt;/li&gt;
+&lt;li&gt;ローカライズを追加&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>tapas v1.9.0</title>
@@ -54,7 +105,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを1本のみ、朝なのに飲み始めると、「まぁ早く戻ってもなんだし」と結局昼頃までだらだらと数本開ける。ちょっと人の流れが落ち着いてきたかなと思った頃に免税店でお酒を補充しタイに戻る。戻りの友好橋バスはK4,000。&lt;/p&gt;
+&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを1本飲む。朝なのに飲み始めると、「まぁ早く戻ってもなんだし」と結局昼頃までだらだらと数本開ける。ちょっと人の流れが落ち着いてきたかなと思った頃に免税店でお酒を補充しタイに戻る。戻りの友好橋バスはK4,000。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -411,31 +462,6 @@
 &lt;p&gt;下り：7.19Mps&lt;br /&gt;
 上り：10.83Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>乱数を発生させる</title>
-      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
-      <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
-      <description>
-
-&lt;h2 id=&#34;rand:dc776821942516eb940a9f207846a213&#34;&gt;rand()&lt;/h2&gt;
-
-&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; srand(time(nil));
- rand()%300;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;arc4random-uniform:dc776821942516eb940a9f207846a213&#34;&gt;arc4random_uniform()&lt;/h2&gt;
-
-&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
