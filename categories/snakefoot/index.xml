@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 18 Oct 2015 13:15:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jun 2016 12:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>chroniumosをインストール</title>
+      <link>http://goozenlab.com/blog/2016/06/chroniumos/</link>
+      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/chroniumos/</guid>
+      <description>&lt;p&gt;暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし、ChromeアプリのChromebook Recovery Utilityをインストール。使っていないUSBStickにイメージを焼く。サイトにあるインストールドキュメントに沿いスムースに行く。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/image/2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;インストールの途中にグーグルアカウントを入れろと出てくる。無しではインストールできないよう。。使用に関してはゲストアカウントでも可能のようだが、ふと、これは使うとなると、かなりグーグルと親密にならないといかんことになるのに気づく、、使用時の検索やネットでの利用履歴も含め明け渡さなければいけない事に。。。違和感。でもこれ売れているんよね、、。。&lt;/p&gt;
+
+&lt;p&gt;まぁーー、よろし。&lt;/p&gt;
+
+&lt;p&gt;インストールを中断し、debianでも困ったことはないのでそのままにしておく。そのうちフェイスブックのネットブックとか出るかもしれん、と思ったりする。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>GV-1についたゴミのクリーンアップ</title>
@@ -399,41 +417,6 @@
 &lt;p&gt;ビルケンシュトックのサンダルは最近買う。ビルケンシュトックは価格が高いイメージがあり、ソール等をメンテナンスしてくれるとは知らなかったのが購入に至らなかった理由。&lt;/p&gt;
 
 &lt;p&gt;渋谷の街で突然ビーチサンダルの鼻緒が切れ買った少し安い類似商品（日本のブランドだったとおもう）を履いていたが、数週間で合皮の部分が切れ、１ヶ月で底がはがれ、ワンシーズン持たず。。。（最近の日本製品は質が落ちていると思うのは私だけでしょうか、、）若干高くても、ソール等も新しくする事ができるので、コストパフォーマンスはそこまで良くは無いかもしれないけれど、ゴミを減らすという意味でも良い、作りもしっかりしているし、履心地もキーンと同様に良いので、ビルケンシュトックの購入に至る。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>中国ビザをチェンマイで申請</title>
-      <link>http://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</link>
-      <pubDate>Fri, 12 Jun 2015 10:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</guid>
-      <description>&lt;p&gt;１５日まではビザが必要ないと思っていた中国（韓国籍）。危うい所でチケットを買ってしまう所だった。航空会社の購入サイトでクレジットカード記入画面に向かう時にサファリが反応せず、色々調べごとをしているうちにビザが必要なのが発覚する。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;「自分は日本人」と主張して、２０代の在日韓国人男性が中国の空港でノービザ入国を試みるも失敗―中国メディア[&lt;sup&gt;12&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;あぶねぇ、こんな事になる所だった、、。（まぁ一回ボリビアで試した事はあるだが、もちろん玉砕。）素直に出発をずらし、宿から徒歩約５分と近所にある領事館で改めて観光ビザを申請する。&lt;/p&gt;
-
-&lt;p&gt;必要な書類は以下、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;申請書：領事館のセキュリティーでもらえる。かなり細かい。&lt;/li&gt;
-&lt;li&gt;写真：パスポートサイズで問題無し、申請書に貼付ける。（糊や筆記具は領事館に用意されている）&lt;/li&gt;
-&lt;li&gt;チケットの予約書（ちょっと面倒だが、以前インドビザ申請時に作ってもらった書類を勝手にアレンジして持っていく、往復チケットの予約がベター。）&lt;/li&gt;
-&lt;li&gt;ホテルの予約：Booking.comなどで到着後数日分でよい&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;ツッコミ所満載の関係書類だったので色々と難癖をつけられると思っていたけれど、あっさり受理。受け取り表をもらい終了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-12-chinese-visa-chiangmai.jpg&#34; alt=&#34;chinese visa @chiangmai&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ビザ業務時間は９：００から１１：３０まで、人はそんなに多くなかったので朝一で行く必要もなさそう。&lt;/p&gt;
-
-&lt;p&gt;金額は特急、急行、普通の３つ。普通・数次ビザで、THB1,650。ピックアップ時に支払う。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-12-chinese-visa-price.jpg&#34; alt=&#34;chinese visa @chiangmai&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

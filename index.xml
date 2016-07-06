@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jun 2016 12:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>chroniumosをインストール</title>
+      <link>http://goozenlab.com/blog/2016/06/chroniumos/</link>
+      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/chroniumos/</guid>
+      <description>&lt;p&gt;暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし、ChromeアプリのChromebook Recovery Utilityをインストール。使っていないUSBStickにイメージを焼く。サイトにあるインストールドキュメントに沿いスムースに行く。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/image/2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;インストールの途中にグーグルアカウントを入れろと出てくる。無しではインストールできないよう。。使用に関してはゲストアカウントでも可能のようだが、ふと、これは使うとなると、かなりグーグルと親密にならないといかんことになるのに気づく、、使用時の検索やネットでの利用履歴も含め明け渡さなければいけない事に。。。違和感。でもこれ売れているんよね、、。。&lt;/p&gt;
+
+&lt;p&gt;まぁーー、よろし。&lt;/p&gt;
+
+&lt;p&gt;インストールを中断し、debianでも困ったことはないのでそのままにしておく。そのうちフェイスブックのネットブックとか出るかもしれん、と思ったりする。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ippuku v1.9.0</title>
@@ -105,7 +123,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを1本飲む。朝なのに飲み始めると、「まぁ早く戻ってもなんだし」と結局昼頃までだらだらと数本開ける。ちょっと人の流れが落ち着いてきたかなと思った頃に免税店でお酒を補充しタイに戻る。戻りの友好橋バスはK4,000。&lt;/p&gt;
+&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを1本飲む。朝なのに飲み始めると、「まぁ早く戻ってもなんだし」と結局昼頃までだらだらと数本開ける。ちょっと人の流れが落ち着いてきたかなと思った頃にラオのお金も余っているので、免税店でお酒を補充しタイに戻る。戻りの友好橋バスはK4,000。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -246,7 +264,7 @@
 
 &lt;p&gt;検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。&lt;/p&gt;
 
-&lt;p&gt;サポートもそろそろiOS10が出る頃だしiOS9以降のサポートで良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
+&lt;p&gt;そろそろiOS10が出る頃だしサポートもiOS9以降で良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
 
 &lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
 
@@ -370,7 +388,7 @@
       <guid>http://goozenlab.com/blog/2016/06/internet-savannakhet/</guid>
       <description>&lt;p&gt;パクセを出てサワナケート。ここでもベジ屋が見つからず。。タイとほとんど同じような文化圏にいるにもかかわらず何故だ？結局チーズ・野菜のサンドイッチとビールですます。宿に戻る途中、氷のいっぱい入った大きな激しい緑色をした抹茶オレを買う。&lt;/p&gt;
 
-&lt;p&gt;そういえば、以前来たな、、ベトナムのビザを申請したなここで、、で、犬に噛まれたな、、とふと思い出した。（発症しなくてよかったなと。。）
+&lt;p&gt;そういえば、以前来たな、、ベトナムのビザを申請したなここで、、で、犬に噛まれたな、、とふと思い出した。（狂犬病が発症しなくてよかったなと。。）
 タイに比べラオで安いものはビールくらいで、、、もうラオスはいいわ、食べ物がこんなに困るとは思わなかった。ラオスのお金が余っているがタイに向かうことにする。&lt;/p&gt;
 
 &lt;p&gt;以前は船でメコンを渡って国境を越えられたようだけれど、外人は陸路での橋にあるイミグレしか利用できないと船着場近くにいた職員らしき人が言っていた。&lt;/p&gt;
@@ -440,27 +458,6 @@
 
 &lt;p&gt;下り：14.81Mps&lt;br /&gt;
 上り：3.07Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>スリン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-surin/</link>
-      <pubDate>Mon, 23 May 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-surin/</guid>
-      <description>&lt;p&gt;象のお祭りで有名な町のスリンですが、シーズンオフに向かうとこれといったものもない小都市。観光客もあまり見かけず。&lt;/p&gt;
-
-&lt;p&gt;裕福でない県らしく、ホテルも今時THB150で十分すぎるほど快適。外見が新しくなりつつあるのでもしかしたら近く値上げする予定か。。&lt;/p&gt;
-
-&lt;p&gt;市場の近くに良心的なベジ屋さんがあったのがせめてもの救い。テスコで缶ビヤシンがTHB33で売っているのも良し。
-ホテルの近くに夕方からでる豆乳屋の豆乳がすごく濃い、というかズシッと重い。&lt;/p&gt;
-
-&lt;p&gt;3階の部屋内にまで電波が届く。上りのスピードを見ると、人が使っていない時であればもっとスピードが出るはず。ユーチューブを見てみたけど非常に快適。&lt;/p&gt;
-
-&lt;p&gt;下り：7.19Mps&lt;br /&gt;
-上り：10.83Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
