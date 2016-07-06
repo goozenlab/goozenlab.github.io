@@ -7,8 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 28 Jun 2016 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jul 2016 05:57:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosper v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/07/cosper-190/</link>
+      <pubDate>Thu, 07 Jul 2016 05:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/cosper-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。&lt;/p&gt;
+
+&lt;p&gt;ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学のプールで泳いだりして健康的なここ最近です。&lt;/p&gt;
+
+&lt;p&gt;ちょっと新しいことを思いついたりして、作業がグジャグジャになりつつ、どんどんコードがスパゲティ化していて気分が良くないのですが、、、取り急ぎ機能の追加はせずにSwiftによる移行のみで申請です。もーーーしかしたらアップデートでデータが消えるかもしれません。多分大丈夫だとは思うが、ちょっと検証できず。シミュレータでは問題無しなのだが、、。&lt;/p&gt;
+
+&lt;p&gt;技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai:50fa04c585d42c29e6268a799f6160a2&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダークモード&lt;/li&gt;
+&lt;li&gt;お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。)&lt;/li&gt;
+&lt;li&gt;詳細ページレイアウトの変更&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fix:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金額と項目の名前が長さにより表示に不具合が出てしまう件を修正&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;透明度を削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-09-cosper_icon-190.jpg&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>chroniumosをインストール</title>
@@ -436,29 +487,6 @@
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-28-pakse.jpg&#34; alt=&#34;Pakse&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ウボンラチャタニ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-ubon/</link>
-      <pubDate>Thu, 26 May 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-ubon/</guid>
-      <description>&lt;p&gt;スリンから気分転換を兼ね列車でウボンラチャタニまで移動する。３時間くらいかかりTHB31とバス代の多分３分の１程度。ウボンの駅からは白ソンテウに乗り街まで移動。&lt;/p&gt;
-
-&lt;p&gt;雨季に近づいてきているので夕方に雷雨が激しく降る。ちょっと蒸し暑い感じが出始める、昼歩きが少し辛く、冷房の効いたコンビニで一息付き外に出るとメガネが曇る。&lt;/p&gt;
-
-&lt;p&gt;近くのお寺をフラフラ回り、観光は終了。ベジタリアンのレストランもかろうじて一つ見つけるが、
-クオリティーがあまり良く無いのが残念。&lt;/p&gt;
-
-&lt;p&gt;のんびりするつもりでいたのだが、早めにラオス、パクセに向かうことにする。&lt;/p&gt;
-
-&lt;p&gt;ネット環境はかなり高速。しかし、端っこの部屋には電波が届かず。。&lt;/p&gt;
-
-&lt;p&gt;下り：14.81Mps&lt;br /&gt;
-上り：3.07Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     
