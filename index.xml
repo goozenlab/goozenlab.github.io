@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 07 Jul 2016 05:57:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jul 2016 20:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>旅の伴侶</title>
+      <link>http://goozenlab.com/blog/2016/07/dahon-speed8/</link>
+      <pubDate>Wed, 20 Jul 2016 20:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/dahon-speed8/</guid>
+      <description>
+
+&lt;p&gt;7月も下旬になりました。滞在中のタイでは大型連休。雨季入り祝日のカオパンサーが過ぎ、雨季に突入です。&lt;/p&gt;
+
+&lt;p&gt;2016年バージョンのダホンスピードD8をノマドの伴侶にします。本当はごっつい旅仕様チャリンコを購入し、本格派チャリダーデビューをしようと思っていたのだけど、どんどん気持ちが萎縮し、楽に持ち運びができる折りたためる自転車に落ち着く。大は小を兼ねるというが、、ここはこぢんまりと。。長距離移動はバスで、ヘタレな感じで良いやと、、。&lt;/p&gt;
+
+&lt;p&gt;9月の日本一時帰国時に実物を見て買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるようで、7月のなかばにヨドバシにて在庫処分なのか一気に値段が下がる。
+昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。&lt;/p&gt;
+
+&lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）&lt;/p&gt;
+
+&lt;p&gt;観光ビザの必要がなくなったインドネシアのバリ島でも一周するかな。。&lt;/p&gt;
+
+&lt;p&gt;日本でのリリースは少し違ってくるかもしれませんが、2017年版はこんな感じなるようです。（９速化＋SRAM）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;dahon-speed-d9-street:1d2f6b2e9e343ef38720e27932f8a7f2&#34;&gt;Dahon Speed D9 Street&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Wheel Size: 20″&lt;/li&gt;
+&lt;li&gt;Weight: 29 lbs (&lt;strong&gt;13.1 kg&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Folded Size: 31.1″ x 25.6″ x 12.6″ (&lt;strong&gt;65 x 32 x 79 cm&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Frame: Lightweight 4130 Cro Mo, Lattice Forged Hinge，w/ ViseGrip Technology&lt;/li&gt;
+&lt;li&gt;Fork: Smooth Riding and Stable Hi-Ten Steel Blades and Steerer&lt;/li&gt;
+&lt;li&gt;Handlepost: Forged Alloy Radius Telescope w/ Fusion Technology&lt;/li&gt;
+&lt;li&gt;Drivetrain: &lt;strong&gt;SRAM X5 9-speed&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wheels: 20″ aluminum rims w/ 20 Hole front and 28 Hole rear Hub&lt;/li&gt;
+&lt;li&gt;Tires: Schwalbe &lt;strong&gt;Road Cruiser&lt;/strong&gt; 20″ x 1.75″&lt;/li&gt;
+&lt;li&gt;Brakes: &lt;strong&gt;Avid FR5 brake levers, Promax V-Brakes&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>cosper v1.9.0</title>
@@ -69,7 +109,7 @@
       <guid>http://goozenlab.com/blog/2016/06/chroniumos/</guid>
       <description>&lt;p&gt;暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし、ChromeアプリのChromebook Recovery Utilityをインストール。使っていないUSBStickにイメージを焼く。サイトにあるインストールドキュメントに沿いスムースに行く。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/image/2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/image/2016-06-28-chroniumos.png2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;インストールの途中にグーグルアカウントを入れろと出てくる。無しではインストールできないよう。。使用に関してはゲストアカウントでも可能のようだが、ふと、これは使うとなると、かなりグーグルと親密にならないといかんことになるのに気づく、、使用時の検索やネットでの利用履歴も含め明け渡さなければいけない事に。。。違和感。でもこれ売れているんよね、、。。&lt;/p&gt;
 
@@ -465,28 +505,6 @@
 &lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>パクセ、ラオスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-pakse/</link>
-      <pubDate>Sat, 28 May 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-pakse/</guid>
-      <description>&lt;p&gt;タイビザの更新のためラオスに来ました。&lt;/p&gt;
-
-&lt;p&gt;ウボンラチャタニから国境越えのバスでパクセに。バスが本来街に近いバスターミナルを通過し、かなり町外れにあるターミナルまで行く。待ってましたと待ち受けているソンテウと結託しているよう。言い値も無茶苦茶だし、もちろんそんなソンテウは無視。同乗していたラオの人に街までの行き方など色々聞くと、友人が来るからと、街まで同乗させてもらう。国境では賄賂を要求されるし、物価も昔からかなり上がったという話なので、ラオスよ。。。&lt;/p&gt;
-
-&lt;p&gt;ラオスと言ったら、評判の高いビアラオ。舌が肥えたのか、品質が落ちたのかわからないが、以前ほど美味しいとは感じない。ベジレストランはインド料理屋を除き、皆無。残念だらけのラオスだけどしばし逗留。（物価：宿K50,000, BeerLao大瓶 K9,000)&lt;/p&gt;
-
-&lt;p&gt;宿やレストランにはFreeWiFiの文字が見えます。環境はタイに比べてしまうと、ちょっと残念な結果になるが、ちょっとした調べ物をする程度なら十分。&lt;/p&gt;
-
-&lt;p&gt;下り：2.26Mps&lt;br /&gt;
-上り：0.31Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-28-pakse.jpg&#34; alt=&#34;Pakse&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
