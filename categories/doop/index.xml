@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 16 Aug 2015 16:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/doop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/07/doop-190/</link>
+      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/doop-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？などと弱気になりがちな気持ちを抑え、寄り道をしまくって、ようやくの事、申請しました。傷だらけ（＋やけっぱち）リリースです。ということで、アイコンも傷物に変えてみました。（目も真っ赤にすればよかったかな。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-31-doop-190.png&#34; alt=&#34;doop Icon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自分が書いたものだけど、いやはや、自分の馬鹿さ加減に呆れ返りました。移行というより、新しく書き換えてしまった方が早かったかなと思ったりしました。しかしながら今回も、コードがどんどんぐじゃぐじゃになって行ってしまうのは学習能力がなさが上か。。。。&lt;/p&gt;
+
+&lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai:e9031c825c07b1883ab7762d773eb65a&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
+&lt;li&gt;アイコンの変更（傷が癒えたら？幾つか先のアップデートで元のアイコンに戻します）&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;透明度を削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
+
+&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.8.1</title>
@@ -338,20 +378,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
-      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>&lt;p&gt;機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
-4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。&lt;/p&gt;
-
-&lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
-クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
 </description>
     </item>
     

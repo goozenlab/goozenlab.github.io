@@ -7,8 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 14 Jun 2016 15:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jul 2016 05:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.1</title>
+      <link>http://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <description>
+
+&lt;p&gt;快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし
+た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。&lt;/p&gt;
+
+&lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.0</title>

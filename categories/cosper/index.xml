@@ -7,8 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 07 Jul 2016 05:57:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jul 2016 05:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/cosper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosper v1.9.1</title>
+      <link>http://goozenlab.com/blog/2016/07/cosper-191/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/cosper-191/</guid>
+      <description>
+
+&lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:a2870191ae7b179ca421589da463a56f&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai:a2870191ae7b179ca421589da463a56f&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix:a2870191ae7b179ca421589da463a56f&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>cosper v1.9.0</title>
@@ -259,38 +281,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 
 &lt;p&gt;今週中にはポコポコとアップされると思います。
 セールもやっていますので、なにとぞ、よろしく。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>XCode4.2と怒濤のアップデート</title>
-      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
-      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
-      <description>&lt;p&gt;インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。&lt;/p&gt;
-
-&lt;p&gt;Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。&lt;/p&gt;
-
-&lt;p&gt;不具合のほとんどはテーブルセル部の&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[self.nextResponder touchesBegan:touches withEvent:event]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;が問題だったようで、（既知の問題でした。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[super touchesBegan:touches withEvent:event];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;に修正しました。シミュレーター上では動いてます。&lt;/p&gt;
-
-&lt;p&gt;去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。&lt;/p&gt;
-
-&lt;p&gt;※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。&lt;/p&gt;
 </description>
     </item>
     

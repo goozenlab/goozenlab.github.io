@@ -7,8 +7,101 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 07 Jul 2016 05:57:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>doop v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/07/doop-190/</link>
+      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/doop-190/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？などと弱気になりがちな気持ちを抑え、寄り道をしまくって、ようやくの事、申請しました。傷だらけ（＋やけっぱち）リリースです。ということで、アイコンも傷物に変えてみました。（目も真っ赤にすればよかったかな。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-31-doop-190.png&#34; alt=&#34;doop Icon&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自分が書いたものだけど、いやはや、自分の馬鹿さ加減に呆れ返りました。移行というより、新しく書き換えてしまった方が早かったかなと思ったりしました。しかしながら今回も、コードがどんどんぐじゃぐじゃになって行ってしまうのは学習能力がなさが上か。。。。&lt;/p&gt;
+
+&lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai:e9031c825c07b1883ab7762d773eb65a&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
+&lt;li&gt;アイコンの変更（傷が癒えたら？幾つか先のアップデートで元のアイコンに戻します）&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;透明度を削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
+
+&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.9.1</title>
+      <link>http://goozenlab.com/blog/2016/07/cosper-191/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/cosper-191/</guid>
+      <description>
+
+&lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:a2870191ae7b179ca421589da463a56f&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai:a2870191ae7b179ca421589da463a56f&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix:a2870191ae7b179ca421589da463a56f&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.9.1</title>
+      <link>http://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <description>
+
+&lt;p&gt;快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし
+た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。&lt;/p&gt;
+
+&lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>cosper v1.9.0</title>
@@ -359,85 +452,6 @@
 &lt;/ol&gt;
 
 &lt;p&gt;申請が通り、アプストアに復帰しました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>dandori v2.6.3</title>
-      <link>http://goozenlab.com/blog/2015/03/dandori-263/</link>
-      <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/dandori-263/</guid>
-      <description>&lt;p&gt;Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。&lt;/p&gt;
-
-&lt;p&gt;ついでに編集時に出る左の削除のボタンを削ろうかと思いましたが、保留。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist v2.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
-      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
-      <description>&lt;p&gt;ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加
-
-&lt;ul&gt;
-&lt;li&gt;バックアップを兼ねた、エクスポート&lt;/li&gt;
-&lt;li&gt;リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;変更&lt;/strong&gt;：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、&lt;strong&gt;シェイク&lt;/strong&gt;で行います。&lt;/li&gt;
-&lt;li&gt;DBの構造を整理&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。&lt;/p&gt;
-
-&lt;p&gt;間にリマンダーを挟みますが、簡易な方法として悪くないと思います。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;取込み&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;littlist にて＋のボタンより取り込む&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;書出し&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ホーム＞設定＞littlist より、書出しのスウィッチを&lt;strong&gt;オン&lt;/strong&gt;にします。&lt;/li&gt;
-&lt;li&gt;次回 littlist 起動時に確認アラートが上がり実行します。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;※ リストのデフォルトは ”&lt;strong&gt;littlist&lt;/strong&gt;&amp;rdquo; になっています。ホーム＞設定＞littlistより変更できます。&lt;/p&gt;
-
-&lt;p&gt;※ 簡単な重複のチェックをしてます。取り込んで、右側のバーの色を変更しなければ、重複チェックの項目として扱われます。（再度取り込んでも重複と見なされて取り込みされません）&lt;/p&gt;
-
-&lt;p&gt;バックアップはついでというか、、折角なので、、、控えめに追加しました。本当はDBの移行がうまく行かなかったのでバージョンアップ時での利用を考え追加したのだが、問題は解決したので、将来的に消すか残すかちょっと考えてます。&lt;/p&gt;
-
-&lt;p&gt;このアプリも最近アップデートしているアプリと同様にiOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>tapas v1.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/tapas-165/</link>
-      <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/tapas-165/</guid>
-      <description>&lt;p&gt;iOS6/7 ユーザーには最後のアップデートになります。&lt;/p&gt;
-
-&lt;p&gt;次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。
-iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DBの調整&lt;/li&gt;
-&lt;li&gt;iOS8での通知許可の設定&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;よろしくお願いします。&lt;/p&gt;
 </description>
     </item>
     
