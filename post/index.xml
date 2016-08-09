@@ -7,8 +7,111 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 10 Aug 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.1</title>
+      <link>http://goozenlab.com/blog/2016/08/sati-191/</link>
+      <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/sati-191/</guid>
+      <description>
+
+&lt;p&gt;ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋滞在先のネット状況が悪すぎ。。）に向かえればと思ってます。&lt;/p&gt;
+
+&lt;p&gt;以下修正点です。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
+&lt;li&gt;履歴ページの日本語ローカライズが反映されないバグの修正&lt;/li&gt;
+&lt;li&gt;55分以内の瞑想時に音が鳴らなくなる不具合を修正&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-10-sati191.png&#34; alt=&#34;sati&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>検索オプション</title>
+      <link>http://goozenlab.com/blog/2016/08/search-option/</link>
+      <pubDate>Tue, 09 Aug 2016 13:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/search-option/</guid>
+      <description>
+
+&lt;p&gt;日本帰国時の爆買いモードでちょっと気になるブツの使い勝手やレビューなど、調べまくってます。しかしながら、検索に何かしらの商品名が入るなり、楽天やアマゾンなどのショッピングサイトのオンパレードになります。個人サイトのレビューなんかはかなりあとのほうになっている感じがする。&lt;/p&gt;
+
+&lt;p&gt;最近の検索エンジンはちょっとね。。&lt;/p&gt;
+
+&lt;p&gt;で、検索オプションの出番。&lt;/p&gt;
+
+&lt;h3 id=&#34;除外:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;除外&lt;/h3&gt;
+
+&lt;p&gt;特定のサイト、キーワードを検索の結果より除外するには、&lt;code&gt;-site:URL&lt;/code&gt; にてサイト&lt;code&gt;-WORD&lt;/code&gt; でキーワードを除外。&lt;/p&gt;
+
+&lt;p&gt;例 -site:rakuten.co.jp -site:shopping.yahoo.co.jp -site:amazon.co.jp&lt;/p&gt;
+
+&lt;h3 id=&#34;特定のサイトアドレス:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;特定のサイトアドレス&lt;/h3&gt;
+
+&lt;p&gt;例えば、個人のレビューを読みたい時などには、良くあるブログサイトのサイトアドレス、/blog を含めて検索するとよかったりします。&lt;/p&gt;
+
+&lt;p&gt;例 &lt;code&gt;inurl:blog&lt;/code&gt; でサイトのアドレスにblogが入ったページが対象になる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; 上記の &lt;code&gt;-site:&lt;/code&gt; のマイナスを取ると、逆にそのサイトからの検索になります。同様に &lt;code&gt;-url:shopping&lt;/code&gt; も使えます。（例えばアメブロから検索したい時には&lt;code&gt;site:ameblo.jp&lt;/code&gt;を追加。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>filteredArrayUsingPredicate</title>
+      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
+      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <description>&lt;p&gt;拙作dandoriのswift移行中、中々進みません。&lt;/p&gt;
+
+&lt;p&gt;Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。&lt;/p&gt;
+
+&lt;p&gt;ブロック表記が出てくると目が点になってしまう私。。。&lt;/p&gt;
+
+&lt;p&gt;以下 Objective-C での表記&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
+NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;];
+NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
+return [filteredArray count] &amp;gt; 0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swiftで書き上げにはブロック内に&lt;code&gt;(user: UserDetails) -&amp;gt; Bool in&lt;/code&gt; で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。&lt;code&gt;
+$0.isRedHot = &amp;quot;YES&amp;quot;&lt;/code&gt; 何じゃかんじゃより。。）書き上げるとこんな感じ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let myTasks = tasks?.allObjects
+let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;)
+let filteredArray = myTasks?.filter( {
+	predicate.evaluateWithObject($0)
+	} )
+return filteredArray!.count &amp;gt; 0
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.9.0</title>
@@ -115,12 +218,14 @@
 
 &lt;p&gt;2016年バージョンのダホンスピードD8をノマドの伴侶にします。本当はごっつい旅仕様チャリンコを購入し、本格派チャリダーデビューをしようと思っていたのだけど、どんどん気持ちが萎縮し、楽に持ち運びができる折りたためる自転車に落ち着く。大は小を兼ねるというが、、ここはこぢんまりと。。長距離移動はバスで、ヘタレな感じで良いやと、、。&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-20-dahon-speed8.jpg&#34; alt=&#34;dajhon&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;9月の日本一時帰国時に実物を見て買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるようで、7月のなかばにヨドバシにて在庫処分なのか一気に値段が下がる。
 昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。&lt;/p&gt;
 
-&lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）&lt;/p&gt;
+&lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）物好きなので、いろいろといじるのが楽しみ。&lt;/p&gt;
 
-&lt;p&gt;観光ビザの必要がなくなったインドネシアのバリ島でも一周するかな。。&lt;/p&gt;
+&lt;p&gt;観光ビザの必要がなくなったインドネシアのバリ島でも一周するかな。。自転車自体乗るのが数十年ぶり、、、、楽しみだか、怖いんだかです。。&lt;/p&gt;
 
 &lt;p&gt;日本でのリリースは少し違ってくるかもしれませんが、2017年版はこんな感じなるようです。（９速化＋SRAM）&lt;/p&gt;
 
@@ -202,7 +307,7 @@
       <guid>http://goozenlab.com/blog/2016/06/chroniumos/</guid>
       <description>&lt;p&gt;暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし、ChromeアプリのChromebook Recovery Utilityをインストール。使っていないUSBStickにイメージを焼く。サイトにあるインストールドキュメントに沿いスムースに行く。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/image/2016-06-28-chroniumos.png2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;インストールの途中にグーグルアカウントを入れろと出てくる。無しではインストールできないよう。。使用に関してはゲストアカウントでも可能のようだが、ふと、これは使うとなると、かなりグーグルと親密にならないといかんことになるのに気づく、、使用時の検索やネットでの利用履歴も含め明け渡さなければいけない事に。。。違和感。でもこれ売れているんよね、、。。&lt;/p&gt;
 
@@ -434,68 +539,6 @@
 &lt;p&gt;ただし、ビザランの予定が半月前とかに決まっているならノックエアーで金額を確認するのが良いです。バスと変わらない値段で飛べます。&lt;/p&gt;
 
 &lt;p&gt;そして、チェンライからはなんと、ノンカイよりもう少し先の、ナコンパノムまでのバスが、バス会社ソンバットより運行されています。ちょっとびっくりしました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>iPhone4SをiOS9にアップデート</title>
-      <link>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
-      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
-      <description>&lt;p&gt;ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。
-複数のソフトで共有しているデートピッカーが問題のよう。XCode7でのシミュレータ(iOS9)では素直に動いたので、ちょっと驚き。もしかしてiOS8.2による特有の問題かもしれないと、試しにXCodeにiOS8.2とiOS8.4のシュミレーターをインストール。しかしながら、実機と同じView関連でnillが戻って来るエラーが起き落ちる。。。チョットこれはやな予感（大幅な変更を余儀なくされる）がする。&lt;/p&gt;
-
-&lt;p&gt;検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。&lt;/p&gt;
-
-&lt;p&gt;そろそろiOS10が出る頃だしサポートもiOS9以降で良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
-
-&lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
-
-&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。電池の持ちも悪くなった。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出ていたようだ。。。全滅ということか、、え〜らいこっちゃな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-04-ios9.png&#34; alt=&#34;errors&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ナコンパノム、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</link>
-      <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</guid>
-      <description>&lt;p&gt;ムクダハンより最近タイで見かけるチョット大きめVan(15人）でナコンパノムまで、途中タートパノムにより1時間45分で着く。&lt;/p&gt;
-
-&lt;p&gt;メコン川の向こうに切り立った丘が見えちょっと他のメコン川沿いの街とは雰囲気が違う。川沿いには自転車専用の通路がある。土曜日だからなのか通り沿いにナイトマーケットが行われていた。（週末は行われていました。）&lt;/p&gt;
-
-&lt;p&gt;街に数件のベジタリアンレストランを見つけちょっとびっくり、割合としてはかなり多い。しばし逗留するかなと思うが、ホテルの部屋には割と綺麗なのだけど、アウトレットが無い。。&lt;/p&gt;
-
-&lt;p&gt;次に向かう、ノンカイ（これまたメコン川沿いの国境の町）には朝8時と11時にバスがあるとの事、
-ラオス、ターケーク行きの国際バスも出ている。&lt;/p&gt;
-
-&lt;p&gt;ネットは２階の部屋なので部屋内でも使用可能。スピードもまぁまぁ出る。&lt;/p&gt;
-
-&lt;p&gt;下り：10.79Mps&lt;br /&gt;
-上り：1.71Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-03-nakhonphanom.jpg&#34; alt=&#34;NakhonPhanom Mekon River&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ムクダハン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-mukdahan/</link>
-      <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-mukdahan/</guid>
-      <description>&lt;p&gt;ベジタリアンレストランもあり、快適なタイに戻る。ラオ出国時にK10,000徴収されるが賄賂にしては変な感じ。サワナケートからのバスは出入国も含めて全行程１時間とちょっと、思ったよりスムース。&lt;/p&gt;
-
-&lt;p&gt;ムクダハンはサワナケートの対岸の町、お互いがよく見えます。なにか特筆すべきことは無いのだけど、、、宿でのインターネットの環境は以下。地獄から天国。&lt;/p&gt;
-
-&lt;p&gt;下り：22.49Mps&lt;br /&gt;
-上り：0.75Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     

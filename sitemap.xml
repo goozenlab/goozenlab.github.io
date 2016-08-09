@@ -3,8 +3,23 @@
   
   <url>
     <loc>http://goozenlab.com/</loc>
-    <lastmod>2016-07-31T21:00:00+07:00</lastmod>
+    <lastmod>2016-08-10T06:30:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2016/08/sati-191/</loc>
+    <lastmod>2016-08-10T06:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2016/08/search-option/</loc>
+    <lastmod>2016-08-09T13:15:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2016/08/array_filter/</loc>
+    <lastmod>2016-08-04T18:30:00+07:00</lastmod>
   </url>
   
   <url>
@@ -963,6 +978,41 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/goods/acam-3000/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/bookark/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/lcd-cleaner/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/cocoon/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/havaianas/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/happy-hacking-keyboard/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/surfacepad/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/blog/2013/03/textmate2/</loc>
     <lastmod>2013-03-04T07:03:00+07:00</lastmod>
   </url>
@@ -1045,6 +1095,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2012/11/gray-mode/</loc>
     <lastmod>2012-11-20T16:43:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/filson-briefcase/</loc>
+    <lastmod>2012-11-19T22:37:00+09:00</lastmod>
   </url>
   
   <url>
@@ -1140,6 +1195,206 @@
   <url>
     <loc>http://goozenlab.com/blog/2012/09/version4-5/</loc>
     <lastmod>2012-09-27T05:16:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/a6-doc-case/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/kindle/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/kurutoga/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/lamy2000-ballpoint-pen/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/macbookpro/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/muji-mesh-case/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/backpack/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/snowpeak-mag/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/sony-gps-cs3k/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/usb-power-adapter/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/lens-cleaner/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/key-chain/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/muji-compact-eraser/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/compas/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/sinkplug/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/akakosuri/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/degital-camera/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/hanger/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/soap-case/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/tenugui/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/tombo-ballpoint/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/toothbrush/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/towl/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/ziplock/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/passport-case/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/blanket/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/bohemia/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/money-belt/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/mesh-case/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/lock/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/lamy-safari/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/coin-purse/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/kinchaku/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/bohemia/backpacker/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/bohemia/index-bohemia/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/underware/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/case-eyeware/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/nail-cutter/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/earplug/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/linen-shirts/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
   </url>
   
   <url>
@@ -1240,6 +1495,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2011/07/internet-mexico/</loc>
     <lastmod>2011-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/viewfinder-gv1/</loc>
+    <lastmod>2011-06-26T14:38:00+09:00</lastmod>
   </url>
   
   <url>
@@ -1345,6 +1605,10 @@
   <url>
     <loc>http://goozenlab.com/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/head-lamp/</loc>
   </url>
   
 </urlset>

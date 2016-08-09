@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 10 Aug 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.1</title>
+      <link>http://goozenlab.com/blog/2016/08/sati-191/</link>
+      <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/sati-191/</guid>
+      <description>
+
+&lt;p&gt;ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋滞在先のネット状況が悪すぎ。。）に向かえればと思ってます。&lt;/p&gt;
+
+&lt;p&gt;以下修正点です。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
+&lt;li&gt;履歴ページの日本語ローカライズが反映されないバグの修正&lt;/li&gt;
+&lt;li&gt;55分以内の瞑想時に音が鳴らなくなる不具合を修正&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-10-sati191.png&#34; alt=&#34;sati&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>doop v1.9.0</title>
@@ -434,24 +474,6 @@
       <description>&lt;p&gt;またまた、ケアレスミスのホットフィックスです。&lt;/p&gt;
 
 &lt;p&gt;タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist v2.6.6</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
-      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
-      <description>&lt;p&gt;データーベースの更新により起きた、幾つかのバグを修正しました。
-どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ&lt;/li&gt;
-&lt;li&gt;編集画面で、期日をオフにしてもオフにならないバグ&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;申請が通り、アプストアに復帰しました。&lt;/p&gt;
 </description>
     </item>
     

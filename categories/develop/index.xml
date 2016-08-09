@@ -7,8 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 18 Mar 2016 11:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Aug 2016 18:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>filteredArrayUsingPredicate</title>
+      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
+      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <description>&lt;p&gt;拙作dandoriのswift移行中、中々進みません。&lt;/p&gt;
+
+&lt;p&gt;Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。&lt;/p&gt;
+
+&lt;p&gt;ブロック表記が出てくると目が点になってしまう私。。。&lt;/p&gt;
+
+&lt;p&gt;以下 Objective-C での表記&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
+NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;];
+NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
+return [filteredArray count] &amp;gt; 0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swiftで書き上げにはブロック内に&lt;code&gt;(user: UserDetails) -&amp;gt; Bool in&lt;/code&gt; で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。&lt;code&gt;
+$0.isRedHot = &amp;quot;YES&amp;quot;&lt;/code&gt; 何じゃかんじゃより。。）書き上げるとこんな感じ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let myTasks = tasks?.allObjects
+let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;)
+let filteredArray = myTasks?.filter( {
+	predicate.evaluateWithObject($0)
+	} )
+return filteredArray!.count &amp;gt; 0
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>乱数を発生させる</title>
@@ -383,53 +416,6 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>クラスが読み込めず [解決]</title>
-      <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
-      <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
-      <description>
-
-&lt;p&gt;もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、&lt;a href=&#34;http://goozenlab.com/blog/2015/03/unable-to-load-class/&#34;&gt;クラスが読み込めず&lt;/a&gt;で書いた問題が解決しました。&lt;/p&gt;
-
-&lt;p&gt;問題のエラーログ&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
-Class not found, using default NSManagedObject instead.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
-&lt;li&gt;CONFIGURATIONSを選択&lt;/li&gt;
-&lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
-（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
-
-&lt;h2 id=&#34;うまく行かない場合:eb5cad654ed1068004ef41ecc88e3a81&#34;&gt;うまく行かない場合&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
-&lt;li&gt;DerivedDataのデーターを消す&lt;/li&gt;
-&lt;li&gt;新しいプロジェクトを作って、Modelを移行して試す&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。&lt;/p&gt;
-
-&lt;p&gt;蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
-小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。&lt;/p&gt;
 </description>
     </item>
     

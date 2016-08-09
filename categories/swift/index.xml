@@ -7,8 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 18 Mar 2016 11:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Aug 2016 18:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>filteredArrayUsingPredicate</title>
+      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
+      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <description>&lt;p&gt;拙作dandoriのswift移行中、中々進みません。&lt;/p&gt;
+
+&lt;p&gt;Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。&lt;/p&gt;
+
+&lt;p&gt;ブロック表記が出てくると目が点になってしまう私。。。&lt;/p&gt;
+
+&lt;p&gt;以下 Objective-C での表記&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
+NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;];
+NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
+return [filteredArray count] &amp;gt; 0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Swiftで書き上げにはブロック内に&lt;code&gt;(user: UserDetails) -&amp;gt; Bool in&lt;/code&gt; で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。&lt;code&gt;
+$0.isRedHot = &amp;quot;YES&amp;quot;&lt;/code&gt; 何じゃかんじゃより。。）書き上げるとこんな感じ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let myTasks = tasks?.allObjects
+let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;)
+let filteredArray = myTasks?.filter( {
+	predicate.evaluateWithObject($0)
+	} )
+return filteredArray!.count &amp;gt; 0
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>乱数を発生させる</title>
@@ -447,51 +480,6 @@ self.vew.addSubview(buttonMoodExecelent)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;を追加するだけで良い。んっ、こんだけ？だったけ？？問題無く動いているようなので、不問。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SwiftでConstantを扱う</title>
-      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
-      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
-      <description>&lt;p&gt;Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。
-ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。&lt;/p&gt;
-
-&lt;p&gt;分からないことが多々あるが、進めていかないと、、&lt;/p&gt;
-
-&lt;p&gt;さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  LocalConstants.swift
-//
-
-import Foundation
-import UIKit
-
-    let ONE_DAY = 86400
-
-struct UDKey {
-    static let DisplayColorMode = &amp;quot;color_mode&amp;quot;
-}
-
-struct Default {
-    static let ColorMode = &amp;quot;kawaii&amp;quot;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、他からのアクセスは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;のようにしています。&lt;/p&gt;
-
-&lt;p&gt;※ Swiftでのenumが掴めない。意味が分からない。&lt;/p&gt;
-
-&lt;p&gt;追記 (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;22&lt;/sub&gt;)：&lt;code&gt;import UIKit&lt;/code&gt;を追加する。&lt;/p&gt;
 </description>
     </item>
     
