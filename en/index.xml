@@ -496,13 +496,16 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;p&gt;Simple and clean Meditation Timer/Logger for meditator, by meditator.&lt;/p&gt;
 
+&lt;p&gt;available as free most of the time, become paid-version once a month for a couple of days.&lt;/p&gt;
+
 &lt;h2 id=&#34;main-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ Main View&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;・Tap other area to start to meditate.&lt;br /&gt;
-・Tap center icon to go Setting Page&lt;br /&gt;
-・Tap Bar to go History Page&lt;br /&gt;
+&lt;p&gt;・&lt;strong&gt;&amp;ldquo;Long Tap&amp;rdquo;&lt;/strong&gt; to start to meditate.&lt;br /&gt;
+・Tap top sound line to toggle quiet mode.&lt;br /&gt;
+・Tap center icon to go Setting View&lt;br /&gt;
+・Tap Bar to go History View&lt;br /&gt;
  (Bar shows your recent meditation status (62 Meditations) to see how you&amp;rsquo;re doing.  )&lt;/p&gt;
 
 &lt;p&gt;※ Two Circle button intends to use to keep track on posture when you meditate.&lt;br /&gt;
@@ -510,14 +513,14 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;h3 id=&#34;while-you-are-meditationg:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;while you are meditationg.&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;※※&lt;/strong&gt;  iPod/iPhone must &lt;strong&gt;sleep&lt;/strong&gt; or exit application in order to hear bells..&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;※※&lt;/strong&gt;  iPod/iPhone must &lt;strong&gt;sleep&lt;/strong&gt; or exit application in order to hear bells.. App use Local Notification to ring bells, not by timer running background.&lt;/p&gt;
 
 &lt;p&gt;Short and long bells ring.&lt;br /&gt;
 ◇ 30sec&lt;br /&gt;
 ◇ 5min&lt;br /&gt;
-　〜ring couple of times depending on length of meditation〜&lt;br /&gt;
+　〜ring a couple of times depending on length of meditation〜&lt;br /&gt;
 　（less than 20min：no bells、 &amp;lt;55min：1time, &amp;lt;60min：2times, &amp;lt;120min：3times, &amp;lt;180min：4times）&lt;br /&gt;
-◇ 3 min before finish&lt;br /&gt;
+◇ 3 min before finish for metta session&lt;br /&gt;
 ◇ finish&lt;/p&gt;
 
 &lt;h3 id=&#34;etc:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;etc&lt;/h3&gt;
@@ -527,33 +530,45 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;history-page:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ History Page&lt;/h2&gt;
+&lt;h2 id=&#34;history-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ History View&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-history.png&#34; alt=&#34;History View&#34; /&gt;&lt;/p&gt;
+&lt;!--![History View](/images/manual/sati-history.png)--&gt;
 
 &lt;p&gt;You can&lt;br /&gt;
-・Change Date, status of meditation by tapping list.&lt;br /&gt;
+・Change Date&lt;br /&gt;
 ・Delete&lt;br /&gt;
-・add/edit short memo.&lt;/p&gt;
+・add/edit short memo.&lt;br /&gt;
+by tapping list.&lt;/p&gt;
 
 &lt;p&gt;※ if you have memo, icon shows on right side of list. Tap icon to display memo (memo shows up for a couple of seconds.)&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-page:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ Setting Page&lt;/h2&gt;
+&lt;h2 id=&#34;setting-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ Setting View&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;・Change MeditationTime from 15 to 180min.
-・Change Background image(flower or monk)&lt;br /&gt;
-・Change finishing sound. (Japanse drum is bit subtle..you might miss when you meditate in noisy place)&lt;br /&gt;
-・Change indication icon for memo on HistoryPage&lt;/p&gt;
+&lt;p&gt;・Change MeditationTime from 15 to 180min.&lt;br /&gt;
+・Change Background image&lt;br /&gt;
+・Set Quiet mode (It rigns only on finishing.)&lt;br /&gt;
+・Change finishing sound. (Japanse drum is bit subtle..you might miss when you meditate in noisy place)&lt;/p&gt;
 
 &lt;p&gt;※ default meditation time is set 60min.&lt;/p&gt;
 
+&lt;h2 id=&#34;settings:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;Settings&lt;/h2&gt;
+
+&lt;!--![Settings](/images/manual/sati-settings.png)--&gt;
+
+&lt;p&gt;more settings can be modified on Home &amp;gt; Settings.&lt;/p&gt;
+
+&lt;p&gt;・Meditation Counter (Count down and Count up)&lt;br /&gt;
+・more detail how you want to ring notice.&lt;br /&gt;
+・Change indication icon for memo on HistoryPage
+・Calender export settings&lt;/p&gt;
+
 &lt;p&gt;※ If there are Bugs and suggestions, please contact me from &amp;ldquo;Report a Problem&amp;rdquo; or Support Page with your iOS version and model.&lt;/p&gt;
 
-&lt;h3 id=&#34;with-metta-be-always-mindfull:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□■   with metta &amp;amp; Be always mindfull  ■□&lt;/h3&gt;
+&lt;h3 id=&#34;with-metta-be-mindfull:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□■   with metta &amp;amp; be mindfull  ■□&lt;/h3&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 

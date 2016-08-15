@@ -7,8 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 10 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/sati-192/</link>
+      <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
+      <description>
+
+&lt;p&gt;さて、またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
+
+&lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
+
+&lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Duplicate function on History View.
+(In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;missing french localized string.&lt;/li&gt;
+&lt;li&gt;Localized messege after meditation. (it showed in only english)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.1</title>
@@ -126,7 +160,7 @@
 しかも、開発環境は未だマーベリックスを使っているため、iOS9向けの開発環境が未だ整っていない状態です。
 iOS9自体はブラッシュアップ的なアプデートだと認識していたので、まぁ、大丈夫だろうとたかを括ってました。&lt;/p&gt;
 
-&lt;p&gt;ネットでちょっと調べて見た所、似たような現象が起こっているのを幾つか発見しました。音の出ない瞑想タイマーではまるっきり体のなさないので、環境を整えて、なるべく速くアップデートしたいと思います。&lt;/p&gt;
+&lt;p&gt;ネットでちょっと調べて見た所、似たような現象が起こっているのを幾つか発見しました。音の出ない瞑想タイマーではまるっきり体をなさないので、環境を整えて、なるべく速くアップデートしたいと思います。&lt;/p&gt;
 
 &lt;p&gt;何か他にも不具合等が起こりましたら、連絡のほどよろしくお願いします。&lt;/p&gt;
 
@@ -493,27 +527,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png&#34; alt=&#34;New Setting&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>sati v1.5.3</title>
-      <link>http://goozenlab.com/blog/2013/07/sati-153/</link>
-      <pubDate>Sat, 13 Jul 2013 00:59:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/sati-153/</guid>
-      <description>&lt;p&gt;これといった新機能は追加してません。変更点は以下、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-13-sati-icon.png&#34; alt=&#34;Sati New Icon&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;背景イメージを選択できるようにしました。&lt;br /&gt;
-デフォルトは花、今までの仏様に戻したい方は設定より選択してください。&lt;br /&gt;
-（本当は数種から選択できるようにしたかったのですが、、イスラム模様、中世の十字架模様など。割と探したのですが良い物が見つかりませんでした。）&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;設定ページを白基調にしました。（見た目がちょっと質素ですので次のバージョンで手を加えます。）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;の３つです。&lt;/p&gt;
 </description>
     </item>
     

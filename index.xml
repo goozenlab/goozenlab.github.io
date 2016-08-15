@@ -7,8 +7,102 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 10 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/sati-192/</link>
+      <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
+      <description>
+
+&lt;p&gt;さて、またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
+
+&lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
+
+&lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Duplicate function on History View.
+(In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;missing french localized string.&lt;/li&gt;
+&lt;li&gt;Localized messege after meditation. (it showed in only english)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>推測候補表示</title>
+      <link>http://goozenlab.com/blog/2016/08/predictice-candidates/</link>
+      <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
+      <description>&lt;p&gt;日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、&lt;/p&gt;
+
+&lt;p&gt;最近、句読点を打つたびに出てくる、コレがムカッっとします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-predictive-candidates.png&#34; alt=&#34;推測候補&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から&lt;strong&gt;推測候補表示&lt;/strong&gt;オプションを&lt;strong&gt;オフ&lt;/strong&gt;にすることで消えます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。&lt;/p&gt;
+
+&lt;p&gt;あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。&lt;/p&gt;
+
+&lt;p&gt;PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>羽田発香港経由チェンマイ行き</title>
+      <link>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
+      <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
+      <description>&lt;p&gt;LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれることがあります。未だ競争が厳しいのでしょう。最安と思われる金額のさらに半額ちかい。。一瞬、見間違えかと思いました、ちょっとドキドキしちゃいましたよ。香港によれるので、シャオミの携帯を買うべ、10月ならシャオミノートの新しいやつが出てれば御の字。&lt;/p&gt;
+
+&lt;p&gt;タイ行きのチケットは9月の半ばくらいから10月にかけて安いイメージがあります。タイはちょうど雨季の終わり頃で梅雨っぽい不快な時期。酷暑期の４・５月とこの９・１０月がちょっと嫌な感じの季節だからなのかしらん。（４・5月はタイでは夏休みの時期なのでチケットはさほど安くは無いです。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-13-airticket.png&#34; alt=&#34;Air Ticket&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロモーション関連は要チェックですわな。また久しぶり円高だし買い物一泊香港とかもお勧め。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iTuneConnect レポート</title>
+      <link>http://goozenlab.com/blog/2016/08/report-a/</link>
+      <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/report-a/</guid>
+      <description>&lt;p&gt;最近毎週 iTuneConnect からレポートが送られてくる。&lt;/p&gt;
+
+&lt;p&gt;(a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロードはされない。しかも、iOS9では起動しない状況（未確認）で放置状態。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-11-a.png&#34; alt=&#34;report a&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Swiftにアプリを書き換えている最中で、Objective-Cに戻って色々直したりはどうも気が向かない。&lt;/p&gt;
+
+&lt;p&gt;内部のデータ構造も少し見直したいし、、と色々と考えてはいるのだが、、、&lt;/p&gt;
+
+&lt;p&gt;アイディアなどは割と良いと思っているので、はた、どうしたものか、、、。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.1</title>
@@ -220,7 +314,7 @@ return filteredArray!.count &amp;gt; 0
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-20-dahon-speed8.jpg&#34; alt=&#34;dajhon&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;9月の日本一時帰国時に実物を見て買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるようで、7月のなかばにヨドバシにて在庫処分なのか一気に値段が下がる。
+&lt;p&gt;9月の日本一時帰国時に実物を見てボードウォークを買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるのか単なる在庫処分なのか、7月のなかばにヨドバシにてボードウォーク上位版、スピードD８の値段が一気に下がる。（ボードウォークにちょっと色をつけた値段）
 昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。&lt;/p&gt;
 
 &lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）物好きなので、いろいろといじるのが楽しみ。&lt;/p&gt;
@@ -391,154 +485,6 @@ return filteredArray!.count &amp;gt; 0
 &lt;li&gt;アイコンの変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ノンカイからラオスへ日帰りビザラン</title>
-      <link>http://goozenlab.com/blog/2016/06/nongkhai-laos/</link>
-      <pubDate>Sun, 19 Jun 2016 15:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/nongkhai-laos/</guid>
-      <description>&lt;p&gt;ビザの更新をしにノンカイからラオスへ日帰りする。&lt;/p&gt;
-
-&lt;p&gt;ノンカイのバスターミナルに近い宿からイミグレーションまで、だいたい３キロ強。途中、中間地点付近に毎朝行くベジタリアンの定食屋があるので、8時ごろ宿を出る。そのベジ屋で朝食を食べて国境に向かう。&lt;/p&gt;
-
-&lt;p&gt;今日は日曜日、週末は混むとのネット情報ですが、人も少なく非常にスムースにタイを出国。ラオスに向かう友好橋バスは40バーツ、ちょっと待って出発する。&lt;/p&gt;
-
-&lt;p&gt;ラオス側もそんなに混雑してなく入国にはK12,000（通常時はK11,000）を払いカードをもらい、それを使ってゲートを通過。&lt;/p&gt;
-
-&lt;p&gt;本当は久しぶりにビエンチャンに行く予定でしたが、なーーんか気が向かない。往復で日本から流れてきた都営バスにK12,000を払うなら、まーここでビール(大瓶:K10,000)でも飲んで戻るべ。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;と、ラオス入国後すぐそこにあるレストランでビールを1本飲む。朝なのに飲み始めると、「まぁ早く戻ってもなんだし」と結局昼頃までだらだらと数本開ける。ちょっと人の流れが落ち着いてきたかなと思った頃にラオのお金も余っているので、免税店でお酒を補充しタイに戻る。戻りの友好橋バスはK4,000。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-19-nongkhai-laos-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;帰りもまた何かしらの税がかかるのかと思いきや、無料でした。でも、ゲート通過のためのカードは必要なので並んでカードをもらう必要があります。（タイに向かう方は割と人、車、共に多かったです。）&lt;/p&gt;
-
-&lt;p&gt;国境を越え、またベジ屋に寄り昼ご飯を食べ、宿に戻る。街中ではちょっとした祭り事が行われていました。&lt;/p&gt;
-
-&lt;p&gt;追記(6/21/2016)：ノンカイからチェンマイまで夜行VIPバスが走ってました。ウドンタニの街は好きになれそうにもないのでちょっとありがたい。ウドンから乗りましたが、チェンマイには10時間ほどで到着（20:30発、6:15着、多分ノンカイからは19時半発だと思います。前日にチケットを手配しておいたほうが吉）。夜半に結構な横揺れがありましたが、座席もほぼフルフラットになり、快適な夜行バスでした。バス料金はTHB767。&lt;/p&gt;
-
-&lt;p&gt;ただし、ビザランの予定が半月前とかに決まっているならノックエアーで金額を確認するのが良いです。バスと変わらない値段で飛べます。&lt;/p&gt;
-
-&lt;p&gt;そして、チェンライからはなんと、ノンカイよりもう少し先の、ナコンパノムまでのバスが、バス会社ソンバットより運行されています。ちょっとびっくりしました。ナコンパノムからも国境を越えバスがあった気がするので、次のビザランはこっちでも良いかなと思ったりする。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
-      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
-
-&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
-
-&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
-&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
-&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
-&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
-&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/sati-190/</link>
-      <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/sati-190/</guid>
-      <description>
-
-&lt;p&gt;2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iPhone6など大きい液晶の端末では表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
-
-&lt;p&gt;バージョンは一気に上がってますが、機能的には少しのアップデートしかありません。瞑想履歴のページはちょっとシンプルになり、表示する項目が多く無いのでちょっと貧弱です。これまた利用者の方にはあまり関係がありませんが、少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
-
-&lt;p&gt;数日中に公開されると思います。。&lt;/p&gt;
-
-&lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:68efa7ce510c269f5dabb0213c1566df&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンを少し変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
-&lt;li&gt;もしかしたらiOS9で起動しなかったならば、このリリースで動くようになります。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-sati-190.png&#34; alt=&#34;Sati 1.9.0&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ノンカイ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-nongkhai/</link>
-      <pubDate>Wed, 08 Jun 2016 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-nongkhai/</guid>
-      <description>&lt;p&gt;ナコンパノムからのんびり、ラオスとの国境に沿ってぐるっとまわり６時間半くらいかかり、これまたラオスとの国境の街ノンカイに着く。ちょっと天気が荒れ模様。ベジ屋も発見できず、夜は豆乳とパイナップル。&lt;/p&gt;
-
-&lt;p&gt;一夜明け街をぶらぶらする。観光客は少ない、遠くに国境の橋があるので宿のあるバスターミナル近くはいたって穏やか。ベジ屋も街はずれに２件発見し安堵。そして、徒歩圏内に大き目のテスコ（スーパーマーケット）があったので行ってみると、割と賑わっている。&lt;/p&gt;
-
-&lt;p&gt;うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので家を独占。多分ウドンタニより数段快適だと思う。&lt;/p&gt;
-
-&lt;p&gt;下り：20.72Mps&lt;br /&gt;
-上り：1.87Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-nongkhai.jpg&#34; alt=&#34;NongKhai Mecon River&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;被るが追記(6/21/2016)：ノンカイからチェンマイまで夜行VIPバスが走ってました。ウドンタニの街は好きになれそうにもないのでちょっとありがたい。ウドンから乗りましたが、チェンマイには10時間ほどで到着（20:30発、6:15着、多分ノンカイからは19時半発だと思います。前日にチケットを手配しておいたほうが吉）。夜半に結構な横揺れがありましたが、座席もほぼフルフラットになり、快適な夜行バスでした。バス料金はTHB767。&lt;/p&gt;
-
-&lt;p&gt;ただし、ビザランの予定が半月前とかに決まっているならノックエアーで金額を確認するのが良いです。バスと変わらない値段で飛べます。&lt;/p&gt;
-
-&lt;p&gt;そして、チェンライからはなんと、ノンカイよりもう少し先の、ナコンパノムまでのバスが、バス会社ソンバットより運行されています。ちょっとびっくりしました。&lt;/p&gt;
 </description>
     </item>
     

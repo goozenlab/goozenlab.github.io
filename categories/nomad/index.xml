@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 20 Jul 2016 20:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Aug 2016 13:15:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>羽田発香港経由チェンマイ行き</title>
+      <link>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
+      <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
+      <description>&lt;p&gt;LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれることがあります。未だ競争が厳しいのでしょう。最安と思われる金額のさらに半額ちかい。。一瞬、見間違えかと思いました、ちょっとドキドキしちゃいましたよ。香港によれるので、シャオミの携帯を買うべ、10月ならシャオミノートの新しいやつが出てれば御の字。&lt;/p&gt;
+
+&lt;p&gt;タイ行きのチケットは9月の半ばくらいから10月にかけて安いイメージがあります。タイはちょうど雨季の終わり頃で梅雨っぽい不快な時期。酷暑期の４・５月とこの９・１０月がちょっと嫌な感じの季節だからなのかしらん。（４・5月はタイでは夏休みの時期なのでチケットはさほど安くは無いです。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-13-airticket.png&#34; alt=&#34;Air Ticket&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロモーション関連は要チェックですわな。また久しぶり円高だし買い物一泊香港とかもお勧め。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>旅の伴侶</title>
@@ -24,7 +40,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-20-dahon-speed8.jpg&#34; alt=&#34;dajhon&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;9月の日本一時帰国時に実物を見て買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるようで、7月のなかばにヨドバシにて在庫処分なのか一気に値段が下がる。
+&lt;p&gt;9月の日本一時帰国時に実物を見てボードウォークを買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるのか単なる在庫処分なのか、7月のなかばにヨドバシにてボードウォーク上位版、スピードD８の値段が一気に下がる。（ボードウォークにちょっと色をつけた値段）
 昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。&lt;/p&gt;
 
 &lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）物好きなので、いろいろといじるのが楽しみ。&lt;/p&gt;
@@ -348,63 +364,6 @@
 &lt;p&gt;下り：3.68Mps&lt;br /&gt;
 上り：3.86Mps&lt;br /&gt;
 (&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>タイにてプリペイド</title>
-      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
-      <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
-      <description>
-
-&lt;p&gt;タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。
-タイも物騒になってきているので、Sim購入時に本人確認が必要。
-私はショッピングモールにあるサービスセンターで &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-sim.html&#34;&gt;Smartphone SIM (49baht) &lt;/a&gt; を購入。4G対応の携帯を持っていたら&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/happy-4g-sim.html&#34;&gt;こちら&lt;/a&gt; もよいかも。&lt;/p&gt;
-
-&lt;h2 id=&#34;サービスの確認:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;サービスの確認&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;*102*9#&lt;/code&gt; 電話番号と使用日数&lt;br /&gt;
-&lt;code&gt;*101*9#&lt;/code&gt; 残高と有効期限&lt;br /&gt;
-&lt;code&gt;*101*1*9#&lt;/code&gt; データ通信の詳細（SMSで送られてくる）&lt;/p&gt;
-
-&lt;h2 id=&#34;データ通信:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信&lt;/h2&gt;
-
-&lt;p&gt;色々な&lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/recommended-add-on.html&#34;&gt;パッケージ&lt;/a&gt; があるようだけど、私には容量制限のある &lt;a href=&#34;http://www.dtac.co.th/en/prepaid/products/add-on-happy-facebook.html&#34;&gt;Volume-based Internet&lt;/a&gt; の３種類で充分。（自分は使っていないけど、Facebookは使い放題らしい）&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*862*9#&lt;/code&gt; ３時間 15 baht&lt;br /&gt;
-&lt;code&gt;*104*852*9#&lt;/code&gt; １週間有効：400MB 59 baht&lt;br /&gt;
-&lt;code&gt;*104*853*9#&lt;/code&gt; １ヶ月有効：1.5GB 199 baht&lt;/p&gt;
-
-&lt;p&gt;期間内で足りなくなった時には&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*104*308*9#&lt;/code&gt; 100MB追加, 5baht/day&lt;/p&gt;
-
-&lt;h2 id=&#34;金額の追加-top-up:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;金額の追加：TOP UP&lt;/h2&gt;
-
-&lt;p&gt;コンビニやサービスセンターでやってもらえます。&lt;/p&gt;
-
-&lt;p&gt;リフィルカード：&lt;code&gt;*100*リフィルカードのシリアル番号ID番号*9#&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;利用有効期限延長:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;利用有効期限延長&lt;/h2&gt;
-
-&lt;p&gt;SIMカードを有効にしてから90日以上経過するか、もしくは通算で200バーツ以上を消費した人が対象。
-２バーツで３０日延長が可能になる。これはちょっと嬉しいサービス。最長１年。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;*113*30*9#&lt;/code&gt; 30日延長（2 baht)&lt;br /&gt;
-&lt;code&gt;*113*90*9#&lt;/code&gt; 90日延長（6 baht)&lt;br /&gt;
-&lt;code&gt;*113*180*9#&lt;/code&gt; 180日延長（12 baht)&lt;/p&gt;
-
-&lt;h2 id=&#34;データ通信速度:c61053fc82253eeddf8b8ac827cd785f&#34;&gt;データ通信速度&lt;/h2&gt;
-
-&lt;p&gt;ちなみに計ってみると、思った以上に使える。インターネットラジオくらいは余裕。&lt;/p&gt;
-
-&lt;p&gt;下り：4.26Mps&lt;br /&gt;
-上り：1.46Mps&lt;br /&gt;
-(iPhone4Sにて &lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
-
-&lt;p&gt;※ 2015/10/30現在の情報です。そして通話は全くしないので詳細は不明。あしからず。。&lt;/p&gt;
 </description>
     </item>
     

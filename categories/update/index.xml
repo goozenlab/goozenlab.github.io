@@ -7,8 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 10 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sati v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/sati-192/</link>
+      <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
+      <description>
+
+&lt;p&gt;さて、またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
+
+&lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
+
+&lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Duplicate function on History View.
+(In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;missing french localized string.&lt;/li&gt;
+&lt;li&gt;Localized messege after meditation. (it showed in only english)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.1</title>
@@ -462,18 +496,6 @@
 &lt;/ol&gt;
 
 &lt;p&gt;の作業になります。リトリスト間データーは共有されませんので、ライトバージョンはアンインストールする事をお勧めします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>dandori v2.6.4</title>
-      <link>http://goozenlab.com/blog/2015/04/dandori-264/</link>
-      <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/dandori-264/</guid>
-      <description>&lt;p&gt;またまた、ケアレスミスのホットフィックスです。&lt;/p&gt;
-
-&lt;p&gt;タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。&lt;/p&gt;
 </description>
     </item>
     

@@ -7,8 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 16 Feb 2015 15:18:00 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/a/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iTuneConnect レポート</title>
+      <link>http://goozenlab.com/blog/2016/08/report-a/</link>
+      <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/report-a/</guid>
+      <description>&lt;p&gt;最近毎週 iTuneConnect からレポートが送られてくる。&lt;/p&gt;
+
+&lt;p&gt;(a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロードはされない。しかも、iOS9では起動しない状況（未確認）で放置状態。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-11-a.png&#34; alt=&#34;report a&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Swiftにアプリを書き換えている最中で、Objective-Cに戻って色々直したりはどうも気が向かない。&lt;/p&gt;
+
+&lt;p&gt;内部のデータ構造も少し見直したいし、、と色々と考えてはいるのだが、、、&lt;/p&gt;
+
+&lt;p&gt;アイディアなどは割と良いと思っているので、はた、どうしたものか、、、。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>(a)をようやくリリース</title>

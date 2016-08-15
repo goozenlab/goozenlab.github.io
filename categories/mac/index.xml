@@ -7,8 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 01 Jun 2016 22:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 14 Aug 2016 09:40:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>推測候補表示</title>
+      <link>http://goozenlab.com/blog/2016/08/predictice-candidates/</link>
+      <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
+      <description>&lt;p&gt;日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、&lt;/p&gt;
+
+&lt;p&gt;最近、句読点を打つたびに出てくる、コレがムカッっとします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-predictive-candidates.png&#34; alt=&#34;推測候補&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から&lt;strong&gt;推測候補表示&lt;/strong&gt;オプションを&lt;strong&gt;オフ&lt;/strong&gt;にすることで消えます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。&lt;/p&gt;
+
+&lt;p&gt;あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。&lt;/p&gt;
+
+&lt;p&gt;PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MBP15/2016の勝手な推測</title>
@@ -723,56 +747,6 @@ end tell
 &lt;p&gt;で、画面はこのようになります。お試しあれ。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>コンピューターの名前</title>
-      <link>http://goozenlab.com/blog/2011/12/computer-naming/</link>
-      <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/12/computer-naming/</guid>
-      <description>
-
-&lt;p&gt;外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。&lt;/p&gt;
-
-&lt;p&gt;マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2010-11-11-computer-name.png&#34; alt=&#34;Naming Computer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。&lt;/p&gt;
-
-&lt;p&gt;ぜひコンピューターに名前をつけましょう。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;私はしっかり名前をつける人で、分野別で付けてます。&lt;/p&gt;
-
-&lt;h3 id=&#34;computer-ビールの名前:682875cc1839b260a5c5a174e0f7e800&#34;&gt;Computer：ビールの名前&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MacBookPro15：gallo(グアテマラのビール)&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;黒Thinkpad：Guiness&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;白iBook：Hoegarden&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;緑Vaio P：Ebisu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;※実家の父母機はアサガオとヒマワリ。ファイルサーバーはモス（苔）という名前。&lt;/p&gt;
-
-&lt;h3 id=&#34;ipod-kindle-まめ類:682875cc1839b260a5c5a174e0f7e800&#34;&gt;iPod / Kindle：まめ類&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;赤iPod Nano：Azuki&lt;/li&gt;
-&lt;li&gt;iPod：DaizuとEdamame。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ストレージ-つまみ:682875cc1839b260a5c5a174e0f7e800&#34;&gt;ストレージ：つまみ&lt;/h3&gt;
-
-&lt;p&gt;moroQ、 umeQ、ikaMaru、など。&lt;/p&gt;
-
-&lt;p&gt;だから何なのといわれればそれまでかもしれませんが、、&lt;/p&gt;
-
-&lt;p&gt;ペット気分でかわいいコンピューターに名前をつけてみてはどうでしょうか。（ストレージとかに愛着が湧くとは思いませんけどね。）&lt;/p&gt;
 </description>
     </item>
     
