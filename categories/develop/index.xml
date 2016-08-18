@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 04 Aug 2016 18:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>イフレット</title>
+      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
+      <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
+      <description>&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;br /&gt;
+&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
+
+if let lock  = event.isLocked as? Bool {
+    cell.isLocked = lock
+} else {
+    cell.isLocked = false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
+
+guard let lock  = event.isLocked as? Bool else { return }
+cell.isLocked = lock
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# xx = yy ??
+cell.isLocked = event.isLocked as? Bool ?? false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>filteredArrayUsingPredicate</title>
@@ -397,25 +436,6 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 
 &lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NotificationSettings認証設定</title>
-      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
-      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
-      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
-
-&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
-  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
-  categories: nil))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）&lt;/p&gt;
 </description>
     </item>
     
