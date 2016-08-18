@@ -7,8 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 16 Aug 2016 13:15:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitterを復活</title>
+      <link>http://goozenlab.com/blog/2016/08/tweet/</link>
+      <pubDate>Tue, 16 Aug 2016 13:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/tweet/</guid>
+      <description>&lt;p&gt;つぶやきたい事がある訳では無いけれど、twitterを復活させました。(
+アカウント：goozenlab)&lt;/p&gt;
+
+&lt;p&gt;まぁ、広報活動の一つとして考えてます。面白いことや、ためになることは書きませんので、そこのところは悪しからず。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.2</title>
@@ -18,7 +31,7 @@
       <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
       <description>
 
-&lt;p&gt;さて、またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
+&lt;p&gt;またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
 
 &lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
 
@@ -459,32 +472,6 @@ return filteredArray!.count &amp;gt; 0
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>tapas v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/tapas-190/</link>
-      <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/tapas-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai:776b68eace8f43e5bce5801672cee7b2&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
-&lt;li&gt;詳細ページにて入力時のレイアウト調整&lt;/li&gt;
-&lt;li&gt;リストページにて長いタイトル名をしっかりと表示&lt;/li&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
