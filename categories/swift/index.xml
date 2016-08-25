@@ -7,8 +7,220 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 18 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lite VersionとAdmob</title>
+      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <description>
+
+&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
+&lt;li&gt;スキームの変更&lt;/li&gt;
+&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
+&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
+&lt;li&gt;アイコンの追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
+
+&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;admobの追加:b595817e990569d4557e8d14af10d808&#34;&gt;AdMobの追加&lt;/h2&gt;
+
+&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
+
+&lt;h3 id=&#34;フレームワーク:b595817e990569d4557e8d14af10d808&#34;&gt;フレームワーク&lt;/h3&gt;
+
+&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AdSupport&lt;/li&gt;
+&lt;li&gt;AudioToolbox&lt;/li&gt;
+&lt;li&gt;AVFoundation&lt;/li&gt;
+&lt;li&gt;CoreGraphics&lt;/li&gt;
+&lt;li&gt;CoreTelephony&lt;/li&gt;
+&lt;li&gt;EventKit&lt;/li&gt;
+&lt;li&gt;EventKitUI&lt;/li&gt;
+&lt;li&gt;MessageUI&lt;/li&gt;
+&lt;li&gt;StoreKit&lt;/li&gt;
+&lt;li&gt;SystemConfiguration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;コーディング:b595817e990569d4557e8d14af10d808&#34;&gt;コーディング&lt;/h3&gt;
+
+&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#if LITE
+ 	// ライトバージョンでのみ行う処理
+#else
+ 	// フルバージョンでの処理
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+#if LITE
+import GoogleMobileAds
+#endif
+
+class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
+
+    #if LITE
+    /// The banner view.
+    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
+    var bannerView: GADBannerView!
+    #endif
+    
+    .......
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        setNavigationBarGestures()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.tableView.rowHeight = Cell.Height
+
+      .......
+
+        #if LITE
+            loadAdmob()
+        #endif
+     }
+
+	.......
+	
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+//  Admob.swift
+//
+
+import UIKit
+import GoogleMobileAds
+
+extension ListTableViewController: GADBannerViewDelegate {
+    
+    func loadAdmob() {
+        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = GADApplicationID
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+//	For Debug      
+//        let request:GADRequest = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.loadRequest(request)
+        bannerView.loadRequest(GADRequest())
+    }
+        
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
+        let adMobView = bannerView
+        
+        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
+        self.bannerView.frame = CGRectMake(0.0, 0.0,
+                                           adMobView.frame.size.width, adMobView.frame.size.height)
+        self.tableView.tableHeaderView = self.bannerView
+        UIView.commitAnimations()
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
+        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
+        tableView.tableHeaderView = bannerView        
+        UIView.commitAnimations()
+    }
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>イフレット</title>
@@ -16,8 +228,9 @@
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;br /&gt;
-&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
 
 &lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
 
@@ -463,41 +676,6 @@ Class not found, using default NSManagedObject instead.
    
 }
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>UIButttonをSwiftで書く</title>
-      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
-      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
-      <description>&lt;p&gt;UIButttonをSwiftでプログラム的に書くと&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-buttonMoodExecelent.tag = TagButtonMood.Execelent
-buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside)
-buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal)
-
-self.vew.addSubview(buttonMoodExecelent)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストタイトルの時には&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;テキストの色を変えるには、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もっと細かく、フォント等も弄りたい時には、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;setAttributedTitle:forState&lt;/code&gt;を使うとさ。&lt;/p&gt;
 
 &lt;p&gt;※ ソースは拙作のohayoからコピペ。&lt;/p&gt;
 </description>

@@ -7,8 +7,313 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 18 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lite VersionとAdmob</title>
+      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <description>
+
+&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
+&lt;li&gt;スキームの変更&lt;/li&gt;
+&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
+&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
+&lt;li&gt;アイコンの追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
+
+&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;admobの追加:b595817e990569d4557e8d14af10d808&#34;&gt;AdMobの追加&lt;/h2&gt;
+
+&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
+
+&lt;h3 id=&#34;フレームワーク:b595817e990569d4557e8d14af10d808&#34;&gt;フレームワーク&lt;/h3&gt;
+
+&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AdSupport&lt;/li&gt;
+&lt;li&gt;AudioToolbox&lt;/li&gt;
+&lt;li&gt;AVFoundation&lt;/li&gt;
+&lt;li&gt;CoreGraphics&lt;/li&gt;
+&lt;li&gt;CoreTelephony&lt;/li&gt;
+&lt;li&gt;EventKit&lt;/li&gt;
+&lt;li&gt;EventKitUI&lt;/li&gt;
+&lt;li&gt;MessageUI&lt;/li&gt;
+&lt;li&gt;StoreKit&lt;/li&gt;
+&lt;li&gt;SystemConfiguration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;コーディング:b595817e990569d4557e8d14af10d808&#34;&gt;コーディング&lt;/h3&gt;
+
+&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#if LITE
+ 	// ライトバージョンでのみ行う処理
+#else
+ 	// フルバージョンでの処理
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+#if LITE
+import GoogleMobileAds
+#endif
+
+class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
+
+    #if LITE
+    /// The banner view.
+    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
+    var bannerView: GADBannerView!
+    #endif
+    
+    .......
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        setNavigationBarGestures()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.tableView.rowHeight = Cell.Height
+
+      .......
+
+        #if LITE
+            loadAdmob()
+        #endif
+     }
+
+	.......
+	
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+//  Admob.swift
+//
+
+import UIKit
+import GoogleMobileAds
+
+extension ListTableViewController: GADBannerViewDelegate {
+    
+    func loadAdmob() {
+        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = GADApplicationID
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+//	For Debug      
+//        let request:GADRequest = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.loadRequest(request)
+        bannerView.loadRequest(GADRequest())
+    }
+        
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
+        let adMobView = bannerView
+        
+        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
+        self.bannerView.frame = CGRectMake(0.0, 0.0,
+                                           adMobView.frame.size.width, adMobView.frame.size.height)
+        self.tableView.tableHeaderView = self.bannerView
+        UIView.commitAnimations()
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
+        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
+        tableView.tableHeaderView = bannerView        
+        UIView.commitAnimations()
+    }
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>句読点で変換</title>
+      <link>http://goozenlab.com/blog/2016/08/convert-punctuation/</link>
+      <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
+      <description>&lt;p&gt;しばし句読点で変換のオプションをオンして使っています。&lt;/p&gt;
+
+&lt;p&gt;今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。&lt;/p&gt;
+
+&lt;p&gt;ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。&lt;/p&gt;
+
+&lt;p&gt;贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）&lt;/p&gt;
+
+&lt;p&gt;人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.8.0</title>
+      <link>http://goozenlab.com/blog/2016/08/dandori-280/</link>
+      <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/dandori-280/</guid>
+      <description>
+
+&lt;p&gt;まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。&lt;/p&gt;
+
+&lt;p&gt;さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。&lt;/p&gt;
+
+&lt;p&gt;ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。&lt;/p&gt;
+
+&lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+
+&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-dandori-280.png&#34; alt=&#34;Dandori Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/cosper-192/</link>
+      <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/cosper-192/</guid>
+      <description>
+
+&lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>イフレット</title>
@@ -16,8 +321,9 @@
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;br /&gt;
-&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
 
 &lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
 
@@ -318,148 +624,6 @@ return filteredArray!.count &amp;gt; 0
 &lt;ul&gt;
 &lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.9.1</title>
-      <link>http://goozenlab.com/blog/2016/07/ohayo-291/</link>
-      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
-      <description>
-
-&lt;p&gt;快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし
-た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。&lt;/p&gt;
-
-&lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>旅の伴侶</title>
-      <link>http://goozenlab.com/blog/2016/07/dahon-speed8/</link>
-      <pubDate>Wed, 20 Jul 2016 20:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/dahon-speed8/</guid>
-      <description>
-
-&lt;p&gt;7月も下旬になりました。滞在中のタイでは大型連休。雨季入り祝日のカオパンサーが過ぎ、雨季に突入です。&lt;/p&gt;
-
-&lt;p&gt;2016年バージョンのダホンスピードD8をノマドの伴侶にします。本当はごっつい旅仕様チャリンコを購入し、本格派チャリダーデビューをしようと思っていたのだけど、どんどん気持ちが萎縮し、楽に持ち運びができる折りたためる自転車に落ち着く。大は小を兼ねるというが、、ここはこぢんまりと。。長距離移動はバスで、ヘタレな感じで良いやと、、。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-20-dahon-speed8.jpg&#34; alt=&#34;dajhon&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;9月の日本一時帰国時に実物を見てボードウォークを買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるのか単なる在庫処分なのか、7月のなかばにヨドバシにてボードウォーク上位版、スピードD８の値段が一気に下がる。（ボードウォークにちょっと色をつけた値段）
-昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。&lt;/p&gt;
-
-&lt;p&gt;色は悩んだ末、人気のなさそうなマットゴールド。他の色を合わせるのは難しい色だけど、シックで悪くないと思う。（スポーツサイトを見ていて、ふと、色が野球チームの日ハムと似ているなと、、、、、嫌いなチームでないから良いのだけど。。）物好きなので、いろいろといじるのが楽しみ。&lt;/p&gt;
-
-&lt;p&gt;観光ビザの必要がなくなったインドネシアのバリ島でも一周するかな。。自転車自体乗るのが数十年ぶり、、、、楽しみだか、怖いんだかです。。&lt;/p&gt;
-
-&lt;p&gt;日本でのリリースは少し違ってくるかもしれませんが、2017年版はこんな感じなるようです。（９速化＋SRAM）&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;dahon-speed-d9-street:1d2f6b2e9e343ef38720e27932f8a7f2&#34;&gt;Dahon Speed D9 Street&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Wheel Size: 20″&lt;/li&gt;
-&lt;li&gt;Weight: 29 lbs (&lt;strong&gt;13.1 kg&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Folded Size: 31.1″ x 25.6″ x 12.6″ (&lt;strong&gt;65 x 32 x 79 cm&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Frame: Lightweight 4130 Cro Mo, Lattice Forged Hinge，w/ ViseGrip Technology&lt;/li&gt;
-&lt;li&gt;Fork: Smooth Riding and Stable Hi-Ten Steel Blades and Steerer&lt;/li&gt;
-&lt;li&gt;Handlepost: Forged Alloy Radius Telescope w/ Fusion Technology&lt;/li&gt;
-&lt;li&gt;Drivetrain: &lt;strong&gt;SRAM X5 9-speed&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Wheels: 20″ aluminum rims w/ 20 Hole front and 28 Hole rear Hub&lt;/li&gt;
-&lt;li&gt;Tires: Schwalbe &lt;strong&gt;Road Cruiser&lt;/strong&gt; 20″ x 1.75″&lt;/li&gt;
-&lt;li&gt;Brakes: &lt;strong&gt;Avid FR5 brake levers, Promax V-Brakes&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cosper v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/07/cosper-190/</link>
-      <pubDate>Thu, 07 Jul 2016 05:57:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/cosper-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。&lt;/p&gt;
-
-&lt;p&gt;ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学のプールで泳いだりして健康的なここ最近です。&lt;/p&gt;
-
-&lt;p&gt;ちょっと新しいことを思いついたりして、作業がグジャグジャになりつつ、どんどんコードがスパゲティ化していて気分が良くないのですが、、、取り急ぎ機能の追加はせずにSwiftによる移行のみで申請です。もーーーしかしたらアップデートでデータが消えるかもしれません。多分大丈夫だとは思うが、ちょっと検証できず。シミュレータでは問題無しなのだが、、。&lt;/p&gt;
-
-&lt;p&gt;技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai:50fa04c585d42c29e6268a799f6160a2&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ダークモード&lt;/li&gt;
-&lt;li&gt;お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。)&lt;/li&gt;
-&lt;li&gt;詳細ページレイアウトの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fix:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Fix&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;金額と項目の名前が長さにより表示に不具合が出てしまう件を修正&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;透明度を削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-09-cosper_icon-190.jpg&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>chroniumosをインストール</title>
-      <link>http://goozenlab.com/blog/2016/06/chroniumos/</link>
-      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/chroniumos/</guid>
-      <description>&lt;p&gt;暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし、ChromeアプリのChromebook Recovery Utilityをインストール。使っていないUSBStickにイメージを焼く。サイトにあるインストールドキュメントに沿いスムースに行く。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-28-chroniumos.png&#34; alt=&#34;Chroniumos&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;インストールの途中にグーグルアカウントを入れろと出てくる。無しではインストールできないよう。。使用に関してはゲストアカウントでも可能のようだが、ふと、これは使うとなると、かなりグーグルと親密にならないといかんことになるのに気づく、、使用時の検索やネットでの利用履歴も含め明け渡さなければいけない事に。。。違和感。でもこれ売れているんよね、、。。&lt;/p&gt;
-
-&lt;p&gt;まぁーー、よろし。&lt;/p&gt;
-
-&lt;p&gt;インストールを中断し、debianでも困ったことはないのでそのままにしておく。そのうちフェイスブックのネットブックとか出るかもしれん、と思ったりする。&lt;/p&gt;
 </description>
     </item>
     

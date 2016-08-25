@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>イフレット</title>
-  <meta name="description" content="イフレット">
+  <title>dandori v2.8.0</title>
+  <meta name="description" content="dandori v2.8.0">
   <meta name="author" content="jin">
 
   
@@ -66,7 +66,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2016-08-18</time>
+		  <time class="">2016-08-22</time>
 		  
 		  
 		  |
@@ -74,54 +74,55 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com/categories/swift">swift</a> <a href="http://goozenlab.com/categories/develop">develop</a> 
+		  categories:<a href="http://goozenlab.com/categories/dandori">dandori</a> <a href="http://goozenlab.com/categories/update">update</a> 
 		  
 
 		  
 
 		</p>
-		<h5>イフレット</h5>
+		<h5>dandori v2.8.0</h5>
 	  </div>
 
 	  <div class="post">
-		<p><code>fatal error: unexpectedly found nil while unwrapping an Optional value</code></p>
+		
 
-<p>nil値が戻ってくる可能性のある時の処理方法。</p>
+<p>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。</p>
 
-<p>tableCellに値を渡す時を例に、</p>
+<p>さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。</p>
 
-<pre><code># if let xx  = yy { } else { }
+<p>ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。</p>
 
-if let lock  = event.isLocked as? Bool {
-    cell.isLocked = lock
-} else {
-    cell.isLocked = false
-}
-</code></pre>
+<p>わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。</p>
 
-<p>で新しく、<code>guard let</code> なんてのが出てきて、こんな風に書き換える事ができ、（<code>else</code>以降の役割がよくわからない。）</p>
+<h1 id="change-log:3361928c0d8ab45446f8667ac1200a43">Change Log</h1>
 
-<pre><code># guard let xx = y else {]
+<h2 id="2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43">[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai</h2>
 
-guard let lock  = event.isLocked as? Bool else { return }
-cell.isLocked = lock
+<h3 id="changed:3361928c0d8ab45446f8667ac1200a43">Changed</h3>
 
-</code></pre>
+<ul>
+<li>アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）</li>
+<li>iOS9以降でのサポート</li>
+</ul>
 
-<p>そしてしかも、簡略した（?：ニル、？：なの）<code>xx = yy ??</code> もある。</p>
+<h3 id="removed:3361928c0d8ab45446f8667ac1200a43">Removed</h3>
 
-<pre><code># xx = yy ??
-cell.isLocked = event.isLocked as? Bool ?? false
-</code></pre>
+<ul>
+<li>フラグの透明度を削除。（多分ほとんど使われていないと思う）</li>
+</ul>
 
-<p>基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。</p>
+<h3 id="注:3361928c0d8ab45446f8667ac1200a43">注</h3>
+
+<p>新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。</p>
+
+<p><img src="/images/2016-08-22-dandori-280.png" alt="Dandori Icon" /></p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/if-let\/';
-    var disqus_title = 'イフレット';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/if-let\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/dandori-280\/';
+    var disqus_title = 'dandori v2.8.0';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/dandori-280\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

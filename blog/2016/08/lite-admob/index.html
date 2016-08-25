@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Lite VersionとAdmob</title>
+  <meta name="description" content="Lite VersionとAdmob">
+  <meta name="author" content="jin">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com/css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/custom.css">
+  
+  
+  <script src="http://goozenlab.com/js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com/css/tomorrow.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/goods" class=""> goods </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/dahon" class=""> dahon </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/mac" class=""> mac </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/develop" class=""> dev </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/update" class=""> update </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2016-08-25</time>
+		  
+		  
+		  |
+		  
+		  
+
+		  
+		  categories:<a href="http://goozenlab.com/categories/swift">swift</a> <a href="http://goozenlab.com/categories/develop">develop</a> 
+		  
+
+		  
+
+		</p>
+		<h5>Lite VersionとAdmob</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)</p>
+
+<ol>
+<li>ターゲットのコピーと調整</li>
+<li>スキームの変更</li>
+<li>新しいInfo.plistのリネーム、変更と移動</li>
+<li>コンパイル時のマクロ設定</li>
+<li>アイコンの追加</li>
+</ol>
+
+<p>が主な作業の流れになります。</p>
+
+<hr />
+
+<p>まずはプロジェクトのメインターゲットを Duplicate します。</p>
+
+<p><img src="/images/2016-08-22-lite-duplicate.png" alt="Duplicate Target" /></p>
+
+<p><img src="/images/2016-08-22-lite-duplicate-dailog.png" alt="" /></p>
+
+<p><img src="/images/2016-08-22-lite-rename-target.png" alt="" /></p>
+
+<p><img src="/images/2016-08-22-lite-manage-scheme.png" alt="" /></p>
+
+<p>スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。</p>
+
+<p><img src="/images/2016-08-22-lite-add-scheme.png" alt="" /></p>
+
+<p><img src="/images/2016-08-22-lite-delete-scheme.png" alt="" /></p>
+
+<p>Info.plistのコピーの <code>cosper copy-Info.plist</code> はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。</p>
+
+<p><img src="/images/2016-08-22-lite-rename.png" alt="" /></p>
+
+<p><img src="/images/2016-08-22-lite-taget-info-copy.png" alt="" /></p>
+
+<p>そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。</p>
+
+<p><img src="/images/2016-08-22-lite-target-info-rename.png" alt="" /></p>
+
+<p>そして、ターゲットの設定をします。（バンドル名やその他必要なもの）</p>
+
+<p><img src="/images/2016-08-22-lite-target-general.png" alt="" /></p>
+
+<hr />
+
+<p>最後に、コンパイル時のマクロ設定をします。<code>#if LITE</code> で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。</p>
+
+<p>マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて <code>LITE=1</code> を、</p>
+
+<p><img src="/images/2016-08-22-lite-macro-lite.png" alt="" /></p>
+
+<p>フルバージョンの方には <code>LITE=0</code> を書き込みます。選択すると入力画面が出てきます。</p>
+
+<p><img src="/images/2016-08-22-lite-macro-full.png" alt="" /></p>
+
+<p>そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。</p>
+
+<p><img src="/images/2016-08-22-lite-macro-flag.png" alt="" /></p>
+
+<hr />
+
+<p>アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。</p>
+
+<p><img src="/images/2016-08-22-lite-add-icon.png" alt="" /></p>
+
+<p><img src="/images/2016-08-22-lite-icon-resource.png" alt="" /></p>
+
+<p>これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。</p>
+
+<h2 id="admobの追加:b595817e990569d4557e8d14af10d808">AdMobの追加</h2>
+
+<p>iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに <code>target 'xx lite' do ...</code> で切り分ければいいのかな。）</p>
+
+<h3 id="フレームワーク:b595817e990569d4557e8d14af10d808">フレームワーク</h3>
+
+<p>必要なフレームワークは、以下。</p>
+
+<ul>
+<li>GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに<strong>コピー</strong> (ターゲットをライトバージョンのみにするのを忘れずに）</li>
+</ul>
+
+<p><img src="/images/2016-08-24-admob-copy-framework.png" alt="" /></p>
+
+<p>プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。</p>
+
+<p><img src="/images/2016-08-24-admob-add-frameworks.png" alt="" /></p>
+
+<ul>
+<li>AdSupport</li>
+<li>AudioToolbox</li>
+<li>AVFoundation</li>
+<li>CoreGraphics</li>
+<li>CoreTelephony</li>
+<li>EventKit</li>
+<li>EventKitUI</li>
+<li>MessageUI</li>
+<li>StoreKit</li>
+<li>SystemConfiguration</li>
+</ul>
+
+<p>以上で準備完了。実装していきます。</p>
+
+<hr />
+
+<h3 id="コーディング:b595817e990569d4557e8d14af10d808">コーディング</h3>
+
+<p>マクロを使って、以下の形で処理を分けることができます。</p>
+
+<pre><code>#if LITE
+ 	// ライトバージョンでのみ行う処理
+#else
+ 	// フルバージョンでの処理
+#endif
+</code></pre>
+
+<p>下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。</p>
+
+<pre><code>import UIKit
+import CoreData
+#if LITE
+import GoogleMobileAds
+#endif
+
+class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
+
+    #if LITE
+    /// The banner view.
+    let GADApplicationID = &quot;ca-app-pub-xxxxxxx/xxxxxxx&quot;
+    var bannerView: GADBannerView!
+    #endif
+    
+    .......
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        setNavigationBarGestures()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.tableView.rowHeight = Cell.Height
+
+      .......
+
+        #if LITE
+            loadAdmob()
+        #endif
+     }
+
+	.......
+	
+</code></pre>
+
+<p>アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。</p>
+
+<p><img src="/images/2016-08-24-admob-extensrion.png" alt="" /></p>
+
+<pre><code>//
+//  Admob.swift
+//
+
+import UIKit
+import GoogleMobileAds
+
+extension ListTableViewController: GADBannerViewDelegate {
+    
+    func loadAdmob() {
+        print(&quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&quot;)
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = GADApplicationID
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+//	For Debug      
+//        let request:GADRequest = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.loadRequest(request)
+        bannerView.loadRequest(GADRequest())
+    }
+        
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        print(&quot;Admob:adViewDidReceiveAd&quot;)
+        let adMobView = bannerView
+        
+        UIView.beginAnimations(&quot;AdBannerMoveOnScreen&quot;, context: nil)
+        self.bannerView.frame = CGRectMake(0.0, 0.0,
+                                           adMobView.frame.size.width, adMobView.frame.size.height)
+        self.tableView.tableHeaderView = self.bannerView
+        UIView.commitAnimations()
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        UIView.beginAnimations(&quot;ClearBannerView&quot;, context: nil)
+        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
+        tableView.tableHeaderView = bannerView        
+        UIView.commitAnimations()
+    }
+    
+}
+</code></pre>
+
+<p>割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）</p>
+
+  	  	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/lite-admob\/';
+    var disqus_title = 'Lite VersionとAdmob';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/lite-admob\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<p class="footnote">
+		   Using <a href="http://gohugo.io/">Hugo</a> with nofancy theme. Hosted on githubPage.
+		  
+		  All right reserved by <a href="mailto:goozenlab@gmail.com">jin.chiangmai.thailand</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

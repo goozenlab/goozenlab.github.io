@@ -56,7 +56,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;Mou&#34; /&gt;
-※下のスクリーンショットはこのFileをつかってます（マークダウンの編集ソフトはかなり優秀でおすすめの &lt;a href=&#34;http://25.io/mou/&#34;&gt;Mou&lt;/a&gt;。が最近商売かかってます）。&lt;/p&gt;
+※下のスクリーンショットはこのFileをつかってます（マークダウンの編集ソフトはかなり優秀でおすすめの &lt;a href=&#34;http://25.io/mou/&#34;&gt;Mou&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Main&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory.png&#34; alt=&#34;Main category&#34; /&gt;
@@ -498,7 +498,8 @@
       <guid>http://goozenlab.com/iapp/sati/</guid>
       <description>
 
-&lt;p&gt;瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。&lt;/p&gt;
+&lt;p&gt;瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。
+良いきっかけ作りに、お役に立てれば幸い。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-sati.jpg&#34; alt=&#34;Sati Image&#34; /&gt;&lt;/p&gt;
 
@@ -531,7 +532,7 @@
 
 &lt;p&gt;アラートを閉じ、&lt;strong&gt;電源ボタンを押してスリープ状態&lt;/strong&gt;にしてください。&lt;/p&gt;
 
-&lt;p&gt;・タップでキャンセル&lt;/p&gt;
+&lt;p&gt;・タップでキャンセル：30分以内での中断はカウントされません。&lt;/p&gt;
 
 &lt;p&gt;※ 瞑想中に長短の鐘がなります。&lt;br /&gt;
 ◇ 開始音：30秒後&lt;br /&gt;
@@ -574,14 +575,14 @@
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;ホーム-設定-サティ:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ ホーム＞設定＞サティ&lt;/h2&gt;
+&lt;h2 id=&#34;ホーム-設定-サティ:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ ホーム ＞ 設定 ＞ サティ&lt;/h2&gt;
 
 &lt;p&gt;瞑想のより細かい設定と、カレンダーへの書出しの設定をする事ができます。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;・瞑想近況のオン・オフ：外周にうっすらと入っているライン&lt;br /&gt;
- ・瞑想の音設定（音のオン・オフや選択ができます）&lt;br /&gt;
+ ・瞑想の音設定（音のオン・オフ、終了音の選択ができます）&lt;br /&gt;
 　◇ 開始音のオン・オフ：30秒後&lt;br /&gt;
 　◇ 五分後のオン・オフ&lt;br /&gt;
 　◇ 瞑想時間に合わせてなる途中の音のオン・オフ&lt;br /&gt;

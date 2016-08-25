@@ -7,8 +7,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 13 Apr 2015 22:20:00 +0545</lastBuildDate>
+    <lastBuildDate>Mon, 22 Aug 2016 22:20:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/dandori/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>dandori v2.8.0</title>
+      <link>http://goozenlab.com/blog/2016/08/dandori-280/</link>
+      <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/dandori-280/</guid>
+      <description>
+
+&lt;p&gt;まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。&lt;/p&gt;
+
+&lt;p&gt;さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。&lt;/p&gt;
+
+&lt;p&gt;ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。&lt;/p&gt;
+
+&lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+
+&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-dandori-280.png&#34; alt=&#34;Dandori Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>dandori v2.6.4</title>

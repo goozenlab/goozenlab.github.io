@@ -7,8 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 30 Jul 2016 05:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Aug 2016 05:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/cosper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosper v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/cosper-192/</link>
+      <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/cosper-192/</guid>
+      <description>
+
+&lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>cosper v1.9.1</title>
@@ -258,29 +290,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Update for Navbar</title>
-      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
-      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
-      <description>&lt;p&gt;一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。
-これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。
-今まで手に付けてなかったのが不思議なくらいです。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;設定方法は、&lt;/p&gt;
-
-&lt;p&gt;アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。&lt;/p&gt;
-
-&lt;p&gt;頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）&lt;/p&gt;
-
-&lt;p&gt;今週中にはポコポコとアップされると思います。
-セールもやっていますので、なにとぞ、よろしく。&lt;/p&gt;
 </description>
     </item>
     

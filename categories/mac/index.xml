@@ -7,8 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 14 Aug 2016 09:40:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Aug 2016 19:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>句読点で変換</title>
+      <link>http://goozenlab.com/blog/2016/08/convert-punctuation/</link>
+      <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
+      <description>&lt;p&gt;しばし句読点で変換のオプションをオンして使っています。&lt;/p&gt;
+
+&lt;p&gt;今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。&lt;/p&gt;
+
+&lt;p&gt;ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。&lt;/p&gt;
+
+&lt;p&gt;贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）&lt;/p&gt;
+
+&lt;p&gt;人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>推測候補表示</title>
@@ -721,32 +741,6 @@ end tell
 &lt;p&gt;を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの&lt;a href=&#34;http://news.mynavi.jp/column/osxhack/060/index.html&#34;&gt;こちらの記事&lt;/a&gt;を参照してください。&lt;/p&gt;
 
 &lt;p&gt;お次ぎはUSBオーディオの選択/解除かな。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>眼精疲労と白黒モニター</title>
-      <link>http://goozenlab.com/blog/2012/11/gray-mode/</link>
-      <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/11/gray-mode/</guid>
-      <description>&lt;p&gt;最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-preference.png&#34; alt=&#34;Gray Preference&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）&lt;/p&gt;
-
-&lt;p&gt;※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）&lt;/p&gt;
-
-&lt;p&gt;文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。&lt;/p&gt;
-
-&lt;!--エロい画像を見るとなんか昭和な古き良きエロ本のようです。--&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、画面はこのようになります。お試しあれ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-11-18-gray-screen.png&#34; alt=&#34;Gray Screen&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

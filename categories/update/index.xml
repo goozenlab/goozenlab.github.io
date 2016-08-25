@@ -7,8 +7,81 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Aug 2016 22:20:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>dandori v2.8.0</title>
+      <link>http://goozenlab.com/blog/2016/08/dandori-280/</link>
+      <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/dandori-280/</guid>
+      <description>
+
+&lt;p&gt;まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。&lt;/p&gt;
+
+&lt;p&gt;さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。&lt;/p&gt;
+
+&lt;p&gt;ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。&lt;/p&gt;
+
+&lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
+&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+
+&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-dandori-280.png&#34; alt=&#34;Dandori Icon&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.9.2</title>
+      <link>http://goozenlab.com/blog/2016/08/cosper-192/</link>
+      <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/cosper-192/</guid>
+      <description>
+
+&lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.2</title>
@@ -447,55 +520,6 @@
 &lt;p&gt;追記：8/22にアプストアにアップされました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-08-16-arakol.jpg&#34; alt=&#34;アラコル湖&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.8.0</title>
-      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
-      <pubDate>Thu, 25 Jun 2015 07:00:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
-      <description>
-
-&lt;p&gt;中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;追加機能:6a9b7eb3f63da5cc45b6f2405945c2e7&#34;&gt;追加機能&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。&lt;/p&gt;
-
-&lt;p&gt;バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSが&lt;strong&gt;iOS8以降&lt;/strong&gt;になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist lite 復活</title>
-      <link>http://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
-      <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
-      <description>&lt;p&gt;リトリストのライト判を復活させました。&lt;/p&gt;
-
-&lt;p&gt;かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョン言って良いのか分からないけれど、機能はそのままフルバージョンと同等です。
-&lt;strong&gt;広告&lt;/strong&gt;がつくのが唯一の違いです。（ちょっとライト版でのみ起きるバグもあるのですが、、、放置、すいません。）&lt;/p&gt;
-
-&lt;p&gt;広告が邪魔でフルバージョンへ移行したいユーザーの方は、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ライトバージョンの設定より項目の書出し&lt;/li&gt;
-&lt;li&gt;フルバージョンのインストール&lt;/li&gt;
-&lt;li&gt;フルバージョンを立ち上げ、新規項目を追加（+ボタンより）&lt;/li&gt;
-&lt;li&gt;取込みボタンでライトバージョンで書き出した項目を読み込む。&lt;/li&gt;
-&lt;li&gt;ライトバージョンの削除&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;の作業になります。リトリスト間データーは共有されませんので、ライトバージョンはアンインストールする事をお勧めします。&lt;/p&gt;
 </description>
     </item>
     

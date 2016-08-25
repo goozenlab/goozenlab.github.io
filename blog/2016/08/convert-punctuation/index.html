@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>イフレット</title>
-  <meta name="description" content="イフレット">
+  <title>句読点で変換</title>
+  <meta name="description" content="句読点で変換">
   <meta name="author" content="jin">
 
   
@@ -66,7 +66,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2016-08-18</time>
+		  <time class="">2016-08-23</time>
 		  
 		  
 		  |
@@ -74,54 +74,34 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com/categories/swift">swift</a> <a href="http://goozenlab.com/categories/develop">develop</a> 
+		  categories:<a href="http://goozenlab.com/categories/mac">mac</a> <a href="http://goozenlab.com/categories/tips">Tips</a> 
 		  
 
 		  
 
 		</p>
-		<h5>イフレット</h5>
+		<h5>句読点で変換</h5>
 	  </div>
 
 	  <div class="post">
-		<p><code>fatal error: unexpectedly found nil while unwrapping an Optional value</code></p>
+		<p>しばし句読点で変換のオプションをオンして使っています。</p>
 
-<p>nil値が戻ってくる可能性のある時の処理方法。</p>
+<p>今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。</p>
 
-<p>tableCellに値を渡す時を例に、</p>
+<p>ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。</p>
 
-<pre><code># if let xx  = yy { } else { }
+<p>贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）</p>
 
-if let lock  = event.isLocked as? Bool {
-    cell.isLocked = lock
-} else {
-    cell.isLocked = false
-}
-</code></pre>
+<p>人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。</p>
 
-<p>で新しく、<code>guard let</code> なんてのが出てきて、こんな風に書き換える事ができ、（<code>else</code>以降の役割がよくわからない。）</p>
-
-<pre><code># guard let xx = y else {]
-
-guard let lock  = event.isLocked as? Bool else { return }
-cell.isLocked = lock
-
-</code></pre>
-
-<p>そしてしかも、簡略した（?：ニル、？：なの）<code>xx = yy ??</code> もある。</p>
-
-<pre><code># xx = yy ??
-cell.isLocked = event.isLocked as? Bool ?? false
-</code></pre>
-
-<p>基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。</p>
+<p><img src="/images/2016-08-14-japanese-setting.png" alt="日本語設定" /></p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/if-let\/';
-    var disqus_title = 'イフレット';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/if-let\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/convert-punctuation\/';
+    var disqus_title = '句読点で変換';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/convert-punctuation\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
