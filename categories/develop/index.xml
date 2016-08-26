@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 25 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>StatusBarメモ</title>
+      <link>http://goozenlab.com/blog/2016/08/statusbar-memo/</link>
+      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
+      <description>&lt;p&gt;アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。&lt;/p&gt;
+
+&lt;p&gt;まずは全体的な設定を、info.plistにて &lt;code&gt;View Controller-based status bar appearance&lt;/code&gt; を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-26-statusbar-info.png&#34; alt=&#34;StatusBar on Info.plist&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;info.plistに直接書き込むなら、以下を追加。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt;
+	&amp;lt;false/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;そして、変更したいビューの適当なところ、&lt;code&gt;ViewDidLoad&lt;/code&gt; に追加コード。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarHidden = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もしくは、オーバーライドしても動くはず。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
+    return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを &lt;code&gt;.LightContent&lt;/code&gt; に変更する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarStyle = .LightContent
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Lite VersionとAdmob</title>
@@ -128,13 +167,13 @@
 &lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#if LITE
- 	// ライトバージョンでのみ行う処理
+ 	// ライトバージョンで行う処理
 #else
  	// フルバージョンでの処理
 #endif
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。&lt;/p&gt;
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;import UIKit
 import CoreData
@@ -565,32 +604,6 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Swift Programming Language に書いてあるらしいので読むべ。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NSDate() = [NSDate date]</title>
-      <link>http://goozenlab.com/blog/2015/03/nsdate-swift/</link>
-      <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
-      <description>&lt;p&gt;NSDateでの &lt;code&gt;[NSDate date]&lt;/code&gt; はシンプルにイニシャライザーに統合され？、Swiftでは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でよろしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を、Swiftで書いてみると、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、&lt;br /&gt;
-正しくは、&lt;code&gt;Double&lt;/code&gt;でエラーは消える。こうゆう所は割と厳しいのね。。&lt;/p&gt;
 </description>
     </item>
     

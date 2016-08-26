@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 25 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>StatusBarメモ</title>
+      <link>http://goozenlab.com/blog/2016/08/statusbar-memo/</link>
+      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
+      <description>&lt;p&gt;アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。&lt;/p&gt;
+
+&lt;p&gt;まずは全体的な設定を、info.plistにて &lt;code&gt;View Controller-based status bar appearance&lt;/code&gt; を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-26-statusbar-info.png&#34; alt=&#34;StatusBar on Info.plist&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;info.plistに直接書き込むなら、以下を追加。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt;
+	&amp;lt;false/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;そして、変更したいビューの適当なところ、&lt;code&gt;ViewDidLoad&lt;/code&gt; に追加コード。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarHidden = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もしくは、オーバーライドしても動くはず。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
+    return true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを &lt;code&gt;.LightContent&lt;/code&gt; に変更する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarStyle = .LightContent
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Lite VersionとAdmob</title>
@@ -128,13 +167,13 @@
 &lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#if LITE
- 	// ライトバージョンでのみ行う処理
+ 	// ライトバージョンで行う処理
 #else
  	// フルバージョンでの処理
 #endif
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。&lt;/p&gt;
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;import UIKit
 import CoreData
@@ -602,28 +641,6 @@ return filteredArray!.count &amp;gt; 0
 &lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cosper v1.9.1</title>
-      <link>http://goozenlab.com/blog/2016/07/cosper-191/</link>
-      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/cosper-191/</guid>
-      <description>
-
-&lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:a2870191ae7b179ca421589da463a56f&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai:a2870191ae7b179ca421589da463a56f&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;fix:a2870191ae7b179ca421589da463a56f&#34;&gt;Fix&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
