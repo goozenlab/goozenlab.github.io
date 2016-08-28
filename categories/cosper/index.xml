@@ -20,11 +20,11 @@
 
 &lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+&lt;h3 id=&#34;change&#34;&gt;Change&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
@@ -32,7 +32,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
@@ -52,11 +52,11 @@
 
 &lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:a2870191ae7b179ca421589da463a56f&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai:a2870191ae7b179ca421589da463a56f&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;fix:a2870191ae7b179ca421589da463a56f&#34;&gt;Fix&lt;/h3&gt;
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
@@ -80,18 +80,18 @@
 
 &lt;p&gt;技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai:50fa04c585d42c29e6268a799f6160a2&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ダークモード&lt;/li&gt;
 &lt;li&gt;お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。)&lt;/li&gt;
@@ -99,13 +99,13 @@
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fix:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Fix&lt;/h3&gt;
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;金額と項目の名前が長さにより表示に不具合が出てしまう件を修正&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;透明度を削除&lt;/li&gt;

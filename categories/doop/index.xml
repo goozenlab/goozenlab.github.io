@@ -26,11 +26,11 @@
 
 &lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai:e9031c825c07b1883ab7762d773eb65a&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
@@ -38,13 +38,13 @@
 &lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;透明度を削除&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
+&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 </description>
@@ -82,7 +82,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-18-doop-v180.jpg&#34; alt=&#34;追加機能&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;追加機能:6a9b7eb3f63da5cc45b6f2405945c2e7&#34;&gt;追加機能&lt;/h2&gt;
+&lt;h2 id=&#34;追加機能&#34;&gt;追加機能&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;履歴ページへひとっ飛び&lt;/li&gt;

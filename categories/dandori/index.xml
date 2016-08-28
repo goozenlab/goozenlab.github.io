@@ -26,24 +26,24 @@
 
 &lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 
@@ -97,7 +97,7 @@
 
 &lt;p&gt;タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。&lt;/p&gt;
 
-&lt;h3 id=&#34;オマケ:93776ebb9fdd00b9c85eda7c741fe2ad&#34;&gt;オマケ&lt;/h3&gt;
+&lt;h3 id=&#34;オマケ&#34;&gt;オマケ&lt;/h3&gt;
 
 &lt;p&gt;マイナーアップデートで申請しましたが、じつは&lt;strong&gt;リマインダーへの書出し&lt;/strong&gt;の隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。&lt;/p&gt;
 

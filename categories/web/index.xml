@@ -26,7 +26,7 @@
 
 &lt;p&gt;（鍵の登録を行っておくとよいです）&lt;/p&gt;
 
-&lt;h2 id=&#34;github-と-bitbucket-の登録:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
+&lt;h2 id=&#34;github-と-bitbucket-の登録&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ rm -rf public/
 $ git init
@@ -53,7 +53,7 @@ Checking connectivity... done.
 $ 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;プレビュー方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;プレビュー方法&lt;/h2&gt;
+&lt;h2 id=&#34;プレビュー方法&#34;&gt;プレビュー方法&lt;/h2&gt;
 
 &lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内の&lt;strong&gt;Note &amp;amp; Setting&lt;/strong&gt; ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
 
@@ -79,7 +79,7 @@ hugo server --buildDrafts --theme=default
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;デプロイの方法:08d78064a6f6cfd09fd68d36f9666ec4&#34;&gt;デプロイの方法&lt;/h2&gt;
+&lt;h2 id=&#34;デプロイの方法&#34;&gt;デプロイの方法&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;deploy.sh&lt;/code&gt;&lt;/p&gt;
 
@@ -179,7 +179,7 @@ paginate = 28
 
 &lt;p&gt;移行のためHugoを&lt;code&gt;nofancy&lt;/code&gt;を基にして色々と調整しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;テンプレート:3664db9b35118110eccce63f298c0cae&#34;&gt;テンプレート&lt;/h2&gt;
+&lt;h2 id=&#34;テンプレート&#34;&gt;テンプレート&lt;/h2&gt;
 
 &lt;p&gt;このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。&lt;/p&gt;
 
@@ -202,7 +202,7 @@ footer: true
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template.png&#34; alt=&#34;Hugo Template&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template2.png&#34; alt=&#34;Hugo Template&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;yaml内のカスタム項目を取り込む:3664db9b35118110eccce63f298c0cae&#34;&gt;Yaml内のカスタム項目を取り込む&lt;/h2&gt;
+&lt;h2 id=&#34;yaml内のカスタム項目を取り込む&#34;&gt;Yaml内のカスタム項目を取り込む&lt;/h2&gt;
 
 &lt;p&gt;yaml内にあるスマートバナー広告で使う&lt;code&gt;appid: &amp;quot;929324285&amp;quot;&lt;/code&gt;は
 以下のようにして &lt;code&gt;partials/header.html&lt;/code&gt; に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、&lt;code&gt;.Params&lt;/code&gt;を使うのが正解のようです。&lt;/p&gt;
@@ -313,7 +313,7 @@ footer: true
 
 &lt;!-- more --&gt;
 
-&lt;h2 id=&#34;カスタマイズ:21257750e8065c12a5ae55d727c21f06&#34;&gt;カスタマイズ&lt;/h2&gt;
+&lt;h2 id=&#34;カスタマイズ&#34;&gt;カスタマイズ&lt;/h2&gt;
 
 &lt;p&gt;オクトプレスでは表示するページのヘッダーに &lt;code&gt;appid:####&lt;/code&gt; を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）&lt;/p&gt;
 

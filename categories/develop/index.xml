@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 26 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title> 半透明のモーダルビュー</title>
+      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
+      <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
+      <description>
+
+&lt;p&gt;iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。&lt;/p&gt;
+
+&lt;h2 id=&#34;半透明のモーダルビュー設定&#34;&gt;半透明のモーダルビュー設定&lt;/h2&gt;
+
+&lt;p&gt;まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-overfull.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。&lt;/p&gt;
+
+&lt;p&gt;二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { 
+        if segue.identifier == &amp;quot;toSettingView&amp;quot; {
+            if let destinationVC = segue.destinationViewController as? SettingViewController {
+                destinationVC.modalPresentationStyle = 
+                        UIModalPresentationStyle.OverCurrentContext
+                        // UIModalPresentationStyle.OverFullScreen
+                destinationVC.delegate = self
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-presentation.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>StatusBarメモ</title>
@@ -127,11 +169,11 @@
 
 &lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;admobの追加:b595817e990569d4557e8d14af10d808&#34;&gt;AdMobの追加&lt;/h2&gt;
+&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
 
 &lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
 
-&lt;h3 id=&#34;フレームワーク:b595817e990569d4557e8d14af10d808&#34;&gt;フレームワーク&lt;/h3&gt;
+&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
 
 &lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
 
@@ -162,7 +204,219 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;コーディング:b595817e990569d4557e8d14af10d808&#34;&gt;コーディング&lt;/h3&gt;
+&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
+
+&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#if LITE
+    // ライトバージョンで行う処理
+#else
+    // フルバージョンでの処理
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+#if LITE
+import GoogleMobileAds
+#endif
+
+class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
+
+    #if LITE
+    /// The banner view.
+    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
+    var bannerView: GADBannerView!
+    #endif
+    
+    .......
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        setNavigationBarGestures()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.tableView.rowHeight = Cell.Height
+
+      .......
+
+        #if LITE
+            loadAdmob()
+        #endif
+     }
+
+    .......
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+//  Admob.swift
+//
+
+import UIKit
+import GoogleMobileAds
+
+extension ListTableViewController: GADBannerViewDelegate {
+    
+    func loadAdmob() {
+        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = GADApplicationID
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+//  For Debug      
+//        let request:GADRequest = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.loadRequest(request)
+        bannerView.loadRequest(GADRequest())
+    }
+        
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
+        let adMobView = bannerView
+        
+        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
+        self.bannerView.frame = CGRectMake(0.0, 0.0,
+                                           adMobView.frame.size.width, adMobView.frame.size.height)
+        self.tableView.tableHeaderView = self.bannerView
+        UIView.commitAnimations()
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
+        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
+        tableView.tableHeaderView = bannerView        
+        UIView.commitAnimations()
+    }
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lite VersionとAdmob</title>
+      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <description>
+
+&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
+&lt;li&gt;スキームの変更&lt;/li&gt;
+&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
+&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
+&lt;li&gt;アイコンの追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
+
+&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
+
+&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
+
+&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
+
+&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AdSupport&lt;/li&gt;
+&lt;li&gt;AudioToolbox&lt;/li&gt;
+&lt;li&gt;AVFoundation&lt;/li&gt;
+&lt;li&gt;CoreGraphics&lt;/li&gt;
+&lt;li&gt;CoreTelephony&lt;/li&gt;
+&lt;li&gt;EventKit&lt;/li&gt;
+&lt;li&gt;EventKitUI&lt;/li&gt;
+&lt;li&gt;MessageUI&lt;/li&gt;
+&lt;li&gt;StoreKit&lt;/li&gt;
+&lt;li&gt;SystemConfiguration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
 
 &lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
 
@@ -302,6 +556,46 @@ cell.isLocked = event.isLocked as? Bool ?? false
     </item>
     
     <item>
+      <title>イフレット</title>
+      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
+      <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
+      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
+
+&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
+
+if let lock  = event.isLocked as? Bool {
+    cell.isLocked = lock
+} else {
+    cell.isLocked = false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
+
+guard let lock  = event.isLocked as? Bool else { return }
+cell.isLocked = lock
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# xx = yy ??
+cell.isLocked = event.isLocked as? Bool ?? false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>filteredArrayUsingPredicate</title>
       <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
@@ -342,7 +636,7 @@ return filteredArray!.count &amp;gt; 0
       <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
       <description>
 
-&lt;h2 id=&#34;rand:dc776821942516eb940a9f207846a213&#34;&gt;rand()&lt;/h2&gt;
+&lt;h2 id=&#34;rand&#34;&gt;rand()&lt;/h2&gt;
 
 &lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
 
@@ -350,7 +644,7 @@ return filteredArray!.count &amp;gt; 0
  rand()%300;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;arc4random-uniform:dc776821942516eb940a9f207846a213&#34;&gt;arc4random_uniform()&lt;/h2&gt;
+&lt;h2 id=&#34;arc4random-uniform&#34;&gt;arc4random_uniform()&lt;/h2&gt;
 
 &lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
 
@@ -497,113 +791,6 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 &lt;p&gt;StoryBoardを使っている時は以下。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ShakeはUIEventで</title>
-      <link>http://goozenlab.com/blog/2015/03/swift-shake/</link>
-      <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/swift-shake/</guid>
-      <description>&lt;p&gt;色々と書き込んでいたシェイクの判別は&lt;code&gt;UIEvent&lt;/code&gt;を使うようになります。
-えらく簡単になりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        self.becomeFirstResponder()
-    }
-    
-    override func canBecomeFirstResponder() -&amp;gt; Bool {
-        return true
-    }
-    
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
-        if(event.subtype == UIEventSubtype.MotionShake) {
-            // 
-            // 処理
-            //
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※まぁ、間違っちゃーいね〜な。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>performSelectorは無くなる</title>
-      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
-      <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
-      <description>&lt;p&gt;ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSObject cancelPreviousPerformRequestsWithTarget:self
-                                         selector:@selector(notifiyUpdate)
-                                           object:nil];
-[self performSelector:@selector(notifiyUpdate)
-           withObject:nil
-           afterDelay:kUpdateCellShortInterval];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、以下のコードでは動かない。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil)
- NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、&lt;code&gt;cancelPreviousPerformRequestsWithTarget&lt;/code&gt;が無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private var tapTimer: NSTimer?
-
-// 処理
-cancelTimer()
-tapTimer = NSTimer.scheduledTimerWithTimeInterval(Interval.UpdateCell, target: self, selector:  notify, userInfo: nil, repeats: false)
-//
-
-func cancelTimer() {
-    if tappingTimer != nil {
-        tappingTimer!.invalidate()
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>printlnは気楽</title>
-      <link>http://goozenlab.com/blog/2015/03/println-swift/</link>
-      <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/println-swift/</guid>
-      <description>&lt;p&gt;NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 &lt;code&gt;__PRETTY_FUNCTION__&lt;/code&gt; は&lt;/p&gt;
-
-&lt;p&gt;Swift では &lt;code&gt;__FILE__, __FUNCTION__, __LINE__ and __COLUMN__&lt;/code&gt; のようになります。
-使えそうなのは&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;__FILE__&lt;/code&gt;  ：ファイル名&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__LINE__&lt;/code&gt; ：ライン番号&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__FUNCTION__&lt;/code&gt; ：ファンクション名&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;そして、値を表示したい時はそのままかそのままか&lt;code&gt;\(...)&lt;/code&gt;で囲み適当に放り込む。もはや%dや%@は必要ないらしい。
-小賢しいウォーニングも出なくなる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;println(__FUNCTION__, self.frame)
-println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;戻りは以下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(function, (0.0,706.0,414.0,30.0))
-(function, screen is (0.0,706.0,414.0,30.0))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Swift Programming Language に書いてあるらしいので読むべ。&lt;/p&gt;
 </description>
     </item>
     

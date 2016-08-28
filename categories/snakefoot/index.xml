@@ -7,8 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 13 Aug 2016 13:15:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2016 13:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ヒラギノ角ゴシック</title>
+      <link>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
+      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
+      <description>&lt;p&gt;2016-08-28-hiragino-sans-w0&lt;/p&gt;
+
+&lt;p&gt;ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。&lt;/p&gt;
+
+&lt;p&gt;で、偶然見つけた日本語フォント &lt;code&gt;ヒラギノ角ゴシック：Hiragino Sans&lt;/code&gt; がかなりいいです。
+シエラで付いてきているのかと思ったら、El Capitanにも入っていました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-w1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以下のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-input.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;何はともあれ、早く新しいMBPを出してほしい。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>羽田発香港経由チェンマイ行き</title>
@@ -40,13 +67,13 @@
 
 &lt;p&gt;で、検索オプションの出番。&lt;/p&gt;
 
-&lt;h3 id=&#34;除外:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;除外&lt;/h3&gt;
+&lt;h3 id=&#34;除外&#34;&gt;除外&lt;/h3&gt;
 
 &lt;p&gt;特定のサイト、キーワードを検索の結果より除外するには、&lt;code&gt;-site:URL&lt;/code&gt; にてサイト&lt;code&gt;-WORD&lt;/code&gt; でキーワードを除外。&lt;/p&gt;
 
 &lt;p&gt;例 -site:rakuten.co.jp -site:shopping.yahoo.co.jp -site:amazon.co.jp&lt;/p&gt;
 
-&lt;h3 id=&#34;特定のサイトアドレス:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;特定のサイトアドレス&lt;/h3&gt;
+&lt;h3 id=&#34;特定のサイトアドレス&#34;&gt;特定のサイトアドレス&lt;/h3&gt;
 
 &lt;p&gt;例えば、個人のレビューを読みたい時などには、良くあるブログサイトのサイトアドレス、/blog を含めて検索するとよかったりします。&lt;/p&gt;
 
@@ -180,7 +207,7 @@
 
 &lt;p&gt;ビシュケクから一気にオシュというのも味気ないし、移動時間も１０時間くらいと少々長い。景観も良いらしいし途中一息を入れるため、貯水池のあるトクトグルによることにする。&lt;/p&gt;
 
-&lt;h2 id=&#34;トクトグル:5d8316bf58476e40ceb3ebc3db62e0dc&#34;&gt;トクトグル&lt;/h2&gt;
+&lt;h2 id=&#34;トクトグル&#34;&gt;トクトグル&lt;/h2&gt;
 
 &lt;p&gt;ビシュケクのオシュバザール南にて、シェアータクシーに乗る。&lt;/p&gt;
 
@@ -192,7 +219,7 @@
 
 &lt;p&gt;街をフラフラ歩く。かなり昔に発行された旅行人に載っている使われていない観覧車は未だ健在。湖まで散歩しようと歩くが途中６・７匹の野良犬が通りを占領、人通りも少ないし断念。別に悔しくはない。&lt;/p&gt;
 
-&lt;h2 id=&#34;オシュ行きマルシュルートカ:5d8316bf58476e40ceb3ebc3db62e0dc&#34;&gt;オシュ行きマルシュルートカ&lt;/h2&gt;
+&lt;h2 id=&#34;オシュ行きマルシュルートカ&#34;&gt;オシュ行きマルシュルートカ&lt;/h2&gt;
 
 &lt;p&gt;次のオシュ行きは宿の人曰くAM６：３０発という事で５：００に起き、６：１５分ごろ向かうも、ターミナル横にある商店のおじさん曰く、７：１５発と教えてくれる。現地の若い男の子もその時に待っていたので、最近変更？なのか、近くのベンチでビシュケク行きのタクシーの運ちゃんと身振手振談笑し時間をつぶす。（ミニバスは一日に一本でこれを逃すとシャアタクシーになる。速いが値段も相応。）&lt;/p&gt;
 
@@ -215,7 +242,7 @@
 
 &lt;p&gt;基地問題も日本の政府はアメリカの言いなり。メディアは自民党政権による雁字搦めなのか、こういった会見については距離を置いている感じがある。&lt;/p&gt;
 
-&lt;h2 id=&#34;県民の願いは基地撤去:33387b84cd1fc40f0c31f53688bfcc99&#34;&gt;「県民の願いは基地撤去」&lt;/h2&gt;
+&lt;h2 id=&#34;県民の願いは基地撤去&#34;&gt;「県民の願いは基地撤去」&lt;/h2&gt;
 
 &lt;p&gt;日本外国特派員協会主催の会見、&lt;a href=&#34;https://www.youtube.com/watch?v=aHC98qy7UPo&#34;&gt;動画&lt;/a&gt; と &lt;a href=&#34;http://blogos.com/article/122316/&#34;&gt;書き起こし&lt;/a&gt;。
 以下抜粋。&lt;/p&gt;
@@ -253,7 +280,7 @@
 
 &lt;p&gt;（「帰りたいけど、、でも、帰れない〜〜、帰りたくない〜〜」、なんて歌があったような。。ほんとそんな心境。）&lt;/p&gt;
 
-&lt;h2 id=&#34;自由と平和のための京大有志の会-声明書:d46e116d731c9998988dbe8f298b5163&#34;&gt;自由と平和のための京大有志の会「声明書」&lt;/h2&gt;
+&lt;h2 id=&#34;自由と平和のための京大有志の会-声明書&#34;&gt;自由と平和のための京大有志の会「声明書」&lt;/h2&gt;
 
 &lt;p&gt;戦争は、防衛を名目に始まる。&lt;br /&gt;
 戦争は、兵器産業に富をもたらす。&lt;br /&gt;
@@ -352,7 +379,7 @@
 
 &lt;p&gt;滞在５日目の明日ビシケクに向かおうと思っていたけれど、折角なので数日滞在を延ばす事にする。&lt;/p&gt;
 
-&lt;h2 id=&#34;外国人登録について-外務省のページより:b99ca994b81e63074036a5cdc1c12b6a&#34;&gt;外国人登録について（外務省のページより）&lt;/h2&gt;
+&lt;h2 id=&#34;外国人登録について-外務省のページより&#34;&gt;外国人登録について（外務省のページより）&lt;/h2&gt;
 
 &lt;p&gt;カザフスタンに5日以上（出入国日を含む）滞在する外国人には、外国人登録の義務があります
 (「登録手続きの概要」を参考としてください。)。&lt;br /&gt;
@@ -361,48 +388,9 @@
 
 &lt;p&gt;※ こりゃ、容赦ないですな。。。&lt;/p&gt;
 
-&lt;h2 id=&#34;追記-ビシケク:b99ca994b81e63074036a5cdc1c12b6a&#34;&gt;追記@ビシケク&lt;/h2&gt;
+&lt;h2 id=&#34;追記-ビシケク&#34;&gt;追記@ビシケク&lt;/h2&gt;
 
 &lt;p&gt;他の旅行者曰く、滞在登録の必要は無いとの事。そして、2015/07/15までのビザ免除も引き続き継続されるらしい。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ウルムチからカザフスタンへの国際列車</title>
-      <link>http://goozenlab.com/blog/2015/06/train-urumuqi-almaty/</link>
-      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/train-urumuqi-almaty/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-29-ticket.jpg&#34; alt=&#34;Train Ticket&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ウルムチからの国際列車簡易メモ:0e16a203fca5645982f427c3a2d2d2ea&#34;&gt;ウルムチからの国際列車簡易メモ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;26:30（北京時間）：出発は土曜日の24:21発だが、25:30になっても出発せず。寝てしまったので分からないが、多分、26:30頃出発。&lt;/li&gt;
-&lt;li&gt;09:15（ウルムチ時間）：阿拉山口到着：荷物は丸裸、コンピューターや携帯、デジカメも弄られ怪しいファイルを一生懸命探してくれます。お金を弄られるのは気持ちがよくないので現金やマネーベルトは身に付けておくとよい。ボディーチェックは無い。&lt;/li&gt;
-&lt;li&gt;11:15：出国手続き終了&lt;/li&gt;
-&lt;li&gt;11:30：カザフ入国&lt;/li&gt;
-&lt;li&gt;13:00：入国手続き終了&lt;/li&gt;
-&lt;li&gt;13:20：台車交換のため小休憩（食事や両替ができる。ひさしぶりに外の空気に触れる）&lt;/li&gt;
-&lt;li&gt;14:45：出発&lt;/li&gt;
-&lt;li&gt;日没ごろ、アルマティとアスタナ行きに分かれる？少々停止&lt;/li&gt;
-&lt;li&gt;05:00：強引に起こされる&lt;/li&gt;
-&lt;li&gt;06:00：アルマティ 1に到着し45分間くらい停車&lt;/li&gt;
-&lt;li&gt;07:10：アルマティ 2に到着&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;おまけ:0e16a203fca5645982f427c3a2d2d2ea&#34;&gt;おまけ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ウルムチ駅に行くのは23時以降で問題ない。&lt;/li&gt;
-&lt;li&gt;チケットチェック時にパスポートを預け、出国カードと一緒に戻ってくる。&lt;/li&gt;
-&lt;li&gt;チケットはカードと交換されるが、今ひとつそのカードの意味が分からない。もらった時は、これで食事でもできるかと思った。&lt;/li&gt;
-&lt;li&gt;食堂車はない、お湯のみ。&lt;/li&gt;
-&lt;li&gt;車窓は。。。途中に通る湖の大きさにちょっとビックリ、水平線も少し高く見える。動物が見えたりはしません。。&lt;/li&gt;
-&lt;li&gt;チケット代は手数料込みで804元。（昔の歩き方より安くなっている）&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

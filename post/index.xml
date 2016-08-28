@@ -7,8 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 26 Aug 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2016 13:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ヒラギノ角ゴシック</title>
+      <link>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
+      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
+      <description>&lt;p&gt;2016-08-28-hiragino-sans-w0&lt;/p&gt;
+
+&lt;p&gt;ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。&lt;/p&gt;
+
+&lt;p&gt;で、偶然見つけた日本語フォント &lt;code&gt;ヒラギノ角ゴシック：Hiragino Sans&lt;/code&gt; がかなりいいです。
+シエラで付いてきているのかと思ったら、El Capitanにも入っていました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-w1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以下のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-input.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;何はともあれ、早く新しいMBPを出してほしい。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title> 半透明のモーダルビュー</title>
+      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
+      <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
+      <description>
+
+&lt;p&gt;iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。&lt;/p&gt;
+
+&lt;h2 id=&#34;半透明のモーダルビュー設定&#34;&gt;半透明のモーダルビュー設定&lt;/h2&gt;
+
+&lt;p&gt;まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-overfull.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。&lt;/p&gt;
+
+&lt;p&gt;二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { 
+        if segue.identifier == &amp;quot;toSettingView&amp;quot; {
+            if let destinationVC = segue.destinationViewController as? SettingViewController {
+                destinationVC.modalPresentationStyle = 
+                        UIModalPresentationStyle.OverCurrentContext
+                        // UIModalPresentationStyle.OverFullScreen
+                destinationVC.delegate = self
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-presentation.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>StatusBarメモ</title>
@@ -127,11 +196,11 @@
 
 &lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;admobの追加:b595817e990569d4557e8d14af10d808&#34;&gt;AdMobの追加&lt;/h2&gt;
+&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
 
 &lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
 
-&lt;h3 id=&#34;フレームワーク:b595817e990569d4557e8d14af10d808&#34;&gt;フレームワーク&lt;/h3&gt;
+&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
 
 &lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
 
@@ -162,7 +231,219 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;コーディング:b595817e990569d4557e8d14af10d808&#34;&gt;コーディング&lt;/h3&gt;
+&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
+
+&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#if LITE
+    // ライトバージョンで行う処理
+#else
+    // フルバージョンでの処理
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+#if LITE
+import GoogleMobileAds
+#endif
+
+class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
+
+    #if LITE
+    /// The banner view.
+    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
+    var bannerView: GADBannerView!
+    #endif
+    
+    .......
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        setNavigationBarGestures()
+        self.tableView.showsVerticalScrollIndicator = false
+        self.tableView.rowHeight = Cell.Height
+
+      .......
+
+        #if LITE
+            loadAdmob()
+        #endif
+     }
+
+    .......
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+//  Admob.swift
+//
+
+import UIKit
+import GoogleMobileAds
+
+extension ListTableViewController: GADBannerViewDelegate {
+    
+    func loadAdmob() {
+        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerView.adUnitID = GADApplicationID
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+//  For Debug      
+//        let request:GADRequest = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        bannerView.loadRequest(request)
+        bannerView.loadRequest(GADRequest())
+    }
+        
+    func adViewDidReceiveAd(bannerView: GADBannerView!) {
+        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
+        let adMobView = bannerView
+        
+        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
+        self.bannerView.frame = CGRectMake(0.0, 0.0,
+                                           adMobView.frame.size.width, adMobView.frame.size.height)
+        self.tableView.tableHeaderView = self.bannerView
+        UIView.commitAnimations()
+    }
+    
+    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
+        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
+        tableView.tableHeaderView = bannerView        
+        UIView.commitAnimations()
+    }
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lite VersionとAdmob</title>
+      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <description>
+
+&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
+&lt;li&gt;スキームの変更&lt;/li&gt;
+&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
+&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
+&lt;li&gt;アイコンの追加&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
+
+&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
+
+&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
+
+&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
+
+&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AdSupport&lt;/li&gt;
+&lt;li&gt;AudioToolbox&lt;/li&gt;
+&lt;li&gt;AVFoundation&lt;/li&gt;
+&lt;li&gt;CoreGraphics&lt;/li&gt;
+&lt;li&gt;CoreTelephony&lt;/li&gt;
+&lt;li&gt;EventKit&lt;/li&gt;
+&lt;li&gt;EventKitUI&lt;/li&gt;
+&lt;li&gt;MessageUI&lt;/li&gt;
+&lt;li&gt;StoreKit&lt;/li&gt;
+&lt;li&gt;SystemConfiguration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
 
 &lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
 
@@ -297,24 +578,24 @@ extension ListTableViewController: GADBannerViewDelegate {
 
 &lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 
@@ -332,11 +613,11 @@ extension ListTableViewController: GADBannerViewDelegate {
 
 &lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+&lt;h3 id=&#34;change&#34;&gt;Change&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
@@ -344,13 +625,53 @@ extension ListTableViewController: GADBannerViewDelegate {
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>イフレット</title>
+      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
+      <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
+      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
+
+&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
+
+if let lock  = event.isLocked as? Bool {
+    cell.isLocked = lock
+} else {
+    cell.isLocked = false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
+
+guard let lock  = event.isLocked as? Bool else { return }
+cell.isLocked = lock
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# xx = yy ??
+cell.isLocked = event.isLocked as? Bool ?? false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
 </description>
     </item>
     
@@ -421,16 +742,16 @@ cell.isLocked = event.isLocked as? Bool ?? false
 
 &lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Duplicate function on History View.
 (In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;missing french localized string.&lt;/li&gt;
@@ -498,149 +819,6 @@ cell.isLocked = event.isLocked as? Bool ?? false
 &lt;p&gt;内部のデータ構造も少し見直したいし、、と色々と考えてはいるのだが、、、&lt;/p&gt;
 
 &lt;p&gt;アイディアなどは割と良いと思っているので、はた、どうしたものか、、、。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.9.1</title>
-      <link>http://goozenlab.com/blog/2016/08/sati-191/</link>
-      <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/sati-191/</guid>
-      <description>
-
-&lt;p&gt;ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋滞在先のネット状況が悪すぎ。。）に向かえればと思ってます。&lt;/p&gt;
-
-&lt;p&gt;以下修正点です。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
-&lt;li&gt;履歴ページの日本語ローカライズが反映されないバグの修正&lt;/li&gt;
-&lt;li&gt;55分以内の瞑想時に音が鳴らなくなる不具合を修正&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-10-sati191.png&#34; alt=&#34;sati&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>検索オプション</title>
-      <link>http://goozenlab.com/blog/2016/08/search-option/</link>
-      <pubDate>Tue, 09 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/search-option/</guid>
-      <description>
-
-&lt;p&gt;日本帰国時の爆買いモードでちょっと気になるブツの使い勝手やレビューなど、調べまくってます。しかしながら、検索に何かしらの商品名が入るなり、楽天やアマゾンなどのショッピングサイトのオンパレードになります。個人サイトのレビューなんかはかなりあとのほうになっている感じがする。&lt;/p&gt;
-
-&lt;p&gt;最近の検索エンジンはちょっとね。。&lt;/p&gt;
-
-&lt;p&gt;で、検索オプションの出番。&lt;/p&gt;
-
-&lt;h3 id=&#34;除外:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;除外&lt;/h3&gt;
-
-&lt;p&gt;特定のサイト、キーワードを検索の結果より除外するには、&lt;code&gt;-site:URL&lt;/code&gt; にてサイト&lt;code&gt;-WORD&lt;/code&gt; でキーワードを除外。&lt;/p&gt;
-
-&lt;p&gt;例 -site:rakuten.co.jp -site:shopping.yahoo.co.jp -site:amazon.co.jp&lt;/p&gt;
-
-&lt;h3 id=&#34;特定のサイトアドレス:6e8fb80afd743e9290945147aa1b26ee&#34;&gt;特定のサイトアドレス&lt;/h3&gt;
-
-&lt;p&gt;例えば、個人のレビューを読みたい時などには、良くあるブログサイトのサイトアドレス、/blog を含めて検索するとよかったりします。&lt;/p&gt;
-
-&lt;p&gt;例 &lt;code&gt;inurl:blog&lt;/code&gt; でサイトのアドレスにblogが入ったページが対象になる。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; 上記の &lt;code&gt;-site:&lt;/code&gt; のマイナスを取ると、逆にそのサイトからの検索になります。同様に &lt;code&gt;-url:shopping&lt;/code&gt; も使えます。（例えばアメブロから検索したい時には&lt;code&gt;site:ameblo.jp&lt;/code&gt;を追加。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>filteredArrayUsingPredicate</title>
-      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
-      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
-      <description>&lt;p&gt;拙作dandoriのswift移行中、中々進みません。&lt;/p&gt;
-
-&lt;p&gt;Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。&lt;/p&gt;
-
-&lt;p&gt;ブロック表記が出てくると目が点になってしまう私。。。&lt;/p&gt;
-
-&lt;p&gt;以下 Objective-C での表記&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
-NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;];
-NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
-return [filteredArray count] &amp;gt; 0;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Swiftで書き上げにはブロック内に&lt;code&gt;(user: UserDetails) -&amp;gt; Bool in&lt;/code&gt; で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。&lt;code&gt;
-$0.isRedHot = &amp;quot;YES&amp;quot;&lt;/code&gt; 何じゃかんじゃより。。）書き上げるとこんな感じ。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let myTasks = tasks?.allObjects
-let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;)
-let filteredArray = myTasks?.filter( {
-	predicate.evaluateWithObject($0)
-	} )
-return filteredArray!.count &amp;gt; 0
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>doop v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/07/doop-190/</link>
-      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/doop-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？などと弱気になりがちな気持ちを抑え、寄り道をしまくって、ようやくの事、申請しました。傷だらけ（＋やけっぱち）リリースです。ということで、アイコンも傷物に変えてみました。（目も真っ赤にすればよかったかな。。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-31-doop-190.png&#34; alt=&#34;doop Icon&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;自分が書いたものだけど、いやはや、自分の馬鹿さ加減に呆れ返りました。移行というより、新しく書き換えてしまった方が早かったかなと思ったりしました。しかしながら今回も、コードがどんどんぐじゃぐじゃになって行ってしまうのは学習能力がなさが上か。。。。&lt;/p&gt;
-
-&lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai:e9031c825c07b1883ab7762d773eb65a&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
-&lt;li&gt;アイコンの変更（傷が癒えたら？幾つか先のアップデートで元のアイコンに戻します）&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;透明度を削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
-
-&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 </description>
     </item>
     

@@ -20,11 +20,11 @@
 
 &lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai:776b68eace8f43e5bce5801672cee7b2&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
@@ -100,7 +100,8 @@ iOS8ユーザーの方にはアップデートを推奨します。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;リスト画面：メモを少し見やすく、選択された時は表示の高さを変える&lt;/li&gt;
-&lt;li&gt;タイマ画面：左のテキストをタップで数秒間メモを表示する&lt;/li&gt;
+&lt;li&gt;タイマ画面：左のテキストをタップで数秒間メモを表示する
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

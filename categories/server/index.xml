@@ -28,19 +28,19 @@
 
 &lt;p&gt;実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。&lt;/p&gt;
 
-&lt;h3 id=&#34;au光ヤドカリ家鯖-owncloud:6931df79a910db4a00c9086f5238af08&#34;&gt;au光ヤドカリ家鯖 (ownCloud)&lt;/h3&gt;
+&lt;h3 id=&#34;au光ヤドカリ家鯖-owncloud&#34;&gt;au光ヤドカリ家鯖 (ownCloud)&lt;/h3&gt;
 
 &lt;p&gt;$ wget http://ヤドカリ家鯖/photo/R0011168.jpg&lt;br /&gt;
 2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;] @ pushkar&lt;br /&gt;
 2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;] @ KL&lt;/p&gt;
 
-&lt;h3 id=&#34;dropbox:6931df79a910db4a00c9086f5238af08&#34;&gt;DropBox&lt;/h3&gt;
+&lt;h3 id=&#34;dropbox&#34;&gt;DropBox&lt;/h3&gt;
 
 &lt;p&gt;$ wget &lt;a href=&#34;https://dl.dropbox.com/u/163521/photo/R0011168.jpg&#34;&gt;https://dl.dropbox.com/u/163521/photo/R0011168.jpg&lt;/a&gt;&lt;br /&gt;
 2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;br /&gt;
 2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;/p&gt;
 
-&lt;h3 id=&#34;github-page:6931df79a910db4a00c9086f5238af08&#34;&gt;GitHub Page&lt;/h3&gt;
+&lt;h3 id=&#34;github-page&#34;&gt;GitHub Page&lt;/h3&gt;
 
 &lt;p&gt;$ wget &lt;a href=&#34;http://goozenlab.com/images/R0011168.jpg&#34;&gt;http://goozenlab.com/images/R0011168.jpg&lt;/a&gt;&lt;br /&gt;
 2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [&lt;sup&gt;767950&lt;/sup&gt;&amp;frasl;&lt;sub&gt;767950&lt;/sub&gt;]&lt;br /&gt;
@@ -48,7 +48,7 @@
 
 &lt;p&gt;と、やはり、au光回線の圧勝です。&lt;/p&gt;
 
-&lt;h3 id=&#34;おまけ-悪魔のささやき:6931df79a910db4a00c9086f5238af08&#34;&gt;おまけ：悪魔のささやき。&lt;/h3&gt;
+&lt;h3 id=&#34;おまけ-悪魔のささやき&#34;&gt;おまけ：悪魔のささやき。&lt;/h3&gt;
 
 &lt;p&gt;デビアンのwheezyもフリーズされ、ふと魔が差しました。家鯖を一気にアップデートしちゃお、と。&lt;br /&gt;
 dist-upgrade自体は問題なく終了したように思えましたが、再起動したころ起動せず。&lt;/p&gt;
@@ -71,7 +71,7 @@ dist-upgrade自体は問題なく終了したように思えましたが、再�
 
 &lt;p&gt;ドメインにお金をかけるのもなぁ、なんて思っていましたが、アプリも公開しているし、費用もそれほどではないので、今更ながらお名前ドットコムでgoozenlab.comをとりました。github pageに紐付けします。&lt;/p&gt;
 
-&lt;h3 id=&#34;dnsの設定:58f6c266e0afd922377437714283baae&#34;&gt;DNSの設定&lt;/h3&gt;
+&lt;h3 id=&#34;dnsの設定&#34;&gt;DNSの設定&lt;/h3&gt;
 
 &lt;p&gt;IPナンバーはターミナルにて、nslookupで調べます。&lt;/p&gt;
 

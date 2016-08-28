@@ -26,24 +26,24 @@
 
 &lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai:3361928c0d8ab45446f8667ac1200a43&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:3361928c0d8ab45446f8667ac1200a43&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;注:3361928c0d8ab45446f8667ac1200a43&#34;&gt;注&lt;/h3&gt;
+&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 
@@ -61,11 +61,11 @@
 
 &lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai:b8efb96a97d0279059dabd934520e8b4&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;change:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Change&lt;/h3&gt;
+&lt;h3 id=&#34;change&#34;&gt;Change&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
@@ -73,7 +73,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;add:b8efb96a97d0279059dabd934520e8b4&#34;&gt;Add&lt;/h3&gt;
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
@@ -97,16 +97,16 @@
 
 &lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Duplicate function on History View.
 (In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;missing french localized string.&lt;/li&gt;
@@ -129,23 +129,23 @@
 
 &lt;p&gt;以下修正点です。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
@@ -173,11 +173,11 @@
 
 &lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai:e9031c825c07b1883ab7762d773eb65a&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
@@ -185,13 +185,13 @@
 &lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:e9031c825c07b1883ab7762d773eb65a&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;透明度を削除&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;注:e9031c825c07b1883ab7762d773eb65a&#34;&gt;注&lt;/h3&gt;
+&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
 
 &lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
 </description>
@@ -207,11 +207,11 @@
 
 &lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:a2870191ae7b179ca421589da463a56f&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai:a2870191ae7b179ca421589da463a56f&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;fix:a2870191ae7b179ca421589da463a56f&#34;&gt;Fix&lt;/h3&gt;
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
@@ -232,17 +232,17 @@
 
 &lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:c0dfa1c0ec5cb7d88f31b107a0f7ae48&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
@@ -266,18 +266,18 @@
 
 &lt;p&gt;技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai:50fa04c585d42c29e6268a799f6160a2&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ダークモード&lt;/li&gt;
 &lt;li&gt;お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。)&lt;/li&gt;
@@ -285,13 +285,13 @@
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fix:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Fix&lt;/h3&gt;
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;金額と項目の名前が長さにより表示に不具合が出てしまう件を修正&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:50fa04c585d42c29e6268a799f6160a2&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;透明度を削除&lt;/li&gt;
@@ -320,11 +320,11 @@
 
 &lt;p&gt;次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:d52049f793527062a29d4b07de8b3297&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai:d52049f793527062a29d4b07de8b3297&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:d52049f793527062a29d4b07de8b3297&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ダークモード&lt;/li&gt;
@@ -337,7 +337,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:d52049f793527062a29d4b07de8b3297&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンの変更&lt;/li&gt;
@@ -362,11 +362,11 @@
 
 &lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai:776b68eace8f43e5bce5801672cee7b2&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;changed:776b68eace8f43e5bce5801672cee7b2&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
@@ -392,18 +392,18 @@
 
 &lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
 &lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
@@ -412,7 +412,7 @@
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;removed:accefca7bb21f39c2b0d74c57df9eb21&#34;&gt;Removed&lt;/h3&gt;
+&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
@@ -438,24 +438,24 @@
 
 &lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:68efa7ce510c269f5dabb0213c1566df&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンを少し変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;

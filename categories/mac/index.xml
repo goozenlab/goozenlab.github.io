@@ -7,8 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 23 Aug 2016 19:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2016 13:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ヒラギノ角ゴシック</title>
+      <link>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
+      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
+      <description>&lt;p&gt;2016-08-28-hiragino-sans-w0&lt;/p&gt;
+
+&lt;p&gt;ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。&lt;/p&gt;
+
+&lt;p&gt;で、偶然見つけた日本語フォント &lt;code&gt;ヒラギノ角ゴシック：Hiragino Sans&lt;/code&gt; がかなりいいです。
+シエラで付いてきているのかと思ったら、El Capitanにも入っていました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-w1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以下のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-input.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;何はともあれ、早く新しいMBPを出してほしい。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>句読点で変換</title>
@@ -67,7 +94,7 @@
 &lt;p&gt;そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。
 かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。&lt;/p&gt;
 
-&lt;h2 id=&#34;そこで-勝手な推測をしたいと:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そこで、勝手な推測をしたいと、&lt;/h2&gt;
+&lt;h2 id=&#34;そこで-勝手な推測をしたいと&#34;&gt;そこで、勝手な推測をしたいと、&lt;/h2&gt;
 
 &lt;p&gt;まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、&lt;/p&gt;
 
@@ -83,9 +110,9 @@
 
 &lt;p&gt;※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。&lt;/p&gt;
 
-&lt;h2 id=&#34;そして-希望とボヤき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;そして、希望とボヤき&lt;/h2&gt;
+&lt;h2 id=&#34;そして-希望とボヤき&#34;&gt;そして、希望とボヤき&lt;/h2&gt;
 
-&lt;h3 id=&#34;希望:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;希望、&lt;/h3&gt;
+&lt;h3 id=&#34;希望&#34;&gt;希望、&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ヘナペナキーボードはやーーめて&lt;/li&gt;
@@ -97,7 +124,7 @@
 &lt;li&gt;円高プライス&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;ぼやき:46a1007bfd8c37d171c561616d2d8e5a&#34;&gt;ぼやき、、&lt;/h3&gt;
+&lt;h3 id=&#34;ぼやき&#34;&gt;ぼやき、、&lt;/h3&gt;
 
 &lt;p&gt;USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。
 どんなユーザーが４つのポートを必要としているのか理解できない。&lt;/p&gt;
@@ -135,7 +162,7 @@
 &lt;li&gt;ボリューム作成：diskutil coreStorage createVolume&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;詳細:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;詳細&lt;/h2&gt;
+&lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
 
 &lt;p&gt;Fusion化を行うディスクの番号を &lt;code&gt;diskutil list&lt;/code&gt; にて把握。そして &lt;code&gt;diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2&lt;/code&gt; にてLogical Volume Groupを構築。&lt;/p&gt;
 
@@ -180,7 +207,7 @@ Finished CoreStorage operation
 shingha:~ $
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;フュージョン化の解除:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;フュージョン化の解除&lt;/h2&gt;
+&lt;h2 id=&#34;フュージョン化の解除&#34;&gt;フュージョン化の解除&lt;/h2&gt;
 
 &lt;p&gt;一つになったドライブの解除方法は &lt;code&gt;diskutil cs deleteVolume&lt;/code&gt; というコマンドもあるが&lt;/p&gt;
 
@@ -189,7 +216,7 @@ shingha:~ $
 
 &lt;p&gt;の一発で行けると、思う・・。&lt;/p&gt;
 
-&lt;h2 id=&#34;リカバリーusb-stick:b2f7aaac145975d0c4ed9f55fbb75d9f&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
+&lt;h2 id=&#34;リカバリーusb-stick&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
 
 &lt;p&gt;次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&amp;hellip; で動きが止まり思ったより時間が掛かる。&lt;/p&gt;
 
@@ -227,19 +254,19 @@ shingha:~ $
 
 &lt;p&gt;※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート１-小お出かけ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
+&lt;h2 id=&#34;パート１-小お出かけ&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-lite.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート２-中お出かけ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
+&lt;h2 id=&#34;パート２-中お出かけ&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-middle.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。&lt;/p&gt;
 
-&lt;h2 id=&#34;パート３-ノマドデスクトップ:b9bdbfe93ba0995b07fdae75d5b87d3d&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
+&lt;h2 id=&#34;パート３-ノマドデスクトップ&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-desktop.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
 
@@ -280,7 +307,7 @@ shingha:~ $
 
 &lt;p&gt;さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、&lt;/p&gt;
 
-&lt;h2 id=&#34;良い点:b544164a5a31a77e1c671eebe5824ecc&#34;&gt;良い点&lt;/h2&gt;
+&lt;h2 id=&#34;良い点&#34;&gt;良い点&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フラットなデザインがようやく落ち着いた感じになる。&lt;/li&gt;
@@ -288,7 +315,7 @@ shingha:~ $
 &lt;li&gt;上部メニューを「自動で隠す」ことができる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;悪い点:b544164a5a31a77e1c671eebe5824ecc&#34;&gt;悪い点&lt;/h2&gt;
+&lt;h2 id=&#34;悪い点&#34;&gt;悪い点&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;メニューバーでのバッテリーの残量表示時間がかなり短くなる&lt;/li&gt;
@@ -343,7 +370,7 @@ shingha:~ $
 
 &lt;p&gt;そして、かーーーなーり期待していた「新しいMacbook」ですが、&lt;/p&gt;
 
-&lt;h2 id=&#34;良い点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;良い点は、&lt;/h2&gt;
+&lt;h2 id=&#34;良い点は&#34;&gt;良い点は、&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;キーボードに手が加えられた&lt;/li&gt;
@@ -352,7 +379,7 @@ shingha:~ $
 &lt;li&gt;軽い&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;で-あまり好きになれない点は:c3fb063a5837e63b85cf3a87dfc9ad9c&#34;&gt;で、あまり好きになれない点は、&lt;/h2&gt;
+&lt;h2 id=&#34;で-あまり好きになれない点は&#34;&gt;で、あまり好きになれない点は、&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。）&lt;/li&gt;
@@ -597,7 +624,7 @@ echo &amp;quot;Done. You&#39;re now running build $latestVersion&amp;quot;;
 
 &lt;p&gt;ちょっといじった所を、&lt;/p&gt;
 
-&lt;h2 id=&#34;メニューショートカットの変更:0430dfb299360927fc735c73f9527560&#34;&gt;メニューショートカットの変更。&lt;/h2&gt;
+&lt;h2 id=&#34;メニューショートカットの変更&#34;&gt;メニューショートカットの変更。&lt;/h2&gt;
 
 &lt;p&gt;アプリケーションメニューのショートカットキーの割当を変更します。Xcodeでファイルブラウザーの表示／非表示はCommand+0でよく使うショートカットなので、Textmateでも同様の形に変更します。&lt;/p&gt;
 
@@ -607,7 +634,7 @@ echo &amp;quot;Done. You&#39;re now running build $latestVersion&amp;quot;;
 
 &lt;p&gt;恥ずかしながらこのように設定をする事が出来るとは知りませんでした。他のソフトでも使えそうですし、ちょっと便利です。自分が慣れ親しんだように色々と変更してみるといいです。&lt;/p&gt;
 
-&lt;h2 id=&#34;スニペットの登録:0430dfb299360927fc735c73f9527560&#34;&gt;スニペットの登録&lt;/h2&gt;
+&lt;h2 id=&#34;スニペットの登録&#34;&gt;スニペットの登録&lt;/h2&gt;
 
 &lt;p&gt;そしてBundle（プラグインのようなもの）にてスニペットの登録をいくつかします。メニューのBublesからEdit Bundlesで編集します。
 Textのバンドルに追加したものは全てのファイルに適用されます。もし特定のmarkdownやphpに適用したい時はそのバンドルを編集してください。ファイルの拡張子で識別していると思います。&lt;/p&gt;
@@ -626,121 +653,9 @@ Textのバンドルに追加したものは全てのファイルに適用され�
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130304_textmate-snipet-selection.png&#34; alt=&#34;スニペットの選択&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;その他:0430dfb299360927fc735c73f9527560&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;一部英文の所もありますが、オフィシャルサイトに細かい日本語の&lt;a href=&#34;http://manual.macromates.com/ja/&#34;&gt;マニュアル&lt;/a&gt;もありますのでぜひ目を通してみてください。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>画面のグレー/カラーのスイッチ</title>
-      <link>http://goozenlab.com/blog/2013/02/grayscale-switch/</link>
-      <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
-      <description>
-
-&lt;p&gt;最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。&lt;/p&gt;
-
-&lt;p&gt;ただ一連の作業がちょっと面倒なので、&lt;strong&gt;アップルスクリプト&lt;/strong&gt;＋Alfredを使って作業を簡略化しました。&lt;/p&gt;
-
-&lt;p&gt;まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;pre&gt;&lt;code&gt;
-tell application &amp;quot;System Preferences&amp;quot;
-    activate
-    set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
-end tell
-
-tell application &amp;quot;System Events&amp;quot;
-    tell first window of process &amp;quot;System Preferences&amp;quot;
-        
-        tell table 1 of scroll area 1
-            set selected of row 2 to true
-        end tell
-        tell group 1
-            click checkbox &amp;quot;Use grayscale&amp;quot;
-        end tell
-        
-    end tell
-end tell
-
-do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot;
-
-tell application &amp;quot;System Preferences&amp;quot; to quit
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tell application &amp;quot;System Preferences&amp;quot;
-    activate
-    set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
-    --  set current pane to pane &amp;quot;com.apple.preference.sound&amp;quot;
-end tell
-
-
-tell application &amp;quot;System Events&amp;quot;
-    if UI elements enabled then
-        tell process &amp;quot;System Preferences&amp;quot;
-            get every UI element
-            --tell tab group 1 of window &amp;quot;Sound&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;
-            tell window 1 of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;
-                --  tell table 1 of scroll area 1 of window 1 of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot; これで左にあるテーブルの情報が見れます
-                get every UI element
-                get every UI element of every UI element
-            end tell
-        end tell
-    else
-        tell application &amp;quot;System Preferences&amp;quot;
-            activate
-            set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot;
-            display dialog &amp;quot;UI element scripting is not enabled.&amp;quot;
-        end tell
-    end if
-end tell
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-02-25-checkUIElements.png&#34; alt=&#34;UIElement&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;checkbox &amp;quot;Use grayscale&amp;quot; of group 1 of window &amp;quot;Accessibility&amp;quot; of application process &amp;quot;System Preferences&amp;quot; of application &amp;quot;System Events&amp;quot;&lt;/code&gt;でこのgroup 1の&amp;rdquo;Use grayscale&amp;rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &amp;ldquo;Use grayscale&amp;rdquo;はclick checkbox 2、window &amp;ldquo;Accessibility&amp;rdquo;はwindow 1, first windowでも動きます。&lt;/p&gt;
-
-&lt;p&gt;後はそのパーツに値を入れてあげれば良し。&lt;/p&gt;
-
-&lt;p&gt;そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。&lt;/p&gt;
-
-&lt;p&gt;スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。&lt;/p&gt;
-
-&lt;p&gt;アップルスクリプトでいろんな事が出来るのにちょっと驚きです。&lt;/p&gt;
-
-&lt;p&gt;ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず&lt;/p&gt;
-
-&lt;p&gt;、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。&lt;/p&gt;
-
-&lt;p&gt;と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。&lt;/p&gt;
-
-&lt;h2 id=&#34;おまけ:a27a07d26f088c8e8b578be3ff56e440&#34;&gt;おまけ&lt;/h2&gt;
-
-&lt;p&gt;ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある&lt;code&gt;Info.plist&lt;/code&gt;に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;    &amp;lt;key&amp;gt;LSUIElement&amp;lt;/key&amp;gt;
-    &amp;lt;true/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追加すると、ドックにアプリケーションのアイコンは表示されません。&lt;/p&gt;
-
-&lt;p&gt;そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの&lt;a href=&#34;http://news.mynavi.jp/column/osxhack/060/index.html&#34;&gt;こちらの記事&lt;/a&gt;を参照してください。&lt;/p&gt;
-
-&lt;p&gt;お次ぎはUSBオーディオの選択/解除かな。。&lt;/p&gt;
 </description>
     </item>
     

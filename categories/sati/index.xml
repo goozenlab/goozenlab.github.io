@@ -24,16 +24,16 @@
 
 &lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
 
-&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Duplicate function on History View.
 (In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:ca79e05ed26117f68302d0d724aaf1aa&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;missing french localized string.&lt;/li&gt;
@@ -56,23 +56,23 @@
 
 &lt;p&gt;以下修正点です。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:9fb7f455d586edc4ff44c081dc979d50&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
@@ -100,24 +100,24 @@
 
 &lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
 
-&lt;h1 id=&#34;change-log:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Change Log&lt;/h1&gt;
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
 
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai:68efa7ce510c269f5dabb0213c1566df&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
+&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
 
-&lt;h3 id=&#34;added:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Added&lt;/h3&gt;
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;changed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Changed&lt;/h3&gt;
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;アイコンを少し変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;fixed:68efa7ce510c269f5dabb0213c1566df&#34;&gt;Fixed&lt;/h3&gt;
+&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
@@ -224,7 +224,7 @@ please be meditation part of your life, into a life. i hope meditation will help
 
 &lt;p&gt;このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には&lt;strong&gt;最後のアップデート&lt;/strong&gt;になります。&lt;/p&gt;
 
-&lt;h3 id=&#34;最終的なデザイン:6334338180bdf5ebac1833f11eeb6d13&#34;&gt;最終的なデザイン&lt;/h3&gt;
+&lt;h3 id=&#34;最終的なデザイン&#34;&gt;最終的なデザイン&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-sati-main-165.png&#34; alt=&#34;Main&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-setting-165.png&#34; alt=&#34;Setting&#34; /&gt;
@@ -246,7 +246,8 @@ please be meditation part of your life, into a life. i hope meditation will help
 &lt;li&gt;静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-quietmode.png&#34; alt=&#34;Quiet Mode&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;音の鳴るおよその位置にドットが描かれます（左からスタート）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;http://goozenlab.com/images/manual-sati-timeline-simple.png&#34; alt=&#34;Simple Mode&#34; /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -264,7 +265,7 @@ please be meditation part of your life, into a life. i hope meditation will help
 
 &lt;p&gt;1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。&lt;/p&gt;
 
-&lt;h3 id=&#34;変更および追加:02b34a8499a527797a12ccf4ce4b3a52&#34;&gt;変更および追加&lt;/h3&gt;
+&lt;h3 id=&#34;変更および追加&#34;&gt;変更および追加&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_main_pre165.png&#34; alt=&#34;Main&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/2015-02-11_sati_setting_pre165.png&#34; alt=&#34;Setting&#34; /&gt;
@@ -314,14 +315,14 @@ please be meditation part of your life, into a life. i hope meditation will help
       <guid>http://goozenlab.com/blog/2015/02/sati-164/</guid>
       <description>
 
-&lt;h3 id=&#34;ios8上での-音が鳴らない不具合-は:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;iOS8上での&lt;strong&gt;音が鳴らない不具合&lt;/strong&gt;は&lt;/h3&gt;
+&lt;h3 id=&#34;ios8上での-音が鳴らない不具合-は&#34;&gt;iOS8上での&lt;strong&gt;音が鳴らない不具合&lt;/strong&gt;は&lt;/h3&gt;
 
 &lt;p&gt;ホーム＞設定＞サティ＞通知より、&lt;/p&gt;
 
 &lt;p&gt;サウンドのスウィッチをオンにしてください。
 これで、問題は解消するはずです。&lt;/p&gt;
 
-&lt;h3 id=&#34;for-bug-that-you-don-t-get-any-sounds-on-ios8:87cd42bf0057ee2766cd121cc24bc838&#34;&gt;for Bug that you don&amp;rsquo;t get any sounds on &lt;strong&gt;iOS8&lt;/strong&gt;,&lt;/h3&gt;
+&lt;h3 id=&#34;for-bug-that-you-don-t-get-any-sounds-on-ios8&#34;&gt;for Bug that you don&amp;rsquo;t get any sounds on &lt;strong&gt;iOS8&lt;/strong&gt;,&lt;/h3&gt;
 
 &lt;p&gt;go Home &amp;gt; Setting &amp;gt; &lt;strong&gt;&lt;em&gt;Sati: Notification&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
 and turn &lt;strong&gt;Sound&lt;/strong&gt; ON.  This solves this problem&amp;hellip;
@@ -399,7 +400,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
       <guid>http://goozenlab.com/blog/2015/01/sati-163/</guid>
       <description>
 
-&lt;h3 id=&#34;長押しスタート:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;&lt;strong&gt;長押しスタート&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;長押しスタート&#34;&gt;&lt;strong&gt;長押しスタート&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;マイナーアップデートですが、使用方法に変更があります。&lt;/p&gt;
 
@@ -420,7 +421,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;li&gt;ホーム&amp;gt; 設定&amp;gt; サティにて日本語表示&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;おまけ:3f54eb849cc765f3fb45bac995ddccf4&#34;&gt;おまけ&lt;/h3&gt;
+&lt;h3 id=&#34;おまけ&#34;&gt;おまけ&lt;/h3&gt;
 
 &lt;p&gt;隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。&lt;/p&gt;
 </description>
@@ -462,7 +463,7 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;p&gt;一年近くコンピューターを持たずにふらふらしてました。
 久しぶりに以下の調整および修正を行いました。&lt;/p&gt;
 
-&lt;h3 id=&#34;メイン:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;メイン&lt;/h3&gt;
+&lt;h3 id=&#34;メイン&#34;&gt;メイン&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。&lt;/li&gt;
@@ -470,13 +471,13 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;li&gt;ちょっと物足りない背景に、オームのアイコンを追加。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;設定ページ:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;設定ページ&lt;/h3&gt;
+&lt;h3 id=&#34;設定ページ&#34;&gt;設定ページ&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;履歴ページ:fd06c5d4afec977c7ea96dc2b9135627&#34;&gt;履歴ページ&lt;/h3&gt;
+&lt;h3 id=&#34;履歴ページ&#34;&gt;履歴ページ&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。&lt;/li&gt;

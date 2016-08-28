@@ -40,7 +40,7 @@
 
 &lt;p&gt;I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this softwere. (You need computer although..)&lt;/p&gt;
 
-&lt;h2 id=&#34;dropbox:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Dropbox&lt;/h2&gt;
+&lt;h2 id=&#34;dropbox&#34;&gt;Dropbox&lt;/h2&gt;
 
 &lt;p&gt;You press left button on Navigation bar to process.
 After link was established, file will be copied to cloud.&lt;/p&gt;
@@ -51,7 +51,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;li&gt;This app access only within its folder: &amp;ldquo;&lt;strong&gt;(a)&lt;/strong&gt;&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;about-sync-process:64294511a1cb5d54d61cc32437d0db91&#34;&gt;about Sync process&lt;/h3&gt;
+&lt;h3 id=&#34;about-sync-process&#34;&gt;about Sync process&lt;/h3&gt;
 
 &lt;p&gt;This app upload &amp;ldquo;todo.md&amp;rdquo; when it goes to sleep/lock, download from cloud when it unlocks/wakes up.&lt;/p&gt;
 
@@ -60,7 +60,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 
 &lt;p&gt;it would be appreciated if you remind this while you are using app, because this app is not fully syncronized between iPhones/iPods.&lt;/p&gt;
 
-&lt;h2 id=&#34;todo-md-format:64294511a1cb5d54d61cc32437d0db91&#34;&gt;todo.md format&lt;/h2&gt;
+&lt;h2 id=&#34;todo-md-format&#34;&gt;todo.md format&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;Mou&#34; /&gt;&lt;/p&gt;
 
@@ -103,9 +103,9 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;li&gt;Date format: default: &lt;code&gt;2015-11-11 12:30&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;how-to-use-a:64294511a1cb5d54d61cc32437d0db91&#34;&gt;How to use (a)&lt;/h2&gt;
+&lt;h2 id=&#34;how-to-use-a&#34;&gt;How to use (a)&lt;/h2&gt;
 
-&lt;h2 id=&#34;navigation-bar:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Navigation Bar&lt;/h2&gt;
+&lt;h2 id=&#34;navigation-bar&#34;&gt;Navigation Bar&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Swipe&lt;/strong&gt;：move between projects&lt;br /&gt;
@@ -118,9 +118,9 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-DueDate-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;tablecell:64294511a1cb5d54d61cc32437d0db91&#34;&gt;TableCell&lt;/h2&gt;
+&lt;h2 id=&#34;tablecell&#34;&gt;TableCell&lt;/h2&gt;
 
-&lt;h3 id=&#34;tap:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Tap&lt;/h3&gt;
+&lt;h3 id=&#34;tap&#34;&gt;Tap&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-cell-detail.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
@@ -144,19 +144,19 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;decoration-of-bar:64294511a1cb5d54d61cc32437d0db91&#34;&gt;decoration of bar&lt;/h3&gt;
+&lt;h3 id=&#34;decoration-of-bar&#34;&gt;decoration of bar&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;if there is memo, the left top edge on colour bar is cut.&lt;/li&gt;
 &lt;li&gt;emphasized task has red dot on left corner. And registered for Icon Badge and Red Hot List.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;colors-on-left-bar:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Colors on Left bar&lt;/h3&gt;
+&lt;h3 id=&#34;colors-on-left-bar&#34;&gt;Colors on Left bar&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt; &amp;lt;-Normal , Kawaii -&amp;gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;due-date-and-right-bar:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Due date and Right Bar&lt;/h3&gt;
+&lt;h3 id=&#34;due-date-and-right-bar&#34;&gt;Due date and Right Bar&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;right colour bar appears if you set due date.&lt;br /&gt;&lt;/li&gt;
@@ -166,7 +166,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-duedate.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;add-edit-task:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Add/Edit Task&lt;/h2&gt;
+&lt;h2 id=&#34;add-edit-task&#34;&gt;Add/Edit Task&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Add: press &amp;ldquo;+&amp;rdquo; on left side of Navigation bar.&lt;/li&gt;
@@ -182,7 +182,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView.png&#34; alt=&#34;Due date&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView-DatePicke.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;unlink-to-dropbox-if-you-want-to-change-account-or-reconnect:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Unlink to Dropbox (if you want to change account or reconnect)&lt;/h3&gt;
+&lt;h3 id=&#34;unlink-to-dropbox-if-you-want-to-change-account-or-reconnect&#34;&gt;Unlink to Dropbox (if you want to change account or reconnect)&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Go Home &amp;gt; Setting &amp;gt; (a)&lt;/li&gt;
@@ -191,9 +191,9 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-Setting-unlink.png&#34; alt=&#34;Unlink&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;home-setting-a:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Home &amp;gt; Setting &amp;gt; (a)&lt;/h2&gt;
+&lt;h2 id=&#34;home-setting-a&#34;&gt;Home &amp;gt; Setting &amp;gt; (a)&lt;/h2&gt;
 
-&lt;h3 id=&#34;display:64294511a1cb5d54d61cc32437d0db91&#34;&gt;Display&lt;/h3&gt;
+&lt;h3 id=&#34;display&#34;&gt;Display&lt;/h3&gt;
 
 &lt;p&gt;You can change how it looks by changing Font and Color mode.&lt;/p&gt;
 
@@ -201,7 +201,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Color mode&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeKawaii.png&#34; alt=&#34;Color mode&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;write-read-format:64294511a1cb5d54d61cc32437d0db91&#34;&gt;write/read format&lt;/h3&gt;
+&lt;h3 id=&#34;write-read-format&#34;&gt;write/read format&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;date format&lt;/strong&gt;：2015-12-31, 12-31-2015, 31-12-2015&lt;/li&gt;
@@ -209,13 +209,13 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;gray bar syle&lt;/strong&gt;: *, +, -&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;etc:64294511a1cb5d54d61cc32437d0db91&#34;&gt;etc&lt;/h3&gt;
+&lt;h3 id=&#34;etc&#34;&gt;etc&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Unlink to Dropbox: app will unlink when it relaunches.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;trouble-on-syncing:64294511a1cb5d54d61cc32437d0db91&#34;&gt;trouble on syncing&lt;/h2&gt;
+&lt;h2 id=&#34;trouble-on-syncing&#34;&gt;trouble on syncing&lt;/h2&gt;
 
 &lt;p&gt;when your file is not the file you like to be. Try&lt;/p&gt;
 
@@ -275,7 +275,7 @@ when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
 
 &lt;p&gt;Practice pranayama.&lt;/p&gt;
 
-&lt;h3 id=&#34;main-display:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ Main Display&lt;/h3&gt;
+&lt;h3 id=&#34;main-display&#34;&gt;□ Main Display&lt;/h3&gt;
 
 &lt;p&gt;There are those item on display.&lt;/p&gt;
 
@@ -290,7 +290,7 @@ when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
 &lt;li&gt;Week status&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;how-to-use:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ How to Use&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-use&#34;&gt;□ How to Use&lt;/h3&gt;
 
 &lt;p&gt;Start with &lt;strong&gt;LONG&lt;/strong&gt; Tap.&lt;br /&gt;
 (Cancel with &lt;strong&gt;LONG&lt;/strong&gt; tap. Alert will show up.)&lt;/p&gt;
@@ -302,7 +302,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;setting:b7e27f9058bb2f01946ba710a06b49c0&#34;&gt;□ Setting&lt;/h3&gt;
+&lt;h3 id=&#34;setting&#34;&gt;□ Setting&lt;/h3&gt;
 
 &lt;p&gt;You can change&lt;/p&gt;
 
@@ -325,13 +325,13 @@ Select one of them.&lt;/p&gt;
       <guid>http://goozenlab.com/en/iapp/viriya/</guid>
       <description>
 
-&lt;h2 id=&#34;you-i-need-to-concentrate-on-task-but:0570675119f43546b944340c6d790af6&#34;&gt;You/I need to concentrate on task, but&amp;hellip;.&lt;/h2&gt;
+&lt;h2 id=&#34;you-i-need-to-concentrate-on-task-but&#34;&gt;You/I need to concentrate on task, but&amp;hellip;.&lt;/h2&gt;
 
 &lt;p&gt;This timer helps to concentrate on thing needs to be done.&lt;/p&gt;
 
 &lt;p&gt;it works fine with dash method (or other kinds).&lt;/p&gt;
 
-&lt;h2 id=&#34;main-view:0570675119f43546b944340c6d790af6&#34;&gt;Main View&lt;/h2&gt;
+&lt;h2 id=&#34;main-view&#34;&gt;Main View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
@@ -351,7 +351,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;task-view:0570675119f43546b944340c6d790af6&#34;&gt;Task View&lt;/h2&gt;
+&lt;h2 id=&#34;task-view&#34;&gt;Task View&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -373,7 +373,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;timer-view:0570675119f43546b944340c6d790af6&#34;&gt;Timer View&lt;/h2&gt;
+&lt;h2 id=&#34;timer-view&#34;&gt;Timer View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
 
@@ -382,7 +382,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;history-view:0570675119f43546b944340c6d790af6&#34;&gt;History View&lt;/h2&gt;
+&lt;h2 id=&#34;history-view&#34;&gt;History View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-history.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
@@ -391,7 +391,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-viriya:0570675119f43546b944340c6d790af6&#34;&gt;App Setting [Home&amp;gt; Settings&amp;gt; viriya]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-viriya&#34;&gt;App Setting [Home&amp;gt; Settings&amp;gt; viriya]&lt;/h2&gt;
 
 &lt;p&gt;You can change&lt;br /&gt;
 ・title of Navigation bar&lt;br /&gt;
@@ -417,7 +417,7 @@ Select one of them.&lt;/p&gt;
 &lt;p&gt;This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This softwear helps you to find a way of good sleep.
 I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
-&lt;h2 id=&#34;main-view:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;□ Main View&lt;/h2&gt;
+&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
 
 &lt;p&gt;◇ &lt;strong&gt;Timer&lt;/strong&gt;: Start by &lt;strong&gt;Long-Tap&lt;/strong&gt; on gray image area.&lt;/p&gt;
 
@@ -430,13 +430,13 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w375.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6(20:30-10:30)&lt;br /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w414.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6+(20:00-11:30)&lt;/p&gt;
 
-&lt;h3 id=&#34;taps-on-graph:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;◇ Taps on graph&lt;/h3&gt;
+&lt;h3 id=&#34;taps-on-graph&#34;&gt;◇ Taps on graph&lt;/h3&gt;
 
 &lt;p&gt;・&lt;strong&gt;Left&lt;/strong&gt;：Change feeling&lt;br /&gt;
 ・&lt;strong&gt;Center&lt;/strong&gt;：Edit time of sleep/awake.&lt;br /&gt;
 ・&lt;strong&gt;Right&lt;/strong&gt;：Switch On/Off of bae color.&lt;/p&gt;
 
-&lt;h3 id=&#34;two-icons-looks-like-eyes:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;◇Two Icons looks like eyes**&lt;/h3&gt;
+&lt;h3 id=&#34;two-icons-looks-like-eyes&#34;&gt;◇Two Icons looks like eyes**&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Left&lt;/strong&gt;：to Simple Setting View：edit message and coloring.&lt;br /&gt;
 &lt;strong&gt;Right&lt;/strong&gt;：to Sleep Detail View：show average sleeping times.&lt;/p&gt;
@@ -444,7 +444,7 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;Setting&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-setting-ohayo:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;□ App Setting [Home&amp;gt;Setting&amp;gt;ohaYo]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-setting-ohayo&#34;&gt;□ App Setting [Home&amp;gt;Setting&amp;gt;ohaYo]&lt;/h2&gt;
 
 &lt;p&gt;You can edit&lt;/p&gt;
 
@@ -469,7 +469,7 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;ohayo&amp;rdquo;&lt;/strong&gt; is Japanese word for &amp;ldquo;good Morning&amp;rdquo;&lt;/p&gt;
 
-&lt;h2 id=&#34;privacy-policy:a3a1336c5c609d4321b71af185b8fd74&#34;&gt;□ Privacy Policy&lt;/h2&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;□ Privacy Policy&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ohayo will ask permission to acccess Health.app on your device.&lt;/li&gt;
@@ -498,7 +498,7 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;p&gt;available as free most of the time, become paid-version once a month for a couple of days.&lt;/p&gt;
 
-&lt;h2 id=&#34;main-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ Main View&lt;/h2&gt;
+&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
@@ -511,7 +511,7 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 &lt;p&gt;※ Two Circle button intends to use to keep track on posture when you meditate.&lt;br /&gt;
 (I am trying to sit with full lotus position every couple of times. so i am keeping log for posture to keep it balanced(left-right-full-righti-right-left-full-&amp;hellip;).)&lt;/p&gt;
 
-&lt;h3 id=&#34;while-you-are-meditationg:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;while you are meditationg.&lt;/h3&gt;
+&lt;h3 id=&#34;while-you-are-meditationg&#34;&gt;while you are meditationg.&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;※※&lt;/strong&gt;  iPod/iPhone must &lt;strong&gt;sleep&lt;/strong&gt; or exit application in order to hear bells.. App use Local Notification to ring bells, not by timer running background.&lt;/p&gt;
 
@@ -523,14 +523,14 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 ◇ 3 min before finish for metta session&lt;br /&gt;
 ◇ finish&lt;/p&gt;
 
-&lt;h3 id=&#34;etc:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;etc&lt;/h3&gt;
+&lt;h3 id=&#34;etc&#34;&gt;etc&lt;/h3&gt;
 
 &lt;p&gt;Background color is based on thai traditional day color.&lt;br /&gt;
 (mon:Yellow, tue:Pink, wed:Green, thr:Orange, fri:Blue, sat:Purple, sun:Red)&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;history-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ History View&lt;/h2&gt;
+&lt;h2 id=&#34;history-view&#34;&gt;□ History View&lt;/h2&gt;
 
 &lt;!--![History View](/images/manual/sati-history.png)--&gt;
 
@@ -544,7 +544,7 @@ by tapping list.&lt;/p&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-view:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□ Setting View&lt;/h2&gt;
+&lt;h2 id=&#34;setting-view&#34;&gt;□ Setting View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;&lt;/p&gt;
 
@@ -555,7 +555,7 @@ by tapping list.&lt;/p&gt;
 
 &lt;p&gt;※ default meditation time is set 60min.&lt;/p&gt;
 
-&lt;h2 id=&#34;settings:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;Settings&lt;/h2&gt;
+&lt;h2 id=&#34;settings&#34;&gt;Settings&lt;/h2&gt;
 
 &lt;!--![Settings](/images/manual/sati-settings.png)--&gt;
 
@@ -568,7 +568,7 @@ by tapping list.&lt;/p&gt;
 
 &lt;p&gt;※ If there are Bugs and suggestions, please contact me from &amp;ldquo;Report a Problem&amp;rdquo; or Support Page with your iOS version and model.&lt;/p&gt;
 
-&lt;h3 id=&#34;with-metta-be-mindfull:ba63c6503b7d72f87e87ef2838227df0&#34;&gt;□■   with metta &amp;amp; be mindfull  ■□&lt;/h3&gt;
+&lt;h3 id=&#34;with-metta-be-mindfull&#34;&gt;□■   with metta &amp;amp; be mindfull  ■□&lt;/h3&gt;
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
@@ -594,7 +594,7 @@ THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS 
       <guid>http://goozenlab.com/en/iapp/listaria/</guid>
       <description>
 
-&lt;h2 id=&#34;this-is-simple-shopping-list-application:e2890987392853f5dee70fba26a14a4b&#34;&gt;This is simple shopping list application.&lt;/h2&gt;
+&lt;h2 id=&#34;this-is-simple-shopping-list-application&#34;&gt;This is simple shopping list application.&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-listaria.jpg&#34; alt=&#34;Listaria Image&#34; /&gt;&lt;/p&gt;
 
@@ -605,7 +605,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 
 &lt;p&gt;230 items are already registared.&lt;/p&gt;
 
-&lt;h2 id=&#34;shopping-list-page:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ Shopping List Page&lt;/h2&gt;
+&lt;h2 id=&#34;shopping-list-page&#34;&gt;□ Shopping List Page&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-main.png&#34; alt=&#34;main&#34; /&gt;
 &lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png&#34; alt=&#34;Recent&#34; /&gt;&lt;/p&gt;
@@ -613,7 +613,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 &lt;p&gt;This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar.
 (order: Vegitable・Frute・lll・BulkFood・Spices・Drinks・PersoanlCare・Pet・Kitchen・other)&lt;/p&gt;
 
-&lt;h3 id=&#34;navigation-bar:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
+&lt;h3 id=&#34;navigation-bar&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Double Tap on NavBar: Change Shopping list - Recently bought items list&lt;/li&gt;
@@ -621,7 +621,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 &lt;li&gt;List Button: to Item List page&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;cell:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ Cell&lt;/h3&gt;
+&lt;h3 id=&#34;cell&#34;&gt;◆ Cell&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-shoppinglist.png&#34; alt=&#34;Shopping List&#34; /&gt;&lt;/p&gt;
 
@@ -630,14 +630,14 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 &lt;li&gt;Tap other area: Show memo if you have it, otherwise no reaction.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;item-list-page:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ Item List page&lt;/h2&gt;
+&lt;h2 id=&#34;item-list-page&#34;&gt;□ Item List page&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list.png&#34; alt=&#34;Item View&#34; /&gt;
 &lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;Item&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Add items on these pages. If you want to add items, do it from + button on navigation bar.&lt;/p&gt;
 
-&lt;h3 id=&#34;navigation-bar-1:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
+&lt;h3 id=&#34;navigation-bar-1&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Swipe: Change categories.&lt;/li&gt;
@@ -645,7 +645,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 &lt;li&gt;Longtap: Change sortorder (by date purcahsed and by times bought)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;cell-1:e2890987392853f5dee70fba26a14a4b&#34;&gt;◆ Cell&lt;/h3&gt;
+&lt;h3 id=&#34;cell-1&#34;&gt;◆ Cell&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-list.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
 
@@ -658,7 +658,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 
 &lt;p&gt;※ Items which has background color are on shopping list.&lt;/p&gt;
 
-&lt;h2 id=&#34;home-setting-listaria:e2890987392853f5dee70fba26a14a4b&#34;&gt;□ Home&amp;gt;Setting&amp;gt; listaria&lt;/h2&gt;
+&lt;h2 id=&#34;home-setting-listaria&#34;&gt;□ Home&amp;gt;Setting&amp;gt; listaria&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
@@ -681,7 +681,7 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
 
 &lt;p&gt;It is software to figure out that we must make on a regular basis, such as the time to replace the battery, the things that event to cycle.&lt;/p&gt;
 
-&lt;h2 id=&#34;list-view:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ List View&lt;/h2&gt;
+&lt;h2 id=&#34;list-view&#34;&gt;□ List View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png&#34; alt=&#34;Doop Navigation Bar&#34; /&gt;&lt;/p&gt;
 
@@ -701,7 +701,7 @@ Navigation bar(gray) list of things Inactive&lt;/p&gt;
 ・Center DoubleTap: Edit&lt;br /&gt;
 ・Swipe to Delete&lt;/p&gt;
 
-&lt;h3 id=&#34;meaning-of-bar-display-accessories:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;※ meaning of bar display/Accessories&lt;/h3&gt;
+&lt;h3 id=&#34;meaning-of-bar-display-accessories&#34;&gt;※ meaning of bar display/Accessories&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The top of the left bar: number of times made replacement&lt;br /&gt;&lt;/li&gt;
@@ -709,7 +709,7 @@ Navigation bar(gray) list of things Inactive&lt;/p&gt;
 Bar-right: I will change bar percent of the remaining amount, even light and shade to match the remaining amount. (Small: thin&amp;gt; Multi-co)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;display-style:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;Display Style&lt;/h3&gt;
+&lt;h3 id=&#34;display-style&#34;&gt;Display Style&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cellstyles.png&#34; alt=&#34;Doop CellStyles&#34; /&gt;&lt;/p&gt;
 
@@ -726,7 +726,7 @@ Number of days the date and time to get to the average number of days used on th
 &lt;p&gt;※ Bar on the right will change to red estimated remaining amount less than 15%.&lt;br /&gt;
 ※ If there is no data for the period on the first use, the average value is not displayed and the color of the bar on the right-hand side does not change. The display is based on the data from the first second and subsequent.&lt;/p&gt;
 
-&lt;h2 id=&#34;edit-view:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ Edit View&lt;/h2&gt;
+&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-doop-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
 
@@ -741,7 +741,7 @@ Number of days the date and time to get to the average number of days used on th
 
 &lt;p&gt;※ You can change the start date and time use by tapping the date.&lt;/p&gt;
 
-&lt;h2 id=&#34;history-view:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ History View&lt;/h2&gt;
+&lt;h2 id=&#34;history-view&#34;&gt;□ History View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-historyview.png&#34; alt=&#34;Doop History Page&#34; /&gt;&lt;/p&gt;
 
@@ -752,7 +752,7 @@ Number of days the date and time to get to the average number of days used on th
 ・Center Tap: Edit installed/removed time, delete, and add memo.&lt;br /&gt;
 ・Swipe to Delete&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-doop:ef5d08cbce9b2cc4c08eb748ba5ddc1d&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;doop]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-doop&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;doop]&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-setting.png&#34; alt=&#34;Doop Setting&#34; /&gt;&lt;/p&gt;
 
@@ -783,7 +783,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 
 &lt;p&gt;This is a simple software to log your activities.&lt;/p&gt;
 
-&lt;h2 id=&#34;how-to-use:5b89f527080bd576a91ef79ce811581e&#34;&gt;How to Use&lt;/h2&gt;
+&lt;h2 id=&#34;how-to-use&#34;&gt;How to Use&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png&#34; alt=&#34;Default&#34; /&gt;
 &lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png&#34; alt=&#34;AM&#34; /&gt;
@@ -802,7 +802,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 
 &lt;p&gt;※ There is indication on title with dot: (•title: am, title•: pm)&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting:5b89f527080bd576a91ef79ce811581e&#34;&gt;◇ App Setting&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting&#34;&gt;◇ App Setting&lt;/h2&gt;
 
 &lt;p&gt;・You can change title of navigation bar.&lt;/p&gt;
 
@@ -827,7 +827,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
       <guid>http://goozenlab.com/en/iapp/tapas/</guid>
       <description>
 
-&lt;h2 id=&#34;colorful-and-simple-multiple-kitchen-timer-with-list:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;Colorful and Simple Multiple Kitchen Timer with List.&lt;/h2&gt;
+&lt;h2 id=&#34;colorful-and-simple-multiple-kitchen-timer-with-list&#34;&gt;Colorful and Simple Multiple Kitchen Timer with List.&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;For noodle lovers&lt;/strong&gt;&lt;/p&gt;
 
@@ -840,7 +840,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 ・record of date/times cooked&lt;br /&gt;
 ・simple design&lt;/p&gt;
 
-&lt;h2 id=&#34;list-view:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ List View&lt;/h2&gt;
+&lt;h2 id=&#34;list-view&#34;&gt;□ List View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-main.png&#34; alt=&#34;List&#34; /&gt;&lt;/p&gt;
 
@@ -854,7 +854,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;timer-view-5-timers-at-once:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ Timer View: 5 Timers at once&lt;/h2&gt;
+&lt;h2 id=&#34;timer-view-5-timers-at-once&#34;&gt;□ Timer View: 5 Timers at once&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
 
@@ -866,7 +866,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;edit-view:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ Edit View&lt;/h2&gt;
+&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-edit.png&#34; alt=&#34;Edit&#34; /&gt;&lt;/p&gt;
 
@@ -874,7 +874,7 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 ・set time&lt;br /&gt;
 ・color lock&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-tapas:fb80bd26f3fdcace31329cf4b3822de7&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Tapas]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-tapas&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Tapas]&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
 
@@ -898,12 +898,12 @@ Support: URL http://goozenlab.com/en/iapp/doop/
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-cosper.jpg&#34; alt=&#34;cosper Image&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;is-this-worth-xxxx:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;is this worth $xxxx?&lt;/h3&gt;
+&lt;h3 id=&#34;is-this-worth-xxxx&#34;&gt;is this worth $xxxx?&lt;/h3&gt;
 
 &lt;p&gt;This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid.
 You input Product name, price, date and how many time you have used, then list shows its cost per day or per use.&lt;/p&gt;
 
-&lt;h2 id=&#34;main-view:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ Main View&lt;/h2&gt;
+&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-cosper-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
 
@@ -925,7 +925,7 @@ You input Product name, price, date and how many time you have used, then list s
 
 &lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;edit-view:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ Edit View&lt;/h2&gt;
+&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
 
 &lt;p&gt;・Date: tap to edit&lt;br /&gt;
 ・name&lt;br /&gt;
@@ -938,7 +938,7 @@ You input Product name, price, date and how many time you have used, then list s
 
 &lt;p&gt;・put star for favorite items&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-cosper:ececee76e336de6d33f8c09f6c7c50ac&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Cosper]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-cosper&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Cosper]&lt;/h2&gt;
 
 &lt;p&gt;・change title of navigation bar.&lt;br /&gt;
 ・change transparency of icon (Hart/Star)&lt;/p&gt;
@@ -965,7 +965,7 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-dandori.jpg&#34; alt=&#34;dandori Image&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;project-view:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ Project View&lt;/h2&gt;
+&lt;h2 id=&#34;project-view&#34;&gt;□ Project View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-dandori-main.png&#34; alt=&#34;Project Page&#34; /&gt;&lt;/p&gt;
 
@@ -980,14 +980,14 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
 ・Center LongTap: On/Off RedDot also register for AppBadge
 ・swipe to Delete&lt;/p&gt;
 
-&lt;h3 id=&#34;accesories-color-bar:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;☆ Accesories Color Bar&lt;/h3&gt;
+&lt;h3 id=&#34;accesories-color-bar&#34;&gt;☆ Accesories Color Bar&lt;/h3&gt;
 
 &lt;p&gt;・show Number of Tasks of the project&lt;br /&gt;
 ・Star and CutEdge&lt;br /&gt;
 ・White Dot: Color-Lock&lt;br /&gt;
 ・RedDot on Right: show if there is RedDot item in tasks&lt;/p&gt;
 
-&lt;h2 id=&#34;task-view:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ Task View&lt;/h2&gt;
+&lt;h2 id=&#34;task-view&#34;&gt;□ Task View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;&lt;/p&gt;
 
@@ -1001,7 +1001,7 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
 ・Center DoubleTap: Edit&lt;br /&gt;
 ・swipe to Delete&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-dandori:4ccfda8b1e725e32f79a200846ed96ed&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;dandori]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-dandori&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;dandori]&lt;/h2&gt;
 
 &lt;p&gt;You can change&lt;br /&gt;
 ・title of Navigation bar&lt;br /&gt;
@@ -1022,7 +1022,7 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
       <guid>http://goozenlab.com/en/iapp/littlist/</guid>
       <description>
 
-&lt;h2 id=&#34;little-list-with-big-letter:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;Little List with Big Letter.&lt;/h2&gt;
+&lt;h2 id=&#34;little-list-with-big-letter&#34;&gt;Little List with Big Letter.&lt;/h2&gt;
 
 &lt;p&gt;Very easy &amp;amp; simple List/to-do app.&lt;/p&gt;
 
@@ -1031,7 +1031,7 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
 &lt;p&gt;It is pleasant and fun to use, and stimulate your Right Brain.
 You may like to tap-tap to make nice and colorful to-do page like picture of Mondrian..&lt;/p&gt;
 
-&lt;h2 id=&#34;main-view:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;□ Main View&lt;/h2&gt;
+&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-navigation-bar.png&#34; alt=&#34;NavigationBar&#34; /&gt;&lt;/p&gt;
 
@@ -1063,13 +1063,13 @@ You may like to tap-tap to make nice and colorful to-do page like picture of Mon
 
 &lt;p&gt;※ AppBadge: Count items which are Red-Right-Dot and due item (36h befere).&lt;/p&gt;
 
-&lt;h2 id=&#34;edit-view:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;□ Edit View&lt;/h2&gt;
+&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
 
 &lt;p&gt;・tap gray circle to turn On/Off DueDate&lt;br /&gt;
 ・tap date to edit date&lt;br /&gt;
 ・lock button locks color.&lt;/p&gt;
 
-&lt;h2 id=&#34;app-setting-home-settings-littlist:e7260e88c03ef5fd7455dc1438efbe91&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;littlist]&lt;/h2&gt;
+&lt;h2 id=&#34;app-setting-home-settings-littlist&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;littlist]&lt;/h2&gt;
 
 &lt;p&gt;You can change&lt;br /&gt;
 ・display color mode [White (default), Dark, Kawaii (Cute)]

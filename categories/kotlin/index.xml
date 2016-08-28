@@ -34,7 +34,7 @@
 &lt;li&gt;GoLang Plugin：&lt;a href=&#34;https://github.com/go-lang-plugin-org/go-lang-idea-plugin/releases/tag/%23164&#34;&gt;ダウンロードサイト&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;intellij-idea:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;IntelliJ IDEA&lt;/h2&gt;
+&lt;h2 id=&#34;intellij-idea&#34;&gt;IntelliJ IDEA&lt;/h2&gt;
 
 &lt;p&gt;ダウンロードして立ち上げると、Javaはオラクルのものが既にダウンロードされているにもかかわらずJavaSEが必要とのアラートが上がる。(Not Now) をおしキャンセルする。&lt;/p&gt;
 
@@ -46,20 +46,20 @@
 
 &lt;p&gt;色が反転している所を書き換え（写真は書き換え済みで、元は&lt;code&gt;1.6*&lt;/code&gt;）るとすぅーーっと起動します。でも、これだと、アップデートした時にまた書き直さなければいけないのか？？&lt;/p&gt;
 
-&lt;h2 id=&#34;android-sdk:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Android SDK&lt;/h2&gt;
+&lt;h2 id=&#34;android-sdk&#34;&gt;Android SDK&lt;/h2&gt;
 
 &lt;p&gt;次にダウンロードした &lt;code&gt;android-sdk_r24.0.2-macosx&lt;/code&gt; は解凍し所定の場所に保存します。(AndroidStudioでは&lt;code&gt;~/Library/Android/sdk/&lt;/code&gt;の中がデフォルトのようです）そして、&lt;code&gt;/インストール先/tools/android update sdk&lt;/code&gt; を実行して必要なファイルをインストールします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ インストールのディレクトリ/android-sdk-macosx/tools/android update sdk
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;kotlin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;Kotlin&lt;/h2&gt;
+&lt;h2 id=&#34;kotlin&#34;&gt;Kotlin&lt;/h2&gt;
 
 &lt;p&gt;もう一丁、&lt;code&gt;Kotlin&lt;/code&gt; をpluginsより入れる。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-09-intellij-kotlin.png&#34; alt=&#34;Kotlin Install&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;golang-plugin:6ffa665a054ca576a7ab1f56231855e0&#34;&gt;GoLang Plugin&lt;/h2&gt;
+&lt;h2 id=&#34;golang-plugin&#34;&gt;GoLang Plugin&lt;/h2&gt;
 
 &lt;p&gt;おまけに、ダウンロードした &lt;code&gt;Go.164.zip&lt;/code&gt; を plugins から読み込みます。&lt;/p&gt;
 
