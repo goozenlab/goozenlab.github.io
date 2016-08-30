@@ -7,8 +7,102 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 28 Aug 2016 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Aug 2016 13:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>クリーンインストール</title>
+      <link>http://goozenlab.com/blog/2016/08/clean-install/</link>
+      <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/clean-install/</guid>
+      <description>
+
+&lt;p&gt;新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじっていくうちに訳がわからない状態になっていることが多い。）&lt;/p&gt;
+
+&lt;p&gt;今回は、初めてタイムマシーンを使ってみましたが、あまりクリーンインストールでは役に立たないことに気づきました。しかも、中に入っているファイルをコピーするのがすごーーく遅いです。。ただ、丸ごと復元するならすごく良いと思います。&lt;br /&gt;
+（それ以前はrsyncでバックアップとって、そこから必要なファイルを取っていました。次回からはまた、rsyncでバックアップするつもり。）&lt;/p&gt;
+
+&lt;h2 id=&#34;基本的な動作などの設定&#34;&gt;基本的な動作などの設定。&lt;/h2&gt;
+
+&lt;p&gt;まずはタップでクリックにする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-tap.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;英語版キーボードのキャップロックをコントロールキーに変更。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-caplock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;右下のホットコーナーを、デスクトップ表示にする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-mission-controll.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;老眼がどんどん進行し、ポインターがどんどんでかくなる。と、2011年MBPなので、透明度を控え目にする。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-display.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ドックは自動で出たり入ったり、でもほとんど使ってない気がする。アプリの立ち上げは、Spotlight（かAlfred、どっちにするべか。。）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-dock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「誰々さんのコンピューター」のネーミングは恥ずかしいので、コンピューターに名前をつけます。宿とかで丸見え、変えてない人がいかに多いか。。。
+ちなみに、私の端末はビール名で統一してます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-naming.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;フォルダーのサイドバーを変更。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-finder.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ことえりも、変換候補文字もデカくして、句読点で変換にする。フォントも細いタイプのものに変更。自動変換と推測変換はオフ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-kotoeri.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;メニューバーのバッテリー表示にパーセンを追加。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-battery-percent.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;スポットライトは、デフォルトの状態では勝手にいろんなものを検索の対象にされてしまうので必要なものに絞ります。別に怪しいファイルがあるわけでは無い。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-spotlight.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これも、バックグランドで動かされるとあまり気分が良いものでは無いのでオフにします。
+（旅先が多いので、全てのソフトに対して、自動アップデートはオフにしてます。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-applestore.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、シェルの変更を行う。環境設定のユーザーより。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-group.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-account.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;safari&#34;&gt;Safari&lt;/h2&gt;
+
+&lt;p&gt;サファリでは、検索エンジン、ダウンロードファイルの自動解凍処理のオフ、プライベートウィンドウ表示、エクステンションのインストール。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-search-engine.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari-extension.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データの移行は、~Library/Safari/ をそのまま新しい環境へ。ただし、Extenstionは再インストールする必要がある。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※ ちなみに、現在の最強のブラウザー環境は多分、こんな感じなのかな。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-firefox-ublock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;itunes-と-mail&#34;&gt;iTunes と Mail&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iTunes：iTunesフォルダーをそのままコピー。&lt;/li&gt;
+&lt;li&gt;メールは上記のようにスッキリとはいかない。アカウントは新しく設定し直す。メールのルールは &lt;code&gt;~/Library/Mail/V3/MailData/SyncedRules.plist&lt;/code&gt; 持ってくる。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>ヒラギノ角ゴシック</title>
@@ -358,37 +452,6 @@
 
 &lt;p&gt;※ LOI = Letter of Invitation：紹介状のこと&lt;br /&gt;
 来年あたりには必要が無くなりそうな予感もする。。（勝手な理由の無い予感）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>カザフスタンでの滞在登録</title>
-      <link>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</link>
-      <pubDate>Wed, 01 Jul 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</guid>
-      <description>
-
-&lt;p&gt;去年から一年限定でビザは免除になったが（2015/07/15にて終了）、相変わらず５日以上滞在時にはレジストレーションの必要がある。１５日は滞在できるが５日以上居るなら登録せよと、、来てほしいのだか、来てほしくないのやら、、。文句を言っても仕方が無いので、イミグレーションポリスにいきレジストする。&lt;/p&gt;
-
-&lt;p&gt;国境では、入国カードはもらえず、文句を言われると思いきや、書き込む必要書類は無く、パスポートのコピーと滞在先の住所のみで登録を受理され、一時間後にピックアップ。と、思った以上に簡単。オフィスは登録待ちの東アジア系の人たちで一杯かと思いきや、朝一は割と空いていて待っている人も他のスタン系の人たちが多い。パスポートと入国カードを含む３つの書類が付き戻ってくる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-07-01-registration-kazakhstan.jpg&#34; alt=&#34;Registration at Almaty&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;滞在５日目の明日ビシケクに向かおうと思っていたけれど、折角なので数日滞在を延ばす事にする。&lt;/p&gt;
-
-&lt;h2 id=&#34;外国人登録について-外務省のページより&#34;&gt;外国人登録について（外務省のページより）&lt;/h2&gt;
-
-&lt;p&gt;カザフスタンに5日以上（出入国日を含む）滞在する外国人には、外国人登録の義務があります
-(「登録手続きの概要」を参考としてください。)。&lt;br /&gt;
-&lt;strong&gt;登録していない場合&lt;/strong&gt;、出国を拒否され、&lt;br /&gt;
-&lt;strong&gt;登録期限経過後の手続き&lt;/strong&gt;には、罰金のほかに、弁護士費用と通訳費用が別途必要となります。&lt;/p&gt;
-
-&lt;p&gt;※ こりゃ、容赦ないですな。。。&lt;/p&gt;
-
-&lt;h2 id=&#34;追記-ビシケク&#34;&gt;追記@ビシケク&lt;/h2&gt;
-
-&lt;p&gt;他の旅行者曰く、滞在登録の必要は無いとの事。そして、2015/07/15までのビザ免除も引き続き継続されるらしい。&lt;/p&gt;
 </description>
     </item>
     

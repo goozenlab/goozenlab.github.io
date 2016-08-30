@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>インストール: Homebrew</title>
+  <meta name="description" content="インストール: Homebrew">
+  <meta name="author" content="jin">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="http://goozenlab.com/css/fonts.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/normalize.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/skeleton.css">
+  <link rel="stylesheet" href="http://goozenlab.com/css/custom.css">
+  
+  
+  <script src="http://goozenlab.com/js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="http://goozenlab.com/css/tomorrow.css">
+  <script>
+   hljs.configure({ tabReplace: "  " });
+   hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">goozenlab</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="http://goozenlab.com" class="brand" style="font-weight:bold;font-size:normal"> goozenlab </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/about/" class=""> About </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/goods" class=""> goods </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/dahon" class=""> dahon </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/nomad" class=""> nomad </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/mac" class=""> mac </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/develop" class=""> dev </a></li>
+		  <li class="u-pull-right cate"> <a href="http://goozenlab.com/categories/update" class=""> update </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+		  <time class="">2016-08-31</time>
+		  
+		  
+		  |
+		  
+		  
+
+		  
+		  categories:<a href="http://goozenlab.com/categories/dev">dev</a> <a href="http://goozenlab.com/categories/mac">mac</a> 
+		  
+
+		  
+
+		</p>
+		<h5>インストール: Homebrew</h5>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。</p>
+
+<pre><code>$ cd /usr/local/
+total 24
+drwxr-xr-x   14 jin  admin   476B Mar 29 10:51 .git/
+drwxr-xr-x    5 jin  admin   170B Feb 20  2016 .github/
+-rw-r--r--    1 jin  admin   823B Feb 20  2016 .gitignore
+-rw-r--r--    1 jin  admin   1.3K Feb 20  2016 .travis.yml
+-rw-r--r--    1 jin  admin   291B Oct 16  2015 .yardopts
+-rw-r--r--    1 jin  admin   3.1K Jun  1  2015 CODEOFCONDUCT.md
+drwxr-xr-x    9 jin  admin   306B Apr 18  2015 Cellar/
+drwxr-xr-x    3 jin  admin   102B Nov 11  2015 Frameworks/
+-rw-r--r--    1 jin  admin   1.2K Feb 20  2016 LICENSE.txt
+drwxr-xr-x   11 jin  admin   374B Mar 29 10:51 Library/
+-rw-r--r--    1 jin  admin   3.8K Feb 26  2016 README.md
+drwxr-xr-x  135 jin  admin   4.5K Mar 31 21:02 bin/
+drwxr-xr-x    4 jin  admin   136B Feb 20  2016 etc/
+drwxr-xr-x    8 jin  admin   272B Apr 18  2015 include/
+drwxr-xr-x   18 jin  admin   612B Apr 18  2015 lib/
+drwxr-xr-x    9 jin  admin   306B Mar 29 10:53 opt/
+drwxr-xr-x    4 jin  admin   136B Mar  5  2015 share/
+drwxr-xr-x    3 jin  admin   102B Apr  1  2015 var/
+</code></pre>
+
+<p>という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の<code>~/.brew</code> にする。（よくよく考えると、<code>~/Library/Homebrew</code>でも良かったかなと思ったりする。）</p>
+
+<h2 id="homebrew-のインストール">Homebrew のインストール</h2>
+
+<p>コピーもしくはクローンでインストールできます。私はサイト上にあった方法のコピーでインストールを行いました。ちなみに、gitでは <code>$ git clone https://github.com/Homebrew/brew.git ~/.brew</code> 。</p>
+
+<pre><code>$ cd
+$ mkdir .brew &amp;&amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .brew
+</code></pre>
+
+<h2 id="実行パスの設定">実行パスの設定</h2>
+
+<p>とりあえず、PREFIXなど状況をチェック。</p>
+
+<pre><code>$ .brew/bin/brew config
+HOMEBREW_VERSION: 0.9.9
+ORIGIN: (none)
+HEAD: (none)
+Last commit: never
+Core tap: N/A
+HOMEBREW_PREFIX: /Users/jin/.brew
+HOMEBREW_REPOSITORY: /Users/jin/.brew
+HOMEBREW_CELLAR: /Users/jin/.brew/Cellar
+HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
+CPU: octa-core 64-bit sandybridge
+Homebrew Ruby: 2.0.0-p648
+Clang: 7.3 build 703
+Git: 2.7.4 =&gt; /Applications/Xcode.app/Contents/Developer/usr/bin/git
+Perl: /usr/bin/perl
+Python: /usr/bin/python
+Ruby: /usr/bin/ruby =&gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+Java: N/A
+OS X: 10.11.6-x86_64
+Xcode: 7.3.1
+CLT: N/A
+X11: N/A
+$ .brew/bin/brew --cache
+/Users/jin/Library/Caches/Homebrew
+</code></pre>
+
+<p>問題は無いようなので、実行パスを<code>.bash_profile</code>に書き込みます。
+そしてCacheの保存先は、<code>/Users/jin/Library/Caches/Homebrew</code> になっているのでこれもついでに変更します。</p>
+
+<pre><code>export PATH=$HOME/.brew/bin:$PATH
+export HOMEBREW_CACHE=$HOME/.brew/cache
+</code></pre>
+
+<p>実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。</p>
+
+<pre><code>$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: Your Homebrew is not installed to /usr/local
+You can install Homebrew anywhere you want but some bottles (binary
+packages) can only be used in /usr/local and some formulae (packages)
+may not build correctly unless you install in /usr/local. Sorry!
+
+$ brew install hugo
+Initialized empty Git repository in /Users/jin/.brew/.git/
+remote: Counting objects: 1032, done.
+remote: Compressing objects: 100% (924/924), done.
+remote: Total 1032 (delta 91), reused 650 (delta 67), pack-reused 0
+Receiving objects: 100% (1032/1032), 1.03 MiB | 93.00 KiB/s, done.
+Resolving deltas: 100% (91/91), done.
+From https://github.com/Homebrew/brew
+ * [new branch]      master     -&gt; origin/master
+HEAD is now at 8e29cf1 Merge pull request #812 from DomT4/at
+==&gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.16.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==&gt; Pouring hugo-0.16.el_capitan.bottle.tar.gz
+==&gt; Caveats
+Bash completion has been installed to:
+  /Users/jin/.brew/etc/bash_completion.d
+==&gt; Summary
+🍺  /Users/jin/.brew/Cellar/hugo/0.16: 29 files, 17.6M
+</code></pre>
+
+<p>とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。</p>
+
+  	  	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'goozenlabgh';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/08\/install-homebrew\/';
+    var disqus_title = 'インストール: Homebrew';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/08\/install-homebrew\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-one">
+		<p class="footnote">
+		   Using <a href="http://gohugo.io/">Hugo</a> with nofancy theme. Hosted on githubPage.
+		  
+		  All right reserved by <a href="mailto:goozenlab@gmail.com">jin.chiangmai.thailand</a>.
+		  
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

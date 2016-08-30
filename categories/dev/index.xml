@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on goozenlab</title>
+    <link>http://goozenlab.com/categories/dev/</link>
+    <description>Recent content in Dev on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Wed, 31 Aug 2016 13:00:00 +0700</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>インストール: CocoaPods</title>
+      <link>http://goozenlab.com/blog/2016/08/install-cocoapods/</link>
+      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
+      <description>&lt;p&gt;ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。&lt;/p&gt;
+
+&lt;p&gt;以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で &lt;code&gt;~/.gem&lt;/code&gt; 内にインストール。&lt;/p&gt;
+
+&lt;p&gt;まずは、bashの設定 &lt;code&gt;~/.bash_profile&lt;/code&gt; を弄ります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# sudo-less Gem
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）&lt;/p&gt;
+
+&lt;p&gt;ディレクトリーを作り、&lt;code&gt;--user-install&lt;/code&gt;のオプションをつけインストールをします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd
+$ mkdir .gem
+$ gem install activesupport -v 4.2.6 --user-install
+$ gem install cocoapods --user-install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install activesupport -v 4.2.6 --user-install
+Fetching: i18n-0.7.0.gem (100%)
+Successfully installed i18n-0.7.0
+Fetching: thread_safe-0.3.5.gem (100%)
+Successfully installed thread_safe-0.3.5
+Fetching: tzinfo-1.2.2.gem (100%)
+Successfully installed tzinfo-1.2.2
+Fetching: minitest-5.9.0.gem (100%)
+Successfully installed minitest-5.9.0
+Fetching: activesupport-4.2.6.gem (100%)
+Successfully installed activesupport-4.2.6
+Parsing documentation for i18n-0.7.0
+Installing ri documentation for i18n-0.7.0
+Parsing documentation for thread_safe-0.3.5
+Installing ri documentation for thread_safe-0.3.5
+Parsing documentation for tzinfo-1.2.2
+Installing ri documentation for tzinfo-1.2.2
+Parsing documentation for minitest-5.9.0
+Installing ri documentation for minitest-5.9.0
+Parsing documentation for activesupport-4.2.6
+unable to convert &amp;quot;\x84&amp;quot; from ASCII-8BIT to UTF-8 for lib/active_support/values/unicode_tables.dat, skipping
+Installing ri documentation for activesupport-4.2.6
+5 gems installed
+$ gem install cocoapods --user-install
+Fetching: nap-1.1.0.gem (100%)
+Successfully installed nap-1.1.0
+Fetching: fuzzy_match-2.0.4.gem (100%)
+Successfully installed fuzzy_match-2.0.4
+Fetching: cocoapods-core-1.0.1.gem (100%)
+Successfully installed cocoapods-core-1.0.1
+Fetching: claide-1.0.0.gem (100%)
+Successfully installed claide-1.0.0
+Fetching: cocoapods-deintegrate-1.0.0.gem (100%)
+Successfully installed cocoapods-deintegrate-1.0.0
+Fetching: cocoapods-downloader-1.1.0.gem (100%)
+Successfully installed cocoapods-downloader-1.1.0
+Fetching: cocoapods-plugins-1.0.0.gem (100%)
+Successfully installed cocoapods-plugins-1.0.0
+Fetching: cocoapods-search-1.0.0.gem (100%)
+Successfully installed cocoapods-search-1.0.0
+Fetching: cocoapods-stats-1.0.0.gem (100%)
+Successfully installed cocoapods-stats-1.0.0
+Fetching: netrc-0.7.8.gem (100%)
+Successfully installed netrc-0.7.8
+Fetching: cocoapods-trunk-1.0.0.gem (100%)
+Successfully installed cocoapods-trunk-1.0.0
+Fetching: cocoapods-try-1.1.0.gem (100%)
+Successfully installed cocoapods-try-1.1.0
+Fetching: molinillo-0.4.5.gem (100%)
+Successfully installed molinillo-0.4.5
+Fetching: colored-1.2.gem (100%)
+Successfully installed colored-1.2
+Fetching: xcodeproj-1.2.0.gem (100%)
+Successfully installed xcodeproj-1.2.0
+Fetching: escape-0.0.4.gem (100%)
+Successfully installed escape-0.0.4
+Fetching: fourflusher-0.3.2.gem (100%)
+Successfully installed fourflusher-0.3.2
+Fetching: cocoapods-1.0.1.gem (100%)
+Successfully installed cocoapods-1.0.1
+Fetching: concurrent-ruby-1.0.2.gem (100%)
+Successfully installed concurrent-ruby-1.0.2
+Parsing documentation for nap-1.1.0
+Installing ri documentation for nap-1.1.0
+Parsing documentation for fuzzy_match-2.0.4
+Installing ri documentation for fuzzy_match-2.0.4
+Parsing documentation for cocoapods-core-1.0.1
+Installing ri documentation for cocoapods-core-1.0.1
+Parsing documentation for claide-1.0.0
+Installing ri documentation for claide-1.0.0
+Parsing documentation for cocoapods-deintegrate-1.0.0
+Installing ri documentation for cocoapods-deintegrate-1.0.0
+Parsing documentation for cocoapods-downloader-1.1.0
+Installing ri documentation for cocoapods-downloader-1.1.0
+Parsing documentation for cocoapods-plugins-1.0.0
+Installing ri documentation for cocoapods-plugins-1.0.0
+Parsing documentation for cocoapods-search-1.0.0
+Installing ri documentation for cocoapods-search-1.0.0
+Parsing documentation for cocoapods-stats-1.0.0
+Installing ri documentation for cocoapods-stats-1.0.0
+Parsing documentation for netrc-0.7.8
+Installing ri documentation for netrc-0.7.8
+Parsing documentation for cocoapods-trunk-1.0.0
+Installing ri documentation for cocoapods-trunk-1.0.0
+Parsing documentation for cocoapods-try-1.1.0
+Installing ri documentation for cocoapods-try-1.1.0
+Parsing documentation for molinillo-0.4.5
+Installing ri documentation for molinillo-0.4.5
+Parsing documentation for colored-1.2
+Installing ri documentation for colored-1.2
+Parsing documentation for xcodeproj-1.2.0
+Installing ri documentation for xcodeproj-1.2.0
+Parsing documentation for escape-0.0.4
+Installing ri documentation for escape-0.0.4
+Parsing documentation for fourflusher-0.3.2
+Installing ri documentation for fourflusher-0.3.2
+Parsing documentation for cocoapods-1.0.1
+Installing ri documentation for cocoapods-1.0.1
+Parsing documentation for concurrent-ruby-1.0.2
+Installing ri documentation for concurrent-ruby-1.0.2
+19 gems installed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、無事終了、インストールできました。これで、(a)の移行ができる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>インストール: Homebrew</title>
+      <link>http://goozenlab.com/blog/2016/08/install-homebrew/</link>
+      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/08/install-homebrew/</guid>
+      <description>
+
+&lt;p&gt;Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /usr/local/
+total 24
+drwxr-xr-x   14 jin  admin   476B Mar 29 10:51 .git/
+drwxr-xr-x    5 jin  admin   170B Feb 20  2016 .github/
+-rw-r--r--    1 jin  admin   823B Feb 20  2016 .gitignore
+-rw-r--r--    1 jin  admin   1.3K Feb 20  2016 .travis.yml
+-rw-r--r--    1 jin  admin   291B Oct 16  2015 .yardopts
+-rw-r--r--    1 jin  admin   3.1K Jun  1  2015 CODEOFCONDUCT.md
+drwxr-xr-x    9 jin  admin   306B Apr 18  2015 Cellar/
+drwxr-xr-x    3 jin  admin   102B Nov 11  2015 Frameworks/
+-rw-r--r--    1 jin  admin   1.2K Feb 20  2016 LICENSE.txt
+drwxr-xr-x   11 jin  admin   374B Mar 29 10:51 Library/
+-rw-r--r--    1 jin  admin   3.8K Feb 26  2016 README.md
+drwxr-xr-x  135 jin  admin   4.5K Mar 31 21:02 bin/
+drwxr-xr-x    4 jin  admin   136B Feb 20  2016 etc/
+drwxr-xr-x    8 jin  admin   272B Apr 18  2015 include/
+drwxr-xr-x   18 jin  admin   612B Apr 18  2015 lib/
+drwxr-xr-x    9 jin  admin   306B Mar 29 10:53 opt/
+drwxr-xr-x    4 jin  admin   136B Mar  5  2015 share/
+drwxr-xr-x    3 jin  admin   102B Apr  1  2015 var/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の&lt;code&gt;~/.brew&lt;/code&gt; にする。（よくよく考えると、&lt;code&gt;~/Library/Homebrew&lt;/code&gt;でも良かったかなと思ったりする。）&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrew-のインストール&#34;&gt;Homebrew のインストール&lt;/h2&gt;
+
+&lt;p&gt;コピーもしくはクローンでインストールできます。私はサイト上にあった方法のコピーでインストールを行いました。ちなみに、gitでは &lt;code&gt;$ git clone https://github.com/Homebrew/brew.git ~/.brew&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd
+$ mkdir .brew &amp;amp;&amp;amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .brew
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;実行パスの設定&#34;&gt;実行パスの設定&lt;/h2&gt;
+
+&lt;p&gt;とりあえず、PREFIXなど状況をチェック。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ .brew/bin/brew config
+HOMEBREW_VERSION: 0.9.9
+ORIGIN: (none)
+HEAD: (none)
+Last commit: never
+Core tap: N/A
+HOMEBREW_PREFIX: /Users/jin/.brew
+HOMEBREW_REPOSITORY: /Users/jin/.brew
+HOMEBREW_CELLAR: /Users/jin/.brew/Cellar
+HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
+CPU: octa-core 64-bit sandybridge
+Homebrew Ruby: 2.0.0-p648
+Clang: 7.3 build 703
+Git: 2.7.4 =&amp;gt; /Applications/Xcode.app/Contents/Developer/usr/bin/git
+Perl: /usr/bin/perl
+Python: /usr/bin/python
+Ruby: /usr/bin/ruby =&amp;gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+Java: N/A
+OS X: 10.11.6-x86_64
+Xcode: 7.3.1
+CLT: N/A
+X11: N/A
+$ .brew/bin/brew --cache
+/Users/jin/Library/Caches/Homebrew
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;問題は無いようなので、実行パスを&lt;code&gt;.bash_profile&lt;/code&gt;に書き込みます。
+そしてCacheの保存先は、&lt;code&gt;/Users/jin/Library/Caches/Homebrew&lt;/code&gt; になっているのでこれもついでに変更します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=$HOME/.brew/bin:$PATH
+export HOMEBREW_CACHE=$HOME/.brew/cache
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don&#39;t worry and just ignore them. Thanks!
+
+Warning: Your Homebrew is not installed to /usr/local
+You can install Homebrew anywhere you want but some bottles (binary
+packages) can only be used in /usr/local and some formulae (packages)
+may not build correctly unless you install in /usr/local. Sorry!
+
+$ brew install hugo
+Initialized empty Git repository in /Users/jin/.brew/.git/
+remote: Counting objects: 1032, done.
+remote: Compressing objects: 100% (924/924), done.
+remote: Total 1032 (delta 91), reused 650 (delta 67), pack-reused 0
+Receiving objects: 100% (1032/1032), 1.03 MiB | 93.00 KiB/s, done.
+Resolving deltas: 100% (91/91), done.
+From https://github.com/Homebrew/brew
+ * [new branch]      master     -&amp;gt; origin/master
+HEAD is now at 8e29cf1 Merge pull request #812 from DomT4/at
+==&amp;gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.16.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==&amp;gt; Pouring hugo-0.16.el_capitan.bottle.tar.gz
+==&amp;gt; Caveats
+Bash completion has been installed to:
+  /Users/jin/.brew/etc/bash_completion.d
+==&amp;gt; Summary
+🍺  /Users/jin/.brew/Cellar/hugo/0.16: 29 files, 17.6M
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

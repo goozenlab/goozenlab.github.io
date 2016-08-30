@@ -209,218 +209,6 @@
 &lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#if LITE
-    // ライトバージョンで行う処理
-#else
-    // フルバージョンでの処理
-#endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-#if LITE
-import GoogleMobileAds
-#endif
-
-class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
-
-    #if LITE
-    /// The banner view.
-    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
-    var bannerView: GADBannerView!
-    #endif
-    
-    .......
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        setNavigationBarGestures()
-        self.tableView.showsVerticalScrollIndicator = false
-        self.tableView.rowHeight = Cell.Height
-
-      .......
-
-        #if LITE
-            loadAdmob()
-        #endif
-     }
-
-    .......
-    
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  Admob.swift
-//
-
-import UIKit
-import GoogleMobileAds
-
-extension ListTableViewController: GADBannerViewDelegate {
-    
-    func loadAdmob() {
-        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        bannerView.adUnitID = GADApplicationID
-        bannerView.delegate = self
-        bannerView.rootViewController = self
-//  For Debug      
-//        let request:GADRequest = GADRequest()
-//        request.testDevices = [kGADSimulatorID]
-//        bannerView.loadRequest(request)
-        bannerView.loadRequest(GADRequest())
-    }
-        
-    func adViewDidReceiveAd(bannerView: GADBannerView!) {
-        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
-        let adMobView = bannerView
-        
-        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
-        self.bannerView.frame = CGRectMake(0.0, 0.0,
-                                           adMobView.frame.size.width, adMobView.frame.size.height)
-        self.tableView.tableHeaderView = self.bannerView
-        UIView.commitAnimations()
-    }
-    
-    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
-        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
-        tableView.tableHeaderView = bannerView        
-        UIView.commitAnimations()
-    }
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lite VersionとAdmob</title>
-      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
-      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>
-
-&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
-&lt;li&gt;スキームの変更&lt;/li&gt;
-&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
-&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
-&lt;li&gt;アイコンの追加&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
-
-&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
-
-&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
-
-&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
-
-&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;AdSupport&lt;/li&gt;
-&lt;li&gt;AudioToolbox&lt;/li&gt;
-&lt;li&gt;AVFoundation&lt;/li&gt;
-&lt;li&gt;CoreGraphics&lt;/li&gt;
-&lt;li&gt;CoreTelephony&lt;/li&gt;
-&lt;li&gt;EventKit&lt;/li&gt;
-&lt;li&gt;EventKitUI&lt;/li&gt;
-&lt;li&gt;MessageUI&lt;/li&gt;
-&lt;li&gt;StoreKit&lt;/li&gt;
-&lt;li&gt;SystemConfiguration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
-
-&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#if LITE
  	// ライトバージョンで行う処理
 #else
  	// フルバージョンでの処理
@@ -512,46 +300,6 @@ extension ListTableViewController: GADBannerViewDelegate {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>イフレット</title>
-      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
-      <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
-
-&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
-
-if let lock  = event.isLocked as? Bool {
-    cell.isLocked = lock
-} else {
-    cell.isLocked = false
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
-
-guard let lock  = event.isLocked as? Bool else { return }
-cell.isLocked = lock
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# xx = yy ??
-cell.isLocked = event.isLocked as? Bool ?? false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
 </description>
     </item>
     
@@ -878,6 +626,72 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 
 &lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NotificationSettings認証設定</title>
+      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
+      <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
+      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
+
+&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
+  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
+  categories: nil))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>クラスが読み込めず [解決]</title>
+      <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
+      <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
+      <description>
+
+&lt;p&gt;もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、&lt;a href=&#34;http://goozenlab.com/blog/2015/03/unable-to-load-class/&#34;&gt;クラスが読み込めず&lt;/a&gt;で書いた問題が解決しました。&lt;/p&gt;
+
+&lt;p&gt;問題のエラーログ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CoreData: warning: 
+Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Class not found, using default NSManagedObject instead.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
+&lt;li&gt;CONFIGURATIONSを選択&lt;/li&gt;
+&lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
+（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
+
+&lt;h2 id=&#34;うまく行かない場合&#34;&gt;うまく行かない場合&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
+&lt;li&gt;DerivedDataのデーターを消す&lt;/li&gt;
+&lt;li&gt;新しいプロジェクトを作って、Modelを移行して試す&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。&lt;/p&gt;
+
+&lt;p&gt;蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
+小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。&lt;/p&gt;
 </description>
     </item>
     
