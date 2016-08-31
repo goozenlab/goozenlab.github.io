@@ -7,11 +7,82 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 31 Aug 2016 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Sep 2016 07:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>インストール: CocoaPods</title>
+      <title>Podsをプロジェクトに</title>
+      <link>http://goozenlab.com/blog/2016/09/install-pods/</link>
+      <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/install-pods/</guid>
+      <description>&lt;p&gt;プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pod install
+Setting up CocoaPods master repo
+[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
+You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もいちょいなのに、、）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
+$ git clone https://github.com/CocoaPods/Specs.git
+Cloning into &#39;Specs&#39;...
+remote: Counting objects: 801469, done.
+remote: Compressing objects: 100% (30/30), done.
+Receiving objects:  83% (671735/801475), 209.63 MiB | 10.00 KiB/s    
+error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s     
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;思ったよりファイルが大きいです（310 MiBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
+（途中回線が切れること数回、、、）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cocoapod-install.png&#34; alt=&#34;pods install&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pod install
+Downloading dependencies
+Installing Alamofire (3.3.1)
+Installing Reachability (3.2)
+Installing SwiftyDropbox (3.2.0)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ネット上では、&lt;code&gt;pod install --no-repo-update --verbose&lt;/code&gt; でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。&lt;/p&gt;
+
+&lt;p&gt;swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ $ pod update
+Update all pods
+Updating local specs repositories
+Analyzing dependencies
+Removing Reachability
+Downloading dependencies
+Using Alamofire (3.3.1)
+Installing ReachabilitySwift (2.3.3)
+Using SwiftyDropbox (3.2.0)
+Generating Pods project
+Integrating client project
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こんな感じで終了。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sudo-less Gem &amp; Cocoapods</title>
       <link>http://goozenlab.com/blog/2016/08/install-cocoapods/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -783,28 +854,6 @@ shingha:~ $
 &lt;p&gt;と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）&lt;/p&gt;
 
 &lt;p&gt;ちょっとうれしかったのでポストする。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>さよならMBP15、サワディクラップMBA11</title>
-      <link>http://goozenlab.com/blog/2014/11/macbookair11/</link>
-      <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/macbookair11/</guid>
-      <description>&lt;p&gt;さよなら、MBP15、サワディクラップ、MBA11。&lt;/p&gt;
-
-&lt;p&gt;タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変調の兆しがあり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;本当は来年の２月頃発表になる12インチのMBA Retinaで機材をフルリニューアルするつもりでいた。思わぬ出来事に２•３日どうしようかと悩む。ここタイで直すという選択肢もあるが、タイには正規なアップルショップはまだなく、時間もかなりかかり信頼もできない。&lt;/p&gt;
-
-&lt;p&gt;MBP15は開発が一段落終えたらタイに置いて出るつもりでいたので、旅に持っていく事を理由付けにして、MBA11 w/US Keyboard+RAM8GBを目当てにタイのアップル代理店iStudioへ行く。カスタム仕様だとアメリカに注文を出すらしく２週間はかかるらしく、在庫はノーマルのタイ語キーボードの物しかないとの事。さすが王国だけあって外人には媚びていない。ある意味商売べたでもある。金額は免税の処置をしても昨今の急激な円安のせいでタイで買うお得感が全くない。日銀に恨み節。。無駄遣い感がぬぐい去れない。購入意欲が一気に減少する。&lt;/p&gt;
-
-&lt;p&gt;ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。&lt;/p&gt;
-
-&lt;p&gt;店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。&lt;/p&gt;
 </description>
     </item>
     

@@ -7,11 +7,82 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 31 Aug 2016 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Sep 2016 07:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>インストール: CocoaPods</title>
+      <title>Podsをプロジェクトに</title>
+      <link>http://goozenlab.com/blog/2016/09/install-pods/</link>
+      <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/install-pods/</guid>
+      <description>&lt;p&gt;プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pod install
+Setting up CocoaPods master repo
+[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
+You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もいちょいなのに、、）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
+$ git clone https://github.com/CocoaPods/Specs.git
+Cloning into &#39;Specs&#39;...
+remote: Counting objects: 801469, done.
+remote: Compressing objects: 100% (30/30), done.
+Receiving objects:  83% (671735/801475), 209.63 MiB | 10.00 KiB/s    
+error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s     
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;思ったよりファイルが大きいです（310 MiBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
+（途中回線が切れること数回、、、）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cocoapod-install.png&#34; alt=&#34;pods install&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pod install
+Downloading dependencies
+Installing Alamofire (3.3.1)
+Installing Reachability (3.2)
+Installing SwiftyDropbox (3.2.0)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ネット上では、&lt;code&gt;pod install --no-repo-update --verbose&lt;/code&gt; でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。&lt;/p&gt;
+
+&lt;p&gt;swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ $ pod update
+Update all pods
+Updating local specs repositories
+Analyzing dependencies
+Removing Reachability
+Downloading dependencies
+Using Alamofire (3.3.1)
+Installing ReachabilitySwift (2.3.3)
+Using SwiftyDropbox (3.2.0)
+Generating Pods project
+Integrating client project
+Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こんな感じで終了。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sudo-less Gem &amp; Cocoapods</title>
       <link>http://goozenlab.com/blog/2016/08/install-cocoapods/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -872,22 +943,6 @@ cell.isLocked = event.isLocked as? Bool ?? false
 &lt;p&gt;あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。&lt;/p&gt;
 
 &lt;p&gt;PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>羽田発香港経由チェンマイ行き</title>
-      <link>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
-      <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
-      <description>&lt;p&gt;LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれることがあります。未だ競争が厳しいのでしょう。最安と思われる金額のさらに半額ちかい。。一瞬、見間違えかと思いました、ちょっとドキドキしちゃいましたよ。香港によれるので、シャオミの携帯を買うべ、10月ならシャオミノートの新しいやつが出てれば御の字。&lt;/p&gt;
-
-&lt;p&gt;タイ行きのチケットは9月の半ばくらいから10月にかけて安いイメージがあります。タイはちょうど雨季の終わり頃で梅雨っぽい不快な時期。酷暑期の４・５月とこの９・１０月がちょっと嫌な感じの季節だからなのかしらん。（４・5月はタイでは夏休みの時期なのでチケットはさほど安くは無いです。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-13-airticket.png&#34; alt=&#34;Air Ticket&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;プロモーション関連は要チェックですわな。また久しぶり円高だし買い物一泊香港とかもお勧め。&lt;/p&gt;
 </description>
     </item>
     
