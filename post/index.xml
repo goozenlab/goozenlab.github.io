@@ -7,8 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 01 Sep 2016 07:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Sep 2016 19:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosperの金額表示</title>
+      <link>http://goozenlab.com/blog/2016/09/cosper-display/</link>
+      <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/cosper-display/</guid>
+      <description>&lt;p&gt;うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。&lt;/p&gt;
+
+&lt;p&gt;機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、&lt;/p&gt;
+
+&lt;p&gt;拙作アプリ、コスパ。Version1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;うーーーーん、少しきつきつだな、しかも結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）&lt;/p&gt;
+
+&lt;p&gt;もう一回長押しで表示したりすることや、ターブルビューのフッターで表示も考えるが、あまり操作を複雑にするのは気が進まないし、見た目もこれ以上余計なもの入れたく無い。情報の入ったヘッダー部を下に引っ張ってチラ見確認というのはありかな。。と、このポストを書いている最中に思いつくけど、これもちょっと違う感じもする。&lt;/p&gt;
+
+&lt;p&gt;実機に入れ、数日自分で使ってみて決めることにする。&lt;/p&gt;
+
+&lt;p&gt;で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づきました。。&lt;/p&gt;
+
+&lt;p&gt;ということで、設定に新しい項目を追加、という流れにします。&lt;/p&gt;
+
+&lt;p&gt;ちょっと他のところもいじっているので更新はしばし後です。乞うご期待。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Podsをプロジェクトに</title>
@@ -24,7 +52,7 @@ Setting up CocoaPods master repo
 You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もいちょいなのに、、）&lt;/p&gt;
+&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
 $ git clone https://github.com/CocoaPods/Specs.git
@@ -70,14 +98,17 @@ Analyzing dependencies
 Removing Reachability
 Downloading dependencies
 Using Alamofire (3.3.1)
-Installing ReachabilitySwift (2.3.3)
+Installing JGProgressHUD (1.4)
+Using ReachabilitySwift (2.3.3)
 Using SwiftyDropbox (3.2.0)
 Generating Pods project
 Integrating client project
-Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;こんな感じで終了。&lt;/p&gt;
+
+&lt;p&gt;安堵。&lt;/p&gt;
 </description>
     </item>
     
@@ -488,6 +519,8 @@ Bash completion has been installed to:
 &lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;追記：すぐ上の白点ボタンの位置がずれてるな。。。&lt;/p&gt;
 </description>
     </item>
     
@@ -919,30 +952,6 @@ cell.isLocked = event.isLocked as? Bool ?? false
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>推測候補表示</title>
-      <link>http://goozenlab.com/blog/2016/08/predictice-candidates/</link>
-      <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
-      <description>&lt;p&gt;日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、&lt;/p&gt;
-
-&lt;p&gt;最近、句読点を打つたびに出てくる、コレがムカッっとします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-predictive-candidates.png&#34; alt=&#34;推測候補&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から&lt;strong&gt;推測候補表示&lt;/strong&gt;オプションを&lt;strong&gt;オフ&lt;/strong&gt;にすることで消えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。&lt;/p&gt;
-
-&lt;p&gt;あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。&lt;/p&gt;
-
-&lt;p&gt;PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。&lt;/p&gt;
 </description>
     </item>
     

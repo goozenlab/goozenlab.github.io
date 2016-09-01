@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>Podsをプロジェクトに</title>
-  <meta name="description" content="Podsをプロジェクトに">
+  <title>cosperの金額表示</title>
+  <meta name="description" content="cosperの金額表示">
   <meta name="author" content="jin">
 
   
@@ -74,88 +74,42 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com/categories/develop">develop</a> <a href="http://goozenlab.com/categories/mac">mac</a> 
+		  categories:<a href="http://goozenlab.com/categories/cosper">cosper</a> <a href="http://goozenlab.com/categories/mumble">mumble</a> 
 		  
 
 		  
 
 		</p>
-		<h5>Podsをプロジェクトに</h5>
+		<h5>cosperの金額表示</h5>
 	  </div>
 
 	  <div class="post">
-		<p>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。</p>
+		<p>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。</p>
 
-<pre><code>$ pod install
-Setting up CocoaPods master repo
-[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
-You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
-</code></pre>
+<p>機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、</p>
 
-<p>で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）</p>
+<p>拙作アプリ、コスパ。Version1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、</p>
 
-<pre><code>$ cd .cocoapods/repos/
-$ git clone https://github.com/CocoaPods/Specs.git
-Cloning into 'Specs'...
-remote: Counting objects: 801469, done.
-remote: Compressing objects: 100% (30/30), done.
-Receiving objects:  83% (671735/801475), 209.63 MiB | 10.00 KiB/s    
-error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s     
-fatal: The remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-$
-</code></pre>
+<p><img src="/images/2016-09-01-2016-09-01-cosper-display.png" alt="cosper display" /></p>
 
-<p>思ったよりファイルが大きいです（310 MiBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
-（途中回線が切れること数回、、、）</p>
+<p>うーーーーん、少しきつきつだな、しかも結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）</p>
 
-<p><img src="/images/2016-09-01-cocoapod-install.png" alt="pods install" /></p>
+<p>もう一回長押しで表示したりすることや、ターブルビューのフッターで表示も考えるが、あまり操作を複雑にするのは気が進まないし、見た目もこれ以上余計なもの入れたく無い。情報の入ったヘッダー部を下に引っ張ってチラ見確認というのはありかな。。と、このポストを書いている最中に思いつくけど、これもちょっと違う感じもする。</p>
 
-<p>で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。</p>
+<p>実機に入れ、数日自分で使ってみて決めることにする。</p>
 
-<pre><code>$ pod install
-Downloading dependencies
-Installing Alamofire (3.3.1)
-Installing Reachability (3.2)
-Installing SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
+<p>で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づきました。。</p>
 
-[!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
-Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
-$
-</code></pre>
+<p>ということで、設定に新しい項目を追加、という流れにします。</p>
 
-<p>ネット上では、<code>pod install --no-repo-update --verbose</code> でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。</p>
-
-<p>swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。</p>
-
-<pre><code>$ $ pod update
-Update all pods
-Updating local specs repositories
-Analyzing dependencies
-Removing Reachability
-Downloading dependencies
-Using Alamofire (3.3.1)
-Installing JGProgressHUD (1.4)
-Using ReachabilitySwift (2.3.3)
-Using SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
-Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
-</code></pre>
-
-<p>こんな感じで終了。</p>
-
-<p>安堵。</p>
+<p>ちょっと他のところもいじっているので更新はしばし後です。乞うご期待。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/install-pods\/';
-    var disqus_title = 'Podsをプロジェクトに';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/install-pods\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/cosper-display\/';
+    var disqus_title = 'cosperの金額表示';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/cosper-display\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

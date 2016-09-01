@@ -24,7 +24,7 @@ Setting up CocoaPods master repo
 You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もいちょいなのに、、）&lt;/p&gt;
+&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
 $ git clone https://github.com/CocoaPods/Specs.git
@@ -70,14 +70,17 @@ Analyzing dependencies
 Removing Reachability
 Downloading dependencies
 Using Alamofire (3.3.1)
-Installing ReachabilitySwift (2.3.3)
+Installing JGProgressHUD (1.4)
+Using ReachabilitySwift (2.3.3)
 Using SwiftyDropbox (3.2.0)
 Generating Pods project
 Integrating client project
-Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
+Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;こんな感じで終了。&lt;/p&gt;
+
+&lt;p&gt;安堵。&lt;/p&gt;
 </description>
     </item>
     
