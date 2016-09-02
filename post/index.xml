@@ -7,8 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 01 Sep 2016 19:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCodeにてアプリデーターの管理</title>
+      <link>http://goozenlab.com/blog/2016/09/device-container/</link>
+      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/device-container/</guid>
+      <description>
+
+&lt;p&gt;端末のアプリデータをバックアップ、復元。&lt;/p&gt;
+
+&lt;p&gt;クリーンインストールでのミス、弊害のひとつ。XCodeにてのコードサインが変更（Revoke）による実機へインストールできないエラーの不具合。&lt;/p&gt;
+
+&lt;p&gt;この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。&lt;/p&gt;
+
+&lt;h2 id=&#34;データーのバックアップ-復元&#34;&gt;データーのバックアップ・復元&lt;/h2&gt;
+
+&lt;p&gt;まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-download.png&#34; alt=&#34;Container download&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;実機にインストール前に、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;コンテナをダウンロード&lt;/li&gt;
+&lt;li&gt;エラーの出るアプリを消去&lt;/li&gt;
+&lt;li&gt;アプリをインストール&lt;/li&gt;
+&lt;li&gt;コンテナのリプレース&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-replace.png&#34; alt=&#34;Container replace&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;にて作業を終えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;コンテナファイル&#34;&gt;コンテナファイル&lt;/h2&gt;
+
+&lt;p&gt;そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような &lt;code&gt;****.xcappdata&lt;/code&gt; が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata.png&#34; alt=&#34;Appdata&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Documentフォルダー内にある &lt;code&gt;*.sql&lt;/code&gt; の三つのファイルがアプリのデーターになります。Libraryのなかには設定のplistファイルがあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata-detail.png&#34; alt=&#34;Appdata detail&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてこのファイルをシミュレーターに入れることでデーターを設定することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。&lt;/p&gt;
+
+&lt;h2 id=&#34;シミュレータヘのデーター移行&#34;&gt;シミュレータヘのデーター移行&lt;/h2&gt;
+
+&lt;p&gt;シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。&lt;/p&gt;
+
+&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeveiceより確認します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-identifier.png&#34; alt=&#34;simulator-identifier&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ファインダーに戻り、ライブラリーに入り。&lt;/p&gt;
+
+&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/72F281CD-CA93-4B1D-8550-C857997FD0F4/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for APP&lt;/strong&gt;/Documents&lt;/p&gt;
+
+&lt;p&gt;に移動して、上の&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルを上書きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-app-directory.png&#34; alt=&#34;simulator-app-directory&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;シミュレータのデーターを実機で使う&#34;&gt;シミュレータのデーターを実機で使う&lt;/h2&gt;
+
+&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのものに上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
+
+&lt;p&gt;iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>cosperの金額表示</title>
@@ -20,19 +89,19 @@
 
 &lt;p&gt;機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、&lt;/p&gt;
 
-&lt;p&gt;拙作アプリ、コスパ。Version1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、&lt;/p&gt;
+&lt;p&gt;拙作アプリ、コスパ.1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;うーーーーん、少しきつきつだな、しかも結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）&lt;/p&gt;
+&lt;p&gt;うーーーーん、少しきつきつだな、しかも思ったより結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう、バランスも悪い。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）&lt;/p&gt;
 
 &lt;p&gt;もう一回長押しで表示したりすることや、ターブルビューのフッターで表示も考えるが、あまり操作を複雑にするのは気が進まないし、見た目もこれ以上余計なもの入れたく無い。情報の入ったヘッダー部を下に引っ張ってチラ見確認というのはありかな。。と、このポストを書いている最中に思いつくけど、これもちょっと違う感じもする。&lt;/p&gt;
 
 &lt;p&gt;実機に入れ、数日自分で使ってみて決めることにする。&lt;/p&gt;
 
-&lt;p&gt;で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づきました。。&lt;/p&gt;
+&lt;p&gt;で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づく。（でもねぇ、後で、表示が切れるとか文句が出そうでねぇ、正直なところ、今ひとつ乗り気では無い。）&lt;/p&gt;
 
-&lt;p&gt;ということで、設定に新しい項目を追加、という流れにします。&lt;/p&gt;
+&lt;p&gt;ということで、設定に新しい項目を追加、にします。&lt;/p&gt;
 
 &lt;p&gt;ちょっと他のところもいじっているので更新はしばし後です。乞うご期待。&lt;/p&gt;
 </description>
@@ -918,40 +987,6 @@ cell.isLocked = event.isLocked as? Bool ?? false
 アカウント：goozenlab)&lt;/p&gt;
 
 &lt;p&gt;まぁ、広報活動の一つとして考えてます。面白いことや、ためになることは書きませんので、そこのところは悪しからず。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.9.2</title>
-      <link>http://goozenlab.com/blog/2016/08/sati-192/</link>
-      <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
-      <description>
-
-&lt;p&gt;またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
-
-&lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
-
-&lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
-
-&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplicate function on History View.
-(In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;missing french localized string.&lt;/li&gt;
-&lt;li&gt;Localized messege after meditation. (it showed in only english)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

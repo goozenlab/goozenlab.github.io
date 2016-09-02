@@ -7,8 +7,77 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 01 Sep 2016 07:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCodeにてアプリデーターの管理</title>
+      <link>http://goozenlab.com/blog/2016/09/device-container/</link>
+      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/device-container/</guid>
+      <description>
+
+&lt;p&gt;端末のアプリデータをバックアップ、復元。&lt;/p&gt;
+
+&lt;p&gt;クリーンインストールでのミス、弊害のひとつ。XCodeにてのコードサインが変更（Revoke）による実機へインストールできないエラーの不具合。&lt;/p&gt;
+
+&lt;p&gt;この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。&lt;/p&gt;
+
+&lt;h2 id=&#34;データーのバックアップ-復元&#34;&gt;データーのバックアップ・復元&lt;/h2&gt;
+
+&lt;p&gt;まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-download.png&#34; alt=&#34;Container download&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;実機にインストール前に、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;コンテナをダウンロード&lt;/li&gt;
+&lt;li&gt;エラーの出るアプリを消去&lt;/li&gt;
+&lt;li&gt;アプリをインストール&lt;/li&gt;
+&lt;li&gt;コンテナのリプレース&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-replace.png&#34; alt=&#34;Container replace&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;にて作業を終えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;コンテナファイル&#34;&gt;コンテナファイル&lt;/h2&gt;
+
+&lt;p&gt;そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような &lt;code&gt;****.xcappdata&lt;/code&gt; が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata.png&#34; alt=&#34;Appdata&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Documentフォルダー内にある &lt;code&gt;*.sql&lt;/code&gt; の三つのファイルがアプリのデーターになります。Libraryのなかには設定のplistファイルがあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata-detail.png&#34; alt=&#34;Appdata detail&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そしてこのファイルをシミュレーターに入れることでデーターを設定することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。&lt;/p&gt;
+
+&lt;h2 id=&#34;シミュレータヘのデーター移行&#34;&gt;シミュレータヘのデーター移行&lt;/h2&gt;
+
+&lt;p&gt;シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。&lt;/p&gt;
+
+&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeveiceより確認します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-identifier.png&#34; alt=&#34;simulator-identifier&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ファインダーに戻り、ライブラリーに入り。&lt;/p&gt;
+
+&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/72F281CD-CA93-4B1D-8550-C857997FD0F4/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for APP&lt;/strong&gt;/Documents&lt;/p&gt;
+
+&lt;p&gt;に移動して、上の&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルを上書きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-app-directory.png&#34; alt=&#34;simulator-app-directory&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;シミュレータのデーターを実機で使う&#34;&gt;シミュレータのデーターを実機で使う&lt;/h2&gt;
+
+&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのものに上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
+
+&lt;p&gt;iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Podsをプロジェクトに</title>
@@ -827,26 +896,6 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>midXで中心を求める</title>
-      <link>http://goozenlab.com/blog/2015/07/midx-swift/</link>
-      <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
-      <description>&lt;p&gt;今までは中心を求めるのに素直に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.width / 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と行ってきたけれども、.midX/midY&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.midX
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とスマート、かつ格好良くできます。&lt;/p&gt;
 </description>
     </item>
     
