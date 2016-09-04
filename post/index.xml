@@ -7,8 +7,99 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 02 Sep 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 05 Sep 2016 10:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>littlist v2.8.0</title>
+      <link>http://goozenlab.com/blog/2016/09/littlist-280/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/littlist-280/</guid>
+      <description>
+
+&lt;p&gt;Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。&lt;/p&gt;
+
+&lt;p&gt;追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-littlist-280.png&#34; alt=&#34;littlist 2.8.0&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。&lt;/li&gt;
+&lt;li&gt;インポートされたイベントの右バーのに色が付きます。&lt;/li&gt;
+&lt;li&gt;読み込みリスト名の設定などは設定より行います。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：この長押しは、&lt;strong&gt;メイン画面の時にのみ有効&lt;/strong&gt;になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-8-0-100-swift-release-2016-09-05-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
+&lt;li&gt;バーの色、選択時の背景色を変更 （ダークモードが少しカッコよくなったと、）&lt;/li&gt;
+&lt;li&gt;文字が少し大きくなる（私の老眼が進行しているわけではない。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加ボタンの長押し：インポート機能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;remove&#34;&gt;Remove&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;新規追加ダイアログからインポートボタンを削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Podsを使う</title>
+      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
+      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
+      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
+
+&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+
+import ReachabilitySwift
+import MBProgressHUD
+import SwiftyDropbox
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
+platform :ios, &#39;8.0&#39;
+
+target &#39;(a)&#39; do
+  use_frameworks!
+
+  # Pods for (a)
+  pod &#39;ReachabilitySwift&#39;
+  pod &#39;MBProgressHUD&#39;
+  pod &#39;SwiftyDropbox&#39;
+  
+end
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>XCodeにてアプリデーターの管理</title>
@@ -37,7 +128,7 @@
 &lt;ol&gt;
 &lt;li&gt;コンテナをダウンロード&lt;/li&gt;
 &lt;li&gt;エラーの出るアプリを消去&lt;/li&gt;
-&lt;li&gt;アプリをインストール&lt;/li&gt;
+&lt;li&gt;アプリを再インストール&lt;/li&gt;
 &lt;li&gt;コンテナのリプレース&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -61,13 +152,13 @@
 
 &lt;p&gt;シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。&lt;/p&gt;
 
-&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeveiceより確認します。&lt;/p&gt;
+&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeviceより確認します。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-identifier.png&#34; alt=&#34;simulator-identifier&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ファインダーに戻り、ライブラリーに入り。&lt;/p&gt;
 
-&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/72F281CD-CA93-4B1D-8550-C857997FD0F4/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for APP&lt;/strong&gt;/Documents&lt;/p&gt;
+&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/&lt;strong&gt;IDENTIFIER for Simulator&lt;/strong&gt;/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for Application&lt;/strong&gt;/Documents&lt;/p&gt;
 
 &lt;p&gt;に移動して、上の&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルを上書きます。&lt;/p&gt;
 
@@ -75,7 +166,7 @@
 
 &lt;h2 id=&#34;シミュレータのデーターを実機で使う&#34;&gt;シミュレータのデーターを実機で使う&lt;/h2&gt;
 
-&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのものに上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
+&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
 
 &lt;p&gt;iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。&lt;/p&gt;
 </description>
@@ -936,59 +1027,6 @@ extension ListTableViewController: GADBannerViewDelegate {
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>イフレット</title>
-      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
-      <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
-
-&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
-
-if let lock  = event.isLocked as? Bool {
-    cell.isLocked = lock
-} else {
-    cell.isLocked = false
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
-
-guard let lock  = event.isLocked as? Bool else { return }
-cell.isLocked = lock
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# xx = yy ??
-cell.isLocked = event.isLocked as? Bool ?? false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Twitterを復活</title>
-      <link>http://goozenlab.com/blog/2016/08/tweet/</link>
-      <pubDate>Tue, 16 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/tweet/</guid>
-      <description>&lt;p&gt;つぶやきたい事がある訳では無いけれど、twitterを復活させました。(
-アカウント：goozenlab)&lt;/p&gt;
-
-&lt;p&gt;まぁ、広報活動の一つとして考えてます。面白いことや、ためになることは書きませんので、そこのところは悪しからず。。&lt;/p&gt;
 </description>
     </item>
     

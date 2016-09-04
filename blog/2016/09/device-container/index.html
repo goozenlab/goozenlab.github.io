@@ -105,7 +105,7 @@
 <ol>
 <li>コンテナをダウンロード</li>
 <li>エラーの出るアプリを消去</li>
-<li>アプリをインストール</li>
+<li>アプリを再インストール</li>
 <li>コンテナのリプレース</li>
 </ol>
 
@@ -129,13 +129,13 @@
 
 <p>シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。</p>
 
-<p>まずは、Simulatorの識別番号を XCodeのDeveiceより確認します。</p>
+<p>まずは、Simulatorの識別番号を XCodeのDeviceより確認します。</p>
 
 <p><img src="/images/2016-09-02-simulator-identifier.png" alt="simulator-identifier" /></p>
 
 <p>ファインダーに戻り、ライブラリーに入り。</p>
 
-<p>~/Library/Developer/CoreSimulator/Devices/72F281CD-CA93-4B1D-8550-C857997FD0F4/data/Containers/Data/Application/<strong>IDENTIFIER for APP</strong>/Documents</p>
+<p>~/Library/Developer/CoreSimulator/Devices/<strong>IDENTIFIER for Simulator</strong>/data/Containers/Data/Application/<strong>IDENTIFIER for Application</strong>/Documents</p>
 
 <p>に移動して、上の<code>*.sql</code> の三つのファイルを上書きます。</p>
 
@@ -143,7 +143,7 @@
 
 <h2 id="シミュレータのデーターを実機で使う">シミュレータのデーターを実機で使う</h2>
 
-<p>逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、<code>****.xcappdata</code> ファイルのなかの<code>*.sql</code> の三つのファイルをシミュレーターのものに上書きして、実機のコンテナをリプレースします。</p>
+<p>逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、<code>****.xcappdata</code> ファイルのなかの<code>*.sql</code> の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。</p>
 
 <p>iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。</p>
 

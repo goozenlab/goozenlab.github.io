@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 01 Sep 2016 07:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Sep 2016 07:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Podsを使う</title>
+      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
+      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
+      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
+
+&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+
+import ReachabilitySwift
+import MBProgressHUD
+import SwiftyDropbox
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
+platform :ios, &#39;8.0&#39;
+
+target &#39;(a)&#39; do
+  use_frameworks!
+
+  # Pods for (a)
+  pod &#39;ReachabilitySwift&#39;
+  pod &#39;MBProgressHUD&#39;
+  pod &#39;SwiftyDropbox&#39;
+  
+end
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Podsをプロジェクトに</title>
@@ -823,40 +862,6 @@ shingha:~ $
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-02_itune.png&#34; alt=&#34;iTune with iPod&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MBA11を10日間使ってみて</title>
-      <link>http://goozenlab.com/blog/2014/11/mba-review/</link>
-      <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/mba-review/</guid>
-      <description>&lt;p&gt;10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-21-mba11.jpg&#34; alt=&#34;MBA11&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;軽い。&lt;/li&gt;
-&lt;li&gt;小さい。&lt;/li&gt;
-&lt;li&gt;電池の保ちが期待以上によい。ほぼ一日使える。&lt;/li&gt;
-&lt;li&gt;付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。&lt;/li&gt;
-&lt;li&gt;キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。&lt;/li&gt;
-&lt;li&gt;液晶はやはり小さい。懸念の肩こりも現状維持。&lt;/li&gt;
-&lt;li&gt;テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。&lt;/li&gt;
-&lt;li&gt;RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。&lt;/li&gt;
-&lt;li&gt;CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。&lt;/li&gt;
-&lt;li&gt;128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB)&lt;/li&gt;
-&lt;li&gt;SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。&lt;/li&gt;
-&lt;li&gt;スピーカーの音質は悪い。&lt;/li&gt;
-&lt;li&gt;お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。&lt;/li&gt;
-&lt;li&gt;キーボードに印字されているタイ語にちょっと愛着がわく。次はシンハラ文字版が欲しくなってきてる。。&lt;/li&gt;
-&lt;li&gt;OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）&lt;/p&gt;
-
-&lt;p&gt;ちょっとうれしかったのでポストする。&lt;/p&gt;
 </description>
     </item>
     

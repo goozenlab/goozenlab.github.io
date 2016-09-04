@@ -7,8 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 02 Sep 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Sep 2016 07:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Podsを使う</title>
+      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
+      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
+      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
+
+&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import UIKit
+import CoreData
+
+import ReachabilitySwift
+import MBProgressHUD
+import SwiftyDropbox
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
+platform :ios, &#39;8.0&#39;
+
+target &#39;(a)&#39; do
+  use_frameworks!
+
+  # Pods for (a)
+  pod &#39;ReachabilitySwift&#39;
+  pod &#39;MBProgressHUD&#39;
+  pod &#39;SwiftyDropbox&#39;
+  
+end
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>XCodeにてアプリデーターの管理</title>
@@ -37,7 +76,7 @@
 &lt;ol&gt;
 &lt;li&gt;コンテナをダウンロード&lt;/li&gt;
 &lt;li&gt;エラーの出るアプリを消去&lt;/li&gt;
-&lt;li&gt;アプリをインストール&lt;/li&gt;
+&lt;li&gt;アプリを再インストール&lt;/li&gt;
 &lt;li&gt;コンテナのリプレース&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -61,13 +100,13 @@
 
 &lt;p&gt;シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。&lt;/p&gt;
 
-&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeveiceより確認します。&lt;/p&gt;
+&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeviceより確認します。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-identifier.png&#34; alt=&#34;simulator-identifier&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ファインダーに戻り、ライブラリーに入り。&lt;/p&gt;
 
-&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/72F281CD-CA93-4B1D-8550-C857997FD0F4/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for APP&lt;/strong&gt;/Documents&lt;/p&gt;
+&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/&lt;strong&gt;IDENTIFIER for Simulator&lt;/strong&gt;/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for Application&lt;/strong&gt;/Documents&lt;/p&gt;
 
 &lt;p&gt;に移動して、上の&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルを上書きます。&lt;/p&gt;
 
@@ -75,7 +114,7 @@
 
 &lt;h2 id=&#34;シミュレータのデーターを実機で使う&#34;&gt;シミュレータのデーターを実機で使う&lt;/h2&gt;
 
-&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのものに上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
+&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
 
 &lt;p&gt;iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。&lt;/p&gt;
 </description>
@@ -881,23 +920,6 @@ iOS9自体はブラッシュアップ的なアプデートだと認識してい�
 
 &lt;p&gt;バイカル湖、オリフォン島
 &lt;img src=&#34;http://goozenlab.com/images/2015-09-06-baikal.jpg&#34; alt=&#34;Olphon&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NSUserDefaultsのキーの削除</title>
-      <link>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
-      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
-      <description>&lt;p&gt;アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。&lt;/p&gt;
-
-&lt;p&gt;既に設定してしまったUserDefaultsのキーを削除する方法は以下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
 </description>
     </item>
     
