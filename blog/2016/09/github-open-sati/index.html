@@ -140,17 +140,26 @@
 
 <p>一通りチェックを終えたら、シミュレーターで動くかチェックします。</p>
 
-<p>そして、公開のための設定に進みます。ギットハブに載っている方法で行います。</p>
+<p>これで、作業はギットハブのプロジェクトで行う。ギットハブと共有しているプロジェクトでもシミュレーターで動かせることができ、検証機で動かしたい時とアプストアーにアップする時は別のプロジェクトですれば良い。デプロイ用はほとんど手を入れる必要はない、はず。</p>
+
+<p>そして、公開します。</p>
+
+<p><strong>追記</strong>：
+READMEとライセンスはプロジェクトと同じ階層に置いておきましょう。ギットハブではそのREADが読み込まれ表示されます。</p>
 
 <h2 id="ギットハブに公開">ギットハブに公開</h2>
+
+<p>公開をするには、ギットハブに載っている方法で行います。</p>
+
+<p><img src="/images/2016-09-05-open.sati-git-add.png" alt=" open.sati git add" /></p>
 
 <p>まずはギットの初期化、その後、ファイルを追加して、コミットします。（ちょっとREADMEに何を書けばいいか悩みましたが、）９月６日のくろ～の日に公開。</p>
 
 <p><img src="/images/2016-09-05-open.sati-initial-setup.png" alt=" open.sati-initial-setup " /></p>
 
-<p><img src="/images/2016-09-05-open.sati-git-add.png" alt=" open.sati git add" /></p>
-
-<pre><code>duvel:open.sati jin$ git push -u origin master
+<pre><code>duvel:open.sati jin$ git init
+duvel:open.sati jin$ git add .
+duvel:open.sati jin$ git commit -m &quot;Initial Commit&quot;duvel:open.sati jin$ git push -u origin master
 Warning: Permanently added the RSA host key for IP address '[192.30.253.122]:443' to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -178,8 +187,6 @@ To git@github.com:goozenlab/sati.git
 Branch master set up to track remote branch master from origin.
 duvel:open.sati jin$
 </code></pre>
-
-<p>これで、作業はギットハブのプロジェクトで行う。ギットハブと共有しているプロジェクトでもシミュレーターで動かせることができ、検証機で動かしたい時とアプストアーにアップする時は別のプロジェクトですれば良い。デプロイ用はほとんど手を入れる必要はない、はず。</p>
 
 <h2 id="伴う追加作業">伴う追加作業</h2>
 
