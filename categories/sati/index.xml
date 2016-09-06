@@ -7,8 +7,133 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 15 Aug 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Sep 2016 07:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ギットハブ公開</title>
+      <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
+      <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/github-open-sati/</guid>
+      <description>
+
+&lt;p&gt;ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;問題点&lt;/strong&gt;：ギットハブに公開するプロジェクトには、バンドルアイデンティファイヤ、AppleIDを入れたくない。そして、アプストアーに公開するにはコードサインをしなくてはいけない。（アイデンティファイヤ、AppleIDが必要）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解決案&lt;/strong&gt;：二つのプロジェクトと共有コードの形での運用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一つ目のプロジェクトは、作業用。ギットハブと連動して作業をします。個人情報入れないでも、シミュレーターでアプリを動かすことができます。&lt;/p&gt;
+
+&lt;p&gt;もう一つは、アプストアービルド、デプロイ用。プロジェクトファイル以外は、上のプロジェクトからファイルをリンクします。（コピーではなく、シンボリックリンクにみたいなもの？）このプロジェクトには、アプストアーに登録するための情報を入れておきます。ギットは使いません。&lt;/p&gt;
+
+&lt;h2 id=&#34;作業&#34;&gt;作業&lt;/h2&gt;
+
+&lt;p&gt;サティを公開するための行った作業をちょっと詳しく。まずは今まで作業していたフォルダーを一気にコピー。&lt;/p&gt;
+
+&lt;p&gt;一つを、open.sati (公開用） もう一つを sati (デプロイ用）にします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder.png&#34; alt=&#34; open.sati folders &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ともにフレッシュスタートということで、ディレクトリー内にある .git　ディレクトリーを削除します。隠れファイルなので、ターミナルから &lt;code&gt;rm -rf .git/&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-remove-git.png&#34; alt=&#34; remove git &#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;sati-アプストアー-実機検証用&#34;&gt;sati：アプストアー、実機検証用&lt;/h3&gt;
+
+&lt;p&gt;satiの中のファイルはフロジェクトファイル、info.plist以外、全て捨ててしまいます。&lt;/p&gt;
+
+&lt;p&gt;プロジェクト内は真っ赤になります。一気に消してしまいます。&lt;/p&gt;
+
+&lt;p&gt;そして、open.sati のフォルダーからファイルをまとめてドラッグ＆ドロップ。ダイアリグが出ます。コピーのチェックは外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-import-files.png&#34; alt=&#34; open.sati  import-files&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;残念ながら、&lt;code&gt;Localizable.strings&lt;/code&gt; がうまく引き継がれません。（多分ローカライズされたnibファイルなども引き継がれないと思います。）コマンドオプション＋ドラッグのエイリアスでファイルを持ってくるもNG。しかし、XCode上でファイルを一旦 open.sati よりコピーして消し、ターミナルで リンクを &lt;code&gt;ln -s&lt;/code&gt; でリンクしてあげれば読み込みます。なんか中途半端ですが動きます。ディレクトリーはこんな感じになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder-list.png&#34; alt=&#34; folder listing &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、README や LICENCE 等、ターゲットに入れないファイルをメンバーから外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-target-check.png&#34; alt=&#34; target-check &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で、ビルドの設定などは引き継がれたままなので実機でもアプストア用のビルドなども今まで通り動きました。（アップロードはしていませんが、多分大丈夫だと思います。）&lt;/p&gt;
+
+&lt;p&gt;こちらのプロジェクトでは、ファイルをいじらないようにします。あくまでも、ビルドと実機テストようにします。&lt;/p&gt;
+
+&lt;h3 id=&#34;open-sati-ギットハブ-作業用&#34;&gt;open.sati：ギットハブ、作業用&lt;/h3&gt;
+
+&lt;p&gt;まずプロジェクトファイルを開けて、公開したくないものを抜きます。そして、リンクしているファイルがないかチェック。（私は、ビルド時にローカルからのファイルを参照しているところがあるので、その設定も抜きます。デプロイ用についていれば問題はない。）
+幾つかのファイルは他のアプリと共有しているので、こっちのプロジェクトにコピーをします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-identity.png&#34; alt=&#34; open.sati-identity&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一通りチェックを終えたら、シミュレーターで動くかチェックします。&lt;/p&gt;
+
+&lt;p&gt;そして、公開のための設定に進みます。ギットハブに載っている方法で行います。&lt;/p&gt;
+
+&lt;h2 id=&#34;ギットハブに公開&#34;&gt;ギットハブに公開&lt;/h2&gt;
+
+&lt;p&gt;まずはギットの初期化、その後、ファイルを追加して、コミットします。（ちょっとREADMEに何を書けばいいか悩みましたが、）９月６日のくろ～の日に公開。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-initial-setup.png&#34; alt=&#34; open.sati-initial-setup &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-git-add.png&#34; alt=&#34; open.sati git add&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;鍵の設定でエラーが出ますが、作ってある公開鍵をコピーしギットハブの設定より新しい鍵の追加設定をします。&lt;a href=&#34;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&#34;&gt;参照&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati.ssh-key.png&#34; alt=&#34; /open.sati.ssh-key&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で再度挑戦、こんどはうまくいきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.123]:443&#39; to the list of known hosts.
+Counting objects: 155, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (149/149), done.
+Writing objects: 100% (155/155), 10.10 MiB | 39.00 KiB/s, done.
+Total 155 (delta 37), reused 0 (delta 0)
+remote: Resolving deltas: 100% (37/37), done.
+To git@github.com:goozenlab/sati.git
+ * [new branch]      master -&amp;gt; master
+Branch master set up to track remote branch master from origin.
+duvel:open.sati jin$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これで、作業はギットハブのプロジェクトで行う。ギットハブと共有しているプロジェクトでもシミュレーターで動かせることができ、検証機で動かしたい時とアプストアーにアップする時は別のプロジェクトですれば良い。デプロイ用はほとんど手を入れる必要はない、はず。&lt;/p&gt;
+
+&lt;h2 id=&#34;伴う追加作業&#34;&gt;伴う追加作業&lt;/h2&gt;
+
+&lt;p&gt;sati.xcodeprojで引き継げないところは、個別に変更する必要があります。（ビルド番号など）
+このプロジェクトの場合、ビルド終了時走らせているスクリプトも少し変更します。
+少しだけ、リリース時に手を入れないといけないことがあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;これから&#34;&gt;これから、&lt;/h2&gt;
+
+&lt;p&gt;これで終了です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-github-initital.png&#34; alt=&#34; /open.sati-github-initital&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で、、、READMEを入れる場所を間違えた。。がまあいいでしょう。次回コミット時に変更します。&lt;/p&gt;
+
+&lt;p&gt;ただし、作業用のプロジェクトで新しいファイルが追加された時は別途そのファイルをデプロイ用でも追加する作業が必要になります。まぁ、ビルドが通らなくなるのでわかると思いますが、、、&lt;/p&gt;
+
+&lt;p&gt;とりあえず。こんな感じで当分は行ってみます。&lt;/p&gt;
+
+&lt;p&gt;もし他に良い方法があったら、教えてください。（なーーんかありそうな感じ。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sati v1.9.2</title>
@@ -510,24 +635,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 それまでは途中キャンセル無しに瞑想生活を送ってください。&lt;/p&gt;
 
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>sati v1.5.4</title>
-      <link>http://goozenlab.com/blog/2013/08/sati-154/</link>
-      <pubDate>Tue, 06 Aug 2013 18:29:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/08/sati-154/</guid>
-      <description>&lt;p&gt;見た目が質素だった設定ページを更新しました。
-ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。&lt;/p&gt;
-
-&lt;p&gt;そして、割と厳しかった途中でのキャンセル時の処理を変更。
-３０分以上時間が経った時には瞑想をカウントするようにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-08-06-sati-setting-new.png&#34; alt=&#34;New Setting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

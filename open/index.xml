@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opens on goozenlab</title>
+    <link>http://goozenlab.com/open/</link>
+    <description>Recent content in Opens on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://goozenlab.com/open/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>open.sati</title>
+      <link>http://goozenlab.com/open/sati/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/open/sati/</guid>
+      <description>
+
+&lt;h1 id=&#34;目次&#34;&gt;目次&lt;/h1&gt;
+
+&lt;p&gt;アプリも買う時代から作る時代に移ってきていると思います。
+XCodeも無料で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、無料でできるようになりました。
+自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
+
+&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思い公開に至りました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;準備
+
+&lt;ol&gt;
+&lt;li&gt;ダウンロード&lt;/li&gt;
+&lt;li&gt;実機で動かすための方法&lt;/li&gt;
+&lt;li&gt;XCodeのちょっとした使い方&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;全体の構造&lt;br /&gt;
+何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。
+
+&lt;ol&gt;
+&lt;li&gt;メインビュー：UIButtons, Custom UIViews&lt;/li&gt;
+&lt;li&gt;設定ビュー：UISlider, UISwitch&lt;/li&gt;
+&lt;li&gt;履歴ビュー：UITableview&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;インターフェイス&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ボタン&lt;/li&gt;
+&lt;li&gt;レーベル&lt;/li&gt;
+&lt;li&gt;テキストフィールド&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;デザイン&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;アイコンデザイン&lt;/li&gt;
+&lt;li&gt;レイアウト&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;おまけ&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;ギットハブ公開前の作業&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
