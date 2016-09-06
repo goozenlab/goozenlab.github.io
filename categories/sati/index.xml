@@ -7,8 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 06 Sep 2016 07:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Sep 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>サティを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-sati/</link>
+      <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-sati/</guid>
+      <description>&lt;p&gt;簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 &lt;a href=&#34;https://github.com/goozenlab/sati&#34;&gt;Link @ github&lt;/a&gt; しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-main.png&#34; alt=&#34; open.sati &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。&lt;/p&gt;
+
+&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、無料でできるようになりました。
+自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
+
+&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。&lt;/p&gt;
+
+&lt;p&gt;とりあえず新しく&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;メモ追加欄を瞑想終了後のムード選択欄に追加&lt;/li&gt;
+&lt;li&gt;履歴ページにて、瞑想追加ボタンとビュー&lt;/li&gt;
+&lt;li&gt;設定画面のスタティックビュー化&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が先追加したいことのリスト。タイミングを見て追加作成したいと思います。&lt;/p&gt;
+
+&lt;p&gt;※公開の方法などは&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;こちら&lt;/a&gt;にて書きましたので関心のある方は参照のほど。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ギットハブ公開</title>
@@ -614,34 +647,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.5.5</title>
-      <link>http://goozenlab.com/blog/2013/08/sati-155/</link>
-      <pubDate>Thu, 08 Aug 2013 13:08:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/08/sati-155/</guid>
-      <description>&lt;p&gt;30分以内のキャンセルが効かないバグがある事に気がつきました。&lt;br /&gt;
-（キャンセルしますか -&amp;gt; はい -&amp;gt; 変化無し。。。）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;瞑想時間が切れるまでほっておく&lt;/li&gt;
-&lt;li&gt;３０分以上たってキャンセルする&lt;/li&gt;
-&lt;li&gt;プログラムを終了させる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;で、スタートの状態に戻ります。
-確りテストをするのを忘れてました。&lt;/p&gt;
-
-&lt;p&gt;まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、
-あまり気分のよい物では無いと思います。&lt;/p&gt;
-
-&lt;p&gt;修正版が申請中です。
-それまでは途中キャンセル無しに瞑想生活を送ってください。&lt;/p&gt;
-
-&lt;p&gt;よろしくお願いします。&lt;/p&gt;
 </description>
     </item>
     

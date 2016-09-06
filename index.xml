@@ -70,6 +70,39 @@ XCodeも無料で提供されてますし、XCode7より、実機へのインス
     </item>
     
     <item>
+      <title>サティを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-sati/</link>
+      <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-sati/</guid>
+      <description>&lt;p&gt;簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 &lt;a href=&#34;https://github.com/goozenlab/sati&#34;&gt;Link @ github&lt;/a&gt; しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-main.png&#34; alt=&#34; open.sati &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。&lt;/p&gt;
+
+&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、無料でできるようになりました。
+自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
+
+&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。&lt;/p&gt;
+
+&lt;p&gt;とりあえず新しく&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;メモ追加欄を瞑想終了後のムード選択欄に追加&lt;/li&gt;
+&lt;li&gt;履歴ページにて、瞑想追加ボタンとビュー&lt;/li&gt;
+&lt;li&gt;設定画面のスタティックビュー化&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が先追加したいことのリスト。タイミングを見て追加作成したいと思います。&lt;/p&gt;
+
+&lt;p&gt;※公開の方法などは&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;こちら&lt;/a&gt;にて書きましたので関心のある方は参照のほど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ギットハブ公開</title>
       <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
@@ -1125,26 +1158,6 @@ extension ListTableViewController: GADBannerViewDelegate {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>句読点で変換</title>
-      <link>http://goozenlab.com/blog/2016/08/convert-punctuation/</link>
-      <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
-      <description>&lt;p&gt;しばし句読点で変換のオプションをオンして使っています。&lt;/p&gt;
-
-&lt;p&gt;今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。&lt;/p&gt;
-
-&lt;p&gt;ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。&lt;/p&gt;
-
-&lt;p&gt;贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）&lt;/p&gt;
-
-&lt;p&gt;人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
