@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>サティを公開</title>
-  <meta name="description" content="サティを公開">
+  <title>unWind segway</title>
+  <meta name="description" content="unWind segway">
   <meta name="author" content="jin">
 
   
@@ -66,7 +66,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2016-09-06</time>
+		  <time class="">2016-09-09</time>
 		  
 		  
 		  |
@@ -74,47 +74,65 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com/categories/sati">sati</a> 
+		  categories:<a href="http://goozenlab.com/categories/develop">develop</a> 
 		  
 
 		  
 
 		</p>
-		<h5>サティを公開</h5>
+		<h5>unWind segway</h5>
 	  </div>
 
 	  <div class="post">
-		<p>簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 <a href="https://github.com/goozenlab/sati">Link @ github</a> しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。</p>
+		<p>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。</p>
 
-<p><img src="/images/2016-09-06-open.sati-main.png" alt=" open.sati " /></p>
-
-<p>プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。</p>
-
-<p>XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
-自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。</p>
-
-<p>これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。</p>
-
-<p>細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。</p>
-
-<p>とりあえず新しく</p>
+<p>使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。</p>
 
 <ol>
-<li>メモ追加欄を瞑想終了後のムード選択欄に追加</li>
-<li>履歴ページにて、瞑想追加ボタンとビュー</li>
-<li>設定画面のスタティックビュー化</li>
+<li>ListVCからDetailVCにセグウェイを設定（コントロールドラッグ）</li>
+<li>ListVCに下記のコードを追加</li>
+<li>DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが<strong>表示</strong>される</li>
+<li>リンクをボタンなりに繋ぐ</li>
 </ol>
 
-<p>が先追加したいことのリスト。タイミングを見て追加作成したいと思います。</p>
+<p><img src="/images/2016-09-08-segway-unwind.png" alt=" segway-unwind" /></p>
 
-<p>※公開の方法などは<a href="/blog/2016/09/github-open-sati/">こちら</a>にて書きましたので関心のある方は参照のほど。</p>
+<p>ListVCに追加したコードは、</p>
+
+<pre><code>@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue)
+ {
+}
+</code></pre>
+
+<p>いろいろ試したところ、<code>@IBAction func unwind___XXX___</code> が入っていれば認識されるよう<code>___XXX___</code>の部分は必要なものに置き換えてください。引数も<code>(unwindSegue: UIStoryboardSegue)</code>が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。</p>
+
+<p>あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。</p>
+
+<pre><code>@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) {
+
+	// 処理
+	let title = unwindSegue.sourceViewController.title
+	
+	.........
+	
+}
+</code></pre>
+
+<p>XCode7では、unwind&hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。</p>
+
+<pre><code>override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        &lt;#code#&gt;
+    }
+</code></pre>
+
+<p>やっぱり、ストーリーボードは好きになれません。。</p>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/open-sati\/';
-    var disqus_title = 'サティを公開';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/open-sati\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/segway-unwind\/';
+    var disqus_title = 'unWind segway';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/segway-unwind\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

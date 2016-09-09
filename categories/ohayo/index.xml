@@ -7,8 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 30 Jul 2016 05:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.2</title>
+      <link>http://goozenlab.com/blog/2016/09/ohayo-292/</link>
+      <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
+      <description>
+
+&lt;p&gt;気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもある。。&lt;/p&gt;
+
+&lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-2-2016-09-10-chaingmai&#34;&gt;[2.9.2] - 2016-09-10 @ Chaingmai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fixed&#34;&gt;FIxed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
+&lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものが混じってました。。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ステータスバーを非表示&lt;/li&gt;
+&lt;li&gt;睡眠時間表示の調整（少し大きく、太くしました）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.1</title>

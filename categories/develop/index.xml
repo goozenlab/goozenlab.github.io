@@ -7,8 +7,129 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 06 Sep 2016 07:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>unWind segway</title>
+      <link>http://goozenlab.com/blog/2016/09/segway-unwind/</link>
+      <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/segway-unwind/</guid>
+      <description>&lt;p&gt;今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。&lt;/p&gt;
+
+&lt;p&gt;使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ListVCからDetailVCにセグウェイを設定（コントロールドラッグ）&lt;/li&gt;
+&lt;li&gt;ListVCに下記のコードを追加&lt;/li&gt;
+&lt;li&gt;DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが&lt;strong&gt;表示&lt;/strong&gt;される&lt;/li&gt;
+&lt;li&gt;リンクをボタンなりに繋ぐ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-08-segway-unwind.png&#34; alt=&#34; segway-unwind&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ListVCに追加したコードは、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue)
+ {
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;いろいろ試したところ、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; が入っていれば認識されるよう&lt;code&gt;___XXX___&lt;/code&gt;の部分は必要なものに置き換えてください。引数も&lt;code&gt;(unwindSegue: UIStoryboardSegue)&lt;/code&gt;が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。&lt;/p&gt;
+
+&lt;p&gt;あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) {
+
+	// 処理
+	let title = unwindSegue.sourceViewController.title
+	
+	.........
+	
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;XCode7では、unwind&amp;hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        &amp;lt;#code#&amp;gt;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;やっぱり、ストーリーボードは好きになれません。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>アイコンとネーミング</title>
+      <link>http://goozenlab.com/blog/2016/09/app-icon-naming/</link>
+      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
+      <description>
+
+&lt;p&gt;アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。&lt;/p&gt;
+
+&lt;p&gt;個人的にアイコン作りと、アプリのネーミングを考えたりするのは好きですが、頭を悩ますところでもあります。
+別に新しいことはないと思いますが、自分がどのようにしたのか、ちょっと書いてみたいと思います。（あとで変更は可能なのですが、私は名前が決まらないと、なんか居心地が悪いというか、、）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-naming.png&#34; alt=&#34; app icon naming&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;naming&#34;&gt;Naming&lt;/h2&gt;
+
+&lt;p&gt;理想的に、パッと目に入るような名前だと最高なのですが、、、。&lt;/p&gt;
+
+&lt;p&gt;私のアプリの名前のつけ方は簡単に書くと、「作るソフトの機能に関連する言葉を広げていって、いじってみたり、語呂を何かと合わせてみたりして、いくつかに絞り、最終的に響きの良いものを選ぶ」かな、後々パッと浮かんだことは残念ながら無いです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;liitlist：”little + list” もしくはminimalistてきな ”little + ist” から&lt;/li&gt;
+&lt;li&gt;doop：duplicationを捻って、向かいから見てもdoop、１回転してもdoop。リサイクル管理系のアプリ（エネループも頭にあったかな。）&lt;/li&gt;
+&lt;li&gt;ohaYo：睡眠ログアプリ。Yが大文字なのがこだわり&lt;/li&gt;
+&lt;li&gt;ippuku：「俺働きすぎ？一体いつ一服できんだ？」とアプリを作る時にあった想いから&lt;/li&gt;
+&lt;li&gt;コスパ：シンプルにコストパフォーマンスより&lt;/li&gt;
+&lt;li&gt;tapas：マルチキッチンタイマー、ご存知スペイン料理のおつまみの総称（次点は、タンドリーチキンを変化させて「ダンドリーキッチン」だったかな。）&lt;/li&gt;
+&lt;li&gt;sati：瞑想アプリなので、パーリー語（仏教用語：念、気づき）より&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;外国語を使うとなんとなくオシャレになる。今度は漢字を使った漢なソフトでも作るかな。&lt;/p&gt;
+
+&lt;p&gt;自分でいいなと思ったアプリ名とか商品名をリストしてみて、その共通項や特徴を見つけてみることも良い助けになると思います。&lt;/p&gt;
+
+&lt;p&gt;拙作のなかでの傑作ネーミングは、doop littlist と (a) だと、他のソフトは割とありきたりのネーミング、平均点。&lt;/p&gt;
+
+&lt;p&gt;※ (a) はアイディアの元になっているファイルの表記方法からとっていて、結局そのプランはダメになってしまったんですが、
+日本語にすると、かっこえー（格好えー）になる。&lt;/p&gt;
+
+&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
+
+&lt;p&gt;アプリの顔です。個人製作のアプリということを考慮すると割に出来の良い方だと思います。センスも大事だとは思いますが、ちょっとしたルールでそれなりに仕上がると思います。無理しすぎないことが割と重要でないかと、、&lt;/p&gt;
+
+&lt;p&gt;個人的に注意していること&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なるべく、アプリで使っているコンポーネントから、親和性&lt;/li&gt;
+&lt;li&gt;アプリで使っている色、白バックでも黒バックでも問題ないように、&lt;/li&gt;
+&lt;li&gt;フォントは雰囲気に合ったもの&lt;/li&gt;
+&lt;li&gt;グリッドに合わせる（人間の目って割と精巧で、ずれていると違和感を感じます。）&lt;/li&gt;
+&lt;li&gt;シンプルかつシンプル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;色は自分で使う色を絞り込んでまとめています。全部で20色ぐらいのパレットになっています。&lt;/p&gt;
+
+&lt;p&gt;数年前の、iOS8よりフラットデザインになってアイコンデザインを結構変えました。それまで、使っていたグラデーションもすごく微妙な感じにして、全体的にシンプルにしました。良い変更例は下記のオハヨのケース。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-ohayo.png&#34; alt=&#34; app-icon-ohayo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;私のお気に入りは、littlist、doopかな。（littlistは最初からずっと同じデザイン、自画自賛アイコン。）&lt;/p&gt;
+
+&lt;p&gt;ちなみに、リスタリアというソフトでは、数字のところにバージョンナンバーが、そして、買い物リストのアプリなので、果物の名前をバージョンごと違うものを入れています。バーコードも適当ではありません。スキャナーで読み取ることもできます。ちょっとしたお遊び。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-listaria.png&#34; alt=&#34; app-icon-listaria &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ちなみにアイコン制作に使っているアプリは、以前はアドビのFireworksで、今はAffinity Designerを使ってます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ギットハブ公開</title>
@@ -985,49 +1106,6 @@ return filteredArray!.count &amp;gt; 0
 &lt;/ul&gt;
 
 &lt;p&gt;これが、拙作のサティで問題になっている音が出ない問題の解決になっていることをちょっと期待。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>XCode7とElCapitan</title>
-      <link>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
-      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
-      <description>&lt;p&gt;アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。&lt;/p&gt;
-
-&lt;p&gt;まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-disk.jpg&#34; alt=&#34;Disk&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、
-うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-24-xcode7-elcapitan.jpg&#34; alt=&#34;XCode7+ElCapitan&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>iOS9での不具合：Satiの通知音</title>
-      <link>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</link>
-      <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
-      <description>&lt;p&gt;マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。&lt;/p&gt;
-
-&lt;p&gt;iOS8がリリースされた時にも、通知で音を出すには事前認証が必須になり、認証のプロセスを追加していなかったので、新規ユーザーの人たちには音が出ないという致命的なバグがありました。OSをアップデートしたインストール済のユーザーには不具合は無かったので、３ヶ月くらい放置していました。&lt;/p&gt;
-
-&lt;p&gt;そして、今回もappleの新しい省電力モードや通知機能の拡張により（多分）、同様の不具合が発生。&lt;/p&gt;
-
-&lt;p&gt;自分の検証端末がiPhone4S/iOS8.1のため、iOS9へのアップデートはちょっと悩んでいて、、
-しかも、開発環境は未だマーベリックスを使っているため、iOS9向けの開発環境が未だ整っていない状態です。
-iOS9自体はブラッシュアップ的なアプデートだと認識していたので、まぁ、大丈夫だろうとたかを括ってました。&lt;/p&gt;
-
-&lt;p&gt;ネットでちょっと調べて見た所、似たような現象が起こっているのを幾つか発見しました。音の出ない瞑想タイマーではまるっきり体をなさないので、環境を整えて、なるべく速くアップデートしたいと思います。&lt;/p&gt;
-
-&lt;p&gt;何か他にも不具合等が起こりましたら、連絡のほどよろしくお願いします。&lt;/p&gt;
-
-&lt;p&gt;では、ロシアより愛を込めて、&lt;/p&gt;
 </description>
     </item>
     

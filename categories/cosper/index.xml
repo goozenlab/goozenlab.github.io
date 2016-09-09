@@ -7,8 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 01 Sep 2016 19:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 08 Sep 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/cosper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cosper v1.9.3</title>
+      <link>http://goozenlab.com/blog/2016/09/cosper-193/</link>
+      <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/cosper-193/</guid>
+      <description>
+
+&lt;p&gt;固定だったcosperのコスパ総額表示: &lt;a href=&#34;http://goozenlab.com/blog/2016/09/cosper-display/&#34;&gt;記事&lt;/a&gt; を選択可能にしました。きつきつの表示を嫌う方はオフにできます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-3-2016-09-08-chiangmai&#34;&gt;[1.9.3] - 2016-09-08 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;セルの消去時など、動きがスムースで無いところを調整しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-cosper-193.png&#34; alt=&#34; cosper-193 &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>cosperの金額表示</title>
@@ -290,20 +324,6 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
-      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>&lt;p&gt;機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。
-4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。&lt;/p&gt;
-
-&lt;p&gt;そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。
-クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。&lt;/p&gt;
 </description>
     </item>
     

@@ -7,8 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.2</title>
+      <link>http://goozenlab.com/blog/2016/09/ohayo-292/</link>
+      <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
+      <description>
+
+&lt;p&gt;気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもある。。&lt;/p&gt;
+
+&lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-2-2016-09-10-chaingmai&#34;&gt;[2.9.2] - 2016-09-10 @ Chaingmai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fixed&#34;&gt;FIxed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
+&lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものが混じってました。。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ステータスバーを非表示&lt;/li&gt;
+&lt;li&gt;睡眠時間表示の調整（少し大きく、太くしました）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>open.sati</title>
@@ -21,51 +58,297 @@
 &lt;h1 id=&#34;目次&#34;&gt;目次&lt;/h1&gt;
 
 &lt;p&gt;アプリも買う時代から作る時代に移ってきていると思います。
-XCodeも無料で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、無料でできるようになりました。
+XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
 自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
 
-&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思い公開に至りました。&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;h2 id=&#34;準備&#34;&gt;準備&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;準備
-
-&lt;ol&gt;
-&lt;li&gt;ダウンロード&lt;/li&gt;
+&lt;li&gt;ダウンロード：&lt;code&gt;git clone git:xxx.xxxx.xxx&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;実機で動かすための方法&lt;/li&gt;
 &lt;li&gt;XCodeのちょっとした使い方&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;全体の構造&lt;br /&gt;
-何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;全体の構造&#34;&gt;全体の構造&lt;/h2&gt;
+
+&lt;p&gt;何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;メインビュー：UIButtons, Custom UIViews&lt;/li&gt;
-&lt;li&gt;設定ビュー：UISlider, UISwitch&lt;/li&gt;
-&lt;li&gt;履歴ビュー：UITableview&lt;/li&gt;
+&lt;li&gt;メインビュー：構成は以下のようになっています。
+
+&lt;ol&gt;
+&lt;li&gt;背景：透明度の入った画像を表示&lt;/li&gt;
+&lt;li&gt;瞑想回数ラベル&lt;/li&gt;
+&lt;li&gt;右左のボタン&lt;/li&gt;
+&lt;li&gt;上部
+
+&lt;ol&gt;
+&lt;li&gt;日付ラベル：日付をフォーマットして表示&lt;/li&gt;
+&lt;li&gt;タイムライン：音の鳴るタイミングを表示、静寂モード時には月のマークを表示&lt;/li&gt;
+&lt;li&gt;ボタン：静寂モードのスウィッチとして&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;中部：３つのコンポーネントを重なって配置
+
+&lt;ol&gt;
+&lt;li&gt;カスタムビュー：瞑想時間パイ&lt;/li&gt;
+&lt;li&gt;カスタムビュー：最近の状況グラフ（時間パイと円の隙間に表示）&lt;/li&gt;
+&lt;li&gt;ボタン：設定画面に移動&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;下部
+
+&lt;ol&gt;
+&lt;li&gt;カスタムビュー：履歴バー&lt;/li&gt;
+&lt;li&gt;ボタン：履歴画面に移動&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;インターフェイス&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;設定ビュー：シンプルなテーブル式の構成&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;UIView：ヘッダービュー
+
+&lt;ol&gt;
+&lt;li&gt;タイトル&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;カスタムビュー：メイン画面のカスタムクラスの流用&lt;/li&gt;
+&lt;li&gt;スライダー：瞑想時間設定&lt;/li&gt;
+&lt;li&gt;セグメント：背景画像の選択&lt;/li&gt;
+&lt;li&gt;スィッチ：静かモード&lt;/li&gt;
+&lt;li&gt;セグメント：終了音の選択&lt;/li&gt;
+&lt;li&gt;UIView：フッター
+
+&lt;ol&gt;
+&lt;li&gt;ボタン：戻る&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;履歴ビュー：テーブルビュー&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;UIView：ヘッダービュー
+
+&lt;ol&gt;
+&lt;li&gt;タイトル&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;テーブルビュー：瞑想履歴の表示
+
+&lt;ol&gt;
+&lt;li&gt;カスタムテーブルセル：&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;UIView：フッター
+
+&lt;ol&gt;
+&lt;li&gt;ボタン：戻る&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;インターフェイス&#34;&gt;インターフェイス&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ボタン&lt;/li&gt;
 &lt;li&gt;レーベル&lt;/li&gt;
 &lt;li&gt;テキストフィールド&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;li&gt;&lt;p&gt;デザイン&lt;/p&gt;
+&lt;h2 id=&#34;デザイン&#34;&gt;デザイン&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;アイコンデザイン&lt;/li&gt;
 &lt;li&gt;レイアウト&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;li&gt;&lt;p&gt;おまけ&lt;/p&gt;
+&lt;h2 id=&#34;おまけ-関連するブログポスト&#34;&gt;おまけ：関連するブログポスト&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;ギットハブ公開前の作業&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goozenlab.com/blog/2016/09/app-icon-naming/&#34;&gt;アイコンとネーミング&lt;/a&gt;
+
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPhone7</title>
+      <link>http://goozenlab.com/blog/2016/09/iphone7/</link>
+      <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/iphone7/</guid>
+      <description>&lt;p&gt;斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛ぶ。&lt;/p&gt;
+
+&lt;p&gt;ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。&lt;/p&gt;
+
+&lt;p&gt;どうも、これではたぶん新しいマックブックプロもピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー残念。&lt;/p&gt;
+
+&lt;p&gt;iPhoneもAppleWatchも日本Suica対応バージョンらしく、海外のApple Payでは使えず。（こうゆうのは今更やめてもらいたい。。）&lt;/p&gt;
+
+&lt;p&gt;ということで、&lt;/p&gt;
+
+&lt;p&gt;iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯端末、バッテリーがへたっているも問題なし。）&lt;br /&gt;
+アップルウォッチも今回は買う予定でいたけれど、
+世界対応にならないことには要りません。（買うなら香港で買う）&lt;/p&gt;
+
+&lt;p&gt;しかも、高いです。コモディティー化とか言われてたけど、高級機はそんなに値落ちしない感じ。金持ちはいっぱいいるってことだわな。&lt;/p&gt;
+
+&lt;p&gt;とにかく、お次はマックブックプロ。ジェットブラックでよろしく。&lt;/p&gt;
+
+&lt;p&gt;はよ、なるはやで、たのんます。&lt;br /&gt;
+（バッテリーの持ちが10時間ぐらいであれば、文句を言わずに買い換えます。）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>unWind segway</title>
+      <link>http://goozenlab.com/blog/2016/09/segway-unwind/</link>
+      <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/segway-unwind/</guid>
+      <description>&lt;p&gt;今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。&lt;/p&gt;
+
+&lt;p&gt;使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ListVCからDetailVCにセグウェイを設定（コントロールドラッグ）&lt;/li&gt;
+&lt;li&gt;ListVCに下記のコードを追加&lt;/li&gt;
+&lt;li&gt;DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが&lt;strong&gt;表示&lt;/strong&gt;される&lt;/li&gt;
+&lt;li&gt;リンクをボタンなりに繋ぐ&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-08-segway-unwind.png&#34; alt=&#34; segway-unwind&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ListVCに追加したコードは、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue)
+ {
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;いろいろ試したところ、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; が入っていれば認識されるよう&lt;code&gt;___XXX___&lt;/code&gt;の部分は必要なものに置き換えてください。引数も&lt;code&gt;(unwindSegue: UIStoryboardSegue)&lt;/code&gt;が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。&lt;/p&gt;
+
+&lt;p&gt;あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) {
+
+	// 処理
+	let title = unwindSegue.sourceViewController.title
+	
+	.........
+	
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;XCode7では、unwind&amp;hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        &amp;lt;#code#&amp;gt;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;やっぱり、ストーリーボードは好きになれません。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.9.3</title>
+      <link>http://goozenlab.com/blog/2016/09/cosper-193/</link>
+      <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/cosper-193/</guid>
+      <description>
+
+&lt;p&gt;固定だったcosperのコスパ総額表示: &lt;a href=&#34;http://goozenlab.com/blog/2016/09/cosper-display/&#34;&gt;記事&lt;/a&gt; を選択可能にしました。きつきつの表示を嫌う方はオフにできます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-3-2016-09-08-chiangmai&#34;&gt;[1.9.3] - 2016-09-08 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;セルの消去時など、動きがスムースで無いところを調整しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-cosper-193.png&#34; alt=&#34; cosper-193 &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>アイコンとネーミング</title>
+      <link>http://goozenlab.com/blog/2016/09/app-icon-naming/</link>
+      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
+      <description>
+
+&lt;p&gt;アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。&lt;/p&gt;
+
+&lt;p&gt;個人的にアイコン作りと、アプリのネーミングを考えたりするのは好きですが、頭を悩ますところでもあります。
+別に新しいことはないと思いますが、自分がどのようにしたのか、ちょっと書いてみたいと思います。（あとで変更は可能なのですが、私は名前が決まらないと、なんか居心地が悪いというか、、）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-naming.png&#34; alt=&#34; app icon naming&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;naming&#34;&gt;Naming&lt;/h2&gt;
+
+&lt;p&gt;理想的に、パッと目に入るような名前だと最高なのですが、、、。&lt;/p&gt;
+
+&lt;p&gt;私のアプリの名前のつけ方は簡単に書くと、「作るソフトの機能に関連する言葉を広げていって、いじってみたり、語呂を何かと合わせてみたりして、いくつかに絞り、最終的に響きの良いものを選ぶ」かな、後々パッと浮かんだことは残念ながら無いです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;liitlist：”little + list” もしくはminimalistてきな ”little + ist” から&lt;/li&gt;
+&lt;li&gt;doop：duplicationを捻って、向かいから見てもdoop、１回転してもdoop。リサイクル管理系のアプリ（エネループも頭にあったかな。）&lt;/li&gt;
+&lt;li&gt;ohaYo：睡眠ログアプリ。Yが大文字なのがこだわり&lt;/li&gt;
+&lt;li&gt;ippuku：「俺働きすぎ？一体いつ一服できんだ？」とアプリを作る時にあった想いから&lt;/li&gt;
+&lt;li&gt;コスパ：シンプルにコストパフォーマンスより&lt;/li&gt;
+&lt;li&gt;tapas：マルチキッチンタイマー、ご存知スペイン料理のおつまみの総称（次点は、タンドリーチキンを変化させて「ダンドリーキッチン」だったかな。）&lt;/li&gt;
+&lt;li&gt;sati：瞑想アプリなので、パーリー語（仏教用語：念、気づき）より&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;外国語を使うとなんとなくオシャレになる。今度は漢字を使った漢なソフトでも作るかな。&lt;/p&gt;
+
+&lt;p&gt;自分でいいなと思ったアプリ名とか商品名をリストしてみて、その共通項や特徴を見つけてみることも良い助けになると思います。&lt;/p&gt;
+
+&lt;p&gt;拙作のなかでの傑作ネーミングは、doop littlist と (a) だと、他のソフトは割とありきたりのネーミング、平均点。&lt;/p&gt;
+
+&lt;p&gt;※ (a) はアイディアの元になっているファイルの表記方法からとっていて、結局そのプランはダメになってしまったんですが、
+日本語にすると、かっこえー（格好えー）になる。&lt;/p&gt;
+
+&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
+
+&lt;p&gt;アプリの顔です。個人製作のアプリということを考慮すると割に出来の良い方だと思います。センスも大事だとは思いますが、ちょっとしたルールでそれなりに仕上がると思います。無理しすぎないことが割と重要でないかと、、&lt;/p&gt;
+
+&lt;p&gt;個人的に注意していること&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なるべく、アプリで使っているコンポーネントから、親和性&lt;/li&gt;
+&lt;li&gt;アプリで使っている色、白バックでも黒バックでも問題ないように、&lt;/li&gt;
+&lt;li&gt;フォントは雰囲気に合ったもの&lt;/li&gt;
+&lt;li&gt;グリッドに合わせる（人間の目って割と精巧で、ずれていると違和感を感じます。）&lt;/li&gt;
+&lt;li&gt;シンプルかつシンプル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;色は自分で使う色を絞り込んでまとめています。全部で20色ぐらいのパレットになっています。&lt;/p&gt;
+
+&lt;p&gt;数年前の、iOS8よりフラットデザインになってアイコンデザインを結構変えました。それまで、使っていたグラデーションもすごく微妙な感じにして、全体的にシンプルにしました。良い変更例は下記のオハヨのケース。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-ohayo.png&#34; alt=&#34; app-icon-ohayo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;私のお気に入りは、littlist、doopかな。（littlistは最初からずっと同じデザイン、自画自賛アイコン。）&lt;/p&gt;
+
+&lt;p&gt;ちなみに、リスタリアというソフトでは、数字のところにバージョンナンバーが、そして、買い物リストのアプリなので、果物の名前をバージョンごと違うものを入れています。バーコードも適当ではありません。スキャナーで読み取ることもできます。ちょっとしたお遊び。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-listaria.png&#34; alt=&#34; app-icon-listaria &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ちなみにアイコン制作に使っているアプリは、以前はアドビのFireworksで、今はAffinity Designerを使ってます。&lt;/p&gt;
 </description>
     </item>
     
@@ -81,7 +364,7 @@ XCodeも無料で提供されてますし、XCode7より、実機へのインス
 
 &lt;p&gt;プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。&lt;/p&gt;
 
-&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、無料でできるようになりました。
+&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
 自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
 
 &lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。&lt;/p&gt;
@@ -744,420 +1027,6 @@ Bash completion has been installed to:
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>クリーンインストール</title>
-      <link>http://goozenlab.com/blog/2016/08/clean-install/</link>
-      <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/clean-install/</guid>
-      <description>
-
-&lt;p&gt;新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじっていくうちに訳がわからない状態になっていることが多い。）&lt;/p&gt;
-
-&lt;p&gt;今回は、初めてタイムマシーンを使ってみましたが、あまりクリーンインストールでは役に立たないことに気づきました。しかも、中に入っているファイルをコピーするのがすごーーく遅いです。。ただ、丸ごと復元するならすごく良いと思います。&lt;br /&gt;
-（それ以前はrsyncでバックアップとって、そこから必要なファイルを取っていました。次回からはまた、rsyncでバックアップするつもり。）&lt;/p&gt;
-
-&lt;h2 id=&#34;基本的な動作などの設定&#34;&gt;基本的な動作などの設定。&lt;/h2&gt;
-
-&lt;p&gt;まずはタップでクリックにする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-tap.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;英語版キーボードのキャップロックをコントロールキーに変更。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-caplock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;右下のホットコーナーを、デスクトップ表示にする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-mission-controll.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;老眼がどんどん進行し、ポインターがどんどんでかくなる。と、2011年MBPなので、透明度を控え目にする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-display.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ドックは自動で出たり入ったり、でもほとんど使ってない気がする。アプリの立ち上げは、Spotlight（かAlfred、どっちにするべか。。）。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-dock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;「誰々さんのコンピューター」のネーミングは恥ずかしいので、コンピューターに名前をつけます。宿とかで丸見え、変えてない人がいかに多いか。。。
-ちなみに、私の端末はビール名で統一してます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-naming.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フォルダーのサイドバーを変更。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-finder.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ことえりも、変換候補文字もデカくして、句読点で変換にする。フォントも細いタイプのものに変更。自動変換と推測変換はオフ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-kotoeri.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;メニューバーのバッテリー表示にパーセンを追加。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-battery-percent.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;スポットライトは、デフォルトの状態では勝手にいろんなものを検索の対象にされてしまうので必要なものに絞ります。別に怪しいファイルがあるわけでは無い。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-spotlight.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これも、バックグランドで動かされるとあまり気分が良いものでは無いのでオフにします。
-（旅先が多いので、全てのソフトに対して、自動アップデートはオフにしてます。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-applestore.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、シェルの変更を行う。環境設定のユーザーより。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-group.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-account.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;safari&#34;&gt;Safari&lt;/h2&gt;
-
-&lt;p&gt;サファリでは、検索エンジン、ダウンロードファイルの自動解凍処理のオフ、プライベートウィンドウ表示、エクステンションのインストール。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-search-engine.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari-extension.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;データの移行は、~Library/Safari/ をそのまま新しい環境へ。ただし、Extenstionは再インストールする必要がある。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;※ ちなみに、現在の最強のブラウザー環境は多分、こんな感じなのかな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-firefox-ublock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;itunes-と-mail&#34;&gt;iTunes と Mail&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iTunes：iTunesフォルダーをそのままコピー。&lt;/li&gt;
-&lt;li&gt;メールは上記のようにスッキリとはいかない。アカウントは新しく設定し直す。メールのルールは &lt;code&gt;~/Library/Mail/V3/MailData/SyncedRules.plist&lt;/code&gt; 持ってくる。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ヒラギノ角ゴシック</title>
-      <link>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
-      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
-      <description>&lt;p&gt;ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。&lt;/p&gt;
-
-&lt;p&gt;で、偶然見つけた日本語フォント &lt;code&gt;ヒラギノ角ゴシック：Hiragino Sans&lt;/code&gt; がかなりいいです。
-シエラで付いてきているのかと思ったら、El Capitanにも入っていました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-w1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;上のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-input.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;何はともあれ、早く新しいMBPを出してほしい。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title> 半透明のモーダルビュー</title>
-      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
-      <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
-      <description>
-
-&lt;p&gt;iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。&lt;/p&gt;
-
-&lt;h2 id=&#34;半透明のモーダルビュー設定&#34;&gt;半透明のモーダルビュー設定&lt;/h2&gt;
-
-&lt;p&gt;まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-overfull.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。&lt;/p&gt;
-
-&lt;p&gt;二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { 
-        if segue.identifier == &amp;quot;toSettingView&amp;quot; {
-            if let destinationVC = segue.destinationViewController as? SettingViewController {
-                destinationVC.modalPresentationStyle = 
-                        UIModalPresentationStyle.OverCurrentContext
-                        // UIModalPresentationStyle.OverFullScreen
-                destinationVC.delegate = self
-            }
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-presentation.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;追記：すぐ上の白点ボタンの位置がずれてるな。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>StatusBarメモ</title>
-      <link>http://goozenlab.com/blog/2016/08/statusbar-memo/</link>
-      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
-      <description>&lt;p&gt;アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。&lt;/p&gt;
-
-&lt;p&gt;まずは全体的な設定を、info.plistにて &lt;code&gt;View Controller-based status bar appearance&lt;/code&gt; を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-26-statusbar-info.png&#34; alt=&#34;StatusBar on Info.plist&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;info.plistに直接書き込むなら、以下を追加。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt;
-	&amp;lt;false/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;そして、変更したいビューの適当なところ、&lt;code&gt;ViewDidLoad&lt;/code&gt; に追加コード。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarHidden = true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もしくは、オーバーライドしても動くはず。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
-    return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを &lt;code&gt;.LightContent&lt;/code&gt; に変更する。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarStyle = .LightContent
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lite VersionとAdmob</title>
-      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
-      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>
-
-&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
-&lt;li&gt;スキームの変更&lt;/li&gt;
-&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
-&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
-&lt;li&gt;アイコンの追加&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
-
-&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
-
-&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
-
-&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
-
-&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;AdSupport&lt;/li&gt;
-&lt;li&gt;AudioToolbox&lt;/li&gt;
-&lt;li&gt;AVFoundation&lt;/li&gt;
-&lt;li&gt;CoreGraphics&lt;/li&gt;
-&lt;li&gt;CoreTelephony&lt;/li&gt;
-&lt;li&gt;EventKit&lt;/li&gt;
-&lt;li&gt;EventKitUI&lt;/li&gt;
-&lt;li&gt;MessageUI&lt;/li&gt;
-&lt;li&gt;StoreKit&lt;/li&gt;
-&lt;li&gt;SystemConfiguration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
-
-&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#if LITE
- 	// ライトバージョンで行う処理
-#else
- 	// フルバージョンでの処理
-#endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-#if LITE
-import GoogleMobileAds
-#endif
-
-class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
-
-    #if LITE
-    /// The banner view.
-    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
-    var bannerView: GADBannerView!
-    #endif
-    
-    .......
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        setNavigationBarGestures()
-        self.tableView.showsVerticalScrollIndicator = false
-        self.tableView.rowHeight = Cell.Height
-
-      .......
-
-        #if LITE
-            loadAdmob()
-        #endif
-     }
-
-	.......
-	
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  Admob.swift
-//
-
-import UIKit
-import GoogleMobileAds
-
-extension ListTableViewController: GADBannerViewDelegate {
-    
-    func loadAdmob() {
-        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        bannerView.adUnitID = GADApplicationID
-        bannerView.delegate = self
-        bannerView.rootViewController = self
-//	For Debug      
-//        let request:GADRequest = GADRequest()
-//        request.testDevices = [kGADSimulatorID]
-//        bannerView.loadRequest(request)
-        bannerView.loadRequest(GADRequest())
-    }
-        
-    func adViewDidReceiveAd(bannerView: GADBannerView!) {
-        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
-        let adMobView = bannerView
-        
-        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
-        self.bannerView.frame = CGRectMake(0.0, 0.0,
-                                           adMobView.frame.size.width, adMobView.frame.size.height)
-        self.tableView.tableHeaderView = self.bannerView
-        UIView.commitAnimations()
-    }
-    
-    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
-        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
-        tableView.tableHeaderView = bannerView        
-        UIView.commitAnimations()
-    }
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
 </description>
     </item>
     

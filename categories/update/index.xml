@@ -7,8 +7,79 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 05 Sep 2016 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ohayo v2.9.2</title>
+      <link>http://goozenlab.com/blog/2016/09/ohayo-292/</link>
+      <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
+      <description>
+
+&lt;p&gt;気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもある。。&lt;/p&gt;
+
+&lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;2-9-2-2016-09-10-chaingmai&#34;&gt;[2.9.2] - 2016-09-10 @ Chaingmai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fixed&#34;&gt;FIxed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
+&lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものが混じってました。。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ステータスバーを非表示&lt;/li&gt;
+&lt;li&gt;睡眠時間表示の調整（少し大きく、太くしました）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.9.3</title>
+      <link>http://goozenlab.com/blog/2016/09/cosper-193/</link>
+      <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/cosper-193/</guid>
+      <description>
+
+&lt;p&gt;固定だったcosperのコスパ総額表示: &lt;a href=&#34;http://goozenlab.com/blog/2016/09/cosper-display/&#34;&gt;記事&lt;/a&gt; を選択可能にしました。きつきつの表示を嫌う方はオフにできます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-9-3-2016-09-08-chiangmai&#34;&gt;[1.9.3] - 2016-09-08 @ ChiangMai&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;セルの消去時など、動きがスムースで無いところを調整しました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-cosper-193.png&#34; alt=&#34; cosper-193 &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>littlist v2.8.0</title>
@@ -515,43 +586,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-sati-190.png&#34; alt=&#34;Sati 1.9.0&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>iPhone4SをiOS9にアップデート</title>
-      <link>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
-      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
-      <description>&lt;p&gt;ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。
-複数のソフトで共有しているデートピッカーが問題のよう。XCode7でのシミュレータ(iOS9)では素直に動いたので、ちょっと驚き。もしかしてiOS8.2による特有の問題かもしれないと、試しにXCodeにiOS8.2とiOS8.4のシュミレーターをインストール。しかしながら、実機と同じView関連でnillが戻って来るエラーが起き落ちる。。。チョットこれはやな予感（大幅な変更を余儀なくされる）がする。&lt;/p&gt;
-
-&lt;p&gt;検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。&lt;/p&gt;
-
-&lt;p&gt;そろそろiOS10が出る頃だしサポートもiOS9以降で良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、&lt;/p&gt;
-
-&lt;p&gt;とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。&lt;/p&gt;
-
-&lt;p&gt;結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。電池の持ちも悪くなった。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出ていたようだ。。。全滅ということか、、え〜らいこっちゃな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-04-ios9.png&#34; alt=&#34;errors&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Iconを作り替え中</title>
-      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
-      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
-
-&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
