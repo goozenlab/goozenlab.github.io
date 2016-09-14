@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>サティを公開</title>
-  <meta name="description" content="サティを公開">
+  <title>ブロック表記</title>
+  <meta name="description" content="ブロック表記">
   <meta name="author" content="jin">
 
   
@@ -66,7 +66,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2016-09-06</time>
+		  <time class="">2016-09-12</time>
 		  
 		  
 		  |
@@ -74,47 +74,63 @@
 		  
 
 		  
-		  categories:<a href="http://goozenlab.com/categories/sati">sati</a> <a href="http://goozenlab.com/categories/open">open</a> 
+		  categories:<a href="http://goozenlab.com/categories/develop">develop</a> 
 		  
 
 		  
 
 		</p>
-		<h5>サティを公開</h5>
+		<h5>ブロック表記</h5>
 	  </div>
 
 	  <div class="post">
-		<p>簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 <a href="https://github.com/goozenlab/sati">Link @ github</a> しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。</p>
+		
 
-<p><img src="/images/2016-09-06-open.sati-main.png" alt=" open.sati " /></p>
+<p>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。</p>
 
-<p>プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。</p>
+<p>ブロックでっせ！と、こんな感じで出てきます、</p>
 
-<p>XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
-自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。</p>
+<p><img src="/images/2016-09-11-block-enumerateLines.png" alt=" block-enumerateLines " /></p>
 
-<p>これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。</p>
+<p>ダブルクリックで、意味がわからなくなる。この前置詞 <code>in</code> ちゅーのが曲者、どこの中じゃ？。</p>
 
-<p>細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。</p>
+<p><img src="/images/2016-09-11-block-enumerateLines-click.png" alt=" block-enumerateLines-click" /></p>
 
-<p>とりあえず新しく</p>
+<h2 id="その一">その一</h2>
 
-<ol>
-<li>メモ追加欄を瞑想終了後のムード選択欄に追加</li>
-<li>履歴ページにて、瞑想追加ボタンとビュー</li>
-<li>設定画面のスタティックビュー化</li>
-</ol>
+<pre><code>addressString.enumerateLines ({
+    (line: String, inout stop: Bool) -&gt; () in
+    
+    print(line)
+})
+</code></pre>
 
-<p>が先追加したいことのリスト。タイミングを見て追加作成したいと思います。</p>
+<h2 id="trailing-closure-syntax-を抜いてます">Trailing closure syntax：（）を抜いてます。</h2>
 
-<p>※公開の方法などは<a href="/blog/2016/09/github-open-sati/">こちら</a>にて書きましたので関心のある方は参照のほど。</p>
+<pre><code>addressString.enumerateLines {
+    (line: String, inout stop: Bool) in
+    
+    print(line)
+}
+</code></pre>
+
+<h2 id="xcodeの簡易バージョン">XCodeの簡易バージョン</h2>
+
+<p>これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。</p>
+
+<pre><code>addressString.enumerateLines {
+    (line, stop) in
+    
+    println(line)
+}
+</code></pre>
 
   	  	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'goozenlabgh';
-    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/open-sati\/';
-    var disqus_title = 'サティを公開';
-    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/open-sati\/';
+    var disqus_identifier = 'http:\/\/goozenlab.com\/blog\/2016\/09\/block-3ways\/';
+    var disqus_title = 'ブロック表記';
+    var disqus_url = 'http:\/\/goozenlab.com\/blog\/2016\/09\/block-3ways\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

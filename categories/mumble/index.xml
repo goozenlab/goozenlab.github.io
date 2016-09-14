@@ -7,8 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 09 Sep 2016 13:15:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 12 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>unwindからアンワインド</title>
+      <link>http://goozenlab.com/blog/2016/09/unwind-unwind/</link>
+      <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
+      <description>&lt;p&gt;早くも、unwindからアンワインドします。&lt;/p&gt;
+
+&lt;p&gt;何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダルビューを表示。そのモーダルビューをアンワインドをしたいのだけれども、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; のアンワインドコードを入れても無視される。&lt;/p&gt;
+
+&lt;p&gt;いろいろ試してみた所、メインテーブルビューには戻ることはできる。しかし、一気に戻ることになってしまう。たぶん、ナビケーションバーの構造のせいだと思うのだけど、解決方法が見つからず。。&lt;/p&gt;
+
+&lt;p&gt;結局使えないセグウェのアンワインド、以前からのデレゲートのタイプに変更する。&lt;/p&gt;
+
+&lt;p&gt;ストーリーボード。。も〜使わん。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iPhone7</title>
@@ -16,21 +34,21 @@
       <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/iphone7/</guid>
-      <description>&lt;p&gt;斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛ぶ。&lt;/p&gt;
+      <description>&lt;p&gt;斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛びました。&lt;/p&gt;
 
-&lt;p&gt;ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。&lt;/p&gt;
+&lt;p&gt;ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。そして、代わり映えの無いデザイン、この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。&lt;/p&gt;
 
-&lt;p&gt;どうも、これではたぶん新しいマックブックプロもピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー残念。&lt;/p&gt;
+&lt;p&gt;どうも、これではたぶん新しいマックブックプロも！お待ちかねのピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー期待が大きいだけに、出てもいないのになんか残念な気分。&lt;/p&gt;
 
-&lt;p&gt;iPhoneもAppleWatchも日本Suica対応バージョンらしく、海外のApple Payでは使えず。（こうゆうのは今更やめてもらいたい。。）&lt;/p&gt;
+&lt;p&gt;iPhoneもAppleWatchも日本Suica対応バージョンらしく、海外のApple Payは使えず。（こうゆうのは&lt;strong&gt;今更&lt;/strong&gt;やめてもらいたい。。）&lt;/p&gt;
 
 &lt;p&gt;ということで、&lt;/p&gt;
 
 &lt;p&gt;iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯端末、バッテリーがへたっているも問題なし。）&lt;br /&gt;
 アップルウォッチも今回は買う予定でいたけれど、
-世界対応にならないことには要りません。（買うなら香港で買う）&lt;/p&gt;
+世界対応にならないことには要りません。&lt;/p&gt;
 
-&lt;p&gt;しかも、高いです。コモディティー化とか言われてたけど、高級機はそんなに値落ちしない感じ。金持ちはいっぱいいるってことだわな。&lt;/p&gt;
+&lt;p&gt;しかも、&lt;strong&gt;高い&lt;/strong&gt;です。コモディティー化とか言われてたけど、高級機はそんなに値落ちしない感じ。金持ちはいっぱいいるってことだわな。&lt;/p&gt;
 
 &lt;p&gt;とにかく、お次はマックブックプロ。ジェットブラックでよろしく。&lt;/p&gt;
 

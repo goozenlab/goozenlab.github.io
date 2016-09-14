@@ -124,7 +124,9 @@ READMEとライセンスはプロジェクトと同じ階層に置いておき�
 
 &lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git init
 duvel:open.sati jin$ git add .
-duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;duvel:open.sati jin$ git push -u origin master
+duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;
+duvel:open.sati jin$ git remote add origin git@github.com:goozenlab/sati.git
+duvel:open.sati jin$ git push -u origin master
 Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.

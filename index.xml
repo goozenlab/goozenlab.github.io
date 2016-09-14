@@ -7,8 +7,155 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NSRegularExpression</title>
+      <link>http://goozenlab.com/blog/2016/09/nsregularexpression/</link>
+      <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
+      <description>&lt;p&gt;NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）&lt;/p&gt;
+
+&lt;p&gt;(a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let pattern = &amp;quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;
+
+let regex = try? NSRegularExpression(pattern: pattern,
+                                     options: NSRegularExpressionOptions.CaseInsensitive)
+let matches = regex!.firstMatchInString(text,
+                                        options: [],
+                                        range: NSMakeRange(0, patternStr.utf16.count))
+if let match = matches {
+            title = (text as NSString).substringWithRange(match.rangeAtIndex(2))
+		...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&amp;rdquo;^&amp;ldquo;（行頭）を削除。で、動くようになりました。&amp;rdquo;^&amp;ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>リスタリアを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <description>&lt;p&gt;買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップデートも３年前を最後に放置状態。ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたのを機に、このままお蔵入りにしてしまおうと思ってました。&lt;/p&gt;
+
+&lt;p&gt;しかし折角作ったものですから、ブログをホストしてもらっているギットハブに恩返しとして公開しようと思うようになり。予定になかったのですが、急遽Swiftに移行作業をしました。&lt;/p&gt;
+
+&lt;p&gt;ちょっとビギナー感満載のソースコードではありますが、、、デザインや機能など、バランスの取れているアプリだと思います。&lt;/p&gt;
+
+&lt;p&gt;簡単なソフトです。プログラムの基本的な所はわりと網羅していますし、これからiOS開発を勉強する方々には、ちょっと落として中のコードを見たり、いじったりするにも良いかなと、、（私の勉強方法）割と良い教材になるのではと、思ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;良いアイディアがあったら、どしどしコメントのほど、&lt;/p&gt;
+
+&lt;p&gt;ぼやき：今日の夕方の飛行機で日本に一時帰国をするんですが、なんか気が重い。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>listaria v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <description>&lt;p&gt;使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、&lt;/p&gt;
+
+&lt;p&gt;ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-icon-listaria.png&#34; alt=&#34; icon listaria &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたので良いタイミングのアップデートになりました。しかしながら、新しい機能はありません。ちょっと色合いが変わった程度です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;しかし、ソースコードを少し綺麗にして、近く&lt;strong&gt;ギットハブに公開&lt;/strong&gt;します。（オープンソース化第二弾）&lt;/p&gt;
+
+&lt;p&gt;最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。&lt;/p&gt;
+
+&lt;p&gt;ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ブロック表記</title>
+      <link>http://goozenlab.com/blog/2016/09/block-3ways/</link>
+      <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/block-3ways/</guid>
+      <description>
+
+&lt;p&gt;３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。&lt;/p&gt;
+
+&lt;p&gt;ブロックでっせ！と、こんな感じで出てきます、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines.png&#34; alt=&#34; block-enumerateLines &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ダブルクリックで、意味がわからなくなる。この前置詞 &lt;code&gt;in&lt;/code&gt; ちゅーのが曲者、どこの中じゃ？。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines-click.png&#34; alt=&#34; block-enumerateLines-click&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その一&#34;&gt;その一&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines ({
+    (line: String, inout stop: Bool) -&amp;gt; () in
+    
+    print(line)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;trailing-closure-syntax-を抜いてます&#34;&gt;Trailing closure syntax：（）を抜いてます。&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
+    (line: String, inout stop: Bool) in
+    
+    print(line)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;xcodeの簡易バージョン&#34;&gt;XCodeの簡易バージョン&lt;/h2&gt;
+
+&lt;p&gt;これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
+    (line, stop) in
+    
+    println(line)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>unwindからアンワインド</title>
+      <link>http://goozenlab.com/blog/2016/09/unwind-unwind/</link>
+      <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
+      <description>&lt;p&gt;早くも、unwindからアンワインドします。&lt;/p&gt;
+
+&lt;p&gt;何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダルビューを表示。そのモーダルビューをアンワインドをしたいのだけれども、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; のアンワインドコードを入れても無視される。&lt;/p&gt;
+
+&lt;p&gt;いろいろ試してみた所、メインテーブルビューには戻ることはできる。しかし、一気に戻ることになってしまう。たぶん、ナビケーションバーの構造のせいだと思うのだけど、解決方法が見つからず。。&lt;/p&gt;
+
+&lt;p&gt;結局使えないセグウェのアンワインド、以前からのデレゲートのタイプに変更する。&lt;/p&gt;
+
+&lt;p&gt;ストーリーボード。。も〜使わん。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.2</title>
@@ -22,7 +169,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもある。。&lt;/p&gt;
+&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。&lt;/p&gt;
 
 &lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
 
@@ -35,7 +182,7 @@
 &lt;ul&gt;
 &lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
 &lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
-（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものが混じってました。。）&lt;/li&gt;
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
@@ -174,21 +321,21 @@ XCodeも無償で提供されてますし、XCode7より、実機へのインス
       <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/iphone7/</guid>
-      <description>&lt;p&gt;斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛ぶ。&lt;/p&gt;
+      <description>&lt;p&gt;斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛びました。&lt;/p&gt;
 
-&lt;p&gt;ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。&lt;/p&gt;
+&lt;p&gt;ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。そして、代わり映えの無いデザイン、この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。&lt;/p&gt;
 
-&lt;p&gt;どうも、これではたぶん新しいマックブックプロもピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー残念。&lt;/p&gt;
+&lt;p&gt;どうも、これではたぶん新しいマックブックプロも！お待ちかねのピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー期待が大きいだけに、出てもいないのになんか残念な気分。&lt;/p&gt;
 
-&lt;p&gt;iPhoneもAppleWatchも日本Suica対応バージョンらしく、海外のApple Payでは使えず。（こうゆうのは今更やめてもらいたい。。）&lt;/p&gt;
+&lt;p&gt;iPhoneもAppleWatchも日本Suica対応バージョンらしく、海外のApple Payは使えず。（こうゆうのは&lt;strong&gt;今更&lt;/strong&gt;やめてもらいたい。。）&lt;/p&gt;
 
 &lt;p&gt;ということで、&lt;/p&gt;
 
 &lt;p&gt;iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯端末、バッテリーがへたっているも問題なし。）&lt;br /&gt;
 アップルウォッチも今回は買う予定でいたけれど、
-世界対応にならないことには要りません。（買うなら香港で買う）&lt;/p&gt;
+世界対応にならないことには要りません。&lt;/p&gt;
 
-&lt;p&gt;しかも、高いです。コモディティー化とか言われてたけど、高級機はそんなに値落ちしない感じ。金持ちはいっぱいいるってことだわな。&lt;/p&gt;
+&lt;p&gt;しかも、&lt;strong&gt;高い&lt;/strong&gt;です。コモディティー化とか言われてたけど、高級機はそんなに値落ちしない感じ。金持ちはいっぱいいるってことだわな。&lt;/p&gt;
 
 &lt;p&gt;とにかく、お次はマックブックプロ。ジェットブラックでよろしく。&lt;/p&gt;
 
@@ -466,7 +613,9 @@ READMEとライセンスはプロジェクトと同じ階層に置いておき�
 
 &lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git init
 duvel:open.sati jin$ git add .
-duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;duvel:open.sati jin$ git push -u origin master
+duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;
+duvel:open.sati jin$ git remote add origin git@github.com:goozenlab/sati.git
+duvel:open.sati jin$ git push -u origin master
 Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -605,428 +754,6 @@ target &#39;(a)&#39; do
   
 end
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>XCodeにてアプリデーターの管理</title>
-      <link>http://goozenlab.com/blog/2016/09/device-container/</link>
-      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/device-container/</guid>
-      <description>
-
-&lt;p&gt;端末のアプリデータをバックアップ、復元。&lt;/p&gt;
-
-&lt;p&gt;クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストールがきなくなる不具合。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appinstall-fail.png&#34; alt=&#34;appinstall-fail&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。（開発環境がXCode5から一気にXCode7になったので、、まぁ改悪は今の所無いのだけど、、分からんことが一杯だな。。）&lt;/p&gt;
-
-&lt;h2 id=&#34;データーのバックアップ-復元&#34;&gt;データーのバックアップ・復元&lt;/h2&gt;
-
-&lt;p&gt;まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-download.png&#34; alt=&#34;Container download&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;実機にインストール前に、&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;コンテナをダウンロード&lt;/li&gt;
-&lt;li&gt;エラーの出るアプリを消去&lt;/li&gt;
-&lt;li&gt;アプリを再インストール&lt;/li&gt;
-&lt;li&gt;コンテナのリプレース&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-container-replace.png&#34; alt=&#34;Container replace&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;にて作業を終えます。&lt;/p&gt;
-
-&lt;h2 id=&#34;コンテナファイル&#34;&gt;コンテナファイル&lt;/h2&gt;
-
-&lt;p&gt;そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような &lt;code&gt;****.xcappdata&lt;/code&gt; が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata.png&#34; alt=&#34;Appdata&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Documentフォルダー内にある &lt;code&gt;*.sql&lt;/code&gt; の三つのファイルがアプリのデーターになります。Libraryのなかには設定用のplistファイルがあります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-appdata-detail.png&#34; alt=&#34;Appdata detail&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※そしてこのファイルをシミュレーターに入れることでデーターを更新することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。&lt;/p&gt;
-
-&lt;h2 id=&#34;シミュレータヘのデーター移行&#34;&gt;シミュレータヘのデーター移行&lt;/h2&gt;
-
-&lt;p&gt;シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。&lt;/p&gt;
-
-&lt;p&gt;まずは、Simulatorの識別番号を XCodeのDeviceより確認します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-identifier.png&#34; alt=&#34;simulator-identifier&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ファインダーに戻り、ライブラリーに入り。&lt;/p&gt;
-
-&lt;p&gt;~/Library/Developer/CoreSimulator/Devices/&lt;strong&gt;IDENTIFIER for Simulator&lt;/strong&gt;/data/Containers/Data/Application/&lt;strong&gt;IDENTIFIER for Application&lt;/strong&gt;/Documents&lt;/p&gt;
-
-&lt;p&gt;に移動して、上の&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルを上書きます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-simulator-app-directory.png&#34; alt=&#34;simulator-app-directory&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;シミュレータのデーターを実機で使う&#34;&gt;シミュレータのデーターを実機で使う&lt;/h2&gt;
-
-&lt;p&gt;逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、&lt;code&gt;****.xcappdata&lt;/code&gt; ファイルのなかの&lt;code&gt;*.sql&lt;/code&gt; の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。&lt;/p&gt;
-
-&lt;p&gt;iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cosperの金額表示</title>
-      <link>http://goozenlab.com/blog/2016/09/cosper-display/</link>
-      <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/cosper-display/</guid>
-      <description>&lt;p&gt;うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。&lt;/p&gt;
-
-&lt;p&gt;機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、&lt;/p&gt;
-
-&lt;p&gt;拙作アプリ、コスパ.1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;うーーーーん、少しきつきつだな、しかも思ったより結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう、バランスも悪い。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）&lt;/p&gt;
-
-&lt;p&gt;もう一回長押しで表示したりすることや、ターブルビューのフッターで表示も考えるが、あまり操作を複雑にするのは気が進まないし、見た目もこれ以上余計なもの入れたく無い。情報の入ったヘッダー部を下に引っ張ってチラ見確認というのはありかな。。と、このポストを書いている最中に思いつくけど、これもちょっと違う感じもする。&lt;/p&gt;
-
-&lt;p&gt;実機に入れ、数日自分で使ってみて決めることにする。&lt;/p&gt;
-
-&lt;p&gt;で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づく。（でもねぇ、後で、表示が切れるとか文句が出そうでねぇ、正直なところ、今ひとつ乗り気では無い。）&lt;/p&gt;
-
-&lt;p&gt;ということで、設定に新しい項目を追加、にします。&lt;/p&gt;
-
-&lt;p&gt;ちょっと他のところもいじっているので更新はしばし後です。乞うご期待。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Podsをプロジェクトに</title>
-      <link>http://goozenlab.com/blog/2016/09/install-pods/</link>
-      <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/install-pods/</guid>
-      <description>&lt;p&gt;プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pod install
-Setting up CocoaPods master repo
-[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
-You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
-$ git clone https://github.com/CocoaPods/Specs.git
-Cloning into &#39;Specs&#39;...
-remote: Counting objects: 801469, done.
-remote: Compressing objects: 100% (30/30), done.
-Receiving objects:  83% (671735/801475), 209.63 MiB | 10.00 KiB/s    
-error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s     
-fatal: The remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;思ったよりファイルが大きいです（310 MiBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
-（途中回線が切れること数回、、、）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cocoapod-install.png&#34; alt=&#34;pods install&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pod install
-Downloading dependencies
-Installing Alamofire (3.3.1)
-Installing Reachability (3.2)
-Installing SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
-
-[!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
-Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
-$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ネット上では、&lt;code&gt;pod install --no-repo-update --verbose&lt;/code&gt; でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。&lt;/p&gt;
-
-&lt;p&gt;swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ $ pod update
-Update all pods
-Updating local specs repositories
-Analyzing dependencies
-Removing Reachability
-Downloading dependencies
-Using Alamofire (3.3.1)
-Installing JGProgressHUD (1.4)
-Using ReachabilitySwift (2.3.3)
-Using SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
-Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;こんな感じで終了。&lt;/p&gt;
-
-&lt;p&gt;安堵。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sudo-less Gem &amp; Cocoapods</title>
-      <link>http://goozenlab.com/blog/2016/08/install-cocoapods/</link>
-      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
-      <description>&lt;p&gt;ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。&lt;/p&gt;
-
-&lt;p&gt;以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で &lt;code&gt;~/.gem&lt;/code&gt; 内にインストール。&lt;/p&gt;
-
-&lt;p&gt;まずは、bashの設定 &lt;code&gt;~/.bash_profile&lt;/code&gt; を弄ります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# sudo-less Gem
-export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）&lt;/p&gt;
-
-&lt;p&gt;ディレクトリーを作り、&lt;code&gt;--user-install&lt;/code&gt;のオプションをつけインストールをします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd
-$ mkdir .gem
-$ gem install activesupport -v 4.2.6 --user-install
-$ gem install cocoapods --user-install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gem install activesupport -v 4.2.6 --user-install
-Fetching: i18n-0.7.0.gem (100%)
-Successfully installed i18n-0.7.0
-Fetching: thread_safe-0.3.5.gem (100%)
-Successfully installed thread_safe-0.3.5
-Fetching: tzinfo-1.2.2.gem (100%)
-Successfully installed tzinfo-1.2.2
-Fetching: minitest-5.9.0.gem (100%)
-Successfully installed minitest-5.9.0
-Fetching: activesupport-4.2.6.gem (100%)
-Successfully installed activesupport-4.2.6
-Parsing documentation for i18n-0.7.0
-Installing ri documentation for i18n-0.7.0
-Parsing documentation for thread_safe-0.3.5
-Installing ri documentation for thread_safe-0.3.5
-Parsing documentation for tzinfo-1.2.2
-Installing ri documentation for tzinfo-1.2.2
-Parsing documentation for minitest-5.9.0
-Installing ri documentation for minitest-5.9.0
-Parsing documentation for activesupport-4.2.6
-unable to convert &amp;quot;\x84&amp;quot; from ASCII-8BIT to UTF-8 for lib/active_support/values/unicode_tables.dat, skipping
-Installing ri documentation for activesupport-4.2.6
-5 gems installed
-$ gem install cocoapods --user-install
-Fetching: nap-1.1.0.gem (100%)
-Successfully installed nap-1.1.0
-Fetching: fuzzy_match-2.0.4.gem (100%)
-Successfully installed fuzzy_match-2.0.4
-Fetching: cocoapods-core-1.0.1.gem (100%)
-Successfully installed cocoapods-core-1.0.1
-Fetching: claide-1.0.0.gem (100%)
-Successfully installed claide-1.0.0
-Fetching: cocoapods-deintegrate-1.0.0.gem (100%)
-Successfully installed cocoapods-deintegrate-1.0.0
-Fetching: cocoapods-downloader-1.1.0.gem (100%)
-Successfully installed cocoapods-downloader-1.1.0
-Fetching: cocoapods-plugins-1.0.0.gem (100%)
-Successfully installed cocoapods-plugins-1.0.0
-Fetching: cocoapods-search-1.0.0.gem (100%)
-Successfully installed cocoapods-search-1.0.0
-Fetching: cocoapods-stats-1.0.0.gem (100%)
-Successfully installed cocoapods-stats-1.0.0
-Fetching: netrc-0.7.8.gem (100%)
-Successfully installed netrc-0.7.8
-Fetching: cocoapods-trunk-1.0.0.gem (100%)
-Successfully installed cocoapods-trunk-1.0.0
-Fetching: cocoapods-try-1.1.0.gem (100%)
-Successfully installed cocoapods-try-1.1.0
-Fetching: molinillo-0.4.5.gem (100%)
-Successfully installed molinillo-0.4.5
-Fetching: colored-1.2.gem (100%)
-Successfully installed colored-1.2
-Fetching: xcodeproj-1.2.0.gem (100%)
-Successfully installed xcodeproj-1.2.0
-Fetching: escape-0.0.4.gem (100%)
-Successfully installed escape-0.0.4
-Fetching: fourflusher-0.3.2.gem (100%)
-Successfully installed fourflusher-0.3.2
-Fetching: cocoapods-1.0.1.gem (100%)
-Successfully installed cocoapods-1.0.1
-Fetching: concurrent-ruby-1.0.2.gem (100%)
-Successfully installed concurrent-ruby-1.0.2
-Parsing documentation for nap-1.1.0
-Installing ri documentation for nap-1.1.0
-Parsing documentation for fuzzy_match-2.0.4
-Installing ri documentation for fuzzy_match-2.0.4
-Parsing documentation for cocoapods-core-1.0.1
-Installing ri documentation for cocoapods-core-1.0.1
-Parsing documentation for claide-1.0.0
-Installing ri documentation for claide-1.0.0
-Parsing documentation for cocoapods-deintegrate-1.0.0
-Installing ri documentation for cocoapods-deintegrate-1.0.0
-Parsing documentation for cocoapods-downloader-1.1.0
-Installing ri documentation for cocoapods-downloader-1.1.0
-Parsing documentation for cocoapods-plugins-1.0.0
-Installing ri documentation for cocoapods-plugins-1.0.0
-Parsing documentation for cocoapods-search-1.0.0
-Installing ri documentation for cocoapods-search-1.0.0
-Parsing documentation for cocoapods-stats-1.0.0
-Installing ri documentation for cocoapods-stats-1.0.0
-Parsing documentation for netrc-0.7.8
-Installing ri documentation for netrc-0.7.8
-Parsing documentation for cocoapods-trunk-1.0.0
-Installing ri documentation for cocoapods-trunk-1.0.0
-Parsing documentation for cocoapods-try-1.1.0
-Installing ri documentation for cocoapods-try-1.1.0
-Parsing documentation for molinillo-0.4.5
-Installing ri documentation for molinillo-0.4.5
-Parsing documentation for colored-1.2
-Installing ri documentation for colored-1.2
-Parsing documentation for xcodeproj-1.2.0
-Installing ri documentation for xcodeproj-1.2.0
-Parsing documentation for escape-0.0.4
-Installing ri documentation for escape-0.0.4
-Parsing documentation for fourflusher-0.3.2
-Installing ri documentation for fourflusher-0.3.2
-Parsing documentation for cocoapods-1.0.1
-Installing ri documentation for cocoapods-1.0.1
-Parsing documentation for concurrent-ruby-1.0.2
-Installing ri documentation for concurrent-ruby-1.0.2
-19 gems installed
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、無事終了、インストールできました。これで、(a)の移行ができる。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>インストール: Homebrew</title>
-      <link>http://goozenlab.com/blog/2016/08/install-homebrew/</link>
-      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/install-homebrew/</guid>
-      <description>
-
-&lt;p&gt;Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd /usr/local/
-total 24
-drwxr-xr-x   14 jin  admin   476B Mar 29 10:51 .git/
-drwxr-xr-x    5 jin  admin   170B Feb 20  2016 .github/
--rw-r--r--    1 jin  admin   823B Feb 20  2016 .gitignore
--rw-r--r--    1 jin  admin   1.3K Feb 20  2016 .travis.yml
--rw-r--r--    1 jin  admin   291B Oct 16  2015 .yardopts
--rw-r--r--    1 jin  admin   3.1K Jun  1  2015 CODEOFCONDUCT.md
-drwxr-xr-x    9 jin  admin   306B Apr 18  2015 Cellar/
-drwxr-xr-x    3 jin  admin   102B Nov 11  2015 Frameworks/
--rw-r--r--    1 jin  admin   1.2K Feb 20  2016 LICENSE.txt
-drwxr-xr-x   11 jin  admin   374B Mar 29 10:51 Library/
--rw-r--r--    1 jin  admin   3.8K Feb 26  2016 README.md
-drwxr-xr-x  135 jin  admin   4.5K Mar 31 21:02 bin/
-drwxr-xr-x    4 jin  admin   136B Feb 20  2016 etc/
-drwxr-xr-x    8 jin  admin   272B Apr 18  2015 include/
-drwxr-xr-x   18 jin  admin   612B Apr 18  2015 lib/
-drwxr-xr-x    9 jin  admin   306B Mar 29 10:53 opt/
-drwxr-xr-x    4 jin  admin   136B Mar  5  2015 share/
-drwxr-xr-x    3 jin  admin   102B Apr  1  2015 var/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の&lt;code&gt;~/.brew&lt;/code&gt; にする。（よくよく考えると、&lt;code&gt;~/Library/Homebrew&lt;/code&gt;でも良かったかなと思ったりする。）&lt;/p&gt;
-
-&lt;h2 id=&#34;homebrew-のインストール&#34;&gt;Homebrew のインストール&lt;/h2&gt;
-
-&lt;p&gt;コピーもしくはクローンでインストールできます。私はサイト上にあった方法のコピーでインストールを行いました。ちなみに、gitでは &lt;code&gt;$ git clone https://github.com/Homebrew/brew.git ~/.brew&lt;/code&gt; 。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd
-$ mkdir .brew &amp;amp;&amp;amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .brew
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;実行パスの設定&#34;&gt;実行パスの設定&lt;/h2&gt;
-
-&lt;p&gt;とりあえず、PREFIXなど状況をチェック。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ .brew/bin/brew config
-HOMEBREW_VERSION: 0.9.9
-ORIGIN: (none)
-HEAD: (none)
-Last commit: never
-Core tap: N/A
-HOMEBREW_PREFIX: /Users/jin/.brew
-HOMEBREW_REPOSITORY: /Users/jin/.brew
-HOMEBREW_CELLAR: /Users/jin/.brew/Cellar
-HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
-CPU: octa-core 64-bit sandybridge
-Homebrew Ruby: 2.0.0-p648
-Clang: 7.3 build 703
-Git: 2.7.4 =&amp;gt; /Applications/Xcode.app/Contents/Developer/usr/bin/git
-Perl: /usr/bin/perl
-Python: /usr/bin/python
-Ruby: /usr/bin/ruby =&amp;gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
-Java: N/A
-OS X: 10.11.6-x86_64
-Xcode: 7.3.1
-CLT: N/A
-X11: N/A
-$ .brew/bin/brew --cache
-/Users/jin/Library/Caches/Homebrew
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;問題は無いようなので、実行パスを&lt;code&gt;.bash_profile&lt;/code&gt;に書き込みます。
-そしてCacheの保存先は、&lt;code&gt;/Users/jin/Library/Caches/Homebrew&lt;/code&gt; になっているのでこれもついでに変更します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export PATH=$HOME/.brew/bin:$PATH
-export HOMEBREW_CACHE=$HOME/.brew/cache
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew doctor
-Please note that these warnings are just used to help the Homebrew maintainers
-with debugging if you file an issue. If everything you use Homebrew for is
-working fine: please don&#39;t worry and just ignore them. Thanks!
-
-Warning: Your Homebrew is not installed to /usr/local
-You can install Homebrew anywhere you want but some bottles (binary
-packages) can only be used in /usr/local and some formulae (packages)
-may not build correctly unless you install in /usr/local. Sorry!
-
-$ brew install hugo
-Initialized empty Git repository in /Users/jin/.brew/.git/
-remote: Counting objects: 1032, done.
-remote: Compressing objects: 100% (924/924), done.
-remote: Total 1032 (delta 91), reused 650 (delta 67), pack-reused 0
-Receiving objects: 100% (1032/1032), 1.03 MiB | 93.00 KiB/s, done.
-Resolving deltas: 100% (91/91), done.
-From https://github.com/Homebrew/brew
- * [new branch]      master     -&amp;gt; origin/master
-HEAD is now at 8e29cf1 Merge pull request #812 from DomT4/at
-==&amp;gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.16.el_capitan.bottle.tar.gz
-######################################################################## 100.0%
-==&amp;gt; Pouring hugo-0.16.el_capitan.bottle.tar.gz
-==&amp;gt; Caveats
-Bash completion has been installed to:
-  /Users/jin/.brew/etc/bash_completion.d
-==&amp;gt; Summary
-🍺  /Users/jin/.brew/Cellar/hugo/0.16: 29 files, 17.6M
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。&lt;/p&gt;
 </description>
     </item>
     

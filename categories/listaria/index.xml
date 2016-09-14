@@ -7,8 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 30 Jul 2013 16:33:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/listaria/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>リスタリアを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <description>&lt;p&gt;買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップデートも３年前を最後に放置状態。ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたのを機に、このままお蔵入りにしてしまおうと思ってました。&lt;/p&gt;
+
+&lt;p&gt;しかし折角作ったものですから、ブログをホストしてもらっているギットハブに恩返しとして公開しようと思うようになり。予定になかったのですが、急遽Swiftに移行作業をしました。&lt;/p&gt;
+
+&lt;p&gt;ちょっとビギナー感満載のソースコードではありますが、、、デザインや機能など、バランスの取れているアプリだと思います。&lt;/p&gt;
+
+&lt;p&gt;簡単なソフトです。プログラムの基本的な所はわりと網羅していますし、これからiOS開発を勉強する方々には、ちょっと落として中のコードを見たり、いじったりするにも良いかなと、、（私の勉強方法）割と良い教材になるのではと、思ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;良いアイディアがあったら、どしどしコメントのほど、&lt;/p&gt;
+
+&lt;p&gt;ぼやき：今日の夕方の飛行機で日本に一時帰国をするんですが、なんか気が重い。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>listaria v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <description>&lt;p&gt;使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、&lt;/p&gt;
+
+&lt;p&gt;ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-icon-listaria.png&#34; alt=&#34; icon listaria &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたので良いタイミングのアップデートになりました。しかしながら、新しい機能はありません。ちょっと色合いが変わった程度です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;しかし、ソースコードを少し綺麗にして、近く&lt;strong&gt;ギットハブに公開&lt;/strong&gt;します。（オープンソース化第二弾）&lt;/p&gt;
+
+&lt;p&gt;最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。&lt;/p&gt;
+
+&lt;p&gt;ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>listaria v1.5.4</title>

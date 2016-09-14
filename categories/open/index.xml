@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open on goozenlab</title>
+    <link>http://goozenlab.com/categories/open/</link>
+    <description>Recent content in Open on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate>
+    <atom:link href="http://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>リスタリアを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <description>&lt;p&gt;買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップデートも３年前を最後に放置状態。ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたのを機に、このままお蔵入りにしてしまおうと思ってました。&lt;/p&gt;
+
+&lt;p&gt;しかし折角作ったものですから、ブログをホストしてもらっているギットハブに恩返しとして公開しようと思うようになり。予定になかったのですが、急遽Swiftに移行作業をしました。&lt;/p&gt;
+
+&lt;p&gt;ちょっとビギナー感満載のソースコードではありますが、、、デザインや機能など、バランスの取れているアプリだと思います。&lt;/p&gt;
+
+&lt;p&gt;簡単なソフトです。プログラムの基本的な所はわりと網羅していますし、これからiOS開発を勉強する方々には、ちょっと落として中のコードを見たり、いじったりするにも良いかなと、、（私の勉強方法）割と良い教材になるのではと、思ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;良いアイディアがあったら、どしどしコメントのほど、&lt;/p&gt;
+
+&lt;p&gt;ぼやき：今日の夕方の飛行機で日本に一時帰国をするんですが、なんか気が重い。。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>サティを公開</title>
+      <link>http://goozenlab.com/blog/2016/09/open-sati/</link>
+      <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/open-sati/</guid>
+      <description>&lt;p&gt;簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 &lt;a href=&#34;https://github.com/goozenlab/sati&#34;&gt;Link @ github&lt;/a&gt; しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-main.png&#34; alt=&#34; open.sati &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。&lt;/p&gt;
+
+&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
+自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
+
+&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。&lt;/p&gt;
+
+&lt;p&gt;とりあえず新しく&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;メモ追加欄を瞑想終了後のムード選択欄に追加&lt;/li&gt;
+&lt;li&gt;履歴ページにて、瞑想追加ボタンとビュー&lt;/li&gt;
+&lt;li&gt;設定画面のスタティックビュー化&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;が先追加したいことのリスト。タイミングを見て追加作成したいと思います。&lt;/p&gt;
+
+&lt;p&gt;※公開の方法などは&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;こちら&lt;/a&gt;にて書きましたので関心のある方は参照のほど。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ギットハブ公開</title>
+      <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
+      <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/github-open-sati/</guid>
+      <description>
+
+&lt;p&gt;ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;問題点&lt;/strong&gt;：ギットハブに公開するプロジェクトには、バンドルアイデンティファイヤ、AppleIDを入れたくない。そして、アプストアーに公開するにはコードサインをしなくてはいけない。（アイデンティファイヤ、AppleIDが必要）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解決案&lt;/strong&gt;：二つのプロジェクトと共有コードの形での運用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一つ目のプロジェクトは、作業用。ギットハブと連動して作業をします。個人情報入れないでも、シミュレーターでアプリを動かすことができます。&lt;/p&gt;
+
+&lt;p&gt;もう一つは、アプストアービルド、デプロイ用。プロジェクトファイル以外は、上のプロジェクトからファイルをリンクします。（コピーではなく、シンボリックリンクにみたいなもの？）このプロジェクトには、アプストアーに登録するための情報を入れておきます。ギットは使いません。&lt;/p&gt;
+
+&lt;h2 id=&#34;作業&#34;&gt;作業&lt;/h2&gt;
+
+&lt;p&gt;サティを公開するための行った作業をちょっと詳しく。まずは今まで作業していたフォルダーを一気にコピー。&lt;/p&gt;
+
+&lt;p&gt;一つを、open.sati (公開用） もう一つを sati (デプロイ用）にします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder.png&#34; alt=&#34; open.sati folders &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ともにフレッシュスタートということで、ディレクトリー内にある .git　ディレクトリーを削除します。隠れファイルなので、ターミナルから &lt;code&gt;rm -rf .git/&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-remove-git.png&#34; alt=&#34; remove git &#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;sati-アプストアー-実機検証用&#34;&gt;sati：アプストアー、実機検証用&lt;/h3&gt;
+
+&lt;p&gt;satiの中のファイルはフロジェクトファイル、info.plist以外、全て捨ててしまいます。&lt;/p&gt;
+
+&lt;p&gt;プロジェクト内は真っ赤になります。一気に消してしまいます。&lt;/p&gt;
+
+&lt;p&gt;そして、open.sati のフォルダーからファイルをまとめてドラッグ＆ドロップ。ダイアリグが出ます。コピーのチェックは外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-import-files.png&#34; alt=&#34; open.sati  import-files&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;残念ながら、&lt;code&gt;Localizable.strings&lt;/code&gt; がうまく引き継がれません。（多分ローカライズされたnibファイルなども引き継がれないと思います。）コマンドオプション＋ドラッグのエイリアスでファイルを持ってくるもNG。しかし、XCode上でファイルを一旦 open.sati よりコピーして消し、ターミナルで リンクを &lt;code&gt;ln -s&lt;/code&gt; でリンクしてあげれば読み込みます。なんか中途半端ですが動きます。ディレクトリーはこんな感じになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder-list.png&#34; alt=&#34; folder listing &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、README や LICENCE 等、ターゲットに入れないファイルをメンバーから外します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-target-check.png&#34; alt=&#34; target-check &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で、ビルドの設定などは引き継がれたままなので実機でもアプストア用のビルドなども今まで通り動きました。（アップロードはしていませんが、多分大丈夫だと思います。）&lt;/p&gt;
+
+&lt;p&gt;こちらのプロジェクトでは、ファイルをいじらないようにします。あくまでも、ビルドと実機テストようにします。&lt;/p&gt;
+
+&lt;h3 id=&#34;open-sati-ギットハブ-作業用&#34;&gt;open.sati：ギットハブ、作業用&lt;/h3&gt;
+
+&lt;p&gt;まずプロジェクトファイルを開けて、公開したくないものを抜きます。そして、リンクしているファイルがないかチェック。（私は、ビルド時にローカルからのファイルを参照しているところがあるので、その設定も抜きます。デプロイ用についていれば問題はない。）
+幾つかのファイルは他のアプリと共有しているので、こっちのプロジェクトにコピーをします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-identity.png&#34; alt=&#34; open.sati-identity&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一通りチェックを終えたら、シミュレーターで動くかチェックします。&lt;/p&gt;
+
+&lt;p&gt;これで、作業はギットハブのプロジェクトで行う。ギットハブと共有しているプロジェクトでもシミュレーターで動かせることができ、検証機で動かしたい時とアプストアーにアップする時は別のプロジェクトですれば良い。デプロイ用はほとんど手を入れる必要はない、はず。&lt;/p&gt;
+
+&lt;p&gt;そして、公開します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;追記&lt;/strong&gt;：
+READMEとライセンスはプロジェクトと同じ階層に置いておきましょう。ギットハブではそのREADが読み込まれ表示されます。&lt;/p&gt;
+
+&lt;h2 id=&#34;ギットハブに公開&#34;&gt;ギットハブに公開&lt;/h2&gt;
+
+&lt;p&gt;公開をするには、ギットハブに載っている方法で行います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-git-add.png&#34; alt=&#34; open.sati git add&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;まずはギットの初期化、その後、ファイルを追加して、コミットします。（ちょっとREADMEに何を書けばいいか悩みましたが、）９月６日のくろ～の日に公開。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-initial-setup.png&#34; alt=&#34; open.sati-initial-setup &#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git init
+duvel:open.sati jin$ git add .
+duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;
+duvel:open.sati jin$ git remote add origin git@github.com:goozenlab/sati.git
+duvel:open.sati jin$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;鍵の設定でエラーが出ますが、作ってある公開鍵をコピーしギットハブの設定より新しい鍵の追加設定をします。&lt;a href=&#34;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&#34;&gt;参照&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati.ssh-key.png&#34; alt=&#34; /open.sati.ssh-key&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で再度挑戦、こんどはうまくいきます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.123]:443&#39; to the list of known hosts.
+Counting objects: 155, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (149/149), done.
+Writing objects: 100% (155/155), 10.10 MiB | 39.00 KiB/s, done.
+Total 155 (delta 37), reused 0 (delta 0)
+remote: Resolving deltas: 100% (37/37), done.
+To git@github.com:goozenlab/sati.git
+ * [new branch]      master -&amp;gt; master
+Branch master set up to track remote branch master from origin.
+duvel:open.sati jin$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;伴う追加作業&#34;&gt;伴う追加作業&lt;/h2&gt;
+
+&lt;p&gt;sati.xcodeprojで引き継げないところは、個別に変更する必要があります。（ビルド番号など）
+このプロジェクトの場合、ビルド終了時走らせているスクリプトも少し変更します。
+少しだけ、リリース時に手を入れないといけないことがあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;これから&#34;&gt;これから、&lt;/h2&gt;
+
+&lt;p&gt;これで終了です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-github-initital.png&#34; alt=&#34; /open.sati-github-initital&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;で、、、READMEを入れる場所を間違えた。。がまあいいでしょう。次回コミット時に変更します。&lt;/p&gt;
+
+&lt;p&gt;ただし、作業用のプロジェクトで新しいファイルが追加された時は別途そのファイルをデプロイ用でも追加する作業が必要になります。まぁ、ビルドが通らなくなるのでわかると思いますが、、、&lt;/p&gt;
+
+&lt;p&gt;とりあえず。こんな感じで当分は行ってみます。&lt;/p&gt;
+
+&lt;p&gt;もし他に良い方法があったら、教えてください。（なーーんかありそうな感じ。）&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

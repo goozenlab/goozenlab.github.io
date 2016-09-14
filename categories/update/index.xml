@@ -7,8 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 14 Sep 2016 13:00:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>listaria v1.8.0</title>
+      <link>http://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <description>&lt;p&gt;使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、&lt;/p&gt;
+
+&lt;p&gt;ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-icon-listaria.png&#34; alt=&#34; icon listaria &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。&lt;/p&gt;
+
+&lt;p&gt;ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたので良いタイミングのアップデートになりました。しかしながら、新しい機能はありません。ちょっと色合いが変わった程度です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;しかし、ソースコードを少し綺麗にして、近く&lt;strong&gt;ギットハブに公開&lt;/strong&gt;します。（オープンソース化第二弾）&lt;/p&gt;
+
+&lt;p&gt;最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。&lt;/p&gt;
+
+&lt;p&gt;ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ohayo v2.9.2</title>
@@ -22,7 +48,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもある。。&lt;/p&gt;
+&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。&lt;/p&gt;
 
 &lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
 
@@ -35,7 +61,7 @@
 &lt;ul&gt;
 &lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
 &lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
-（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものが混じってました。。）&lt;/li&gt;
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
@@ -542,50 +568,6 @@
 &lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
 &lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/sati-190/</link>
-      <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/sati-190/</guid>
-      <description>
-
-&lt;p&gt;2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iPhone6など大きい液晶の端末では表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。&lt;/p&gt;
-
-&lt;p&gt;バージョンは一気に上がってますが、機能的には少しのアップデートしかありません。瞑想履歴のページはちょっとシンプルになり、表示する項目が多く無いのでちょっと貧弱です。これまた利用者の方にはあまり関係がありませんが、少し落ち着いたら、ギットハブに公開しようと思ってます。&lt;/p&gt;
-
-&lt;p&gt;数日中に公開されると思います。。&lt;/p&gt;
-
-&lt;p&gt;追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-10-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-10 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンを少し変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題&lt;/li&gt;
-&lt;li&gt;もしかしたらiOS9で起動しなかったならば、このリリースで動くようになります。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-08-sati-190.png&#34; alt=&#34;Sati 1.9.0&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

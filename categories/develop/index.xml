@@ -7,8 +7,87 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 09 Sep 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2016 08:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NSRegularExpression</title>
+      <link>http://goozenlab.com/blog/2016/09/nsregularexpression/</link>
+      <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
+      <description>&lt;p&gt;NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）&lt;/p&gt;
+
+&lt;p&gt;(a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let pattern = &amp;quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;
+
+let regex = try? NSRegularExpression(pattern: pattern,
+                                     options: NSRegularExpressionOptions.CaseInsensitive)
+let matches = regex!.firstMatchInString(text,
+                                        options: [],
+                                        range: NSMakeRange(0, patternStr.utf16.count))
+if let match = matches {
+            title = (text as NSString).substringWithRange(match.rangeAtIndex(2))
+		...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&amp;rdquo;^&amp;ldquo;（行頭）を削除。で、動くようになりました。&amp;rdquo;^&amp;ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ブロック表記</title>
+      <link>http://goozenlab.com/blog/2016/09/block-3ways/</link>
+      <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/block-3ways/</guid>
+      <description>
+
+&lt;p&gt;３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。&lt;/p&gt;
+
+&lt;p&gt;ブロックでっせ！と、こんな感じで出てきます、&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines.png&#34; alt=&#34; block-enumerateLines &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ダブルクリックで、意味がわからなくなる。この前置詞 &lt;code&gt;in&lt;/code&gt; ちゅーのが曲者、どこの中じゃ？。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines-click.png&#34; alt=&#34; block-enumerateLines-click&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その一&#34;&gt;その一&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines ({
+    (line: String, inout stop: Bool) -&amp;gt; () in
+    
+    print(line)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;trailing-closure-syntax-を抜いてます&#34;&gt;Trailing closure syntax：（）を抜いてます。&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
+    (line: String, inout stop: Bool) in
+    
+    print(line)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;xcodeの簡易バージョン&#34;&gt;XCodeの簡易バージョン&lt;/h2&gt;
+
+&lt;p&gt;これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
+    (line, stop) in
+    
+    println(line)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>unWind segway</title>
@@ -212,7 +291,9 @@ READMEとライセンスはプロジェクトと同じ階層に置いておき�
 
 &lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git init
 duvel:open.sati jin$ git add .
-duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;duvel:open.sati jin$ git push -u origin master
+duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;
+duvel:open.sati jin$ git remote add origin git@github.com:goozenlab/sati.git
+duvel:open.sati jin$ git push -u origin master
 Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
 Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -1061,51 +1142,6 @@ let filteredArray = myTasks?.filter( {
 	} )
 return filteredArray!.count &amp;gt; 0
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>乱数を発生させる</title>
-      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
-      <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
-      <description>
-
-&lt;h2 id=&#34;rand&#34;&gt;rand()&lt;/h2&gt;
-
-&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; srand(time(nil));
- rand()%300;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;arc4random-uniform&#34;&gt;arc4random_uniform()&lt;/h2&gt;
-
-&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>iOS 9.0.1</title>
-      <link>http://goozenlab.com/blog/2015/09/ios901/</link>
-      <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios901/</guid>
-      <description>&lt;p&gt;未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-09-25-ios901.jpg&#34; alt=&#34;iOS9.0.1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;修正点の中でも気になるのは、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アラームやタイマーが鳴らないことがある問題を修正&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;これが、拙作のサティで問題になっている音が出ない問題の解決になっていることをちょっと期待。&lt;/p&gt;
 </description>
     </item>
     
