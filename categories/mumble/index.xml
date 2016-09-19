@@ -7,8 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 12 Sep 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCode8</title>
+      <link>http://goozenlab.com/blog/2016/09/xcode8/</link>
+      <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/xcode8/</guid>
+      <description>&lt;p&gt;日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。&lt;/p&gt;
+
+&lt;p&gt;当分XCode7と共存させて使っていくつもりなので、今まで使っていたXCodeを別の場所にコピーして名前を変更。インストール終了後、移動したXCodeをアプリケーションに戻します。&lt;br /&gt;
+（アプリケーションに入っている今まで使っているXCodeは名前を変更しても、アップデート時に新しいXCodeに書き換えられてしまいますので、要注意。）&lt;/p&gt;
+
+&lt;p&gt;XCode８でプロジェクトを開けると、プロジェクトをSwift3かSwift2.3への書き換えを求められます。書き換えないとビルドができない。これは、今までのバイナリーだと動かないということなのか？？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode8-convert.png&#34; alt=&#34;xcode8-convert&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode-convert-swift3.png&#34; alt=&#34;xcode-convert-swift3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;しかも、書き換えないとビルドでエラー。同様にXCode8にて書き換えを行なったプロジェクトはXCode7ではビルドができなくなる。。XCode8に強制移行が求められるのは気分がよく無い。。。。（ぼやき：オメェ～ヨォ～、その前に新しいMBPを出せよ！）台風接近中だし、蒸し暑いし、気分がよく無い。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode-error.png&#34; alt=&#34;xcode-error&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>unwindからアンワインド</title>

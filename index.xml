@@ -7,8 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 15 Sep 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XCode8</title>
+      <link>http://goozenlab.com/blog/2016/09/xcode8/</link>
+      <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/xcode8/</guid>
+      <description>&lt;p&gt;日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。&lt;/p&gt;
+
+&lt;p&gt;当分XCode7と共存させて使っていくつもりなので、今まで使っていたXCodeを別の場所にコピーして名前を変更。インストール終了後、移動したXCodeをアプリケーションに戻します。&lt;br /&gt;
+（アプリケーションに入っている今まで使っているXCodeは名前を変更しても、アップデート時に新しいXCodeに書き換えられてしまいますので、要注意。）&lt;/p&gt;
+
+&lt;p&gt;XCode８でプロジェクトを開けると、プロジェクトをSwift3かSwift2.3への書き換えを求められます。書き換えないとビルドができない。これは、今までのバイナリーだと動かないということなのか？？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode8-convert.png&#34; alt=&#34;xcode8-convert&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode-convert-swift3.png&#34; alt=&#34;xcode-convert-swift3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;しかも、書き換えないとビルドでエラー。同様にXCode8にて書き換えを行なったプロジェクトはXCode7ではビルドができなくなる。。XCode8に強制移行が求められるのは気分がよく無い。。。。（ぼやき：オメェ～ヨォ～、その前に新しいMBPを出せよ！）台風接近中だし、蒸し暑いし、気分がよく無い。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-19-xcode-error.png&#34; alt=&#34;xcode-error&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NSRegularExpression</title>
@@ -715,45 +738,6 @@ duvel:open.sati jin$
 &lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
 
 &lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Podsを使う</title>
-      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
-      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
-
-&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-
-import ReachabilitySwift
-import MBProgressHUD
-import SwiftyDropbox
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
-
-&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
-platform :ios, &#39;8.0&#39;
-
-target &#39;(a)&#39; do
-  use_frameworks!
-
-  # Pods for (a)
-  pod &#39;ReachabilitySwift&#39;
-  pod &#39;MBProgressHUD&#39;
-  pod &#39;SwiftyDropbox&#39;
-  
-end
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
