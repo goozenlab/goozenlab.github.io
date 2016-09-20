@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 09:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iPhone 5S始めました</title>
+      <link>http://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <description>&lt;p&gt;母からのお下がり、iphone5Sを頂きました！。&lt;/p&gt;
+
+&lt;p&gt;全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-21-iphone5s.jpg&#34; alt=&#34; iphone5s&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ともかくありがたいことに、これでiOS10での実機検証が可能になりました。ありがたや。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>XCode8</title>
@@ -617,45 +633,6 @@ duvel:open.sati jin$
 &lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
 
 &lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Podsを使う</title>
-      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
-      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
-
-&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-
-import ReachabilitySwift
-import MBProgressHUD
-import SwiftyDropbox
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
-
-&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
-platform :ios, &#39;8.0&#39;
-
-target &#39;(a)&#39; do
-  use_frameworks!
-
-  # Pods for (a)
-  pod &#39;ReachabilitySwift&#39;
-  pod &#39;MBProgressHUD&#39;
-  pod &#39;SwiftyDropbox&#39;
-  
-end
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

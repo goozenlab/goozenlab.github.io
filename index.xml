@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 09:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iPhone 5S始めました</title>
+      <link>http://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <description>&lt;p&gt;母からのお下がり、iphone5Sを頂きました！。&lt;/p&gt;
+
+&lt;p&gt;全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-21-iphone5s.jpg&#34; alt=&#34; iphone5s&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ともかくありがたいことに、これでiOS10での実機検証が可能になりました。ありがたや。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>XCode8</title>
@@ -686,58 +702,6 @@ duvel:open.sati jin$
 &lt;p&gt;とりあえず。こんな感じで当分は行ってみます。&lt;/p&gt;
 
 &lt;p&gt;もし他に良い方法があったら、教えてください。（なーーんかありそうな感じ。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist v2.8.0</title>
-      <link>http://goozenlab.com/blog/2016/09/littlist-280/</link>
-      <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/littlist-280/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。&lt;/p&gt;
-
-&lt;p&gt;追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-littlist-280.png&#34; alt=&#34;littlist 2.8.0&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。&lt;/li&gt;
-&lt;li&gt;インポートされたイベントの右バーのに色が付きます。&lt;/li&gt;
-&lt;li&gt;読み込みリスト名の設定などは設定より行います。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：この長押しは、&lt;strong&gt;メイン画面の時にのみ有効&lt;/strong&gt;になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-09-05-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
-&lt;li&gt;バーの色、選択時の背景色を変更 （ダークモードが少しカッコよくなったと、）&lt;/li&gt;
-&lt;li&gt;文字が少し大きくなる（私の老眼が進行しているわけではない。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加ボタンの長押し：インポート機能&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;remove&#34;&gt;Remove&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;新規追加ダイアログからインポートボタンを削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
-
-&lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
 </description>
     </item>
     

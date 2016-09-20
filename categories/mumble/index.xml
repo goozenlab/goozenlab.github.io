@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 09:30:00 +0900</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iPhone 5S始めました</title>
+      <link>http://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <description>&lt;p&gt;母からのお下がり、iphone5Sを頂きました！。&lt;/p&gt;
+
+&lt;p&gt;全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-21-iphone5s.jpg&#34; alt=&#34; iphone5s&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ともかくありがたいことに、これでiOS10での実機検証が可能になりました。ありがたや。。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>XCode8</title>
