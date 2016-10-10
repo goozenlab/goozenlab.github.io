@@ -7,8 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 06 Sep 2016 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Oct 2016 10:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/sati/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>サティの通知音</title>
+      <link>http://goozenlab.com/blog/2016/10/notification_sound/</link>
+      <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/notification_sound/</guid>
+      <description>
+
+&lt;p&gt;iOS10にてサティの通知音が &lt;strong&gt;TriTone&lt;/strong&gt; になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。&lt;/p&gt;
+
+&lt;p&gt;がしかし、私のiPhone5Sでは数回リブートを行うも変わりなし。&lt;/p&gt;
+
+&lt;p&gt;さらに調べてみると、XCodeからインストールしたものはこのエラーから逃れられない、との事、本当か？、怪しい。&lt;/p&gt;
+
+&lt;p&gt;という事で、本末転倒というか、なんというか。。。わざわざiTunesStoreからインストールして検証しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+
+&lt;p&gt;音は問題なく出ました。そして、XCode8では問題になっていたカレンダー書き出しとアプリケーションバッジも問題なく動作してるのを確認。&lt;/p&gt;
+
+&lt;p&gt;ということは、他のアプリも含めて問題ないということ（だと勝手に解釈。）ということで、XCode8に移行時には少し作業が必要のようですが、上がっているバイナリーは互換性がある。よかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS10上にて不具合を見つけた方はご連絡のほど、何卒よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>サティを公開</title>
@@ -616,39 +642,6 @@ I&amp;rsquo;m sorry so taking looong time to fix it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-04-settting.png&#34; alt=&#34;Setting&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/2014-12-04-sati-setting.png&#34; alt=&#34;Sati Setting&#34; /&gt;
 &lt;img src=&#34;http://goozenlab.com/images/2014-12-04-notification-setting.png&#34; alt=&#34;Notificaton Setting&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sati v1.5.7</title>
-      <link>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</link>
-      <pubDate>Sat, 20 Sep 2014 13:08:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</guid>
-      <description>
-
-&lt;p&gt;一年近くコンピューターを持たずにふらふらしてました。
-久しぶりに以下の調整および修正を行いました。&lt;/p&gt;
-
-&lt;h3 id=&#34;メイン&#34;&gt;メイン&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。&lt;/li&gt;
-&lt;li&gt;中断アラートが複数あがらないようにする。&lt;/li&gt;
-&lt;li&gt;ちょっと物足りない背景に、オームのアイコンを追加。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;設定ページ&#34;&gt;設定ページ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;履歴ページ&#34;&gt;履歴ページ&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

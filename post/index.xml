@@ -7,8 +7,66 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 21 Sep 2016 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Oct 2016 10:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>サティの通知音</title>
+      <link>http://goozenlab.com/blog/2016/10/notification_sound/</link>
+      <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/notification_sound/</guid>
+      <description>
+
+&lt;p&gt;iOS10にてサティの通知音が &lt;strong&gt;TriTone&lt;/strong&gt; になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。&lt;/p&gt;
+
+&lt;p&gt;がしかし、私のiPhone5Sでは数回リブートを行うも変わりなし。&lt;/p&gt;
+
+&lt;p&gt;さらに調べてみると、XCodeからインストールしたものはこのエラーから逃れられない、との事、本当か？、怪しい。&lt;/p&gt;
+
+&lt;p&gt;という事で、本末転倒というか、なんというか。。。わざわざiTunesStoreからインストールして検証しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+
+&lt;p&gt;音は問題なく出ました。そして、XCode8では問題になっていたカレンダー書き出しとアプリケーションバッジも問題なく動作してるのを確認。&lt;/p&gt;
+
+&lt;p&gt;ということは、他のアプリも含めて問題ないということ（だと勝手に解釈。）ということで、XCode8に移行時には少し作業が必要のようですが、上がっているバイナリーは互換性がある。よかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS10上にて不具合を見つけた方はご連絡のほど、何卒よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use Legacy Swift Language Version</title>
+      <link>http://goozenlab.com/blog/2016/10/use_legacy_swift_version/</link>
+      <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/use_legacy_swift_version/</guid>
+      <description>
+
+&lt;p&gt;四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をすることができたのですが、立ち上げるたびに何度も変換を即されて先に進めないプロジェクトがありました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-07-use_legacy_swift_version_error.png&#34; alt=&#34; use_legacy_swift_version_error&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;問題は、Build Settings 内の項目”Use Legacy Swift Language Version”が更新されていないということのようです。なぜにこのプロジェクトにだけにおこるのかはちょっと不明かつ、嫌な感じでもある。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-07-use_legacy_swift_version_unspecified.png&#34; alt=&#34; use_legacy_swift_version_unspecified&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;解決法&#34;&gt;解決法&lt;/h2&gt;
+
+&lt;p&gt;Swift 3を使うときは「NO」。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-07-use_legacy_swift_version_no.png&#34; alt=&#34; use_legacy_swift_version_no&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Swift 2.3にて動かすときは「YES」です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-07-use_legacy_swift_version_yes.png&#34; alt=&#34; use_legacy_swift_version_yes&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;そして、プロジェクトの方も変えておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-07-use_legacy_swift_version_project.png&#34; alt=&#34; use_legacy_swift_version_project&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iPhone 5S始めました</title>
@@ -16,7 +74,7 @@
       <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
-      <description>&lt;p&gt;母からのお下がり、iphone5Sを頂きました！。&lt;/p&gt;
+      <description>&lt;p&gt;母からのお下がり、iphone5Sを頂きました！&lt;/p&gt;
 
 &lt;p&gt;全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。&lt;/p&gt;
 
@@ -447,192 +505,6 @@ if let match = matches {
 &lt;p&gt;が先追加したいことのリスト。タイミングを見て追加作成したいと思います。&lt;/p&gt;
 
 &lt;p&gt;※公開の方法などは&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;こちら&lt;/a&gt;にて書きましたので関心のある方は参照のほど。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ギットハブ公開</title>
-      <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
-      <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/github-open-sati/</guid>
-      <description>
-
-&lt;p&gt;ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;問題点&lt;/strong&gt;：ギットハブに公開するプロジェクトには、バンドルアイデンティファイヤ、AppleIDを入れたくない。そして、アプストアーに公開するにはコードサインをしなくてはいけない。（アイデンティファイヤ、AppleIDが必要）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;解決案&lt;/strong&gt;：二つのプロジェクトと共有コードの形での運用&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;一つ目のプロジェクトは、作業用。ギットハブと連動して作業をします。個人情報入れないでも、シミュレーターでアプリを動かすことができます。&lt;/p&gt;
-
-&lt;p&gt;もう一つは、アプストアービルド、デプロイ用。プロジェクトファイル以外は、上のプロジェクトからファイルをリンクします。（コピーではなく、シンボリックリンクにみたいなもの？）このプロジェクトには、アプストアーに登録するための情報を入れておきます。ギットは使いません。&lt;/p&gt;
-
-&lt;h2 id=&#34;作業&#34;&gt;作業&lt;/h2&gt;
-
-&lt;p&gt;サティを公開するための行った作業をちょっと詳しく。まずは今まで作業していたフォルダーを一気にコピー。&lt;/p&gt;
-
-&lt;p&gt;一つを、open.sati (公開用） もう一つを sati (デプロイ用）にします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder.png&#34; alt=&#34; open.sati folders &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ともにフレッシュスタートということで、ディレクトリー内にある .git　ディレクトリーを削除します。隠れファイルなので、ターミナルから &lt;code&gt;rm -rf .git/&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-remove-git.png&#34; alt=&#34; remove git &#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;sati-アプストアー-実機検証用&#34;&gt;sati：アプストアー、実機検証用&lt;/h3&gt;
-
-&lt;p&gt;satiの中のファイルはフロジェクトファイル、info.plist以外、全て捨ててしまいます。&lt;/p&gt;
-
-&lt;p&gt;プロジェクト内は真っ赤になります。一気に消してしまいます。&lt;/p&gt;
-
-&lt;p&gt;そして、open.sati のフォルダーからファイルをまとめてドラッグ＆ドロップ。ダイアリグが出ます。コピーのチェックは外します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-import-files.png&#34; alt=&#34; open.sati  import-files&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;残念ながら、&lt;code&gt;Localizable.strings&lt;/code&gt; がうまく引き継がれません。（多分ローカライズされたnibファイルなども引き継がれないと思います。）コマンドオプション＋ドラッグのエイリアスでファイルを持ってくるもNG。しかし、XCode上でファイルを一旦 open.sati よりコピーして消し、ターミナルで リンクを &lt;code&gt;ln -s&lt;/code&gt; でリンクしてあげれば読み込みます。なんか中途半端ですが動きます。ディレクトリーはこんな感じになります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-folder-list.png&#34; alt=&#34; folder listing &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、README や LICENCE 等、ターゲットに入れないファイルをメンバーから外します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-target-check.png&#34; alt=&#34; target-check &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;で、ビルドの設定などは引き継がれたままなので実機でもアプストア用のビルドなども今まで通り動きました。（アップロードはしていませんが、多分大丈夫だと思います。）&lt;/p&gt;
-
-&lt;p&gt;こちらのプロジェクトでは、ファイルをいじらないようにします。あくまでも、ビルドと実機テストようにします。&lt;/p&gt;
-
-&lt;h3 id=&#34;open-sati-ギットハブ-作業用&#34;&gt;open.sati：ギットハブ、作業用&lt;/h3&gt;
-
-&lt;p&gt;まずプロジェクトファイルを開けて、公開したくないものを抜きます。そして、リンクしているファイルがないかチェック。（私は、ビルド時にローカルからのファイルを参照しているところがあるので、その設定も抜きます。デプロイ用についていれば問題はない。）
-幾つかのファイルは他のアプリと共有しているので、こっちのプロジェクトにコピーをします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-identity.png&#34; alt=&#34; open.sati-identity&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;一通りチェックを終えたら、シミュレーターで動くかチェックします。&lt;/p&gt;
-
-&lt;p&gt;これで、作業はギットハブのプロジェクトで行う。ギットハブと共有しているプロジェクトでもシミュレーターで動かせることができ、検証機で動かしたい時とアプストアーにアップする時は別のプロジェクトですれば良い。デプロイ用はほとんど手を入れる必要はない、はず。&lt;/p&gt;
-
-&lt;p&gt;そして、公開します。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;追記&lt;/strong&gt;：
-READMEとライセンスはプロジェクトと同じ階層に置いておきましょう。ギットハブではそのREADが読み込まれ表示されます。&lt;/p&gt;
-
-&lt;h2 id=&#34;ギットハブに公開&#34;&gt;ギットハブに公開&lt;/h2&gt;
-
-&lt;p&gt;公開をするには、ギットハブに載っている方法で行います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-git-add.png&#34; alt=&#34; open.sati git add&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;まずはギットの初期化、その後、ファイルを追加して、コミットします。（ちょっとREADMEに何を書けばいいか悩みましたが、）９月６日のくろ～の日に公開。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-05-open.sati-initial-setup.png&#34; alt=&#34; open.sati-initial-setup &#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git init
-duvel:open.sati jin$ git add .
-duvel:open.sati jin$ git commit -m &amp;quot;Initial Commit&amp;quot;
-duvel:open.sati jin$ git remote add origin git@github.com:goozenlab/sati.git
-duvel:open.sati jin$ git push -u origin master
-Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.122]:443&#39; to the list of known hosts.
-Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;鍵の設定でエラーが出ますが、作ってある公開鍵をコピーしギットハブの設定より新しい鍵の追加設定をします。&lt;a href=&#34;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&#34;&gt;参照&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati.ssh-key.png&#34; alt=&#34; /open.sati.ssh-key&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;で再度挑戦、こんどはうまくいきます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;duvel:open.sati jin$ git push -u origin master
-Warning: Permanently added the RSA host key for IP address &#39;[192.30.253.123]:443&#39; to the list of known hosts.
-Counting objects: 155, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (149/149), done.
-Writing objects: 100% (155/155), 10.10 MiB | 39.00 KiB/s, done.
-Total 155 (delta 37), reused 0 (delta 0)
-remote: Resolving deltas: 100% (37/37), done.
-To git@github.com:goozenlab/sati.git
- * [new branch]      master -&amp;gt; master
-Branch master set up to track remote branch master from origin.
-duvel:open.sati jin$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;伴う追加作業&#34;&gt;伴う追加作業&lt;/h2&gt;
-
-&lt;p&gt;sati.xcodeprojで引き継げないところは、個別に変更する必要があります。（ビルド番号など）
-このプロジェクトの場合、ビルド終了時走らせているスクリプトも少し変更します。
-少しだけ、リリース時に手を入れないといけないことがあります。&lt;/p&gt;
-
-&lt;h2 id=&#34;これから&#34;&gt;これから、&lt;/h2&gt;
-
-&lt;p&gt;これで終了です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-github-initital.png&#34; alt=&#34; /open.sati-github-initital&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;で、、、READMEを入れる場所を間違えた。。がまあいいでしょう。次回コミット時に変更します。&lt;/p&gt;
-
-&lt;p&gt;ただし、作業用のプロジェクトで新しいファイルが追加された時は別途そのファイルをデプロイ用でも追加する作業が必要になります。まぁ、ビルドが通らなくなるのでわかると思いますが、、、&lt;/p&gt;
-
-&lt;p&gt;とりあえず。こんな感じで当分は行ってみます。&lt;/p&gt;
-
-&lt;p&gt;もし他に良い方法があったら、教えてください。（なーーんかありそうな感じ。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>littlist v2.8.0</title>
-      <link>http://goozenlab.com/blog/2016/09/littlist-280/</link>
-      <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/littlist-280/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。&lt;/p&gt;
-
-&lt;p&gt;追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-littlist-280.png&#34; alt=&#34;littlist 2.8.0&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。&lt;/li&gt;
-&lt;li&gt;インポートされたイベントの右バーのに色が付きます。&lt;/li&gt;
-&lt;li&gt;読み込みリスト名の設定などは設定より行います。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：この長押しは、&lt;strong&gt;メイン画面の時にのみ有効&lt;/strong&gt;になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-09-05-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
-&lt;li&gt;バーの色、選択時の背景色を変更 （ダークモードが少しカッコよくなったと、）&lt;/li&gt;
-&lt;li&gt;文字が少し大きくなる（私の老眼が進行しているわけではない。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加ボタンの長押し：インポート機能&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;remove&#34;&gt;Remove&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;新規追加ダイアログからインポートボタンを削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
-
-&lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
 </description>
     </item>
     

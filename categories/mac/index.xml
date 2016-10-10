@@ -78,7 +78,7 @@ fatal: index-pack failed
 $
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;思ったよりファイルが大きいです（310 MiBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
+&lt;p&gt;思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
 （途中回線が切れること数回、、、）&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cocoapod-install.png&#34; alt=&#34;pods install&#34; /&gt;&lt;/p&gt;
@@ -102,7 +102,7 @@ $
 
 &lt;p&gt;swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ $ pod update
+&lt;pre&gt;&lt;code&gt;$ pod update
 Update all pods
 Updating local specs repositories
 Analyzing dependencies
