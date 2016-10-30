@@ -7,8 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 14 Sep 2016 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Oct 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>(a) v0.9.0</title>
+      <link>http://goozenlab.com/blog/2016/10/a-090/</link>
+      <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/a-090/</guid>
+      <description>
+
+&lt;p&gt;。。申請中。。&lt;/p&gt;
+
+&lt;p&gt;アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）&lt;/p&gt;
+
+&lt;p&gt;よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。&lt;/p&gt;
+
+&lt;p&gt;期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。&lt;/p&gt;
+
+&lt;p&gt;とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。&lt;/p&gt;
+
+&lt;p&gt;不具合を発見した方、アイディアやリクエストのある方！是非！メールもしくはコメント欄にて報告していただけると幸いです。&lt;/p&gt;
+
+&lt;p&gt;そして、数週間中に、ソースコードをちょっと綺麗にしてギットハブにあげます。無料提供期間終了後、&lt;strong&gt;オープンソース化&lt;/strong&gt;します。アプリ開発の勉強に役にたつと思いますし、自分仕様にして使うにはなかなか良い叩き台にはなっていると思います。誰か、リファクターしてくれないでしょうか？（DropBoxへのアクセスが必要なためDevアカウントが必要）&lt;/p&gt;
+
+&lt;h2 id=&#34;アップデートのユーザーの方-たぶん100人もいないでしょう&#34;&gt;アップデートのユーザーの方（たぶん100人もいないでしょう。。）&lt;/h2&gt;
+
+&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
+
+&lt;p&gt;お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>listaria v1.8.0</title>
@@ -523,50 +553,6 @@
 &lt;li&gt;リストページにて長いタイトル名をしっかりと表示&lt;/li&gt;
 &lt;li&gt;アイコンの変更&lt;/li&gt;
 &lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
-      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
-
-&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
-
-&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
-&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
-&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
-&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
-&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -7,8 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 11 Aug 2016 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Oct 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/a/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>(a) v0.9.0</title>
+      <link>http://goozenlab.com/blog/2016/10/a-090/</link>
+      <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/a-090/</guid>
+      <description>
+
+&lt;p&gt;。。申請中。。&lt;/p&gt;
+
+&lt;p&gt;アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）&lt;/p&gt;
+
+&lt;p&gt;よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。&lt;/p&gt;
+
+&lt;p&gt;期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。&lt;/p&gt;
+
+&lt;p&gt;とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。&lt;/p&gt;
+
+&lt;p&gt;不具合を発見した方、アイディアやリクエストのある方！是非！メールもしくはコメント欄にて報告していただけると幸いです。&lt;/p&gt;
+
+&lt;p&gt;そして、数週間中に、ソースコードをちょっと綺麗にしてギットハブにあげます。無料提供期間終了後、&lt;strong&gt;オープンソース化&lt;/strong&gt;します。アプリ開発の勉強に役にたつと思いますし、自分仕様にして使うにはなかなか良い叩き台にはなっていると思います。誰か、リファクターしてくれないでしょうか？（DropBoxへのアクセスが必要なためDevアカウントが必要）&lt;/p&gt;
+
+&lt;h2 id=&#34;アップデートのユーザーの方-たぶん100人もいないでしょう&#34;&gt;アップデートのユーザーの方（たぶん100人もいないでしょう。。）&lt;/h2&gt;
+
+&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
+
+&lt;p&gt;お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>iTuneConnect レポート</title>

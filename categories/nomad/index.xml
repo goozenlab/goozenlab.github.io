@@ -7,8 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 13 Aug 2016 13:15:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2016 09:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>タイにてプリペイド：サービスページ</title>
+      <link>http://goozenlab.com/blog/2016/10/thai-dtac/</link>
+      <pubDate>Sun, 23 Oct 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/thai-dtac/</guid>
+      <description>&lt;p&gt;タイにてプリペイドを使っています。マックとBTでテザリングして外でも快適なインターネット環境が整います。&lt;/p&gt;
+
+&lt;p&gt;そして、2.5GB契約回線が更新11日前に契約通信使用量が尽きる。自動更新なのだがどのように解除できるかはWebページには記載されていない。&lt;/p&gt;
+
+&lt;p&gt;色々と探しているうちに携帯電話番号に紐づいた、サービス変更などができるユーザーページ &lt;a href=&#34;https://my.dtac.co.th/esv/en/login&#34;&gt;mydtac eService&lt;/a&gt; にたどり着きました。
+携帯番号を入力し、送られてくるパスワードを入力してログインします。（国王崩御のためグレースケールで表示されています。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-mydtac.png&#34; alt=&#34; dtac-mydtac &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以前もきたことがあったWebページですが、契約後一年が経ち、色々と変更等ができることを発見。割とアップデートされているようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-balance.png&#34; alt=&#34; dtac-balance &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自動更新の契約解除は&amp;rdquo;My Pakage&amp;rdquo;以下のところから、ゴミ箱をポチッとなで完了できるっぽい。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-package.png&#34; alt=&#34; dtac-package &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;購入後送られて来ていた見当がつかないタイ語でのメッセージも &amp;ldquo;My datac &amp;gt; Setting&amp;rdquo; にて英語に変更が可能になりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-setting.png&#34; alt=&#34; dtac-setting &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ちなみにこのポストも、外からdtac経由。速度制限がかかっても動画を見るわけではないので問題無し。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>羽田発香港経由チェンマイ行き</title>
@@ -345,25 +376,6 @@
 &lt;li&gt;&lt;strong&gt;2006&lt;/strong&gt;: Oaxaca, Mexico&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;2005&lt;/strong&gt;: Sao Paulo, Brazil&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>バッタンバン、カンボジアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/12/internet-battambang/</link>
-      <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/12/internet-battambang/</guid>
-      <description>&lt;p&gt;カンボジアの第二の都市のバッタンバン。現地の発音だと、バッタンボーーッンって感じ。
-ほんの少しだけクリスマスの雰囲気があります。そして、12月末なのにかなり暑い。。330mlが50セント（米ドル）とタイに比べビールが安いのがちょっと良い所。おかげで冷蔵庫付きのホテルに泊まって篭城してます。（一泊：６ドル）&lt;/p&gt;
-
-&lt;p&gt;宿はシングルで扇風機とWC付きで３ドルからあり、10ドル出せばエアコンがつく。食事はローカルのベジ屋さんで、一食１ドルくらい、これはタイより少し高い。そして、タイではあちらこちらで見つかるコンビニはこちらでは全くありません。&lt;/p&gt;
-
-&lt;p&gt;ネットの環境はタイと同様な感じで、&lt;/p&gt;
-
-&lt;p&gt;下り：3.68Mps&lt;br /&gt;
-上り：3.86Mps&lt;br /&gt;
-(&lt;a href=&#34;http://speedtest.net/&#34;&gt;Speedtest.net&lt;/a&gt;を使用）&lt;/p&gt;
 </description>
     </item>
     

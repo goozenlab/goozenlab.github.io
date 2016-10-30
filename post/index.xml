@@ -7,8 +7,69 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 10 Oct 2016 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Oct 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>(a) v0.9.0</title>
+      <link>http://goozenlab.com/blog/2016/10/a-090/</link>
+      <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/a-090/</guid>
+      <description>
+
+&lt;p&gt;。。申請中。。&lt;/p&gt;
+
+&lt;p&gt;アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）&lt;/p&gt;
+
+&lt;p&gt;よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。&lt;/p&gt;
+
+&lt;p&gt;期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。&lt;/p&gt;
+
+&lt;p&gt;とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。&lt;/p&gt;
+
+&lt;p&gt;不具合を発見した方、アイディアやリクエストのある方！是非！メールもしくはコメント欄にて報告していただけると幸いです。&lt;/p&gt;
+
+&lt;p&gt;そして、数週間中に、ソースコードをちょっと綺麗にしてギットハブにあげます。無料提供期間終了後、&lt;strong&gt;オープンソース化&lt;/strong&gt;します。アプリ開発の勉強に役にたつと思いますし、自分仕様にして使うにはなかなか良い叩き台にはなっていると思います。誰か、リファクターしてくれないでしょうか？（DropBoxへのアクセスが必要なためDevアカウントが必要）&lt;/p&gt;
+
+&lt;h2 id=&#34;アップデートのユーザーの方-たぶん100人もいないでしょう&#34;&gt;アップデートのユーザーの方（たぶん100人もいないでしょう。。）&lt;/h2&gt;
+
+&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
+
+&lt;p&gt;お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>タイにてプリペイド：サービスページ</title>
+      <link>http://goozenlab.com/blog/2016/10/thai-dtac/</link>
+      <pubDate>Sun, 23 Oct 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/thai-dtac/</guid>
+      <description>&lt;p&gt;タイにてプリペイドを使っています。マックとBTでテザリングして外でも快適なインターネット環境が整います。&lt;/p&gt;
+
+&lt;p&gt;そして、2.5GB契約回線が更新11日前に契約通信使用量が尽きる。自動更新なのだがどのように解除できるかはWebページには記載されていない。&lt;/p&gt;
+
+&lt;p&gt;色々と探しているうちに携帯電話番号に紐づいた、サービス変更などができるユーザーページ &lt;a href=&#34;https://my.dtac.co.th/esv/en/login&#34;&gt;mydtac eService&lt;/a&gt; にたどり着きました。
+携帯番号を入力し、送られてくるパスワードを入力してログインします。（国王崩御のためグレースケールで表示されています。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-mydtac.png&#34; alt=&#34; dtac-mydtac &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以前もきたことがあったWebページですが、契約後一年が経ち、色々と変更等ができることを発見。割とアップデートされているようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-balance.png&#34; alt=&#34; dtac-balance &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;自動更新の契約解除は&amp;rdquo;My Pakage&amp;rdquo;以下のところから、ゴミ箱をポチッとなで完了できるっぽい。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-package.png&#34; alt=&#34; dtac-package &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;購入後送られて来ていた見当がつかないタイ語でのメッセージも &amp;ldquo;My datac &amp;gt; Setting&amp;rdquo; にて英語に変更が可能になりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-10-23-thai-dtac-setting.png&#34; alt=&#34; dtac-setting &#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ちなみにこのポストも、外からdtac経由。速度制限がかかっても動画を見るわけではないので問題無し。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>サティの通知音</title>
@@ -402,109 +463,6 @@ if let match = matches {
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-cosper-193.png&#34; alt=&#34; cosper-193 &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>アイコンとネーミング</title>
-      <link>http://goozenlab.com/blog/2016/09/app-icon-naming/</link>
-      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
-      <description>
-
-&lt;p&gt;アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。&lt;/p&gt;
-
-&lt;p&gt;個人的にアイコン作りと、アプリのネーミングを考えたりするのは好きですが、頭を悩ますところでもあります。
-別に新しいことはないと思いますが、自分がどのようにしたのか、ちょっと書いてみたいと思います。（あとで変更は可能なのですが、私は名前が決まらないと、なんか居心地が悪いというか、、）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-naming.png&#34; alt=&#34; app icon naming&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;naming&#34;&gt;Naming&lt;/h2&gt;
-
-&lt;p&gt;理想的に、パッと目に入るような名前だと最高なのですが、、、。&lt;/p&gt;
-
-&lt;p&gt;私のアプリの名前のつけ方は簡単に書くと、「作るソフトの機能に関連する言葉を広げていって、いじってみたり、語呂を何かと合わせてみたりして、いくつかに絞り、最終的に響きの良いものを選ぶ」かな、後々パッと浮かんだことは残念ながら無いです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;liitlist：”little + list” もしくはminimalistてきな ”little + ist” から&lt;/li&gt;
-&lt;li&gt;doop：duplicationを捻って、向かいから見てもdoop、１回転してもdoop。リサイクル管理系のアプリ（エネループも頭にあったかな。）&lt;/li&gt;
-&lt;li&gt;ohaYo：睡眠ログアプリ。Yが大文字なのがこだわり&lt;/li&gt;
-&lt;li&gt;ippuku：「俺働きすぎ？一体いつ一服できんだ？」とアプリを作る時にあった想いから&lt;/li&gt;
-&lt;li&gt;コスパ：シンプルにコストパフォーマンスより&lt;/li&gt;
-&lt;li&gt;tapas：マルチキッチンタイマー、ご存知スペイン料理のおつまみの総称（次点は、タンドリーチキンを変化させて「ダンドリーキッチン」だったかな。）&lt;/li&gt;
-&lt;li&gt;sati：瞑想アプリなので、パーリー語（仏教用語：念、気づき）より&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;外国語を使うとなんとなくオシャレになる。今度は漢字を使った漢なソフトでも作るかな。&lt;/p&gt;
-
-&lt;p&gt;自分でいいなと思ったアプリ名とか商品名をリストしてみて、その共通項や特徴を見つけてみることも良い助けになると思います。&lt;/p&gt;
-
-&lt;p&gt;拙作のなかでの傑作ネーミングは、doop littlist と (a) だと、他のソフトは割とありきたりのネーミング、平均点。&lt;/p&gt;
-
-&lt;p&gt;※ (a) はアイディアの元になっているファイルの表記方法からとっていて、結局そのプランはダメになってしまったんですが、
-日本語にすると、かっこえー（格好えー）になる。&lt;/p&gt;
-
-&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
-
-&lt;p&gt;アプリの顔です。個人製作のアプリということを考慮すると割に出来の良い方だと思います。センスも大事だとは思いますが、ちょっとしたルールでそれなりに仕上がると思います。無理しすぎないことが割と重要でないかと、、&lt;/p&gt;
-
-&lt;p&gt;個人的に注意していること&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;なるべく、アプリで使っているコンポーネントから、親和性&lt;/li&gt;
-&lt;li&gt;アプリで使っている色、白バックでも黒バックでも問題ないように、&lt;/li&gt;
-&lt;li&gt;フォントは雰囲気に合ったもの&lt;/li&gt;
-&lt;li&gt;グリッドに合わせる（人間の目って割と精巧で、ずれていると違和感を感じます。）&lt;/li&gt;
-&lt;li&gt;シンプルかつシンプル&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;色は自分で使う色を絞り込んでまとめています。全部で20色ぐらいのパレットになっています。&lt;/p&gt;
-
-&lt;p&gt;数年前の、iOS8よりフラットデザインになってアイコンデザインを結構変えました。それまで、使っていたグラデーションもすごく微妙な感じにして、全体的にシンプルにしました。良い変更例は下記のオハヨのケース。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-ohayo.png&#34; alt=&#34; app-icon-ohayo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;私のお気に入りは、littlist、doopかな。（littlistは最初からずっと同じデザイン、自画自賛アイコン。）&lt;/p&gt;
-
-&lt;p&gt;ちなみに、リスタリアというソフトでは、数字のところにバージョンナンバーが、そして、買い物リストのアプリなので、果物の名前をバージョンごと違うものを入れています。バーコードも適当ではありません。スキャナーで読み取ることもできます。ちょっとしたお遊び。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-app-icon-listaria.png&#34; alt=&#34; app-icon-listaria &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ちなみにアイコン制作に使っているアプリは、以前はアドビのFireworksで、今はAffinity Designerを使ってます。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>サティを公開</title>
-      <link>http://goozenlab.com/blog/2016/09/open-sati/</link>
-      <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/open-sati/</guid>
-      <description>&lt;p&gt;簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 &lt;a href=&#34;https://github.com/goozenlab/sati&#34;&gt;Link @ github&lt;/a&gt; しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-open.sati-main.png&#34; alt=&#34; open.sati &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。&lt;/p&gt;
-
-&lt;p&gt;XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
-自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
-
-&lt;p&gt;これからアプリを作ってみたいと思っている人たちへの最初の数歩のお役に立てればと思って公開に踏み切りました。&lt;/p&gt;
-
-&lt;p&gt;細かいコードや製作時に考えたことなどについて少しづつ書いてまとめたいと思ってます。&lt;/p&gt;
-
-&lt;p&gt;とりあえず新しく&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;メモ追加欄を瞑想終了後のムード選択欄に追加&lt;/li&gt;
-&lt;li&gt;履歴ページにて、瞑想追加ボタンとビュー&lt;/li&gt;
-&lt;li&gt;設定画面のスタティックビュー化&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;が先追加したいことのリスト。タイミングを見て追加作成したいと思います。&lt;/p&gt;
-
-&lt;p&gt;※公開の方法などは&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;こちら&lt;/a&gt;にて書きましたので関心のある方は参照のほど。&lt;/p&gt;
 </description>
     </item>
     
