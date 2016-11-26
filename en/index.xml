@@ -7,8 +7,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://goozenlab.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pranatice</title>
+      <link>http://goozenlab.com/en/iapp/pranatice/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/pranatice/</guid>
+      <description>
+
+&lt;p&gt;As a part of Yoga practice, pranayama is important exercise but is bit tedious practice.&lt;br /&gt;
+Usually people count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.&lt;/p&gt;
+
+&lt;p&gt;This app helps to concentrate on practice by counting for you.
+(sounds little clerical though..)&lt;/p&gt;
+
+&lt;p&gt;In between work,  when you feel stressed,,
+when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
+
+&lt;p&gt;Practice pranayama.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-display&#34;&gt;Main Display&lt;/h3&gt;
+
+&lt;p&gt;There are those item on display.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Cog：go to setting&lt;/li&gt;
+&lt;li&gt;Eye：go to history page&lt;/li&gt;
+&lt;li&gt;Practice List&lt;/li&gt;
+&lt;li&gt;Recent status&lt;/li&gt;
+&lt;li&gt;Practice counter&lt;/li&gt;
+&lt;li&gt;Recent Week status by Sun Logo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;how-to-use&#34;&gt;How to Use&lt;/h3&gt;
+
+&lt;p&gt;Start with Tap on practice label.&lt;br /&gt;
+(Cancel with tap. Alert will show up.)&lt;/p&gt;
+
+&lt;p&gt;After practice, Status selector will show up.
+Select one of them.&lt;/p&gt;
+
+&lt;p&gt;finish.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;setting&#34;&gt;Setting&lt;/h3&gt;
+
+&lt;p&gt;You can change&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Time/Rounds for pranayama&lt;/li&gt;
+&lt;li&gt;Switch to show week status on/off&lt;/li&gt;
+&lt;li&gt;Memo icon&lt;/li&gt;
+&lt;li&gt;Export setting&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pranatice will ask permission to access Health.app on your device.&lt;/li&gt;
+&lt;li&gt;on Health.app
+
+&lt;ul&gt;
+&lt;li&gt;pranatice will write its sleeping data.&lt;/li&gt;
+&lt;li&gt;pranatice will not read/access other data on Health.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Data in pranatice is used only within application.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*practice is based on sivananda yoga.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
     
     <item>
       <title>pinocul</title>
@@ -34,11 +110,11 @@
       <guid>http://goozenlab.com/en/iapp/a/</guid>
       <description>
 
-&lt;p&gt;I have a lot of very small things(small things that are easily forget) to do, but web servise is too much for me. Text(Note) is good enough but&amp;hellip;&lt;/p&gt;
+&lt;p&gt;I have a lot of very small things(small things that are easily forget) to do, but web service is too much for me. Text(Note) is good enough but&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;It started with simple idea: I wanted to manage tasks by text file and look tasks in my hand(iPhone4).&lt;/p&gt;
 
-&lt;p&gt;I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this softwere. (You need computer although..)&lt;/p&gt;
+&lt;p&gt;I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this software. (You need computer although..)&lt;/p&gt;
 
 &lt;h2 id=&#34;dropbox&#34;&gt;Dropbox&lt;/h2&gt;
 
@@ -58,7 +134,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;p&gt;・press Home button ＝ upload to cloud&lt;br /&gt;
 ・comes back from sleep/lock ＝ download from cloud&lt;/p&gt;
 
-&lt;p&gt;it would be appreciated if you remind this while you are using app, because this app is not fully syncronized between iPhones/iPods.&lt;/p&gt;
+&lt;p&gt;it would be appreciated if you remind this while you are using app, because this app is not fully synchronized between iPhones/iPods.&lt;/p&gt;
 
 &lt;h2 id=&#34;todo-md-format&#34;&gt;todo.md format&lt;/h2&gt;
 
@@ -70,11 +146,11 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 3. &amp;lt;-Swipe-&amp;gt;: move between projects
 6. **LongTap**: to Red Hot
 1. ^ Swipe ^: to DueDate
-6. x 2015-01-15 14:00 completed job 
+6. x 2015-01-15 14:00 completed job
 
 ## table cell
 5. tap:
-7. doble tap: edit task
+7. double tap: edit task
 2. **long tap**: emphasize task
 8. -&amp;gt; swipe/pull: change color
 9. swipe &amp;lt;-: delete or done
@@ -147,7 +223,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;h3 id=&#34;decoration-of-bar&#34;&gt;decoration of bar&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;if there is memo, the left top edge on colour bar is cut.&lt;/li&gt;
+&lt;li&gt;if there is memo, the left top edge on color bar is cut.&lt;/li&gt;
 &lt;li&gt;emphasized task has red dot on left corner. And registered for Icon Badge and Red Hot List.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -206,7 +282,7 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;date format&lt;/strong&gt;：2015-12-31, 12-31-2015, 31-12-2015&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;strong&lt;/strong&gt;: **strong** , __strong__&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;gray bar syle&lt;/strong&gt;: *, +, -&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;gray bar style&lt;/strong&gt;: *, +, -&lt;br /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;etc&#34;&gt;etc&lt;/h3&gt;
@@ -253,67 +329,6 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
 &lt;p&gt;※ again, this is how it works.&lt;br /&gt;
 ・press Home button ＝ upload to cloud&lt;br /&gt;
 ・comes back from sleep/lock ＝ download from cloud&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>pranatice</title>
-      <link>http://goozenlab.com/en/iapp/pranatice/</link>
-      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/en/iapp/pranatice/</guid>
-      <description>
-
-&lt;p&gt;As a part of Yoga practice, pranayama is important exercise but is bit tedious parctice.&lt;br /&gt;
-Usually peeople count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.&lt;/p&gt;
-
-&lt;p&gt;This app helps to concentrate on practice by counting for you.
-(sounds little clerical though..)&lt;/p&gt;
-
-&lt;p&gt;In between work,  when you feel stressed,,
-when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
-
-&lt;p&gt;Practice pranayama.&lt;/p&gt;
-
-&lt;h3 id=&#34;main-display&#34;&gt;□ Main Display&lt;/h3&gt;
-
-&lt;p&gt;There are those item on display.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Cog：go to setting&lt;/li&gt;
-&lt;li&gt;Eye：go to history page&lt;/li&gt;
-&lt;li&gt;Practice List&lt;/li&gt;
-&lt;li&gt;Recent status&lt;/li&gt;
-&lt;li&gt;Practice counter&lt;/li&gt;
-&lt;li&gt;Week status&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;how-to-use&#34;&gt;□ How to Use&lt;/h3&gt;
-
-&lt;p&gt;Start with &lt;strong&gt;LONG&lt;/strong&gt; Tap.&lt;br /&gt;
-(Cancel with &lt;strong&gt;LONG&lt;/strong&gt; tap. Alert will show up.)&lt;/p&gt;
-
-&lt;p&gt;After practice, Status selector will show up.
-Select one of them.&lt;/p&gt;
-
-&lt;p&gt;finish.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;setting&#34;&gt;□ Setting&lt;/h3&gt;
-
-&lt;p&gt;You can change&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Time/Rounds for pranayama&lt;/li&gt;
-&lt;li&gt;Switch to show week status on/off&lt;/li&gt;
-&lt;li&gt;Memo icon&lt;/li&gt;
-&lt;li&gt;Calendar setting&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;*practice is based on sivananda yoga.&lt;/p&gt;
 </description>
     </item>
     
@@ -414,7 +429,7 @@ Select one of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg&#34; alt=&#34;ohayo Image&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This softwear helps you to find a way of good sleep.
+&lt;p&gt;This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This software helps you to find a way of good sleep.
 I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 
 &lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
@@ -472,7 +487,7 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
 &lt;h2 id=&#34;privacy-policy&#34;&gt;□ Privacy Policy&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;ohayo will ask permission to acccess Health.app on your device.&lt;/li&gt;
+&lt;li&gt;ohayo will ask permission to access Health.app on your device.&lt;/li&gt;
 &lt;li&gt;on Health.app
 
 &lt;ul&gt;

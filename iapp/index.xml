@@ -292,15 +292,15 @@
 &lt;li&gt;練習のアイテム&lt;/li&gt;
 &lt;li&gt;直近約50回の練習状況&lt;/li&gt;
 &lt;li&gt;総練習回数&lt;/li&gt;
-&lt;li&gt;1週間の練習状況（表示するしないの設定可能）&lt;/li&gt;
+&lt;li&gt;1週間の練習状況：太陽の明るさで表示&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;練習のアイテムからは、チェックマークのオンオフができます。時間の設定は歯車のボタンより行ってください。&lt;/p&gt;
 
 &lt;h3 id=&#34;使い方&#34;&gt;□ 使い方&lt;/h3&gt;
 
-&lt;p&gt;画面の&lt;strong&gt;ロングタップ&lt;/strong&gt;により練習が開始します。&lt;br /&gt;
-(キャンセルをしたいときにはもう一度の&lt;strong&gt;ロングタップ&lt;/strong&gt;、アラートがあがりキャンセルします。)&lt;/p&gt;
+&lt;p&gt;練習項目ラベルの&lt;strong&gt;タップ&lt;/strong&gt;により練習が開始します。&lt;br /&gt;
+(キャンセルをしたいときにはもう一度の&lt;strong&gt;タップ&lt;/strong&gt;、アラートがあがりキャンセルします。)&lt;/p&gt;
 
 &lt;p&gt;練習が終わり、呼吸と整える少しの時間が経過後、練習状況のボタンが出てきます。&lt;/p&gt;
 
@@ -315,9 +315,8 @@
 &lt;ol&gt;
 &lt;li&gt;プラナヤマの時間と回数の設定&lt;/li&gt;
 &lt;li&gt;音声の英語への変更。（英語設定の声になります。）&lt;/li&gt;
-&lt;li&gt;最近一週間の状況を印すアイコンの表示設定。&lt;/li&gt;
 &lt;li&gt;メモがあるときの印の設定&lt;/li&gt;
-&lt;li&gt;カレンダーへの書き込み、カレンダー名の設定&lt;/li&gt;
+&lt;li&gt;各種書き込み設定、カレンダー名の設定&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;※シバナンダヨガのプラクティスに基づいて制作しています。&lt;/p&gt;
@@ -325,6 +324,20 @@
 &lt;p&gt;無料化時の関心を得るために月に数日間有料化しますが、ほとんどの時期において無料で提供します。（寄付をしていただける方はもちろん大歓迎です。）&lt;/p&gt;
 
 &lt;p&gt;AppStoreにて&lt;a href=&#34;http://itunes.com/app/pranatice&#34;&gt;ダウンロード&lt;/a&gt;  ：iTunesが開きます。&lt;/p&gt;
+
+&lt;h2 id=&#34;プライバシーポリシー&#34;&gt;プライバシーポリシー&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pranaticeではヘルスキットへのアクセスが行われます。
+
+&lt;ul&gt;
+&lt;li&gt;ヘルスキットにpranaticeで得たデーターを書き込みます。（ユーザーの同意を得た後）&lt;/li&gt;
+&lt;li&gt;ヘルスキットよりデーターの読み込みは行いません。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;pranaticeのデーターはそのアプリ内でのみ利用されます。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

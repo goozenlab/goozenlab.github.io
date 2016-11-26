@@ -7,8 +7,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 31 Oct 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pranatice</title>
+      <link>http://goozenlab.com/en/iapp/pranatice/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/pranatice/</guid>
+      <description>
+
+&lt;p&gt;As a part of Yoga practice, pranayama is important exercise but is bit tedious practice.&lt;br /&gt;
+Usually people count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.&lt;/p&gt;
+
+&lt;p&gt;This app helps to concentrate on practice by counting for you.
+(sounds little clerical though..)&lt;/p&gt;
+
+&lt;p&gt;In between work,  when you feel stressed,,
+when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
+
+&lt;p&gt;Practice pranayama.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-display&#34;&gt;Main Display&lt;/h3&gt;
+
+&lt;p&gt;There are those item on display.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Cog：go to setting&lt;/li&gt;
+&lt;li&gt;Eye：go to history page&lt;/li&gt;
+&lt;li&gt;Practice List&lt;/li&gt;
+&lt;li&gt;Recent status&lt;/li&gt;
+&lt;li&gt;Practice counter&lt;/li&gt;
+&lt;li&gt;Recent Week status by Sun Logo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;how-to-use&#34;&gt;How to Use&lt;/h3&gt;
+
+&lt;p&gt;Start with Tap on practice label.&lt;br /&gt;
+(Cancel with tap. Alert will show up.)&lt;/p&gt;
+
+&lt;p&gt;After practice, Status selector will show up.
+Select one of them.&lt;/p&gt;
+
+&lt;p&gt;finish.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;setting&#34;&gt;Setting&lt;/h3&gt;
+
+&lt;p&gt;You can change&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Time/Rounds for pranayama&lt;/li&gt;
+&lt;li&gt;Switch to show week status on/off&lt;/li&gt;
+&lt;li&gt;Memo icon&lt;/li&gt;
+&lt;li&gt;Export setting&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pranatice will ask permission to access Health.app on your device.&lt;/li&gt;
+&lt;li&gt;on Health.app
+
+&lt;ul&gt;
+&lt;li&gt;pranatice will write its sleeping data.&lt;/li&gt;
+&lt;li&gt;pranatice will not read/access other data on Health.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Data in pranatice is used only within application.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*practice is based on sivananda yoga.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
     
     <item>
       <title>(a) v0.9.0</title>
@@ -30,7 +106,7 @@
 
 &lt;h2 id=&#34;アップデートのユーザーの方-たぶん100人もいないでしょう&#34;&gt;アップデートのユーザーの方（たぶん100人もいないでしょう。。）&lt;/h2&gt;
 
-&lt;p&gt;新しいアプリは&lt;strong&gt;！再インス  　トール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
+&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
 
 &lt;p&gt;お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
 </description>
@@ -495,57 +571,6 @@ XCodeも無償で提供されてますし、XCode7より、実機へのインス
 
 &lt;p&gt;はよ、なるはやで、たのんます。&lt;br /&gt;
 （バッテリーの持ちが10時間ぐらいであれば、文句を言わずに買い換えます。）&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>unWind segway</title>
-      <link>http://goozenlab.com/blog/2016/09/segway-unwind/</link>
-      <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/segway-unwind/</guid>
-      <description>&lt;p&gt;今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。&lt;/p&gt;
-
-&lt;p&gt;使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ListVCからDetailVCにセグウェイを設定（コントロールドラッグ）&lt;/li&gt;
-&lt;li&gt;ListVCに下記のコードを追加&lt;/li&gt;
-&lt;li&gt;DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが&lt;strong&gt;表示&lt;/strong&gt;される&lt;/li&gt;
-&lt;li&gt;リンクをボタンなりに繋ぐ&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-08-segway-unwind.png&#34; alt=&#34; segway-unwind&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ListVCに追加したコードは、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue)
- {
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;いろいろ試したところ、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; が入っていれば認識されるよう&lt;code&gt;___XXX___&lt;/code&gt;の部分は必要なものに置き換えてください。引数も&lt;code&gt;(unwindSegue: UIStoryboardSegue)&lt;/code&gt;が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。&lt;/p&gt;
-
-&lt;p&gt;あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) {
-
-	// 処理
-	let title = unwindSegue.sourceViewController.title
-	
-	.........
-	
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;XCode7では、unwind&amp;hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
-        &amp;lt;#code#&amp;gt;
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;やっぱり、ストーリーボードは好きになれません。。&lt;/p&gt;
 </description>
     </item>
     
