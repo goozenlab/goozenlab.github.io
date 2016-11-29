@@ -7,8 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2016 07:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>プラナティスを公開</title>
+      <link>http://goozenlab.com/blog/2016/11/open-pranatice/</link>
+      <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/11/open-pranatice/</guid>
+      <description>&lt;p&gt;カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコードですが、オープンソース化します。&lt;/p&gt;
+
+&lt;p&gt;音声の細かい調整や、文言の変更などをしたい方は、ぜひダウンロード・ビルドして使って見てください。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>リスタリアを公開</title>

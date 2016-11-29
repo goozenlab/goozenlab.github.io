@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 31 Oct 2016 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 30 Nov 2016 06:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pranatice v0.10.0</title>
+      <link>http://goozenlab.com/blog/2016/11/pranatice-0100/</link>
+      <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/11/pranatice-0100/</guid>
+      <description>
+
+&lt;p&gt;カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-11-26-pranatice-0100.png&#34; alt=&#34;pranatice-0100&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;変更点&#34;&gt;変更点&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iOS９、１０にて呼び出しのスピードが妙に遅くなっていたのを修正&lt;/li&gt;
+&lt;li&gt;サポートをiOS１０よりに変更&lt;/li&gt;
+&lt;li&gt;ヘルスケアに書き出しの機能を追加&lt;/li&gt;
+&lt;li&gt;Swift3.0での完全書き直し&lt;/li&gt;
+&lt;li&gt;２つの新しいプラナヤマを追加：下記参照&lt;/li&gt;
+&lt;li&gt;デザインの再調整・リデザイン&lt;/li&gt;
+&lt;li&gt;アイコンデザインの変更：瞑想タイマーとのデザイン統一感を出すため微調整。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;アップデートのユーザーの方&#34;&gt;アップデートのユーザーの方&lt;/h2&gt;
+
+&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;br /&gt;
+お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
+
+&lt;h2 id=&#34;補足-新しいプラナヤマについて&#34;&gt;補足：新しいプラナヤマについて、&lt;/h2&gt;
+
+&lt;p&gt;スーリア・チャンドラベーダナーという２つの呼吸法を追加しました。流れはアヌロムビロムと似て片側の鼻を使っての呼吸法です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;スーリアは太陽という意味です。呼吸は右からすい左から吐きます。気を上げます。（元気がない時などに行うと良い。かな。）&lt;/li&gt;
+&lt;li&gt;チャンドラは月。左から右への一方通行の呼吸法です。こちらは逆に気を鎮めます。（緊張している時や、気が高ぶっている時に、深呼吸の代わりに、ぜひお試しを。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;なるべくなら半結跏趺坐で座って行ってください。（左はチン・ムドラで膝に軽くのせ、右手はヴィシヌ・ムドラで呼吸をコントロールします。）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>(a) v0.9.0</title>
@@ -524,32 +566,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>tapas v1.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/tapas-190/</link>
-      <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/tapas-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-20-nongkhai&#34;&gt;[1.9.0 - Swift release] - 2016-06-20 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhoneの種類によってテーブルの高さを調整&lt;/li&gt;
-&lt;li&gt;詳細ページにて入力時のレイアウト調整&lt;/li&gt;
-&lt;li&gt;リストページにて長いタイトル名をしっかりと表示&lt;/li&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

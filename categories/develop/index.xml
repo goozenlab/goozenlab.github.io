@@ -37,6 +37,32 @@
     </item>
     
     <item>
+      <title>サティの通知音</title>
+      <link>http://goozenlab.com/blog/2016/10/notification_sound/</link>
+      <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/10/notification_sound/</guid>
+      <description>
+
+&lt;p&gt;iOS10にてサティの通知音が &lt;strong&gt;TriTone&lt;/strong&gt; になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。&lt;/p&gt;
+
+&lt;p&gt;がしかし、私のiPhone5Sでは数回リブートを行うも変わりなし。&lt;/p&gt;
+
+&lt;p&gt;さらに調べてみると、XCodeからインストールしたものはこのエラーから逃れられない、との事、本当か？、怪しい。&lt;/p&gt;
+
+&lt;p&gt;という事で、本末転倒というか、なんというか。。。わざわざiTunesStoreからインストールして検証しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+
+&lt;p&gt;音は問題なく出ました。そして、XCode8では問題になっていたカレンダー書き出しとアプリケーションバッジも問題なく動作してるのを確認。&lt;/p&gt;
+
+&lt;p&gt;ということは、他のアプリも含めて問題ないということ（だと勝手に解釈。）ということで、XCode8に移行時には少し作業が必要のようですが、上がっているバイナリーは互換性がある。よかった。。&lt;/p&gt;
+
+&lt;p&gt;iOS10上にて不具合を見つけた方はご連絡のほど、何卒よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Use Legacy Swift Language Version</title>
       <link>http://goozenlab.com/blog/2016/10/use_legacy_swift_version/</link>
       <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
@@ -871,50 +897,6 @@ Bash completion has been installed to:
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title> 半透明のモーダルビュー</title>
-      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
-      <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
-      <description>
-
-&lt;p&gt;iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。&lt;/p&gt;
-
-&lt;h2 id=&#34;半透明のモーダルビュー設定&#34;&gt;半透明のモーダルビュー設定&lt;/h2&gt;
-
-&lt;p&gt;まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-overfull.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。&lt;/p&gt;
-
-&lt;p&gt;二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { 
-        if segue.identifier == &amp;quot;toSettingView&amp;quot; {
-            if let destinationVC = segue.destinationViewController as? SettingViewController {
-                destinationVC.modalPresentationStyle = 
-                        UIModalPresentationStyle.OverCurrentContext
-                        // UIModalPresentationStyle.OverFullScreen
-                destinationVC.delegate = self
-            }
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-presentation.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;追記：すぐ上の白点ボタンの位置がずれてるな。。。&lt;/p&gt;
 </description>
     </item>
     
