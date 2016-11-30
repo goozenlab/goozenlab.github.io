@@ -53,6 +53,23 @@
     </item>
     
     <item>
+      <title>“(a)を公開&#34;</title>
+      <link>http://goozenlab.com/blog/2016/11/open-a/</link>
+      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
+      <description>&lt;p&gt;手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。
+現在アプストアーに上がっているものと同じ者ですので、ちゃんと動くはずです。&lt;/p&gt;
+
+&lt;p&gt;リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。&lt;/p&gt;
+
+&lt;p&gt;不具合や、こうした方が良いなどの&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>プラナティスを公開</title>
       <link>http://goozenlab.com/blog/2016/11/open-pranatice/</link>
       <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
@@ -428,55 +445,6 @@ if let match = matches {
 &lt;p&gt;最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。&lt;/p&gt;
 
 &lt;p&gt;ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ブロック表記</title>
-      <link>http://goozenlab.com/blog/2016/09/block-3ways/</link>
-      <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/block-3ways/</guid>
-      <description>
-
-&lt;p&gt;３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。&lt;/p&gt;
-
-&lt;p&gt;ブロックでっせ！と、こんな感じで出てきます、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines.png&#34; alt=&#34; block-enumerateLines &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ダブルクリックで、意味がわからなくなる。この前置詞 &lt;code&gt;in&lt;/code&gt; ちゅーのが曲者、どこの中じゃ？。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-11-block-enumerateLines-click.png&#34; alt=&#34; block-enumerateLines-click&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;その一&#34;&gt;その一&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;addressString.enumerateLines ({
-    (line: String, inout stop: Bool) -&amp;gt; () in
-    
-    print(line)
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;trailing-closure-syntax-を抜いてます&#34;&gt;Trailing closure syntax：（）を抜いてます。&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
-    (line: String, inout stop: Bool) in
-    
-    print(line)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;xcodeの簡易バージョン&#34;&gt;XCodeの簡易バージョン&lt;/h2&gt;
-
-&lt;p&gt;これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;addressString.enumerateLines {
-    (line, stop) in
-    
-    println(line)
-}
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

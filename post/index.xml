@@ -53,6 +53,23 @@
     </item>
     
     <item>
+      <title>“(a)を公開&#34;</title>
+      <link>http://goozenlab.com/blog/2016/11/open-a/</link>
+      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
+      <description>&lt;p&gt;手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。
+現在アプストアーに上がっているものと同じ者ですので、ちゃんと動くはずです。&lt;/p&gt;
+
+&lt;p&gt;リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。&lt;/p&gt;
+
+&lt;p&gt;不具合や、こうした方が良いなどの&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>プラナティスを公開</title>
       <link>http://goozenlab.com/blog/2016/11/open-pranatice/</link>
       <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
@@ -401,24 +418,6 @@ if let match = matches {
     println(line)
 }
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>unwindからアンワインド</title>
-      <link>http://goozenlab.com/blog/2016/09/unwind-unwind/</link>
-      <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
-      <description>&lt;p&gt;早くも、unwindからアンワインドします。&lt;/p&gt;
-
-&lt;p&gt;何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダルビューを表示。そのモーダルビューをアンワインドをしたいのだけれども、&lt;code&gt;@IBAction func unwind___XXX___&lt;/code&gt; のアンワインドコードを入れても無視される。&lt;/p&gt;
-
-&lt;p&gt;いろいろ試してみた所、メインテーブルビューには戻ることはできる。しかし、一気に戻ることになってしまう。たぶん、ナビケーションバーの構造のせいだと思うのだけど、解決方法が見つからず。。&lt;/p&gt;
-
-&lt;p&gt;結局使えないセグウェのアンワインド、以前からのデレゲートのタイプに変更する。&lt;/p&gt;
-
-&lt;p&gt;ストーリーボード。。も〜使わん。。&lt;/p&gt;
 </description>
     </item>
     

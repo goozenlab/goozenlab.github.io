@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sun, 27 Nov 2016 07:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
     <atom:link href="http://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>“(a)を公開&#34;</title>
+      <link>http://goozenlab.com/blog/2016/11/open-a/</link>
+      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
+      <description>&lt;p&gt;手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。&lt;/p&gt;
+
+&lt;p&gt;ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。
+現在アプストアーに上がっているものと同じ者ですので、ちゃんと動くはずです。&lt;/p&gt;
+
+&lt;p&gt;リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。&lt;/p&gt;
+
+&lt;p&gt;不具合や、こうした方が良いなどの&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>プラナティスを公開</title>
