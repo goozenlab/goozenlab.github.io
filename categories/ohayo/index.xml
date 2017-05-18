@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ohayo v2.9.2</title>
@@ -16,35 +18,11 @@
       <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
-      <description>
-
-&lt;p&gt;気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。&lt;/p&gt;
-
-&lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-2-2016-09-10-chaingmai&#34;&gt;[2.9.2] - 2016-09-10 @ Chaingmai&lt;/h2&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;FIxed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
-&lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
-（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ステータスバーを非表示&lt;/li&gt;
-&lt;li&gt;睡眠時間表示の調整（少し大きく、太くしました）&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）
+と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。
+機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。
+Change Log [2.9.2] - 2016-09-10 @ Chaingmai FIxed  快眠時間前の起床時に快眠ノーティス音の解除 起床後のメッセージの修正。
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）  Changed  ステータスバーを非表示 睡眠時間表示の調整（少し大きく、太くしました）  </description>
     </item>
     
     <item>
@@ -53,29 +31,9 @@
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
-      <description>
-
-&lt;p&gt;快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし
-た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。&lt;/p&gt;
-
-&lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。
+あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
+Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
     </item>
     
     <item>
@@ -84,42 +42,10 @@
       <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。&lt;/p&gt;
-
-&lt;p&gt;使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。&lt;/p&gt;
-
-&lt;p&gt;使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-0-swift-release-2016-06-14-nongkhai&#34;&gt;[2.9.0 - Swift release] - 2016-06-14 @ NongKhai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;長押しにてセッションのキャンセル&lt;/li&gt;
-&lt;li&gt;設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;リスト部分のレイアウトを収まりの良いように修正&lt;/li&gt;
-&lt;li&gt;詳細ページ、設定ページのレイアウトなど&lt;/li&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;シェイクによるセッションの中止&lt;/li&gt;
-&lt;li&gt;夜更かしカラー（グラフで一目瞭然なので）&lt;/li&gt;
-&lt;li&gt;曜日カラーのオフ（デフォルトでタイ曜日カラーになります）&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。
+使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。
+使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）
+Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しにてセッションのキャンセル 設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）  Changed  リスト部分のレイアウトを収まりの良いように修正 詳細ページ、設定ページのレイアウトなど アイコンの変更 iOS9以降でのサポート  Removed  シェイクによるセッションの中止 夜更かしカラー（グラフで一目瞭然なので） 曜日カラーのオフ（デフォルトでタイ曜日カラーになります）  </description>
     </item>
     
     <item>
@@ -128,14 +54,8 @@
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-flatten_icons.jpg&#34; alt=&#34;New Icons&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。&lt;/p&gt;
-
-&lt;p&gt;大幅な変更では無いけれど、ちょっとシックになったと。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-05-31-ohayo_icon.jpg&#34; alt=&#34;ohayo new Icon&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。
+大幅な変更では無いけれど、ちょっとシックになったと。。</description>
     </item>
     
     <item>
@@ -144,12 +64,7 @@
       <pubDate>Mon, 16 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
-      <description>&lt;p&gt;Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo3.png&#34; alt=&#34;Pop ohayo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-15-ohayo4.png&#34; alt=&#34;Pop ohayo&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。</description>
     </item>
     
     <item>
@@ -158,20 +73,8 @@
       <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
-      <description>&lt;p&gt;うーーーん、ホットフィックスです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;バグ
-
-&lt;ul&gt;
-&lt;li&gt;朝のメッセージがずれてました。。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-08-pokhara-fewa-lake.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>うーーーん、ホットフィックスです。
+ バグ  朝のメッセージがずれてました。。   以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</description>
     </item>
     
     <item>
@@ -180,30 +83,13 @@
       <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
-      <description>&lt;p&gt;ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。&lt;/p&gt;
-
-&lt;p&gt;ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。&lt;/p&gt;
-
-&lt;p&gt;ひげに白髪が混じってきたし、積年の疲れということか。。&lt;/p&gt;
-
-&lt;p&gt;で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_thai.png&#34; alt=&#34;Sleep in Thai&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_malaysia.png&#34; alt=&#34;Sleep in Malaysia&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/2015-02-18_ohayo_nepal.png&#34; alt=&#34;Sleep in Nepal&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;タイ&lt;/strong&gt;：早起きかつ睡眠時間も短め。ヨジラーです。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;マレーシア&lt;/strong&gt;：生活のサイクルが代わりちょっと波がある。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ネパール&lt;/strong&gt;：がっつり寝る。&lt;br /&gt;
-(左から)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;と、見事に違いが出る。&lt;/p&gt;
-
-&lt;p&gt;追記：
-ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。&lt;/p&gt;
-</description>
+      <description>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。
+ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。
+ひげに白髪が混じってきたし、積年の疲れということか。。
+で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、
+ タイ：早起きかつ睡眠時間も短め。ヨジラーです。 マレーシア：生活のサイクルが代わりちょっと波がある。 ネパール：がっつり寝る。
+(左から)  と、見事に違いが出る。
+追記： ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</description>
     </item>
     
     <item>
@@ -212,45 +98,14 @@
       <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/ohayo-281/</guid>
-      <description>
-
-&lt;h3 id=&#34;ロングタップ-で記録の開始-音が出ない-バグ&#34;&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始、&lt;strong&gt;音が出ない&lt;/strong&gt;バグ&lt;/h3&gt;
-
-&lt;p&gt;の変更といくつかのバグ、修正と追加があります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;バグ&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;音が出ないバグ&lt;/strong&gt;、iOS8。ホーム＞設定＞ohayo: &lt;strong&gt;通知&lt;/strong&gt;にてサウンドのスウィッチをオンにしてください&lt;/li&gt;
-&lt;li&gt;初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる&lt;br /&gt;
-（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;修正・調整&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ロングタップ&lt;/strong&gt;で記録の開始（ボタンとの誤作動をさけるため）&lt;/li&gt;
-&lt;li&gt;シェイクがかなり繊細なのを少し調整&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;追加&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ヘルスケアへの書出し&lt;strong&gt;設定が有効時&lt;/strong&gt;に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。&lt;br /&gt;
-データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）&lt;/p&gt;
-
-&lt;p&gt;この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-01-27-ohayo-export.png&#34; alt=&#34;ヘルスケアへ書出しのオン・オフのスウィッチ&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>ロングタップで記録の開始、音が出ないバグ の変更といくつかのバグ、修正と追加があります。
+ バグ
+ アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ 音が出ないバグ、iOS8。ホーム＞設定＞ohayo: 通知にてサウンドのスウィッチをオンにしてください 初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる
+（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）  修正・調整
+ ロングタップで記録の開始（ボタンとの誤作動をさけるため） シェイクがかなり繊細なのを少し調整  追加
+ ヘルスケアへの書出し設定が有効時に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）   ※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。
+データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）
+この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。</description>
     </item>
     
     <item>
@@ -259,23 +114,11 @@
       <pubDate>Wed, 05 Nov 2014 05:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2014/11/ohayo-280/</guid>
-      <description>&lt;p&gt;ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-01.png&#34; alt=&#34;Healthcare screenshot&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-02.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/2014-11-05-ohayo-280-03.png&#34; alt=&#34;ohayo screenshot&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。&lt;/p&gt;
-
-&lt;p&gt;余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。&lt;/p&gt;
-</description>
+      <description>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。
+※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。
+書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。
+※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。
+余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。</description>
     </item>
     
     <item>
@@ -284,21 +127,11 @@
       <pubDate>Thu, 18 Jul 2013 14:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/07/ohayo-250/</guid>
-      <description>&lt;p&gt;ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png&#34; alt=&#34;ohaYo New Icon&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;デザインリニュー：フォントを変更。（日本語には影響無し）&lt;/li&gt;
-&lt;li&gt;設定ページをリデザイン。さっぱり奇麗になりました。&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting-old.png&#34; alt=&#34;Old Setting&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;New setting&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;br /&gt;
-※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）&lt;/li&gt;
-&lt;li&gt;iOS7に向け表示に不具合がある所を調整。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。
+ アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
+ デザインリニュー：フォントを変更。（日本語には影響無し） 設定ページをリデザイン。さっぱり奇麗になりました。
+ 詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）
+※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。） iOS7に向け表示に不具合がある所を調整。  </description>
     </item>
     
   </channel>

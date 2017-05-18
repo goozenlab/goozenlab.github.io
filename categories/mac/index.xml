@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 26 Nov 2016 22:30:00 +0700</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>MacBook Pro 2016</title>
@@ -16,29 +18,15 @@
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/11/mbp2016/</guid>
-      <description>
-
-&lt;p&gt;MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。&lt;/p&gt;
-
-&lt;p&gt;ひさーーしぶりに、というかようやく新しいマックブックプロが出ました。
-すごーーーく、楽しみにしていたのですが、、、&lt;/p&gt;
-
-&lt;p&gt;まだ実機を見てもいないし触ってもいないのですが、レビューを見る限り、残念感が漂います。。。拡張性も低いし（それが理由でレティナのマックブックはパスしていた。）、リナックスも走らない様になっているらしいし、、何を繋げるにもアダプターが必要らしいし。。。キーボードもペチペチキーボード。（ため息というか怒りがこみ上げてくるわ。ほんま。。）ポシティブなことろが見つからない。&lt;/p&gt;
-
-&lt;p&gt;買い替え意欲は満々だけれども、魅力が感じられない。。キーボード上の液晶もそんなに利便性が高いとは思わないし、すぐに飽きると思う（全く興味湧かず）。タッチIDは別にiPhone経由でなんかすれば良いのでは？問題があるんか？？。&lt;/p&gt;
-
-&lt;p&gt;格好がよくなったわけでもなく、逆に妙にでかいタッチパッドは野暮ったいくらい、、、物としての魅力があまり感じられない。&lt;/p&gt;
-
-&lt;p&gt;もうマックブックはいいかな、と、、無骨だけどキーボードに定評のあるThinkpadのT460とか、格好も中々良いDellのXPS15をハッキントッシュにして使おうかなと、、。&lt;/p&gt;
-
-&lt;h2 id=&#34;追記-ようやくタイでも13インチの実機が展示&#34;&gt;追記：ようやくタイでも13インチの実機が展示&lt;/h2&gt;
-
-&lt;p&gt;で、、、印象は覆せず、、、、&lt;/p&gt;
-
-&lt;p&gt;とりあえず今のMBP15@2011と心中決定！&lt;/p&gt;
-
-&lt;p&gt;次はマジでハッキントッシュにするわ、さようなら、マックブック。。&lt;/p&gt;
-</description>
+      <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。
+ひさーーしぶりに、というかようやく新しいマックブックプロが出ました。 すごーーーく、楽しみにしていたのですが、、、
+まだ実機を見てもいないし触ってもいないのですが、レビューを見る限り、残念感が漂います。。。拡張性も低いし（それが理由でレティナのマックブックはパスしていた。）、リナックスも走らない様になっているらしいし、、何を繋げるにもアダプターが必要らしいし。。。キーボードもペチペチキーボード。（ため息というか怒りがこみ上げてくるわ。ほんま。。）ポシティブなことろが見つからない。
+買い替え意欲は満々だけれども、魅力が感じられない。。キーボード上の液晶もそんなに利便性が高いとは思わないし、すぐに飽きると思う（全く興味湧かず）。タッチIDは別にiPhone経由でなんかすれば良いのでは？問題があるんか？？。
+格好がよくなったわけでもなく、逆に妙にでかいタッチパッドは野暮ったいくらい、、、物としての魅力があまり感じられない。
+もうマックブックはいいかな、と、、無骨だけどキーボードに定評のあるThinkpadのT460とか、格好も中々良いDellのXPS15をハッキントッシュにして使おうかなと、、。
+追記：ようやくタイでも13インチの実機が展示 で、、、印象は覆せず、、、、
+とりあえず今のMBP15@2011と心中決定！
+次はマジでハッキントッシュにするわ、さようなら、マックブック。。</description>
     </item>
     
     <item>
@@ -47,37 +35,11 @@
       <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>&lt;p&gt;XCode7.3.1にて先日インストール&lt;a href=&#34;http://goozenlab.com/blog/2016/09/install-pods/&#34;&gt;（記事）&lt;/a&gt;したポッドを使います。これがびっくり簡単で驚きました。&lt;/p&gt;
-
-&lt;p&gt;ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-
-import ReachabilitySwift
-import MBProgressHUD
-import SwiftyDropbox
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。&lt;/p&gt;
-
-&lt;p&gt;ちなみに、Podfileはこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;project &#39;(a).xcodeproj&#39;
-platform :ios, &#39;8.0&#39;
-
-target &#39;(a)&#39; do
-  use_frameworks!
-
-  # Pods for (a)
-  pod &#39;ReachabilitySwift&#39;
-  pod &#39;MBProgressHUD&#39;
-  pod &#39;SwiftyDropbox&#39;
-  
-end
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。
+ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。
+import UIKit import CoreData import ReachabilitySwift import MBProgressHUD import SwiftyDropbox  でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。
+ちなみに、Podfileはこんな感じです。
+project &#39;(a).xcodeproj&#39; platform :ios, &#39;8.0&#39; target &#39;(a)&#39; do use_frameworks! # Pods for (a) pod &#39;ReachabilitySwift&#39; pod &#39;MBProgressHUD&#39; pod &#39;SwiftyDropbox&#39; end  </description>
     </item>
     
     <item>
@@ -86,72 +48,9 @@ end
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/install-pods/</guid>
-      <description>&lt;p&gt;プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pod install
-Setting up CocoaPods master repo
-[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
-You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd .cocoapods/repos/
-$ git clone https://github.com/CocoaPods/Specs.git
-Cloning into &#39;Specs&#39;...
-remote: Counting objects: 801469, done.
-remote: Compressing objects: 100% (30/30), done.
-Receiving objects:  83% (671735/801475), 209.63 MiB | 10.00 KiB/s    
-error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s     
-fatal: The remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
-（途中回線が切れること数回、、、）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cocoapod-install.png&#34; alt=&#34;pods install&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pod install
-Downloading dependencies
-Installing Alamofire (3.3.1)
-Installing Reachability (3.2)
-Installing SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
-
-[!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
-Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
-$
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ネット上では、&lt;code&gt;pod install --no-repo-update --verbose&lt;/code&gt; でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。&lt;/p&gt;
-
-&lt;p&gt;swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pod update
-Update all pods
-Updating local specs repositories
-Analyzing dependencies
-Removing Reachability
-Downloading dependencies
-Using Alamofire (3.3.1)
-Installing JGProgressHUD (1.4)
-Using ReachabilitySwift (2.3.3)
-Using SwiftyDropbox (3.2.0)
-Generating Pods project
-Integrating client project
-Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;こんな感じで終了。&lt;/p&gt;
-
-&lt;p&gt;安堵。&lt;/p&gt;
-</description>
+      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。
+$ pod install Setting up CocoaPods master repo [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`. You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.  で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）
+$ cd .cocoapods/repos/ $ git clone https://github.com/CocoaPods/Specs.git Cloning into &#39;Specs&#39;... remote: Counting objects: 801469, done. remote: Compressing objects: 100% (30/30), done. Receiving objects: 83% (671735/801475), 209.63 MiB | 10.00 KiB/s error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s fatal: The remote end hung up unexpectedly fatal: early EOF fatal: index-pack failed $  思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。 （途中回線が切れること数回、、、）</description>
     </item>
     
     <item>
@@ -160,132 +59,12 @@ Pod installation complete! There are 3 dependencies from the Podfile and 4 total
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
-      <description>&lt;p&gt;ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。&lt;/p&gt;
-
-&lt;p&gt;以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で &lt;code&gt;~/.gem&lt;/code&gt; 内にインストール。&lt;/p&gt;
-
-&lt;p&gt;まずは、bashの設定 &lt;code&gt;~/.bash_profile&lt;/code&gt; を弄ります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# sudo-less Gem
-export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）&lt;/p&gt;
-
-&lt;p&gt;ディレクトリーを作り、&lt;code&gt;--user-install&lt;/code&gt;のオプションをつけインストールをします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd
-$ mkdir .gem
-$ gem install activesupport -v 4.2.6 --user-install
-$ gem install cocoapods --user-install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gem install activesupport -v 4.2.6 --user-install
-Fetching: i18n-0.7.0.gem (100%)
-Successfully installed i18n-0.7.0
-Fetching: thread_safe-0.3.5.gem (100%)
-Successfully installed thread_safe-0.3.5
-Fetching: tzinfo-1.2.2.gem (100%)
-Successfully installed tzinfo-1.2.2
-Fetching: minitest-5.9.0.gem (100%)
-Successfully installed minitest-5.9.0
-Fetching: activesupport-4.2.6.gem (100%)
-Successfully installed activesupport-4.2.6
-Parsing documentation for i18n-0.7.0
-Installing ri documentation for i18n-0.7.0
-Parsing documentation for thread_safe-0.3.5
-Installing ri documentation for thread_safe-0.3.5
-Parsing documentation for tzinfo-1.2.2
-Installing ri documentation for tzinfo-1.2.2
-Parsing documentation for minitest-5.9.0
-Installing ri documentation for minitest-5.9.0
-Parsing documentation for activesupport-4.2.6
-unable to convert &amp;quot;\x84&amp;quot; from ASCII-8BIT to UTF-8 for lib/active_support/values/unicode_tables.dat, skipping
-Installing ri documentation for activesupport-4.2.6
-5 gems installed
-$ gem install cocoapods --user-install
-Fetching: nap-1.1.0.gem (100%)
-Successfully installed nap-1.1.0
-Fetching: fuzzy_match-2.0.4.gem (100%)
-Successfully installed fuzzy_match-2.0.4
-Fetching: cocoapods-core-1.0.1.gem (100%)
-Successfully installed cocoapods-core-1.0.1
-Fetching: claide-1.0.0.gem (100%)
-Successfully installed claide-1.0.0
-Fetching: cocoapods-deintegrate-1.0.0.gem (100%)
-Successfully installed cocoapods-deintegrate-1.0.0
-Fetching: cocoapods-downloader-1.1.0.gem (100%)
-Successfully installed cocoapods-downloader-1.1.0
-Fetching: cocoapods-plugins-1.0.0.gem (100%)
-Successfully installed cocoapods-plugins-1.0.0
-Fetching: cocoapods-search-1.0.0.gem (100%)
-Successfully installed cocoapods-search-1.0.0
-Fetching: cocoapods-stats-1.0.0.gem (100%)
-Successfully installed cocoapods-stats-1.0.0
-Fetching: netrc-0.7.8.gem (100%)
-Successfully installed netrc-0.7.8
-Fetching: cocoapods-trunk-1.0.0.gem (100%)
-Successfully installed cocoapods-trunk-1.0.0
-Fetching: cocoapods-try-1.1.0.gem (100%)
-Successfully installed cocoapods-try-1.1.0
-Fetching: molinillo-0.4.5.gem (100%)
-Successfully installed molinillo-0.4.5
-Fetching: colored-1.2.gem (100%)
-Successfully installed colored-1.2
-Fetching: xcodeproj-1.2.0.gem (100%)
-Successfully installed xcodeproj-1.2.0
-Fetching: escape-0.0.4.gem (100%)
-Successfully installed escape-0.0.4
-Fetching: fourflusher-0.3.2.gem (100%)
-Successfully installed fourflusher-0.3.2
-Fetching: cocoapods-1.0.1.gem (100%)
-Successfully installed cocoapods-1.0.1
-Fetching: concurrent-ruby-1.0.2.gem (100%)
-Successfully installed concurrent-ruby-1.0.2
-Parsing documentation for nap-1.1.0
-Installing ri documentation for nap-1.1.0
-Parsing documentation for fuzzy_match-2.0.4
-Installing ri documentation for fuzzy_match-2.0.4
-Parsing documentation for cocoapods-core-1.0.1
-Installing ri documentation for cocoapods-core-1.0.1
-Parsing documentation for claide-1.0.0
-Installing ri documentation for claide-1.0.0
-Parsing documentation for cocoapods-deintegrate-1.0.0
-Installing ri documentation for cocoapods-deintegrate-1.0.0
-Parsing documentation for cocoapods-downloader-1.1.0
-Installing ri documentation for cocoapods-downloader-1.1.0
-Parsing documentation for cocoapods-plugins-1.0.0
-Installing ri documentation for cocoapods-plugins-1.0.0
-Parsing documentation for cocoapods-search-1.0.0
-Installing ri documentation for cocoapods-search-1.0.0
-Parsing documentation for cocoapods-stats-1.0.0
-Installing ri documentation for cocoapods-stats-1.0.0
-Parsing documentation for netrc-0.7.8
-Installing ri documentation for netrc-0.7.8
-Parsing documentation for cocoapods-trunk-1.0.0
-Installing ri documentation for cocoapods-trunk-1.0.0
-Parsing documentation for cocoapods-try-1.1.0
-Installing ri documentation for cocoapods-try-1.1.0
-Parsing documentation for molinillo-0.4.5
-Installing ri documentation for molinillo-0.4.5
-Parsing documentation for colored-1.2
-Installing ri documentation for colored-1.2
-Parsing documentation for xcodeproj-1.2.0
-Installing ri documentation for xcodeproj-1.2.0
-Parsing documentation for escape-0.0.4
-Installing ri documentation for escape-0.0.4
-Parsing documentation for fourflusher-0.3.2
-Installing ri documentation for fourflusher-0.3.2
-Parsing documentation for cocoapods-1.0.1
-Installing ri documentation for cocoapods-1.0.1
-Parsing documentation for concurrent-ruby-1.0.2
-Installing ri documentation for concurrent-ruby-1.0.2
-19 gems installed
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、無事終了、インストールできました。これで、(a)の移行ができる。&lt;/p&gt;
-</description>
+      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。
+以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で ~/.gem 内にインストール。
+まずは、bashの設定 ~/.bash_profile を弄ります。
+# sudo-less Gem export GEM_HOME=$HOME/.gem export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH  cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）
+ディレクトリーを作り、--user-installのオプションをつけインストールをします。
+$ cd $ mkdir .gem $ gem install activesupport -v 4.2.6 --user-install $ gem install cocoapods --user-install  $ gem install activesupport -v 4.2.6 --user-install Fetching: i18n-0.7.0.gem (100%) Successfully installed i18n-0.7.0 Fetching: thread_safe-0.3.5.gem (100%) Successfully installed thread_safe-0.3.5 Fetching: tzinfo-1.2.2.gem (100%) Successfully installed tzinfo-1.2.2 Fetching: minitest-5.9.0.gem (100%) Successfully installed minitest-5.9.0 Fetching: activesupport-4.2.6.gem (100%) Successfully installed activesupport-4.</description>
     </item>
     
     <item>
@@ -294,113 +73,8 @@ Installing ri documentation for concurrent-ruby-1.0.2
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/install-homebrew/</guid>
-      <description>
-
-&lt;p&gt;Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd /usr/local/
-total 24
-drwxr-xr-x   14 jin  admin   476B Mar 29 10:51 .git/
-drwxr-xr-x    5 jin  admin   170B Feb 20  2016 .github/
--rw-r--r--    1 jin  admin   823B Feb 20  2016 .gitignore
--rw-r--r--    1 jin  admin   1.3K Feb 20  2016 .travis.yml
--rw-r--r--    1 jin  admin   291B Oct 16  2015 .yardopts
--rw-r--r--    1 jin  admin   3.1K Jun  1  2015 CODEOFCONDUCT.md
-drwxr-xr-x    9 jin  admin   306B Apr 18  2015 Cellar/
-drwxr-xr-x    3 jin  admin   102B Nov 11  2015 Frameworks/
--rw-r--r--    1 jin  admin   1.2K Feb 20  2016 LICENSE.txt
-drwxr-xr-x   11 jin  admin   374B Mar 29 10:51 Library/
--rw-r--r--    1 jin  admin   3.8K Feb 26  2016 README.md
-drwxr-xr-x  135 jin  admin   4.5K Mar 31 21:02 bin/
-drwxr-xr-x    4 jin  admin   136B Feb 20  2016 etc/
-drwxr-xr-x    8 jin  admin   272B Apr 18  2015 include/
-drwxr-xr-x   18 jin  admin   612B Apr 18  2015 lib/
-drwxr-xr-x    9 jin  admin   306B Mar 29 10:53 opt/
-drwxr-xr-x    4 jin  admin   136B Mar  5  2015 share/
-drwxr-xr-x    3 jin  admin   102B Apr  1  2015 var/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の&lt;code&gt;~/.brew&lt;/code&gt; にする。（よくよく考えると、&lt;code&gt;~/Library/Homebrew&lt;/code&gt;でも良かったかなと思ったりする。）&lt;/p&gt;
-
-&lt;h2 id=&#34;homebrew-のインストール&#34;&gt;Homebrew のインストール&lt;/h2&gt;
-
-&lt;p&gt;コピーもしくはクローンでインストールできます。私はサイト上にあった方法のコピーでインストールを行いました。ちなみに、gitでは &lt;code&gt;$ git clone https://github.com/Homebrew/brew.git ~/.brew&lt;/code&gt; 。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd
-$ mkdir .brew &amp;amp;&amp;amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .brew
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;実行パスの設定&#34;&gt;実行パスの設定&lt;/h2&gt;
-
-&lt;p&gt;とりあえず、PREFIXなど状況をチェック。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ .brew/bin/brew config
-HOMEBREW_VERSION: 0.9.9
-ORIGIN: (none)
-HEAD: (none)
-Last commit: never
-Core tap: N/A
-HOMEBREW_PREFIX: /Users/jin/.brew
-HOMEBREW_REPOSITORY: /Users/jin/.brew
-HOMEBREW_CELLAR: /Users/jin/.brew/Cellar
-HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
-CPU: octa-core 64-bit sandybridge
-Homebrew Ruby: 2.0.0-p648
-Clang: 7.3 build 703
-Git: 2.7.4 =&amp;gt; /Applications/Xcode.app/Contents/Developer/usr/bin/git
-Perl: /usr/bin/perl
-Python: /usr/bin/python
-Ruby: /usr/bin/ruby =&amp;gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
-Java: N/A
-OS X: 10.11.6-x86_64
-Xcode: 7.3.1
-CLT: N/A
-X11: N/A
-$ .brew/bin/brew --cache
-/Users/jin/Library/Caches/Homebrew
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;問題は無いようなので、実行パスを&lt;code&gt;.bash_profile&lt;/code&gt;に書き込みます。
-そしてCacheの保存先は、&lt;code&gt;/Users/jin/Library/Caches/Homebrew&lt;/code&gt; になっているのでこれもついでに変更します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export PATH=$HOME/.brew/bin:$PATH
-export HOMEBREW_CACHE=$HOME/.brew/cache
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ brew doctor
-Please note that these warnings are just used to help the Homebrew maintainers
-with debugging if you file an issue. If everything you use Homebrew for is
-working fine: please don&#39;t worry and just ignore them. Thanks!
-
-Warning: Your Homebrew is not installed to /usr/local
-You can install Homebrew anywhere you want but some bottles (binary
-packages) can only be used in /usr/local and some formulae (packages)
-may not build correctly unless you install in /usr/local. Sorry!
-
-$ brew install hugo
-Initialized empty Git repository in /Users/jin/.brew/.git/
-remote: Counting objects: 1032, done.
-remote: Compressing objects: 100% (924/924), done.
-remote: Total 1032 (delta 91), reused 650 (delta 67), pack-reused 0
-Receiving objects: 100% (1032/1032), 1.03 MiB | 93.00 KiB/s, done.
-Resolving deltas: 100% (91/91), done.
-From https://github.com/Homebrew/brew
- * [new branch]      master     -&amp;gt; origin/master
-HEAD is now at 8e29cf1 Merge pull request #812 from DomT4/at
-==&amp;gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.16.el_capitan.bottle.tar.gz
-######################################################################## 100.0%
-==&amp;gt; Pouring hugo-0.16.el_capitan.bottle.tar.gz
-==&amp;gt; Caveats
-Bash completion has been installed to:
-  /Users/jin/.brew/etc/bash_completion.d
-==&amp;gt; Summary
-🍺  /Users/jin/.brew/Cellar/hugo/0.16: 29 files, 17.6M
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。&lt;/p&gt;
-</description>
+      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。
+$ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-xr-x 5 jin admin 170B Feb 20 2016 .github/ -rw-r--r-- 1 jin admin 823B Feb 20 2016 .gitignore -rw-r--r-- 1 jin admin 1.3K Feb 20 2016 .travis.yml -rw-r--r-- 1 jin admin 291B Oct 16 2015 .yardopts -rw-r--r-- 1 jin admin 3.1K Jun 1 2015 CODEOFCONDUCT.md drwxr-xr-x 9 jin admin 306B Apr 18 2015 Cellar/ drwxr-xr-x 3 jin admin 102B Nov 11 2015 Frameworks/ -rw-r--r-- 1 jin admin 1.</description>
     </item>
     
     <item>
@@ -409,92 +83,24 @@ Bash completion has been installed to:
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/clean-install/</guid>
-      <description>
-
-&lt;p&gt;新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじっていくうちに訳がわからない状態になっていることが多い。）&lt;/p&gt;
-
-&lt;p&gt;今回は、初めてタイムマシーンを使ってみましたが、あまりクリーンインストールでは役に立たないことに気づきました。しかも、中に入っているファイルをコピーするのがすごーーく遅いです。。ただ、丸ごと復元するならすごく良いと思います。&lt;br /&gt;
-（それ以前はrsyncでバックアップとって、そこから必要なファイルを取っていました。次回からはまた、rsyncでバックアップするつもり。）&lt;/p&gt;
-
-&lt;h2 id=&#34;基本的な動作などの設定&#34;&gt;基本的な動作などの設定。&lt;/h2&gt;
-
-&lt;p&gt;まずはタップでクリックにする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-tap.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;英語版キーボードのキャップロックをコントロールキーに変更。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-caplock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;右下のホットコーナーを、デスクトップ表示にする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-mission-controll.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;老眼がどんどん進行し、ポインターがどんどんでかくなる。と、2011年MBPなので、透明度を控え目にする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-display.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ドックは自動で出たり入ったり、でもほとんど使ってない気がする。アプリの立ち上げは、Spotlight（かAlfred、どっちにするべか。。）。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-dock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;「誰々さんのコンピューター」のネーミングは恥ずかしいので、コンピューターに名前をつけます。宿とかで丸見え、変えてない人がいかに多いか。。。
-ちなみに、私の端末はビール名で統一してます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-naming.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フォルダーのサイドバーを変更。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-finder.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ことえりも、変換候補文字もデカくして、句読点で変換にする。フォントも細いタイプのものに変更。自動変換と推測変換はオフ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-kotoeri.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;メニューバーのバッテリー表示にパーセンを追加。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-battery-percent.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;スポットライトは、デフォルトの状態では勝手にいろんなものを検索の対象にされてしまうので必要なものに絞ります。別に怪しいファイルがあるわけでは無い。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-spotlight.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これも、バックグランドで動かされるとあまり気分が良いものでは無いのでオフにします。
-（旅先が多いので、全てのソフトに対して、自動アップデートはオフにしてます。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-applestore.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、シェルの変更を行う。環境設定のユーザーより。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-group.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-user-account.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;safari&#34;&gt;Safari&lt;/h2&gt;
-
-&lt;p&gt;サファリでは、検索エンジン、ダウンロードファイルの自動解凍処理のオフ、プライベートウィンドウ表示、エクステンションのインストール。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-search-engine.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-clean-install-safari-extension.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;データの移行は、~Library/Safari/ をそのまま新しい環境へ。ただし、Extenstionは再インストールする必要がある。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;※ ちなみに、現在の最強のブラウザー環境は多分、こんな感じなのかな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-27-firefox-ublock.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;itunes-と-mail&#34;&gt;iTunes と Mail&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iTunes：iTunesフォルダーをそのままコピー。&lt;/li&gt;
-&lt;li&gt;メールは上記のようにスッキリとはいかない。アカウントは新しく設定し直す。メールのルールは &lt;code&gt;~/Library/Mail/V3/MailData/SyncedRules.plist&lt;/code&gt; 持ってくる。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじっていくうちに訳がわからない状態になっていることが多い。）
+今回は、初めてタイムマシーンを使ってみましたが、あまりクリーンインストールでは役に立たないことに気づきました。しかも、中に入っているファイルをコピーするのがすごーーく遅いです。。ただ、丸ごと復元するならすごく良いと思います。
+（それ以前はrsyncでバックアップとって、そこから必要なファイルを取っていました。次回からはまた、rsyncでバックアップするつもり。）
+基本的な動作などの設定。 まずはタップでクリックにする。
+英語版キーボードのキャップロックをコントロールキーに変更。
+右下のホットコーナーを、デスクトップ表示にする。
+老眼がどんどん進行し、ポインターがどんどんでかくなる。と、2011年MBPなので、透明度を控え目にする。
+ドックは自動で出たり入ったり、でもほとんど使ってない気がする。アプリの立ち上げは、Spotlight（かAlfred、どっちにするべか。。）。
+「誰々さんのコンピューター」のネーミングは恥ずかしいので、コンピューターに名前をつけます。宿とかで丸見え、変えてない人がいかに多いか。。。 ちなみに、私の端末はビール名で統一してます。
+フォルダーのサイドバーを変更。
+ことえりも、変換候補文字もデカくして、句読点で変換にする。フォントも細いタイプのものに変更。自動変換と推測変換はオフ。
+メニューバーのバッテリー表示にパーセンを追加。
+スポットライトは、デフォルトの状態では勝手にいろんなものを検索の対象にされてしまうので必要なものに絞ります。別に怪しいファイルがあるわけでは無い。
+これも、バックグランドで動かされるとあまり気分が良いものでは無いのでオフにします。 （旅先が多いので、全てのソフトに対して、自動アップデートはオフにしてます。）
+そして、シェルの変更を行う。環境設定のユーザーより。
+Safari サファリでは、検索エンジン、ダウンロードファイルの自動解凍処理のオフ、プライベートウィンドウ表示、エクステンションのインストール。
+ データの移行は、~Library/Safari/ をそのまま新しい環境へ。ただし、Extenstionは再インストールする必要がある。  ※ ちなみに、現在の最強のブラウザー環境は多分、こんな感じなのかな。。
+iTunes と Mail  iTunes：iTunesフォルダーをそのままコピー。 メールは上記のようにスッキリとはいかない。アカウントは新しく設定し直す。メールのルールは ~/Library/Mail/V3/MailData/SyncedRules.plist 持ってくる。  </description>
     </item>
     
     <item>
@@ -503,23 +109,11 @@ Bash completion has been installed to:
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
-      <description>&lt;p&gt;ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。&lt;/p&gt;
-
-&lt;p&gt;で、偶然見つけた日本語フォント &lt;code&gt;ヒラギノ角ゴシック：Hiragino Sans&lt;/code&gt; がかなりいいです。
-シエラで付いてきているのかと思ったら、El Capitanにも入っていました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-w1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;上のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-hiragino-sans-input.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;何はともあれ、早く新しいMBPを出してほしい。。&lt;/p&gt;
-</description>
+      <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。
+で、偶然見つけた日本語フォント ヒラギノ角ゴシック：Hiragino Sans がかなりいいです。 シエラで付いてきているのかと思ったら、El Capitanにも入っていました。
+ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。
+上のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）
+何はともあれ、早く新しいMBPを出してほしい。。</description>
     </item>
     
     <item>
@@ -528,18 +122,11 @@ Bash completion has been installed to:
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
-      <description>&lt;p&gt;しばし句読点で変換のオプションをオンして使っています。&lt;/p&gt;
-
-&lt;p&gt;今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。&lt;/p&gt;
-
-&lt;p&gt;ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。&lt;/p&gt;
-
-&lt;p&gt;贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）&lt;/p&gt;
-
-&lt;p&gt;人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>しばし句読点で変換のオプションをオンして使っています。
+今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。
+ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。
+贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）
+人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。</description>
     </item>
     
     <item>
@@ -548,22 +135,12 @@ Bash completion has been installed to:
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
-      <description>&lt;p&gt;日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、&lt;/p&gt;
-
-&lt;p&gt;最近、句読点を打つたびに出てくる、コレがムカッっとします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-predictive-candidates.png&#34; alt=&#34;推測候補&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から&lt;strong&gt;推測候補表示&lt;/strong&gt;オプションを&lt;strong&gt;オフ&lt;/strong&gt;にすることで消えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-14-japanese-setting.png&#34; alt=&#34;日本語設定&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。&lt;/p&gt;
-
-&lt;p&gt;あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。&lt;/p&gt;
-
-&lt;p&gt;PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。&lt;/p&gt;
-</description>
+      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、
+最近、句読点を打つたびに出てくる、コレがムカッっとします。
+自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から推測候補表示オプションをオフにすることで消えます。
+そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。
+あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。
+PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。</description>
     </item>
     
     <item>
@@ -572,63 +149,17 @@ Bash completion has been installed to:
       <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/06/mbp2016/</guid>
-      <description>
-
-&lt;p&gt;フルリニューアルのMBP15の勝手な推測、希望を書いてみる&lt;/p&gt;
-
-&lt;p&gt;そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。
-かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。&lt;/p&gt;
-
-&lt;h2 id=&#34;そこで-勝手な推測をしたいと&#34;&gt;そこで、勝手な推測をしたいと、&lt;/h2&gt;
-
-&lt;p&gt;まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、&lt;/p&gt;
-
-&lt;p&gt;で、勝手な推測ではOLEDタッチバーの部分には、追加で&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;TouchIDの機能&lt;/li&gt;
-&lt;li&gt;モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど））&lt;/li&gt;
-&lt;li&gt;サプライズ：こりゃ気がつかなかった凄い的ななんか。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと&lt;strong&gt;非常&lt;/strong&gt;に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。&lt;/p&gt;
-
-&lt;p&gt;※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。&lt;/p&gt;
-
-&lt;h2 id=&#34;そして-希望とボヤき&#34;&gt;そして、希望とボヤき&lt;/h2&gt;
-
-&lt;h3 id=&#34;希望&#34;&gt;希望、&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ヘナペナキーボードはやーーめて&lt;/li&gt;
-&lt;li&gt;分解しやすい作りでよろしく、直付けとかなしね&lt;/li&gt;
-&lt;li&gt;ノングレア液晶&lt;/li&gt;
-&lt;li&gt;10時間はもってね&lt;/li&gt;
-&lt;li&gt;1.5kg以下ならパーフェクト&lt;/li&gt;
-&lt;li&gt;私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ&lt;/li&gt;
-&lt;li&gt;円高プライス&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;ぼやき&#34;&gt;ぼやき、、&lt;/h3&gt;
-
-&lt;p&gt;USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。
-どんなユーザーが４つのポートを必要としているのか理解できない。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;電源&lt;/li&gt;
-&lt;li&gt;外部モニター&lt;/li&gt;
-&lt;li&gt;iPhone&lt;/li&gt;
-&lt;li&gt;ハードディスク&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。&lt;/p&gt;
-
-&lt;p&gt;ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！&lt;/p&gt;
-
-&lt;p&gt;！！！SDカードスロットは必須じゃろーー！！！&lt;/p&gt;
-
-&lt;p&gt;と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。&lt;/p&gt;
-</description>
+      <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる
+そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。 かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。
+そこで、勝手な推測をしたいと、 まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、
+で、勝手な推測ではOLEDタッチバーの部分には、追加で
+ TouchIDの機能 モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど）） サプライズ：こりゃ気がつかなかった凄い的ななんか。  が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと非常に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。
+※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。
+そして、希望とボヤき 希望、  ヘナペナキーボードはやーーめて 分解しやすい作りでよろしく、直付けとかなしね ノングレア液晶 10時間はもってね 1.5kg以下ならパーフェクト 私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ 円高プライス  ぼやき、、 USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。 どんなユーザーが４つのポートを必要としているのか理解できない。
+ 電源 外部モニター iPhone ハードディスク  ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。
+ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
+！！！SDカードスロットは必須じゃろーー！！！
+と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。</description>
     </item>
     
     <item>
@@ -637,86 +168,10 @@ Bash completion has been installed to:
       <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
-      <description>
-
-&lt;p&gt;MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ディスク番号確認：diskutil list&lt;/li&gt;
-&lt;li&gt;フュージョンドライブ作成：diskutil cs create&lt;/li&gt;
-&lt;li&gt;ボリューム作成：diskutil coreStorage createVolume&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
-
-&lt;p&gt;Fusion化を行うディスクの番号を &lt;code&gt;diskutil list&lt;/code&gt; にて把握。そして &lt;code&gt;diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2&lt;/code&gt; にてLogical Volume Groupを構築。&lt;/p&gt;
-
-&lt;p&gt;※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2
-Started CoreStorage operation
-Unmounting disk1
-Repartitioning disk1
-Unmounting disk
-Creating the partition map
-Rediscovering disk1
-Adding disk1s2 to Logical Volume Group
-Unmounting disk2
-Repartitioning disk2
-Unmounting disk
-Creating the partition map
-Rediscovering disk2
-Adding disk2s2 to Logical Volume Group
-Creating Core Storage Logical Volume Group
-Switching disk1s2 to Core Storage
-Switching disk2s2 to Core Storage
-Waiting for Logical Volume Group to appear
-Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
-Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
-Finished CoreStorage operation
-shingha:~ $ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Volumeを &lt;code&gt;diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%&lt;/code&gt; で作成。Fusion.11がファインダーで表示される。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ diskutil cs createVolume &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; jhfs+ &amp;quot;Fusion.11&amp;quot; 100%
-The Core Storage Logical Volume Group UUID is 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
-Started CoreStorage operation
-Waiting for Logical Volume to appear
-Formatting file system for Logical Volume
-Initialized /dev/rdisk3 as a 2 TB case-insensitive HFS Plus volume with a 139264k journal
-Mounting disk
-Core Storage LV UUID: E61D3EA0-4744-4B23-XXXX-533D19B9D00C
-Core Storage disk: disk3
-Finished CoreStorage operation
-shingha:~ $
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;フュージョン化の解除&#34;&gt;フュージョン化の解除&lt;/h2&gt;
-
-&lt;p&gt;一つになったドライブの解除方法は &lt;code&gt;diskutil cs deleteVolume&lt;/code&gt; というコマンドもあるが&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;diskutil cs delete &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;の一発で行けると、思う・・。&lt;/p&gt;
-
-&lt;h2 id=&#34;リカバリーusb-stick&#34;&gt;リカバリーUSB Stick&lt;/h2&gt;
-
-&lt;p&gt;次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&amp;hellip; で動きが止まり思ったより時間が掛かる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;shingha:~ $ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
-Password:
-Erasing Disk: 0%... 10%... 20%... 30%...100%...
-Copying installer files to disk...
-Copy complete.
-Making disk bootable...
-Copying boot files...
-Copy complete.
-Done.
-shingha:~ $ 
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。
+ ディスク番号確認：diskutil list フュージョンドライブ作成：diskutil cs create ボリューム作成：diskutil coreStorage createVolume  詳細 Fusion化を行うディスクの番号を diskutil list にて把握。そして diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 にてLogical Volume Groupを構築。
+※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。
+shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 Started CoreStorage operation Unmounting disk1 Repartitioning disk1 Unmounting disk Creating the partition map Rediscovering disk1 Adding disk1s2 to Logical Volume Group Unmounting disk2 Repartitioning disk2 Unmounting disk Creating the partition map Rediscovering disk2 Adding disk2s2 to Logical Volume Group Creating Core Storage Logical Volume Group Switching disk1s2 to Core Storage Switching disk2s2 to Core Storage Waiting for Logical Volume Group to appear Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12 Finished CoreStorage operation shingha:~ $  Volumeを diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.</description>
     </item>
     
     <item>
@@ -725,40 +180,15 @@ shingha:~ $
       <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/06/denon-da10/</guid>
-      <description>
-
-&lt;p&gt;快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。&lt;/p&gt;
-
-&lt;p&gt;以前は iBassoのD2を使っていた。iPodと同じ大きさでオペアンプも交換可能、USBでMacBookに繋げばDACとしても機能する。大きな不具合は無いのだが、iPodとの接続はアナログラインのみ、かつちょっと大きい&lt;strong&gt;充電アダプター&lt;/strong&gt;を持ち歩かなくては行けないのがかなりのネック。&lt;/p&gt;
-
-&lt;p&gt;ここ数年Hi-Fiオーディオの流行により新しいアンプが幾つか売りに出てきたので機種変更。iPodにデジタル対応しているものはSony PHA1, Fostex HP-P1, Denon DA-10、他幾つか。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-EL_da10_front.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1は大きいしデザインがあまり好きなれない、後発になるDENONがちょっと太り気味感じではあるが気になっていた。値段も３万円を切りお手頃な感じになり、そろそろ市場から消えてしまう前に購入をする。&lt;/p&gt;
-
-&lt;p&gt;※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート１-小お出かけ&#34;&gt;パート１：小お出かけ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-lite.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート２-中お出かけ&#34;&gt;パート２：中お出かけ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-middle.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。&lt;/p&gt;
-
-&lt;h2 id=&#34;パート３-ノマドデスクトップ&#34;&gt;パート３：ノマドデスクトップ&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-15-da10-desktop.jpg&#34; alt=&#34;DA-10&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ノマドマシーンMBA11にはiTuneのライブラリは入っていないので。右にiPodVideo、左にDA-10を接続してiPodのライブラリに入っている曲を聴く。&lt;/p&gt;
-
-&lt;p&gt;でもいい音で聞くと、思わず聞き入ってしまうので、ながら聴はできないのが問題か。。。&lt;/p&gt;
-</description>
+      <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。
+以前は iBassoのD2を使っていた。iPodと同じ大きさでオペアンプも交換可能、USBでMacBookに繋げばDACとしても機能する。大きな不具合は無いのだが、iPodとの接続はアナログラインのみ、かつちょっと大きい充電アダプターを持ち歩かなくては行けないのがかなりのネック。
+ここ数年Hi-Fiオーディオの流行により新しいアンプが幾つか売りに出てきたので機種変更。iPodにデジタル対応しているものはSony PHA1, Fostex HP-P1, Denon DA-10、他幾つか。。
+SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1は大きいしデザインがあまり好きなれない、後発になるDENONがちょっと太り気味感じではあるが気になっていた。値段も３万円を切りお手頃な感じになり、そろそろ市場から消えてしまう前に購入をする。
+※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。
+パート１：小お出かけ 母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。
+パート２：中お出かけ iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。
+パート３：ノマドデスクトップ ノマドマシーンMBA11にはiTuneのライブラリは入っていないので。右にiPodVideo、左にDA-10を接続してiPodのライブラリに入っている曲を聴く。
+でもいい音で聞くと、思わず聞き入ってしまうので、ながら聴はできないのが問題か。。。</description>
     </item>
     
     <item>
@@ -767,49 +197,13 @@ shingha:~ $
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/06/elcapitan-beta/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan.jpg&#34; alt=&#34;El Capitan X.11&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落とす事ができるようになる。XCode7を使う為、あまり容量の無いMBA11-128GBに無理矢理スペースつくり、&lt;strong&gt;El Capitan&lt;/strong&gt;を入れてみる事にする。（発表されてこの文章を書いている途中まで&lt;strong&gt;&lt;em&gt;El Captain&lt;/em&gt;&lt;/strong&gt;だと、ヨセミテ隊の大尉だと、、勘違いをする。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-disk.jpg&#34; alt=&#34;128GB SSD X.11&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ちなみに、SafariにAdBlockのエクステンションが入っていると、ダウンロードのサイトがうまく機能しないよう、AdBlockを一時停止して機能する。（分からず、Firefoxでダウンロード。）&lt;/p&gt;
-
-&lt;p&gt;現在の開発機は去年秋にアップデートしたマーベリックがメインの環境で、多分ヨセミテはスキップする事になりそう。ヨセミテの使用時間は多分数時間にも満たない、良い印象はあまり無い。。。
-ちまたではWindows10が新しいMacbookではヨセミテより軽快に動いているとネットで見聞きする。エルキャプテンではパフォーマンスが向上するとの触れ込みなので、ちょっと期待しダウンロードする。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-installer.jpg&#34; alt=&#34;Installer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;インストラーを起動+再起動後、20分ほどで作業終了。初期ディスク占有容量は&lt;strong&gt;7.08GB&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-elcapitan-installed.jpg&#34; alt=&#34;El Capitan&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-06-10-about.jpg&#34; alt=&#34;About&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;なぜか、未だヨセミテの名前がついている。一瞬別の物を入れてしまったと思った。。再起動後直る。&lt;/p&gt;
-
-&lt;p&gt;さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、&lt;/p&gt;
-
-&lt;h2 id=&#34;良い点&#34;&gt;良い点&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;フラットなデザインがようやく落ち着いた感じになる。&lt;/li&gt;
-&lt;li&gt;ことえりの自動変換が割りと心地よい！&lt;/li&gt;
-&lt;li&gt;上部メニューを「自動で隠す」ことができる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;悪い点&#34;&gt;悪い点&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;メニューバーでのバッテリーの残量表示時間がかなり短くなる&lt;/li&gt;
-&lt;li&gt;フォルダーの色が好きになれない。&lt;/li&gt;
-&lt;li&gt;20GBを割り当ててインストールしたものの、唯一使いたいXCode7（8.76GB）が、容量が足らず入らない。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;と、マイナーアップデートな感じで可もなく不可もない、まだベーターなのでこれからさらにブラッシュアップされる事を期待。移行するにはまだ個人的にいくつかの要件が満たされないとできないが、XCode7を使う開発環境という事で当分はDualOSで使う。完全な移行は多分実家に置いてあるメインのMBA15-2011を買い替えるとき、、来年か。。&lt;/p&gt;
-</description>
+      <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落とす事ができるようになる。XCode7を使う為、あまり容量の無いMBA11-128GBに無理矢理スペースつくり、El Capitanを入れてみる事にする。（発表されてこの文章を書いている途中までEl Captainだと、ヨセミテ隊の大尉だと、、勘違いをする。）
+ちなみに、SafariにAdBlockのエクステンションが入っていると、ダウンロードのサイトがうまく機能しないよう、AdBlockを一時停止して機能する。（分からず、Firefoxでダウンロード。）
+現在の開発機は去年秋にアップデートしたマーベリックがメインの環境で、多分ヨセミテはスキップする事になりそう。ヨセミテの使用時間は多分数時間にも満たない、良い印象はあまり無い。。。 ちまたではWindows10が新しいMacbookではヨセミテより軽快に動いているとネットで見聞きする。エルキャプテンではパフォーマンスが向上するとの触れ込みなので、ちょっと期待しダウンロードする。
+インストラーを起動+再起動後、20分ほどで作業終了。初期ディスク占有容量は7.08GB。
+なぜか、未だヨセミテの名前がついている。一瞬別の物を入れてしまったと思った。。再起動後直る。
+さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、
+良い点  フラットなデザインがようやく落ち着いた感じになる。 ことえりの自動変換が割りと心地よい！ 上部メニューを「自動で隠す」ことができる  悪い点  メニューバーでのバッテリーの残量表示時間がかなり短くなる フォルダーの色が好きになれない。 20GBを割り当ててインストールしたものの、唯一使いたいXCode7（8.76GB）が、容量が足らず入らない。  と、マイナーアップデートな感じで可もなく不可もない、まだベーターなのでこれからさらにブラッシュアップされる事を期待。移行するにはまだ個人的にいくつかの要件が満たされないとできないが、XCode7を使う開発環境という事で当分はDualOSで使う。完全な移行は多分実家に置いてあるメインのMBA15-2011を買い替えるとき、、来年か。。</description>
     </item>
     
     <item>
@@ -818,22 +212,11 @@ shingha:~ $
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/05/surfacepad/</guid>
-      <description>&lt;p&gt;MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad03.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad01.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。&lt;/p&gt;
-
-&lt;p&gt;黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-05-20-surfacepad02.jpg&#34; alt=&#34;SurfacePad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。&lt;/p&gt;
-</description>
+      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。
+日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。
+新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。
+黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。
+アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。</description>
     </item>
     
     <item>
@@ -842,41 +225,138 @@ shingha:~ $
       <pubDate>Tue, 10 Mar 2015 05:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/new-macbook/</guid>
-      <description>
-
-&lt;p&gt;早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ちょっと、高いのでは、、&lt;/li&gt;
-&lt;li&gt;いや、高い。&lt;/li&gt;
-&lt;li&gt;単体では使えない&lt;/li&gt;
-&lt;li&gt;対応しているiPhoneを持っていない。&lt;strong&gt;（極め手）&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;そして、かーーーなーり期待していた「新しいMacbook」ですが、&lt;/p&gt;
-
-&lt;h2 id=&#34;良い点は&#34;&gt;良い点は、&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;キーボードに手が加えられた&lt;/li&gt;
-&lt;li&gt;レティナでいながら電池は持つ&lt;/li&gt;
-&lt;li&gt;色のオプションがある&lt;/li&gt;
-&lt;li&gt;軽い&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;で-あまり好きになれない点は&#34;&gt;で、あまり好きになれない点は、&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。）&lt;/li&gt;
-&lt;li&gt;プロセッサー（多分充分に速いのだろうけど。。）&lt;/li&gt;
-&lt;li&gt;ポート（シンプルさとポートを削るというのは意味合いが少し違うと思う。何も無くなるというのなら（非接触充電で）分かるけど。。）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。
-昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-10-pokhara-damside-bw.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。
+ ちょっと、高いのでは、、 いや、高い。 単体では使えない 対応しているiPhoneを持っていない。（極め手）  そして、かーーーなーり期待していた「新しいMacbook」ですが、
+良い点は、  キーボードに手が加えられた レティナでいながら電池は持つ 色のオプションがある 軽い  で、あまり好きになれない点は、  デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。） プロセッサー（多分充分に速いのだろうけど。。） ポート（シンプルさとポートを削るというのは意味合いが少し違うと思う。何も無くなるというのなら（非接触充電で）分かるけど。。）  本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。 昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。</description>
+    </item>
+    
+    <item>
+      <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
+      <link>http://goozenlab.com/blog/2015/02/play-ipod-library/</link>
+      <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/play-ipod-library/</guid>
+      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！
+充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して） なんか得をした気分。
+※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</description>
+    </item>
+    
+    <item>
+      <title>MBA11を10日間使ってみて</title>
+      <link>http://goozenlab.com/blog/2014/11/mba-review/</link>
+      <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/mba-review/</guid>
+      <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。
+ 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。 キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。 液晶はやはり小さい。懸念の肩こりも現状維持。 テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。 RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。 CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。 128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB) SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。 スピーカーの音質は悪い。 お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。 キーボードに印字されているタイ語にちょっと愛着がわく。次はシンハラ文字版が欲しくなってきてる。。 OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）  と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）
+ちょっとうれしかったのでポストする。</description>
+    </item>
+    
+    <item>
+      <title>さよならMBP15、サワディクラップMBA11</title>
+      <link>http://goozenlab.com/blog/2014/11/macbookair11/</link>
+      <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/macbookair11/</guid>
+      <description>さよなら、MBP15、サワディクラップ、MBA11。
+タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変調の兆しがあり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。
+本当は来年の２月頃発表になる12インチのMBA Retinaで機材をフルリニューアルするつもりでいた。思わぬ出来事に２•３日どうしようかと悩む。ここタイで直すという選択肢もあるが、タイには正規なアップルショップはまだなく、時間もかなりかかり信頼もできない。
+MBP15は開発が一段落終えたらタイに置いて出るつもりでいたので、旅に持っていく事を理由付けにして、MBA11 w/US Keyboard+RAM8GBを目当てにタイのアップル代理店iStudioへ行く。カスタム仕様だとアメリカに注文を出すらしく２週間はかかるらしく、在庫はノーマルのタイ語キーボードの物しかないとの事。さすが王国だけあって外人には媚びていない。ある意味商売べたでもある。金額は免税の処置をしても昨今の急激な円安のせいでタイで買うお得感が全くない。日銀に恨み節。。無駄遣い感がぬぐい去れない。購入意欲が一気に減少する。
+ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。
+店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。</description>
+    </item>
+    
+    <item>
+      <title>Yosemite</title>
+      <link>http://goozenlab.com/blog/2014/10/yosemite/</link>
+      <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/10/yosemite/</guid>
+      <description>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。
+本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。
+Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemite自体の印象は悪くないのでもう少し落ち着いたらじわじわ移行するつもり。</description>
+    </item>
+    
+    <item>
+      <title>Chromiumの半自動更新</title>
+      <link>http://goozenlab.com/blog/2013/07/chromium-autoupdate/</link>
+      <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/chromium-autoupdate/</guid>
+      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。
+ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。
+ちょっと調べてみたところ、最新版をビルドしまくっているサイトがあり、スクリプトを使って最新版に更新できることをMacWorldで見つけました。（スクリプトは少し調整してます。）
+※ 普通にサイトよりダウンロードも出来ます。こちらから。ずいぶん控えめなところにダウンロードのリンクがあります。
+情報元:http://www.chromium.org/getting-involved/download-chromium
+ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）
+gallo% sh ./chromium_update.sh Setup... Checking current version... * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf Downloading and unpacking... % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 53.0M 100 53.0M 0 0 1453k 0 0:00:37 0:00:37 --:--:-- 1282k Installing... Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf gallo%  ローカルのアプリが最新であれば、
+gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
+    </item>
+    
+    <item>
+      <title>Textmate v2</title>
+      <link>http://goozenlab.com/blog/2013/03/textmate2/</link>
+      <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/03/textmate2/</guid>
+      <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オープンソース化（ずいぶん長いこと知りませんでした。）され、version2になって日本語での表示／入力の問題もクリアーになったのが大きな理由です。（SublimeTextもありますが、向こうさんも日本語でちょっと問題があるし、ちょっと私との相性も良くないみたい。）
+元々評判の良いエディタですが、やはり良いです。痒い所に手の届く感じです。あまりエディタ自体に機能は求めていなかったのですが、ちょっとこれまでの考えを改めなければと思いました。
+ちょっといじった所を、
+メニューショートカットの変更。 アプリケーションメニューのショートカットキーの割当を変更します。Xcodeでファイルブラウザーの表示／非表示はCommand+0でよく使うショートカットなので、Textmateでも同様の形に変更します。
+アプリケーションの環境設定から変えるものだと思っていましたが、システム環境のキーボードの所から変更します。
+恥ずかしながらこのように設定をする事が出来るとは知りませんでした。他のソフトでも使えそうですし、ちょっと便利です。自分が慣れ親しんだように色々と変更してみるといいです。
+スニペットの登録 そしてBundle（プラグインのようなもの）にてスニペットの登録をいくつかします。メニューのBublesからEdit Bundlesで編集します。 Textのバンドルに追加したものは全てのファイルに適用されます。もし特定のmarkdownやphpに適用したい時はそのバンドルを編集してください。ファイルの拡張子で識別していると思います。
+Command+nで新規の登録です。プルダウンでSnippetを選びます。
+簡単なタイムスタンプはnowとタイピングしてタブキーを押して挿入の形にします。
+オクトプレスをブログに使っているのでそのイメージタグの挿入は
+キーの登録はオクトプレス関連は全てControl+oに割り当ててます。これでショートカットを押すと複数ある場合そのリストが表示されます。別々に名前を割り当てるのは覚えるのがちょっと、、なので一作業増えますがこのような形にしました。
+その他 一部英文の所もありますが、オフィシャルサイトに細かい日本語のマニュアルもありますのでぜひ目を通してみてください。</description>
+    </item>
+    
+    <item>
+      <title>画面のグレー/カラーのスイッチ</title>
+      <link>http://goozenlab.com/blog/2013/02/grayscale-switch/</link>
+      <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
+      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。
+ただ一連の作業がちょっと面倒なので、アップルスクリプト＋Alfredを使って作業を簡略化しました。
+まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。
+※ MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。
+ tell application &amp;quot;System Preferences&amp;quot; activate set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot; end tell tell application &amp;quot;System Events&amp;quot; tell first window of process &amp;quot;System Preferences&amp;quot; tell table 1 of scroll area 1 set selected of row 2 to true end tell tell group 1 click checkbox &amp;quot;Use grayscale&amp;quot; end tell end tell end tell do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot; tell application &amp;quot;System Preferences&amp;quot; to quit  画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</description>
+    </item>
+    
+    <item>
+      <title>眼精疲労と白黒モニター</title>
+      <link>http://goozenlab.com/blog/2012/11/gray-mode/</link>
+      <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/11/gray-mode/</guid>
+      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。
+高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）
+※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）
+文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。
+ で、画面はこのようになります。お試しあれ。</description>
+    </item>
+    
+    <item>
+      <title>コンピューターの名前</title>
+      <link>http://goozenlab.com/blog/2011/12/computer-naming/</link>
+      <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2011/12/computer-naming/</guid>
+      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。
+マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。
+雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。
+ぜひコンピューターに名前をつけましょう。
+私はしっかり名前をつける人で、分野別で付けてます。
+Computer：ビールの名前  MacBookPro15：gallo(グアテマラのビール)
+ 黒Thinkpad：Guiness
+ 白iBook：Hoegarden
+ 緑Vaio P：Ebisu  ※実家の父母機はアサガオとヒマワリ。ファイルサーバーはモス（苔）という名前。
+iPod / Kindle：まめ類  赤iPod Nano：Azuki iPod：DaizuとEdamame。  ストレージ：つまみ moroQ、 umeQ、ikaMaru、など。
+だから何なのといわれればそれまでかもしれませんが、、
+ペット気分でかわいいコンピューターに名前をつけてみてはどうでしょうか。（ストレージとかに愛着が湧くとは思いませんけどね。）</description>
     </item>
     
   </channel>

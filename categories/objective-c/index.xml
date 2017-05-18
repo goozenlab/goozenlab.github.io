@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/objective-c/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/objective-c/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>NSUserDefaultsのキーの削除</title>
@@ -16,15 +18,9 @@
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
-      <description>&lt;p&gt;アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。&lt;/p&gt;
-
-&lt;p&gt;既に設定してしまったUserDefaultsのキーを削除する方法は以下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。&lt;/p&gt;
-</description>
+      <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。
+既に設定してしまったUserDefaultsのキーを削除する方法は以下
+[NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]  アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。</description>
     </item>
     
     <item>
@@ -33,70 +29,13 @@
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
-      <description>&lt;p&gt;タイトルが長げーーーーーーな。。&lt;/p&gt;
-
-&lt;p&gt;さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）&lt;/p&gt;
-
-&lt;p&gt;そんなときは、マッピングファイルを作成して、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration2.png&#34; alt=&#34;Migration 1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ファイルを訂正、追加して（source, destinationに注意）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-02-db-migration1.png&#34; alt=&#34;Migration 2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;あとは、optionsの設定を加え、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-
-# options:nil の箇所を options:options に変更
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通常通り処理を行えば、うまく行きます。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;pre&gt;&lt;code&gt;- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
-    
-    // Create the coordinator and store
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&amp;quot;Littlist.sqlite&amp;quot;];
-   
-    // Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
-                              NSInferMappingModelAutomaticallyOption: @(YES)};
-
-    NSError *error = nil;
-    NSString *failureReason = @&amp;quot;There was an error creating or loading the application&#39;s saved data.&amp;quot;;
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) {
-        // Report any error we got.
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        dict[NSLocalizedDescriptionKey] = @&amp;quot;Failed to initialize the application&#39;s saved data&amp;quot;;
-        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
-        dict[NSUnderlyingErrorKey] = error;
-        error = [NSError errorWithDomain:@&amp;quot;YOUR_ERROR_DOMAIN&amp;quot; code:9999 userInfo:dict];
-        // Replace this with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@&amp;quot;Unresolved error %@, %@&amp;quot;, error, [error userInfo]);
-        abort();
-    }
-    return _persistentStoreCoordinator;
-}
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。&lt;/p&gt;
-
-&lt;p&gt;でも、これで変更の流れもつかめるしありがたや。&lt;/p&gt;
-</description>
+      <description>タイトルが長げーーーーーーな。。
+さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）
+そんなときは、マッピングファイルを作成して、
+ファイルを訂正、追加して（source, destinationに注意）
+あとは、optionsの設定を加え、
+NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES), NSInferMappingModelAutomaticallyOption: @(YES)}  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;amp;error]) { # options:nil の箇所を options:options に変更  通常通り処理を行えば、うまく行きます。
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator { // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. if (_persistentStoreCoordinator != nil) { return _persistentStoreCoordinator; } // Create the coordinator and store _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]]; NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&amp;quot;Littlist.</description>
     </item>
     
     <item>
@@ -105,29 +44,10 @@
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
-      <description>&lt;p&gt;リマインダーへの日時の書き込み&lt;/p&gt;
-
-&lt;p&gt;読み込み時には&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;event.dueDate = eventToRead.dueDateComponents.date;
-event.timeZone = eventToRead.dueDateComponents.timeZone;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と、あっさりと行くのですが、&lt;code&gt;.dueDateComponents.date&lt;/code&gt; は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-  NSCalendar *gregorian = [[NSCalendar alloc]
-                           initWithCalendarIdentifier:NSGregorianCalendar];
-  unsigned unitFlags= NSYearCalendarUnit|NSMonthCalendarUnit | NSDayCalendarUnit |
-   NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |NSTimeZoneCalendarUnit;
-  
-  NSDateComponents *dailyComponents=[gregorian components:unitFlags fromDate:eventToExport.dueDate];
-  
-  eventToWrite.dueDateComponents = dailyComponents;
-  eventToWrite.timeZone = eventToExport.timeZone;
-  
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>リマインダーへの日時の書き込み
+読み込み時には
+event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone;  と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。
+ NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]; unsigned unitFlags= NSYearCalendarUnit|NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |NSTimeZoneCalendarUnit; NSDateComponents *dailyComponents=[gregorian components:unitFlags fromDate:eventToExport.dueDate]; eventToWrite.dueDateComponents = dailyComponents; eventToWrite.timeZone = eventToExport.timeZone;  </description>
     </item>
     
     <item>
@@ -136,39 +56,11 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/reminder-completion/</guid>
-      <description>&lt;p&gt;ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。&lt;/p&gt;
-
-&lt;p&gt;見事にハマったのが、取込みの&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。&lt;/p&gt;
-
-&lt;p&gt;いろいろと試し、ネットで探したところ、見つかりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-    // 事前に calendar の設定等をして、
-    
-    __block NSArray *remindersToImport = nil;
-    __block BOOL fetching = YES;
-    
-    NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]];
-    [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) {
-        LOG_METHOD;
-        remindersToImport = ekReminders;
-        fetching = NO;
-    }];
-    
-    while (fetching) {
-        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]];
-    }
-    
-    // 作業がつづく
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と、&lt;strong&gt;while&lt;/strong&gt; の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）&lt;/p&gt;
-</description>
+      <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。
+見事にハマったのが、取込みの
+- (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))  でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。
+いろいろと試し、ネットで探したところ、見つかりました。
+ // 事前に calendar の設定等をして、 __block NSArray *remindersToImport = nil; __block BOOL fetching = YES; NSPredicate *predicate = [eventStore predicateForRemindersInCalendars:@[calendar]]; [eventStore fetchRemindersMatchingPredicate:predicate completion:^(NSArray *ekReminders) { LOG_METHOD; remindersToImport = ekReminders; fetching = NO; }]; while (fetching) { [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.05]]; } // 作業がつづく  と、while の所で、処理が終わるまで一服させ、作業を続ける形です。（何のためのブロック処理なのか意味が分かりませんし、こういうのはバグというのでは？？）</description>
     </item>
     
   </channel>

@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Thu, 05 Feb 2015 07:35:00 +0545</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/pinocle/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/pinocle/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>pinocul v1.7.1</title>
@@ -16,22 +18,13 @@
       <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/02/pinocul-171/</guid>
-      <description>&lt;p&gt;放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。&lt;/p&gt;
-
-&lt;p&gt;最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。&lt;/p&gt;
-
-&lt;p&gt;折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は &lt;code&gt;Bundle display name&lt;/code&gt; を &lt;code&gt;Info.plist&lt;/code&gt; 追加で変更します。&lt;/p&gt;
-
-&lt;p&gt;という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）&lt;/p&gt;
-
-&lt;p&gt;ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）&lt;/p&gt;
-
-&lt;p&gt;※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。&lt;/p&gt;
-</description>
+      <description>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。
+最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。
+折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）
+新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は Bundle display name を Info.plist 追加で変更します。
+という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）
+ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）
+※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</description>
     </item>
     
   </channel>

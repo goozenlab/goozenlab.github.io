@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://goozenlab.com/open/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/open/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>open.sati</title>
@@ -16,119 +18,11 @@
       <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/open/sati/</guid>
-      <description>
-
-&lt;h1 id=&#34;目次&#34;&gt;目次&lt;/h1&gt;
-
-&lt;p&gt;アプリも買う時代から作る時代に移ってきていると思います。
-XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。
-自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。&lt;/p&gt;
-
-&lt;h2 id=&#34;準備&#34;&gt;準備&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ダウンロード：&lt;code&gt;git clone git:xxx.xxxx.xxx&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;実機で動かすための方法&lt;/li&gt;
-&lt;li&gt;XCodeのちょっとした使い方&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;全体の構造&#34;&gt;全体の構造&lt;/h2&gt;
-
-&lt;p&gt;何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;メインビュー：構成は以下のようになっています。
-
-&lt;ol&gt;
-&lt;li&gt;背景：透明度の入った画像を表示&lt;/li&gt;
-&lt;li&gt;瞑想回数ラベル&lt;/li&gt;
-&lt;li&gt;右左のボタン&lt;/li&gt;
-&lt;li&gt;上部
-
-&lt;ol&gt;
-&lt;li&gt;日付ラベル：日付をフォーマットして表示&lt;/li&gt;
-&lt;li&gt;タイムライン：音の鳴るタイミングを表示、静寂モード時には月のマークを表示&lt;/li&gt;
-&lt;li&gt;ボタン：静寂モードのスウィッチとして&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;中部：３つのコンポーネントを重なって配置
-
-&lt;ol&gt;
-&lt;li&gt;カスタムビュー：瞑想時間パイ&lt;/li&gt;
-&lt;li&gt;カスタムビュー：最近の状況グラフ（時間パイと円の隙間に表示）&lt;/li&gt;
-&lt;li&gt;ボタン：設定画面に移動&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;下部
-
-&lt;ol&gt;
-&lt;li&gt;カスタムビュー：履歴バー&lt;/li&gt;
-&lt;li&gt;ボタン：履歴画面に移動&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;設定ビュー：シンプルなテーブル式の構成&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;UIView：ヘッダービュー
-
-&lt;ol&gt;
-&lt;li&gt;タイトル&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;カスタムビュー：メイン画面のカスタムクラスの流用&lt;/li&gt;
-&lt;li&gt;スライダー：瞑想時間設定&lt;/li&gt;
-&lt;li&gt;セグメント：背景画像の選択&lt;/li&gt;
-&lt;li&gt;スィッチ：静かモード&lt;/li&gt;
-&lt;li&gt;セグメント：終了音の選択&lt;/li&gt;
-&lt;li&gt;UIView：フッター
-
-&lt;ol&gt;
-&lt;li&gt;ボタン：戻る&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;履歴ビュー：テーブルビュー&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;UIView：ヘッダービュー
-
-&lt;ol&gt;
-&lt;li&gt;タイトル&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;テーブルビュー：瞑想履歴の表示
-
-&lt;ol&gt;
-&lt;li&gt;カスタムテーブルセル：&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;UIView：フッター
-
-&lt;ol&gt;
-&lt;li&gt;ボタン：戻る&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;インターフェイス&#34;&gt;インターフェイス&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ボタン&lt;/li&gt;
-&lt;li&gt;レーベル&lt;/li&gt;
-&lt;li&gt;テキストフィールド&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;デザイン&#34;&gt;デザイン&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;レイアウト&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;おまけ-関連するブログポスト&#34;&gt;おまけ：関連するブログポスト&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://goozenlab.com/blog/2016/09/github-open-sati/&#34;&gt;ギットハブ公開前の作業&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://goozenlab.com/blog/2016/09/app-icon-naming/&#34;&gt;アイコンとネーミング&lt;/a&gt;
-
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> 目次 アプリも買う時代から作る時代に移ってきていると思います。 XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。 自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。
+準備  ダウンロード：git clone git:xxx.xxxx.xxx 実機で動かすための方法 XCodeのちょっとした使い方  全体の構造 何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。
+ メインビュー：構成は以下のようになっています。  背景：透明度の入った画像を表示 瞑想回数ラベル 右左のボタン 上部  日付ラベル：日付をフォーマットして表示 タイムライン：音の鳴るタイミングを表示、静寂モード時には月のマークを表示 ボタン：静寂モードのスウィッチとして  中部：３つのコンポーネントを重なって配置  カスタムビュー：瞑想時間パイ カスタムビュー：最近の状況グラフ（時間パイと円の隙間に表示） ボタン：設定画面に移動  下部  カスタムビュー：履歴バー ボタン：履歴画面に移動   設定ビュー：シンプルなテーブル式の構成
+ UIView：ヘッダービュー  タイトル  カスタムビュー：メイン画面のカスタムクラスの流用 スライダー：瞑想時間設定 セグメント：背景画像の選択 スィッチ：静かモード セグメント：終了音の選択 UIView：フッター  ボタン：戻る   履歴ビュー：テーブルビュー
+ UIView：ヘッダービュー  タイトル  テーブルビュー：瞑想履歴の表示  カスタムテーブルセル：  UIView：フッター  ボタン：戻る    インターフェイス  ボタン レーベル テキストフィールド  デザイン  レイアウト  おまけ：関連するブログポスト  ギットハブ公開前の作業 アイコンとネーミング   </description>
     </item>
     
   </channel>

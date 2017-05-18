@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://goozenlab.com/</loc>
-    <lastmod>2017-03-25T08:00:00+05:30</lastmod>
+    <loc>http://goozenlab.com/blog/2017/05/sati-194/</loc>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2017/05/air-dahon/</loc>
+    <lastmod>2017-05-16T20:30:00+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2017/05/sati-193/</loc>
+    <lastmod>2017-05-15T12:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -1843,6 +1853,251 @@
   
   <url>
     <loc>http://goozenlab.com/goods/head-lamp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/a/</loc>
+    <lastmod>2016-11-29T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/about/</loc>
+    <lastmod>2015-03-05T22:48:01+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/android/</loc>
+    <lastmod>2015-03-14T12:30:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/backpack/</loc>
+    <lastmod>2016-01-09T20:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/bohemia/</loc>
+    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/</loc>
+    <lastmod>2016-11-29T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/cosper/</loc>
+    <lastmod>2016-09-08T08:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/dahon/</loc>
+    <lastmod>2017-05-16T20:30:00+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/dandori/</loc>
+    <lastmod>2016-08-22T22:20:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/develop/</loc>
+    <lastmod>2016-10-10T10:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/diy/</loc>
+    <lastmod>2015-05-01T14:50:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/doop/</loc>
+    <lastmod>2016-07-31T21:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/en/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/goods/</loc>
+    <lastmod>2015-06-15T12:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/goods/</loc>
+    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/iapp/</loc>
+    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/ippuku/</loc>
+    <lastmod>2016-06-27T22:57:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/kotlin/</loc>
+    <lastmod>2015-03-14T12:30:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/listaria/</loc>
+    <lastmod>2016-09-15T07:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/littlist/</loc>
+    <lastmod>2016-09-05T10:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/mac/</loc>
+    <lastmod>2016-11-26T22:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2016-11-26T22:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/nomad/</loc>
+    <lastmod>2017-03-25T08:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/objective-c/</loc>
+    <lastmod>2015-07-27T18:30:00+05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/ohayo/</loc>
+    <lastmod>2016-09-10T08:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/open/</loc>
+    <lastmod>2016-11-29T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/open/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/pinocle/</loc>
+    <lastmod>2015-02-05T07:35:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/post/</loc>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/pranatice/</loc>
+    <lastmod>2016-11-30T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/sati/</loc>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/server/</loc>
+    <lastmod>2012-12-05T12:47:00+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/snakefoot/</loc>
+    <lastmod>2016-12-30T06:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/swift/</loc>
+    <lastmod>2016-08-28T09:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/tapas/</loc>
+    <lastmod>2016-06-20T03:00:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/tips/</loc>
+    <lastmod>2016-08-23T19:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/update/</loc>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/viriya/</loc>
+    <lastmod>2013-07-30T11:14:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/categories/web/</loc>
+    <lastmod>2015-03-13T13:30:00+05:45</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/</loc>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

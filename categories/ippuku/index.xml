@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/ippuku/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/ippuku/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ippuku v1.9.0</title>
@@ -16,49 +18,12 @@
       <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/06/ippuku-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。&lt;/p&gt;
-
-&lt;p&gt;不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。&lt;/p&gt;
-
-&lt;p&gt;大きな機能上の変更はありませんが、細かな調整が多々有ります。&lt;/p&gt;
-
-&lt;p&gt;バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。
-そして、新らしく、ダークモードを追加しました。&lt;/p&gt;
-
-&lt;p&gt;次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ダークモード&lt;/li&gt;
-&lt;li&gt;iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）
-
-&lt;ul&gt;
-&lt;li&gt;4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5)&lt;/li&gt;
-&lt;li&gt;4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6)&lt;/li&gt;
-&lt;li&gt;3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;左バーの色変更はスワイプに変更&lt;/li&gt;
-&lt;li&gt;上記の変更により、タップにてメモ表示&lt;/li&gt;
-&lt;li&gt;StarterViewのデザイン変更&lt;/li&gt;
-&lt;li&gt;ローカライズを追加&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
+      <description> Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。
+不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。
+大きな機能上の変更はありませんが、細かな調整が多々有ります。
+バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。 そして、新らしく、ダークモードを追加しました。
+次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。
+Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
     </item>
     
     <item>
@@ -67,27 +32,10 @@
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/07/ippuku-150/</guid>
-      <description>&lt;p&gt;iOS7が発表され、それにそったデザインに少し変更した物をアップします。
-機能の追加はありませんが、ちょっとした所に手を入れました。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;日付けを挟む所(午前０時）にラインを入れました。長い時間を表示しているので、これで少々時間が分かりやすくなったとおもいます。&lt;/li&gt;
-&lt;li&gt;アイコンをアップルのグリッドに合わせました。&lt;br /&gt;
-iOS7のSimulatorを使っている時、アイコンを指定していないアプリにはグリッドの入ったアイコンが表示されます。
-これは、アップルからのメッセージととりました。ラインがそろうと見た目が全体的にスキッとします。ほんの少しの調整なので嫌がらずに合わせました。&lt;/li&gt;
-&lt;li&gt;同様に、今までも拙作のアプリは全体的にフラットデザインなのですが、さらにフラットにしました。
-上がってくるウィンドウももう少し手を入れたい気もしてますが、どうもアイデアが湧いてきません。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;以前のバージョン：ドラフト：最終&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-07-ippuku-wo-dayline.png&#34; alt=&#34;ippuku Image&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-07-ippuku-w-dayline-draft.png&#34; alt=&#34;ippuku Image&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2013-07-07-ippuku-w-dayline.png&#34; alt=&#34;ippuku Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※ 今回からiOS4.3には未対応なります。&lt;/p&gt;
-</description>
+      <description>iOS7が発表され、それにそったデザインに少し変更した物をアップします。 機能の追加はありませんが、ちょっとした所に手を入れました。
+ 日付けを挟む所(午前０時）にラインを入れました。長い時間を表示しているので、これで少々時間が分かりやすくなったとおもいます。 アイコンをアップルのグリッドに合わせました。
+iOS7のSimulatorを使っている時、アイコンを指定していないアプリにはグリッドの入ったアイコンが表示されます。 これは、アップルからのメッセージととりました。ラインがそろうと見た目が全体的にスキッとします。ほんの少しの調整なので嫌がらずに合わせました。 同様に、今までも拙作のアプリは全体的にフラットデザインなのですが、さらにフラットにしました。 上がってくるウィンドウももう少し手を入れたい気もしてますが、どうもアイデアが湧いてきません。  以前のバージョン：ドラフト：最終
+※ 今回からiOS4.3には未対応なります。</description>
     </item>
     
     <item>
@@ -96,11 +44,8 @@ iOS7のSimulatorを使っている時、アイコンを指定していないア�
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
-      <description>&lt;p&gt;デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。
-iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
-
-&lt;p&gt;OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)&lt;/p&gt;
-</description>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。
+OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</description>
     </item>
     
     <item>
@@ -109,27 +54,10 @@ iOS5では問題はなく、二三日前に気が付きました。&lt;/p&gt;
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
-      <description>&lt;p&gt;ちょっと気になっていたアイコンにちょっと手を入れました。
-リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。
-サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。
-ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-IconRenew.png&#34; alt=&#34;Renew Icons&#34; /&gt;&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;そして、ソフトの中身も少しだけアップデートしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;sati&lt;/strong&gt;：履歴の表示のセルとデザインをちょっと変更しました。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew.png&#34; alt=&#34;Renew&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-SatiRenew2.png&#34; alt=&#34;Renew &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;リスタリア&lt;/strong&gt;：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ListariaRenew.png&#34; alt=&#34;Renew&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ippuku&lt;/strong&gt;：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。&lt;br /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/20130523-ippukuRenew.png&#34; alt=&#34;Renew&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。 サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。 ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。
+そして、ソフトの中身も少しだけアップデートしました。
+sati：履歴の表示のセルとデザインをちょっと変更しました。
+リスタリア：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。 ippuku：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。</description>
     </item>
     
     <item>
@@ -138,10 +66,8 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
       <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/05/admob-update/</guid>
-      <description>&lt;p&gt;ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。&lt;/p&gt;
-
-&lt;p&gt;たぶん落ちる事も少なくなるかな？。。&lt;/p&gt;
-</description>
+      <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。
+たぶん落ちる事も少なくなるかな？。。</description>
     </item>
     
     <item>
@@ -150,29 +76,11 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
       <pubDate>Fri, 22 Feb 2013 15:35:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/02/ippuku143/</guid>
-      <description>&lt;p&gt;ippukuを久しぶりにアップデート。アプストアに申請中です。&lt;/p&gt;
-
-&lt;p&gt;29時間の流れを一気に見れるのが売りでしたが、少ない時間のログをとるには少しグラフの幅が短かく利便性に欠くなと思っていました。全て解決するとは思いませんがちょっと手を加えました。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;改良点&lt;/strong&gt;：ナビゲーションバーをロングタップすることで、表示できる時間帯を変更するようにしました。
-そして表示を区別するために&lt;strong&gt;“•”&lt;/strong&gt;をタイトルの前後に表示します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;タイトル：デフォルト 午前4:30から翌日午前9:30&lt;/li&gt;
-&lt;li&gt;•タイトル：午後10:00から翌午前8:00&lt;/li&gt;
-&lt;li&gt;•タイトル•：午前5:00から午後7:30&lt;/li&gt;
-&lt;li&gt;タイトル•：午後1:00から午後23:00&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;上部オレンジの点が午後0:00で下部ブルーの点が午前0:00の印になります。真ん中の色付きは午前／午後6:00です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png&#34; alt=&#34;default&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png&#34; alt=&#34;am&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png&#34; alt=&#34;day&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png&#34; alt=&#34;pm&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※アプストアでの説明に33時間って書いてました。ほんとは29時間でした。。。一年近く気がつきませんでした。。&lt;/p&gt;
-</description>
+      <description>ippukuを久しぶりにアップデート。アプストアに申請中です。
+29時間の流れを一気に見れるのが売りでしたが、少ない時間のログをとるには少しグラフの幅が短かく利便性に欠くなと思っていました。全て解決するとは思いませんがちょっと手を加えました。
+改良点：ナビゲーションバーをロングタップすることで、表示できる時間帯を変更するようにしました。 そして表示を区別するために“•”をタイトルの前後に表示します。
+ タイトル：デフォルト 午前4:30から翌日午前9:30 •タイトル：午後10:00から翌午前8:00 •タイトル•：午前5:00から午後7:30 タイトル•：午後1:00から午後23:00  上部オレンジの点が午後0:00で下部ブルーの点が午前0:00の印になります。真ん中の色付きは午前／午後6:00です。
+※アプストアでの説明に33時間って書いてました。ほんとは29時間でした。。。一年近く気がつきませんでした。。</description>
     </item>
     
     <item>
@@ -181,17 +89,10 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/01/admob-update/</guid>
-      <description>&lt;p&gt;不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。&lt;/p&gt;
-
-&lt;p&gt;そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。&lt;/p&gt;
-
-&lt;p&gt;広告がらみの変更。ご理解のほど。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。
-ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。&lt;/p&gt;
-</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
+そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
+広告がらみの変更。ご理解のほど。。
+タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</description>
     </item>
     
     <item>
@@ -200,13 +101,8 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/10/admob-update/</guid>
-      <description>&lt;p&gt;AdMobをiOS6対応6.2.0にアップデートしました。
-今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しく&lt;code&gt;AdSupport.framework&lt;/code&gt;を追加で問題解決します。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。&lt;/p&gt;
-</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
+インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
     </item>
     
     <item>
@@ -215,10 +111,8 @@ ippukuのアイコンは常々あんまり格好良くないなぁ思ってい�
       <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/01/ippuku-106/</guid>
-      <description>&lt;p&gt;iTuneConnectで問題があったんよね。。最近ようやく解決。久しぶりにアップデートを上げてます。&lt;/p&gt;
-
-&lt;p&gt;今までのが少々幼稚すぎたボタンのデザインを変更。 ちょっとバグっていたところも修正しました。&lt;/p&gt;
-</description>
+      <description>iTuneConnectで問題があったんよね。。最近ようやく解決。久しぶりにアップデートを上げてます。
+今までのが少々幼稚すぎたボタンのデザインを変更。 ちょっとバグっていたところも修正しました。</description>
     </item>
     
   </channel>

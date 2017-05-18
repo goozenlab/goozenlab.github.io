@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Fri, 13 Mar 2015 13:30:00 +0545</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>HugoとSimplenoteでgitHub-page</title>
@@ -16,121 +18,11 @@
       <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
-      <description>
-
-&lt;p&gt;以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。&lt;/p&gt;
-
-&lt;p&gt;Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。&lt;/p&gt;
-
-&lt;p&gt;まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。&lt;/p&gt;
-
-&lt;p&gt;（鍵の登録を行っておくとよいです）&lt;/p&gt;
-
-&lt;h2 id=&#34;github-と-bitbucket-の登録&#34;&gt;github と bitbucket の登録&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rm -rf public/
-$ git init
-$ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-$ git add -A
-$ git commit -m &amp;quot;initial commit&amp;quot;
-$ git push origin master
-Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;:
-Counting objects: 166, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (163/163), done.
-Writing objects: 100% (166/166), 322.06 KiB | 0 bytes/s, done.
-Total 166 (delta 3), reused 0 (delta 0)
-To https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
- * [new branch]      master -&amp;gt; master
-$ git submodule add https://github.com/YOUR_ACCOUNT/goozenlab.github.io.git public
-Cloning into &#39;public&#39;...
-remote: Counting objects: 9437, done.
-remote: Compressing objects: 100% (419/419), done.
-remote: Total 9437 (delta 271), reused 0 (delta 0), pack-reused 8762
-Receiving objects: 100% (9437/9437), 47.41 MiB | 30.00 KiB/s, done.
-Resolving deltas: 100% (4319/4319), done.
-Checking connectivity... done.
-$ 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;プレビュー方法&#34;&gt;プレビュー方法&lt;/h2&gt;
-
-&lt;p&gt;nvALT:Simplenoteのデータは、ファイル単位として保存しています。保存先をHugo内のpostフォルダーにしてしまうと、そのフォルダー内の&lt;strong&gt;Note &amp;amp; Setting&lt;/strong&gt; ファイル（nvALTの設定ファイル？）がサイト構築時にエラーの元になります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-11-hugo-alt.png&#34; alt=&#34;nvALT:Simplenote&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;nvALT:SimpleNoteの保存先フォルダーをサイトの外部にし、preview時にrsyncで一方通行の同期を行います。&lt;/p&gt;
-
-&lt;p&gt;※ nvALT、あまり知名度が無いように思えるけれどお勧めです。（ctlキーの長押しでプレビューが表示[離すと消える]されたり（数日前に発見！）する。）&lt;/p&gt;
-
-&lt;p&gt;これも簡単なスクリプトで行います。&lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; のテーマ部分は自身の設定に合わせてください。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hugo_preview.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32m---- rsync ----\033[0m&amp;quot;
-
-rsync -avz --delete --exclude &#39;Notes &amp;amp; Settings&#39; --exclude &#39;Untitled*&#39; --exclude &#39;.*&#39; /&amp;quot;保存先のフォルダ&amp;quot;/ /&amp;quot;HugoSites&amp;quot;/content/post
-
-echo -e &amp;quot;\033[0;32mhugo preview...\033[0m&amp;quot;
-
-hugo server --buildDrafts --theme=default
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;デプロイの方法&#34;&gt;デプロイの方法&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;deploy.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
-
-# Build the project. 
-# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`
-hugo
-
-# Go To Public folder
-cd public
-
-# Copy CNAME 
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg=&amp;quot;rebuilding site `date`&amp;quot;
-if [ $# -eq 1 ]
-  then msg=&amp;quot;$1&amp;quot;
-fi
-git commit -m &amp;quot;$msg&amp;quot;
-
-# Push source and build repos.
-git push origin master
-
-# Come Back
-cd ..
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;その他のファイルの更新は、タイミングを計って手動でdeployしています。自動でbitbukket にも更新を入れたい時は&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;echo -e &amp;quot;\033[0;32mDeploying updates to Bitbukket...\033[0m&amp;quot;
-
-git add -A
-git commit -m &amp;quot;$msg&amp;quot;
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;をdeploy.sh に追加すれば良いのかな。&lt;/p&gt;
-
-&lt;p&gt;実行のフラグを付けておしまい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ chmod +x deploy.sh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-13-pockhara.jpg&#34; alt=&#34;Pokhara street&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。
+Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。
+まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。
+（鍵の登録を行っておくとよいです）
+github と bitbucket の登録 $ rm -rf public/ $ git init $ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git $ git add -A $ git commit -m &amp;quot;initial commit&amp;quot; $ git push origin master Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;: Counting objects: 166, done. Delta compression using up to 4 threads. Compressing objects: 100% (163/163), done. Writing objects: 100% (166/166), 322.</description>
     </item>
     
     <item>
@@ -139,34 +31,11 @@ git push origin master
       <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
-      <description>&lt;p&gt;ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;index.html&lt;/code&gt;の&lt;code&gt;{{ range $name, $page := .Site.Recent }}&lt;/code&gt; の所を &lt;code&gt;{{ range $name, $page := .Paginator.Pages }}&lt;/code&gt; に変更。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt;
-  &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt;
-
-  &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt;
-    {{ $baseurl := .Site.BaseUrl }}
-    {{ range $name, $page := .Site.Recent }} 
-    {{ if eq .Type &amp;quot;post&amp;quot; }}        
-    &amp;lt;li&amp;gt;
-      &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、&lt;code&gt;config.toml&lt;/code&gt; に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# number of posts shows on MainPage
-paginate = 28
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;yamlだtomlだと、一体yamlの何が問題なんだろうか。。&lt;/p&gt;
-
-&lt;p&gt;で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、&lt;code&gt;rsync&lt;/code&gt; と &lt;code&gt;hugo server --buildDrafts --theme=default&lt;/code&gt; をまとめてスクリプトで動かせば良いだけのことか。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-05-pokhara-damside2.jpg&#34; alt=&#34;Pokhara&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。
+index.htmlの{{ range $name, $page := .Site.Recent }} の所を {{ range $name, $page := .Paginator.Pages }} に変更。
+&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt; &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt; {{ $baseurl := .Site.BaseUrl }} {{ range $name, $page := .Site.Recent }} {{ if eq .Type &amp;quot;post&amp;quot; }} &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;  そして、config.toml に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。
+# number of posts shows on MainPage paginate = 28  yamlだtomlだと、一体yamlの何が問題なんだろうか。。
+で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、rsync と hugo server --buildDrafts --theme=default をまとめてスクリプトで動かせば良いだけのことか。。</description>
     </item>
     
     <item>
@@ -175,45 +44,11 @@ paginate = 28
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/hugo-template/</guid>
-      <description>
-
-&lt;p&gt;移行のためHugoを&lt;code&gt;nofancy&lt;/code&gt;を基にして色々と調整しています。&lt;/p&gt;
-
-&lt;h2 id=&#34;テンプレート&#34;&gt;テンプレート&lt;/h2&gt;
-
-&lt;p&gt;このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: app_page
-title: &amp;quot;(a)のちょっと詳しい使い方&amp;quot;
-subtitle: &amp;quot;タスク管理をマークダウンで&amp;quot;
-appid: &amp;quot;929324285&amp;quot;
-date: &amp;quot;2015-01-25&amp;quot;
-updated: &amp;quot;2015-01-25&amp;quot;
-footer: true
----
-
-# アプリページのオクトプレスより移行のyaml
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;layout: app_page&lt;/code&gt; がある事で &lt;code&gt;layout/_default/app_page.html&lt;/code&gt; を探しにいき、もしくはコンテンツファイルを別のフォルダー&lt;code&gt;iapp&lt;/code&gt;に入れておくと、&lt;code&gt;layout: app_page&lt;/code&gt;が無くても&lt;code&gt;layout/iapp/single.html&lt;/code&gt;があれば優先して使われるよう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template.png&#34; alt=&#34;Hugo Template&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/2015-03-07_hugo-template2.png&#34; alt=&#34;Hugo Template&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;yaml内のカスタム項目を取り込む&#34;&gt;Yaml内のカスタム項目を取り込む&lt;/h2&gt;
-
-&lt;p&gt;yaml内にあるスマートバナー広告で使う&lt;code&gt;appid: &amp;quot;929324285&amp;quot;&lt;/code&gt;は
-以下のようにして &lt;code&gt;partials/header.html&lt;/code&gt; に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、&lt;code&gt;.Params&lt;/code&gt;を使うのが正解のようです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{ if .Params.appid }}
-  &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ .Params.appid }}&amp;quot;&amp;gt;
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、&lt;/p&gt;
-</description>
+      <description>移行のためHugoをnofancyを基にして色々と調整しています。
+テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。
+--- layout: app_page title: &amp;quot;(a)のちょっと詳しい使い方&amp;quot; subtitle: &amp;quot;タスク管理をマークダウンで&amp;quot; appid: &amp;quot;929324285&amp;quot; date: &amp;quot;2015-01-25&amp;quot; updated: &amp;quot;2015-01-25&amp;quot; footer: true --- # アプリページのオクトプレスより移行のyaml  layout: app_page がある事で layout/_default/app_page.html を探しにいき、もしくはコンテンツファイルを別のフォルダーiappに入れておくと、layout: app_pageが無くてもlayout/iapp/single.htmlがあれば優先して使われるよう。
+Yaml内のカスタム項目を取り込む yaml内にあるスマートバナー広告で使うappid: &amp;quot;929324285&amp;quot;は 以下のようにして partials/header.html に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、.Paramsを使うのが正解のようです。
+{{ if .Params.appid }} &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ .Params.appid }}&amp;quot;&amp;gt; {{ end }}  しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</description>
     </item>
     
     <item>
@@ -222,20 +57,13 @@ footer: true
       <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/moving-hugo/</guid>
-      <description>&lt;p&gt;ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。&lt;/p&gt;
-
-&lt;p&gt;ちょっと開発が一段落し一息。温泉に行こうと思ったが、Webの移行をしています。&lt;/p&gt;
-
-&lt;p&gt;そもそもの始まりは、オクトプレスでSWIFTのシンタックスカラーリングで、色々試すも、これのバージョンがどうで、あっちで出るエラーはそのバージョンが問題でと、Ruby野郎でない私はGem地獄に陥る。Jekyllをちょっと試すが、これがまたGem関連でエラー連発。&lt;/p&gt;
-
-&lt;p&gt;仕舞にはオクトプレスのアップデートでファイルが消える。バックアップは取っているのだが、気分は良くない。オクトプレスに不満がある訳ではないが、もう一度インストールするのも気が進まないので、移行する事にする。&lt;/p&gt;
-
-&lt;p&gt;幾つかの選択肢があったのですが、Hugoに決定！もテーマにピンとくるものがありません。シンプルでグリッドな感じのやつで良いのだけど（jekyllでデフォルトの様な）。。。&lt;/p&gt;
-
-&lt;p&gt;帯に短し、襷に、、、、で、オクトプレス時代は字がデケーなと思っていたのにHugoでは文字ちっちゃ、表示範囲がせまっ、みたいな事になっています。ただし、HugoのほうはCSSベースなのでSassで弄るのを断念した私でも弄れそう。ちなみに選んだテーマは&lt;code&gt;nofancy&lt;/code&gt;です。&lt;/p&gt;
-
-&lt;p&gt;でも、ページングの処理がよく分からんから、とりあえずすべてのポストがメインページに羅列されています。。。66KBだからそんなに重くはないので。。。そして、画像もでかいです。&lt;/p&gt;
-</description>
+      <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。
+ちょっと開発が一段落し一息。温泉に行こうと思ったが、Webの移行をしています。
+そもそもの始まりは、オクトプレスでSWIFTのシンタックスカラーリングで、色々試すも、これのバージョンがどうで、あっちで出るエラーはそのバージョンが問題でと、Ruby野郎でない私はGem地獄に陥る。Jekyllをちょっと試すが、これがまたGem関連でエラー連発。
+仕舞にはオクトプレスのアップデートでファイルが消える。バックアップは取っているのだが、気分は良くない。オクトプレスに不満がある訳ではないが、もう一度インストールするのも気が進まないので、移行する事にする。
+幾つかの選択肢があったのですが、Hugoに決定！もテーマにピンとくるものがありません。シンプルでグリッドな感じのやつで良いのだけど（jekyllでデフォルトの様な）。。。
+帯に短し、襷に、、、、で、オクトプレス時代は字がデケーなと思っていたのにHugoでは文字ちっちゃ、表示範囲がせまっ、みたいな事になっています。ただし、HugoのほうはCSSベースなのでSassで弄るのを断念した私でも弄れそう。ちなみに選んだテーマはnofancyです。
+でも、ページングの処理がよく分からんから、とりあえずすべてのポストがメインページに羅列されています。。。66KBだからそんなに重くはないので。。。そして、画像もでかいです。</description>
     </item>
     
     <item>
@@ -244,12 +72,9 @@ footer: true
       <pubDate>Tue, 18 Jun 2013 22:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/06/octopress-theme/</guid>
-      <description>&lt;p&gt;サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家の&lt;a href=&#34;https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes&#34;&gt;こちら&lt;/a&gt;にテーマのリストがあります。まだ登録数が少ないですが&lt;a href=&#34;http://octopressthemes.com&#34;&gt;octopressthemes.com&lt;/a&gt;というサイトもあります。ぜひ充実していってもらいたいですね。&lt;/p&gt;
-
-&lt;p&gt;いくつか気に入った物があるのですが、&lt;a href=&#34;http://github.com/macjasp/cleanpress&#34;&gt;CleanPress&lt;/a&gt;を選びました。zshではインストールでこけます。&lt;code&gt;rake install\[&#39;cleanpress&#39;\]&lt;/code&gt;で試しましょう。&lt;/p&gt;
-
-&lt;p&gt;シングルページはちょっとテーマを弄らないと、、日本語のフォントが少々大きめでバランスが、、、うーーん、全てが一発でうまくいくという事は無いのね。。&lt;/p&gt;
-</description>
+      <description>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家のこちらにテーマのリストがあります。まだ登録数が少ないですがoctopressthemes.comというサイトもあります。ぜひ充実していってもらいたいですね。
+いくつか気に入った物があるのですが、CleanPressを選びました。zshではインストールでこけます。rake install\[&#39;cleanpress&#39;\]で試しましょう。
+シングルページはちょっとテーマを弄らないと、、日本語のフォントが少々大きめでバランスが、、、うーーん、全てが一発でうまくいくという事は無いのね。。</description>
     </item>
     
     <item>
@@ -258,20 +83,12 @@ footer: true
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2013/02/generate-error/</guid>
-      <description>&lt;p&gt;オクトプレスにて&lt;code&gt;rake generate&lt;/code&gt;でどかっとエラーが出ました。&lt;/p&gt;
-
-&lt;p&gt;全く自分には覚えがない、うーーん、と&lt;code&gt;rake install&lt;/code&gt;をやり直しても効果無し。。半ば再インストールもやむなしか。。。。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、日があけてじっくり色々いじっていたファイルを洗い直してみると、見つけました。&lt;/p&gt;
-
-&lt;p&gt;追加したコンテンツの時間の所が、、、&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;date: 2013-01-29 14:9&lt;/code&gt;//ここん所？もしくは、文章内のリンクを含めた&amp;rdquo;(&amp;ldquo;関連の&lt;code&gt;([ワイン用ブドウ品種](http://ja.wikipedia.org/wiki/ワイン用ブドウ品種の一覧))&lt;/code&gt;でエラーが起きたようです。（抜いたらエラーが取れました。）&lt;/p&gt;
-
-&lt;p&gt;システム関連のエラーだとの思い込みがまずあったのがいかんかった。。でももうちょっと親切にこのファイルで問題がありましたよと明示してもらえるとありがたいのだけどねぇ。おかげでデザインが元のデフォルト状態に戻ってしまった。（ちとため息、でか文字だし画面は暗れーし。やる気減退。）&lt;/p&gt;
-</description>
+      <description>オクトプレスにてrake generateでどかっとエラーが出ました。
+全く自分には覚えがない、うーーん、とrake installをやり直しても効果無し。。半ば再インストールもやむなしか。。。。
+で、日があけてじっくり色々いじっていたファイルを洗い直してみると、見つけました。
+追加したコンテンツの時間の所が、、、
+date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含めた&amp;rdquo;(&amp;ldquo;関連の([ワイン用ブドウ品種](http://ja.wikipedia.org/wiki/ワイン用ブドウ品種の一覧))でエラーが起きたようです。（抜いたらエラーが取れました。）
+システム関連のエラーだとの思い込みがまずあったのがいかんかった。。でももうちょっと親切にこのファイルで問題がありましたよと明示してもらえるとありがたいのだけどねぇ。おかげでデザインが元のデフォルト状態に戻ってしまった。（ちとため息、でか文字だし画面は暗れーし。やる気減退。）</description>
     </item>
     
     <item>
@@ -280,15 +97,10 @@ footer: true
       <pubDate>Sun, 30 Sep 2012 16:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/09/site-heroku/</guid>
-      <description>&lt;p&gt;何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。）&lt;/p&gt;
-
-&lt;p&gt;７月頃につぶれてしまったワードプレスで運用中だった家鯖をお引っ越し。独自ドメインの追加も、ドメインのDNS変更もかんたーーん。&lt;/p&gt;
-
-&lt;p&gt;ワードプレスということは、PHP。一瞬だけ、railsのブログに切り替えようかななんて思いましたが、明日にはインドへ向け出発ということもあり、純粋に静的なページだけを移行 (phpのincludeのパスでちょっと勘違いしててハマったけど、別に特別な事無しにあっさり動いてるようです）。
-（Herokuでもwordpressが &lt;a href=&#34;http://happtech.blogspot.com/2012/04/wordpressheroku.html&#34;&gt;日本語環境で使える&lt;/a&gt; ようですね。。）&lt;/p&gt;
-
-&lt;p&gt;と、いうことで、続きはまた、来年タイのチェンマイに戻って来た時。。&lt;/p&gt;
-</description>
+      <description>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。）
+７月頃につぶれてしまったワードプレスで運用中だった家鯖をお引っ越し。独自ドメインの追加も、ドメインのDNS変更もかんたーーん。
+ワードプレスということは、PHP。一瞬だけ、railsのブログに切り替えようかななんて思いましたが、明日にはインドへ向け出発ということもあり、純粋に静的なページだけを移行 (phpのincludeのパスでちょっと勘違いしててハマったけど、別に特別な事無しにあっさり動いてるようです）。 （Herokuでもwordpressが 日本語環境で使える ようですね。。）
+と、いうことで、続きはまた、来年タイのチェンマイに戻って来た時。。</description>
     </item>
     
     <item>
@@ -297,54 +109,14 @@ footer: true
       <pubDate>Sat, 29 Sep 2012 08:37:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/09/smart-appbanner/</guid>
-      <description>
-
-&lt;p&gt;iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。&lt;/p&gt;
-
-&lt;p&gt;ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号です。）&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id=APP_ID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;百聞は一見に如かず、iOS端末にてこのように表示されます。あら不思議。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/2012-09-29-appbanner.png&#34; alt=&#34;App smart banner&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;簡易広告のようなものです。ダウンロードが増えるとは思わないけど、開発者にとってはありがたいことだとおもいます。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&#34;カスタマイズ&#34;&gt;カスタマイズ&lt;/h2&gt;
-
-&lt;p&gt;オクトプレスでは表示するページのヘッダーに &lt;code&gt;appid:####&lt;/code&gt; を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: page
-title: &amp;quot;littlist&amp;quot;
-subtitle: &amp;quot;v2.5.0 プライベートなtodoアプリの完成形ここに？！たまに無料で提供しています。&amp;quot;
-appid: &amp;quot;399733845&amp;quot; // 追加する。
-date: 2012-09-26 14:39
-comments: true
-sharing: true
-footer: true
----
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、ヘッダーのカスタムテンプレートファイル、&lt;code&gt;source/_includes/custom/head.html&lt;/code&gt; に1行目を追加します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//追加
-{% if page.appid }
-&amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ page.appid }}&amp;quot;&amp;gt;
-{% endif %}; 
-
-&amp;lt;!--Fonts from Google&amp;quot;s Web font directory at http://google.com/webfonts --&amp;gt;
-&amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
-&amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。&lt;/p&gt;
-</description>
+      <description>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。
+ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号です。）
+&amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id=APP_ID&amp;quot;&amp;gt;
+百聞は一見に如かず、iOS端末にてこのように表示されます。あら不思議。
+簡易広告のようなものです。ダウンロードが増えるとは思わないけど、開発者にとってはありがたいことだとおもいます。
+カスタマイズ オクトプレスでは表示するページのヘッダーに appid:#### を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）
+--- layout: page title: &amp;quot;littlist&amp;quot; subtitle: &amp;quot;v2.5.0 プライベートなtodoアプリの完成形ここに？！たまに無料で提供しています。&amp;quot; appid: &amp;quot;399733845&amp;quot; // 追加する。 date: 2012-09-26 14:39 comments: true sharing: true footer: true ---  そして、ヘッダーのカスタムテンプレートファイル、source/_includes/custom/head.html に1行目を追加します。
+//追加 {% if page.appid } &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ page.appid }}&amp;quot;&amp;gt; {% endif %}; &amp;lt;!--Fonts from Google&amp;quot;s Web font directory at http://google.com/webfonts --&amp;gt; &amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;  で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。</description>
     </item>
     
     <item>
@@ -353,37 +125,13 @@ footer: true
       <pubDate>Fri, 28 Sep 2012 10:02:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/09/font-change/</guid>
-      <description>&lt;p&gt;オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整は&lt;code&gt;source/stylesheets/screen.css&lt;/code&gt; を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。
-（デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）&lt;/p&gt;
-
-&lt;p&gt;こちらの&lt;a href=&#34;http://tokkonopapa.github.com/blog/2011/12/29/octopress-classic-theme-structure/&#34;&gt;Octopressのテーマ - Classicの構成&lt;/a&gt;のおかげで、なーんとなく構造はつかめたような気がするが、見た事のないsassファイルでつまずきました。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;で、&lt;a href=&#34;http://hail2u.net/documents/sass-tutorial.html&#34;&gt;Sass - チュートリアル&lt;/a&gt;をよみ、その他のページを流し読み、少し分かった気になる。&lt;/p&gt;
-
-&lt;p&gt;で、取りあえずフォントの変更は&lt;code&gt;sass/layput/_typography.sass&lt;/code&gt;の40行目のbodyのfont-sizeを変えあげればよし、全体のフォントのサイズが変わり?ます。（1.15emから1.0emで10％程縮小されます。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;h1 {
-  font-size: 2.2em; // ここを変えてもなにも変わらない。    
-  line-height: 1.2em;
-}
-
-@media only screen and (min-width: 992px) {
-  body { font-size: 1.0em; } // 全てのフォントの大きさが変わる default:1.15em
-  h1 { font-size: 2.2em; line-height: 1.2em; } // 本文でのh1 default:2.6em
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。&lt;/p&gt;
-
-&lt;p&gt;追記：出発前に &lt;code&gt;sass/custom/_colors.scss&lt;/code&gt; をアプリで使う色にちょっと変更してみました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$page-bg: #c0c6c9;      // 灰青
-$header-bg: #9ea1a3;    // 錫色
-$text-color: #383c3c;   // 羊羹色
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整はsource/stylesheets/screen.css を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。 （デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）
+こちらのOctopressのテーマ - Classicの構成のおかげで、なーんとなく構造はつかめたような気がするが、見た事のないsassファイルでつまずきました。
+で、Sass - チュートリアルをよみ、その他のページを流し読み、少し分かった気になる。
+で、取りあえずフォントの変更はsass/layput/_typography.sassの40行目のbodyのfont-sizeを変えあげればよし、全体のフォントのサイズが変わり?ます。（1.15emから1.0emで10％程縮小されます。）
+h1 { font-size: 2.2em; // ここを変えてもなにも変わらない。 line-height: 1.2em; } @media only screen and (min-width: 992px) { body { font-size: 1.0em; } // 全てのフォントの大きさが変わる default:1.15em h1 { font-size: 2.2em; line-height: 1.2em; } // 本文でのh1 default:2.6em }  で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。
+追記：出発前に sass/custom/_colors.scss をアプリで使う色にちょっと変更してみました。
+$page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c; // 羊羹色  </description>
     </item>
     
     <item>
@@ -392,37 +140,19 @@ $text-color: #383c3c;   // 羊羹色
       <pubDate>Thu, 27 Sep 2012 15:41:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2012/09/octopress-simplenote/</guid>
-      <description>&lt;p&gt;最近開発系のブログをwordpress.comよりgithub pageに移行しました。
-（Octopressのシンプルさが気に入り時間もあったので、、）&lt;/p&gt;
-
-&lt;p&gt;で、ポストの執筆／管理を&lt;a href=&#34;http://simplenoteapp.com&#34;&gt;Simplenote&lt;/a&gt;のクライアント&lt;a href=&#34;http://brettterpstra.com/project/nvalt/&#34;&gt;nvALT&lt;/a&gt;を使っています。(Macです。)&lt;/p&gt;
-
-&lt;p&gt;{% img &lt;a href=&#34;https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-main.jpg&#34;&gt;https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-main.jpg&lt;/a&gt; 800 %}&lt;/p&gt;
-
-&lt;p&gt;元々、このソフトの原型になるNotationalVelocityを使っていて、今回のオクトプレス移行に伴って新しいアカウント＋クライアントを使ってポストを管理しようと思い立って調べてたどり着きました。&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;ほかにもイロイロあるのかもしれませんが、&lt;strong&gt;お宝発見&lt;/strong&gt;という気分です。
-（MarsEditとWordpressには結局なじめなかった。。）&lt;/p&gt;
-
-&lt;p&gt;まず、###.markdownで新規／読み込み／保存ができる。&lt;br /&gt;
-そして、プレビューできます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-preference.png&#34; alt=&#34;Preference&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;※注※&lt;/strong&gt; 消えてしまってますが-マークの横に＋マークがあり（押せます）。markdownを追加し、チェックマークを押して太字にするとその拡張子で保存されます。デフォルトでは一つのDBファイルになる所をPlain Text Files * にてStore on diskに変更も忘れずに。&lt;/p&gt;
-
-&lt;p&gt;ポストのバックアップも確保したし、自分のブログに対する要件がほとんど満たされました。これで、ブログもノマド化できたような。。ちょっとだけ幸せな気分。&lt;/p&gt;
-
-&lt;p&gt;ん、ってことは、iPodのシンプルノートからも記事を書く事も出来るってことだわな。うひょひょ。&lt;/p&gt;
-
-&lt;p&gt;で、画像はDropboxのpublicフォルダーに保管してます。&lt;/p&gt;
-
-&lt;p&gt;なんか、どんどんシンプルな形に落ち着いていく。（凄くよい事であるんだろうけど、歳をとったって事か？？）&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;追記&lt;/strong&gt;：Powとrake watchでさらに使いやすくなりました。一気に凄くバージョンアップしたような驚き、感動ものです。(@18:42, 09/28)&lt;/p&gt;
-</description>
+      <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあったので、、）
+で、ポストの執筆／管理をSimplenoteのクライアントnvALTを使っています。(Macです。)
+{% img https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-main.jpg 800 %}
+元々、このソフトの原型になるNotationalVelocityを使っていて、今回のオクトプレス移行に伴って新しいアカウント＋クライアントを使ってポストを管理しようと思い立って調べてたどり着きました。
+ほかにもイロイロあるのかもしれませんが、お宝発見という気分です。 （MarsEditとWordpressには結局なじめなかった。。）
+まず、###.markdownで新規／読み込み／保存ができる。
+そして、プレビューできます。
+※注※ 消えてしまってますが-マークの横に＋マークがあり（押せます）。markdownを追加し、チェックマークを押して太字にするとその拡張子で保存されます。デフォルトでは一つのDBファイルになる所をPlain Text Files * にてStore on diskに変更も忘れずに。
+ポストのバックアップも確保したし、自分のブログに対する要件がほとんど満たされました。これで、ブログもノマド化できたような。。ちょっとだけ幸せな気分。
+ん、ってことは、iPodのシンプルノートからも記事を書く事も出来るってことだわな。うひょひょ。
+で、画像はDropboxのpublicフォルダーに保管してます。
+なんか、どんどんシンプルな形に落ち着いていく。（凄くよい事であるんだろうけど、歳をとったって事か？？）
+追記：Powとrake watchでさらに使いやすくなりました。一気に凄くバージョンアップしたような驚き、感動ものです。(@18:42, 09/28)</description>
     </item>
     
   </channel>

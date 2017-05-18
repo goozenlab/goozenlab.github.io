@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sun, 28 Aug 2016 09:30:00 +0700</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title> 半透明のモーダルビュー</title>
@@ -16,42 +18,13 @@
       <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
-      <description>
-
-&lt;p&gt;iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。&lt;/p&gt;
-
-&lt;h2 id=&#34;半透明のモーダルビュー設定&#34;&gt;半透明のモーダルビュー設定&lt;/h2&gt;
-
-&lt;p&gt;まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-overfull.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。&lt;/p&gt;
-
-&lt;p&gt;二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { 
-        if segue.identifier == &amp;quot;toSettingView&amp;quot; {
-            if let destinationVC = segue.destinationViewController as? SettingViewController {
-                destinationVC.modalPresentationStyle = 
-                        UIModalPresentationStyle.OverCurrentContext
-                        // UIModalPresentationStyle.OverFullScreen
-                destinationVC.delegate = self
-            }
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-presentation.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-28-modalview-over_current_context.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;追記：すぐ上の白点ボタンの位置がずれてるな。。。&lt;/p&gt;
-</description>
+      <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。
+半透明のモーダルビュー設定 まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。
+それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。
+二通りあるようですが、厳密な違いはわからず、表示をテストで行うが全く同じに見えます。。
+ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { if segue.identifier == &amp;quot;toSettingView&amp;quot; { if let destinationVC = segue.destinationViewController as? SettingViewController { destinationVC.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext // UIModalPresentationStyle.OverFullScreen destinationVC.delegate = self } } }  で、色々といじっていたら、インスペクターのPresentationの所でも変更ができます。コードでうまくいかなかった時にはこちらでいけます。知らなかったわ。。。。
+見た感じこんな風になります（使わないけど、悪い例）。まぁ想像通り、使うなら文字色とか背景の色とかを考慮する必要がありますわな。
+追記：すぐ上の白点ボタンの位置がずれてるな。。。</description>
     </item>
     
     <item>
@@ -60,37 +33,13 @@
       <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
-      <description>&lt;p&gt;アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。&lt;/p&gt;
-
-&lt;p&gt;まずは全体的な設定を、info.plistにて &lt;code&gt;View Controller-based status bar appearance&lt;/code&gt; を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-26-statusbar-info.png&#34; alt=&#34;StatusBar on Info.plist&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;info.plistに直接書き込むなら、以下を追加。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt;
-	&amp;lt;false/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;そして、変更したいビューの適当なところ、&lt;code&gt;ViewDidLoad&lt;/code&gt; に追加コード。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarHidden = true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もしくは、オーバーライドしても動くはず。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;override func prefersStatusBarHidden() -&amp;gt; Bool {
-    return true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを &lt;code&gt;.LightContent&lt;/code&gt; に変更する。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;UIApplication.sharedApplication().statusBarStyle = .LightContent
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
+まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
+info.plistに直接書き込むなら、以下を追加。
+&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt;  そして、変更したいビューの適当なところ、ViewDidLoad に追加コード。
+UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
+override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
+UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
     </item>
     
     <item>
@@ -99,210 +48,24 @@
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>
-
-&lt;p&gt;Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ターゲットのコピーと調整&lt;/li&gt;
-&lt;li&gt;スキームの変更&lt;/li&gt;
-&lt;li&gt;新しいInfo.plistのリネーム、変更と移動&lt;/li&gt;
-&lt;li&gt;コンパイル時のマクロ設定&lt;/li&gt;
-&lt;li&gt;アイコンの追加&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;が主な作業の流れになります。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;まずはプロジェクトのメインターゲットを Duplicate します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate.png&#34; alt=&#34;Duplicate Target&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-duplicate-dailog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename-target.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-manage-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-delete-scheme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Info.plistのコピーの &lt;code&gt;cosper copy-Info.plist&lt;/code&gt; はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-taget-info-copy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-info-rename.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ターゲットの設定をします。（バンドル名やその他必要なもの）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-target-general.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最後に、コンパイル時のマクロ設定をします。&lt;code&gt;#if LITE&lt;/code&gt; で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。&lt;/p&gt;
-
-&lt;p&gt;マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて &lt;code&gt;LITE=1&lt;/code&gt; を、&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-lite.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フルバージョンの方には &lt;code&gt;LITE=0&lt;/code&gt; を書き込みます。選択すると入力画面が出てきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-full.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-macro-flag.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-add-icon.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-lite-icon-resource.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;admobの追加&#34;&gt;AdMobの追加&lt;/h2&gt;
-
-&lt;p&gt;iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに &lt;code&gt;target &#39;xx lite&#39; do ...&lt;/code&gt; で切り分ければいいのかな。）&lt;/p&gt;
-
-&lt;h3 id=&#34;フレームワーク&#34;&gt;フレームワーク&lt;/h3&gt;
-
-&lt;p&gt;必要なフレームワークは、以下。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに&lt;strong&gt;コピー&lt;/strong&gt; (ターゲットをライトバージョンのみにするのを忘れずに）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-copy-framework.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-add-frameworks.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;AdSupport&lt;/li&gt;
-&lt;li&gt;AudioToolbox&lt;/li&gt;
-&lt;li&gt;AVFoundation&lt;/li&gt;
-&lt;li&gt;CoreGraphics&lt;/li&gt;
-&lt;li&gt;CoreTelephony&lt;/li&gt;
-&lt;li&gt;EventKit&lt;/li&gt;
-&lt;li&gt;EventKitUI&lt;/li&gt;
-&lt;li&gt;MessageUI&lt;/li&gt;
-&lt;li&gt;StoreKit&lt;/li&gt;
-&lt;li&gt;SystemConfiguration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上で準備完了。実装していきます。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;コーディング&#34;&gt;コーディング&lt;/h3&gt;
-
-&lt;p&gt;マクロを使って、以下の形で処理を分けることができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#if LITE
- 	// ライトバージョンで行う処理
-#else
- 	// フルバージョンでの処理
-#endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import UIKit
-import CoreData
-#if LITE
-import GoogleMobileAds
-#endif
-
-class ListTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
-
-    #if LITE
-    /// The banner view.
-    let GADApplicationID = &amp;quot;ca-app-pub-xxxxxxx/xxxxxxx&amp;quot;
-    var bannerView: GADBannerView!
-    #endif
-    
-    .......
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        setNavigationBarGestures()
-        self.tableView.showsVerticalScrollIndicator = false
-        self.tableView.rowHeight = Cell.Height
-
-      .......
-
-        #if LITE
-            loadAdmob()
-        #endif
-     }
-
-	.......
-	
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-24-admob-extensrion.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//
-//  Admob.swift
-//
-
-import UIKit
-import GoogleMobileAds
-
-extension ListTableViewController: GADBannerViewDelegate {
-    
-    func loadAdmob() {
-        print(&amp;quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&amp;quot;)
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        bannerView.adUnitID = GADApplicationID
-        bannerView.delegate = self
-        bannerView.rootViewController = self
-//	For Debug      
-//        let request:GADRequest = GADRequest()
-//        request.testDevices = [kGADSimulatorID]
-//        bannerView.loadRequest(request)
-        bannerView.loadRequest(GADRequest())
-    }
-        
-    func adViewDidReceiveAd(bannerView: GADBannerView!) {
-        print(&amp;quot;Admob:adViewDidReceiveAd&amp;quot;)
-        let adMobView = bannerView
-        
-        UIView.beginAnimations(&amp;quot;AdBannerMoveOnScreen&amp;quot;, context: nil)
-        self.bannerView.frame = CGRectMake(0.0, 0.0,
-                                           adMobView.frame.size.width, adMobView.frame.size.height)
-        self.tableView.tableHeaderView = self.bannerView
-        UIView.commitAnimations()
-    }
-    
-    func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        UIView.beginAnimations(&amp;quot;ClearBannerView&amp;quot;, context: nil)
-        bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
-        tableView.tableHeaderView = bannerView        
-        UIView.commitAnimations()
-    }
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）&lt;/p&gt;
-</description>
+      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
+ ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
+まずはプロジェクトのメインターゲットを Duplicate します。
+スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。
+Info.plistのコピーの cosper copy-Info.plist はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。
+そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。
+そして、ターゲットの設定をします。（バンドル名やその他必要なもの）
+最後に、コンパイル時のマクロ設定をします。#if LITE で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。
+マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて LITE=1 を、
+フルバージョンの方には LITE=0 を書き込みます。選択すると入力画面が出てきます。
+そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。
+アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。
+これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。
+AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに target &#39;xx lite&#39; do ... で切り分ければいいのかな。）
+フレームワーク 必要なフレームワークは、以下。
+ GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトにコピー (ターゲットをライトバージョンのみにするのを忘れずに）  プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。
+ AdSupport AudioToolbox AVFoundation CoreGraphics CoreTelephony EventKit EventKitUI MessageUI StoreKit SystemConfiguration  以上で準備完了。実装していきます。
+コーディング マクロを使って、以下の形で処理を分けることができます。</description>
     </item>
     
     <item>
@@ -311,38 +74,11 @@ extension ListTableViewController: GADBannerViewDelegate {
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>&lt;p&gt;&lt;code&gt;fatal error: unexpectedly found nil while unwrapping an Optional value&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;nil値が戻ってくる可能性のある時の処理方法。&lt;/p&gt;
-
-&lt;p&gt;tableCellに値を渡す時を例に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# if let xx  = yy { } else { }
-
-if let lock  = event.isLocked as? Bool {
-    cell.isLocked = lock
-} else {
-    cell.isLocked = false
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;で新しく、&lt;code&gt;guard let&lt;/code&gt; なんてのが出てきて、こんな風に書き換える事ができ、（&lt;code&gt;else&lt;/code&gt;以降の役割がよくわからない。）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# guard let xx = y else {]
-
-guard let lock  = event.isLocked as? Bool else { return }
-cell.isLocked = lock
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;そしてしかも、簡略した（?：ニル、？：なの）&lt;code&gt;xx = yy ??&lt;/code&gt; もある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# xx = yy ??
-cell.isLocked = event.isLocked as? Bool ?? false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。&lt;/p&gt;
-</description>
+      <description>fatal error: unexpectedly found nil while unwrapping an Optional value
+nil値が戻ってくる可能性のある時の処理方法。
+tableCellに値を渡す時を例に、
+# if let xx = yy { } else { } if let lock = event.isLocked as? Bool { cell.isLocked = lock } else { cell.isLocked = false }  で新しく、guard let なんてのが出てきて、こんな風に書き換える事ができ、（else以降の役割がよくわからない。）
+# guard let xx = y else {] guard let lock = event.isLocked as? Bool else { return } cell.isLocked = lock  そしてしかも、簡略した（?：ニル、？：なの）xx = yy ?</description>
     </item>
     
     <item>
@@ -351,31 +87,12 @@ cell.isLocked = event.isLocked as? Bool ?? false
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
-      <description>&lt;p&gt;拙作dandoriのswift移行中、中々進みません。&lt;/p&gt;
-
-&lt;p&gt;Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。&lt;/p&gt;
-
-&lt;p&gt;ブロック表記が出てくると目が点になってしまう私。。。&lt;/p&gt;
-
-&lt;p&gt;以下 Objective-C での表記&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
-NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;];
-NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
-return [filteredArray count] &amp;gt; 0;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Swiftで書き上げにはブロック内に&lt;code&gt;(user: UserDetails) -&amp;gt; Bool in&lt;/code&gt; で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。&lt;code&gt;
-$0.isRedHot = &amp;quot;YES&amp;quot;&lt;/code&gt; 何じゃかんじゃより。。）書き上げるとこんな感じ。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let myTasks = tasks?.allObjects
-let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;)
-let filteredArray = myTasks?.filter( {
-	predicate.evaluateWithObject($0)
-	} )
-return filteredArray!.count &amp;gt; 0
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>拙作dandoriのswift移行中、中々進みません。
+Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
+ブロック表記が出てくると目が点になってしまう私。。。
+以下 Objective-C での表記
+NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]]; NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;]; NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate]; return [filteredArray count] &amp;gt; 0;  Swiftで書き上げにはブロック内に(user: UserDetails) -&amp;gt; Bool in で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。 $0.isRedHot = &amp;quot;YES&amp;quot; 何じゃかんじゃより。。）書き上げるとこんな感じ。
+let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;) let filteredArray = myTasks?.filter( { predicate.evaluateWithObject($0) } ) return filteredArray!.count &amp;gt; 0  </description>
     </item>
     
     <item>
@@ -384,23 +101,9 @@ return filteredArray!.count &amp;gt; 0
       <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
-      <description>
-
-&lt;h2 id=&#34;rand&#34;&gt;rand()&lt;/h2&gt;
-
-&lt;p&gt;今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; srand(time(nil));
- rand()%300;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;arc4random-uniform&#34;&gt;arc4random_uniform()&lt;/h2&gt;
-
-&lt;p&gt;上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Int(arc4random_uniform(300))
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description> rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。
+ srand(time(nil)); rand()%300;  arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。
+ Int(arc4random_uniform(300))  </description>
     </item>
     
     <item>
@@ -409,18 +112,9 @@ return filteredArray!.count &amp;gt; 0
       <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
-      <description>&lt;p&gt;今までは中心を求めるのに素直に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.width / 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と行ってきたけれども、.midX/midY&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let center: CGFloat = self.frame.midX
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;とスマート、かつ格好良くできます。&lt;/p&gt;
-</description>
+      <description>今までは中心を求めるのに素直に、
+let center: CGFloat = self.frame.width / 2  と行ってきたけれども、.midX/midY
+let center: CGFloat = self.frame.midX  とスマート、かつ格好良くできます。</description>
     </item>
     
     <item>
@@ -429,15 +123,8 @@ return filteredArray!.count &amp;gt; 0
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
-      <description>&lt;p&gt;テーブルビューセルの境界線を消すには下記のコードを追加。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;StoryBoardを使っている時は以下。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-04-06-separator.png&#34; alt=&#34;Separator&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>テーブルビューセルの境界線を消すには下記のコードを追加。
+self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None  StoryBoardを使っている時は以下。</description>
     </item>
     
     <item>
@@ -446,31 +133,8 @@ return filteredArray!.count &amp;gt; 0
       <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/swift-shake/</guid>
-      <description>&lt;p&gt;色々と書き込んでいたシェイクの判別は&lt;code&gt;UIEvent&lt;/code&gt;を使うようになります。
-えらく簡単になりました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        self.becomeFirstResponder()
-    }
-    
-    override func canBecomeFirstResponder() -&amp;gt; Bool {
-        return true
-    }
-    
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
-        if(event.subtype == UIEventSubtype.MotionShake) {
-            // 
-            // 処理
-            //
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-26-shake-swift.png&#34; alt=&#34;swift shake&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※まぁ、間違っちゃーいね〜な。。&lt;/p&gt;
-</description>
+      <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。
+ override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) { if(event.subtype == UIEventSubtype.MotionShake) { // // 処理 // } }  ※まぁ、間違っちゃーいね〜な。。</description>
     </item>
     
     <item>
@@ -479,38 +143,10 @@ return filteredArray!.count &amp;gt; 0
       <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
-      <description>&lt;p&gt;ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSObject cancelPreviousPerformRequestsWithTarget:self
-                                         selector:@selector(notifiyUpdate)
-                                           object:nil];
-[self performSelector:@selector(notifiyUpdate)
-           withObject:nil
-           afterDelay:kUpdateCellShortInterval];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;object-cで上記に書かれた&lt;code&gt;performSelector&lt;/code&gt;はSwiftでは無くなってしまったようなので、以下のコードでは動かない。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil)
- NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、&lt;code&gt;cancelPreviousPerformRequestsWithTarget&lt;/code&gt;が無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private var tapTimer: NSTimer?
-
-// 処理
-cancelTimer()
-tapTimer = NSTimer.scheduledTimerWithTimeInterval(Interval.UpdateCell, target: self, selector:  notify, userInfo: nil, repeats: false)
-//
-
-func cancelTimer() {
-    if tappingTimer != nil {
-        tappingTimer!.invalidate()
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。
+[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval];  object-cで上記に書かれたperformSelectorはSwiftでは無くなってしまったようなので、以下のコードでは動かない。
+ NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil) NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)  幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、cancelPreviousPerformRequestsWithTargetが無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。
+private var tapTimer: NSTimer? // 処理 cancelTimer() tapTimer = NSTimer.scheduledTimerWithTimeInterval(Interval.UpdateCell, target: self, selector: notify, userInfo: nil, repeats: false) // func cancelTimer() { if tappingTimer != nil { tappingTimer!.invalidate() } }  </description>
     </item>
     
     <item>
@@ -519,32 +155,11 @@ func cancelTimer() {
       <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/println-swift/</guid>
-      <description>&lt;p&gt;NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 &lt;code&gt;__PRETTY_FUNCTION__&lt;/code&gt; は&lt;/p&gt;
-
-&lt;p&gt;Swift では &lt;code&gt;__FILE__, __FUNCTION__, __LINE__ and __COLUMN__&lt;/code&gt; のようになります。
-使えそうなのは&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;__FILE__&lt;/code&gt;  ：ファイル名&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__LINE__&lt;/code&gt; ：ライン番号&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__FUNCTION__&lt;/code&gt; ：ファンクション名&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;そして、値を表示したい時はそのままかそのままか&lt;code&gt;\(...)&lt;/code&gt;で囲み適当に放り込む。もはや%dや%@は必要ないらしい。
-小賢しいウォーニングも出なくなる。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;println(__FUNCTION__, self.frame)
-println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;戻りは以下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(function, (0.0,706.0,414.0,30.0))
-(function, screen is (0.0,706.0,414.0,30.0))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Swift Programming Language に書いてあるらしいので読むべ。&lt;/p&gt;
-</description>
+      <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は
+Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ のようになります。 使えそうなのは
+ __FILE__ ：ファイル名 __LINE__ ：ライン番号 __FUNCTION__ ：ファンクション名  そして、値を表示したい時はそのままかそのままか\(...)で囲み適当に放り込む。もはや%dや%@は必要ないらしい。 小賢しいウォーニングも出なくなる。
+println(__FUNCTION__, self.frame) println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)  戻りは以下
+(function, (0.0,706.0,414.0,30.0)) (function, screen is (0.0,706.0,414.0,30.0))  Swift Programming Language に書いてあるらしいので読むべ。</description>
     </item>
     
     <item>
@@ -553,24 +168,11 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
       <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
-      <description>&lt;p&gt;NSDateでの &lt;code&gt;[NSDate date]&lt;/code&gt; はシンプルにイニシャライザーに統合され？、Swiftでは&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でよろしい。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を、Swiftで書いてみると、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、&lt;br /&gt;
-正しくは、&lt;code&gt;Double&lt;/code&gt;でエラーは消える。こうゆう所は割と厳しいのね。。&lt;/p&gt;
-</description>
+      <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは
+NSDate()  でよろしい。
+[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]  を、Swiftで書いてみると、
+NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)  エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、
+正しくは、Doubleでエラーは消える。こうゆう所は割と厳しいのね。。</description>
     </item>
     
     <item>
@@ -579,56 +181,13 @@ println(__FUNCTION__,&amp;quot;screen is \(self.frame)&amp;quot;)
       <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
-      <description>
-
-&lt;p&gt;たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。&lt;/p&gt;
-
-&lt;h2 id=&#34;起動時&#34;&gt;起動時&lt;/h2&gt;
-
-&lt;p&gt;アプリの起動時には以下の順で呼ばれる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;viewDidLoad()&lt;/li&gt;
-&lt;li&gt;viewWillAppear&lt;/li&gt;
-&lt;li&gt;viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;モーダルビューより復帰&#34;&gt;モーダルビューより復帰&lt;/h2&gt;
-
-&lt;p&gt;モーダルビューより戻ってくると以下の処理が再び呼ばれる。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;viewWillAppear&lt;/li&gt;
-&lt;li&gt;viewDidAppear&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;ロック-スリープからの復帰時&#34;&gt;ロック・スリープからの復帰時&lt;/h2&gt;
-
-&lt;p&gt;ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
-viewDidLoadに通知の設定する事で可能になる。&lt;code&gt;Setting.bundle&lt;/code&gt;でフォントの設定等を変更し、アプリに戻ってきた時に使う。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Notification Center
-let app: UIApplication = UIApplication.sharedApplication()
-NSNotificationCenter.defaultCenter().addObserver(self, 
-        selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, 
-        object: app)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;と処理を追加する。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func applicationWillEnterForeground(notification: NSNotification) {
-    println(__FUNCTION__)
-    
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;スリープに移行時&#34;&gt;スリープに移行時&lt;/h2&gt;
-
-&lt;p&gt;逆にスリープに入る時には復帰時と同じで、&lt;code&gt;ApplicationWillEnterForeground&lt;/code&gt; の代わりに &lt;code&gt;ApplicationDidEnterBackground&lt;/code&gt; を使えば良い。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description> たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。
+起動時 アプリの起動時には以下の順で呼ばれる。
+ viewDidLoad() viewWillAppear viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。  モーダルビューより復帰 モーダルビューより戻ってくると以下の処理が再び呼ばれる。
+ viewWillAppear viewDidAppear  ロック・スリープからの復帰時 ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。 viewDidLoadに通知の設定する事で可能になる。Setting.bundleでフォントの設定等を変更し、アプリに戻ってきた時に使う。
+// Notification Center let app: UIApplication = UIApplication.sharedApplication() NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationWillEnterForeground:&amp;quot;, name: UIApplicationWillEnterForegroundNotification, object: app)  と処理を追加する。
+func applicationWillEnterForeground(notification: NSNotification) { println(__FUNCTION__) }  スリープに移行時 逆にスリープに入る時には復帰時と同じで、ApplicationWillEnterForeground の代わりに ApplicationDidEnterBackground を使えば良い。
+ NSNotificationCenter.defaultCenter().addObserver(self, selector: &amp;quot;applicationDidEnterBackground:&amp;quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)  </description>
     </item>
     
     <item>
@@ -637,17 +196,9 @@ NSNotificationCenter.defaultCenter().addObserver(self,
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
-      <description>&lt;p&gt;iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。&lt;/p&gt;
-
-&lt;p&gt;AppDelegateに処理を入れてしまいます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; application.registerUserNotificationSettings(UIUserNotificationSettings(
-  forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge,
-  categories: nil))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;以前コピペで&lt;code&gt;UIUserNotificationType.Sound&lt;/code&gt;を付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）&lt;/p&gt;
-</description>
+      <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。
+AppDelegateに処理を入れてしまいます。
+ application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))  以前コピペでUIUserNotificationType.Soundを付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）</description>
     </item>
     
     <item>
@@ -656,45 +207,102 @@ NSNotificationCenter.defaultCenter().addObserver(self,
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
-      <description>
-
-&lt;p&gt;もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、&lt;a href=&#34;http://goozenlab.com/blog/2015/03/unable-to-load-class/&#34;&gt;クラスが読み込めず&lt;/a&gt;で書いた問題が解決しました。&lt;/p&gt;
-
-&lt;p&gt;問題のエラーログ&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
-Class not found, using default NSManagedObject instead.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload1.png&#34; alt=&#34;Class unload1&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;xcdatamodeldファイルを選択&lt;/li&gt;
-&lt;li&gt;CONFIGURATIONSを選択&lt;/li&gt;
-&lt;li&gt;右に出てくるEntitiies以下のClass名を&lt;code&gt;ディレクトリー名.Entity名&lt;/code&gt;にする&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2015-03-20-class-unload2.png&#34; alt=&#34;Class unload2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※ 注意点は上記の場合&lt;code&gt;kitchen.Item&lt;/code&gt;では無く&lt;code&gt;tapas.Item&lt;/code&gt;と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。&lt;br /&gt;
-（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ&lt;code&gt;kitchen.xcdatamodeld&lt;/code&gt;という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）&lt;/p&gt;
-
-&lt;h2 id=&#34;うまく行かない場合&#34;&gt;うまく行かない場合&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;キャッシュをクリアーする&lt;/li&gt;
-&lt;li&gt;DerivedDataのデーターを消す&lt;/li&gt;
-&lt;li&gt;新しいプロジェクトを作って、Modelを移行して試す&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。&lt;/p&gt;
-
-&lt;p&gt;蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
-小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。&lt;/p&gt;
-</description>
+      <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、クラスが読み込めずで書いた問題が解決しました。
+問題のエラーログ
+CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。
+ xcdatamodeldファイルを選択 CONFIGURATIONSを選択 右に出てくるEntitiies以下のClass名をディレクトリー名.Entity名にする  ※ 注意点は上記の場合kitchen.Itemでは無くtapas.Itemと、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。
+（散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざkitchen.xcdatamodeldという名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）
+うまく行かない場合  キャッシュをクリアーする DerivedDataのデーターを消す 新しいプロジェクトを作って、Modelを移行して試す  ※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。
+蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。 小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。</description>
+    </item>
+    
+    <item>
+      <title>NSLocalizedString on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
+      <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
+      <description>NSLocalizedStringでエラーがでる
+NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)  nilを&amp;quot;&amp;quot;空白に変更する。
+NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)  Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。
+ついでに中に入れる文言をかえる。以前は普通に&amp;quot;Timer&amp;quot;と書いていたところを今回からはドコゾの何某か分かるように&amp;quot;NavigationBar.Button.Timer&amp;quot;と少し詳しく書き込むようにする。</description>
+    </item>
+    
+    <item>
+      <title>delegate on swift</title>
+      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
+      <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
+      <description>デレゲートするクラス 以下の３つを書き加えればよい。
+protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) }  var delegate:MainHeaderViewDelegate? = nil   self.delegate!.sleepingTimerDidFinish(self)  デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を書き込みます。
+class MainViewController: UIViewController, MainHeaderViewDelegate { ////// func sleepingTimerDidFinish(controller: MainHeaderView) { // 処理 } ///// }  ※ ソースは拙作のohayoからコピペ。</description>
+    </item>
+    
+    <item>
+      <title>UIButttonをSwiftで書く</title>
+      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
+      <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
+      <description>UIButttonをSwiftでプログラム的に書くと
+buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent)  テキストタイトルの時には
+buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)  テキストの色を変えるには、
+buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)  もっと細かく、フォント等も弄りたい時には、
+setAttributedTitle:forStateを使うとさ。
+※ ソースは拙作のohayoからコピペ。</description>
+    </item>
+    
+    <item>
+      <title>SwiftでConstantを扱う</title>
+      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
+      <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
+      <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。
+分からないことが多々あるが、進めていかないと、、
+さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。
+// // LocalConstants.swift // import Foundation import UIKit let ONE_DAY = 86400 struct UDKey { static let DisplayColorMode = &amp;quot;color_mode&amp;quot; } struct Default { static let ColorMode = &amp;quot;kawaii&amp;quot; }  で、他からのアクセスは
+defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)  のようにしています。
+※ Swiftでのenumが掴めない。意味が分からない。
+追記 (3&amp;frasl;22)：import UIKitを追加する。</description>
+    </item>
+    
+    <item>
+      <title>クラスが読み込めず</title>
+      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
+      <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
+      <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。
+さて、さて、まずは、
+2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  というエラーがでる。ファイルはあるのだが、、
+これは、動く。
+func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject var cell = cell as ListViewCell cell.textLabel?.text = item.valueForKey(&amp;quot;name&amp;quot;)!.description }  で、動かなーーーーい。。。
+func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item var cell = cell as ListViewCell cell.</description>
+    </item>
+    
+    <item>
+      <title>UserDefaultの初期値設定</title>
+      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
+      <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
+      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。
+ // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)  数値も文字も気にせず書き込んでよいようです。
+ポカラの水汲み場</description>
+    </item>
+    
+    <item>
+      <title>ニブレスプロジェクト</title>
+      <link>http://goozenlab.com/blog/2015/02/xibless-project/</link>
+      <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/xibless-project/</guid>
+      <description>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。
+ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、
+ まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool { // Override point for customization after application launch. self.window = UIWindow(frame: UIScreen.mainScreen().bounds) let masterViewController: MasterViewController = MasterViewController() masterViewController.managedObjectContext = self.managedObjectContext let navigationController = UINavigationController(rootViewController: masterViewController) self.window!.rootViewController = navigationController self.window!.makeKeyAndVisible() return true }   お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。  、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool { // Override point for customization after application launch.</description>
     </item>
     
   </channel>

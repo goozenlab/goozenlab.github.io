@@ -8,7 +8,9 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://goozenlab.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://goozenlab.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>pranatice</title>
@@ -16,74 +18,10 @@
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/pranatice/</guid>
-      <description>
-
-&lt;p&gt;As a part of Yoga practice, pranayama is important exercise but is bit tedious practice.&lt;br /&gt;
-Usually people count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.&lt;/p&gt;
-
-&lt;p&gt;This app helps to concentrate on practice by counting for you.
-(sounds little clerical though..)&lt;/p&gt;
-
-&lt;p&gt;In between work,  when you feel stressed,,
-when you wan to concentrate, when you want make your mind calm,,&lt;/p&gt;
-
-&lt;p&gt;Practice pranayama.&lt;/p&gt;
-
-&lt;h3 id=&#34;main-display&#34;&gt;Main Display&lt;/h3&gt;
-
-&lt;p&gt;There are those item on display.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-main.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Cog：go to setting&lt;/li&gt;
-&lt;li&gt;Eye：go to history page&lt;/li&gt;
-&lt;li&gt;Practice List&lt;/li&gt;
-&lt;li&gt;Recent status&lt;/li&gt;
-&lt;li&gt;Practice counter&lt;/li&gt;
-&lt;li&gt;Recent Week status by Sun Logo&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;how-to-use&#34;&gt;How to Use&lt;/h3&gt;
-
-&lt;p&gt;Start with Tap on practice label.&lt;br /&gt;
-(Cancel with tap. Alert will show up.)&lt;/p&gt;
-
-&lt;p&gt;After practice, Status selector will show up.
-Select one of them.&lt;/p&gt;
-
-&lt;p&gt;finish.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2014-12-01-pranatice-mood.png&#34; alt=&#34;pranatice&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;setting&#34;&gt;Setting&lt;/h3&gt;
-
-&lt;p&gt;You can change&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Time/Rounds for pranayama&lt;/li&gt;
-&lt;li&gt;Switch to show week status on/off&lt;/li&gt;
-&lt;li&gt;Memo icon&lt;/li&gt;
-&lt;li&gt;Export setting&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;pranatice will ask permission to access Health.app on your device.&lt;/li&gt;
-&lt;li&gt;on Health.app
-
-&lt;ul&gt;
-&lt;li&gt;pranatice will write its sleeping data.&lt;/li&gt;
-&lt;li&gt;pranatice will not read/access other data on Health.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Data in pranatice is used only within application.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;*practice is based on sivananda yoga.&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
+      <description>As a part of Yoga practice, pranayama is important exercise but is bit tedious practice.
+Usually people count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.
+This app helps to concentrate on practice by counting for you. (sounds little clerical though..)
+In between work, when you feel stressed,, when you wan to concentrate, when you want make your mind calm,,</description>
     </item>
     
     <item>
@@ -92,14 +30,10 @@ Select one of them.&lt;/p&gt;
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/pinocul/</guid>
-      <description>&lt;p&gt;When you make (box) Pinhole Camera, you know the size of film but are not  quite sure how thick you&amp;rsquo;re going to make.&lt;/p&gt;
-
-&lt;p&gt;This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.&lt;/p&gt;
-
-&lt;p&gt;※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;I hope this app helps..&lt;/p&gt;
-</description>
+      <description>When you make (box) Pinhole Camera, you know the size of film but are not quite sure how thick you&amp;rsquo;re going to make.
+This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.
+※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;
+I hope this app helps..</description>
     </item>
     
     <item>
@@ -108,228 +42,9 @@ Select one of them.&lt;/p&gt;
       <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/a/</guid>
-      <description>
-
-&lt;p&gt;I have a lot of very small things(small things that are easily forget) to do, but web service is too much for me. Text(Note) is good enough but&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;It started with simple idea: I wanted to manage tasks by text file and look tasks in my hand(iPhone4).&lt;/p&gt;
-
-&lt;p&gt;I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this software. (You need computer although..)&lt;/p&gt;
-
-&lt;h2 id=&#34;dropbox&#34;&gt;Dropbox&lt;/h2&gt;
-
-&lt;p&gt;You press left button on Navigation bar to process.
-After link was established, file will be copied to cloud.&lt;/p&gt;
-
-&lt;p&gt;File is kept on  &lt;code&gt;~/Dropbox/Apps/(a)/todo.md&lt;/code&gt;  (Fix)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This app access only within its folder: &amp;ldquo;&lt;strong&gt;(a)&lt;/strong&gt;&amp;rdquo;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;about-sync-process&#34;&gt;about Sync process&lt;/h3&gt;
-
-&lt;p&gt;This app upload &amp;ldquo;todo.md&amp;rdquo; when it goes to sleep/lock, download from cloud when it unlocks/wakes up.&lt;/p&gt;
-
-&lt;p&gt;・press Home button ＝ upload to cloud&lt;br /&gt;
-・comes back from sleep/lock ＝ download from cloud&lt;/p&gt;
-
-&lt;p&gt;it would be appreciated if you remind this while you are using app, because this app is not fully synchronized between iPhones/iPods.&lt;/p&gt;
-
-&lt;h2 id=&#34;todo-md-format&#34;&gt;todo.md format&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-todomd-MouSnapShot.png&#34; alt=&#34;Mou&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# .main.
-
-## Navigation Bar
-3. &amp;lt;-Swipe-&amp;gt;: move between projects
-6. **LongTap**: to Red Hot
-1. ^ Swipe ^: to DueDate
-6. x 2015-01-15 14:00 completed job
-
-## table cell
-5. tap:
-7. double tap: edit task
-2. **long tap**: emphasize task
-8. -&amp;gt; swipe/pull: change color
-9. swipe &amp;lt;-: delete or done
-
-
-4. Link to Dropbox
-5. Task w/ date BY! 2015/03/10 17:00
-*  Event @2015-02-25 12:00
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;※&lt;/strong&gt; ScreenShot was taken with using this file&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Main&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory.png&#34; alt=&#34;Main category&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc.png&#34; alt=&#34;Main etc&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;#&lt;/code&gt; h1: Main title for navigation bar&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;##&lt;/code&gt; h2: As Project title, this is also showed as title on navigation bar&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1-9.&lt;/code&gt;:  Color of bar (1: Red, 2: Orange,,,8:Purple, 9:Pink)&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;*, +&lt;/code&gt; : show bar color as Gray&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Task TItle&lt;/code&gt;: &lt;code&gt;Memo&lt;/code&gt;（: is divider）&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Due date is set by  ”&lt;code&gt;@ date&lt;/code&gt;” or ”&lt;code&gt;BY! date&lt;/code&gt;“&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Completed task has  ”&lt;code&gt;x date&lt;/code&gt;“ before title of task&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Date format: default: &lt;code&gt;2015-11-11 12:30&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;how-to-use-a&#34;&gt;How to use (a)&lt;/h2&gt;
-
-&lt;h2 id=&#34;navigation-bar&#34;&gt;Navigation Bar&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Swipe&lt;/strong&gt;：move between projects&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-Cataegory-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-etc-NavBar.png&#34; alt=&#34;Navigation Bar&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Long tap&lt;/strong&gt;：to Red Hot List.  Long tap/swipe right to go back.&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-RedDot-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Swipe Up&lt;/strong&gt;：to Due Date List. Long tap/ swipe left to go back.&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView-DueDate-NavBar.png&#34; alt=&#34;RedDot&#34; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;tablecell&#34;&gt;TableCell&lt;/h2&gt;
-
-&lt;h3 id=&#34;tap&#34;&gt;Tap&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-cell-detail.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;single tap：show memo &amp;lt; - &amp;gt; due date&lt;/li&gt;
-&lt;li&gt;double tap：edit task&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;long tap：add red dot. (make task emphasize)&lt;/li&gt;
-&lt;li&gt;swipe right from left bar：Change color of bar&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-swipe.png&#34; alt=&#34;Cell swipe&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;swipe left：Done or Delete&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-SwipeLeft.png&#34; alt=&#34;Cell swipe&#34; /&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Done button: time you press will be registered as date done.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;※ unDone
-
-&lt;ol&gt;
-&lt;li&gt;swipe-left and press Done again.&lt;/li&gt;
-&lt;li&gt;on Edit View, press Checked mark.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;decoration-of-bar&#34;&gt;decoration of bar&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;if there is memo, the left top edge on color bar is cut.&lt;/li&gt;
-&lt;li&gt;emphasized task has red dot on left corner. And registered for Icon Badge and Red Hot List.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;colors-on-left-bar&#34;&gt;Colors on Left bar&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-color-default.png&#34; alt=&#34;Color-Mode&#34; /&gt; &amp;lt;-Normal , Kawaii -&amp;gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-color-kawaii.png&#34; alt=&#34;Color-Mode&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;due-date-and-right-bar&#34;&gt;Due date and Right Bar&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;right colour bar appears if you set due date.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;It changes color: Green &amp;gt; Yellow &amp;gt; Orange &amp;gt; Red&lt;/li&gt;
-&lt;li&gt;Red Dot on Right corner will be displayed when the task got passed due date.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-color-duedate.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;add-edit-task&#34;&gt;Add/Edit Task&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Add: press &amp;ldquo;+&amp;rdquo; on left side of Navigation bar.&lt;/li&gt;
-&lt;li&gt;Edit: double tap on task you want to edit.&lt;/li&gt;
-&lt;li&gt;Setting Due date
-
-&lt;ul&gt;
-&lt;li&gt;Color Circle Icon is on/off switch for Due date.&lt;/li&gt;
-&lt;li&gt;Tap date area to edit date. Datepicker will comes up from bottom.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView.png&#34; alt=&#34;Due date&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-DetailView-DatePicke.png&#34; alt=&#34;Due date&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;unlink-to-dropbox-if-you-want-to-change-account-or-reconnect&#34;&gt;Unlink to Dropbox (if you want to change account or reconnect)&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Go Home &amp;gt; Setting &amp;gt; (a)&lt;/li&gt;
-&lt;li&gt;check &amp;ldquo;Unlink to dropbox&amp;rdquo;. Button will appear at left side on NavigationBar.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-Setting-unlink.png&#34; alt=&#34;Unlink&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;home-setting-a&#34;&gt;Home &amp;gt; Setting &amp;gt; (a)&lt;/h2&gt;
-
-&lt;h3 id=&#34;display&#34;&gt;Display&lt;/h3&gt;
-
-&lt;p&gt;You can change how it looks by changing Font and Color mode.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-a-MainView.png&#34; alt=&#34;Color mode&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeDark.png&#34; alt=&#34;Color mode&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-a-ColorModeKawaii.png&#34; alt=&#34;Color mode&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;write-read-format&#34;&gt;write/read format&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;date format&lt;/strong&gt;：2015-12-31, 12-31-2015, 31-12-2015&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;strong&lt;/strong&gt;: **strong** , __strong__&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;gray bar style&lt;/strong&gt;: *, +, -&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;etc&#34;&gt;etc&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Unlink to Dropbox: app will unlink when it relaunches.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;trouble-on-syncing&#34;&gt;trouble on syncing&lt;/h2&gt;
-
-&lt;p&gt;when your file is not the file you like to be. Try&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;look where is main file located.&lt;/li&gt;
-&lt;li&gt;?on local?
-
-&lt;ol&gt;
-&lt;li&gt;then check connection&lt;/li&gt;
-&lt;li&gt;change something on your task: like change color (important)
-
-&lt;ul&gt;
-&lt;li&gt;it update local data to upload&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;press Home button: upload local file to cloud&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;?on cloud?
-
-&lt;ol&gt;
-&lt;li&gt;app is Up/Running?
-
-&lt;ul&gt;
-&lt;li&gt;then KILL application:DoubleTap Home button and swipe up (a)&lt;/li&gt;
-&lt;li&gt;(no data will upload to Cloud)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;change some on file at cloud (important)&lt;/li&gt;
-&lt;li&gt;launch (a): check connection
-
-&lt;ul&gt;
-&lt;li&gt;it start to download file from cloud&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ again, this is how it works.&lt;br /&gt;
-・press Home button ＝ upload to cloud&lt;br /&gt;
-・comes back from sleep/lock ＝ download from cloud&lt;/p&gt;
-</description>
+      <description>I have a lot of very small things(small things that are easily forget) to do, but web service is too much for me. Text(Note) is good enough but&amp;hellip;
+It started with simple idea: I wanted to manage tasks by text file and look tasks in my hand(iPhone4).
+I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this software.</description>
     </item>
     
     <item>
@@ -338,85 +53,18 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/viriya/</guid>
-      <description>
-
-&lt;h2 id=&#34;you-i-need-to-concentrate-on-task-but&#34;&gt;You/I need to concentrate on task, but&amp;hellip;.&lt;/h2&gt;
-
-&lt;p&gt;This timer helps to concentrate on thing needs to be done.&lt;/p&gt;
-
-&lt;p&gt;it works fine with dash method (or other kinds).&lt;/p&gt;
-
-&lt;h2 id=&#34;main-view&#34;&gt;Main View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・ + Button to add project&lt;br /&gt;
-・DoubleTap/Swipe: Change List&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Tap: Change Color of Bar&lt;br /&gt;
-・Right Tap: Go to Task List&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・swipe to Delete&lt;/p&gt;
-
-&lt;p&gt;☆ Accessories Color Bar&lt;br /&gt;
-・show Number of Tasks of the project&lt;br /&gt;
-・White Dot: Color-Lock&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;task-view&#34;&gt;Task View&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-items.png&#34; alt=&#34;Timer List&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・edit button: change order, edit, and delete&lt;br /&gt;
-・Double Tap: sort by Color ~  your order&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Side Tap: Change Color of Bar&lt;br /&gt;
-・Right Side Tap: Change Shade of Gray&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・swipe to Delete&lt;/p&gt;
-
-&lt;p&gt;▽ Header&lt;br /&gt;
-・Start button: opens timer.&lt;br /&gt;
-・left gray box: Go to History View&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;timer-view&#34;&gt;Timer View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・button works like music app.&lt;br /&gt;
-・shake/stop button to cancel timer&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;history-view&#34;&gt;History View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-viriya-history.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・shows histories.&lt;br /&gt;
-・you can add/edit memo by touching cell.&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-viriya&#34;&gt;App Setting [Home&amp;gt; Settings&amp;gt; viriya]&lt;/h2&gt;
-
-&lt;p&gt;You can change&lt;br /&gt;
-・title of Navigation bar&lt;br /&gt;
-・transparency of hart/star mark&lt;/p&gt;
-
-&lt;p&gt;※ Viriya is Pali word meaning &amp;ldquo;effort&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;◇ Lite Version:&lt;br /&gt;
-・Ad will be displayed on the top of list. Thank you for your understanding on the use may be an eyesore.&lt;/p&gt;
-</description>
+      <description>You/I need to concentrate on task, but&amp;hellip;. This timer helps to concentrate on thing needs to be done.
+it works fine with dash method (or other kinds).
+Main View ◇ Navigation Bar
+・ + Button to add project
+・DoubleTap/Swipe: Change List
+◇ Cell
+・Left Tap: Change Color of Bar
+・Right Tap: Go to Task List
+・Center DoubleTap: Edit
+・swipe to Delete
+☆ Accessories Color Bar
+・show Number of Tasks of the project</description>
     </item>
     
     <item>
@@ -425,78 +73,10 @@ After link was established, file will be copied to cloud.&lt;/p&gt;
       <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/ohayo/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg&#34; alt=&#34;ohayo Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This software helps you to find a way of good sleep.
-I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
-
-&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
-
-&lt;p&gt;◇ &lt;strong&gt;Timer&lt;/strong&gt;: Start by &lt;strong&gt;Long-Tap&lt;/strong&gt; on gray image area.&lt;/p&gt;
-
-&lt;p&gt;　1：&lt;strong&gt;PreStart&lt;/strong&gt;, show message (ex. take medicine!)&lt;br /&gt;
-　2：&lt;strong&gt;Start&lt;/strong&gt;: show sleeping time.&lt;br /&gt;
-　3：&lt;strong&gt;WakeUp&lt;/strong&gt;, show message (ex.drink a cup of water)&lt;br /&gt;
-　4：Select mood and Done.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w320.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone4,5(21:30-09:30)&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w375.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6(20:30-10:30)&lt;br /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-cell-w414.png&#34; alt=&#34;iPhone4&#34; /&gt;: iPhone6+(20:00-11:30)&lt;/p&gt;
-
-&lt;h3 id=&#34;taps-on-graph&#34;&gt;◇ Taps on graph&lt;/h3&gt;
-
-&lt;p&gt;・&lt;strong&gt;Left&lt;/strong&gt;：Change feeling&lt;br /&gt;
-・&lt;strong&gt;Center&lt;/strong&gt;：Edit time of sleep/awake.&lt;br /&gt;
-・&lt;strong&gt;Right&lt;/strong&gt;：Switch On/Off of bae color.&lt;/p&gt;
-
-&lt;h3 id=&#34;two-icons-looks-like-eyes&#34;&gt;◇Two Icons looks like eyes**&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Left&lt;/strong&gt;：to Simple Setting View：edit message and coloring.&lt;br /&gt;
-&lt;strong&gt;Right&lt;/strong&gt;：to Sleep Detail View：show average sleeping times.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-setting.png&#34; alt=&#34;Setting&#34; /&gt;
-&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-setting-ohayo&#34;&gt;□ App Setting [Home&amp;gt;Setting&amp;gt;ohaYo]&lt;/h2&gt;
-
-&lt;p&gt;You can edit&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Export to Health&lt;/li&gt;
-&lt;li&gt;Good Sleep Time&lt;/li&gt;
-&lt;li&gt;Over Sleep Time&lt;/li&gt;
-&lt;li&gt;Thai Week Color&lt;/li&gt;
-&lt;li&gt;Wind short bell notice
-
-&lt;ul&gt;
-&lt;li&gt;on time you set on Good sleep&lt;/li&gt;
-&lt;li&gt;on 5min after going to bed&lt;/li&gt;
-&lt;li&gt;on 5min after waking up&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;message before sleep and after wakeup&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ohayo-appsetting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※ Thai Color(Mon: Yellow, Tue: Pink, Wed: Green, Thu: Orange, Fri: Blue, Sat: Purple,Sun: Red)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;ohayo&amp;rdquo;&lt;/strong&gt; is Japanese word for &amp;ldquo;good Morning&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;privacy-policy&#34;&gt;□ Privacy Policy&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ohayo will ask permission to access Health.app on your device.&lt;/li&gt;
-&lt;li&gt;on Health.app
-
-&lt;ul&gt;
-&lt;li&gt;ohayo will write its sleeping data.&lt;/li&gt;
-&lt;li&gt;ohayo will not read/access other data on Health.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Data in ohayo is used only within application.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This software helps you to find a way of good sleep. I hope at least you get some idea of your sleeping habit.
+□ Main View ◇ Timer: Start by Long-Tap on gray image area.
+　1：PreStart, show message (ex. take medicine!)
+2：Start: show sleeping time.</description>
     </item>
     
     <item>
@@ -505,99 +85,13 @@ I hope at least you get some idea of your sleeping habit.&lt;/p&gt;
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/sati/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-sati.jpg&#34; alt=&#34;Sati Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Simple and clean Meditation Timer/Logger for meditator, by meditator.&lt;/p&gt;
-
-&lt;p&gt;available as free most of the time, become paid-version once a month for a couple of days.&lt;/p&gt;
-
-&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・&lt;strong&gt;&amp;ldquo;Long Tap&amp;rdquo;&lt;/strong&gt; to start to meditate.&lt;br /&gt;
-・Tap top sound line to toggle quiet mode.&lt;br /&gt;
-・Tap center icon to go Setting View&lt;br /&gt;
-・Tap Bar to go History View&lt;br /&gt;
- (Bar shows your recent meditation status (62 Meditations) to see how you&amp;rsquo;re doing.  )&lt;/p&gt;
-
-&lt;p&gt;※ Two Circle button intends to use to keep track on posture when you meditate.&lt;br /&gt;
-(I am trying to sit with full lotus position every couple of times. so i am keeping log for posture to keep it balanced(left-right-full-righti-right-left-full-&amp;hellip;).)&lt;/p&gt;
-
-&lt;h3 id=&#34;while-you-are-meditationg&#34;&gt;while you are meditationg.&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;※※&lt;/strong&gt;  iPod/iPhone must &lt;strong&gt;sleep&lt;/strong&gt; or exit application in order to hear bells.. App use Local Notification to ring bells, not by timer running background.&lt;/p&gt;
-
-&lt;p&gt;Short and long bells ring.&lt;br /&gt;
-◇ 30sec&lt;br /&gt;
-◇ 5min&lt;br /&gt;
-　〜ring a couple of times depending on length of meditation〜&lt;br /&gt;
-　（less than 20min：no bells、 &amp;lt;55min：1time, &amp;lt;60min：2times, &amp;lt;120min：3times, &amp;lt;180min：4times）&lt;br /&gt;
-◇ 3 min before finish for metta session&lt;br /&gt;
-◇ finish&lt;/p&gt;
-
-&lt;h3 id=&#34;etc&#34;&gt;etc&lt;/h3&gt;
-
-&lt;p&gt;Background color is based on Thai traditional day color.&lt;br /&gt;
-(mon:Yellow, tue:Pink, wed:Green, thr:Orange, fri:Blue, sat:Purple, sun:Red)&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;history-view&#34;&gt;□ History View&lt;/h2&gt;
-
-&lt;!--![History View](/images/manual/sati-history.png)--&gt;
-
-&lt;p&gt;You can&lt;br /&gt;
-・Change Date&lt;br /&gt;
-・Delete&lt;br /&gt;
-・add/edit short memo.&lt;br /&gt;
-by tapping list.&lt;/p&gt;
-
-&lt;p&gt;※ if you have memo, icon shows on right side of list. Tap icon to display memo (memo shows up for a couple of seconds.)&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;setting-view&#34;&gt;□ Setting View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual/sati-settingView.png&#34; alt=&#34;Setting View&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・Change MeditationTime from 15 to 180min.&lt;br /&gt;
-・Change Background image&lt;br /&gt;
-・Set Quiet mode (It rings only on finishing.)&lt;br /&gt;
-・Change finishing sound. (Japanese drum is bit subtle..you might miss when you meditate in noisy place)&lt;/p&gt;
-
-&lt;p&gt;※ default meditation time is set 60min.&lt;/p&gt;
-
-&lt;h2 id=&#34;settings&#34;&gt;Settings&lt;/h2&gt;
-
-&lt;!--![Settings](/images/manual/sati-settings.png)--&gt;
-
-&lt;p&gt;more settings can be modified on Home &amp;gt; Settings.&lt;/p&gt;
-
-&lt;p&gt;・Meditation Counter (Count down and Count up)&lt;br /&gt;
-・more detail how you want to ring notice.&lt;br /&gt;
-・Change indication icon for memo on HistoryPage
-・Calender export settings&lt;/p&gt;
-
-&lt;p&gt;※ If there are Bugs and suggestions, please contact me from &amp;ldquo;Report a Problem&amp;rdquo; or Support Page with your iOS version and model.&lt;/p&gt;
-
-&lt;h3 id=&#34;with-metta-be-mindfull&#34;&gt;□■   with metta &amp;amp; be mindfull  ■□&lt;/h3&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;The MIT License (MIT)&lt;br /&gt;
-Copyright &amp;copy; 2013&lt;/p&gt;
-
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&lt;/p&gt;
-
-&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p&gt;
-
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
-</description>
+      <description>Simple and clean Meditation Timer/Logger for meditator, by meditator.
+available as free most of the time, become paid-version once a month for a couple of days.
+□ Main View ・&amp;ldquo;Long Tap&amp;rdquo; to start to meditate.
+・Tap top sound line to toggle quiet mode.
+・Tap center icon to go Setting View
+・Tap Bar to go History View
+(Bar shows your recent meditation status (62 Meditations) to see how you&amp;rsquo;re doing. )</description>
     </item>
     
     <item>
@@ -606,81 +100,9 @@ Copyright &amp;copy; 2013&lt;/p&gt;
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/listaria/</guid>
-      <description>
-
-&lt;h2 id=&#34;this-is-simple-shopping-list-application&#34;&gt;This is simple shopping list application.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-listaria.jpg&#34; alt=&#34;Listaria Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Big letter is easy to read.
-Clean look of design.
-Simple to use.
-little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
-
-&lt;p&gt;230 items are already registared.&lt;/p&gt;
-
-&lt;h2 id=&#34;shopping-list-page&#34;&gt;□ Shopping List Page&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-main.png&#34; alt=&#34;main&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-recent.png&#34; alt=&#34;Recent&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar.
-(order: Vegitable・Frute・lll・BulkFood・Spices・Drinks・PersoanlCare・Pet・Kitchen・other)&lt;/p&gt;
-
-&lt;h3 id=&#34;navigation-bar&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Double Tap on NavBar: Change Shopping list - Recently bought items list&lt;/li&gt;
-&lt;li&gt;Swipe left on NavBar: to Item List page&lt;/li&gt;
-&lt;li&gt;List Button: to Item List page&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;cell&#34;&gt;◆ Cell&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-shoppinglist.png&#34; alt=&#34;Shopping List&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Tap Left Side: Done shopping: background changes and removed from list.&lt;/li&gt;
-&lt;li&gt;Tap other area: Show memo if you have it, otherwise no reaction.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;item-list-page&#34;&gt;□ Item List page&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list.png&#34; alt=&#34;Item View&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-listaria-list2.png&#34; alt=&#34;Item&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Add items on these pages. If you want to add items, do it from + button on navigation bar.&lt;/p&gt;
-
-&lt;h3 id=&#34;navigation-bar-1&#34;&gt;◆ Navigation Bar&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Swipe: Change categories.&lt;/li&gt;
-&lt;li&gt;DoubleTap: Change categories.&lt;/li&gt;
-&lt;li&gt;Longtap: Change sortorder (by date purcahsed and by times bought)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;cell-1&#34;&gt;◆ Cell&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-cell-list.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Left Side Tap: Add to Shopping list. (It changes background color.)&lt;/li&gt;
-&lt;li&gt;Right Side Tap: Change right bar color&lt;/li&gt;
-&lt;li&gt;Center DoubleTap: Edit and add memo to a item.&lt;/li&gt;
-&lt;li&gt;Center Tap: Show memo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;※ Items which has background color are on shopping list.&lt;/p&gt;
-
-&lt;h2 id=&#34;home-setting-listaria&#34;&gt;□ Home&amp;gt;Setting&amp;gt; listaria&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-listaria-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;change font&lt;/li&gt;
-&lt;li&gt;show on/off and change title of purple and blue list.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>This is simple shopping list application. Big letter is easy to read. Clean look of design. Simple to use. little memo feature is helpful and tap to show for a short second.
+230 items are already registared.
+□ Shopping List Page This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar.</description>
     </item>
     
     <item>
@@ -689,100 +111,12 @@ little memo feature is helpful and tap to show for a short second.&lt;/p&gt;
       <pubDate>Sun, 26 Jun 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/doop/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-doop.jpg&#34; alt=&#34;doop Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It is software to figure out that we must make on a regular basis, such as the time to replace the battery, the things that event to cycle.&lt;/p&gt;
-
-&lt;h2 id=&#34;list-view&#34;&gt;□ List View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_navigationbar1.png&#34; alt=&#34;Doop Navigation Bar&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・Plus mark in the upper right: Adding new entries&lt;br /&gt;
-・Double tap/swipe: change of pages that have been sorted for each color&lt;br /&gt;
-Navigation bar(main) list of things in use&lt;br /&gt;
-Navigation bar(red) those in use in BarColor:red•Orange•Yellow•Gray&lt;br /&gt;
-Navigation bar(blue) those in use in BarColor:Yellow-green•Green•Blue•Gray&lt;br /&gt;
-Navigation bar(pink) those in use in BarColor:SkyBlue•Pink•Purple•Gray&lt;br /&gt;
-Navigation bar(gray) list of things Inactive&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Side Tap: Change Color of Bar&lt;br /&gt;
-(turn Red•Orange•Yellow•Yellow-green•Green•Blue•SkyBlue•Pink•Purple•Gray)&lt;br /&gt;
-・Right Side Tap: Change Cell Layout(3 Layout)&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・Swipe to Delete&lt;/p&gt;
-
-&lt;h3 id=&#34;meaning-of-bar-display-accessories&#34;&gt;※ meaning of bar display/Accessories&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The top of the left bar: number of times made replacement&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;The bottom of the left bar: dot fixed color&lt;br /&gt;
-Bar-right: I will change bar percent of the remaining amount, even light and shade to match the remaining amount. (Small: thin&amp;gt; Multi-co)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;display-style&#34;&gt;Display Style&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop_cellstyles.png&#34; alt=&#34;Doop CellStyles&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;1) simple:
-Display of the main and or stood How long have you been using.&lt;/p&gt;
-
-&lt;p&gt;2) Count up:
-Date of the beginning, percent of right course percent as 100 average use time use in the upper left.
-Show to see how long it takes now about to reach the average value.&lt;/p&gt;
-
-&lt;p&gt;3) Countdown:
-Number of days the date and time to get to the average number of days used on the upper and lower average number of days used, the title under a percent.&lt;/p&gt;
-
-&lt;p&gt;※ Bar on the right will change to red estimated remaining amount less than 15%.&lt;br /&gt;
-※ If there is no data for the period on the first use, the average value is not displayed and the color of the bar on the right-hand side does not change. The display is based on the data from the first second and subsequent.&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-doop-detail.png&#34; alt=&#34;Detail&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Edit and update the item
-・add icon to add favorite list&lt;br /&gt;
-・edit item name and memo&lt;br /&gt;
-・there are 3 buttons. (Buttons will be displayed depending on the situation.)&lt;br /&gt;
-・・1 install: New (Start)&lt;br /&gt;
-・・2 replace&lt;br /&gt;
-・・3 stop: taken out (Withdrawal)&lt;br /&gt;
-・Hist Button to go to History View&lt;/p&gt;
-
-&lt;p&gt;※ You can change the start date and time use by tapping the date.&lt;/p&gt;
-
-&lt;h2 id=&#34;history-view&#34;&gt;□ History View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-historyview.png&#34; alt=&#34;Doop History Page&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;History View shows item, Average, maximum and minimum exchange time.&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Side Tap: Change Color of Bar&lt;br /&gt;
-・Center Tap: Edit installed/removed time, delete, and add memo.&lt;br /&gt;
-・Swipe to Delete&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-doop&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;doop]&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/doop-setting.png&#34; alt=&#34;Doop Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・change color mode.&lt;br /&gt;
-・change title of navigation bar.&lt;br /&gt;
-・change transparency of icon (Hart/Star)&lt;/p&gt;
-
-&lt;p&gt;◇ Lite Version:&lt;br /&gt;
-- Limit number of Lists.&lt;br /&gt;
-- Ad will be displayed on the top of list. Thank you for your understanding on the use may be an eyesore.&lt;/p&gt;
-
-&lt;!--
-Keywords: recycle, log, eco, countdown, count, up, timer, battery
-Support: URL http://goozenlab.com/en/iapp/doop/
---&gt;
-</description>
+      <description>It is software to figure out that we must make on a regular basis, such as the time to replace the battery, the things that event to cycle.
+□ List View ◇ Navigation Bar
+・Plus mark in the upper right: Adding new entries
+・Double tap/swipe: change of pages that have been sorted for each color
+Navigation bar(main) list of things in use
+Navigation bar(red) those in use in BarColor:red•Orange•Yellow•Gray</description>
     </item>
     
     <item>
@@ -791,37 +125,14 @@ Support: URL http://goozenlab.com/en/iapp/doop/
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/ippuku/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-ippuku.jpg&#34; alt=&#34;ippuku Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a simple software to log your activities.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-use&#34;&gt;How to Use&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-default.png&#34; alt=&#34;Default&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-AM.png&#34; alt=&#34;AM&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-Day.png&#34; alt=&#34;Day&#34; /&gt;
-&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-ippuku-navbar-PM.png&#34; alt=&#34;PM&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Timer: start with + button on navigation bar&lt;br /&gt;
-◇ on Cell&lt;br /&gt;
-・Left tap: change date background color&lt;br /&gt;
-・Right tap: change bar color on/off&lt;br /&gt;
-・Center Double tap: delete or edit event&lt;/p&gt;
-
-&lt;p&gt;◇ on Navigation Bar&lt;br /&gt;
-・Double tap: change List page (all, warm, cold, and soft color)
-・Long tap: change view style (Default, 22:00 - 8:00, 5:00 - 19:30, 13:00 - 23:00)&lt;/p&gt;
-
-&lt;p&gt;※ There is indication on title with dot: (•title: am, title•: pm)&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting&#34;&gt;◇ App Setting&lt;/h2&gt;
-
-&lt;p&gt;・You can change title of navigation bar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-ippuku-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>This is a simple software to log your activities.
+How to Use ◇ Timer: start with + button on navigation bar
+◇ on Cell
+・Left tap: change date background color
+・Right tap: change bar color on/off
+・Center Double tap: delete or edit event
+◇ on Navigation Bar
+・Double tap: change List page (all, warm, cold, and soft color) ・Long tap: change view style (Default, 22:00 - 8:00, 5:00 - 19:30, 13:00 - 23:00)</description>
     </item>
     
     <item>
@@ -839,67 +150,19 @@ Support: URL http://goozenlab.com/en/iapp/doop/
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/tapas/</guid>
-      <description>
-
-&lt;h2 id=&#34;colorful-and-simple-multiple-kitchen-timer-with-list&#34;&gt;Colorful and Simple Multiple Kitchen Timer with List.&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;For noodle lovers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-tapas.jpg&#34; alt=&#34;tapas Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Functions I wanted to add:&lt;br /&gt;
-・List of items (I have many kinds of pastas/noodles/beans/etc)&lt;br /&gt;
-・little memo&lt;br /&gt;
-・multi timer&lt;br /&gt;
-・record of date/times cooked&lt;br /&gt;
-・simple design&lt;/p&gt;
-
-&lt;h2 id=&#34;list-view&#34;&gt;□ List View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-main.png&#34; alt=&#34;List&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・DoubleTap/Swipe on NavBar: Change List&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・ Left Tap: Change color of bar.&lt;br /&gt;
-・ Right Tap: Add to Timer (background color will change)&lt;br /&gt;
-・ Center Double Tap: Edit&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;timer-view-5-timers-at-once&#34;&gt;□ Timer View: 5 Timers at once&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-tapas-timer.png&#34; alt=&#34;Timer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;initial: Gray stage&lt;br /&gt;
--1- Ready&lt;br /&gt;
--2- Go&lt;br /&gt;
--~~- When timer run out, alarm goes off.&lt;br /&gt;
--3- tap to go back to initial state。&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-edit.png&#34; alt=&#34;Edit&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・edit item name/ memo&lt;br /&gt;
-・set time&lt;br /&gt;
-・color lock&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-tapas&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Tapas]&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-tapas-setting.png&#34; alt=&#34;Setting&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;・change title of navigation bar.&lt;br /&gt;
-・change transparency of icon (Hart/Star)&lt;/p&gt;
-
-&lt;p&gt;◇ Lite Version:&lt;br /&gt;
-・3 Timers at once&lt;br /&gt;
-・Limited number of list. (Main, Favorite, by times)&lt;br /&gt;
-・Ad will be displayed on the top of list.&lt;/p&gt;
-</description>
+      <description>Colorful and Simple Multiple Kitchen Timer with List. For noodle lovers
+Functions I wanted to add:
+・List of items (I have many kinds of pastas/noodles/beans/etc)
+・little memo
+・multi timer
+・record of date/times cooked
+・simple design
+□ List View ◇ Navigation Bar
+・DoubleTap/Swipe on NavBar: Change List
+◇ Cell
+・ Left Tap: Change color of bar.
+・ Right Tap: Add to Timer (background color will change)
+・ Center Double Tap: Edit</description>
     </item>
     
     <item>
@@ -908,62 +171,10 @@ Support: URL http://goozenlab.com/en/iapp/doop/
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/cosper/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-cosper.jpg&#34; alt=&#34;cosper Image&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;is-this-worth-xxxx&#34;&gt;is this worth $xxxx?&lt;/h3&gt;
-
-&lt;p&gt;This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid.
-You input Product name, price, date and how many time you have used, then list shows its cost per day or per use.&lt;/p&gt;
-
-&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-cosper-main.png&#34; alt=&#34;Main&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◆ Navigation Bar&lt;br /&gt;
-・Double Tap/Swipe: to Move around pages (sort by date, with star, Hot/Soft/Cool colors)&lt;br /&gt;
-・Long Tap: Change sort within. by cost/day or defaults.&lt;/p&gt;
-
-&lt;p&gt;※ when list is sorted by price per day/times. Navbar title willl have dots.
- (eg.) ･Cool Items･&lt;/p&gt;
-
-&lt;p&gt;◆ Cell&lt;br /&gt;
-・Left Side Tap: Change Color of Bar&lt;br /&gt;
-・Center DoubleTap: Edit Item&lt;br /&gt;
-・Right Side Tap:&lt;br /&gt;
-・Daily use:&lt;br /&gt;
-&amp;ndash; (on)  shows days that you hold the item on left bottom&lt;br /&gt;
-&amp;ndash; (off) shows counter upper left and Another Tap to COUNT UP.&lt;br /&gt;
-・swipe to Delete&lt;/p&gt;
-
-&lt;p&gt;&lt;br clear=&#34;both&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
-
-&lt;p&gt;・Date: tap to edit&lt;br /&gt;
-・name&lt;br /&gt;
-・memo&lt;br /&gt;
-・price&lt;br /&gt;
-・counter&lt;br /&gt;
-・switch on/off daily use&lt;br /&gt;
-&amp;ndash;on : price/days&lt;br /&gt;
-&amp;ndash;off: price/counter&lt;/p&gt;
-
-&lt;p&gt;・put star for favorite items&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-cosper&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;Cosper]&lt;/h2&gt;
-
-&lt;p&gt;・change title of navigation bar.&lt;br /&gt;
-・change transparency of icon (Hart/Star)&lt;/p&gt;
-
-&lt;p&gt;◇ Lite Version:&lt;br /&gt;
-・Ad will be displayed on the top of list.&lt;/p&gt;
-
-&lt;p&gt;◇ If there are Bugs and suggestions, please contact me from &amp;ldquo;Report a Problem&amp;rdquo; or Support Page with your iOS version and model.&lt;/p&gt;
-
-&lt;p&gt;□ ■ Thank you &amp;amp; Be Happy ■□&lt;/p&gt;
-</description>
+      <description>is this worth $xxxx? This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid. You input Product name, price, date and how many time you have used, then list shows its cost per day or per use.
+□ Main View ◆ Navigation Bar
+・Double Tap/Swipe: to Move around pages (sort by date, with star, Hot/Soft/Cool colors)
+・Long Tap: Change sort within.</description>
     </item>
     
     <item>
@@ -972,60 +183,17 @@ You input Product name, price, date and how many time you have used, then list s
       <pubDate>Fri, 19 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/dandori/</guid>
-      <description>
-
-&lt;p&gt;Colorful post-it like Personal Project managing Application.
-Simple to work, fast, and fun to use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-dandori.jpg&#34; alt=&#34;dandori Image&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;project-view&#34;&gt;□ Project View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/images/SS-dandori-main.png&#34; alt=&#34;Project Page&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・Button to add project&lt;br /&gt;
-・DoubleTap/Swipe: Change List&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Tap: Change Color of Bar&lt;br /&gt;
-・Right Tap: Go to Task List&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・Center LongTap: On/Off RedDot also register for AppBadge
-・swipe to Delete&lt;/p&gt;
-
-&lt;h3 id=&#34;accesories-color-bar&#34;&gt;☆ Accesories Color Bar&lt;/h3&gt;
-
-&lt;p&gt;・show Number of Tasks of the project&lt;br /&gt;
-・Star and CutEdge&lt;br /&gt;
-・White Dot: Color-Lock&lt;br /&gt;
-・RedDot on Right: show if there is RedDot item in tasks&lt;/p&gt;
-
-&lt;h2 id=&#34;task-view&#34;&gt;□ Task View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-dandori-L2.png&#34; alt=&#34;Task Page&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・Button to edit: change order, add, and delete&lt;br /&gt;
-・Double Tap: sort by Color ~ your order&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Side Tap: Change Color of Bar&lt;br /&gt;
-・Right Side Tap: Change Shade of Gray&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・swipe to Delete&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-dandori&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;dandori]&lt;/h2&gt;
-
-&lt;p&gt;You can change&lt;br /&gt;
-・title of Navigation bar&lt;br /&gt;
-・transparency of tag icon&lt;br /&gt;
-・display font face&lt;/p&gt;
-
-&lt;p&gt;◇ Lite Version:&lt;br /&gt;
-・Limit number of Lists. (Main/ByColor:/Hot)&lt;br /&gt;
-・Ad will be displayed on the top of list. Thank you for your understanding on the use may be an eyesore.&lt;/p&gt;
-</description>
+      <description>Colorful post-it like Personal Project managing Application. Simple to work, fast, and fun to use.
+□ Project View ◇ Navigation Bar
+・Button to add project
+・DoubleTap/Swipe: Change List
+◇ Cell
+・Left Tap: Change Color of Bar
+・Right Tap: Go to Task List
+・Center DoubleTap: Edit
+・Center LongTap: On/Off RedDot also register for AppBadge ・swipe to Delete
+☆ Accesories Color Bar ・show Number of Tasks of the project
+・Star and CutEdge</description>
     </item>
     
     <item>
@@ -1034,64 +202,14 @@ Simple to work, fast, and fun to use.&lt;/p&gt;
       <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/en/iapp/littlist/</guid>
-      <description>
-
-&lt;h2 id=&#34;little-list-with-big-letter&#34;&gt;Little List with Big Letter.&lt;/h2&gt;
-
-&lt;p&gt;Very easy &amp;amp; simple List/to-do app.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropbox.com/u/163521/photo/20130527-littlist.jpg&#34; alt=&#34;littlsit Image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It is pleasant and fun to use, and stimulate your Right Brain.
-You may like to tap-tap to make nice and colorful to-do page like picture of Mondrian..&lt;/p&gt;
-
-&lt;h2 id=&#34;main-view&#34;&gt;□ Main View&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-navigation-bar.png&#34; alt=&#34;NavigationBar&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Navigation Bar&lt;br /&gt;
-・DoubleTap/Swipe on NavBar: Change List&lt;br /&gt;
-・Long Tap to go to Hot List (RedColor)&lt;br /&gt;
-・Swipe-Up to go to DueDate List (Green)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/manual-littlist-cell.png&#34; alt=&#34;Cell&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;◇ Cell&lt;br /&gt;
-・Left Tap: Change color&lt;br /&gt;
-・Right Tap: Change shade of gray&lt;br /&gt;
-・Right LongTap: item goes up to the Top of List&lt;br /&gt;
-・Center SingleTap: Show Memo&lt;br /&gt;
-・Center DoubleTap: Edit&lt;br /&gt;
-・Center Long Tap: Red dot on left-top (register for AppBadge)&lt;br /&gt;
-・swipe: delete&lt;/p&gt;
-
-&lt;p&gt;Arrenge Order: litle tricky..&lt;br /&gt;
-▲ Right LongTap: item goes up to the Top of List&lt;br /&gt;
-▽ make right and left bar to Lightest Gray: item goes down to the Bottom&lt;/p&gt;
-
-&lt;p&gt;Semi-import/export&lt;br /&gt;
-・import: press [+] button on NavigationBar and tap import. import from items on list &amp;ldquo;littlist&amp;rdquo; from Reminder.
-・ Export/Backup: From Home - Setting: littlist, switch export on, and when you start app alert shows up to export.&lt;/p&gt;
-
-&lt;p&gt;※ Reminder priority: bar colour on littlist ( !: pink, !!: green !!!: red).&lt;/p&gt;
-
-&lt;p&gt;※ AppBadge: Count items which are Red-Right-Dot and due item (36h befere).&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-view&#34;&gt;□ Edit View&lt;/h2&gt;
-
-&lt;p&gt;・tap gray circle to turn On/Off DueDate&lt;br /&gt;
-・tap date to edit date&lt;br /&gt;
-・lock button locks color.&lt;/p&gt;
-
-&lt;h2 id=&#34;app-setting-home-settings-littlist&#34;&gt;□ App Setting [Home&amp;gt;Settings&amp;gt;littlist]&lt;/h2&gt;
-
-&lt;p&gt;You can change&lt;br /&gt;
-・display color mode [White (default), Dark, Kawaii (Cute)]
-・display font face&lt;br /&gt;
-・title of Navigation bar
-・list name for import/export
-・switch to back up&lt;/p&gt;
-</description>
+      <description>Little List with Big Letter. Very easy &amp;amp; simple List/to-do app.
+It is pleasant and fun to use, and stimulate your Right Brain. You may like to tap-tap to make nice and colorful to-do page like picture of Mondrian..
+□ Main View ◇ Navigation Bar
+・DoubleTap/Swipe on NavBar: Change List
+・Long Tap to go to Hot List (RedColor)
+・Swipe-Up to go to DueDate List (Green)
+◇ Cell
+・Left Tap: Change color</description>
     </item>
     
   </channel>

@@ -7,8 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Wed, 30 Nov 2016 06:30:00 +0700</lastBuildDate>
-    <atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 May 2017 06:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="http://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sati v1.9.4</title>
+      <link>http://goozenlab.com/blog/2017/05/sati-194/</link>
+      <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/05/sati-194/</guid>
+      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。
+アプリは一時配信を中断してます。
+UNNotification for iOS10 まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。
+そして、今更ながら、iOS10からは通知の仕様が変更されていたのを知らなかった。
+func registerAlarm(_ atDate: Date, soundName: String, identifier: String) { //print(&amp;quot;fire: &amp;quot; + atDate.description + &amp;quot; with sound:&amp;quot; + soundName + &amp;quot; with identifier:&amp;quot; + identifier) if #available(iOS 10.0, *) { let content = UNMutableNotificationContent() // Configure Notification Content content.sound = UNNotificationSound(named: soundName) // Add Trigger let calendar = Calendar(identifier: .gregorian) let components = calendar.dateComponents(in: .current, from: atDate) let date = DateComponents(calendar: calendar, timeZone: .</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.9.3</title>
+      <link>http://goozenlab.com/blog/2017/05/sati-193/</link>
+      <pubDate>Mon, 15 May 2017 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/05/sati-193/</guid>
+      <description> 久しぶりのマイナーアップデート。
+ポージャーボタンがうまく機能していないところと、英語のスペルミス。。。 開発環境をXCode8.3に移行のためにSwift3への書き換え。（割と簡単に済む）
+[1.9.3] - 2017-05-18 @ Melaka Swift3 release with Xcode8.3.2
+Fixed  typo on Settings posure buttons  </description>
+    </item>
     
     <item>
       <title>Pranatice v0.10.0</title>
@@ -16,40 +43,11 @@
       <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/11/pranatice-0100/</guid>
-      <description>
-
-&lt;p&gt;カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-11-26-pranatice-0100.png&#34; alt=&#34;pranatice-0100&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;変更点&#34;&gt;変更点&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iOS９、１０にて呼び出しのスピードが妙に遅くなっていたのを修正&lt;/li&gt;
-&lt;li&gt;サポートをiOS１０よりに変更&lt;/li&gt;
-&lt;li&gt;ヘルスケアに書き出しの機能を追加&lt;/li&gt;
-&lt;li&gt;Swift3.0での完全書き直し&lt;/li&gt;
-&lt;li&gt;２つの新しいプラナヤマを追加：下記参照&lt;/li&gt;
-&lt;li&gt;デザインの再調整・リデザイン&lt;/li&gt;
-&lt;li&gt;アイコンデザインの変更：瞑想タイマーとのデザイン統一感を出すため微調整。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;アップデートのユーザーの方&#34;&gt;アップデートのユーザーの方&lt;/h2&gt;
-
-&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;br /&gt;
-お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
-
-&lt;h2 id=&#34;補足-新しいプラナヤマについて&#34;&gt;補足：新しいプラナヤマについて、&lt;/h2&gt;
-
-&lt;p&gt;スーリア・チャンドラベーダナーという２つの呼吸法を追加しました。流れはアヌロムビロムと似て片側の鼻を使っての呼吸法です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;スーリアは太陽という意味です。呼吸は右からすい左から吐きます。気を上げます。（元気がない時などに行うと良い。かな。）&lt;/li&gt;
-&lt;li&gt;チャンドラは月。左から右への一方通行の呼吸法です。こちらは逆に気を鎮めます。（緊張している時や、気が高ぶっている時に、深呼吸の代わりに、ぜひお試しを。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;なるべくなら半結跏趺坐で座って行ってください。（左はチン・ムドラで膝に軽くのせ、右手はヴィシヌ・ムドラで呼吸をコントロールします。）&lt;/p&gt;
-</description>
+      <description>カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。
+変更点  iOS９、１０にて呼び出しのスピードが妙に遅くなっていたのを修正 サポートをiOS１０よりに変更 ヘルスケアに書き出しの機能を追加 Swift3.0での完全書き直し ２つの新しいプラナヤマを追加：下記参照 デザインの再調整・リデザイン アイコンデザインの変更：瞑想タイマーとのデザイン統一感を出すため微調整。  アップデートのユーザーの方 新しいアプリは！再インストール！が必要になります。
+お手数をおかけしますが、ご協力のほどよろしくお願いします。
+補足：新しいプラナヤマについて、 スーリア・チャンドラベーダナーという２つの呼吸法を追加しました。流れはアヌロムビロムと似て片側の鼻を使っての呼吸法です。
+ スーリアは太陽という意味です。呼吸は右からすい左から吐きます。気を上げます。（元気がない時などに行うと良い。かな。） チャンドラは月。左から右への一方通行の呼吸法です。こちらは逆に気を鎮めます。（緊張している時や、気が高ぶっている時に、深呼吸の代わりに、ぜひお試しを。）  なるべくなら半結跏趺坐で座って行ってください。（左はチン・ムドラで膝に軽くのせ、右手はヴィシヌ・ムドラで呼吸をコントロールします。）</description>
     </item>
     
     <item>
@@ -58,24 +56,13 @@
       <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/10/a-090/</guid>
-      <description>
-
-&lt;p&gt;アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）１０月３１日の早朝に申請し、１１月１日早朝に申請が通る。期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。&lt;/p&gt;
-
-&lt;p&gt;よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。&lt;/p&gt;
-
-&lt;p&gt;とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。&lt;/p&gt;
-
-&lt;p&gt;不具合を発見した方、アイディアやリクエストのある方！是非！メールもしくはコメント欄にて報告していただけると幸いです。&lt;/p&gt;
-
-&lt;p&gt;そして、数週間中に、ソースコードをちょっと綺麗にしてギットハブにあげます。無料提供期間終了後、&lt;strong&gt;オープンソース化&lt;/strong&gt;します。アプリ開発の勉強に役にたつと思いますし、自分仕様にして使うにはなかなか良い叩き台にはなっていると思います。誰か、リファクターしてくれないでしょうか？（DropBoxへのアクセスが必要なためDevアカウントが必要）&lt;/p&gt;
-
-&lt;h2 id=&#34;アップデートのユーザーの方-たぶん100人もいないでしょう&#34;&gt;アップデートのユーザーの方（たぶん100人もいないでしょう。。）&lt;/h2&gt;
-
-&lt;p&gt;新しいアプリは&lt;strong&gt;！再インストール！&lt;/strong&gt;が必要になります。&lt;/p&gt;
-
-&lt;p&gt;お手数をおかけしますが、ご協力のほどよろしくお願いします。&lt;/p&gt;
-</description>
+      <description>アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）１０月３１日の早朝に申請し、１１月１日早朝に申請が通る。期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。
+よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。
+とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。
+不具合を発見した方、アイディアやリクエストのある方！是非！メールもしくはコメント欄にて報告していただけると幸いです。
+そして、数週間中に、ソースコードをちょっと綺麗にしてギットハブにあげます。無料提供期間終了後、オープンソース化します。アプリ開発の勉強に役にたつと思いますし、自分仕様にして使うにはなかなか良い叩き台にはなっていると思います。誰か、リファクターしてくれないでしょうか？（DropBoxへのアクセスが必要なためDevアカウントが必要）
+アップデートのユーザーの方（たぶん100人もいないでしょう。。） 新しいアプリは！再インストール！が必要になります。
+お手数をおかけしますが、ご協力のほどよろしくお願いします。</description>
     </item>
     
     <item>
@@ -84,24 +71,13 @@
       <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/listaria-180/</guid>
-      <description>&lt;p&gt;使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、&lt;/p&gt;
-
-&lt;p&gt;ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-icon-listaria.png&#34; alt=&#34; icon listaria &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。&lt;/p&gt;
-
-&lt;p&gt;ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたので良いタイミングのアップデートになりました。しかしながら、新しい機能はありません。ちょっと色合いが変わった程度です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-13-listaria-180.png&#34; alt=&#34; listaria 180&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;しかし、ソースコードを少し綺麗にして、近く&lt;strong&gt;ギットハブに公開&lt;/strong&gt;します。（オープンソース化第二弾）&lt;/p&gt;
-
-&lt;p&gt;最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。&lt;/p&gt;
-
-&lt;p&gt;ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。&lt;/p&gt;
-</description>
+      <description>使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、
+ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。
+たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。
+ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたので良いタイミングのアップデートになりました。しかしながら、新しい機能はありません。ちょっと色合いが変わった程度です。
+しかし、ソースコードを少し綺麗にして、近くギットハブに公開します。（オープンソース化第二弾）
+最近はほとんどが外食の毎日なので、自分で使うことがほとんど無くなってしまい、新しい機能も思いつきませんでした。アイディアなどある方は、ご気軽にコメントをください。
+ぼやき：ウェスタンデジタルの外付けハードディスクが蟻の巣になっていました。ふったら出てくるわ出てくるわ。。。びっくりして、コンクリーの床に落としてまうし。。。開けてみたら、卵だらけやし。。よほど居心地が良かったようですな。。。とりあえず、壊れていないようのので良かった。。</description>
     </item>
     
     <item>
@@ -110,35 +86,11 @@
       <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
-      <description>
-
-&lt;p&gt;気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-07-ohayo-292.png&#34; alt=&#34;ohayo-292&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。&lt;/p&gt;
-
-&lt;p&gt;機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-2-2016-09-10-chaingmai&#34;&gt;[2.9.2] - 2016-09-10 @ Chaingmai&lt;/h2&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;FIxed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;快眠時間前の起床時に快眠ノーティス音の解除&lt;/li&gt;
-&lt;li&gt;起床後のメッセージの修正。&lt;br /&gt;
-（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ステータスバーを非表示&lt;/li&gt;
-&lt;li&gt;睡眠時間表示の調整（少し大きく、太くしました）&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）
+と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。
+機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。
+Change Log [2.9.2] - 2016-09-10 @ Chaingmai FIxed  快眠時間前の起床時に快眠ノーティス音の解除 起床後のメッセージの修正。
+（毎日使っているのに気がつきませんでした。。&amp;rdquo;How&amp;rsquo;s meditaion&amp;rdquo;って他のアプリのものの変更忘れ。。。）  Changed  ステータスバーを非表示 睡眠時間表示の調整（少し大きく、太くしました）  </description>
     </item>
     
     <item>
@@ -147,32 +99,8 @@
       <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/cosper-193/</guid>
-      <description>
-
-&lt;p&gt;固定だったcosperのコスパ総額表示: &lt;a href=&#34;http://goozenlab.com/blog/2016/09/cosper-display/&#34;&gt;記事&lt;/a&gt; を選択可能にしました。きつきつの表示を嫌う方はオフにできます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-01-cosper-display.png&#34; alt=&#34;cosper display&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-3-2016-09-08-chiangmai&#34;&gt;[1.9.3] - 2016-09-08 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;セルの消去時など、動きがスムースで無いところを調整しました。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-06-cosper-193.png&#34; alt=&#34; cosper-193 &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。&lt;/p&gt;
-</description>
+      <description>固定だったcosperのコスパ総額表示: 記事 を選択可能にしました。きつきつの表示を嫌う方はオフにできます。
+Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix  セルの消去時など、動きがスムースで無いところを調整しました。  Add  金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。  おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。</description>
     </item>
     
     <item>
@@ -181,50 +109,11 @@
       <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/09/littlist-280/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。&lt;/p&gt;
-
-&lt;p&gt;追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-09-02-littlist-280.png&#34; alt=&#34;littlist 2.8.0&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。&lt;/li&gt;
-&lt;li&gt;インポートされたイベントの右バーのに色が付きます。&lt;/li&gt;
-&lt;li&gt;読み込みリスト名の設定などは設定より行います。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：この長押しは、&lt;strong&gt;メイン画面の時にのみ有効&lt;/strong&gt;になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-09-05-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iOS8以降でのサポート&lt;/li&gt;
-&lt;li&gt;バーの色、選択時の背景色を変更 （ダークモードが少しカッコよくなったと、）&lt;/li&gt;
-&lt;li&gt;文字が少し大きくなる（私の老眼が進行しているわけではない。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加ボタンの長押し：インポート機能&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;remove&#34;&gt;Remove&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;新規追加ダイアログからインポートボタンを削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。&lt;/p&gt;
-
-&lt;p&gt;近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。&lt;/p&gt;
-</description>
+      <description>Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。
+追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。
+ リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。 インポートされたイベントの右バーのに色が付きます。 読み込みリスト名の設定などは設定より行います。  注意：この長押しは、メイン画面の時にのみ有効になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。
+Change Log [2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai Changed  iOS8以降でのサポート バーの色、選択時の背景色を変更 （ダークモードが少しカッコよくなったと、） 文字が少し大きくなる（私の老眼が進行しているわけではない。）  Added  追加ボタンの長押し：インポート機能  Remove  新規追加ダイアログからインポートボタンを削除  注：新しい言語のswiftへの書き直しのため、不具合等があると思います。お気付きのことがあったら連絡のほどよろしくお願いいたします。
+近くリリースされる、iOS10にて不具合が無い事を祈りつつ。。</description>
     </item>
     
     <item>
@@ -233,39 +122,11 @@
       <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/dandori-280/</guid>
-      <description>
-
-&lt;p&gt;まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。&lt;/p&gt;
-
-&lt;p&gt;さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。&lt;/p&gt;
-
-&lt;p&gt;ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。&lt;/p&gt;
-
-&lt;p&gt;わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-8-0-100-swift-release-2016-08-23-chiangmai&#34;&gt;[2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンの変更（数字を完全数に変更：今までは素数。気分転換。）&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;フラグの透明度を削除。（多分ほとんど使われていないと思う）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
-
-&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-dandori-280.png&#34; alt=&#34;Dandori Icon&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。
+さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。
+ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。
+わたしの実機（iPhone4S+iOS9.)で動かしてみると、スクロールとか、以前より軽快に動いているような気がする。あと、老眼が進行中しているわけでは無いけれど、表示フォントが少し大きくなりました。
+Change Log [2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai Changed  アイコンの変更（数字を完全数に変更：今までは素数。気分転換。） iOS9以降でのサポート  Removed  フラグの透明度を削除。（多分ほとんど使われていないと思う）  注 新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。</description>
     </item>
     
     <item>
@@ -274,30 +135,8 @@
       <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/cosper-192/</guid>
-      <description>
-
-&lt;p&gt;気になっていた部分の調整と、ちょっとした機能を追加しました。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-2-2016-08-22-chiangmai&#34;&gt;[1.9.2] - 2016-08-22 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;change&#34;&gt;Change&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_cut.png&#34; alt=&#34;Cut Edge on memo&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;add&#34;&gt;Add&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-22-cosper-192_sum.png&#34; alt=&#34;Totall money spend&#34; /&gt;&lt;/p&gt;
-</description>
+      <description> 気になっていた部分の調整と、ちょっとした機能を追加しました。
+Change Log [1.9.2] - 2016-08-22 @ ChiangMai Change  左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。  Add  カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）  </description>
     </item>
     
     <item>
@@ -306,32 +145,10 @@
       <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/sati-192/</guid>
-      <description>
-
-&lt;p&gt;またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）&lt;/p&gt;
-
-&lt;p&gt;ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。&lt;/p&gt;
-
-&lt;p&gt;サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。&lt;/p&gt;
-
-&lt;h2 id=&#34;1-9-2-2016-08-15-chiangmai&#34;&gt;[1.9.2] - 2016-08-15 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplicate function on History View.
-(In case user meditate without sati. (on situation like group-sitting)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;missing french localized string.&lt;/li&gt;
-&lt;li&gt;Localized messege after meditation. (it showed in only english)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-15-sati-192.png&#34; alt=&#34;Sati 192&#34; /&gt;&lt;/p&gt;
-</description>
+      <description> またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。）
+ついでと言ってはなんですが、履歴ページでデータの複製機能を付けました。
+サティを使えない環境で座った時等の利用を考えてます。（新規追加というのもありますが、、）テストはしてますが、エラーが出ないことを祈りつつ。
+[1.9.2] - 2016-08-15 @ ChiangMai Added  Duplicate function on History View. (In case user meditate without sati. (on situation like group-sitting)  Fixed  missing french localized string. Localized messege after meditation. (it showed in only english)  </description>
     </item>
     
     <item>
@@ -340,38 +157,9 @@
       <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/08/sati-191/</guid>
-      <description>
-
-&lt;p&gt;ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋滞在先のネット状況が悪すぎ。。）に向かえればと思ってます。&lt;/p&gt;
-
-&lt;p&gt;以下修正点です。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-1-2016-08-10-chiangmai&#34;&gt;[1.9.1] - 2016-08-10 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;フランス語のローカライズを復活（!! thanks richard !!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;見づらいと指摘された履歴ページのデザインをすこし整理　&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;履歴ページに行くためのボタンが狭いのを調整&lt;/li&gt;
-&lt;li&gt;履歴ページの日本語ローカライズが反映されないバグの修正&lt;/li&gt;
-&lt;li&gt;55分以内の瞑想時に音が鳴らなくなる不具合を修正&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-08-10-sati191.png&#34; alt=&#34;sati&#34; /&gt;&lt;/p&gt;
-</description>
+      <description> ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋滞在先のネット状況が悪すぎ。。）に向かえればと思ってます。
+以下修正点です。
+Change Log [1.9.1] - 2016-08-10 @ ChiangMai Added  フランス語のローカライズを復活（!! thanks richard !!)  Changed  見づらいと指摘された履歴ページのデザインをすこし整理　  Fixed  履歴ページに行くためのボタンが狭いのを調整 履歴ページの日本語ローカライズが反映されないバグの修正 55分以内の瞑想時に音が鳴らなくなる不具合を修正  </description>
     </item>
     
     <item>
@@ -380,38 +168,10 @@
       <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/07/doop-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？などと弱気になりがちな気持ちを抑え、寄り道をしまくって、ようやくの事、申請しました。傷だらけ（＋やけっぱち）リリースです。ということで、アイコンも傷物に変えてみました。（目も真っ赤にすればよかったかな。。）&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-31-doop-190.png&#34; alt=&#34;doop Icon&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;自分が書いたものだけど、いやはや、自分の馬鹿さ加減に呆れ返りました。移行というより、新しく書き換えてしまった方が早かったかなと思ったりしました。しかしながら今回も、コードがどんどんぐじゃぐじゃになって行ってしまうのは学習能力がなさが上か。。。。&lt;/p&gt;
-
-&lt;p&gt;さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-31-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-31 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
-&lt;li&gt;アイコンの変更（傷が癒えたら？幾つか先のアップデートで元のアイコンに戻します）&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポートになります&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;透明度を削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;注&#34;&gt;注&lt;/h3&gt;
-
-&lt;p&gt;新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。&lt;/p&gt;
-</description>
+      <description>Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？などと弱気になりがちな気持ちを抑え、寄り道をしまくって、ようやくの事、申請しました。傷だらけ（＋やけっぱち）リリースです。ということで、アイコンも傷物に変えてみました。（目も真っ赤にすればよかったかな。。）
+自分が書いたものだけど、いやはや、自分の馬鹿さ加減に呆れ返りました。移行というより、新しく書き換えてしまった方が早かったかなと思ったりしました。しかしながら今回も、コードがどんどんぐじゃぐじゃになって行ってしまうのは学習能力がなさが上か。。。。
+さて、あとは、littlist, dandoriを移行してとりあえずひと段落、と思っていましたが、もう８月！が、オリンピックが！（関心全くなし）、目の前。。Swift2.xへの移行を行っている最中ではありますが、ここで一気にジャンプ。XCode8+Swift3.0への移行作業も同時に始めたいと思います。(WatchOS3でSatiを動かしたいんだけど、、道のり遠し。。）
+Change Log [1.9.0 - Swift release] - 2016-07-31 @ ChiangMai Changed  未使用リストへの移行方法（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます） アイコンの変更（傷が癒えたら？幾つか先のアップデートで元のアイコンに戻します） iOS9以降でのサポートになります  Removed  透明度を削除  注 新しい言語のswiftへの完全に書き直しのため、不具合等がある可能性が多々あると思います。お気付きのことがあったらご連絡のほどよろしくお願いいたします。</description>
     </item>
     
     <item>
@@ -420,20 +180,8 @@
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/07/cosper-191/</guid>
-      <description>
-
-&lt;p&gt;あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-1-2016-07-30-chiangmai&#34;&gt;[1.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;設定にて変更したタイトルが反映されないバグの修正&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。
+Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイトルが反映されないバグの修正  </description>
     </item>
     
     <item>
@@ -442,29 +190,9 @@
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
-      <description>
-
-&lt;p&gt;快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし
-た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。&lt;/p&gt;
-
-&lt;p&gt;あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;2-9-1-2016-07-30-chiangmai&#34;&gt;[2.9.1] - 2016-07-30 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;睡眠時間表示を見やすくする（フォントを大きく）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fixed&#34;&gt;Fixed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;快眠ノーティスが鳴らないバグを修正&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。
+あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
+Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
     </item>
     
     <item>
@@ -473,49 +201,11 @@
       <pubDate>Thu, 07 Jul 2016 05:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/07/cosper-190/</guid>
-      <description>
-
-&lt;p&gt;Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。&lt;/p&gt;
-
-&lt;p&gt;ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学のプールで泳いだりして健康的なここ最近です。&lt;/p&gt;
-
-&lt;p&gt;ちょっと新しいことを思いついたりして、作業がグジャグジャになりつつ、どんどんコードがスパゲティ化していて気分が良くないのですが、、、取り急ぎ機能の追加はせずにSwiftによる移行のみで申請です。もーーーしかしたらアップデートでデータが消えるかもしれません。多分大丈夫だとは思うが、ちょっと検証できず。シミュレータでは問題無しなのだが、、。&lt;/p&gt;
-
-&lt;p&gt;技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-07-07-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-07-07 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ダークモード&lt;/li&gt;
-&lt;li&gt;お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。)&lt;/li&gt;
-&lt;li&gt;詳細ページレイアウトの変更&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;fix&#34;&gt;Fix&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;金額と項目の名前が長さにより表示に不具合が出てしまう件を修正&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;removed&#34;&gt;Removed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;透明度を削除&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-07-09-cosper_icon-190.jpg&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
+      <description> Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。
+ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学のプールで泳いだりして健康的なここ最近です。
+ちょっと新しいことを思いついたりして、作業がグジャグジャになりつつ、どんどんコードがスパゲティ化していて気分が良くないのですが、、、取り急ぎ機能の追加はせずにSwiftによる移行のみで申請です。もーーーしかしたらアップデートでデータが消えるかもしれません。多分大丈夫だとは思うが、ちょっと検証できず。シミュレータでは問題無しなのだが、、。
+技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。
+Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモード お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）  Changed  アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。) 詳細ページレイアウトの変更 iOS9以降でのサポート  Fix  金額と項目の名前が長さにより表示に不具合が出てしまう件を修正  Removed  透明度を削除  </description>
     </item>
     
     <item>
@@ -524,49 +214,899 @@
       <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/06/ippuku-190/</guid>
-      <description>
+      <description> Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。
+不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。
+大きな機能上の変更はありませんが、細かな調整が多々有ります。
+バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。 そして、新らしく、ダークモードを追加しました。
+次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。
+Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
+    </item>
+    
+    <item>
+      <title>tapas v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/tapas-190/</link>
+      <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/tapas-190/</guid>
+      <description> Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。
+Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種類によってテーブルの高さを調整 詳細ページにて入力時のレイアウト調整 リストページにて長いタイトル名をしっかりと表示 アイコンの変更 iOS9以降でのサポート  </description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <description> Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。
+使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。
+使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）
+Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しにてセッションのキャンセル 設定にて各ステージでの挨拶の変更を可能にする（おやすみ、おはよう）  Changed  リスト部分のレイアウトを収まりの良いように修正 詳細ページ、設定ページのレイアウトなど アイコンの変更 iOS9以降でのサポート  Removed  シェイクによるセッションの中止 夜更かしカラー（グラフで一目瞭然なので） 曜日カラーのオフ（デフォルトでタイ曜日カラーになります）  </description>
+    </item>
+    
+    <item>
+      <title>Sati v1.9.0</title>
+      <link>http://goozenlab.com/blog/2016/06/sati-190/</link>
+      <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/sati-190/</guid>
+      <description> 2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。iPhone6など大きい液晶の端末では表示に不具合があったようですが使用上には差し障りがなかったので放っておきました。WWDCの前ですがアップします。
+バージョンは一気に上がってますが、機能的には少しのアップデートしかありません。瞑想履歴のページはちょっとシンプルになり、表示する項目が多く無いのでちょっと貧弱です。これまた利用者の方にはあまり関係がありませんが、少し落ち着いたら、ギットハブに公開しようと思ってます。
+数日中に公開されると思います。。
+追記：申請から公開までのアプリ審査が早くなったと聞いていましたが、昨日の16:30に申請して翌日の12:15に登録完了になりました。かなりのスピードアップ具合でちょっと驚き。
+Change Log [1.9.0 - Swift release] - 2016-06-10 @ NongKhai Added  アプリケーションバッジの表示：１週間で瞑想した回数のカウントアップ、もしくは設定した回数までのカウントダウン。非表示を含めどちらかを選べます。（「ホーム」＞「設定」より）  Changed  アイコンを少し変更 iOS9以降でのサポート  Fixed  iPhone6,6+にて上・下部にスペースができてしまうレイアウトの問題 もしかしたらiOS9で起動しなかったならば、このリリースで動くようになります。  </description>
+    </item>
+    
+    <item>
+      <title>iPhone4SをiOS9にアップデート</title>
+      <link>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
+      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
+      <description>ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。 複数のソフトで共有しているデートピッカーが問題のよう。XCode7でのシミュレータ(iOS9)では素直に動いたので、ちょっと驚き。もしかしてiOS8.2による特有の問題かもしれないと、試しにXCodeにiOS8.2とiOS8.4のシュミレーターをインストール。しかしながら、実機と同じView関連でnillが戻って来るエラーが起き落ちる。。。チョットこれはやな予感（大幅な変更を余儀なくされる）がする。
+検証機のiPhone4sは下駄をかませてSimFree化をして使っているので、、アップデートで使えなくなったら今度は別の問題を抱える事になるし、、、はぁ〜（ため息）。
+そろそろiOS10が出る頃だしサポートもiOS9以降で良いだろうと、しばし悩む。ネットで調べてみたところスピード的にはiOS8も9もさほどの違いは無いないと、シムの下駄はまぁ使えなくなっても仕方が無いということで、、、
+とうとう、というか今更ながら、且つ嫌々ながら、iPhone4SをiOS9にアップデート。。。
+結果：シムの下駄は有効。動作はちょっと引っかかりと、すこしもっさり感が出る。電池の持ちも悪くなった。問題のデートピッカーはアプリが落ちることがなく動くようになる、がしかし、、、他のところで不具合が出ていたようだ。。。全滅ということか、、え〜らいこっちゃな。。</description>
+    </item>
+    
+    <item>
+      <title>Iconを作り替え中</title>
+      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。
+大幅な変更では無いけれど、ちょっとシックになったと。。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.8.1</title>
+      <link>http://goozenlab.com/blog/2015/08/doop-181/</link>
+      <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/08/doop-181/</guid>
+      <description>項目が削除できないケアレスミスのバグフィックスです。
+連絡いただいた、そらのはサン、ありがとうございました。
+対応が遅れましたが、アプストアに申請しました。今週中にはアップされると思います。
+PS：なぜだか分からないけれど、ビルドが全然通りませんでした。。。どうした事か？？
+追記：8/22にアプストアにアップされました。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.8.0</title>
+      <link>http://goozenlab.com/blog/2015/06/doop-180/</link>
+      <pubDate>Thu, 25 Jun 2015 07:00:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/doop-180/</guid>
+      <description>中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。
+追加機能  履歴ページへひとっ飛び  今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。
+バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSがiOS8以降になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。</description>
+    </item>
+    
+    <item>
+      <title>littlist lite 復活</title>
+      <link>http://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
+      <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
+      <description>リトリストのライト判を復活させました。
+かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョン言って良いのか分からないけれど、機能はそのままフルバージョンと同等です。 広告がつくのが唯一の違いです。（ちょっとライト版でのみ起きるバグもあるのですが、、、放置、すいません。）
+広告が邪魔でフルバージョンへ移行したいユーザーの方は、
+ ライトバージョンの設定より項目の書出し フルバージョンのインストール フルバージョンを立ち上げ、新規項目を追加（+ボタンより） 取込みボタンでライトバージョンで書き出した項目を読み込む。 ライトバージョンの削除  の作業になります。リトリスト間データーは共有されませんので、ライトバージョンはアンインストールする事をお勧めします。</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.6.4</title>
+      <link>http://goozenlab.com/blog/2015/04/dandori-264/</link>
+      <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/04/dandori-264/</guid>
+      <description>またまた、ケアレスミスのホットフィックスです。
+タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.6</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <description>データーベースの更新により起きた、幾つかのバグを修正しました。 どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。
+ &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ 編集画面で、期日をオフにしてもオフにならないバグ  申請が通り、アプストアに復帰しました。</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.6.3</title>
+      <link>http://goozenlab.com/blog/2015/03/dandori-263/</link>
+      <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/dandori-263/</guid>
+      <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。
+ついでに編集時に出る左の削除のボタンを削ろうかと思いましたが、保留。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
+      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
+      <description>ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。
+ 追加  バックアップを兼ねた、エクスポート リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート  変更：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、シェイクで行います。 DBの構造を整理  やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。
+間にリマンダーを挟みますが、簡易な方法として悪くないと思います。
+ 取込み  littlist にて＋のボタンより取り込む  書出し  ホーム＞設定＞littlist より、書出しのスウィッチをオンにします。 次回 littlist 起動時に確認アラートが上がり実行します。   ※ リストのデフォルトは ”littlist&amp;rdquo; になっています。ホーム＞設定＞littlistより変更できます。
+※ 簡単な重複のチェックをしてます。取り込んで、右側のバーの色を変更しなければ、重複チェックの項目として扱われます。（再度取り込んでも重複と見なされて取り込みされません）
+バックアップはついでというか、、折角なので、、、控えめに追加しました。本当はDBの移行がうまく行かなかったのでバージョンアップ時での利用を考え追加したのだが、問題は解決したので、将来的に消すか残すかちょっと考えてます。
+このアプリも最近アップデートしているアプリと同様にiOS6/7 ユーザーには最後のアップデートになります。</description>
+    </item>
+    
+    <item>
+      <title>tapas v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/tapas-165/</link>
+      <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/tapas-165/</guid>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。
+次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
+ DBの調整 iOS8での通知許可の設定  よろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/doop-165/</link>
+      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/doop-165/</guid>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。
+そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
+ DBの調整 編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）  よろしくお願いします。
+doopのソートについて考えています。
+今現在のソートパターンは
+ サイクルにかかる平均時間 0%にたどり着くであろう日付  によるソートをナビゲーションバーのロングタップで切り分けています。
+①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。
+両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。
+色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。
+では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。
+画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/03/doop-165/</link>
+      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/doop-165/</guid>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。
+そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
+ DBの調整 編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）  よろしくお願いします。
+doopのソートについて考えています。
+今現在のソートパターンは
+ サイクルにかかる平均時間 0%にたどり着くであろう日付  によるソートをナビゲーションバーのロングタップで切り分けています。
+①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。
+両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。
+色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。
+では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。
+画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.2</title>
+      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
+      <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
+      <description>うーーーん、ホットフィックスです。
+ バグ  朝のメッセージがずれてました。。   以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</description>
+    </item>
+    
+    <item>
+      <title>Pranatice v0.7.1</title>
+      <link>http://goozenlab.com/blog/2015/02/pranatice-071/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/pranatice-071/</guid>
+      <description>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。
+ メインページのデザインの微調整  下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。） ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。 月の位置、フォントの調整・変更    ホーム＞設定＞ Pranatice
+ カレンダーの詳細設定 書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）
+  その他
+ Iconを少し濃く 最初の状態でタップをすると周りにある雲等の透明度が変化します   </description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.5</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-165/</link>
+      <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-165/</guid>
+      <description>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には最後のアップデートになります。
+最終的なデザイン  いろいろと追加の画像を探した結果、「背景無し」を設定に追加：どこぞのキャラクターというか、マスクをしたクマに見える。 設定・履歴画面より戻るボタンを下に配置しました。iPhone6, 6+に配慮。多分慣れるまで違和感があると思います。 データーベースの構造をちょっと変更しました。特にiOS8ユーザーはこのバージョンにアップデートしてください。（このバージョンを飛ばすと次のバージョンでデーターが読み込めなくなります。）   瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）
+ 静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）
+ 音の鳴るおよその位置にドットが描かれます（左からスタート）
+   次のアップデートは、新しいプログラム言語への対応を含め、iOS8以降のサポートになります。追加の機能は今のところ頭に浮かんできませんので、現状のままのアップデートになりそうです。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/doop-164/</link>
+      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/doop-164/</guid>
+      <description>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特定できずにいました。（iOS8になりデーターベースへの書き込みのタイミングが変わったのではないかと。。）
+書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました
+ だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。 同時にタップしてスクロール時に落ちるバグも修正しました。  指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。
+iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</description>
+    </item>
+    
+    <item>
+      <title>Tapas v1.6.3</title>
+      <link>http://goozenlab.com/blog/2015/02/tapas-163/</link>
+      <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/tapas-163/</guid>
+      <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、ありがとうございます。
+しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。
+最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。
+ アイテムの削除でアプリが落ちます。
+ ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。  両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。
+修正版を申請しました。10日後ぐらいにはアプストアにアップされると思います。 ほかにも不具合がありましたら、コメントなどよろしくお願いします。
+追記：
+完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。
+ただし、メモの表示方法にちょっと手を入れようと思ってます。
+ リスト画面：メモを少し見やすく、選択された時は表示の高さを変える タイマ画面：左のテキストをタップで数秒間メモを表示する   </description>
+    </item>
+    
+    <item>
+      <title>次のアップデート進行状況</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-upcomming/</link>
+      <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-upcomming/</guid>
+      <description> 1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰めて作り込んでいます。こんな感じになると思います。今月末までに申請しようと思ってます。
+変更および追加  メインページの透明度等のデザインの微調整
+ 英字のフォントを Helvetica Neue に統一、太さでアクセントを付ける。（残念ですが、日本語だとあまり意味がない。）  設定ページのデザイン微調整
+ 戻るボタンを下に配置 終了音の追加（短めの鐘と風鈴） QuietModeのアイコンを追加  履歴ページのデザイン変更
+ 戻るボタンを下に配置  瞑想時に鳴る音のカスタマイズがデザインで把握できるようにしました（すべての音が鳴る状態）
+ 静寂モード時には月の印がつきます（最後に一回だけチリーーンと音がします）
+ 音の鳴るおよその位置にドットが描かれます（左からスタート）
+  画像を追加したいと思って色々探してみたものの、良い物が見つからないのでそのまま。
+  </description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.4</title>
+      <link>http://goozenlab.com/blog/2015/02/sati-164/</link>
+      <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/sati-164/</guid>
+      <description> iOS8上での音が鳴らない不具合は ホーム＞設定＞サティ＞通知より、
+サウンドのスウィッチをオンにしてください。 これで、問題は解消するはずです。
+for Bug that you don&amp;rsquo;t get any sounds on iOS8, go Home &amp;gt; Setting &amp;gt; Sati: Notification
+and turn Sound ON. This solves this problem&amp;hellip; I&amp;rsquo;m sorry so taking looong time to fix it.
+長らくご迷惑おかけしました。
+そして、次のアップデートに入れる予定のものが少し入り込みます。
+ アイコンだらけになっていたメイン画面をスッキリとさせました。   最近の状況を示すアイコンを中心の円の内側に入れました。
+ 今日を含めて９日分が表示されます。今日が一番上です、時計回りに過去に戻ります。
+ 瞑想回数により白が濃くなります。    設定画面も少し手を入れて、
+ 静寂モード（終了時にのみ風鈴の音がなります。）を追加しました。
+ 下は終了音の選択    ホーム＞設定＞サティで設定できる項目を追加しました。
+ 瞑想中の音のオン・オフ カレンダー書出し時のフォーマット   </description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.1</title>
+      <link>http://goozenlab.com/blog/2015/02/ohayo-281/</link>
+      <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/ohayo-281/</guid>
+      <description>ロングタップで記録の開始、音が出ないバグ の変更といくつかのバグ、修正と追加があります。
+ バグ
+ アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ 音が出ないバグ、iOS8。ホーム＞設定＞ohayo: 通知にてサウンドのスウィッチをオンにしてください 初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる
+（ホーム＞設定＞ohayoより時間を設定している場合は問題がおこりません。）  修正・調整
+ ロングタップで記録の開始（ボタンとの誤作動をさけるため） シェイクがかなり繊細なのを少し調整  追加
+ ヘルスケアへの書出し設定が有効時に、書出しオン・オフボタンを朝のメッセージの画面にて表示（※下記参照）   ※ 時に記録を取り忘れ、起床時にデーターを入力する事があります。
+データー入力、変更、もう一度ヘルスに登録、ヘルスケアにある不要な睡眠情報の消去、が作業になります。ヘルスケアにてのデーター削除が面倒な作業で、ヘルスケアでのデーターの並び順（古い物が手前）が独特のため、削除するために一番下までいかなくてはなりません。データーがたまるとかなり面倒です。（残しておいても問題は無いように思えますが、ゴミが入り込むのはあまり良い気がしません。）
+この手間を省くため、朝のメッセージが出る所で、ヘルスケアへ書出しのオン・オフのスウィッチを入れました。</description>
+    </item>
+    
+    <item>
+      <title>littlist 2.6.3</title>
+      <link>http://goozenlab.com/blog/2015/02/littlist-263/</link>
+      <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/littlist-263/</guid>
+      <description>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。
+ついでに、ネット各所に載って いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。 ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。
+agvtool bump # agvtool bump -all #Info.plistも更新したいとき infoPlistFileSource=&amp;quot;${SRCROOT}/${INFOPLIST_FILE}&amp;quot; #infoPlistFileDestination=&amp;quot;${TEMP_DIR}/Preprocessed-Info.plist&amp;quot; rootPlistFileDestination=&amp;quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&amp;quot; if [ ${CONFIGURATION} = &amp;quot;Debug&amp;quot; ]; then # Version 2.6.3 # Build @ 2014-01-16 12:16 (dev.298) versionPrefix=&amp;quot; (dev.&amp;quot; date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;) APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource) BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot; else # Version 2.6.3 @ 2014.01.16 # Build 276 date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;) APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource) fi # ここのPreferenceSpecifiers:16, 17は各アプリによって変更 /usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&amp;quot; $rootPlistFileDestination /usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&amp;quot; $rootPlistFileDestination  検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</description>
+    </item>
+    
+    <item>
+      <title>pinocul v1.7.1</title>
+      <link>http://goozenlab.com/blog/2015/02/pinocul-171/</link>
+      <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/02/pinocul-171/</guid>
+      <description>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。
+最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。
+折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）
+新しいプロジェクトをまっさらな状態から始めました。移行自体はBundle Identifire, Bundle Name ?を変えなければ問題なく移行できました。アプリの名前は Bundle display name を Info.plist 追加で変更します。
+という事でネットでほぼ一つ一つ調べつつ作業しました。（！、？とか、なんだ！こりゃ？ なんか主張したいのか？このプラグラミング言語は？？と、、）
+ソースも見た感じさっぱりしているし、可読性も悪くないように思います。他のアプリも移行しても良いかなと思い始めてます。書いているうちに割すんなりとシックリ来るような気?(optional型:nilかもしれん)もします。(私の場合問題は Swiftより、Storyboardの方なんですよね）
+※ iTuneUのスタンフォード大学の講義を見ましたが、凄いです。非常にありがたいです。でも、途中から一気に難しくなるんですよね。。</description>
+    </item>
+    
+    <item>
+      <title>Satiにて音が出ない件</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</link>
+      <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-nosound-erro/</guid>
+      <description>以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。 勘違いとケアレスミスのダブルパンチです。
+アプリをストアーから一時削除しました。
+対応したバージョンを申請しています。
+なんか申し訳ないのと情けないので、、、（溜息）。。iOS8に恨み節。。</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.6.3</title>
+      <link>http://goozenlab.com/blog/2015/01/sati-163/</link>
+      <pubDate>Wed, 28 Jan 2015 08:54:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2015/01/sati-163/</guid>
+      <description>長押しスタート マイナーアップデートですが、使用方法に変更があります。
+ 瞑想の始まりを長押し（ロングタップ）に変更しました。  誤動作をさけるためと他のソフトとの操作性の統一のためです。 キャンセルはシングルタップで変わりありません。    設定画面をデザインし直しました。設定と同じような色柄にしました。(うーーん、しんぷるや、よくいえば瞑想的ともいえるが、不出来。もうひとひねり欲しい。。) ホーム&amp;gt; 設定&amp;gt; サティにて日本語表示  おまけ 隠す事はできるのですが、メインページのアイコンだらけも少し気になってます。</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/cosper-162/</link>
+      <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/cosper-162/</guid>
+      <description>cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/doop-162/</link>
+      <pubDate>Thu, 20 Nov 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/doop-162/</guid>
+      <description>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加しました。
+入力部のアイコンも新しくしました。
+マイナーアップデートです。iOS8ユーザーは必須のアップデートです。お手間ですが、よろしくお願いします。
+次は入力・編集画面に手を入れようかと思ってます。対応iOSも７以降にあげる予定です。</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.6.2</title>
+      <link>http://goozenlab.com/blog/2014/11/dandori-262/</link>
+      <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/dandori-262/</guid>
+      <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。
+次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.8.0</title>
+      <link>http://goozenlab.com/blog/2014/11/ohayo-280/</link>
+      <pubDate>Wed, 05 Nov 2014 05:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/11/ohayo-280/</guid>
+      <description>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。
+※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。
+書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。
+※書出し時の注意：データ書出しは上書きにはなりません。同じ物でも複数のデータが書き込まれる事になりますのでご注意のほど。
+余計な機能のついてない、こざっぱりしたソフトです。海外へ行った時にも時間が時差の関係で表示が崩れないようになっています。月に３度有料化しますが、ほとんどの時期で無料ですので、お気軽に使ってみてください。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.0</title>
+      <link>http://goozenlab.com/blog/2014/10/littlist-260/</link>
+      <pubDate>Thu, 30 Oct 2014 20:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/10/littlist-260/</guid>
+      <description>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）
+ちょっとした使い勝手の変更
+ 赤ドットが入るときにセルの背景が赤色にフラッシュします。 セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）  アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。月に数回無料化してますので、タイミングを伺ってゲットしてください。</description>
+    </item>
+    
+    <item>
+      <title>dandori v2.6.1</title>
+      <link>http://goozenlab.com/blog/2014/10/dandori-261/</link>
+      <pubDate>Mon, 27 Oct 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/10/dandori-261/</guid>
+      <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。
+オマケ マイナーアップデートで申請しましたが、じつはリマインダーへの書出しの隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。
+方法は以下。
+ プロジェクトリスト画面にて、セルの左側だいたい３０（レテイナだと６０）ドット分を長押し。 書出し確認のアラートが上がります。OKを選択。 始めての書出時には認証の確認のアラートが上がります。OKを選択。 静かにリマインダーへ書き込まれてます。
+ リマインダーへは
+ プロジェクト名はリスト名 アイテム（タスク）  文字の色が一番薄いグレーのアイテムは書出しされません。！！要注意！！    私は旅に出る時の荷物の確認時に使うつもりで追加しました。出張の多い方や、同じようなタスクを定期的に抱えている方には重宝する機能だと思います。
+※ただし、同じプロジェクト複数回書き出すと同じ名前のリストに追加されます。上書きはされません。iOS6使用時にはエラーは出てませんが、他の環境では検証してませんので問題が発生した時にはコッソリ教えて頂けるありがいです。</description>
+    </item>
+    
+    <item>
+      <title>x.6.0にアップデート中</title>
+      <link>http://goozenlab.com/blog/2014/10/update-x60/</link>
+      <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/10/update-x60/</guid>
+      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。
+そして、AdMobを6.12にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.7</title>
+      <link>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</link>
+      <pubDate>Sat, 20 Sep 2014 13:08:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2014/09/sati-v1.5.7/</guid>
+      <description> 一年近くコンピューターを持たずにふらふらしてました。 久しぶりに以下の調整および修正を行いました。
+メイン  瞑想のはじめと終わりに流れる長い鐘の音に入り込んでいたノイズを抜く。 中断アラートが複数あがらないようにする。 ちょっと物足りない背景に、オームのアイコンを追加。  設定ページ  時間設定のスライダーを１時間以上は5分刻み、以下は3分刻みにする。  履歴ページ  メモアイコンをタップしても時間のIconが消えず、表示の邪魔をしていたのを修正。  </description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.5</title>
+      <link>http://goozenlab.com/blog/2013/08/sati-155/</link>
+      <pubDate>Thu, 08 Aug 2013 13:08:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/08/sati-155/</guid>
+      <description>30分以内のキャンセルが効かないバグがある事に気がつきました。
+（キャンセルしますか -&amp;gt; はい -&amp;gt; 変化無し。。。）
+ 瞑想時間が切れるまでほっておく ３０分以上たってキャンセルする プログラムを終了させる  で、スタートの状態に戻ります。 確りテストをするのを忘れてました。
+まぁ、皆さんご自分で設定した時間で瞑想されていると思うのでそんなに支障はないとは思いますが、、 あまり気分のよい物では無いと思います。
+修正版が申請中です。 それまでは途中キャンセル無しに瞑想生活を送ってください。
+よろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>sati v1.5.4</title>
+      <link>http://goozenlab.com/blog/2013/08/sati-154/</link>
+      <pubDate>Tue, 06 Aug 2013 18:29:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/08/sati-154/</guid>
+      <description>見た目が質素だった設定ページを更新しました。 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。
+そして、割と厳しかった途中でのキャンセル時の処理を変更。 ３０分以上時間が経った時には瞑想をカウントするようにしました。</description>
+    </item>
+    
+    <item>
+      <title>listaria v1.5.4</title>
+      <link>http://goozenlab.com/blog/2013/07/listaria-154/</link>
+      <pubDate>Tue, 30 Jul 2013 16:33:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/listaria-154/</guid>
+      <description>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。） パパイヤリリースです。
+使い方 メモ欄下の数字の入ったボックスをタップ、スワイプにて設定をします。
+タップではちょっと細かい設定ができます。（無し、フル、上旬、下旬の順）
+スワイプは一気に設定したり設定を解除したりできます。 （灰色からスワイプした時はオンになり、オンのグリーンからスワイプした時はオフになります。）
+食材リストでは、旬の設置がされている時期には左肩に緑のドットが表示されます。 ショッピングリストではちょっと表示がうざったくなってしまうと思ったので食材リストのページでのみ表示されます。
+※ 夏と言えば枝豆ですよね。
+これで、取りあえずiOS6向けのアップデートは終了。iOS7に向けて移行作業に入ります。（ついでにカンボジアに移動の予定）</description>
+    </item>
+    
+    <item>
+      <title>viriya v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/viriya-150/</link>
+      <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/viriya-150/</guid>
+      <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。
+ 編集画面デザインを更新。 カラーモードを変更できるようにしました。
+ フォントを変更できるようにしました。 バグの修正：1分前のベル設定、アプリケーションバッジ表示の不具合。 項目削除時に（せっかちな人は沢山）落ちる不具合を直しました。 ARCに対応（故にiOS5.1以降の対応に）安定すると思います。  </description>
+    </item>
+    
+    <item>
+      <title>doop v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/doop-150/</link>
+      <pubDate>Mon, 29 Jul 2013 10:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/doop-150/</guid>
+      <description>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。
+ アイコンを変更。髪の毛とひげを濃くしました。おでこにカラータイマーを付けました（別段意味無し）  編集画面デザインを更新。
+カラーロックは上部の色のドットになります。タップで中心部に白い穴（ロック状態）が開きます。
+   履歴ページを更新。無駄な情報をとりのぞき、シンプルにしました。  日付表示も開始日か終了日かに切り替えることができます。 （横線周辺のタップ） 右の横線は最小時間と最長時間の長さになっています。タップにより使用期間によるソートが可能です。 ソート時には白い横線が表示されます。もう一回クリックすることで解除されます。 （丸2の右下にみえる白い点は平均時間の表示になります。)   </description>
+    </item>
+    
+    <item>
+      <title>dandori v2.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/dandori-250/</link>
+      <pubDate>Sat, 27 Jul 2013 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/dandori-250/</guid>
+      <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳ではありません。
+iOS7に向けての準備第一弾としての編集画面の変更をしました。 （iOS7のシミュレーターで試験中ですが少しのバグと幾つかの厄介な不具合がありました。）
+ 編集画面デザインを更新。 プロジェクトリストページにて、右のバー周辺をロングタップで一番上に移動するようにしました。（下層では機能しません） グリッドに合わせてアイコンを変更。そんなに変わっていません。ちょっとだけ背が高くなったような感じです。  </description>
+    </item>
+    
+    <item>
+      <title>tapas v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/tapas-150/</link>
+      <pubDate>Wed, 24 Jul 2013 14:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/tapas-150/</guid>
+      <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。
+ ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。 フォントを変更できるようにしました。
+（日本語は太字にだけ対応。怪我の功名でHelveticaNeue-CondensedBoldで日本語が太字に。濃い表示になります。） タイマー画面にてキャンセル、そして再スタート時に背景の色が変わらないバグの修正 一分前に背景が数回フラッシュします。（目を離していても、気がつきやすいようになると、、思います。） 編集画面デザインを更新。  </description>
+    </item>
+    
+    <item>
+      <title>littlis v2.5.6</title>
+      <link>http://goozenlab.com/blog/2013/07/littlist/</link>
+      <pubDate>Sat, 20 Jul 2013 08:07:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/littlist/</guid>
+      <description>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。 タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。
+ フラットなデザインに変更。日付けボタン／日時設定をメモ欄の下に メモフラグを左のコーナーに。（タップでオンオフ：角が折られます。） ロックを色ドットに変更。（タップで色ロック：中心に白ドットが表示）  ※ 久しぶりに無料提供中です。（7/25まで）</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/ohayo-250/</link>
+      <pubDate>Thu, 18 Jul 2013 14:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/ohayo-250/</guid>
+      <description>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。
+ アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
+ デザインリニュー：フォントを変更。（日本語には影響無し） 設定ページをリデザイン。さっぱり奇麗になりました。
+ 詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）
+※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。） iOS7に向け表示に不具合がある所を調整。  </description>
+    </item>
+    
+    <item>
+      <title>cosper v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/cosper-150/</link>
+      <pubDate>Wed, 17 Jul 2013 08:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/cosper-150/</guid>
+      <description>入力画面のリニューがメインのアップデートです。
+ アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
+ フォントを太字、ノーマル、細字に変更できるようにしました。（日本語は変わりません。） 入力画面をリデザイン、フォントを変更してメリハリを付けました。 色ロック方法が変わります。 参照 （前：右下の鍵をタップでオンオフ、新：ナビバーのしたの色ドットをタップでオンオフ（オン時にはドットに白い穴があきます）） 入力画面でカウンター設定時に表示の順が正しく表示されないバグの修正。  そして、恥ずかしながらDairy Use は間違いでして、Daily Useが正しく、毎日利用の意味。 （ちなみに今までは牛乳利用？もしくは乳製品利用になってました。）</description>
+    </item>
+    
+    <item>
+      <title>sati v1.5.3</title>
+      <link>http://goozenlab.com/blog/2013/07/sati-153/</link>
+      <pubDate>Sat, 13 Jul 2013 00:59:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/sati-153/</guid>
+      <description>これといった新機能は追加してません。変更点は以下、
+ アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
+ 背景イメージを選択できるようにしました。
+デフォルトは花、今までの仏様に戻したい方は設定より選択してください。
+（本当は数種から選択できるようにしたかったのですが、、イスラム模様、中世の十字架模様など。割と探したのですが良い物が見つかりませんでした。）
+ 設定ページを白基調にしました。（見た目がちょっと質素ですので次のバージョンで手を加えます。）  の３つです。</description>
+    </item>
+    
+    <item>
+      <title>カラーロック</title>
+      <link>http://goozenlab.com/blog/2013/07/color-lock/</link>
+      <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
+以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
+新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
+    </item>
+    
+    <item>
+      <title>Listaria v1.5.3</title>
+      <link>http://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更。
+タイでは１キロ、25バーツくらいで売りに出てます。 見た目ちょっと愛嬌があって、味はライチーと似ています。剥くのはライチーより楽です。
+アップデートリスト  アイコンをアップル推奨のグリッドに合わせて微調整 入力画面をクリーンにしました。 Display Bug on Recent Bought List
+本来買った時間で色づけが変わるようになるはずでしたが、、、ちょっとした勘違いにより思っていたように表示されていませんでした。コッソリ修正物です。ソフトの安定性には影響はありません。 リストページの左のバーに買った回数に合わせて濃淡を付けました。
+パラッーーと見た時に自分が良く買っている食材を把握する事ができます。 濃いほど良く買っているという事になります そのカテゴリー内で一番多く買った回数を最大数として使って計算しています。
+※ 使い込めばそれだけ濃淡の幅が出てきます。  ぜひバランス良く日々の生活を送ってください。
+オマケ 次期アップデートでは旬の機能を付けます。
+ その時期を入力（1/2月単位） 旬の時期が来たら左肩にドットを表示  のようにしたいと思ってます。表示が騒々しくならなければ採用の予定です。 ただ入力が面倒なので、プレロードのDBに入れておきたい気もするのですが、、 気力が、、、。。。
+こんな感じです</description>
+    </item>
+    
+    <item>
+      <title>ippuku v1.5.0</title>
+      <link>http://goozenlab.com/blog/2013/07/ippuku-150/</link>
+      <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/07/ippuku-150/</guid>
+      <description>iOS7が発表され、それにそったデザインに少し変更した物をアップします。 機能の追加はありませんが、ちょっとした所に手を入れました。
+ 日付けを挟む所(午前０時）にラインを入れました。長い時間を表示しているので、これで少々時間が分かりやすくなったとおもいます。 アイコンをアップルのグリッドに合わせました。
+iOS7のSimulatorを使っている時、アイコンを指定していないアプリにはグリッドの入ったアイコンが表示されます。 これは、アップルからのメッセージととりました。ラインがそろうと見た目が全体的にスキッとします。ほんの少しの調整なので嫌がらずに合わせました。 同様に、今までも拙作のアプリは全体的にフラットデザインなのですが、さらにフラットにしました。 上がってくるウィンドウももう少し手を入れたい気もしてますが、どうもアイデアが湧いてきません。  以前のバージョン：ドラフト：最終
+※ 今回からiOS4.3には未対応なります。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.4.4</title>
+      <link>http://goozenlab.com/blog/2013/06/doop-144/</link>
+      <pubDate>Thu, 27 Jun 2013 18:47:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/06/doop-144/</guid>
+      <description>ナビゲーションバーの長押しでソートを切り替える機能を追加しました。 今まで通りのソート（メインでは平均時間順、他のページでは色毎）と平均時間を迎える予定日時が近くある物のソート順に切り替えができます。 パーセントによるソートにしようかとも思いましたが、それですと平均時間が長い物と少ない物で期日を迎えるまでの日付でバラツキが出てしまいます。少し混乱するように思えます。パーセントはあくまでの目安なので期日が近いものを前に持ってきてます。
+期日が近い物のソート時にはタイトルの両端に•（点）が付きます。長押しで元のソートに切り替わります。
+そして、平均時間がないものはバーに青色の色を付けました。</description>
+    </item>
+    
+    <item>
+      <title>doop v1.4.3</title>
+      <link>http://goozenlab.com/blog/2013/05/doop-143/</link>
+      <pubDate>Wed, 29 May 2013 09:32:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/doop-143/</guid>
+      <description>久しくアップデートしていないdoopに少し手を入れました。
+カラーモードの追加と右のバーを単色とグラフ表示の切り替え可能にしました。 少しだけ見た感じが騒々しくなるように思えますが、可視性がアップしたと思います。
+※ デフォルトは今まで通りの単色のバーになってます。グラフ表示にするには設定より変更をしてください。
+もう一つはセルの３つ目のスタイルを若干変更しました。カウントダウンが目的のスタイルでしたが表示がまとまっていなかったのをタイトルの上下に平均使用日数にたどり着くまでの日時と日数を表示するようにしました。
+現在レビューの最中、数日中にアップされると思います。フライング投稿です。</description>
+    </item>
+    
+    <item>
+      <title>DatePickerでの表示バグの修正</title>
+      <link>http://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。
+OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</description>
+    </item>
+    
+    <item>
+      <title>Icon Renew and minor update</title>
+      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。 サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。 ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。
+そして、ソフトの中身も少しだけアップデートしました。
+sati：履歴の表示のセルとデザインをちょっと変更しました。
+リスタリア：買い物リストがゼロの時に文言をかえました。と、ソースコードの調整で少し安定したと、、思います。 ippuku：アクションシートのタイトルにその始まりと終わりの時間を表示するようにしました。使い勝手が少し良くなります。</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.4.1 for lite version</title>
+      <link>http://goozenlab.com/blog/2013/05/admob-update/</link>
+      <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/05/admob-update/</guid>
+      <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。
+たぶん落ちる事も少なくなるかな？。。</description>
+    </item>
+    
+    <item>
+      <title>Kawaii ColorMode x.4.2</title>
+      <link>http://goozenlab.com/blog/2013/04/colormode/</link>
+      <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/04/colormode/</guid>
+      <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変えたい時に使ってみてください。細かい内容はこちらのポストを参照のほど。
+同時に削除時にたまに落ちるバグも取り除きました。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.4</title>
+      <link>http://goozenlab.com/blog/2013/04/littlist-254/</link>
+      <pubDate>Thu, 25 Apr 2013 20:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/04/littlist-254/</guid>
+      <description>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので、長らく放置状態でしたが、これでようやくのこと解決！？したと思います。（Kawaiiモードなんか追加してる場合ではなかった。。）
+ちょっとスッキリしたようなそうでないような。。割と簡単な所に問題があったし、時間を取って書き直そうかなと思ってみたりしてます。
+アプストアーに近日中にアップされると思います。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.3</title>
+      <link>http://goozenlab.com/blog/2013/03/littlist-253/</link>
+      <pubDate>Sun, 03 Mar 2013 11:03:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/03/littlist-253/</guid>
+      <description>littlistにカワイイカラーモードを付けました。色の具合とかかなり悩みました。女性は男性より色の識別能力が優れているとの事なので、色の近い赤•ピンク系の色を数種入れました。（全部ピンク系にしちゃおうかな、なんて思ったり、、女性カラー、女子カラーと分けても良いとも、、） ドットも♥マークにして、色も真っ赤からちょっと紫、ピンクよりの色にしました。
+色のスキームは、赤系を４つ、オレンジ、グリーンを２つ、青と紫です。黄色は抜きました。
+で、見た感じはこんなようになります。ナビゲーションバーの色も変更しています。
+使っているとちょっと分かりづらいと思いますが、背景色もすこし付けてます。設定はホームから設定&amp;gt;littlist&amp;gt;表示設定のカラーモードからになります。
+オッサンの暴走アップデートですので、もし他のお勧めのカワイイ色合いがありましたらご教授のほどよろしくお願いします。申請中ですのでアプストアーには来週にはアップされると思います。</description>
+    </item>
+    
+    <item>
+      <title>ippuku v1.4.3</title>
+      <link>http://goozenlab.com/blog/2013/02/ippuku143/</link>
+      <pubDate>Fri, 22 Feb 2013 15:35:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/02/ippuku143/</guid>
+      <description>ippukuを久しぶりにアップデート。アプストアに申請中です。
+29時間の流れを一気に見れるのが売りでしたが、少ない時間のログをとるには少しグラフの幅が短かく利便性に欠くなと思っていました。全て解決するとは思いませんがちょっと手を加えました。
+改良点：ナビゲーションバーをロングタップすることで、表示できる時間帯を変更するようにしました。 そして表示を区別するために“•”をタイトルの前後に表示します。
+ タイトル：デフォルト 午前4:30から翌日午前9:30 •タイトル：午後10:00から翌午前8:00 •タイトル•：午前5:00から午後7:30 タイトル•：午後1:00から午後23:00  上部オレンジの点が午後0:00で下部ブルーの点が午前0:00の印になります。真ん中の色付きは午前／午後6:00です。
+※アプストアでの説明に33時間って書いてました。ほんとは29時間でした。。。一年近く気がつきませんでした。。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.2</title>
+      <link>http://goozenlab.com/blog/2013/02/littlist-252/</link>
+      <pubDate>Wed, 06 Feb 2013 20:35:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/02/littlist-252/</guid>
+      <description>カラースキームを変更できるようにしました。ダークモードを追加、背景を黒くしグレーの階調も逆順にしました。黒iPhoneで使ったら結構格好いいかもしれません。
+見た目こんな感じになります。
+ホーム＞設定より変更してください。
+同時に、時に背景色が変わらないバグを修正しました。</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.1 for lite version</title>
+      <link>http://goozenlab.com/blog/2013/01/admob-update/</link>
+      <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
+そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
+広告がらみの変更。ご理解のほど。。
+タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</description>
+    </item>
+    
+    <item>
+      <title>Sati v1.5.1</title>
+      <link>http://goozenlab.com/blog/2012/12/sati-151/</link>
+      <pubDate>Fri, 21 Dec 2012 12:47:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/12/sati-151/</guid>
+      <description>サティ（旧名：サティマ）のプチアップデート。
+ ちょっとパーリー語を勘違いしてたかもしれないのでアプリの名前を変更（サティマからサティに） メイン画面に日付を表示と少しのデザイン更新 ちょいと派手目だったスプラッシュスクリーンを地味な画像に変更  年内にアップデートされると思います。そして年が明けたらオープンソース化します。 で、わたしは年明けまで街からちょっと離れます。
+※ ちなみに「サティ」とは日本語で「気付き、記憶」の意味。仏教語では「念」だそうです。</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.1</title>
+      <link>http://goozenlab.com/blog/2012/10/littlist-251/</link>
+      <pubDate>Sat, 20 Oct 2012 12:47:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/littlist-251/</guid>
+      <description>インターフェイスをまた弄りました。（ご迷惑おかけします）変更点は、
+右ロングタップ：項目をリストの一番上に移動。 今までは、右のバーを一番黒くする事で移動していましたが、タップが面倒というのと、タップが行き過ぎてしまう事が多いのが問題だと思っていました。タップの行き過ぎは前回のアップデート時に矢印を表示という形で改善を試みましたが、あまり奇麗でないのが気になっていました。セルでの操作をあまり複雑にしたくはなかったのですが、結局無難な右側のロングタップで落ち着きました。すっと上部に移動します。
+項目を下に動かすのは相変わらず同じ方法になっています。これも、良い方法があったら形を変えたいと思ってます。
+と、
+ 新規入力時のキーボードのリターンキータイプの変更 マイナーバグ修正 ARCにほぼ対応。  そして、サポートページもちょっと手を加えてます。 久しぶりにコメントを見たら、落ちまくっているとのレビューがありました。プレロードDBが良くないのだろうか。。そんなに複雑な事は内部ではしていないの、落ちまくるほどではないと、、でちょっと気になります。 もし頻繁に落ちる方がいらっしゃったら、iOSのバージョン、その時の状況、を教えていただけると非常にありがたいです。</description>
+    </item>
+    
+    <item>
+      <title>Listaria v1.5.1</title>
+      <link>http://goozenlab.com/blog/2012/10/listaria-151/</link>
+      <pubDate>Sat, 20 Oct 2012 07:59:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/listaria-151/</guid>
+      <description>リスタリア、マイナーバクフィクスのアップデートを申請しました。
+ ロングタップ時の挙動が不安定なのを改善。（未だたまーーに落ちます） リスト表示時にナビゲーションバーをロングタップするとソートが最近買った順、買った回数順に切り替わります。その状態を保持できるようにしました。 ARCにほぼ対応  ここ最近無料で提供していたので、ダウンロード数がぐっと一時的に上がりました。有料だと、全くでません。</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.0 for lite version</title>
+      <link>http://goozenlab.com/blog/2012/10/admob-update/</link>
+      <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
+インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
+    </item>
+    
+    <item>
+      <title>Viriya Release</title>
+      <link>http://goozenlab.com/blog/2012/10/viriya-release/</link>
+      <pubDate>Mon, 01 Oct 2012 13:43:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/10/viriya-release/</guid>
+      <description>&lt;p&gt;パーリ語シリーズ第二弾のビリヤ（努力/精進という意味）をアップしました。今週中にはストアーにアップされると思います。（第一弾はサティマという瞑想タイマー）少し前に出来上がっていたのだけど、自分で使う機会もあまり多くなく、アップする気もちょっと失せていたのですが。。。&lt;/p&gt;
 
-&lt;p&gt;Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデート！申請中です。&lt;/p&gt;
-
-&lt;p&gt;不思議なことに今でも少しダウンロードされてます。本当に動いているのだろうかちょっと不安。怖くて確認してません。。&lt;/p&gt;
-
-&lt;p&gt;大きな機能上の変更はありませんが、細かな調整が多々有ります。&lt;/p&gt;
-
-&lt;p&gt;バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。
-そして、新らしく、ダークモードを追加しました。&lt;/p&gt;
-
-&lt;p&gt;次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。&lt;/p&gt;
-
-&lt;h1 id=&#34;change-log&#34;&gt;Change Log&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-9-0-swift-release-2016-06-27-chiangmai&#34;&gt;[1.9.0 - Swift release] - 2016-06-27 @ ChiangMai&lt;/h2&gt;
-
-&lt;h3 id=&#34;added&#34;&gt;Added&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ダークモード&lt;/li&gt;
-&lt;li&gt;iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）
-
-&lt;ul&gt;
-&lt;li&gt;4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5)&lt;/li&gt;
-&lt;li&gt;4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6)&lt;/li&gt;
-&lt;li&gt;3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;changed&#34;&gt;Changed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アイコンの変更&lt;/li&gt;
-&lt;li&gt;左バーの色変更はスワイプに変更&lt;/li&gt;
-&lt;li&gt;上記の変更により、タップにてメモ表示&lt;/li&gt;
-&lt;li&gt;StarterViewのデザイン変更&lt;/li&gt;
-&lt;li&gt;ローカライズを追加&lt;/li&gt;
-&lt;li&gt;iOS9以降でのサポート&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goozenlab.com/images/2016-06-29-ippuku-190-01.png&#34; alt=&#34;Icon Image&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>4系と5系</title>
+      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
+そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
+    </item>
+    
+    <item>
+      <title>Update for Retina4</title>
+      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
+      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。
+で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。</description>
+    </item>
+    
+    <item>
+      <title>Update for Navbar</title>
+      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
+      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。 今まで手に付けてなかったのが不思議なくらいです。。
+設定方法は、
+アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。
+頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）
+今週中にはポコポコとアップされると思います。 セールもやっていますので、なにとぞ、よろしく。</description>
+    </item>
+    
+    <item>
+      <title>Littlist v2.0.2</title>
+      <link>http://goozenlab.com/blog/2012/07/littlist-202/</link>
+      <pubDate>Sun, 01 Jul 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/07/littlist-202/</guid>
+      <description>項目にちょっとしたメモを追加することを可能にしました。
+ただ、このソフトの売りの一部「大きな文字で」というを削りたくない。使い勝手も複雑にしたくない。今のシンプルさを犠牲にせずにメモをどういった形で表示するかが悩みどころでした。
+最終的に、中央部のシングルタップにより、数秒間表示を切り替える方法で決着しました。
+編集画面でエッジを切る（中央のセレクトボタン）ことによりメモの入力を可能にします。項目にエッジが入ることによりメモの有無が視覚的に確認できます。
+自分で言うのも何ですが、これでかなり使いやすくなったと思います。
+使用例） ショッピングリストとして使っている場合は、品目をタイトルにして、必要な数量もしくは最安値価格をメモ欄に記入。 toDoでは、タイトルにほんの少しの補足をメモに追加。
+ソースの変更はたぶん数十行もありません。 コロンブスの卵的なアイディアで少しずつでも使いやすくしていければと思ってます。
+ぜひ、お試しください。
+おまけ）WWDC2011でのiOS5プレゼンをネットで見ました。アップル独自のReminder(todoソフト）が発表されました。見た感じですと、、、このソフトの存在価値がまた一段と無くなってきているように思えます。</description>
+    </item>
+    
+    <item>
+      <title>Tapas v1.0.4</title>
+      <link>http://goozenlab.com/blog/2012/06/tapas-104/</link>
+      <pubDate>Sun, 10 Jun 2012 11:16:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/06/tapas-104/</guid>
+      <description>Tapasのマイナーアップデートです。
+老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に、文字の色も少し濃くし可視性を高めました。
+そのせいで、リスト表示が1行減ります。使い勝手には影響はないと思います。
+アイコンももう少し格好の良いモノに変更したいなとも思ってます。</description>
+    </item>
+    
+    <item>
+      <title>XCode4.2と怒濤のアップデート</title>
+      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
+      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。
+Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。
+で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。
+不具合のほとんどはテーブルセル部の
+[self.nextResponder touchesBegan:touches withEvent:event]  が問題だったようで、（既知の問題でした。）
+[super touchesBegan:touches withEvent:event];  に修正しました。シミュレーター上では動いてます。
+去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。
+※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。</description>
+    </item>
+    
+    <item>
+      <title>ippuku v1.0.6</title>
+      <link>http://goozenlab.com/blog/2012/01/ippuku-106/</link>
+      <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2012/01/ippuku-106/</guid>
+      <description>iTuneConnectで問題があったんよね。。最近ようやく解決。久しぶりにアップデートを上げてます。
+今までのが少々幼稚すぎたボタンのデザインを変更。 ちょっとバグっていたところも修正しました。</description>
     </item>
     
   </channel>
