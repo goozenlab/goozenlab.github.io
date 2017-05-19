@@ -18,9 +18,9 @@
       <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2017/05/sati-194/</guid>
-      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。
-アプリは一時配信を中断してます。
-UNNotification for iOS10 まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。
+      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。余計な１タップが減ります。
+アプリは一時配信を中断。ダウンロードしてしまったユーザーの方々申し訳有りません。
+UNNotification (iOS10) まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。
 そして、今更ながら、iOS10からは通知の仕様が変更されていたのを知らなかった。
 func registerAlarm(_ atDate: Date, soundName: String, identifier: String) { //print(&amp;quot;fire: &amp;quot; + atDate.description + &amp;quot; with sound:&amp;quot; + soundName + &amp;quot; with identifier:&amp;quot; + identifier) if #available(iOS 10.0, *) { let content = UNMutableNotificationContent() // Configure Notification Content content.sound = UNNotificationSound(named: soundName) // Add Trigger let calendar = Calendar(identifier: .gregorian) let components = calendar.dateComponents(in: .current, from: atDate) let date = DateComponents(calendar: calendar, timeZone: .</description>
     </item>
@@ -32,10 +32,10 @@ func registerAlarm(_ atDate: Date, soundName: String, identifier: String) { //pr
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2017/05/air-dahon/</guid>
       <description>海外に自転車を持っていくのは、ちょっと敷居が高い感じがありますが、旅先で自転車があると非常に快適です。ちょっと遠いレストランとか、町から外れた安宿に泊まったりした時とか便利です。
-折りたたみの自転車だと取り回しもそんなに大変ではない。 ダホンで飛行機輪行するにあたって、気をつけるべき点などをメモしておきます。
+折りたたみの自転車だと取り回しもそんなに大変ではない。輪行バッグはチビ輪バッグの布地が強い方。 ダホンで飛行機輪行するにあたって、気をつけるべき点などをメモしておきます。
 予防策 取り敢えず主張をせねばと、チビ輪行バッグにアイコンを書き入れる。写真に載っている反対側にはフラジャイルのマークを書き込んでます。
 が、あっさり無視される様。。。
-輪行 ここ数回の輪行状況、輪行バッグはチビ輪バッグの布地が強い方。 使ったキャリアーは香港エクスプレスとエアアジア。両方ともLCCです。 JALとかANAとかとは大違いで、格安の飛行機会社ですとかなりラフに扱われるようです。 切れ、傷、凹み、歪みの痛みを味わいました。
+輪行 ここ数回の輪行状況、 使ったキャリアーは香港エクスプレスとエアアジア。両方ともLCCです。 JALとかANAとかとは大違いで、格安の飛行機会社ですとかなりラフに扱われるようです。 切れ、傷、凹み、歪みの痛みを味わいました。
 初回：日本からチェンマイ（香港経由：香港エクスプレス） 初めてなのでダンボールなどを使ってガッチリと梱包するが、所々に凹みを見つける。支障は無し。。。
 二回目：チェンマイからクアラルンプール（エアアジア） 梱包を解き、リアキャリアに引っかき傷があり、かつ歪んでいることにパニアバックを付ける時に気づく。手で強引に引張り真っすぐにする。引っかき傷はリアディレイラーにもついてくる。
 そして、走り始めると、いきなりチェーンが外れる。よくよく見てみると、チェーンガード、チェーンリングが歪んでいる。後々、フレームにもかなりの損傷を見つける。かなり重たい物を上に置かれていた様子。
@@ -161,9 +161,8 @@ Fixed  typo on Settings posure buttons  </description>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
       <description>手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。
-ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。 現在アプストアーに上がっているものと同じ者ですので、ちゃんと動くはずです。
-リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。
-不具合や、こうした方が良いなどの</description>
+ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。 現在アプストアーに上がっているものと同じものですので、ちゃんと動くはずです。
+リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。</description>
     </item>
     
     <item>
