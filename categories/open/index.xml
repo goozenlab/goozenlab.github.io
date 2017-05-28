@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 May 2017 14:30:00 +0700</lastBuildDate>
     
 	<atom:link href="http://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tapasを公開</title>
+      <link>http://goozenlab.com/blog/2017/05/open-tapas/</link>
+      <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/05/open-tapas/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>(a)を公開</title>
