@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 10 Oct 2016 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 May 2017 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sati v1.9.4</title>
+      <link>http://goozenlab.com/blog/2017/05/sati-194/</link>
+      <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/05/sati-194/</guid>
+      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。余計な１タップが減ります。
+アプリは一時配信を中断。ダウンロードしてしまったユーザーの方々申し訳有りません。
+UNNotification (iOS10) まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。
+そして、今更ながら、iOS10からは通知の仕様が変更されていたのを知らなかった。
+func registerAlarm(_ atDate: Date, soundName: String, identifier: String) { //print(&amp;quot;fire: &amp;quot; + atDate.description + &amp;quot; with sound:&amp;quot; + soundName + &amp;quot; with identifier:&amp;quot; + identifier) if #available(iOS 10.0, *) { let content = UNMutableNotificationContent() // Configure Notification Content content.sound = UNNotificationSound(named: soundName) // Add Trigger let calendar = Calendar(identifier: .gregorian) let components = calendar.dateComponents(in: .current, from: atDate) let date = DateComponents(calendar: calendar, timeZone: .</description>
+    </item>
     
     <item>
       <title>サティの通知音</title>

@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://goozenlab.com/about/vipassana/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/blog/2017/05/open-tapas/</loc>
     <lastmod>2017-05-25T14:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/blog/2017/05/brooks-b17/</loc>
+    <lastmod>2017-05-20T20:30:00+07:00</lastmod>
   </url>
   
   <url>
@@ -54,11 +64,6 @@
   <url>
     <loc>http://goozenlab.com/blog/2016/11/open-pranatice/</loc>
     <lastmod>2016-11-27T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/en/iapp/pranatice/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -832,13 +837,13 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/about/</loc>
-    <lastmod>2015-03-05T22:48:01+05:45</lastmod>
+    <loc>http://goozenlab.com/blog/2015/03/moving-hugo/</loc>
+    <lastmod>2015-03-05T12:30:00+05:45</lastmod>
   </url>
   
   <url>
-    <loc>http://goozenlab.com/blog/2015/03/moving-hugo/</loc>
-    <lastmod>2015-03-05T12:30:00+05:45</lastmod>
+    <loc>http://goozenlab.com/about/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -972,18 +977,8 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/pinocul/</loc>
-    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/pinocul/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/en/iapp/a/</loc>
-    <lastmod>2015-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1227,41 +1222,6 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/goods/acam-3000/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/bookark/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/lcd-cleaner/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/cocoon/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/havaianas/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/happy-hacking-keyboard/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/surfacepad/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/blog/2013/03/textmate2/</loc>
     <lastmod>2013-03-04T07:03:00+07:00</lastmod>
   </url>
@@ -1347,11 +1307,6 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/goods/filson-briefcase/</loc>
-    <lastmod>2012-11-19T22:37:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/blog/2012/11/dash-icon/</loc>
     <lastmod>2012-11-19T16:30:00+07:00</lastmod>
   </url>
@@ -1412,11 +1367,6 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/viriya/</loc>
-    <lastmod>2012-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/viriya/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
   </url>
@@ -1447,228 +1397,13 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/goods/a6-doc-case/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/kindle/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/kurutoga/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/lamy2000-ballpoint-pen/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/macbookpro/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/muji-mesh-case/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/backpack/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/snowpeak-mag/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/sony-gps-cs3k/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/usb-power-adapter/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/lens-cleaner/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/key-chain/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/muji-compact-eraser/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/compas/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/sinkplug/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/akakosuri/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/degital-camera/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/hanger/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/soap-case/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/tenugui/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/tombo-ballpoint/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/toothbrush/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/towl/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/ziplock/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/passport-case/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/blanket/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/bohemia/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/money-belt/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/mesh-case/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/lock/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/lamy-safari/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/coin-purse/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/kinchaku/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/bohemia/backpacker/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/bohemia/index-bohemia/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/underware/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/case-eyeware/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/nail-cutter/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/earplug/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/linen-shirts/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/about/vipassana/</loc>
-    <lastmod>2012-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/blog/2012/09/update-retina/</loc>
     <lastmod>2012-09-22T12:06:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/ohayo/</loc>
-    <lastmod>2012-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/ohayo/</loc>
     <lastmod>2012-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/en/iapp/sati/</loc>
-    <lastmod>2012-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1732,11 +1467,6 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/listaria/</loc>
-    <lastmod>2011-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/listaria/</loc>
     <lastmod>2011-09-11T00:00:00+00:00</lastmod>
   </url>
@@ -1744,11 +1474,6 @@
   <url>
     <loc>http://goozenlab.com/blog/2011/07/internet-mexico/</loc>
     <lastmod>2011-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/viewfinder-gv1/</loc>
-    <lastmod>2011-06-26T14:38:00+09:00</lastmod>
   </url>
   
   <url>
@@ -1792,11 +1517,6 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/meagen/</loc>
-    <lastmod>2011-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/meagen/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
   </url>
@@ -1804,11 +1524,6 @@
   <url>
     <loc>http://goozenlab.com/blog/2011/02/googleapp-mail/</loc>
     <lastmod>2011-02-10T19:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/en/iapp/tapas/</loc>
-    <lastmod>2011-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1847,28 +1562,13 @@
   </url>
   
   <url>
-    <loc>http://goozenlab.com/en/iapp/littlist/</loc>
-    <lastmod>2010-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://goozenlab.com/goods/head-lamp/</loc>
-  </url>
-  
-  <url>
     <loc>http://goozenlab.com/categories/a/</loc>
     <lastmod>2016-11-29T14:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/about/</loc>
-    <lastmod>2015-03-05T22:48:01+05:45</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1881,12 +1581,6 @@
   <url>
     <loc>http://goozenlab.com/categories/backpack/</loc>
     <lastmod>2016-01-09T20:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/bohemia/</loc>
-    <lastmod>2012-09-26T14:38:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1904,7 +1598,7 @@
   
   <url>
     <loc>http://goozenlab.com/categories/dahon/</loc>
-    <lastmod>2017-05-16T20:30:00+10:00</lastmod>
+    <lastmod>2017-05-20T20:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1916,7 +1610,7 @@
   
   <url>
     <loc>http://goozenlab.com/categories/develop/</loc>
-    <lastmod>2016-10-10T10:30:00+07:00</lastmod>
+    <lastmod>2017-05-19T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1934,19 +1628,13 @@
   
   <url>
     <loc>http://goozenlab.com/en/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2011-06-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://goozenlab.com/categories/goods/</loc>
-    <lastmod>2015-06-15T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://goozenlab.com/goods/</loc>
-    <lastmod>2013-03-15T14:38:00+09:00</lastmod>
+    <lastmod>2017-05-20T20:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2101,7 +1789,7 @@
   
   <url>
     <loc>http://goozenlab.com/</loc>
-    <lastmod>2017-05-25T14:30:00+07:00</lastmod>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
