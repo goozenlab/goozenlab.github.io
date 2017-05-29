@@ -67,6 +67,11 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/pranatice/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/blog/2016/11/mbp2016/</loc>
     <lastmod>2016-11-26T22:30:00+07:00</lastmod>
   </url>
@@ -977,8 +982,18 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/pinocul/</loc>
+    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/iapp/pinocul/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/en/iapp/a/</loc>
+    <lastmod>2015-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1367,6 +1382,11 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/viriya/</loc>
+    <lastmod>2012-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/iapp/viriya/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
   </url>
@@ -1402,8 +1422,18 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/ohayo/</loc>
+    <lastmod>2012-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/iapp/ohayo/</loc>
     <lastmod>2012-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/en/iapp/sati/</loc>
+    <lastmod>2012-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1467,6 +1497,11 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/listaria/</loc>
+    <lastmod>2011-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/iapp/listaria/</loc>
     <lastmod>2011-09-11T00:00:00+00:00</lastmod>
   </url>
@@ -1517,6 +1552,11 @@
   </url>
   
   <url>
+    <loc>http://goozenlab.com/en/iapp/meagen/</loc>
+    <lastmod>2011-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://goozenlab.com/iapp/meagen/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
   </url>
@@ -1524,6 +1564,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2011/02/googleapp-mail/</loc>
     <lastmod>2011-02-10T19:41:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/en/iapp/tapas/</loc>
+    <lastmod>2011-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1559,6 +1604,11 @@
   <url>
     <loc>http://goozenlab.com/blog/2010/11/littlist-naming/</loc>
     <lastmod>2010-11-10T13:41:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://goozenlab.com/en/iapp/littlist/</loc>
+    <lastmod>2010-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1628,7 +1678,7 @@
   
   <url>
     <loc>http://goozenlab.com/en/</loc>
-    <lastmod>2011-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

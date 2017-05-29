@@ -34,7 +34,8 @@
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2017/05/open-tapas/</guid>
-      <description></description>
+      <description>キッチンタイマーの「タパス」をギットハブに公開しました。
+ライトバージョンをビルドするには、GoogleMobileAds.framework が必要です。</description>
     </item>
     
     <item>
@@ -212,6 +213,18 @@ Fixed  typo on Settings posure buttons  </description>
       <guid>http://goozenlab.com/blog/2016/11/open-pranatice/</guid>
       <description>カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコードですが、オープンソース化します。
 音声の細かい調整や、文言の変更などをしたい方は、ぜひダウンロード・ビルドして使って見てください。</description>
+    </item>
+    
+    <item>
+      <title>pranatice</title>
+      <link>http://goozenlab.com/en/iapp/pranatice/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/pranatice/</guid>
+      <description>As a part of Yoga practice, pranayama is important exercise but is bit tedious practice.
+Usually people count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.
+This app helps to concentrate on practice by counting for you. (sounds little clerical though..)
+In between work, when you feel stressed,, when you wan to concentrate, when you want make your mind calm,,</description>
     </item>
     
     <item>
@@ -2854,6 +2867,18 @@ todo.md 書式の説明 マークダウンの形式にそっていますので�
     
     <item>
       <title>pinocul</title>
+      <link>http://goozenlab.com/en/iapp/pinocul/</link>
+      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/pinocul/</guid>
+      <description>When you make (box) Pinhole Camera, you know the size of film but are not quite sure how thick you&amp;rsquo;re going to make.
+This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.
+※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;
+I hope this app helps..</description>
+    </item>
+    
+    <item>
+      <title>pinocul</title>
       <link>http://goozenlab.com/iapp/pinocul/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -2867,6 +2892,17 @@ When you make (box) Pinhole Camera, you know the size of film but are not quite 
 This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.
 ※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;
 I hope this app helps..</description>
+    </item>
+    
+    <item>
+      <title>(a)</title>
+      <link>http://goozenlab.com/en/iapp/a/</link>
+      <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/a/</guid>
+      <description>I have a lot of very small things(small things that are easily forget) to do, but web service is too much for me. Text(Note) is good enough but&amp;hellip;
+It started with simple idea: I wanted to manage tasks by text file and look tasks in my hand(iPhone4).
+I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this software.</description>
     </item>
     
     <item>
@@ -3572,8 +3608,7 @@ date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含
 マニュアルだとかなり狭い範囲でしか受信できない事になっているんだけど。（まさか九州の電波等の電波を拾ってるとは思いずらいし、さぁ一体。）行く先々でちょっとチェック。
 インド  ジョードプル：受信 プシュカル：NG デリー：NG  ネパール  ポカラ：NG バクタプル：NG  マレーシア  クアラルンプール：NG ペナン：受信（数泊後、朝起きると日本時間になってました。）  タイ  バンコク：？？ チェンマイ：受信（一週間して日本時間になっていたのに気がつきました。）  ラオス  ルアンナムタ：受信（最初の３泊は機能しなくて駄目だと思いきや、ムアンシンから戻ってきたら日本時間になってました。）  と、受信できるのに数日かかったり、なんか不思議な感じ。（私の日本に帰りたい念波でも受信しているんかな。。）
 という事は、少しのファームウェア変更（タイムゾーンの設定追加）で世界対応にできるのではないかと、セイコーさんよろしくです。
-※随時更新する予定。
-追記：2015-03-06 電池のもちが良いです、２年以上経ちますがまだ使えてます。</description>
+※随時更新する予定。</description>
     </item>
     
     <item>
@@ -3864,6 +3899,26 @@ $ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-a
     
     <item>
       <title>viriya</title>
+      <link>http://goozenlab.com/en/iapp/viriya/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/viriya/</guid>
+      <description>You/I need to concentrate on task, but&amp;hellip;. This timer helps to concentrate on thing needs to be done.
+it works fine with dash method (or other kinds).
+Main View ◇ Navigation Bar
+・ + Button to add project
+・DoubleTap/Swipe: Change List
+◇ Cell
+・Left Tap: Change Color of Bar
+・Right Tap: Go to Task List
+・Center DoubleTap: Edit
+・swipe to Delete
+☆ Accessories Color Bar
+・show Number of Tasks of the project</description>
+    </item>
+    
+    <item>
+      <title>viriya</title>
       <link>http://goozenlab.com/iapp/viriya/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -3990,6 +4045,18 @@ $page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c
     
     <item>
       <title>ohayo</title>
+      <link>http://goozenlab.com/en/iapp/ohayo/</link>
+      <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/ohayo/</guid>
+      <description>This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This software helps you to find a way of good sleep. I hope at least you get some idea of your sleeping habit.
+□ Main View ◇ Timer: Start by Long-Tap on gray image area.
+　1：PreStart, show message (ex. take medicine!)
+2：Start: show sleeping time.</description>
+    </item>
+    
+    <item>
+      <title>ohayo</title>
       <link>http://goozenlab.com/iapp/ohayo/</link>
       <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -4022,6 +4089,21 @@ $page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c
 ・風鈴の音での知らせ チリーーンと音がします：快眠設定時間、就寝５分後、起床５分後
 ※ タイの曜日カラー(日:赤、月:黄色、火:桃色、水:緑色、木:オレンジ色、金:青、土:紫色)
 プライバシーポリシー  ohayoではヘルスキットへのアクセスが行われます。  ヘルスキットにohoyoで得た睡眠の時間のデーターを書き込みます。（ユーザーの同意を得た後） ヘルスキットよりデーターの読み込みは行いません。  ohayoのデーターはそのアプリ内でのみ利用されます。  将来のアップデート  バックアップ機能  </description>
+    </item>
+    
+    <item>
+      <title>sati</title>
+      <link>http://goozenlab.com/en/iapp/sati/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/sati/</guid>
+      <description>Simple and clean Meditation Timer/Logger for meditator, by meditator.
+available as free most of the time, become paid-version once a month for a couple of days.
+□ Main View ・&amp;ldquo;Long Tap&amp;rdquo; to start to meditate.
+・Tap top sound line to toggle quiet mode.
+・Tap center icon to go Setting View
+・Tap Bar to go History View
+(Bar shows your recent meditation status (62 Meditations) to see how you&amp;rsquo;re doing. )</description>
     </item>
     
     <item>
@@ -4233,6 +4315,17 @@ iPod / Kindle：まめ類  赤iPod Nano：Azuki iPod：DaizuとEdamame。  ス�
     
     <item>
       <title>listaria</title>
+      <link>http://goozenlab.com/en/iapp/listaria/</link>
+      <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/listaria/</guid>
+      <description>This is simple shopping list application. Big letter is easy to read. Clean look of design. Simple to use. little memo feature is helpful and tap to show for a short second.
+230 items are already registared.
+□ Shopping List Page This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar.</description>
+    </item>
+    
+    <item>
+      <title>listaria</title>
       <link>http://goozenlab.com/iapp/listaria/</link>
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -4430,6 +4523,15 @@ How to Use ◇ Timer: start with + button on navigation bar
     
     <item>
       <title>meagen</title>
+      <link>http://goozenlab.com/en/iapp/meagen/</link>
+      <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/meagen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meagen</title>
       <link>http://goozenlab.com/iapp/meagen/</link>
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -4456,6 +4558,27 @@ Lite版では
 気がつかないとかなりの時間アクセスできない事があります。 Webサーバーはまだ良いとしても、メールサーバーが止まってしまうのはちょっといただけないという事で、
 メールサーバーをGoogleAppに移行しました。
 ずっと有料のサービスだと思っていたので存在は知っていたのですが使わずじまいでした。 ドメインはDynDNSで管理していて、少々MXサーバー変更設定に戸惑いましたが無事動いているようです。どんどん、クラウド化が進んでいくのだろうかと、なるべく自力でやっていきたいと思っている自分にとってはちょっと悲しい気にもなります。</description>
+    </item>
+    
+    <item>
+      <title>tapas</title>
+      <link>http://goozenlab.com/en/iapp/tapas/</link>
+      <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/tapas/</guid>
+      <description>Colorful and Simple Multiple Kitchen Timer with List. For noodle lovers
+Functions I wanted to add:
+・List of items (I have many kinds of pastas/noodles/beans/etc)
+・little memo
+・multi timer
+・record of date/times cooked
+・simple design
+□ List View ◇ Navigation Bar
+・DoubleTap/Swipe on NavBar: Change List
+◇ Cell
+・ Left Tap: Change color of bar.
+・ Right Tap: Add to Timer (background color will change)
+・ Center Double Tap: Edit</description>
     </item>
     
     <item>
@@ -4591,6 +4714,22 @@ Little + List で付けたのですが、じっと見ていて、 Little + ist �
     
     <item>
       <title>littlist</title>
+      <link>http://goozenlab.com/en/iapp/littlist/</link>
+      <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/littlist/</guid>
+      <description>Little List with Big Letter. Very easy &amp;amp; simple List/to-do app.
+It is pleasant and fun to use, and stimulate your Right Brain. You may like to tap-tap to make nice and colorful to-do page like picture of Mondrian..
+□ Main View ◇ Navigation Bar
+・DoubleTap/Swipe on NavBar: Change List
+・Long Tap to go to Hot List (RedColor)
+・Swipe-Up to go to DueDate List (Green)
+◇ Cell
+・Left Tap: Change color</description>
+    </item>
+    
+    <item>
+      <title>littlist</title>
       <link>http://goozenlab.com/iapp/littlist/</link>
       <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -4600,7 +4739,7 @@ Little + List で付けたのですが、じっと見ていて、 Little + ist �
 手帳にペタペタとポストイットを貼り付けているような人やザッピング好きには最適なTodoソフトです。
 右脳を刺激し、色とグレーの階調を使って、モンドリアンの絵画のように楽しみながら自分好みの画面にしてください。
 使い勝手に少し慣れが必要かもしれませんが、簡易かつ軽快なソフトです。
-ナビゲーションバーの操作方法  左右にスワイプ：次のソートに変更 ロングタップ：ホットリストにジャンプ 上にスワイプ：期日付きリストにジャンプ プラスマーク：新規項目の追加  セルの操作方法 右•左•中央の三つのエリアをタップの方法で使い分けています。  左エリア  タップ：色の変更  中央エリア  タップ：期日かメモがあれば、数秒間背景色が変わり期限、メモが表示されます ロングタップ：左肩に赤いドットが表示。アプリケーションバッジに登録されます ダブルタップ：項目の編集  右エリア  タップ：グレー階調の変更 ロングタップ：項目を一番上に移動します   中央エリアタップ時（期日、メモがある場合） アクセサリの意味  左上部の切り込み：メモがある時に切り込みが入ります 左下部の白ドット：色変更の防止ロック 左肩の赤ドット：アプリケーションバッジに登録（中央のロングタップでオンオフ） 右下部の色ドット：期日が設定されているとき表示されます。  期日 期日が迫ってくるほど、赤に近い色がつきます。 期日が過ぎるとバー自体が赤くなります。（白ドット）
+ナビゲーションバーの操作方法  左右にスワイプ：次のソートに変更 ロングタップ：ホットリストにジャンプ 上にスワイプ：期日付きリストにジャンプ プラスマーク：新規項目の追加  セルの操作方法 右・左・中央の三つのエリアをタップの方法で使い分けています。  左エリア  タップ：色の変更  中央エリア  タップ：期日かメモがあれば、数秒間背景色が変わり期限、メモが表示されます ロングタップ：左肩に赤いドットが表示。アプリケーションバッジに登録されます ダブルタップ：項目の編集  右エリア  タップ：グレー階調の変更 ロングタップ：項目を一番上に移動します   中央エリアタップ時（期日、メモがある場合） アクセサリの意味  左上部の切り込み：メモがある時に切り込みが入ります 左下部の白ドット：色変更の防止ロック 左肩の赤ドット：アプリケーションバッジに登録（中央のロングタップでオンオフ） 右下部の色ドット：期日が設定されているとき表示されます。  期日 期日が迫ってくるほど、赤に近い色がつきます。 期日が過ぎるとバー自体が赤くなります。（白ドット）
 設定方法 ダブルタップで編集画面へ行き、丸ボタンで期日のオンオフ、日付をタップして日時を設定します。
 新規項目追加  完了：追加の終了 詳細へ：日時の設定やメモを入力する必要のある場合は 取消：項目の入力をキャンセルします  設定 フォントの変更とナビゲーションバーのタイトルを変更できます
 フォントの変更 間隔が詰まって太めから、柔らかめゆったりの順になっています。
