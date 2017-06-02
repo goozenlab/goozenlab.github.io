@@ -7,10 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Mon, 29 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jun 2017 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="http://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sati v1.9.5</title>
+      <link>http://goozenlab.com/blog/2017/06/sati-195/</link>
+      <pubDate>Tue, 06 Jun 2017 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/06/sati-195/</guid>
+      <description> iOS10よりヘルスケアにマインドフルネスの項目ができてました。瞑想ソフトということもあるので対応をしました。
+ヘルスケアに書き出すには、
+ フレームワークの追加 Capabilities：sati.entitlements の追加（アップルIDが必要） Info.plistの編集  の作業が事前に必要です。
+ソースコードはギットハブにアップしてあるので、関心のある方はのぞいてみてください。
+[1.9.5] - 2017-06-03 @ ChiangMai Added  export data to Health: mindfulness  </description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy for Sati</title>
+      <link>http://goozenlab.com/en/iapp/sati-privacy/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/en/iapp/sati-privacy/</guid>
+      <description> Privacy Policy  sati will ask permission to access Health.app on your device.
+ on Health.app  sati will write its meditation data to Health: mindfulness. sati will not read/access other data on Health.  Data in sati is used only within application.
+ Default Setting for Export is OFF. can be switch on/off on Settings
+  □■ with metta &amp;amp; be mindfull ■□ </description>
+    </item>
+    
+    <item>
+      <title>プライバシーポリシー</title>
+      <link>http://goozenlab.com/iapp/sati-privacy/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/iapp/sati-privacy/</guid>
+      <description> プライバシーポリシー  サティではヘルスケアへのアクセスが行われます。
+ ヘルスケアにサティで得た瞑想の時間のデーターを書き込みます。（ユーザーの同意を得た後）
+ ヘルスケアよりデーターの読み込みは行いません。
+ サティのデーターはそのアプリ内でのみ利用されます。
+  □■ with metta &amp;amp; be mindfull ■□ </description>
+    </item>
     
     <item>
       <title>ビパッサナ瞑想</title>

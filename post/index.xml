@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 25 May 2017 14:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jun 2017 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="http://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sati v1.9.5</title>
+      <link>http://goozenlab.com/blog/2017/06/sati-195/</link>
+      <pubDate>Tue, 06 Jun 2017 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/06/sati-195/</guid>
+      <description> iOS10よりヘルスケアにマインドフルネスの項目ができてました。瞑想ソフトということもあるので対応をしました。
+ヘルスケアに書き出すには、
+ フレームワークの追加 Capabilities：sati.entitlements の追加（アップルIDが必要） Info.plistの編集  の作業が事前に必要です。
+ソースコードはギットハブにアップしてあるので、関心のある方はのぞいてみてください。
+[1.9.5] - 2017-06-03 @ ChiangMai Added  export data to Health: mindfulness  </description>
+    </item>
     
     <item>
       <title>tapasを公開</title>
