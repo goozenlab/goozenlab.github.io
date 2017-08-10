@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Sat, 25 Mar 2017 08:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 03 Aug 2017 18:00:00 +0530</lastBuildDate>
     
 	<atom:link href="http://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>レー、インドのインターネット事情</title>
+      <link>http://goozenlab.com/blog/2017/08/internet-leh/</link>
+      <pubDate>Thu, 03 Aug 2017 18:00:00 +0530</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>http://goozenlab.com/blog/2017/08/internet-leh/</guid>
+      <description>インドのチベットことレー。シーズン真っ只の書き入れ時なので人も車も多いです。 ゲストハウス・ホテルも新規建設中の所も多い。バブル感あり、少々心配。。
+さて、ラダック地方のインターネットのスピードは、、、
+下り：0.26Mps
+上り：0.18Mps
+(アプリSpeedtestを使用）
+北部インドはどういった回線状況なのかわからないけれど、ダラムサラ同様に遅いです。
+しかも、遅い割りにスピードが安定しない。
+さらに、追い打ちをかけるが如く、プチ停電が頻発する。ネパールにある宿のようにバックアップ電源を持っていないのでセッションがあっさり切られる。
+飛行日のチケットの予約などをするときは、もうドキドキ。神頼みです。
+携帯も、この州でのシムのみしか使えないみたいですし、、ちょっと陸の孤島感がある。政治的にちょっと微妙なエリアだからなのかなと、勝手に思ったりする。</description>
+    </item>
     
     <item>
       <title>アヌラーダプラ、スリランカのインターネット事情</title>

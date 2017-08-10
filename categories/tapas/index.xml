@@ -18,7 +18,8 @@
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>http://goozenlab.com/blog/2017/05/open-tapas/</guid>
-      <description>XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。
+      <description>公開アプリ第５弾。
+XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。
  タイマー 通知 コアデータ ターゲットの切り分け  を使ってます。
 ターゲットを有料版と無料版のふたつに分けてあり。共有部分はそのままに同時に開発できます。参考まで。 ライトバージョンをビルドするには、GoogleMobileAds.framework が必要です。ダウンロードしてファイルをプロジェクトに追加で良いです。Podをつかってインストールすることもできるようです。。</description>
     </item>
