@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Littlist on goozenlab</title>
-    <link>http://goozenlab.com/categories/littlist/</link>
+    <link>https://goozenlab.com/categories/littlist/</link>
     <description>Recent content in Littlist on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Mon, 05 Sep 2016 10:00:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/littlist/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/littlist/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>littlist v2.8.0</title>
-      <link>http://goozenlab.com/blog/2016/09/littlist-280/</link>
+      <link>https://goozenlab.com/blog/2016/09/littlist-280/</link>
       <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/littlist-280/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/littlist-280/</guid>
       <description>Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。
 追加の機能はありませんが、 リマインダーからのインポート方法が変更になりました。
  リマインダーからのインポートは、ナビゲーションバーの右の＋ボタンの長押しになります。 インポートされたイベントの右バーのに色が付きます。 読み込みリスト名の設定などは設定より行います。  注意：この長押しは、メイン画面の時にのみ有効になっています。カテゴリー表示時に有効にしてしまうと、インポートしたイベントがすべて表示されないのでこのような形を取っています。そして、重複チェックは、インポート色のついたイベントのみに行われます。
@@ -27,10 +27,10 @@ Change Log [2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai Changed  iOS8�
     
     <item>
       <title>littlist lite 復活</title>
-      <link>http://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
+      <link>https://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
       <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
+      <guid>https://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
       <description>リトリストのライト判を復活させました。
 かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョン言って良いのか分からないけれど、機能はそのままフルバージョンと同等です。 広告がつくのが唯一の違いです。（ちょっとライト版でのみ起きるバグもあるのですが、、、放置、すいません。）
 広告が邪魔でフルバージョンへ移行したいユーザーの方は、
@@ -39,20 +39,20 @@ Change Log [2.8.0 - 100% Swift release] - 2016-09-05 @ ChiangMai Changed  iOS8�
     
     <item>
       <title>littlist v2.6.6</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <link>https://goozenlab.com/blog/2015/03/littlist-266/</link>
       <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/littlist-266/</guid>
       <description>データーベースの更新により起きた、幾つかのバグを修正しました。 どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。
  &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちるバグ 編集画面で、期日をオフにしてもオフにならないバグ  申請が通り、アプストアに復帰しました。</description>
     </item>
     
     <item>
       <title>littlistでのバグ</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
+      <link>https://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
       <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
       <description>iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。
 OSアプデートのせいかなと、ちょっとソースを見てみると、、またもやケアレスミス。。
 というか、思い込みがあったのか、、DB移行のため同じような作業を数度行ったせいなのか、、
@@ -63,10 +63,10 @@ OSアプデートのせいかなと、ちょっとソースを見てみると、
     
     <item>
       <title>littlist v2.6.5</title>
-      <link>http://goozenlab.com/blog/2015/03/littlist-265/</link>
+      <link>https://goozenlab.com/blog/2015/03/littlist-265/</link>
       <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/littlist-265/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/littlist-265/</guid>
       <description>ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。
  追加  バックアップを兼ねた、エクスポート リマインダーのリスト（※ デフォルトは &amp;ldquo;littlist&amp;rdquo;）からのインポート  変更：以前のバージョンでは新規入力のキャンセル時はキャンセルボタンがありましたが、このバージョンより、シェイクで行います。 DBの構造を整理  やはり入力はコンピューターを使うのが楽です。ウェブサービスを作ったり、それが為のアプリを作るという方法がありますが、どうも、スッキリしない。というより、無理がある。
 間にリマンダーを挟みますが、簡易な方法として悪くないと思います。
@@ -78,10 +78,10 @@ OSアプデートのせいかなと、ちょっとソースを見てみると、
     
     <item>
       <title>Reminder：日時の書き込み</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
+      <link>https://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
       <description>リマインダーへの日時の書き込み
 読み込み時には
 event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone;  と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。
@@ -90,10 +90,10 @@ event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead
     
     <item>
       <title>Reminderからの読込ではまる</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-completion/</link>
+      <link>https://goozenlab.com/blog/2015/02/reminder-completion/</link>
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-completion/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/reminder-completion/</guid>
       <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。
 見事にハマったのが、取込みの
 - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))  でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。
@@ -103,10 +103,10 @@ event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead
     
     <item>
       <title>littlist 2.6.3</title>
-      <link>http://goozenlab.com/blog/2015/02/littlist-263/</link>
+      <link>https://goozenlab.com/blog/2015/02/littlist-263/</link>
       <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/littlist-263/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/littlist-263/</guid>
       <description>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。
 ついでに、ネット各所に載って いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。 ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。
 agvtool bump # agvtool bump -all #Info.plistも更新したいとき infoPlistFileSource=&amp;quot;${SRCROOT}/${INFOPLIST_FILE}&amp;quot; #infoPlistFileDestination=&amp;quot;${TEMP_DIR}/Preprocessed-Info.plist&amp;quot; rootPlistFileDestination=&amp;quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&amp;quot; if [ ${CONFIGURATION} = &amp;quot;Debug&amp;quot; ]; then # Version 2.6.3 # Build @ 2014-01-16 12:16 (dev.298) versionPrefix=&amp;quot; (dev.&amp;quot; date=$(date &amp;quot;+@ %Y-%m-%d %H:%M&amp;quot;) APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource) BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&amp;quot;)&amp;quot; else # Version 2.6.3 @ 2014.01.16 # Build 276 date=$(date &amp;quot;+ @ %Y.%m.%d&amp;quot;) APP_VERSION=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleShortVersionString&amp;quot; $infoPlistFileSource)$date BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &amp;quot;Print CFBundleVersion&amp;quot; $infoPlistFileSource) fi # ここのPreferenceSpecifiers:16, 17は各アプリによって変更 /usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&amp;quot; $rootPlistFileDestination /usr/libexec/PlistBuddy -c &amp;quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&amp;quot; $rootPlistFileDestination  検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</description>
@@ -114,10 +114,10 @@ agvtool bump # agvtool bump -all #Info.plistも更新したいとき infoPlistFi
     
     <item>
       <title>littlist v2.6.0</title>
-      <link>http://goozenlab.com/blog/2014/10/littlist-260/</link>
+      <link>https://goozenlab.com/blog/2014/10/littlist-260/</link>
       <pubDate>Thu, 30 Oct 2014 20:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/10/littlist-260/</guid>
+      <guid>https://goozenlab.com/blog/2014/10/littlist-260/</guid>
       <description>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが、かなり安定しました。）
 ちょっとした使い勝手の変更
  赤ドットが入るときにセルの背景が赤色にフラッシュします。 セルを選択したときに、そのバーの色が選択色になります。（ちとオサレ）  アプストアでのランキングも9位が最高位（数年前）、ToDo系のソフトではシンプルかつ最速の部類に入ると思います。月に数回無料化してますので、タイミングを伺ってゲットしてください。</description>
@@ -125,20 +125,20 @@ agvtool bump # agvtool bump -all #Info.plistも更新したいとき infoPlistFi
     
     <item>
       <title>littlis v2.5.6</title>
-      <link>http://goozenlab.com/blog/2013/07/littlist/</link>
+      <link>https://goozenlab.com/blog/2013/07/littlist/</link>
       <pubDate>Sat, 20 Jul 2013 08:07:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/littlist/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/littlist/</guid>
       <description>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。 タイトルのフォントを大きくしメモの表示を拡大、ちょっとこぎれいになったと思います。
  フラットなデザインに変更。日付けボタン／日時設定をメモ欄の下に メモフラグを左のコーナーに。（タップでオンオフ：角が折られます。） ロックを色ドットに変更。（タップで色ロック：中心に白ドットが表示）  ※ 久しぶりに無料提供中です。（7/25まで）</description>
     </item>
     
     <item>
       <title>カラーロック</title>
-      <link>http://goozenlab.com/blog/2013/07/color-lock/</link>
+      <link>https://goozenlab.com/blog/2013/07/color-lock/</link>
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
       <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
 以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
 新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
@@ -146,20 +146,20 @@ agvtool bump # agvtool bump -all #Info.plistも更新したいとき infoPlistFi
     
     <item>
       <title>DatePickerでの表示バグの修正</title>
-      <link>http://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <link>https://goozenlab.com/blog/2013/05/bug-datepicker/</link>
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <guid>https://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
       <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。
 OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</description>
     </item>
     
     <item>
       <title>littlist v2.5.4</title>
-      <link>http://goozenlab.com/blog/2013/04/littlist-254/</link>
+      <link>https://goozenlab.com/blog/2013/04/littlist-254/</link>
       <pubDate>Thu, 25 Apr 2013 20:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/04/littlist-254/</guid>
+      <guid>https://goozenlab.com/blog/2013/04/littlist-254/</guid>
       <description>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので、長らく放置状態でしたが、これでようやくのこと解決！？したと思います。（Kawaiiモードなんか追加してる場合ではなかった。。）
 ちょっとスッキリしたようなそうでないような。。割と簡単な所に問題があったし、時間を取って書き直そうかなと思ってみたりしてます。
 アプストアーに近日中にアップされると思います。</description>
@@ -167,10 +167,10 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>littlist v2.5.3</title>
-      <link>http://goozenlab.com/blog/2013/03/littlist-253/</link>
+      <link>https://goozenlab.com/blog/2013/03/littlist-253/</link>
       <pubDate>Sun, 03 Mar 2013 11:03:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/03/littlist-253/</guid>
+      <guid>https://goozenlab.com/blog/2013/03/littlist-253/</guid>
       <description>littlistにカワイイカラーモードを付けました。色の具合とかかなり悩みました。女性は男性より色の識別能力が優れているとの事なので、色の近い赤•ピンク系の色を数種入れました。（全部ピンク系にしちゃおうかな、なんて思ったり、、女性カラー、女子カラーと分けても良いとも、、） ドットも♥マークにして、色も真っ赤からちょっと紫、ピンクよりの色にしました。
 色のスキームは、赤系を４つ、オレンジ、グリーンを２つ、青と紫です。黄色は抜きました。
 で、見た感じはこんなようになります。ナビゲーションバーの色も変更しています。
@@ -180,10 +180,10 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>littlist v2.5.2</title>
-      <link>http://goozenlab.com/blog/2013/02/littlist-252/</link>
+      <link>https://goozenlab.com/blog/2013/02/littlist-252/</link>
       <pubDate>Wed, 06 Feb 2013 20:35:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/02/littlist-252/</guid>
+      <guid>https://goozenlab.com/blog/2013/02/littlist-252/</guid>
       <description>カラースキームを変更できるようにしました。ダークモードを追加、背景を黒くしグレーの階調も逆順にしました。黒iPhoneで使ったら結構格好いいかもしれません。
 見た目こんな感じになります。
 ホーム＞設定より変更してください。
@@ -192,20 +192,20 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>年末感謝週末セール</title>
-      <link>http://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
+      <link>https://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
+      <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
       <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。
 そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</description>
     </item>
     
     <item>
       <title>littlist v2.5.1</title>
-      <link>http://goozenlab.com/blog/2012/10/littlist-251/</link>
+      <link>https://goozenlab.com/blog/2012/10/littlist-251/</link>
       <pubDate>Sat, 20 Oct 2012 12:47:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/littlist-251/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/littlist-251/</guid>
       <description>インターフェイスをまた弄りました。（ご迷惑おかけします）変更点は、
 右ロングタップ：項目をリストの一番上に移動。 今までは、右のバーを一番黒くする事で移動していましたが、タップが面倒というのと、タップが行き過ぎてしまう事が多いのが問題だと思っていました。タップの行き過ぎは前回のアップデート時に矢印を表示という形で改善を試みましたが、あまり奇麗でないのが気になっていました。セルでの操作をあまり複雑にしたくはなかったのですが、結局無難な右側のロングタップで落ち着きました。すっと上部に移動します。
 項目を下に動かすのは相変わらず同じ方法になっています。これも、良い方法があったら形を変えたいと思ってます。
@@ -215,30 +215,30 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <link>https://goozenlab.com/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
 そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
     </item>
     
     <item>
       <title>Update for Retina4</title>
-      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
+      <link>https://goozenlab.com/blog/2012/09/update-retina/</link>
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
       <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。
 で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。</description>
     </item>
     
     <item>
       <title>Update for Navbar</title>
-      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
+      <link>https://goozenlab.com/blog/2012/07/navbar-update/</link>
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
+      <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
       <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。 今まで手に付けてなかったのが不思議なくらいです。。
 設定方法は、
 アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。
@@ -248,10 +248,10 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>Littlist v2.0.2</title>
-      <link>http://goozenlab.com/blog/2012/07/littlist-202/</link>
+      <link>https://goozenlab.com/blog/2012/07/littlist-202/</link>
       <pubDate>Sun, 01 Jul 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/07/littlist-202/</guid>
+      <guid>https://goozenlab.com/blog/2012/07/littlist-202/</guid>
       <description>項目にちょっとしたメモを追加することを可能にしました。
 ただ、このソフトの売りの一部「大きな文字で」というを削りたくない。使い勝手も複雑にしたくない。今のシンプルさを犠牲にせずにメモをどういった形で表示するかが悩みどころでした。
 最終的に、中央部のシングルタップにより、数秒間表示を切り替える方法で決着しました。
@@ -265,10 +265,10 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
     
     <item>
       <title>XCode4.2と怒濤のアップデート</title>
-      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
+      <link>https://goozenlab.com/blog/2012/02/xcode42-update/</link>
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
+      <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
       <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。
 Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。
 で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。
@@ -281,10 +281,10 @@ Cosperのアップグレードを申請したところ、iOS5上にて落ちる�
     
     <item>
       <title>Little &#43; ?</title>
-      <link>http://goozenlab.com/blog/2010/11/littlist-naming/</link>
+      <link>https://goozenlab.com/blog/2010/11/littlist-naming/</link>
       <pubDate>Wed, 10 Nov 2010 13:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2010/11/littlist-naming/</guid>
+      <guid>https://goozenlab.com/blog/2010/11/littlist-naming/</guid>
       <description>littlistというネーミングは、
 Little + List で付けたのですが、じっと見ていて、 Little + ist というのもありだなと、というかこっちの方が格好いいなと、 （ゆるーいMinimalistみたい）自画自賛。
 あと、文法的にlittleの最上級(er,st)というの矛盾してていいなぁとか。</description>

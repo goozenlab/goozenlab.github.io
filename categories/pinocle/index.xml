@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinocle on goozenlab</title>
-    <link>http://goozenlab.com/categories/pinocle/</link>
+    <link>https://goozenlab.com/categories/pinocle/</link>
     <description>Recent content in Pinocle on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Thu, 05 Feb 2015 07:35:00 +0545</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/pinocle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/pinocle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pinocul v1.7.1</title>
-      <link>http://goozenlab.com/blog/2015/02/pinocul-171/</link>
+      <link>https://goozenlab.com/blog/2015/02/pinocul-171/</link>
       <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/pinocul-171/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/pinocul-171/</guid>
       <description>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。
 最初に躊躇しつつもアプストアーに申請したアプリです。改めて見てみると、四苦八苦しながら作ったとは思えないえらく簡単なソフトです。（今だったら簡単すぎるアプリため申請はリジェクトされると思います。）もう、今更ピンホールカメラなんて自分で作る人なんていないだろうと、アプリもそのままフェードアウトしようと思ってましたが、iOS7/8上ではボタンが表示されていないのを発見（！一年以上も放置してました！）ボタンの場所をタップすれば機能するのですが、、、中途半端なアプリを置いておく訳にはいかないし、地味にダウンロードされているようなので心機一転作業する事しました。
 折角＋次いでなので、新しい言語に挑戦、Swift に移植をしました。（ちょっとした勉強にもなり、ついでにアップデートにもなる一石二鳥）

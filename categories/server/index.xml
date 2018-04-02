@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on goozenlab</title>
-    <link>http://goozenlab.com/categories/server/</link>
+    <link>https://goozenlab.com/categories/server/</link>
     <description>Recent content in Server on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Wed, 05 Dec 2012 12:47:00 +0600</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>家鯖をownCloudでクラウド化</title>
-      <link>http://goozenlab.com/blog/2012/12/owncloud/</link>
+      <link>https://goozenlab.com/blog/2012/12/owncloud/</link>
       <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/12/owncloud/</guid>
+      <guid>https://goozenlab.com/blog/2012/12/owncloud/</guid>
       <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。
 現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。
 aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。
@@ -35,10 +35,10 @@ GitHub Page $ wget http://goozenlab.com/images/R0011168.jpg
     
     <item>
       <title>ドメインをゲット</title>
-      <link>http://goozenlab.com/blog/2012/10/domein-goozenlab/</link>
+      <link>https://goozenlab.com/blog/2012/10/domein-goozenlab/</link>
       <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
       <description> iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルなバルで生ハムと赤ワインを飲みながら地元の人とサッカーについて語り合う。。といった予定であったはずが、、それにはとぉーーーーーく及ばず。
 インドでベジタリアン、お酒も抜き、体重も高校入学時ぐらいに戻りました。ちょっと面倒なインドの人たちを冷たくあしらい、貯金を切り崩し、修行僧のようにくらしてます。抜け毛が気になる今日この頃です。来週から20日間のリトリート。
 ドメインにお金をかけるのもなぁ、なんて思っていましたが、アプリも公開しているし、費用もそれほどではないので、今更ながらお名前ドットコムでgoozenlab.comをとりました。github pageに紐付けします。
@@ -51,10 +51,10 @@ $ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-a
     
     <item>
       <title>家鯖</title>
-      <link>http://goozenlab.com/blog/2011/05/home-server/</link>
+      <link>https://goozenlab.com/blog/2011/05/home-server/</link>
       <pubDate>Wed, 18 May 2011 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/05/home-server/</guid>
+      <guid>https://goozenlab.com/blog/2011/05/home-server/</guid>
       <description>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブックが不思議な体勢になっています。 SSDという事もあって問題は無い事と。。。
 お茶菓子を入れる小さな木製のお皿の上に本体をのせ、さらにモニター部には箸置きを二つ。 その上に無線ルーター機が置いてあります。 近くには蚊取り線香のベープアース。 横には100均で買った、電源とケーブルを入れたピンクメッシュ書類ケース。 その横には電話帳となぜか子鹿物語の本。
 生活感があふれています。 ホームアプライアンス感が滲んでます。
@@ -64,10 +64,10 @@ $ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-a
     
     <item>
       <title>Google Appでメールサーバーの運用</title>
-      <link>http://goozenlab.com/blog/2011/02/googleapp-mail/</link>
+      <link>https://goozenlab.com/blog/2011/02/googleapp-mail/</link>
       <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/02/googleapp-mail/</guid>
+      <guid>https://goozenlab.com/blog/2011/02/googleapp-mail/</guid>
       <description>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。
 気がつかないとかなりの時間アクセスできない事があります。 Webサーバーはまだ良いとしても、メールサーバーが止まってしまうのはちょっといただけないという事で、
 メールサーバーをGoogleAppに移行しました。

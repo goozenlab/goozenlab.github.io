@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A on goozenlab</title>
-    <link>http://goozenlab.com/categories/a/</link>
+    <link>https://goozenlab.com/categories/a/</link>
     <description>Recent content in A on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/a/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/a/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>(a)を公開</title>
-      <link>http://goozenlab.com/blog/2016/11/open-a/</link>
+      <link>https://goozenlab.com/blog/2016/11/open-a/</link>
       <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/open-a/</guid>
       <description>手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。
 ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。 現在アプストアーに上がっているものと同じものですので、ちゃんと動くはずです。
 リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>(a) v0.9.0</title>
-      <link>http://goozenlab.com/blog/2016/10/a-090/</link>
+      <link>https://goozenlab.com/blog/2016/10/a-090/</link>
       <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/10/a-090/</guid>
+      <guid>https://goozenlab.com/blog/2016/10/a-090/</guid>
       <description>アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったのだけど、、）１０月３１日の早朝に申請し、１１月１日早朝に申請が通る。期間限定（安定するまで？または限定1万ダウンロード？）無料で提供します。
 よーーーやくのこと、Swift化とDropbox-apiのアップデートが完了しました。
 とにかく10月中に申請をするんだと、ちょっと、リリースに向けバタバタした感じですが、なんとか仕上げました。実機 (iPhone4S.9.3.5 と iPhone5S.10.0) での動作チェックではたちの悪いバグには遭遇していませんが、ちょっとしたバグは潜んでいると思います。
@@ -40,10 +40,10 @@
     
     <item>
       <title>iTuneConnect レポート</title>
-      <link>http://goozenlab.com/blog/2016/08/report-a/</link>
+      <link>https://goozenlab.com/blog/2016/08/report-a/</link>
       <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/report-a/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/report-a/</guid>
       <description>最近毎週 iTuneConnect からレポートが送られてくる。
 (a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロードはされない。しかも、iOS9では起動しない状況（未確認）で放置状態。
 Swiftにアプリを書き換えている最中で、Objective-Cに戻って色々直したりはどうも気が向かない。
@@ -53,10 +53,10 @@ Swiftにアプリを書き換えている最中で、Objective-Cに戻って色�
     
     <item>
       <title>(a)をようやくリリース</title>
-      <link>http://goozenlab.com/blog/2015/02/release-a/</link>
+      <link>https://goozenlab.com/blog/2015/02/release-a/</link>
       <pubDate>Mon, 16 Feb 2015 15:18:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/release-a/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/release-a/</guid>
       <description>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザインにもこだわりたい貴方に！
  制作理由：タスクの数が多くあると、iOS端末(拙作のlittlist)だけで管理するのはちょっと無理がある。なるべく全体を見渡せる形にしたい、細かいタスクも書き込みたい、テキストベースで管理をしたい、との理由から作りました。 誰のため：クラウドサービスも便利なのでしょうが、もっとシンプルで自分に近い形で使いたいと思っている人、私と同様にテキスト形式で管理したいと思っている貴兄 他のアプリとの違い：文字が大きい、多分早い（複雑な事はしていない為）、多分軽い、アプリのサイズが割と小さい(1,021 KB)。私の最新の検証機iPhone4Sでも軽快に動作しています。  詳しい使い方はこちらにて
 おまけ

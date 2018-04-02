@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mumble on goozenlab</title>
-    <link>http://goozenlab.com/categories/mumble/</link>
+    <link>https://goozenlab.com/categories/mumble/</link>
     <description>Recent content in Mumble on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 26 Nov 2016 22:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MacBook Pro 2016</title>
-      <link>http://goozenlab.com/blog/2016/11/mbp2016/</link>
+      <link>https://goozenlab.com/blog/2016/11/mbp2016/</link>
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/11/mbp2016/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/mbp2016/</guid>
       <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。
 ひさーーしぶりに、というかようやく新しいマックブックプロが出ました。 すごーーーく、楽しみにしていたのですが、、、
 まだ実機を見てもいないし触ってもいないのですが、レビューを見る限り、残念感が漂います。。。拡張性も低いし（それが理由でレティナのマックブックはパスしていた。）、リナックスも走らない様になっているらしいし、、何を繋げるにもアダプターが必要らしいし。。。キーボードもペチペチキーボード。（ため息というか怒りがこみ上げてくるわ。ほんま。。）ポシティブなことろが見つからない。
@@ -31,10 +31,10 @@
     
     <item>
       <title>iPhone 5S始めました</title>
-      <link>http://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <link>https://goozenlab.com/blog/2016/09/iphone5s/</link>
       <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/iphone5s/</guid>
       <description>母からのお下がり、iphone5Sを頂きました！
 全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。
 ともかくありがたいことに、これでiOS10での実機検証が可能になりました。ありがたや。。</description>
@@ -42,10 +42,10 @@
     
     <item>
       <title>XCode8</title>
-      <link>http://goozenlab.com/blog/2016/09/xcode8/</link>
+      <link>https://goozenlab.com/blog/2016/09/xcode8/</link>
       <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/xcode8/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/xcode8/</guid>
       <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。
 当分XCode7と共存させて使っていくつもりなので、今まで使っていたXCodeを別の場所にコピーして名前を変更。インストール終了後、移動したXCodeをアプリケーションに戻します。
 （アプリケーションに入っている今まで使っているXCodeは名前を変更しても、アップデート時に新しいXCodeに書き換えられてしまいますので、要注意。）
@@ -55,10 +55,10 @@ XCode８でプロジェクトを開けると、プロジェクトをSwift3かSwi
     
     <item>
       <title>unwindからアンワインド</title>
-      <link>http://goozenlab.com/blog/2016/09/unwind-unwind/</link>
+      <link>https://goozenlab.com/blog/2016/09/unwind-unwind/</link>
       <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
       <description>早くも、unwindからアンワインドします。
 何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダルビューを表示。そのモーダルビューをアンワインドをしたいのだけれども、@IBAction func unwind___XXX___ のアンワインドコードを入れても無視される。
 いろいろ試してみた所、メインテーブルビューには戻ることはできる。しかし、一気に戻ることになってしまう。たぶん、ナビケーションバーの構造のせいだと思うのだけど、解決方法が見つからず。。
@@ -68,10 +68,10 @@ XCode８でプロジェクトを開けると、プロジェクトをSwift3かSwi
     
     <item>
       <title>iPhone7</title>
-      <link>http://goozenlab.com/blog/2016/09/iphone7/</link>
+      <link>https://goozenlab.com/blog/2016/09/iphone7/</link>
       <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/iphone7/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/iphone7/</guid>
       <description>斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気が飛びました。
 ジェットブラックも良いですが、装飾品の会社では無いのだから、もっとテクノロジーに力を入れて貰いたい。そして、代わり映えの無いデザイン、この一年（というか、ここ数年）デザインチームは何をしているのか？仕事が私には見えません。
 どうも、これではたぶん新しいマックブックプロも！お待ちかねのピンクゴールドが出ました！みたいな、マイナーアップグレードのみであまり期待できそうもない。。あーー期待が大きいだけに、出てもいないのになんか残念な気分。
@@ -87,10 +87,10 @@ iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯�
     
     <item>
       <title>cosperの金額表示</title>
-      <link>http://goozenlab.com/blog/2016/09/cosper-display/</link>
+      <link>https://goozenlab.com/blog/2016/09/cosper-display/</link>
       <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/cosper-display/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/cosper-display/</guid>
       <description>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。
 機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、
 拙作アプリ、コスパ.1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、
@@ -104,20 +104,20 @@ iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯�
     
     <item>
       <title>Twitterを復活</title>
-      <link>http://goozenlab.com/blog/2016/08/tweet/</link>
+      <link>https://goozenlab.com/blog/2016/08/tweet/</link>
       <pubDate>Tue, 16 Aug 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/tweet/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/tweet/</guid>
       <description>つぶやきたい事がある訳では無いけれど、twitterを復活させました。( アカウント：goozenlab)
 まぁ、広報活動の一つとして考えてます。面白いことや、ためになることは書きませんので、そこのところは悪しからず。。</description>
     </item>
     
     <item>
       <title>iTuneConnect レポート</title>
-      <link>http://goozenlab.com/blog/2016/08/report-a/</link>
+      <link>https://goozenlab.com/blog/2016/08/report-a/</link>
       <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/report-a/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/report-a/</guid>
       <description>最近毎週 iTuneConnect からレポートが送られてくる。
 (a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロードはされない。しかも、iOS9では起動しない状況（未確認）で放置状態。
 Swiftにアプリを書き換えている最中で、Objective-Cに戻って色々直したりはどうも気が向かない。
@@ -127,10 +127,10 @@ Swiftにアプリを書き換えている最中で、Objective-Cに戻って色�
     
     <item>
       <title>MBP15/2016の勝手な推測</title>
-      <link>http://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <link>https://goozenlab.com/blog/2016/06/mbp2016/</link>
       <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
       <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる
 そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。 かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。
 そこで、勝手な推測をしたいと、 まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、

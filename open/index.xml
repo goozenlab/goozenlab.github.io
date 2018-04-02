@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opens on goozenlab</title>
-    <link>http://goozenlab.com/open/</link>
+    <link>https://goozenlab.com/open/</link>
     <description>Recent content in Opens on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/open/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/open/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>open.sati</title>
-      <link>http://goozenlab.com/open/sati/</link>
+      <link>https://goozenlab.com/open/sati/</link>
       <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/open/sati/</guid>
+      <guid>https://goozenlab.com/open/sati/</guid>
       <description> 目次 アプリも買う時代から作る時代に移ってきていると思います。 XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。 自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。
 準備  ダウンロード：git clone git:xxx.xxxx.xxx 実機で動かすための方法 XCodeのちょっとした使い方  全体の構造 何がどのように使われているかの説明。全体が把握できるとコードを読むのがかなり楽になります。
  メインビュー：構成は以下のようになっています。  背景：透明度の入った画像を表示 瞑想回数ラベル 右左のボタン 上部  日付ラベル：日付をフォーマットして表示 タイムライン：音の鳴るタイミングを表示、静寂モード時には月のマークを表示 ボタン：静寂モードのスウィッチとして  中部：３つのコンポーネントを重なって配置  カスタムビュー：瞑想時間パイ カスタムビュー：最近の状況グラフ（時間パイと円の隙間に表示） ボタン：設定画面に移動  下部  カスタムビュー：履歴バー ボタン：履歴画面に移動   設定ビュー：シンプルなテーブル式の構成

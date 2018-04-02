@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Develop on goozenlab</title>
-    <link>http://goozenlab.com/categories/develop/</link>
+    <link>https://goozenlab.com/categories/develop/</link>
     <description>Recent content in Develop on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Fri, 19 May 2017 06:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sati v1.9.4</title>
-      <link>http://goozenlab.com/blog/2017/05/sati-194/</link>
+      <link>https://goozenlab.com/blog/2017/05/sati-194/</link>
       <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2017/05/sati-194/</guid>
+      <guid>https://goozenlab.com/blog/2017/05/sati-194/</guid>
       <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。余計な１タップが減ります。
 アプリは一時配信を中断。ダウンロードしてしまったユーザーの方々申し訳有りません。
 UNNotification (iOS10) まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。
@@ -27,10 +27,10 @@ func registerAlarm(_ atDate: Date, soundName: String, identifier: String) { //pr
     
     <item>
       <title>サティの通知音</title>
-      <link>http://goozenlab.com/blog/2016/10/notification_sound/</link>
+      <link>https://goozenlab.com/blog/2016/10/notification_sound/</link>
       <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/10/notification_sound/</guid>
+      <guid>https://goozenlab.com/blog/2016/10/notification_sound/</guid>
       <description>iOS10にてサティの通知音が TriTone になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。
 がしかし、私のiPhone5Sでは数回リブートを行うも変わりなし。
 さらに調べてみると、XCodeからインストールしたものはこのエラーから逃れられない、との事、本当か？、怪しい。
@@ -42,10 +42,10 @@ iOS10上にて不具合を見つけた方はご連絡のほど、何卒よろし
     
     <item>
       <title>Use Legacy Swift Language Version</title>
-      <link>http://goozenlab.com/blog/2016/10/use_legacy_swift_version/</link>
+      <link>https://goozenlab.com/blog/2016/10/use_legacy_swift_version/</link>
       <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/10/use_legacy_swift_version/</guid>
+      <guid>https://goozenlab.com/blog/2016/10/use_legacy_swift_version/</guid>
       <description>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をすることができたのですが、立ち上げるたびに何度も変換を即されて先に進めないプロジェクトがありました。
 問題は、Build Settings 内の項目”Use Legacy Swift Language Version”が更新されていないということのようです。なぜにこのプロジェクトにだけにおこるのかはちょっと不明かつ、嫌な感じでもある。
 解決法 Swift 3を使うときは「NO」。
@@ -55,10 +55,10 @@ Swift 2.3にて動かすときは「YES」です。
     
     <item>
       <title>iPhone 5S始めました</title>
-      <link>http://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <link>https://goozenlab.com/blog/2016/09/iphone5s/</link>
       <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/iphone5s/</guid>
       <description>母からのお下がり、iphone5Sを頂きました！
 全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppleIDのパスワードに長くて安全なものにできる。でも、ちとでかいな。。母は今SEを使っているので、ちょっとSimLockを解除させてそちらを頂こうかとと、悪魔のささやきが、、。
 ともかくありがたいことに、これでiOS10での実機検証が可能になりました。ありがたや。。</description>
@@ -66,10 +66,10 @@ Swift 2.3にて動かすときは「YES」です。
     
     <item>
       <title>XCode8</title>
-      <link>http://goozenlab.com/blog/2016/09/xcode8/</link>
+      <link>https://goozenlab.com/blog/2016/09/xcode8/</link>
       <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/xcode8/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/xcode8/</guid>
       <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。
 当分XCode7と共存させて使っていくつもりなので、今まで使っていたXCodeを別の場所にコピーして名前を変更。インストール終了後、移動したXCodeをアプリケーションに戻します。
 （アプリケーションに入っている今まで使っているXCodeは名前を変更しても、アップデート時に新しいXCodeに書き換えられてしまいますので、要注意。）
@@ -79,10 +79,10 @@ XCode８でプロジェクトを開けると、プロジェクトをSwift3かSwi
     
     <item>
       <title>NSRegularExpression</title>
-      <link>http://goozenlab.com/blog/2016/09/nsregularexpression/</link>
+      <link>https://goozenlab.com/blog/2016/09/nsregularexpression/</link>
       <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
       <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）
 (a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。
 let pattern = &amp;quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot; let regex = try? NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.CaseInsensitive) let matches = regex!.firstMatchInString(text, options: [], range: NSMakeRange(0, patternStr.utf16.count)) if let match = matches { title = (text as NSString).substringWithRange(match.rangeAtIndex(2)) ... }  で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&amp;rdquo;^&amp;ldquo;（行頭）を削除。で、動くようになりました。&amp;rdquo;^&amp;ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。
@@ -91,10 +91,10 @@ let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
     
     <item>
       <title>ブロック表記</title>
-      <link>http://goozenlab.com/blog/2016/09/block-3ways/</link>
+      <link>https://goozenlab.com/blog/2016/09/block-3ways/</link>
       <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/block-3ways/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/block-3ways/</guid>
       <description> ３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。
 ブロックでっせ！と、こんな感じで出てきます、
 ダブルクリックで、意味がわからなくなる。この前置詞 in ちゅーのが曲者、どこの中じゃ？。
@@ -104,10 +104,10 @@ addressString.enumerateLines { (line, stop) in println(line) }  </description>
     
     <item>
       <title>unWind segway</title>
-      <link>http://goozenlab.com/blog/2016/09/segway-unwind/</link>
+      <link>https://goozenlab.com/blog/2016/09/segway-unwind/</link>
       <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/segway-unwind/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/segway-unwind/</guid>
       <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。
 使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。
  ListVCからDetailVCにセグウェイを設定（コントロールドラッグ） ListVCに下記のコードを追加 DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが表示される リンクをボタンなりに繋ぐ  ListVCに追加したコードは、
@@ -119,10 +119,10 @@ override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewControll
     
     <item>
       <title>アイコンとネーミング</title>
-      <link>http://goozenlab.com/blog/2016/09/app-icon-naming/</link>
+      <link>https://goozenlab.com/blog/2016/09/app-icon-naming/</link>
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
       <description>アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。
 個人的にアイコン作りと、アプリのネーミングを考えたりするのは好きですが、頭を悩ますところでもあります。 別に新しいことはないと思いますが、自分がどのようにしたのか、ちょっと書いてみたいと思います。（あとで変更は可能なのですが、私は名前が決まらないと、なんか居心地が悪いというか、、）
 Naming 理想的に、パッと目に入るような名前だと最高なのですが、、、。
@@ -142,10 +142,10 @@ Icon アプリの顔です。個人製作のアプリということを考慮す
     
     <item>
       <title>ギットハブ公開</title>
-      <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
+      <link>https://goozenlab.com/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/github-open-sati/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/github-open-sati/</guid>
       <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。
  問題点：ギットハブに公開するプロジェクトには、バンドルアイデンティファイヤ、AppleIDを入れたくない。そして、アプストアーに公開するにはコードサインをしなくてはいけない。（アイデンティファイヤ、AppleIDが必要） 解決案：二つのプロジェクトと共有コードの形での運用  一つ目のプロジェクトは、作業用。ギットハブと連動して作業をします。個人情報入れないでも、シミュレーターでアプリを動かすことができます。
 もう一つは、アプストアービルド、デプロイ用。プロジェクトファイル以外は、上のプロジェクトからファイルをリンクします。（コピーではなく、シンボリックリンクにみたいなもの？）このプロジェクトには、アプストアーに登録するための情報を入れておきます。ギットは使いません。
@@ -171,10 +171,10 @@ duvel:open.sati jin$ git init duvel:open.sati jin$ git add . duvel:open.sati jin
     
     <item>
       <title>Podsを使う</title>
-      <link>http://goozenlab.com/blog/2016/09/use-pods/</link>
+      <link>https://goozenlab.com/blog/2016/09/use-pods/</link>
       <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/use-pods/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/use-pods/</guid>
       <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。
 ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。
 import UIKit import CoreData import ReachabilitySwift import MBProgressHUD import SwiftyDropbox  でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。
@@ -184,10 +184,10 @@ project &#39;(a).xcodeproj&#39; platform :ios, &#39;8.0&#39; target &#39;(a)&#39
     
     <item>
       <title>XCodeにてアプリデーターの管理</title>
-      <link>http://goozenlab.com/blog/2016/09/device-container/</link>
+      <link>https://goozenlab.com/blog/2016/09/device-container/</link>
       <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/device-container/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/device-container/</guid>
       <description>端末のアプリデータをバックアップ、復元。
 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストールがきなくなる不具合。
 この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。（開発環境がXCode5から一気にXCode7になったので、、まぁ改悪は今の所無いのだけど、、分からんことが一杯だな。。）
@@ -208,10 +208,10 @@ iExploreが使えなくなって難儀していたので、同じような問題
     
     <item>
       <title>Podsをプロジェクトに</title>
-      <link>http://goozenlab.com/blog/2016/09/install-pods/</link>
+      <link>https://goozenlab.com/blog/2016/09/install-pods/</link>
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/install-pods/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/install-pods/</guid>
       <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。
 $ pod install Setting up CocoaPods master repo [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`. You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.  で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）
 $ cd .cocoapods/repos/ $ git clone https://github.com/CocoaPods/Specs.git Cloning into &#39;Specs&#39;... remote: Counting objects: 801469, done. remote: Compressing objects: 100% (30/30), done. Receiving objects: 83% (671735/801475), 209.63 MiB | 10.00 KiB/s error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s fatal: The remote end hung up unexpectedly fatal: early EOF fatal: index-pack failed $  思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。 （途中回線が切れること数回、、、）</description>
@@ -219,10 +219,10 @@ $ cd .cocoapods/repos/ $ git clone https://github.com/CocoaPods/Specs.git Clonin
     
     <item>
       <title>Sudo-less Gem &amp; Cocoapods</title>
-      <link>http://goozenlab.com/blog/2016/08/install-cocoapods/</link>
+      <link>https://goozenlab.com/blog/2016/08/install-cocoapods/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
       <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。
 以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で ~/.gem 内にインストール。
 まずは、bashの設定 ~/.bash_profile を弄ります。
@@ -233,20 +233,20 @@ $ cd $ mkdir .gem $ gem install activesupport -v 4.2.6 --user-install $ gem inst
     
     <item>
       <title>インストール: Homebrew</title>
-      <link>http://goozenlab.com/blog/2016/08/install-homebrew/</link>
+      <link>https://goozenlab.com/blog/2016/08/install-homebrew/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/install-homebrew/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/install-homebrew/</guid>
       <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。
 $ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-xr-x 5 jin admin 170B Feb 20 2016 .github/ -rw-r--r-- 1 jin admin 823B Feb 20 2016 .gitignore -rw-r--r-- 1 jin admin 1.3K Feb 20 2016 .travis.yml -rw-r--r-- 1 jin admin 291B Oct 16 2015 .yardopts -rw-r--r-- 1 jin admin 3.1K Jun 1 2015 CODEOFCONDUCT.md drwxr-xr-x 9 jin admin 306B Apr 18 2015 Cellar/ drwxr-xr-x 3 jin admin 102B Nov 11 2015 Frameworks/ -rw-r--r-- 1 jin admin 1.</description>
     </item>
     
     <item>
       <title> 半透明のモーダルビュー</title>
-      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
+      <link>https://goozenlab.com/blog/2016/08/modalview-over/</link>
       <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/modalview-over/</guid>
       <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。
 半透明のモーダルビュー設定 まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。
 それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。
@@ -258,10 +258,10 @@ $ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-
     
     <item>
       <title>StatusBarメモ</title>
-      <link>http://goozenlab.com/blog/2016/08/statusbar-memo/</link>
+      <link>https://goozenlab.com/blog/2016/08/statusbar-memo/</link>
       <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
       <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
 まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
 info.plistに直接書き込むなら、以下を追加。
@@ -273,10 +273,10 @@ UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
     
     <item>
       <title>Lite VersionとAdmob</title>
-      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
       <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
  ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
 まずはプロジェクトのメインターゲットを Duplicate します。
@@ -299,10 +299,10 @@ AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMo
     
     <item>
       <title>イフレット</title>
-      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
+      <link>https://goozenlab.com/blog/2016/08/if-let/</link>
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/if-let/</guid>
       <description>fatal error: unexpectedly found nil while unwrapping an Optional value
 nil値が戻ってくる可能性のある時の処理方法。
 tableCellに値を渡す時を例に、
@@ -312,10 +312,10 @@ tableCellに値を渡す時を例に、
     
     <item>
       <title>filteredArrayUsingPredicate</title>
-      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
+      <link>https://goozenlab.com/blog/2016/08/array_filter/</link>
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
       <description>拙作dandoriのswift移行中、中々進みません。
 Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
 ブロック表記が出てくると目が点になってしまう私。。。
@@ -326,10 +326,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>乱数を発生させる</title>
-      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
+      <link>https://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
       <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
+      <guid>https://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
       <description> rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。
  srand(time(nil)); rand()%300;  arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。
  Int(arc4random_uniform(300))  </description>
@@ -337,10 +337,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>iOS 9.0.1</title>
-      <link>http://goozenlab.com/blog/2015/09/ios901/</link>
+      <link>https://goozenlab.com/blog/2015/09/ios901/</link>
       <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios901/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/ios901/</guid>
       <description>未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。
 修正点の中でも気になるのは、
  アラームやタイマーが鳴らないことがある問題を修正  これが、拙作のサティで問題になっている音が出ない問題の解決になっていることをちょっと期待。</description>
@@ -348,10 +348,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>XCode7とElCapitan</title>
-      <link>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
+      <link>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
       <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
       <description>アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。
 まず、取り急ぎ実機での検証は先回しにして、シミュレータでの検証のため、SSDの領域を削りElCapitan/XCode7をインストールする。（色々あったが割愛する。）
 メインのマシーンが昨年からスペックダウンしてMBA11.2014/4GB.128SSDとなり、かなりタイトな環境。XCode7をインストールしてちょっと使ってみるが、、、、もっさり感と引っかかりが出始める、、 うぅ～～～、レイアウトも崩れているし、、バグもそれなりにありそう。。（溜息）</description>
@@ -359,10 +359,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
-      <link>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</link>
+      <link>https://goozenlab.com/blog/2015/09/ios9-bug-notifications/</link>
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
       <description>マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。
 iOS8がリリースされた時にも、通知で音を出すには事前認証が必須になり、認証のプロセスを追加していなかったので、新規ユーザーの人たちには音が出ないという致命的なバグがありました。OSをアップデートしたインストール済のユーザーには不具合は無かったので、３ヶ月くらい放置していました。
 そして、今回もappleの新しい省電力モードや通知機能の拡張により（多分）、同様の不具合が発生。
@@ -374,10 +374,10 @@ iOS8がリリースされた時にも、通知で音を出すには事前認証�
     
     <item>
       <title>iOS9にて気になる機能の3DTouch</title>
-      <link>http://goozenlab.com/blog/2015/09/3dtouch/</link>
+      <link>https://goozenlab.com/blog/2015/09/3dtouch/</link>
       <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/3dtouch/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/3dtouch/</guid>
       <description>iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。 アップルの使い方のガイドラインではピーク＆ポップという形。 その対象に対しての関心の度合いを操作にしたいう感じ。
 自分のアプリで使っている長押しと被るような感じがあるのだが、どう追加して行くか考えている。
 例）リトリスト（todoアプリ）にて、
@@ -389,10 +389,10 @@ iOS8がリリースされた時にも、通知で音を出すには事前認証�
     
     <item>
       <title>NSUserDefaultsのキーの削除</title>
-      <link>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
+      <link>https://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</link>
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
       <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。
 既に設定してしまったUserDefaultsのキーを削除する方法は以下
 [NSUserDefaults standardUserDefaults] removeObjectForKey:@&amp;quot;kFontName&amp;quot;]  アップデート時に実行させれば奇麗なままのUserDefaultを維持する事ができます。</description>
@@ -400,10 +400,10 @@ iOS8がリリースされた時にも、通知で音を出すには事前認証�
     
     <item>
       <title>midXで中心を求める</title>
-      <link>http://goozenlab.com/blog/2015/07/midx-swift/</link>
+      <link>https://goozenlab.com/blog/2015/07/midx-swift/</link>
       <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/midx-swift/</guid>
       <description>今までは中心を求めるのに素直に、
 let center: CGFloat = self.frame.width / 2  と行ってきたけれども、.midX/midY
 let center: CGFloat = self.frame.midX  とスマート、かつ格好良くできます。</description>
@@ -411,30 +411,30 @@ let center: CGFloat = self.frame.midX  とスマート、かつ格好良くで�
     
     <item>
       <title>テーブルビューセルの境界線を消す</title>
-      <link>http://goozenlab.com/blog/2015/04/tableview-separator/</link>
+      <link>https://goozenlab.com/blog/2015/04/tableview-separator/</link>
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/tableview-separator/</guid>
       <description>テーブルビューセルの境界線を消すには下記のコードを追加。
 self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None  StoryBoardを使っている時は以下。</description>
     </item>
     
     <item>
       <title>ShakeはUIEventで</title>
-      <link>http://goozenlab.com/blog/2015/03/swift-shake/</link>
+      <link>https://goozenlab.com/blog/2015/03/swift-shake/</link>
       <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/swift-shake/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/swift-shake/</guid>
       <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。
  override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) { if(event.subtype == UIEventSubtype.MotionShake) { // // 処理 // } }  ※まぁ、間違っちゃーいね〜な。。</description>
     </item>
     
     <item>
       <title>performSelectorは無くなる</title>
-      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
+      <link>https://goozenlab.com/blog/2015/03/performselector-timer/</link>
       <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/performselector-timer/</guid>
       <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。
 [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval];  object-cで上記に書かれたperformSelectorはSwiftでは無くなってしまったようなので、以下のコードでは動かない。
  NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil) NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)  幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、cancelPreviousPerformRequestsWithTargetが無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。
@@ -443,10 +443,10 @@ private var tapTimer: NSTimer? // 処理 cancelTimer() tapTimer = NSTimer.schedu
     
     <item>
       <title>printlnは気楽</title>
-      <link>http://goozenlab.com/blog/2015/03/println-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/println-swift/</link>
       <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/println-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/println-swift/</guid>
       <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は
 Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ のようになります。 使えそうなのは
  __FILE__ ：ファイル名 __LINE__ ：ライン番号 __FUNCTION__ ：ファンクション名  そして、値を表示したい時はそのままかそのままか\(...)で囲み適当に放り込む。もはや%dや%@は必要ないらしい。 小賢しいウォーニングも出なくなる。
@@ -456,10 +456,10 @@ println(__FUNCTION__, self.frame) println(__FUNCTION__,&amp;quot;screen is \(sel
     
     <item>
       <title>NSDate() = [NSDate date]</title>
-      <link>http://goozenlab.com/blog/2015/03/nsdate-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/nsdate-swift/</link>
       <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
       <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは
 NSDate()  でよろしい。
 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]  を、Swiftで書いてみると、
@@ -469,10 +469,10 @@ NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)  エラーが出る。hou
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
-      <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
+      <link>https://goozenlab.com/blog/2015/03/view-cycle/</link>
       <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/view-cycle/</guid>
       <description> たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。
 起動時 アプリの起動時には以下の順で呼ばれる。
  viewDidLoad() viewWillAppear viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。  モーダルビューより復帰 モーダルビューより戻ってくると以下の処理が再び呼ばれる。
@@ -484,10 +484,10 @@ func applicationWillEnterForeground(notification: NSNotification) { println(__FU
     
     <item>
       <title>NotificationSettings認証設定</title>
-      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
+      <link>https://goozenlab.com/blog/2015/03/notification-setting/</link>
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/notification-setting/</guid>
       <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。
 AppDelegateに処理を入れてしまいます。
  application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))  以前コピペでUIUserNotificationType.Soundを付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）</description>
@@ -495,10 +495,10 @@ AppDelegateに処理を入れてしまいます。
     
     <item>
       <title>クラスが読み込めず [解決]</title>
-      <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
+      <link>https://goozenlab.com/blog/2015/03/load-managedobject/</link>
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/load-managedobject/</guid>
       <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、クラスが読み込めずで書いた問題が解決しました。
 問題のエラーログ
 CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。
@@ -510,10 +510,10 @@ CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Ite
     
     <item>
       <title>NSLocalizedString on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
       <description>NSLocalizedStringでエラーがでる
 NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)  nilを&amp;quot;&amp;quot;空白に変更する。
 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)  Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。
@@ -522,10 +522,10 @@ NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;
     
     <item>
       <title>delegate on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/delegate-swift/</link>
       <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/delegate-swift/</guid>
       <description>デレゲートするクラス 以下の３つを書き加えればよい。
 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) }  var delegate:MainHeaderViewDelegate? = nil   self.delegate!.sleepingTimerDidFinish(self)  デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を書き込みます。
 class MainViewController: UIViewController, MainHeaderViewDelegate { ////// func sleepingTimerDidFinish(controller: MainHeaderView) { // 処理 } ///// }  ※ ソースは拙作のohayoからコピペ。</description>
@@ -533,10 +533,10 @@ class MainViewController: UIViewController, MainHeaderViewDelegate { ////// func
     
     <item>
       <title>UIButttonをSwiftで書く</title>
-      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/uibutton-swift/</link>
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
       <description>UIButttonをSwiftでプログラム的に書くと
 buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent)  テキストタイトルの時には
 buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)  テキストの色を変えるには、
@@ -547,10 +547,10 @@ setAttributedTitle:forStateを使うとさ。
     
     <item>
       <title>SwiftでConstantを扱う</title>
-      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/constants-swift/</link>
       <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/constants-swift/</guid>
       <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。
 分からないことが多々あるが、進めていかないと、、
 さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。
@@ -562,10 +562,10 @@ defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)  のよう�
     
     <item>
       <title>クラスが読み込めず</title>
-      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
+      <link>https://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
       <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。
 さて、さて、まずは、
 2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  というエラーがでる。ファイルはあるのだが、、
@@ -576,10 +576,10 @@ func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { 
     
     <item>
       <title>UserDefaultの初期値設定</title>
-      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
+      <link>https://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
       <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。
  // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)  数値も文字も気にせず書き込んでよいようです。
 ポカラの水汲み場</description>
@@ -587,10 +587,10 @@ func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { 
     
     <item>
       <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
-      <link>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</link>
+      <link>https://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</link>
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
       <description>タイトルが長げーーーーーーな。。
 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）
 そんなときは、マッピングファイルを作成して、
@@ -602,10 +602,10 @@ NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES), 
     
     <item>
       <title>ニブレスプロジェクト</title>
-      <link>http://goozenlab.com/blog/2015/02/xibless-project/</link>
+      <link>https://goozenlab.com/blog/2015/02/xibless-project/</link>
       <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/xibless-project/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/xibless-project/</guid>
       <description>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。
 ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、
  まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool { // Override point for customization after application launch. self.window = UIWindow(frame: UIScreen.mainScreen().bounds) let masterViewController: MasterViewController = MasterViewController() masterViewController.managedObjectContext = self.managedObjectContext let navigationController = UINavigationController(rootViewController: masterViewController) self.window!.rootViewController = navigationController self.window!.makeKeyAndVisible() return true }   お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。  、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）
@@ -614,10 +614,10 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
     
     <item>
       <title>Reminder：日時の書き込み</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
+      <link>https://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</link>
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/reminder-duedatecomponents/</guid>
       <description>リマインダーへの日時の書き込み
 読み込み時には
 event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone;  と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。
@@ -626,10 +626,10 @@ event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead
     
     <item>
       <title>Reminderからの読込ではまる</title>
-      <link>http://goozenlab.com/blog/2015/02/reminder-completion/</link>
+      <link>https://goozenlab.com/blog/2015/02/reminder-completion/</link>
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/reminder-completion/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/reminder-completion/</guid>
       <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。
 見事にハマったのが、取込みの
 - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void (^)(NSArray *reminders))  でのブロック処理。 完了時にリマインダーのリストが所得でき、そのリストをセーブすれば簡単なはず、、なのが、、なぜがしっかりと保存されていない。中途半端にブロックから出てきている模様。

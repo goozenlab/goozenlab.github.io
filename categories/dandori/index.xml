@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dandori on goozenlab</title>
-    <link>http://goozenlab.com/categories/dandori/</link>
+    <link>https://goozenlab.com/categories/dandori/</link>
     <description>Recent content in Dandori on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Mon, 22 Aug 2016 22:20:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/dandori/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/dandori/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dandori v2.8.0</title>
-      <link>http://goozenlab.com/blog/2016/08/dandori-280/</link>
+      <link>https://goozenlab.com/blog/2016/08/dandori-280/</link>
       <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/dandori-280/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/dandori-280/</guid>
       <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。
 さて、今回のアップデートも新しい機能追加はありません。Swift移行のみの更新です。
 ちょっと問題があって、iOS9以降の対応になります。本来なら、iOS8でも動くはずなのですが、xibファイルが悪さをしているよう。次のバージョンで治せればと思ってます。という事で、バージョン番号も、2.9.0ではなく、2.8.0でアップしています。整理されていないところがたくさんあるので、もう一度書き直すかな、、。
@@ -27,40 +27,40 @@ Change Log [2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai Changed  アイ
     
     <item>
       <title>dandori v2.6.4</title>
-      <link>http://goozenlab.com/blog/2015/04/dandori-264/</link>
+      <link>https://goozenlab.com/blog/2015/04/dandori-264/</link>
       <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/dandori-264/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/dandori-264/</guid>
       <description>またまた、ケアレスミスのホットフィックスです。
 タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。</description>
     </item>
     
     <item>
       <title>dandori v2.6.3</title>
-      <link>http://goozenlab.com/blog/2015/03/dandori-263/</link>
+      <link>https://goozenlab.com/blog/2015/03/dandori-263/</link>
       <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/dandori-263/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/dandori-263/</guid>
       <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。
 ついでに編集時に出る左の削除のボタンを削ろうかと思いましたが、保留。</description>
     </item>
     
     <item>
       <title>dandori v2.6.2</title>
-      <link>http://goozenlab.com/blog/2014/11/dandori-262/</link>
+      <link>https://goozenlab.com/blog/2014/11/dandori-262/</link>
       <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/dandori-262/</guid>
+      <guid>https://goozenlab.com/blog/2014/11/dandori-262/</guid>
       <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。
 次のバージョンからは、8以降の対応にするか7以降にするかちょっと悩んでます。（新しい機能も無いし。。。）</description>
     </item>
     
     <item>
       <title>dandori v2.6.1</title>
-      <link>http://goozenlab.com/blog/2014/10/dandori-261/</link>
+      <link>https://goozenlab.com/blog/2014/10/dandori-261/</link>
       <pubDate>Mon, 27 Oct 2014 17:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/10/dandori-261/</guid>
+      <guid>https://goozenlab.com/blog/2014/10/dandori-261/</guid>
       <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れました。不具合がありましたらご指摘のほどよろしくお願いします。
 オマケ マイナーアップデートで申請しましたが、じつはリマインダーへの書出しの隠し機能があります。iOS8対応時にスワイプで書き出すつもりなので秘密にしました（私は未だiPod/iOS6を使っているので、自分用の機能してつけました）。
 方法は以下。
@@ -72,10 +72,10 @@ Change Log [2.8.0 - 100% Swift release] - 2016-08-23 @ ChiangMai Changed  アイ
     
     <item>
       <title>dandori v2.5.0</title>
-      <link>http://goozenlab.com/blog/2013/07/dandori-250/</link>
+      <link>https://goozenlab.com/blog/2013/07/dandori-250/</link>
       <pubDate>Sat, 27 Jul 2013 17:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/dandori-250/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/dandori-250/</guid>
       <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳ではありません。
 iOS7に向けての準備第一弾としての編集画面の変更をしました。 （iOS7のシミュレーターで試験中ですが少しのバグと幾つかの厄介な不具合がありました。）
  編集画面デザインを更新。 プロジェクトリストページにて、右のバー周辺をロングタップで一番上に移動するようにしました。（下層では機能しません） グリッドに合わせてアイコンを変更。そんなに変わっていません。ちょっとだけ背が高くなったような感じです。  </description>
@@ -83,10 +83,10 @@ iOS7に向けての準備第一弾としての編集画面の変更をしまし�
     
     <item>
       <title>カラーロック</title>
-      <link>http://goozenlab.com/blog/2013/07/color-lock/</link>
+      <link>https://goozenlab.com/blog/2013/07/color-lock/</link>
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
       <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
 以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
 新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
@@ -94,20 +94,20 @@ iOS7に向けての準備第一弾としての編集画面の変更をしまし�
     
     <item>
       <title>Kawaii ColorMode x.4.2</title>
-      <link>http://goozenlab.com/blog/2013/04/colormode/</link>
+      <link>https://goozenlab.com/blog/2013/04/colormode/</link>
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/04/colormode/</guid>
+      <guid>https://goozenlab.com/blog/2013/04/colormode/</guid>
       <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変えたい時に使ってみてください。細かい内容はこちらのポストを参照のほど。
 同時に削除時にたまに落ちるバグも取り除きました。</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.1 for lite version</title>
-      <link>http://goozenlab.com/blog/2013/01/admob-update/</link>
+      <link>https://goozenlab.com/blog/2013/01/admob-update/</link>
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
       <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
 そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
 広告がらみの変更。ご理解のほど。。
@@ -116,50 +116,50 @@ iOS7に向けての準備第一弾としての編集画面の変更をしまし�
     
     <item>
       <title>年末感謝週末セール</title>
-      <link>http://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
+      <link>https://goozenlab.com/blog/2012/11/sale-on-weekend/</link>
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
+      <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
       <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。
 そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.0 for lite version</title>
-      <link>http://goozenlab.com/blog/2012/10/admob-update/</link>
+      <link>https://goozenlab.com/blog/2012/10/admob-update/</link>
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
       <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
 インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
     </item>
     
     <item>
       <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <link>https://goozenlab.com/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
 そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
     </item>
     
     <item>
       <title>Update for Retina4</title>
-      <link>http://goozenlab.com/blog/2012/09/update-retina/</link>
+      <link>https://goozenlab.com/blog/2012/09/update-retina/</link>
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/update-retina/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
       <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。
 で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。</description>
     </item>
     
     <item>
       <title>Update for Navbar</title>
-      <link>http://goozenlab.com/blog/2012/07/navbar-update/</link>
+      <link>https://goozenlab.com/blog/2012/07/navbar-update/</link>
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/07/navbar-update/</guid>
+      <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
       <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。 今まで手に付けてなかったのが不思議なくらいです。。
 設定方法は、
 アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。
@@ -169,10 +169,10 @@ iOS7に向けての準備第一弾としての編集画面の変更をしまし�
     
     <item>
       <title>XCode4.2と怒濤のアップデート</title>
-      <link>http://goozenlab.com/blog/2012/02/xcode42-update/</link>
+      <link>https://goozenlab.com/blog/2012/02/xcode42-update/</link>
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/02/xcode42-update/</guid>
+      <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
       <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。
 Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。
 で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。

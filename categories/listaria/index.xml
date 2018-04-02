@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Listaria on goozenlab</title>
-    <link>http://goozenlab.com/categories/listaria/</link>
+    <link>https://goozenlab.com/categories/listaria/</link>
     <description>Recent content in Listaria on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/listaria/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/listaria/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>リスタリアを公開</title>
-      <link>http://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <link>https://goozenlab.com/blog/2016/09/open-listaria/</link>
       <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/open-listaria/</guid>
       <description>買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。
 アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップデートも３年前を最後に放置状態。ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたのを機に、このままお蔵入りにしてしまおうと思ってました。
 しかし折角作ったものですから、ブログをホストしてもらっているギットハブに恩返しとして公開しようと思うようになり。予定になかったのですが、急遽Swiftに移行作業をしました。
@@ -29,10 +29,10 @@
     
     <item>
       <title>listaria v1.8.0</title>
-      <link>http://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <link>https://goozenlab.com/blog/2016/09/listaria-180/</link>
       <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/listaria-180/</guid>
       <description>使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、
 ひさーーーしぶりにアップデート、Swiftならんは100%リリースです。
 たまに落ちますが、原因がちょっと掴めず、リリースに踏み切りました。
@@ -44,10 +44,10 @@
     
     <item>
       <title>listaria v1.5.4</title>
-      <link>http://goozenlab.com/blog/2013/07/listaria-154/</link>
+      <link>https://goozenlab.com/blog/2013/07/listaria-154/</link>
       <pubDate>Tue, 30 Jul 2013 16:33:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/listaria-154/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/listaria-154/</guid>
       <description>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。） パパイヤリリースです。
 使い方 メモ欄下の数字の入ったボックスをタップ、スワイプにて設定をします。
 タップではちょっと細かい設定ができます。（無し、フル、上旬、下旬の順）
@@ -59,10 +59,10 @@
     
     <item>
       <title>Listaria v1.5.3</title>
-      <link>http://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <link>https://goozenlab.com/blog/2013/07/listaria-153/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/listaria-153/</guid>
       <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更。
 タイでは１キロ、25バーツくらいで売りに出てます。 見た目ちょっと愛嬌があって、味はライチーと似ています。剥くのはライチーより楽です。
 アップデートリスト  アイコンをアップル推奨のグリッドに合わせて微調整 入力画面をクリーンにしました。 Display Bug on Recent Bought List
@@ -76,10 +76,10 @@
     
     <item>
       <title>Icon Renew and minor update</title>
-      <link>http://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <link>https://goozenlab.com/blog/2013/05/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <guid>https://goozenlab.com/blog/2013/05/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名（今回はタイで今が旬のライチ）と価格はバージョン(version1.5.2)にしました。アップデート毎にちょっと面倒ですが替えます。 サティは色を緑からシックな紫色に変更、仏陀をとって花（もしくは車輪）のアイコンをメインにしました。 ippukuのアイコンは常々あんまり格好良くないなぁ思っていたのを、シンプルにしました。ちょっと格好よくなったと思います。
 そして、ソフトの中身も少しだけアップデートしました。
 sati：履歴の表示のセルとデザインをちょっと変更しました。
@@ -88,20 +88,20 @@ sati：履歴の表示のセルとデザインをちょっと変更しました�
     
     <item>
       <title>Listaria v1.5.1</title>
-      <link>http://goozenlab.com/blog/2012/10/listaria-151/</link>
+      <link>https://goozenlab.com/blog/2012/10/listaria-151/</link>
       <pubDate>Sat, 20 Oct 2012 07:59:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/listaria-151/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/listaria-151/</guid>
       <description>リスタリア、マイナーバクフィクスのアップデートを申請しました。
  ロングタップ時の挙動が不安定なのを改善。（未だたまーーに落ちます） リスト表示時にナビゲーションバーをロングタップするとソートが最近買った順、買った回数順に切り替わります。その状態を保持できるようにしました。 ARCにほぼ対応  ここ最近無料で提供していたので、ダウンロード数がぐっと一時的に上がりました。有料だと、全くでません。</description>
     </item>
     
     <item>
       <title>4系と5系</title>
-      <link>http://goozenlab.com/blog/2012/09/version4-5/</link>
+      <link>https://goozenlab.com/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
 そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
     </item>

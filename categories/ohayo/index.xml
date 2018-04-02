@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ohayo on goozenlab</title>
-    <link>http://goozenlab.com/categories/ohayo/</link>
+    <link>https://goozenlab.com/categories/ohayo/</link>
     <description>Recent content in Ohayo on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 10 Sep 2016 08:00:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/ohayo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ohayo v2.9.2</title>
-      <link>http://goozenlab.com/blog/2016/09/ohayo-292/</link>
+      <link>https://goozenlab.com/blog/2016/09/ohayo-292/</link>
       <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/ohayo-292/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/ohayo-292/</guid>
       <description> 気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはずですが、私爆睡野郎なので、音に気がつくのが一週間に一回ぐらい、ちょっと本当に毎日動いているか不安。寝起きは良いんですけどね。。）
 と、マイナーアップグレードです。ちょっと飛行機のアイコンがなくなって悲しくもあるのはたぶん私だけでしょう。。。
 機能的に新しいことが思いつきません、何かご希望、ご要望がありましたら、気軽にリクエストしてください。
@@ -27,10 +27,10 @@ Change Log [2.9.2] - 2016-09-10 @ Chaingmai FIxed  快眠時間前の起床時�
     
     <item>
       <title>ohayo v2.9.1</title>
-      <link>http://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <link>https://goozenlab.com/blog/2016/07/ohayo-291/</link>
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
       <description> 快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。
 あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
 Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
@@ -38,10 +38,10 @@ Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見や
     
     <item>
       <title>ohayo v2.9.0</title>
-      <link>http://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <link>https://goozenlab.com/blog/2016/06/ohayo-290/</link>
       <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/ohayo-290/</guid>
       <description> Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが、レイアウトや、初期に作ったソフトが故の幼稚なソースコード、見えないところでの変更は多々あります。iPhone6がでた頃から、レイアウトがこのソフトの問題・課題だったのですが、オートレイアウトやiphone6,6+による解像度の追加にて、色々試した上ようやくおさまりました。
 使い勝手は、シェイクによるセッションの中止をやめて、長押しスタート、タップで移行、長押しでキャンセルという方法に変更になります。
 使用上では、上記のタップ関連の変更のみです、あとは内部とアイコンが少し大人っぽくなりました。（アプストアのスクリーンショットとかも更新しないと。。）
@@ -50,39 +50,39 @@ Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しに�
     
     <item>
       <title>Iconを作り替え中</title>
-      <link>http://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <link>https://goozenlab.com/blog/2016/05/icons-renew/</link>
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <guid>https://goozenlab.com/blog/2016/05/icons-renew/</guid>
       <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。
 大幅な変更では無いけれど、ちょっとシックになったと。。</description>
     </item>
     
     <item>
       <title>ohayo のデザイン</title>
-      <link>http://goozenlab.com/blog/2015/03/ohayo-pop/</link>
+      <link>https://goozenlab.com/blog/2015/03/ohayo-pop/</link>
       <pubDate>Mon, 16 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/ohayo-pop/</guid>
       <description>Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。</description>
     </item>
     
     <item>
       <title>ohayo v2.8.2</title>
-      <link>http://goozenlab.com/blog/2015/03/ohayo-282/</link>
+      <link>https://goozenlab.com/blog/2015/03/ohayo-282/</link>
       <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/ohayo-282/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/ohayo-282/</guid>
       <description>うーーーん、ホットフィックスです。
  バグ  朝のメッセージがずれてました。。   以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</description>
     </item>
     
     <item>
       <title>旅先での睡眠</title>
-      <link>http://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
+      <link>https://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
       <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
       <description>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。
 ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。
 ひげに白髪が混じってきたし、積年の疲れということか。。
@@ -94,10 +94,10 @@ Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しに�
     
     <item>
       <title>ohayo v2.8.1</title>
-      <link>http://goozenlab.com/blog/2015/02/ohayo-281/</link>
+      <link>https://goozenlab.com/blog/2015/02/ohayo-281/</link>
       <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/ohayo-281/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/ohayo-281/</guid>
       <description>ロングタップで記録の開始、音が出ないバグ の変更といくつかのバグ、修正と追加があります。
  バグ
  アクションシートにて睡眠時間のタイトル表示がタイムゾーンに対応していないバグ 音が出ないバグ、iOS8。ホーム＞設定＞ohayo: 通知にてサウンドのスウィッチをオンにしてください 初期値に不具合バグ：設定画面で夜更かし等の表示をチェックするといい加減な表示になる
@@ -110,10 +110,10 @@ Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しに�
     
     <item>
       <title>ohayo v2.8.0</title>
-      <link>http://goozenlab.com/blog/2014/11/ohayo-280/</link>
+      <link>https://goozenlab.com/blog/2014/11/ohayo-280/</link>
       <pubDate>Wed, 05 Nov 2014 05:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/11/ohayo-280/</guid>
+      <guid>https://goozenlab.com/blog/2014/11/ohayo-280/</guid>
       <description>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。
 ※最初のデータ書き込み時に認証の確認が行われます。その時に認証を認めない場合、それ以降ソフトにて書出しをオンした場合には、ホーム＞プライバシー＞ヘルスケアにて書出しの設定を変更する必要があります。
 書き出されたデータの日付けは、日付けのドット柄がハートマークに変ります。既にあるデーターはセルをタップして上がってくるアクションシートより書き出す事が出来ます。
@@ -123,10 +123,10 @@ Change Log [2.9.0 - Swift release] - 2016-06-14 @ NongKhai Added  長押しに�
     
     <item>
       <title>ohayo v2.5.0</title>
-      <link>http://goozenlab.com/blog/2013/07/ohayo-250/</link>
+      <link>https://goozenlab.com/blog/2013/07/ohayo-250/</link>
       <pubDate>Thu, 18 Jul 2013 14:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/07/ohayo-250/</guid>
+      <guid>https://goozenlab.com/blog/2013/07/ohayo-250/</guid>
       <description>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。
  アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
  デザインリニュー：フォントを変更。（日本語には影響無し） 設定ページをリデザイン。さっぱり奇麗になりました。

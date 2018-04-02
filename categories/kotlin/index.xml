@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kotlin on goozenlab</title>
-    <link>http://goozenlab.com/categories/kotlin/</link>
+    <link>https://goozenlab.com/categories/kotlin/</link>
     <description>Recent content in Kotlin on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/kotlin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
-      <link>http://goozenlab.com/blog/2015/03/intellij-setup/</link>
+      <link>https://goozenlab.com/blog/2015/03/intellij-setup/</link>
       <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/intellij-setup/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/intellij-setup/</guid>
       <description>Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませんでした。（Javaがどうもねぇ〜。）
 最近、サイトのブログエンジンを変更するにあたって色々とリサーチをしていて、goLangやKotlinという新しい言語の事を知る。そしてそのKotlinという言語は見た目すごくSwiftに似ている。しかもアンドロイドのアプリも作れるらしい。 「これはSwiftのついでに両方勉強すれば一石二鳥では、あわよくばアプリを移植できるかも、、、」と軽率な考えにおされ、Kotlin の開発元から出ているIDE、しかもAndroidStudioの元になっているIntelliJ IDEA でやってみるべと、、ちょっとスウィッチが入りました。
 ダウンロードする物は以下の４つ。

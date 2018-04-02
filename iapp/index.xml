@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iapps on goozenlab</title>
-    <link>http://goozenlab.com/iapp/</link>
+    <link>https://goozenlab.com/iapp/</link>
     <description>Recent content in Iapps on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/iapp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/iapp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>プライバシーポリシー</title>
-      <link>http://goozenlab.com/iapp/sati-privacy/</link>
+      <link>https://goozenlab.com/iapp/sati-privacy/</link>
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/sati-privacy/</guid>
+      <guid>https://goozenlab.com/iapp/sati-privacy/</guid>
       <description> プライバシーポリシー  サティではヘルスケアへのアクセスが行われます。
  ヘルスケアにサティで得た瞑想の時間のデーターを書き込みます。（ユーザーの同意を得た後）
  ヘルスケアよりデーターの読み込みは行いません。
@@ -27,10 +27,10 @@
     
     <item>
       <title>(a)</title>
-      <link>http://goozenlab.com/iapp/a/</link>
+      <link>https://goozenlab.com/iapp/a/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/a/</guid>
+      <guid>https://goozenlab.com/iapp/a/</guid>
       <description>アプリについて 使い勝手は拙作のリトリストを踏襲し、タスクをテキスト形式で管理したいとの事からのスタート、ネット上で &amp;ldquo;todo.txt&amp;rdquo; という物を見つけそのクライアントを作ることがプロジェクトの始まり。
 しかしながら、&amp;rdquo;todo.txt&amp;rdquo; の形式がちょっと好きになれず、書式は結局、ブログの更新でも使っている、マークダウン形式に変更。少しtodo.txtの要素を取り込み、シンプルな形に整えました。
 入力はコンピューターをメイン、閲覧はiOS端末。(コンピューター(6.5:3.5)iOS端末) 一日の始めや、終わりに、ジーーッとリストを眺め、サッとやる事の整理をコンピューターを使って書き出し、日中はiOS端末でタスクの確認・更新 というような使い方を想定して作りました。
@@ -44,10 +44,10 @@ todo.md 書式の説明 マークダウンの形式にそっていますので�
     
     <item>
       <title>pinocul</title>
-      <link>http://goozenlab.com/iapp/pinocul/</link>
+      <link>https://goozenlab.com/iapp/pinocul/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/pinocul/</guid>
+      <guid>https://goozenlab.com/iapp/pinocul/</guid>
       <description>ピンホールカメラ制作時にフィルムよりピンホールまでの距離を出す計算機です。
 ピンホールカメラを自作するとき、フィルム大きさはこのくらいで、レンズだとだいたい25ミリくらいというイメージがあると思います。
 しかし実際作るとなるとその厚みをどうするかがちょっと分からなかったりします。
@@ -61,10 +61,10 @@ I hope this app helps..</description>
     
     <item>
       <title>pranatice</title>
-      <link>http://goozenlab.com/iapp/pranatice/</link>
+      <link>https://goozenlab.com/iapp/pranatice/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/pranatice/</guid>
+      <guid>https://goozenlab.com/iapp/pranatice/</guid>
       <description> ヨガプラクティスの中でちょっと面倒な呼吸トレーニングのプラナヤマ。
 自分でカウントして行う人が多いとおもいます。 ただし、自分で秒数をカウントするのが少々面倒なので、結局やらない人も多いのではないでしょうか？
 そこで、Kyokoさんに手伝っていただく事にしました。
@@ -88,10 +88,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>viriya</title>
-      <link>http://goozenlab.com/iapp/viriya/</link>
+      <link>https://goozenlab.com/iapp/viriya/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/viriya/</guid>
+      <guid>https://goozenlab.com/iapp/viriya/</guid>
       <description>ちょっとずつ、色んな物につい手を出してしまう、気が分散しがちなあなたに、
 時間を区切り、タスクに集中するためのアプリです。 ポモドーロメソッドなど、ご自分の集中メソッドにあわせて使ってください。
 □メインページ（項目のリスト） ◆ ナビゲーションバー
@@ -130,10 +130,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>ohayo</title>
-      <link>http://goozenlab.com/iapp/ohayo/</link>
+      <link>https://goozenlab.com/iapp/ohayo/</link>
       <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/ohayo/</guid>
+      <guid>https://goozenlab.com/iapp/ohayo/</guid>
       <description> 自分がいつ、どのくらい寝ているかをシンプルに管理するソフトです。
 日々就寝前、起床後にメッセージを追加する事が出来ます。睡眠の傾向をつかみ、自分に最適な睡眠を見つけるのに役にたてていただければ幸いです。
 ※ タイムゾーンにも対応しているので、海外旅行時にも問題なく利用できます。
@@ -166,10 +166,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>sati</title>
-      <link>http://goozenlab.com/iapp/sati/</link>
+      <link>https://goozenlab.com/iapp/sati/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/sati/</guid>
+      <guid>https://goozenlab.com/iapp/sati/</guid>
       <description>瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。 良いきっかけ作りに、お役に立てれば幸い。
 □ メイン画面 画面構成 ・上部には今日の日付
 ・大きい数字は今までの瞑想の回数
@@ -212,10 +212,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>listaria</title>
-      <link>http://goozenlab.com/iapp/listaria/</link>
+      <link>https://goozenlab.com/iapp/listaria/</link>
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/listaria/</guid>
+      <guid>https://goozenlab.com/iapp/listaria/</guid>
       <description> 買い物に行っていつもなぜか数品買い忘れをしてしまう人、 そんな人のために簡単に使える買物帳を作りました。
 文字を大きく見やすくして、使い勝手も出来るだけシンプルにしました。
 ※ 都会的な雰囲気な写真ですが、ショッピングリストはむちゃ和風。。。
@@ -239,10 +239,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>doop</title>
-      <link>http://goozenlab.com/iapp/doop/</link>
+      <link>https://goozenlab.com/iapp/doop/</link>
       <pubDate>Sun, 26 Jun 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/doop/</guid>
+      <guid>https://goozenlab.com/iapp/doop/</guid>
       <description>エコリサイクリング関連のツール
 定期的にしなければいけないこと、電池の交換時期など、出来事がサイクルする物事を把握するソフトです。
 以前行ってからどのくらい経ったかを知りたかったり、ちょっと引き延ばしがちな事を確りと出来るようにと、、
@@ -286,10 +286,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>ippuku</title>
-      <link>http://goozenlab.com/iapp/ippuku/</link>
+      <link>https://goozenlab.com/iapp/ippuku/</link>
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/ippuku/</guid>
+      <guid>https://goozenlab.com/iapp/ippuku/</guid>
       <description>29時間という長いスパンのグラフで見つめる簡易行動ログ帳。
 何にどのくらい時間を当てているかをざっくりと大雑把に把握するためのソフトです。
 ！タイマーのスタートはナビゲーションバーのプラスのマークから！  下部よりスタートボタンが上がってきます。
@@ -305,10 +305,10 @@ AppStoreにてダウンロード ：iTunesが開きます。
     
     <item>
       <title>meagen</title>
-      <link>http://goozenlab.com/iapp/meagen/</link>
+      <link>https://goozenlab.com/iapp/meagen/</link>
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/meagen/</guid>
+      <guid>https://goozenlab.com/iapp/meagen/</guid>
       <description>見ないうちにドンドン大きくなっていく子供達のサイズを管理する為のソフトです。（大人の方にも対応しています） 旅先で見つけたかわいらしい服や帽子など、姪や甥に買ってあげたくても年齢以外は分からない時がよくあり、そんな時に重宝するかなと思い作りました。 子供や姪甥、フォスターチルドレンの沢山いらっしゃる方にぜひ。
 使用方法  タップ左:カラーの変更。
  ダブルタップ中心:身長・体重・誕生日・名前の編集画面へ。
@@ -323,10 +323,10 @@ Lite版では
     
     <item>
       <title>tapas</title>
-      <link>http://goozenlab.com/iapp/tapas/</link>
+      <link>https://goozenlab.com/iapp/tapas/</link>
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/tapas/</guid>
+      <guid>https://goozenlab.com/iapp/tapas/</guid>
       <description>食材リスト付き、マルチキッチンタイマー。 麺好きな人であれば、パスタ数種、うどん、蕎麦など様々な種類かつブランドの物を取り揃えていると思います。 麺の種類やブランドにより茹で時間が違いますし、作るたびにパッケージを確認したりするのがちょっとした手間だったりします。
 そんな不満を解消すべく、
  リスト
@@ -347,10 +347,10 @@ Lite版では
     
     <item>
       <title>cosper</title>
-      <link>http://goozenlab.com/iapp/cosper/</link>
+      <link>https://goozenlab.com/iapp/cosper/</link>
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/cosper/</guid>
+      <guid>https://goozenlab.com/iapp/cosper/</guid>
       <description>ちょっとした高額な物を購入したけど思ったほど使用していない品物、 高価な物だけど日々使っているもの等を、 日割り、もしくは使用回数のコストを計算してそのパフォーマンスをはかるソフトです。
 無駄遣いの抑止に、、
 でも実は逆に毎日使うものであれば少し奮発してもよいように思えてきてます。。
@@ -375,10 +375,10 @@ Lite版では
     
     <item>
       <title>dandori</title>
-      <link>http://goozenlab.com/iapp/dandori/</link>
+      <link>https://goozenlab.com/iapp/dandori/</link>
       <pubDate>Fri, 19 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/dandori/</guid>
+      <guid>https://goozenlab.com/iapp/dandori/</guid>
       <description>ポストイット感覚で使えるカラフルでパーソナルなプロジェクトマネージャ。 シンプルな使い勝手で、簡単にタスクを管理する事ができます。
 プロジェクトの段取り、簡単なアイディア帳としても。 抱負や夢、欲しい物をちょっと書き出してみたりしてみてください。
 全体像 プロジェクトとタスクのページが有ります。
@@ -394,10 +394,10 @@ Lite版では
     
     <item>
       <title>littlist</title>
-      <link>http://goozenlab.com/iapp/littlist/</link>
+      <link>https://goozenlab.com/iapp/littlist/</link>
       <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/iapp/littlist/</guid>
+      <guid>https://goozenlab.com/iapp/littlist/</guid>
       <description> 小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。
 ビジネスが中心のタスク管理ソフトを、生活に近くし、誰でも簡単かつ気楽に扱える、 使っていて楽しく感じられるtoDoアプリケーションを目指して作りました。
 手帳にペタペタとポストイットを貼り付けているような人やザッピング好きには最適なTodoソフトです。

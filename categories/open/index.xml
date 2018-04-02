@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open on goozenlab</title>
-    <link>http://goozenlab.com/categories/open/</link>
+    <link>https://goozenlab.com/categories/open/</link>
     <description>Recent content in Open on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Thu, 25 May 2017 14:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/open/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tapasを公開</title>
-      <link>http://goozenlab.com/blog/2017/05/open-tapas/</link>
+      <link>https://goozenlab.com/blog/2017/05/open-tapas/</link>
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2017/05/open-tapas/</guid>
+      <guid>https://goozenlab.com/blog/2017/05/open-tapas/</guid>
       <description>公開アプリ第５弾。
 XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。
  タイマー 通知 コアデータ ターゲットの切り分け  を使ってます。
@@ -26,10 +26,10 @@ XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイ�
     
     <item>
       <title>(a)を公開</title>
-      <link>http://goozenlab.com/blog/2016/11/open-a/</link>
+      <link>https://goozenlab.com/blog/2016/11/open-a/</link>
       <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/11/open-a/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/open-a/</guid>
       <description>手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。
 ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必要になります。 現在アプストアーに上がっているものと同じものですので、ちゃんと動くはずです。
 リクエストや不具合、こうした方が良いなどのアドバイスなどありましたら、Issueに書き込んでください。</description>
@@ -37,20 +37,20 @@ XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイ�
     
     <item>
       <title>プラナティスを公開</title>
-      <link>http://goozenlab.com/blog/2016/11/open-pranatice/</link>
+      <link>https://goozenlab.com/blog/2016/11/open-pranatice/</link>
       <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/11/open-pranatice/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/open-pranatice/</guid>
       <description>カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコードですが、オープンソース化します。
 音声の細かい調整や、文言の変更などをしたい方は、ぜひダウンロード・ビルドして使って見てください。</description>
     </item>
     
     <item>
       <title>リスタリアを公開</title>
-      <link>http://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <link>https://goozenlab.com/blog/2016/09/open-listaria/</link>
       <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/open-listaria/</guid>
       <description>買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。
 アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップデートも３年前を最後に放置状態。ちょうど先日アップルから30日以内に新しいバージョンを上げないとアップルストアーから消しますよとのメールが届いたのを機に、このままお蔵入りにしてしまおうと思ってました。
 しかし折角作ったものですから、ブログをホストしてもらっているギットハブに恩返しとして公開しようと思うようになり。予定になかったのですが、急遽Swiftに移行作業をしました。
@@ -62,10 +62,10 @@ XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイ�
     
     <item>
       <title>サティを公開</title>
-      <link>http://goozenlab.com/blog/2016/09/open-sati/</link>
+      <link>https://goozenlab.com/blog/2016/09/open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/open-sati/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/open-sati/</guid>
       <description>簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 Link @ github しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンスは無難に、MITライセンスにしました。
 プログラマーでない独学万年日曜プログラマーが作ったアプリなので、ある意味、初心者の方には読みやすいコードになっていると思います。別の言い方ですと、幼稚なコードとも言えます。。
 XCodeも無償で提供されてますし、XCode7より、実機へのインストールもAppleIDがあれば、有料のプログラムに登録しないでもできるようになりました。 自分に必要なものを自分の思うように作って使うという環境がもう既に整っています。
@@ -78,10 +78,10 @@ XCodeも無償で提供されてますし、XCode7より、実機へのインス
     
     <item>
       <title>ギットハブ公開</title>
-      <link>http://goozenlab.com/blog/2016/09/github-open-sati/</link>
+      <link>https://goozenlab.com/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/09/github-open-sati/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/github-open-sati/</guid>
       <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。
  問題点：ギットハブに公開するプロジェクトには、バンドルアイデンティファイヤ、AppleIDを入れたくない。そして、アプストアーに公開するにはコードサインをしなくてはいけない。（アイデンティファイヤ、AppleIDが必要） 解決案：二つのプロジェクトと共有コードの形での運用  一つ目のプロジェクトは、作業用。ギットハブと連動して作業をします。個人情報入れないでも、シミュレーターでアプリを動かすことができます。
 もう一つは、アプストアービルド、デプロイ用。プロジェクトファイル以外は、上のプロジェクトからファイルをリンクします。（コピーではなく、シンボリックリンクにみたいなもの？）このプロジェクトには、アプストアーに登録するための情報を入れておきます。ギットは使いません。

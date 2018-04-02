@@ -2,22 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nomad on goozenlab</title>
-    <link>http://goozenlab.com/categories/nomad/</link>
+    <link>https://goozenlab.com/categories/nomad/</link>
     <description>Recent content in Nomad on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Thu, 03 Aug 2017 18:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 12:00:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/nomad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>2018年の海外年明け</title>
+      <link>https://goozenlab.com/blog/2018/01/new-year/</link>
+      <pubDate>Mon, 01 Jan 2018 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/01/new-year/</guid>
+      <description>シャワーを浴びている最中に花火の音が聞こえ、年が明けたことを知る。
+ 2018: Rishkesh, India 2017: Chiang Kohng, Thailand 2016: Battambang, Cambodia 2015: Ipoh, Malaysia 2014: Trivandrum, India 2013: Penan, Malaysia 2012: Pokhara, Nepal 2011: ChiangMai, Thailand 2010: Adis Ababa, Ethiopia 2009: Cairo, Egipt 2008: Vientian, Laos 2007: Managua, Nicaragua 2006: Oaxaca, Mexico 2005: Sao Paulo, Brazil  </description>
+    </item>
+    
+    <item>
       <title>レー、インドのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2017/08/internet-leh/</link>
+      <link>https://goozenlab.com/blog/2017/08/internet-leh/</link>
       <pubDate>Thu, 03 Aug 2017 18:00:00 +0530</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2017/08/internet-leh/</guid>
+      <guid>https://goozenlab.com/blog/2017/08/internet-leh/</guid>
       <description>インドのチベットことレー。シーズン真っ只の書き入れ時なので人も車も多いです。 ゲストハウス・ホテルも新規建設中の所も多い。バブル感あり、少々心配。。
 さて、ラダック地方のインターネットのスピードは、、、
 下り：0.26Mps
@@ -32,10 +42,10 @@
     
     <item>
       <title>アヌラーダプラ、スリランカのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2017/03/internet-anuradhapura/</link>
+      <link>https://goozenlab.com/blog/2017/03/internet-anuradhapura/</link>
       <pubDate>Sat, 25 Mar 2017 08:00:00 +0530</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2017/03/internet-anuradhapura/</guid>
+      <guid>https://goozenlab.com/blog/2017/03/internet-anuradhapura/</guid>
       <description>スリランカ、文化三角地帯のアヌラーダプラにいます。チャリダーデビューの予定でしたが、残念ながら単身での旅行。
 道で声をかけられた宿にチェックイン時、「Wifiは使えるの？」と聞くと、オーナーがルーターを持って来て電源を入れ。
 「Wifi、レディー！」と言われ、
@@ -55,10 +65,10 @@
     
     <item>
       <title>2017年の海外年明け</title>
-      <link>http://goozenlab.com/blog/2017/01/new-year/</link>
+      <link>https://goozenlab.com/blog/2017/01/new-year/</link>
       <pubDate>Sun, 01 Jan 2017 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2017/01/new-year/</guid>
+      <guid>https://goozenlab.com/blog/2017/01/new-year/</guid>
       <description>メコン川沿いの国境の街、チェンコーンにて年末年始を過ごす。大晦日の午後11時すぎ、一旦静かになるが、年明けとともにコムロイと花火がラオス側とともに上がる。思った以上に賑やか。
 一年一年が恐ろしい程あっという間に過ぎて行く。
 元日は、滞在先で飼われている猫が亡くなり、バナナの木の横に穴を掘るのを手伝う。。4匹いるうちもう一匹（写真一番右の子）も調子が悪く、テーブルの下で一点を見つめ動かない様子が気になって、、、胸が痛い。。
@@ -71,10 +81,10 @@
     
     <item>
       <title>インチキ自転車国境越え</title>
-      <link>http://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</link>
+      <link>https://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</link>
       <pubDate>Fri, 30 Dec 2016 20:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</guid>
+      <guid>https://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</guid>
       <description>ビザの期限が1月1日なので、ビザのリニューアルのためチェンコーン・フェイサイへビザランをする。国境が町から遠いと聞いていたので、自転車を持って行くことにする。
 チェンマイからチェンコーン行きグリーンバスに自転車を積み（自転車積荷代は50B）国境橋近くで降りる。（チェンマイから５時間半ぐらい、トゥクトゥクが待機してます。）数キロ走りタイを出国。
 出国手続き後の国境間はバスでしか移動はできず、自転車込み料金100バーツを徴収される。一瞬ぼったくられているのかと思ったが、ふと見上げると看板に書いてあるの見つける。（でも高いと思う。）折りたたみ自転車なので輪行袋を持って来ればよかったとすこし後悔。 そして人が集まるまで２、３０分待つ。年末だからなのかは分からないけれど人の流れは少ない。（基本的に中国からタイへの物流ルートのような気がする。）
@@ -86,10 +96,10 @@
     
     <item>
       <title>タイにてプリペイド：サービスページ</title>
-      <link>http://goozenlab.com/blog/2016/10/thai-dtac/</link>
+      <link>https://goozenlab.com/blog/2016/10/thai-dtac/</link>
       <pubDate>Sun, 23 Oct 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/10/thai-dtac/</guid>
+      <guid>https://goozenlab.com/blog/2016/10/thai-dtac/</guid>
       <description>タイにてプリペイドを使っています。マックとBTでテザリングして外でも快適なインターネット環境が整います。
 そして、2.5GB契約回線が更新11日前に契約通信使用量が尽きる。自動更新なのだがどのように解除できるかはWebページには記載されていない。
 色々と探しているうちに携帯電話番号に紐づいた、サービス変更などができるユーザーページ mydtac eService にたどり着きました。 携帯番号を入力し、送られてくるパスワードを入力してログインします。（国王崩御のためグレースケールで表示されています。）
@@ -101,10 +111,10 @@
     
     <item>
       <title>羽田発香港経由チェンマイ行き</title>
-      <link>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
+      <link>https://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
       <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
       <description>LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれることがあります。未だ競争が厳しいのでしょう。最安と思われる金額のさらに半額ちかい。。一瞬、見間違えかと思いました、ちょっとドキドキしちゃいましたよ。香港によれるので、シャオミの携帯を買うべ、10月ならシャオミノートの新しいやつが出てれば御の字。
 タイ行きのチケットは9月の半ばくらいから10月にかけて安いイメージがあります。タイはちょうど雨季の終わり頃で梅雨っぽい不快な時期。酷暑期の４・５月とこの９・１０月がちょっと嫌な感じの季節だからなのかしらん。（４・5月はタイでは夏休みの時期なのでチケットはさほど安くは無いです。）
 プロモーション関連は要チェックですわな。また久しぶり円高だし買い物一泊香港とかもお勧め。</description>
@@ -112,10 +122,10 @@
     
     <item>
       <title>旅の伴侶</title>
-      <link>http://goozenlab.com/blog/2016/07/dahon-speed8/</link>
+      <link>https://goozenlab.com/blog/2016/07/dahon-speed8/</link>
       <pubDate>Wed, 20 Jul 2016 20:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/07/dahon-speed8/</guid>
+      <guid>https://goozenlab.com/blog/2016/07/dahon-speed8/</guid>
       <description>7月も下旬になりました。滞在中のタイでは大型連休。雨季入り祝日のカオパンサーが過ぎ、雨季に突入です。
 2016年バージョンのダホンスピードD8をノマドの伴侶にします。本当はごっつい旅仕様チャリンコを購入し、本格派チャリダーデビューをしようと思っていたのだけど、どんどん気持ちが萎縮し、楽に持ち運びができる折りたためる自転車に落ち着く。大は小を兼ねるというが、、ここはこぢんまりと。。長距離移動はバスで、ヘタレな感じで良いやと、、。
 9月の日本一時帰国時に実物を見てボードウォークを買うつもりでいたのだけど、ちょうど2017年バージョンリニューアルの時期と重なるのか単なる在庫処分なのか、7月のなかばにヨドバシにてボードウォーク上位版、スピードD８の値段が一気に下がる。（ボードウォークにちょっと色をつけた値段） 昨今の円高でもしかしたら2017年版は値段が下がるかもしれないとかいろんなことが頭によぎるが、こういうのもタイミングなので購入決定。タイから注文し実家に送りつける。
@@ -127,10 +137,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ノンカイからラオスへ日帰りビザラン</title>
-      <link>http://goozenlab.com/blog/2016/06/nongkhai-laos/</link>
+      <link>https://goozenlab.com/blog/2016/06/nongkhai-laos/</link>
       <pubDate>Sun, 19 Jun 2016 15:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/nongkhai-laos/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/nongkhai-laos/</guid>
       <description>ビザの更新をしにノンカイからラオスへ日帰りする。
 ノンカイのバスターミナルに近い宿からイミグレーションまで、だいたい３キロ強。途中、中間地点付近に毎朝行くベジタリアンの定食屋があるので、8時ごろ宿を出る。そのベジ屋で朝食を食べて国境に向かう。
 今日は日曜日、週末は混むとのネット情報ですが、人も少なく非常にスムースにタイを出国。ラオスに向かう友好橋バスは40バーツ、ちょっと待って出発する。
@@ -146,10 +156,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ノンカイ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-nongkhai/</link>
+      <link>https://goozenlab.com/blog/2016/06/internet-nongkhai/</link>
       <pubDate>Wed, 08 Jun 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-nongkhai/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/internet-nongkhai/</guid>
       <description>ナコンパノムからのんびり、ラオスとの国境に沿ってぐるっとまわり６時間半くらいかかり、これまたラオスとの国境の街ノンカイに着く。ちょっと天気が荒れ模様。ベジ屋も発見できず、夜は豆乳とパイナップル。
 一夜明け街をぶらぶらする。観光客は少ない、遠くに国境の橋があるので宿のあるバスターミナル近くはいたって穏やか。ベジ屋も街はずれに２件発見し安堵。そして、徒歩圏内に大き目のテスコ（スーパーマーケット）があったので行ってみると、割と賑わっている。
 うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので家を独占。多分ウドンタニより数段快適だと思う。
@@ -163,10 +173,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ナコンパノム、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</link>
+      <link>https://goozenlab.com/blog/2016/06/internet-nakhonphanom/</link>
       <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-nakhonphanom/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/internet-nakhonphanom/</guid>
       <description>ムクダハンより最近タイで見かけるチョット大きめVan(15人）でナコンパノムまで、途中タートパノムにより1時間45分で着く。
 メコン川の向こうに切り立った丘が見えちょっと他のメコン川沿いの街とは雰囲気が違う。川沿いには自転車専用の通路がある。土曜日だからなのか通り沿いにナイトマーケットが行われていた。（週末は行われていました。）
 街に数件のベジタリアンレストランを見つけちょっとびっくり、割合としてはかなり多い。しばし逗留するかなと思うが、ホテルの部屋には割と綺麗なのだけど、アウトレットが無い。。
@@ -179,10 +189,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ムクダハン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-mukdahan/</link>
+      <link>https://goozenlab.com/blog/2016/06/internet-mukdahan/</link>
       <pubDate>Fri, 03 Jun 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-mukdahan/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/internet-mukdahan/</guid>
       <description>ベジタリアンレストランもあり、快適なタイに戻る。ラオ出国時にK10,000徴収されるが賄賂にしては変な感じ。サワナケートからのバスは出入国も含めて全行程１時間とちょっと、思ったよりスムース。
 ムクダハンはサワナケートの対岸の町、お互いがよく見えます。なにか特筆すべきことは無いのだけど、、、宿でのインターネットの環境は以下。地獄から天国。
 下り：22.49Mps
@@ -192,10 +202,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>サワナケート、ラオスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/06/internet-savannakhet/</link>
+      <link>https://goozenlab.com/blog/2016/06/internet-savannakhet/</link>
       <pubDate>Wed, 01 Jun 2016 17:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/06/internet-savannakhet/</guid>
+      <guid>https://goozenlab.com/blog/2016/06/internet-savannakhet/</guid>
       <description>パクセを出てサワナケート。ここでもベジ屋が見つからず。。タイとほとんど同じような文化圏にいるにもかかわらず何故だ？結局チーズ・野菜のサンドイッチとビールですます。宿に戻る途中、氷のいっぱい入った大きな激しい緑色をした抹茶オレを買う。
 そういえば、以前来たな、、ベトナムのビザを申請したなここで、、で、犬に噛まれたな、、とふと思い出した。（狂犬病が発症しなくてよかったなと。。） タイに比べラオで安いものはビールくらいで、、、もうラオスはいいわ、食べ物がこんなに困るとは思わなかった。ラオスのお金が余っているがタイに向かうことにする。
 以前は船でメコンを渡って国境を越えられたようだけれど、外人は陸路での橋にあるイミグレしか利用できないと船着場近くにいた職員らしき人が言っていた。
@@ -207,10 +217,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>パクセ、ラオスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-pakse/</link>
+      <link>https://goozenlab.com/blog/2016/05/internet-pakse/</link>
       <pubDate>Sat, 28 May 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-pakse/</guid>
+      <guid>https://goozenlab.com/blog/2016/05/internet-pakse/</guid>
       <description>タイビザの更新のためラオスに来ました。
 ウボンラチャタニから国境越えのバスでパクセに。バスが本来街に近いバスターミナルを通過し、かなり町外れにあるターミナルまで行く。待ってましたと待ち受けているソンテウと結託しているよう。言い値も無茶苦茶だし、もちろんそんなソンテウは無視。同乗していたラオの人に街までの行き方など色々聞くと、友人が来るからと、街まで同乗させてもらう。国境では賄賂を要求されるし、物価も昔からかなり上がったという話なので、ラオスよ。。。
 ラオスと言ったら、評判の高いビアラオ。舌が肥えたのか、品質が落ちたのかわからないが、以前ほど美味しいとは感じない。ベジレストランはインド料理屋を除き、皆無。残念だらけのラオスだけどしばし逗留。（物価：宿K50,000, BeerLao大瓶 K9,000)
@@ -222,10 +232,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ウボンラチャタニ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-ubon/</link>
+      <link>https://goozenlab.com/blog/2016/05/internet-ubon/</link>
       <pubDate>Thu, 26 May 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-ubon/</guid>
+      <guid>https://goozenlab.com/blog/2016/05/internet-ubon/</guid>
       <description>スリンから気分転換を兼ね列車でウボンラチャタニまで移動する。３時間くらいかかりTHB31とバス代の多分３分の１程度。ウボンの駅からは白ソンテウに乗り街まで移動。
 雨季に近づいてきているので夕方に雷雨が激しく降る。ちょっと蒸し暑い感じが出始める、昼歩きが少し辛く、冷房の効いたコンビニで一息付き外に出るとメガネが曇る。
 近くのお寺をフラフラ回り、観光は終了。ベジタリアンのレストランもかろうじて一つ見つけるが、 クオリティーがあまり良く無いのが残念。
@@ -238,10 +248,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>スリン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/05/internet-surin/</link>
+      <link>https://goozenlab.com/blog/2016/05/internet-surin/</link>
       <pubDate>Mon, 23 May 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/05/internet-surin/</guid>
+      <guid>https://goozenlab.com/blog/2016/05/internet-surin/</guid>
       <description>象のお祭りで有名な町のスリンですが、シーズンオフに向かうとこれといったものもない小都市。観光客もあまり見かけず。
 裕福でない県らしく、ホテルも今時THB150で十分すぎるほど快適。外見が新しくなりつつあるのでもしかしたら近く値上げする予定か。。
 市場の近くに良心的なベジ屋さんがあったのがせめてもの救い。テスコで缶ビヤシンがTHB33で売っているのも良し。 ホテルの近くに夕方からでる豆乳屋の豆乳がすごく濃い、というかズシッと重い。
@@ -253,10 +263,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>海外キャッシングの比較</title>
-      <link>http://goozenlab.com/blog/2016/01/cashing-hongkong/</link>
+      <link>https://goozenlab.com/blog/2016/01/cashing-hongkong/</link>
       <pubDate>Sun, 17 Jan 2016 12:00:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/cashing-hongkong/</guid>
+      <guid>https://goozenlab.com/blog/2016/01/cashing-hongkong/</guid>
       <description>ちょっと寄った、香港にてキャッシングの比較をしてみる。
 手元にある、新生銀行と東京三菱UFJで立て続けに、HK$1,500を引き落す。後日引き落し金額を比較すると、
  新生銀行：￥23,812 東京三菱UFJ：￥23,623 [￥23,515(23,582 - 67) + ￥108(手数料) ]  新生銀行は海外での引き落とし手数料無料とうたっていたような気がするが、東京三菱の方が￥189安い結果になる。大体0.8%の違い。まぁ締め日が近ければ、クレジットカードのキャッシングが一番安いように思える。 （数分の違いで為替の違いが出ている可能性も有り？。）</description>
@@ -264,10 +274,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>スコータイ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/01/internet-skhotai/</link>
+      <link>https://goozenlab.com/blog/2016/01/internet-skhotai/</link>
       <pubDate>Fri, 15 Jan 2016 12:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/internet-skhotai/</guid>
+      <guid>https://goozenlab.com/blog/2016/01/internet-skhotai/</guid>
       <description>２度目の訪問、今回はちょっとのんびり、且つロングステイのリサーチにきたスコータイ。観光客の皆さんは世界遺産の旧市街に観光のところですが、新市街の宿でのんびりしています。
 １月だというのに日中は３０度オーバーとかなり暑いです。乾燥しているからまだよいものの、、
 宿は古い民家の２階で市場に近く安い。看板も出ていないし隠れ家指数が高い。部屋は３つしか無いが５泊しベストシーズンでいながら私一人と、ちょっと寂しい。ジャンボという名前の警戒心の強いチワワがいる。部屋も古いけれど奇麗にされているし、タオルもついてくる。夜になると屋根伝いに猫がふらっと通り過ぎて行く。
@@ -280,10 +290,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>チェンカーン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</link>
+      <link>https://goozenlab.com/blog/2016/01/internet-chiangkhan/</link>
       <pubDate>Sun, 10 Jan 2016 12:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/internet-chiangkhan/</guid>
+      <guid>https://goozenlab.com/blog/2016/01/internet-chiangkhan/</guid>
       <description>タイの軽井沢。メコン川沿いの街、チェンカーン。 バンコクの人たちの避暑地でもあるらしいと聞いていたが、夜は思いの外冷え込みます。
 外国人観光客がそんなに多くない所はよいが、新しいホテルが川沿いにできていてちょっとバブルな感じがある。昔ながらの町並みを期待してきたのだが少し残念ではある。宿はボロボロで300バーツと観光地価格。
 今の時期だと、朝日も夕日も中途半端な所になる。夜市と朝の托鉢は割とにぎわってます。
@@ -293,10 +303,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>2016年の海外年明け</title>
-      <link>http://goozenlab.com/blog/2016/01/new-year/</link>
+      <link>https://goozenlab.com/blog/2016/01/new-year/</link>
       <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/01/new-year/</guid>
+      <guid>https://goozenlab.com/blog/2016/01/new-year/</guid>
       <description>去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。
 そんな中、未だ続く放浪。。
 今年は清めの年という事で、年末年始はカンボジアのバッタンバンにてリトリート。
@@ -306,10 +316,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>バッタンバン、カンボジアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/12/internet-battambang/</link>
+      <link>https://goozenlab.com/blog/2015/12/internet-battambang/</link>
       <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/12/internet-battambang/</guid>
+      <guid>https://goozenlab.com/blog/2015/12/internet-battambang/</guid>
       <description>カンボジアの第二の都市のバッタンバン。現地の発音だと、バッタンボーーッンって感じ。 ほんの少しだけクリスマスの雰囲気があります。そして、12月末なのにかなり暑い。。330mlが50セント（米ドル）とタイに比べビールが安いのがちょっと良い所。おかげで冷蔵庫付きのホテルに泊まって篭城してます。（一泊：６ドル）
 宿はシングルで扇風機とWC付きで３ドルからあり、10ドル出せばエアコンがつく。食事はローカルのベジ屋さんで、一食１ドルくらい、これはタイより少し高い。そして、タイではあちらこちらで見つかるコンビニはこちらでは全くありません。
 ネットの環境はタイと同様な感じで、
@@ -320,10 +330,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>タイにてプリペイド</title>
-      <link>http://goozenlab.com/blog/2015/10/thai-dtac/</link>
+      <link>https://goozenlab.com/blog/2015/10/thai-dtac/</link>
       <pubDate>Fri, 30 Oct 2015 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/10/thai-dtac/</guid>
+      <guid>https://goozenlab.com/blog/2015/10/thai-dtac/</guid>
       <description>タイのプリペイドSim dtac社 Happy Simの使い方をまとめる。 タイも物騒になってきているので、Sim購入時に本人確認が必要。 私はショッピングモールにあるサービスセンターで Smartphone SIM (49baht)  を購入。4G対応の携帯を持っていたらこちら もよいかも。
 サービスの確認 *102*9# 電話番号と使用日数
 *101*9# 残高と有効期限
@@ -346,10 +356,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>イルクーツク、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-irkutsk/</link>
+      <link>https://goozenlab.com/blog/2015/09/internet-irkutsk/</link>
       <pubDate>Sat, 19 Sep 2015 17:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-irkutsk/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/internet-irkutsk/</guid>
       <description>紅葉をしているシベリア平原を列車で３０時間掛け、イルクーツクへ、シベリア特急鉄道の一部分を走る。途中途中で見かける列車の車両が、観光車両、カザフスタン、中国、ハングルの入った北朝鮮？、だったりとちょっと旅情がある。昔の目蒲線の車両とか走ってたら衝撃なのだけど、、まっ無理だな。
 私が乗ったのは、シンプルなロシア鉄道の車両の解放寝台。シーツもブランケットもあるので快適。おしゃべり好きなおじさんに捕まり、ロシア語の講習を受けるが、結局なーーんも覚えていない。。
 バイカル湖に行き戻ってきて沈没。というか寒くて観光意欲がなくなる。タイへの飛行機チケットが来週なので、ウランウデに行かずにここ、シベリアの！パリ！と言われるイルクーツクでのんびりする事にする。（宿代は他の街に比べ少々高いのがちと、、なんつってもパリだからな、、シベリアの、、しゃーない。。）町中でも中国語と韓国語を耳にする。観光都市という訳ではないけれど、それに向けて準備中な感じがある。
@@ -366,10 +376,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ノヴォシビルスク、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</link>
+      <link>https://goozenlab.com/blog/2015/09/internet-novosibirsk/</link>
       <pubDate>Sun, 13 Sep 2015 17:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-novosibirsk/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/internet-novosibirsk/</guid>
       <description>バルナウルよりバスで５時間、雨がちらついているなか、国内に10時間の時差を持つ広大なロシアの真ん中辺の街、ノヴォシビルスクに着く。
 動物園に行きたくて寄ったのだが、天候が不良。。。 宿に滞在していた自分と同じくらいの身長のモンゴル系の女子に一緒に行きましょうよと珍しく誘われるが、雨の中の回るのは気が向かず遠慮する、、その辺をフラフラッと歩いて観光終了。
 天気予報を見てみると、９月の中旬から一気に気温が急降下。夏は終わり冬に突入、風が刺さる。
@@ -383,10 +393,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>バルナウル、ロシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-barnaul/</link>
+      <link>https://goozenlab.com/blog/2015/09/internet-barnaul/</link>
       <pubDate>Fri, 11 Sep 2015 17:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-barnaul/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/internet-barnaul/</guid>
       <description>定番のアスタナからオムスク・エカテリンブルグには向かわず、カザフスタンのセメイという街からロコットというロシアのボーダータウンで列車を乗り換えバルナウルに向かう。
 カザフスタンの出国手続きは車内で行われ、ロシアのロコットに到着してしばし経ち、入国手続きは一体どうなっているんだろうと待っていると、なぜかお客が入ってくる。そして、入ってきたお客がカザフスタンの真っ新な入国カードを持っている。車掌に「おいらはロシアのバルナウルに行くんだが、本当にこの列車に乗っていていいのか？？」問うと、外のロシア風の職員と話をして、出てパスポートコントロールに行けと、、、それまでに何回かロシアのドキュメントがどうだや何らと聞きにきて、携帯電話で誰かと話をして何かしら確認を取っていたように見え、座ってろといっていたのだが、、危うくそのまま乗ったままになる所だった。次の列車の発車時間が近づいてくる。
 セメイから乗ったこの列車は、この街で人を拾ってまたカザフに戻って行くようだ。
@@ -409,10 +419,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>アスタナ、カザフスタンのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/09/internet-astana/</link>
+      <link>https://goozenlab.com/blog/2015/09/internet-astana/</link>
       <pubDate>Sun, 06 Sep 2015 10:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/09/internet-astana/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/internet-astana/</guid>
       <description>私たちに近い東洋人がロシア語を喋っていることに未だ違和感が拭えない、中央アジア。
 中央アジアの優等生ことカザフスタン。国立新美術館をデザインした黒川紀章氏が 1998年30万人より、2030年の100万人都市へ向けての都市計画 に携わった首都アスタナ。 計画のほぼ半分の期間を過ぎましたが、現在も進行中です。シムシティの街のようだ。 ちょっと退屈です。
 物価は最近行われた通貨の自由化によるプチ暴落（一日で２５％位）で、物価が東南アジア並みと言われるお隣のキルギスと同程度になる。（個人的にはこれぐらいの物価が適当ではないかと。。イスラムの国なのに、ロシアの影響からなのかビールが安いのが嬉しい！！）
@@ -425,10 +435,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>チョルポンアタ、キルギスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/08/internet-cholpon/</link>
+      <link>https://goozenlab.com/blog/2015/08/internet-cholpon/</link>
       <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
+      <guid>https://goozenlab.com/blog/2015/08/internet-cholpon/</guid>
       <description>ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。
 イシククル湖：
 湖なので水平線は見えませんが、対岸に連なる山々が見渡せる。
@@ -442,10 +452,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>デゥシャンベ、タジキスタンのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/07/internet-dushanbe/</link>
+      <link>https://goozenlab.com/blog/2015/07/internet-dushanbe/</link>
       <pubDate>Sun, 26 Jul 2015 20:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/internet-dushanbe/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/internet-dushanbe/</guid>
       <description>イストラフシャンからデゥシャンベへの移動はシェアタクシー。朝早く行ったのにも関わらず、運転手の営業不足で２時間待ち。８０ソムニで６時間（途中タイヤの空気調整数回）かかる。現地の人は５０ソムを支払っていたように見えた。
 宿はビシュケクにて南から流れてきた旅行者に「デゥシャンベの宿はグリーンの一択でしょ！」という言葉につられて、Green House Hostel。
 非常に立派な建物で空調も建物全体に入っている。US$15にも関わらず人気宿のようで、最後のベッドを幸運にもゲット。庭でねている人やリビングの隙間で寝ている人もいました。入口横に雑魚寝大広間もあるように見えました。
@@ -459,10 +469,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ビシュケク、キルギスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/07/internet-bishkek/</link>
+      <link>https://goozenlab.com/blog/2015/07/internet-bishkek/</link>
       <pubDate>Sun, 05 Jul 2015 07:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/internet-bishkek/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/internet-bishkek/</guid>
       <description>ビシケク、沈没宿の南旅館に到着。人に聞ききまくり、心優しい化粧品店勤務の女性に玄関先までついてきてもらう。。（迷子になった子供のような気分。。。）
 宿には沈没宿に必須の高速ネット環境があり、通信速度も光がごとく爆速。おじさんチャリダーや、50泊目に突入している16歳の若者も居ます。で、一体何処にいたんだかと思うほどの旅行者の数、男子寮状態でほぼフル。
 ネットで見た謎のシェフF氏も健在。
@@ -477,10 +487,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>カザフスタンでの滞在登録</title>
-      <link>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</link>
+      <link>https://goozenlab.com/blog/2015/07/registration-kazakhstan/</link>
       <pubDate>Wed, 01 Jul 2015 20:12:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/registration-kazakhstan/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/registration-kazakhstan/</guid>
       <description>去年から一年限定でビザは免除になったが（2015/07/15にて終了）、相変わらず５日以上滞在時にはレジストレーションの必要がある。１５日は滞在できるが５日以上居るなら登録せよと、、来てほしいのだか、来てほしくないのやら、、。文句を言っても仕方が無いので、イミグレーションポリスにいきレジストする。
 国境では、入国カードはもらえず、文句を言われると思いきや、書き込む必要書類は無く、パスポートのコピーと滞在先の住所のみで登録を受理され、一時間後にピックアップ。と、思った以上に簡単。オフィスは登録待ちの東アジア系の人たちで一杯かと思いきや、朝一は割と空いていて待っている人も他のスタン系の人たちが多い。パスポートと入国カードを含む３つの書類が付き戻ってくる。
 滞在５日目の明日ビシケクに向かおうと思っていたけれど、折角なので数日滞在を延ばす事にする。
@@ -493,10 +503,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>アルマトイ、カザフスタンのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/06/internet-almaty/</link>
+      <link>https://goozenlab.com/blog/2015/06/internet-almaty/</link>
       <pubDate>Tue, 30 Jun 2015 20:12:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/internet-almaty/</guid>
+      <guid>https://goozenlab.com/blog/2015/06/internet-almaty/</guid>
       <description>ウルムチから国際列車にのり２泊掛け、「りんごの里」という意味のアルマトイに到着。中国出国時の阿拉山口では荷物を丸裸にされ、コンピューター、デジカメ、iPhoneを弄られちょっと気分を害すが、カザフに入ると雰囲気が変わり、少しながら和む。
 ボーダーでは軍人以外の人たちは気さくかつ、暇のようで、入れ替わり立ち代わり仕事と関係なく話しにくる。人によっては、強引にロシア語・カザフ語で話しかけてくるのだが、皆目見当がつかず、、ありがたい事に隣のコンパートメントに乗っていた女の子が通訳をしてくれる。
 地平線が奇麗に見える何も無い草原を延々と走り朝早く到着する。荷物を駅に置き（一つ500テンゲ）、緑と公園が多い街をぶらぶらして、ゲストハウスにチェックインする。旅行者は少ない。。
@@ -514,10 +524,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ウルムチ、中国のインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/06/internet-urumuqi/</link>
+      <link>https://goozenlab.com/blog/2015/06/internet-urumuqi/</link>
       <pubDate>Sat, 27 Jun 2015 20:12:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/06/internet-urumuqi/</guid>
+      <guid>https://goozenlab.com/blog/2015/06/internet-urumuqi/</guid>
       <description>名前はモンゴル語から来ているらしい新疆ウイグル自治区の首都？ウルムチ。 思っていた以上に都市で、ウイグルらしさはあまり感じられないし、バブル感がある。暇を持て余し、人民公園で時間の大半を過ごす。
 ネットは高速だが、グーグル関連はシャットダウンされている模様。 検索はヤフーかBingを使う事になる。痛いのは、グーグルマップが使えない事。（後に会った旅行者は使えたとの事。。）アップルの地図はウルムチは良いのだが、次に訪問するお隣カザフのアルマトイという都市は大きな通りが一本のみしか表示されない。。。
 インターネットのスピードはちょっと違うが、２つのYHを利用したが同じような感じ、
@@ -533,10 +543,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>タイ ラップアップ</title>
-      <link>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</link>
+      <link>https://goozenlab.com/blog/2015/05/wrapup-chiangmai/</link>
       <pubDate>Thu, 14 May 2015 18:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/05/wrapup-chiangmai/</guid>
+      <guid>https://goozenlab.com/blog/2015/05/wrapup-chiangmai/</guid>
       <description>暑くて何もできなかった、非生産的であったタイ滞在をちょっとまとめる。滞在期間40日、使ったお金は移動費込みで6万円で余りが少々ある。
  言葉：英語があまり通じません、タイ語を覚えるべし。 治安：チェンマイ、北部は比較的良いです。バンコクはかなり危険、ハジャイや南部の都市もあまり良くはない。 天候：チェンマイは９・１０月の日本の梅雨のような雨期の終わり、２・３月の野焼きの時期と４・５月の酷暑期（暑くて何もできない）以外は快適。秋冬の天候は晴れの日がほとんどで、朝晩は少し冷え、昼は湿気も無く３０℃近くと理想的です。 宿：シンプルなシングルでTHB150~250。アパートは月4,000THB+水道・光熱費くらいから、月借りができます。 移動：カオサンからの夜行バスは盗難が多い、バスでバンコクからチェンマイに向かうならナコンチャイエアーがお勧め。国内のLCCは充実しているし、寝台列車も快適。　 食事  朝：タイベジ+ジュース（THB20~40） 昼：タイベジ（THB25~40) 夜：豆腐（THB10~20) 酒：ビール大瓶（THB~55) その他：豆乳（THB5~）、ヨーグルト（THB14~20）、フルーツシェイク（THB15~25)   シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。雨期のタイは果物天国。
 すごくタイでありがたいのは、コンビニも24時間営業していますが、市場が早くからやってる事。朝４時頃からおばちゃん達が集まりだし、５時には全快。
@@ -545,10 +555,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>メーホンソン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/04/internet-maehongson/</link>
+      <link>https://goozenlab.com/blog/2015/04/internet-maehongson/</link>
       <pubDate>Fri, 17 Apr 2015 20:12:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/internet-maehongson/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/internet-maehongson/</guid>
       <description>メーサリアンからミニバンで３時間掛からずメーホンソンに着く。 メーソットよりは街ですが、ベジ屋が見つからない。。。
 近郊の村々を回る訳ではないので、宿からまさに一歩出れば池に出るので、お寺と池を眺めつつ時間をつぶす。
 午前はなんか眠いし、午後になると熱くて何もできない。。夜も明け方まで眠れず。。。
@@ -560,10 +570,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>メーサリアン、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/04/internet-maesariang/</link>
+      <link>https://goozenlab.com/blog/2015/04/internet-maesariang/</link>
       <pubDate>Tue, 14 Apr 2015 20:12:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/internet-maesariang/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/internet-maesariang/</guid>
       <description>ソンクラン、恐怖の水掛祭りの日に移動する。
 バスと行ってもソンテウというピックアップの大きくなった乗り物。 外からの攻撃には脆弱。街に入る度に待ってましたとばかりに水掛の犠牲になる。
 ある意味途中の街の雰囲気が分かるので面白かったといえば面白かったのだが、ひえひえかつホコリだらけの６時間。
@@ -578,10 +588,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>メーソート、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/04/internet-maesot/</link>
+      <link>https://goozenlab.com/blog/2015/04/internet-maesot/</link>
       <pubDate>Fri, 10 Apr 2015 20:12:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/internet-maesot/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/internet-maesot/</guid>
       <description>カトマンズを出てタイへ。フライト時間は割と短く、スケジュールの30分遅れで離陸し、30分前に到着。機内で久しぶりに飲んだビールは苦かった。。
 バンコクには泊まるつもりは無いので、事前に調べた、空港ー＞公共バスステーションー＞モーチットバスステーションのルートでバンコクを脱出。無料のシャトルバスに乗り公共バスステーションに向かう。確認のためモーチットまでの行き方を聞くと、555番のバスをのり77番に乗り換えてモーチットまでと書かれたメモをくれる。調べていた通りには行かず。かつ、バスの料金徴収のおねいさん曰く「チェ〜ン バス、ワン、ツ（リ）ー、エイト」（138番）。それに従い２時間弱でモーチットに着く。ドムアン空港が見えたり、ウィークエンドマーケットの近くを通ったりでかなり遠回り？か？。
 モーチットでは、来週に迎えるタイの新年の為人が多いように感じる。チケットは、取れたらメーソット、だめならスコータイ、それでもだめならピナヌロックと優先順を付けていたけど、人の多さを見たらちょっと無理かなと少し懸念が走る。
@@ -598,10 +608,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ネパール ラップアップ</title>
-      <link>http://goozenlab.com/blog/2015/04/wrapup-nepal/</link>
+      <link>https://goozenlab.com/blog/2015/04/wrapup-nepal/</link>
       <pubDate>Wed, 08 Apr 2015 18:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/wrapup-nepal/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/wrapup-nepal/</guid>
       <description>約70日間のネパール ラップアップ。訪問都市は少なめで、カトマンズ、ドゥリケル、バクタプル、ポカラ、ドゥリケル、バクタプル、カトマンズとくるっと回る。観光地はどこも残念だけど、だんだんイヤァーーな感じになってきてるが、バクタプルが個人的には気に入ってます。（入域料を取られるが、、）
  費用：65日間で6万+1万円：お土産代（ヒマラヤコーヒー、イラムティー、マサラ）。   言葉：ポカラ、カトマンズでは、英語はまま通じます。ネパール語は何となく覚えやすいような気がします。響きも少しかわいい。 ビザ：１ヶ月：40ドル、３ヶ月：100ドル（日本円でも支払い可能だったのような、幾つかの他の外貨でも支払いは可能。）入国時に支払い。写真一枚が必要（忘れずに）。一年に150日の滞在が上限になっているらしいです。 治安：夜は暗いです、停電が絡むと真っ暗になります。野良犬が豹変します。外にいてトーチが無いと泣きそうになります。 天候：２月の半ばくらいから空は少し曇りがちになってきましたが、３月のホーリーというお祭りを境に気温が上がります。ポカラではよい天気が続きました。山を見るならベストは１１月頃から１月の終わり？か？。４月は山は見えないし、雨は降るしとそんなに良くはないように思えるがハイシーズンらしい、、６・７月は雨期だそうです。 宿：シンプルなシングル（シャワートイレ共有だったりそうでなかったり）NPR350~500。500NPR払えば快適。物価は上がったといえども、宿の競争で値段はこの辺(400-500)が妥当なのでは（数泊滞在の場合）。。 移動：小さめのバスと大きめなツーリストバスがあります。 食事  朝：揚げたてドーナッツ、プリ、＋タルカリ、チィア（NPR20~60） 昼：ダルバート（NPR80~180）見た感じでは、こんなに食べられないだろうと思うのですが、なぜか、沢山お腹に入ります。お米がスカスカなのでしょうか？飲み込むようにガッツリ食べてます。私は店を変えて毎日食べていましたが、飽きませんでした。”ミトチャ”（オイシイ） 夜：昼のダルバートが残ってます、、軽めです。サモサ、シナモンロール、ベジモモ＋チィア（NPR40~80) その他：チィア（NPR10~20）、リンゴ１キロ（NPR150）、日本食（NPR300~?：日本食の質は高いですが以前に比べかなり値が上がったような。）   シンプルな生活で一日だいたい ￥800~1,200。ポカラ、カトマンズはちょっと高く、その他は安いです。
 ネパールの問題は電力とネット環境。YouTubeなど動画関連は見れないと思った方が良い。サイズの大きいアップデートも不可能に近い。宿によっては電気の節約なのか10時頃にルーターの電源を切るところもあるし、停電時でもルーターだけは電源を確保してくれるところもある。ネットワーク依存のノマドをしようと思ったら、覚悟のほど。。
@@ -611,10 +621,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>バックパックの中身</title>
-      <link>http://goozenlab.com/blog/2015/04/inside-backpack/</link>
+      <link>https://goozenlab.com/blog/2015/04/inside-backpack/</link>
       <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/inside-backpack/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/inside-backpack/</guid>
       <description>ちょっと自分でも整理をしたかったので、今回の約４ヶ月間マレーシア・ネパール旅行での持ち物リストを書き出してみました。バックパックを新しくしようかなと、、 全部で多分15キロぐらい、バックパックとブリーフケースに荷物がパツパツに入ってます。 一年の旅行でもリストはほとんど同じだと思います。
 ブリーフケース MBP15が入るブリーフケース。昨年MBP15が故障。MBA11 (-1.4kg)になったというのになにか、まだずっしりとした重さがある。
  ポケットトートバックのような物にMBA 11と封筒ケース Kindle PaperLight リコー GR + ViewFinder iPhone 4S iPod 240GBとヘッドフォン A6 システム手帳 ナカバヤシのノート マネーベルト 長財布と小銭入れ 書類入れ：A4シート、三折り書類入オレッタ  バックパック 人から譲ってもらった物ですが、サイズはパーフェクト、40L?くらい、REI社製。人に切られたり、ネズミに齧られたりでボロボロ。
@@ -623,10 +633,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>旅仕様 iOS</title>
-      <link>http://goozenlab.com/blog/2015/02/travel-home/</link>
+      <link>https://goozenlab.com/blog/2015/02/travel-home/</link>
       <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/travel-home/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/travel-home/</guid>
       <description> iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。
  ドック  Google Maps：GPSと合わせて便利です。でも旅ですし、たまには現地の人に聞きましょう。 SimpleNote：ちょっとしたメモには最適、呟かずメモってます。 littlist：ToDoソフト、入国日や出発日の把握、イベント日、お土産リストとして使ってます。 PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。お小遣い帳です。カードや日本の銀行の使用、残高状況がつかめます。外国の為替にも対応しています。別のものにかえる理由が見つからない。  ホーム画面には、これらのソフトが置いてあります。  カレンダー：カレンダー自体は使っていないのですが、日付表示のため 時計：目覚まし Currency：定番の外貨為替ソフト。外国通貨為替のレートを知るにはこれで十分です。日本円で10,000円が現地通貨でいくらになるかを見れるように設定してます。 Evernote：ちょっと旅情報のメモなどを入れたりしてます。ちょっと重たい物はシンプルノートよりevernoteのほうが良いです。海外で怪我、病気をして病院にお世話になった時に必要な書類（診断書や請求書のフォーム等）をPDFで入れておくと便利です。 写真： Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。 ohaYo：睡眠ログのソフト。ちょっと睡眠が安定しない旅先、睡眠時間の管理に使ってます。タイムゾーンにも対応しているので大陸をドカッと動いても問題なく使えます。 計算機：昨今計算能力が低下気味ということで、 設定：   ちなみに、その他は、
 という感じ。2ページ目はアプリ検証ページ。そんなに沢山のソフトは入れてません。シンプルです。
@@ -637,10 +647,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>マレーシア ラップアップ</title>
-      <link>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</link>
+      <link>https://goozenlab.com/blog/2015/02/wrapup-malaysia/</link>
       <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/wrapup-malaysia/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/wrapup-malaysia/</guid>
       <description>マレーシア滞在をちょっとまとめる。（50日間で~7万円：８万両替（10,000円が290MYR）してMYR400くらい残る）
  言葉：東南アジアでは問題なく英語が通じる国の一つ。 治安：KLは分からないが、かなり良い方。 天候：ちょっと湿っぽい。東は少し湿度が低く感じられた。 宿：シンプルなシングル（シャワートイレ共有）MYR15~35、朝食付きの宿もある。 移動：たまに寂れたバスもあるが、大きい国でもなく、移動における体の負担もそれほどなし。夜行バスも座席がかなり倒れるので熟睡できる。（個人差あり）　 食事  朝：ロティチャナイ、イドリ+チャイ（MYR3~4） 昼：中華素食屋＋中国茶（MYR4~5) 、インドミールス（MYR4~5) 夜：マサラトーサイ＋チャイ、菜包＋お茶（MYR3.5~4) 酒：ビール大瓶（MYR16~日本とほぼ同じ) その他：豆乳、チャイ（MYR1.2）、ヨーグルト（MYR1.5~2）、ソーダ（MYR1.5~2)   シンプルな酒抜き生活で一日だいたい ￥1,000~1,500。で、ほぼベジタリアンの私にとっては食事に関してはかなり幸せ、理想に近いとも言える。ちなみに個人的にはペナンとマラッカが良い。マレー系の食事なら東側の街が良い感じ。肉食系は多分30％増し？くらい。
 宿の質は当たり前だが、値段によりけり、安かろう悪かろう。ただし、悪いといっても、暗いとか臭うとかの問題。南京虫に食われた事もあるが、汚い宿というのは今のところほとんど無い。</description>
@@ -648,10 +658,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ネパール、ポカラのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-pokhara/</link>
+      <link>https://goozenlab.com/blog/2015/02/internet-pokhara/</link>
       <pubDate>Wed, 25 Feb 2015 20:12:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-pokhara/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/internet-pokhara/</guid>
       <description>バクタプルからカトマンズ、１泊してポカラにくる。（現在停電中、どこかのジェネレーターの音が響いている）
 インターネット環境の三年前の状況はそこまで悪くなく、（３日くらい掛けて、XCodeをダウンロードしたことを思い出した。）
 下り：0.62Mps
@@ -670,10 +680,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>旅先での睡眠</title>
-      <link>http://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
+      <link>https://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
       <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
       <description>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。
 ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。
 ひげに白髪が混じってきたし、積年の疲れということか。。
@@ -685,10 +695,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>バクタプル、ネパールのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</link>
+      <link>https://goozenlab.com/blog/2015/02/internet-bhaktapur/</link>
       <pubDate>Mon, 16 Feb 2015 15:23:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-bhaktapur/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/internet-bhaktapur/</guid>
       <description>ドゥリケルに飽きた訳ではないが、若干カトマンズに近づき古都バクタプル。入域料に1,500ルピー（1,800円くらい）を徴収される、外人は来てくれるなというメッセージなのか？。ダルバート３食無料チケットとか、宿１泊無料券とか付けてはくれないものか、、と思う。。
 貧乏性なので、何泊かしないと入域料がもったいないと、ちょっと滞在する予定。ナガルコットまで一時間くらいなので、天気の良い日に日帰りトレッキングにいく。
 町の写真等が以前行ったパタンとかなり似通っていて、来た事があると思っていたが、初訪問。街の雰囲気は思いの外良い。宿も朝一番のお客さんという事で、かなり値引きしてもらう。ただ、ふらっと入ったチャイ屋にちょっとぼられた感じがあるのが、ちょっと残念。
@@ -701,10 +711,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ドゥリケル、ネパールのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-dhulikhel/</link>
+      <link>https://goozenlab.com/blog/2015/02/internet-dhulikhel/</link>
       <pubDate>Sat, 07 Feb 2015 10:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-dhulikhel/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/internet-dhulikhel/</guid>
       <description>カトマンズの喧騒を逃れ、ヒマラヤビューポイントタウンの一つ、ドゥリケルに着く。ナガルコットに行こうかとも思ったが、ドゥリケルの方が町で、宿代等もお手頃らしい、ちょっとのんびりする予定なのでこちらを選択。
 トレッキングのコースも割とあるようだし、雰囲気も割と好き。インドビザもカトマンズに滞在しないでここから取りにいくかなと思ったりする。（カトマンズからのバス：２時間くらい、60NPR）
 とりあえず、町近くの宿をとり、居心地の良い宿を物色し移動する予定。
@@ -719,10 +729,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>カトマンズ、ネパールのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/02/internet-kathmandu/</link>
+      <link>https://goozenlab.com/blog/2015/02/internet-kathmandu/</link>
       <pubDate>Tue, 03 Feb 2015 08:41:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/internet-kathmandu/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/internet-kathmandu/</guid>
       <description>マレーシア空港の免税店での誘惑に耐え、お酒を買わずにネパールに到着。お酒抜きスタート。３年ぶりのネパール。
 電力事情は以前と変わらず、あまり改善されていないし、タクシーの運ちゃん曰くクッキングガスもかなり値上がっているとのこと。そして、相変わらず週にかなり長い計画＋無計画停電があり。
 宿には簡易な電源バックアップがあり、とりあえず無線インターネットルーターの電源は確保してくれる。 今回持ってきたMBA11は動画を見なければ一日問題なく使えるので、充電の時間を間違えないようにすることにちょっと気を使うだけ。
@@ -737,20 +747,20 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ブリーフケースの中身（2015年冬）</title>
-      <link>http://goozenlab.com/blog/2015/01/inside-briefcase/</link>
+      <link>https://goozenlab.com/blog/2015/01/inside-briefcase/</link>
       <pubDate>Sat, 17 Jan 2015 12:47:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/01/inside-briefcase/</guid>
+      <guid>https://goozenlab.com/blog/2015/01/inside-briefcase/</guid>
       <description>2015年1月の時点で入っている物は以下。
  MacBookAir 11 Kindle Paperwhite iPhone 4S iPod 240GB HeadPhone 筆記具 ノート  かなりスリムダウンしたのだけど、まだなんか重い。そして鞄自体がMBP15用なのででかい。</description>
     </item>
     
     <item>
       <title>コタバル、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/01/internet-kotabaru/</link>
+      <link>https://goozenlab.com/blog/2015/01/internet-kotabaru/</link>
       <pubDate>Sat, 17 Jan 2015 10:58:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/01/internet-kotabaru/</guid>
+      <guid>https://goozenlab.com/blog/2015/01/internet-kotabaru/</guid>
       <description>クリスマスから年末にかけて大洪水に見舞われたコタバルにくる。宿にも胸のあたりまで水があがってきたようで一階の客室部分はまだ手入れが必要の事だが、宿のおいちゃんはあまり奇麗にする気が無いように見える。キャメロンハイランドより内部をちょっと回ってきたけれど、奥地の森林伐採が少なからず影響しているように思える。
 町も、他の都市と同じく、ただ単にゴーストタウン化をしているのか、洪水の影響なのかが分からないが、人は少し多めだが経済活動は控えめな感じに見える。でも、スーパーは一カ所100メーター四方に４つある。 インフォメーションセンターもモンスーンシーズンの12月から2月は閉鎖と書いてあるので、ローシーズンまっただ中という事だけなのだろう。
 しかしながら、幸運な事に天気はマレーシアに来て一番良い。午後四時、29℃/49%と快適。
@@ -763,10 +773,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>キャメロンハイランド、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2015/01/internet-cameron-highlands/</link>
+      <link>https://goozenlab.com/blog/2015/01/internet-cameron-highlands/</link>
       <pubDate>Tue, 06 Jan 2015 19:00:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/01/internet-cameron-highlands/</guid>
+      <guid>https://goozenlab.com/blog/2015/01/internet-cameron-highlands/</guid>
       <description>マレーシアの避暑地、キャメロンハイランドにくる。涼しというより寒い、そして曇りがち、夕立も多い。
 図書館では日本の書籍が置いてあるラックを発見し、個人商店の冷蔵庫内にちくわと納豆が売っているのを見つける。妙な組み合わせだ。棚にはそばと昆布だしのもと、これは正しい、なぜかほっとする。
 ちょっと、ここでゆっくりと思っていたのだが、中華素食屋はないし、インド料理もここの町の物はあまり美味しくない。宿は高いし、飯も高い。しかも、天気も悪い。しかし、行きたいところが無いし、見つからない。タイに居れば良かったと激しく後悔。
@@ -781,10 +791,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>2015年の海外年明け</title>
-      <link>http://goozenlab.com/blog/2015/01/new-year/</link>
+      <link>https://goozenlab.com/blog/2015/01/new-year/</link>
       <pubDate>Thu, 01 Jan 2015 20:00:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/01/new-year/</guid>
+      <guid>https://goozenlab.com/blog/2015/01/new-year/</guid>
       <description>年が明けた。旅・ノマドライフも、日本への出入りはあるのだが10年が経った。光陰矢の如しというか、十年一日というか。３０を超えてからの時間の流れが早くなり、４０を超えたあたりからはスザマしい速さで過ぎていきます。びっくりですな。
 同じところで年は越さないと決めていて、居心地のよかったチェンマイをでて、本当はカンボジアに行くつもりだったのだが、何にも無いマレーシアへくる。そして、さらに何も無い、もやしで有名なイポーで年越。カラオケバーからカウントダウンの音が聞こえたり、小さな花火の音もきこえた。別に何かを期待していた訳ではないが、地味な年越しでした。
  2015: Ipoh, Malaysia 2014: Trivandrum, India 2013: Penan, Malaysia 2012: Pokhara, Nepal 2011: ChiangMai, Thailand 2010: Adis Ababa, Ethiopia 2009: Cairo, Egipt 2008: Vientian, Laos 2007: Managua, Nicaragua 2006: Oaxaca, Mexico 2005: Sao Paulo, Brazil  見てみると移動のサークルがどんどん狭くなってる。
@@ -793,10 +803,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>イポー、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2014/12/internet-ipoh/</link>
+      <link>https://goozenlab.com/blog/2014/12/internet-ipoh/</link>
       <pubDate>Wed, 31 Dec 2014 19:04:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/12/internet-ipoh/</guid>
+      <guid>https://goozenlab.com/blog/2014/12/internet-ipoh/</guid>
       <description>うーーーん。鉄道駅と近くにあるモスクが立派である事意外にあまり特徴の無い町、イポー。もやしが有名といわれても、ピンときません。年末の休みの時期にきているからなのか、町がお休みモードです。もしくは日本の地方都市のようにゴーストタウン化しているのだろうか、穏やかです。夕方には必ずと言ってよいほど夕立が降ります。鉄道駅の近くに見た目は立派な図書館があります。中はすごく質素ですが、１０時から８時まで開いてます。
 マレーシア第四の都市だそうです。中華系の人たちが多いのか、リトルインディアがすごくリトルです。レストランも少ない。しかも、仏教徒も少ないのか、経済素食屋（ベジタリアン）も見つけられん。。食うのに困ってます。
 ネットは部屋からも問題なく使えてます。
@@ -807,10 +817,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>マラッカ、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2014/12/internet-melaka/</link>
+      <link>https://goozenlab.com/blog/2014/12/internet-melaka/</link>
       <pubDate>Wed, 24 Dec 2014 18:04:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2014/12/internet-melaka/</guid>
+      <guid>https://goozenlab.com/blog/2014/12/internet-melaka/</guid>
       <description>１０年近く前にきた事のあるマラッカ。穏やかな地方都市のイメージがあったのですが、見事なかわりようです、都市です。無用にでかいショッピングモールがあります。観光客もいっぱいいます。そして、１２月の末ですが蒸し暑いです。日本の梅雨のようで雨もよく降ります。（ベストシーズンのチェンマイからきた事に激しく後悔。）
 良い点は英語が通じる事と食環境。南インドの料理がローカルプライスで本場物が食べられます。ロティチャナイやミールス、マサラドーサ等、ベジタリアンの私としては中華素食（ベジタリアン）と合わせて、幸せな食環境があります。日本食屋は大戸屋ぐらいはあっても良さそうだけども、無いに等しいくらい見かけません。 そして、非常に残念なことに、酒が高い、日本より高い、炭酸水すら高い。免税店で購入したボンベイサファイアをチビチビ水で割って飲んでます。
 ネット環境は当然のごとく宿、カフェどこでもつながります。下のスピードはiPodでのアクセスなので、マックブックではもう少しスピードは出ているような気がします。WWDCのビデオを見ても問題ありませんでした。
@@ -821,10 +831,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ムアンシン、ラオスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2013/05/internet-muangsing/</link>
+      <link>https://goozenlab.com/blog/2013/05/internet-muangsing/</link>
       <pubDate>Wed, 15 May 2013 20:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/internet-muangsing/</guid>
+      <guid>https://goozenlab.com/blog/2013/05/internet-muangsing/</guid>
       <description>これといってみる物も無いし、何を見に来た訳ではないムアンシン。なぜか近くに川があると思ってました。。
 ルアンナムタからの道も整備されミニバンで１時間半で来れます。バイクを借りてフラッと日帰りで良かったかなと。。。
 泊まった宿、ビエンシンは通りのむかいのタイルーGHと統合され、見たかった日本語情報ノートは紛失してしまったようです。宿に併設のレストランに端末が数台置いてありネットの利用は出来るようですが、Wifiは使えません。数泊の滞在だったので利用しませんでしたが、一時間10,000キップです。
@@ -833,10 +843,10 @@ Dahon Speed D9 Street  Wheel Size: 20″ Weight: 29 lbs (13.1 kg) Folded Size: 3
     
     <item>
       <title>ルアンナムタ、ラオスのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2013/05/internet-luangnamtha/</link>
+      <link>https://goozenlab.com/blog/2013/05/internet-luangnamtha/</link>
       <pubDate>Mon, 13 May 2013 19:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/05/internet-luangnamtha/</guid>
+      <guid>https://goozenlab.com/blog/2013/05/internet-luangnamtha/</guid>
       <description>昔は穏やかな街であったそうなルアンナムタ。タにアクセントがきます。道ゆくトラックを除けば静かなもの。平日でも日曜のような雰囲気があります。
 フェイサイというタイとの国境の街からも以前は７時間とか掛かっていたらしいですが、いまでは道も整備され移動時間３時間半。 半分に短縮されてます。中国からの道も同様に整備され中国からのトラックが激増中です。
 Wifi付きの宿は増えてきているようですがスピーはちょっと遅めです。
@@ -848,10 +858,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>チェンライ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2013/04/internet-chiangrai/</link>
+      <link>https://goozenlab.com/blog/2013/04/internet-chiangrai/</link>
       <pubDate>Tue, 23 Apr 2013 20:04:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/04/internet-chiangrai/</guid>
+      <guid>https://goozenlab.com/blog/2013/04/internet-chiangrai/</guid>
       <description>酷暑のタイ、ソンクランはチェンマイで過ごし、ちょっと避暑のためちょっと北のチェンライにいます。 ここ数日、知らずにタガメをすり潰したペーストを野菜に付けて毎日たべていました。ステンレスボールの中のペーストに思わせぶりに数匹ペッタと張り付いてるのを見て発覚。これが割と美味しいのですよ。。２重のショックで今日の夕飯はパイナップルと豆乳。小さなおだやかな街です。
 そして、ここにもありました沈没宿。ネットは部屋では入りませんが共有エリアでwifiの利用が可能。速度のほうは、
 下り：1.84Mps
@@ -862,10 +872,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>SEIKO目覚まし時計の海外での自動電波受信</title>
-      <link>http://goozenlab.com/blog/2013/01/seiko-alarmclock/</link>
+      <link>https://goozenlab.com/blog/2013/01/seiko-alarmclock/</link>
       <pubDate>Wed, 16 Jan 2013 20:35:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/01/seiko-alarmclock/</guid>
+      <guid>https://goozenlab.com/blog/2013/01/seiko-alarmclock/</guid>
       <description>旅のお供の温度•湿度計付きの目覚まし時計（SEIKO SQ669W）
 日本国内では、電波を受け取り時間を合わせてくれます。海外に行く時には電池の無駄になるので電波受信機能をオフにします。
 インドのジョードプルにて時計を落としその衝撃で電池が抜けてしまい、少しの時間なら時間を記憶してても良いのにと思いつつ、面倒ながら時間を再設定しました。
@@ -879,10 +889,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>新年早々南京虫</title>
-      <link>http://goozenlab.com/blog/2013/01/bedbug/</link>
+      <link>https://goozenlab.com/blog/2013/01/bedbug/</link>
       <pubDate>Sat, 05 Jan 2013 14:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/01/bedbug/</guid>
+      <guid>https://goozenlab.com/blog/2013/01/bedbug/</guid>
       <description>新年早々、久しぶりにやられてしまいました。全く無礼な奴らです、ナンキン虫。 人いったい何だと思うくらい狂喜乱舞、噛み付いてきます。余裕で100カ所超え。凹みます。彼らにとっては豪勢なおせち、正月のビッグなお年玉になってしまいました。（見つけたら、プチってつぶしちゃいます。ごめんなさい。）
 時に虫らしくなく、一直線に迷い無くつっーーと走ります。蟻みたいにふらふらしません。 壁に数匹這ってるのを見ました。
 一日に数回痒みがぶり返します。さされた所が立体的になります。ごつごつ、凸凹になります。（血液に何かしらの毒が残っているのでしょうか？？）新しいできた刺しあとがでてきます。
@@ -893,10 +903,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>海外年明け</title>
-      <link>http://goozenlab.com/blog/2013/01/new-year/</link>
+      <link>https://goozenlab.com/blog/2013/01/new-year/</link>
       <pubDate>Tue, 01 Jan 2013 14:00:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2013/01/new-year/</guid>
+      <guid>https://goozenlab.com/blog/2013/01/new-year/</guid>
       <description>あけましておめでとうございます。マレーシアのペナン、ジョージタウンに戻ってきました。1/1にチェックインは無理があったか、旅の知り合いのオススメ安宿はやはり満室。結局以前厄介になった、たぶんジョージタウンでの底値シングル（ワイファイ付きでMYR20）の人気薄安宿にチェックイン。さすがに中華系の移民の多い街だけあってメインの正月は旧正月のようで今日の新正月（？）はこれといった華やかな感じはなく普通の休日です。
 で、ふと、そういえば最近日本で正月を迎えてないなぁー、ミカンが食べたいなぁ、 なんて思って、 ちょっとここ数年？の元旦滞在先を記憶を遡って書き出してみました。
  2013: Penan, Malaysia 2012: Pokhara, Nepal 2011: ChiangMai, Thailand 2010: Adis Ababa, Ethiopia 2009: Cairo, Egipt 2008: Vientian, Laos 2007: Managua, Nicaragua 2006: Oaxaca, Mexico 2005: Sao Paulo, Brazil  と、こりゃまた、ずいぶん長い事、自分で書いててもびっくり(年に一度は日本に短期帰国はしています。)、でも、まだまだ続くふらふらボヘミアンライフ。。今年はまた南米に行くかな。年越しはイースター島とかロマンチックに行こうかしらん。</description>
@@ -904,10 +914,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>ブリーフケースの中身（2012年冬）</title>
-      <link>http://goozenlab.com/blog/2012/12/inside-briefcase/</link>
+      <link>https://goozenlab.com/blog/2012/12/inside-briefcase/</link>
       <pubDate>Thu, 27 Dec 2012 12:47:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/12/inside-briefcase/</guid>
+      <guid>https://goozenlab.com/blog/2012/12/inside-briefcase/</guid>
       <description>2012年12月の時点で入っている物は以下。
  MacBook Pro 15 Kindle DX iPod touch Galaxy Note Kindle Touch USB RAMスティック 筆記具 ノート  ズッシリと重いです。ちょっとスリムダウンしたいのだけど、あれも欲しい、これも欲しい。。
 キンドルの２台持ちはちょっと無駄があるように思えますが、DXにwifiが付いていないので致し方なく。。
@@ -917,10 +927,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>ペナン（ジョージタウン）、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/12/internet-penang/</link>
+      <link>https://goozenlab.com/blog/2012/12/internet-penang/</link>
       <pubDate>Wed, 19 Dec 2012 11:43:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/12/internet-penang/</guid>
+      <guid>https://goozenlab.com/blog/2012/12/internet-penang/</guid>
       <description>タイのビザを取るために一時避難している人と、タイの南部からドット人が流れ込んできている、ここペナン。しかも、激増中の中国人観光客＋ハイシーズン（11月から2月頃まで）で宿を取るのに一苦労しました。人に勧めてもらった所は満室かつウェイティングもいっぱい入っているようでした。値段も一気に上がっているようです。
 結局、なんかちょっと懐かしい、ベッドの中心部が沈み込んでいる安宿に流れ着く。壁はもちろんベニヤ板で二畳ぐらいの扇風機付きシングルルーム（20リンギット）。でもワイファイは無料で使えます。
 宿のおばはんが真顔で「やすぅーーぃよー」、「あめくっーーる」と奇妙な日本語で話しかけてきます。
@@ -936,10 +946,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>クアランプール、マレーシアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/12/internet-kl/</link>
+      <link>https://goozenlab.com/blog/2012/12/internet-kl/</link>
       <pubDate>Sun, 16 Dec 2012 11:43:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/12/internet-kl/</guid>
+      <guid>https://goozenlab.com/blog/2012/12/internet-kl/</guid>
       <description>格安航空のエアアジアのハブという事もあって割とよる事が多いのだけれども、観光をせずに中華街界隈をふらふら、熱さのあまりクーラーの効いたショッピングセンターでだらだらする、有意義でない日を過ごす事の多い、バクテー（肉骨茶）を食べる事がメインのクアランプール。
 そして、ネットは不思議な事にUploadのほうが早い、光並みです。でも、電波の届きが悪いので見通しの良い所にコンピューターをもっていくのが面倒であったりします。
 下り：9.43Mps
@@ -950,10 +960,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>インド、プシュカルのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/11/internet-pushkar/</link>
+      <link>https://goozenlab.com/blog/2012/11/internet-pushkar/</link>
       <pubDate>Sun, 11 Nov 2012 16:43:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/11/internet-pushkar/</guid>
+      <guid>https://goozenlab.com/blog/2012/11/internet-pushkar/</guid>
       <description>インドでは珍しくブラーフマーを祀る寺院のあるヒンズー教の聖地のプシュカルにいます。ディワリという休日を数日後に向かえ爆竹の音がちらほら、年末大特価セール中のように、消費が上向き、街にちょっと活気が見られます。人の表情も心なしか少し穏やかに見えます。
 居心地の良さそうな宿もRs150くらいからあり、なかなか快適。ゆっくりするには良い街です。そして、いま泊まっている宿にはWifiがついてます。しかし残念ながら、速度はちょっと遅め。さらにマックからはなぜか無線がつながらない。。街のネット屋は1時間Rs30です、スピードは分かりません。
 下り：0.76Mps
@@ -964,10 +974,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>インド、ジャイプルのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/10/internet-jaipur/</link>
+      <link>https://goozenlab.com/blog/2012/10/internet-jaipur/</link>
       <pubDate>Wed, 17 Oct 2012 11:43:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/internet-jaipur/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/internet-jaipur/</guid>
       <description>マハラジャカフェのネオンがギラギラ、ムチムチの民族衣装を着た踊り子が華やかに舞い、夕暮れ時には夕日とともに街が黄金色に輝くインドのピンク街、ラジャスタンの州都、ジャイプルです。（うそ：建物の壁がピンクなだけです）ちょっと作業のためにひと休憩。宿に引いてあるネットの速度は（1時間：Rs20）
 下り：2.08Mps
 上り：0.47Mps
@@ -977,10 +987,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>インド、ジョードプルのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/10/internet-jodhpur/</link>
+      <link>https://goozenlab.com/blog/2012/10/internet-jodhpur/</link>
       <pubDate>Wed, 03 Oct 2012 19:37:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/10/internet-jodhpur/</guid>
+      <guid>https://goozenlab.com/blog/2012/10/internet-jodhpur/</guid>
       <description>午後７時気温33度湿度33％。ファンから流れてくるが風が、心地が良いのだか、熱さのあまり息苦しいというか、、でも消してしまうと熱さが内側から吹き出してくるような。そんな、あまり日本では経験できない砂漠気候の街、インド、ジョードプルです。
 さて、インターネット環境はと言いますと、、街のネット屋（クラーの効いた店にてRS30/h）さんにて。
 下り：2.06Mps
@@ -993,10 +1003,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>メルボルン、オーストラリアのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/06/internet-melbourne/</link>
+      <link>https://goozenlab.com/blog/2012/06/internet-melbourne/</link>
       <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/06/internet-melbourne/</guid>
+      <guid>https://goozenlab.com/blog/2012/06/internet-melbourne/</guid>
       <description>&lt;p&gt;メルボルン、しかしながら現地の人達はメルバァンと発音します。コネチカットはキャナディカみたいな。いったい誰がこの町のことをメルボルンと呼んでいるのだろうか？フランス語っぽい発音だけどけれど日本人だけ？？&lt;br /&gt;
 何でこうゆうことをしてくれるんだろうと疑問です。言うのになんか恥ずかしいような気にさせられます。
 &lt;/p&gt;</description>
@@ -1004,10 +1014,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>スリランカ、キャンディーのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/03/internet-kandy/</link>
+      <link>https://goozenlab.com/blog/2012/03/internet-kandy/</link>
       <pubDate>Sat, 10 Mar 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/03/internet-kandy/</guid>
+      <guid>https://goozenlab.com/blog/2012/03/internet-kandy/</guid>
       <description>泊まった宿(YMBA:YoungManBuddhistAssosiation、横にはYMMAがありました。もちろんYMCAもあります。)には無線LANの環境はなかったので、インターネットカフェでの通信状況は
 下り：12.32Mps
 上り：0.72Mps
@@ -1017,10 +1027,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>ネパール、ポカラのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2012/01/internet-pokhara/</link>
+      <link>https://goozenlab.com/blog/2012/01/internet-pokhara/</link>
       <pubDate>Mon, 09 Jan 2012 19:41:03 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2012/01/internet-pokhara/</guid>
+      <guid>https://goozenlab.com/blog/2012/01/internet-pokhara/</guid>
       <description>&lt;p&gt;インドから流れてくると、天国のようなネパール。キレイな山が見渡せる居心地の良いポカラのネット状況は&lt;/p&gt;
 
 &lt;p&gt;下り：0.62Mps&lt;br /&gt;
@@ -1037,10 +1047,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>インド、デリーのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/11/internet-delhi/</link>
+      <link>https://goozenlab.com/blog/2011/11/internet-delhi/</link>
       <pubDate>Sun, 13 Nov 2011 13:41:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/11/internet-delhi/</guid>
+      <guid>https://goozenlab.com/blog/2011/11/internet-delhi/</guid>
       <description>4トントラックなみの大きさの像が道路を闊歩するインドの首都、デリー。人が近くていっぱいいます、いつも人の肩と肩が触れ合っているような国です。
 そんな街ですが、インターネット環境は
 下り：2.73Mps
@@ -1051,10 +1061,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>インド、ダラムサラのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/10/internet-daramshara/</link>
+      <link>https://goozenlab.com/blog/2011/10/internet-daramshara/</link>
       <pubDate>Thu, 13 Oct 2011 13:41:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/10/internet-daramshara/</guid>
+      <guid>https://goozenlab.com/blog/2011/10/internet-daramshara/</guid>
       <description>ダライラマ法王の本拠地、ダラムサラでのネットカフェ状況は
 下り：0.38Mps
 上り：0.29Mps
@@ -1064,10 +1074,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>メキシコ、マサトランのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/07/internet-mexico/</link>
+      <link>https://goozenlab.com/blog/2011/07/internet-mexico/</link>
       <pubDate>Mon, 11 Jul 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/07/internet-mexico/</guid>
+      <guid>https://goozenlab.com/blog/2011/07/internet-mexico/</guid>
       <description>&lt;p&gt;メキシコ中部海岸沿いのマサトランという街にいます。生ガキや生貝類が屋台で食べれます。（私のお気に入りは血の色の汁が出る太ったアサリのような貝。ライムを搾っていただきます。） そして、この町のネット状況は、&lt;/p&gt;
 
 &lt;p&gt;下り：1.36Mps&lt;br /&gt;
@@ -1083,10 +1093,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>バンクーバー、カナダのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/06/internet-vancouver/</link>
+      <link>https://goozenlab.com/blog/2011/06/internet-vancouver/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/06/internet-vancouver/</guid>
+      <guid>https://goozenlab.com/blog/2011/06/internet-vancouver/</guid>
       <description>&lt;p&gt;カナダのバンフに行く前の数泊をバンクーバーで滞在しています。5月末、日本の春のようです。二度寝に最適な気候です。 インターネットの環境はさすがアメリカのお隣の国だけあってかなり早いです！もちろん宿では無線LANが解放されてます。&lt;/p&gt;
 
 &lt;p&gt;下り：11.43Mps&lt;br /&gt;
@@ -1100,10 +1110,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>ネルソン、ニュージーランドのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/03/internet-nelson/</link>
+      <link>https://goozenlab.com/blog/2011/03/internet-nelson/</link>
       <pubDate>Thu, 03 Mar 2011 14:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/03/internet-nelson/</guid>
+      <guid>https://goozenlab.com/blog/2011/03/internet-nelson/</guid>
       <description>NZでは住みたい町ナンバーワンと言われているらしい街のネルソンに逗留中です。
 宿（アーモンドという宿です。猫もいましたし、こぎれいで、オススメです。）にもWIFIの環境は有りますが昼間は図書館にてネットをしてます（両方とも無料）。
 通信速度は（宿だか図書館だか忘れましたが、、）
@@ -1115,10 +1125,10 @@ Wifi付きの宿は増えてきているようですがスピーはちょっと�
     
     <item>
       <title>チェンマイ、タイのインターネット事情</title>
-      <link>http://goozenlab.com/blog/2011/01/internet-chiangmai/</link>
+      <link>https://goozenlab.com/blog/2011/01/internet-chiangmai/</link>
       <pubDate>Sat, 01 Jan 2011 19:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2011/01/internet-chiangmai/</guid>
+      <guid>https://goozenlab.com/blog/2011/01/internet-chiangmai/</guid>
       <description>&lt;p&gt;ADSL普及のおかげでここ数年凄まじく向上しています。街の至る所でWifiの文字を見かけます。&lt;/p&gt;
 
 &lt;p&gt;もちろん安宿ゲストハウスといえでもWifi対応しているところが多いです。スピードも無線経由で&lt;/p&gt;

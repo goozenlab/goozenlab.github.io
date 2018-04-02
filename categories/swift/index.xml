@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swift on goozenlab</title>
-    <link>http://goozenlab.com/categories/swift/</link>
+    <link>https://goozenlab.com/categories/swift/</link>
     <description>Recent content in Swift on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <lastBuildDate>Sun, 28 Aug 2016 09:30:00 +0700</lastBuildDate>
     
-	<atom:link href="http://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title> 半透明のモーダルビュー</title>
-      <link>http://goozenlab.com/blog/2016/08/modalview-over/</link>
+      <link>https://goozenlab.com/blog/2016/08/modalview-over/</link>
       <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/modalview-over/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/modalview-over/</guid>
       <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。
 半透明のモーダルビュー設定 まずはモーダルビュー自体を半透明化します。背景色を選び透明度を決めます。
 それと、StoryboardにてのSegway設定だとなぜかうまく物と、行かないものがありました。あまり深くは掘り下げていませんが、とりあえず情報まで（解決：下記参照）。
@@ -29,10 +29,10 @@
     
     <item>
       <title>StatusBarメモ</title>
-      <link>http://goozenlab.com/blog/2016/08/statusbar-memo/</link>
+      <link>https://goozenlab.com/blog/2016/08/statusbar-memo/</link>
       <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
       <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
 まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
 info.plistに直接書き込むなら、以下を追加。
@@ -44,10 +44,10 @@ UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
     
     <item>
       <title>Lite VersionとAdmob</title>
-      <link>http://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
       <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
  ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
 まずはプロジェクトのメインターゲットを Duplicate します。
@@ -70,10 +70,10 @@ AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMo
     
     <item>
       <title>イフレット</title>
-      <link>http://goozenlab.com/blog/2016/08/if-let/</link>
+      <link>https://goozenlab.com/blog/2016/08/if-let/</link>
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/if-let/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/if-let/</guid>
       <description>fatal error: unexpectedly found nil while unwrapping an Optional value
 nil値が戻ってくる可能性のある時の処理方法。
 tableCellに値を渡す時を例に、
@@ -83,10 +83,10 @@ tableCellに値を渡す時を例に、
     
     <item>
       <title>filteredArrayUsingPredicate</title>
-      <link>http://goozenlab.com/blog/2016/08/array_filter/</link>
+      <link>https://goozenlab.com/blog/2016/08/array_filter/</link>
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
       <description>拙作dandoriのswift移行中、中々進みません。
 Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
 ブロック表記が出てくると目が点になってしまう私。。。
@@ -97,10 +97,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>乱数を発生させる</title>
-      <link>http://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
+      <link>https://goozenlab.com/blog/2016/03/arc4random_uniform/</link>
       <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
+      <guid>https://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
       <description> rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。
  srand(time(nil)); rand()%300;  arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。
  Int(arc4random_uniform(300))  </description>
@@ -108,10 +108,10 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     
     <item>
       <title>midXで中心を求める</title>
-      <link>http://goozenlab.com/blog/2015/07/midx-swift/</link>
+      <link>https://goozenlab.com/blog/2015/07/midx-swift/</link>
       <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/07/midx-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/07/midx-swift/</guid>
       <description>今までは中心を求めるのに素直に、
 let center: CGFloat = self.frame.width / 2  と行ってきたけれども、.midX/midY
 let center: CGFloat = self.frame.midX  とスマート、かつ格好良くできます。</description>
@@ -119,30 +119,30 @@ let center: CGFloat = self.frame.midX  とスマート、かつ格好良くで�
     
     <item>
       <title>テーブルビューセルの境界線を消す</title>
-      <link>http://goozenlab.com/blog/2015/04/tableview-separator/</link>
+      <link>https://goozenlab.com/blog/2015/04/tableview-separator/</link>
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/04/tableview-separator/</guid>
+      <guid>https://goozenlab.com/blog/2015/04/tableview-separator/</guid>
       <description>テーブルビューセルの境界線を消すには下記のコードを追加。
 self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None  StoryBoardを使っている時は以下。</description>
     </item>
     
     <item>
       <title>ShakeはUIEventで</title>
-      <link>http://goozenlab.com/blog/2015/03/swift-shake/</link>
+      <link>https://goozenlab.com/blog/2015/03/swift-shake/</link>
       <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/swift-shake/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/swift-shake/</guid>
       <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。
  override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) { if(event.subtype == UIEventSubtype.MotionShake) { // // 処理 // } }  ※まぁ、間違っちゃーいね〜な。。</description>
     </item>
     
     <item>
       <title>performSelectorは無くなる</title>
-      <link>http://goozenlab.com/blog/2015/03/performselector-timer/</link>
+      <link>https://goozenlab.com/blog/2015/03/performselector-timer/</link>
       <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/performselector-timer/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/performselector-timer/</guid>
       <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。
 [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval];  object-cで上記に書かれたperformSelectorはSwiftでは無くなってしまったようなので、以下のコードでは動かない。
  NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil) NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)  幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、cancelPreviousPerformRequestsWithTargetが無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。
@@ -151,10 +151,10 @@ private var tapTimer: NSTimer? // 処理 cancelTimer() tapTimer = NSTimer.schedu
     
     <item>
       <title>printlnは気楽</title>
-      <link>http://goozenlab.com/blog/2015/03/println-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/println-swift/</link>
       <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/println-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/println-swift/</guid>
       <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は
 Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ のようになります。 使えそうなのは
  __FILE__ ：ファイル名 __LINE__ ：ライン番号 __FUNCTION__ ：ファンクション名  そして、値を表示したい時はそのままかそのままか\(...)で囲み適当に放り込む。もはや%dや%@は必要ないらしい。 小賢しいウォーニングも出なくなる。
@@ -164,10 +164,10 @@ println(__FUNCTION__, self.frame) println(__FUNCTION__,&amp;quot;screen is \(sel
     
     <item>
       <title>NSDate() = [NSDate date]</title>
-      <link>http://goozenlab.com/blog/2015/03/nsdate-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/nsdate-swift/</link>
       <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
       <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは
 NSDate()  でよろしい。
 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]  を、Swiftで書いてみると、
@@ -177,10 +177,10 @@ NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)  エラーが出る。hou
     
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
-      <link>http://goozenlab.com/blog/2015/03/view-cycle/</link>
+      <link>https://goozenlab.com/blog/2015/03/view-cycle/</link>
       <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/view-cycle/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/view-cycle/</guid>
       <description> たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。
 起動時 アプリの起動時には以下の順で呼ばれる。
  viewDidLoad() viewWillAppear viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。  モーダルビューより復帰 モーダルビューより戻ってくると以下の処理が再び呼ばれる。
@@ -192,10 +192,10 @@ func applicationWillEnterForeground(notification: NSNotification) { println(__FU
     
     <item>
       <title>NotificationSettings認証設定</title>
-      <link>http://goozenlab.com/blog/2015/03/notification-setting/</link>
+      <link>https://goozenlab.com/blog/2015/03/notification-setting/</link>
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/notification-setting/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/notification-setting/</guid>
       <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。
 AppDelegateに処理を入れてしまいます。
  application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))  以前コピペでUIUserNotificationType.Soundを付け忘れ長い事音が鳴らないソフトになっていた事があるので、ちょっと注意して必要なものだけ入れるようにしてます。（必要なくても全部入れても良いのだけども。。。）</description>
@@ -203,10 +203,10 @@ AppDelegateに処理を入れてしまいます。
     
     <item>
       <title>クラスが読み込めず [解決]</title>
-      <link>http://goozenlab.com/blog/2015/03/load-managedobject/</link>
+      <link>https://goozenlab.com/blog/2015/03/load-managedobject/</link>
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/load-managedobject/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/load-managedobject/</guid>
       <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、クラスが読み込めずで書いた問題が解決しました。
 問題のエラーログ
 CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。
@@ -218,10 +218,10 @@ CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Ite
     
     <item>
       <title>NSLocalizedString on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</link>
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
       <description>NSLocalizedStringでエラーがでる
 NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil)  nilを&amp;quot;&amp;quot;空白に変更する。
 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;)  Swiftではnilの扱いがちょっと掴めず、、至る所で問題になってる。。
@@ -230,10 +230,10 @@ NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;
     
     <item>
       <title>delegate on swift</title>
-      <link>http://goozenlab.com/blog/2015/03/delegate-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/delegate-swift/</link>
       <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/delegate-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/delegate-swift/</guid>
       <description>デレゲートするクラス 以下の３つを書き加えればよい。
 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) }  var delegate:MainHeaderViewDelegate? = nil   self.delegate!.sleepingTimerDidFinish(self)  デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を書き込みます。
 class MainViewController: UIViewController, MainHeaderViewDelegate { ////// func sleepingTimerDidFinish(controller: MainHeaderView) { // 処理 } ///// }  ※ ソースは拙作のohayoからコピペ。</description>
@@ -241,10 +241,10 @@ class MainViewController: UIViewController, MainHeaderViewDelegate { ////// func
     
     <item>
       <title>UIButttonをSwiftで書く</title>
-      <link>http://goozenlab.com/blog/2015/03/uibutton-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/uibutton-swift/</link>
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
       <description>UIButttonをSwiftでプログラム的に書くと
 buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent)  テキストタイトルの時には
 buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal)  テキストの色を変えるには、
@@ -255,10 +255,10 @@ setAttributedTitle:forStateを使うとさ。
     
     <item>
       <title>SwiftでConstantを扱う</title>
-      <link>http://goozenlab.com/blog/2015/03/constants-swift/</link>
+      <link>https://goozenlab.com/blog/2015/03/constants-swift/</link>
       <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/constants-swift/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/constants-swift/</guid>
       <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。
 分からないことが多々あるが、進めていかないと、、
 さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。
@@ -270,10 +270,10 @@ defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)  のよう�
     
     <item>
       <title>クラスが読み込めず</title>
-      <link>http://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
+      <link>https://goozenlab.com/blog/2015/03/unable-to-load-class/</link>
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
       <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。
 さて、さて、まずは、
 2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;. Class not found, using default NSManagedObject instead.  というエラーがでる。ファイルはあるのだが、、
@@ -284,10 +284,10 @@ func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { 
     
     <item>
       <title>UserDefaultの初期値設定</title>
-      <link>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
+      <link>https://goozenlab.com/blog/2015/03/userdefault-register-defaults/</link>
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
       <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。
  // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults)  数値も文字も気にせず書き込んでよいようです。
 ポカラの水汲み場</description>
@@ -295,10 +295,10 @@ func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) { 
     
     <item>
       <title>ニブレスプロジェクト</title>
-      <link>http://goozenlab.com/blog/2015/02/xibless-project/</link>
+      <link>https://goozenlab.com/blog/2015/02/xibless-project/</link>
       <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>http://goozenlab.com/blog/2015/02/xibless-project/</guid>
+      <guid>https://goozenlab.com/blog/2015/02/xibless-project/</guid>
       <description>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。
 ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、
  まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&amp;gt; Bool { // Override point for customization after application launch. self.window = UIWindow(frame: UIScreen.mainScreen().bounds) let masterViewController: MasterViewController = MasterViewController() masterViewController.managedObjectContext = self.managedObjectContext let navigationController = UINavigationController(rootViewController: masterViewController) self.window!.rootViewController = navigationController self.window!.makeKeyAndVisible() return true }   お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。  、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）
