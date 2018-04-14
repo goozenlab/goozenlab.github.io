@@ -18,7 +18,11 @@
       <pubDate>Mon, 01 Jan 2018 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/01/new-year/</guid>
-      <description>シャワーを浴びている最中に花火の音が聞こえ、年が明けたことを知る。
+      <description>インドのリシケシュにて、シャワーを浴びている最中に花火の音が聞こえ、年が明けたことを知る。 ここ数年一年一年が恐ろしいほど早く過ぎ去っていく。
+ガンガーの流れを毎日見て、ヨガをして、料理を作り、
+慌てても仕方がない、
+まぁ、やるべきことを、淡々としていくしかない、と改めて思う。
+問題山積、放置中。。
  2018: Rishkesh, India 2017: Chiang Kohng, Thailand 2016: Battambang, Cambodia 2015: Ipoh, Malaysia 2014: Trivandrum, India 2013: Penan, Malaysia 2012: Pokhara, Nepal 2011: ChiangMai, Thailand 2010: Adis Ababa, Ethiopia 2009: Cairo, Egipt 2008: Vientian, Laos 2007: Managua, Nicaragua 2006: Oaxaca, Mexico 2005: Sao Paulo, Brazil  </description>
     </item>
     
@@ -376,6 +380,18 @@ let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
     </item>
     
     <item>
+      <title>NSRegularExpression</title>
+      <link>https://goozenlab.com/blog/2016/09/nsregularexpression/</link>
+      <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
+      <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）
+(a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。
+let pattern = &amp;quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot; let regex = try? NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.CaseInsensitive) let matches = regex!.firstMatchInString(text, options: [], range: NSMakeRange(0, patternStr.utf16.count)) if let match = matches { title = (text as NSString).substringWithRange(match.rangeAtIndex(2)) ... }  で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&amp;rdquo;^&amp;ldquo;（行頭）を削除。で、動くようになりました。&amp;rdquo;^&amp;ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。
+let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
+    </item>
+    
+    <item>
       <title>リスタリアを公開</title>
       <link>https://goozenlab.com/blog/2016/09/open-listaria/</link>
       <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
@@ -461,6 +477,21 @@ iPhoneは4Sをもう1年引っ張る。（私の中では最高傑作の携帯�
 とにかく、お次はマックブックプロ。ジェットブラックでよろしく。
 はよ、なるはやで、たのんます。
 （バッテリーの持ちが10時間ぐらいであれば、文句を言わずに買い換えます。）</description>
+    </item>
+    
+    <item>
+      <title>unWind segway</title>
+      <link>https://goozenlab.com/blog/2016/09/segway-unwind/</link>
+      <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/09/segway-unwind/</guid>
+      <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。
+使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。
+ ListVCからDetailVCにセグウェイを設定（コントロールドラッグ） ListVCに下記のコードを追加 DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが表示される リンクをボタンなりに繋ぐ  ListVCに追加したコードは、
+@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue) { }  いろいろ試したところ、@IBAction func unwind___XXX___ が入っていれば認識されるよう___XXX___の部分は必要なものに置き換えてください。引数も(unwindSegue: UIStoryboardSegue)が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。
+あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。
+@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) { // 処理 let title = unwindSegue.sourceViewController.title ......... }  XCode7では、unwind&amp;hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。
+override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) { &amp;lt;#code#&amp;gt; }  やっぱり、ストーリーボードは好きになれません。。</description>
     </item>
     
     <item>
@@ -607,6 +638,30 @@ iExploreが使えなくなって難儀していたので、同じような問題
     </item>
     
     <item>
+      <title>XCodeにてアプリデーターの管理</title>
+      <link>https://goozenlab.com/blog/2016/09/device-container/</link>
+      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/09/device-container/</guid>
+      <description>端末のアプリデータをバックアップ、復元。
+クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストールがきなくなる不具合。
+この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。（開発環境がXCode5から一気にXCode7になったので、、まぁ改悪は今の所無いのだけど、、分からんことが一杯だな。。）
+データーのバックアップ・復元 まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。
+実機にインストール前に、
+ コンテナをダウンロード エラーの出るアプリを消去 アプリを再インストール コンテナのリプレース  にて作業を終えます。
+コンテナファイル そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような ****.xcappdata が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。
+Documentフォルダー内にある *.sql の三つのファイルがアプリのデーターになります。Libraryのなかには設定用のplistファイルがあります。
+※そしてこのファイルをシミュレーターに入れることでデーターを更新することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。
+シミュレータヘのデーター移行 シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。
+まずは、Simulatorの識別番号を XCodeのDeviceより確認します。
+ファインダーに戻り、ライブラリーに入り。
+~/Library/Developer/CoreSimulator/Devices/IDENTIFIER for Simulator/data/Containers/Data/Application/IDENTIFIER for Application/Documents
+に移動して、上の*.sql の三つのファイルを上書きます。
+シミュレータのデーターを実機で使う 逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、****.xcappdata ファイルのなかの*.sql の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。
+iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。</description>
+    </item>
+    
+    <item>
       <title>cosperの金額表示</title>
       <link>https://goozenlab.com/blog/2016/09/cosper-display/</link>
       <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
@@ -725,6 +780,47 @@ info.plistに直接書き込むなら、以下を追加。
 UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
 override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
 UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
+    </item>
+    
+    <item>
+      <title>StatusBarメモ</title>
+      <link>https://goozenlab.com/blog/2016/08/statusbar-memo/</link>
+      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
+      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
+まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
+info.plistに直接書き込むなら、以下を追加。
+&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt;  そして、変更したいビューの適当なところ、ViewDidLoad に追加コード。
+UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
+override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
+UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
+    </item>
+    
+    <item>
+      <title>Lite VersionとAdmob</title>
+      <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
+      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
+      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
+ ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
+まずはプロジェクトのメインターゲットを Duplicate します。
+スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。
+Info.plistのコピーの cosper copy-Info.plist はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。
+そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。
+そして、ターゲットの設定をします。（バンドル名やその他必要なもの）
+最後に、コンパイル時のマクロ設定をします。#if LITE で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。
+マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて LITE=1 を、
+フルバージョンの方には LITE=0 を書き込みます。選択すると入力画面が出てきます。
+そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。
+アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。
+これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。
+AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに target &#39;xx lite&#39; do ... で切り分ければいいのかな。）
+フレームワーク 必要なフレームワークは、以下。
+ GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトにコピー (ターゲットをライトバージョンのみにするのを忘れずに）  プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。
+ AdSupport AudioToolbox AVFoundation CoreGraphics CoreTelephony EventKit EventKitUI MessageUI StoreKit SystemConfiguration  以上で準備完了。実装していきます。
+コーディング マクロを使って、以下の形で処理を分けることができます。</description>
     </item>
     
     <item>
@@ -904,6 +1000,20 @@ let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;is
     </item>
     
     <item>
+      <title>filteredArrayUsingPredicate</title>
+      <link>https://goozenlab.com/blog/2016/08/array_filter/</link>
+      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
+      <description>拙作dandoriのswift移行中、中々進みません。
+Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
+ブロック表記が出てくると目が点になってしまう私。。。
+以下 Objective-C での表記
+NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]]; NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;]; NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate]; return [filteredArray count] &amp;gt; 0;  Swiftで書き上げにはブロック内に(user: UserDetails) -&amp;gt; Bool in で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。 $0.isRedHot = &amp;quot;YES&amp;quot; 何じゃかんじゃより。。）書き上げるとこんな感じ。
+let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;) let filteredArray = myTasks?.filter( { predicate.evaluateWithObject($0) } ) return filteredArray!.count &amp;gt; 0  </description>
+    </item>
+    
+    <item>
       <title>doop v1.9.0</title>
       <link>https://goozenlab.com/blog/2016/07/doop-190/</link>
       <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
@@ -923,6 +1033,17 @@ Change Log [1.9.0 - Swift release] - 2016-07-31 @ ChiangMai Changed  未使用�
       <guid>https://goozenlab.com/blog/2016/07/cosper-191/</guid>
       <description> あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。
 Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイトルが反映されないバグの修正  </description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.9.1</title>
+      <link>https://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <description> 快眠ノーティス音が鳴りまでしたせんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。ついでに、途中で目覚めた時の時間表示を見やすくしました。
+あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
+Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
     </item>
     
     <item>
@@ -1123,6 +1244,25 @@ ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
     </item>
     
     <item>
+      <title>MBP15/2016の勝手な推測</title>
+      <link>https://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる
+そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。 かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。
+そこで、勝手な推測をしたいと、 まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、
+で、勝手な推測ではOLEDタッチバーの部分には、追加で
+ TouchIDの機能 モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど）） サプライズ：こりゃ気がつかなかった凄い的ななんか。  が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと非常に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。
+※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。
+そして、希望とボヤき 希望、  ヘナペナキーボードはやーーめて 分解しやすい作りでよろしく、直付けとかなしね ノングレア液晶 10時間はもってね 1.5kg以下ならパーフェクト 私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ 円高プライス  ぼやき、、 USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。 どんなユーザーが４つのポートを必要としているのか理解できない。
+ 電源 外部モニター iPhone ハードディスク  ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。
+ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
+！！！SDカードスロットは必須じゃろーー！！！
+と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。</description>
+    </item>
+    
+    <item>
       <title>サワナケート、ラオスのインターネット事情</title>
       <link>https://goozenlab.com/blog/2016/06/internet-savannakhet/</link>
       <pubDate>Wed, 01 Jun 2016 17:00:00 +0700</pubDate>
@@ -1214,6 +1354,17 @@ ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
  ディスク番号確認：diskutil list フュージョンドライブ作成：diskutil cs create ボリューム作成：diskutil coreStorage createVolume  詳細 Fusion化を行うディスクの番号を diskutil list にて把握。そして diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 にてLogical Volume Groupを構築。
 ※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。
 shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 Started CoreStorage operation Unmounting disk1 Repartitioning disk1 Unmounting disk Creating the partition map Rediscovering disk1 Adding disk1s2 to Logical Volume Group Unmounting disk2 Repartitioning disk2 Unmounting disk Creating the partition map Rediscovering disk2 Adding disk2s2 to Logical Volume Group Creating Core Storage Logical Volume Group Switching disk1s2 to Core Storage Switching disk2s2 to Core Storage Waiting for Logical Volume Group to appear Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12 Finished CoreStorage operation shingha:~ $  Volumeを diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.</description>
+    </item>
+    
+    <item>
+      <title>海外キャッシングの比較</title>
+      <link>https://goozenlab.com/blog/2016/01/cashing-hongkong/</link>
+      <pubDate>Sun, 17 Jan 2016 12:00:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/01/cashing-hongkong/</guid>
+      <description>ちょっと寄った、香港にてキャッシングの比較をしてみる。
+手元にある、新生銀行と東京三菱UFJで立て続けに、HK$1,500を引き落す。後日引き落し金額を比較すると、
+ 新生銀行：￥23,812 東京三菱UFJ：￥23,623 [￥23,515(23,582 - 67) + ￥108(手数料) ]  新生銀行は海外での引き落とし手数料無料とうたっていたような気がするが、東京三菱の方が￥189安い結果になる。大体0.8%の違い。まぁ締め日が近ければ、クレジットカードのキャッシングが一番安いように思える。 （数分の違いで為替の違いが出ている可能性も有り？。）</description>
     </item>
     
     <item>
@@ -1839,6 +1990,21 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
     </item>
     
     <item>
+      <title>中国ビザをチェンマイで申請</title>
+      <link>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</link>
+      <pubDate>Fri, 12 Jun 2015 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</guid>
+      <description>１５日まではビザが必要ないと思っていた中国（韓国籍）。危うい所でチケットを買ってしまう所だった。航空会社の購入サイトでクレジットカード記入画面に向かう時にサファリが反応せず、色々調べごとをしているうちにビザが必要なのが発覚する。
+ 「自分は日本人」と主張して、２０代の在日韓国人男性が中国の空港でノービザ入国を試みるも失敗―中国メディア[12&amp;frasl;16]
+ あぶねぇ、こんな事になる所だった、、。（まぁ一回ボリビアで試した事はあるだが、もちろん玉砕。）素直に出発をずらし、宿から徒歩約５分と近所にある領事館で改めて観光ビザを申請する。
+必要な書類は以下、
+ 申請書：領事館のセキュリティーでもらえる。かなり細かい。 写真：パスポートサイズで問題無し、申請書に貼付ける。（糊や筆記具は領事館に用意されている） チケットの予約書（ちょっと面倒だが、以前インドビザ申請時に作ってもらった書類を勝手にアレンジして持っていく、往復チケットの予約がベター。） ホテルの予約：Booking.comなどで到着後数日分でよい  ツッコミ所満載の関係書類だったので色々と難癖をつけられると思っていたけれど、あっさり受理。受け取り表をもらい終了。
+ビザ業務時間は９：００から１１：３０まで、人はそんなに多くなかったので朝一で行く必要もなさそう。
+金額は特急、急行、普通の３つ。普通・数次ビザで、THB1,650。ピックアップ時に支払う。</description>
+    </item>
+    
+    <item>
       <title>エル・キャピタンを入れる</title>
       <link>https://goozenlab.com/blog/2015/06/elcapitan-beta/</link>
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
@@ -2054,6 +2220,18 @@ REI社の新しい物を探してみると同じようなタイプの物はも�
       <guid>https://goozenlab.com/blog/2015/04/tableview-separator/</guid>
       <description>テーブルビューセルの境界線を消すには下記のコードを追加。
 self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None  StoryBoardを使っている時は以下。</description>
+    </item>
+    
+    <item>
+      <title>バックパックの中身</title>
+      <link>https://goozenlab.com/blog/2015/04/inside-backpack/</link>
+      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/04/inside-backpack/</guid>
+      <description>ちょっと自分でも整理をしたかったので、今回の約４ヶ月間マレーシア・ネパール旅行での持ち物リストを書き出してみました。バックパックを新しくしようかなと、、 全部で多分15キロぐらい、バックパックとブリーフケースに荷物がパツパツに入ってます。 一年の旅行でもリストはほとんど同じだと思います。
+ブリーフケース MBP15が入るブリーフケース。昨年MBP15が故障。MBA11 (-1.4kg)になったというのになにか、まだずっしりとした重さがある。
+ ポケットトートバックのような物にMBA 11と封筒ケース Kindle PaperLight リコー GR + ViewFinder iPhone 4S iPod 240GBとヘッドフォン A6 システム手帳 ナカバヤシのノート マネーベルト 長財布と小銭入れ 書類入れ：A4シート、三折り書類入オレッタ  バックパック 人から譲ってもらった物ですが、サイズはパーフェクト、40L?くらい、REI社製。人に切られたり、ネズミに齧られたりでボロボロ。
+服飾類  ハンガー x 3 衣服メッシュケース（着ている物は除外）  タオル、手拭 x 4 Tシャツ x 2、シャツ x 2 ズボン、パジャマ インドのドーティ(2m x 1.2mくらいの腰巻）  寝袋とショール 眼鏡ケース サンダル  生活  ネティポッドとサプリメント類 洗顔キット：垢こすり、シャンプー、石けん ヘッドライト 鍵 x 3 ZipLockやプラスチック数種 コクヨの筆箱：生活グッズ  耳かき、爪切り、髭剃り はさみ、定規 替芯：シャープペンとボールペン    デジタル関連  MacBook用電源とユニバーサルアダプター Sony GSPロガー 小型BTスピーカー eneloop： charger、AA x 5、AAA x4</description>
     </item>
     
     <item>
@@ -2526,6 +2704,20 @@ NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES), 
     </item>
     
     <item>
+      <title>旅仕様 iOS</title>
+      <link>https://goozenlab.com/blog/2015/02/travel-home/</link>
+      <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/02/travel-home/</guid>
+      <description> iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。
+ ドック  Google Maps：GPSと合わせて便利です。でも旅ですし、たまには現地の人に聞きましょう。 SimpleNote：ちょっとしたメモには最適、呟かずメモってます。 littlist：ToDoソフト、入国日や出発日の把握、イベント日、お土産リストとして使ってます。 PocketMoney：アイコンは好きではないのですが、お金の管理はAppleのPDA: Newton、PalmOSの時代からずっとこのソフトを使ってます。お小遣い帳です。カードや日本の銀行の使用、残高状況がつかめます。外国の為替にも対応しています。別のものにかえる理由が見つからない。  ホーム画面には、これらのソフトが置いてあります。  カレンダー：カレンダー自体は使っていないのですが、日付表示のため 時計：目覚まし Currency：定番の外貨為替ソフト。外国通貨為替のレートを知るにはこれで十分です。日本円で10,000円が現地通貨でいくらになるかを見れるように設定してます。 Evernote：ちょっと旅情報のメモなどを入れたりしてます。ちょっと重たい物はシンプルノートよりevernoteのほうが良いです。海外で怪我、病気をして病院にお世話になった時に必要な書類（診断書や請求書のフォーム等）をPDFで入れておくと便利です。 写真： Momento：ほとんど呟いたりはしていないのですが、両替のレートや日付が必要なメモの保存先として、何となくライフログ的な。。 ohaYo：睡眠ログのソフト。ちょっと睡眠が安定しない旅先、睡眠時間の管理に使ってます。タイムゾーンにも対応しているので大陸をドカッと動いても問題なく使えます。 計算機：昨今計算能力が低下気味ということで、 設定：   ちなみに、その他は、
+という感じ。2ページ目はアプリ検証ページ。そんなに沢山のソフトは入れてません。シンプルです。
+おまけ：Simplenote パスポート番号やクレジットカード・トラベラーズチェック紛失時の電話番号などを入力しておきましょう。もし、強盗などにあったときに必要な番号などを記録しておきましょう。
+もし最悪、全ての持ち物をとられてしまったときのために、パスワードを。。。
+ どこかに書き込んでおく。（ズボンのポケットの裏地とか、一回靴のソールの裏に長いパスワードを書き込んでおいて、しばし経ってみてみたら読めてものではない状態になっていた事がある。。） 実家にメモを置いておく。（ある意味アナログクラウド、母親に捨てられないようにしてくださいね。） 日本語の文章にして、メールアドレスとともに覚えておく。  </description>
+    </item>
+    
+    <item>
       <title>マレーシア ラップアップ</title>
       <link>https://goozenlab.com/blog/2015/02/wrapup-malaysia/</link>
       <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
@@ -2631,6 +2823,21 @@ event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead
 書き直すつもりで、じっくりと取り組んでみると、履歴・詳細画面よりメイン画面への移行時にエラー無く状況が保存されないのが問題のようで、ちょっとずるいパッチを当ててアップデートしました
  だいたい８時間毎に行われる計算に便乗してますので、アップデートと同時、サイクル更新時に計算がされないことがあります。 同時にタップしてスクロール時に落ちるバグも修正しました。  指摘を戴いていたのに、対応が遅れました。芝の上で昼寝をしている場合ではなかった。。
 iOS6/7ユーザーは多分問題になっていないと思いますので、アップデートの必要はないです。次の1.6.5にて奇麗な形にしてアップデートする積もりです。（多分次がiOS6/7ユーザー最後のアップデート。）</description>
+    </item>
+    
+    <item>
+      <title>旅先での睡眠</title>
+      <link>https://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
+      <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
+      <description>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか夢も多々見る。温い布団が気持ちよく、温泉が恋しくなる。
+ここ数年ほぼトロピカルなエリアに滞在、服装はTシャツ、シャワーは水、扇風機を回しつつ寝るのが日常。疲れた感じは無いのだが、体には負担がかかってたのだろう。
+ひげに白髪が混じってきたし、積年の疲れということか。。
+で、睡眠ログアプリ「ohaYo」で睡眠傾向を見てみると、
+ タイ：早起きかつ睡眠時間も短め。ヨジラーです。 マレーシア：生活のサイクルが代わりちょっと波がある。 ネパール：がっつり寝る。
+(左から)  と、見事に違いが出る。
+追記： ネパールではダルバートばかり食べていると、便秘になります。果物や野菜を別に取りましょう。</description>
     </item>
     
     <item>

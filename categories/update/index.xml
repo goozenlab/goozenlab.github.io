@@ -190,6 +190,17 @@ Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイ�
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <description> 快眠ノーティス音が鳴りまでしたせんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。ついでに、途中で目覚めた時の時間表示を見やすくしました。
+あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
+Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.9.1</title>
+      <link>https://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
       <description> 快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。
 あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
 Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
