@@ -104,8 +104,8 @@ $0.isRedHot = &quot;YES&quot;</code> 何じゃかんじゃより。。）書き�
 <pre><code>let myTasks = tasks?.allObjects
 let predicate = NSPredicate(format: &quot;isRedHot == YES&quot;)
 let filteredArray = myTasks?.filter( {
-    predicate.evaluateWithObject($0)
-    } )
+	predicate.evaluateWithObject($0)
+	} )
 return filteredArray!.count &gt; 0
 </code></pre>
 

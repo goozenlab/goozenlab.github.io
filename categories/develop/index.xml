@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Tue, 06 Mar 2018 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ブログ用画像を一括リサイズ・リネーム</title>
+      <link>https://goozenlab.com/blog/2018/04/rename-automator/</link>
+      <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/04/rename-automator/</guid>
+      <description>オートメーターを使って一括変換する ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探しました。コンピューター初心者の知人のためなので、なるべく簡単なものを探していたのですが、簡易的な形の物までしか見つけられなかったので、自分で作ることにしました。
+アップルスクリプトにするか、シェルにするかなど、色々と方法あるのですが、結局 一番すっきりした？（未だ全然すっきりはしない。。）感じのオートメーターを使いました。
+結果うまくいきましたので、画像の扱いは人それぞれ違うと思いますが、ブロガーの方には割と重宝すると思い、公開します。
+(日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
+ちょっと、 変数の取り扱いで少し難儀しました。（あっちでキープして、こっちでまた戻したり、、う〜ん。。変態やな。） アプリとして保存し、変換したいファイルを一気にドラッグ&amp;amp;ドロップします。ベースになるファイル名を入力するダイアログが出て、dropbox上にオリジナルファイルをリネームしたものと、画像をリサイズしたものをコピーしたファイルが作られます。オリジナルのファイルはそのまま手をつけてません。
+リサイズの設定や、ファイルのコピー先を変更して使ってください。
+追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。</description>
+    </item>
     
     <item>
       <title>Sati v1.9.5</title>
