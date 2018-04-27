@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>StatusBarメモ</title>
-  <meta name="description" content="StatusBarメモ">
+  <title>初代 Mi Max カスタム化</title>
+  <meta name="description" content="初代 Mi Max カスタム化">
   <meta name="author" content="jin">
 
   
@@ -66,7 +66,7 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-		  <time class="">2016-08-26</time>
+		  <time class="">2018-04-24</time>
 		  
 		  
 		  |
@@ -74,46 +74,52 @@
 		  
 
 		  
-		  categories:<a href="https://goozenlab.com/categories/swift">swift</a> <a href="https://goozenlab.com/categories/develop">develop</a> 
+		  categories:<a href="https://goozenlab.com/categories/goods">goods</a> <a href="https://goozenlab.com/categories/android">android</a> 
 		  
 
 		  
 
 		</p>
-		<h5>StatusBarメモ</h5>
+		<h5>初代 Mi Max カスタム化</h5>
 	  </div>
 
 	  <div class="post">
-		<p>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。</p>
+		<p>手放してしまった初代Mi Maxですが、画面の遍歴を記録としてポストします。</p>
 
-<p>まずは全体的な設定を、info.plistにて <code>View Controller-based status bar appearance</code> を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）</p>
+<p>出来もそんなに悪くない <strong>MIUI</strong> から始まり、Lineage14.1, RR を経て、結局安定性とバッテリーの持ちから Lineageに戻る。</p>
 
-<p><img src="/images/2016-08-26-statusbar-info.png" alt="StatusBar on Info.plist" /></p>
+<p>MIUIでは、結局こんな感じで使ってました。戻ることはないと思うけど、わりと確りできているなとちょっと感心した。</p>
 
-<p>info.plistに直接書き込むなら、以下を追加。</p>
+<p><img src="/images/20180427-custom-max-01.jpg" alt="Custom Mi Max Screenshots" />
+<img src="/images/20180427-custom-max-02.jpg" alt="Custom Mi Max Screenshots" />
+<img src="/images/20180427-custom-max-03.jpg" alt="Custom Mi Max Screenshots" /></p>
 
-<pre><code>&lt;key&gt;UIViewControllerBasedStatusBarAppearance&lt;/key&gt;
-	&lt;false/&gt;
+<p>フォントを変えたいなと思って、色々調べていたら、そんならブートローダーもアンロックして
+カスタムロムを入れるべ、と。</p>
+
+<p>XDAフォーラム <a href="https://forum.xda-developers.com/mi-max">https://forum.xda-developers.com/mi-max</a> に有益な情報が多々あり、カスタム化の作業もスムースにできました。掲示板も活発なようです。インドで結構売れたのかな？。。</p>
+
+<p>まず最初に、定番の <strong>Lineage14.1</strong> 入れました。
+起動時の画面はこんな感じで好印象でした。
+ちょっと、面白みに欠けているのが難かな。</p>
+
+<p><img src="/images/20180427-custom-max-04.png" alt="Custom Mi Max Screenshots" /></p>
+
+<p>色々とカスタマイズできると評判の <strong>Resurrection Remix6</strong> に変更。そして色々といじる。ちょっとバッテリーの持ちが悪くなった様な気がしました。</p>
+
+<p><img src="/images/20180427-custom-max-06.png" alt="Custom Mi Max Screenshots" />
+<img src="/images/20180427-custom-max-07.png" alt="Custom Mi Max Screenshots" />
+<img src="/images/20180427-custom-max-05.png" alt="Custom Mi Max Screenshots" /></p>
+
+<p>そして、人に渡すということで、Lineage14.1に戻し、昭和女子のリクエスト、「表示フォントは <strong>明朝体</strong>。」、游明朝体に変更しました。</p>
+
+<pre><code>&lt;family lang=&quot;ja&quot;&gt;
+	&lt;font weight=&quot;400&quot; style=&quot;normal&quot;&gt;YuMincho-Medium.ttf&lt;/font&gt;
+	&lt;font weight=&quot;700&quot; style=&quot;normal&quot;&gt;YuGothic-Demibold.ttf&lt;/font&gt;
+&lt;/family&gt;
 </code></pre>
 
-<hr />
-
-<p>そして、変更したいビューの適当なところ、<code>ViewDidLoad</code> に追加コード。</p>
-
-<pre><code>UIApplication.sharedApplication().statusBarHidden = true
-</code></pre>
-
-<p>もしくは、オーバーライドしても動くはず。</p>
-
-<pre><code>override func prefersStatusBarHidden() -&gt; Bool {
-    return true
-}
-</code></pre>
-
-<p>そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを <code>.LightContent</code> に変更する。</p>
-
-<pre><code>UIApplication.sharedApplication().statusBarStyle = .LightContent
-</code></pre>
+<p>老眼がきつくなってきた年頃の私にとってお気に入り端末でした。６月頃に出る３代目にちょっと期待してます。安かったら買っちゃお。。</p>
 
   	<div id="disqus_thread"></div>
 <script>
@@ -179,6 +185,4 @@
 
 </body>
 </html>
-
->
 

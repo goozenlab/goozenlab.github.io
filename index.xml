@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <lastBuildDate>Fri, 20 Apr 2018 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 10:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>初代 Mi Max カスタム化</title>
+      <link>https://goozenlab.com/blog/2018/04/custom-mi-max/</link>
+      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/04/custom-mi-max/</guid>
+      <description>手放してしまった初代Mi Maxですが、画面の遍歴を記録としてポストします。
+出来もそんなに悪くない MIUI から始まり、Lineage14.1, RR を経て、結局安定性とバッテリーの持ちから Lineageに戻る。
+MIUIでは、結局こんな感じで使ってました。戻ることはないと思うけど、わりと確りできているなとちょっと感心した。
+フォントを変えたいなと思って、色々調べていたら、そんならブートローダーもアンロックして カスタムロムを入れるべ、と。
+XDAフォーラム https://forum.xda-developers.com/mi-max に有益な情報が多々あり、カスタム化の作業もスムースにできました。掲示板も活発なようです。インドで結構売れたのかな？。。
+まず最初に、定番の Lineage14.1 入れました。 起動時の画面はこんな感じで好印象でした。 ちょっと、面白みに欠けているのが難かな。
+色々とカスタマイズできると評判の Resurrection Remix6 に変更。そして色々といじる。ちょっとバッテリーの持ちが悪くなった様な気がしました。
+そして、人に渡すということで、Lineage14.1に戻し、昭和女子のリクエスト、「表示フォントは 明朝体。」、游明朝体に変更しました。
+&amp;lt;family lang=&amp;quot;ja&amp;quot;&amp;gt; &amp;lt;font weight=&amp;quot;400&amp;quot; style=&amp;quot;normal&amp;quot;&amp;gt;YuMincho-Medium.ttf&amp;lt;/font&amp;gt; &amp;lt;font weight=&amp;quot;700&amp;quot; style=&amp;quot;normal&amp;quot;&amp;gt;YuGothic-Demibold.ttf&amp;lt;/font&amp;gt; &amp;lt;/family&amp;gt;  老眼がきつくなってきた年頃の私にとってお気に入り端末でした。６月頃に出る３代目にちょっと期待してます。安かったら買っちゃお。。</description>
+    </item>
     
     <item>
       <title>Nokia 7 Plus 購入に至る</title>
@@ -21,7 +38,7 @@
       <description>Xiaomi Mi Maxを人に譲り、自分用の携帯を物色していました。 理想は、小さく、カメラの出来が良い、前面指紋認証付きの端末、 予算は５万円以下。 （2年前のiPhoneSEを今更買う気にはちょっとなれない。）
 で、結局の所、色々迷って、Nokia 7 Plus を購入に至りました。 滞在先のタイのソンクランという水かけ祭りで、ちょっと、新年の高揚気分？ もしくは酷暑で熱暴走なのか、予想外の端末に落ち着く。
 候補に上がったのは以下の端末
- Xiaomi Mi Max3 Redmi5 Pro iPhone SE2 OnePlus 5 Nokia 8  シャオミのMi Max3は６月頃のリニュー、Redmi5 Proはまだインドと中国でしか販売していない、iPhoneSE2は結局噂のみ、出る出る詐欺が続く、OnePlus 5はもう市場から消えているし売っていても高い、Nokia 8は値段が$420くらいに落ち着いていて予算内かつ在庫もありEtorenで支払いまで進んだけれど、最後の一押しが、、（大きさが思いの外大きいし、ベゼル部が大きく指紋認証のボタンが妙に細いのが、デザイン的にあまり好きになれない。）
+ Xiaomi Mi Max3 Redmi5 Pro iPhone SE2 OnePlus 5 Nokia 8  シャオミのMi Max3は６月頃のリニュー、Redmi5 Pro はまだインドと中国でしか販売していない、iPhoneSE2 は結局噂のみ、出る出る詐欺が続く、OnePlus 5 はもう市場から消えているし売っていても高い、Nokia 8 は値段が$420くらいに落ち着いていて予算内かつ在庫もありEtorenで支払いまで進んだけれど、最後の一押しが、、（大きさが思いの外大きいし、ベゼル部が大きく指紋認証のボタンが妙に細いのが、デザイン的にあまり好きになれない。）
 ということで、残念ながら除外だらけ、6月ごろになれば新しい端末が出揃って選択も楽なんだろうけども。 小さい端末に関しては、2年前に発売になったSE以外の選択はなし。
 そんな中、タイにてちょどタイミングよく発売開始になったノキア７プラスに白羽の矢が立つ。
 ミッドレンジのスマートフォンの中ではかなり評判が良い。 携帯のスピードはMiMaxでも問題がなかったので、もう十分だろうし、 液晶の大きさも中途半端なサイズに思えたけど、６インチあればMi Maxの代わりになるかもしれず２台持ちせずに良いだろうと、、
@@ -40,7 +57,7 @@
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/04/rename-automator/</guid>
-      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探しました。コンピューター初心者の知人のためなので、なるべく簡単なものを探していたのですが、簡易的な形の物までしか見つけられなかったので、自分で作ることにしました。
+      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単なものを探していたのですが、簡易的な形の物までしか見つけられなかったので、自分で作ることにしました。
 アップルスクリプトにするか、シェルにするかなど、色々と方法あるのですが、結局 一番すっきりした？（未だ、全然すっきりせず。。）感じのオートメーターを使いました。
 結果うまくいきましたので、画像の扱いは人それぞれ違うと思いますが、ブロガーの方には割と重宝すると思い、公開します。
 (日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
