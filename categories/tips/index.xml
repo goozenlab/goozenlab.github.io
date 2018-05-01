@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 17 Apr 2018 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/tips/index.xml" rel="self" type="application/rss+xml" />
@@ -24,7 +25,10 @@
 (日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
  直前のValuable(変数)に作業が行われるようで、その取り扱いで少し難儀しました。元のファイルは old_image_name でとっておき、アップルスクリプトでタイトル名を所得し、image_name として値をセットしておきます。（あっちでキープして、こっちでまた戻したり、、う〜ん。。変態やな。）   そして、ファイルをコピーし、image_name を元にしてリネーム・リサイズの作業。あまりファイルのサイズの節約にはならないけれど、ImageOptimにファイルを渡すこともできます。  アプリとして保存し、変換したいファイルを一気にドラッグ&amp;amp;ドロップします。ベースになるファイル名を入力するダイアログが出て、dropbox上にオリジナルファイルをリネームしたものと、画像をリサイズしたものをコピーしたファイルが作られます。オリジナルのファイルはそのまま手をつけてません。
 リサイズの設定や、ファイルのコピー先を変更して使ってください。
-追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。</description>
+追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。
+訂正：
+2018年05月01日
+このスクリプトではアプリケーションにファイルを渡すことはできません。悪しからず。</description>
     </item>
     
     <item>

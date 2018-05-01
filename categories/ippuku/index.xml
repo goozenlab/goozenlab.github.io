@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/ippuku/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +24,8 @@
 大きな機能上の変更はありませんが、細かな調整が多々有ります。
 バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。 そして、新らしく、ダークモードを追加しました。
 次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。
-Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
+Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai
+Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
     </item>
     
     <item>

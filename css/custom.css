@@ -1,7 +1,3 @@
-footer {
-	display:block;
-}
-
 html {
 	min-height:100%;
 	width:100%;
@@ -10,97 +6,68 @@ html {
 
 body {
 	background-color: rgb(249,249,249);
+	color: #484848;
 }
 
-code {
-	font-size:13px;
-	line-height:17px;
+.nav-menu {
+/* remove  May 1, 2018
+	border-bottom: 1px solid #e3e3e3;
+ */
 }
 
-
-/* Added 2015-03-05 22:45 for goozenlab */
-img {
-      max-width: 100%;
-      height: auto;
-}  
-  
-  
-.app_list {
-	width: 100%;
-	image: /images/footer.gif;
-}
-.app_list ul {
-	list-style-type:none;
-	display: block;
-	margin:0;
-	padding:6;
-	background-color: rgb(255,255,255);	
+.header {
+	text-align: left;
+	color: #484848;
+	/*  add May 1, 2018 */
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: rgb(256,256,256);
 }
 
-.app_list li {
-	display: inline-block;
-	position: relative;
-	margin-right:0px;
-	margin-bottom: 0;
+.header ul li {
+		height: auto;
 }
 
-.app_list img {
-	width: 40px;
-	height: 40px;
+.header ul li a {
+/* remove  May 1, 2018
+
+	font-weight: bold;
+*/
+	color: #484848;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar {
-	top:0;
-	left:0;
-	display:block;
-	border-bottom: 1px solid #eee;
-	margin-bottom:10px;
-	height:3em;
-	width:100%;
-	background-color: rgb(252,252,252);	
+.header .site-title {
+	font-weight: bold;
+	color: #484848;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar ul {
-	list-style-type:none;
-	display: block;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	height:130%;
+.pull-right {
+	float: right;
 }
 
-.navbar li {
-	display: inline-block;
-	position: relative;
-	margin-right:10px;
-	margin-bottom: 0;
-	top:50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+.posts-name {
+	text-transform: capitalize;
+	font-weight: bold;
+	padding-left: 1em;
+	margin-top: 1em;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-.navbar a {
-	color:#333;
-	text-transform:uppercase;
-	text-decoration:none;
-	font-size:bold;
-}
-
-.brand {
-	font-weight:bold;
-	font-size:normal !important;
-}
-
-.cate {
-	font-weight:bold;
-	font-size:small;
-}
-
 
 .posts {
 	font-family: verdana,arial,helvetica,sans-serif;
 	list-style-type:none;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+.posts li p{
+	margin-top: 0;
+}
+
+.posts li {
+	margin-bottom: 1em;
 }
 
 .posts li a {
@@ -108,12 +75,11 @@ img {
 	text-decoration:none;
 }
 
-
 .footnote {
 	font-family: verdana,arial,helvetica,sans-serif;
 	color:#888;
 	font-size:x-small;
-	margin-bottom:0;
+	margin-bottom: 1em;
 }
 
 .footnote a {
@@ -128,26 +94,74 @@ img {
 .footer {
 	position:absolute;
 	z-index:2;
-	border-top: 1px solid #eee;
-	height:1.5em;
+	height:auto;
 	width:100%;
 	bottom:0;
-	padding-top:0.1em;
-	background-color: rgb(253,253,253);
-	text-align:center;
+	/*  add May 1, 2018 */
+	border-top: 1px solid #e3e3e3;
+	background-color: rgb(256,256,256);
+}
+
+.footer-content {
+/* remove  May 1, 2018
+	border-top: 1px solid #e3e3e3;
+ */
+	font-size: 80%;
+	color: #bbb;
+}
+
+.footer-content a {
+	color: #bbb;
+}
+
+.footer-content ul {
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: inline-block;
+	padding-left: 0;
+}
+
+#gototop-btn {
+	display: inline-block;
+}
+
+#foot-name {
+	text-transform: none;
+}
+
+#foot-copyright {
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+	margin: 0;
 }
 
 .post {
-	z-index:9;
-	display:block;
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 	color:#484848;
+	letter-spacing:normal;
+	padding-left: .5em;
+	/*  add May 1, 2018 */
+	padding-right: .5em;
+}
+
+.post h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	letter-spacing:normal;
+}
+
+.post-content {
+	z-index:9;
 	overflow:auto;
 	padding:0;
-	padding-bottom:4.5em;
-	padding-top:1em;
+	padding-bottom:6em;
 	font-size:16px;
-	line-height:25px;
+	line-height:1.4;
+}
+
+.post-content img {
+	max-width: 100%;
+	height: auto;
 }
 
 .post a {
@@ -161,106 +175,77 @@ img {
 }
 
 .post h1 {
-	font-size:23px;
-	letter-spacing:normal;
+	font-size:28px;
 }
 
 .post h2 {
-	font-size:22px;
-	letter-spacing:normal;
-	border-top: 1px dotted #dedede;
-	padding-top: 0.6em;
+	font-size:25px;
 }
 
 .post h3 {
-	font-size:21px;
-	letter-spacing:normal;
+	font-size:23px;
 }
 
 .post h4 {
 	font-size:21px;
-	letter-spacing:normal;
 }
 
 .post h5 {
-	font-size:11px;
-	letter-spacing:normal;
+	font-size:19px;
 }
 
 .post h6 {
 	font-size:18px;
-	letter-spacing:normal;
 }
 
-.away {
-	margin-top:2em;
+.post-title{
+		margin-top: 0;
+		margin-bottom:1em;
 }
 
-
-.post-wrapper {
-	margin-top:2em;
-}
-
-#post-title h5 {
+.post-title h1 {
 	font-weight:bold;
-	font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#2d2d2d;
-	letter-spacing:normal;
+	font-size:36px;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
+
+img.full-width {
+	width: 100%;
+	}
 
 @media screen and (max-width:767px){
-	.navbar {
-		display:none;
-		overflow:visible;
-		height:auto;
+	.desktop {
+		display: none;
 	}
-
-	.navbar li {
-		width:100%;
-		clear:both;
-		margin-bottom:5px;
-		margin-right:0;
-		transform: translateY(0);
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
+	.mobile {
+		display: block;
 	}
-
-	.navbar ul {
-		height:auto;
-		overflow:auto;
+	#toggle-btn {
+		display: inline-block;
+		float: right;
+		padding: .5em 1em;
+		text-decoration: none;
+		color: #484848;
+		font-weight: bold;
 	}
-
-	.navbar .brand {
-		font-weight:normal !important;
+	#toggle-content li {
+		clear: both;
+		height: auto;
+		background-color: rgb(249,249,249);
 	}
-
-	#menu {
-		text-align:center;
-		display:block;
-		padding:0;
-		margin-bottom:10px;
-		height:1.5em;
-		padding-bottom:4px;
-		border-bottom: 1px solid #eee;
-	}
-
-	#menu a {
-		float:right;
-		cursor:pointer;
-		font-size:large;
-	}
-
-	#menu span {
-		float:left;
-		text-transform:uppercase;
-		font-weight:bold;
+	#toggle-home {
+		display: inline-block;
 	}
 }
 
 @media screen and (min-width:768px){
-	#menu {
+	.mobile {
 		display:none;
 	}
+	.desktop {
+		display: block;
+	}
 }
-

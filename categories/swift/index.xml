@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sun, 28 Aug 2016 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/swift/index.xml" rel="self" type="application/rss+xml" />
@@ -40,47 +41,6 @@ info.plistに直接書き込むなら、以下を追加。
 UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
 override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
 UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
-    </item>
-    
-    <item>
-      <title>StatusBarメモ</title>
-      <link>https://goozenlab.com/blog/2016/08/statusbar-memo/</link>
-      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
-      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
-まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
-info.plistに直接書き込むなら、以下を追加。
-&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt;  そして、変更したいビューの適当なところ、ViewDidLoad に追加コード。
-UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
-override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
-UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
-    </item>
-    
-    <item>
-      <title>Lite VersionとAdmob</title>
-      <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
-      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
- ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
-まずはプロジェクトのメインターゲットを Duplicate します。
-スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。
-Info.plistのコピーの cosper copy-Info.plist はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。
-そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。
-そして、ターゲットの設定をします。（バンドル名やその他必要なもの）
-最後に、コンパイル時のマクロ設定をします。#if LITE で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。
-マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて LITE=1 を、
-フルバージョンの方には LITE=0 を書き込みます。選択すると入力画面が出てきます。
-そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。
-アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。
-これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。
-AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに target &#39;xx lite&#39; do ... で切り分ければいいのかな。）
-フレームワーク 必要なフレームワークは、以下。
- GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトにコピー (ターゲットをライトバージョンのみにするのを忘れずに）  プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。
- AdSupport AudioToolbox AVFoundation CoreGraphics CoreTelephony EventKit EventKitUI MessageUI StoreKit SystemConfiguration  以上で準備完了。実装していきます。
-コーディング マクロを使って、以下の形で処理を分けることができます。</description>
     </item>
     
     <item>
@@ -120,20 +80,6 @@ nil値が戻ってくる可能性のある時の処理方法。
 tableCellに値を渡す時を例に、
 # if let xx = yy { } else { } if let lock = event.isLocked as? Bool { cell.isLocked = lock } else { cell.isLocked = false }  で新しく、guard let なんてのが出てきて、こんな風に書き換える事ができ、（else以降の役割がよくわからない。）
 # guard let xx = y else {] guard let lock = event.isLocked as? Bool else { return } cell.isLocked = lock  そしてしかも、簡略した（?：ニル、？：なの）xx = yy ?</description>
-    </item>
-    
-    <item>
-      <title>filteredArrayUsingPredicate</title>
-      <link>https://goozenlab.com/blog/2016/08/array_filter/</link>
-      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
-      <description>拙作dandoriのswift移行中、中々進みません。
-Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
-ブロック表記が出てくると目が点になってしまう私。。。
-以下 Objective-C での表記
-NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]]; NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;]; NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate]; return [filteredArray count] &amp;gt; 0;  Swiftで書き上げにはブロック内に(user: UserDetails) -&amp;gt; Bool in で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。 $0.isRedHot = &amp;quot;YES&amp;quot; 何じゃかんじゃより。。）書き上げるとこんな感じ。
-let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;) let filteredArray = myTasks?.filter( { predicate.evaluateWithObject($0) } ) return filteredArray!.count &amp;gt; 0  </description>
     </item>
     
     <item>

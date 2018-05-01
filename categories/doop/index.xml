@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/doop/index.xml" rel="self" type="application/rss+xml" />
@@ -46,25 +47,6 @@ PS：なぜだか分からないけれど、ビルドが全然通りませんで
       <description>中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。
 追加機能  履歴ページへひとっ飛び  今までは、項目をダブルタップ、詳細画面から操作を行っていたので、勝手が良くなります。（更新のボタンも追加しようかと思いましたが今回はスキップ）ボタンの色は左バーの色と同じになります。
 バージョンは1.6.5より一気に上がってますが、1.x.0の中番号xはサポートOS番号になっているため、機能が沢山追加された訳ではありません。ということで、対応OSがiOS8以降になります。本来はSwiftに移行する予定のバージョンでしたが、作業が捗らず、、、なかなか進みません。。</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.5</title>
-      <link>https://goozenlab.com/blog/2015/03/doop-165/</link>
-      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/doop-165/</guid>
-      <description>iOS6/7 ユーザーには最後のアップデートになります。
-そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
- DBの調整 編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）  よろしくお願いします。
-doopのソートについて考えています。
-今現在のソートパターンは
- サイクルにかかる平均時間 0%にたどり着くであろう日付  によるソートをナビゲーションバーのロングタップで切り分けています。
-①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。
-両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。
-色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。
-では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。
-画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。</description>
     </item>
     
     <item>

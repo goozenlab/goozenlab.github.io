@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 06 Mar 2018 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/update/index.xml" rel="self" type="application/rss+xml" />
@@ -201,17 +202,6 @@ Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイ�
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
-      <description> 快眠ノーティス音が鳴りまでしたせんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。ついでに、途中で目覚めた時の時間表示を見やすくしました。
-あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
-Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
-    </item>
-    
-    <item>
-      <title>ohayo v2.9.1</title>
-      <link>https://goozenlab.com/blog/2016/07/ohayo-291/</link>
-      <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
       <description> 快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発見。。ついでに、途中で目覚めた時の時間表示を見やすくしました。
 あとは、ちょっとスタティスバーの表示が気になる。（無い方がすっきりするのだけど、時間の表示だけできないものか。。）
 Change Log [2.9.1] - 2016-07-30 @ ChiangMai Changed  睡眠時間表示を見やすくする（フォントを大きく）  Fixed  快眠ノーティスが鳴らないバグを修正  </description>
@@ -241,7 +231,8 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
 大きな機能上の変更はありませんが、細かな調整が多々有ります。
 バーの色変更はタップしそのままスワイプで変更します（以前はタップにより変更）。左エリアのタップはメモの表示になります。 そして、新らしく、ダークモードを追加しました。
 次のアップデートでは、カレンダーからの読み込み機能をつけようかな？と思ってます。
-Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
+Change Log [1.9.0 - Swift release] - 2016-06-27 @ ChiangMai
+Added  ダークモード iPhone6,6+の大きめの液晶サイズにも対応（表示時間が端末によって変わります。）  4:30 - 09:30, 22:00 - 08:00, 13:00 - 23:00, 5:00 - 19:30 (iPhone4s, 5) 4:00 - 10:30, 22:00 - 08:00, 13:00 - 23:00, 4:30 - 19:30 (iPhone6) 3:30 - 11:30, 22:00 - 10:00, 12:00 - 24:00, 4:30 - 20:30 (iPhone6+)   Changed  アイコンの変更 左バーの色変更はスワイプに変更 上記の変更により、タップにてメモ表示 StarterViewのデザイン変更 ローカライズを追加 iOS9以降でのサポート  </description>
     </item>
     
     <item>
@@ -392,25 +383,6 @@ PS：なぜだか分からないけれど、ビルドが全然通りませんで
       <description>iOS6/7 ユーザーには最後のアップデートになります。
 次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
  DBの調整 iOS8での通知許可の設定  よろしくお願いします。</description>
-    </item>
-    
-    <item>
-      <title>doop v1.6.5</title>
-      <link>https://goozenlab.com/blog/2015/03/doop-165/</link>
-      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/doop-165/</guid>
-      <description>iOS6/7 ユーザーには最後のアップデートになります。
-そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
- DBの調整 編集画面ナビゲーションボタンの調整（新規登録時にはキャンセルボタンを追加）  よろしくお願いします。
-doopのソートについて考えています。
-今現在のソートパターンは
- サイクルにかかる平均時間 0%にたどり着くであろう日付  によるソートをナビゲーションバーのロングタップで切り分けています。
-①は頻繁にアクセスする順になり、②は取り替えをする時期が迫っているものが前という順です。
-両方において問題点は、実際のソートと、画面上に出ている情報でユーザーが感じるソートがずれている点。
-色順であれば、画面を見ればすぐにわかると思うし、％で並んでいれば、その様すぐに把握できる。今の状況だと、ぱっと見グジャグジャで、把握が困難。
-では、なぜ％のならびにしないのか？というのは、パーセントが１％を切っていても、そのアイテムのサイクル平均時間によってばらつきが出てしまうからで、ある項目は１％は１０分で、またある項目は１日であったりする可能性があるからです。
-画面上でつかみやすいソートと利用上便宜があるソートの葛藤がある。なにか良いアイディアは無いものか、、次のバージョン（1.8.0：swift化）までは何か考えつきたいと。。</description>
     </item>
     
     <item>

@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 17 Apr 2018 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
@@ -24,7 +25,10 @@
 (日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
  直前のValuable(変数)に作業が行われるようで、その取り扱いで少し難儀しました。元のファイルは old_image_name でとっておき、アップルスクリプトでタイトル名を所得し、image_name として値をセットしておきます。（あっちでキープして、こっちでまた戻したり、、う〜ん。。変態やな。）   そして、ファイルをコピーし、image_name を元にしてリネーム・リサイズの作業。あまりファイルのサイズの節約にはならないけれど、ImageOptimにファイルを渡すこともできます。  アプリとして保存し、変換したいファイルを一気にドラッグ&amp;amp;ドロップします。ベースになるファイル名を入力するダイアログが出て、dropbox上にオリジナルファイルをリネームしたものと、画像をリサイズしたものをコピーしたファイルが作られます。オリジナルのファイルはそのまま手をつけてません。
 リサイズの設定や、ファイルのコピー先を変更して使ってください。
-追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。</description>
+追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。
+訂正：
+2018年05月01日
+このスクリプトではアプリケーションにファイルを渡すことはできません。悪しからず。</description>
     </item>
     
     <item>
@@ -116,18 +120,6 @@ let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
     </item>
     
     <item>
-      <title>NSRegularExpression</title>
-      <link>https://goozenlab.com/blog/2016/09/nsregularexpression/</link>
-      <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
-      <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）
-(a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。
-let pattern = &amp;quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot; let regex = try? NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.CaseInsensitive) let matches = regex!.firstMatchInString(text, options: [], range: NSMakeRange(0, patternStr.utf16.count)) if let match = matches { title = (text as NSString).substringWithRange(match.rangeAtIndex(2)) ... }  で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&amp;rdquo;^&amp;ldquo;（行頭）を削除。で、動くようになりました。&amp;rdquo;^&amp;ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。
-let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
-    </item>
-    
-    <item>
       <title>ブロック表記</title>
       <link>https://goozenlab.com/blog/2016/09/block-3ways/</link>
       <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
@@ -138,21 +130,6 @@ let pattern = &amp;quot;(\\*\\*|__)(.*)(\\*\\*|__)$&amp;quot;  </description>
 ダブルクリックで、意味がわからなくなる。この前置詞 in ちゅーのが曲者、どこの中じゃ？。
 その一 addressString.enumerateLines ({ (line: String, inout stop: Bool) -&amp;gt; () in print(line) })  Trailing closure syntax：（）を抜いてます。 addressString.enumerateLines { (line: String, inout stop: Bool) in print(line) }  XCodeの簡易バージョン これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。
 addressString.enumerateLines { (line, stop) in println(line) }  </description>
-    </item>
-    
-    <item>
-      <title>unWind segway</title>
-      <link>https://goozenlab.com/blog/2016/09/segway-unwind/</link>
-      <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/segway-unwind/</guid>
-      <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。
-使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。
- ListVCからDetailVCにセグウェイを設定（コントロールドラッグ） ListVCに下記のコードを追加 DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが表示される リンクをボタンなりに繋ぐ  ListVCに追加したコードは、
-@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue) { }  いろいろ試したところ、@IBAction func unwind___XXX___ が入っていれば認識されるよう___XXX___の部分は必要なものに置き換えてください。引数も(unwindSegue: UIStoryboardSegue)が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。
-あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。
-@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) { // 処理 let title = unwindSegue.sourceViewController.title ......... }  XCode7では、unwind&amp;hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。
-override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) { &amp;lt;#code#&amp;gt; }  やっぱり、ストーリーボードは好きになれません。。</description>
     </item>
     
     <item>
@@ -260,30 +237,6 @@ iExploreが使えなくなって難儀していたので、同じような問題
     </item>
     
     <item>
-      <title>XCodeにてアプリデーターの管理</title>
-      <link>https://goozenlab.com/blog/2016/09/device-container/</link>
-      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/device-container/</guid>
-      <description>端末のアプリデータをバックアップ、復元。
-クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストールがきなくなる不具合。
-この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。（開発環境がXCode5から一気にXCode7になったので、、まぁ改悪は今の所無いのだけど、、分からんことが一杯だな。。）
-データーのバックアップ・復元 まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。
-実機にインストール前に、
- コンテナをダウンロード エラーの出るアプリを消去 アプリを再インストール コンテナのリプレース  にて作業を終えます。
-コンテナファイル そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような ****.xcappdata が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。
-Documentフォルダー内にある *.sql の三つのファイルがアプリのデーターになります。Libraryのなかには設定用のplistファイルがあります。
-※そしてこのファイルをシミュレーターに入れることでデーターを更新することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。
-シミュレータヘのデーター移行 シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。
-まずは、Simulatorの識別番号を XCodeのDeviceより確認します。
-ファインダーに戻り、ライブラリーに入り。
-~/Library/Developer/CoreSimulator/Devices/IDENTIFIER for Simulator/data/Containers/Data/Application/IDENTIFIER for Application/Documents
-に移動して、上の*.sql の三つのファイルを上書きます。
-シミュレータのデーターを実機で使う 逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、****.xcappdata ファイルのなかの*.sql の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。
-iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。</description>
-    </item>
-    
-    <item>
       <title>Podsをプロジェクトに</title>
       <link>https://goozenlab.com/blog/2016/09/install-pods/</link>
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
@@ -349,47 +302,6 @@ UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
     </item>
     
     <item>
-      <title>StatusBarメモ</title>
-      <link>https://goozenlab.com/blog/2016/08/statusbar-memo/</link>
-      <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
-      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。
-まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）
-info.plistに直接書き込むなら、以下を追加。
-&amp;lt;key&amp;gt;UIViewControllerBasedStatusBarAppearance&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt;  そして、変更したいビューの適当なところ、ViewDidLoad に追加コード。
-UIApplication.sharedApplication().statusBarHidden = true  もしくは、オーバーライドしても動くはず。
-override func prefersStatusBarHidden() -&amp;gt; Bool { return true }  そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを .LightContent に変更する。
-UIApplication.sharedApplication().statusBarStyle = .LightContent  </description>
-    </item>
-    
-    <item>
-      <title>Lite VersionとAdmob</title>
-      <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
-      <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)
- ターゲットのコピーと調整 スキームの変更 新しいInfo.plistのリネーム、変更と移動 コンパイル時のマクロ設定 アイコンの追加  が主な作業の流れになります。
-まずはプロジェクトのメインターゲットを Duplicate します。
-スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。
-Info.plistのコピーの cosper copy-Info.plist はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。
-そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。
-そして、ターゲットの設定をします。（バンドル名やその他必要なもの）
-最後に、コンパイル時のマクロ設定をします。#if LITE で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。
-マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて LITE=1 を、
-フルバージョンの方には LITE=0 を書き込みます。選択すると入力画面が出てきます。
-そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。
-アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。
-これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。
-AdMobの追加 iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに target &#39;xx lite&#39; do ... で切り分ければいいのかな。）
-フレームワーク 必要なフレームワークは、以下。
- GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトにコピー (ターゲットをライトバージョンのみにするのを忘れずに）  プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。
- AdSupport AudioToolbox AVFoundation CoreGraphics CoreTelephony EventKit EventKitUI MessageUI StoreKit SystemConfiguration  以上で準備完了。実装していきます。
-コーディング マクロを使って、以下の形で処理を分けることができます。</description>
-    </item>
-    
-    <item>
       <title>Lite VersionとAdmob</title>
       <link>https://goozenlab.com/blog/2016/08/lite-admob/</link>
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
@@ -426,20 +338,6 @@ nil値が戻ってくる可能性のある時の処理方法。
 tableCellに値を渡す時を例に、
 # if let xx = yy { } else { } if let lock = event.isLocked as? Bool { cell.isLocked = lock } else { cell.isLocked = false }  で新しく、guard let なんてのが出てきて、こんな風に書き換える事ができ、（else以降の役割がよくわからない。）
 # guard let xx = y else {] guard let lock = event.isLocked as? Bool else { return } cell.isLocked = lock  そしてしかも、簡略した（?：ニル、？：なの）xx = yy ?</description>
-    </item>
-    
-    <item>
-      <title>filteredArrayUsingPredicate</title>
-      <link>https://goozenlab.com/blog/2016/08/array_filter/</link>
-      <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
-      <description>拙作dandoriのswift移行中、中々進みません。
-Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは簡略化。.filterメソッドを使い、ブロックで処理を書き込みます。。。
-ブロック表記が出てくると目が点になってしまう私。。。
-以下 Objective-C での表記
-NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]]; NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&amp;quot;isRedHot == YES&amp;quot;]; NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate]; return [filteredArray count] &amp;gt; 0;  Swiftで書き上げにはブロック内に(user: UserDetails) -&amp;gt; Bool in で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。 $0.isRedHot = &amp;quot;YES&amp;quot; 何じゃかんじゃより。。）書き上げるとこんな感じ。
-let myTasks = tasks?.allObjects let predicate = NSPredicate(format: &amp;quot;isRedHot == YES&amp;quot;) let filteredArray = myTasks?.filter( { predicate.evaluateWithObject($0) } ) return filteredArray!.count &amp;gt; 0  </description>
     </item>
     
     <item>
