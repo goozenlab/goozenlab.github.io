@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
+    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -25,7 +25,7 @@
     <item>
       <title>Android</title>
       <link>https://goozenlab.com/categories/android/</link>
-      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/android/</guid>
       <description></description>
@@ -97,7 +97,7 @@
     <item>
       <title>Goods</title>
       <link>https://goozenlab.com/categories/goods/</link>
-      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/goods/</guid>
       <description></description>
@@ -142,7 +142,7 @@
     <item>
       <title>Mac</title>
       <link>https://goozenlab.com/categories/mac/</link>
-      <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
+      <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/mac/</guid>
       <description></description>
@@ -151,7 +151,7 @@
     <item>
       <title>Mumble</title>
       <link>https://goozenlab.com/categories/mumble/</link>
-      <pubDate>Fri, 27 Apr 2018 14:30:00 +0700</pubDate>
+      <pubDate>Fri, 04 May 2018 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/mumble/</guid>
       <description></description>
@@ -160,7 +160,7 @@
     <item>
       <title>Nokia7&#43;</title>
       <link>https://goozenlab.com/categories/nokia7&#43;/</link>
-      <pubDate>Fri, 20 Apr 2018 06:30:00 +0700</pubDate>
+      <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/nokia7&#43;/</guid>
       <description></description>
@@ -268,7 +268,7 @@
     <item>
       <title>Tips</title>
       <link>https://goozenlab.com/categories/tips/</link>
-      <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
+      <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/tips/</guid>
       <description></description>
@@ -298,6 +298,15 @@
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xiaomi</title>
+      <link>https://goozenlab.com/categories/xiaomi/</link>
+      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/categories/xiaomi/</guid>
       <description></description>
     </item>
     

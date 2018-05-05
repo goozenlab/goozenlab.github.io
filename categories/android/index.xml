@@ -7,11 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 24 Apr 2018 10:30:00 +0700</lastBuildDate>
+    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 May 2018 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nokia 7 Plus レビュー</title>
+      <link>https://goozenlab.com/blog/2018/05/nokia7plus-review/</link>
+      <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/05/nokia7plus-review/</guid>
+      <description>Nokia 7 Plus がようやく手元に入りました。、酷暑のタイ、北部チェンマイ、空調の効いたショッピングモールよりレビューをお届けします。 （ビール飲みてーー）
+Nokia 7 Plus の特徴 あまり買うには本当はオススメしないミッドレンジのスマートフォンですが。スペックは以下の通りです。可もなく不可もなく無難な感じですが、必要十分でしょう。全部入りな感じです。そして、Snapdragon 660 端末も他社から価格も抑えめで出始めてます。
+ 液晶：6インチFHD+ (2160 x 1080)
+ CPU：Snapdragon 660 SDM660 2.2GHz オクタコア
+ RAM：4GB、ストレージ容量：64GB
+ メインカメラ：1200万画素(f/1.75, 1.4 µm+ f/2.6, 1.0 µm) セルフィーカメラ：1300万画素(f/2.6, 1.0µm)
+ 大きさ：158.4 x 75.6 x 8 mm （大きさ比較：iPhone 8 Plus 158.4 x 78.1 x 7.5 mm）  開封の儀（一度やってみたかった） 箱のデザインはびぃーーみょ、手を繋いだカップルって、サイズは思ったより小さいです。中には、簡易な説明書とちょっと大きめのUSB電源アダプタ、ケーブル、そしてイヤフォンが入ってます。
+  内容物   販売員の女性にセットアップ（懐かしのノキアの起動音を聞く、文字のサイズ設定も大きくはないか？）、保護フィルムも貼ってもらう。VAT Refund（免税措置）の書類も作ってもらって、出国時に手続きをすればB650が戻ってきます。本体がTHB13,900だから悪くない（円安がちょっときになるが致し方なし）。
+充電アダプタ(5V-3A, 9V-2A, 12V-1.5A)がラッキーなことに日本でも使えるタイプ、タイだとごつい三穴タイプ（アップル製品）だったり、二本の丸棒タイプだったりと、買うものによって違ったりしてて、買うとまぁそれなりにするので、無駄にはならずに、ありがたや。販売員の女性曰く、「ファーストチャージ対応なので、３５分で８０パーセントチャージできるし、ケーブルも対応の物よ」、とのこと。Mi Maxが充電マックスになるまで３〜４時間近くかかることを考えると、これまた御の字。見た目より軽いです。
+  アダプター比較   プロモーションで液晶保護フィルム、出来の良いクリアーケース、セルフィー棒、ちょっと嘘っぽい10,500mAの携帯バッテリー、マイク付きイヤフォン、と卓上携帯ホルダーが付いてきました。OPPOを買うとスーツケースが付いてくるようで、どちらかというとそちらが、欲しかったりするが、贅沢は言えないか。</description>
+    </item>
     
     <item>
       <title>初代 Mi Max カスタム化</title>

@@ -7,49 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 24 Apr 2018 10:30:00 +0700</lastBuildDate>
+    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 May 2018 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/goods/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>初代 Mi Max カスタム化</title>
-      <link>https://goozenlab.com/blog/2018/04/custom-mi-max/</link>
-      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <title>Nokia 7 Plus レビュー</title>
+      <link>https://goozenlab.com/blog/2018/05/nokia7plus-review/</link>
+      <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/custom-mi-max/</guid>
-      <description>手放してしまった初代Mi Maxですが、画面の遍歴を記録としてポストします。
-出来もそんなに悪くない MIUI から始まり、Lineage14.1, RR を経て、結局安定性とバッテリーの持ちから Lineageに戻る。
-MIUIでは、結局こんな感じで使ってました。戻ることはないと思うけど、わりと確りできているなとちょっと感心した。
-フォントを変えたいなと思って、色々調べていたら、そんならブートローダーもアンロックして カスタムロムを入れるべ、と。
-XDAフォーラム https://forum.xda-developers.com/mi-max に有益な情報が多々あり、カスタム化の作業もスムースにできました。掲示板も活発なようです。インドで結構売れたのかな？。。
-まず最初に、定番の Lineage14.1 入れました。 起動時の画面はこんな感じで好印象でした。 ちょっと、面白みに欠けているのが難かな。
-色々とカスタマイズできると評判の Resurrection Remix6 に変更。そして色々といじる。ちょっとバッテリーの持ちが悪くなった様な気がしました。
-そして、人に渡すということで、Lineage14.1に戻し、昭和女子のリクエスト、「表示フォントは 明朝体。」、游明朝体に変更しました。
-&amp;lt;family lang=&amp;quot;ja&amp;quot;&amp;gt; &amp;lt;font weight=&amp;quot;400&amp;quot; style=&amp;quot;normal&amp;quot;&amp;gt;YuMincho-Medium.ttf&amp;lt;/font&amp;gt; &amp;lt;font weight=&amp;quot;700&amp;quot; style=&amp;quot;normal&amp;quot;&amp;gt;YuGothic-Demibold.ttf&amp;lt;/font&amp;gt; &amp;lt;/family&amp;gt;  老眼がきつくなってきた年頃の私にとってお気に入り端末でした。６月頃に出る３代目にちょっと期待してます。安かったら買っちゃお。。</description>
-    </item>
-    
-    <item>
-      <title>Nokia 7 Plus 購入に至る</title>
-      <link>https://goozenlab.com/blog/2018/04/nokia7plus/</link>
-      <pubDate>Fri, 20 Apr 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/nokia7plus/</guid>
-      <description>Xiaomi Mi Maxを人に譲り、自分用の携帯を物色していました。 理想は、小さく、カメラの出来が良い、前面指紋認証付きの端末、 予算は５万円以下。 （2年前のiPhoneSEを今更買う気にはちょっとなれない。）
-で、結局の所、色々迷って、Nokia 7 Plus を購入に至りました。 滞在先のタイのソンクランという水かけ祭りで、ちょっと、新年の高揚気分？ もしくは酷暑で熱暴走なのか、予想外の端末に落ち着く。
-候補に上がったのは以下の端末
- Xiaomi Mi Max3 Redmi5 Pro iPhone SE2 OnePlus 5 Nokia 8  シャオミのMi Max3は６月頃のリニュー、Redmi5 Pro はまだインドと中国でしか販売していない、iPhoneSE2 は結局噂のみ、出る出る詐欺が続く、OnePlus 5 はもう市場から消えているし売っていても高い、Nokia 8 は値段が$420くらいに落ち着いていて予算内かつ在庫もありEtorenで支払いまで進んだけれど、最後の一押しが、、（大きさが思いの外大きいし、ベゼル部が大きく指紋認証のボタンが妙に細いのが、デザイン的にあまり好きになれない。）
-ということで、残念ながら除外だらけ、6月ごろになれば新しい端末が出揃って選択も楽なんだろうけども。 小さい端末に関しては、2年前に発売になったSE以外の選択はなし。
-そんな中、タイにてちょどタイミングよく発売開始になったノキア７プラスに白羽の矢が立つ。
-ミッドレンジのスマートフォンの中ではかなり評判が良い。 携帯のスピードはMiMaxでも問題がなかったので、もう十分だろうし、 液晶の大きさも中途半端なサイズに思えたけど、６インチあればMi Maxの代わりになるかもしれず２台持ちせずに良いだろうと、、
-そして Android One 端末なので、QまでのOSがサポートされ、先3年はセキュリティーパッチが配信される。グーグルとも連携がよくとれているのか、アップデートも他のアンドロイドone端末に比べて迅速に行われている。
-逆に、残念だけれどもカスタムロムなどを入れるには色々と難儀するようで、カスタム化の楽しみはなくなってしまう。
-多分、シャオミから似たようなスペックで数万円やすいものが出てくると思う。。。 その数万をいかに自分に納得させるかが、、
- デザインと作りは、レビューで賞賛されている。白ボディーが良い感じ。 カメラ好きでもあったので、Carl Zeissレンズはポイントが高い、これで、コンパクトデジカメは卒業できるかも、、 イヤフォンジャックはありがたや、、 Three microphones with Nokia OZO Audio録音機能が良いらしい、 安定して使える環境の端末を一台持つのも悪くない、色々いじってパニクることもなくなるだろう、 日本で自慢できる？かも？  去年から今年は色々あったので、自分へのご褒美で良いだろう。。
-と、言い訳を羅列して、自分を納得させました。
-しかしながら、勢い勇んでショッピングセンターへ行くも、在庫切れ。 プロモーションでブルートゥース・スピーカーがつくようで、電話番号を残して店を後にする。 ちなみにタイでの価格は、THB13,900、日本円換算で￥47,500くらいです。
-手に入ったらレビューします。</description>
+      <guid>https://goozenlab.com/blog/2018/05/nokia7plus-review/</guid>
+      <description>Nokia 7 Plus がようやく手元に入りました。、酷暑のタイ、北部チェンマイ、空調の効いたショッピングモールよりレビューをお届けします。 （ビール飲みてーー）
+Nokia 7 Plus の特徴 あまり買うには本当はオススメしないミッドレンジのスマートフォンですが。スペックは以下の通りです。可もなく不可もなく無難な感じですが、必要十分でしょう。全部入りな感じです。そして、Snapdragon 660 端末も他社から価格も抑えめで出始めてます。
+ 液晶：6インチFHD+ (2160 x 1080)
+ CPU：Snapdragon 660 SDM660 2.2GHz オクタコア
+ RAM：4GB、ストレージ容量：64GB
+ メインカメラ：1200万画素(f/1.75, 1.4 µm+ f/2.6, 1.0 µm) セルフィーカメラ：1300万画素(f/2.6, 1.0µm)
+ 大きさ：158.4 x 75.6 x 8 mm （大きさ比較：iPhone 8 Plus 158.4 x 78.1 x 7.5 mm）  開封の儀（一度やってみたかった） 箱のデザインはびぃーーみょ、手を繋いだカップルって、サイズは思ったより小さいです。中には、簡易な説明書とちょっと大きめのUSB電源アダプタ、ケーブル、そしてイヤフォンが入ってます。
+  内容物   販売員の女性にセットアップ（懐かしのノキアの起動音を聞く、文字のサイズ設定も大きくはないか？）、保護フィルムも貼ってもらう。VAT Refund（免税措置）の書類も作ってもらって、出国時に手続きをすればB650が戻ってきます。本体がTHB13,900だから悪くない（円安がちょっときになるが致し方なし）。
+充電アダプタ(5V-3A, 9V-2A, 12V-1.5A)がラッキーなことに日本でも使えるタイプ、タイだとごつい三穴タイプ（アップル製品）だったり、二本の丸棒タイプだったりと、買うものによって違ったりしてて、買うとまぁそれなりにするので、無駄にはならずに、ありがたや。販売員の女性曰く、「ファーストチャージ対応なので、３５分で８０パーセントチャージできるし、ケーブルも対応の物よ」、とのこと。Mi Maxが充電マックスになるまで３〜４時間近くかかることを考えると、これまた御の字。見た目より軽いです。
+  アダプター比較   プロモーションで液晶保護フィルム、出来の良いクリアーケース、セルフィー棒、ちょっと嘘っぽい10,500mAの携帯バッテリー、マイク付きイヤフォン、と卓上携帯ホルダーが付いてきました。OPPOを買うとスーツケースが付いてくるようで、どちらかというとそちらが、欲しかったりするが、贅沢は言えないか。</description>
     </item>
     
     <item>

@@ -7,11 +7,53 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright (c) 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 27 Apr 2018 14:30:00 +0700</lastBuildDate>
+    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 May 2018 17:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ichiro the man</title>
+      <link>https://goozenlab.com/blog/2018/05/ichiro-forever/</link>
+      <pubDate>Fri, 04 May 2018 17:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/05/ichiro-forever/</guid>
+      <description>このひとは唯一無二ですね。コメントにドキッとしました。
+ 僕の近くにいる人なら分かると思いますが、野球の研究者でいたい。４４歳でアスリートとしてどうなっていくのか見てみたい。プレーしなくても毎日鍛錬していくとどうなっていくのか見てみたい。 チームと一緒に練習できる。例えこれで終わりだたっとしても（練習を）続けると思う。喪失感みたいなものはまったくありません。 これからでしょうね。もちろん、あると思いますよ。あると思いますけど、選手でいる間はもちろんですけど、 僕の近くにいる人は、これが分かると思いますけど、僕は野球の、何て言ったらいいですかね、研究者でいたいというか、まあ、自分が今４４歳でアスリートとして、この先、どうなっていくのか、というのを見てみたい。それはプレーしていなかったとしても、毎日鍛錬を重ねていくことでどうなれるのか、ということを見てみたいという興味が大きいので、それは変わらないと思うんですよね。それでチームと一緒に練習することもできるわけですから、それを続けられること、仮にこれで終わりだったとしても、僕、それを続けると思うんですよね。だから、なんか喪失感みたいなのは、実はないですよね - Seattle Mariners 55 Ichiro  研究者というよりも探求者。野球に何求めているのだろうか、何を見ているのだろうか、非常に気になります。 メジャーリーガーとしてのイチローはもう見れないかもしれないけれど、日々の鍛錬と野球を通してのこれからの人間的成長がすごく気になります。
+何か別の世界、新たな境地にたどり着くかもしれん。
+野武士だな。</description>
+    </item>
+    
+    <item>
+      <title>Webサイト構築</title>
+      <link>https://goozenlab.com/blog/2018/05/wp-pure-site/</link>
+      <pubDate>Wed, 02 May 2018 17:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/05/wp-pure-site/</guid>
+      <description>最近はちょっとした縁があって、Webサイト構築・更新に勤しんでます。
+久しぶりのウェブ開発なので、ちょっとした浦島太郎状態。時代の流れをすごく感じてます。Wordpressをメインにその上に e-commerce のプラグインを乗せてショッピングサイトが簡単に構築できるようになっていたり、Stripe や Square。
+レスポンシブデザイン、SASS、う〜〜〜ん。
+このサイトは Hugo で運営していて、Themeをアップデートしたら、またなんかよくわからんものが出てくるし、24分割もいらんのに、、
+Pure v1.0.0 Copyright 2013 Yahoo! Licensed under the BSD License. https://github.com/yahoo/pure/blob/master/LICENSE.md  Swiftのアップデートもしなくてはいかんのに。。</description>
+    </item>
+    
+    <item>
+      <title>完熟バナナ</title>
+      <link>https://goozenlab.com/blog/2018/05/fully-ripened-banana/</link>
+      <pubDate>Tue, 01 May 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/05/fully-ripened-banana/</guid>
+      <description> フルーツが豊富で、値段もお安いタイにいます。青いバナナはその中でも特にお買い得な果物の一つで、１０本：１５バーツ とかで叩き売られています。 S字フックに引っ掛けて窓際に吊るし、三・四日放置、黄色くなった頃合いを見計らって食べ始めます。 普段はすぐに食べきってしまうのでそこまで黒くなったものは食べたことはなかったのですが、 忘れてて放置してたら、真っ黒になってました。（１０日間くらいかなぁ） 完熟黒バナナ1の一丁上がり。
+名付けてマグロビ2（真黒美）・バナナ。（ギャハハッー） すっごく真っ黒け、熟れたというより燃え尽きた感じ、備長炭のようです。外はちょっと乾燥して硬い感じがありますが、身は柔らかくなってます。 アリンコが少し寄ってきてたりしてて、捨てちゃおうかなと思ったりしましたが、 中の身は、外から押したりしていないので黒くなってませんでした。かなり驚き。
+身がゆるいので手でむくことはちょっと難しくて、ナイフを使ってペローーと剥きました。 皮が非常に薄くなってて、ほんのり アルコール臭 ？があがってきました。
+（漬けておいたら酒になるかな？と悪魔のささやきが聞こえる。）
+（ほっておいたら鰹節みたいになるかしらん？と思ったりも、、）
+とろぉ〜り、カスタードクリーム のよう、とは言いませんが、味も香りも強くなります。スプーンですくって頂きました。
+タイに来ると、果物が通年売っているので、フルータリアン3 に挑戦しようかなといつも思ったりします。
+いつも小腹を満たしてくれる、バナナに感謝。
+ 黒バナナは黄色のバナナに比べ、ショ糖が減り、酵素、抗酸化物質オリゴ糖がさらに増えるそうです。 [return] マクロビことマクロビオティック（陰陽の理論を交えた食事法）と引っ掛けてます。 [return] 果実食主義（Fruitarianism、果食主義）は、果実、種のみを摂取する菜食主義の下位分類名、食行動及び思想。動物性食品（肉、魚、乳製品、卵、蜂蜜等）と植物を殺す行為に基づく植物食（根菜植物、穀物を含む）を摂取しない。地面に落ちた果実のみを食する理想を持つ。スティーブ・ジョブスもフルタリアンであったと聞く。 [return]   </description>
+    </item>
     
     <item>
       <title>ノキア、お前もか（噂）</title>
