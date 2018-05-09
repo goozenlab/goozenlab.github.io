@@ -8,10 +8,25 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 04 May 2018 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 May 2018 13:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android P DP2が公開</title>
+      <link>https://goozenlab.com/blog/2018/05/android-p-dp2/</link>
+      <pubDate>Wed, 09 May 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/05/android-p-dp2/</guid>
+      <description>Google I/O 2018にてAndroid P DP2が公開されました。&amp;rdquo;Google’s most ambitious update&amp;rdquo; なんてニュースサイトで言われていてます。対応端末も発表されました。
+ Pixel or Pixel 2 Essential Phone Nokia 7 Plus Sony Xperia XZ2 Xiaomi Mi Mix 2S Vivo X21 Oppo R15 Pro OnePlus 6  そして、意外や意外、最近買ったNokia 7 Plusが入っているではないですか。安定環境端末を買っておきながら、結局こんな流れになってしまうのだろうか、、 でも、せっかくの特権でもあし、これは悩む。これを機会に本格的にアンドロイドアプリ制作に乗り出すか？と少し思ったりもする。
+まっ、とりあえず、デベロッパーズ・プログラムの登録をしました。
+おっ、イェーーイ、これはバンコクのホアランポーンの駅ではないのか？
+インストールはマニュアルですが、そこまで複雑ではないよう、ただしOTAでアップデートが入ってくる？わけではないようんので、新しいDPを入れるときにクリーンフラッシュが必要になるのであればちょっと面倒な感じ。。。でも、これで、ブートローダーをアンロックすることができたりするのかな、なんてちょっと変な期待をしてみたりする。
+ファイルは落としたものの、開発のタイムテーブルを見ると、６月に２つのリリースが出るようで、 APIも次のリリースで固定、ちょっと待つかな、と少し気弱になってきました。
+XDA: Android P Beta available for Nokia 7 Plus にて情報を</description>
+    </item>
     
     <item>
       <title>Nokia 7 Plus レビュー</title>
@@ -26,7 +41,7 @@ Nokia 7 Plus の特徴 あまり買うには本当はオススメしないミッ
  RAM：4GB、ストレージ容量：64GB
  メインカメラ：1200万画素(f/1.75, 1.4 µm+ f/2.6, 1.0 µm) セルフィーカメラ：1300万画素(f/2.6, 1.0µm)
  大きさ：158.4 x 75.6 x 8 mm （大きさ比較：iPhone 8 Plus 158.4 x 78.1 x 7.5 mm）  開封の儀（一度やってみたかった） 箱のデザインはびぃーーみょ、手を繋いだカップルって、サイズは思ったより小さいです。中には、簡易な説明書とちょっと大きめのUSB電源アダプタ、ケーブル、そしてイヤフォンが入ってます。
-  内容物   販売員の女性にセットアップ（懐かしのノキアの起動音を聞く、文字のサイズ設定も大きくはないか？）、保護フィルムも貼ってもらう。VAT Refund（免税措置）の書類も作ってもらって、出国時に手続きをすればB650が戻ってきます。本体がTHB13,900（請求金額￥49,355）だから悪くない（円安がちょっときになるが致し方なし）。
+  内容物   販売員の女性にセットアップ（懐かしのノキアの起動音を聞く、文字のサイズ設定も大きくはないか？）、保護フィルムも貼ってもらう。VAT Refund（免税措置）の書類も作ってもらって、出国時に手続きをすればB650が戻ってきます。本体がTHB13,900（請求金額￥49,058）だから悪くない（円安がちょっときになるが致し方なし）。
 充電アダプタ(5V-3A, 9V-2A, 12V-1.5A)がラッキーなことに日本でも使えるタイプ、タイだとごつい三穴タイプ（アップル製品）だったり、二本の丸棒タイプだったりと、買うものによって違ったりしてて、買うとまぁそれなりにするので、無駄にはならずに、ありがたや。販売員の女性曰く、「ファーストチャージ対応なので、３５分で８０パーセントチャージできるし、ケーブルも対応の物よ」、とのこと。Mi Maxが充電マックスになるまで３〜４時間近くかかることを考えると、これまた御の字。ちょっと得した気分、見た目より軽いです。
 追記：クワルコムのQC3.0に対応しているそうです。ChargerLab より。
   アダプター比較   プロモーションで液晶保護フィルム、出来の良いクリアーケース、セルフィー棒、ちょっと嘘っぽい10,500mAの携帯バッテリー、マイク付きイヤフォン、と卓上携帯ホルダーが付いてきました。OPPOを買うとスーツケースが付いてくるようで、どちらかというとそちらが、欲しかったりするが、贅沢は言えないか。</description>
@@ -52,7 +67,7 @@ Nokia 7 Plus の特徴 あまり買うには本当はオススメしないミッ
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/05/error-gnucash3/</guid>
       <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、
-No suitable backend was found.  というエラーが上がってきました。保存入るをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
+No suitable backend was found.  というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
 GNC_DBD_DIR={SYS_LIB}/dbd  を追加することで、エラーを回避できます。 多分、次回アップデートで修正されるとは思います。
 GUIフレームワークがGTK+ 3に変更され、見た目が少し変わりました。そのおかげで？、動作が重くなりました。現状の2.6系でも問題はなかったのでアップデートは中止し、ダウングレード、以前の状態で使ってます。</description>
     </item>
@@ -96,7 +111,7 @@ Ankerウルトラスリム</description>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/05/fully-ripened-banana/</guid>
       <description> フルーツが豊富で、値段もお安いタイにいます。青いバナナはその中でも特にお買い得な果物の一つで、１０本：１５バーツ とかで叩き売られています。 S字フックに引っ掛けて窓際に吊るし、三・四日放置、黄色くなった頃合いを見計らって食べ始めます。 普段はすぐに食べきってしまうのでそこまで黒くなったものは食べたことはなかったのですが、 忘れてて放置してたら、真っ黒になってました。（１０日間くらいかなぁ） 完熟黒バナナ1の一丁上がり。
-名付けてマグロビ2（真黒美）・バナナ。（ギャハハッー） すっごく真っ黒け、熟れたというより燃え尽きた感じ、備長炭のようです。外はちょっと乾燥して硬い感じがありますが、身は柔らかくなってます。 アリンコが少し寄ってきてたりしてて、捨てちゃおうかなと思ったりしましたが、 中の身は、外から押したりしていないので黒くなってませんでした。かなり驚き。
+名付けてマックロビ2（真黒美）・バナナ。（ギャハハッー） すっごく真っ黒け、熟れたというより燃え尽きた感じ、備長炭のようです。外はちょっと乾燥して硬い感じがありますが、身は柔らかくなってます。 アリンコが少し寄ってきてたりしてて、捨てちゃおうかなと思ったりしましたが、 中の身は、外から押したりしていないので黒くなってませんでした。かなり驚き。
 身がゆるいので手でむくことはちょっと難しくて、ナイフを使ってペローーと剥きました。 皮が非常に薄くなってて、ほんのり アルコール臭 ？があがってきました。
 （漬けておいたら酒になるかな？と悪魔のささやきが聞こえる。）
 （ほっておいたら鰹節みたいになるかしらん？と思ったりも、、）
@@ -4085,7 +4100,6 @@ $page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c
       <guid>https://goozenlab.com/blog/2012/09/octopress-simplenote/</guid>
       <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあったので、、）
 で、ポストの執筆／管理をSimplenoteのクライアントnvALTを使っています。(Macです。)
-{% img https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-main.jpg 800 %}
 元々、このソフトの原型になるNotationalVelocityを使っていて、今回のオクトプレス移行に伴って新しいアカウント＋クライアントを使ってポストを管理しようと思い立って調べてたどり着きました。
 ほかにもイロイロあるのかもしれませんが、お宝発見という気分です。 （MarsEditとWordpressには結局なじめなかった。。）
 まず、###.markdownで新規／読み込み／保存ができる。

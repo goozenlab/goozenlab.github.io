@@ -161,7 +161,6 @@ $page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c
       <guid>https://goozenlab.com/blog/2012/09/octopress-simplenote/</guid>
       <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあったので、、）
 で、ポストの執筆／管理をSimplenoteのクライアントnvALTを使っています。(Macです。)
-{% img https://dl.dropbox.com/u/163521/images/ScreenShot-nvALT-main.jpg 800 %}
 元々、このソフトの原型になるNotationalVelocityを使っていて、今回のオクトプレス移行に伴って新しいアカウント＋クライアントを使ってポストを管理しようと思い立って調べてたどり着きました。
 ほかにもイロイロあるのかもしれませんが、お宝発見という気分です。 （MarsEditとWordpressには結局なじめなかった。。）
 まず、###.markdownで新規／読み込み／保存ができる。

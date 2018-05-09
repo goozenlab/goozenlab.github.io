@@ -20,7 +20,7 @@
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/05/error-gnucash3/</guid>
       <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、
-No suitable backend was found.  というエラーが上がってきました。保存入るをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
+No suitable backend was found.  というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
 GNC_DBD_DIR={SYS_LIB}/dbd  を追加することで、エラーを回避できます。 多分、次回アップデートで修正されるとは思います。
 GUIフレームワークがGTK+ 3に変更され、見た目が少し変わりました。そのおかげで？、動作が重くなりました。現状の2.6系でも問題はなかったのでアップデートは中止し、ダウングレード、以前の状態で使ってます。</description>
     </item>
