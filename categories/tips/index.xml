@@ -19,10 +19,7 @@
       <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/05/error-gnucash3/</guid>
-      <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、
-No suitable backend was found.  というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
-GNC_DBD_DIR={SYS_LIB}/dbd  を追加することで、エラーを回避できます。 多分、次回アップデートで修正されるとは思います。
-GUIフレームワークがGTK+ 3に変更され、見た目が少し変わりました。そのおかげで？、動作が重くなりました。現状の2.6系でも問題はなかったのでアップデートは中止し、ダウングレード、以前の状態で使ってます。</description>
+      <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、 No suitable backend was found. というエラーが上</description>
     </item>
     
     <item>
@@ -31,16 +28,7 @@ GUIフレームワークがGTK+ 3に変更され、見た目が少し変わり�
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/04/rename-automator/</guid>
-      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単なものを探していたのですが、簡易的な形の物までしか見つけられなかったので、自分で作ることにしました。
-アップルスクリプトにするか、シェルにするかなど、色々と方法あるのですが、結局 一番すっきりした？（未だ、全然すっきりせず。。）感じのオートメーターを使いました。
-結果うまくいきましたので、画像の扱いは人それぞれ違うと思いますが、ブロガーの方には割と重宝すると思い、公開します。
-(日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
- 直前のValuable(変数)に作業が行われるようで、その取り扱いで少し難儀しました。元のファイルは old_image_name でとっておき、アップルスクリプトでタイトル名を所得し、image_name として値をセットしておきます。（あっちでキープして、こっちでまた戻したり、、う〜ん。。変態やな。）   そして、ファイルをコピーし、image_name を元にしてリネーム・リサイズの作業。あまりファイルのサイズの節約にはならないけれど、ImageOptimにファイルを渡すこともできます。  アプリとして保存し、変換したいファイルを一気にドラッグ&amp;amp;ドロップします。ベースになるファイル名を入力するダイアログが出て、dropbox上にオリジナルファイルをリネームしたものと、画像をリサイズしたものをコピーしたファイルが作られます。オリジナルのファイルはそのまま手をつけてません。
-リサイズの設定や、ファイルのコピー先を変更して使ってください。
-追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。
-訂正：
-2018年05月01日
-このスクリプトではアプリケーションにファイルを渡すことはできません。悪しからず。</description>
+      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
     
     <item>
@@ -49,11 +37,7 @@ GUIフレームワークがGTK+ 3に変更され、見た目が少し変わり�
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
-      <description>しばし句読点で変換のオプションをオンして使っています。
-今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。
-ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。
-贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）
-人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。</description>
+      <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
     
     <item>
@@ -62,12 +46,7 @@ GUIフレームワークがGTK+ 3に変更され、見た目が少し変わり�
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
-      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、
-最近、句読点を打つたびに出てくる、コレがムカッっとします。
-自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から推測候補表示オプションをオフにすることで消えます。
-そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。
-あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。
-PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。</description>
+      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
     
     <item>
@@ -76,11 +55,7 @@ PS：タイでもポケモンGoが公開されたようで、携帯をもって�
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/05/surfacepad/</guid>
-      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。
-日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。
-新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。
-黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。
-アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。</description>
+      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
     </item>
     
     <item>
@@ -89,9 +64,7 @@ PS：タイでもポケモンGoが公開されたようで、携帯をもって�
       <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/02/play-ipod-library/</guid>
-      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！
-充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して） なんか得をした気分。
-※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</description>
+      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
     </item>
     
     <item>
@@ -100,14 +73,7 @@ PS：タイでもポケモンGoが公開されたようで、携帯をもって�
       <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/chromium-autoupdate/</guid>
-      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。
-ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。
-ちょっと調べてみたところ、最新版をビルドしまくっているサイトがあり、スクリプトを使って最新版に更新できることをMacWorldで見つけました。（スクリプトは少し調整してます。）
-※ 普通にサイトよりダウンロードも出来ます。こちらから。ずいぶん控えめなところにダウンロードのリンクがあります。
-情報元:http://www.chromium.org/getting-involved/download-chromium
-ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）
-gallo% sh ./chromium_update.sh Setup... Checking current version... * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf Downloading and unpacking... % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 53.0M 100 53.0M 0 0 1453k 0 0:00:37 0:00:37 --:--:-- 1282k Installing... Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf gallo%  ローカルのアプリが最新であれば、
-gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
+      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
     </item>
     
     <item>
@@ -116,11 +82,7 @@ gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
-      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。
-ただ一連の作業がちょっと面倒なので、アップルスクリプト＋Alfredを使って作業を簡略化しました。
-まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。
-※ MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。
- tell application &amp;quot;System Preferences&amp;quot; activate set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot; end tell tell application &amp;quot;System Events&amp;quot; tell first window of process &amp;quot;System Preferences&amp;quot; tell table 1 of scroll area 1 set selected of row 2 to true end tell tell group 1 click checkbox &amp;quot;Use grayscale&amp;quot; end tell end tell end tell do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot; tell application &amp;quot;System Preferences&amp;quot; to quit  画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</description>
+      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
     
     <item>
@@ -129,11 +91,7 @@ gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
       <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/gray-mode/</guid>
-      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。
-高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）
-※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）
-文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。
- で、画面はこのようになります。お試しあれ。</description>
+      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
     </item>
     
     <item>
@@ -142,18 +100,7 @@ gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
       <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2011/12/computer-naming/</guid>
-      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。
-マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。
-雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。
-ぜひコンピューターに名前をつけましょう。
-私はしっかり名前をつける人で、分野別で付けてます。
-Computer：ビールの名前  MacBookPro15：gallo(グアテマラのビール)
- 黒Thinkpad：Guiness
- 白iBook：Hoegarden
- 緑Vaio P：Ebisu  ※実家の父母機はアサガオとヒマワリ。ファイルサーバーはモス（苔）という名前。
-iPod / Kindle：まめ類  赤iPod Nano：Azuki iPod：DaizuとEdamame。  ストレージ：つまみ moroQ、 umeQ、ikaMaru、など。
-だから何なのといわれればそれまでかもしれませんが、、
-ペット気分でかわいいコンピューターに名前をつけてみてはどうでしょうか。（ストレージとかに愛着が湧くとは思いませんけどね。）</description>
+      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。 マックでは勝手に○○さんのコンピューターなんて味気のない名前が付</description>
     </item>
     
   </channel>

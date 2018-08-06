@@ -19,11 +19,7 @@
       <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/11/pranatice-0100/</guid>
-      <description>カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。
-変更点  iOS９、１０にて呼び出しのスピードが妙に遅くなっていたのを修正 サポートをiOS１０よりに変更 ヘルスケアに書き出しの機能を追加 Swift3.0での完全書き直し ２つの新しいプラナヤマを追加：下記参照 デザインの再調整・リデザイン アイコンデザインの変更：瞑想タイマーとのデザイン統一感を出すため微調整。  アップデートのユーザーの方 新しいアプリは！再インストール！が必要になります。
-お手数をおかけしますが、ご協力のほどよろしくお願いします。
-補足：新しいプラナヤマについて、 スーリア・チャンドラベーダナーという２つの呼吸法を追加しました。流れはアヌロムビロムと似て片側の鼻を使っての呼吸法です。
- スーリアは太陽という意味です。呼吸は右からすい左から吐きます。気を上げます。（元気がない時などに行うと良い。かな。） チャンドラは月。左から右への一方通行の呼吸法です。こちらは逆に気を鎮めます。（緊張している時や、気が高ぶっている時に、深呼吸の代わりに、ぜひお試しを。）  なるべくなら半結跏趺坐で座って行ってください。（左はチン・ムドラで膝に軽くのせ、右手はヴィシヌ・ムドラで呼吸をコントロールします。）</description>
+      <description>カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。 変更点 i</description>
     </item>
     
     <item>
@@ -32,8 +28,7 @@
       <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/11/open-pranatice/</guid>
-      <description>カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコードですが、オープンソース化します。
-音声の細かい調整や、文言の変更などをしたい方は、ぜひダウンロード・ビルドして使って見てください。</description>
+      <description>カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコー</description>
     </item>
     
     <item>
@@ -42,11 +37,7 @@
       <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/02/pranatice-071/</guid>
-      <description>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。
- メインページのデザインの微調整  下に並んでいた最近の状況アイコンを太陽の明るさに変更（中心の円が今日の状況、周りの線が最近12日間の状況。練習するほど白が濃くなります。練習時間が濃度の基準になってます。） ロングタップスタートは変わりませんが、キャンセルはシングルタップになります。 月の位置、フォントの調整・変更    ホーム＞設定＞ Pranatice
- カレンダーの詳細設定 書出しフォーマットの設定（$MINの所に行った時間（分）が書き出されます。）
-  その他
- Iconを少し濃く 最初の状態でタップをすると周りにある雲等の透明度が変化します   </description>
+      <description>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。 メインページのデザインの微調整 下に並んでいた最近の状況ア</description>
     </item>
     
     <item>
@@ -55,9 +46,7 @@
       <pubDate>Mon, 01 Dec 2014 14:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/12/release-pranatice/</guid>
-      <description>久しぶりに新しいソフトを申請しました。
-ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。
- Prāṇāyāma (Sanskrit: प्राणायाम prāṇāyāma) is a Sanskrit word meaning &amp;ldquo;extension of the prāṇa or breath&amp;rdquo; or &amp;ldquo;extension of the life force&amp;rdquo;. The word is composed of two Sanskrit words: prana, life force, or vital energy, (noted particularly as the breath), and ayāma, to extend or draw out. (Not &amp;ldquo;restrain, or control&amp;rdquo; as is often translated from yam instead of ayāma). It is a yogic discipline with origins in ancient India.</description>
+      <description>久しぶりに新しいソフトを申請しました。 ヨガの重要な練習の一つ、プラナヤマ（呼吸法）を行うのを手助けするためのソフトです。 Prāṇāyāma (Sanskrit:</description>
     </item>
     
   </channel>

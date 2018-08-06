@@ -19,10 +19,7 @@
       <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/05/error-gnucash3/</guid>
-      <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、
-No suitable backend was found.  というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 Gnucash.app/Contents/Resources/etc/gnucash/environment の最終行に、
-GNC_DBD_DIR={SYS_LIB}/dbd  を追加することで、エラーを回避できます。 多分、次回アップデートで修正されるとは思います。
-GUIフレームワークがGTK+ 3に変更され、見た目が少し変わりました。そのおかげで？、動作が重くなりました。現状の2.6系でも問題はなかったのでアップデートは中止し、ダウングレード、以前の状態で使ってます。</description>
+      <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、 No suitable backend was found. というエラーが上</description>
     </item>
     
     <item>
@@ -31,15 +28,7 @@ GUIフレームワークがGTK+ 3に変更され、見た目が少し変わり�
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/11/mbp2016/</guid>
-      <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。
-ひさーーしぶりに、というかようやく新しいマックブックプロが出ました。 すごーーーく、楽しみにしていたのですが、、、
-まだ実機を見てもいないし触ってもいないのですが、レビューを見る限り、残念感が漂います。。。拡張性も低いし（それが理由でレティナのマックブックはパスしていた。）、リナックスも走らない様になっているらしいし、、何を繋げるにもアダプターが必要らしいし。。。キーボードもペチペチキーボード。（ため息というか怒りがこみ上げてくるわ。ほんま。。）ポシティブなことろが見つからない。
-買い替え意欲は満々だけれども、魅力が感じられない。。キーボード上の液晶もそんなに利便性が高いとは思わないし、すぐに飽きると思う（全く興味湧かず）。タッチIDは別にiPhone経由でなんかすれば良いのでは？問題があるんか？？。
-格好がよくなったわけでもなく、逆に妙にでかいタッチパッドは野暮ったいくらい、、、物としての魅力があまり感じられない。
-もうマックブックはいいかな、と、、無骨だけどキーボードに定評のあるThinkpadのT460とか、格好も中々良いDellのXPS15をハッキントッシュにして使おうかなと、、。
-追記：ようやくタイでも13インチの実機が展示 で、、、印象は覆せず、、、、
-とりあえず今のMBP15@2011と心中決定！
-次はマジでハッキントッシュにするわ、さようなら、マックブック。。</description>
+      <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
     </item>
     
     <item>
@@ -48,11 +37,7 @@ GUIフレームワークがGTK+ 3に変更され、見た目が少し変わり�
       <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。
-ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだこうだみたいのを作らないといけないと思っていたので拍子抜け。素晴らしい。
-import UIKit import CoreData import ReachabilitySwift import MBProgressHUD import SwiftyDropbox  でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。
-ちなみに、Podfileはこんな感じです。
-project &#39;(a).xcodeproj&#39; platform :ios, &#39;8.0&#39; target &#39;(a)&#39; do use_frameworks! # Pods for (a) pod &#39;ReachabilitySwift&#39; pod &#39;MBProgressHUD&#39; pod &#39;SwiftyDropbox&#39; end  </description>
+      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。 ただ、ヘッダーをインポートするだけ！で</description>
     </item>
     
     <item>
@@ -61,9 +46,7 @@ project &#39;(a).xcodeproj&#39; platform :ios, &#39;8.0&#39; target &#39;(a)&#39
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/install-pods/</guid>
-      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。
-$ pod install Setting up CocoaPods master repo [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`. You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.  で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）
-$ cd .cocoapods/repos/ $ git clone https://github.com/CocoaPods/Specs.git Cloning into &#39;Specs&#39;... remote: Counting objects: 801469, done. remote: Compressing objects: 100% (30/30), done. Receiving objects: 83% (671735/801475), 209.63 MiB | 10.00 KiB/s error: RPC failed; curl 56 SSLRead() return error -980600 KiB/s fatal: The remote end hung up unexpectedly fatal: early EOF fatal: index-pack failed $  思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。 （途中回線が切れること数回、、、）</description>
+      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。 $ pod install Setting up CocoaPods master repo [!] Unable to add</description>
     </item>
     
     <item>
@@ -72,12 +55,7 @@ $ cd .cocoapods/repos/ $ git clone https://github.com/CocoaPods/Specs.git Clonin
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
-      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。
-以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回は、sudo-less で ~/.gem 内にインストール。
-まずは、bashの設定 ~/.bash_profile を弄ります。
-# sudo-less Gem export GEM_HOME=$HOME/.gem export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH  cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）
-ディレクトリーを作り、--user-installのオプションをつけインストールをします。
-$ cd $ mkdir .gem $ gem install activesupport -v 4.2.6 --user-install $ gem install cocoapods --user-install  $ gem install activesupport -v 4.2.6 --user-install Fetching: i18n-0.7.0.gem (100%) Successfully installed i18n-0.7.0 Fetching: thread_safe-0.3.5.gem (100%) Successfully installed thread_safe-0.3.5 Fetching: tzinfo-1.2.2.gem (100%) Successfully installed tzinfo-1.2.2 Fetching: minitest-5.9.0.gem (100%) Successfully installed minitest-5.9.0 Fetching: activesupport-4.2.6.gem (100%) Successfully installed activesupport-4.</description>
+      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。 以前インストールした時に、ちょっと須藤&amp;amp;ジェム</description>
     </item>
     
     <item>
@@ -86,8 +64,7 @@ $ cd $ mkdir .gem $ gem install activesupport -v 4.2.6 --user-install $ gem inst
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/install-homebrew/</guid>
-      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。
-$ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-xr-x 5 jin admin 170B Feb 20 2016 .github/ -rw-r--r-- 1 jin admin 823B Feb 20 2016 .gitignore -rw-r--r-- 1 jin admin 1.3K Feb 20 2016 .travis.yml -rw-r--r-- 1 jin admin 291B Oct 16 2015 .yardopts -rw-r--r-- 1 jin admin 3.1K Jun 1 2015 CODEOFCONDUCT.md drwxr-xr-x 9 jin admin 306B Apr 18 2015 Cellar/ drwxr-xr-x 3 jin admin 102B Nov 11 2015 Frameworks/ -rw-r--r-- 1 jin admin 1.</description>
+      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。 $ cd /usr/local/ total 24 drwxr-xr-x</description>
     </item>
     
     <item>
@@ -96,24 +73,7 @@ $ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/clean-install/</guid>
-      <description> 新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじっていくうちに訳がわからない状態になっていることが多い。）
-今回は、初めてタイムマシーンを使ってみましたが、あまりクリーンインストールでは役に立たないことに気づきました。しかも、中に入っているファイルをコピーするのがすごーーく遅いです。。ただ、丸ごと復元するならすごく良いと思います。
-（それ以前はrsyncでバックアップとって、そこから必要なファイルを取っていました。次回からはまた、rsyncでバックアップするつもり。）
-基本的な動作などの設定。 まずはタップでクリックにする。
-英語版キーボードのキャップロックをコントロールキーに変更。
-右下のホットコーナーを、デスクトップ表示にする。
-老眼がどんどん進行し、ポインターがどんどんでかくなる。と、2011年MBPなので、透明度を控え目にする。
-ドックは自動で出たり入ったり、でもほとんど使ってない気がする。アプリの立ち上げは、Spotlight（かAlfred、どっちにするべか。。）。
-「誰々さんのコンピューター」のネーミングは恥ずかしいので、コンピューターに名前をつけます。宿とかで丸見え、変えてない人がいかに多いか。。。 ちなみに、私の端末はビール名で統一してます。
-フォルダーのサイドバーを変更。
-ことえりも、変換候補文字もデカくして、句読点で変換にする。フォントも細いタイプのものに変更。自動変換と推測変換はオフ。
-メニューバーのバッテリー表示にパーセンを追加。
-スポットライトは、デフォルトの状態では勝手にいろんなものを検索の対象にされてしまうので必要なものに絞ります。別に怪しいファイルがあるわけでは無い。
-これも、バックグランドで動かされるとあまり気分が良いものでは無いのでオフにします。 （旅先が多いので、全てのソフトに対して、自動アップデートはオフにしてます。）
-そして、シェルの変更を行う。環境設定のユーザーより。
-Safari サファリでは、検索エンジン、ダウンロードファイルの自動解凍処理のオフ、プライベートウィンドウ表示、エクステンションのインストール。
- データの移行は、~Library/Safari/ をそのまま新しい環境へ。ただし、Extenstionは再インストールする必要がある。  ※ ちなみに、現在の最強のブラウザー環境は多分、こんな感じなのかな。。
-iTunes と Mail  iTunes：iTunesフォルダーをそのままコピー。 メールは上記のようにスッキリとはいかない。アカウントは新しく設定し直す。メールのルールは ~/Library/Mail/V3/MailData/SyncedRules.plist 持ってくる。  </description>
+      <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
     </item>
     
     <item>
@@ -122,11 +82,7 @@ iTunes と Mail  iTunes：iTunesフォルダーをそのままコピー。 メ�
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
-      <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かないようなので、結局エルキャピタンで落ち着く事になりました、無念。
-で、偶然見つけた日本語フォント ヒラギノ角ゴシック：Hiragino Sans がかなりいいです。 シエラで付いてきているのかと思ったら、El Capitanにも入っていました。
-ウェイトも０〜９！！までと細かくあります。ちょっと細めのフォントが個人的には好きで、品があって読みやすいと思います。
-上のスクリーンショットはW1です。レティナのディスプレイであれば、W0でも奇麗に表示されると思います、うらやましい。。（MBA11にてのW.0はちょっと擦れた感じが出る。）
-何はともあれ、早く新しいMBPを出してほしい。。</description>
+      <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
     </item>
     
     <item>
@@ -135,11 +91,7 @@ iTunes と Mail  iTunes：iTunesフォルダーをそのままコピー。 メ�
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
-      <description>しばし句読点で変換のオプションをオンして使っています。
-今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今までのその習慣からの脱却が大変でした。ちょっと間のあるタイミングでスペースキーを押していたので、ちょっとその所を抜け出すのに少し時間がかかりました。指が勝手に動く。。多分昔から使っていて、おバカなことえりを信用できないので、短い文節単位で変換する癖がついてしまっているようです。
-ちょっと意識して使ってみると変換効率もそれほど悪くなく、バシバシスペースキーを叩く必要も無いように思えてくる。ことえりも割と賢くなっているようです。さらに、それによって、スペースキーを押す時にちょっとトラックパッドに引っかかりポインターがずれることが少なくなりました。
-贅沢を言えば、；や：でも変換してくれるとありがたい。（感嘆符，疑問符でも変換をしてくれます。）
-人により文体が違うので一概には言えませんが、試してみる価値はあると思います、オススメです。</description>
+      <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
     
     <item>
@@ -148,12 +100,7 @@ iTunes と Mail  iTunes：iTunesフォルダーをそのままコピー。 メ�
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
-      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、
-最近、句読点を打つたびに出てくる、コレがムカッっとします。
-自分が書いた文書からの推測なので、なんとも言い難いのですが。。ともかく、設定から推測候補表示オプションをオフにすることで消えます。
-そのうち、変換ツッコミ機能とか出てくるんじゃ無いかと、、期待。
-あっ、「句読点で変換」なんて言うのもあったのね。。試そ。。後々追記します。
-PS：タイでもポケモンGoが公開されたようで、携帯をもってフラフラする人たちをかなり目にするようになりました。「なんだ、こやつは？」と最初思いました。挙動がね、、ちょっと独特なような。。</description>
+      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
     
     <item>
@@ -162,17 +109,7 @@ PS：タイでもポケモンGoが公開されたようで、携帯をもって�
       <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
-      <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる
-そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきてます。 かなり長い期間マイナーアップデートが続いていたので、今回のフルアップデートはかなり期待してます。多分しっかりと長いこと考えられたにちがい無いと、。
-そこで、勝手な推測をしたいと、 まず、ThinkPadで不評をかいすぐに元の形に戻された、OLEDタッチバーの搭載。今ひとつ使い道がわからないし、バッテリーの無駄では？と思ったりするが、、、
-で、勝手な推測ではOLEDタッチバーの部分には、追加で
- TouchIDの機能 モーションディテクター（画面の前にて、手を払いスワイプとかが可能(要らないけど）） サプライズ：こりゃ気がつかなかった凄い的ななんか。  が搭載されると、というか、これくらい無いと、、、。ただ単にOLEDタッチバーだけだと非常に失望。まさかノーティフィケーションが流れたりしないだろうな(ダサい)。。
-※：モーションディテクターは数年前に関連の会社を買収したっていうのを思い出したので付いてくるだろうと推測に至る。
-そして、希望とボヤき 希望、  ヘナペナキーボードはやーーめて 分解しやすい作りでよろしく、直付けとかなしね ノングレア液晶 10時間はもってね 1.5kg以下ならパーフェクト 私機MBP15ではDVDDriveをHDに換装しSSDとフュージョンドライブにして使っているのだけど、非常に良いです。Flashの容量は少なく安くなっととはいえ高価なので、Flashと1.8インチHD(今の技術なら1TBくらい作れないのか？？）で是非フュージョンドライブを使えるようにしてちょ 円高プライス  ぼやき、、 USB-Cポートが左右に2個ずつ、合計4つ。SDカードスロットは無しとの情報が出ている。これはプロラインとして改悪、USB-Cポートの利便性がそこまで高いとは思わないのだが、、。見た感じも良く無い。 どんなユーザーが４つのポートを必要としているのか理解できない。
- 電源 外部モニター iPhone ハードディスク  ということか？うーーん、わかる気もするが、なーーーーんか解せん。右と左に２つづつとう言うのも違和感がある。
-ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
-！！！SDカードスロットは必須じゃろーー！！！
-と、早くも買い換え気分が激減、中古の15レティナにするかな（弱気）。。。</description>
+      <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきて</description>
     </item>
     
     <item>
@@ -181,10 +118,7 @@ ThunderBoltはどーなる？あの高いケーブル代を返せーーっ！
       <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
-      <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。
- ディスク番号確認：diskutil list フュージョンドライブ作成：diskutil cs create ボリューム作成：diskutil coreStorage createVolume  詳細 Fusion化を行うディスクの番号を diskutil list にて把握。そして diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 にてLogical Volume Groupを構築。
-※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。
-shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 Started CoreStorage operation Unmounting disk1 Repartitioning disk1 Unmounting disk Creating the partition map Rediscovering disk1 Adding disk1s2 to Logical Volume Group Unmounting disk2 Repartitioning disk2 Unmounting disk Creating the partition map Rediscovering disk2 Adding disk2s2 to Logical Volume Group Creating Core Storage Logical Volume Group Switching disk1s2 to Core Storage Switching disk2s2 to Core Storage Waiting for Logical Volume Group to appear Discovered new Logical Volume Group &amp;quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&amp;quot; Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12 Finished CoreStorage operation shingha:~ $  Volumeを diskutil cs createVolume &amp;quot;new Logical Volume Group 番号&amp;quot; jhfs+ &amp;quot;Fusion.</description>
+      <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
     </item>
     
     <item>
@@ -193,15 +127,7 @@ shingha:~ $ diskutil cs create &amp;quot;Fusion Drive&amp;quot; disk1 disk2 Star
       <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/06/denon-da10/</guid>
-      <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。
-以前は iBassoのD2を使っていた。iPodと同じ大きさでオペアンプも交換可能、USBでMacBookに繋げばDACとしても機能する。大きな不具合は無いのだが、iPodとの接続はアナログラインのみ、かつちょっと大きい充電アダプターを持ち歩かなくては行けないのがかなりのネック。
-ここ数年Hi-Fiオーディオの流行により新しいアンプが幾つか売りに出てきたので機種変更。iPodにデジタル対応しているものはSony PHA1, Fostex HP-P1, Denon DA-10、他幾つか。。
-SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1は大きいしデザインがあまり好きなれない、後発になるDENONがちょっと太り気味感じではあるが気になっていた。値段も３万円を切りお手頃な感じになり、そろそろ市場から消えてしまう前に購入をする。
-※ 本当は持っているiPodVideoで使いたかったのだが、リサーチ不足で使えない事に買った後に気づく。状況に合わせて使い方を分ける。
-パート１：小お出かけ 母がなぜか持っていたiPodNanoを頂く。8GBと制約があるので、お気に入りの音楽を中心に入れておく。
-パート２：中お出かけ iPodNanoの16GBバージョン：持ち出す前にちょっとセレクト。もしくはランダムに入れておく。惜しくはこれも母からのお下がりのiPhone4S (16GB)。DA-10とは一番収まりが良い。
-パート３：ノマドデスクトップ ノマドマシーンMBA11にはiTuneのライブラリは入っていないので。右にiPodVideo、左にDA-10を接続してiPodのライブラリに入っている曲を聴く。
-でもいい音で聞くと、思わず聞き入ってしまうので、ながら聴はできないのが問題か。。。</description>
+      <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
     </item>
     
     <item>
@@ -210,13 +136,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/06/elcapitan-beta/</guid>
-      <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落とす事ができるようになる。XCode7を使う為、あまり容量の無いMBA11-128GBに無理矢理スペースつくり、El Capitanを入れてみる事にする。（発表されてこの文章を書いている途中までEl Captainだと、ヨセミテ隊の大尉だと、、勘違いをする。）
-ちなみに、SafariにAdBlockのエクステンションが入っていると、ダウンロードのサイトがうまく機能しないよう、AdBlockを一時停止して機能する。（分からず、Firefoxでダウンロード。）
-現在の開発機は去年秋にアップデートしたマーベリックがメインの環境で、多分ヨセミテはスキップする事になりそう。ヨセミテの使用時間は多分数時間にも満たない、良い印象はあまり無い。。。 ちまたではWindows10が新しいMacbookではヨセミテより軽快に動いているとネットで見聞きする。エルキャプテンではパフォーマンスが向上するとの触れ込みなので、ちょっと期待しダウンロードする。
-インストラーを起動+再起動後、20分ほどで作業終了。初期ディスク占有容量は7.08GB。
-なぜか、未だヨセミテの名前がついている。一瞬別の物を入れてしまったと思った。。再起動後直る。
-さて、ヨセミテとの比較はできないけれどもキャピタンとXcode7の使用感を、、、
-良い点  フラットなデザインがようやく落ち着いた感じになる。 ことえりの自動変換が割りと心地よい！ 上部メニューを「自動で隠す」ことができる  悪い点  メニューバーでのバッテリーの残量表示時間がかなり短くなる フォルダーの色が好きになれない。 20GBを割り当ててインストールしたものの、唯一使いたいXCode7（8.76GB）が、容量が足らず入らない。  と、マイナーアップデートな感じで可もなく不可もない、まだベーターなのでこれからさらにブラッシュアップされる事を期待。移行するにはまだ個人的にいくつかの要件が満たされないとできないが、XCode7を使う開発環境という事で当分はDualOSで使う。完全な移行は多分実家に置いてあるメインのMBA15-2011を買い替えるとき、、来年か。。</description>
+      <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
     </item>
     
     <item>
@@ -225,11 +145,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/05/surfacepad/</guid>
-      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。
-日本のアマゾンでは売っていなかったので、アメリカアマゾンより購入。写真はついでに買った、MBP15の赤バージョン。昔の大きめなパッケージと違い、折り畳まれ小さい小包に入って来ました。形も少し変わって、キーボートの上につく部分は無くなってしまってます。前のバージョンの方が収まりが良いのに残念。
-新しいシリーズは赤色の革なのでちょっと、中年男にはきつすぎる。姪っ子にプレゼントする方は赤い革をつけてあげる。
-黒の物はもう販売元からは売っていないようで流通している物が切れたら終わりのよう。
-アップルWatchを持っている人や、時計を付けている貴兄には、お互いが擦れて傷になってしまうのを防ぐ事ができるので（15インチのMBP）、デザインも合わせてこのアクセサリーはお勧め。</description>
+      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
     </item>
     
     <item>
@@ -238,9 +154,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Tue, 10 Mar 2015 05:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/new-macbook/</guid>
-      <description>早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。
- ちょっと、高いのでは、、 いや、高い。 単体では使えない 対応しているiPhoneを持っていない。（極め手）  そして、かーーーなーり期待していた「新しいMacbook」ですが、
-良い点は、  キーボードに手が加えられた レティナでいながら電池は持つ 色のオプションがある 軽い  で、あまり好きになれない点は、  デザイン（薄さにこだわりすぎ、キーボート上の排気メッシュも好きになれない。） プロセッサー（多分充分に速いのだろうけど。。） ポート（シンプルさとポートを削るというのは意味合いが少し違うと思う。何も無くなるというのなら（非接触充電で）分かるけど。。）  本当はこれを機会に、機材をすべてを入れ替えようと思ってましたが今回は飛ばします。 昨年MBP15が壊れ、致し方なくタイで買った MacBookAir11 をSSDを大きいものに換えて使い続けようと思います。アップルケアも買っとくかな。。</description>
+      <description>早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。 ちょっと、高いのでは、、 いや、高い。 単体では使えない 対</description>
     </item>
     
     <item>
@@ -249,9 +163,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/02/play-ipod-library/</guid>
-      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！
-充電するために繋げてみて認識され、音楽ファイルをダブルクリックすると、あらま、再生します。一体いつ頃からできるようになっていたのだろうか？iPodで聞くよりMBAで聞いた方が音が良いような気がするので（もちろんヘッドフォンを通して） なんか得をした気分。
-※ 新しいKLIA2にて、免税店で酒を買っていくかどうか悩みつつ、書く。</description>
+      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
     </item>
     
     <item>
@@ -260,9 +172,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/11/mba-review/</guid>
-      <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。
- 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小さい割には充電も早い。タイは200Vだからなのか１時間くらいでフルチャージになる。 キーの感じは最初はすごく薄くペタペタで窮屈な感じがしたけれど、違和感は減り馴染む。 液晶はやはり小さい。懸念の肩こりも現状維持。 テカテカ液晶は自分の顔が反射して見えたりして好きではないが、ギラギラはしてないのでギリギリセーフ。 RAM 4GBでは足りないだろうと思ったが、今のところそこまでスピードが遅くなる事はなく小気味よく動いている。 CPUパフォーマンスも期待以上によい。重い画像の編集などはしませんが、簡単なグラフィックの制作や、Xcodeでのビルドなどもストレスなく行える。 128GB SSDはメディアを入れたり、ウィンドウズを入れるならちょっと足りないだろう。（私は現時点で残り45GB) SDカードスロットは無くても別に困らない。デジカメ等のデーター取り込みもUSB接続で私の場合は気にならない。 スピーカーの音質は悪い。 お腹の上にのっけて使ってもそこまで熱くならず、（逆に冬場だと気持ちよいかもしれない、）重さで肋骨や下腹部が痛くなる事もない。ただ、液晶がもう少し奥まで倒れたら最高。 キーボードに印字されているタイ語にちょっと愛着がわく。次はシンハラ文字版が欲しくなってきてる。。 OSは結局、XCode5が動くマーベリックがメインになる。（うれしい事にMBP15-MountainLionのディスクでも起動する。）  と、期待をよい意味で裏切られる、ほとんどネガティブな事のない大絶賛マシーン、外に持ち出すなら最強だと思う。（特にセカンドマシーンして）
-ちょっとうれしかったのでポストする。</description>
+      <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
     </item>
     
     <item>
@@ -271,12 +181,7 @@ SonyのPHA1は iBasso D2 と同じDACのチップと面白みは無いし HP-P1�
       <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/11/macbookair11/</guid>
-      <description>さよなら、MBP15、サワディクラップ、MBA11。
-タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変調の兆しがあり、あっさり逝ってしまう。このまま、開発作業も中途半端に投げ捨ててしまおうかとも思うが、iOS8への対応も中途半端。日本で修理に出すも日本を出たばかりだから、帰国時の来年の秋か無理をして春。
-本当は来年の２月頃発表になる12インチのMBA Retinaで機材をフルリニューアルするつもりでいた。思わぬ出来事に２•３日どうしようかと悩む。ここタイで直すという選択肢もあるが、タイには正規なアップルショップはまだなく、時間もかなりかかり信頼もできない。
-MBP15は開発が一段落終えたらタイに置いて出るつもりでいたので、旅に持っていく事を理由付けにして、MBA11 w/US Keyboard+RAM8GBを目当てにタイのアップル代理店iStudioへ行く。カスタム仕様だとアメリカに注文を出すらしく２週間はかかるらしく、在庫はノーマルのタイ語キーボードの物しかないとの事。さすが王国だけあって外人には媚びていない。ある意味商売べたでもある。金額は免税の処置をしても昨今の急激な円安のせいでタイで買うお得感が全くない。日銀に恨み節。。無駄遣い感がぬぐい去れない。購入意欲が一気に減少する。
-ちょっと考えるといって店を出て、代理店の入っているショッピングセンター内を５分くらいフラフラと歩く。独り言をぶつぶつと呟く。タイのキーボードはUSと同じレイアウトなので、日本に帰ったらキーボードカバーをつければよい、タイの文字が入っているのも記念だし、と、儲けたら、どこかの孤児院にでも寄付すればいいかと、買う方向にモーチベーションも持っていく。
-店に戻り、お兄さん、やっぱり持って帰るわとクレジットカードで購入。あっという間。</description>
+      <description>さよなら、MBP15、サワディクラップ、MBA11。 タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変</description>
     </item>
     
     <item>
@@ -285,9 +190,7 @@ MBP15は開発が一段落終えたらタイに置いて出るつもりでいた
       <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/10/yosemite/</guid>
-      <description>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリックを飛ばすが、体感的にスピードが落ちている感じはないし、iOS8向けの開発にはマーベリック以上が必要という事でディスクを切り分けてクリーンインストールをする事にした。怪しげな物もを処分、メキシコのテピートで購入したアドビのCS3やバンコクで買ったオフィスなどからもとうとう卒業できそうな予感。
-本体のSSDをバックアップをしようとCCCを使うが、エラーが起きたり、立ち上がらなかったりと厄介な事になる。代替をネットで探すと、OSXのDiskUtilityのRestore(復元）で別パーティションに丸まるコピーができると知る。DiskUtilityでは、パーティションのサイズが変えられたりと気がついたらかなりバージョンアップしてる。ちょっとびっくり。しかしヨセミテではなぜだか論理ディスクを採用なのか、インストール後のパーティションのリザイズが出来なくなる。改悪で最悪だ、イラッとする。
-Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemite自体の印象は悪くないのでもう少し落ち着いたらじわじわ移行するつもり。</description>
+      <description>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリック</description>
     </item>
     
     <item>
@@ -296,14 +199,7 @@ Xcodeで面倒な不具合があったりで、未だメインは山猫。Yosemi
       <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/chromium-autoupdate/</guid>
-      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。
-ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。
-ちょっと調べてみたところ、最新版をビルドしまくっているサイトがあり、スクリプトを使って最新版に更新できることをMacWorldで見つけました。（スクリプトは少し調整してます。）
-※ 普通にサイトよりダウンロードも出来ます。こちらから。ずいぶん控えめなところにダウンロードのリンクがあります。
-情報元:http://www.chromium.org/getting-involved/download-chromium
-ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）
-gallo% sh ./chromium_update.sh Setup... Checking current version... * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 10a20c605130a26efce0e5640c4a7d56a706f5bf Downloading and unpacking... % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 53.0M 100 53.0M 0 0 1453k 0 0:00:37 0:00:37 --:--:-- 1282k Installing... Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf gallo%  ローカルのアプリが最新であれば、
-gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
+      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
     </item>
     
     <item>
@@ -312,18 +208,7 @@ gallo% sh ./chromium_update.sh Setup... Checking current version.</description>
       <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/03/textmate2/</guid>
-      <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オープンソース化（ずいぶん長いこと知りませんでした。）され、version2になって日本語での表示／入力の問題もクリアーになったのが大きな理由です。（SublimeTextもありますが、向こうさんも日本語でちょっと問題があるし、ちょっと私との相性も良くないみたい。）
-元々評判の良いエディタですが、やはり良いです。痒い所に手の届く感じです。あまりエディタ自体に機能は求めていなかったのですが、ちょっとこれまでの考えを改めなければと思いました。
-ちょっといじった所を、
-メニューショートカットの変更。 アプリケーションメニューのショートカットキーの割当を変更します。Xcodeでファイルブラウザーの表示／非表示はCommand+0でよく使うショートカットなので、Textmateでも同様の形に変更します。
-アプリケーションの環境設定から変えるものだと思っていましたが、システム環境のキーボードの所から変更します。
-恥ずかしながらこのように設定をする事が出来るとは知りませんでした。他のソフトでも使えそうですし、ちょっと便利です。自分が慣れ親しんだように色々と変更してみるといいです。
-スニペットの登録 そしてBundle（プラグインのようなもの）にてスニペットの登録をいくつかします。メニューのBublesからEdit Bundlesで編集します。 Textのバンドルに追加したものは全てのファイルに適用されます。もし特定のmarkdownやphpに適用したい時はそのバンドルを編集してください。ファイルの拡張子で識別していると思います。
-Command+nで新規の登録です。プルダウンでSnippetを選びます。
-簡単なタイムスタンプはnowとタイピングしてタブキーを押して挿入の形にします。
-オクトプレスをブログに使っているのでそのイメージタグの挿入は
-キーの登録はオクトプレス関連は全てControl+oに割り当ててます。これでショートカットを押すと複数ある場合そのリストが表示されます。別々に名前を割り当てるのは覚えるのがちょっと、、なので一作業増えますがこのような形にしました。
-その他 一部英文の所もありますが、オフィシャルサイトに細かい日本語のマニュアルもありますのでぜひ目を通してみてください。</description>
+      <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オー</description>
     </item>
     
     <item>
@@ -332,11 +217,7 @@ Command+nで新規の登録です。プルダウンでSnippetを選びます。
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
-      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。
-ただ一連の作業がちょっと面倒なので、アップルスクリプト＋Alfredを使って作業を簡略化しました。
-まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。
-※ MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。
- tell application &amp;quot;System Preferences&amp;quot; activate set current pane to pane &amp;quot;com.apple.preference.universalaccess&amp;quot; end tell tell application &amp;quot;System Events&amp;quot; tell first window of process &amp;quot;System Preferences&amp;quot; tell table 1 of scroll area 1 set selected of row 2 to true end tell tell group 1 click checkbox &amp;quot;Use grayscale&amp;quot; end tell end tell end tell do shell script &amp;quot;terminal-notifier -message \&amp;quot;Color mode has been changed.\&amp;quot; -title \&amp;quot;Diplay\&amp;quot;&amp;quot; tell application &amp;quot;System Preferences&amp;quot; to quit  画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</description>
+      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
     
     <item>
@@ -345,11 +226,7 @@ Command+nで新規の登録です。プルダウンでSnippetを選びます。
       <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/gray-mode/</guid>
-      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセシビリティよりグレースケールの所をチェック。コントラストもほんの少しあげてます。
-高解像度の液晶を使っているので、老眼兆候のその一でもありますが、カーソルサイズをちょっと大きくもしてます。（OSXライオンからカーソル大きくしてもジャギーでなくなりました。）
-※ ちょっと障害のある父もマックを使っていて、使い勝手でちょっとなぁーと、気になる所が改善されるのはありがたいです。（たぶん、どのOSも高齢者や障害者にたいしてはあまりフレンドリーでは無いような。。。）
-文字を読んだり書いたりするには割と良いかもしれません。集中できるような気がします。
- で、画面はこのようになります。お試しあれ。</description>
+      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
     </item>
     
     <item>
@@ -358,18 +235,7 @@ Command+nで新規の登録です。プルダウンでSnippetを選びます。
       <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2011/12/computer-naming/</guid>
-      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。
-マックでは勝手に○○さんのコンピューターなんて味気のない名前が付けられてしまいますし、Windowsに至ってはメーカー名と無機的な番号の羅列。
-雰囲気の悪い教室に入ったようで気味が悪いっす。 ウイルスにやられそうな気にすらなります。
-ぜひコンピューターに名前をつけましょう。
-私はしっかり名前をつける人で、分野別で付けてます。
-Computer：ビールの名前  MacBookPro15：gallo(グアテマラのビール)
- 黒Thinkpad：Guiness
- 白iBook：Hoegarden
- 緑Vaio P：Ebisu  ※実家の父母機はアサガオとヒマワリ。ファイルサーバーはモス（苔）という名前。
-iPod / Kindle：まめ類  赤iPod Nano：Azuki iPod：DaizuとEdamame。  ストレージ：つまみ moroQ、 umeQ、ikaMaru、など。
-だから何なのといわれればそれまでかもしれませんが、、
-ペット気分でかわいいコンピューターに名前をつけてみてはどうでしょうか。（ストレージとかに愛着が湧くとは思いませんけどね。）</description>
+      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。 マックでは勝手に○○さんのコンピューターなんて味気のない名前が付</description>
     </item>
     
   </channel>

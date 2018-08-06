@@ -19,8 +19,7 @@
       <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/cosper-193/</guid>
-      <description>固定だったcosperのコスパ総額表示: 記事 を選択可能にしました。きつきつの表示を嫌う方はオフにできます。
-Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix  セルの消去時など、動きがスムースで無いところを調整しました。  Add  金額表示設定の追加：デフォルトは下記画像のように総額表示のみの設定になっています。  おまけ：クリーンインストール後、プロビジョンがグジャグジャになってるな。Revokeしたのがまちがいか、、とりあえず、XCodeにお任せでFixして行ってみる。問題があればビルドや、アプストアップ時に問題になるので様子見。</description>
+      <description>固定だったcosperのコスパ総額表示: 記事 を選択可能にしました。きつきつの表示を嫌う方はオフにできます。 Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix セルの消去時など、</description>
     </item>
     
     <item>
@@ -29,15 +28,7 @@ Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix  セルの消去時など、動�
       <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/cosper-display/</guid>
-      <description>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。
-機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、
-拙作アプリ、コスパ.1.9.2より、ナビバーに総額表示を追加しましたが、使っていると、コストパフォーマンスの総額も表示したいなと思い試してみました。そして、表示してみたところ、
-うーーーーん、少しきつきつだな、しかも思ったより結構使ってるな。。。詰めて表示をしてくれるわけでは無いので、カテゴリーの名前次第で窮屈になってしまう、バランスも悪い。これがドルとかユーロなら収まりも良い感じがするが、残念ながら日本円ではギリギリセーフな感じもするが、無理かな、ちょっと迷う。（ラオスのような１ドル＝7000キップ通貨の国だと大変なことになってしまう。ハイパーインフレだったジンバブエドルなんかやったらどうなることやら。。。）
-もう一回長押しで表示したりすることや、ターブルビューのフッターで表示も考えるが、あまり操作を複雑にするのは気が進まないし、見た目もこれ以上余計なもの入れたく無い。情報の入ったヘッダー部を下に引っ張ってチラ見確認というのはありかな。。と、このポストを書いている最中に思いつくけど、これもちょっと違う感じもする。
-実機に入れ、数日自分で使ってみて決めることにする。
-で、しばし使ってみたけれど今ひとつ決めがたい、、、ってよく考えてみたら、迷ったらユーザーに選んでもらえれば良いじゃ無いかと、、当たり前なことに気づく。（でもねぇ、後で、表示が切れるとか文句が出そうでねぇ、正直なところ、今ひとつ乗り気では無い。）
-ということで、設定に新しい項目を追加、にします。
-ちょっと他のところもいじっているので更新はしばし後です。乞うご期待。</description>
+      <description>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。 機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、 拙作アプリ、コスパ.1.9.2より</description>
     </item>
     
     <item>
@@ -46,8 +37,7 @@ Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix  セルの消去時など、動�
       <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/cosper-192/</guid>
-      <description> 気になっていた部分の調整と、ちょっとした機能を追加しました。
-Change Log [1.9.2] - 2016-08-22 @ ChiangMai Change  左色バーの切り目を、今まではメモがあるものに自動で付いていたのですが、これからは任意での表示になります。オンオフは、詳細ページのメモ入力欄、右下に切り込みボタンで行います。ちょっとタイトかもしれません。  Add  カテゴリー表示時の長押し状態の時にそのカテゴリの総額を表示するようにしました。（最近自転車を買いまして、色々と部品やらアクセサリーやらを買い足していくうちに思いつきました、結構使っちまったな。。。３つのカテゴリーでは少ないかなと思ってますが、、、増やすには左バーの色を増やすか、カテゴリーの色を２色に削るかしかなく、ちょっとムリがある。宿題の一つかな、アイディアのある方はぜひご教授いただけるとありがたいです。）  </description>
+      <description>気になっていた部分の調整と、ちょっとした機能を追加しました。 Change Log [1.9.2] - 2016-08-22 @ ChiangMai Change 左色バーの切り目を、今まではメモがあるものに自動で付いていたので</description>
     </item>
     
     <item>
@@ -56,8 +46,7 @@ Change Log [1.9.2] - 2016-08-22 @ ChiangMai Change  左色バーの切り目を�
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/07/cosper-191/</guid>
-      <description> あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。
-Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイトルが反映されないバグの修正  </description>
+      <description>あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。 Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix 設定にて変更したタイトルが反</description>
     </item>
     
     <item>
@@ -66,11 +55,7 @@ Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix  設定にて変更したタイ�
       <pubDate>Thu, 07 Jul 2016 05:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/07/cosper-190/</guid>
-      <description> Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。
-ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学のプールで泳いだりして健康的なここ最近です。
-ちょっと新しいことを思いついたりして、作業がグジャグジャになりつつ、どんどんコードがスパゲティ化していて気分が良くないのですが、、、取り急ぎ機能の追加はせずにSwiftによる移行のみで申請です。もーーーしかしたらアップデートでデータが消えるかもしれません。多分大丈夫だとは思うが、ちょっと検証できず。シミュレータでは問題無しなのだが、、。
-技術的にはメジャーアップデート、ゼロから書き直しのSwift100パーセントです。いやーー、吐きそうですわ。。
-Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモード お蔵入りリスト（ナビゲーションバーをスワイプアップで選択、左右のスワイプで抜けます）  Changed  アイコンの変更 (お気に入りのフォント：Gill Sansにスラッシュラインを一本のみにしました。) 詳細ページレイアウトの変更 iOS9以降でのサポート  Fix  金額と項目の名前が長さにより表示に不具合が出てしまう件を修正  Removed  透明度を削除  </description>
+      <description>Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。 ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学</description>
     </item>
     
     <item>
@@ -79,7 +64,7 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
       <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/11/cosper-162/</guid>
-      <description>cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化のないマイナーアップデートですが、iOS8ユーザーの方にはご迷惑をおかけしました。よろしくお願いいたします。</description>
+      <description>cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化</description>
     </item>
     
     <item>
@@ -88,8 +73,7 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
       <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/10/update-x60/</guid>
-      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。
-そして、AdMobを6.12にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</description>
+      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますので</description>
     </item>
     
     <item>
@@ -98,9 +82,7 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
       <pubDate>Wed, 17 Jul 2013 08:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/cosper-150/</guid>
-      <description>入力画面のリニューがメインのアップデートです。
- アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更
- フォントを太字、ノーマル、細字に変更できるようにしました。（日本語は変わりません。） 入力画面をリデザイン、フォントを変更してメリハリを付けました。 色ロック方法が変わります。 参照 （前：右下の鍵をタップでオンオフ、新：ナビバーのしたの色ドットをタップでオンオフ（オン時にはドットに白い穴があきます）） 入力画面でカウンター設定時に表示の順が正しく表示されないバグの修正。  そして、恥ずかしながらDairy Use は間違いでして、Daily Useが正しく、毎日利用の意味。 （ちなみに今までは牛乳利用？もしくは乳製品利用になってました。）</description>
+      <description>入力画面のリニューがメインのアップデートです。 アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更 フォントを太字、ノーマル、細字</description>
     </item>
     
     <item>
@@ -109,9 +91,7 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
-以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
-新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
@@ -120,8 +100,7 @@ Change Log [1.9.0 - Swift release] - 2016-07-07 @ ChiangMai Added  ダークモ�
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
-      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。
-OSのバージョンが上がるたびに、穴だらけ。。。しかも気付くのが遅過ぎですね。。。(反省)</description>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
     </item>
     
     <item>
@@ -130,8 +109,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/05/admob-update/</guid>
-      <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いているようです。
-たぶん落ちる事も少なくなるかな？。。</description>
+      <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いてい</description>
     </item>
     
     <item>
@@ -140,8 +118,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/04/colormode/</guid>
-      <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変えたい時に使ってみてください。細かい内容はこちらのポストを参照のほど。
-同時に削除時にたまに落ちるバグも取り除きました。</description>
+      <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変</description>
     </item>
     
     <item>
@@ -150,10 +127,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
-そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
-広告がらみの変更。ご理解のほど。。
-タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
@@ -162,8 +136,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。
-そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
     </item>
     
     <item>
@@ -172,8 +145,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
-インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
@@ -182,8 +154,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
-そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
     
     <item>
@@ -192,8 +163,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
-      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。
-で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。</description>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
     </item>
     
     <item>
@@ -202,11 +172,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
-      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。 今まで手に付けてなかったのが不思議なくらいです。。
-設定方法は、
-アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。
-頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）
-今週中にはポコポコとアップされると思います。 セールもやっていますので、なにとぞ、よろしく。</description>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
     </item>
     
     <item>
@@ -215,14 +181,7 @@ OSのバージョンが上がるたびに、穴だらけ。。。しかも気付
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
-      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。
-Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。
-で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。
-不具合のほとんどはテーブルセル部の
-[self.nextResponder touchesBegan:touches withEvent:event]  が問題だったようで、（既知の問題でした。）
-[super touchesBegan:touches withEvent:event];  に修正しました。シミュレーター上では動いてます。
-去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。
-※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。</description>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
     </item>
     
   </channel>

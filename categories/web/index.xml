@@ -19,16 +19,7 @@
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/04/rename-automator/</guid>
-      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単なものを探していたのですが、簡易的な形の物までしか見つけられなかったので、自分で作ることにしました。
-アップルスクリプトにするか、シェルにするかなど、色々と方法あるのですが、結局 一番すっきりした？（未だ、全然すっきりせず。。）感じのオートメーターを使いました。
-結果うまくいきましたので、画像の扱いは人それぞれ違うと思いますが、ブロガーの方には割と重宝すると思い、公開します。
-(日付-TITLE-##.jpg: 日付けとナンバリングにタイトルをつけ、拡張子を小文字にします。)
- 直前のValuable(変数)に作業が行われるようで、その取り扱いで少し難儀しました。元のファイルは old_image_name でとっておき、アップルスクリプトでタイトル名を所得し、image_name として値をセットしておきます。（あっちでキープして、こっちでまた戻したり、、う〜ん。。変態やな。）   そして、ファイルをコピーし、image_name を元にしてリネーム・リサイズの作業。あまりファイルのサイズの節約にはならないけれど、ImageOptimにファイルを渡すこともできます。  アプリとして保存し、変換したいファイルを一気にドラッグ&amp;amp;ドロップします。ベースになるファイル名を入力するダイアログが出て、dropbox上にオリジナルファイルをリネームしたものと、画像をリサイズしたものをコピーしたファイルが作られます。オリジナルのファイルはそのまま手をつけてません。
-リサイズの設定や、ファイルのコピー先を変更して使ってください。
-追記： なぜか縦向きの写真は別の作業としてカウントされるようです。リネーム名のダイアログが二度出てきます。。 私の使用上問題なし、放置。
-訂正：
-2018年05月01日
-このスクリプトではアプリケーションにファイルを渡すことはできません。悪しからず。</description>
+      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
     
     <item>
@@ -37,11 +28,7 @@
       <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
-      <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTとの連携とデプロイを再設定しました。
-Octopressでは rake deploy で一発で github に更新できたのですが、Hugoではスクリプトを使って行います。
-まずは、github (githubpage用） と bitbucket (その他のファイル）の登録設定。
-（鍵の登録を行っておくとよいです）
-github と bitbucket の登録 $ rm -rf public/ $ git init $ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git $ git add -A $ git commit -m &amp;quot;initial commit&amp;quot; $ git push origin master Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;: Counting objects: 166, done. Delta compression using up to 4 threads. Compressing objects: 100% (163/163), done. Writing objects: 100% (166/166), 322.</description>
+      <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換え</description>
     </item>
     
     <item>
@@ -50,11 +37,7 @@ github と bitbucket の登録 $ rm -rf public/ $ git init $ git remote add orig
       <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
-      <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。
-index.htmlの{{ range $name, $page := .Site.Recent }} の所を {{ range $name, $page := .Paginator.Pages }} に変更。
-&amp;lt;div class=&amp;quot;five columns offset-by-two&amp;quot;&amp;gt; &amp;lt;p style=&amp;quot;margin-bottom:1em;font-weight:bold;color:#333&amp;quot;&amp;gt;posts:&amp;lt;/p&amp;gt; &amp;lt;ul class=&amp;quot;posts&amp;quot;&amp;gt; {{ $baseurl := .Site.BaseUrl }} {{ range $name, $page := .Site.Recent }} {{ if eq .Type &amp;quot;post&amp;quot; }} &amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot;&amp;gt;{{ $page.Title }}&amp;lt;/a&amp;gt;  そして、config.toml に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。
-# number of posts shows on MainPage paginate = 28  yamlだtomlだと、一体yamlの何が問題なんだろうか。。
-で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、rsync と hugo server --buildDrafts --theme=default をまとめてスクリプトで動かせば良いだけのことか。。</description>
+      <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。 index.h</description>
     </item>
     
     <item>
@@ -63,11 +46,7 @@ index.htmlの{{ range $name, $page := .Site.Recent }} の所を {{ range $name, 
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/hugo-template/</guid>
-      <description>移行のためHugoをnofancyを基にして色々と調整しています。
-テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。
---- layout: app_page title: &amp;quot;(a)のちょっと詳しい使い方&amp;quot; subtitle: &amp;quot;タスク管理をマークダウンで&amp;quot; appid: &amp;quot;929324285&amp;quot; date: &amp;quot;2015-01-25&amp;quot; updated: &amp;quot;2015-01-25&amp;quot; footer: true --- # アプリページのオクトプレスより移行のyaml  layout: app_page がある事で layout/_default/app_page.html を探しにいき、もしくはコンテンツファイルを別のフォルダーiappに入れておくと、layout: app_pageが無くてもlayout/iapp/single.htmlがあれば優先して使われるよう。
-Yaml内のカスタム項目を取り込む yaml内にあるスマートバナー広告で使うappid: &amp;quot;929324285&amp;quot;は 以下のようにして partials/header.html に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、.Paramsを使うのが正解のようです。
-{{ if .Params.appid }} &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ .Params.appid }}&amp;quot;&amp;gt; {{ end }}  しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</description>
+      <description>移行のためHugoをnofancyを基にして色々と調整しています。 テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレー</description>
     </item>
     
     <item>
@@ -76,13 +55,7 @@ Yaml内のカスタム項目を取り込む yaml内にあるスマートバナ�
       <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/moving-hugo/</guid>
-      <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。
-ちょっと開発が一段落し一息。温泉に行こうと思ったが、Webの移行をしています。
-そもそもの始まりは、オクトプレスでSWIFTのシンタックスカラーリングで、色々試すも、これのバージョンがどうで、あっちで出るエラーはそのバージョンが問題でと、Ruby野郎でない私はGem地獄に陥る。Jekyllをちょっと試すが、これがまたGem関連でエラー連発。
-仕舞にはオクトプレスのアップデートでファイルが消える。バックアップは取っているのだが、気分は良くない。オクトプレスに不満がある訳ではないが、もう一度インストールするのも気が進まないので、移行する事にする。
-幾つかの選択肢があったのですが、Hugoに決定！もテーマにピンとくるものがありません。シンプルでグリッドな感じのやつで良いのだけど（jekyllでデフォルトの様な）。。。
-帯に短し、襷に、、、、で、オクトプレス時代は字がデケーなと思っていたのにHugoでは文字ちっちゃ、表示範囲がせまっ、みたいな事になっています。ただし、HugoのほうはCSSベースなのでSassで弄るのを断念した私でも弄れそう。ちなみに選んだテーマはnofancyです。
-でも、ページングの処理がよく分からんから、とりあえずすべてのポストがメインページに羅列されています。。。66KBだからそんなに重くはないので。。。そして、画像もでかいです。</description>
+      <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。 ちょっと開発</description>
     </item>
     
     <item>
@@ -91,9 +64,7 @@ Yaml内のカスタム項目を取り込む yaml内にあるスマートバナ�
       <pubDate>Tue, 18 Jun 2013 22:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/06/octopress-theme/</guid>
-      <description>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家のこちらにテーマのリストがあります。まだ登録数が少ないですがoctopressthemes.comというサイトもあります。ぜひ充実していってもらいたいですね。
-いくつか気に入った物があるのですが、CleanPressを選びました。zshではインストールでこけます。rake install\[&#39;cleanpress&#39;\]で試しましょう。
-シングルページはちょっとテーマを弄らないと、、日本語のフォントが少々大きめでバランスが、、、うーーん、全てが一発でうまくいくという事は無いのね。。</description>
+      <description>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家のこちらにテーマのリストがあります。まだ登録数が少</description>
     </item>
     
     <item>
@@ -102,12 +73,7 @@ Yaml内のカスタム項目を取り込む yaml内にあるスマートバナ�
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/02/generate-error/</guid>
-      <description>オクトプレスにてrake generateでどかっとエラーが出ました。
-全く自分には覚えがない、うーーん、とrake installをやり直しても効果無し。。半ば再インストールもやむなしか。。。。
-で、日があけてじっくり色々いじっていたファイルを洗い直してみると、見つけました。
-追加したコンテンツの時間の所が、、、
-date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含めた&amp;rdquo;(&amp;ldquo;関連の([ワイン用ブドウ品種](http://ja.wikipedia.org/wiki/ワイン用ブドウ品種の一覧))でエラーが起きたようです。（抜いたらエラーが取れました。）
-システム関連のエラーだとの思い込みがまずあったのがいかんかった。。でももうちょっと親切にこのファイルで問題がありましたよと明示してもらえるとありがたいのだけどねぇ。おかげでデザインが元のデフォルト状態に戻ってしまった。（ちとため息、でか文字だし画面は暗れーし。やる気減退。）</description>
+      <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても</description>
     </item>
     
     <item>
@@ -116,10 +82,7 @@ date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含
       <pubDate>Sun, 30 Sep 2012 16:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/site-heroku/</guid>
-      <description>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。）
-７月頃につぶれてしまったワードプレスで運用中だった家鯖をお引っ越し。独自ドメインの追加も、ドメインのDNS変更もかんたーーん。
-ワードプレスということは、PHP。一瞬だけ、railsのブログに切り替えようかななんて思いましたが、明日にはインドへ向け出発ということもあり、純粋に静的なページだけを移行 (phpのincludeのパスでちょっと勘違いしててハマったけど、別に特別な事無しにあっさり動いてるようです）。 （Herokuでもwordpressが 日本語環境で使える ようですね。。）
-と、いうことで、続きはまた、来年タイのチェンマイに戻って来た時。。</description>
+      <description>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。） ７月頃につぶれ</description>
     </item>
     
     <item>
@@ -128,14 +91,7 @@ date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含
       <pubDate>Sat, 29 Sep 2012 08:37:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/smart-appbanner/</guid>
-      <description>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。
-ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号です。）
-&amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id=APP_ID&amp;quot;&amp;gt;
-百聞は一見に如かず、iOS端末にてこのように表示されます。あら不思議。
-簡易広告のようなものです。ダウンロードが増えるとは思わないけど、開発者にとってはありがたいことだとおもいます。
-カスタマイズ オクトプレスでは表示するページのヘッダーに appid:#### を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）
---- layout: page title: &amp;quot;littlist&amp;quot; subtitle: &amp;quot;v2.5.0 プライベートなtodoアプリの完成形ここに？！たまに無料で提供しています。&amp;quot; appid: &amp;quot;399733845&amp;quot; // 追加する。 date: 2012-09-26 14:39 comments: true sharing: true footer: true ---  そして、ヘッダーのカスタムテンプレートファイル、source/_includes/custom/head.html に1行目を追加します。
-//追加 {% if page.appid } &amp;lt;meta name=&amp;quot;apple-itunes-app&amp;quot; content=&amp;quot;app-id={{ page.appid }}&amp;quot;&amp;gt; {% endif %}; &amp;lt;!--Fonts from Google&amp;quot;s Web font directory at http://google.com/webfonts --&amp;gt; &amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt; &amp;lt;link href=&amp;quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;  で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。</description>
+      <description>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。 ヘッダーに一行追加するだけです。あら簡単。（APP</description>
     </item>
     
     <item>
@@ -144,13 +100,7 @@ date: 2013-01-29 14:9//ここん所？もしくは、文章内のリンクを含
       <pubDate>Fri, 28 Sep 2012 10:02:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/font-change/</guid>
-      <description>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整はsource/stylesheets/screen.css を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。 （デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）
-こちらのOctopressのテーマ - Classicの構成のおかげで、なーんとなく構造はつかめたような気がするが、見た事のないsassファイルでつまずきました。
-で、Sass - チュートリアルをよみ、その他のページを流し読み、少し分かった気になる。
-で、取りあえずフォントの変更はsass/layput/_typography.sassの40行目のbodyのfont-sizeを変えあげればよし、全体のフォントのサイズが変わり?ます。（1.15emから1.0emで10％程縮小されます。）
-h1 { font-size: 2.2em; // ここを変えてもなにも変わらない。 line-height: 1.2em; } @media only screen and (min-width: 992px) { body { font-size: 1.0em; } // 全てのフォントの大きさが変わる default:1.15em h1 { font-size: 2.2em; line-height: 1.2em; } // 本文でのh1 default:2.6em }  で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。
-追記：出発前に sass/custom/_colors.scss をアプリで使う色にちょっと変更してみました。
-$page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c; // 羊羹色  </description>
+      <description>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整はsource/stylesheets/screen.css を変更して</description>
     </item>
     
     <item>
@@ -159,18 +109,7 @@ $page-bg: #c0c6c9; // 灰青 $header-bg: #9ea1a3; // 錫色 $text-color: #383c3c
       <pubDate>Thu, 27 Sep 2012 15:41:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/octopress-simplenote/</guid>
-      <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあったので、、）
-で、ポストの執筆／管理をSimplenoteのクライアントnvALTを使っています。(Macです。)
-元々、このソフトの原型になるNotationalVelocityを使っていて、今回のオクトプレス移行に伴って新しいアカウント＋クライアントを使ってポストを管理しようと思い立って調べてたどり着きました。
-ほかにもイロイロあるのかもしれませんが、お宝発見という気分です。 （MarsEditとWordpressには結局なじめなかった。。）
-まず、###.markdownで新規／読み込み／保存ができる。
-そして、プレビューできます。
-※注※ 消えてしまってますが-マークの横に＋マークがあり（押せます）。markdownを追加し、チェックマークを押して太字にするとその拡張子で保存されます。デフォルトでは一つのDBファイルになる所をPlain Text Files * にてStore on diskに変更も忘れずに。
-ポストのバックアップも確保したし、自分のブログに対する要件がほとんど満たされました。これで、ブログもノマド化できたような。。ちょっとだけ幸せな気分。
-ん、ってことは、iPodのシンプルノートからも記事を書く事も出来るってことだわな。うひょひょ。
-で、画像はDropboxのpublicフォルダーに保管してます。
-なんか、どんどんシンプルな形に落ち着いていく。（凄くよい事であるんだろうけど、歳をとったって事か？？）
-追記：Powとrake watchでさらに使いやすくなりました。一気に凄くバージョンアップしたような驚き、感動ものです。(@18:42, 09/28)</description>
+      <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあった</description>
     </item>
     
   </channel>

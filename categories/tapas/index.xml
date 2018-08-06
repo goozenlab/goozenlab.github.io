@@ -19,10 +19,7 @@
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2017/05/open-tapas/</guid>
-      <description>公開アプリ第５弾。
-XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。
- タイマー 通知 コアデータ ターゲットの切り分け  を使ってます。
-ターゲットを有料版と無料版のふたつに分けてあり。共有部分はそのままに同時に開発できます。参考まで。 ライトバージョンをビルドするには、GoogleMobileAds.framework が必要です。ダウンロードしてファイルをプロジェクトに追加で良いです。Podをつかってインストールすることもできるようです。。</description>
+      <description>公開アプリ第５弾。 XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。 タイマー 通知 コアデータ ター</description>
     </item>
     
     <item>
@@ -31,8 +28,7 @@ XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイ�
       <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/06/tapas-190/</guid>
-      <description> Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。
-Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種類によってテーブルの高さを調整 詳細ページにて入力時のレイアウト調整 リストページにて長いタイトル名をしっかりと表示 アイコンの変更 iOS9以降でのサポート  </description>
+      <description>Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアッ</description>
     </item>
     
     <item>
@@ -41,8 +37,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/05/icons-renew/</guid>
-      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、余計なものを取ったり、グラデーションを抑えたりしてさらにシンプルにしました。tapasは良い感じで仕上がる。
-大幅な変更では無いけれど、ちょっとシックになったと。。</description>
+      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化</description>
     </item>
     
     <item>
@@ -51,9 +46,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/tapas-165/</guid>
-      <description>iOS6/7 ユーザーには最後のアップデートになります。
-次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨します。
- DBの調整 iOS8での通知許可の設定  よろしくお願いします。</description>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。 次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方には</description>
     </item>
     
     <item>
@@ -62,16 +55,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/02/tapas-163/</guid>
-      <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、ありがとうございます。
-しかし、最後のアップデートが2013年の9月。悪いソフトではないと思ってはいますが、もう死んだソフト（ダウンロードがほとんど無し）だと思っていたので完全に放置状態でした。
-最近のiOS8への移行におけるバグ具合をみると、あちゃーー、いかん、またやってもうた。。。
- アイテムの削除でアプリが落ちます。
- ちょっと色を変えて、スクロールをパラッーーとしてると落ちる時があります。  両方ともDB関連の読み書きのタイミングの違いで起こるバグです。気分の良いものではありませんが、他アプリ、メモリ等には影響はありません。
-修正版を申請しました。10日後ぐらいにはアプストアにアップされると思います。 ほかにも不具合がありましたら、コメントなどよろしくお願いします。
-追記：
-完成したアプリという訳ではありませんが、追加する機能も思いつかないので次のアップデートはSwift化します。
-ただし、メモの表示方法にちょっと手を入れようと思ってます。
- リスト画面：メモを少し見やすく、選択された時は表示の高さを変える タイマ画面：左のテキストをタップで数秒間メモを表示する   </description>
+      <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、あ</description>
     </item>
     
     <item>
@@ -80,8 +64,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/10/update-x60/</guid>
-      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応になります。ビルド時に出てくる様々な黄色の警告を潰してます。
-そして、AdMobを6.12にアップデート。ソースも少し弄りました。毎度の事、警告が出ますが新しくCoreTelephony.frameworkを追加して問題解決。</description>
+      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますので</description>
     </item>
     
     <item>
@@ -90,9 +73,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Wed, 24 Jul 2013 14:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/tapas-150/</guid>
-      <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。
- ちょっと無理をしてアイコンを変更。そんなに変わっていません。格好良くもなってません。 フォントを変更できるようにしました。
-（日本語は太字にだけ対応。怪我の功名でHelveticaNeue-CondensedBoldで日本語が太字に。濃い表示になります。） タイマー画面にてキャンセル、そして再スタート時に背景の色が変わらないバグの修正 一分前に背景が数回フラッシュします。（目を離していても、気がつきやすいようになると、、思います。） 編集画面デザインを更新。  </description>
+      <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。 ちょっと</description>
     </item>
     
     <item>
@@ -101,9 +82,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
-以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
-新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
@@ -112,10 +91,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
-そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
-広告がらみの変更。ご理解のほど。。
-タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
@@ -124,8 +100,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。
-そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
     </item>
     
     <item>
@@ -134,8 +109,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
-インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
@@ -144,8 +118,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応にします。
-そんなにユーザーも多くないという事もあるので、バサバサと古いユーザーは切り捨てて新しい追加していきたい所ではありますが。。。。 クラウドやソーシャルなど、個人的にちょっと違和感があり、、ちょっと行き詰まってます。</description>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
     
     <item>
@@ -154,8 +127,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
-      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機、電話自体あまり使わないのでiPhoneは必要がなかったのですが、今回は、香港またはタイ辺りで、白の奴を。。
-で、他の開発者と同じく調整のアップデートをしました。私のソフトはそんなにたくさんの作業が必要という訳では無いので安心。ただ、見た目を整えるためにセルの高さを液晶のサイズに合わせて（2pixとか3pixとか）変更してます。</description>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
     </item>
     
     <item>
@@ -164,11 +136,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
-      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル(Dandori)や、littlistの一つの色の所を、ショッピングリストにしてみたりと用途によりカスタマイズできます。 今まで手に付けてなかったのが不思議なくらいです。。
-設定方法は、
-アプリの中からではなく、Home&amp;gt;設定&amp;gt;アプリ名からの設定になります。
-頻繁に変える物ではないとの理由より、外からの変更の形にしました。（同時にソフトも重くならなくて良いし。）
-今週中にはポコポコとアップされると思います。 セールもやっていますので、なにとぞ、よろしく。</description>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
     </item>
     
     <item>
@@ -177,10 +145,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Sun, 10 Jun 2012 11:16:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/06/tapas-104/</guid>
-      <description>Tapasのマイナーアップデートです。
-老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に、文字の色も少し濃くし可視性を高めました。
-そのせいで、リスト表示が1行減ります。使い勝手には影響はないと思います。
-アイコンももう少し格好の良いモノに変更したいなとも思ってます。</description>
+      <description>Tapasのマイナーアップデートです。 老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に</description>
     </item>
     
     <item>
@@ -189,14 +154,7 @@ Change Log [1.9.0 - Swift release] - 2016-06-20 @ NongKhai Changed  iPhoneの種
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
-      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街です。
-Cosperのアップグレードを申請したところ、iOS5上にて落ちるとリジェクとされ、実機（iOS4.3)では確認できないので仕方なく、ネット•電気事情の悪い中3日掛けてXCodeをアップデートしました。
-で、試したところ全てのアプリにてiOS5上では不具合があることが判明。 修正後一気にアップデートしてます。
-不具合のほとんどはテーブルセル部の
-[self.nextResponder touchesBegan:touches withEvent:event]  が問題だったようで、（既知の問題でした。）
-[super touchesBegan:touches withEvent:event];  に修正しました。シミュレーター上では動いてます。
-去年の9月頃より放置状態（インドで修行してました）だったので、iOS5ユーザーの方々にはご迷惑をおかけしました。
-※ちなみにLittlistではクイックエントリー機能を追加しました。さらに使いやすくなりました。</description>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
     </item>
     
   </channel>

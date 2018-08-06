@@ -19,19 +19,7 @@
       <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/12/owncloud/</guid>
-      <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。
-現在Dropboxに画像は保管していて別に不満がある訳ではありませんが、フリーのownCloudというソフトをみつけ、Dropboxでの3GBではちょっと物足りない事もあり、そしてなるべく自分でできる事は自分でするというポリシーにより試しにデビアンサーバーに入れてみました。
-aptのパッケージも出ていて、sslでの接続でほんの少し手間を取りましたが、割と簡単にインストールでしました。クライアントのソフトのできも良いと思います。
-実家にヤドカリ中のサーバーにownClowdを入れて動く事を確認、そして画像をアップ／ダウンロードして他のクラウドサービスとの速度を比較してみました。
-au光ヤドカリ家鯖 (ownCloud) $ wget http://ヤドカリ家鯖/photo/R0011168.jpg
-2012-11-18 18:12:20 (88.9 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950] @ pushkar
-2012-12-04 12:18:17 (362 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950] @ KL
-DropBox $ wget https://dl.dropbox.com/u/163521/photo/R0011168.jpg
-2012-11-17 12:54:31 (61.6 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950]
-2012-12-04 12:18:32 (126 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950]
-GitHub Page $ wget http://goozenlab.com/images/R0011168.jpg
-2012-11-18 18:11:42 (80.2 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950]
-2012-12-04 12:18:47 (179 KB/s) - ‘R0011168.jpg’ saved [767950&amp;frasl;767950]</description>
+      <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。 現在Dropboxに画像は保管していて別</description>
     </item>
     
     <item>
@@ -40,14 +28,7 @@ GitHub Page $ wget http://goozenlab.com/images/R0011168.jpg
       <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
-      <description> iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルなバルで生ハムと赤ワインを飲みながら地元の人とサッカーについて語り合う。。といった予定であったはずが、、それにはとぉーーーーーく及ばず。
-インドでベジタリアン、お酒も抜き、体重も高校入学時ぐらいに戻りました。ちょっと面倒なインドの人たちを冷たくあしらい、貯金を切り崩し、修行僧のようにくらしてます。抜け毛が気になる今日この頃です。来週から20日間のリトリート。
-ドメインにお金をかけるのもなぁ、なんて思っていましたが、アプリも公開しているし、費用もそれほどではないので、今更ながらお名前ドットコムでgoozenlab.comをとりました。github pageに紐付けします。
-DNSの設定 IPナンバーはターミナルにて、nslookupで調べます。
-$ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-authoritative answer: Name: gozenlab.github.com Address: 204.232.175.78 $  そしてお名前.comのレンタルDNSレコード設定にてDNSサーバーの設定をします。
-待つ事10分。無事に表示されました。
-そして、オクトプレスのフッターをgithubへの感謝に気持ちを込めてsource/_includes/footer.htmlを調整しました。
- &amp;lt;span class=&amp;quot;credit&amp;quot;&amp;gt;Powered by &amp;lt;a href=&amp;quot;http://octopress.org&amp;quot;&amp;gt;Octopress&amp;lt;/a&amp;gt; and Hosted by github Page&amp;lt;/span&amp;gt;  </description>
+      <description>iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルな</description>
     </item>
     
     <item>
@@ -56,11 +37,7 @@ $ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-a
       <pubDate>Wed, 18 May 2011 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2011/05/home-server/</guid>
-      <description>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブックが不思議な体勢になっています。 SSDという事もあって問題は無い事と。。。
-お茶菓子を入れる小さな木製のお皿の上に本体をのせ、さらにモニター部には箸置きを二つ。 その上に無線ルーター機が置いてあります。 近くには蚊取り線香のベープアース。 横には100均で買った、電源とケーブルを入れたピンクメッシュ書類ケース。 その横には電話帳となぜか子鹿物語の本。
-生活感があふれています。 ホームアプライアンス感が滲んでます。
-手を指し入れるとほのかに暖かみを感じる事ができます。コンピューターの温度は50度後半で推移。 23区内ですからこの夏の計画停電実施の可能性は低いと思いますが、どうにか夏を落ちずに乗り切ってもらいたい。。。
-で、私は節電！節約？のためカナダに旅立ちます。 バンフという町に逗留予定です。山に引きこもりにいってきます。 厄年、天災続きのここ最近ですが、 くれぐれもグリズリーベアの餌にならないように気をつけたいと思います。</description>
+      <description>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブ</description>
     </item>
     
     <item>
@@ -69,10 +46,7 @@ $ nslookup gozenlab.github.com Server: 192.168.1.1 Address: 192.168.1.1#53 Non-a
       <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2011/02/googleapp-mail/</guid>
-      <description>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。
-気がつかないとかなりの時間アクセスできない事があります。 Webサーバーはまだ良いとしても、メールサーバーが止まってしまうのはちょっといただけないという事で、
-メールサーバーをGoogleAppに移行しました。
-ずっと有料のサービスだと思っていたので存在は知っていたのですが使わずじまいでした。 ドメインはDynDNSで管理していて、少々MXサーバー変更設定に戸惑いましたが無事動いているようです。どんどん、クラウド化が進んでいくのだろうかと、なるべく自力でやっていきたいと思っている自分にとってはちょっと悲しい気にもなります。</description>
+      <description>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。 気がつかないとかなりの時間アクセスできない事があります。 Webサーバーは</description>
     </item>
     
   </channel>

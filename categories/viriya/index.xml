@@ -19,9 +19,7 @@
       <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/viriya-150/</guid>
-      <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。
- 編集画面デザインを更新。 カラーモードを変更できるようにしました。
- フォントを変更できるようにしました。 バグの修正：1分前のベル設定、アプリケーションバッジ表示の不具合。 項目削除時に（せっかちな人は沢山）落ちる不具合を直しました。 ARCに対応（故にiOS5.1以降の対応に）安定すると思います。  </description>
+      <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。 編集</description>
     </item>
     
     <item>
@@ -30,9 +28,7 @@
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。
-以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置いてロックアンロックのボタン／表示として使っていました。 不具合は無いのですが、変更しました。
-新しい方法はナビゲーションバーのすぐしたのカテゴリーカラーの付いたドットがボタン／表示になります。 ロックしている時には白いドットが中心に付きます。 ロックされていない時は単色の色で表示されます。</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
@@ -41,10 +37,7 @@
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.frameworkを追加します。
-そして、今まではiAdを優先的に読み込み、読み込みができない時のみにadmobを動かしていましたが、今回からはadmobを少し優先的に読み込むようにしています。
-広告がらみの変更。ご理解のほど。。
-タイ、チェンマイに戻ってきました。今回はワットランプーンに修行に行くかな。。 ちょっとタイの彼女（ネコ）と戯れ、今年の予定を考えます。</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
@@ -53,8 +46,7 @@
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパス、dandori、viriyaを渋く値を下げて提供します。
-そろそろ、忘年会シーズン突入（まだ早いか？。）です。皆様、ご自愛のほど。</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
     </item>
     
     <item>
@@ -63,8 +55,7 @@
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未だサポートしているのがいけないのかな、と思ってましたが、新しくAdSupport.frameworkを追加で問題解決します。
-インド滞在、お腹も壊さず、慣れつつあります。トイレの手での処理もしかめっ面で問題なくこなし、う○この扱いもどんどん大胆になってきてます。</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
