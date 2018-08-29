@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/fruitarianism-10/</loc>
+    <lastmod>2018-08-30T06:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/hugo-shortcodes/</loc>
     <lastmod>2018-08-29T08:30:00+05:45</lastmod>
   </url>
@@ -1741,14 +1746,14 @@
   </url>
   
   <url>
-    <loc>/tags/backpack/</loc>
-    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
+    <loc>/categories/backpack/</loc>
+    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/backpack/</loc>
-    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
+    <loc>/tags/backpack/</loc>
+    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1837,14 +1842,14 @@
   </url>
   
   <url>
-    <loc>/tags/develop/</loc>
-    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
+    <loc>/categories/develop/</loc>
+    <lastmod>2016-10-07T16:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/develop/</loc>
-    <lastmod>2016-10-07T16:30:00+07:00</lastmod>
+    <loc>/tags/develop/</loc>
+    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1952,7 +1957,7 @@
   
   <url>
     <loc>/categories/life/</loc>
-    <lastmod>2018-05-01T13:30:00+07:00</lastmod>
+    <lastmod>2018-08-30T06:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1969,26 +1974,26 @@
   </url>
   
   <url>
-    <loc>/tags/mac/</loc>
-    <lastmod>2016-11-26T22:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/mac/</loc>
     <lastmod>2014-11-10T14:20:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/macos/</loc>
-    <lastmod>2018-04-17T06:30:00+07:00</lastmod>
+    <loc>/tags/mac/</loc>
+    <lastmod>2016-11-26T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/macos/</loc>
     <lastmod>2014-10-20T14:20:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/macos/</loc>
+    <lastmod>2018-04-17T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2084,7 +2089,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-08-29T08:30:00+05:45</lastmod>
+    <lastmod>2018-08-30T06:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2210,7 +2215,7 @@
   
   <url>
     <loc>/tags/vegetarian/</loc>
-    <lastmod>2018-05-01T13:30:00+07:00</lastmod>
+    <lastmod>2018-08-30T06:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2246,7 +2251,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-08-29T08:30:00+05:45</lastmod>
+    <lastmod>2018-08-30T06:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

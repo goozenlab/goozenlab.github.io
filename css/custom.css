@@ -52,8 +52,18 @@ body {
 }
 
 
+strong{
+    color:#369;
+    background-color: rgb(246,246,246);
+    padding: 0 0.2em;
 
+}
+code{
+    color:#c05b4d;
+    background-color: rgb(249,249,249);
+    padding: 0.1em 0.4em;
 
+}
 
 
 /* Header */
@@ -251,19 +261,19 @@ body {
 }
 
 .post h1 {
-    font-size:28px;
-}
-
-.post h2 {
     font-size:25px;
 }
 
-.post h3 {
+.post h2 {
     font-size:23px;
 }
 
-.post h4 {
+.post h3 {
     font-size:21px;
+}
+
+.post h4 {
+    font-size:20px;
 }
 
 .post h5 {
@@ -275,7 +285,6 @@ body {
 }
 
 .post-title{
-    align: center;
     margin-top: 0;
     margin-bottom: 2em;
 }
