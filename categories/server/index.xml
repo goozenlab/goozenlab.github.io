@@ -2,50 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on goozenlab</title>
-    <link>https://goozenlab.com/categories/server/</link>
+    <link>/categories/server/</link>
     <description>Recent content in Server on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 05 Dec 2012 12:47:00 +0600</lastBuildDate>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 01 Apr 2018 13:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Debian on VAIO type P</title>
+      <link>/blog/debian-vaio-p/</link>
+      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/debian-vaio-p/</guid>
+      <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
+    </item>
+    
+    <item>
       <title>家鯖をownCloudでクラウド化</title>
-      <link>https://goozenlab.com/blog/2012/12/owncloud/</link>
+      <link>/blog/owncloud/</link>
       <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/12/owncloud/</guid>
+      <guid>/blog/owncloud/</guid>
       <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。 現在Dropboxに画像は保管していて別</description>
     </item>
     
     <item>
       <title>ドメインをゲット</title>
-      <link>https://goozenlab.com/blog/2012/10/domein-goozenlab/</link>
+      <link>/blog/domein-goozenlab/</link>
       <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
+      <guid>/blog/domein-goozenlab/</guid>
       <description>iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルな</description>
     </item>
     
     <item>
       <title>家鯖</title>
-      <link>https://goozenlab.com/blog/2011/05/home-server/</link>
+      <link>/blog/home-server/</link>
       <pubDate>Wed, 18 May 2011 19:41:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/05/home-server/</guid>
+      <guid>/blog/home-server/</guid>
       <description>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブ</description>
     </item>
     
     <item>
       <title>Google Appでメールサーバーの運用</title>
-      <link>https://goozenlab.com/blog/2011/02/googleapp-mail/</link>
+      <link>/blog/googleapp-mail/</link>
       <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/02/googleapp-mail/</guid>
+      <guid>/blog/googleapp-mail/</guid>
       <description>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。 気がつかないとかなりの時間アクセスできない事があります。 Webサーバーは</description>
     </item>
     

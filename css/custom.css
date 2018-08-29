@@ -5,15 +5,10 @@ html {
 }
 
 body {
-	background-color: rgb(249,249,249);
+	background-color: rgb(256,256,256);
 	color: #484848;
 }
 
-.nav-menu {
-/* remove  May 1, 2018
-	border-bottom: 1px solid #e3e3e3;
- */
-}
 
 .header {
 	text-align: left;
@@ -21,8 +16,48 @@ body {
 	/*  add May 1, 2018 */
 	margin-bottom: 1.5em;
 	border-bottom: 1px solid #e3e3e3;
-	background-color: rgb(256,256,256);
+	background-color: rgb(249,249,249);
 }
+
+.post {
+	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	color:#484848;
+	letter-spacing:normal;
+/* 
+	padding-left: .5em;
+	/*  add May 1, 2018 
+	padding-right: .5em;
+ */
+}
+
+.post-content {
+	z-index:9;
+	overflow:auto;
+	padding:0;
+	padding-right: 1.4em;
+	padding-bottom: 6em;
+	font-size:16px;
+	line-height:1.8;
+}
+
+.footer {
+	position:absolute;
+	z-index:2;
+	height:auto;
+	width:100%;
+	bottom:0;
+	/*  add May 1, 2018 */
+	border-top: 1px solid #e3e3e3;
+	background-color: rgb(249,249,249);
+}
+
+
+
+
+
+
+/* Header */
+
 
 .header ul li {
 		height: auto;
@@ -43,8 +78,25 @@ body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.pull-right {
-	float: right;
+
+.nav-menu {
+/* remove  May 1, 2018
+	border-bottom: 1px solid #e3e3e3;
+ */
+}
+
+
+
+
+/****** LIST *****/
+
+
+.posts {
+	font-family: verdana,arial,helvetica,sans-serif;
+	list-style-type:none;
+	padding-left: 1em;
+	padding-bottom: 1em;
+
 }
 
 .posts-name {
@@ -55,12 +107,7 @@ body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.posts {
-	font-family: verdana,arial,helvetica,sans-serif;
-	list-style-type:none;
-	padding-left: 1em;
-	padding-bottom: 1em;
-}
+
 
 .posts li p{
 	margin-top: 0;
@@ -74,6 +121,9 @@ body {
 	color:#369;
 	text-decoration:none;
 }
+
+
+/* footnote **/
 
 .footnote {
 	font-family: verdana,arial,helvetica,sans-serif;
@@ -91,16 +141,48 @@ body {
 	color:#369;
 }
 
-.footer {
-	position:absolute;
-	z-index:2;
-	height:auto;
-	width:100%;
-	bottom:0;
-	/*  add May 1, 2018 */
-	border-top: 1px solid #e3e3e3;
-	background-color: rgb(256,256,256);
+
+/* side */
+
+.panel {
+
 }
+
+.panel-heading {
+	font-weight: bold;
+	border-bottom: 1px solid #e3e3e3;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+
+}
+
+
+.panel a {
+	color:#369;
+	text-decoration: none;
+}
+
+.panel a:hover {
+	color:#a5473a;
+	text-decoration: underline;
+}
+
+
+.panel li{
+	color:#369;
+	text-decoration: none;
+	list-style:none;
+	margin-bottom: .3em;
+	padding-left: 0.3em;
+}
+.panel ul{
+	margin: 0;
+	padding: 0
+}
+
+
+
+/****** FOOTER *******/
 
 .footer-content {
 /* remove  May 1, 2018
@@ -136,27 +218,21 @@ body {
 	margin: 0;
 }
 
+
+
+/****** POST *****/
+
+
 .post {
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 	color:#484848;
 	letter-spacing:normal;
 	padding-left: .5em;
-	/*  add May 1, 2018 */
-	padding-right: .5em;
 }
 
 .post h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 	letter-spacing:normal;
-}
-
-.post-content {
-	z-index:9;
-	overflow:auto;
-	padding:0;
-	padding-bottom:6em;
-	font-size:16px;
-	line-height:1.4;
 }
 
 .post-content img {
@@ -200,7 +276,7 @@ body {
 
 .post-title{
 		margin-top: 0;
-		margin-bottom:1em;
+		margin-bottom: 2em;
 }
 
 .post-title h1 {
@@ -212,9 +288,128 @@ body {
 }
 
 
+/* global */
+
+.pull-right {
+	float: right;
+}
+
+
+/* image */
+
 img.full-width {
 	width: 100%;
 	}
+
+
+
+
+
+ /* summary */
+
+.summary {
+	font-family: verdana,arial,helvetica,sans-serif;
+	color:#777;
+	font-size:small;
+	margin: .5em 0em;
+}
+
+
+/* pagenation */
+
+.pagination {
+	font-family: verdana,arial,helvetica,sans-serif;
+	text-align: left;
+	padding-bottom: 5em;
+
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pagination li{
+  	display: inline;
+}
+
+li.page-item {
+
+}
+
+a.pagelink {
+}
+
+.pagination a {
+    margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
+}
+
+.pagination active {
+    margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
+  background: #EDEDED;
+}
+
+
+/* 
+aria-label="Previous"
+aria-label="First"
+
+aria-label="Next"
+aria-label="Last"
+    
+<li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
+
+ */
+
+    
+
+/* Blockquote */
+
+blockquote{
+  font-size: 1.0em;
+  width:75%;
+  margin:50px auto;
+/* 
+  font-family:Open Sans;
+ */
+  font-style:italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 44px;
+  border-left :6px solid #78C0A8 ;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:3.5em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+
+
 
 @media screen and (max-width:767px){
 	.desktop {
@@ -250,42 +445,3 @@ img.full-width {
 	}
 }
 
-/* Add blockquote: May 1, 2018 */
-
-blockquote{
-  font-size: 1.0em;
-  width:75%;
-  margin:50px auto;
-/* 
-  font-family:Open Sans;
- */
-  font-style:italic;
-  color: #555555;
-  padding:1.2em 30px 1.2em 44px;
-  border-left:6px solid #78C0A8 ;
-  line-height:1.6;
-  position: relative;
-  background:#EDEDED;
-}
-
-blockquote::before{
-  font-family:Arial;
-  content: "\201C";
-  color:#78C0A8;
-  font-size:3.5em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
-}
-
-blockquote::after{
-  content: '';
-}
-
-blockquote span{
-  display:block;
-  color:#333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top:1em;
-}

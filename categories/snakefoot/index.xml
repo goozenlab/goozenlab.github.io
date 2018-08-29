@@ -2,339 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Snakefoot on goozenlab</title>
-    <link>https://goozenlab.com/categories/snakefoot/</link>
+    <link>/categories/snakefoot/</link>
     <description>Recent content in Snakefoot on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 13:30:00 +0700</lastBuildDate>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 May 2018 17:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/snakefoot/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Debian on VAIO type P</title>
-      <link>https://goozenlab.com/blog/2018/04/debian-vaio-p/</link>
-      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/debian-vaio-p/</guid>
-      <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
-    </item>
     
     <item>
-      <title>インド国内移動</title>
-      <link>https://goozenlab.com/blog/2017/08/travel-inside-india/</link>
-      <pubDate>Sun, 13 Aug 2017 18:15:00 +0530</pubDate>
+      <title>Ichiro the man</title>
+      <link>/blog/ichiro-forever/</link>
+      <pubDate>Fri, 04 May 2018 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/08/travel-inside-india/</guid>
-      <description>北から入り南下予定の６ヶ月のインド旅行。動きが少ないとはいえ大きい国ですので移動の距離だ半端ありません。交通手段をうまく組み合わせてメリハリ</description>
-    </item>
-    
-    <item>
-      <title>インドビザ＠ビエンチャン</title>
-      <link>https://goozenlab.com/blog/2017/07/india-visa-vientian/</link>
-      <pubDate>Fri, 21 Jul 2017 18:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/07/india-visa-vientian/</guid>
-      <description>通常の旅行者は2017/4から少し変更になった入国時から２ヶ月ダブルがもらえるe-visaで事足りると思うのですが、６ヶ月の長期ビザを日本以</description>
-    </item>
-    
-    <item>
-      <title>ベジタリアン。1日2食、水泳40分、15,000歩。</title>
-      <link>https://goozenlab.com/blog/2016/12/vegi-swim/</link>
-      <pubDate>Fri, 30 Dec 2016 06:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/12/vegi-swim/</guid>
-      <description>ここ数年、自分にとって最適な最低体重と、それを維持するための最低限の食事量を探っていて、ちょっとひと段落つきそうなのでちょっと書いて見ました</description>
-    </item>
-    
-    <item>
-      <title>クリーンインストール</title>
-      <link>https://goozenlab.com/blog/2016/08/clean-install/</link>
-      <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/clean-install/</guid>
-      <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
-    </item>
-    
-    <item>
-      <title>ヒラギノ角ゴシック</title>
-      <link>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
-      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
-      <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
-    </item>
-    
-    <item>
-      <title>羽田発香港経由チェンマイ行き</title>
-      <link>https://goozenlab.com/blog/2016/08/airticket-chinagmai/</link>
-      <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/airticket-chinagmai/</guid>
-      <description>LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれる</description>
-    </item>
-    
-    <item>
-      <title>検索オプション</title>
-      <link>https://goozenlab.com/blog/2016/08/search-option/</link>
-      <pubDate>Tue, 09 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/search-option/</guid>
-      <description>日本帰国時の爆買いモードでちょっと気になるブツの使い勝手やレビューなど、調べまくってます。しかしながら、検索に何かしらの商品名が入るなり、楽</description>
-    </item>
-    
-    <item>
-      <title>chroniumosをインストール</title>
-      <link>https://goozenlab.com/blog/2016/06/chroniumos/</link>
-      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/chroniumos/</guid>
-      <description>暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファ</description>
-    </item>
-    
-    <item>
-      <title>GV-1についたゴミのクリーンアップ</title>
-      <link>https://goozenlab.com/blog/2015/10/dust-gv1/</link>
-      <pubDate>Sun, 18 Oct 2015 13:15:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/10/dust-gv1/</guid>
-      <description>GRに付けている外付けファインダーGV-1にゴミが見えるようになる。ホコリというよりも、ゴミ。 黒いゴミが中心部に張り付いている。ケースに入れ</description>
-    </item>
-    
-    <item>
-      <title>ワハン回廊の移動</title>
-      <link>https://goozenlab.com/blog/2015/08/wakhan-valley/</link>
-      <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/08/wakhan-valley/</guid>
-      <description>ワハン回廊の移動はチャリダーをのぞく殆んどの旅行者は、ホーローグかムルガブで人を募り数日間タクシーをチャーターします。私はスケジュールに関し</description>
-    </item>
-    
-    <item>
-      <title>ホーローグ滞在中</title>
-      <link>https://goozenlab.com/blog/2015/07/at-khorog/</link>
-      <pubDate>Thu, 30 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/at-khorog/</guid>
-      <description>宿に猫もいるし天気も悪いので移動はさけ、南下してくるデゥシャンベで会った旅行者を待つのに良いタイミングでもあるので、しばしホーローグに滞在す</description>
-    </item>
-    
-    <item>
-      <title>デゥシャンベからホーローグ</title>
-      <link>https://goozenlab.com/blog/2015/07/dushanbe-khorog/</link>
-      <pubDate>Tue, 28 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/dushanbe-khorog/</guid>
-      <description>デゥシャンベからのシェアタクシーは、気合いを入れて５時起床、Green House Hostel からは５分ぐらいのタクシースタンドへ６時頃向かう。一人だと値段交渉</description>
-    </item>
-    
-    <item>
-      <title>オシュからホジャンドまで</title>
-      <link>https://goozenlab.com/blog/2015/07/oshu-khojand/</link>
-      <pubDate>Wed, 22 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/oshu-khojand/</guid>
-      <description>オシュからタジキスタンに公共バスを乗り継いで（安く）向かうには、バトケン（キルギス）〜 国境 〜 イスファラ（タジキスタン）、を経由してホジャンド</description>
-    </item>
-    
-    <item>
-      <title>トクトグルからオシュまで</title>
-      <link>https://goozenlab.com/blog/2015/07/toktogul-oshu/</link>
-      <pubDate>Tue, 21 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/toktogul-oshu/</guid>
-      <description>ビシュケクから一気にオシュというのも味気ないし、移動時間も１０時間くらいと少々長い。景観も良いらしいし途中一息を入れるため、貯水池のあるトク</description>
+      <guid>/blog/ichiro-forever/</guid>
+      <description>このひとは唯一無二ですね。コメントにドキッとしました。 僕の近くにいる人は、これが分かると思いますけど、僕は野球の、何て言ったらいいですかね、</description>
     </item>
     
     <item>
       <title>宮崎駿氏記者会見</title>
-      <link>https://goozenlab.com/blog/2015/07/peace-miyazaki/</link>
+      <link>/blog/peace-miyazaki/</link>
       <pubDate>Wed, 15 Jul 2015 19:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/peace-miyazaki/</guid>
+      <guid>/blog/peace-miyazaki/</guid>
       <description>基地問題も日本の政府はアメリカの言いなり。メディアは自民党政権による雁字搦めなのか、こういった会見については距離を置いている感じがある。 「県</description>
     </item>
     
     <item>
       <title>自由と平和のための声明</title>
-      <link>https://goozenlab.com/blog/2015/07/peace-manifest/</link>
+      <link>/blog/peace-manifest/</link>
       <pubDate>Wed, 15 Jul 2015 16:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/peace-manifest/</guid>
+      <guid>/blog/peace-manifest/</guid>
       <description>秘密保護法の強引な成立の辺りから不穏な雰囲気が出始め、一気に暴走。 安全保障関連法案、原発の再稼働、国立競技場の建設と国民を全く無視し、誰かし</description>
     </item>
     
     <item>
-      <title>パキビザ プチ情報</title>
-      <link>https://goozenlab.com/blog/2015/07/visa-pakistan/</link>
-      <pubDate>Mon, 13 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/visa-pakistan/</guid>
-      <description>なっ、なんと！セネガル、ダカールのパキスタン大使館では面倒な書類等の提出必要は無く、１年間有効かつ、滞在期間も好きなだけ！（ビザの滞在期間の</description>
-    </item>
-    
-    <item>
-      <title>タジキスタンビザの申請</title>
-      <link>https://goozenlab.com/blog/2015/07/visa-tajikistan/</link>
-      <pubDate>Wed, 08 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/visa-tajikistan/</guid>
-      <description>紹介状の手配が面倒になりウズベキスタンへ行く事を諦め、ちょっとした住宅街の突き当たりにあるタジキスタン大使館へビザの申請に行く。 ビザの申請オ</description>
-    </item>
-    
-    <item>
-      <title>韓国籍ではウズベキスタンビザ申請にLOIが必要</title>
-      <link>https://goozenlab.com/blog/2015/07/visa-uzbek-loi/</link>
-      <pubDate>Mon, 06 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/visa-uzbek-loi/</guid>
-      <description>月曜の午後、ウズベキスタンのビザ申請ためウズベキスタン大使館の予約の電話をいれる。韓国籍である事を告げると、「紹介状は持っているか？」と聞か</description>
-    </item>
-    
-    <item>
-      <title>カザフスタンでの滞在登録</title>
-      <link>https://goozenlab.com/blog/2015/07/registration-kazakhstan/</link>
-      <pubDate>Wed, 01 Jul 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/07/registration-kazakhstan/</guid>
-      <description>去年から一年限定でビザは免除になったが（2015/07/15にて終了）、相変わらず５日以上滞在時にはレジストレーションの必要がある。１５日は</description>
-    </item>
-    
-    <item>
-      <title>ウルムチからカザフスタンへの国際列車</title>
-      <link>https://goozenlab.com/blog/2015/06/train-urumuqi-almaty/</link>
-      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/train-urumuqi-almaty/</guid>
-      <description>ウルムチからの国際列車簡易メモ 26:30（北京時間）：出発は土曜日の24:21発だが、25:30になっても出発せず。寝てしまったので分からな</description>
-    </item>
-    
-    <item>
-      <title>デノンのDA-10</title>
-      <link>https://goozenlab.com/blog/2015/06/denon-da10/</link>
-      <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/denon-da10/</guid>
-      <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
-    </item>
-    
-    <item>
       <title>お気に入りサンダル</title>
-      <link>https://goozenlab.com/blog/2015/06/sandal/</link>
+      <link>/blog/sandal/</link>
       <pubDate>Sat, 13 Jun 2015 12:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/sandal/</guid>
+      <guid>/blog/sandal/</guid>
       <description>買ってすぐに履いても靴擦れにならなかった、キーンとビルケンシュトックのサンダル。かなりお気に入りです。靴下はここ数年で数日も履いて無いかも。</description>
     </item>
     
     <item>
-      <title>中国ビザをチェンマイで申請</title>
-      <link>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</link>
-      <pubDate>Fri, 12 Jun 2015 10:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</guid>
-      <description>１５日まではビザが必要ないと思っていた中国（韓国籍）。危うい所でチケットを買ってしまう所だった。航空会社の購入サイトでクレジットカード記入画</description>
-    </item>
-    
-    <item>
       <title>ラッゲージタグをリサイクル</title>
-      <link>https://goozenlab.com/blog/2015/06/luggage-tag/</link>
+      <link>/blog/luggage-tag/</link>
       <pubDate>Mon, 01 Jun 2015 12:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/luggage-tag/</guid>
+      <guid>/blog/luggage-tag/</guid>
       <description>海外旅行時、預け荷物に着いてくるラゲージタグ。別にシール好きという訳ではありませんが捨てずに、切り取ってノート等に付けてます。 記念にもなるし</description>
     </item>
     
     <item>
       <title>ドネーション</title>
-      <link>https://goozenlab.com/blog/2015/05/donation/</link>
+      <link>/blog/donation/</link>
       <pubDate>Thu, 28 May 2015 15:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/donation/</guid>
+      <guid>/blog/donation/</guid>
       <description>日本に戻った時には(厄払いも含め)小額でもどこかに寄付をするようにしている。 今回は４月初旬までいたネパールの震災支援に寄付をしようかと思って</description>
     </item>
     
     <item>
-      <title>メインマシーンの悩み</title>
-      <link>https://goozenlab.com/blog/2015/05/main-notebook/</link>
-      <pubDate>Sat, 16 May 2015 14:41:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/main-notebook/</guid>
-      <description>日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。 昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思</description>
-    </item>
-    
-    <item>
       <title>Xcode 6.2</title>
-      <link>https://goozenlab.com/blog/2015/03/xcode62-downloaded/</link>
+      <link>/blog/xcode62-downloaded/</link>
       <pubDate>Sun, 22 Mar 2015 17:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/xcode62-downloaded/</guid>
+      <guid>/blog/xcode62-downloaded/</guid>
       <description>ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。 宿のネットがスピードは相変わらずだが、割と安定している</description>
     </item>
     
     <item>
-      <title>！Thanks alot for download Sati！</title>
-      <link>https://goozenlab.com/blog/2015/03/thanx-dowload-sati/</link>
-      <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/thanx-dowload-sati/</guid>
-      <description>!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと</description>
-    </item>
-    
-    <item>
-      <title>Xcode 6.1とiOS8.2</title>
-      <link>https://goozenlab.com/blog/2015/03/xcode611-ios82/</link>
-      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
-      <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
-    </item>
-    
-    <item>
-      <title>Ricoh GR用てるてる坊主カメララップ</title>
-      <link>https://goozenlab.com/blog/2015/03/wrapcase-gr/</link>
-      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/wrapcase-gr/</guid>
-      <description>電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、 デジカメも光学のビューファインダーが無いとどうもだめ。 GRの</description>
-    </item>
-    
-    <item>
-      <title>マラッカに戻る</title>
-      <link>https://goozenlab.com/blog/2015/01/goingback-melaka/</link>
-      <pubDate>Sun, 25 Jan 2015 10:17:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/01/goingback-melaka/</guid>
-      <description>コタバルでネパール出発日まで滞在する積もりでいたのだが、KLまでの飛行機チケットが思ったより高かったのと（まぁ、実際高くはないのだが、前後で</description>
-    </item>
-    
-    <item>
       <title>検証端末をアップグレード</title>
-      <link>https://goozenlab.com/blog/2014/08/iphone4s/</link>
+      <link>/blog/iphone4s/</link>
       <pubDate>Wed, 20 Aug 2014 19:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/08/iphone4s/</guid>
+      <guid>/blog/iphone4s/</guid>
       <description>検証端末をアップグレードしました。が未だ２年ビハインドです。 アプリのテスト用の端末は今まで液晶がひび割れた、４世代iPodを使っていました。</description>
-    </item>
-    
-    <item>
-      <title>Dashのアイコン</title>
-      <link>https://goozenlab.com/blog/2012/11/dash-icon/</link>
-      <pubDate>Mon, 19 Nov 2012 16:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/11/dash-icon/</guid>
-      <description>Dashのアイコン（画面中央の猫）が変わりました。がっ、こりゃまた微妙な。。。 （以前の物はちょっと怖い感じだったので猫派の私としては受け入れ</description>
-    </item>
-    
-    <item>
-      <title>祝？25,000ダウンロード</title>
-      <link>https://goozenlab.com/blog/2011/05/25000-download/</link>
-      <pubDate>Mon, 16 May 2011 19:41:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/05/25000-download/</guid>
-      <description>細かい数字はとってませんが、ソフトのダウンロードが昨年の11月頃から本格的にスタートし25,000件到達しました。有料のものは350件。しか</description>
     </item>
     
   </channel>

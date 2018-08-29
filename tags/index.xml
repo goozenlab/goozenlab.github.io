@@ -2,15 +2,619 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on goozenlab</title>
-    <link>https://goozenlab.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A</title>
+      <link>/tags/a/</link>
+      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Austraria</title>
+      <link>/tags/austraria/</link>
+      <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/austraria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backpack</title>
+      <link>/tags/backpack/</link>
+      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/backpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bug</title>
+      <link>/tags/bug/</link>
+      <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/bug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cambodia</title>
+      <link>/tags/cambodia/</link>
+      <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/cambodia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canada</title>
+      <link>/tags/canada/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/canada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>China</title>
+      <link>/tags/china/</link>
+      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/china/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coredb</title>
+      <link>/tags/coredb/</link>
+      <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/coredb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cosper</title>
+      <link>/tags/cosper/</link>
+      <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/cosper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dahon</title>
+      <link>/tags/dahon/</link>
+      <pubDate>Tue, 16 May 2017 20:30:00 +1000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/dahon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dandori</title>
+      <link>/tags/dandori/</link>
+      <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/dandori/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>/tags/design/</link>
+      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Develop</title>
+      <link>/tags/develop/</link>
+      <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diy</title>
+      <link>/tags/diy/</link>
+      <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dns</title>
+      <link>/tags/dns/</link>
+      <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Doop</title>
+      <link>/tags/doop/</link>
+      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/doop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google App</title>
+      <link>/tags/google-app/</link>
+      <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/google-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Icon</title>
+      <link>/tags/icon/</link>
+      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/icon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>India</title>
+      <link>/tags/india/</link>
+      <pubDate>Sun, 13 Aug 2017 18:15:00 +0530</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/india/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internet</title>
+      <link>/tags/internet/</link>
+      <pubDate>Thu, 03 Aug 2017 18:00:00 +0530</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ios</title>
+      <link>/tags/ios/</link>
+      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ippuku</title>
+      <link>/tags/ippuku/</link>
+      <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/ippuku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kazakhstan</title>
+      <link>/tags/kazakhstan/</link>
+      <pubDate>Sun, 06 Sep 2015 10:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/kazakhstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kotlin</title>
+      <link>/tags/kotlin/</link>
+      <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyrgyz</title>
+      <link>/tags/kyrgyz/</link>
+      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/kyrgyz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laos</title>
+      <link>/tags/laos/</link>
+      <pubDate>Fri, 21 Jul 2017 18:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/laos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Listaria</title>
+      <link>/tags/listaria/</link>
+      <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/listaria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Littlist</title>
+      <link>/tags/littlist/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/littlist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>/tags/mac/</link>
+      <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macos</title>
+      <link>/tags/macos/</link>
+      <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mail Server</title>
+      <link>/tags/mail-server/</link>
+      <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/mail-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malaysia</title>
+      <link>/tags/malaysia/</link>
+      <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/malaysia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meditation</title>
+      <link>/tags/meditation/</link>
+      <pubDate>Wed, 21 Nov 2012 10:29:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/meditation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mexico</title>
+      <link>/tags/mexico/</link>
+      <pubDate>Mon, 11 Jul 2011 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/mexico/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>/tags/music/</link>
+      <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nepal</title>
+      <link>/tags/nepal/</link>
+      <pubDate>Wed, 08 Apr 2015 18:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/nepal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nokia7&#43;</title>
+      <link>/tags/nokia7&#43;/</link>
+      <pubDate>Wed, 16 May 2018 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/nokia7&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nz</title>
+      <link>/tags/nz/</link>
+      <pubDate>Thu, 03 Mar 2011 14:41:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/nz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Objective C</title>
+      <link>/tags/objective-c/</link>
+      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/objective-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ohayo</title>
+      <link>/tags/ohayo/</link>
+      <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/ohayo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open</title>
+      <link>/tags/open/</link>
+      <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/open/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pakistan</title>
+      <link>/tags/pakistan/</link>
+      <pubDate>Mon, 13 Jul 2015 19:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/pakistan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pinocle</title>
+      <link>/tags/pinocle/</link>
+      <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/pinocle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pranatice</title>
+      <link>/tags/pranatice/</link>
+      <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/pranatice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prepaid Phone</title>
+      <link>/tags/prepaid-phone/</link>
+      <pubDate>Sun, 23 Oct 2016 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/prepaid-phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>/tags/review/</link>
+      <pubDate>Wed, 16 May 2018 19:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Russia</title>
+      <link>/tags/russia/</link>
+      <pubDate>Sat, 19 Sep 2015 17:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/russia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sati</title>
+      <link>/tags/sati/</link>
+      <pubDate>Tue, 06 Mar 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/sati/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Srilanka</title>
+      <link>/tags/srilanka/</link>
+      <pubDate>Sat, 25 Mar 2017 08:00:00 +0530</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/srilanka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>/tags/swift/</link>
+      <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tajikistan</title>
+      <link>/tags/tajikistan/</link>
+      <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/tajikistan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tapas</title>
+      <link>/tags/tapas/</link>
+      <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/tapas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taxi</title>
+      <link>/tags/taxi/</link>
+      <pubDate>Tue, 28 Jul 2015 12:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/taxi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thailand</title>
+      <link>/tags/thailand/</link>
+      <pubDate>Fri, 30 Dec 2016 20:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/thailand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tipstricks</title>
+      <link>/tags/tipstricks/</link>
+      <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/tipstricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Train</title>
+      <link>/tags/train/</link>
+      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/train/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Update</title>
+      <link>/tags/update/</link>
+      <pubDate>Tue, 06 Mar 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uzbekistan</title>
+      <link>/tags/uzbekistan/</link>
+      <pubDate>Mon, 06 Jul 2015 19:30:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/uzbekistan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vaio P</title>
+      <link>/tags/vaio-p/</link>
+      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/vaio-p/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vegetarian</title>
+      <link>/tags/vegetarian/</link>
+      <pubDate>Tue, 01 May 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/vegetarian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Viriya</title>
+      <link>/tags/viriya/</link>
+      <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/viriya/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visa</title>
+      <link>/tags/visa/</link>
+      <pubDate>Fri, 21 Jul 2017 18:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/visa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>/tags/xcode/</link>
+      <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xiaomi</title>
+      <link>/tags/xiaomi/</link>
+      <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/xiaomi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>持ち物</title>
+      <link>/tags/%E6%8C%81%E3%81%A1%E7%89%A9/</link>
+      <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/tags/%E6%8C%81%E3%81%A1%E7%89%A9/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

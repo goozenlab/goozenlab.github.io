@@ -2,240 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on goozenlab</title>
-    <link>https://goozenlab.com/categories/mac/</link>
+    <link>/categories/mac/</link>
     <description>Recent content in Mac on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 May 2018 06:30:00 +0700</lastBuildDate>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Nov 2014 14:20:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/mac/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Gnucash 3 へ移行時のエラー</title>
-      <link>https://goozenlab.com/blog/2018/05/error-gnucash3/</link>
-      <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/error-gnucash3/</guid>
-      <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、 No suitable backend was found. というエラーが上</description>
-    </item>
-    
-    <item>
-      <title>MacBook Pro 2016</title>
-      <link>https://goozenlab.com/blog/2016/11/mbp2016/</link>
-      <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/11/mbp2016/</guid>
-      <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
-    </item>
-    
-    <item>
-      <title>Podsを使う</title>
-      <link>https://goozenlab.com/blog/2016/09/use-pods/</link>
-      <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。 ただ、ヘッダーをインポートするだけ！で</description>
-    </item>
-    
-    <item>
-      <title>Podsをプロジェクトに</title>
-      <link>https://goozenlab.com/blog/2016/09/install-pods/</link>
-      <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/install-pods/</guid>
-      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。 $ pod install Setting up CocoaPods master repo [!] Unable to add</description>
-    </item>
-    
-    <item>
-      <title>Sudo-less Gem &amp; Cocoapods</title>
-      <link>https://goozenlab.com/blog/2016/08/install-cocoapods/</link>
-      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
-      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。 以前インストールした時に、ちょっと須藤&amp;amp;ジェム</description>
-    </item>
-    
-    <item>
-      <title>インストール: Homebrew</title>
-      <link>https://goozenlab.com/blog/2016/08/install-homebrew/</link>
-      <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/install-homebrew/</guid>
-      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。 $ cd /usr/local/ total 24 drwxr-xr-x</description>
-    </item>
-    
-    <item>
-      <title>クリーンインストール</title>
-      <link>https://goozenlab.com/blog/2016/08/clean-install/</link>
-      <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/clean-install/</guid>
-      <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
-    </item>
-    
-    <item>
-      <title>ヒラギノ角ゴシック</title>
-      <link>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
-      <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
-      <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
-    </item>
-    
-    <item>
-      <title>句読点で変換</title>
-      <link>https://goozenlab.com/blog/2016/08/convert-punctuation/</link>
-      <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
-      <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
-    </item>
-    
-    <item>
-      <title>推測候補表示</title>
-      <link>https://goozenlab.com/blog/2016/08/predictice-candidates/</link>
-      <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
-      <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
-    </item>
-    
-    <item>
-      <title>MBP15/2016の勝手な推測</title>
-      <link>https://goozenlab.com/blog/2016/06/mbp2016/</link>
-      <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
-      <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきて</description>
-    </item>
-    
-    <item>
-      <title>Fusion drive を作る</title>
-      <link>https://goozenlab.com/blog/2016/03/create-fusiondrive/</link>
-      <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/03/create-fusiondrive/</guid>
-      <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
-    </item>
-    
-    <item>
-      <title>デノンのDA-10</title>
-      <link>https://goozenlab.com/blog/2015/06/denon-da10/</link>
-      <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/denon-da10/</guid>
-      <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
-    </item>
-    
-    <item>
-      <title>エル・キャピタンを入れる</title>
-      <link>https://goozenlab.com/blog/2015/06/elcapitan-beta/</link>
-      <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/elcapitan-beta/</guid>
-      <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
-    </item>
-    
-    <item>
-      <title>SurfacePad</title>
-      <link>https://goozenlab.com/blog/2015/05/surfacepad/</link>
-      <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/surfacepad/</guid>
-      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
-    </item>
-    
-    <item>
-      <title>新しいMacbook</title>
-      <link>https://goozenlab.com/blog/2015/03/new-macbook/</link>
-      <pubDate>Tue, 10 Mar 2015 05:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/new-macbook/</guid>
-      <description>早起きして、情報をチェック。Apple Watchが発表されました。買わないと思います。 ちょっと、高いのでは、、 いや、高い。 単体では使えない 対</description>
-    </item>
-    
-    <item>
-      <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
-      <link>https://goozenlab.com/blog/2015/02/play-ipod-library/</link>
-      <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/play-ipod-library/</guid>
-      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
-    </item>
-    
-    <item>
-      <title>MBA11を10日間使ってみて</title>
-      <link>https://goozenlab.com/blog/2014/11/mba-review/</link>
-      <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/mba-review/</guid>
-      <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
-    </item>
     
     <item>
       <title>さよならMBP15、サワディクラップMBA11</title>
-      <link>https://goozenlab.com/blog/2014/11/macbookair11/</link>
+      <link>/blog/macbookair11/</link>
       <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/macbookair11/</guid>
+      <guid>/blog/macbookair11/</guid>
       <description>さよなら、MBP15、サワディクラップ、MBA11。 タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変</description>
-    </item>
-    
-    <item>
-      <title>Yosemite</title>
-      <link>https://goozenlab.com/blog/2014/10/yosemite/</link>
-      <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/10/yosemite/</guid>
-      <description>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリック</description>
-    </item>
-    
-    <item>
-      <title>Chromiumの半自動更新</title>
-      <link>https://goozenlab.com/blog/2013/07/chromium-autoupdate/</link>
-      <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/chromium-autoupdate/</guid>
-      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
-    </item>
-    
-    <item>
-      <title>Textmate v2</title>
-      <link>https://goozenlab.com/blog/2013/03/textmate2/</link>
-      <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/03/textmate2/</guid>
-      <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オー</description>
-    </item>
-    
-    <item>
-      <title>画面のグレー/カラーのスイッチ</title>
-      <link>https://goozenlab.com/blog/2013/02/grayscale-switch/</link>
-      <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
-      <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
-    </item>
-    
-    <item>
-      <title>眼精疲労と白黒モニター</title>
-      <link>https://goozenlab.com/blog/2012/11/gray-mode/</link>
-      <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/11/gray-mode/</guid>
-      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
-    </item>
-    
-    <item>
-      <title>コンピューターの名前</title>
-      <link>https://goozenlab.com/blog/2011/12/computer-naming/</link>
-      <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/12/computer-naming/</guid>
-      <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。 マックでは勝手に○○さんのコンピューターなんて味気のない名前が付</description>
     </item>
     
   </channel>

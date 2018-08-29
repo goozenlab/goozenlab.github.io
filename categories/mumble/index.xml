@@ -2,141 +2,249 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mumble on goozenlab</title>
-    <link>https://goozenlab.com/categories/mumble/</link>
+    <link>/categories/mumble/</link>
     <description>Recent content in Mumble on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 09 May 2018 13:30:00 +0700</lastBuildDate>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 May 2018 17:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Android P DP2が公開</title>
-      <link>https://goozenlab.com/blog/2018/05/android-p-dp2/</link>
-      <pubDate>Wed, 09 May 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/android-p-dp2/</guid>
-      <description>Google I/O 2018にてAndroid P DP2が公開されました。&amp;rdquo;Google’s most ambitious update&amp;rdquo; なんてニュースサイトで言われていてます。対応端末</description>
-    </item>
-    
-    <item>
-      <title>Ichiro the man</title>
-      <link>https://goozenlab.com/blog/2018/05/ichiro-forever/</link>
-      <pubDate>Fri, 04 May 2018 17:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/ichiro-forever/</guid>
-      <description>このひとは唯一無二ですね。コメントにドキッとしました。 僕の近くにいる人は、これが分かると思いますけど、僕は野球の、何て言ったらいいですかね、</description>
-    </item>
     
     <item>
       <title>Webサイト構築</title>
-      <link>https://goozenlab.com/blog/2018/05/wp-pure-site/</link>
+      <link>/blog/wp-pure-site/</link>
       <pubDate>Wed, 02 May 2018 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/wp-pure-site/</guid>
+      <guid>/blog/wp-pure-site/</guid>
       <description>最近はちょっとした縁があって、Webサイト構築・更新に勤しんでます。 久しぶりのウェブ開発なので、ちょっとした浦島太郎状態。時代の流れをすごく</description>
     </item>
     
     <item>
-      <title>完熟バナナ</title>
-      <link>https://goozenlab.com/blog/2018/05/fully-ripened-banana/</link>
-      <pubDate>Tue, 01 May 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/fully-ripened-banana/</guid>
-      <description>フルーツが豊富で、値段もお安いタイにいます。青いバナナはその中でも特にお買い得な果物の一つで、１０本：１５バーツ とかで叩き売られています。 S</description>
-    </item>
-    
-    <item>
       <title>ノキア、お前もか（噂）</title>
-      <link>https://goozenlab.com/blog/2018/04/nokiax6/</link>
+      <link>/blog/nokiax6/</link>
       <pubDate>Fri, 27 Apr 2018 14:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/nokiax6/</guid>
+      <guid>/blog/nokiax6/</guid>
       <description>ノキアよ、お前もか！。。嘘だと言っておくれー。 ノッチを恥じらいなく真似てくるような会社のものは買うまいと、、思っていたのに。。 アップルがノッ</description>
     </item>
     
     <item>
+      <title>2018年の海外年明け</title>
+      <link>/blog/new-year-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/new-year-2018/</guid>
+      <description>インドのリシケシュにて、シャワーを浴びている最中に花火の音が聞こえ、年が明けたことを知る。 ここ数年一年一年が恐ろしいほど早く過ぎ去っていく。</description>
+    </item>
+    
+    <item>
+      <title>2017年の海外年明け</title>
+      <link>/blog/new-year-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 12:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/new-year-2017/</guid>
+      <description>メコン川沿いの国境の街、チェンコーンにて年末年始を過ごす。大晦日の午後11時すぎ、一旦静かになるが、年明けとともにコムロイと花火がラオス側と</description>
+    </item>
+    
+    <item>
       <title>MacBook Pro 2016</title>
-      <link>https://goozenlab.com/blog/2016/11/mbp2016/</link>
+      <link>/blog/mbp2016/</link>
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/11/mbp2016/</guid>
+      <guid>/blog/mbp2016/</guid>
       <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
     </item>
     
     <item>
       <title>iPhone 5S始めました</title>
-      <link>https://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <link>/blog/iphone5s/</link>
       <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <guid>/blog/iphone5s/</guid>
       <description>母からのお下がり、iphone5Sを頂きました！ 全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppl</description>
     </item>
     
     <item>
-      <title>XCode8</title>
-      <link>https://goozenlab.com/blog/2016/09/xcode8/</link>
-      <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/xcode8/</guid>
-      <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもり</description>
-    </item>
-    
-    <item>
       <title>unwindからアンワインド</title>
-      <link>https://goozenlab.com/blog/2016/09/unwind-unwind/</link>
+      <link>/blog/unwind-unwind/</link>
       <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
+      <guid>/blog/unwind-unwind/</guid>
       <description>早くも、unwindからアンワインドします。 何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダ</description>
     </item>
     
     <item>
       <title>iPhone7</title>
-      <link>https://goozenlab.com/blog/2016/09/iphone7/</link>
+      <link>/blog/iphone7/</link>
       <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/iphone7/</guid>
+      <guid>/blog/iphone7/</guid>
       <description>斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気</description>
     </item>
     
     <item>
       <title>cosperの金額表示</title>
-      <link>https://goozenlab.com/blog/2016/09/cosper-display/</link>
+      <link>/blog/cosper-display/</link>
       <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/cosper-display/</guid>
+      <guid>/blog/cosper-display/</guid>
       <description>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。 機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、 拙作アプリ、コスパ.1.9.2より</description>
     </item>
     
     <item>
       <title>Twitterを復活</title>
-      <link>https://goozenlab.com/blog/2016/08/tweet/</link>
+      <link>/blog/tweet/</link>
       <pubDate>Tue, 16 Aug 2016 13:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/tweet/</guid>
+      <guid>/blog/tweet/</guid>
       <description>つぶやきたい事がある訳では無いけれど、twitterを復活させました。( アカウント：goozenlab) まぁ、広報活動の一つとして考えてます</description>
     </item>
     
     <item>
       <title>iTuneConnect レポート</title>
-      <link>https://goozenlab.com/blog/2016/08/report-a/</link>
+      <link>/blog/report-a/</link>
       <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/report-a/</guid>
+      <guid>/blog/report-a/</guid>
       <description>最近毎週 iTuneConnect からレポートが送られてくる。 (a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロ</description>
     </item>
     
     <item>
+      <title>chroniumosをインストール</title>
+      <link>/blog/chroniumos/</link>
+      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/chroniumos/</guid>
+      <description>暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファ</description>
+    </item>
+    
+    <item>
+      <title>iPhone4SをiOS9にアップデート</title>
+      <link>/blog/ios9-iphone4s/</link>
+      <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/ios9-iphone4s/</guid>
+      <description>ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。 複数のソフトで共有しているデートピッカーが問題の</description>
+    </item>
+    
+    <item>
       <title>MBP15/2016の勝手な推測</title>
-      <link>https://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <link>/blog/mbp2016/</link>
       <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <guid>/blog/mbp2016/</guid>
       <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきて</description>
+    </item>
+    
+    <item>
+      <title>2016年の海外年明け</title>
+      <link>/blog/new-year-2016/</link>
+      <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/new-year-2016/</guid>
+      <description>去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。 そんな中、未だ続く放浪。。 今年は清めの年という事で、年末</description>
+    </item>
+    
+    <item>
+      <title>GV-1についたゴミのクリーンアップ</title>
+      <link>/blog/dust-gv1/</link>
+      <pubDate>Sun, 18 Oct 2015 13:15:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/dust-gv1/</guid>
+      <description>GRに付けている外付けファインダーGV-1にゴミが見えるようになる。ホコリというよりも、ゴミ。 黒いゴミが中心部に張り付いている。ケースに入れ</description>
+    </item>
+    
+    <item>
+      <title>iOS 9.0.1</title>
+      <link>/blog/ios901/</link>
+      <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/ios901/</guid>
+      <description>未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。 修正点の中でも気になるのは、 アラームやタイマー</description>
+    </item>
+    
+    <item>
+      <title>XCode7とElCapitan</title>
+      <link>/blog/xcode7-elcapitan/</link>
+      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode7-elcapitan/</guid>
+      <description>アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。 まず、取り急ぎ実機での検証は先回しにして、シミュレータでの</description>
+    </item>
+    
+    <item>
+      <title>メインマシーンの悩み</title>
+      <link>/blog/main-notebook/</link>
+      <pubDate>Sat, 16 May 2015 14:41:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/main-notebook/</guid>
+      <description>日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。 昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思</description>
+    </item>
+    
+    <item>
+      <title>iTunes Account Supervisorからの便り</title>
+      <link>/blog/pla-violation/</link>
+      <pubDate>Wed, 15 Apr 2015 10:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/pla-violation/</guid>
+      <description>３月の下旬に iTunes Account Supervisor から不審なメールが届く。 Notification of iOS Developer Program License Agreement (PLA) violation: XXXXX We are writing to inform you that your company is not in compliance with the iOS Developer Program License Agreement (PLA) due to documented evidence of manipulation of the user reviews and/or chart rankings associated with your apps on</description>
+    </item>
+    
+    <item>
+      <title>！Thanks alot for download Sati！</title>
+      <link>/blog/thanx-dowload-sati/</link>
+      <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/thanx-dowload-sati/</guid>
+      <description>!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと</description>
+    </item>
+    
+    <item>
+      <title>Ricoh GR用てるてる坊主カメララップ</title>
+      <link>/blog/wrapcase-gr/</link>
+      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/wrapcase-gr/</guid>
+      <description>電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、 デジカメも光学のビューファインダーが無いとどうもだめ。 GRの</description>
+    </item>
+    
+    <item>
+      <title>マラッカに戻る</title>
+      <link>/blog/goingback-melaka/</link>
+      <pubDate>Sun, 25 Jan 2015 10:17:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/goingback-melaka/</guid>
+      <description>コタバルでネパール出発日まで滞在する積もりでいたのだが、KLまでの飛行機チケットが思ったより高かったのと（まぁ、実際高くはないのだが、前後で</description>
+    </item>
+    
+    <item>
+      <title>新年早々南京虫</title>
+      <link>/blog/2013-bedbug/</link>
+      <pubDate>Sat, 05 Jan 2013 14:41:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/2013-bedbug/</guid>
+      <description>新年早々、久しぶりにやられてしまいました。全く無礼な奴らです、ナンキン虫。 人いったい何だと思うくらい狂喜乱舞、噛み付いてきます。余裕で100</description>
+    </item>
+    
+    <item>
+      <title>Dashのアイコン</title>
+      <link>/blog/dash-icon/</link>
+      <pubDate>Mon, 19 Nov 2012 16:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/dash-icon/</guid>
+      <description>Dashのアイコン（画面中央の猫）が変わりました。がっ、こりゃまた微妙な。。。 （以前の物はちょっと怖い感じだったので猫派の私としては受け入れ</description>
+    </item>
+    
+    <item>
+      <title>祝？25,000ダウンロード</title>
+      <link>/blog/25000-download/</link>
+      <pubDate>Mon, 16 May 2011 19:41:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/25000-download/</guid>
+      <description>細かい数字はとってませんが、ソフトのダウンロードが昨年の11月頃から本格的にスタートし25,000件到達しました。有料のものは350件。しか</description>
     </item>
     
   </channel>

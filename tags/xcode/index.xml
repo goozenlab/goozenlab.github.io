@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcode on goozenlab</title>
+    <link>/tags/xcode/</link>
+    <description>Recent content in Xcode on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 19 Sep 2016 14:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XCode8</title>
+      <link>/blog/xcode8/</link>
+      <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode8/</guid>
+      <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもり</description>
+    </item>
+    
+    <item>
+      <title>XCodeにてアプリデーターの管理</title>
+      <link>/blog/device-container/</link>
+      <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/device-container/</guid>
+      <description>端末のアプリデータをバックアップ、復元。 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる</description>
+    </item>
+    
+    <item>
+      <title>XCode7とElCapitan</title>
+      <link>/blog/xcode7-elcapitan/</link>
+      <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode7-elcapitan/</guid>
+      <description>アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。 まず、取り急ぎ実機での検証は先回しにして、シミュレータでの</description>
+    </item>
+    
+    <item>
+      <title>Xcode 6.1とiOS8.2</title>
+      <link>/blog/xcode611-ios82/</link>
+      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode611-ios82/</guid>
+      <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
+    </item>
+    
+  </channel>
+</rss>

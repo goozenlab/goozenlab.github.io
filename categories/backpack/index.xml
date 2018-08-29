@@ -2,96 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backpack on goozenlab</title>
-    <link>https://goozenlab.com/categories/backpack/</link>
+    <link>/categories/backpack/</link>
     <description>Recent content in Backpack on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Jan 2016 20:00:00 +0900</lastBuildDate>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 20 Jun 2015 15:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/backpack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/backpack/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>2016年の海外年明け</title>
-      <link>https://goozenlab.com/blog/2016/01/new-year/</link>
-      <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/01/new-year/</guid>
-      <description>去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。 そんな中、未だ続く放浪。。 今年は清めの年という事で、年末</description>
-    </item>
     
     <item>
       <title>パックリスト 2015</title>
-      <link>https://goozenlab.com/blog/2015/06/centralasia-packlist/</link>
+      <link>/blog/centralasia-packlist/</link>
       <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/centralasia-packlist/</guid>
+      <guid>/blog/centralasia-packlist/</guid>
       <description>中央アジアに呼ばれているようなので、旅に出る。スタン・スタンの４+1カ国を２ヶ月半くらいで周遊。そして訪問国が100カ国に到達！。 イスラム圏</description>
     </item>
     
     <item>
       <title>お気に入りサンダル</title>
-      <link>https://goozenlab.com/blog/2015/06/sandal/</link>
+      <link>/blog/sandal/</link>
       <pubDate>Sat, 13 Jun 2015 12:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/sandal/</guid>
+      <guid>/blog/sandal/</guid>
       <description>買ってすぐに履いても靴擦れにならなかった、キーンとビルケンシュトックのサンダル。かなりお気に入りです。靴下はここ数年で数日も履いて無いかも。</description>
     </item>
     
     <item>
-      <title>中国ビザをチェンマイで申請</title>
-      <link>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</link>
-      <pubDate>Fri, 12 Jun 2015 10:30:00 +0700</pubDate>
+      <title> 新しいバックパック: GR-0</title>
+      <link>/blog/new-backpack-gr0/</link>
+      <pubDate>Fri, 22 May 2015 12:30:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/chinese-visa-chiangmai/</guid>
-      <description>１５日まではビザが必要ないと思っていた中国（韓国籍）。危うい所でチケットを買ってしまう所だった。航空会社の購入サイトでクレジットカード記入画</description>
+      <guid>/blog/new-backpack-gr0/</guid>
+      <description>7年ぶりにバックパックを新調。 デザイン、次に大きさ、フラットに開く事を優先順にして選考する。 TomBhin社のAeronaut 30と511社</description>
     </item>
     
     <item>
-      <title> 新しいバックパック: GR-0</title>
-      <link>https://goozenlab.com/blog/2015/05/new-backpack-gr0/</link>
-      <pubDate>Fri, 22 May 2015 12:30:00 +0900</pubDate>
+      <title>GR-0</title>
+      <link>/mono/backpack-gr-0/</link>
+      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/new-backpack-gr0/</guid>
+      <guid>/mono/backpack-gr-0/</guid>
       <description>7年ぶりにバックパックを新調。 デザイン、次に大きさ、フラットに開く事を優先順にして選考する。 TomBhin社のAeronaut 30と511社</description>
     </item>
     
     <item>
       <title>バックパックの買換思案中</title>
-      <link>https://goozenlab.com/blog/2015/05/new-backpack/</link>
+      <link>/blog/new-backpack/</link>
       <pubDate>Fri, 01 May 2015 12:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/new-backpack/</guid>
+      <guid>/blog/new-backpack/</guid>
       <description>グアテマラでアメリカ在住九州男児の料理人から1500円くらいで引き継いだ使用年数7年訪問国は50を超えた、なかなか壊れないバックパックを新ら</description>
-    </item>
-    
-    <item>
-      <title>バックパックの中身</title>
-      <link>https://goozenlab.com/blog/2015/04/inside-backpack/</link>
-      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/04/inside-backpack/</guid>
-      <description>ちょっと自分でも整理をしたかったので、今回の約４ヶ月間マレーシア・ネパール旅行での持ち物リストを書き出してみました。バックパックを新しくしよ</description>
-    </item>
-    
-    <item>
-      <title>旅仕様 iOS</title>
-      <link>https://goozenlab.com/blog/2015/02/travel-home/</link>
-      <pubDate>Sat, 28 Feb 2015 20:32:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/travel-home/</guid>
-      <description>iOS旅仕様のホーム画面はこんな感じです。お勧めのソフトです。背景はチェ・ゲバラ師匠。 ドック Google Maps：GPSと合わせて便利です。でも旅です</description>
-    </item>
-    
-    <item>
-      <title>旅先での睡眠</title>
-      <link>https://goozenlab.com/blog/2015/02/sleep-on-travel/</link>
-      <pubDate>Tue, 17 Feb 2015 19:41:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/sleep-on-travel/</guid>
-      <description>ネパールに来て、久しぶりに秋冬の気候の中での滞在が続く。停電の関係もあるかもしれないが、睡眠時間が延び、かなり熟睡する。頭が涼しいからなのか</description>
     </item>
     
   </channel>

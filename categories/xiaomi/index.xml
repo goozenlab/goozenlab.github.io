@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xiaomi on goozenlab</title>
-    <link>https://goozenlab.com/categories/xiaomi/</link>
+    <link>/categories/xiaomi/</link>
     <description>Recent content in Xiaomi on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Apr 2018 10:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/xiaomi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/xiaomi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>初代 Mi Max カスタム化</title>
-      <link>https://goozenlab.com/blog/2018/04/custom-mi-max/</link>
+      <link>/blog/2018/04/custom-mi-max/</link>
       <pubDate>Tue, 24 Apr 2018 10:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/custom-mi-max/</guid>
+      <guid>/blog/2018/04/custom-mi-max/</guid>
       <description>手放してしまった初代Mi Maxですが、画面の遍歴を記録としてポストします。 出来もそんなに悪くない MIUI から始まり、Lineage14.1, RR を経</description>
     </item>
     

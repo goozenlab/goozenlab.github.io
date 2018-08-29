@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Doop on goozenlab</title>
+    <link>/tags/doop/</link>
+    <description>Recent content in Doop on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 31 Jul 2016 21:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/doop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>doop v1.9.0</title>
+      <link>/blog/doop-190/</link>
+      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-190/</guid>
+      <description>Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？な</description>
+    </item>
+    
+    <item>
+      <title>doop v1.8.1</title>
+      <link>/blog/doop-181/</link>
+      <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-181/</guid>
+      <description>項目が削除できないケアレスミスのバグフィックスです。 連絡いただいた、そらのはサン、ありがとうございました。 対応が遅れましたが、アプストアに申</description>
+    </item>
+    
+    <item>
+      <title>doop v1.8.0</title>
+      <link>/blog/doop-180/</link>
+      <pubDate>Thu, 25 Jun 2015 07:00:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-180/</guid>
+      <description>中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。 追加機能 履歴ページへひとっ飛び 今までは、項目をダ</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.5</title>
+      <link>/blog/doop-165/</link>
+      <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-165/</guid>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。 そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザー</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.4</title>
+      <link>/blog/doop-164/</link>
+      <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-164/</guid>
+      <description>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特</description>
+    </item>
+    
+    <item>
+      <title>doop v1.6.2</title>
+      <link>/blog/doop-162/</link>
+      <pubDate>Thu, 20 Nov 2014 17:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-162/</guid>
+      <description>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加</description>
+    </item>
+    
+    <item>
+      <title>doop v1.5.0</title>
+      <link>/blog/doop-150/</link>
+      <pubDate>Mon, 29 Jul 2013 10:41:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-150/</guid>
+      <description>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。 アイコンを変更。髪の毛とひげを濃くしました。おでこにカラータイマーを付け</description>
+    </item>
+    
+    <item>
+      <title>カラーロック</title>
+      <link>/blog/color-lock/</link>
+      <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/color-lock/</guid>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
+    </item>
+    
+    <item>
+      <title>doop v1.4.4</title>
+      <link>/blog/doop-144/</link>
+      <pubDate>Thu, 27 Jun 2013 18:47:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-144/</guid>
+      <description>ナビゲーションバーの長押しでソートを切り替える機能を追加しました。 今まで通りのソート（メインでは平均時間順、他のページでは色毎）と平均時間を</description>
+    </item>
+    
+    <item>
+      <title>doop v1.4.3</title>
+      <link>/blog/doop-143/</link>
+      <pubDate>Wed, 29 May 2013 09:32:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/doop-143/</guid>
+      <description>久しくアップデートしていないdoopに少し手を入れました。 カラーモードの追加と右のバーを単色とグラフ表示の切り替え可能にしました。 少しだけ見</description>
+    </item>
+    
+    <item>
+      <title>DatePickerでの表示バグの修正</title>
+      <link>/blog/bug-datepicker/</link>
+      <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/bug-datepicker/</guid>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.4.1 for lite version</title>
+      <link>/blog/admob-update/</link>
+      <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/admob-update/</guid>
+      <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いてい</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.1 for lite version</title>
+      <link>/blog/admob-update/</link>
+      <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/admob-update/</guid>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
+    </item>
+    
+    <item>
+      <title>Update AdMob 6.2.0 for lite version</title>
+      <link>/blog/admob-update/</link>
+      <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/admob-update/</guid>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
+    </item>
+    
+    <item>
+      <title>4系と5系</title>
+      <link>/blog/version4-5/</link>
+      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/version4-5/</guid>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
+    </item>
+    
+    <item>
+      <title>Update for Retina4</title>
+      <link>/blog/update-retina/</link>
+      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/update-retina/</guid>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
+    </item>
+    
+    <item>
+      <title>Update for Navbar</title>
+      <link>/blog/navbar-update/</link>
+      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/navbar-update/</guid>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
+    </item>
+    
+    <item>
+      <title>XCode4.2と怒濤のアップデート</title>
+      <link>/blog/xcode42-update/</link>
+      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode42-update/</guid>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
+    </item>
+    
+  </channel>
+</rss>

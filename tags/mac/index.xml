@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on goozenlab</title>
+    <link>/tags/mac/</link>
+    <description>Recent content in Mac on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 26 Nov 2016 22:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MacBook Pro 2016</title>
+      <link>/blog/mbp2016/</link>
+      <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/mbp2016/</guid>
+      <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
+    </item>
+    
+    <item>
+      <title>Fusion drive を作る</title>
+      <link>/blog/create-fusiondrive/</link>
+      <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/create-fusiondrive/</guid>
+      <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
+    </item>
+    
+    <item>
+      <title>SurfacePad</title>
+      <link>/blog/surfacepad/</link>
+      <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/surfacepad/</guid>
+      <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
+    </item>
+    
+    <item>
+      <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
+      <link>/blog/play-ipod-library/</link>
+      <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/play-ipod-library/</guid>
+      <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
+    </item>
+    
+    <item>
+      <title>MBA11を10日間使ってみて</title>
+      <link>/blog/mba-review/</link>
+      <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/mba-review/</guid>
+      <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
+    </item>
+    
+    <item>
+      <title>Chromiumの半自動更新</title>
+      <link>/blog/chromium-autoupdate/</link>
+      <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/chromium-autoupdate/</guid>
+      <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
+    </item>
+    
+    <item>
+      <title>Textmate v2</title>
+      <link>/blog/textmate2/</link>
+      <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/textmate2/</guid>
+      <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オー</description>
+    </item>
+    
+    <item>
+      <title>眼精疲労と白黒モニター</title>
+      <link>/blog/gray-mode/</link>
+      <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/gray-mode/</guid>
+      <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
+    </item>
+    
+  </channel>
+</rss>

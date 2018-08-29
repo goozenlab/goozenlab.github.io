@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ippuku on goozenlab</title>
-    <link>https://goozenlab.com/categories/ippuku/</link>
+    <link>/categories/ippuku/</link>
     <description>Recent content in Ippuku on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Jun 2016 22:57:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/ippuku/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/ippuku/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ippuku v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/06/ippuku-190/</link>
+      <link>/blog/2016/06/ippuku-190/</link>
       <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/ippuku-190/</guid>
+      <guid>/blog/2016/06/ippuku-190/</guid>
       <description>Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデ</description>
     </item>
     
     <item>
       <title>ippuku v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/ippuku-150/</link>
+      <link>/blog/2013/07/ippuku-150/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/ippuku-150/</guid>
+      <guid>/blog/2013/07/ippuku-150/</guid>
       <description>iOS7が発表され、それにそったデザインに少し変更した物をアップします。 機能の追加はありませんが、ちょっとした所に手を入れました。 日付けを挟</description>
     </item>
     
     <item>
       <title>DatePickerでの表示バグの修正</title>
-      <link>https://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <link>/blog/2013/05/bug-datepicker/</link>
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <guid>/blog/2013/05/bug-datepicker/</guid>
       <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
     </item>
     
     <item>
       <title>Icon Renew and minor update</title>
-      <link>https://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <link>/blog/2013/05/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <guid>/blog/2013/05/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名</description>
     </item>
     
     <item>
       <title>Update AdMob 6.4.1 for lite version</title>
-      <link>https://goozenlab.com/blog/2013/05/admob-update/</link>
+      <link>/blog/2013/05/admob-update/</link>
       <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/admob-update/</guid>
+      <guid>/blog/2013/05/admob-update/</guid>
       <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いてい</description>
     </item>
     
     <item>
       <title>ippuku v1.4.3</title>
-      <link>https://goozenlab.com/blog/2013/02/ippuku143/</link>
+      <link>/blog/2013/02/ippuku143/</link>
       <pubDate>Fri, 22 Feb 2013 15:35:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/02/ippuku143/</guid>
+      <guid>/blog/2013/02/ippuku143/</guid>
       <description>ippukuを久しぶりにアップデート。アプストアに申請中です。 29時間の流れを一気に見れるのが売りでしたが、少ない時間のログをとるには少しグ</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.1 for lite version</title>
-      <link>https://goozenlab.com/blog/2013/01/admob-update/</link>
+      <link>/blog/2013/01/admob-update/</link>
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <guid>/blog/2013/01/admob-update/</guid>
       <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.0 for lite version</title>
-      <link>https://goozenlab.com/blog/2012/10/admob-update/</link>
+      <link>/blog/2012/10/admob-update/</link>
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <guid>/blog/2012/10/admob-update/</guid>
       <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
       <title>ippuku v1.0.6</title>
-      <link>https://goozenlab.com/blog/2012/01/ippuku-106/</link>
+      <link>/blog/2012/01/ippuku-106/</link>
       <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/01/ippuku-106/</guid>
+      <guid>/blog/2012/01/ippuku-106/</guid>
       <description>iTuneConnectで問題があったんよね。。最近ようやく解決。久しぶりにアップデートを上げてます。 今までのが少々幼稚すぎたボタンのデザイ</description>
     </item>
     

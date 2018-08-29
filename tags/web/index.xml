@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on goozenlab</title>
+    <link>/tags/web/</link>
+    <description>Recent content in Web on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright � 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 May 2018 17:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webサイト構築</title>
+      <link>/blog/2018/05/wp-pure-site/</link>
+      <pubDate>Wed, 02 May 2018 17:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/2018/05/wp-pure-site/</guid>
+      <description>最近はちょっとした縁があって、Webサイト構築・更新に勤しんでます。 久しぶりのウェブ開発なので、ちょっとした浦島太郎状態。時代の流れをすごく</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vaio P on goozenlab</title>
+    <link>/tags/vaio-p/</link>
+    <description>Recent content in Vaio P on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 01 Apr 2018 13:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/vaio-p/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian on VAIO type P</title>
+      <link>/blog/debian-vaio-p/</link>
+      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/debian-vaio-p/</guid>
+      <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
+    </item>
+    
+  </channel>
+</rss>

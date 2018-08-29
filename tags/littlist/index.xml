@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Littlist on goozenlab</title>
+    <link>/tags/littlist/</link>
+    <description>Recent content in Littlist on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 05 Sep 2016 10:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/littlist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>littlist v2.8.0</title>
+      <link>/blog/littlist-280/</link>
+      <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-280/</guid>
+      <description>Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。 追</description>
+    </item>
+    
+    <item>
+      <title>littlist lite 復活</title>
+      <link>/blog/littlist-lite-265/</link>
+      <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-lite-265/</guid>
+      <description>リトリストのライト判を復活させました。 かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョ</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.6</title>
+      <link>/blog/littlist-266/</link>
+      <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-266/</guid>
+      <description>データーベースの更新により起きた、幾つかのバグを修正しました。 どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。 &amp;ldquo;RedHot List&amp;rdquo; と &amp;ld</description>
+    </item>
+    
+    <item>
+      <title>littlistでのバグ</title>
+      <link>/blog/littlist-265-bug/</link>
+      <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-265-bug/</guid>
+      <description>iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちま</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.5</title>
+      <link>/blog/littlist-265/</link>
+      <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-265/</guid>
+      <description>ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。 追加 バックアップを兼ねた、エクスポート リマインダーのリスト（※ デフォルトは &amp;l</description>
+    </item>
+    
+    <item>
+      <title>Reminder：日時の書き込み</title>
+      <link>/blog/reminder-duedatecomponents/</link>
+      <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/reminder-duedatecomponents/</guid>
+      <description>リマインダーへの日時の書き込み 読み込み時には event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone; と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き</description>
+    </item>
+    
+    <item>
+      <title>Reminderからの読込ではまる</title>
+      <link>/blog/reminder-completion/</link>
+      <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/reminder-completion/</guid>
+      <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void</description>
+    </item>
+    
+    <item>
+      <title>littlist 2.6.3</title>
+      <link>/blog/littlist-263/</link>
+      <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-263/</guid>
+      <description>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしまし</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.6.0</title>
+      <link>/blog/littlist-260/</link>
+      <pubDate>Thu, 30 Oct 2014 20:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-260/</guid>
+      <description>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが</description>
+    </item>
+    
+    <item>
+      <title>littlis v2.5.6</title>
+      <link>/blog/littlist/</link>
+      <pubDate>Sat, 20 Jul 2013 08:07:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist/</guid>
+      <description>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。 タイトルのフォントを大きくしメモの表示を拡大、</description>
+    </item>
+    
+    <item>
+      <title>カラーロック</title>
+      <link>/blog/color-lock/</link>
+      <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/color-lock/</guid>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
+    </item>
+    
+    <item>
+      <title>DatePickerでの表示バグの修正</title>
+      <link>/blog/bug-datepicker/</link>
+      <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/bug-datepicker/</guid>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.4</title>
+      <link>/blog/littlist-254/</link>
+      <pubDate>Thu, 25 Apr 2013 20:04:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-254/</guid>
+      <description>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.3</title>
+      <link>/blog/littlist-253/</link>
+      <pubDate>Sun, 03 Mar 2013 11:03:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-253/</guid>
+      <description>littlistにカワイイカラーモードを付けました。色の具合とかかなり悩みました。女性は男性より色の識別能力が優れているとの事なので、色の近</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.2</title>
+      <link>/blog/littlist-252/</link>
+      <pubDate>Wed, 06 Feb 2013 20:35:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-252/</guid>
+      <description>カラースキームを変更できるようにしました。ダークモードを追加、背景を黒くしグレーの階調も逆順にしました。黒iPhoneで使ったら結構格好いい</description>
+    </item>
+    
+    <item>
+      <title>年末感謝週末セール</title>
+      <link>/blog/sale-on-weekend/</link>
+      <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/sale-on-weekend/</guid>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
+    </item>
+    
+    <item>
+      <title>littlist v2.5.1</title>
+      <link>/blog/littlist-251/</link>
+      <pubDate>Sat, 20 Oct 2012 12:47:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-251/</guid>
+      <description>インターフェイスをまた弄りました。（ご迷惑おかけします）変更点は、 右ロングタップ：項目をリストの一番上に移動。 今までは、右のバーを一番黒くす</description>
+    </item>
+    
+    <item>
+      <title>4系と5系</title>
+      <link>/blog/version4-5/</link>
+      <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/version4-5/</guid>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
+    </item>
+    
+    <item>
+      <title>Update for Retina4</title>
+      <link>/blog/update-retina/</link>
+      <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/update-retina/</guid>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
+    </item>
+    
+    <item>
+      <title>Update for Navbar</title>
+      <link>/blog/navbar-update/</link>
+      <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/navbar-update/</guid>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
+    </item>
+    
+    <item>
+      <title>Littlist v2.0.2</title>
+      <link>/blog/littlist-202/</link>
+      <pubDate>Sun, 01 Jul 2012 05:16:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-202/</guid>
+      <description>項目にちょっとしたメモを追加することを可能にしました。 ただ、このソフトの売りの一部「大きな文字で」というを削りたくない。使い勝手も複雑にした</description>
+    </item>
+    
+    <item>
+      <title>XCode4.2と怒濤のアップデート</title>
+      <link>/blog/xcode42-update/</link>
+      <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/xcode42-update/</guid>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
+    </item>
+    
+    <item>
+      <title>Little &#43; ?</title>
+      <link>/blog/littlist-naming/</link>
+      <pubDate>Wed, 10 Nov 2010 13:41:00 +0800</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/littlist-naming/</guid>
+      <description>littlistというネーミングは、 Little + List で付けたのですが、じっと見ていて、 Little + ist というのもありだなと、というかこっちの方が格好いいなと、 （</description>
+    </item>
+    
+  </channel>
+</rss>

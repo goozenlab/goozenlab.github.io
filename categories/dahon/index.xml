@@ -2,50 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dahon on goozenlab</title>
-    <link>https://goozenlab.com/categories/dahon/</link>
+    <link>/categories/dahon/</link>
     <description>Recent content in Dahon on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright © 2018, goozenlab; all rights reserved.</copyright>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sat, 20 May 2017 20:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://goozenlab.com/categories/dahon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/dahon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Brooks B-17 Imperial</title>
-      <link>https://goozenlab.com/blog/2017/05/brooks-b17/</link>
+      <link>/blog/2017/05/brooks-b17/</link>
       <pubDate>Sat, 20 May 2017 20:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/05/brooks-b17/</guid>
+      <guid>/blog/2017/05/brooks-b17/</guid>
       <description>ダホンのカスタマイズ その1：サドル 物画像 骨っぽい私のお尻に合うのかわからんけど、サドルをブルックスにする。中年なので人生先もそんなに長くはな</description>
     </item>
     
     <item>
       <title>ダホンで飛行機輪行</title>
-      <link>https://goozenlab.com/blog/2017/05/air-dahon/</link>
+      <link>/blog/2017/05/air-dahon/</link>
       <pubDate>Tue, 16 May 2017 20:30:00 +1000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/05/air-dahon/</guid>
+      <guid>/blog/2017/05/air-dahon/</guid>
       <description>海外に自転車を持っていくのは、ちょっと敷居が高い感じがありますが、旅先で自転車があると非常に快適です。ちょっと遠いレストランとか、町から外れ</description>
     </item>
     
     <item>
       <title>インチキ自転車国境越え</title>
-      <link>https://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</link>
+      <link>/blog/2016/12/thai-lao-border-by-bicycle/</link>
       <pubDate>Fri, 30 Dec 2016 20:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/12/thai-lao-border-by-bicycle/</guid>
+      <guid>/blog/2016/12/thai-lao-border-by-bicycle/</guid>
       <description>ビザの期限が1月1日なので、ビザのリニューアルのためチェンコーン・フェイサイへビザランをする。国境が町から遠いと聞いていたので、自転車を持っ</description>
     </item>
     
     <item>
+      <title>タイヤ</title>
+      <link>/mono/mono/schwalbe-marathon/</link>
+      <pubDate>Mon, 24 Oct 2016 20:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/mono/mono/schwalbe-marathon/</guid>
+      <description>タイヤはパンクに強いと言われている定番のシュワルベ・マラソン：20x1.35に変更する。元々付いているシュワルベ・レーサー：20x1.50よ</description>
+    </item>
+    
+    <item>
+      <title>エルゴグリップ</title>
+      <link>/mono/mono/ergo-biocork/</link>
+      <pubDate>Tue, 20 Sep 2016 20:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/mono/mono/ergo-biocork/</guid>
+      <description>ダホンのカスタマイズ、その4：グリップの変更。 必要無いように思えたけれども、昨今の円高もありついでに海外通販にて追加購入する。 折角？なので、</description>
+    </item>
+    
+    <item>
       <title>旅の伴侶</title>
-      <link>https://goozenlab.com/blog/2016/07/dahon-speed8/</link>
+      <link>/blog/2016/07/dahon-speed8/</link>
       <pubDate>Wed, 20 Jul 2016 20:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/dahon-speed8/</guid>
+      <guid>/blog/2016/07/dahon-speed8/</guid>
       <description>7月も下旬になりました。滞在中のタイでは大型連休。雨季入り祝日のカオパンサーが過ぎ、雨季に突入です。 2016年バージョンのダホンスピードD8</description>
     </item>
     

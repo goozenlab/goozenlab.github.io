@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image on goozenlab</title>
+    <link>/tags/image/</link>
+    <description>Recent content in Image on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Apr 2018 06:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/image/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログ用画像を一括リサイズ・リネーム</title>
+      <link>/blog/2018/04/rename-automator/</link>
+      <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/2018/04/rename-automator/</guid>
+      <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
+    </item>
+    
+  </channel>
+</rss>

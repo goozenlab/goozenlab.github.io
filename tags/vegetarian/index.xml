@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vegetarian on goozenlab</title>
+    <link>/tags/vegetarian/</link>
+    <description>Recent content in Vegetarian on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 01 May 2018 13:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/vegetarian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>完熟バナナ</title>
+      <link>/blog/fully-ripened-banana/</link>
+      <pubDate>Tue, 01 May 2018 13:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/fully-ripened-banana/</guid>
+      <description>フルーツが豊富で、値段もお安いタイにいます。青いバナナはその中でも特にお買い得な果物の一つで、１０本：１５バーツ とかで叩き売られています。 S</description>
+    </item>
+    
+    <item>
+      <title>ベジタリアン。1日2食、水泳40分、15,000歩。</title>
+      <link>/blog/vegi-swim/</link>
+      <pubDate>Fri, 30 Dec 2016 06:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>/blog/vegi-swim/</guid>
+      <description>ここ数年、自分にとって最適な最低体重と、それを維持するための最低限の食事量を探っていて、ちょっとひと段落つきそうなのでちょっと書いて見ました</description>
+    </item>
+    
+  </channel>
+</rss>
