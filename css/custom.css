@@ -9,7 +9,6 @@ body {
     color: #484848;
 }
 
-
 .header {
     text-align: left;
     color: #484848;
@@ -52,12 +51,15 @@ body {
 }
 
 
+/** general override */
+
 strong{
     color:#369;
     background-color: rgb(246,246,246);
     padding: 0 0.2em;
 
 }
+
 code{
     color:#c05b4d;
     background-color: rgb(249,249,249);
@@ -65,9 +67,14 @@ code{
 
 }
 
+/** global */
 
-/* Header */
+.pull-right {
+    float: right;
+}
 
+
+/** Header */
 
 .header ul li {
     height: auto;
@@ -98,7 +105,7 @@ code{
 
 
 
-/****** LIST *****/
+/** list */
 
 
 .posts {
@@ -133,7 +140,7 @@ code{
 }
 
 
-/* footnote **/
+/** footnote **/
 
 .footnote {
     font-family: verdana,arial,helvetica,sans-serif;
@@ -152,7 +159,7 @@ code{
 }
 
 
-/* side */
+/** side */
 
 .panel {
     
@@ -192,7 +199,7 @@ code{
 
 
 
-/****** FOOTER *******/
+/** Footer */
 
 .footer-content {
     /* remove  May 1, 2018
@@ -230,8 +237,7 @@ code{
 
 
 
-/****** POST *****/
-
+/** POST */
 
 .post {
     font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
@@ -298,14 +304,9 @@ code{
 }
 
 
-/* global */
-
-.pull-right {
-    float: right;
-}
 
 
-/* image */
+/** image */
 
 img.full-width {
     width: 100%;
@@ -315,7 +316,7 @@ img.full-width {
 
 
 
-/* summary */
+/** summary */
 
 .summary {
     font-family: verdana,arial,helvetica,sans-serif;
@@ -325,7 +326,7 @@ img.full-width {
 }
 
 
-/* pagenation */
+/** pagenation */
 
 .pagination {
     font-family: verdana,arial,helvetica,sans-serif;
@@ -365,20 +366,8 @@ a.pagelink {
 }
 
 
-/*
- aria-label="Previous"
- aria-label="First"
- 
- aria-label="Next"
- aria-label="Last"
- 
- <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
- 
- */
 
-
-
-/* Blockquote */
+/** Blockquote */
 
 blockquote{
     font-size: 1.0em;
@@ -397,13 +386,13 @@ blockquote{
 }
 
 blockquote::before{
-    font-family:Arial;
+    font-family: Arial;
     content: "\201C";
-    color:#78C0A8;
-    font-size:3.5em;
+    color: #78C0A8;
+    font-size: 3.5em;
     position: absolute;
     left: 10px;
-    top:-10px;
+    top: -10px;
 }
 
 blockquote::after{
@@ -419,6 +408,22 @@ blockquote span{
 }
 
 
+
+/** pure-button override */
+
+.pure-button {
+    border-radius: 4px;
+}
+
+a.pure-button {
+    color: #fff;
+}
+
+
+.amazon {
+    background: rgb(243, 146, 63); /* this is a amazon orang */
+	
+}
 
 
 @media screen and (max-width:767px){
