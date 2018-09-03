@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Komoot on goozenlab</title>
-    <link>/tags/komoot/</link>
+    <link>https://goozenlab.com/tags/komoot/</link>
     <description>Recent content in Komoot on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sun, 02 Sep 2018 17:30:00 +0700</lastBuildDate>
     
-	<atom:link href="/tags/komoot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/komoot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>KomootとRidewithGPS</title>
-      <link>/blog/price-komoot-ridewithgps/</link>
+      <link>https://goozenlab.com/blog/price-komoot-ridewithgps/</link>
       <pubDate>Sun, 02 Sep 2018 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/price-komoot-ridewithgps/</guid>
+      <guid>https://goozenlab.com/blog/price-komoot-ridewithgps/</guid>
       <description>今年の秋に四国を自転車で回ってみようと思い色々とリサーチをしてます。ルート作り、ウェブサービス、所有しているWahoo Boltの有効な活用方</description>
     </item>
     

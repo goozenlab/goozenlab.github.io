@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pakistan on goozenlab</title>
-    <link>/tags/pakistan/</link>
+    <link>https://goozenlab.com/tags/pakistan/</link>
     <description>Recent content in Pakistan on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 13 Jul 2015 19:30:00 +0600</lastBuildDate>
     
-	<atom:link href="/tags/pakistan/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/pakistan/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>パキビザ プチ情報</title>
-      <link>/blog/visa-pakistan/</link>
+      <link>https://goozenlab.com/blog/visa-pakistan/</link>
       <pubDate>Mon, 13 Jul 2015 19:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/visa-pakistan/</guid>
+      <guid>https://goozenlab.com/blog/visa-pakistan/</guid>
       <description>なっ、なんと！セネガル、ダカールのパキスタン大使館では面倒な書類等の提出必要は無く、１年間有効かつ、滞在期間も好きなだけ！（ビザの滞在期間の</description>
     </item>
     

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud on goozenlab</title>
-    <link>/tags/cloud/</link>
+    <link>https://goozenlab.com/tags/cloud/</link>
     <description>Recent content in Cloud on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Wed, 05 Dec 2012 12:47:00 +0600</lastBuildDate>
     
-	<atom:link href="/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>家鯖をownCloudでクラウド化</title>
-      <link>/blog/owncloud/</link>
+      <link>https://goozenlab.com/blog/owncloud/</link>
       <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/owncloud/</guid>
+      <guid>https://goozenlab.com/blog/owncloud/</guid>
       <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。 現在Dropboxに画像は保管していて別</description>
     </item>
     

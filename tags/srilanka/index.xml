@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Srilanka on goozenlab</title>
-    <link>/tags/srilanka/</link>
+    <link>https://goozenlab.com/tags/srilanka/</link>
     <description>Recent content in Srilanka on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,24 +10,24 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sat, 25 Mar 2017 08:00:00 +0530</lastBuildDate>
     
-	<atom:link href="/tags/srilanka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/srilanka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>アヌラーダプラ、スリランカのインターネット事情</title>
-      <link>/blog/internet-anuradhapura/</link>
+      <link>https://goozenlab.com/blog/internet-anuradhapura/</link>
       <pubDate>Sat, 25 Mar 2017 08:00:00 +0530</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/internet-anuradhapura/</guid>
+      <guid>https://goozenlab.com/blog/internet-anuradhapura/</guid>
       <description>スリランカ、文化三角地帯のアヌラーダプラにいます。チャリダーデビューの予定でしたが、残念ながら単身での旅行。 道で声をかけられた宿にチェックイ</description>
     </item>
     
     <item>
       <title>スリランカ、キャンディーのインターネット事情</title>
-      <link>/blog/internet-kandy/</link>
+      <link>https://goozenlab.com/blog/internet-kandy/</link>
       <pubDate>Sat, 10 Mar 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/internet-kandy/</guid>
+      <guid>https://goozenlab.com/blog/internet-kandy/</guid>
       <description>泊まった宿(YMBA:YoungManBuddhistAssosiation、横にはYMMAがありました。もちろんYMCAもあります。)には</description>
     </item>
     

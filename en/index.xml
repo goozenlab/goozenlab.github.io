@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ens on goozenlab</title>
-    <link>/en/</link>
+    <link>https://goozenlab.com/en/</link>
     <description>Recent content in Ens on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pinocul</title>
-      <link>/en/iapp/pinocul/</link>
+      <link>https://goozenlab.com/en/iapp/pinocul/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/pinocul/</guid>
+      <guid>https://goozenlab.com/en/iapp/pinocul/</guid>
       <description>When you make (box) Pinhole Camera, you know the size of film but are not quite sure how thick you&amp;rsquo;re going to make.
 This softwear calculate the thickness of camera by choosing angle and size you&amp;rsquo;d like to make.
 ※ I&amp;rsquo;m not sure people are still making pinhole camera but&amp;hellip;
@@ -27,10 +27,10 @@ I hope this app helps..</description>
     
     <item>
       <title>(a)</title>
-      <link>/en/iapp/a/</link>
+      <link>https://goozenlab.com/en/iapp/a/</link>
       <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/a/</guid>
+      <guid>https://goozenlab.com/en/iapp/a/</guid>
       <description>I have a lot of very small things(small things that are easily forget) to do, but web servise is too much for me. Text(Note) is good ennough but&amp;hellip;
 It started with simple idea: I wanted to manage tasks by text file and look tasks in my hand(iPhone4).
 I tried to make it simple and look clean on text and also on iPhone/iPod. If you have bunches of small things to do like me, you might like this softwere.</description>
@@ -38,10 +38,10 @@ I tried to make it simple and look clean on text and also on iPhone/iPod. If you
     
     <item>
       <title>pranatice</title>
-      <link>/en/iapp/pranatice/</link>
+      <link>https://goozenlab.com/en/iapp/pranatice/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/pranatice/</guid>
+      <guid>https://goozenlab.com/en/iapp/pranatice/</guid>
       <description>As a part of Yoga practice, pranayama is important exercise but is bit tedious parctice.
 Usually peeople count for themselves to do. But it is cumbersome counting seconds for yourself and difficult to continue practice every day.
 This app helps to concentrate on practice by counting for you. (sounds little clerical though..)
@@ -50,10 +50,10 @@ In between work, when you feel stressed,, when you wan to concentrate, when you 
     
     <item>
       <title>viriya</title>
-      <link>/en/iapp/viriya/</link>
+      <link>https://goozenlab.com/en/iapp/viriya/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/viriya/</guid>
+      <guid>https://goozenlab.com/en/iapp/viriya/</guid>
       <description>You/I need to concentrate on task, but&amp;hellip;. This timer helps to concentrate on thing needs to be done.
 it works fine with dash method (or other kinds).
 Main View ◇ Navigation Bar
@@ -70,10 +70,10 @@ Main View ◇ Navigation Bar
     
     <item>
       <title>ohayo</title>
-      <link>/en/iapp/ohayo/</link>
+      <link>https://goozenlab.com/en/iapp/ohayo/</link>
       <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/ohayo/</guid>
+      <guid>https://goozenlab.com/en/iapp/ohayo/</guid>
       <description>This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This softwear helps you to find a way of good sleep. I hope at least you get some idea of your sleeping habit.
 □ Main View ◇ Timer: Start by Long-Tap on gray image area.
 　1：PreStart, show message (ex. take medicine!)
@@ -82,10 +82,10 @@ Main View ◇ Navigation Bar
     
     <item>
       <title>sati</title>
-      <link>/en/iapp/sati/</link>
+      <link>https://goozenlab.com/en/iapp/sati/</link>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/sati/</guid>
+      <guid>https://goozenlab.com/en/iapp/sati/</guid>
       <description>Simple and clean Meditation Timer/Logger for meditator, by meditator.
 □ Main View ・Tap other area to start to meditate.
 ・Tap center icon to go Setting Page
@@ -97,10 +97,10 @@ Main View ◇ Navigation Bar
     
     <item>
       <title>listaria</title>
-      <link>/en/iapp/listaria/</link>
+      <link>https://goozenlab.com/en/iapp/listaria/</link>
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/listaria/</guid>
+      <guid>https://goozenlab.com/en/iapp/listaria/</guid>
       <description>This is simple shopping list application. Big letter is easy to read. Clean look of design. Simple to use. little memo feature is helpful and tap to show for a short second.
 230 items are already registared.
 □ Shopping List Page This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar.</description>
@@ -108,10 +108,10 @@ Main View ◇ Navigation Bar
     
     <item>
       <title>doop</title>
-      <link>/en/iapp/doop/</link>
+      <link>https://goozenlab.com/en/iapp/doop/</link>
       <pubDate>Sun, 26 Jun 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/doop/</guid>
+      <guid>https://goozenlab.com/en/iapp/doop/</guid>
       <description>It is software to figure out that we must make on a regular basis, such as the time to replace the battery, the things that event to cycle.
 □ List View ◇ Navigation Bar
 ・Plus mark in the upper right: Adding new entries
@@ -122,10 +122,10 @@ Navigation bar(red) those in use in BarColor:red•Orange•Yellow•Gray</descr
     
     <item>
       <title>ippuku</title>
-      <link>/en/iapp/ippuku/</link>
+      <link>https://goozenlab.com/en/iapp/ippuku/</link>
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/ippuku/</guid>
+      <guid>https://goozenlab.com/en/iapp/ippuku/</guid>
       <description>This is a simple software to log your activities.
 How to Use ◇ Timer: start with + button on navigation bar
 ◇ on Cell
@@ -138,19 +138,19 @@ How to Use ◇ Timer: start with + button on navigation bar
     
     <item>
       <title>meagen</title>
-      <link>/en/iapp/meagen/</link>
+      <link>https://goozenlab.com/en/iapp/meagen/</link>
       <pubDate>Thu, 03 Mar 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/meagen/</guid>
+      <guid>https://goozenlab.com/en/iapp/meagen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tapas</title>
-      <link>/en/iapp/tapas/</link>
+      <link>https://goozenlab.com/en/iapp/tapas/</link>
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/tapas/</guid>
+      <guid>https://goozenlab.com/en/iapp/tapas/</guid>
       <description>Colorful and Simple Multiple Kitchen Timer with List. For noodle lovers
 Functions I wanted to add:
 ・List of items (I have many kinds of pastas/noodles/beans/etc)
@@ -168,10 +168,10 @@ Functions I wanted to add:
     
     <item>
       <title>cosper</title>
-      <link>/en/iapp/cosper/</link>
+      <link>https://goozenlab.com/en/iapp/cosper/</link>
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/cosper/</guid>
+      <guid>https://goozenlab.com/en/iapp/cosper/</guid>
       <description>is this worth $xxxx? This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid. You input Product name, price, date and how many time you have used, then list shows its cost per day or per use.
 □ Main View ◆ Navigation Bar
 ・Double Tap/Swipe: to Move around pages (sort by date, with star, Hot/Soft/Cool colors)
@@ -180,10 +180,10 @@ Functions I wanted to add:
     
     <item>
       <title>dandori</title>
-      <link>/en/iapp/dandori/</link>
+      <link>https://goozenlab.com/en/iapp/dandori/</link>
       <pubDate>Fri, 19 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/dandori/</guid>
+      <guid>https://goozenlab.com/en/iapp/dandori/</guid>
       <description>Colorful post-it like Personal Project managing Application. Simple to work, fast, and fun to use.
 □ Project View ◇ Navigation Bar
 ・Button to add project
@@ -199,10 +199,10 @@ Functions I wanted to add:
     
     <item>
       <title>littlist</title>
-      <link>/en/iapp/littlist/</link>
+      <link>https://goozenlab.com/en/iapp/littlist/</link>
       <pubDate>Fri, 05 Nov 2010 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/en/iapp/littlist/</guid>
+      <guid>https://goozenlab.com/en/iapp/littlist/</guid>
       <description>Little List with Big Letter. Very easy &amp;amp; simple List/to-do app.
 It is pleasant and fun to use, and stimulate your Right Brain. You may like to tap-tap to make nice and colorful to-do page like picture of Mondrian..
 □ Main View ◇ Navigation Bar

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design on goozenlab</title>
-    <link>/tags/design/</link>
+    <link>https://goozenlab.com/tags/design/</link>
     <description>Recent content in Design on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,78 +10,78 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Wed, 07 Sep 2016 12:00:00 +0700</lastBuildDate>
     
-	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>アイコンとネーミング</title>
-      <link>/blog/app-icon-naming/</link>
+      <link>https://goozenlab.com/blog/app-icon-naming/</link>
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/app-icon-naming/</guid>
+      <guid>https://goozenlab.com/blog/app-icon-naming/</guid>
       <description>アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。 個人的にアイコン</description>
     </item>
     
     <item>
       <title>Iconを作り替え中</title>
-      <link>/blog/icons-renew/</link>
+      <link>https://goozenlab.com/blog/icons-renew/</link>
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/icons-renew/</guid>
+      <guid>https://goozenlab.com/blog/icons-renew/</guid>
       <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化</description>
     </item>
     
     <item>
       <title>ohayo のデザイン</title>
-      <link>/blog/ohayo-pop/</link>
+      <link>https://goozenlab.com/blog/ohayo-pop/</link>
       <pubDate>Mon, 16 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/ohayo-pop/</guid>
+      <guid>https://goozenlab.com/blog/ohayo-pop/</guid>
       <description>Swiftへの移行のついでにちょっとohayoのデザインに手を入れてます。ちょっとポップな感じにしようかな。。と。。</description>
     </item>
     
     <item>
       <title>カラーロック</title>
-      <link>/blog/color-lock/</link>
+      <link>https://goozenlab.com/blog/color-lock/</link>
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/color-lock/</guid>
+      <guid>https://goozenlab.com/blog/color-lock/</guid>
       <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
       <title>Icon Renew and minor update</title>
-      <link>/blog/icons-renew/</link>
+      <link>https://goozenlab.com/blog/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/icons-renew/</guid>
+      <guid>https://goozenlab.com/blog/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名</description>
     </item>
     
     <item>
       <title>Kawaii ColorMode x.4.2</title>
-      <link>/blog/colormode/</link>
+      <link>https://goozenlab.com/blog/colormode/</link>
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/colormode/</guid>
+      <guid>https://goozenlab.com/blog/colormode/</guid>
       <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変</description>
     </item>
     
     <item>
       <title>Dashのアイコン</title>
-      <link>/blog/dash-icon/</link>
+      <link>https://goozenlab.com/blog/dash-icon/</link>
       <pubDate>Mon, 19 Nov 2012 16:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/dash-icon/</guid>
+      <guid>https://goozenlab.com/blog/dash-icon/</guid>
       <description>Dashのアイコン（画面中央の猫）が変わりました。がっ、こりゃまた微妙な。。。 （以前の物はちょっと怖い感じだったので猫派の私としては受け入れ</description>
     </item>
     
     <item>
       <title>Little &#43; ?</title>
-      <link>/blog/littlist-naming/</link>
+      <link>https://goozenlab.com/blog/littlist-naming/</link>
       <pubDate>Wed, 10 Nov 2010 13:41:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/littlist-naming/</guid>
+      <guid>https://goozenlab.com/blog/littlist-naming/</guid>
       <description>littlistというネーミングは、 Little + List で付けたのですが、じっと見ていて、 Little + ist というのもありだなと、というかこっちの方が格好いいなと、 （</description>
     </item>
     

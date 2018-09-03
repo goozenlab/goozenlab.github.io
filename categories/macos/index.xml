@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Macos on goozenlab</title>
-    <link>/categories/macos/</link>
+    <link>https://goozenlab.com/categories/macos/</link>
     <description>Recent content in Macos on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 20 Oct 2014 14:20:00 +0700</lastBuildDate>
     
-	<atom:link href="/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/categories/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Yosemite</title>
-      <link>/blog/yosemite/</link>
+      <link>https://goozenlab.com/blog/yosemite/</link>
       <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/yosemite/</guid>
+      <guid>https://goozenlab.com/blog/yosemite/</guid>
       <description>Yosemiteが発表、ダウンロードが可能になる。山猫をメインに使っていたが、ここ１ヶ月近く開発者向けのベーターを試用していた。マーベリック</description>
     </item>
     

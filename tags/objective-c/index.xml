@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Objective C on goozenlab</title>
-    <link>/tags/objective-c/</link>
+    <link>https://goozenlab.com/tags/objective-c/</link>
     <description>Recent content in Objective C on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,42 +10,42 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate>
     
-	<atom:link href="/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NSUserDefaultsのキーの削除</title>
-      <link>/blog/userdefaults-remove-keys/</link>
+      <link>https://goozenlab.com/blog/userdefaults-remove-keys/</link>
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/userdefaults-remove-keys/</guid>
+      <guid>https://goozenlab.com/blog/userdefaults-remove-keys/</guid>
       <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。 既</description>
     </item>
     
     <item>
       <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
-      <link>/blog/lightweight-migration-mapping/</link>
+      <link>https://goozenlab.com/blog/lightweight-migration-mapping/</link>
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/lightweight-migration-mapping/</guid>
+      <guid>https://goozenlab.com/blog/lightweight-migration-mapping/</guid>
       <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうま</description>
     </item>
     
     <item>
       <title>Reminder：日時の書き込み</title>
-      <link>/blog/reminder-duedatecomponents/</link>
+      <link>https://goozenlab.com/blog/reminder-duedatecomponents/</link>
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/reminder-duedatecomponents/</guid>
+      <guid>https://goozenlab.com/blog/reminder-duedatecomponents/</guid>
       <description>リマインダーへの日時の書き込み 読み込み時には event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone; と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き</description>
     </item>
     
     <item>
       <title>Reminderからの読込ではまる</title>
-      <link>/blog/reminder-completion/</link>
+      <link>https://goozenlab.com/blog/reminder-completion/</link>
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/reminder-completion/</guid>
+      <guid>https://goozenlab.com/blog/reminder-completion/</guid>
       <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void</description>
     </item>
     

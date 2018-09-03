@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Russia on goozenlab</title>
-    <link>/tags/russia/</link>
+    <link>https://goozenlab.com/tags/russia/</link>
     <description>Recent content in Russia on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,33 +10,33 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sat, 19 Sep 2015 17:30:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/russia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/russia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>イルクーツク、ロシアのインターネット事情</title>
-      <link>/blog/internet-irkutsk/</link>
+      <link>https://goozenlab.com/blog/internet-irkutsk/</link>
       <pubDate>Sat, 19 Sep 2015 17:30:00 +0800</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/internet-irkutsk/</guid>
+      <guid>https://goozenlab.com/blog/internet-irkutsk/</guid>
       <description>紅葉をしているシベリア平原を列車で３０時間掛け、イルクーツクへ、シベリア特急鉄道の一部分を走る。途中途中で見かける列車の車両が、観光車両、カ</description>
     </item>
     
     <item>
       <title>ノヴォシビルスク、ロシアのインターネット事情</title>
-      <link>/blog/internet-novosibirsk/</link>
+      <link>https://goozenlab.com/blog/internet-novosibirsk/</link>
       <pubDate>Sun, 13 Sep 2015 17:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/internet-novosibirsk/</guid>
+      <guid>https://goozenlab.com/blog/internet-novosibirsk/</guid>
       <description>バルナウルよりバスで５時間、雨がちらついているなか、国内に10時間の時差を持つ広大なロシアの真ん中辺の街、ノヴォシビルスクに着く。 動物園に行</description>
     </item>
     
     <item>
       <title>バルナウル、ロシアのインターネット事情</title>
-      <link>/blog/internet-barnaul/</link>
+      <link>https://goozenlab.com/blog/internet-barnaul/</link>
       <pubDate>Fri, 11 Sep 2015 17:30:00 +0600</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/internet-barnaul/</guid>
+      <guid>https://goozenlab.com/blog/internet-barnaul/</guid>
       <description>定番のアスタナからオムスク・エカテリンブルグには向かわず、カザフスタンのセメイという街からロコットというロシアのボーダータウンで列車を乗り換</description>
     </item>
     

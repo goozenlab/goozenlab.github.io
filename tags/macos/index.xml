@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Macos on goozenlab</title>
-    <link>/tags/macos/</link>
+    <link>https://goozenlab.com/tags/macos/</link>
     <description>Recent content in Macos on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
@@ -10,69 +10,69 @@
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 17 Apr 2018 06:30:00 +0700</lastBuildDate>
     
-	<atom:link href="/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://goozenlab.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ブログ用画像を一括リサイズ・リネーム</title>
-      <link>/blog/rename-automator/</link>
+      <link>https://goozenlab.com/blog/rename-automator/</link>
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/rename-automator/</guid>
+      <guid>https://goozenlab.com/blog/rename-automator/</guid>
       <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
     
     <item>
       <title>クリーンインストール</title>
-      <link>/blog/clean-install/</link>
+      <link>https://goozenlab.com/blog/clean-install/</link>
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/clean-install/</guid>
+      <guid>https://goozenlab.com/blog/clean-install/</guid>
       <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
     </item>
     
     <item>
       <title>ヒラギノ角ゴシック</title>
-      <link>/blog/hiragino-sans-w0/</link>
+      <link>https://goozenlab.com/blog/hiragino-sans-w0/</link>
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/hiragino-sans-w0/</guid>
+      <guid>https://goozenlab.com/blog/hiragino-sans-w0/</guid>
       <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
     </item>
     
     <item>
       <title>句読点で変換</title>
-      <link>/blog/convert-punctuation/</link>
+      <link>https://goozenlab.com/blog/convert-punctuation/</link>
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/convert-punctuation/</guid>
+      <guid>https://goozenlab.com/blog/convert-punctuation/</guid>
       <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
     
     <item>
       <title>推測候補表示</title>
-      <link>/blog/predictice-candidates/</link>
+      <link>https://goozenlab.com/blog/predictice-candidates/</link>
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/predictice-candidates/</guid>
+      <guid>https://goozenlab.com/blog/predictice-candidates/</guid>
       <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
     
     <item>
       <title>エル・キャピタンを入れる</title>
-      <link>/blog/elcapitan-beta/</link>
+      <link>https://goozenlab.com/blog/elcapitan-beta/</link>
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/elcapitan-beta/</guid>
+      <guid>https://goozenlab.com/blog/elcapitan-beta/</guid>
       <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
     </item>
     
     <item>
       <title>画面のグレー/カラーのスイッチ</title>
-      <link>/blog/grayscale-switch/</link>
+      <link>https://goozenlab.com/blog/grayscale-switch/</link>
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
-      <guid>/blog/grayscale-switch/</guid>
+      <guid>https://goozenlab.com/blog/grayscale-switch/</guid>
       <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
     
