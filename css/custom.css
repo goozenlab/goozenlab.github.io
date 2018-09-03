@@ -349,23 +349,6 @@ img.full-width {
     display: inline;
 }
 
-li.page-item {
-    
-}
-
-a.pagelink {
-}
-
-.pagination a {
-    margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
-}
-
-.pagination active {
-    margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */
-    background: #EDEDED;
-}
-
-
 
 /** Blockquote */
 
@@ -422,6 +405,10 @@ a.pure-button {
 
 .amazon {
     background: rgb(243, 146, 63); /* this is a amazon orang */
+}
+
+.yahoo {
+    background: rgb(64, 114, 246);
 }
 
 
