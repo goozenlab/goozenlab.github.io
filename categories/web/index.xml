@@ -5,8 +5,8 @@
     <link>https://goozenlab.com/categories/web/</link>
     <description>Recent content in Web on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
+    <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Wed, 29 Aug 2018 08:30:00 +0545</lastBuildDate>
     
@@ -17,7 +17,7 @@
       <title>Hugo ショートコード</title>
       <link>https://goozenlab.com/blog/hugo-shortcodes/</link>
       <pubDate>Wed, 29 Aug 2018 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/hugo-shortcodes/</guid>
       <description>Hugoには投稿記事から簡単なカスタムスニペットを呼び出すための、ショートコードと呼ばれるものがあります。 例のようにユーチューブの動画を埋め</description>
     </item>
@@ -26,7 +26,7 @@
       <title>HugoとSimplenoteでgitHub-page</title>
       <link>https://goozenlab.com/blog/hugo-simplenote/</link>
       <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/hugo-simplenote/</guid>
       <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換え</description>
     </item>
@@ -35,7 +35,7 @@
       <title>HugoのPagenate</title>
       <link>https://goozenlab.com/blog/hugo-pagenate/</link>
       <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/hugo-pagenate/</guid>
       <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。 index.h</description>
     </item>
@@ -44,7 +44,7 @@
       <title>Hugoを少し弄る</title>
       <link>https://goozenlab.com/blog/hugo-template/</link>
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/hugo-template/</guid>
       <description>移行のためHugoをnofancyを基にして色々と調整しています。 テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレー</description>
     </item>
@@ -53,7 +53,7 @@
       <title>Gem地獄で Hugo に移行</title>
       <link>https://goozenlab.com/blog/moving-hugo/</link>
       <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/moving-hugo/</guid>
       <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。 ちょっと開発</description>
     </item>
@@ -62,7 +62,7 @@
       <title>Octopressのテーマを変更</title>
       <link>https://goozenlab.com/blog/octopress-theme/</link>
       <pubDate>Tue, 18 Jun 2013 22:06:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/octopress-theme/</guid>
       <description>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家のこちらにテーマのリストがあります。まだ登録数が少</description>
     </item>
@@ -71,7 +71,7 @@
       <title>rake generateでエラー</title>
       <link>https://goozenlab.com/blog/generate-error/</link>
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/generate-error/</guid>
       <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても</description>
     </item>
@@ -80,7 +80,7 @@
       <title>ヘイロク引越</title>
       <link>https://goozenlab.com/blog/site-heroku/</link>
       <pubDate>Sun, 30 Sep 2012 16:10:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/site-heroku/</guid>
       <description>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。） ７月頃につぶれ</description>
     </item>
@@ -89,7 +89,7 @@
       <title>Smart App Banner</title>
       <link>https://goozenlab.com/blog/smart-appbanner/</link>
       <pubDate>Sat, 29 Sep 2012 08:37:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/smart-appbanner/</guid>
       <description>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。 ヘッダーに一行追加するだけです。あら簡単。（APP</description>
     </item>
@@ -98,7 +98,7 @@
       <title>デカ文字調整</title>
       <link>https://goozenlab.com/blog/font-change/</link>
       <pubDate>Fri, 28 Sep 2012 10:02:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/font-change/</guid>
       <description>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整はsource/stylesheets/screen.css を変更して</description>
     </item>
@@ -107,7 +107,7 @@
       <title>Octopressでのポスト執筆と管理</title>
       <link>https://goozenlab.com/blog/octopress-simplenote/</link>
       <pubDate>Thu, 27 Sep 2012 15:41:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/octopress-simplenote/</guid>
       <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあった</description>
     </item>

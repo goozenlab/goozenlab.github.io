@@ -5,8 +5,8 @@
     <link>https://goozenlab.com/tags/develop/</link>
     <description>Recent content in Develop on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
+    <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Thu, 26 Feb 2015 07:25:00 +0545</lastBuildDate>
     
@@ -17,7 +17,7 @@
       <title>ニブレスプロジェクト</title>
       <link>https://goozenlab.com/blog/xibless-project/</link>
       <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/xibless-project/</guid>
       <description>swiftに移行中です。折角なのでなるべく奇麗にやり直したい、ずる無しでシンプルに仕上げたい。 ストーリーボードにはどうも馴染めず、結局中途半</description>
     </item>
@@ -26,7 +26,7 @@
       <title>Reminder：日時の書き込み</title>
       <link>https://goozenlab.com/blog/reminder-duedatecomponents/</link>
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/reminder-duedatecomponents/</guid>
       <description>リマインダーへの日時の書き込み 読み込み時には event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone; と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き</description>
     </item>
@@ -35,7 +35,7 @@
       <title>Reminderからの読込ではまる</title>
       <link>https://goozenlab.com/blog/reminder-completion/</link>
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/reminder-completion/</guid>
       <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void</description>
     </item>

@@ -349,6 +349,10 @@ img.full-width {
     display: inline;
 }
 
+.pagination a {
+    color:#369;
+    text-decoration: none;
+}
 
 /** Blockquote */
 
