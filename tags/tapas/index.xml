@@ -19,7 +19,7 @@
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/open-tapas/</guid>
-      <description>公開アプリ第５弾。 XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。 タイマー 通知 コアデータ ター</description>
+      <description>公開アプリ第５弾。 XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。 タイマー 通知 コアデータ ターゲットの切り分け を使</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/tapas-190/</guid>
-      <description>Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアッ</description>
+      <description>Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアップデートです。 Change Log [1.9.0</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/icons-renew/</guid>
-      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化</description>
+      <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化をしているのですが、</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/tapas-165/</guid>
-      <description>iOS6/7 ユーザーには最後のアップデートになります。 次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方には</description>
+      <description>iOS6/7 ユーザーには最後のアップデートになります。 次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方にはアップデートを推奨し</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/tapas-163/</guid>
-      <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、あ</description>
+      <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、ありがとうございます。</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/update-x60/</guid>
-      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますので</description>
+      <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますのでiOS6からの対応に</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Wed, 24 Jul 2013 14:57:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/tapas-150/</guid>
-      <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。 ちょっと</description>
+      <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。 ちょっと無理をしてアイコンを</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.framew</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパ</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/version4-5/</guid>
-      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/update-retina/</guid>
-      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/navbar-update/</guid>
-      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@
       <pubDate>Sun, 10 Jun 2012 11:16:00 +0600</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/tapas-104/</guid>
-      <description>Tapasのマイナーアップデートです。 老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に</description>
+      <description>Tapasのマイナーアップデートです。 老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に、文字の色も少し濃く</description>
     </item>
     
     <item>
@@ -154,7 +154,7 @@
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/xcode42-update/</guid>
-      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街</description>
     </item>
     
   </channel>

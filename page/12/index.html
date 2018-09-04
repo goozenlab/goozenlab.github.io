@@ -114,7 +114,7 @@
                     
                     <a href="https://goozenlab.com/blog/nsdate-swift/">NSDate() = [NSDate date]</a>
                     <p class="summary">
-                    NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは NSDate() でよろしい。 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60] を、Swiftで書いてみると、 NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 ...
+                    NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは NSDate() でよろしい。 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60] を、Swiftで書いてみると、 NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60) エラーが出る。h ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-24T08:30:00&#43;05:45" class="post-list timeago">2015-03-24T08:30:00&#43;05:45</time>
@@ -142,7 +142,7 @@
                     
                     <a href="https://goozenlab.com/blog/xcode62-downloaded/">Xcode 6.2</a>
                     <p class="summary">
-                    ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。 宿のネットがスピードは相変わらずだが、割と安定している ...
+                    ポカラを出て、カトマンズに到着するも、宿が珍しくフルという事でドゥリケルまで移動する。 宿のネットがスピードは相変わらずだが、割と安定しているようなのでXcode ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-22T17:30:00&#43;05:45" class="post-list timeago">2015-03-22T17:30:00&#43;05:45</time>
@@ -168,7 +168,7 @@
                     
                     <a href="https://goozenlab.com/blog/dandori-263/">dandori v2.6.3</a>
                     <p class="summary">
-                    Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボ ...
+                    Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボタンを削ろうかと思い ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-21T18:20:00&#43;05:45" class="post-list timeago">2015-03-21T18:20:00&#43;05:45</time>
@@ -196,7 +196,7 @@
                     
                     <a href="https://goozenlab.com/blog/view-cycle/">ビューサイクルとアプリ復帰時の処理</a>
                     <p class="summary">
-                    たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。 起動時 アプリの起動時には以下の順で呼ばれる。 viewDidLoad() viewWillAppear viewDidAppear ※すべての画像の ...
+                    たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。 起動時 アプリの起動時には以下の順で呼ばれる。 viewDidLoad() viewWillAppear viewDidAppear ※すべての画像の処理が終わった後に呼 ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-21T12:30:00&#43;05:45" class="post-list timeago">2015-03-21T12:30:00&#43;05:45</time>
@@ -224,7 +224,7 @@
                     
                     <a href="https://goozenlab.com/blog/notification-setting/">NotificationSettings認証設定</a>
                     <p class="summary">
-                    iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。 AppDelegateに処理を入れてしまいます。 application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | ...
+                    iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。 AppDelegateに処理を入れてしまいます。 application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil)) 以前コピペでU ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-21T08:30:00&#43;05:45" class="post-list timeago">2015-03-21T08:30:00&#43;05:45</time>
@@ -252,7 +252,7 @@
                     
                     <a href="https://goozenlab.com/blog/load-managedobject/">クラスが読み込めず [解決]</a>
                     <p class="summary">
-                    もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほど ...
+                    もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、クラスが読 ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-20T10:30:00&#43;05:45" class="post-list timeago">2015-03-20T10:30:00&#43;05:45</time>
@@ -280,7 +280,7 @@
                     
                     <a href="https://goozenlab.com/blog/nslocalizedstring-swift/">NSLocalizedString on swift</a>
                     <p class="summary">
-                    NSLocalizedStringでエラーがでる NSLocalizedString(&quot;Timer&quot;, comment: nil) nilを&quot;&quot;空白に変更する。 NSLocalizedString(&quot;NavigationBar.Button.Timer&quot;, comment: &quot;&quot;) Swiftではnilの扱いがちょ ...
+                    NSLocalizedStringでエラーがでる NSLocalizedString(&quot;Timer&quot;, comment: nil) nilを&quot;&quot;空白に変更する。 NSLocalizedString(&quot;NavigationBar.Button.Timer&quot;, comment: &quot;&quot;) Swiftではnilの扱いがちょっと掴めず、、至る所 ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-19T11:30:00&#43;05:45" class="post-list timeago">2015-03-19T11:30:00&#43;05:45</time>
@@ -308,7 +308,7 @@
                     
                     <a href="https://goozenlab.com/blog/delegate-swift/">delegate on swift</a>
                     <p class="summary">
-                    デレゲートするクラス 以下の３つを書き加えればよい。 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) } var delegate:MainHeaderViewDelegate? = nil self.delegate!.sleepingTimerDidFinish(self) デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を ...
+                    デレゲートするクラス 以下の３つを書き加えればよい。 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) } var delegate:MainHeaderViewDelegate? = nil self.delegate!.sleepingTimerDidFinish(self) デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を書き込みます。 class MainViewController: UIViewController, ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-18T11:30:00&#43;05:45" class="post-list timeago">2015-03-18T11:30:00&#43;05:45</time>
@@ -336,7 +336,7 @@
                     
                     <a href="https://goozenlab.com/blog/uibutton-swift/">UIButttonをSwiftで書く</a>
                     <p class="summary">
-                    UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &quot;selectedMood:&quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &quot;MoodExecelent&quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&quot;cancel&quot;, forState: UIControlState.Normal) テ ...
+                    UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &quot;selectedMood:&quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &quot;MoodExecelent&quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&quot;cancel&quot;, forState: UIControlState.Normal) テキストの色を変えるに ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-17T08:30:00&#43;05:45" class="post-list timeago">2015-03-17T08:30:00&#43;05:45</time>
@@ -392,7 +392,7 @@
                     
                     <a href="https://goozenlab.com/blog/thanx-dowload-sati/">！Thanks alot for download Sati！</a>
                     <p class="summary">
-                    !! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと ...
+                    !! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと一気に増えました。ダ ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-15T23:50:00&#43;05:45" class="post-list timeago">2015-03-15T23:50:00&#43;05:45</time>
@@ -420,7 +420,7 @@
                     
                     <a href="https://goozenlab.com/blog/xcode611-ios82/">Xcode 6.1とiOS8.2</a>
                     <p class="summary">
-                    検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX ...
+                    検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このXCodeではサポート ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-15T17:30:00&#43;05:45" class="post-list timeago">2015-03-15T17:30:00&#43;05:45</time>
@@ -448,7 +448,7 @@
                     
                     <a href="https://goozenlab.com/blog/intellij-setup/">IntelliJ IDEA 14 CEとJavaSE</a>
                     <p class="summary">
-                    Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませ ...
+                    Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませんでした。（Java ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-14T12:30:00&#43;05:45" class="post-list timeago">2015-03-14T12:30:00&#43;05:45</time>
@@ -476,7 +476,7 @@
                     
                     <a href="https://goozenlab.com/blog/constants-swift/">SwiftでConstantを扱う</a>
                     <p class="summary">
-                    Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるよう ...
+                    Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるように思えるが、まだまだ ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-14T09:30:00&#43;05:45" class="post-list timeago">2015-03-14T09:30:00&#43;05:45</time>
@@ -504,7 +504,7 @@
                     
                     <a href="https://goozenlab.com/blog/littlist-265-bug/">littlistでのバグ</a>
                     <p class="summary">
-                    iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &ldquo;RedHot List&rdquo; と &ldquo;期日付き&rdquo; の表示で落ちま ...
+                    iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &ldquo;RedHot List&rdquo; と &ldquo;期日付き&rdquo; の表示で落ちます。 OSアプデートの ...
                     </p>
                     <p class="footnote">
                     submitted <time datetime="2015-03-13T20:00:47&#43;05:45" class="post-list timeago">2015-03-13T20:00:47&#43;05:45</time>

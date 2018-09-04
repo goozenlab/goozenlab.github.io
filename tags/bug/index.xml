@@ -19,7 +19,7 @@
       <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/notification_sound/</guid>
-      <description>iOS10にてサティの通知音が TriTone になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。 が</description>
+      <description>iOS10にてサティの通知音が TriTone になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。 がしかし、私のiPho</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/ios9-bug-notifications/</guid>
-      <description>マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。 iOS8がリリースされた</description>
+      <description>マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。 iOS8がリリースされた時にも、通知で音を出</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/littlist-265-bug/</guid>
-      <description>iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちま</description>
+      <description>iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。 OSアプデートの</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Thu, 04 Dec 2014 13:55:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/sati-nosound/</guid>
-      <description>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。 瞑想中に鳴る音はバックグランドの処理ではなく、</description>
+      <description>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。 瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notif</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/bug-datepicker/</guid>
-      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
+      <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSのバージョンが上がるた</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/generate-error/</guid>
-      <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても</description>
+      <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても効果無し。。半ば再イ</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Sun, 11 Nov 2012 16:43:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/known-bugs/</guid>
-      <description>再現可能なバグはほぼつぶしてますが、時に落ちる事があります。 アイテムの削除時に落ちる 削除後、無くなったアイテムをアプリが探し存在していない事</description>
+      <description>再現可能なバグはほぼつぶしてますが、時に落ちる事があります。 アイテムの削除時に落ちる 削除後、無くなったアイテムをアプリが探し存在していない事からエラーが発生しア</description>
     </item>
     
   </channel>

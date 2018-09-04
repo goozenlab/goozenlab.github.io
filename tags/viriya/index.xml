@@ -19,7 +19,7 @@
       <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/viriya-150/</guid>
-      <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。 編集</description>
+      <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。 編集画面デザインを更新。</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.framew</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパ</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Mon, 01 Oct 2012 13:43:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/viriya-release/</guid>
-      <description>パーリ語シリーズ第二弾のビリヤ（努力/精進という意味）をアップしました。今週中にはストアーにアップされると思います。（第一弾はサティマという</description>
+      <description>パーリ語シリーズ第二弾のビリヤ（努力/精進という意味）をアップしました。今週中にはストアーにアップされると思います。（第一弾はサティマという瞑想タイマー）少し前</description>
     </item>
     
   </channel>
