@@ -354,6 +354,15 @@ img.full-width {
     text-decoration: none;
 }
 
+.active {
+    font-size: 1.25em;
+}
+
+.disabled {
+    display: none;
+}
+
+
 /** Blockquote */
 
 blockquote{
@@ -412,6 +421,10 @@ a.pure-button {
 }
 
 .yahoo {
+    background: rgb(64, 114, 246);
+}
+
+.bike24 {
     background: rgb(64, 114, 246);
 }
 
