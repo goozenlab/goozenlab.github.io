@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 04 Sep 2018 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 05 Sep 2018 08:30:00 +0545</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo テーブルにクラスを割り当てる</title>
+      <link>https://goozenlab.com/blog/hugo-mmark/</link>
+      <pubDate>Wed, 05 Sep 2018 08:30:00 +0545</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/hugo-mmark/</guid>
+      <description>通常マークアップでテーブルを書くときには、下記のような表記になります。（いつも書き方を忘れます。） Name | Age --------|-----: Bob | 27 Alice | 23 ただ、hugoで出力されるファイルは非常に</description>
+    </item>
     
     <item>
       <title>Komoot ルートインポート編</title>

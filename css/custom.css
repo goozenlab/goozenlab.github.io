@@ -415,7 +415,6 @@ a.pure-button {
     color: #fff;
 }
 
-
 .amazon {
     background: rgb(243, 146, 63); /* this is a amazon orang */
 }
@@ -425,7 +424,8 @@ a.pure-button {
 }
 
 .bike24 {
-    background: rgb(64, 114, 246);
+    background: rgb(00, 115, 182);
+	/* Yellow 255 185 63 */
 }
 
 

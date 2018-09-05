@@ -4,8 +4,8 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo | goozenlab</title>
-  <meta name="description" content="ohayo">
+  <title>Hugo テーブルにクラスを割り当てる | goozenlab</title>
+  <meta name="description" content="Hugo テーブルにクラスを割り当てる">
   <meta name="author" content="jin">
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,100 +120,159 @@
 
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
-	<div class="pure-u-11-12 pure-u-md-5-8">
+	<div class="pure-u-11-12 pure-u-md-14-24">
         <div class="post">
-
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2012-09-19</time>
+                    <time class="">2018-09-05</time>
 		            
+                    
+                    |
                     
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/web">web</a> 
                     
 
                     
                 </p>
-                <h1>ohayo</h1>
+                <h1>Hugo テーブルにクラスを割り当てる</h1>
             </div>
 
             <div class="post-content">
-                
+                <p>通常マークアップでテーブルを書くときには、下記のような表記になります。（いつも書き方を忘れます。）</p>
 
-<p><img src="https://dl.dropbox.com/u/163521/photo/20130527-ohayo.jpg" alt="ohayo Image" /></p>
+<pre><code>Name    | Age
+--------|-----:
+Bob    | 27
+Alice   | 23
+</code></pre>
 
-<p>This is a simple clean little app for keeping a log of your sleep. You can see How long and When you sleep at a glance.This softwear helps you to find a way of good sleep.
-I hope at least you get some idea of your sleeping habit.</p>
+<p>ただ、hugoで出力されるファイルは非常にシンプルな形になっています。
+このサイトのテンプレートは<strong>Pure.css</strong>を使っていて、なるべくなら記事内にHTMLファイルは書き込みたくないので、
+クラスを指定する方法をネットで検索してみました。</p>
 
-<h2 id="main-view">□ Main View</h2>
+<pre><code>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
 
-<p>◇ <strong>Timer</strong>: Start by <strong>Long-Tap</strong> on gray image area.</p>
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;27&lt;/td&gt;
+&lt;/tr&gt;
 
-<p>　1：<strong>PreStart</strong>, show message (ex. take medicine!)<br />
-　2：<strong>Start</strong>: show sleeping time.<br />
-　3：<strong>WakeUp</strong>, show message (ex.drink a cup of water)<br />
-　4：Select mood and Done.</p>
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
 
-<p><img src="/images/manual-ohayo-cell-w320.png" alt="iPhone4" />: iPhone4,5(21:30-09:30)<br />
-<img src="/images/manual-ohayo-cell-w375.png" alt="iPhone4" />: iPhone6(20:30-10:30)<br />
-<img src="/images/manual-ohayo-cell-w414.png" alt="iPhone4" />: iPhone6+(20:00-11:30)</p>
+<p>mmarkというmarkdown拡張？のプログラムがあり、このプログラムを入れることでクラス指定ができるようになるようです。
+<a href="https://mmark.nl/">Mmark: powerful markdown parser</a>
+の開発者ページよりバイナリーを持ってきたり、ソースからビルドしたりもできるようですが、homebrewのセラー・リストにもありがたいことにおいてありました。</p>
 
-<h3 id="taps-on-graph">◇ Taps on graph</h3>
+<p>ということで、スパッと簡単インストール。で、導入完了。</p>
 
-<p>・<strong>Left</strong>：Change feeling<br />
-・<strong>Center</strong>：Edit time of sleep/awake.<br />
-・<strong>Right</strong>：Switch On/Off of bae color.</p>
+<pre><code class="language-sh">jin$ brew install mmark
+Updating Homebrew...
+==&gt; Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
 
-<h3 id="two-icons-looks-like-eyes">◇Two Icons looks like eyes**</h3>
 
-<p><strong>Left</strong>：to Simple Setting View：edit message and coloring.<br />
-<strong>Right</strong>：to Sleep Detail View：show average sleeping times.</p>
+==&gt; Downloading https://homebrew.bintray.com/bottles/mmark-1.3.6.el_capitan.bottle.tar.gz
+############################################################### 100.0%
+==&gt; Pouring mmark-1.3.6.el_capitan.bottle.tar.gz
+🍺  /usr/local/Cellar/mmark/1.3.6: 6 files, 3.3MB
+jin$
+</code></pre>
 
-<p><img src="/images/manual-ohayo-setting.png" alt="Setting" />
-<img src="/images/manual-ohayo-detail.png" alt="Detail" /></p>
+<p>インストールし、記事内のヘッダーに<code>markup: &quot;mmark&quot;</code>を加えて、下記の通りクラス名<code>{.table .pure-table .pure-table-horizontal .table-striped .table-responsive}</code>を書き込みます。細かい指定はできませんが必要十分。キャプションも付け加えることもできます。たーぶん、<code>img</code>タグにも使えると思います。</p>
 
-<h2 id="app-setting-home-setting-ohayo">□ App Setting [Home&gt;Setting&gt;ohaYo]</h2>
+<pre><code>---
+markup: &quot;mmark&quot;
+---
 
-<p>You can edit</p>
+{.table .pure-table .pure-table-horizontal .table-striped .table-responsive}
+Name    | Age | Sex 
+--------|-------|-------:
+Bob   | 27    | male
+Alice  | 23    | female
+Table: This is the caption.
 
-<ul>
-<li>Export to Health</li>
-<li>Good Sleep Time</li>
-<li>Over Sleep Time</li>
-<li>Thai Week Color</li>
-<li>Wind short bell notice
+</code></pre>
 
-<ul>
-<li>on time you set on Good sleep</li>
-<li>on 5min after going to bed</li>
-<li>on 5min after waking up</li>
-</ul></li>
-<li>message before sleep and after wakeup</li>
-</ul>
+<table class="pure-table pure-table-horizontal table">
+<caption>
+This is the caption.
 
-<p><img src="/images/manual-ohayo-appsetting.png" alt="Setting" /></p>
+</caption>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th align="right">Sex</th>
+</tr>
+</thead>
 
-<p>※ Thai Color(Mon: Yellow, Tue: Pink, Wed: Green, Thu: Orange, Fri: Blue, Sat: Purple,Sun: Red)</p>
+<tbody>
+<tr>
+<td>Bob</td>
+<td>27</td>
+<td align="right">male</td>
+</tr>
 
-<p><strong>&ldquo;ohayo&rdquo;</strong> is Japanese word for &ldquo;good Morning&rdquo;</p>
+<tr>
+<td>Alice</td>
+<td>23</td>
+<td align="right">female</td>
+</tr>
+</tbody>
+</table>
 
-<h2 id="privacy-policy">□ Privacy Policy</h2>
+<p>でうまく表示されます。
+Pure.css のテーブルについてのクラス名などは <a href="https://purecss.io/tables/">https://purecss.io/tables/</a> より。</p>
 
-<ul>
-<li>ohayo will ask permission to acccess Health.app on your device.</li>
-<li>on Health.app
+<p>参考：<a href="https://discourse.gohugo.io/t/setting-the-class-of-markdown-tables/4781/11">Setting the class of markdown tables</a></p>
 
-<ul>
-<li>ohayo will write its sleeping data.</li>
-<li>ohayo will not read/access other data on Health.</li>
-</ul></li>
-<li>Data in ohayo is used only within application.</li>
-</ul>
+				
+
 
             </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
         </div>
 	</div>
-    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 
 
