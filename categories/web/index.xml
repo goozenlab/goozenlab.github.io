@@ -15,109 +15,109 @@
     
     <item>
       <title>Hugo テーブルにクラスを割り当てる</title>
-      <link>https://goozenlab.com/blog/hugo-mmark/</link>
+      <link>https://goozenlab.com/blog/2018/09/hugo-mmark/</link>
       <pubDate>Wed, 05 Sep 2018 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/hugo-mmark/</guid>
+      <guid>https://goozenlab.com/blog/2018/09/hugo-mmark/</guid>
       <description>通常マークアップでテーブルを書くときには、下記のような表記になります。（いつも書き方を忘れます。） Name | Age --------|-----: Bob | 27 Alice | 23 ただ、hugoで出力されるファイルは非常に</description>
     </item>
     
     <item>
       <title>Hugo ショートコード</title>
-      <link>https://goozenlab.com/blog/hugo-shortcodes/</link>
+      <link>https://goozenlab.com/blog/2018/08/hugo-shortcodes/</link>
       <pubDate>Wed, 29 Aug 2018 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/hugo-shortcodes/</guid>
+      <guid>https://goozenlab.com/blog/2018/08/hugo-shortcodes/</guid>
       <description>Hugoには投稿記事から簡単なカスタムスニペットを呼び出すための、ショートコードと呼ばれるものがあります。 例のようにユーチューブの動画を埋め込んだり、アマゾンの</description>
     </item>
     
     <item>
       <title>HugoとSimplenoteでgitHub-page</title>
-      <link>https://goozenlab.com/blog/hugo-simplenote/</link>
+      <link>https://goozenlab.com/blog/2015/03/hugo-simplenote/</link>
       <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/hugo-simplenote/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/hugo-simplenote/</guid>
       <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換えたので、nvALTと</description>
     </item>
     
     <item>
       <title>HugoのPagenate</title>
-      <link>https://goozenlab.com/blog/hugo-pagenate/</link>
+      <link>https://goozenlab.com/blog/2015/03/hugo-pagenate/</link>
       <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/hugo-pagenate/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/hugo-pagenate/</guid>
       <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。 index.htmlの{{ range $name, $page :=</description>
     </item>
     
     <item>
       <title>Hugoを少し弄る</title>
-      <link>https://goozenlab.com/blog/hugo-template/</link>
+      <link>https://goozenlab.com/blog/2015/03/hugo-template/</link>
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/hugo-template/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/hugo-template/</guid>
       <description>移行のためHugoをnofancyを基にして色々と調整しています。 テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます</description>
     </item>
     
     <item>
       <title>Gem地獄で Hugo に移行</title>
-      <link>https://goozenlab.com/blog/moving-hugo/</link>
+      <link>https://goozenlab.com/blog/2015/03/moving-hugo/</link>
       <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/moving-hugo/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/moving-hugo/</guid>
       <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。 ちょっと開発が一段落し一息。温泉</description>
     </item>
     
     <item>
       <title>Octopressのテーマを変更</title>
-      <link>https://goozenlab.com/blog/octopress-theme/</link>
+      <link>https://goozenlab.com/blog/2013/06/octopress-theme/</link>
       <pubDate>Tue, 18 Jun 2013 22:06:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/octopress-theme/</guid>
+      <guid>https://goozenlab.com/blog/2013/06/octopress-theme/</guid>
       <description>サイトをさっぱりスッキリしたテーマ、（流行の）フラットな白基調デザインに変更しました。本家のこちらにテーマのリストがあります。まだ登録数が少ないですがoctop</description>
     </item>
     
     <item>
       <title>rake generateでエラー</title>
-      <link>https://goozenlab.com/blog/generate-error/</link>
+      <link>https://goozenlab.com/blog/2013/02/generate-error/</link>
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/generate-error/</guid>
+      <guid>https://goozenlab.com/blog/2013/02/generate-error/</guid>
       <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても効果無し。。半ば再イ</description>
     </item>
     
     <item>
       <title>ヘイロク引越</title>
-      <link>https://goozenlab.com/blog/site-heroku/</link>
+      <link>https://goozenlab.com/blog/2012/09/site-heroku/</link>
       <pubDate>Sun, 30 Sep 2012 16:10:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/site-heroku/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/site-heroku/</guid>
       <description>何を思い立ったか、勢いに乗り今度は平六に挑戦。これも目から鱗、、嬉しくて腕立て30回ぐらいしちゃいました。（１時間後筋肉痛。） ７月頃につぶれてしまったワードプレ</description>
     </item>
     
     <item>
       <title>Smart App Banner</title>
-      <link>https://goozenlab.com/blog/smart-appbanner/</link>
+      <link>https://goozenlab.com/blog/2012/09/smart-appbanner/</link>
       <pubDate>Sat, 29 Sep 2012 08:37:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/smart-appbanner/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/smart-appbanner/</guid>
       <description>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。 ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号で</description>
     </item>
     
     <item>
       <title>デカ文字調整</title>
-      <link>https://goozenlab.com/blog/font-change/</link>
+      <link>https://goozenlab.com/blog/2012/09/font-change/</link>
       <pubDate>Fri, 28 Sep 2012 10:02:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/font-change/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/font-change/</guid>
       <description>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整はsource/stylesheets/screen.css を変更して終了とおもいきや、だ</description>
     </item>
     
     <item>
       <title>Octopressでのポスト執筆と管理</title>
-      <link>https://goozenlab.com/blog/octopress-simplenote/</link>
+      <link>https://goozenlab.com/blog/2012/09/octopress-simplenote/</link>
       <pubDate>Thu, 27 Sep 2012 15:41:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/octopress-simplenote/</guid>
+      <guid>https://goozenlab.com/blog/2012/09/octopress-simplenote/</guid>
       <description>最近開発系のブログをwordpress.comよりgithub pageに移行しました。 （Octopressのシンプルさが気に入り時間もあったので、、） で、ポスト</description>
     </item>
     

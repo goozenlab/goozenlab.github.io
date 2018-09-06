@@ -15,55 +15,55 @@
     
     <item>
       <title>tapasを公開</title>
-      <link>https://goozenlab.com/blog/open-tapas/</link>
+      <link>https://goozenlab.com/blog/2017/05/open-tapas/</link>
       <pubDate>Thu, 25 May 2017 14:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/open-tapas/</guid>
+      <guid>https://goozenlab.com/blog/2017/05/open-tapas/</guid>
       <description>公開アプリ第５弾。 XCode8.2 &amp;amp; Swift3への移行と同時に、マルチキッチンタイマーの「タパス」をギットハブに公開しました。 タイマー 通知 コアデータ ターゲットの切り分け を使</description>
     </item>
     
     <item>
       <title>(a)を公開</title>
-      <link>https://goozenlab.com/blog/open-a/</link>
+      <link>https://goozenlab.com/blog/2016/11/open-a/</link>
       <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/open-a/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/open-a/</guid>
       <description>手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。 ビルドをするには、CocoaPodのインストールと、ドロップボックスのアプキーの入手が必</description>
     </item>
     
     <item>
       <title>プラナティスを公開</title>
-      <link>https://goozenlab.com/blog/open-pranatice/</link>
+      <link>https://goozenlab.com/blog/2016/11/open-pranatice/</link>
       <pubDate>Sun, 27 Nov 2016 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/open-pranatice/</guid>
+      <guid>https://goozenlab.com/blog/2016/11/open-pranatice/</guid>
       <description>カルマヨガシリーズ第二弾のプラナティスをギットハブにソースコードを公開しました。ちょっとまとまりがなく、やけっぱちなSiwft3のソースコードですが、オープンソ</description>
     </item>
     
     <item>
       <title>リスタリアを公開</title>
-      <link>https://goozenlab.com/blog/open-listaria/</link>
+      <link>https://goozenlab.com/blog/2016/09/open-listaria/</link>
       <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/open-listaria/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/open-listaria/</guid>
       <description>買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。 アプリは最近はほとんどが外食の毎日のため、使用機会がほとんどなく、アップ</description>
     </item>
     
     <item>
       <title>サティを公開</title>
-      <link>https://goozenlab.com/blog/open-sati/</link>
+      <link>https://goozenlab.com/blog/2016/09/open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/open-sati/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/open-sati/</guid>
       <description>簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 Link @ github しました。ということは、恥ずかしながらオープンソースにしたということです。ライセンス</description>
     </item>
     
     <item>
       <title>ギットハブ公開</title>
-      <link>https://goozenlab.com/blog/github-open-sati/</link>
+      <link>https://goozenlab.com/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/github-open-sati/</guid>
+      <guid>https://goozenlab.com/blog/2016/09/github-open-sati/</guid>
       <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。 問題点：ギットハブに公開するプロジェクトには、バンドルアイデンティファ</description>
     </item>
     

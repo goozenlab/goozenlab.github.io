@@ -15,64 +15,64 @@
     
     <item>
       <title>サティの通知音</title>
-      <link>https://goozenlab.com/blog/notification_sound/</link>
+      <link>https://goozenlab.com/blog/2016/10/notification_sound/</link>
       <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/notification_sound/</guid>
+      <guid>https://goozenlab.com/blog/2016/10/notification_sound/</guid>
       <description>iOS10にてサティの通知音が TriTone になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。 がしかし、私のiPho</description>
     </item>
     
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
-      <link>https://goozenlab.com/blog/ios9-bug-notifications/</link>
+      <link>https://goozenlab.com/blog/2015/09/ios9-bug-notifications/</link>
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/ios9-bug-notifications/</guid>
+      <guid>https://goozenlab.com/blog/2015/09/ios9-bug-notifications/</guid>
       <description>マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。 iOS8がリリースされた時にも、通知で音を出</description>
     </item>
     
     <item>
       <title>littlistでのバグ</title>
-      <link>https://goozenlab.com/blog/littlist-265-bug/</link>
+      <link>https://goozenlab.com/blog/2015/03/littlist-265-bug/</link>
       <pubDate>Fri, 13 Mar 2015 20:00:47 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/littlist-265-bug/</guid>
+      <guid>https://goozenlab.com/blog/2015/03/littlist-265-bug/</guid>
       <description>iOSを8.2にアップデートして自分の端末を色々と弄っていると、 littlistにて &amp;ldquo;RedHot List&amp;rdquo; と &amp;ldquo;期日付き&amp;rdquo; の表示で落ちます。 OSアプデートの</description>
     </item>
     
     <item>
       <title>Satiでの不具合</title>
-      <link>https://goozenlab.com/blog/sati-nosound/</link>
+      <link>https://goozenlab.com/blog/2014/12/sati-nosound/</link>
       <pubDate>Thu, 04 Dec 2014 13:55:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/sati-nosound/</guid>
+      <guid>https://goozenlab.com/blog/2014/12/sati-nosound/</guid>
       <description>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。 瞑想中に鳴る音はバックグランドの処理ではなく、通知機能(Notif</description>
     </item>
     
     <item>
       <title>DatePickerでの表示バグの修正</title>
-      <link>https://goozenlab.com/blog/bug-datepicker/</link>
+      <link>https://goozenlab.com/blog/2013/05/bug-datepicker/</link>
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/bug-datepicker/</guid>
+      <guid>https://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
       <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSのバージョンが上がるた</description>
     </item>
     
     <item>
       <title>rake generateでエラー</title>
-      <link>https://goozenlab.com/blog/generate-error/</link>
+      <link>https://goozenlab.com/blog/2013/02/generate-error/</link>
       <pubDate>Sun, 24 Feb 2013 14:23:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/generate-error/</guid>
+      <guid>https://goozenlab.com/blog/2013/02/generate-error/</guid>
       <description>オクトプレスにてrake generateでどかっとエラーが出ました。 全く自分には覚えがない、うーーん、とrake installをやり直しても効果無し。。半ば再イ</description>
     </item>
     
     <item>
       <title>既知のバグ</title>
-      <link>https://goozenlab.com/blog/known-bugs/</link>
+      <link>https://goozenlab.com/blog/2012/11/known-bugs/</link>
       <pubDate>Sun, 11 Nov 2012 16:43:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/known-bugs/</guid>
+      <guid>https://goozenlab.com/blog/2012/11/known-bugs/</guid>
       <description>再現可能なバグはほぼつぶしてますが、時に落ちる事があります。 アイテムの削除時に落ちる 削除後、無くなったアイテムをアプリが探し存在していない事からエラーが発生しア</description>
     </item>
     
