@@ -313,7 +313,10 @@ img.full-width {
 }
 
 
-
+.post figure {
+	 display: block;
+	 margin: 0px;
+}
 
 
 /** summary */
