@@ -125,6 +125,10 @@ code{
 }
 
 
+.posts-name:first-letter {
+/*  color: #9bf;*/
+  font-size: 24px;
+}
 
 .posts li p{
     margin-top: 0;
@@ -313,6 +317,7 @@ img.full-width {
 }
 
 
+/** image for mmark */
 .post figure {
 	 display: block;
 	 margin: 0px;
