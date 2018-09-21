@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Sep 2018 17:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 21 Sep 2018 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>最近見たユーチューブ</title>
+      <link>https://goozenlab.com/blog/2018/09/recent-youtube/</link>
+      <pubDate>Fri, 21 Sep 2018 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/09/recent-youtube/</guid>
+      <description>ほとんどユーチューブは見ない人だったのだけど、（今でもあまり好きではない）ちょと気になった動画をご紹介。 Linus Torvalds Linuxの生みの親、Linus Torvalds氏（</description>
+    </item>
     
     <item>
       <title>新しい端末の解像度</title>
