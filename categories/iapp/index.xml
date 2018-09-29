@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 27 Sep 2018 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Sep 2018 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/iapp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>littlist v2.10.0</title>
+      <link>https://goozenlab.com/blog/2018/09/littlist-2100/</link>
+      <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/09/littlist-2100/</guid>
+      <description>本来は雨季のチェンマイではあるのですが、えらく晴天の日が続きます。（今日は曇り） あまりにも天気が良いので、日焼けが怖くてプールにも泳ぎに行けません。曇りでも、結</description>
+    </item>
+    
+    <item>
+      <title>ohayo v2.10.0</title>
+      <link>https://goozenlab.com/blog/2018/09/ohayo-2100/</link>
+      <pubDate>Sat, 29 Sep 2018 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/09/ohayo-2100/</guid>
+      <description>こっちでエラー、あっちでエラー、さらにエラーと、えらく慌ただしく更新作業をしてます。Xcodeは一気に２つバージョンアップ。。Xcode10のシミュレーターが馬</description>
+    </item>
     
     <item>
       <title>Sati v1.10.0</title>
