@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2018/10/suspend-frutarian/</loc>
+    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2018/10/dead-mbp15-2011/</loc>
     <lastmod>2018-10-01T11:00:00+07:00</lastmod>
   </url>
@@ -1906,14 +1911,14 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/backpack/</loc>
-    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/backpack/</loc>
+    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/backpack/</loc>
-    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
+    <loc>https://goozenlab.com/categories/backpack/</loc>
+    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2002,14 +2007,14 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/develop/</loc>
-    <lastmod>2018-09-28T06:30:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/develop/</loc>
+    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/develop/</loc>
-    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
+    <loc>https://goozenlab.com/categories/develop/</loc>
+    <lastmod>2018-09-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2040,6 +2045,12 @@
   <url>
     <loc>https://goozenlab.com/en/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/fasting/</loc>
+    <lastmod>2018-09-26T13:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2129,7 +2140,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/life/</loc>
-    <lastmod>2018-09-26T13:00:00+07:00</lastmod>
+    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2146,26 +2157,26 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/mac/</loc>
-    <lastmod>2014-11-10T14:20:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/mac/</loc>
     <lastmod>2016-11-26T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/macos/</loc>
-    <lastmod>2014-10-20T14:20:00+07:00</lastmod>
+    <loc>https://goozenlab.com/categories/mac/</loc>
+    <lastmod>2014-11-10T14:20:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/macos/</loc>
     <lastmod>2018-04-17T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/macos/</loc>
+    <lastmod>2014-10-20T14:20:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2261,7 +2272,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2018-10-01T11:00:00+07:00</lastmod>
+    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2393,7 +2404,7 @@
   
   <url>
     <loc>https://goozenlab.com/tags/vegetarian/</loc>
-    <lastmod>2018-09-19T09:00:00+07:00</lastmod>
+    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2429,7 +2440,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2018-10-01T11:00:00+07:00</lastmod>
+    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
