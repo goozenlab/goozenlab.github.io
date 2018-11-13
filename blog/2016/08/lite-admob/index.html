@@ -259,9 +259,9 @@
 <p>マクロを使って、以下の形で処理を分けることができます。</p>
 
 <pre><code>#if LITE
- 	// ライトバージョンで行う処理
+    // ライトバージョンで行う処理
 #else
- 	// フルバージョンでの処理
+    // フルバージョンでの処理
 #endif
 </code></pre>
 
@@ -297,8 +297,8 @@ class ListTableViewController: UITableViewController,NSFetchedResultsControllerD
         #endif
      }
 
-	.......
-	
+    .......
+    
 </code></pre>
 
 <p>アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。</p>
@@ -321,7 +321,7 @@ extension ListTableViewController: GADBannerViewDelegate {
         bannerView.adUnitID = GADApplicationID
         bannerView.delegate = self
         bannerView.rootViewController = self
-//	For Debug      
+//  For Debug      
 //        let request:GADRequest = GADRequest()
 //        request.testDevices = [kGADSimulatorID]
 //        bannerView.loadRequest(request)

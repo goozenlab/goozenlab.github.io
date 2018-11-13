@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 25 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/iapp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>プライバシーポリシー</title>
+      <link>https://goozenlab.com/iapp/sati-privacy/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/iapp/sati-privacy/</guid>
+      <description>プライバシーポリシー サティではヘルスケアへのアクセスが行われます。 ヘルスケアにサティで得た瞑想の時間のデーターを書き込みます。（ユーザーの同意を得た後） ヘルスケ</description>
+    </item>
     
     <item>
       <title>(a)</title>
@@ -64,7 +73,7 @@
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/iapp/sati/</guid>
-      <description>瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。 □ メイン画面 画面構成 ・上部には今日の日付 ・大きい数字は今までの瞑想の回数 ・中心</description>
+      <description>瞑想を日々続けられるように、少しでも励みになるように、シンプルな形で仕上げました。 良いきっかけ作りに、お役に立てれば幸い。 □ メイン画面 画面構成 ・上部には今日の日</description>
     </item>
     
     <item>

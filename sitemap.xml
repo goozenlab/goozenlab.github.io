@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2018/11/macbook-air-2018/</loc>
+    <lastmod>2018-11-13T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2018/10/suspend-frutarian/</loc>
     <lastmod>2018-10-03T09:00:00+07:00</lastmod>
   </url>
@@ -273,6 +278,21 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/en/iapp/sati-privacy/</loc>
+    <lastmod>2017-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/iapp/sati-privacy/</loc>
+    <lastmod>2017-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/about/vipassana/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2017/05/open-tapas/</loc>
     <lastmod>2017-05-25T14:30:00+07:00</lastmod>
   </url>
@@ -330,6 +350,11 @@
   <url>
     <loc>https://goozenlab.com/blog/2016/11/open-pranatice/</loc>
     <lastmod>2016-11-27T07:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/en/iapp/pranatice/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1308,11 +1333,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/en/iapp/pranatice/</loc>
-    <lastmod>2014-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/iapp/pranatice/</loc>
     <lastmod>2014-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -2044,7 +2064,7 @@
   
   <url>
     <loc>https://goozenlab.com/en/</loc>
-    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2074,7 +2094,7 @@
   
   <url>
     <loc>https://goozenlab.com/iapp/</loc>
-    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2206,7 +2226,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2018-10-01T11:00:00+07:00</lastmod>
+    <lastmod>2018-11-13T19:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2272,7 +2292,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
+    <lastmod>2018-11-13T19:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2440,7 +2460,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
+    <lastmod>2018-11-13T19:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
