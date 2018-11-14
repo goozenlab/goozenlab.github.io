@@ -8,18 +8,27 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 14 Nov 2018 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>HackPad X230</title>
+      <title>MBA11のロジックボード換装</title>
+      <link>https://goozenlab.com/blog/2018/11/replace-mba-logicboard/</link>
+      <pubDate>Thu, 15 Nov 2018 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/11/replace-mba-logicboard/</guid>
+      <description>知人のMBA11/2014が故障したらしく、我が家の使っていなかったMBP15/2010と物々交換をする。 素直に直すのもなんなので、新しい、マザーボードを買って</description>
+    </item>
+    
+    <item>
+      <title>HanckPad X230</title>
       <link>https://goozenlab.com/blog/2018/11/hackintosh-x230/</link>
       <pubDate>Wed, 14 Nov 2018 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/11/hackintosh-x230/</guid>
-      <description>なぜか、手元にある端末が矢継に倒れ。直そうと思って海外通販で頼んだ品は初期不良で何やら、中古マックブックであってもプレミア価格だし、、持っていたネットブックは勝</description>
+      <description>なぜか、手元にある端末が矢継に倒れ。ロジックボードをオーブンで焼いたりもコンガリ焼き上がり死亡、直そうと思って海外通販で頼んだ品は初期不良で何やらで返品、中古マ</description>
     </item>
     
     <item>
