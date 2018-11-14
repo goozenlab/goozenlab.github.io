@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 13 Nov 2018 19:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 14 Nov 2018 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HackPad X230</title>
+      <link>https://goozenlab.com/blog/2018/11/hackintosh-x230/</link>
+      <pubDate>Wed, 14 Nov 2018 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/11/hackintosh-x230/</guid>
+      <description>なぜか、手元にある端末が矢継に倒れ。直そうと思って海外通販で頼んだ品は初期不良で何やら、中古マックブックであってもプレミア価格だし、、持っていたネットブックは勝</description>
+    </item>
     
     <item>
       <title>新しいMacBook Air</title>
