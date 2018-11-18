@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Nov 2018 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Nov 2018 11:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Appleからの離脱</title>
+      <link>https://goozenlab.com/blog/2018/11/applexit/</link>
+      <pubDate>Sun, 18 Nov 2018 11:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2018/11/applexit/</guid>
+      <description>Appleからの離脱、勝手に名付けた、ApplExit。 機材を色々と弄ったこの10・11月。ちまちまと出費したわりには更新されていないのがなんとも悲しいところ。</description>
+    </item>
     
     <item>
       <title>MBA11のロジックボード換装</title>
