@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 22 Dec 2018 11:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Xiaomi Max3のカスタムロム</title>
+      <link>https://goozenlab.com/blog/2019/02/max3-custom-rom/</link>
+      <pubDate>Sat, 23 Feb 2019 06:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/02/max3-custom-rom/</guid>
+      <description>７インチ近い液晶画面を持つMi Max3、現在MIUIeu Betaを使ってます。MiUIもこなれてきていて、使い勝手も悪くはありませんが、LineageOS16の</description>
+    </item>
     
     <item>
       <title>Xiaomiデバイスのブートローダーロック解除</title>
