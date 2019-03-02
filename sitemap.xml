@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/03/pie-docker-install/</loc>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</loc>
     <lastmod>2019-03-02T19:30:00+07:00</lastmod>
   </url>
@@ -2354,6 +2359,12 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/tags/nomad/</loc>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/nomad/</loc>
     <lastmod>2019-02-21T05:30:00+07:00</lastmod>
     <priority>0</priority>
@@ -2397,7 +2408,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2415,7 +2426,7 @@
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pie/</loc>
-    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2439,7 +2450,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2575,7 +2586,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
+    <lastmod>2019-03-03T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

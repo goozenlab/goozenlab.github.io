@@ -150,7 +150,7 @@
 <p>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。
 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲートウェイなるものが別途必要。</p>
 
-<p>アンドロイドの端末から呼び出すことはできるのだけれども、表示があるので、別にそこまで、繋げる必要が無いので、デジタル気温・湿度計として使ってました。</p>
+<p>アンドロイドの端末から呼び出すことはできるのだけれども、表示があるので、別にそこまで、繋げる必要が無いので、デジタル気温・湿度計として使ってます。（今の北タイはベストシーズンです。）</p>
 
 <p>しかし、最近、ラズベリーパイの有効利用を考えている一環で、ちょっと気になって
 データーが抜き出せないか調べてみたところ、あるでは無いですか。。。</p>
@@ -159,9 +159,13 @@
 
 <p>ということで、試してみました。</p>
 
-<p>ソフトのアップデートや、ファームウェアの更新やらで、大体はうまくいかなかったりするのですが、ありがたいことにページに載っていた方法ですっきり行きました。</p>
+<p>ソフトのアップデートや、ファームウェアの更新やらで、うまくいかないことが多かったりするのですが、ありがたいことにページに載っていた方法ですっきり行きました。</p>
+
+<hr />
 
 <h2 id="install-software">Install Software</h2>
+
+<p>git, python3, python3-pip libglib2.0-dev, bluepy(pip) が必要になります。</p>
 
 <pre><code>pi@raspberrypi:~ $ sudo apt-get install git -y
 pi@raspberrypi:~ $ sudo apt-get install python3 -y
@@ -173,25 +177,26 @@ Collecting bluepy
 Installing collected packages: bluepy
 Successfully installed bluepy-1.3.0
 pi@raspberrypi:~ $
-
 </code></pre>
 
-<p>割と色々と必要です。。</p>
-
-<p>その他、二つの必要なプロジェクトをギットハブよりクローンします。</p>
+<p>そして、二つの必要なプロジェクトをギットハブよりクローンします。</p>
 
 <pre><code>pi@hassbian:~ $ git clone https://github.com/ratcashdev/mitemp.git
 pi@hassbian:~ $ git clone https://github.com/ChristianKuehnel/btlewrap.git btlewrap-git
 </code></pre>
 
-<p>btlewrap-gitとフォルダー名をつけているのは、必要なファイルはこの中にある<code>btlewrap</code>フォルダーで、混乱を避けるために別名にしています。そのフォルダーをmitemp内にコピーします。コピーした後にbtlewrap-gitは必要ありませんで消去します。</p>
+<p>btlewrap-gitとフォルダー名をつけているのは、必要なファイルはこの中にある<code>btlewrap</code>フォルダーで、混乱を避けるために別の名前にしています。そのフォルダーをmitemp内にコピーします。コピーした後にbtlewrap-gitは必要ありませんで消去します。</p>
 
 <pre><code>pi@hassbian:~ $ mv /home/pi/btlewrap-git/btlewrap/ /home/pi/mitemp/
 pi@hassbian:~ $ rm -rf /home/pi/btlewrap-git/
 </code></pre>
 
+<hr />
+
+<h2 id="データーの抜き出し">データーの抜き出し</h2>
+
 <p>温度計のBTのアドレスを調べます。
-一覧が出てきますので、デバイス名は<code>MJ_HT_V1</code>のところを探します。
+一覧が出てきます。デバイス名は<code>MJ_HT_V1</code>のところを探します。
 BTアドレスは<code>4c:62:a4:d4:f4:7e</code>になります。</p>
 
 <pre><code>pi@raspberrypi:~/mitemp $ sudo blescan
@@ -203,12 +208,12 @@ BTアドレスは<code>4c:62:a4:d4:f4:7e</code>になります。</p>
     Complete Local Name: 'MJ_HT_V1'
 </code></pre>
 
-<p>そして、スクリプト<code>python3 /home/pi/mitemp/demo.py --backend bluepy poll 4c:62:a4:d4:f4:7e</code>を走らせます。</p>
+<p>そして、温度計からデーターを抜きだすスクリプトを温度計のBTアドレスとともに<code>python3 /home/pi/mitemp/demo.py --backend bluepy poll 4c:62:a4:d4:f4:7e</code>走らせます。 ファームウェアバージョン、バッテリー残量、気温、湿度のデーターを取り出すことができます。</p>
 
 <p><img src="/images/2019-03-02-mi-temperature-monitor.png" alt="Xiaomi 気温湿度計" /></p>
 
 <p>いつも身近に置いて、これから先酷暑のため、体調の管理に使えれば良いなと。
-influxDBにとりあえず書き込んで、grafinoで使えればいいなと、、現在grafanaインストールで回線状況も悪く、奮闘中。。。</p>
+influxDBに書き込んで、grafinoで可視化を目論んでます。が、、現在grafanaインストールで回線状況も悪く、奮闘中。。。</p>
 
 <pre><code>pi@raspberrypi:~ $ sudo docker pull grafana/grafana
 Using default tag: latest

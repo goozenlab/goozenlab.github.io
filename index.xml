@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 02 Mar 2019 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 05:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker on R. Pie Zero</title>
+      <link>https://goozenlab.com/blog/2019/03/pie-docker-install/</link>
+      <pubDate>Sun, 03 Mar 2019 05:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/pie-docker-install/</guid>
+      <description>sudo apt-get install docker-ce=18.06.1~ce~3-0~raspbian で、あっちに行って、こっちに行ってと、よーーーーーやく、動きました。 (ちゅーのは、ぬか喜びでした。。） pi@raspberrypi:~ $ apt list -a docker-ce Listing... Done docker-ce/stretch 5:18.09.0~3-0~raspbian-stretch armhf [upgradable from: 18.06.1~ce~3-0~raspbian] docker-ce/stretch 18.06.3~ce~3-0~raspbian armhf docker-ce/stretch,now 18.06.1~ce~3-0~raspbian armhf [installed,upgradable to: 5:18.09.0~3-0~raspbian-stretch] docker-ce/stretch 18.06.0~ce~3-0~raspbian</description>
+    </item>
     
     <item>
       <title>Xiaomi 気温湿度計</title>
