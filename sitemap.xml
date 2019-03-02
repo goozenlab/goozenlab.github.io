@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</loc>
+    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/02/twrp-backup-restore/</loc>
+    <lastmod>2019-02-27T10:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/02/21fasting-wrapup/</loc>
     <lastmod>2019-02-26T08:00:00+07:00</lastmod>
   </url>
@@ -2005,7 +2015,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/android/</loc>
-    <lastmod>2019-02-23T06:30:00+07:00</lastmod>
+    <lastmod>2019-02-27T10:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2057,7 +2067,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-02-23T06:30:00+07:00</lastmod>
+    <lastmod>2019-02-27T10:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2387,7 +2397,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-02-26T08:00:00+07:00</lastmod>
+    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2400,6 +2410,12 @@
   <url>
     <loc>https://goozenlab.com/tags/prepaid-phone/</loc>
     <lastmod>2019-02-21T05:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/raspberry-pie/</loc>
+    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2423,7 +2439,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2018-04-01T13:30:00+07:00</lastmod>
+    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2559,7 +2575,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-02-26T08:00:00+07:00</lastmod>
+    <lastmod>2019-03-02T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
