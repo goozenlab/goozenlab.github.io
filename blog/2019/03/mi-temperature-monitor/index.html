@@ -166,28 +166,28 @@
 
 <p>git, python3, python3-pip libglib2.0-dev, bluepy(pip) が必要になります。</p>
 
-<pre><code>pi@raspberrypi:~ $ sudo apt-get install git -y
-pi@raspberrypi:~ $ sudo apt-get install python3 -y
-pi@raspberrypi:~ $ sudo apt-get install python3-pip libglib2.0-dev
-pi@raspberrypi:~ $ sudo pip3 install bluepy
+<pre><code>pi@pi:~ $ sudo apt-get install git -y
+pi@pi:~ $ sudo apt-get install python3 -y
+pi@pi:~ $ sudo apt-get install python3-pip libglib2.0-dev
+pi@pi:~ $ sudo pip3 install bluepy
 Collecting bluepy
   Downloading https://www.piwheels.org/simple/bluepy/bluepy-1.3.0-cp35-cp35m-linux_armv6l.whl (515kB)
     100% |████████████████████████████████| 522kB 54kB/s
 Installing collected packages: bluepy
 Successfully installed bluepy-1.3.0
-pi@raspberrypi:~ $
+pi@pi:~ $
 </code></pre>
 
 <p>そして、二つの必要なプロジェクトをギットハブよりクローンします。</p>
 
-<pre><code>pi@hassbian:~ $ git clone https://github.com/ratcashdev/mitemp.git
-pi@hassbian:~ $ git clone https://github.com/ChristianKuehnel/btlewrap.git btlewrap-git
+<pre><code>pi@pi:~ $ git clone https://github.com/ratcashdev/mitemp.git
+pi@pi:~ $ git clone https://github.com/ChristianKuehnel/btlewrap.git btlewrap-git
 </code></pre>
 
 <p>btlewrap-gitとフォルダー名をつけているのは、必要なファイルはこの中にある<code>btlewrap</code>フォルダーで、混乱を避けるために別の名前にしています。そのフォルダーをmitemp内にコピーします。コピーした後にbtlewrap-gitは必要ありませんで消去します。</p>
 
-<pre><code>pi@hassbian:~ $ mv /home/pi/btlewrap-git/btlewrap/ /home/pi/mitemp/
-pi@hassbian:~ $ rm -rf /home/pi/btlewrap-git/
+<pre><code>pi@pi:~ $ mv /home/pi/btlewrap-git/btlewrap/ /home/pi/mitemp/
+pi@pi:~ $ rm -rf /home/pi/btlewrap-git/
 </code></pre>
 
 <hr />
@@ -198,7 +198,7 @@ pi@hassbian:~ $ rm -rf /home/pi/btlewrap-git/
 一覧が出てきます。デバイス名は<code>MJ_HT_V1</code>のところを探します。
 BTアドレスは<code>4c:62:a4:d4:f4:7e</code>になります。</p>
 
-<pre><code>pi@raspberrypi:~/mitemp $ sudo blescan
+<pre><code>pi@pi:~/mitemp $ sudo blescan
 
   Device (new): 4c:62:a4:d4:f4:7e (public), -54 dBm
     Flags: &lt;06&gt;
@@ -214,7 +214,7 @@ BTアドレスは<code>4c:62:a4:d4:f4:7e</code>になります。</p>
 <p>いつも身近に置いて、これから先酷暑のため、体調の管理に使えれば良いなと。
 influxDBに書き込んで、grafinoで可視化を目論んでます。が、、現在grafanaインストールで回線状況も悪く、奮闘中。。。</p>
 
-<pre><code>pi@raspberrypi:~ $ sudo docker pull grafana/grafana
+<pre><code>pi@pi:~ $ sudo docker pull grafana/grafana
 Using default tag: latest
 latest: Pulling from grafana/grafana
 9c38b5a8a4d5: Downloading [==================&gt;              ]  1.801MB/3.407MB
