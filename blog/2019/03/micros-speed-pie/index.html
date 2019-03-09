@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Categories | goozenlab</title>
+  <title>MicroSDカードの速度比較 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -116,103 +116,139 @@
     <div class="pure-u-1-24 pure-u-md-1-24"></div>
 </div>
 
+
 <div class="pure-g">
-<div class="pure-u-1-24 pure-u-md-5-24"></div>
-<div class="pure-u-11-12 pure-u-md-5-8">
-	<p class="posts-name">Categories:</p>
-	<div class="post-content">
-		<ul class="posts">
-		
-		
-			<li>
-				<a href="iapp">iapp</a>
-				<span>&#40;109&#41;</span>
-			</li>
-		
-			<li>
-				<a href="nomad">nomad</a>
-				<span>&#40;67&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mumble">mumble</a>
-				<span>&#40;39&#41;</span>
-			</li>
-		
-			<li>
-				<a href="develop">develop</a>
-				<span>&#40;38&#41;</span>
-			</li>
-		
-			<li>
-				<a href="life">life</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="computing">computing</a>
-				<span>&#40;18&#41;</span>
-			</li>
-		
-			<li>
-				<a href="travel">travel</a>
-				<span>&#40;17&#41;</span>
-			</li>
-		
-			<li>
-				<a href="android">android</a>
-				<span>&#40;13&#41;</span>
-			</li>
-		
-			<li>
-				<a href="web">web</a>
-				<span>&#40;12&#41;</span>
-			</li>
-		
-			<li>
-				<a href="bicycle">bicycle</a>
-				<span>&#40;11&#41;</span>
-			</li>
-		
-			<li>
-				<a href="snakefoot">snakefoot</a>
-				<span>&#40;10&#41;</span>
-			</li>
-		
-			<li>
-				<a href="server">server</a>
-				<span>&#40;8&#41;</span>
-			</li>
-		
-			<li>
-				<a href="backpack">backpack</a>
-				<span>&#40;5&#41;</span>
-			</li>
-		
-			<li>
-				<a href="goods">goods</a>
-				<span>&#40;2&#41;</span>
-			</li>
-		
-			<li>
-				<a href="development">development</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mac">mac</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="macos">macos</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-		</ul>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-03-09</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pie">raspberry pie</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>MicroSDカードの速度比較</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>Raspberry  Pi にてのMicroSDカードのパフォーマンス</p>
+
+<p>手元にあったマイクロSDカード、あそこで買ったり、ここで買ったりと、
+改めて見てみると、メーカーは違えとも、規格やサイズは同じ。</p>
+
+<p>デジカメに入れていたり、携帯に入れていたりして使っていたのだけど、ちょっと速度差がある様に感じたので、
+ラズベリーパイで色々試験運転中、タイミングも良いということで、チェックしてみました。</p>
+
+<p>とはいえ、そこまで詳しく知りたいというわけでは無いので、簡易テストでスピードを測ってみる。</p>
+
+<pre><code>pi@raspberrypi:~ $ dd if=/dev/zero of=/tmp/output conv=fdatasync bs=384k count=1k; rm -f /tmp/output
+</code></pre>
+
+<h2 id="結果-成績の良い順">結果：成績の良い順</h2>
+
+<ul>
+<li>Lexer 16GB: Class10 HC1</li>
+</ul>
+
+<p>402653184 bytes (403 MB, 384 MiB) copied, 23.3597 s, <strong>17.3 MB/s</strong></p>
+
+<ul>
+<li>SanDisk Ultra 16GB: Class10 HC1</li>
+</ul>
+
+<p>402653184 bytes (403 MB, 384 MiB) copied, 24.4524 s, <strong>16.5 MB/s</strong></p>
+
+<ul>
+<li>Toshiba  16GB: Class10 HC1</li>
+</ul>
+
+<p>402653184 bytes (403 MB, 384 MiB) copied, 31.2713 s, <strong>12.9 MB/s</strong></p>
+
+<ul>
+<li>Samsung EVO Plus 32GB: Class10 HC1</li>
+</ul>
+
+<p>後々追加。</p>
+
+<hr />
+
+<h2 id="おまけ">おまけ</h2>
+
+<h3 id="pi-zeroシリアル接続速度">Pi Zeroシリアル接続速度</h3>
+
+<ul>
+<li>MacBook Air11 -&gt; Raspberry Pie Zero W へのUSB Gadget Mode時の転送速度</li>
+</ul>
+
+<p>RPi0wでは、ネットの通信環境が良くないので、MacBookのUSBポートにつないで作業もしています。
+もし早ければ、RPiB3（いろいろサーバー）にPi Zeroを直付して使おうかなと、
+気になったので、簡単な転送テストを行ってみました。</p>
+
+<pre><code>gallo:~ jin$ scp 2018-11-13-raspbian-stretch-lite.img pi@pi-hole.local:
+2018-11-13-raspbian-stretch-lite.img        41%  733MB   5.0MB/s   03:28
+</code></pre>
+
+<p>途中ですが終りまでコンスタントに、5.0 MB/s (40.0 Mbps)。思ったより遅い。
+USB 2.0は規格上480Mbpsの通信が可能で、実効速度でも40MB/秒程度のスピードは出るらしいし、
+Wifiだと、802.11bで11Mbps、802.11g 54Mbps、802.11a 36～54Mbpsなので、
+Wifiの速度に比べると安定していて良いのかもしれない。時間があったら、ちょっと分けてみるかな。
+10倍くらい出てくれれば、ルーターに直につなげようかなと思ったけれど、微妙な数値だねこれは。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/03/install-moode-rpi0w/">moOdeをRPi0wにインストール</a></li>
+	
+	<li><a href="/blog/2019/03/mi-temperature-monitor/">Xiaomi 気温湿度計</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
 	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-<div class="pure-u-1-24 pure-u-md-1-6"></div>
+
 
 <div class="footer pure-g">
     <div class="pure-u-1-24 pure-u-md-3-24"></div>

@@ -371,6 +371,13 @@ img.full-width {
 }
 
 
+/** font size on Code Area  */
+
+code {
+	line-height: 1.15;
+	font-size: .85em;
+}
+
 /** Blockquote */
 
 blockquote{
