@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>DietPiのインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-03-12</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pie">raspberry pie</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>DietPiのインストール</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p><img src="/images/2019-03-03-dietpi-website.png" alt="DietPi Install" /></p>
+
+<p>巷で人気のスリムなダイエットパイを小粋なRPi0w：ラズベリーパイ・ゼロWにインストールしました。</p>
+
+<p>まずは、ファイルを落としてきてSDカードにコピーをする。
+いたって簡単、一発の作業です。ラズベリアンなど他のものを入れるときと同じ共通のインストール作業です。各所にて情報は満載なので、情報は満載なので、説明は割愛させてもらいます。DietPi.comにも詳しく説明があります（英語）。</p>
+
+<p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=9#p9">Getting started @ dietpi.com</a></p>
+
+<h2 id="wifi経由インストール設定">Wifi経由インストール設定</h2>
+
+<p>ヘッドレス、Wifi経由のSSHにてインストールをする場合は以下二つの設定ファイルを少しいじる必要がありとは少し違います。ます。ラズベリアンでの設定と少し違います。なお、etcherでディスクを書き込んだ後ではディスクは解除されてしまっています。一度取り出し再度いれなおします。</p>
+
+<p><img src="/images/2019-03-12-edit-files.png" alt="DietPi Install" /></p>
+
+<p><code>dietpi.txt</code>と<code>dietpi-wifi.txt</code>がbootディスクにあります。お使いのテキストアプリで開きます。（私はTexemate)</p>
+
+<h3 id="dietpi-txt">dietpi.txt</h3>
+
+<p>Wifi経由でのインストール設定を有効にします。</p>
+
+<pre><code>18行目：
+Set AUTO_SETUP_NET_WIFI_ENABLED=1
+</code></pre>
+
+<h3 id="dietpi-wifi-txt">dietpi-wifi.txt</h3>
+
+<p>アクセスポイント（名前とパスワード）の設定を書き込みます。普通以下の２カ所で問題はないと思います。</p>
+
+<pre><code>4行目：
+aWIFI_SSID[0]='MySSID'
+6行目：
+aWIFI_KEY[0]='MyWifiKey'
+</code></pre>
+
+<p>ファイルを保存し、マイクロSDカードをパイに挿入して電源を入れ、起動します。</p>
+
+<p>最初の起動時にはファイルシステムの拡張などが行われるので、少し時間がかかります。少々待ってログインします。</p>
+
+<h2 id="ログイン-ssh接続">ログイン：SSH接続</h2>
+
+<p>SSHサーバーがデフォルトで起動されてますので、
+<code>ssh root@dietpi.local</code>で繋がるはずが、なかなか繋がらず、、ルーターよりアドレスを見つけ出して、IP番号を使ってログインします。※数回インストールの作業を行いましたが、ともにdietpi.localでは繋がりませんでした。問題はこっちなのかあっちなのか、ちょっと分かりません。</p>
+
+<pre><code>ssh root@10.10.10.231
+</code></pre>
+
+<ul>
+<li>username = root</li>
+<li>password = dietpi</li>
+</ul>
+
+<p><img src="/images/2019-03-12-login-ssh.png" alt="DietPi Install" /></p>
+
+<p>自動で設定画面が立ち上がます。サーベイの登録確認があります。</p>
+
+<p><img src="/images/2019-03-12-dietpi-login.png" alt="DietPi Install" /></p>
+
+<p><img src="/images/2019-03-12-install-01.png" alt="DietPi Install" /></p>
+
+<p>そして、システムを最新の状態にアップデートします。ネット環境にもよりますが、時間がかかります。回線が遅いのもあって、かなり心配になりました。</p>
+
+<p><img src="/images/2019-03-12-install-02.png" alt="DietPi Install" /></p>
+
+<p>途中で問題があると、確認の画面が立ち上がります。ここは回線状態が、あまり優れていないので、、、
+だいたい、重いファイルを落としている時に、我慢できずにエラー扱いになっている様な、セッカチなやつです。</p>
+
+<p><img src="/images/2019-03-12-dietpi-error.png" alt="DietPi Install" /></p>
+
+<p>まぁ仕方ないのですが、、リトライで作業を再開。終了後、再起動がかかります。</p>
+
+<p>そして、ログイン、そしてまた自動で設定が続けられます。パスワードの変更や設定の確認があります。とりあえず、パスワードは変更しておいた方がよろしいと思います。基本OKで問題ないです。</p>
+
+<p><img src="/images/2019-03-12-install-03.png" alt="DietPi Install" /></p>
+
+<p><img src="/images/2019-03-12-install-04.png" alt="DietPi Install" /></p>
+
+<p>シリアル機能はオフにしましょう。後々かなりメモリを消費してたりしてました。
+パスワードもへんこうするのが良いと思います。</p>
+
+<p>そして、もう一度再起動・ログイン。（デビアンでは一発で終了だった様な気がするのですが、何度も再起動するんのは、なんか不思議な気分。）</p>
+
+<p>そしてホスト名を変更したいので、<code>DietPi-Config</code>より設定を行います。</p>
+
+<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install" /></p>
+
+<p>DietPi-Config＞６：Security  Options&gt; 2：Change Host nemeにて、ホスト名を変更します</p>
+
+<p><img src="/images/2019-03-12-install-07.png" alt="DietPi Install" />
+<img src="/images/2019-03-12-install-08.png" alt="DietPi Install" /></p>
+
+<p>で、一度再起動します。（ここはキャンセルして作業を続けても問題はないと思います。）そしてまた設定が立ち上がり、今度はソフトをインストールせよとのメッセージが出る。</p>
+
+<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install" /></p>
+
+<p>とりあえず、今のところはしんぷるなじょうたいで良いので、メニュー一番下の、Install: Go &gt;&gt;を選択する。</p>
+
+<p>そうすると、今度は最小限だけどかまわないか？とメッセージが表示。</p>
+
+<p><img src="/images/2019-03-12-install-09.png" alt="DietPi Install" /></p>
+
+<p>オッケーで、さらに再起動。</p>
+
+<p>そして、またまた、設定画面で、終了したよとのメッセージが表示（キャプチャー忘れ）され。最後の再起動！</p>
+
+<p><img src="/images/2019-03-12-install-10-finish.png" alt="DietPi Install" /></p>
+
+<p>で本当に終了。お疲れ。（9:20 - 10:30)</p>
+
+<p>とりあえず、素の状態でですが、動いてます。ミニマム設定、断捨離マシーンです。プロセスもこんだけです。。（何もできませんが。）</p>
+
+<p><img src="/images/2019-03-12-htop.png" alt="DietPi Install" /></p>
+
+<hr />
+
+<p>いろいろインストールしたいのだけど、まずはルーターの設定が最初なので、
+まずはこのままにしておきます。</p>
+
+<p>ソフトのインストールは<code>dietpi-software</code>を使っても、もちろんデビアンベースなので、<code>apt</code>を使ってもできます。</p>
+
+<p><img src="/images/2019-03-12-dietpi-software-list.png" alt="DietPi Install" /></p>
+
+<p>Raspberinでちょっとインストールに問題があった、</p>
+
+<p>Docker, influxDB, Grafana,</p>
+
+<p>や、その他気になる、OwnCloud、Wireguard、 netdata</p>
+
+<p>そして、 わりと簡単にインストールできた、Pi-hole, Syncthing、などなど、</p>
+
+<p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=5#p5">ソフトリスト</a> に入っているソフトがなかなかツボに入りました、自分が必要なものはほとんど入っている様に思えます。やりたいこととか、考えてることはすごく近いんだなんだなとちょっと嬉しく思いました。
+しかも<strong>GNUstep</strong>がリストに入ってるし、親近感が増します。懐かし〜〜。</p>
+
+<p><img src="/images/2019-03-12-dietpi-soft.png" alt="DietPi Install" /></p>
+
+<p>ちょっと、確認を少ししたのだけど、わりとサクッと動いてくれたます。（Raspbianでの、苦労は何だったんだと、、）（ちょっと不具合もあるのだけど、、）</p>
+
+<p>リストを見て、ピタッときたら、是非お試しを。</p>
+
+<p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=9#p9">Getting started @ dietpi.com</a></p>
+
+<p>追記：
+（後々、<code>dietpi-config</code>や<code>dietpi-software</code>の基本的な使い方などを書きたいと思ってます。）</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/03/micros-speed-pie/">MicroSDカードの速度比較</a></li>
+	
+	<li><a href="/blog/2019/03/install-moode-rpi0w/">moOdeをRPi0wにインストール</a></li>
+	
+	<li><a href="/blog/2019/03/mi-temperature-monitor/">Xiaomi 気温湿度計</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2018, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
