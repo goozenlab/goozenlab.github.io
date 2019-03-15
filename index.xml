@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 Mar 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 22:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ArchLinuxをRaspberry Pi B3にインストール</title>
+      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</link>
+      <pubDate>Fri, 15 Mar 2019 22:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</guid>
+      <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをちょっと弄って、今回は</description>
+    </item>
+    
+    <item>
+      <title>GL.iNet Shadow</title>
+      <link>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</link>
+      <pubDate>Thu, 14 Mar 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</guid>
+      <description>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている Shadow AR-300M のレビューをしたいと思います。 このルーターに辿り着いたのは、PiHo</description>
+    </item>
     
     <item>
       <title>タイにてネットショッピング・無事到着</title>

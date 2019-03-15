@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ArchLinuxをRaspberry Pi B3にインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-03-15</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pie">raspberry pie</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>ArchLinuxをRaspberry Pi B3にインストール</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。）</p>
+
+<p>ラズベリアンにダイエット・パイをちょっと弄って、今回はArchLinux.arm64を導入してみたいと思います。</p>
+
+<p><a href="https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3">https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3</a></p>
+
+<p>色々と比較検討をしていて、折角ラズベリーパイ３Bは64bit対応であるにもかかわらず、
+現在、販売されている、ラズベリーパイは規格が、arm6, arm7, arm8と32bitと64bitのチップが混在してるため下位互換を保つ為の理由で32bitにて動いてます。</p>
+
+<p>パイ・ゼロで動いて、パイ３で不具合があったり、その逆だったりがあるのは、その辺に問題があるのではないかという人もいるのを、ネット上で見ました。</p>
+
+<p>真偽のほどはよくわからないけれど、それならば、自分でソースコードからビルドできる環境にするのが一番効率が良いように思えて、それがスムーズに可能なのはGentooとArchなのかなと、、。</p>
+
+<p>ということもあって、Archに白羽の矢が立ちました。
+本来はサーバー用途で使うので、安定環境を第一に考えたいのですが、
+動かしたいソフトがうまく動かなかったりして、動いてもバージョンが古く不都合があったり、</p>
+
+<p>気になっていたディストリビューションでもあったので、ちと、期待を込めて、頑張ってみました。</p>
+
+<hr />
+
+<h2 id="準備-起動ディスクを作成">準備：起動ディスクを作成</h2>
+
+<p>さて、まずはインストール用のマイクロSDカードを作成します。インストール用というかそのまま起動用のディスクになります。インストールの作業については非常によくまとまったWikiがあるので、詳細は割愛します。</p>
+
+<p>ArchLinux鬼門のインストール。公式ページのインストラクションが！本当に！良いです。
+個人の方々のブログも参考にしつつ作業を行いました。</p>
+
+<p><a href="https://wiki.archlinux.jp/index.php/Raspberry_Pi">https://wiki.archlinux.jp/index.php/Raspberry_Pi</a></p>
+
+<p>2017年くらいから、インストールをSSH経由でできる様になっているので、モニターとキーボードを繋げないで作業ができるのは、非常にありがたいです。</p>
+
+<p>しかし、作業にLinuxの端末が必要なのが、ちょっと。作業・検証機のPiZeroWにカードリーダーをつないで作業を行いました。</p>
+
+<p>一連の流れはこんな感じ</p>
+
+<ol>
+<li>マイクロSDカードの確認：本体にディスクが一つ、外部に何もつないでいなければほとんどのケースで、/dev/sdaになります。</li>
+<li>マイクロSDカードのパーテーション操作。</li>
+<li>マイクロSDカードのフォーマット＋マウント</li>
+<li>ファイルシステムをダウンロード<br />
+途中でSSHの接続が切れてやり直しました。その様な時は、オプションの<code>-c -b</code> をつけて再実行かつバックグラウンドで実行します。（c: continue, b: backgroundだと）経過はログに書き込まれます。</li>
+<li><code>bsdtar</code>にて落としたファイルを解凍：以下の作業は、<code>su</code>ではなく、<code>root</code>として行ってください（公式ウィキより）。</li>
+<li>解凍時に<strong>エラー</strong>が出ます、しかし、そのまま継続で大丈夫です。</li>
+<li>ファイルシステムの書き込み、同期</li>
+<li>マウントを解除し、マイクロSDカードを取り出す</li>
+</ol>
+
+<p>半分終了</p>
+
+<hr />
+
+<h2 id="archをインストーする端末での作業">Archをインストーする端末での作業</h2>
+
+<p>取り出したマイクロSDカードをRaspberry Pi 3に挿入して電源を入れます。ネットワークランプがピカピカ着いたら無事起動中と言うメッセージです。SSHのサービスは起動時に有効化されます。</p>
+
+<p>同じネットワーク内の端末のターミナルより接続します。
+あらかじめ設定されているアカウントは二つありますが、ルートでの接続は禁止されているので、
+alarmアカウントでログインします。</p>
+
+<ul>
+<li>userID: alarm / password: alarm</li>
+<li>userID: root / password: root</li>
+</ul>
+
+<p>接続先は<code>alarm.local</code>では見つからなかったので、ルーターよりIP番号を調べて<code>ssh alarm＠&lt;&lt;IP NUMBER&gt;&gt;</code>で接続します。</p>
+
+<pre><code>gallo:~ jin$ ssh alarm@alarm.local
+gallo:~ jin$ ssh alarm＠&lt;&lt;IP NUMBER&gt;&gt;
+[alarm@alarm ~]$  su root
+Password: root
+[root@alarm alarm]$ 
+</code></pre>
+
+<h3 id="pacman-keyの鍵の初期化と登録をします">pacman-keyの鍵の初期化と登録をします。</h3>
+
+<pre><code>[root@alarm alarm]$ pacman-key --init
+
+gpg: /etc/pacman.d/gnupg/trustdb.gpg: trustdb created
+gpg: Generating pacman keyring master key...
+....
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+
+[root@alarm alarm]$ pacman-key --populate archlinuxarm
+
+==&gt; Appending keys from archlinuxarm.gpg...
+gpg: depth: 1  valid:   3  signed:   1  trust: 0-, 0q, 0n, 3m, 0f, 0u
+gpg: depth: 2  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
+[root@alarm alarm]$ 
+</code></pre>
+
+<h3 id="パスワードの変更">パスワードの変更</h3>
+
+<p>そして、セキュリティー上、ルートのパスワードを変更しましょう。</p>
+
+<pre><code>[root@alarm alarm]$ passwd
+New password:
+Retype new password:
+passwd: password updated successfully
+</code></pre>
+
+<h3 id="ユーザーを作る">ユーザーを作る。</h3>
+
+<p>今の状態だと、アカウントは、<code>root</code>と<code>alarm</code>しかありません。
+自分のアカウントを作ります。</p>
+
+<pre><code>[root@alarm alarm]$ useradd -m -g wheel &lt;&lt;USER&gt;&gt;
+[root@alarm alarm]$ passwd &lt;&lt;USER&gt;&gt;
+</code></pre>
+
+<h3 id="sudo">sudo</h3>
+
+<p>ユーザーアカウントで<code>sudo</code>をインストールして使えるようにします。</p>
+
+<pre><code>[root@alarm alarm]$ pacman -S sudo
+[root@alarm alarm]$ visudo
+</code></pre>
+
+<p>以下の２項目を探し、コメントを除きます。</p>
+
+<pre><code>Defaults env_keep += “HOME”`
+# sudo したときユーザの $HOME を参照できるようにする
+%wheel ALL=(ALL) ALL
+# wheel グループのユーザに sudo する権限を与える。
+</code></pre>
+
+<h3 id="タイムゾーン">タイムゾーン</h3>
+
+<p>タイムゾーンを設定します</p>
+
+<pre><code>[root@alarm alarm]$ timedatectl status
+               Local time: Tue 2019-03-12 22:47:05 UTC
+           Universal time: Tue 2019-03-12 22:47:05 UTC
+                Time zone: UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+[root@alarm alarm]$ timedatectl set-timezone Asia/Bangkok
+[root@alarm alarm]$ timedatectl status
+               Local time: Wed 2019-03-13 05:47:59 +07
+           Universal time: Tue 2019-03-12 22:47:59 UTC
+                Time zone: Asia/Bangkok (+07, +0700)
+[root@alarm alarm]#
+</code></pre>
+
+<h3 id="アップデート">アップデート</h3>
+
+<p>インストール用のOSイメージは、最新のパッケージと時差があるので、アップデートされているソフトウェアがあります。システム全体をアップデートします。
+-Syyと-Syuuはapt updateとapt upgradeのような関係です。</p>
+
+<p>割とイメージファイルが作られたのが、十日前くらいなので、そんなに更新するパッケージの量は多くありませんでした、しかし、回線が遅く途中で嫌われたりしましたが、とりあえず無事に完了。</p>
+
+<pre><code>[root@alarm alarm]$ pacman -Syy
+[root@alarm alarm]$ pacman -Syuu
+</code></pre>
+
+<p>pacmanの使い方は公式ドキュメントにて。<a href="https://wiki.archlinux.jp/index.php/Pacman">pacman - ArchWiki</a> ArchのWikiはすごく充実してます。</p>
+
+<h3 id="disk-speed">disk speed</h3>
+
+<p>ここでちょっと脱線、以前行った読み込みテストを忘れないうちにここで行う。結果は爆速、<strong>290 MB/s</strong> と出る。64bit化の恩恵化？ほんまかいなと疑いぶかい結果となる。使ったマイクロSDカードはサムソンのEvoPlus 32GB (180B: ¥650)。（ちょっと方法を変えるかな。）
+ちなみに、RPi0WでのSDカードは同じ規格のもので、Lexer 16GBdでの結果は17.3MB。1/17のスピードって、何が起こった？。</p>
+
+<pre><code>[root@alarm alarm]$ dd if=/dev/zero of=/tmp/output conv=fdatasync bs=384k count=1k; rm -f /tmp/output
+1024+0 records in
+1024+0 records out
+402653184 bytes (403 MB, 384 MiB) copied, 1.3863 s, 290 MB/s
+[root@alarm alarm]#
+</code></pre>
+
+<h3 id="hostname">Hostname</h3>
+
+<p>最後にホストネーム<code>/etc/hostname</code>を変えます。私の命名規則：ルーターは雲、小型サーバーは鳥の名前、ラップトップはビール名、Pi0Wサーバー：つまみ名、でやっとります。とりあえず一服、ひと段落。</p>
+
+<pre><code># vi /etc/hosts
+127.0.0.1 localhost.localdomain localhost iska
+::1 localhost.localdomain localhost iska
+</code></pre>
+
+<p>で、Dockerをインストールするもののエラーで上がらず。。。心が折れそう、、さてさて。。。</p>
+
+<p>（終了）</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/03/install-dietpi/">DietPiのインストール</a></li>
+	
+	<li><a href="/blog/2019/03/micros-speed-pie/">MicroSDカードの速度比較</a></li>
+	
+	<li><a href="/blog/2019/03/install-moode-rpi0w/">moOdeをRPi0wにインストール</a></li>
+	
+	<li><a href="/blog/2019/03/mi-temperature-monitor/">Xiaomi 気温湿度計</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2018, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</loc>
+    <lastmod>2019-03-15T22:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</loc>
+    <lastmod>2019-03-14T09:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/03/shop-thailand/</loc>
     <lastmod>2019-03-13T08:30:00+07:00</lastmod>
   </url>
@@ -2204,6 +2214,12 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/tags/gl.inet/</loc>
+    <lastmod>2019-03-14T09:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/goods/</loc>
     <lastmod>2017-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -2427,7 +2443,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-03-13T08:30:00+07:00</lastmod>
+    <lastmod>2019-03-15T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2445,13 +2461,19 @@
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pie/</loc>
-    <lastmod>2019-03-12T11:30:00+07:00</lastmod>
+    <lastmod>2019-03-15T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/review/</loc>
-    <lastmod>2018-12-22T11:30:00+09:00</lastmod>
+    <lastmod>2019-03-14T09:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/router/</loc>
+    <lastmod>2019-03-14T09:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2469,7 +2491,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-03-12T11:30:00+07:00</lastmod>
+    <lastmod>2019-03-15T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2605,7 +2627,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-03-13T08:30:00+07:00</lastmod>
+    <lastmod>2019-03-15T22:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

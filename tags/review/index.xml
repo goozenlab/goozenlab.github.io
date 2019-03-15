@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 22 Dec 2018 11:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GL.iNet Shadow</title>
+      <link>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</link>
+      <pubDate>Thu, 14 Mar 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</guid>
+      <description>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている Shadow AR-300M のレビューをしたいと思います。 このルーターに辿り着いたのは、PiHo</description>
+    </item>
     
     <item>
       <title>Xiaomiデバイスのブートローダーロック解除</title>
