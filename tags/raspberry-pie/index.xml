@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 15 Mar 2019 22:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 03:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pie/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>アクセスポイント</title>
+      <link>https://goozenlab.com/blog/2019/03/hostapd-buster/</link>
+      <pubDate>Sun, 17 Mar 2019 03:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/hostapd-buster/</guid>
+      <description>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTor</description>
+    </item>
     
     <item>
       <title>ArchLinuxをRaspberry Pi B3にインストール</title>
