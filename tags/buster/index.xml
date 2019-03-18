@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 17 Mar 2019 03:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/buster/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker on RPi3B.arm64.buster</title>
+      <link>https://goozenlab.com/blog/2019/03/docker-install-buster/</link>
+      <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/docker-install-buster/</guid>
+      <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;quot;/run.sh&amp;quot; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;quot;/portainer&amp;quot; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;quot;/hello&amp;quot; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに続くエラー、無駄もい</description>
+    </item>
     
     <item>
       <title>アクセスポイント</title>
