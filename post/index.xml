@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 17 Mar 2019 03:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2019 06:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>さりげなく、再登場。</title>
+      <link>https://goozenlab.com/blog/2019/03/macbook-air-2018/</link>
+      <pubDate>Tue, 19 Mar 2019 06:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/macbook-air-2018/</guid>
+      <description>控えめに、いきなり来ましたね、iPad mini5。わかりますよ、気分的には、お～ぴらに、紹介されてもね、ほとんどデザインの変更も無いし。謙虚でよろし。でもすごく</description>
+    </item>
+    
+    <item>
+      <title>端末識別プロンプト</title>
+      <link>https://goozenlab.com/blog/2019/03/color-simple-prompt/</link>
+      <pubDate>Mon, 18 Mar 2019 16:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/color-simple-prompt/</guid>
+      <description>最近sshであっちに入ったり、こっちに入ったりしてます。 そんなんで、たまに、勘違いしていて、 「どうも、うまくいかんな、、こりゃ。。」 と思ったら他の端末だったりと</description>
+    </item>
     
     <item>
       <title>アクセスポイント</title>
@@ -77,12 +95,12 @@
     </item>
     
     <item>
-      <title>moOdeをRPi0wにインストール</title>
+      <title>moOdeをrPi0wにインストール</title>
       <link>https://goozenlab.com/blog/2019/03/install-moode-rpi0w/</link>
       <pubDate>Thu, 07 Mar 2019 20:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/install-moode-rpi0w/</guid>
-      <description>オーディオ・ラジオサーバーのmoOde audio playerをラズベリーパイ・ゼロにインストールしました。 ネット回線が貧弱な環境にいるので５時間くらいかかりましたが、問</description>
+      <description>オーディオ・ラジオサーバーのmoOde audio playerをラズベリーパイ・ゼロにインストールしました。 moOde Audioホームページからダウンロードするイメージ・ファイル</description>
     </item>
     
     <item>
