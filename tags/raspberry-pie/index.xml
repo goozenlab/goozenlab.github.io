@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 15:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pie/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ArchLinux: RPi B3 玉砕</title>
+      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</link>
+      <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
+      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使えるかもしれないけれど、</description>
+    </item>
     
     <item>
       <title>Docker on RPi3B.arm64.buster</title>

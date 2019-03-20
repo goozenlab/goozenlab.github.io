@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>端末識別プロンプト | goozenlab</title>
+  <title>ArchLinux: RPi B3 玉砕 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,11 +123,13 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-03-18</time>
+                    <time class="">2019-03-20</time>
 		            
                     
                     |
                     
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pie">raspberry pie</a> <a href="https://goozenlab.com/tags/arch">Arch</a> 
                     
 
                     
@@ -136,95 +138,44 @@
 
                     
                 </p>
-                <h1>端末識別プロンプト</h1>
+                <h1>ArchLinux: RPi B3 玉砕</h1>
             </div>
 
             <div class="post-content">
-                
+                <p>インストールは問題なく終了。戻ってきて、追加作業を継続する。</p>
 
-<p>最近<code>ssh</code>であっちに入ったり、こっちに入ったりしてます。
-そんなんで、たまに、勘違いしていて、</p>
+<p>さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使えるかもしれないけれど、ちょっと試すに至っていない。）そして、pi-holeもAURにパッケージがあるにもかかわらず、動かなーーい、解決策を探すも見つからない。yayのインストールもなぜか引っかかる。。bluez-utilsも嫌われる。</p>
 
-<p>「どうも、うまくいかんな、、こりゃ。。」</p>
+<p>ちょっといろいろと試してみましたが、名誉ある撤退ということで。。</p>
 
-<p>と思ったら他の端末だったりとか、、情けない。。  と言うことが、、数回、ありまして。</p>
+<p>期待値が高かっただけに、心折れり、、</p>
 
-<p><img src="/images/2019-03-18-prompt.png" alt="Color Prompt" /></p>
+<p>普通のバイナリー・カーネルを無理せずに使っていればよかったんだけどね。
+もう少し自分にスキルがあれば良いのだけれども、ちょっと無理しすぎた感じかな。</p>
 
-<p>そんなわけで、ちょっとプロンプトをシンプル簡単かつ、上品に？色で分別できるようにしました。</p>
+<p>でも、まぁこうゆうのが、楽しかったりするんだけどね、、若干Mが入ってる（マックのM）</p>
 
-<pre><code># Red: iska
-export PS1=&quot;[\$(date +&quot;%I:%M&quot;) \u \e[1;30m\]&gt; \e[1;31m\]\H\e[0m\]:\$(pwd) \e[5;32m\$\e[0m &quot; 
+<p>そんなんで、また、気力が貯まってモーチベーションがあがったら、タイミングを見て再チャレンジしようかなと思ってます。</p>
 
-# Green: gallo
-export PS1=&quot;[\$(date +&quot;%I:%M&quot;) \u \e[1;30m\]&gt; \e[1;32m\]\H\e[0m\]:\$(pwd) \e[5;32m\$\e[0m &quot;
-
-# Yellow: 
-export PS1=&quot;[\$(date +&quot;%I:%M&quot;) \u \e[1;30m\]&gt; \e[1;33m\]\H\e[0m\]:\$(pwd) \e[5;32m\$\e[0m &quot; 
-</code></pre>
-
-<p>ちょっと、作業に滞ったら、tacosという名前の端末をメキシコカラーにしたりするかな。。</p>
-
-<p>少しい弄って、ディレクトリーは下層に行くと手狭になので調整。今はこんな感じです。</p>
-
-<pre><code>export PS1=&quot;| \e[1;30m\$(date +&quot;%I:%M&quot;)\e[0m \u \e[1;30m&gt; \e[1;34m\H\e[1;30m: \w\e[0m \e[1;32m\$\e[0m &quot;
-</code></pre>
-
-<p>（\w: directory, \u: ユーザー, \H: ホスト名）</p>
-
-<p>あとは、できたような気がするけど、ギットの階層に入ったらブランチの表示かな。</p>
-
-<hr />
-
-<h2 id="カラーチャート">カラーチャート</h2>
-
-<h3 id="基本色">基本色</h3>
-
-<ul>
-<li>[0;30m   Black</li>
-<li>[0;31m   Red</li>
-<li>[0;32m   Green</li>
-<li>[0;33m   Yellow</li>
-<li>[0;34m   Blue</li>
-<li>[0;35m   Purple</li>
-<li>[0;36m   Cyan</li>
-<li>[0;37m   White</li>
-</ul>
-
-<p>ターミナルでは256色が登録されています。以下カラーチャートになります。</p>
-
-<p><img src="/images/2019-03-18-xterm-color-chart.png" alt="Xterm Color Chart" /></p>
-
-<p>装飾を行うためには、色ブロックの右下の3桁の数値を使います。</p>
-
-<p><code>\033[</code>又は<code>\e[</code>が色の編集の開始タグです<code>m</code>で閉じます。終了タグは<code>\033[0m</code></p>
-
-<ul>
-<li>文字色は38;5;色番号</li>
-<li>背景色は48;5;色番号</li>
-</ul>
-
-<p>で色づけを行うことができます。(例：背景色は緑の034で、文字色は黄色の226です。)</p>
-
-<pre><code>echo -e &quot;\033[48;5;034;38;5;226m hola soy \033[0mgoku&quot;
-</code></pre>
-
-<h4 id="左の数値の意味">左の数値の意味</h4>
-
-<p><code>\e[1;37m</code>は太字の白を意味します。</p>
-
-<ul>
-<li>0: 通常フォント</li>
-<li>1: 太字</li>
-<li>4: 下線</li>
-<li>5: 点滅</li>
-</ul>
-
-<p><img src="/images/2019-03-18-color-shell.png" alt="Shell Color" /></p>
-
-<p>おひまなときに、おためしあれ。</p>
+<p>おまけ<br />
+怒涛の勢いでアップルから新製品が発表されてます。ぜひこの勢いで、<code>AirPod.2</code>、<code>iPod</code>、で最後に！<code>iPhoneSE</code>を！よろすく。</p>
 
 				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/03/pi-archlinux64-install/">ArchLinuxをRaspberry Pi B3にインストール</a></li>
+	
+	<li><a href="/blog/2019/03/docker-install-buster/">Docker on RPi3B.arm64.buster</a></li>
+	
+	<li><a href="/blog/2019/03/hostapd-buster/">アクセスポイント</a></li>
+	
+	<li><a href="/blog/2019/03/install-dietpi/">DietPiのインストール</a></li>
+	
+	<li><a href="/blog/2019/03/micros-speed-pie/">MicroSDカードの速度比較</a></li>
+	
+</ul>
 
 
             </div>

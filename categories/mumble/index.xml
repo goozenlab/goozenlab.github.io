@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 19 Mar 2019 06:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 15:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ArchLinux: RPi B3 玉砕</title>
+      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</link>
+      <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
+      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使えるかもしれないけれど、</description>
+    </item>
     
     <item>
       <title>さりげなく、再登場。</title>
@@ -19,7 +28,7 @@
       <pubDate>Tue, 19 Mar 2019 06:00:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/macbook-air-2018/</guid>
-      <description>控えめに、いきなり来ましたね、iPad mini5。わかりますよ、気分的には、お～ぴらに、紹介されてもね、ほとんどデザインの変更も無いし。謙虚でよろし。でもすごく</description>
+      <description>控えめに、いきなり来ましたね、iPad mini5。わかりますよ、気分的には、お～ぴらに、紹介されてもね、ほとんどデザインの変更も無いし。謙虚でよろし。ペンが使え</description>
     </item>
     
     <item>

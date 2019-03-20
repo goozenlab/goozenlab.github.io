@@ -238,7 +238,19 @@ $ apt-cache madison docker-ce-cli
 <pre><code>$ sudo apt-get install docker-ce=18.06.3~ce~3-0~debian containerd.io
 </code></pre>
 
-<p>で、、、粘り勝ち。。新しいバージョンは6月なかばにタイに戻ったら、別のマイクロSDで検証用環境を作ってインストールしてみます。</p>
+<p>そして、<code>apt upgrade</code>時にパッケージをアップグレードされてしまうと元も子もないので、アップグレードから除外します。</p>
+
+<pre><code> $ echo docker-ce hold | sudo dpkg --set-selections
+</code></pre>
+
+<p>晴れて、問題もなくなり、解除する時は。</p>
+
+<pre><code> $ echo docker-ce install | sudo dpkg --set-selections
+</code></pre>
+
+<p>にて行います。（追記：3/19）</p>
+
+<p>で、アプリを立ち上げます、、、粘り勝ち。。新しいバージョンは6月なかばにタイに戻ったら、別のマイクロSDで検証用環境を作ってインストールしてみます。</p>
 
 <p><img src="/images/2019-03-16-docker-run-finally.png" alt="2019 03 16 Docker Run Finally" /></p>
 
