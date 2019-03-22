@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 Mar 2019 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 21 Mar 2019 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/router/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GL.iNet ルーターのファームウェア・アップデート</title>
+      <link>https://goozenlab.com/blog/2019/03/ar300m-firmware-update/</link>
+      <pubDate>Thu, 21 Mar 2019 06:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/ar300m-firmware-update/</guid>
+      <description>ルーターにバージョン・アップの告知が出てました。Ver. 2.27から3.019へと0.749アップのメジャー・アップグレード。 すでに上位機種では採用になっている</description>
+    </item>
     
     <item>
       <title>GL.iNet Shadow</title>

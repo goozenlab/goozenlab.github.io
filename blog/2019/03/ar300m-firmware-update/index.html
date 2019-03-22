@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo v2.5.0 | goozenlab</title>
+  <title>GL.iNet ルーターのファームウェア・アップデート | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,54 +123,119 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2013-07-18</time>
+                    <time class="">2019-03-21</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/ohayo">ohayo</a> <a href="https://goozenlab.com/tags/update">update</a> 
+                    tags:<a href="https://goozenlab.com/tags/gl.inet">GL.iNet</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/iapp">iapp</a> 
+                    categories:<a href="https://goozenlab.com/categories/router">router</a> 
                     
 
                     
                 </p>
-                <h1>ohayo v2.5.0</h1>
+                <h1>GL.iNet ルーターのファームウェア・アップデート</h1>
             </div>
 
             <div class="post-content">
-                <p>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。</p>
+                
 
-<ol>
-<li>アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更<br />
-<img src="https://dl.dropboxusercontent.com/u/163521/images/2013-07-18-ohayo-icon.png" alt="ohaYo New Icon" /></li>
-<li>デザインリニュー：フォントを変更。（日本語には影響無し）</li>
-<li>設定ページをリデザイン。さっぱり奇麗になりました。<br />
-<img src="/images/manual-ohayo-setting-old.png" alt="Old Setting" />
-<img src="/images/manual-ohayo-setting.png" alt="New setting" /></li>
-<li>詳細ページに最近の睡眠時間棒グラフを追加。（グラフはスワイプしても動きません。直近25日のデーターです。）<br />
-<img src="/images/manual-ohayo-detail.png" alt="Detail" /><br />
-※ ピンクのラインは設定した快眠時間のライン、水色のラインは平均時間のラインです。）</li>
-<li>iOS7に向け表示に不具合がある所を調整。</li>
-</ol>
+<p><img src="/images/2019-03-21-firmware-update-01.png" alt="GL.iNet Router Firmware update" /></p>
+
+<p>ルーターにバージョン・アップの告知が出てました。Ver. 2.27から3.019へと<strong>0.749</strong>アップのメジャー・アップグレード。
+すでに上位機種では採用になっているファームウェアなので、ためらいなく落として、アップデートしました。</p>
+
+<p><img src="/images/2019-03-21-firmware-update-02.png" alt="GL.iNet Router Firmware update" /></p>
+
+<p><img src="/images/2019-03-21-firmware-update-03.png" alt="GL.iNet Router Firmware update" /></p>
+
+<hr />
+
+<p>再起動後、かなり見た目が変わりました。以前の設定画面は、いかにも、無骨なルーターという感じであったけども、今回のバージョンアップでちょっとだけ、おされに、モダンな感じになりました。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-00.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>管理画面は11インチのMacBook Airでは表示される情報量が少なくて、少しキツキツな感じです。</p>
+
+<p>そして、日本のアマゾンでも取り扱いを始めている（多分つい最近だと思います）ので、その影響もあるのでしょう、日本語にも対応しています。というか、グローバル化に力を入れているようです。翻訳に関しては、まぁ、ちょっと微妙ですかね。表示もなぜか、明朝だったりとするので英語で使ってます。余裕があったら、パッチでも送ってあげようかなと思う。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-01.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>さて、機能的に沢山の項目をここで設定するようなデザインになっていないので、いたって簡易で、割と分かり易くまとまっていると思います、良い意味で初心者向け。ちょっと細かい設定はアドバンス設定（openWrt+LuCI)よりかなりイジれます。</p>
+
+<h3 id="wireguardが追加">Wireguardが追加</h3>
+
+<p>さて今回のアップデートですが、わたくし的に気になっているところは、Wireguardがこちらの簡易管理画面に入り込んできたということ。</p>
+
+<p>もともとVPNルーターを作ろうと思ってこのルーターを手に入れたので、いろいろとリサーチしていた所でした。すごくタイミングの良いアップデート。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-03.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>必要なソフトウェアもインストールされているようです。<strong>しかしながら</strong>、わたくし側にそもそもの知識もそんなに無く、日本語で説明を読んでも、英語で説明を読んでも、これはではチンプンカンプン。
+ちょっと説明不足。もしくは、「ポッチとな」で始められるのか？？</p>
+
+<p>ドキュメントもネット上にあるので、後ほど調べて設定をしてみます。</p>
+
+<p>でも、Wireguardサーバーをルーターで動かすか、ラズベリー・パイで動かすかなど考えていたところなので、これで、ルーターに入れようと決心がつきました。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-04.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>ルーターの横についている物理的なスウィッチも、できれば自分でカスタマイズできれば良いのだけども、VPN向けに変更されました。Wireguard/OpenVPNのオン・オフにも割り当てられました。</p>
+
+<h3 id="暗号化されたdns-dns-over-tls-from-cloudflare">暗号化されたDNS: DNS over TLS from CloudFlare</h3>
+
+<p>DNS情報も、アンドロイドを使っていたりすると、グーグルさんのめでたいDNSサーバーの<code>8.8.8.8</code>に振り分けられているそうです。DNSへの通信は暗号化されていないそうで、筒抜け。WEBのhttpsと似ている、通信を暗号化したDNSをサービスする<code>DNS over TLS from CloudFlare</code>もサポートされました。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-05.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>ちょっと、グーグルから離れられる所は離れたいんですよね。。</p>
+
+<h3 id="アドバンス設定">アドバンス設定</h3>
+
+<p>細かい設定をしたい人は、アドバンス設定から行います。ここからがこのルーターの売りでもあります。openWrt向けの管理画面です。</p>
+
+<p>アドバンス設定画面は変わらずシンプルな感じ保ってます。ボタンの枠に色がついたくらいで変更はなし。</p>
+
+<p><img src="/images/2019-03-21-new-firmware-06.png" alt="GL.iNet Router Firmware 3.0" /></p>
+
+<p>いろいろと覗いてみたら、ファイワーウォールの設定がえげつないことになっている。。</p>
+
+<p>そして、さらに玄人好みなのが、</p>
+
+<h3 id="openwrt">openWrt</h3>
+
+<p>このルーターの最大の特徴、売りでもあります。openWrtがデフォルトで入ってます。ターミナルから侵入してかき回すことができます。</p>
+
+<p><img src="/images/2019-03-12-lede.png" alt="Lede" /></p>
+
+<p>いろいろな要求に柔軟に応えてくれる、バランスのとれた、ルーターだなと思います。</p>
+
+<hr />
+
+<p>アマゾンさんより購入可能です。（画像よりリンクします）</p>
+
+<p>黄色のちょっと容量が少ないタイプ。（でも、全然問題なさそう。値段もお安いし）</p>
+
+<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B073TSK26W/hno33hcl-22">
+<img src="/images/2019-03-21-GL-MT300N.jpg" alt="GL.iNet Router GL-MT300N" />
+</a></p>
+
+<p>こちら豪華バージョン。ちょっと大きめですが、ギガビット、5Gzh Wifi対応です。香港・深圳の本社ショッピング・サイトでも$70にて販売ですので、価格も優しく設定されてます。</p>
+
+<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07GBXMBQF/hno33hcl-22">
+<img src="/images/2019-03-21-GL-AR750.jpg" alt="GL.iNet Router GL-AR750" />
+</a></p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2013/07/cosper-150/">cosper v1.5.0</a></li>
-	
-	<li><a href="/blog/2013/07/sati-153/">sati v1.5.3</a></li>
-	
-	<li><a href="/blog/2013/07/color-lock/">カラーロック</a></li>
-	
-	<li><a href="/blog/2013/07/listaria-153/">Listaria v1.5.3</a></li>
-	
-	<li><a href="/blog/2013/07/ippuku-150/">ippuku v1.5.0</a></li>
+	<li><a href="/blog/2019/03/review-initial-setup-shadow/">GL.iNet Shadow</a></li>
 	
 </ul>
 
