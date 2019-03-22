@@ -153,6 +153,8 @@
 
 <p>※ dnsmasqはpiholeとインストール時にコンフリクトします。dnsmasqを停止して、piholeインストールしました。最初にpiholeをインストールしておけば、こちらでインストールする必要はなかったかも。</p>
 
+<p>※ dnsmasqはpiholeとインストール時にコンフリクトします。dnsmasqを停止して、piholeインストールしました。最初にpiholeをインストールしておけば、こちらでインストールする必要はなかったかも。</p>
+
 <h2 id="wlan0設定">wlan0設定</h2>
 
 <p>無線LANの設定します。まずは、ドライバーなどしっかり認識されているかチェック。（ちょっと心配だった。）</p>
@@ -305,19 +307,19 @@ sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -
 sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 </code></pre>
 
-<p>任意ですが、iptables再設定用のツールをインストールしておきます。</p>
+<p><code>iptables</code>の設定はシャットダウンすると消えてしまいます。iptables設定を保存するためのツールをインストールします。</p>
 
 <pre><code>sudo apt-get install iptables-persistent
 </code></pre>
 
-<p>途中に、ipv4, ipv6の状態を保存するか？との質問があります。”はい”で現在のiptablesの設定内容が、/etc/iptables/rules.v4 に保存されます。</p>
-
-<p>別のやり方では、</p>
-
-<pre><code>sudo sh -c &quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;
-</code></pre>
+<p>途中に、ipv4, ipv6の状態を保存するか？との質問があります。”はい”で現在のiptablesの設定内容が、/etc/iptables/rules.v4 に保存されます。起動時に毎回呼び出され、読み込まれます。</p>
 
 <p>以上の設定が終わったらリブートし完了です。</p>
+
+<p>※　後々<code>iptables</code>を変更・追加などをした場合は、<code>/etc/iptables/rules.v4</code>に追加書き込みます。</p>
+
+<pre><code>sudo iptables-save | sudo tee /etc/iptables/rules.v4
+</code></pre>
 
 <p>※ 無線のdhcpで使うIP番号割り当てを有線で使っているIP番号とちょっとバッティングさせてしまい、有線LANが外に出てかない、という不具合がありました。まったくの凡ミスですが、お気をつけのほど。</p>
 
