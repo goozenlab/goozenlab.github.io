@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 May 2018 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 23 Mar 2019 16:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Netdata ダークモード・モニタリングソフト</title>
+      <link>https://goozenlab.com/blog/2019/03/netdata-mac/</link>
+      <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/netdata-mac/</guid>
+      <description>滞在中のタイ、チェンマイ。酷暑に向かい、日に日に熱くなってきてます。しかも、ここ数日はかーーなりガスってます。PMが飛びまくっているようです。内陸にあるチェンマ</description>
+    </item>
     
     <item>
       <title>Gnucash 3 へ移行時のエラー</title>
