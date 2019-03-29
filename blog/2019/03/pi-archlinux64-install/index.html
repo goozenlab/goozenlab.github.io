@@ -159,9 +159,8 @@
 
 <p>ということもあって、Archに白羽の矢が立ちました。
 本来はサーバー用途で使うので、安定環境を第一に考えたいのですが、
-動かしたいソフトがうまく動かなかったりして、動いてもバージョンが古く不都合があったり、</p>
-
-<p>気になっていたディストリビューションでもあったので、ちと、期待を込めて、頑張ってみました。</p>
+動かしたいソフトがうまく動かなかったりして、動いてもバージョンが古く不都合があったり、
+気になっていたディストリビューションでもあったので、ちと、期待を込めて、頑張ってみました。</p>
 
 <hr />
 
@@ -178,6 +177,8 @@
 
 <p>しかし、作業にLinuxの端末が必要なのが、ちょっと。作業・検証機のPiZeroWにカードリーダーをつないで作業を行いました。</p>
 
+<p><img src="/images/2019-03-26-install-arch.png" alt="ArchLinux Raspberry Pi " /></p>
+
 <p>一連の流れはこんな感じ</p>
 
 <ol>
@@ -186,8 +187,9 @@
 <li>マイクロSDカードのフォーマット＋マウント</li>
 <li>ファイルシステムをダウンロード<br />
 途中でSSHの接続が切れてやり直しました。その様な時は、オプションの<code>-c -b</code> をつけて再実行かつバックグラウンドで実行します。（c: continue, b: backgroundだと）経過はログに書き込まれます。</li>
+<li><code>bsdtar</code>は別途インストールの必要がありました。</li>
 <li><code>bsdtar</code>にて落としたファイルを解凍：以下の作業は、<code>su</code>ではなく、<code>root</code>として行ってください（公式ウィキより）。</li>
-<li>解凍時に<strong>エラー</strong>が出ます、しかし、そのまま継続で大丈夫です。</li>
+<li>解凍時に<strong>エラー: bsdtar: Failed to set default locale</strong>が出ます、しかし、そのまま継続で大丈夫です。</li>
 <li>ファイルシステムの書き込み、同期</li>
 <li>マウントを解除し、マイクロSDカードを取り出す</li>
 </ol>
@@ -272,7 +274,7 @@ passwd: password updated successfully
 
 <h3 id="タイムゾーン">タイムゾーン</h3>
 
-<p>タイムゾーンを設定します</p>
+<p>タイムゾーンを設定する</p>
 
 <pre><code>[root@alarm alarm]$ timedatectl status
                Local time: Tue 2019-03-12 22:47:05 UTC
@@ -286,6 +288,18 @@ System clock synchronized: yes
            Universal time: Tue 2019-03-12 22:47:59 UTC
                 Time zone: Asia/Bangkok (+07, +0700)
 [root@alarm alarm]#
+</code></pre>
+
+<h3 id="locale">locale</h3>
+
+<p>localeの設定も行う</p>
+
+<pre><code>[root@alarm alarm]$ vi /etc/locale.gen
+[root@alarm alarm]$ locale-gen
+Generating locales...
+  en_US.UTF-8... done
+  ja_JP.EUC-JP... done
+Generation complete.
 </code></pre>
 
 <h3 id="アップデート">アップデート</h3>
@@ -318,13 +332,13 @@ System clock synchronized: yes
 <p>最後にホストネーム<code>/etc/hostname</code>を変えます。私の命名規則：ルーターは雲、小型サーバーは鳥の名前、ラップトップはビール名、Pi0Wサーバー：つまみ名、でやっとります。とりあえず一服、ひと段落。</p>
 
 <pre><code># vi /etc/hosts
-127.0.0.1 localhost.localdomain localhost iska
-::1 localhost.localdomain localhost iska
+127.0.0.1 localhost iska
+::1 localhost iska
 </code></pre>
 
-<p>で、Dockerをインストールするもののエラーで上がらず。。。心が折れそう、、さてさて。。。</p>
+<p>（つづく）</p>
 
-<p>（終了）</p>
+<p>で、Dockerをインストールするもののエラーで上がらず。。。心が折れそう、、さてさて。。。</p>
 
 				
 

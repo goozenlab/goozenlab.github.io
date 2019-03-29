@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/03/64bit-kernel/</loc>
+    <lastmod>2019-03-28T06:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/03/test-running-mobile-pie/</loc>
     <lastmod>2019-03-25T06:30:00+07:00</lastmod>
   </url>
@@ -2088,10 +2093,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/blog/1/01/</loc>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/a/</loc>
     <lastmod>2016-11-29T14:30:00+07:00</lastmod>
     <priority>0</priority>
@@ -2499,7 +2500,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-03-25T06:30:00+07:00</lastmod>
+    <lastmod>2019-03-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2517,7 +2518,7 @@
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-03-25T06:30:00+07:00</lastmod>
+    <lastmod>2019-03-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2553,7 +2554,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-03-25T06:30:00+07:00</lastmod>
+    <lastmod>2019-03-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2689,7 +2690,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-03-25T06:30:00+07:00</lastmod>
+    <lastmod>2019-03-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
