@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 20 Mar 2019 15:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Mar 2019 08:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>パイ・マックス3</title>
+      <link>https://goozenlab.com/blog/2019/03/max3-pie-kernel-source-code/</link>
+      <pubDate>Sat, 30 Mar 2019 08:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/03/max3-pie-kernel-source-code/</guid>
+      <description>最近パイ尽くしな私ですが、別パイの件。今回はアンドロイド・パイ。アンドロイドのカーネルはLinuxを使っていますので、ソースコードはオープンに公開されます。 そし</description>
+    </item>
     
     <item>
       <title>ArchLinux: RPi B3 玉砕</title>
