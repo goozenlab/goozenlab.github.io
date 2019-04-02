@@ -156,7 +156,7 @@
 
 <pre><code># crontab -e
 
-@ reboot /root/task_on_reboot.sh
+@reboot /root/task_on_reboot.sh
 * * * * * /root/update_uptime.sh
 </code></pre>
 
@@ -215,7 +215,7 @@ Reboot @ Wed 20 Mar 11:30:11 +07 2019
 
 <p>できれば、もう一回り小さいモバイル・バッテリーで１日は持ってくれれば非常にハッピーになれるのだけどね。。</p>
 
-<pre><code>Booted @ Sat Mar 23 10:25:53 ICT 2019
+<pre><code>Booted 
  17:19:01 up  6:53,  1 user,  load average: 0.17, 0.13, 0.05
 Reboot @ Sat Mar 23 17:19:55 +07 2019
  03:21:01 up 10:17,  1 user,  load average: 0.00, 0.00, 0.02
@@ -229,6 +229,21 @@ Reboot @ Sun Mar 24 09:13:29 +07 2019
 
 <p>今後の追加予定：
 BTで、気温計のログを取って、Grafanaでモニターリング。いずれ、スマートウォッチと連動させて、健康ログを作りたい。</p>
+
+<p>### 3.  Pi 3B + GLiNet Shadow AR-300M：追記＠4/1</p>
+
+<p><strong>14時間10分</strong>、と悪くはないかな。。</p>
+
+<p>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。
+ということこで、ラズベリーパイとルーターをバッテリーに繋げて時間を計測してみました。</p>
+
+<p>ラズベリーパイは未だ試行錯誤中ですが、イーサーネットケーブルでルーターと繋いで、バックグラウンドでgrafana/influxdb.telegrafを走らせています。今のところWifiはオフ、電源関連の調整はしていません。
+ルーターはアクセスポイントリピーターとして動作しています。</p>
+
+<pre><code>Booted 
+ 23:01:01 up 14:10,  0 users,  load average: 0.04, 0.01, 0.00
+Reboot @ Mon Apr  1 22:50:19 +07 2019
+</code></pre>
 
 <hr />
 
