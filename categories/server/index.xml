@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Apr 2019 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 16:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>パイ力がつきるまで・２</title>
+      <link>https://goozenlab.com/blog/2019/04/test-running-mobile-pie-2/</link>
+      <pubDate>Thu, 04 Apr 2019 16:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/04/test-running-mobile-pie-2/</guid>
+      <description>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。 ということこで、モバイル・バッテリー稼働時間テス</description>
+    </item>
     
     <item>
       <title>パイで64bitカーネルビルド</title>
