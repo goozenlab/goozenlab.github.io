@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Apr 2019 16:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 Apr 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>パイ力がつきるまで・3</title>
+      <link>https://goozenlab.com/blog/2019/04/running-test-3/</link>
+      <pubDate>Tue, 09 Apr 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/04/running-test-3/</guid>
+      <description>今、Pi・ゼロで動かしているマイクロSDをPi・3Bに移動してみようと、、ふと思い試してみる。 で、入れ替えてみたところ、問題なーし。あっさり動きました。こういっ</description>
+    </item>
     
     <item>
       <title>パイ力がつきるまで・２</title>
