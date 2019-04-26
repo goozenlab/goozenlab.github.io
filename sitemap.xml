@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/04/auroville-guesthouse/</loc>
+    <lastmod>2019-04-27T05:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/04/chennai-airport-metro/</loc>
     <lastmod>2019-04-21T05:30:00+07:00</lastmod>
   </url>
@@ -2167,14 +2172,14 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/backpack/</loc>
-    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
+    <loc>https://goozenlab.com/categories/backpack/</loc>
+    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/backpack/</loc>
-    <lastmod>2015-06-20T15:30:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/backpack/</loc>
+    <lastmod>2015-04-04T12:30:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2273,14 +2278,14 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/develop/</loc>
-    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
+    <loc>https://goozenlab.com/categories/develop/</loc>
+    <lastmod>2018-09-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/develop/</loc>
-    <lastmod>2018-09-28T06:30:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/develop/</loc>
+    <lastmod>2015-02-26T07:25:00+05:45</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2364,7 +2369,7 @@
   
   <url>
     <loc>https://goozenlab.com/tags/india/</loc>
-    <lastmod>2019-04-21T05:30:00+07:00</lastmod>
+    <lastmod>2019-04-27T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2435,26 +2440,26 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
-    <lastmod>2019-03-19T06:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/mac/</loc>
     <lastmod>2014-11-10T14:20:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/macos/</loc>
-    <lastmod>2019-03-23T16:00:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/mac/</loc>
+    <lastmod>2019-03-19T06:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/macos/</loc>
     <lastmod>2014-10-20T14:20:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/macos/</loc>
+    <lastmod>2019-03-23T16:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2484,7 +2489,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-04-21T05:30:00+07:00</lastmod>
+    <lastmod>2019-04-27T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2556,7 +2561,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-04-21T05:30:00+07:00</lastmod>
+    <lastmod>2019-04-27T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2746,7 +2751,7 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-04-21T05:30:00+07:00</lastmod>
+    <lastmod>2019-04-27T05:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
