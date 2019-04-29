@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/04/first-youtube/</loc>
+    <lastmod>2019-04-29T06:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/04/paytm-india/</loc>
     <lastmod>2019-04-28T06:30:00+07:00</lastmod>
   </url>
@@ -2223,6 +2228,12 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/tags/cat/</loc>
+    <lastmod>2019-04-29T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
     <lastmod>2019-02-27T10:30:00+07:00</lastmod>
     <priority>0</priority>
@@ -2494,7 +2505,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-04-28T06:30:00+07:00</lastmod>
+    <lastmod>2019-04-14T08:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2518,7 +2529,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/nomad/</loc>
-    <lastmod>2019-02-21T05:30:00+07:00</lastmod>
+    <lastmod>2019-04-28T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2566,7 +2577,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-04-28T06:30:00+07:00</lastmod>
+    <lastmod>2019-04-29T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2696,7 +2707,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/travel/</loc>
-    <lastmod>2018-09-24T12:30:00+07:00</lastmod>
+    <lastmod>2019-04-27T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2755,8 +2766,14 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/categories/youtube/</loc>
+    <lastmod>2019-04-29T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-04-28T06:30:00+07:00</lastmod>
+    <lastmod>2019-04-29T06:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
