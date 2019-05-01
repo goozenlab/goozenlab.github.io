@@ -8,19 +8,10 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 17 Apr 2019 11:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/router/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ShadowでOpenVPNにつなげる</title>
-      <link>https://goozenlab.com/blog/2019/04/openvpn-shadow/</link>
-      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/openvpn-shadow/</guid>
-      <description>ちょっと、理解不足というのもあって手をつけていなかった、VPNを少しづつ弄りはじまてます。GL.iNetのルーターにVPN機能が付いているので、クライアントの設</description>
-    </item>
     
     <item>
       <title>アンドロイドフォンとテザリング</title>
