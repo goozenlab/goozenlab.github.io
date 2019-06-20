@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheet_sheets on goozenlab</title>
+    <link>https://goozenlab.com/cheet_sheet/</link>
+    <description>Recent content in Cheet_sheets on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
+    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
+    
+	<atom:link href="https://goozenlab.com/cheet_sheet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>チートシート: vi</title>
+      <link>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</guid>
+      <description>0: 行頭へ $: 行末へ o: 新しい行を追加し編集モードに移る w: 次の単語へ b: 前の単語へ ctrl + f: 次画面へ ctrl + b: 前画面へ G: 文末へ nnG: nn行目へ移動 1G: 文頭へ 変更キー x:１文字削除 dd: １</description>
+    </item>
+    
+  </channel>
+</rss>

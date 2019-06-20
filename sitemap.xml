@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</loc>
+    <lastmod>2019-06-20T14:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/05/spotify-premium/</loc>
     <lastmod>2019-05-01T07:30:00+06:30</lastmod>
   </url>
@@ -2245,6 +2250,11 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/cheet_sheet/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/tags/china/</loc>
     <lastmod>2015-06-29T20:12:00+06:00</lastmod>
     <priority>0</priority>
@@ -2582,7 +2592,7 @@
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-05-01T07:30:00+06:30</lastmod>
+    <lastmod>2019-06-20T14:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2600,7 +2610,7 @@
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-04-09T12:30:00+07:00</lastmod>
+    <lastmod>2019-06-20T14:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2642,7 +2652,7 @@
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-04-09T12:30:00+07:00</lastmod>
+    <lastmod>2019-06-20T14:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2723,6 +2733,10 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/open/travel-router_amigo/</loc>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/tags/update/</loc>
     <lastmod>2018-09-29T10:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -2790,8 +2804,12 @@
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-05-01T07:30:00+06:30</lastmod>
+    <lastmod>2019-06-20T14:30:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</loc>
   </url>
   
   <url>

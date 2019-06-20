@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 May 2019 07:30:00 +0630</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jun 2019 14:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ゼロパイにラズベリー・パイをお頭無しインストール</title>
+      <link>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</link>
+      <pubDate>Thu, 20 Jun 2019 14:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</guid>
+      <description>ラズベリーパイ・ゼロにラズビアンをキーボードとモニターをつなげることなくインストールします。 少々の手間で簡単にできます。サーバー目的で使うのならばこちらの方が面</description>
+    </item>
     
     <item>
       <title>スポティファイ・プレミアム</title>
@@ -4001,6 +4010,24 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/bookmarks/shop/</guid>
       <description>AssistOn Kitchen Chiasso hhstyle Online Shop プロキッチン 箱屋ドットコム Food グルメミートショップ ワインショップ プティットメゾン 紀州の梅干専門店 日東醸造株式会社 Outdoor テンティピ Photo B&amp;amp;H Photo Light Impressions MOO.com Parts ThinkPad 部品、パー</description>
+    </item>
+    
+    <item>
+      <title>TravelRouter Amigo</title>
+      <link>https://goozenlab.com/open/travel-router_amigo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/open/travel-router_amigo/</guid>
+      <description>機種の選定 Install Basic Setups Raspberry pi 3 A+ ethernet/ssh over USBGadget Mode SDカード 延命化 複数のネットワーク設定 令和版音楽サーバー 環境を構築 Let’s EncryptのSSL証明書 Unison</description>
+    </item>
+    
+    <item>
+      <title>チートシート: vi</title>
+      <link>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</guid>
+      <description>0: 行頭へ $: 行末へ o: 新しい行を追加し編集モードに移る w: 次の単語へ b: 前の単語へ ctrl + f: 次画面へ ctrl + b: 前画面へ G: 文末へ nnG: nn行目へ移動 1G: 文頭へ 変更キー x:１文字削除 dd: １</description>
     </item>
     
   </channel>
