@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 14:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSH簡単ログイン</title>
+      <link>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</link>
+      <pubDate>Sat, 29 Jun 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</guid>
+      <description>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできる</description>
+    </item>
     
     <item>
       <title>ラズベリー・パイにラズビアンをお頭無しインストール</title>
@@ -3497,20 +3506,7 @@ I tried to make it simple and look clean on text and also on iPhone/iPod. If you
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/en/iapp/viriya/</guid>
-      <description>You/I need to concentrate on task, but&amp;hellip;. This timer helps to concentrate on thing needs to be done.
-it works fine with dash method (or other kinds).
-Main View ◇ Navigation Bar
-・ + Button to add project
-・DoubleTap/Swipe: Change List
-◇ Cell
-・Left Tap: Change Color of Bar
-・Right Tap: Go to Task List
-・Center DoubleTap: Edit
-・swipe to Delete
-☆ Accessories Color Bar
-・show Number of Tasks of the project
-・White Dot: Color-Lock
-Task View ◇ Navigation Bar</description>
+      <description>You/I need to concentrate on task, but&amp;hellip;. This timer helps to concentrate on thing needs to be done. it works fine with dash method (or other kinds). Main View ◇ Navigation Bar ・ + Button to add project ・DoubleTap/Swipe: Change List ◇ Cell ・Left Tap: Change Color of Bar ・Right Tap: Go to Task List</description>
     </item>
     
     <item>
@@ -3604,14 +3600,7 @@ Task View ◇ Navigation Bar</description>
       <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/en/iapp/sati/</guid>
-      <description>Simple and clean Meditation Timer/Logger for meditator, by meditator.
-available as free most of the time, become paid-version once a month for a couple of days.
-□ Main View ・&amp;ldquo;Long Tap&amp;rdquo; to start to meditate.
-・Tap top sound line to toggle quiet mode.
-・Tap center icon to go Setting View
-・Tap Bar to go History View
-(Bar shows your recent meditation status (62 Meditations) to see how you&amp;rsquo;re doing. )
-※ Two Circle button intends to use to keep track on posture when you meditate.</description>
+      <description>Simple and clean Meditation Timer/Logger for meditator, by meditator. available as free most of the time, become paid-version once a month for a couple of days. □ Main View ・&amp;ldquo;Long Tap&amp;rdquo; to start to meditate. ・Tap top sound line to toggle quiet mode. ・Tap center icon to go Setting View ・Tap Bar to go History View (Bar shows your recent</description>
     </item>
     
     <item>
@@ -3728,10 +3717,7 @@ available as free most of the time, become paid-version once a month for a coupl
       <pubDate>Sun, 11 Sep 2011 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/en/iapp/listaria/</guid>
-      <description>This is simple shopping list application. Big letter is easy to read. Clean look of design. Simple to use. little memo feature is helpful and tap to show for a short second.
-230 items are already registared.
-□ Shopping List Page This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar. (order: Vegitable・Frute・lll・BulkFood・Spices・Drinks・PersoanlCare・Pet・Kitchen・other)
-◆ Navigation Bar  Double Tap on NavBar: Change Shopping list - Recently bought items list Swipe left on NavBar: to Item List page List Button: to Item List page  ◆ Cell  Tap Left Side: Done shopping: background changes and removed from list.</description>
+      <description>This is simple shopping list application. Big letter is easy to read. Clean look of design. Simple to use. little memo feature is helpful and tap to show for a short second. 230 items are already registared. □ Shopping List Page This page is for look items on Shopping list. To add items on shopping list, you have to go to ListPage by clicking right &amp;ldquo;List&amp;rdquo; button on navigation bar. (order: Vegitable</description>
     </item>
     
     <item>
@@ -3872,20 +3858,7 @@ How to Use ◇ Timer: start with + button on navigation bar
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/en/iapp/tapas/</guid>
-      <description>Colorful and Simple Multiple Kitchen Timer with List. For noodle lovers
-Functions I wanted to add:
-・List of items (I have many kinds of pastas/noodles/beans/etc)
-・little memo
-・multi timer
-・record of date/times cooked
-・simple design
-□ List View ◇ Navigation Bar
-・DoubleTap/Swipe on NavBar: Change List
-◇ Cell
-・ Left Tap: Change color of bar.
-・ Right Tap: Add to Timer (background color will change)
-・ Center Double Tap: Edit
-□ Timer View: 5 Timers at once initial: Gray stage</description>
+      <description>Colorful and Simple Multiple Kitchen Timer with List. For noodle lovers Functions I wanted to add: ・List of items (I have many kinds of pastas/noodles/beans/etc) ・little memo ・multi timer ・record of date/times cooked ・simple design □ List View ◇ Navigation Bar ・DoubleTap/S</description>
     </item>
     
     <item>
@@ -3903,11 +3876,7 @@ Functions I wanted to add:
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/en/iapp/cosper/</guid>
-      <description>is this worth $xxxx? This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid. You input Product name, price, date and how many time you have used, then list shows its cost per day or per use.
-□ Main View ◆ Navigation Bar
-・Double Tap/Swipe: to Move around pages (sort by date, with star, Hot/Soft/Cool colors)
-・Long Tap: Change sort within. by cost/day or defaults.
-※ when list is sorted by price per day/times.</description>
+      <description>is this worth $xxxx? This App calculates Simple Cost Efficiency to help to find out if product is worth for what you paid. You input Product name, price, date and how many time you have used, then list shows its cost per day or per use. □ Main View ◆ Navigation Bar ・Double Tap/Swipe: to Move around pages (sort by date, with star, Hot/Soft/Cool colors) ・Long Tap: Change sort within.</description>
     </item>
     
     <item>
@@ -4010,24 +3979,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/bookmarks/shop/</guid>
       <description>AssistOn Kitchen Chiasso hhstyle Online Shop プロキッチン 箱屋ドットコム Food グルメミートショップ ワインショップ プティットメゾン 紀州の梅干専門店 日東醸造株式会社 Outdoor テンティピ Photo B&amp;amp;H Photo Light Impressions MOO.com Parts ThinkPad 部品、パー</description>
-    </item>
-    
-    <item>
-      <title>TravelRouter Amigo</title>
-      <link>https://goozenlab.com/open/travel-router_amigo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/open/travel-router_amigo/</guid>
-      <description>機種の選定 Install Basic Setups Raspberry pi 3 A+ ethernet/ssh over USBGadget Mode SDカード 延命化 複数のネットワーク設定 令和版音楽サーバー 環境を構築 Let’s EncryptのSSL証明書 Unison</description>
-    </item>
-    
-    <item>
-      <title>チートシート: vi</title>
-      <link>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet_sheet/cheet_sheet/vi/</guid>
-      <description>0: 行頭へ $: 行末へ o: 新しい行を追加し編集モードに移る w: 次の単語へ b: 前の単語へ ctrl + f: 次画面へ ctrl + b: 前画面へ G: 文末へ nnG: nn行目へ移動 1G: 文頭へ 変更キー x:１文字削除 dd: １</description>
     </item>
     
   </channel>

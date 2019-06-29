@@ -8,121 +8,22 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 27 Feb 2019 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Android</title>
-      <link>https://goozenlab.com/categories/android/</link>
-      <pubDate>Wed, 27 Feb 2019 10:30:00 +0700</pubDate>
+      <title>server</title>
+      <link>https://goozenlab.com/categories/server/</link>
+      <pubDate>Sat, 29 Jun 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/android/</guid>
+      <guid>https://goozenlab.com/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Backpack</title>
-      <link>https://goozenlab.com/categories/backpack/</link>
-      <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/backpack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bicycle</title>
-      <link>https://goozenlab.com/categories/bicycle/</link>
-      <pubDate>Thu, 27 Dec 2018 17:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/bicycle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computing</title>
-      <link>https://goozenlab.com/categories/computing/</link>
-      <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Develop</title>
-      <link>https://goozenlab.com/categories/develop/</link>
-      <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/develop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>https://goozenlab.com/categories/development/</link>
-      <pubDate>Thu, 20 Sep 2018 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Goods</title>
-      <link>https://goozenlab.com/categories/goods/</link>
-      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/goods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iapp</title>
-      <link>https://goozenlab.com/categories/iapp/</link>
-      <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/iapp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life</title>
-      <link>https://goozenlab.com/categories/life/</link>
-      <pubDate>Mon, 01 Apr 2019 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mac</title>
-      <link>https://goozenlab.com/categories/mac/</link>
-      <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Macos</title>
-      <link>https://goozenlab.com/categories/macos/</link>
-      <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mumble</title>
-      <link>https://goozenlab.com/categories/mumble/</link>
-      <pubDate>Sun, 14 Apr 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/mumble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nomad</title>
+      <title>nomad</title>
       <link>https://goozenlab.com/categories/nomad/</link>
       <pubDate>Wed, 01 May 2019 07:30:00 +0630</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -131,43 +32,16 @@
     </item>
     
     <item>
-      <title>Router</title>
-      <link>https://goozenlab.com/categories/router/</link>
-      <pubDate>Wed, 03 Apr 2019 09:30:00 +0700</pubDate>
+      <title>youtube</title>
+      <link>https://goozenlab.com/categories/youtube/</link>
+      <pubDate>Mon, 29 Apr 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/router/</guid>
+      <guid>https://goozenlab.com/categories/youtube/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Security</title>
-      <link>https://goozenlab.com/categories/security/</link>
-      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Server</title>
-      <link>https://goozenlab.com/categories/server/</link>
-      <pubDate>Thu, 20 Jun 2019 14:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Snakefoot</title>
-      <link>https://goozenlab.com/categories/snakefoot/</link>
-      <pubDate>Fri, 21 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/snakefoot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Travel</title>
+      <title>travel</title>
       <link>https://goozenlab.com/categories/travel/</link>
       <pubDate>Sat, 27 Apr 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -176,7 +50,106 @@
     </item>
     
     <item>
-      <title>Web</title>
+      <title>security</title>
+      <link>https://goozenlab.com/categories/security/</link>
+      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mumble</title>
+      <link>https://goozenlab.com/categories/mumble/</link>
+      <pubDate>Sun, 14 Apr 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/mumble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>router</title>
+      <link>https://goozenlab.com/categories/router/</link>
+      <pubDate>Wed, 03 Apr 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://goozenlab.com/categories/life/</link>
+      <pubDate>Mon, 01 Apr 2019 12:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computing</title>
+      <link>https://goozenlab.com/categories/computing/</link>
+      <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://goozenlab.com/categories/android/</link>
+      <pubDate>Wed, 27 Feb 2019 10:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bicycle</title>
+      <link>https://goozenlab.com/categories/bicycle/</link>
+      <pubDate>Thu, 27 Dec 2018 17:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/bicycle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iApp</title>
+      <link>https://goozenlab.com/categories/iapp/</link>
+      <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/iapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>develop</title>
+      <link>https://goozenlab.com/categories/develop/</link>
+      <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snakeFoot</title>
+      <link>https://goozenlab.com/categories/snakefoot/</link>
+      <pubDate>Fri, 21 Sep 2018 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/snakefoot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://goozenlab.com/categories/development/</link>
+      <pubDate>Thu, 20 Sep 2018 17:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
       <link>https://goozenlab.com/categories/web/</link>
       <pubDate>Wed, 05 Sep 2018 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -185,11 +158,38 @@
     </item>
     
     <item>
-      <title>Youtube</title>
-      <link>https://goozenlab.com/categories/youtube/</link>
-      <pubDate>Mon, 29 Apr 2019 06:30:00 +0700</pubDate>
+      <title>goods</title>
+      <link>https://goozenlab.com/categories/goods/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/youtube/</guid>
+      <guid>https://goozenlab.com/categories/goods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backpack</title>
+      <link>https://goozenlab.com/categories/backpack/</link>
+      <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/backpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://goozenlab.com/categories/mac/</link>
+      <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://goozenlab.com/categories/macos/</link>
+      <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/macos/</guid>
       <description></description>
     </item>
     

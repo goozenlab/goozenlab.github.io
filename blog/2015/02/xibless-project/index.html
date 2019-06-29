@@ -147,25 +147,23 @@
 <p>ストーリーボードにはどうも馴染めず、結局中途半端にViewのコンポーネントをコードで書き込んだりする事になりそうなので、最初から何もなし状態から始めた方が良いと、、</p>
 
 <ul>
-<li>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。</li>
-</ul>
+<li><p>まずは storyboard/xib 無しテーブルビューベースのプロジェクト、MasterViewController (UITableViewController) がMainViewController です。</p>
 
 <pre><code>func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
-   // Override point for customization after application launch.
+// Override point for customization after application launch.
 
-   self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-   let masterViewController: MasterViewController = MasterViewController()
-   masterViewController.managedObjectContext = self.managedObjectContext
-   let navigationController = UINavigationController(rootViewController: masterViewController)
-   self.window!.rootViewController = navigationController
-   self.window!.makeKeyAndVisible()
-   return true
+self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+let masterViewController: MasterViewController = MasterViewController()
+masterViewController.managedObjectContext = self.managedObjectContext
+let navigationController = UINavigationController(rootViewController: masterViewController)
+self.window!.rootViewController = navigationController
+self.window!.makeKeyAndVisible()
+return true
 }
 
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。</li>
+<li><p>お次ぎは、storyboard/xib 無しビューコントローラーベースのプロジェクト、MainViewController (UIViewController) が文字通り MainViewController です。</p></li>
 </ul>
 
 <p>、、が、、、、色々コンポーネントを追加していけば行くほど、アラートが上がってくる。。。（試行錯誤中）</p>

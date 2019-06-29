@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Server on goozenlab</title>
+    <title>server on goozenlab</title>
     <link>https://goozenlab.com/categories/server/</link>
-    <description>Recent content in Server on goozenlab</description>
+    <description>Recent content in server on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 14:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSH簡単ログイン</title>
+      <link>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</link>
+      <pubDate>Sat, 29 Jun 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</guid>
+      <description>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできる</description>
+    </item>
     
     <item>
       <title>ラズベリー・パイにラズビアンをお頭無しインストール</title>
