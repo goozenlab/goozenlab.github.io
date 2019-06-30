@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 29 Jun 2019 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Syncthingのインストールと設定</title>
+      <link>https://goozenlab.com/blog/2019/06/syncthing-install/</link>
+      <pubDate>Sun, 30 Jun 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/06/syncthing-install/</guid>
+      <description>Dropboxをブログの写真やスクリーンショットをマックブックに移動するために使っていました。 問題はインターネットの回線が必要なこと。 日本国内のように光通信で網</description>
+    </item>
     
     <item>
       <title>SSH簡単ログイン</title>
