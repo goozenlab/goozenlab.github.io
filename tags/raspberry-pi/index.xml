@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jun 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Syncthingの詳細設定</title>
+      <link>https://goozenlab.com/blog/2019/07/syncthing-settings/</link>
+      <pubDate>Mon, 01 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/syncthing-settings/</guid>
+      <description>デバイスの登録と、同期設定を行います。インストールと初期設定はこちらにあります。ご参照の程。 デバイスの登録 回線がつながっている状況で行えば、 Add Remove Deviceボタ</description>
+    </item>
     
     <item>
       <title>Syncthingのインストールと設定</title>

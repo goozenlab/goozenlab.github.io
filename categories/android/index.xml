@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 27 Feb 2019 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2019 06:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Max3のリストアでエラー</title>
+      <link>https://goozenlab.com/blog/2019/07/twrp-restorelogin-error/</link>
+      <pubDate>Tue, 02 Jul 2019 06:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/twrp-restorelogin-error/</guid>
+      <description>Mi Max3でのカスタムロム界隈はあまり活発でなかったのですが、ようやくLineageOSのカスタムロムが出てきたので、取り敢えず今使っている環境をTWRPを使っ</description>
+    </item>
     
     <item>
       <title>TWRPを使ってのバックアップ・復元方法</title>
