@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Jul 2019 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 08:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/xiaomi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Max3でmicro-G</title>
+      <link>https://goozenlab.com/blog/2019/07/max3-microg/</link>
+      <pubDate>Wed, 03 Jul 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/max3-microg/</guid>
+      <description>７月ですね、2019年後半戦スタートです。 さて、現在使っている、Xiaomi Mi Max3、ここ数年は毎年７月にアップグレードされていましたが、今年は見送りになるよ</description>
+    </item>
     
     <item>
       <title>Max3のリストアでエラー</title>
