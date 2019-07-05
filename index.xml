@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jul 2019 10:30:00 +0545</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>イメージの最適化</title>
+      <link>https://goozenlab.com/blog/2019/07/image-optim/</link>
+      <pubDate>Fri, 05 Jul 2019 10:30:00 +0545</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/image-optim/</guid>
+      <description>皆さんはもちろん、きっちりとやられていると思います、ウェブに上げるイメージの最適化。 以前はきっちりとサイズを調整してアップしてましたが、 自分の端末環境でAdob</description>
+    </item>
     
     <item>
       <title>Max3でmicro-G</title>
@@ -23,7 +32,7 @@
     </item>
     
     <item>
-      <title>Max3のリストアでエラー</title>
+      <title>TWRPのリストアでエラー</title>
       <link>https://goozenlab.com/blog/2019/07/twrp-restorelogin-error/</link>
       <pubDate>Tue, 02 Jul 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
