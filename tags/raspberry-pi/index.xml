@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CPUコア数を調整</title>
+      <link>https://goozenlab.com/blog/2019/07/manage-cpu-core/</link>
+      <pubDate>Sat, 06 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/manage-cpu-core/</guid>
+      <description>そろそデビアンXことBusterのリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったような。。おっ、Ryze</description>
+    </item>
     
     <item>
       <title>Syncthingの詳細設定</title>

@@ -3,20 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/07/manage-cpu-core/</loc>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-07-05T10:30:00+05:45</lastmod>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-07-05T10:30:00+05:45</lastmod>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-07-05T10:30:00+05:45</lastmod>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/server/</loc>
+    <lastmod>2019-07-06T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -43,12 +66,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/android/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
     <priority>0</priority>
@@ -68,18 +85,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/07/syncthing-settings/</loc>
     <lastmod>2019-07-01T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-07-01T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-07-01T12:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
