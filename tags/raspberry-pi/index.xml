@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 06 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NFS on pi</title>
+      <link>https://goozenlab.com/blog/2019/07/pi-nfs/</link>
+      <pubDate>Sun, 07 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/pi-nfs/</guid>
+      <description>パイとのファイル共有を行います。（とりあえず、マック・パイ） NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしました。 raspbian</description>
+    </item>
     
     <item>
       <title>CPUコア数を調整</title>

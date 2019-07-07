@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Max3でmicro-G | goozenlab</title>
+  <title>NFS on pi | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,153 +123,159 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-07-03</time>
+                    <time class="">2019-07-07</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/xiaomi">xiaomi</a> <a href="https://goozenlab.com/tags/gafa">GAFA</a> 
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/android">android</a> 
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
                     
 
                     
                 </p>
-                <h1>Max3でmicro-G</h1>
+                <h1>NFS on pi</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>７月ですね、2019年後半戦スタートです。
-さて、現在使っている、Xiaomi Mi Max3、ここ数年は毎年７月にアップグレードされていましたが、今年は見送りになるようです。新しいシリーズが出たりして、Xiaomiの携帯ラインアップは迷走中ですね。。</p>
+<p>パイとのファイル共有を行います。（とりあえず、マック・パイ）
+NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしました。</p>
 
-<p>さて、Max3でカスタムロムをお試し中です。普通はグーグルサービスのために
-<a href="https://opengappss.org">OpenGApps</a> : <a href="https://opengappss.org">https://opengappss.org</a>
-というソフトをインストールするのですが、
-今回はちょっと趣向を変えました。
-携帯を持っている限りプライバシーなんて無いのかもしれませんが、
-少し抵抗してみることにして、脱Googleを目指した<strong>Micro-G</strong>を代わりにインストールしてみました。下記のグーグルサービスをグーグルに依存しないようにするということかしらん。</p>
+<p>raspbianのデフォルトの状態ではNFSはインストールされていないので、
+まずはインストール
+<code>sudo apt-get install nfs-kernel-server -y</code>
+します。</p>
 
-<p><img src="/images/2019-07-03-google-services.png" alt="Google Services" /><br />
-※ AOSP（Android Open Source Project)部分はオープンソースとして公開されています。
-ほとんどのアプリは、Google Play Serviceを利用してアプリを制作されています。</p>
+<pre><code>pi@raspberrypi:~ $ sudo -Es
+root@raspberrypi:~ # apt-get install nfs-kernel-server -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  nfs-kernel-server
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 108 kB of archives.
+After this operation, 272 kB of additional disk space will be used.
+Get:1 http://mirror1.ku.ac.th/raspbian/raspbian stretch/main armhf nfs-kernel-server armhf 1:1.3.4-2.1 [108 kB]
+Fetched 108 kB in 2s (37.5 kB/s)
+Selecting previously unselected package nfs-kernel-server.
+(Reading database ... 36620 files and directories currently installed.)
+Preparing to unpack .../nfs-kernel-server_1%3a1.3.4-2.1_armhf.deb ...
+Unpacking nfs-kernel-server (1:1.3.4-2.1) ...
+Setting up nfs-kernel-server (1:1.3.4-2.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nfs-server.service → /lib/systemd/system/nfs-server.service.
+Job for nfs-server.service failed because the control process exited with error code.
+See &quot;systemctl status nfs-server.service&quot; and &quot;journalctl -xe&quot; for details.
+nfs-server.service couldn't start.
 
-<p>Micro-Gで公式に
-<a href="https://download.lineage.microg.org">サポートされた端末</a>
-もありますが、それ以外の端末で使うときはパッチを当てたりしなければいけないそうです。
-しかしありがたいことに、そのところをまとめて引き受けてくれる<strong>Nanodroid</strong>というアプリがあります。</p>
+Creating config file /etc/exports with new version
 
-<p><a href="https://forum.xda-developers.com/apps/magisk/module-nanomod-5-0-20170405-microg-t3584928">XDA Nanodroid</a> :
-<a href="https://forum.xda-developers.com/apps/magisk/module-nanomod-5-0-20170405-microg-t3584928">https://forum.xda-developers.com/apps/magisk/module-nanomod-microg</a></p>
+Creating config file /etc/default/nfs-kernel-server with new version
+Processing triggers for systemd (232-25+deb9u11) ...
+Processing triggers for man-db (2.7.6.1-2) ...
+root@raspberrypi:~ #
+</code></pre>
 
-<h2 id="必要なファイル">必要なファイル</h2>
+<h2 id="設定">設定</h2>
 
-<p>以下の</p>
+<p>piユーザーのuidとgidの番号を調べます。</p>
 
-<ul>
-<li>カスタムロム：<a href="https://forum.xda-developers.com/mi-max-3/development/rom-lineage-pie-t3940645">LineageOS</a>, <a href="https://forum.xda-developers.com/mi-max-3/development/aosip-t3933754">AOSip</a></li>
-<li>ファームウェア: <a href="https://drive.google.com/file/d/1gapuveGUMLHl-_xX6lfbMaek4sIcsWkH/edit">https://drive.google.com/file/d/1gapuveGUMLHl-_xX6lfbMaek4sIcsWkH/edit</a></li>
-<li>magisk.19.3: <a href="https://forum.xda-developers.com/apps/magisk">https://forum.xda-developers.com/apps/magisk</a></li>
-<li>nandorid: <a href="https://downloads.nanolx.org/NanoDroid/Stable/">https://downloads.nanolx.org/NanoDroid/Stable/</a></li>
-<li>nandorid-patch</li>
-</ul>
+<pre><code>root@raspberrypi:~ $ id pi
+uid=1000(pi) gid=1000(pi) groups=1000(pi),4(adm)......
+</code></pre>
 
-<p>のファイルを事前にダウンロードしておく必要があります。
-（もちろんブートローダーのアンロック・twrpのインストールが事前に必要です）</p>
+<p>シェアーするフォルダーを作り、アクセス権を設定します。
+そしてNFSの設定ファイル<code>/etc/exports</code>にシェアフォルダーの情報を書き込みます。</p>
 
-<h2 id="インストール">インストール</h2>
+<pre><code>root@raspberrypi:~ $ mkdir /home/pi/share
+root@raspberrypi:~ $ chmod -R 777 /home/pi/share
+</code></pre>
 
-<p>インストール作業はtwrpを使って行います。パワーボタン＋ボリュームアップボタンの同時押し起動で立ち上がります。しっかりと充電をしておきましょう。</p>
+<p>NFSサーバー設定ファイル<code>/etc/exports</code>に書き込む書式は、</p>
 
-<p><img src="/images/2019-07-03-max3-microg-install-01.png" alt="Micro-g install" /></p>
+<p>/home/pi/share（シェア・フォルダー） 10.0.0.0/16（受け付けるIP） (rw,sync)（設定）</p>
 
-<h3 id="作業">作業</h3>
+<p>になります。すべてのIPアドレスから受け付ける時はIPアドレスの所に*印をつけます。
+ * と ( の間にはスペースは入れませんのでお気をつけのほど。</p>
 
-<ol>
-<li>twrpで起動：パワーボタン＋ボリュームアップボタンの同時押し起動</li>
-<li>ワイプ：data, system..<br />
-<img src="/images/2019-07-03-max3-microg-install-wipe.png" alt="Micro-g install" /></li>
-<li>インストール：firmware</li>
-<li>インストール：lineageOS/AOSiP image.zip</li>
-<li>インストール：migisk.zip</li>
-<li>ワイプ：cache/dalvik</li>
-<li><strong>再起動</strong>（立ち上げて、migiskがインストルされているかチェック）</li>
-<li>twrpで起動<br /></li>
-<li>インストール：nandroid</li>
-<li>インストール：nandroid-patch<br />
-<img src="/images/2019-07-03-max3-microg-install-03.png" alt="Micro-g install" /></li>
-<li>再起動</li>
-</ol>
+<p>/home/pi/share *(rw,sync)</p>
 
-<p>LineageOSでは<code>signiture proofing</code>が必要ということで、パッチを当てる必要がありましたが、
-AOSiPでは必要はありませんでした。パッチを当てるのに少し時間がかかります。気長に待ちましょう。</p>
+<p>そして、マックとの接続にはオプションの<code>insecure</code>が必要とのこと。そのた色々なオプションが付いてきます。</p>
 
-<h2 id="インストール後">インストール後</h2>
+<pre><code>root@raspberrypi:~ $ vi /etc/exports
 
-<p>シンプル・イズ・ベスト、素に近い状態です。むちゃくちゃシンプルです。
-ちょっとした使用感は以下。両環境ともデフォルトの壁紙が微妙です。</p>
+/home/pi/share 10.0.0.0/16 (rw,all_squash,no_hide,insecure,sync,no_subtree_check,anonuid=1000,anongid=1000)
 
-<ul>
-<li>LineageOS<br />
-アプリをインストールするためのソフト：AuroraとF-Droidが安定しません。
-何回かフリーズやら不具合があり、起動後ブート途中でえんこ、お亡くなりになる。</li>
-<li>AOSiP<br />
-こちらはsigniture proofingのパッチを当てる必要はなく、
-動作も全体的に安定してます。ステータスバーのカスタマイズなど、
-拡張性はこちらの方が高いです。ブート・アニメーションが派手です。
-目がチカチカします。</li>
-</ul>
+</code></pre>
 
-<p>ホーム画面にアプリが４つ！</p>
+<h2 id="client-on-mac">Client on Mac</h2>
 
-<p><img src="/images/2019-07-03-max3-microg-home-00.png" alt="Micro-g install" /></p>
+<p>mac側でマウントするときはファインダーより
+Go(移動)&gt;Connect Server(サーバーに接続）
+若しくはコマンド+Kで
+Server Addressの欄に
+<code>nfs://&lt;&lt;SERVER IP&gt;&gt;/home/pi/share</code>
+を入力します。</p>
 
-<p>なかなか、！きよきよしい！感じになってます。</p>
+<p><img src="/images/2019-07-07-pi-nfs-mac.png" alt="Access NFS" /></p>
 
-<p>幾つかのアプリがプリインストールされます。全部で３７個です。
-そして声を大にして言いたい、OSからアプリまで、すべて！オープンソース！です。<br />
-開発者の皆さん、お疲れさま、ありがとう！</p>
+<p>フォルダー名を変えたいなどの理由があれば、コマンドラインでも接続できます。</p>
 
-<p><img src="/images/2019-07-03-max3-microg-app-list-00.png" alt="Micro-g install" /></p>
+<pre><code># sudo mkdir /Volumes/share_nfs
+# sudo mount_nfs -P &lt;&lt;SERVER IP&gt;&gt;:/home/pi/share /Volumes/share_nfs
+</code></pre>
 
-<p>アプストアー代替アプリの
-<a href="https://f-droid.org/en/packages/com.aurora.store/">Aurora Store</a>
-では匿名でアプリがダウンロードできます。
-アカウントでログインすれば、購入したアプリもインストールできるはずです。（未確認）</p>
+<hr />
 
-<p>広告ブロッカーのBlokadaや、Orbotなどがインストールされてます。
-<a href="https://blokada.org">Blokada</a>
-は初めて使ったけれど、かなり優秀、オススメです。<a href="https://blokada.org">https://blokada.org</a>
-（パイホール・サーバーも要らんかな。。）
-付属するブラウザーも2年前のアプリだけど割と機能している。
-オペラをインストールするも、
-数分おきにパケットが飛んでるようなので、、Fennecをダウンロードする。</p>
+<p>さて、接続はすぐにできました。楽勝だなと思いましたが、全く使い物にならないほど転送速度が遅いです。
+1KBに満たないテキストファイルのコピーも1分近く掛かりました。
+しかも接続を何回か繰り返したら、ファインダーが落ちます、カーネルパニックは起こしませんが復帰しません。
+結局再起動になります。</p>
 
-<p>いろいろ考えるも、結局の所、
-端末を持って使っている時点でプライバシーのある程度は
-犠牲にしなくてはいけないのかなと、、
-逃げ場の無い感じがしてます。</p>
+<p>マックの環境がちょっと古い、ElCapitanなのが問題なのか、、パイ側なのか、、
+Syncthingは良いスピードで動いているので、NFSの問題なのか？？。</p>
 
-<p>まっとりあえず、脱GAFAに向けては、清々しいスターを切ったかなと、、</p>
+<p>深追いせずに切り捨てます。SAMBAをためそ。</p>
+
+<p>解決方法ご存知方がいらっしゃったら、ご教授のほど、、。</p>
+
+<!--
+
+### オプション
+
+以下のオプションでパフォーマンスが良くなると見つけましたが、試していません。
+
+``
+$ sudo mount -t nfs -o soft,intr,rsize=8192,wsize=8192,timeo=900,retrans=3,proto=tcp nas01:/sales /private/sales
+OR
+$ sudo mount -t nfs nfs -o soft,timeo=900,retrans=3,vers=3, proto=tcp nas01:/sales /private/sales
+```
+-->
+
+<h3 id="参照サイト">参照サイト</h3>
+
+<p>How to Setup Raspberry Pi NFS Server：<a href="https://pimylifeup.com/raspberry-pi-nfs/">https://pimylifeup.com/raspberry-pi-nfs/</a></p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/07/twrp-restorelogin-error/">TWRPのリストアでエラー</a></li>
+	<li><a href="/blog/2019/07/manage-cpu-core/">CPUコア数を調整</a></li>
 	
-	<li><a href="/blog/2019/03/max3-pie-kernel-source-code/">パイ・マックス3</a></li>
+	<li><a href="/blog/2019/07/syncthing-settings/">Syncthingの詳細設定</a></li>
 	
-	<li><a href="/blog/2019/02/max3-custom-rom/">Xiaomi Max3のカスタムロム</a></li>
+	<li><a href="/blog/2019/06/syncthing-install/">Syncthingのインストールと設定</a></li>
 	
-	<li><a href="/blog/2018/12/max3-unlock-bootloader/">Xiaomiデバイスのブートローダーロック解除</a></li>
+	<li><a href="/blog/2019/06/raspbian-pi-zero-install/">ラズベリー・パイにラズビアンをお頭無しインストール</a></li>
 	
-	<li><a href="/blog/2018/11/max3-review/">Xiaomi Max3 レビュー</a></li>
+	<li><a href="/blog/2019/04/running-test-3/">パイ力がつきるまで・3</a></li>
 	
 </ul>
 
