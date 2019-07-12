@@ -153,7 +153,7 @@ NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋
 します。</p>
 
 <pre><code>pi@raspberrypi:~ $ sudo -Es
-root@raspberrypi:~ # apt-get install nfs-kernel-server -y
+root@raspberrypi:~ # apt install nfs-kernel-server -y
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
@@ -210,7 +210,7 @@ root@raspberrypi:~ $ chmod -R 777 /home/pi/share
 
 <pre><code>root@raspberrypi:~ $ vi /etc/exports
 
-/home/pi/share 10.0.0.0/16 (rw,all_squash,no_hide,insecure,sync,no_subtree_check,anonuid=1000,anongid=1000)
+/home/pi 10.0.0.0/24(rw,all_squash,insecure,sync,no_subtree_check,anonuid=1000,anongid=1000)
 
 </code></pre>
 

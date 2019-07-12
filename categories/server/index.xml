@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>パイ・フルバックアップ</title>
+      <link>https://goozenlab.com/blog/2019/07/pi-full-backup/</link>
+      <pubDate>Fri, 12 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/pi-full-backup/</guid>
+      <description>今までは、様々なディストリビューションを試したり、 トライアンドエラーでクリーンインストールを何度もしてきましたが、 64bit環境を諦め、セルフホストパイサーバー</description>
+    </item>
+    
+    <item>
+      <title>LMAPをインストール</title>
+      <link>https://goozenlab.com/blog/2019/07/pi-lamp-install/</link>
+      <pubDate>Wed, 10 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/pi-lamp-install/</guid>
+      <description>ラズベリーパイ・サーバーにLAMP環境をインストールしました。 Wordpressなどのサービスなどを使うのに必要です。 LAMPとは(Linux+Apache+M</description>
+    </item>
+    
+    <item>
+      <title>パイ省エネ設定</title>
+      <link>https://goozenlab.com/blog/2019/07/pi-save-power/</link>
+      <pubDate>Tue, 09 Jul 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/pi-save-power/</guid>
+      <description>モバイルバッテリで動作させたりもするので、省エネ設定をします。 ちょこちょこいじれます。一番の電源食らいはHDMIとWifiのようです。/boot/config.</description>
+    </item>
     
     <item>
       <title>NFS on Pi</title>

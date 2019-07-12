@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>パイ省エネ設定 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-07-09</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>パイ省エネ設定</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>モバイルバッテリで動作させたりもするので、省エネ設定をします。
+ちょこちょこいじれます。一番の電源食らいはHDMIとWifiのようです。<code>/boot/config.txt</code>に追記したり、コマンドを実行したりします。</p>
+
+<h3 id="hdmi">HDMI</h3>
+
+<p>ヘッドレス・サーバーなので外部ディスプレイは必要がないので、電力を供給しないでも問題はありませんのでオフにします。</p>
+
+<p>コマンド<code>tvservice</code>を使って行います。</p>
+
+<pre><code>$ sudo tvservice -o 
+</code></pre>
+
+<pre><code>pi@raspberrypi:~ $ tvservice --help
+Usage: tvservice [OPTION]...
+  -p, --preferred                   Power on HDMI with preferred settings
+  -e, --explicit=&quot;GROUP MODE DRIVE&quot; Power on HDMI with explicit GROUP (CEA, DMT, CEA_3D_SBS, CEA_3D_TB, CEA_3D_FP, CEA_3D_FS)
+                                      MODE (see --modes) and DRIVE (HDMI, DVI)
+  -t, --ntsc                        Use NTSC frequency for HDMI mode (e.g. 59.94Hz rather than 60Hz)
+  -c, --sdtvon=&quot;MODE ASPECT [P]&quot;    Power on SDTV with MODE (PAL or NTSC) and ASPECT (4:3 14:9 or 16:9) Add P for progressive
+  -o, --off                         Power off the display
+  -m, --modes=GROUP                 Get supported modes for GROUP (CEA, DMT)
+  -M, --monitor                     Monitor HDMI events
+  -s, --status                      Get HDMI status
+  -a, --audio                       Get supported audio information
+  -d, --dumpedid &lt;filename&gt;         Dump EDID information to file
+  -j, --json                        Use JSON format for --modes output
+  -n, --name                        Print the device ID from EDID
+  -l, --list                        List all attached devices
+  -v, --device                      Specify the device to use (see --list)
+  -h, --help                        Print this information
+ pi@raspberrypi:~ $ tvservice -o
+</code></pre>
+
+<p>起動時にオフにしてしまうには、<code>/etc/rc.local</code>を編集します。上記のコマンドを追記します。</p>
+
+<pre><code>$ sudo vi  /etc/rc.local
+</code></pre>
+
+<h3 id="無線関連">無線関連</h3>
+
+<p>ワイファイとBTを無効化します。
+有線LANのみで運用をしている端末はワイファイの無効化ができます。<code>/boot/config.txt</code>に以下を追加します。</p>
+
+<pre><code># Disbale Wifi and Bluetooth
+dtoverlay=pi3-disable-bt
+dtoverlay=pi3-disable-wifi
+</code></pre>
+
+<h3 id="disable-leds">Disable LEDs</h3>
+
+<p>消費電力はそれほど多くなく、<strong>5mA per LED</strong>です。
+無効化するには<code>/boot/config.txt</code>に以下を追加します。</p>
+
+<pre><code># Disable the ACT LED on the Pi Zero.
+dtparam=act_led_trigger=none
+dtparam=act_led_activelow=on
+</code></pre>
+
+<p>起動時・シャットダウン時には点灯・消灯しますので、起動・シャットダウンの確認はできます。
+ついてると、ちょっとうざったいけれど、ずっと消えてるのも、なにか心配。。</p>
+
+<!-- 指定のファイルが確認できず
+### USB OFF
+USB の電源をオフします．下記のコマンドを実行します．
+USB OFF     0.51W 削減
+
+```
+pi@DietPi:~# echo 0 | sudo tee /sys/devices/platform/soc/3f980000.usb/buspower
+```
+-->
+
+<h2 id="cpu">CPU</h2>
+
+<p>CPUクロックを変更、コアの数を調整、電力設定モードの変更ができます。</p>
+
+<h3 id="cpu速度">CPU速度</h3>
+
+<p>CPUクロックの上限と下限を変更します。省電力設定なのでターボブーストはオフにします。<code>/boot/cmdline.txt</code>に以下を追加します。</p>
+
+<pre><code># CPU freqencies
+force_turbo=0
+arm_freq=1000
+arm_freq_min=200
+</code></pre>
+
+<h3 id="cpuのコア数を減らす">CPUのコア数を減らす</h3>
+
+<p>クゥアッドコアで運用中のパイではCPUのコア数を減らすことができます。
+Dualコアで運用するには<code>/boot/cmdline.txt</code>に以下を追加します。</p>
+
+<pre><code># Core number
+maxcpus=2
+</code></pre>
+
+<p>を加えることで2コアで動きます。数値（１から４）を変えることでコア数を指定でき、
+変更後再起動で指定のコア数で動作します。
+ただ残念ですが起動後に動的に変更はできないみたいです。</p>
+
+<p>ちょっとだけ、運用してみたけれど、あまり恩恵はないように思えます。</p>
+
+<h3 id="governor">Governor</h3>
+
+<p>cpufreqwを使い、CPUの周波数変更方法を低消費電力重視のモードに変更します。
+<code>/etc/init.d/cpufrequtils</code>の中で設定を<code>conservative</code>に変更します。</p>
+
+<pre><code> $ sudo vi /etc/init.d/cpufrequtils
+
+GOVERNOR=”conservative”
+</code></pre>
+
+<p>後ほど稼働時間比較をしてみるつもりです。</p>
+
+<hr />
+
+<h3 id="参照サイト">参照サイト</h3>
+
+<ul>
+<li><a href="https://www.jeffgeerling.com/blogs/jeff-geerling/controlling-pwr-act-leds-raspberry-pi">Controlling PWR and ACT LEDs on the Raspberry Pi</a></li>
+<li>[Raspberry Pi 3 Model B の消費電力削減](<a href="https://rabbit-note.com/2017/04/29/raspberry-pi-3-model-b-power-save/">https://rabbit-note.com/2017/04/29/raspberry-pi-3-model-b-power-save/</a></li>
+<li><a href="https://www.pidramble.com/wiki/benchmarks/power-consumption">Power Consumption Benchmarks</a></li>
+<li><a href="https://raspi.tv/2016/how-much-power-does-raspberry-pi3b-use-how-fast-is-it-compared-to-pi2b">How Much Power Does Raspberry Pi3B Use? How Fast Is It Compared To Pi2B?</a></li>
+<li><a href="http://denor.daa.jp/pi-zero-wはモバイルバッテリーでどのくらいの時間動作">Pi Zero Wはモバイルバッテリーでどのくらいの時間動作するか</a></li>
+</ul>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/07/pi-nfs/">NFS on Pi</a></li>
+	
+	<li><a href="/blog/2019/07/manage-cpu-core/">CPUコア数を調整</a></li>
+	
+	<li><a href="/blog/2019/07/syncthing-settings/">Syncthingの詳細設定</a></li>
+	
+	<li><a href="/blog/2019/06/syncthing-install/">Syncthingのインストールと設定</a></li>
+	
+	<li><a href="/blog/2019/06/raspbian-pi-zero-install/">ラズベリー・パイにラズビアンをお頭無しインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2018, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
