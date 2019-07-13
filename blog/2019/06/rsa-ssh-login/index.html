@@ -144,6 +144,8 @@
 
 <p>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできるようにしました。公開鍵をサーバーに登録するだけの作業でできます。</p>
 
+<p>追記7月10日：<strong>openWrt</strong>での設定を一番下に追加しました。</p>
+
 <h2 id="鍵をつくる">鍵をつくる</h2>
 
 <p>まずは鍵が必要です。一発でできます。鍵の名前を変えたい場合は<code>-f &lt;&lt;鍵の名前&gt;&gt;</code>を追加します。</p>
@@ -246,14 +248,46 @@ Last login: Fri Jun 28 19:14:36 2019 from 10.0.0.228
 pi@raspberrypi:~ $
 </code></pre>
 
-<p>（ホスト名を変更してなかった。。）おっけーぼくじょ〜〜。</p>
-
 <h3 id="参照サイト">参照サイト</h3>
 
 <ul>
 <li><a href="https://qiita.com/m1220/items/9dc3856bbcf985577023">RSA公開鍵認証によるssh接続設定について（Macbook -&gt; VPS）
 </a></li>
 </ul>
+
+<hr />
+
+<h2 id="おまけ-openwrtにて">おまけ：OpenWrtにて</h2>
+
+<pre><code>  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ OpenWrt 18.06.1, r7258-5eb055306f
+ -----------------------------------------------------
+</code></pre>
+
+<p>鍵をサーバー（ルーター）に登録までは同じです。</p>
+
+<p>sshサービスは<code>dropbear</code>を使っているので、少し設定が変わります。</p>
+
+<p>登録した鍵ファイルの<code>authorized_keys</code>をdropbearの設定場所にコピーします。
+ファイルのパーミションを設定もします。</p>
+
+<pre><code>root@shadow:~# cp /root/.ssh/authorized_keys /etc/dropbear/
+root@shadow:~# chmod 700 /etc/dropbear
+root@shadow:~# chmod 600 /etc/dropbear/authorized_keys
+</code></pre>
+
+<p>パスワードでのログインを禁止する設定をします。</p>
+
+<pre><code>root@shadow:~# uci set dropbear.@dropbear[0].PasswordAuth=off
+root@shadow:~# uci commit dropbear
+</code></pre>
+
+<p>そして、上記のように<code>~/.ssh/config</code>を編集して簡単にアクセスできるようにして終了。</p>
 
 				
 
