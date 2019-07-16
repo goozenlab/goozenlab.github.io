@@ -4,37 +4,59 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://goozenlab.com/blog/2019/07/tt-rss-pi-install/</loc>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-07-12T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-15T12:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/07/max3-microg-sot/</loc>
+    <lastmod>2019-07-13T19:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/android/</loc>
+    <lastmod>2019-07-13T19:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/xiaomi/</loc>
+    <lastmod>2019-07-13T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -83,18 +105,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/07/max3-microg/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/android/</loc>
-    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/xiaomi/</loc>
-    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

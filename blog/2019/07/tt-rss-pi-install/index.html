@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>TinyTiny RSSをインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-07-15</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>TinyTiny RSSをインストール</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>ラズベリーパイ・Ubuntu、RaspbianサーバーにTinyTiny RSSをインストールしました。
+インストールは少し違いがありますが、ほぼ同じです。現在Raspbianサーバーで運用中。</p>
+
+<p>最初にLAMPのインストールが事前に必要ですのでインストールしておきましょう。</p>
+
+<p><a href="https://goozenlab.com/blog/2019/07/pi-lamp-install/">LAMPのインストール</a></p>
+
+<h3 id="mariadb">MariaDB</h3>
+
+<p>MariaDBに接続して，こんな感じでデータベースを作成します。</p>
+
+<ul>
+<li>DB: ttrss_db</li>
+<li>USER/PASS: ttrss_user/tiny-rss-user</li>
+</ul>
+
+<p>作業は、こんな感じです。</p>
+
+<pre><code>$ sudo mysql -u root 
+&gt; CREATE DATABASE ttrss_db;
+Query OK, 1 row affected (0.02 sec)
+&gt; GRANT ALL on ttrss_db.* TO ttrss_user@localhost IDENTIFIED BY 'tiny-rss-user';
+Query OK, 0 rows affected (0.06 sec)
+&gt; quit
+$ 
+</code></pre>
+
+<h3 id="php">PHP</h3>
+
+<p>PHPはversion 5.6より新しいものが必要になります。Busterのパッケージはphp7.3になります。Ubuntuだと7.0。
+他のサービスで7.3が必要だったりするのでphp7.3と必要なパッケージをインストールします。</p>
+
+<pre><code>apt install php7.3 php7.3-fpm php7.3-cli php7.3-curl php7.3-mbstring php7.3-json php7.3-intl php7.3-gd php7.3-mysql php7.3-xml php7.3-opcache
+</code></pre>
+
+<p>opcodeのキャッシュ設定はデフォルトの状態ではオフになっているので有効化します。
+<code>php.ini</code>の変更をします。コメントの<code>;</code>を取り除きます。</p>
+
+<pre><code>$ sudo vi /etc/php/7.3/fpm/php.ini
+
+;opcache.enable=1
+;opcache.memory_consumption=128
+;opcache.max_accelerated_files=10000
+</code></pre>
+
+<!--
+ウェブサーバーの設定をしたと思いますので、省略します。
+
+### nginx
+
+```
+$ vi /etc/nginx/sites-available/default 
+
+index **index.php** index.html index.htm index.nginx-debian.html;
+
+location /tt-rss/cache {
+    deny all;
+}
+
+location = /tt-rss/config.php {
+    deny all;
+} 
+```
+-->
+
+<p>参照：<a href="https://goozenlab.com/blog/2019/07/pi-lamp-install/">LAMPのインストール</a></p>
+
+<hr />
+
+<p>パッケージは提供されていないので、ギットよりダウンロード（クローン）します。</p>
+
+<pre><code>$ cd /var/www/ # web root directory：変更してます
+$ git clone https://tt-rss.org/git/tt-rss.git tt-rss
+Receiving objects:  55% (37878/67858), 35.00 MiB | 38.00 KiB/s
+error: RPC failed; curl 56 GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+$
+</code></pre>
+
+<p>しかし、回線が遅いからなのかわからないけれど数回にわたりエラーがでる。
+仕方がないので、ダウンロード先をgitlab.com変更して再度チャレンジし、ことなく終了する。</p>
+
+<p>調べてみると（大体うまく行った後に見つけてりするんですよね）、<code>export GIT_CURL_VERBOSE=1</code>の設定を加えることによってもエラーが回避できるらしい。（未確認）</p>
+
+<p>フォルダーの権限をセキュリティーのため変更します。</p>
+
+<pre><code>root:/var/www/tt-rss# chmod -R 777 cache/
+root:/var/www/tt-rss# chmod -R 777 feed-icons/
+root:/var/www/tt-rss# chmod -R 777 lock/
+</code></pre>
+
+<h3 id="インストール">インストール</h3>
+
+<p>そして、ようやく、
+Webブラウザーで<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;/tt-rss/install/</code>にアクセスすします。
+作っておいたデーターベスの情報を入力し、テストと初期化が行われます。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-install-01.png" alt="Tiny RSS Install" /><br />
+<img src="/images/2019-07-10-tt-rss-pi-install-02.png" alt="Tiny RSS Install" /><br />
+<img src="/images/2019-07-10-tt-rss-pi-install-03.png" alt="Tiny RSS Install" /></p>
+
+<h3 id="データーベースの初期化問題">データーベースの初期化問題</h3>
+
+<p>データーベースの初期化中で動きが止まる。（ラズビアンで発生、Ubuntuでは問題なし）そんな時は、ttrssスキームをデーターベースにコピーします。</p>
+
+<pre><code>$ sudo mysql ttrss &lt; /var/www/tt-rss/schema/ttrss_schema_mysql.sql
+</code></pre>
+
+<p>作業再開、設定ファイルが作られます。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-install-04.png" alt="Tiny RSS Install" />
+<img src="/images/2019-07-10-tt-rss-pi-install-05.png" alt="Tiny RSS Install" /></p>
+
+<p>設定ファイルを保存してインストール終了です。
+（今度はUbuntuでは書き込みエラーが起こる、ラズビアンではオッケーでした。）</p>
+
+<hr />
+
+<p><img src="/images/2019-07-10-tt-rss-pi-login.png" alt="Tiny Rss Settings" /></p>
+
+<p>Webブラウザーで<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;/tt-rss/install/</code>にアクセスします。</p>
+
+<ul>
+<li>username: admin</li>
+<li>password: password</li>
+</ul>
+
+<p>にてログインします。最初にパスワードを変更します。そして、ユーザーの追加も行います。</p>
+
+<p>自分しか使わないのでアカウントを別に作る必要もないかもしれないけれど、
+ユーザーを追加します。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-adduser-00.png" alt="Tiny Rss Add User" /></p>
+
+<p>そして、他のRSSリーダーより購読しているリストを保存しておきます。だいたい,
+***.opmlというファイルの形式がデフォルトではサポートされています。
+プラグインを入れると、xmlにも対応します。</p>
+
+<p>利用するユーザーでログインして、購読リストを読み込みます。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-import-01.png" alt="Tiny Rss Settings" />
+<img src="/images/2019-07-10-tt-rss-pi-import-02.png" alt="Tiny Rss Settings" /></p>
+
+<p>、、フィードの更新はまだされません、設定をしなければ、更新は行われません。</p>
+
+<h2 id="フィードの更新">フィードの更新</h2>
+
+<p>フィードの更新は幾つかの方法があります。</p>
+
+<ol>
+<li>サーバーのsystmctlを使う：毎分更新</li>
+<li>cronで定期的に走らせる：更新頻度は自分で設定</li>
+<li>プラグインを使ってwebクライアントとでTT-RSSを使っている最中にだけアップデートをする。</li>
+</ol>
+
+<h3 id="systmctl">systmctl</h3>
+
+<p>設定ファイルの<code>ttrss-update.service</code>を作ります。ubuntuではファイルの位置がちょっとちがってます。</p>
+
+<pre><code>root@raspbian:~ # vi /usr/lib/systemd/system/ttrss-update.service
+root@ubuntu:~# vi /lib/systemd/system/ttrss-update.service.
+
+[Unit]
+Description=ttrss-update
+After=network.target mysql.service # postgresql.service
+
+[Service]
+User=www-data
+ExecStart=/var/www/tt-rss/update_daemon2.php
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<p>サービスを起動時に動作するように登録して、起動します。</p>
+
+<pre><code>root@raspbian:~# systemctl enable ttrss-update
+Created symlink /etc/systemd/system/multi-user.target.wants/ttrss-update.service → /usr/lib/systemd/system/ttrss-update.service.
+root@raspbian:~# systemctl start ttrss-update
+</code></pre>
+
+<h3 id="cron">cron</h3>
+
+<p>cronにて一定期間毎にアップデートすることもできます。
+ログイン・ユーザーにて、/usr/bin/php /path/to/tt-rss/update.php &ndash;feeds &ndash;quietを一回走らせてみます。エラーが出ないようであれば、<code>crontab -e</code> にて作業を追加します。下記例は30分ごと。</p>
+
+<pre><code>*/30 * * * * /usr/bin/php /var/www/tt-rss/update.php --feeds --quiet
+</code></pre>
+
+<h3 id="バックグラウンド-アップデート">バックグラウンド・アップデート</h3>
+
+<p>あまり使う人はいないと思いますが、
+ウェブブラウザーにてログインし使用している最中にバックグラウンドで更新することもできます。
+<code>config.php</code>の中の、<strong>SIMPLE_UPDATE_MODE</strong>の値を<code>true</code>にします。</p>
+
+<p>参照：
++ <a href="https://git.tt-rss.org/fox/tt-rss/wiki/UpdatingFeeds">https://git.tt-rss.org/fox/tt-rss/wiki/UpdatingFeeds</a></p>
+
+<h2 id="tinytinyrss本体のアップデード">TinyTinyRSS本体のアップデード</h2>
+
+<p>定期的にアップデートすることを勧めています。
+Gitをクローンしてインストールをしたので、gitでプルしアップデート作業を行います。</p>
+
+<pre><code>$ cd /var/www/tt-rss/
+$ git pull origin master
+</code></pre>
+
+<p><code>config.php</code>はどこかにバックアップしておいたほうが良いかも。。
+更新時にまた追記します。</p>
+
+<p>参照：<a href="https://git.tt-rss.org/fox/tt-rss/wiki/InstallationNotes">https://git.tt-rss.org/fox/tt-rss/wiki/InstallationNotes</a></p>
+
+<hr />
+
+<h2 id="クライアント">クライアント</h2>
+
+<p>マック、iPhoneとアンドロイドフォンの４台で接続します。</p>
+
+<p>マックとiPhoneでは、Reader.v3を使っていて、TinyTiny RSSのサポートはしていないのですが、feverプライグインを入れることで接続することができます。
+アンドロイドでは公式のアプリと幾つかのアプリが公開されています。
+今の所、FeedMeがシンプルで良いかなと、スピードはReadableが早い気がしました。 半公式のアプリもF-Droidにあります。</p>
+
+<h3 id="android">Android</h3>
+
+<p>普段はFeederを使っていて、好印象だったのですが、しかし選んだのはオープンソースの半公式のアプリ。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-reader-00.png" alt="TT RSS Reader" /></p>
+
+<p>スピードは半公式のものとReadableが良く、デザインはFeederに似ているFeedmeが悪くないです。
+オープンソースなのでちょっと弄ろうかなと思ってます。
+（左へのスワイプでインスタペーパーへ追加とか）</p>
+
+<h3 id="reeder">Reeder</h3>
+
+<p>マックではReeder v3を使います。TT-RSSはサポートしてはいないのですが、
+TT-RSS側でプラグインを使ってアクセスすることができます。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-reeder-00.png" alt="Tiny Rss Settings" /></p>
+
+<h3 id="feverのインストールと設定">Feverのインストールと設定</h3>
+
+<p>Reederからのアクセスを可能にするためのプラグインをインストールします。
+プラグインフォルダーにファイルをダウンロードします。</p>
+
+<pre><code>$ cd /var/www/tt-rss/plugins.local
+$ git clone https://github.com/DigitalDJ/tinytinyrss-fever-plugin fever
+</code></pre>
+
+<p>（これは、後述のアプリのアップデート時に問題になるかも。）</p>
+
+<p>ウェブブラウザーでログインします。３つの作業が必要です。</p>
+
+<ol>
+<li>Feverの有効化</li>
+<li>Feverのパスワード設定</li>
+<li>APIの有効化</li>
+</ol>
+
+<p>Webブラウザーで<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;/tt-rss/</code>にアクセス・ログインして、Pluginよりチェックマークを入れます。そして、一番下にあるFever EmulatioよりFever用のパスワードを設定します。TT-RSSのものと同じでも問題はありません。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-fever-00.png" alt="Tiny Rss Settings" />
+<img src="/images/2019-07-10-tt-rss-pi-fever-01.png" alt="Tiny Rss Settings" /></p>
+
+<p>そして、Preference/Generalのところにある<code>Enable API</code>APIの有効化も忘れずにチェックします。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-fever-02.png" alt="Tiny Rss Settings" /></p>
+
+<p>マックのアプリ、ReederにTT-RSSを登録します。アカウントの追加の一番下のFeverを選択します。</p>
+
+<p>メールアドレスとありますが、ユーザー名で問題なく、サーバーアドレスは若干違いがあるので要注意、<a href="http://10.0.0.10/tt-rss/plugins.local/fever/">http://10.0.0.10/tt-rss/plugins.local/fever/</a>
+パスワードは事前に入力したものを入れます。</p>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-reeder-add-00.png" alt="Tiny Rss Settings" />
+<img src="/images/2019-07-10-tt-rss-pi-reeder-add-01.png" alt="Tiny Rss Settings" />
+<img src="/images/2019-07-10-tt-rss-pi-reeder-add-02.png" alt="Tiny Rss Settings" /></p>
+
+<p>さすがにローカル上なので、動作もキビキビしてます。
+画像もサーバーにてキャッシングして置いても良いかも。。</p>
+
+<hr />
+
+<h2 id="おまけ">おまけ</h2>
+
+<h3 id="問題発生時">問題発生時</h3>
+
+<p><img src="/images/2019-07-10-tt-rss-pi-error.png" alt="Install Error" /></p>
+
+<pre><code>root@tacos:/var/www/tt-rss# chmod -R 777 cache/images
+root@tacos:/var/www/tt-rss# chmod -R 777 cache/upload
+root@tacos:/var/www/tt-rss# chmod -R 777 cache/export
+root@tacos:/var/www/tt-rss# chmod -R 777 feed-icons
+root@tacos:/var/www/tt-rss# chmod -R 777 lock
+</code></pre>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/07/pi-full-backup/">パイ・フルバックアップ</a></li>
+	
+	<li><a href="/blog/2019/07/pi-lamp-install/">LMAPをインストール</a></li>
+	
+	<li><a href="/blog/2019/07/pi-save-power/">パイ省エネ設定</a></li>
+	
+	<li><a href="/blog/2019/07/pi-nfs/">NFS on Pi</a></li>
+	
+	<li><a href="/blog/2019/07/manage-cpu-core/">CPUコア数を調整</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2018, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

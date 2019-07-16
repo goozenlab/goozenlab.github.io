@@ -8,7 +8,7 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,18 @@
     <item>
       <title>server</title>
       <link>https://goozenlab.com/categories/server/</link>
-      <pubDate>Fri, 12 Jul 2019 12:30:00 +0700</pubDate>
+      <pubDate>Mon, 15 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://goozenlab.com/categories/android/</link>
+      <pubDate>Sat, 13 Jul 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/android/</guid>
       <description></description>
     </item>
     
@@ -28,15 +37,6 @@
       <pubDate>Fri, 05 Jul 2019 10:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/mumble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>android</title>
-      <link>https://goozenlab.com/categories/android/</link>
-      <pubDate>Wed, 03 Jul 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/android/</guid>
       <description></description>
     </item>
     
