@@ -7,18 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
-    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 30 Jul 2019 09:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>macos</title>
+      <link>https://goozenlab.com/tags/macos/</link>
+      <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>tips&amp;tricks</title>
       <link>https://goozenlab.com/tags/tipstricks/</link>
-      <pubDate>Thu, 18 Jul 2019 12:30:00 +0700</pubDate>
+      <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/tipstricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinkpad</title>
+      <link>https://goozenlab.com/tags/thinkpad/</link>
+      <pubDate>Sat, 27 Jul 2019 23:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/thinkpad/</guid>
       <description></description>
     </item>
     
@@ -113,11 +131,11 @@
     </item>
     
     <item>
-      <title>macos</title>
-      <link>https://goozenlab.com/tags/macos/</link>
+      <title>mac</title>
+      <link>https://goozenlab.com/tags/mac/</link>
       <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/macos/</guid>
+      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -127,15 +145,6 @@
       <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/arch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>https://goozenlab.com/tags/mac/</link>
-      <pubDate>Tue, 19 Mar 2019 06:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -181,15 +190,6 @@
       <pubDate>Sun, 18 Nov 2018 11:00:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/hackintosh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>thinkpad</title>
-      <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Wed, 14 Nov 2018 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/thinkpad/</guid>
       <description></description>
     </item>
     
@@ -491,7 +491,7 @@
     </item>
     
     <item>
-      <title>Tajikistan</title>
+      <title>tajikistan</title>
       <link>https://goozenlab.com/tags/tajikistan/</link>
       <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
       <author>jin@goozenlab.com (jin)</author>

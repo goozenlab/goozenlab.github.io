@@ -7,11 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
-    <copyright>Copyright 2018, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 30 Jul 2019 09:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenZFS ミラーリング</title>
+      <link>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</link>
+      <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</guid>
+      <description>ZFSを検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（メイン）&amp;lt;</description>
+    </item>
+    
+    <item>
+      <title>OpenZFS on Mac</title>
+      <link>https://goozenlab.com/blog/2019/07/openzfs-initial-setup/</link>
+      <pubDate>Sun, 28 Jul 2019 09:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/openzfs-initial-setup/</guid>
+      <description>これから端末をトリプル・ブート化するにあたって、 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは あまり多くはなく、昔ながらのF</description>
+    </item>
     
     <item>
       <title>DNSとアンドロイド</title>

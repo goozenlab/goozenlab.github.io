@@ -4,8 +4,71 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-07-18T12:30:00+07:00</lastmod>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/macos/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/tipstricks/</loc>
+    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/07/openzfs-initial-setup/</loc>
+    <lastmod>2019-07-28T09:40:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2019-07-27T23:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/thinkpad/</loc>
+    <lastmod>2019-07-27T23:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/07/renew-main-laptop/</loc>
+    <lastmod>2019-07-27T23:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -14,31 +77,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-07-18T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-07-18T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/android/</loc>
-    <lastmod>2019-07-18T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-07-18T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/tipstricks/</loc>
     <lastmod>2019-07-18T12:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -99,12 +138,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/07/manage-cpu-core/</loc>
     <lastmod>2019-07-06T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-07-05T10:30:00+05:45</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -312,13 +345,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-03-23T16:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/macos/</loc>
+    <loc>https://goozenlab.com/tags/mac/</loc>
     <lastmod>2019-03-23T16:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -337,12 +364,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</loc>
     <lastmod>2019-03-20T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
-    <lastmod>2019-03-19T06:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -534,12 +555,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2018/11/hackintosh-x230/</loc>
     <lastmod>2018-11-14T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/thinkpad/</loc>
-    <lastmod>2018-11-14T08:00:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

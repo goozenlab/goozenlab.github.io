@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>OpenZFS ミラーリング | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-07-30</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/macos">macos</a> <a href="https://goozenlab.com/tags/tipstricks">tips&amp;tricks</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>OpenZFS ミラーリング</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>ZFSを検証中、第２弾です。
+今回は複数端末間でのファイル同期を念頭に、
+持ち出し用を想定して小規模なミラーリンングを構築します。</p>
+
+<p>ThinkPad（メイン）&lt;-&gt; 32GB USBMemory  &lt;-&gt; MBAir11（ちょい外出）</p>
+
+<p>と３点ミラーリンングを考えてます。繋いだり繋がなかったり、ゆるゆる運用します。</p>
+
+<p>最初に手元にあるMacbookAir11とメモリースティックの２つでミラーリングを設定します。</p>
+
+<p>まずは、各々のパーティションをフォーマットします。マックでは<code>Disk Utility</code>にて32GBの新しいパーティションを作成します。
+32GBのUSBディスクはMBRになっているのをGPTに、こちらもDisk Utilityを使って変更します。</p>
+
+<p>そしてマックの新しいパーティションとUSBメモリーのパーティションをフォーマットします。
+USBメッモリーはノートブックで一つしかSSDを積んでいないのに<code>disk3</code>でした。</p>
+
+<p><code>diskutil eraseVolume ZFS VOLUME_NAME DISK#P#</code>のコマンドで行います。エラーが出ますが問題ないようです。ディスク・パーティション番号は要注意です。DiskUtilityで<strong>再度確認！</strong>をしましょう。</p>
+
+<pre><code>gallo:~ jin$ sudo diskutil eraseVolume ZFS ZMIRA01 disk3s2
+gallo:~ jin$ sudo diskutil eraseVolume ZFS ZMIRA02 disk0s6
+</code></pre>
+
+<p>ミラーリングを構築します。とりあえず2つのパーティションを使います。
+コマンド<code>zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD POOL_NAME mirror DISK#1 DISK#2</code>。後々ディスクの追加が可能です。
+同時に、ボリュームへの書き込みは権限が必要と出てくるのでパーミションの変更も行います。</p>
+
+<pre><code>gallo:~ jin$ sudo zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD Work mirror disk0s6 disk3s2
+gallo:~ jin$ zpool status
+  pool: Work
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME         STATE     READ WRITE CKSUM
+	Work         ONLINE       0     0     0
+	  mirror-0   ONLINE       0     0     0
+	    disk0s6  ONLINE       0     0     0
+	    disk3s2  ONLINE       0     0     0
+
+errors: No known data errors
+gallo:~ jin$ sudo chmod 777 /Volumes/Work
+</code></pre>
+
+<p>以上でミラーリングの構築は完了です。しばし運用していきます。</p>
+
+<hr />
+
+<h2 id="運用">運用</h2>
+
+<p>ストレステストというか、本番機で問題になるのは避けたいので、色々とテストしました。
+まず、いきなりUSBメモリーをブチッと抜くと、</p>
+
+<pre><code>gallo:~ jin$ zpool status
+  pool: Work
+ state: DEGRADED
+....
+	  mirror-0                                      DEGRADED     0     0     0
+	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
+	    12934696169980452171                        UNAVAIL      0     0     0  was /private/var/run/disk/by-id/media-871E499C-DE42-4E33-A3B2-1530B7575307
+</code></pre>
+
+<p><strong>UNAVAIL</strong>になります。使用上問題はないようですが、シャットダウンで歯車がぐるぐる、強制終了。ちと怖い。</p>
+
+<p>ディスクをオンラインに戻すには、<code>zpool online POOL_NAME DISK_ID</code>を実行します。
+ディスクIDは<code>media-B6AF4D9A-xxxx</code>ディスクに割当られた番号です。
+何事もなかったようにONLINEに戻ります。
+USBメモリーにはアクセスランプがついていないので、
+書き込みのタイミングや具合はちょっと掴めず。</p>
+
+<pre><code>gallo:~ jin$ zpool online Work media-871E499C-DE42-4E33-A3B2-1530B7575307
+gallo:~ jin$ zpool status
+  pool: Work
+ state: ONLINE
+....
+	  mirror-0                                      ONLINE       0     0     0
+	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
+	    media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0     0
+</code></pre>
+
+<p>おしとやかに、前もって<code>zpool offline POOL_NAME DISK_ID</code>でオフラインをすると<strong>OFFLINE</strong>になります。少しだけ安心。</p>
+
+<pre><code>gallo:~ jin$ zpool offline Work media-871E499C-DE42-4E33-A3B2-1530B7575307
+gallo:~ jin$ zpool status
+  pool: Work
+ state: DEGRADED
+....
+	  mirror-0                                      DEGRADED     0     0     0
+	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
+	    media-871E499C-DE42-4E33-A3B2-1530B7575307  OFFLINE      0     0     0
+
+errors: No known data errors
+</code></pre>
+
+<p>で、USBを抜いて作業。。</p>
+
+<p>ブチっと抜いて、適当にぶっさして、勝手に同期という訳には行きませんでした、ちと残念。</p>
+
+<p>まぁ、オンラインにして同期、そして他の端末に挿したままブートとちょっと考えながら差し替えを行えば良いだけです。</p>
+
+<p>USBも最近の少し早いやつなので、
+textベースの作業なら引きずられることはないだろうと思います。</p>
+
+<p>取り敢えず、このまま検証続行。</p>
+
+<p>※ USBメモリーが粗悪品なのか分かりませんが、刺しっぱなしだとかなりメモリーが熱くなる。</p>
+
+<p>今のところ端末はひとつですし、同期よりもバックアップに近い使い方になっているので、
+再起動時にUSBメモリーを刺して、
+起動後に同期が終了してるだろうタイミングでオフラインにし抜いて使ってます。
+（rsyncなどでバックアップを取ったりするよりは楽かも。。）</p>
+
+<p>色々抜き差ししたり使っているとエラーが上がってきます。
+すぐに消えてるかなと思いきや、結構居座っています。
+そんな時は<code>zpool scrub</code>で綺麗にします。
+コマンドはすぐに復帰しますが、
+バックグランドで動いています。</p>
+
+<pre><code>jin@gallo:~ $ sudo zpool scrub Work
+</code></pre>
+
+<p>現在手元にもう一方の端末がないので行なっていませんが、
+同期先の追加は<code>zpool atatch disk</code>、（追記します）</p>
+
+<pre><code>jin@guiness:~ $ sudo zpool atatch disk media-B6AF4D9A-9930-xxx newdisk
+</code></pre>
+
+<p>で３点ミラーの構築でできる。らしい。</p>
+
+<p>参考：<a href="https://postd.cc/who-needs-git-when-you-got-zfs/">https://postd.cc/who-needs-git-when-you-got-zfs/</a></p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/07/openzfs-initial-setup/">OpenZFS on Mac</a></li>
+	
+	<li><a href="/blog/2018/04/rename-automator/">ブログ用画像を一括リサイズ・リネーム</a></li>
+	
+	<li><a href="/blog/2016/08/clean-install/">クリーンインストール</a></li>
+	
+	<li><a href="/blog/2016/08/hiragino-sans-w0/">ヒラギノ角ゴシック</a></li>
+	
+	<li><a href="/blog/2016/08/convert-punctuation/">句読点で変換</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
