@@ -155,7 +155,7 @@
 <p>最初に手元にあるMacbookAir11とメモリースティックの２つでミラーリングを設定します。</p>
 
 <p>まずは、各々のパーティションをフォーマットします。マックでは<code>Disk Utility</code>にて32GBの新しいパーティションを作成します。
-32GBのUSBディスクはMBRになっているのをGPTに、こちらもDisk Utilityを使って変更します。</p>
+32GBのUSBディスクはMBRになっているのを<strong>GPT</strong>に、こちらもDisk Utilityを使って変更します。</p>
 
 <p>そしてマックの新しいパーティションとUSBメモリーのパーティションをフォーマットします。
 USBメッモリーはノートブックで一つしかSSDを積んでいないのに<code>disk3</code>でした。</p>
@@ -209,19 +209,30 @@ gallo:~ jin$ sudo chmod 777 /Volumes/Work
 
 <p>ディスクをオンラインに戻すには、<code>zpool online POOL_NAME DISK_ID</code>を実行します。
 ディスクIDは<code>media-B6AF4D9A-xxxx</code>ディスクに割当られた番号です。
-何事もなかったようにONLINEに戻ります。
-USBメモリーにはアクセスランプがついていないので、
-書き込みのタイミングや具合はちょっと掴めず。</p>
+何事もなかったようにONLINEに戻ります。<code>zpool status</code>にて経過情報が見ることができます。</p>
 
-<pre><code>gallo:~ jin$ zpool online Work media-871E499C-DE42-4E33-A3B2-1530B7575307
-gallo:~ jin$ zpool status
+<pre><code>gallo:~ jin$ zpool status Work
   pool: Work
  state: ONLINE
-....
-	  mirror-0                                      ONLINE       0     0     0
-	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
-	    media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0     0
+…
+  scan: resilver in progress since Tue Jul 30 07:09:24 2019
+	4.12G scanned at 50.8M/s, 1.40G issued at 17.2M/s, 4.12G total
+	1.44G resilvered, 33.88% done, 0 days 00:02:41 to go
+…
+	NAME                                            STATE     READ WRITE CKSUM
+	Work                                            ONLINE       0     0    22
+	  mirror-0                                      ONLINE       0     0    44
+	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0    44
+	    media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0    10
+
+errors: 1 data errors, use '-v' for a list
 </code></pre>
+
+<p>USBメモリーにはアクセスランプがついていないので、
+書き込みのタイミングや具合はちょっと掴めませんが、
+アクティビティ・モニターで見てみると控えめに同期しているとみえます。</p>
+
+<p><img src="/images/2019-07-30openzfs-activity.png" alt="Disk Activity" /></p>
 
 <p>おしとやかに、前もって<code>zpool offline POOL_NAME DISK_ID</code>でオフラインをすると<strong>OFFLINE</strong>になります。少しだけ安心。</p>
 
@@ -241,9 +252,7 @@ errors: No known data errors
 
 <p>ブチっと抜いて、適当にぶっさして、勝手に同期という訳には行きませんでした、ちと残念。</p>
 
-<p>まぁ、オンラインにして同期、そして他の端末に挿したままブートとちょっと考えながら差し替えを行えば良いだけです。</p>
-
-<p>USBも最近の少し早いやつなので、
+<p>まぁ、オンラインにして同期、そして他の端末に挿したままブートとちょっと考えながら差し替えを行えば良いだけです。USBも最近の少し早いやつなので、
 textベースの作業なら引きずられることはないだろうと思います。</p>
 
 <p>取り敢えず、このまま検証続行。</p>
@@ -255,6 +264,8 @@ textベースの作業なら引きずられることはないだろうと思い�
 起動後に同期が終了してるだろうタイミングでオフラインにし抜いて使ってます。
 （rsyncなどでバックアップを取ったりするよりは楽かも。。）</p>
 
+<h3 id="エラー対応">エラー対応</h3>
+
 <p>色々抜き差ししたり使っているとエラーが上がってきます。
 すぐに消えてるかなと思いきや、結構居座っています。
 そんな時は<code>zpool scrub</code>で綺麗にします。
@@ -265,12 +276,14 @@ textベースの作業なら引きずられることはないだろうと思い�
 </code></pre>
 
 <p>現在手元にもう一方の端末がないので行なっていませんが、
-同期先の追加は<code>zpool atatch disk</code>、（追記します）</p>
+同期先の追加は<code>zpool atatch disk</code>、</p>
 
 <pre><code>jin@guiness:~ $ sudo zpool atatch disk media-B6AF4D9A-9930-xxx newdisk
 </code></pre>
 
-<p>で３点ミラーの構築でできる。らしい。</p>
+<p>で３点ミラーの構築が完了。（夢の中）</p>
+
+<p>帰国後の9月半ばに追記します。</p>
 
 <p>参考：<a href="https://postd.cc/who-needs-git-when-you-got-zfs/">https://postd.cc/who-needs-git-when-you-got-zfs/</a></p>
 
