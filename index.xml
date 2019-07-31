@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Jul 2019 09:40:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2019 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>移動と近況</title>
+      <link>https://goozenlab.com/blog/2019/07/recent/</link>
+      <pubDate>Wed, 31 Jul 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/07/recent/</guid>
+      <description>7月も終わりますね。相変わらずあっという間の１ヶ月でした。 日本では選挙もあったし、 ジャパンは大丈夫んなんだろうかと心配と不安が駆け巡ってます。 さて写真はオースト</description>
+    </item>
     
     <item>
       <title>OpenZFS ミラーリング</title>
