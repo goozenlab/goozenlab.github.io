@@ -3,21 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/cheet/brew/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/08/amazfit-bip-review/</loc>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-07-31T10:00:00+07:00</lastmod>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-07-31T10:00:00+07:00</lastmod>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-07-31T10:00:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/review/</loc>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/smart-watch/</loc>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/xiaomi/</loc>
+    <lastmod>2019-08-01T19:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/cheet/zfs/</loc>
+    <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -34,12 +73,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</loc>
     <lastmod>2019-07-30T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-07-30T09:40:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -112,12 +145,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/07/max3-microg-sot/</loc>
     <lastmod>2019-07-13T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/xiaomi/</loc>
-    <lastmod>2019-07-13T19:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -405,12 +432,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</loc>
     <lastmod>2019-03-14T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/review/</loc>
-    <lastmod>2019-03-14T09:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2659,6 +2680,11 @@
   
   <url>
     <loc>https://goozenlab.com/mono/</loc>
+    <lastmod>2012-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/cheet/</loc>
     <lastmod>2012-09-26T00:00:00+00:00</lastmod>
   </url>
   

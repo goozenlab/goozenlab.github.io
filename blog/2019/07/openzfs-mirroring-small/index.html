@@ -167,7 +167,7 @@ gallo:~ jin$ sudo diskutil eraseVolume ZFS ZMIRA02 disk0s6
 </code></pre>
 
 <p>ミラーリングを構築します。とりあえず2つのパーティションを使います。
-コマンド<code>zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD POOL_NAME mirror DISK#1 DISK#2</code>。後々ディスクの追加が可能です。
+コマンドは<code>zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD POOL_NAME mirror DISK#1 DISK#2</code>です。後でディスクの追加をすることも可能です。
 同時に、ボリュームへの書き込みは権限が必要と出てくるのでパーミションの変更も行います。</p>
 
 <pre><code>gallo:~ jin$ sudo zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD Work mirror disk0s6 disk3s2
@@ -187,7 +187,7 @@ errors: No known data errors
 gallo:~ jin$ sudo chmod 777 /Volumes/Work
 </code></pre>
 
-<p>以上でミラーリングの構築は完了です。しばし運用していきます。</p>
+<p>以上でミラーリングの構築は完了です。しばしこの状態で運用していきます。</p>
 
 <hr />
 
@@ -248,7 +248,7 @@ gallo:~ jin$ zpool status
 errors: No known data errors
 </code></pre>
 
-<p>で、USBを抜いて作業。。</p>
+<p>で、USBを抜いて作業。そして、USBメモリーを再度接続しても自動ではマウントはされませんでした。</p>
 
 <p>ブチっと抜いて、適当にぶっさして、勝手に同期という訳には行きませんでした、無念。</p>
 
@@ -268,7 +268,7 @@ USBも最近の少し早いやつなので、textベースの作業なら引き�
 
 <p>色々抜き差ししたり使っているとエラーが上がってきます。
 すぐに消えてるかなと思いきや、結構居座っています。
-そんな時は<code>zpool scrub</code>で綺麗にします。
+そんな時は<code>zpool scrub</code>で修復します。
 コマンドはすぐに復帰しますが、
 バックグランドで動いています。</p>
 
@@ -341,7 +341,7 @@ USBも最近の少し早いやつなので、textベースの作業なら引き�
 <div class="footer pure-g">
     <div class="pure-u-1-24 pure-u-md-3-24"></div>
     <div class="pure-u-11-12 pure-u-md-20-24">
-		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/footer-owl.png" alt="Owl" /></div>
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
         <div class="footer-content">
  		  <div class="pure-menu pure-menu-horizontal">
               <ul>
