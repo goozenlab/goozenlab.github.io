@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 01 Aug 2019 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>パイ・スワップファイル</title>
+      <link>https://goozenlab.com/blog/2019/08/pi-swapiness/</link>
+      <pubDate>Sat, 03 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/pi-swapiness/</guid>
+      <description>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、 少しばかり躊躇します。しかしその代わりに、 カーネルによりスワップへの書き</description>
+    </item>
     
     <item>
       <title>Amazfit Bip 購入</title>

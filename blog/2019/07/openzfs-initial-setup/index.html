@@ -186,8 +186,7 @@ macOS、Windows、Linux全ての環境で読み書きできるファイルシス
 sudo zpool create <strong>-f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD</strong>  POOL_NAME (mirror, raidz) DISK#PARTION#
 と、Macの環境ではオプションがたくさんつきますが、入れないとエラー地獄に陥ります（私）。</p>
 
-<p>取り敢えず、シングルドライブで運用してみることにしました。ミラーリングだったりRAIDだったりももちろんつくれます。SSDを使う場合は<strong>ashift=13</strong>が良いようです。圧縮機能を追加したい時は
-<strong>-O compression=lz4</strong>をオプションに追加します。</p>
+<p>取り敢えず、シングルドライブで運用してみることにしました。ミラーリングだったりRAIDだったりももちろんつくれます。SSDを使う場合は<strong>ashift=13</strong>が良いようです。圧縮機能を追加したい時は<strong>-O compression=lz4</strong>をオプションに追加します。</p>
 
 <p>参照：<a href="https://openzfsonosx.org/wiki/Zpool">https://openzfsonosx.org/wiki/Zpool</a></p>
 

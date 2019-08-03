@@ -158,19 +158,11 @@
 
 <pre><code>pi@raspberrypi:~ $ tvservice --help
 Usage: tvservice [OPTION]...
-  -p, --preferred                   Power on HDMI with preferred settings
   -e, --explicit=&quot;GROUP MODE DRIVE&quot; Power on HDMI with explicit GROUP (CEA, DMT, CEA_3D_SBS, CEA_3D_TB, CEA_3D_FP, CEA_3D_FS)
                                       MODE (see --modes) and DRIVE (HDMI, DVI)
   -t, --ntsc                        Use NTSC frequency for HDMI mode (e.g. 59.94Hz rather than 60Hz)
   -c, --sdtvon=&quot;MODE ASPECT [P]&quot;    Power on SDTV with MODE (PAL or NTSC) and ASPECT (4:3 14:9 or 16:9) Add P for progressive
   -o, --off                         Power off the display
-  -m, --modes=GROUP                 Get supported modes for GROUP (CEA, DMT)
-  -M, --monitor                     Monitor HDMI events
-  -s, --status                      Get HDMI status
-  -a, --audio                       Get supported audio information
-  -d, --dumpedid &lt;filename&gt;         Dump EDID information to file
-  -j, --json                        Use JSON format for --modes output
-  -n, --name                        Print the device ID from EDID
   -l, --list                        List all attached devices
   -v, --device                      Specify the device to use (see --list)
   -h, --help                        Print this information
@@ -180,6 +172,8 @@ Usage: tvservice [OPTION]...
 <p>起動時にオフにしてしまうには、<code>/etc/rc.local</code>を編集します。上記のコマンドを追記します。</p>
 
 <pre><code>$ sudo vi  /etc/rc.local
+
+tvservice --off 
 </code></pre>
 
 <h3 id="無線関連">無線関連</h3>
@@ -221,21 +215,20 @@ pi@DietPi:~# echo 0 | sudo tee /sys/devices/platform/soc/3f980000.usb/buspower
 
 <h3 id="cpu速度">CPU速度</h3>
 
-<p>CPUクロックの上限と下限を変更します。省電力設定なのでターボブーストはオフにします。<code>/boot/cmdline.txt</code>に以下を追加します。</p>
+<p>CPUクロックの上限と下限を変更します。省電力設定なのでターボブーストはオフにします。<code>/boot/config.txt</code>に以下を追加します。</p>
 
 <pre><code># CPU freqencies
 force_turbo=0
-arm_freq=1000
-arm_freq_min=200
+arm_freq=850
+arm_freq_min=300
 </code></pre>
 
 <h3 id="cpuのコア数を減らす">CPUのコア数を減らす</h3>
 
 <p>クゥアッドコアで運用中のパイではCPUのコア数を減らすことができます。
-Dualコアで運用するには<code>/boot/cmdline.txt</code>に以下を追加します。</p>
+Dualコアで運用するには<code>/boot/cmdline.txt</code>に以下を文頭に追加します。</p>
 
-<pre><code># Core number
-maxcpus=2
+<pre><code>maxcpus=2 XXXXXXXXX
 </code></pre>
 
 <p>を加えることで2コアで動きます。数値（１から４）を変えることでコア数を指定でき、
