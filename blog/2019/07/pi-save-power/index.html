@@ -169,11 +169,13 @@ Usage: tvservice [OPTION]...
  pi@raspberrypi:~ $ tvservice -o
 </code></pre>
 
-<p>起動時にオフにしてしまうには、<code>/etc/rc.local</code>を編集します。上記のコマンドを追記します。</p>
+<p>起動時にオフにしてしまうには、<code>/etc/rc.local</code>を編集します。
+上記のコマンドを<code>exit 0</code>の前に 追記します。</p>
 
 <pre><code>$ sudo vi  /etc/rc.local
 
 tvservice --off 
+exit 0
 </code></pre>
 
 <h3 id="無線関連">無線関連</h3>

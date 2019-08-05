@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>チートシート: ZFS | goozenlab</title>
+  <title>Piholeをインストール | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -119,120 +119,140 @@
 
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
-	<div class="pure-u-11-12 pure-u-md-5-8">
+	<div class="pure-u-11-12 pure-u-md-14-24">
         <div class="post">
-
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-08-01</time>
+                    <time class="">2019-08-04</time>
 		            
                     
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
                     
 
                     
                 </p>
-                <h1>チートシート: ZFS</h1>
+                <h1>Piholeをインストール</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>OpenZFSの使い方。</p>
+<p>アドブロックかつフィルターリングプロキシーソフトのPrivoxyが敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、
+評判が高くインストールや設定も簡単なpiholeを追加導入しました。</p>
 
-<h2 id="format">Format</h2>
+<p>パイゼロではスムースにインストールされるも、パイ３ではなーーんかうまくいかなかったので再挑戦になります。</p>
 
-<p>VolumeName: ZFS. ディスク・パーティション番号<strong>！要注意！</strong></p>
+<p>インストール作業はスクリプトで一発インストールです。</p>
 
-<pre><code>$ sudo diskutil partitiondisk /dev/disk1 GPTFormat ZFS %noformat% 100%
-$ sudo diskutil eraseVolume ZFS ZDATA01 /dev/disk0s7
+<pre><code>$ curl -sSL https://install.pi-hole.net | bash
 </code></pre>
 
-<h2 id="poolの作成">Poolの作成</h2>
+<p>固定のip番号が必要になります。
+web管理画面はおしゃれな感じで悪くないのですが、
+nginxで設定するのも少し面倒ですし、、
+コンソールのステータスモニターがあるので、インストールはしません。
+（画像が小さくてスンマセン。。）</p>
 
-<p>Macで使用時にはオプションが必要。mirrorとraidz。 <code>compression=lz4</code> コンプレション・オン。<br />
-SSD: ashift=13, HD: ashift=12</p>
+<p><img src="/images/2019-08-03-pihole-install-00.png" alt="Pihole Inatall" /><br />
+<img src="/images/2019-08-03-pihole-install-01.png" alt="Pihole Inatall" /><br />
+<img src="/images/2019-08-03-pihole-install-02.png" alt="Pihole Inatall" /><br />
+<img src="/images/2019-08-03-pihole-install-03.png" alt="Pihole Inatall" /></p>
 
-<p>パーミションの変更が必要。</p>
+<p>で、途中でファイルのダウンロードができないとエラーが出ました。</p>
 
-<pre><code>$ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME mirror DISK#PARTION
-$ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME raidz DISK#PARTION
+<p><img src="/images/2019-08-03-pihole-install-error.png" alt="Pihole Inatall" /></p>
+
+<p>ちょっと見てみると、resolveconf で勝手にDNSの設定が書き換えられてしまってました。
+DNSが自分に向けられてて、そこから先に向かわないようです。
+（多分中途半端に動作・設定中ということか？）
+<code>resolvconf.conf</code>をルーターのDNSに変更し再度インストール。</p>
+
+<pre><code>pi@tacos:~ $ sudo vi /etc/resolvconf.conf
+
+name_servers=10.0.0.20 	#とりあえずルーターのDNSに変更
 
 </code></pre>
 
-<h2 id="ファイルシステムの追加">ファイルシステムの追加</h2>
+<p>で、ファイルも無事にダウンロードされ、インストールが進み、</p>
 
-<p>同様にパーミションの変更が必要。</p>
+<p><img src="/images/2019-08-03-pihole-install-04.png" alt="Pihole Inatall" /></p>
 
-<pre><code>$ sudo zfs create POOL_NAME/Shared
+<p>ことなく終了しました。</p>
+
+<p>コンソール画面でのステータス表示は<code>pihole -c</code>で行うことができます。
+ウェブの管理画面を通してする設定は、このコマンドで行うことができます。</p>
+
+<pre><code>$ pihole -c 
 </code></pre>
 
-<p>Macでは自動で<code>/Volumes/Shared</code>割当てられる。変更は</p>
+<p><img src="/images/2019-08-03-pihole-cosole.png" alt="Pihole Inatall" /></p>
 
-<pre><code>% sudo zfs set mountpoint=/NEW/DIRECTORY POOL_NAME/Shared
-</code></pre>
+<h2 id="ローカルdns">ローカルDNS</h2>
 
-<p>マウントとアンマウンント</p>
+<p>dmsmasqで動かしていた、ローカル内でのDNS設定もそのまま引き継がれました。
+設定の修正やら必要だと思っていたのですが、何も必要ありませんでした。
+/etc/hostsのファイルも読み込まれているようです。ありがたや。</p>
 
-<pre><code>% sudo zfs mount POOL_NAME/Shared
-% sudo zfs unmount [-f] Shared
-</code></pre>
+<p>まぁ、広告ありのページをみてると、ピカピカしすぎて、
+目が痛くなります。「なんか賑やかだね〜、ここは。」みたいな地方から東京に出てきた人みたいな感じ。
+（とはいえこのサイトもアドセンスの広告も貼っているんですけどね。。）
+これですっきりしました。</p>
 
-<h2 id="ミラーリングにディスクの追加">ミラーリングにディスクの追加</h2>
+<p>※ 現在はパイ３Bで動かしていますが、パイゼロで運用して一家に一台あると良いですよ、実家に一台導入予定。ムチャ、オススメです。（ムチャって、Muchasと似てるな、とふと書いてて思った。）</p>
 
-<pre><code>$ sudo zpool attach POOL_NAME POOL_DISK NEW_DISK#PARTITION
-</code></pre>
+				
 
-<h2 id="take-snapshot">Take Snapshot</h2>
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a></li>
+	
+	<li><a href="/blog/2019/07/gitea-pi-install/">Giteaをインストール</a></li>
+	
+	<li><a href="/blog/2019/07/tt-rss-pi-install/">TinyTiny RSSをインストール</a></li>
+	
+	<li><a href="/blog/2019/07/pi-full-backup/">パイ・フルバックアップ</a></li>
+	
+	<li><a href="/blog/2019/07/pi-lamp-install/">LMAPをインストール</a></li>
+	
+</ul>
 
-<p>日付付きでスナップショットを作成する。</p>
-
-<pre><code>$ sudo zfs snapshot MOUNT_POINT@$(date +%s)
-</code></pre>
-
-<p>確認。</p>
-
-<pre><code>$ sudo zfs list -t snapshot
-</code></pre>
-
-<p>ロールバック方法。</p>
-
-<h2 id="mount">Mount</h2>
-
-<p>in@gallo:~ $ zfs list -t all
-NAME              USED  AVAIL  REFER  MOUNTPOINT
-Work             3.65G  23.5G  3.65G  /Volumes/Work
-ZData60          27.8G  25.9G  3.43M  /Volumes/ZData60
-ZData60/Archive  16.5G  25.9G  16.5G  /Volumes/ZData60/Archive
-ZData60/Backup   10.8G  25.9G  10.8G  /Volumes/ZData60/Backup
-ZData60/Sync      590M  25.9G   590M  /Volumes/ZData60/Sync</p>
-
-<p>mountpoint=none         # 表示しない
-mountpoint=legacy       # fstabを読み込む</p>
-
-<p>root #  sudo zfs create -o mountpoint=/Volumes/Public -o canmount=off ZData60/Public</p>
-
-<p>マック上からは見えないです。</p>
-
-<p>jin@gallo:~ $ sudo zfs create -o mountpoint=legacy ZData60/HOME
-jin@gallo:~ $ zfs list -t all
-NAME              USED  AVAIL  REFER  MOUNTPOINT
-Work             3.66G  23.5G  3.66G  /Volumes/Work
-ZData60          37.1G  16.7G  3.47M  /Volumes/ZMIR
-ZData60/Archive  16.5G  16.7G  16.5G  /Volumes/ZMIR/Archive
-ZData60/Backup   20.0G  16.7G  20.0G  /Volumes/ZMIR/Backup
-ZData60/HOME       96K  16.7G    96K  legacy
-ZData60/Sync      591M  16.7G   591M  /Volumes/Sync</p>
-
-<p>tank/home/eschrock -        /mnt           zfs      -       yes     -</p>
-
-<p>ZData60/HOME /Volumes/Home zfs   rw</p>
 
             </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
         </div>
 	</div>
-    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 
 
