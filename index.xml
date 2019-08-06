@@ -23,6 +23,24 @@
     </item>
     
     <item>
+      <title>エクストラ・パイを購入 @ Pimoroni</title>
+      <link>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</link>
+      <pubDate>Tue, 06 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</guid>
+      <description>ちょっと機材を追加、パイ3A+を購入しました。 数品であれば個人輸入する利点はない様に思えるけれど、 品によっては数千円の違いがあったりします。 これから消費税が上が</description>
+    </item>
+    
+    <item>
+      <title>パイ・コア数での駆動時間比較</title>
+      <link>https://goozenlab.com/blog/2019/08/running-core-comparison/</link>
+      <pubDate>Mon, 05 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/running-core-comparison/</guid>
+      <description>パイ・３Bにてコア数の調整ができるので、バッテリーで運用時での駆動時間の比較をしました。 コア数の変更方法は こちら にポストしてますが、簡単には/boot/cmdl</description>
+    </item>
+    
+    <item>
       <title>Piholeをインストール</title>
       <link>https://goozenlab.com/blog/2019/08/pihole-install/</link>
       <pubDate>Sun, 04 Aug 2019 12:30:00 +0700</pubDate>
