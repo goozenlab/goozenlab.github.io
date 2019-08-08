@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Categories | goozenlab</title>
+  <title>パイ力がつきるまで・4 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -116,123 +116,117 @@
     <div class="pure-u-1-24 pure-u-md-1-24"></div>
 </div>
 
+
 <div class="pure-g">
-<div class="pure-u-1-24 pure-u-md-5-24"></div>
-<div class="pure-u-11-12 pure-u-md-5-8">
-	<p class="posts-name">Categories:</p>
-	<div class="post-content">
-		<ul class="posts">
-		
-		
-			<li>
-				<a href="iapp">iapp</a>
-				<span>&#40;109&#41;</span>
-			</li>
-		
-			<li>
-				<a href="nomad">nomad</a>
-				<span>&#40;69&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mumble">mumble</a>
-				<span>&#40;51&#41;</span>
-			</li>
-		
-			<li>
-				<a href="develop">develop</a>
-				<span>&#40;38&#41;</span>
-			</li>
-		
-			<li>
-				<a href="server">server</a>
-				<span>&#40;33&#41;</span>
-			</li>
-		
-			<li>
-				<a href="computing">computing</a>
-				<span>&#40;21&#41;</span>
-			</li>
-		
-			<li>
-				<a href="life">life</a>
-				<span>&#40;20&#41;</span>
-			</li>
-		
-			<li>
-				<a href="travel">travel</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="android">android</a>
-				<span>&#40;17&#41;</span>
-			</li>
-		
-			<li>
-				<a href="web">web</a>
-				<span>&#40;12&#41;</span>
-			</li>
-		
-			<li>
-				<a href="bicycle">bicycle</a>
-				<span>&#40;11&#41;</span>
-			</li>
-		
-			<li>
-				<a href="snakefoot">snakefoot</a>
-				<span>&#40;10&#41;</span>
-			</li>
-		
-			<li>
-				<a href="backpack">backpack</a>
-				<span>&#40;5&#41;</span>
-			</li>
-		
-			<li>
-				<a href="router">router</a>
-				<span>&#40;3&#41;</span>
-			</li>
-		
-			<li>
-				<a href="goods">goods</a>
-				<span>&#40;2&#41;</span>
-			</li>
-		
-			<li>
-				<a href="development">development</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mac">mac</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="macos">macos</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="security">security</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="smart-watch">smart-watch</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="youtube">youtube</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-		</ul>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-08-09</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>パイ力がつきるまで・4</h1>
+            </div>
+
+            <div class="post-content">
+                <p>パイ３Bで動かしていたSDカードをそのままパイ３A＋に差し替え、
+5,000 mAhのバッテリー運用時での駆動時間をチェックしました。</p>
+
+<p>現在の使用状況はRAMの使用はカツカツで、スワップもめいいっぱいですが、
+CPUにはまだぜんぜん余裕があります。</p>
+
+<p><img src="/images/2019-08-09-pia-running-test.jpg" alt="Pi 3A+ Monitoring" /></p>
+
+<p>これを見てみると、ちょっとバランスが悪いなと思うが、、</p>
+
+<p>動かしているサーバーは</p>
+
+<ul>
+<li>LAMP: Nginx + mariaDB + php7.3</li>
+<li>Syncthing</li>
+<li>Grafana</li>
+<li>InfluxDB</li>
+<li>Telegraf</li>
+<li>Gitea</li>
+<li>TinyTiny RSS</li>
+<li>NextCloud for(CalDAV,ContactDAV)</li>
+</ul>
+
+<p>です。</p>
+
+<p>結果：<strong>18時間</strong>、パイ３Bに比べて5時間、40%アップしました。</p>
+
+<p>プロセッサーはパイ３Bより新しく、
+よりパワー食い、消費電力も同等以上にかかると思っていたので、
+思いの外。
+違いは 不具合があったInfluxDBをBusterのパッケージにダウングレードしたぐらいで、
+予想外の結果で嬉しい誤算。</p>
+
+<p>まぁ、これでノマドルーター化の要件、駆動時間15時間以上はクリア。</p>
+
+<p>あとは、Wifiドングルをつけてルーター化した時にどうなるかですな。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a></li>
+	
+	<li><a href="/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a></li>
+	
+	<li><a href="/blog/2019/08/running-core-comparison/">パイ・コア数での駆動時間比較</a></li>
+	
+	<li><a href="/blog/2019/08/pihole-install/">Piholeをインストール</a></li>
+	
+	<li><a href="/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
 	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-<div class="pure-u-1-24 pure-u-md-1-6"></div>
+
 
 <div class="footer pure-g">
     <div class="pure-u-1-24 pure-u-md-3-24"></div>

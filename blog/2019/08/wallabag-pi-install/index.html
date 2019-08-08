@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Wallabagをインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-08-08</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>Wallabagをインストール</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>何でもセルフホスト・パイ・サーバー計画続行中。
+今回は<strong>Pocket</strong>の代替ソフトのwallabagをインストールしました。
+Kindle版があるのが気になる。</p>
+
+<p><img src="/images/2019-08-07-wallabag-00.jpg" alt="Wallabag" /></p>
+
+<p>インストール作業についてドキュメントが確りと書かれていています。</p>
+
+<p><a href="https://doc.wallabag.org/en/admin/installation/installation.html">https://doc.wallabag.org/en/admin/installation/installation.html</a></p>
+
+<p>さて、まずは事前に必要なパッケージをインストールします。</p>
+
+<ul>
+<li>composer</li>
+<li>php</li>
+</ul>
+
+<h3 id="composer">composer</h3>
+
+<p>1.8.0以上のバージョンが必要ですが、busterのパッケージは
+<code>1.8.4-1</code>なので問題ありません、gitとmakeも必要なので一緒にインストールします。</p>
+
+<pre><code>pi@tacos:~ $ sudo apt install git make composer
+</code></pre>
+
+<h3 id="php">php</h3>
+
+<p>phpモジュールが必要です。
+サイトに書いて有る2つのモジュール<strong>php-session</strong>と<strong>php-hash</strong>が見つかりらず、
+幾つかのモジュールはまとめられていました。</p>
+
+<ul>
+<li>php7.3-common: php7.3-ctyp php7.3-icon php-iconv php7.3-gettext php7.3-pdo php7.3-tokenizer</li>
+<li>php7.3-xml: php7.3-dom php7.3-simplexml</li>
+</ul>
+
+<p>とりあえずあるものをインストールしてそのまま続行します。</p>
+
+<pre><code>pi@tacos:/var/www $ sudo apt install php7.3-common php7.3-xml php7.3-json php7.3-gd php7.3-mbstring php7.3-xml php7.3-tidy  php7.3-curl php7.3-bcmath
+</code></pre>
+
+<h2 id="nginx">Nginx</h2>
+
+<p>後でも構いませんが、事前にnginxの設定を行ってしまいます。
+以下、サイトよりコピー。<code>fastcgi_pass unix</code>の編集だけで問題なく動きました。</p>
+
+<pre><code>server {
+    server_name wallabag.goozen.lab;
+    root /var/www/wallabag/web;
+
+    location / {
+        # try to serve file directly, fallback to app.php
+        try_files $uri /app.php$is_args$args;
+    }
+    location ~ ^/app\.php(/|$) {
+        # if, for some reason, you are still using PHP 5,
+        # then replace /run/php/php7.0 by /var/run/php5
+        
+	  fastcgi_pass unix:/run/php/php7.3-fpm.sock;  ## php7.3に変更
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+       
+	    # When you are using symlinks to link the document root to the
+        # current version of your application, you should pass the real
+        # application path instead of the path to the symlink to PHP
+        # FPM.
+        # Otherwise, PHP's OPcache may not properly detect changes to
+        # your PHP files (see https://github.com/zendtech/ZendOptimizerPlus/issues/126
+        # for more information).
+        
+		fastcgi_param  SCRIPT_FILENAME  $realpath_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $realpath_root;
+       
+	    # Prevents URIs that include the front controller. This will 404:
+        # http://domain.tld/app.php/some-path
+        # Remove the internal directive to allow URIs like this
+        internal;
+    }
+
+    # return 404 for all other php files not matching the front controller
+    # this prevents access to other php files you don't want to be accessible.
+    location ~ \.php$ {
+        return 404;
+    }
+
+    error_log /var/log/nginx/wallabag_error.log;
+    access_log /var/log/nginx/wallabag_access.log;
+}
+</code></pre>
+
+<p>そして、サブドメインのためのホストファイルを設定します。</p>
+
+<pre><code>pi@tacos:~ $ sudo vi  /etc/hosts
+
+10.0.0.10	wallabag.goozen.lab
+</code></pre>
+
+<h2 id="mariadb">MariaDB</h2>
+
+<p>他のソフトウェアと同様に、事前にデーターベースを用意します。
+データーベース名・ユーザー名・パスワードは変更してください。</p>
+
+<pre><code>pi@tacos:~ $ sudo mysql -u root
+MariaDB [(none)]&gt; CREATE DATABASE wallabag; 
+MariaDB [(none)]&gt; CREATE USER 'wallabag-user'@'localhost' IDENTIFIED BY 'wallabag-pa$$word';
+MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON wallabag.* TO 'wallabag-user'@'localhost';
+MariaDB [(none)]&gt; exit;
+</code></pre>
+
+<hr />
+
+<h2 id="インストールwallabag">インストールwallabag</h2>
+
+<p>Wallagbagのインストールををします。
+作業の流れは以下の様になります。</p>
+
+<pre><code>pi@tacos:~ $ cd /var/www/
+pi@tacos:~ $ sudo git clone https://github.com/wallabag/wallabag.git 
+pi@tacos:~ $ sudo chown -R www-data:www-data /var/www/wallabag
+
+
+pi@tacos:~ $ sudo -u www-data /bin/bash
+pi@tacos:~ $ cd /var/www/wallabag/
+pi@tacos:~ $ make install
+</code></pre>
+
+<p>データーベース等、様々な設定を行います。（データーベース設定以外は、ほとんどデフォルト。）</p>
+
+<p><img src="/images/2019-08-07-wallabag-install-01.png" alt="Wallabag Install" /><br />
+<img src="/images/2019-08-07-wallabag-install-02.png" alt="Wallabag Install" /></p>
+
+<p>間違ってしまったり、変更をするときは<code>parameters.yml</code> を編集します。</p>
+
+<pre><code>pi@tacos:~ $ sudo vi /var/www/wallabag/app/config/parameters.yml
+</code></pre>
+
+<hr />
+
+<p>インストール終了後
+<a href="http://IP_or_DOMAIN_NAME">http://IP_or_DOMAIN_NAME</a>
+にてアクセスします。</p>
+
+<p><img src="/images/2019-08-07-wallabag-login-00.png" alt="Wallabag Login" /></p>
+
+<p>設定を行った時に入力した、アドミンアカウントでログインし、新しいユーザーを追加します。</p>
+
+<p>クライアント・アプリも豊富ですので、様々な端末で情報共有ができます。</p>
+
+<p><img src="/images/2019-08-07-wallabag-main-00.png" alt="Wallabag" /></p>
+
+<p>こんな感じの画面です。ポケットと似てますね。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a></li>
+	
+	<li><a href="/blog/2019/08/running-core-comparison/">パイ・コア数での駆動時間比較</a></li>
+	
+	<li><a href="/blog/2019/08/pihole-install/">Piholeをインストール</a></li>
+	
+	<li><a href="/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a></li>
+	
+	<li><a href="/blog/2019/07/gitea-pi-install/">Giteaをインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
