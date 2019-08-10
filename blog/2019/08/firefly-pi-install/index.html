@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Firefly iiiをインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-08-10</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>Firefly iiiをインストール</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>今までは、ラフにお金の流れをGNUCashを使って管理してましたが、
+ちょっと細かくこずかい帳の様に使えるものを探していて
+PERSONAL FINANCE MANAGERの<strong>Firefly iii</strong>がオススメとRedditで見つけ、
+サイトをチェックしてみたところ、見た目も悪くない。
+インストールのドキュメントを見てみるとスムースにインストールできそうなので、
+試しに入れてみました。（まぁ、何度かエラーにはぶち当たるんですけどね、、）</p>
+
+<p><img src="/images/2019-08-08-firefly-iii-00.png" alt="Firefly Install" /></p>
+
+<p><a href="https://firefly-iii.org">https://firefly-iii.org</a></p>
+
+<p><img src="/images/2019-08-08-firefly-iii-index.png" alt="Firefly Install" /></p>
+
+<h2 id="phpライブラリーのインストール">Phpライブラリーのインストール</h2>
+
+<p>LAMPのアプリですので、Phpのライブラリーが必要になります。
+DBはmariaDBを使っています。Postgresqlにも対応、Sqliteはオススメではないそうです。</p>
+
+<pre><code>pi@tacos:~ $ sudo apt install php7.3 php7.3-bcmath php7.3-curl php7.3-fpm php7.3-gd php7.3-intl php7.3-mbstring php7.3-mysql php7.3-opcache php7.3-xml php7.3-zip php7.3-ldap
+</code></pre>
+
+<p>そして、php設定の設定も必要。コメントを外して、値を変えます。</p>
+
+<pre><code>sudo vi /etc/php/7.3/fpm/php.ini
+
+;cgi.fix_pathinfo=1
+cgi.fix_pathinfo=0
+
+</code></pre>
+
+<hr />
+
+<h2 id="データーベース作成">データーベース作成</h2>
+
+<p>あらかじめデーターベースを作成しておきます。</p>
+
+<pre><code>pi@tacos:~ $ sudo mysql -u root
+MariaDB [(none)]&gt; CREATE DATABASE firefly;
+MariaDB [(none)]&gt; GRANT ALL ON firefly.* TO 'firefly-user'@localhost IDENTIFIED BY 'firefly-pa$$wd';
+MariaDB [(none)]&gt; exit
+Bye
+</code></pre>
+
+<h2 id="ウェブサイトの設定">ウェブサイトの設定</h2>
+
+<p>サブドメインを使ってアクセスするので、nginxの設定をしておきます。
+横着なので、デフォルトに付け加えててしまいます。（推奨はされていません）
+落ち着いたら整理しようと思ってます。</p>
+
+<pre><code>pi@tacos:~ $ sudo vi /etc/nginx/sites-available/default
+
+server {
+  listen 80;
+  listen [::]:80;
+  server_name firefly.goozen.lab;
+  
+  root /var/www/firefly-iii/public;
+  index index.php index.html index.htm;
+  
+  location / {
+    try_files $uri $uri/ /index.php?$query_string;
+    autoindex on;
+    sendfile off;
+  }
+  location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+  }
+  location ~ /\.ht {
+    deny all;
+  }
+}
+</code></pre>
+
+<p>そして、<code>/etc/hosts</code>も編集しておきます。</p>
+
+<hr />
+
+<p>LAMPアプリのインストーラー？のような<strong>composer</strong>を使ってアプリケーションをインストールします。gitとmakeも必要なので一緒にインストールします。</p>
+
+<pre><code>pi@tacos:~ $ sudo apt install git make composer
+</code></pre>
+
+<p>インストール時にメモリが足りんとエラーが出たので、動作中のサービスを幾つか切って作業を進めました。</p>
+
+<pre><code>pi@tacos:~ $ cd /var/www/
+pi@tacos:~ $ sudo -u www-data /bin/bash
+pi@tacos:~ $ composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.7.17.6
+</code></pre>
+
+<p><img src="/images/2019-08-08-firefly-install-01.png" alt="Firefly Install" /></p>
+
+<p>ファイルのインストールが終わった後にデーターベースの初期化、移行を行います。環境ファイルにDBの設定を書き込み、<code>php artisan</code>（何者なのか不明。。）で作業を続けます。</p>
+
+<pre><code>pi@tacos:~ $ vi /var/www/firefly-iii/.env
+
+DB_DATABASE=firefly
+DB_USERNAME=firefly-user
+DB_PASSWORD=firefly-pa$$wd
+
+pi@tacos:~ $ cd /var/www/firefly-iii
+pi@tacos:~ $ php artisan migrate:refresh --seed
+pi@tacos:~ $ php artisan firefly:upgrade-database
+pi@tacos:~ $ php artisan firefly:verify
+pi@tacos:~ $ php artisan passport:install
+</code></pre>
+
+<p><img src="/images/2019-08-08-firefly-install-02.png" alt="Firefly Install" /></p>
+
+<p>エラーがなければ、以上にて終了です。</p>
+
+<p><a href="http://SUB_DOMAIN">http://SUB_DOMAIN</a> にてアクセスします。
+自動的にインストール作業が続行しますが、OAuth2でエラーが出ます。
+ログを見ろといえども、どこにログがあるのやら。。</p>
+
+<p><img src="/images/2019-08-08-firefiy-error.png" alt="Firefly" /></p>
+
+<p>ただ、完全にインストールが失敗というわけではなく、
+リロードをするとログイン画面にたどり着きます。</p>
+
+<p><img src="/images/2019-08-08-firefiy-login.png" alt="Firefly" /></p>
+
+<p>認証関連のエラーなので、サイトをオープンにしなければ問題にはならない。と思います。</p>
+
+<p>ユーザーを作成してログインします。</p>
+
+<p>日本語のにはローカライズしていないですが、通貨はデフォルトで入っています。</p>
+
+<p><img src="/images/2019-08-08-firefiy-main.png" alt="Firefly" /></p>
+
+<h2 id="使用感">使用感</h2>
+
+<p>ちょっと使ってみましたが、完全にはマルチカレンシーには対応してません。
+予算（￥）を組んで、ドルやバーツで使ったものはレートは適用されないでそのままの値で
+計算されてしまうので、あまり使い物にはならないかもしれません。
+でも折角なので、現在滞在中のタイ・バーツお小遣い帳として使ってみることにします。</p>
+
+<p>そしてアンドロイドのクライアント・アプリもあるのですが、
+前述のOAuthのエラーが多分問題なのか接続時に落ちて使えない。うぬぬ。</p>
+
+<p>でも、通貨ひとつのみで運用であれば、まま使い勝手は悪くないかもです。</p>
+
+<p>と消極的なレビューでした。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/pia-running-test/">パイ力がつきるまで・4</a></li>
+	
+	<li><a href="/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a></li>
+	
+	<li><a href="/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a></li>
+	
+	<li><a href="/blog/2019/08/running-core-comparison/">パイ・コア数での駆動時間比較</a></li>
+	
+	<li><a href="/blog/2019/08/pihole-install/">Piholeをインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
