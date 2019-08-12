@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Piholeをインストール | goozenlab</title>
+  <title>Grafanaのインストール | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,7 +123,7 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-08-04</time>
+                    <time class="">2019-08-12</time>
 		            
                     
                     |
@@ -138,89 +138,74 @@
 
                     
                 </p>
-                <h1>Piholeをインストール</h1>
+                <h1>Grafanaのインストール</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>アドブロックかつフィルターリングプロキシーソフトの<strong>Privoxy</strong>が敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、
-評判が高くインストールや設定も簡単な<strong>pihole</strong>を追加導入しました。</p>
+<p><img src="/images/2019-08-10-grafana-00.png" alt="Grafana Install" /></p>
 
-<p>パイゼロではスムースにインストールされるも、パイ３ではなーーんかうまくいかなかったので再挑戦になります。</p>
+<h2 id="インストール">インストール</h2>
 
-<p>インストール作業はスクリプトで一発インストールです。</p>
+<p>バスターのパッケージではかなりの追加パッケージが必要なのですが、
+開発会社レポジトリーのバージョンは追加のパッケージも全くありません。
+心配がよぎるがインストールは問題なく終了。</p>
 
-<pre><code>$ curl -sSL https://install.pi-hole.net | bash
+<p>鍵を登録、<code>apt source</code>の追加、パッケージのアップデート、
+そしてインストールの手順になります。</p>
+
+<pre><code>root@raspberrypi:~ # sudo -Es
+root@raspberrypi:~ # curl https://packages.grafana.com/gpg.key | apt-key add -
+root@raspberrypi:~ # vi /etc/apt/sources.list.d/grafana.list
+
+deb https://packages.grafana.com/oss/deb stable main
+
+root@raspberrypi:~ # apt update
+root@raspberrypi:~ # apt install grafana
 </code></pre>
 
-<p>固定のip番号が必要になります。
-web管理画面はおしゃれな感じで悪くないのですが、
-nginxで設定するのも少し面倒ですし、、
-コンソールのステータスモニターがあるので、インストールはしません。
-（画像が小さくてスンマセン。。）</p>
+<p>サービスを起動時に登録、そしてスタートします。</p>
 
-<p><img src="/images/2019-08-03-pihole-install-00.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-01.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-02.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-03.png" alt="Pihole Inatall" /></p>
+<p>root@raspberrypi:~ # systemctl enable grafana-server
+root@raspberrypi:~ # systemctl start grafana-server</p>
 
-<p>で、途中でファイルのダウンロードができないとエラーが出ました。</p>
+<p><code>http://&lt;IP_ADDRESS&gt;:3000/login</code>にアクセスします。
+pi0ではアクセスできず、もしやと思ってSDカードをpi3に入れ替えて動かしてみると、
+アクセス画面に到着！。。。（キャッシュの問題なのか何なのか。。）
+まっ、エラーもなく、珍しく何事もなく無事終了。</p>
 
-<p><img src="/images/2019-08-03-pihole-install-error.png" alt="Pihole Inatall" /></p>
+<ul>
+<li>ID : PASSWD = admin : admin</li>
+</ul>
 
-<p>ちょっと見てみると、resolveconf で勝手にDNSの設定が書き換えられてしまってました。
-DNSが自分に向けられてて、そこから先に向かわないようです。
-（多分中途半端に動作・設定中ということか？）
-<code>resolvconf.conf</code>をルーターのDNSに変更し再度インストール。</p>
+<p>にてログインします。</p>
 
-<pre><code>pi@tacos:~ $ sudo vi /etc/resolvconf.conf
+<p><img src="/images/2019-07-12-grafana-login.png" alt="Grafana Install" /></p>
 
-name_servers=10.0.0.20 	#とりあえずルーターのDNSに変更
+<p>新しいパスワードを入力して継続。（スキップすることも可能ですが、非推奨。）</p>
 
-</code></pre>
+<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Install" /></p>
 
-<p>で、ファイルも無事にダウンロードされ、インストールが進み、</p>
+<p>サーバーのモニタリング、シャオミの気温計をつなげたりして
+IOTのモニタリングに使う予定です。</p>
 
-<p><img src="/images/2019-08-03-pihole-install-04.png" alt="Pihole Inatall" /></p>
-
-<p>ことなく終了しました。</p>
-
-<p>コンソール画面でのステータス表示は<code>pihole -c</code>で行うことができます。
-ウェブの管理画面を通してする設定は、このコマンドで行うことができます。</p>
-
-<pre><code>$ pihole -c 
-</code></pre>
-
-<p><img src="/images/2019-08-03-pihole-cosole.png" alt="Pihole Inatall" /></p>
-
-<h2 id="ローカルdns">ローカルDNS</h2>
-
-<p>dmsmasqで動かしていた、ローカル内でのDNS設定もそのまま引き継がれました。
-設定の修正やら必要だと思っていたのですが、何も必要ありませんでした。
-/etc/hostsのファイルも読み込まれているようです。ありがたや。</p>
-
-<p>まぁ、広告ありのページをみてると、ピカピカしすぎて、
-目が痛くなります。「なんか賑やかだね〜、ここは。」みたいな地方から東京に出てきた人みたいな感じ。
-（とはいえこのサイトもアドセンスの広告も貼っているんですけどね。。）
-これですっきりしました。</p>
-
-<p>※ 現在はパイ３Bで動かしていますが、パイゼロで運用して一家に一台あると良いですよ、実家に一台導入予定。ムチャ、オススメです。（ムチャって、Muchasと似てるな、とふと書いてて思った。）</p>
+<p>参照：<a href="http://docs.grafana.org/installation/debian/">Install on Debian</a></p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a></li>
+	<li><a href="/blog/2019/08/pi-swap-dphys/">パイ・スワップの増量</a></li>
 	
-	<li><a href="/blog/2019/07/gitea-pi-install/">Giteaをインストール</a></li>
+	<li><a href="/blog/2019/08/firefly-pi-install/">Firefly iiiをインストール</a></li>
 	
-	<li><a href="/blog/2019/07/tt-rss-pi-install/">TinyTiny RSSをインストール</a></li>
+	<li><a href="/blog/2019/08/pia-running-test/">パイ力がつきるまで・4</a></li>
 	
-	<li><a href="/blog/2019/07/pi-full-backup/">パイ・フルバックアップ</a></li>
+	<li><a href="/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a></li>
 	
-	<li><a href="/blog/2019/07/pi-lamp-install/">LMAPをインストール</a></li>
+	<li><a href="/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a></li>
 	
 </ul>
 

@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Piholeをインストール | goozenlab</title>
+  <title>パイ・スワップの増量 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,7 +123,7 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-08-04</time>
+                    <time class="">2019-08-11</time>
 		            
                     
                     |
@@ -138,89 +138,130 @@
 
                     
                 </p>
-                <h1>Piholeをインストール</h1>
+                <h1>パイ・スワップの増量</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>アドブロックかつフィルターリングプロキシーソフトの<strong>Privoxy</strong>が敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、
-評判が高くインストールや設定も簡単な<strong>pihole</strong>を追加導入しました。</p>
+<!--
+ちょっと、宿のネット環境が非常に芳しくないので、北上、チェンライに移動してきました。
+雨の降る中、びしょ濡れで、
+-->
 
-<p>パイゼロではスムースにインストールされるも、パイ３ではなーーんかうまくいかなかったので再挑戦になります。</p>
+<p>さて、パイ・メモリーが弾けんばかりパツパツです。
+インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミングでハングアップする様になりました。CPUへの負荷はそれほど高くないので、ちょっともったいない。。</p>
 
-<p>インストール作業はスクリプトで一発インストールです。</p>
+<p><img src="/images/2019-08-09-pia-running-test.jpg" alt="Pi 3A+ Monitoring" /></p>
 
-<pre><code>$ curl -sSL https://install.pi-hole.net | bash
+<p>持ち出しサーバーを計画中で色々お試しを含めて検証中で、
+運用中のアプリが以下</p>
+
+<ul>
+<li><a href="https://goozenlab.com/blog/2019/07/pi-lamp-install/">LAMP: Nginx + mariaDB + php7.3</a></li>
+<li>Grafana</li>
+<li>InfluxDB</li>
+<li>Telegraf</li>
+<li><a href="https://goozenlab.com/blog/2019/07/gitea-pi-install/">Gitea</a></li>
+<li><a href="https://goozenlab.com/blog/2019/07/tt-rss-pi-install/">TinyTiny RSS</a></li>
+<li><a href="https://goozenlab.com/blog/2019/08/wallabag-pi-install/">Wallabag</a></li>
+<li>NextCloud (CalDAV,ContactDAVのため)</li>
+<li><a href="https://goozenlab.com/blog/2019/06/syncthing-install/">Syncthing</a></li>
+<li>dokuWiki</li>
+<li><a href="https://goozenlab.com/blog/2019/08/firefly-pi-install/">Firefly iii</a></li>
+</ul>
+
+<p>になります、限界にチャレンジというか、なんというか。</p>
+
+<p>さて、
+パイでのスワップ設定は、
+多分microSDへの負荷を考えてのことでしょうが、
+100MBと控えめな設定になっています。必要があれば自動的に増えていくと思っていましたが、
+そうではなく、ハングアップしたりストールしたりします。
+今の状態では問題があるので、
+通常のLinuxのようにスワップのサイズをメモリーと同量に変更したいと思います。</p>
+
+<h3 id="dphys-swapfile">dphys-swapfile</h3>
+
+<p>Raspbianでは、スワップは別のパーティションで分けられているわけではなくて、
+dphys-swapfileというソフトで管理されています。</p>
+
+<p>スワップのオン・オフなどをこのコマンドで行います。</p>
+
+<p>ちなみに、<strong>スワップファイル自体を無効</strong>にする方法は以下、</p>
+
+<pre><code>pi@raspberrypi:~ $ sudo systemctl disable dphys-swapfile
+pi@raspberrypi:~ $ sudo dphys-swapfile swapoff
 </code></pre>
 
-<p>固定のip番号が必要になります。
-web管理画面はおしゃれな感じで悪くないのですが、
-nginxで設定するのも少し面倒ですし、、
-コンソールのステータスモニターがあるので、インストールはしません。
-（画像が小さくてスンマセン。。）</p>
+<p>にて可能です。
+起動時にオンになってしまうのでサービスも止めます。</p>
 
-<p><img src="/images/2019-08-03-pihole-install-00.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-01.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-02.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-03.png" alt="Pihole Inatall" /></p>
+<p>さて、サイズの変更方法ですが、こちらは<strong>設定ファイル</strong>をいじります。</p>
 
-<p>で、途中でファイルのダウンロードができないとエラーが出ました。</p>
+<pre><code>pi@raspberrypi:~ $ sudo vi /etc/dphys-swapfile
 
-<p><img src="/images/2019-08-03-pihole-install-error.png" alt="Pihole Inatall" /></p>
-
-<p>ちょっと見てみると、resolveconf で勝手にDNSの設定が書き換えられてしまってました。
-DNSが自分に向けられてて、そこから先に向かわないようです。
-（多分中途半端に動作・設定中ということか？）
-<code>resolvconf.conf</code>をルーターのDNSに変更し再度インストール。</p>
-
-<pre><code>pi@tacos:~ $ sudo vi /etc/resolvconf.conf
-
-name_servers=10.0.0.20 	#とりあえずルーターのDNSに変更
+#CONF_SWAPFILE=/var/swap
+CONF_SWAPSIZE=100
+#CONF_SWAPFACTOR=2
+#CONF_MAXSWAP=2048
 
 </code></pre>
 
-<p>で、ファイルも無事にダウンロードされ、インストールが進み、</p>
+<p>4つの項目を有効化・設定変更することができます。</p>
 
-<p><img src="/images/2019-08-03-pihole-install-04.png" alt="Pihole Inatall" /></p>
+<ul>
+<li>スワップファイルの位置</li>
+<li>スワップサイズの変更：容量の指定</li>
+<li>スワップサイズの変更：メモリーに対する倍数</li>
+<li>スワップサイズの最大値</li>
+</ul>
 
-<p>ことなく終了しました。</p>
+<p>サイズを直接設定してもよいけれど、
+SDカードをパイ３Bに差し替えたりもするので、
+<code>CONF_SWAPSIZE</code>をコメントアウトして、メモリーと同量に値する<code>倍数=1</code>に変更しました。</p>
 
-<p>コンソール画面でのステータス表示は<code>pihole -c</code>で行うことができます。
-ウェブの管理画面を通してする設定は、このコマンドで行うことができます。</p>
-
-<pre><code>$ pihole -c 
+<pre><code>#CONF_SWAPSIZE=100
+CONF_SWAPFACTOR=1
 </code></pre>
 
-<p><img src="/images/2019-08-03-pihole-cosole.png" alt="Pihole Inatall" /></p>
+<p>編集後再起動、少し使った後の割り当てはこんな感じになります。
+ちょうど、初期設定の100MB時より少し必要な状態だった様です。
+様子を見て必要最低限に変更するかな。</p>
 
-<h2 id="ローカルdns">ローカルDNS</h2>
+<pre><code>pi@raspberrypi:~ $ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          430Mi       258Mi        47Mi        19Mi       124Mi       102Mi
+Swap:         439Mi       137Mi       302Mi
+</code></pre>
 
-<p>dmsmasqで動かしていた、ローカル内でのDNS設定もそのまま引き継がれました。
-設定の修正やら必要だと思っていたのですが、何も必要ありませんでした。
-/etc/hostsのファイルも読み込まれているようです。ありがたや。</p>
+<p><img src="/images/2019-08-09-pia-swap-settings-00.png" alt="Pi 3A+ Monitoring" /></p>
 
-<p>まぁ、広告ありのページをみてると、ピカピカしすぎて、
-目が痛くなります。「なんか賑やかだね〜、ここは。」みたいな地方から東京に出てきた人みたいな感じ。
-（とはいえこのサイトもアドセンスの広告も貼っているんですけどね。。）
-これですっきりしました。</p>
+<p>動作も少し落ち着いた様に思えます。
+microSDへの負荷が増えてしまうのが心配ですが、当分これで運用して行ってみたいともいます。
+ソフトウェアもあと幾つかインストールするつもりです。</p>
 
-<p>※ 現在はパイ３Bで動かしていますが、パイゼロで運用して一家に一台あると良いですよ、実家に一台導入予定。ムチャ、オススメです。（ムチャって、Muchasと似てるな、とふと書いてて思った。）</p>
+<p>microSDへの書き込みを抑えることもできるので、そちらも調整します。
+こちら、<a href="https://goozenlab.com/blog/2019/08/pi-swapiness/">Swapinessの変更</a>
+でハッピーになれます。ご参照にほど。</p>
+
+<p>参照（ありがとう）：
+<a href="https://a244.hateblo.jp/entry/2016/12/12/010429">https://a244.hateblo.jp/entry/2016/12/12/010429</a></p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a></li>
+	<li><a href="/blog/2019/08/firefly-pi-install/">Firefly iiiをインストール</a></li>
 	
-	<li><a href="/blog/2019/07/gitea-pi-install/">Giteaをインストール</a></li>
+	<li><a href="/blog/2019/08/pia-running-test/">パイ力がつきるまで・4</a></li>
 	
-	<li><a href="/blog/2019/07/tt-rss-pi-install/">TinyTiny RSSをインストール</a></li>
+	<li><a href="/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a></li>
 	
-	<li><a href="/blog/2019/07/pi-full-backup/">パイ・フルバックアップ</a></li>
+	<li><a href="/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a></li>
 	
-	<li><a href="/blog/2019/07/pi-lamp-install/">LMAPをインストール</a></li>
+	<li><a href="/blog/2019/08/running-core-comparison/">パイ・コア数での駆動時間比較</a></li>
 	
 </ul>
 

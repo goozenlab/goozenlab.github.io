@@ -8,18 +8,27 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>チートシート: brew</title>
-      <link>https://goozenlab.com/cheet/brew/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      <title>Grafanaのインストール</title>
+      <link>https://goozenlab.com/blog/2019/08/grafana-pi-install/</link>
+      <pubDate>Mon, 12 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet/brew/</guid>
-      <description>visit website Installと設定 $ ruby &amp;lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go) Homebrewの利用状況の統計（？）機能の無効化するために、.profileに下記の一行を追加。 export HOMEBREW_NO_ANALYTICS=1 アップデートとアップグレ</description>
+      <guid>https://goozenlab.com/blog/2019/08/grafana-pi-install/</guid>
+      <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありません。 心配がよぎるがイ</description>
+    </item>
+    
+    <item>
+      <title>パイ・スワップの増量</title>
+      <link>https://goozenlab.com/blog/2019/08/pi-swap-dphys/</link>
+      <pubDate>Sun, 11 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/pi-swap-dphys/</guid>
+      <description>さて、パイ・メモリーが弾けんばかりパツパツです。 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミングでハングアップする様</description>
     </item>
     
     <item>
@@ -659,6 +668,15 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/01/new-year/</guid>
       <description>あけましておめでとうございます。 15年ぶり！の日本での年明け。。。でっかっっ〜なった姪っ子は大学受験を控えてる！！ 嬉しいというよりは、ちょっとため息交じりでもあ</description>
+    </item>
+    
+    <item>
+      <title>チートシート: brew</title>
+      <link>https://goozenlab.com/cheet/brew/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/cheet/brew/</guid>
+      <description>visit website Installと設定 $ ruby &amp;lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go) Homebrewの利用状況の統計（？）機能の無効化するために、.profileに下記の一行を追加。 export HOMEBREW_NO_ANALYTICS=1 アップデートとアップグレ</description>
     </item>
     
     <item>
