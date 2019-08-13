@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>influxDBのインストール</title>
+      <link>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</link>
+      <pubDate>Tue, 13 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</guid>
+      <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどのDBとはちょっと違い</description>
+    </item>
     
     <item>
       <title>Grafanaのインストール</title>

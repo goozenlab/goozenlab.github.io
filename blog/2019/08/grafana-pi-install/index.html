@@ -167,8 +167,9 @@ root@raspberrypi:~ # apt install grafana
 
 <p>サービスを起動時に登録、そしてスタートします。</p>
 
-<p>root@raspberrypi:~ # systemctl enable grafana-server
-root@raspberrypi:~ # systemctl start grafana-server</p>
+<pre><code>root@raspberrypi:~ # systemctl enable grafana-server
+root@raspberrypi:~ # systemctl start grafana-server
+</code></pre>
 
 <p><code>http://&lt;IP_ADDRESS&gt;:3000/login</code>にアクセスします。
 pi0ではアクセスできず、もしやと思ってSDカードをpi3に入れ替えて動かしてみると、
