@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>influxDBのインストール | goozenlab</title>
+  <title>Telegrafのインストール | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,7 +123,7 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-08-13</time>
+                    <time class="">2019-08-14</time>
 		            
                     
                     |
@@ -138,27 +138,31 @@
 
                     
                 </p>
-                <h1>influxDBのインストール</h1>
+                <h1>Telegrafのインストール</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p><img src="/images/2019-08-12-influxdb-00.png" alt="InfluxDB Install" /></p>
+<p><img src="/images/2019-08-12-telegraf-00.png" alt="Telegraf Install" /></p>
 
-<p>Grafanaで使うデーターベース、<strong>InfluxDB</strong>をインストールします。</p>
+<p>システムのモニタリングはtelegraf(ログ収集）-&gt; influxDB(データーベース）-&gt; grafana(表示）で行います。</p>
 
-<p>InfluxDBはオープンソースの中でポピュラーな
-MySQLなどのDBとはちょっと違います。</p>
+<p>事前にGrafanaとInfluxDBのインストールが必要です。
+インストールと設定はこちら</p>
 
-<p>Time Series DataBaseと呼ばれているデーターベースで、
-時系列でデーターを保存、数秒おきにデーターを収集するような用途に適した
-データーベースです。</p>
+<ul>
+<li><a href="https://goozenlab.com/blog/2019/08/grafana-pi-install/">Grafana</a></li>
+<li><a href="https://goozenlab.com/blog/2019/08/influxdb-pi-install/">InfluxDB</a></li>
+</ul>
+
+<p>に簡単ですが書いてます。</p>
 
 <h2 id="インストール">インストール</h2>
 
-<p>Debianにパッケージも登録されていますがバージョンが少し古いので、開発者のサイトより最新のパッケージを持ってきてインストールします。
-キーのダウンロード・登録、aptの更新とアップデートの作業になります。</p>
+<p>telegrafはgrafanaで使っているinfluxDBと開発元が同じです。
+いろいろなツールが出回ってますが、親和性も高いとおもいます。。
+レポジトリも同じところになります。キーを登録し、aptにリストを追加します。</p>
 
 <pre><code>root@raspberrypi:~ # sudo -Es
 root@raspberrypi:~ # curl https://repos.influxdata.com/influxdb.key | apt-key add -
@@ -168,67 +172,121 @@ root@raspberrypi:~ # vi /etc/apt/sources.list.d/influxdb.list
 deb https://repos.influxdata.com/debian buster stable
 
 root@raspberrypi:~ # apt update
-root@raspberrypi:~ # apt install influxdb
-
+root@raspberrypi:~ # apt install telegraph
 </code></pre>
 
-<p>インストールの確認</p>
+<p>そしてレポジトリのアップデートと、ソフトのインストールを行います。</p>
 
-<pre><code>$ curl -sl -I http://localhost:8086/ping
-HTTP/1.1 204 No Content
-Content-Type: application/json
-Request-Id: aea43b2a-1c5b-11e9-8003-000000000000
-X-Influxdb-Version: 1.0.2
-Date: Sun, 20 Jan 2019 02:32:50 GMT
+<h2 id="telegrafの設定">telegrafの設定</h2>
+
+<p>設定ファイルは<code>/etc/telegraf/telegraf.conf</code>にあります。
+ファイルを開き、書き出し設定部を有効化します。
+使うデーターベースはinfluxDBになるので、<strong>[[outputs.influxdb]]</strong>
+を探して編集します。</p>
+
+<p>データーベースは作成せず、パスワードもなしで動かします。（セキュリティー上はNG）</p>
+
+<pre><code>pi@tacos:~ $ sudo vi /etc/telegraf/telegraf.conf
+
+[agent]
+interval = &quot;1s&quot;
+precision = &quot;&quot;
+
+[[outputs.influxdb]]
+urls = [&quot;http://&lt;the IP of your InfluxDB server&gt;:8086&quot;]
+database = &quot;telegraf&quot;
+retention_policy = &quot;&quot;
+write_consistency = &quot;any&quot;
+timeout = &quot;5s&quot;
 </code></pre>
 
-<p>アクセスとクエリーは<strong>curl</strong>を使って出来ます。</p>
+<p>設定を有効化するために、サービスを再起動します。</p>
 
-<pre><code>$ curl http://localhost:8086/query --data-urlencode &quot;q=SHOW DATABASES&quot;
-{&quot;results&quot;:[{&quot;series&quot;:[{&quot;name&quot;:&quot;databases&quot;,&quot;columns&quot;:[&quot;name&quot;],&quot;values&quot;:[[&quot;_internal&quot;]]}]}]}
+<pre><code>pi@tacos:~ $ sudo systemctl restart telegraf.service
 </code></pre>
 
-<p>シェルは<strong>8086</strong>・Webからは<strong>8083</strong>にアクセス。とちょっと間違えやすいというか、忘れやすい。
-デビアンバージョンでは付属していないコマンド<code>influx</code>でアクセスすることもできます。</p>
+<h2 id="grafanaでの設定">Grafanaでの設定</h2>
 
-<pre><code>pi@raspberrypi:~ $ influx
-Connected to http://localhost:8086 version 1.7.7
-InfluxDB shell version: 1.7.7
-&gt; show databases
-name: databases
-name
-----
-_internal
-telegraf
-There was an error writing history file: open /home/pi/.influx_history: permission denied
-&gt;
+<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Main" /></p>
+
+<p>grafananの管理画面にログインします。</p>
+
+<p>データーベースの登録をします。上記の<code>Add data source</code>にて追加します。
+telegrafをスタートした時点から、データーの収集がされています。
+名前をつけて、画面の見えないですが、下の方にデーターベース名を入れる欄があります。</p>
+
+<p><img src="/images/2019-08-12-telegraf-datasource.png" alt="Telegraf Install" /></p>
+
+<p>そして、ひとつひとつ自分で画面を構築することもできますが、
+テンプレートもたくさん登録されています。</p>
+
+<p>私はこちらのテーマを利用させてもらっています。</p>
+
+<p><a href="https://grafana.com/dashboards/5955">https://grafana.com/dashboards/5955</a></p>
+
+<p>左に並んでいるプラスのアイコンからインポートを選択します。</p>
+
+<p>ID番号に<strong>5955</strong>を入力すると、データーをダウンロードしてきます。データーベース等を指定して設定します。</p>
+
+<p><img src="/images/2019-08-12-telegraf-import-theme.png" alt="Telegraf Install" /></p>
+
+<p>ちょっと変更してますが、画面はこちらのようになります。</p>
+
+<p><img src="/images/2019-08-14-grafana-now.png" alt="Grafana 2ays" /></p>
+
+<hr />
+
+<h2 id="おまけ">おまけ</h2>
+
+<h3 id="cpuの温度と周波数">CPUの温度と周波数</h3>
+
+<p>CPUの温度は<code>/sys/class/thermal/thermal_zone0/temp</code>にあります。
+周波数はスクリプトを作って収集時に実行させます。</p>
+
+<pre><code>#!/bin/bash
+# 
+# CPU Frequency: rpi-freq
+#
+
+echo &quot;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000 ))&quot;
+</code></pre>
+
+<p>スクリプトは、<code>/usr/local/bin/</code>に保存して、<code>chmod +x</code>で実行権を与えておきます。</p>
+
+<p>telegrafでの設定は、以下を追加します。</p>
+
+<pre><code>[[inputs.file]] 
+  files = [&quot;/sys/class/thermal/thermal_zone0/temp&quot;]
+  name_override = &quot;cpu_temperature&quot;
+  data_format = &quot;value&quot;
+  data_type = &quot;integer&quot;
+  
+[[inputs.exec]]
+  commands = [ &quot;/usr/local/bin/rpi-freq&quot; ]
+  name_override = &quot;cpu_frequency &quot;
 </code></pre>
 
 <!--
-## Pythonよりアクセス。
-
-python3よりアクセスをしたい時にはライブラリーがあります。
 
 ```
-pi@raspberrypi:~ $ sudo apt install python3-influxdb
+#!/bin/bash
+
+awk '{print $1/1000}' /sys/class/thermal/thermal_zone0/temp
+
 ```
+
+![Grafana Main](/images/2019-07-12-grafana-main.png)
+![Grafana Login](/images/2019-07-12-grafana-login.png)
+
+
 -->
-
-<h2 id="追記">追記</h2>
-
-<p>Pi 3A+のメモリーは512MBで少なくはないのですが、Versiopn 17.* は結構メモリー食いで、パッケージも大きい,。
-デビアンのBusterのVersion16.*のものはそこまでではないようだったので、ダウングレードして試しに使ってみました。（にしてもかなりのメモリーを消費してますが。。）</p>
-
-<pre><code>Get:1 https://repos.influxdata.com/debian buster/stable armhf influxdb armhf 1.7.7-1 [46.6 MB]
-Get:1 http://raspbian.raspberrypi.org/raspbian buster/main armhf influxdb armhf 1.6.4-1 [3,729 kB]
-</code></pre>
-
-<p>もう少し、フットプリントの小さいものを物色するかな。。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
+	
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
 	
 	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
 	
@@ -237,8 +295,6 @@ Get:1 http://raspbian.raspberrypi.org/raspbian buster/main armhf influxdb armhf 
 	<li><a href="/blog/2019/08/firefly-pi-install/">Firefly iiiをインストール</a></li>
 	
 	<li><a href="/blog/2019/08/pia-running-test/">パイ力がつきるまで・4</a></li>
-	
-	<li><a href="/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a></li>
 	
 </ul>
 

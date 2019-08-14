@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 13 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Telegrafのインストール</title>
+      <link>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</link>
+      <pubDate>Wed, 14 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</guid>
+      <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。 事前にGrafana</description>
+    </item>
     
     <item>
       <title>influxDBのインストール</title>
