@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mumble on goozenlab</title>
+    <link>https://goozenlab.com/tags/mumble/</link>
+    <description>Recent content in mumble on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
+    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 17 Aug 2019 12:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://goozenlab.com/tags/mumble/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>設定ファイルいじる時に有効なショートカット</title>
+      <link>https://goozenlab.com/blog/2019/08/useful-terminal-shortcut-01/</link>
+      <pubDate>Sat, 17 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/useful-terminal-shortcut-01/</guid>
+      <description>最近、ガリガリとアップルのアプストアーから抹殺されている拙作のiApp、 新しいiOSへのアプリの更新をそっちのけで、 ラズベリー・パイをいじってます。 ちょっと、ト</description>
+    </item>
+    
+  </channel>
+</rss>
