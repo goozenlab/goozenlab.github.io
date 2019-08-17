@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>天候情報を取得 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-08-18</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/logging">logging</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>天候情報を取得</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p><img src="/images/2019-08-13-openweathermap-00.png" alt="Open Weather Map" /></p>
+
+<p>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが
+<a href="https://openweathermap.org">https://openweathermap.org</a>
+より提供されています。
+行きたい国々の天気をチェック、旅情にあふれます。</p>
+
+<p>最近の流行っている、Grafanaを使ってグラフ化をしたいと思います。</p>
+
+<h2 id="apiキーの取得">APIキーの取得</h2>
+
+<p>APIの使い方はマニュアルに書いてある通りで、まずは無料登録を行ってAPIキーを取得します。
+こちらのサイト
+<a href="https://openweathermap.org/api">https://openweathermap.org/api</a>
+にアクセスして、「Current weather data」の「Subscribe」ボタンを押します。
+一番左の「Free」から、「Get API key and Start」ボタンを押します。
+すると、使い方などが表示されるので説明に沿って進めればOKです。</p>
+
+<p>Freeライセンスは、1分間に60回までしか使ってはいけない（超えると制限される）ので、
+使用回数には注意してください。</p>
+
+<h2 id="天候の取得">天候の取得</h2>
+
+<p>APIキーが取得できたら天候を取得してみます。</p>
+
+<p>APIには天候を取得したい地域の「地名」もしくは「ID」を指定する事ができますが、推奨されているID指定で進めます。</p>
+
+<p>天候を取得したい地域のIDを調べたいので、Webブラウザで検索してみます。</p>
+
+<p>東京の場合はURLにこのように表示されると思います。
+<code>https://openweathermap.org/city/1850147</code></p>
+
+<p><img src="/images/2019-08-14-openweathermap-tokyo.png" alt="Open WEather Map TOKYO" /></p>
+
+<p>末尾の<strong>1850147</strong>が都市名を示すIDです。</p>
+
+<pre><code>http://api.openweathermap.org/data/2.5/weather?id={CityID}&amp;units=metric&amp;APPID={APIKey}
+</code></pre>
+
+<p>APIをアクセスをすると下のようなJSON形式のファイルが帰ってきます。
+ほぼ必要なデーターは網羅してると思います。</p>
+
+<pre><code>{
+  &quot;coord&quot;: {
+    &quot;lon&quot;: -155.67,
+    &quot;lat&quot;: 20.02
+  },
+  &quot;weather&quot;: [
+    {
+      &quot;id&quot;: 800,
+      &quot;main&quot;: &quot;Clear&quot;,
+      &quot;description&quot;: &quot;clear sky&quot;,
+      &quot;icon&quot;: &quot;01n&quot;
+    }
+  ],
+  &quot;base&quot;: &quot;stations&quot;,
+  &quot;main&quot;: {
+    &quot;temp&quot;: 19.29,
+    &quot;pressure&quot;: 1015,
+    &quot;humidity&quot;: 69,
+    &quot;temp_min&quot;: 8.89,
+    &quot;temp_max&quot;: 25
+  },
+  &quot;visibility&quot;: 16093,
+  &quot;wind&quot;: {
+    &quot;speed&quot;: 2.6,
+    &quot;deg&quot;: 110
+  },
+  &quot;clouds&quot;: {
+    &quot;all&quot;: 1
+  },
+  &quot;dt&quot;: 1565878322,
+  &quot;sys&quot;: {
+    &quot;type&quot;: 1,
+    &quot;id&quot;: 7872,
+    &quot;message&quot;: 0.0088,
+    &quot;country&quot;: &quot;US&quot;,
+    &quot;sunrise&quot;: 1565884966,
+    &quot;sunset&quot;: 1565931108
+  },
+  &quot;timezone&quot;: -36000,
+  &quot;id&quot;: 5854571,
+  &quot;name&quot;: &quot;Waimea&quot;,
+  &quot;cod&quot;: 200
+}
+</code></pre>
+
+<p>※{APIKey}は自分のAPIキーに、{CityID}は都市名を示すID（東京は”1850147″）に置き換えてください。</p>
+
+<p>ファイルをローカルにダウンロードします。</p>
+
+<pre><code>curl -o /PATH/OUT_PUT_FILE.json &quot;https://api.openweathermap.org/data/2.5/weather?id=$CityID&amp;units=metric&amp;appid=$APPID&quot;
+</code></pre>
+
+<h2 id="jsonファイルをinfluxdbへ登録-by-shell">JSONファイルをInfluxdbへ登録 by shell</h2>
+
+<p>JSON形式のデータをbashで簡単に扱うためにjqを入れます。
+(参考：<a href="https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61">https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61</a>)</p>
+
+<pre><code>pi@raspberry:~ $ sudo apt install jq
+</code></pre>
+
+<p>取得したJSONファイルを引数に与えるとデータベースに登録するスクリプトを作成します。
+実行は
+<code>sh weather_update.sh /PATH/OUT_PUT_FILE.json</code>
+で行います。</p>
+
+<pre><code>#!/bin/bash
+#
+# weather_update.sh
+#
+
+DBNAME=&quot;INFLUXDB_NAME&quot; #事前に作成する必要はないです。ユーザー・パスワード設定なし。
+
+# JSONファイルを読み込む
+JSON=`cat $1`
+
+# 各要素を変数に代入
+dt=$(echo ${JSON} | jq &quot;.dt&quot;)
+city=$(echo ${JSON} | jq &quot;.name&quot; | sed &quot;s/\&quot;//g&quot;)
+
+temp=$(echo ${JSON} | jq &quot;.main&quot; | jq &quot;.temp&quot;)
+temp_min=$(echo ${JSON} | jq &quot;.main&quot; | jq &quot;.temp_min&quot;)
+temp_max=$(echo ${JSON} | jq &quot;.main&quot; | jq &quot;.temp_max&quot;)
+pres=$(echo ${JSON} | jq &quot;.main&quot; | jq &quot;.pressure&quot;)
+humi=$(echo ${JSON} | jq &quot;.main&quot; | jq &quot;.humidity&quot;)
+
+## データベースに書き込む
+curl -i -XPOST &quot;http://localhost:8086/write?db=${DBNAME}&amp;precision=s&quot; \
+--data-binary \
+&quot;weather,city=${city} \
+temp=${temp},temp_min=${temp_min},temp_max=${temp_max},pressure=${pres},humidity=${humi} \
+${dt}&quot;
+</code></pre>
+
+<p>あとは、場所によって更新間隔がまちまちですが、
+cronに登録して定期的にデータの取得＆データベースの登録を実行すればOK！</p>
+
+<p>しばらくしてデータが貯まってきたら、「ダッシュボードの作成」の所と同じ手順でパネルに登録すれば完了です。</p>
+
+<p><img src="/images//2019-08-18-grafana-weather.png" alt="Grafana with OpenWeatherMap" /></p>
+
+<p>※ 上記のスクリプトは<code>city</code>の所でエラーが出るかもしれません、、現在スクリプトをパイソンに書き換え中。</p>
+
+<h2 id="おまけ-不快指数の追加">おまけ：不快指数の追加</h2>
+
+<p>快適度は気温だけでは掴みづらいので、日本ではおなじみ？の不快指数を計算します。
+<strong>65~75</strong>くらいが数値上快適になります。Tシャツ短パン快適生活は70位からかな、、</p>
+
+<blockquote>
+<p>不快指数とは夏の蒸し暑さを数量的に表した指数で、温熱指標の一つ。
+不快指数が75を越えると人口の一割が不快になり、<strong>80</strong>を越えると全員が不快になると言われている。また、日本人の場合、不快指数が77になると不快に感じる人が出はじめ、85になると93%の人が暑さによる不快を感じると言われている。</p>
+
+<p>from <a href="https://ja.wikipedia.org/wiki/不快指数">https://ja.wikipedia.org/wiki/不快指数</a></p>
+</blockquote>
+
+<p>シェルで小数点計算を入れるため<code>bc</code>をインストールします。</p>
+
+<pre><code>pi@raspberry:~ $ sudo apt install bc
+</code></pre>
+
+<p>不快指数の数式は幾つかあるようですが、
+日本で使われているもので計算します。
+以下の計算結果をデーターベース登録時に追加します</p>
+
+<pre><code>dii=$(echo &quot;scale=4; 0.81 * $temp + 0.01 * $humi * (0.99 * $temp - 14.3) + 46.3&quot; | bc)
+</code></pre>
+
+<p>さて、現在滞在先はしとしと雨が降るグリーンシーズン（新しい雨季の別名、とても良いネーミングだと思う。）で、
+日本の梅雨ほどではないけど、ちょっと不快。。
+指数的には、80くらいです。春先に行った酷暑インドでは、85オーバーでまさに修行でした。
+実家のある<strong>東京は85</strong>とかで、やはり、、不快指数はトップです。</p>
+
+<p>データーが溜まっていくとちょっと面白いですねぇ。
+滞在先のネット環境が途切れ途切れですが、、雲量などを追加してこんな感じ、
+これで、だいたい天気がつかめるかな。（どこいこかなぁ。。）</p>
+
+<p>引き続き作業中、次回はビットコインの所得・グラフ化、行ってみよー。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

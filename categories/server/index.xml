@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 17 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 09:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>天候情報を取得</title>
+      <link>https://goozenlab.com/blog/2019/08/openweathermap-settings/</link>
+      <pubDate>Sun, 18 Aug 2019 09:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/openweathermap-settings/</guid>
+      <description>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが https://openweathermap.org より提供されています。 行きたい国々の天気をチェック、旅情にあふれます。 最近の流行っ</description>
+    </item>
     
     <item>
       <title>設定ファイルいじる時に有効なショートカット</title>
