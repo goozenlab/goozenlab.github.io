@@ -129,7 +129,7 @@
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/sync">sync</a> 
                     
 
                     
@@ -190,12 +190,12 @@ $ syncthing
 <h2 id="自動起動">自動起動</h2>
 
 <p>サーバにての作業が続きます。syncthingを起動時に動かすために、syncthingサービスを
-systemdに登録します。ユーザー名「tacos」は、ご自身のものに変えて実行してください。</p>
+systemdに登録します。ユーザー名「pi」は、ご自身のものに変えて実行してください。</p>
 
 <pre><code>$ sudo -Es
-# cp /lib/systemd/system/syncthing@.service /etc/systemd/system/syncthing@tampopo.service
-# systemctl restart syncthing@tacos.service
-# systemctl enable syncthing@tacos.service
+# cp /lib/systemd/system/syncthing@.service /etc/systemd/system/syncthing@pi.service
+# systemctl start syncthing@pi.service
+# systemctl enable syncthing@pi.service
 </code></pre>
 
 <p>参照：<a href="https://docs.syncthing.net/users/autostart.html#linux">https://docs.syncthing.net/users/autostart.html#linux</a></p>

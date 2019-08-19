@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Syncthingの詳細設定 | goozenlab</title>
+  <title>Unisonをビルドする | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,13 +123,13 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-07-01</time>
+                    <time class="">2019-08-19</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/sync">sync</a> 
+                    tags:<a href="https://goozenlab.com/tags/sync">sync</a> 
                     
 
                     
@@ -138,83 +138,111 @@
 
                     
                 </p>
-                <h1>Syncthingの詳細設定</h1>
+                <h1>Unisonをビルドする</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>デバイスの登録と、同期設定を行います。インストールと初期設定は<a href="https://goozenlab.com/blog/2019/06/syncthing-install/">こちら</a>にあります。ご参照の程。</p>
+<p>滞在先、自転車がパンクしました。近所の自転車屋さんが割としっかりしていて、
+なかなかの対応をしていただきました。ありがたや。</p>
 
-<p><img src="/images/2019-06-30-syncthing-install-01.png" alt="" /></p>
+<p>さて、せっせと、設定ファイルやスクリプトを書いてます。</p>
 
-<h2 id="デバイスの登録">デバイスの登録</h2>
+<p>端末にて、編集、サーバーでもちょっとだけ変更・実行・確認、そして端末にてまた編集。。</p>
 
-<p>回線がつながっている状況で行えば、
-Add Remove Deviceボタンより始めます。
-なぜだか分かりませんが、マックブック側からだと、サーバー側のアドレスを見つけることができます。近くのデバイスリストから選び、デバイス名を入力して保存します。</p>
+<p>「少しだったらサーバーの方で直して」ってのが悪で、先祖返りを起こしたり。。
+ファイルのやり取りがちょっと面倒になる。</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-device-01.png" alt="Syncthing Device Settings" /></p>
+<p>既にインストールしている<code>syncthing</code>で同期しながらってのも考えたけれど、
+回線が不安定なのもあり今ひとつ信用に欠ける。
+やはりここは、半自動でいいやと、、
+割と利便性が高そうな<code>unison</code>でスクリプトを扱うフォルダー同期することにする。
+ついでに端末側のアップル・スクリプトとかのバックアップ先にもなるので、
+一石二鳥にもなるか。。</p>
 
-<p>少しすると、サーバー側で、マックブックから同期リクエストの確認が飛んできます。
-緑ボタンのAdd Deviceを押して、デバイス名を入力して登録します。</p>
+<p><img src="/images/2019-08-17-unison-00.png" alt="Unison" /></p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-device-00.png" alt="Syncthing Device Settings" /></p>
+<p>さて、このunisonの問題点は同じバージョンでなければ動かないということで、
+（まぁ、あっちがたてば、こっちがへっこむみたいな。。）</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-device-02.png" alt="Syncthing Device Settings" /></p>
+<p>で、やはりバージョンが合いません。
+mac.brewの環境では<code>version 2.51.2</code>、
+ラズビアン・バスターでは<code>version 2.48.4</code>が
+インストールされます。</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-device-03.png" alt="Syncthing Device Settings" /></p>
+<p>brewでは<strong>ダウングレード</strong>も可能らしいですが、該当のファイルが見つけられず断念。</p>
 
-<p>端末が登録されて、お互いから確認ができます。</p>
+<p>ということで、
+ラズビアン・パイ側のunisonを新しいバージョンにするしかない。
+しかし、残念ながら<code>sid</code>バージョンでも同じバージョンはなく、
+開発サイトにあるバイナリーはパイと互換性のあるものは存在しないので、
+<code>ビルド</code>することになる。（ちょっと嬉しかったり。）</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-device-04.png" alt="Syncthing Device Settings" /></p>
+<h2 id="build-unison-v2-51-2">Build Unison v2.51.2</h2>
 
-<h2 id="同期設定">同期設定</h2>
+<p><img src="/images/2019-08-17-unison-releaseM.png" alt="Unison" /></p>
 
-<p>同期するフォルダーを設定します。スクリーンショットではすでに幾つかの端末を登録している状態ですが、複数のアンドロイド、パイ・サーバーとマックブックを同期します。（非常に残念ながらiOSにはアプリがありませんので、蚊帳の外です。）</p>
+<p>わからんなりに進める。以前にもどこかで同様の作業したような気がして、
+<code>ocaml</code>が必要だったとの記憶がある。
+ビルドのツールと一緒にダウンロードします。</p>
 
-<p>マックブックよりFoldersの右下にあるAdd Folderボタンを押して登録します。ラベル名と同期するフォルダーのパスを入力します。フォルダーをドラッグ＆ドロップすることもできます。</p>
+<p>そしてギットハブよりマックと同じバージョンのソースコードをとってきます。
+最新のバージョンでした。</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-folder-01.png" alt="Syncthing folder settings" /></p>
+<pre><code>pi@raspberry:~ $ sudo apt-get install build-essential ocaml-nox
+pi@raspberry:~ $ wget -c https://github.com/bcpierce00/unison/archive/v2.51.2.zip
+pi@raspberry:~ $ unzip v2.51.2.zip
+pi@raspberry:~ $ cd unison-2.51.2
+pi@raspberry:~/unison-2.51.2 $ make
+</code></pre>
 
-<p>上部のタブ：Shareingを選択しシェアーする相手を選びます。登録されているデバイスが表示されますので、チェックマーックを入れます。</p>
+<p>解凍して、ビルドします。<code>make</code>で警告が幾つか出ますが5分ぐらいで終了しました。
+<code>make install</code>はトンチンカンな感じでエラーが出たので、
+バイナリーを直接<code>/usr/bin/</code>へ持って行くことにする。
+で、ちょっと見てみると、これがなんかたらい回しな感じです。
+理由があるのかもしれなので、流儀に合わせます（？）
+<code>update-alternatives</code>なんてコマンドが、あるんですね。。。
+でも、manのファイルを消さんでも。。</p>
 
-<p><img src="/images/2019-07-01-syncthing-settings-folder-02.png" alt="Syncthing folder settings" /></p>
+<pre><code>pi@raspberry:~/unison-2.51.2 $ ls -la /usr/bin/ | grep unison
+lrwxrwxrwx  1 root root          24 Aug 17 19:03 unison -&gt; /etc/alternatives/unison
+lrwxrwxrwx  1 root root          13 Oct 30  2017 unison-2.48 -&gt; unison-2.48.4
+-rwxr-xr-x  1 root root     2221604 Oct 30  2017 unison-2.48.4
+lrwxrwxrwx  1 root root          13 Oct 30  2017 unison-latest-stable -&gt; unison-2.48.4
 
-<p>サーバー側のSyncthingにて、デバイスの登録と同じようにフォルダーのシェアーのリクエストが飛んできます。問題なければAddを押して、サーバー側の同期先フォルダーを指定します。事前にフォルダーを作っておく必要はありません。手打ちですので打ち間違いにご注意のほど。</p>
+pi@raspberry:~/unison-2.51.2 $ ls -la /etc/alternatives/ | grep unison
+lrwxrwxrwx   1 root root   29 Aug 17 19:03 unison -&gt; /usr/bin/unison-latest-stable
+lrwxrwxrwx   1 root root   45 Aug 17 19:03 unison.1.gz -&gt; /usr/share/man/man1/unison-latest-stable.1.gz
 
-<p><img src="/images/2019-07-01-syncthing-settings-folder-04.png" alt="Syncthing folder settings" /></p>
+pi@raspberry:~/unison-2.51.2 $ sudo mv src/unison /usr/bin/unison-2.51.2
+pi@raspberry:~/unison-2.51.2 $ sudo update-alternatives --install /usr/bin/unison unison /usr/bin/unison-2.51.2 50
 
-<p>以上にて、フォルダーの同期ができます。</p>
+pi@raspberry:~/unison-2.51.2 $ ls -la /etc/alternatives/ | grep unison
+lrwxrwxrwx   1 root root   22 Aug 17 19:47 unison -&gt; /usr/bin/unison-2.51.2
+pi@raspberry:~/unison-2.51.2 $ ls -la /usr/bin/ | grep unison
+lrwxrwxrwx  1 root root          24 Aug 17 19:03 unison -&gt; /etc/alternatives/unison
+lrwxrwxrwx  1 root root          13 Oct 30  2017 unison-2.48 -&gt; unison-2.48.4
+-rwxr-xr-x  1 root root     2221604 Oct 30  2017 unison-2.48.4
+-rwxr-xr-x  1 root root     2991484 Aug 17 19:47 unison-2.51.2
+lrwxrwxrwx  1 root root          11 Aug 17 19:33 unison-latest-stable -&gt; unison-2.51
 
-<p>※ いろいろ設定をいじっていて、ファイルが消されてしまったことがありますので、複数の端末で同期を行う場合は同期するフォルダーを<strong>空の状態</strong>から始めた方が良いかもしれません。いずれにせよ、<strong>バックアップ</strong>はしておきましょうね。</p>
+pi@raspberry:/usr/bin $ unison -version
+unison version 2.51.2 (ocaml 4.05.0)
+</code></pre>
 
-<hr />
+<p>で、とりあえずバージョンが揃いました。</p>
 
-<p>ローカル接続になるので、今までのDropboxを使った形に比べて作業もあっという間に終わります。</p>
-
-<p>設定上でもう一つ、今回の使用はローカルネットワーク内のみにての運用になるので、設定のグローバルディスカバリーのチェックマークは外しておきます。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-01.png" alt="Syncthing setting" /></p>
-
-<p>ちょっとしたファイルのやり取り、固定した共有ファイルの同期にはなかなか使えるソフトです。私は携帯からは画像ファイルの取り込み、端末同士ではDesktopやDownloadフォルダーの同期をしてます。</p>
-
-<p>パイ・サーバーなど構築している人や、サーバーがなくても同期可能なのでオススメです。</p>
+<p>めでたし。ちゃんと使えてますよぉ。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
+	<li><a href="/blog/2019/07/syncthing-settings/">Syncthingの詳細設定</a></li>
+	
 	<li><a href="/blog/2019/06/syncthing-install/">Syncthingのインストールと設定</a></li>
-	
-	<li><a href="/blog/2019/06/raspbian-pi-zero-install/">ラズベリー・パイにラズビアンをお頭無しインストール</a></li>
-	
-	<li><a href="/blog/2019/04/running-test-3/">パイ力がつきるまで・3</a></li>
-	
-	<li><a href="/blog/2019/04/test-running-mobile-pie-2/">パイ力がつきるまで・２</a></li>
-	
-	<li><a href="/blog/2019/04/building-kernel/">パイで64bitカーネルビルド</a></li>
 	
 </ul>
 
