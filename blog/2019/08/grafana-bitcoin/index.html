@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ビットコイン価格をGrafanaでグラフ化 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-08-20</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/logging">logging</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>ビットコイン価格をGrafanaでグラフ化</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>チェンライ二日連続晴天。</p>
+
+<p>ビットコイン、どっかーーっと景気良く価格急上昇で年金確保！と行きたいところですが、、
+あと10倍ぐらいに、早いことたのんませう。</p>
+
+<p>ビットコインの価格を所得して、Grafanaでグラフ化します。</p>
+
+<p><img src="/images/2019-08-14-grafana-finance-00.png" alt="Grafana" /></p>
+
+<p>さて、日々トレードなどをしているわけではないので、
+とりあえず上記のような裏で流れを確認するくらいの感覚のものを、と考えてます。</p>
+
+<p>価格の推移とか、他の為替との関連性など、をチラッと見れればよいなと、、</p>
+
+<p>まぁ、改めて見ると、値動きがすごいですねぇ。。</p>
+
+<h2 id="事前準備">事前準備</h2>
+
+<p>まずはinfluxDBにて、新しいデーターベス<code>finance</code>を作ります。（お好きな名前に変更してください）</p>
+
+<pre><code>pi@tacos:~ $ influx
+Connected to http://localhost:8086 version 1.7.7
+InfluxDB shell version: 1.7.7
+&gt; create database finance
+&gt; show databases
+name: databases
+name
+----
+_internal
+telegraf
+finance
+&gt; exit
+</code></pre>
+
+<p>外部との接触のないサーバーですので、セキュリティーは考慮してません。
+ザルですので、外部に開いている環境の方は<strong>くれぐれも対策</strong>を施してください。</p>
+
+<h3 id="api">API</h3>
+
+<p>ビットコインの取引価格の所得をします。
+取引所各所からAPIが提供されているようですが、面倒もなく有名どころの<strong>Bitflyer</strong>さんを利用させていただきます。
+パイソンのライブラリーも提供されています。</p>
+
+<p>インストールは、pipで一発、</p>
+
+<pre><code>pi@raspberry:~ $ pip install pybitflyer
+-bash: pip: command not found
+</code></pre>
+
+<p>と、色々入れているからすでに入ってるだろうと思いまいしたが、
+インストールされていなくて嫌われる。</p>
+
+<p>でも、gemみたいで、あんまり好きでないんですよね。。
+さて、パイソンのバージョンを確かめたところ、</p>
+
+<pre><code>pi@raspberry:~ $ python --version
+Python 2.7.16
+pi@raspberry:~ $ python3 --version
+Python 3.7.3
+</code></pre>
+
+<p>いつの間にか2つのバージョンがインストールされている。
+3.5より上のバージョンでは、<code>python3-pip</code>というパッケージがあるようなので、
+新しい方をインストールする。</p>
+
+<pre><code>pi@raspberry:~ $ sudo apt install python3-pip
+pi@raspberry:~ $ pip3 install pybitflyer
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting pybitflyer
+  Downloading https://www.piwheels.org/simple/pybitflyer/pybitflyer-0.1.9-py3-none-any.whl
+Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from pybitflyer) (2.21.0)
+Installing collected packages: pybitflyer
+Successfully installed pybitflyer-0.1.9
+pi@raspberry:~ $
+</code></pre>
+
+<p>これにて、事前の準備完了。次はデーターの取り込み等を行います。</p>
+
+<h2 id="データの取込-登録">データの取込・登録</h2>
+
+<p>pythonでデーターを落とし、そのままinfluxDBへ登録も一発で出来ます。
+（influxDB用のパイソン・モジュールがあります。）
+でもなぜか、以前書いたスクリプトが、
+<code>JASON -- jq --&gt; sh</code>
+でinfluxDBへ登録という形を取っていたので、
+そのまま踏襲しました。（なんでこうやった？？自問。でも不問。）
+適当なシェル・スクリプトですので参考まで、、</p>
+
+<p>まず、JSON形式のデータをbashで扱うために<code>jq</code>というライブラリーが必要ですので、
+<!-- (参考：https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61) -->
+インストールします。</p>
+
+<pre><code>pi@raspberry:~ $ sudo apt install jq
+</code></pre>
+
+<p>値の所得は、パイソン・スクリプトでJSON形式で落とします。
+<code>get_btc_jpy.py</code> を作り編集し、実行権を与えておきます。</p>
+
+<pre><code>pi@raspberry:~ $ sudo vi /usr/local/bin/get_btc_jpy.py
+
+import pybitflyer
+import json
+
+api = pybitflyer.API()
+print(json.dumps(api.ticker(product_code = &quot;BTC_JPY&quot;),sort_keys=True, indent=4))
+
+
+pi@raspberry:~ $ sudo chmod +x /usr/local/bin/get_btc_jpy.py
+</code></pre>
+
+<p>単なる書き出しスクリプトなのでファイル<code>btc_jpy.json</code>に落とすには、以下のようにして保管します。</p>
+
+<pre><code>python3 /usr/local/bin/get_btc_jpy.py &gt; /&lt;&lt;書き出し先&gt;&gt;/btc_jpy.json
+</code></pre>
+
+<p>次にそのファイルをシェルで整形してデーターベースへ登録します。
+<code>update_btc_jpy.sh</code>というファイルを作ります</p>
+
+<p><strong>ltp</strong>は最終取引価格（Last Time Price)。お好みのようにご変更のほど、</p>
+
+<p>InfluxDBへの登録は<code>curl</code>を使って放り込みます。</p>
+
+<pre><code>curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;currency,code=BTC_JPY exchage_rate=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&quot;
+</code></pre>
+
+<p>最初の部分は登録するデーターベース設定、後半は登録する内容になります。</p>
+
+<p>ちょっと分解して、前半は以下のようにホスト・ポート・データーベース名。</p>
+
+<pre><code>http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE
+</code></pre>
+
+<p>で後半部
+<code>&quot;currency,code=BTC_JPY price=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&quot;</code>
+を少し細かく見ると、</p>
+
+<ul>
+<li>currency：テーブルのヘッダーの様な感じ</li>
+<li>code=BTC_JPY：タグ</li>
+<li>price=$ltp：残り部分は数値（小数点の位置などは後々変更可能）</li>
+<li>$timestamp：最後に時間（ちょっとフォーマットが独特）</li>
+</ul>
+
+<p>になります。</p>
+
+<p>データーベースに関しての理解はあまりないのですが、<br />
+finance(DB) &gt; currency (他：銀行口座 [savings]など） &gt; code: BTC_JP (例：JPY_USD、貯金額など）<br />
+という感じでよいのかな。。と思ってます。。
+減っていくばかりの銀行口座の残高もトラッキングしようかなと思ってます。（地獄の可視化）</p>
+
+<pre><code>#!/bin/bash
+#
+# update_btc_jpy.sh
+#
+# OUTPUT
+# {
+#     &quot;best_ask&quot;: 583895.0,
+#     &quot;best_ask_size&quot;: 0.50000013,
+#     &quot;best_bid&quot;: 582811.0,
+#     &quot;best_bid_size&quot;: 0.385,
+#     &quot;ltp&quot;: 583651.0,
+#     &quot;product_code&quot;: &quot;BTC_JPY&quot;,
+#     &quot;tick_id&quot;: 21304010,
+#     &quot;timestamp&quot;: &quot;2019-04-08T00:44:56.163&quot;,
+#     &quot;total_ask_depth&quot;: 1247.87214404,
+#     &quot;total_bid_depth&quot;: 1694.48375804,
+#     &quot;volume&quot;: 690365.02082555,
+#     &quot;volume_by_product&quot;: 5587.33741726
+# }
+#
+
+python3 /usr/local/bin/get_btc_jpy.py &gt; /home/pi/.finance/btc_jpy.json
+
+INFLUXDB_HOST=127.0.0.1
+INFLUXDB_PORT=8086
+INFLUXDB_DATABASE=finace
+
+JSON=`cat /home/pi/.finance/btc_jpy.json`
+
+# parse json 
+timestamp=$(date +%s%N)
+product_code=$(echo ${JSON} | jq &quot;.product_code&quot;)
+ltp=$(echo ${JSON} | jq &quot;.ltp&quot;)
+best_ask=$(echo ${JSON} | jq &quot;.best_ask&quot;)
+best_bid=$(echo ${JSON} | jq &quot;.best_bid&quot;)
+volume=$(echo ${JSON} | jq &quot;.volume_by_product&quot;)
+
+## Write to InfluxDB
+curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;currency,code=BTC_JPY price=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&quot;
+</code></pre>
+
+<p>そして、このスクリプトをバックグラウンドで自動的に走らせます。毎分更新での設定になってます。</p>
+
+<pre><code>pi@raspberry:~ $ crontab -e
+
+# Edit this file to introduce tasks to be run by cron.
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+* * * * * /home/pi/scripts/update_btc_jpy.sh
+
+</code></pre>
+
+<p>5分おきに更新したいのでであれば、</p>
+
+<pre><code>*/5 * * * * /home/pi/scripts/update_btc_jpy.sh
+</code></pre>
+
+<p>私は売り買いが激しい人でないので、15分おきにしました。
+（値動きが激しいので、少しこまめにチェック。）</p>
+
+<pre><code>*/15 * * * * /home/pi/scripts/update_btc_jpy.sh
+</code></pre>
+
+<p>これで、取り込みと、データーベースへの登録が完了。</p>
+
+<p>※ pyhthonで書き換え中ですが、日付の扱いでちょっと戸惑ってます。。あとはすごくスッキリするんですけどね。
+のちの追記します。</p>
+
+<h2 id="grafana">Grafana</h2>
+
+<p>取り込んだデーターをGrafanaを使って表示します。
+データーソースの登録とグラフの作成が必要になります。
+sqlの知識のある人は複雑なグラフを作り出すことも可能です。
+（あたしゃにはちょっと、、ぼらりてぃーとかも必要ないし、、）</p>
+
+<p>さて、</p>
+
+<h3 id="データーソースの登録">データーソースの登録</h3>
+
+<p>デーダーベースを登録します。
+パスワードの設定などもしていないので、基本デフォルトの設定で問題ないです。
+割とすっきりアクセスできます。</p>
+
+<p>まずは、左の歯車のアイコンより、データーソースへ、</p>
+
+<p><img src="/images/2019-08-14-grafana-datasource-00.png" alt="Grafana Datasource Settings" /></p>
+
+<p>ちょっと、既に幾つかありますが、右上部の追加を押します。そして、influxdbを選択します。</p>
+
+<p><img src="/images/2019-08-14-grafana-datasource-01.png" alt="Grafana Datasource Settings" /></p>
+
+<p>登録名、接続ポート（デフォルト）を設定、データーベース名を記入して、</p>
+
+<p><img src="/images/2019-08-14-grafana-datasource-02.png" alt="Grafana Datasource Settings" /></p>
+
+<p>保存・確認ボタンを押し、エラーがなければ接続完了です。</p>
+
+<h3 id="グラフの作成">グラフの作成。</h3>
+
+<p>色々できます。ヒゲのついた奴とかも出来るんか？はちょっと分かりませんが、、
+とりあえず簡単な状況情報、折れ線グラフの２種類を作成します。</p>
+
+<h4 id="状況情報-シングル-スタッツ">状況情報：シングル・スタッツ</h4>
+
+<p>まずは、所有額の表示。どかっと、保持コインの総額を表示します。（とりあえず、パイ・サーバーちゅうことで、<code>3.141592653589793</code>
+で計算します。)</p>
+
+<p>一喜一憂しないようにしてくださいね。目標額との差額表など、お好みのように変更してください。</p>
+
+<p>グラフアイコンのパネルアイコンをクリックします。ビジュアルを最初に選択します。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-00.png" alt="Grafana Single stats" /></p>
+
+<p>シングルスタットをえらびます。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-01.png" alt="Grafana Single stats" /></p>
+
+<p>表示するデーターを設定していきます。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-02.png" alt="Grafana Single stats" /></p>
+
+<p>クエリーの欄では、先ほど設定したデーターソースを選択。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-03.png" alt="Grafana Single stats" /></p>
+
+<p>表示データーは、データーソースの<code>currency: code:BTC_JPY</code>になります。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-04.png" alt="Grafana Single stats" />
+<img src="/images/2019-08-14-grafana-single-stats-05.png" alt="Grafana Single stats" /></p>
+
+<p>そして、総額表示のため、価格の後に計算を追加します。この場合、3.1415..をかけてます。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-06.png" alt="Grafana Single stats" /></p>
+
+<p>総額が表示されます。グラフの設定は左の大きなグラフのアイコンで行います。
+単位を円通貨にします。円マーク付きで総額表示されます。微妙。。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-07.png" alt="Grafana Single stats" /></p>
+
+<p>パネルのタイトルは左の大きめのアイコンの一番下より変更します。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-08.png" alt="Grafana Single stats" /></p>
+
+<h4 id="グラフ">グラフ</h4>
+
+<p>パネル追加より、<code>Add Query</code>でグラフ表示になります。</p>
+
+<p><img src="/images/2019-08-14-grafana-single-stats-09.png" alt="Grafana Single stats" /></p>
+
+<p>グラフを選択してスタートすることもできます。</p>
+
+<p><img src="/images/2019-08-14-grafana-graf-01.png" alt="Grafana Graf Settings" />
+<img src="/images/2019-08-14-grafana-graf-02.png" alt="Grafana Graf Settings" /></p>
+
+<p>表示するデーターの設定を行います。基本上記のシングル・スタッツと同じです。
+データーソースの内の<code>currency</code>と<code>code:BTC_JPY</code>、<code>select: price</code>を選びます。</p>
+
+<p><img src="/images/2019-08-14-grafana-graf-03.png" alt="Grafana Graf Settings" /></p>
+
+<p>更新タイミングと、グラフのインターバルの設定があっていないと、
+ドット表示になってしまうことがあります。</p>
+
+<p>5分更新であればインターバルを5分に設定します。
+クリックして任意の間隔に設定することもできます。</p>
+
+<p><img src="/images/2019-08-14-grafana-graf-05.png" alt="Grafana Graf Settings" />
+<img src="/images/2019-08-14-grafana-graf-06.png" alt="Grafana Graf Settings" /></p>
+
+<p>タイトルを設定します。</p>
+
+<p><img src="/images/2019-08-14-grafana-graf-04.png" alt="Grafana Graf Settings" /></p>
+
+<p>簡単に流れを書きましたが、
+色々とできるので自分の環境に合わせて追加変更してください。</p>
+
+<hr />
+
+<p><img src="/images/2019-08-19-grafana-btc-fx-00.png" alt="Grafana BTC FX" /></p>
+
+<p>GrafanaとInfluxDBのインストールは以下、ご参考のほど、</p>
+
+<ul>
+<li><a href="https://goozenlab.com/blog/2019/08/grafana-pi-install/">Grafana</a></li>
+<li><a href="https://goozenlab.com/blog/2019/08/influxdb-pi-install/">InfluxDB</a></li>
+</ul>
+
+<p>と、現在は外国為替情報も追加したりしてます。
+表示方法は基本この作業と同じ感じ流れになると思います。
+各所戻ってくるデーターの扱いが異なったりしてちょっと厄介。。、
+そちらも後々ポストします。</p>
+
+<h2 id="おまけ">おまけ</h2>
+
+<p>簡単なシステムです。現在パイ・3A+で運用してますが、
+パイ・ゼロでも、一つ二つだけのアプリケーションならば、スムーズに動きます（ゼロ：パイホールとグラファナで実証済み）ので、
+専属サーバーとして動かしても面白いかも。</p>
+
+<!--
+参考：
++ pybitflyer をつかって Python で ビットコインレートを取得してみた: 
+https://futurismo.biz/archives/6401/
+
+過去データー
+http://api.bitcoincharts.com/v1/csv/
+
+Grafanaでローソク足チャートを表示する方法
+https://hassiweb-programming.blogspot.com/2019/01/Grafana-Candlestick-Chart.html
+https://github.com/ilgizar/ilgizar-candlestick-panel
+-->
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/openweathermap-settings/">天候情報を取得</a></li>
+	
+	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
+	
+	<li><a href="/blog/2019/03/mi-temperature-monitor/">Xiaomi 気温湿度計</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
