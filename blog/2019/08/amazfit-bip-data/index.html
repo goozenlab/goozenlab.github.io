@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo v2.8.2 | goozenlab</title>
+  <title>AmazfitBipのデータを可視化 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -123,53 +123,118 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2015-03-07</time>
+                    <time class="">2019-08-22</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/ohayo">ohayo</a> <a href="https://goozenlab.com/tags/update">update</a> 
+                    tags:<a href="https://goozenlab.com/tags/logging">logging</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/iapp">iapp</a> 
+                    categories:<a href="https://goozenlab.com/categories/smart-watch">smart watch</a> 
                     
 
                     
                 </p>
-                <h1>ohayo v2.8.2</h1>
+                <h1>AmazfitBipのデータを可視化</h1>
             </div>
 
             <div class="post-content">
-                <p>うーーーん、ホットフィックスです。</p>
+                <!-- ![GadgetBridge](/images/2019-08-19-gadgetbridge-03.png) -->
+
+<p>昨日はビザ・クラアランスのため、
+タイ・メーサイ、ミャンマー・タチレクへ日帰りで行ってきました。
+国境を越えるときは、ちょっとドキドキするんですよね。
+ミャンマーに入ると、「ガンジャ、桶屋、バイアグラ」の攻勢にあい、
+（おいらはそんな風に見えるのだろうか？？）
+ちょっとゆっくりしようと思ったけど、一気に面倒になる。
+市場をふらっとまわり、タイにとんぼ返り。
+入国時にはちょっと面倒な感じで、意地悪をされる。あまり良い感じの国境ではないですね、分からなくもないけど。</p>
+
+<p><img src="/images/2019-08-19-gadgetbridge-02.png" alt="GadgetBridge" />
+<img src="/images/2019-08-19-gadgetbridge-01.png" alt="GadgetBridge" /></p>
+
+<p>Amazfit Bipをオープンソース・アプリの<code>GadgetBridge</code>というソフトで使っています。
+MiFitやらGoogleFitに登録ぜずに使うことができます。
+（データーを吸い上げられずに済むということ）</p>
+
+<p>データを外部に保存することもできるので、ちょっと中身を覗いてみました。</p>
+
+<p><img src="/images/2019-08-19-gadgetbridge-04.png" alt="GadgetBridge" /></p>
+
+<p>拡張子が付いていないのですが、ファイル形式は<code>sqlite</code>でした。ファイルの保存先は
+<code>Android &gt; data &gt; nodomain.freeyourgadget.gadgetbridge &gt; files</code>
+と奥の方にあります。Amaz Bipから書き出されるデータは以下のようになります。</p>
 
 <ul>
-<li>バグ
-
-<ul>
-<li>朝のメッセージがずれてました。。</li>
-</ul></li>
+<li>Export_preference</li>
+<li>Gadgetbridge</li>
+<li>Gadgetbridge_20190819-071417</li>
+<li>gadgetbridge-biking-2019-07-30T16_41_45+07_00.gpx</li>
+<li>gadgetbridge-biking-2019-08-16T14_40_57+07_00.gpx</li>
 </ul>
 
-<p>以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</p>
+<p>アクティビティーの位置データファイル<strong>GPX</strong>（ありがたいことに、GPSロガーになります。捕捉、精度もそんなに悪くない（田舎だからかもしれませんが、））と<code>Gadgetbridge</code>というメインデータ・ファイル、書き出した時点でのバックアップ・データが書き出されます。</p>
 
-<p><img src="/images/2015-03-08-pokhara-fewa-lake.jpg" alt="Pokhara" /></p>
+<p>GadgetbridgeデータをMacBookに持ってきて<code>DB Browser for SQLite</code>という長い名前のシンプルなソフトで中身を確認。雑多な感じがしますが、Amazfit bipのデータは<strong>MI_BAND_ACTIIVITY_SAMPLE</strong>となんともな名前のファイルに書き込まれています。
+サンプルじゃなくて、普通にデータでいいのではないかと、、
+最初ちょっと戸惑いました。</p>
+
+<p><img src="/images/2019-08-19-gadgetBridge-sqlite-00.png" alt="Amazfit bip and Grafana" />
+<img src="/images/2019-08-19-gadgetBridge-data-00.png" alt="Amazfit bip and Grafana" /></p>
+
+<p>RAW_INTENSITYがちょっと謎ではあるんですが、加速度的なものか？ちょっとリサーチ不足。
+RAW_KINDはタイプを表しているようです。
+サポートページ：<a href="https://github.com/Freeyourgadget/Gadgetbridge/issues/686">https://github.com/Freeyourgadget/Gadgetbridge/issues/686</a>
+にポストされています。非常に細かく分類されていますが、ちょっとわかりづらい。。</p>
+
+<p><img src="https://user-images.githubusercontent.com/6490320/41813100-96c6e9dc-772f-11e8-834d-0760e5ad8cfc.png" alt="RAW_KIND LIST" /></p>
+
+<p>あとは読んで字の如し、TIMESTAMPは<strong>UNIX_TIME</strong>という形式です。</p>
+
+<p>自分にはそこまで複雑なデータは必要ないので、
+1分ごとに記録している心拍数と歩数を抜き出してちょっと取り込んでみました。</p>
+
+<p>データを以下のように処理しました。</p>
+
+<ol>
+<li>携帯の<code>GadgerBridge</code>にてデータの取り込み、書き出し</li>
+<li><code>syncthing</code>でパイ・サーバーへ同期</li>
+<li>ラズベリーパイ3A+サーバーで処理して、<code>gurafana</code>で表示。</li>
+</ol>
+
+<p><img src="/images/2019-08-19-amazfit-grafana-00.png" alt="Amazfit bip and Grafana" /></p>
+
+<p>心拍のリズムって割に波があるんだな、心に揺らぎがあるのかな、、と、病気でなければ良いが、、、</p>
+
+<p>可視化すると、意識して歩くようになるし、
+脈も、ちらって見て、高かったりすると、自分で、
+深呼吸「まぁ〜、おちつこ〜」と自己暗示？をかけると
+すぐに脈が落るし。。不思議〜。</p>
+
+<p>体重も（手打ちで）入力しようかな。。</p>
+
+<p>そしてバッテリーの持ちは、ちょっと違和感があるので、時計をつけてないで寝ることが割にあるのですが、
+<strong>20日間使って残り20％</strong>、期待してた以上です、すばらしぃ。</p>
+
+<p>お供にパイ・サーバーもなかなか勝手が良いですよ。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2015/02/ohayo-281/">ohayo v2.8.1</a></li>
+	<li><a href="/blog/2019/08/grafana-bitcoin/">ビットコイン価格をGrafanaでグラフ化</a></li>
 	
-	<li><a href="/blog/2014/11/ohayo-280/">ohayo v2.8.0</a></li>
+	<li><a href="/blog/2019/08/openweathermap-settings/">天候情報を取得</a></li>
 	
-	<li><a href="/blog/2013/07/ohayo-250/">ohayo v2.5.0</a></li>
+	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
 	
-	<li><a href="/blog/2015/02/sati-165/">Sati v1.6.5</a></li>
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
 	
-	<li><a href="/blog/2015/02/pranatice-071/">Pranatice v0.7.1</a></li>
+	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
 	
 </ul>
 

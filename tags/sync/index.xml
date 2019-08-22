@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 19 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/sync/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unisonの設定</title>
+      <link>https://goozenlab.com/blog/2019/08/setting-unison/</link>
+      <pubDate>Wed, 21 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/setting-unison/</guid>
+      <description>滞在先、タイ・チェンライで折りたたみ自転車のタイヤチューブ交換をしました。工賃込みで150バーツでした。 チューブの質がどうだかわかりませんが、安い、ありがたい、</description>
+    </item>
     
     <item>
       <title>Unisonをビルドする</title>
