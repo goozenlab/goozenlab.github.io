@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 18 Jul 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 07:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dirty Flash</title>
+      <link>https://goozenlab.com/blog/2019/08/customrom_dirty_flash/</link>
+      <pubDate>Sat, 24 Aug 2019 07:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/customrom_dirty_flash/</guid>
+      <description>ちょっと、混乱したり、 久しぶりの行うと忘れてしまうので、メモとして残す。 同じカスタムロムをバージョンアップする時にはDirty Flash。 リカバリーモードで立ち</description>
+    </item>
     
     <item>
       <title>DNSとアンドロイド</title>
