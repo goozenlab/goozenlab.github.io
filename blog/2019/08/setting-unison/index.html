@@ -84,6 +84,16 @@
                 		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
             		</ul>
         		</li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">project</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item pure-menu-link">travel router</li>
+						<li class="pure-menu-item pure-menu-link">home pi server</li>
+						<li class="pure-menu-item pure-menu-link">triple boot thinkpad t480s</li>
+						
+					</ul>
+					
+				</li>
                 <li class="pure-menu-item">
                     <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
                 </li>
@@ -194,7 +204,7 @@ path =
 include ignore_filelist_macos
 </code></pre>
 
-<p>※ 注意したいのがunisonのデフォルト設定ではシンボリックリンクを同期しません。</p>
+<div class="attention">※ 注意：unisonのデフォルト設定ではシンボリックリンクを同期しません。</div>
 
 <p>シンボリックリンクも同期したい場合は、以下のような設定をプロファイルに追記します。</p>
 
@@ -232,7 +242,7 @@ ignore = Name .localized
 同期するファイルの確認を行います、問題がなければ、そのまま<code>y</code>で続行します。
 同じ名前のファイルがあったら、選択する必要があります（たしか）。</p>
 
-<p>※ 沢山のファイル（例えば1000とか）がある人は、まずは<code>rsync</code>でファイルをコピーしてから行った方が良いかな。</p>
+<div class="hint">※ 沢山のファイル（例えば1000とか）がある人は、まずは rsync でファイルをコピーしてから行った方が良いかな。</div>
 
 <pre><code>jin@gallo:~ $ unison tacos_scripts
 Unison 2.51.2 (ocaml 4.06.1): Contacting server...

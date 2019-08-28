@@ -444,6 +444,46 @@ a.pure-button {
 }
 
 
+/** like wiki note */
+
+.attention {
+	color: rgb(199,152,75);
+	background-color: rgb(252,249,225);
+	border-color: rgb(253,239,210);
+	padding: 14px;
+	border-style: solid;
+	border-width: 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+} 
+
+.note { 
+	color: rgb(3,135,177);
+	background-color: rgb(212,234,248);
+	border-color: rgb(176,234,243);
+	padding: 14px;
+	border-style: solid;
+	border-width: 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+} 
+
+
+.hint {  
+	color: rgb(31,142,66);
+	background-color: #DAF3D7;
+	border-color: #D0ECC4;
+	padding: 14px;
+	border-style: solid;
+	border-width: 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+} 
+
+
 @media screen and (max-width:767px){
     .desktop {
         display: none;

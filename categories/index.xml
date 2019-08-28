@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 24 Aug 2019 07:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>server</title>
+      <link>https://goozenlab.com/categories/server/</link>
+      <pubDate>Wed, 28 Aug 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/server/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>android</title>
@@ -28,15 +37,6 @@
       <pubDate>Thu, 22 Aug 2019 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/smart-watch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>server</title>
-      <link>https://goozenlab.com/categories/server/</link>
-      <pubDate>Wed, 21 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/server/</guid>
       <description></description>
     </item>
     

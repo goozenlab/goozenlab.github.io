@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 14 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Radicaleのインストール</title>
+      <link>https://goozenlab.com/blog/2019/08/radicale-pi-install/</link>
+      <pubDate>Wed, 28 Aug 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/radicale-pi-install/</guid>
+      <description>カレンダー・コンタクトサーバーを導入しました。 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局nextCloudをイン</description>
+    </item>
+    
+    <item>
+      <title>パイ・3A&#43;にて外部ディスクの不具合</title>
+      <link>https://goozenlab.com/blog/2019/08/pi-3a-external-disk/</link>
+      <pubDate>Sun, 25 Aug 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/pi-3a-external-disk/</guid>
+      <description>パイ・3A+に外部ディスクを刺しても認識をしてくれない。 USBメモリーをさしてもチカチカランプが点滅するも、 無反応、もしくはハングアップする。 これは初期不良では</description>
+    </item>
     
     <item>
       <title>Telegrafのインストール</title>
