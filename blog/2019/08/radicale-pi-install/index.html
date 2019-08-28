@@ -236,10 +236,7 @@ New password:
 Re-type new password:
 </code></pre>
 
-<div class="hint"><b>bcrypt</b><br />
-This uses a modified version of the Blowfish stream cipher. It’s very secure. The passlib python module is required for this. Additionally you may need one of the following python modules: bcrypt, py-bcrypt or bcryptor.</div>
-
-<p>そして設定をファイルに書き込ます。</p>
+<p>そして認証のタイプ、ファイルの保管先などの設定をファイルに書き込ます。</p>
 
 <pre><code>pi@tacos:~ $ sudo vi /etc/radicale/config
 
@@ -250,18 +247,20 @@ htpasswd_encryption = bcrypt
 
 </code></pre>
 
-<p>ストレージ先は
+<p>ちなみに、ストレージ先は
 <code>/var/lib/radicale/collections</code>
 になります。</p>
 
-<div class="attention">リナースプロキシの設定もサイトに記載されてありましたが、不具合がありました。色気の無いIP直打ちで今のところ運用中です。</div>
+<div class="attention">リバースプロキシーの設定もサイトに記載されてありましたが、ちょっとうまく動きませんでした。色気の無いIP直打ちで今のところ運用中。</div>
 
 <h2 id="アクセス">アクセス</h2>
 
 <p><code>http://&lt;&lt;HOST_OR_IP&gt;&gt;:5232/</code>にアクセス、
 設定したユーザー・パスワードでログインします。
-データーが無いので、名称とタイプを記入し作成します。
 非常にシンプルなデザインになってます。</p>
+
+<p>データーが無いので、名称とタイプを記入し作成します。
+アドレスブックと、カレンダー数種を作りました。</p>
 
 <p><img src="/images/2019-08-28-radicale-01.png" alt="Radicale" /></p>
 
@@ -270,6 +269,8 @@ htpasswd_encryption = bcrypt
 まぁ頻繁にアクセスすることは無いので十分です。</p>
 
 <p><img src="/images/2019-08-28-radicale-02.png" alt="Radicale" /></p>
+
+<div class="hint">タイプをタスクの入ったものにすると、リマインダーでの同期も可能になります。ジャーナルはちょっと分からず。。</div>
 
 <h2 id="macより">Macより</h2>
 
@@ -283,10 +284,30 @@ htpasswd_encryption = bcrypt
 
 <p><img src="/images/2019-08-28-radicale-address-mac.png" alt="Radicale" /></p>
 
-<p>カレンダーは、カレンダーアプリのファイルメニューより<code>カレンダーを購読</code>を選択します。
-アドレスを入力して設定完了です。</p>
+<p>カレンダー設定も<code>インターネットアカウント</code>より行います。
+ただ、こちらは上記の住所録とはちがいアドバンス・セッティングで登録します。</p>
 
-<p><img src="/images/2019-08-28-radicale-calendar-mac.png" alt="Radicale" /></p>
+<p><img src="/images/2019-08-28-radicale-calendar-mac-01.png" alt="Radicale" /></p>
+
+<p>カレンダーのアドレスは
+<code>http://10.0.0.10:5232/jin/86a7b038-e297-377c1-278a3859498a/</code>
+と、こんな感じですが、分割して設定します。
+複数のカレンダー（パーソナル・ビジネス等）をまとめて取り込むことができます。</p>
+
+<ul>
+<li>Server: Address: &lt;<HOST>&gt;</li>
+<li>Server Path: /$USER</li>
+<li>Port: 5232</li>
+<li>SSLのチェックはオフに</li>
+</ul>
+
+<p><img src="/images/2019-08-28-radicale-calendar-mac-02.png" alt="Radicale" /></p>
+
+<div class="hint">マニュアル設定でサーバーアドレスを<b>http://$HOST$:5232/$USER/</b>でもよかったのかも。。</div>
+
+<p>アカウントに名前を付けておきます。そして！リマインダーも同期が可能でした。（確認済み）</p>
+
+<p><img src="/images/2019-08-28-radicale-calendar-mac-03.png" alt="Radicale" /></p>
 
 <h2 id="androidより">Androidより</h2>
 
@@ -302,13 +323,15 @@ htpasswd_encryption = bcrypt
 
 <p>付属するコンタクトアプリの同期は少し方法が違って、<code>設定＞アカウント</code>を経て設定を行います。</p>
 
-<p>まぁ、そんなに頻繁に同期するわけでは無いですが、小気味よく動いてくれます。</p>
+<p>まぁ、そんなに頻繁に同期するわけでは無いですが、小気味よく動いてくれています。</p>
 
 <p>これでネット上に置いてある細切れになっているコンタクトなどを一箇所まとめ、
 避難かつ共有もできるようになりました。</p>
 
 <p>というか、断捨離でコンタクトを一掃整理しました。<br />
 連絡が長い期間途絶えてる人は、サヨ〜〜ナ〜ラ〜〜。</p>
+
+<div class="note">ちょっとしたらまとめて、もう少し丁寧に書きなおします。</div>
 
 				
 
