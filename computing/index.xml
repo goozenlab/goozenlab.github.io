@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computings on goozenlab</title>
+    <link>https://goozenlab.com/computing/</link>
+    <description>Recent content in Computings on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
+    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://goozenlab.com/computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VaioP Reloaded</title>
+      <link>https://goozenlab.com/computing/vaiop-reloaded/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/vaiop-reloaded/</guid>
+      <description>Strechで問題なく動いていたタンスVaio P。 もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、 これを最後のアップデートとして引退させます。 ちょっ</description>
+    </item>
+    
+    <item>
+      <title>トラベル・パイ・ルーター</title>
+      <link>https://goozenlab.com/computing/travel-pi/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/travel-pi/</guid>
+      <description>旅するルーター VPNで身を守り、 ちょっとした作業を影で行い、 影武者のごとく、 を、構築中です。 現在リサーチ・作業中、形がまとまったら更新します。</description>
+    </item>
+    
+    <item>
+      <title>家鯖：ホーム・パイ</title>
+      <link>https://goozenlab.com/computing/home-pi/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/home-pi/</guid>
+      <description>一家に一台。 ホーム・ラズベリーパイ。 Pihole Radicale Syncthing 現在リサーチ・作業中、形がまとまったら更新します。</description>
+    </item>
+    
+  </channel>
+</rss>
