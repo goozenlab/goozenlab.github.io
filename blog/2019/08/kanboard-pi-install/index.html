@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo v2.8.2 | goozenlab</title>
+  <title>Kanboardのインストール | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -134,53 +134,178 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2015-03-07</time>
+                    <time class="">2019-08-30</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/ohayo">ohayo</a> <a href="https://goozenlab.com/tags/update">update</a> 
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/iapp">iapp</a> 
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
                     
 
                     
                 </p>
-                <h1>ohayo v2.8.2</h1>
+                <h1>Kanboardのインストール</h1>
             </div>
 
             <div class="post-content">
-                <p>うーーーん、ホットフィックスです。</p>
+                
+
+<p><img src="/images/2019-08-22-kanboard-00.png" alt="Kanboard" /></p>
+
+<p>掲示板・ホワイトボード風のメモ・アプリ？！
+ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、
+早速パイにインストールしてみました。</p>
+
+<p>昭和的なグループウェアかも、、ナイスだけどね。</p>
+
+<h2 id="インストール">インストール</h2>
+
+<p><a href="https://docs.kanboard.org/en/latest/admin_guide/installation.html">https://docs.kanboard.org/en/latest/admin_guide/installation.html</a></p>
+
+<p>にディストリビューションごとの説明がかいてあります。
+複雑な作業ではありません。PHPのウェブアプリです。</p>
+
+<p>ドッカーのイメージもあります。</p>
+
+<h3 id="パイサーバー">パイサーバー</h3>
+
+<p>すでに色々インストールしているので、必要なものは<code>php7.3-sqlite3</code>だけでした。
+基本LAPMサーバーで使うモジュールで十分だと</p>
+
+<p>あとは、
+ウェブの公開用ディレクトリーへ行き、ギットでソフトウェアをクローンします。</p>
+
+<pre><code>pi@tacos:~ $ sudo apt-get install php7.3-sqlite3
+pi@tacos:~ $ sudo -u www-data /bin/bash
+www-data@tacos:/home/pi$ cd
+www-data@tacos:~$ git clone https://github.com/kanboard/kanboard.git
+</code></pre>
+
+<p>サブドメインの設定をnginxと/etc/hosts/で行います。</p>
+
+<pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        server_name kanboard.goozen.lab;
+
+        root /var/www/kanboard;
+        index index.php index.html;
+
+        # pass PHP scripts to FastCGI server
+        #
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+
+                # With php-fpm (or other unix sockets):
+                fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        }
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre>
+
+<hr />
+
+<p>しかし、もうカツカツな感じのパイでは動作が緩慢。。
+ドッカーでローカルで動かせば良いやとも思ったけれど、
+カレンダーを共有できる機能がちょっと気になる。</p>
+
+<p>で、ちょっと適当ではあるけれど、</p>
 
 <ul>
-<li>バグ
-
-<ul>
-<li>朝のメッセージがずれてました。。</li>
-</ul></li>
+<li>作業は、マック上のドッカーで動かし</li>
+<li>データーをパイサーバーに<code>unison</code>で同期させ</li>
+<li>携帯・マックから、パイサーバー・Kanboardのカレンダーを閲覧</li>
 </ul>
 
-<p>以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</p>
+<p>と、、う〜〜ん、無理くり解決だなこれは、、
+スマートで無いんで、なんとかしたいが、、</p>
 
-<p><img src="/images/2015-03-08-pokhara-fewa-lake.jpg" alt="Pokhara" /></p>
+<h3 id="ドッカー編">ドッカー編</h3>
+
+<pre><code>$ docker run -d --name kanboard -p 80:80 -v kanboard_data:/var/www/app/data -v kanboard_plugins:/var/www/app/plugins -t kanboard/kanboard:latest
+</code></pre>
+
+<p>で一発で動いてくれると思いきや、ローカルにファイルがリンクされない、
+ドッカーコンポーズで試した所、うまくいく。
+volumeの記述の仕方が悪かったのかも。</p>
+
+<p><img src="/images/2019-08-29-kanboard-main-00.png" alt="Kanboard" /></p>
+
+<p>動作も軽快。さいこぉ〜。
+ということで、
+<code>kanboard/data/db.sqlite</code>
+に保存されてるデーター・ファイルを、
+パイサーバーへ同期します。</p>
+
+<pre><code>$ vi ~/.unison/kanboard.prf
+
+times = true
+prefer = newer
+
+auto = true
+fastcheck = true
+
+# Only error log
+silent = true
+
+# ルート・ディレクトリの指定。同期の際に最上位となるディレクトリを設定する。
+root = /User/jin/Work/Local-Dockers/kanboard/
+root = ssh://tacos//var/www/kanboard/
+
+# 接続先の usr:
+sshargs=-l pi
+
+# 同期したいディレクトリやファイル名を指定する
+# からは全て
+path = data/db.sqlite
+path = plugins/
+
+# add ignore list
+include filelist_ignore-macos
+</code></pre>
+
+<p>一方通行だからrsyncでもよかったのかなと思いつつ、
+<code>unison kanboard</code>で作業が終わった段階で同期する。</p>
+
+<p>ちょっとファイルの権限で問題になるが、
+chmod 777とやっつける。。</p>
+
+<p>アンドロイドのカレンダーの同期は<code>ICSx</code>というオープンソース・アプリを使います。</p>
+
+<p>Kanboardのプロジェクトを公開して<code>iCal feed</code>のアドレスを
+コピー、カレンダーに登録します。</p>
+
+<p><img src="/images/2019-08-28-kanboard-android-ICSx.png" alt="ICSx" /></p>
+
+<p>マックからはカレンダーアプリより<code>カレンダーを購読</code>から取り込むことができます。</p>
+
+<p>githabのイシューとの連携もできるようでもある。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2015/02/ohayo-281/">ohayo v2.8.1</a></li>
+	<li><a href="/blog/2019/08/radicale-pi-install/">Radicaleのインストール</a></li>
 	
-	<li><a href="/blog/2014/11/ohayo-280/">ohayo v2.8.0</a></li>
+	<li><a href="/blog/2019/08/pi-3a-external-disk/">パイ・3A&#43;にて外部ディスクの不具合</a></li>
 	
-	<li><a href="/blog/2013/07/ohayo-250/">ohayo v2.5.0</a></li>
+	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
 	
-	<li><a href="/blog/2015/02/sati-165/">Sati v1.6.5</a></li>
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
 	
-	<li><a href="/blog/2015/02/pranatice-071/">Pranatice v0.7.1</a></li>
+	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
 	
 </ul>
 

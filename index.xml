@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 29 Aug 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 19:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kanboardのインストール</title>
+      <link>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</link>
+      <pubDate>Fri, 30 Aug 2019 19:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</guid>
+      <description>掲示板・ホワイトボード風のメモ・アプリ？！ ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、 早速パイにインストールしてみました。 昭和的なグループウェ</description>
+    </item>
     
     <item>
       <title>Amazfit Bipと１ヶ月</title>
