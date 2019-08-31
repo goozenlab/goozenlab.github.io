@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 30 Aug 2019 19:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenZFSをMBAにて１ヶ月使ってみて</title>
+      <link>https://goozenlab.com/blog/2019/08/openzfs-after/</link>
+      <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/08/openzfs-after/</guid>
+      <description>8月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを機会にアマゾンからも</description>
+    </item>
     
     <item>
       <title>Kanboardのインストール</title>
@@ -37,7 +46,7 @@
       <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/vaiop-reloaded/</guid>
-      <description>Strechで問題なく動いていたタンスVaio P。 もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、 これを最後のアップデートとして引退させます。 ちょっ</description>
+      <description>Strechで問題なく動いているタンスVaio P。 もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、 これを最後のアップデートとして引退させます。 ちょっ</description>
     </item>
     
     <item>

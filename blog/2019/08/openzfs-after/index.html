@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Kanboardのインストール | goozenlab</title>
+  <title>OpenZFSをMBAにて１ヶ月使ってみて | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -134,178 +134,137 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-08-30</time>
+                    <time class="">2019-08-31</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    tags:<a href="https://goozenlab.com/tags/macos">macos</a> <a href="https://goozenlab.com/tags/tipstricks">tips&amp;tricks</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>Kanboardのインストール</h1>
+                <h1>OpenZFSをMBAにて１ヶ月使ってみて</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p><img src="/images/2019-08-22-kanboard-00.png" alt="Kanboard" /></p>
+<p>8月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。
+消費税が上がったら余計なものはもう買いません！
+これを機会にアマゾンからもオプトアウトするぜよ。支払いもなるべく現金でいくで〜。</p>
 
-<p>掲示板・ホワイトボード風のメモ・アプリ？！
-ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、
-早速パイにインストールしてみました。</p>
-
-<p>昭和的なグループウェアな感じかな、、ナイスだけどね。</p>
-
-<h2 id="インストール">インストール</h2>
-
-<p><a href="https://docs.kanboard.org/en/latest/admin_guide/installation.html">https://docs.kanboard.org/en/latest/admin_guide/installation.html</a>
-にディストリビューションごとの説明がかいてあります。
-複雑な作業ではありません。PHPのウェブアプリです。割と機能も充実してます。</p>
-
-<p>ドッカーのイメージもあります。</p>
-
-<h3 id="パイサーバー">パイサーバー</h3>
-
-<p>すでに色々インストールしているので、必要なものは<code>php7.3-sqlite3</code>だけでした。
-基本LAPMサーバーで使うモジュールで十分だと思います。
-もちろんmariaDBでも動きます。</p>
-
-<p>そして、githubよりソフトウェアをクローンします。</p>
-
-<pre><code>pi@tacos:~ $ sudo apt-get install php7.3-sqlite3
-pi@tacos:~ $ sudo -u www-data /bin/bash
-www-data@tacos:/home/pi$ cd
-www-data@tacos:~$ git clone https://github.com/kanboard/kanboard.git
-</code></pre>
-
-<p>サブドメインの設定をnginxと/etc/hosts/で行います。</p>
-
-<pre><code>server {
-        listen 80;
-        listen [::]:80;
-
-        server_name kanboard.goozen.lab;
-
-        root /var/www/kanboard;
-        index index.php index.html;
-
-        # pass PHP scripts to FastCGI server
-        #
-        location ~ \.php$ {
-                include snippets/fastcgi-php.conf;
-
-                # With php-fpm (or other unix sockets):
-                fastcgi_pass unix:/run/php/php7.3-fpm.sock;
-        #       # With php-cgi (or other tcp sockets):
-        #       fastcgi_pass 127.0.0.1:9000;
-        }
-
-        location / {
-                try_files $uri $uri/ =404;
-        }
-}
-</code></pre>
-
-<p>インストールはスッキリと終了するも、
-もうカツカツな感じのパイでは動作が非常に緩慢。。
-ドッカーでローカルで動かせば良いやとも思ったけれど、
-カレンダーを共有できる機能がちょっと気になる。</p>
-
-<p>で、ちょっと適当ではあるけれど、</p>
+<p>さて、マックでのOpenZFS。<strong>シングルパーティション</strong>（複数のファイルシステム）と<strong>２点ミラーリング</strong>（MacBookAirとUSBメモリー）を運用をしてます。
+検証のためなので、あまり複雑な設定にはしていませんが、
+１ヶ月が経ったので、問題点を雑感としてちょっとポストします。</p>
 
 <ul>
-<li>作業は、マック上のドッカーで動かし</li>
-<li>データーをパイサーバーに<code>unison</code>で同期させ</li>
-<li>携帯・マックから、パイサーバー・Kanboardのカレンダーを閲覧</li>
+<li><a href="https://goozenlab.com/blog/2019/07/openzfs-initial-setup/">マックでのOpenZFSのセットアップ</a></li>
+<li><a href="https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/">ミラーリング設定</a></li>
 </ul>
 
-<p>と、、う〜〜ん、無理くり解決だなこれは、、
-スマートで無いんで、なんとかしたいが、、</p>
+<p>デスクトップをシンボリックリンクでZFSにリンクさせているのですが、
+ログイン後も<strong>マウントのタイミングが遅い</strong>のかデスクトップが反映されません、
+ログオフして再度ログインでことは無いのですが面倒である。</p>
 
-<h3 id="ドッカー編">ドッカー編</h3>
+<p>Hugoサイトジェネレーターのプレビュー時に<strong>ファイルが読み込めないとエラー</strong>がでる、
+ほとんどが画像ファイルで開いてみると問題ないのですが、
+同じ症状になることが週に１・２度はあります。
+いままでで一つのファイルだけ壊れて開けられないということがありました。
+バックアップより持ってきて修正。</p>
 
-<pre><code>$ docker run -d --name kanboard -p 80:80 \
-  -v kanboard_data:/var/www/app/data \
-  -v kanboard_plugins:/var/www/app/plugins \
-  -t kanboard/kanboard:latest
-</code></pre>
+<p>環境がmacOSのEl Capitanと少し古いバージョンからなのかもしれませんが、
+今までほとんど出なかった<strong>カーネルパニック</strong>が、
+多分この１ヶ月で４・５回はカーネルパニックになりました。</p>
 
-<p>で一発で動いてくれると思いきや、ローカルにファイルがリンクされない、
-ドッカーコンポーズで試した所、うまくいく。
-volumeの記述の仕方が悪かったのかも。</p>
+<p><strong>終了時に時間がかかる</strong>ことも数回。（特にUSBメモリーと同期後。）</p>
 
-<p><img src="/images/2019-08-29-kanboard-main-00.png" alt="Kanboard" /></p>
+<p>不定期に<code>zpool status</code>で状況をチェックすると幾つかのエラーが検出されます。</p>
 
-<p>動作も軽快、いろいろ書き込んでいじってます。さいこぉ〜。
-ということで、
-<code>kanboard/data/db.sqlite</code>
-に保存されてるデーター・ファイルを、
-パイサーバーへ同期します。</p>
+<p><code>zpool scrub</code>の修復コマンドで上で書いたひとつのファイルと、
+カーネルパニックを起こした<code>スポットライトのインデックス</code>
+（インデックスの再構築でエラーは回避）以外は修復が可能でした。</p>
 
-<pre><code>$ vi ~/.unison/kanboard.prf
+<p>ミラーリングは適当な感じ、
+暇な時にUSBメモリーを繋ぎ<code>zpool online</code>で同期します。
+32GBと容量も大きくないので、数分で終了します。
+作業も引きずられて遅くなることもありませんでした。</p>
 
-times = true
-prefer = newer
+<p>バックアップだと思えば、そこまで負担にはなりません。
+半自動なところが良いところ。取り出しは、ブチっと抜いても問題はないようですが、
+お行儀よく、<code>zpool offline</code>で行います。同期作業の経過は<code>zpool status</code>で確認ができます。</p>
 
-auto = true
-fastcheck = true
+<div class="note">そもそもこの小さい領域のミラリングはUSBメモリーを使った<b>複数端末間での同期</b>を目的にしています。Dropboxへのキャリアロックからの解放。カッコ悪く言えば利用料の出し渋り。。（未検証）</div>
 
-# Only error log
-silent = true
+<p>シングル・パーティションで使っているボリュームは
+ちょっと、大きいサイズ４GBくらいのファイルを移動する時に
+<strong>読み書きが若干遅い</strong>かなと思いました。
+動画ファイルのような大きいファイルを頻繁に移動したりする人には
+ちょっとストレスになるやも。</p>
 
-# ルート・ディレクトリの指定。同期の際に最上位となるディレクトリを設定する。
-root = /User/jin/Work/Local-Dockers/kanboard/
-root = ssh://tacos//var/www/kanboard/
+<div class="hint"><b>スナップショット</b>はまだ使ってませんが、
+かなり有益な機能の一つです。タイムマシーンように以前の状態に戻すことができます。（私にはあまり、使い道がないような、、。）</div>
 
-# 接続先の usr:
-sshargs=-l pi
+<h2 id="アップデート-1-9-1-1-9-2">アップデート：1.9.1 ~ 1.9.2</h2>
 
-# 同期したいディレクトリやファイル名を指定する
-# からは全て
-path = data/db.sqlite
-path = plugins/
+<p>少し動作が安定してきていたようにも思えましたが、
+openZFSの新しいバージョンが出ていたのでアップデート。
+インストール作業は一回プールを切り離さなくてはいけないと警告が出ます。これはマウント先によっては面倒になるかもしれん。</p>
 
-# add ignore list
-include filelist_ignore-macos
-</code></pre>
+<p>そして行ったUSBメモリーとの同期がループする。途中で、システムを落とすと、フリーズ。
+強制シャットダウン、カーネルパニックと、てんこ盛り。</p>
 
-<p>一方通行だからrsyncでもよかったのかなと思いつつ、
-<code>unison kanboard</code>で作業が終わった段階で同期する。</p>
+<p>数回USBメモリーを繋げたまま再起動後に試すもNG、ブルーな気持ちになる。
+で、環境をEL CapitanからMojaveに変えて同期を行った所、
+数回ループするが再起動後に落ち着く。</p>
 
-<p>ちょっとファイルの権限で問題になるが、
-<code>chmod 777</code>でやっつける。。</p>
+<div class="note"><b>勝手な推測</b>：新しいmacOSの方がサポートがしっかりしているのかもれん、（そろそろサポート外のEl Capitan）</div>
 
-<p>アンドロイドのカレンダーの同期は<code>ICSx</code>というオープンソース・アプリを使います。
-Kanboardのプロジェクトを公開して<code>iCal feed</code>のアドレスを
-コピー、カレンダーに登録します。</p>
+<p><img src="/images/2019-08-31-zfs-1m.png" alt="ZFS" /></p>
 
-<p><img src="/images/2019-08-28-kanboard-android-ICSx.png" alt="ICSx" /></p>
+<p>シングルパーティションの方はエラーが数が600近くになっている。
+修復コマンドも効かず、逆にエラーが増える。</p>
 
-<p>マックからはカレンダーアプリより<code>カレンダーを購読</code>から取り込むことができます。</p>
+<p><code>zpool status -v</code>で5つぐらいの表示されるエラーファイルを消去・修復で復活。
+消しても問題の無いファイルだったのよかったのですが、、ちょっと不安ですね。</p>
 
-<p>githabのイシューとの連携もできるようでもある。</p>
+<h2 id="マウンティングポイント">マウンティングポイント</h2>
+
+<p>Linuxでも使うつもりでいるのですが、
+OSごとにマウントされる位置がちょっとよくわからず。
+fstabを読み込む<code>mountpoint=Legacy</code>なる設定があるのだけれど、
+MacOSにてのfstab.(vifsを使って設定）がいまひとつうまく動かない。。</p>
+
+<p><dev class="hint">マックでは指定をしなくても普通に<b>/Volumes</b>以下にマウントされます。</div></p>
+
+<hr />
+
+<p>いろんな意味でバックアップが不要になるわけではないのだけれども、
+う〜ん、スナップショットをとってまた別の所にバックアップていうのも。。</p>
+
+<p><img src="/images/2019-08-31-zfs-nomad-backup.png" alt="Backup Scheme" /></p>
+
+<p>（今ある機材で考えて上図のような３点ミラリングバックアップ・スキームにしようと思っている。マルチプラットフォームを考えるとチョイスが他に無いので、どうなろうとopenZFSと一蓮托生ですな。）</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/08/radicale-pi-install/">Radicaleのインストール</a></li>
+	<li><a href="/blog/2019/07/openzfs-mirroring-small/">OpenZFS ミラーリング</a></li>
 	
-	<li><a href="/blog/2019/08/pi-3a-external-disk/">パイ・3A&#43;にて外部ディスクの不具合</a></li>
+	<li><a href="/blog/2019/07/openzfs-initial-setup/">OpenZFS on Mac</a></li>
 	
-	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
+	<li><a href="/blog/2018/04/rename-automator/">ブログ用画像を一括リサイズ・リネーム</a></li>
 	
-	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
+	<li><a href="/blog/2016/08/clean-install/">クリーンインストール</a></li>
 	
-	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
+	<li><a href="/blog/2016/08/hiragino-sans-w0/">ヒラギノ角ゴシック</a></li>
 	
 </ul>
 
