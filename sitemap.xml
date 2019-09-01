@@ -4,43 +4,84 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/gafa/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/09/projects/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/hackintosh/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/ipod/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/macos/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/nomad/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
+    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/blog/2019/08/openzfs-after/</loc>
     <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/macos/</loc>
-    <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -52,12 +93,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</loc>
     <lastmod>2019-08-30T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-08-30T19:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -205,12 +240,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-08-06T12:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</loc>
     <lastmod>2019-08-06T12:30:00+07:00</lastmod>
   </url>
@@ -273,6 +302,11 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/computing/tpt480s/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/blog/2019/07/local-dns-android/</loc>
     <lastmod>2019-07-18T12:30:00+07:00</lastmod>
   </url>
@@ -323,12 +357,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/gafa/</loc>
-    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/07/max3-microg/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
   </url>
@@ -364,18 +392,17 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/computing/travel-thumb-machine/</loc>
+    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/computing/home-pi/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/music/</loc>
-    <lastmod>2019-05-01T07:30:00+06:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/nomad/</loc>
     <lastmod>2019-05-01T07:30:00+06:30</lastmod>
     <priority>0</priority>
   </url>
@@ -725,12 +752,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2018/11/applexit/</loc>
     <lastmod>2018-11-18T11:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/hackintosh/</loc>
-    <lastmod>2018-11-18T11:00:00+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

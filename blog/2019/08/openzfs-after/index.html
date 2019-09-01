@@ -68,9 +68,19 @@
             <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
             <ul class="pure-menu-list pull-right">
 				
-                <li class="pure-menu-item">
-                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
-                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-thumb/" class="pure-menu-link">travel thumb machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						
+					</ul>
+					
+				</li>
                 
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
@@ -84,17 +94,9 @@
                 		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
             		</ul>
         		</li>
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-					<a href="#" id="menuLink1" class="pure-menu-link">project</a>
-					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tb-tpt480s/" class="pure-menu-link">triple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
-						
-					</ul>
-					
-				</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
                 <li class="pure-menu-item">
                     <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
                 </li>
@@ -168,15 +170,17 @@
 <li><a href="https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/">ミラーリング設定</a></li>
 </ul>
 
-<p>デスクトップをシンボリックリンクでZFSにリンクさせているのですが、
+<ol>
+<li><p>デスクトップをシンボリックリンクでZFSにリンクさせているのですが、
 ログイン後も<strong>マウントのタイミングが遅い</strong>のかデスクトップが反映されません、
-ログオフして再度ログインでことは無いのですが面倒である。</p>
+ログオフして再度ログインでことは無いのですが面倒である。</p></li>
 
-<p>Hugoサイトジェネレーターのプレビュー時に<strong>ファイルが読み込めないとエラー</strong>がでる、
+<li><p>Hugoサイトジェネレーターのプレビュー時に<strong>ファイルが読み込めないとエラー</strong>がでる、
 ほとんどが画像ファイルで開いてみると問題ないのですが、
 同じ症状になることが週に１・２度はあります。
 いままでで一つのファイルだけ壊れて開けられないということがありました。
-バックアップより持ってきて修正。</p>
+バックアップより持ってきて修正。</p></li>
+</ol>
 
 <p>環境がmacOSのEl Capitanと少し古いバージョンからなのかもしれませんが、
 今までほとんど出なかった<strong>カーネルパニック</strong>が、
@@ -223,7 +227,7 @@ openZFSの新しいバージョンが出ていたのでアップデート。
 で、環境をEL CapitanからMojaveに変えて同期を行った所、
 数回ループするが再起動後に落ち着く。</p>
 
-<div class="note"><b>勝手な推測</b>：新しいmacOSの方がサポートがしっかりしているのかもれん、（そろそろサポート外のEl Capitan）</div>
+<div class="note"><b>勝手な推測</b>：インストールファイルがOSバージョン毎にあるので、新しいmacOSの方がサポートがしっかりしているのかもれん、（そろそろサポート外のEl Capitan）</div>
 
 <p><img src="/images/2019-08-31-zfs-1m.png" alt="ZFS" /></p>
 
@@ -231,7 +235,7 @@ openZFSの新しいバージョンが出ていたのでアップデート。
 修復コマンドも効かず、逆にエラーが増える。</p>
 
 <p><code>zpool status -v</code>で5つぐらいの表示されるエラーファイルを消去・修復で復活。
-消しても問題の無いファイルだったのよかったのですが、、ちょっと不安ですね。</p>
+消しても問題の無いファイルだったのよかったのですが、、先々ちょっと不安。</p>
 
 <h2 id="マウンティングポイント">マウンティングポイント</h2>
 
@@ -240,7 +244,7 @@ OSごとにマウントされる位置がちょっとよくわからず。
 fstabを読み込む<code>mountpoint=Legacy</code>なる設定があるのだけれど、
 MacOSにてのfstab.(vifsを使って設定）がいまひとつうまく動かない。。</p>
 
-<p><dev class="hint">マックでは指定をしなくても普通に<b>/Volumes</b>以下にマウントされます。</div></p>
+<p><dev class="hint">マックでは指定をしなくても普通に <b>/Volumes</b> 以下にマウントされます。</div></p>
 
 <hr />
 

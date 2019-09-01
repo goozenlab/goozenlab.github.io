@@ -8,7 +8,7 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 31 Aug 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,27 @@
     <item>
       <title>computing</title>
       <link>https://goozenlab.com/categories/computing/</link>
-      <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
+      <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mumble</title>
+      <link>https://goozenlab.com/categories/mumble/</link>
+      <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/mumble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nomad</title>
+      <link>https://goozenlab.com/categories/nomad/</link>
+      <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/nomad/</guid>
       <description></description>
     </item>
     
@@ -46,24 +64,6 @@
       <pubDate>Sat, 24 Aug 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mumble</title>
-      <link>https://goozenlab.com/categories/mumble/</link>
-      <pubDate>Tue, 06 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/mumble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nomad</title>
-      <link>https://goozenlab.com/categories/nomad/</link>
-      <pubDate>Wed, 01 May 2019 07:30:00 +0630</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/nomad/</guid>
       <description></description>
     </item>
     

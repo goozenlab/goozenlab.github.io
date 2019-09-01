@@ -68,9 +68,19 @@
             <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
             <ul class="pure-menu-list pull-right">
 				
-                <li class="pure-menu-item">
-                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
-                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-thumb/" class="pure-menu-link">travel thumb machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						
+					</ul>
+					
+				</li>
                 
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
@@ -84,17 +94,9 @@
                 		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
             		</ul>
         		</li>
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-					<a href="#" id="menuLink1" class="pure-menu-link">project</a>
-					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tb-tpt480s/" class="pure-menu-link">triple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
-						
-					</ul>
-					
-				</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
                 <li class="pure-menu-item">
                     <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
                 </li>
@@ -136,28 +138,60 @@
                 <h1>VaioP Reloaded</h1>
                 <p class="footnote">
                     updated at 
-                    <time class="">2019-08-29</time>
+                    <time class="">2019-09-01</time>
 				</p>
             </div>
             <div class="post-content">
-                <p>Strechで問題なく動いているタンス<strong>Vaio P</strong>。</p>
+                
+
+<p><img src="/images/2019-09-01-sony-vaio-00.jpg" alt="Vaio P" /></p>
+
+<p>Strechで問題なく動いているタンスタンマツ、Sony <strong>Vaio P</strong> リバイバル
+希望、ほんと今のスペックで作っていただきたい。</p>
+
+<ul>
+<li>VPC-P111KX (Green)</li>
+<li>Intel Atom Z530 @ 1.6 GHz</li>
+<li>RAM: 2GB DDR2</li>
+<li>Storage: 64GB SSD</li>
+</ul>
+
+<p>スペックを改めて見てみると、ラズベリー・パイと同等な感じなのか、、</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Sony_Vaio_P_series">https://en.wikipedia.org/wiki/Sony_Vaio_P_series</a></p>
 
 <p>もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、
 これを最後のアップデートとして引退させます。
-ちょっと持ち出しのエディターとして使おうかなと、引っ張り出して再構築を行います。</p>
+持ち出しエディターか、オフグリッド端末で使おうかなと、、
+あっ、コールドストレージでも良いか、、</p>
 
-<p>目的は幾つかあって、以下の3つ。</p>
+<p>ネタでもありますので、引っ張り出して再構築を行います。
+使い物にならなかったら、CoreOSでも入れるかな。。</p>
+
+<p>当初の目的は幾つかあって、以下の3つ。</p>
 
 <ol>
-<li>debian.buster</li>
-<li><del>Btrfs with RollBack</del></li>
-<li>Wayland + Sway:
+<li>debian.<strong>buster</strong></li>
+<li><del>Btrfs with RollBack</del>：やぱやめた。XFSにしとく。</li>
+<li>Wayland + <strong>Sway</strong>: swayのパッケージが遠い〜な〜〜。。
 
 <ul>
 <li><a href="https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation">https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation</a></li>
 <li><a href="https://packages.debian.org/search?keywords=sway">https://packages.debian.org/search?keywords=sway</a></li>
 </ul></li>
 </ol>
+
+<hr />
+
+<h2 id="インストール">インストール</h2>
+
+<h2 id="wayland-sway">Wayland + Sway</h2>
+
+<h2 id="日本語環境">日本語環境</h2>
+
+<h2 id="vaio-p-設定">Vaio P 設定</h2>
+
+<h2 id="雑感">雑感</h2>
 
 <div class="attention">現在リサーチ中、9月末に作業をスタートします。</div>
 
