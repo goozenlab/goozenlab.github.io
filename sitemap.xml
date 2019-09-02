@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/09/opensuse-on-pi3/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/opensuse/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/server/</loc>
+    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,30 +50,12 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/09/projects/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -93,12 +110,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</loc>
     <lastmod>2019-08-30T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/server/</loc>
-    <lastmod>2019-08-30T19:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -384,16 +395,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</loc>
     <lastmod>2019-06-20T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/computing/travel-pi/</loc>
-    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/computing/travel-thumb-machine/</loc>
-    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>

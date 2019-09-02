@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Projects ページ | goozenlab</title>
+  <title>OpenSuse on Pi 3B | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -136,70 +136,106 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-09-01</time>
+                    <time class="">2019-09-02</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/macos">macos</a> <a href="https://goozenlab.com/tags/hackintosh">hackintosh</a> <a href="https://goozenlab.com/tags/ipod">ipod</a> <a href="https://goozenlab.com/tags/gafa">gafa</a> <a href="https://goozenlab.com/tags/raspberry-pi">raspberry-pi</a> 
+                    tags:<a href="https://goozenlab.com/tags/opensuse">opensuse</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> <a href="https://goozenlab.com/categories/nomad">nomad</a> <a href="https://goozenlab.com/categories/mumble">mumble</a> 
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
                     
 
                     
                 </p>
-                <h1>Projects ページ</h1>
+                <h1>OpenSuse on Pi 3B</h1>
             </div>
 
             <div class="post-content">
-                <p>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。
-かえりたくないぃぃ〜〜。</p>
+                <p>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、
+パイの64bitバージョンも配布されているので試してみました。</p>
 
-<p>さて、作業の方が少し落ち着いてきました。
-情報がいろんなところに分散しているので、ブログの記事をプロジェクにまとめ始めます。
-まだ完成はしていないのですが、ブログと同時並行して追記・校正予定です。
-（現在、自分作業の為のインデックスがアップしてます。上げないとやる気が出ない、、）
-アクセスは上ナビバーの<strong>projects</strong>からになります。</p>
+<div class="attention"><b>結果</b>：wifiカードが認識されず、うまくいかなかったです。チャレンジしてみたい方は以下の方法がサイトに載っていた方法です。</div>
 
-<p>現在進行中かつ予定のプロジェクトは以下、</p>
+<p><a href="https://www.suse.com/c/opensuse-raspberry-pi-3-zero-functional-system-easy-steps/">https://www.suse.com/c/opensuse-raspberry-pi-3-zero-functional-system-easy-steps/</a></p>
+
+<p>インストールのプロセスは他のOSと同じです。</p>
 
 <ul>
-<li><a href="https://goozenlab.com/computing/home-pi/">家鯖</a>：実家に設置予定のラズベリーパイ・ゼロ・<strong>アドブロックサーバー構築</strong></li>
-<li>ノマド鯖：旅に持ち出すパイ・3A+、機能てんこ盛りルーター兼サーバー</li>
-<li><a href="https://goozenlab.com/computing/tpt480s/">ThinkpadT480s</a>： <strong>ハッキントッシュ＋マルチOS化</strong>とロールバックでドーピング、むきむきマッチョ端末になるぜ</li>
-<li><a href="https://goozenlab.com/computing/vaiop-reloaded/">Vaio P再構築</a>：バスター１０で最後のアップデート</li>
-<li>openZFSで安心ノート環境構築：頭の中ではパーフェクトな仕上がり。<strong>zfsとbtrfs</strong></li>
-<li>iPod最強化：未だ現役iPodのストレージとバッテリーをパワーアップ、音がやっぱり良いんですよ〜</li>
-<li>オプトアウトフォン：オープンソースソフトウェアを使い、<strong>Googleサービスからの脱却</strong>を謀る。端末は<b>OnePlus3TとMi Max3</b>。</li>
-<li>緊急時スティック端末：端末の盗難などの緊急時に使う端末（TPのディスクを流用、イメージ保存）</li>
-<li>フルタリアン：個人的プロジェクトで６ヶ月目突入。今年はなるべく果物のみの食事、バナナとスイカがメイン。</li>
+<li>イメージをダウンロード</li>
+<li>SDカードに焼き</li>
+<li>ルーターとパイを有線でつなぎ</li>
+<li>起動</li>
 </ul>
 
-<p>になります。</p>
+<p>うまく行かなかったので詳細は省略させていただきます。</p>
 
-<p><b>乞うご期待。</b></p>
+<p>初期状態ではWifiのインターフェイスは認識されないので有線でアクセスします。
+SSHではアクセスが可能なので、ヘッドレスでインストールは可能です。</p>
 
-<div class="attention">サーバー構築は9月なかばにもう一度最初からやり直し、マイペースで構築しつつ記事を書き直していくつもりです。人によってはビビッっと来るかもしれません。。</div>
+<pre><code>jin@gallo:~ $ ssh root@10.0.0.226
+Password:
+Have a lot of fun...
+localhost:~ #
+</code></pre>
+
+<ul>
+<li>Login / Passwd : root / linux</li>
+</ul>
+
+<p>Wifiを有効化するプロセスは以下のようになります。</p>
+
+<pre><code>localhost:~ # vi nano/etc/dracut.conf.d/raspberrypi_modules.conf
+
+add_drivers+=&quot; sdhci-iproc bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
+# Workaround for Wifi
+#omit_drivers+=&quot; sdhci-iproc&quot;
+</code></pre>
+
+<p>一行目の<code>sdhci-iproc</code>を削除して、最後の行のコメントを取り、以下のように書き換えます。</p>
+
+<pre><code>add_drivers+=&quot; bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
+# Workaround for Wifi
+omit_drivers+=&quot; sdhci-iproc&quot;
+</code></pre>
+
+<p>そして、<code>mkinitrd -f</code>のコマンドを走らせます。</p>
+
+<pre><code>localhost:~ # mkinitrd -f
+Creating initrd: /boot/initrd-4.20.13-1-default
+dracut: Executing: /usr/bin/dracut --logfile /var/log/YaST2/mkinitrd.log --force /boot/initrd-4.20.13-1-default 4.20.13-1-default
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'kiwi-repart' will not be installed, because it's in the list to be omitted!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+dracut: *** Including module: kernel-modules ***
+　
+dracut: *** Stripping files done ***
+dracut: *** Store current command line parameters ***
+dracut: Stored kernel commandline:
+dracut:  root=UUID=13eb3e13-0653-4c8d-b182-ea8b6487471b rootfstype=ext4 rootflags=rw,noatime,nobarrier
+dracut: *** Creating image file '/boot/initrd-4.20.13-1-default' ***
+dracut: *** Creating initramfs image file '/boot/initrd-4.20.13-1-default' done ***
+
+localhost:~ # reboot
+</code></pre>
+
+<p>再起動します。
+ログインし<code>yast</code>という設定ツールを起動します。Wifiカードは認識されているはずですが、
+見当たらず、、、（画像も撮り忘れる）</p>
+
+<pre><code>jin@gallo:~ $ ssh root@10.0.0.226
+Password:
+Have a lot of fun...
+localhost:~ # yast
+</code></pre>
+
+<p>撃沈ということであっさり撤退。</p>
 
 				
-
-<h3>See Also</h3>
-<ul>
-	
-	<li><a href="/blog/2019/08/openzfs-after/">OpenZFSをMBAにて１ヶ月使ってみて</a></li>
-	
-	<li><a href="/blog/2019/07/openzfs-mirroring-small/">OpenZFS ミラーリング</a></li>
-	
-	<li><a href="/blog/2019/07/openzfs-initial-setup/">OpenZFS on Mac</a></li>
-	
-	<li><a href="/blog/2018/11/applexit/">Appleからの離脱</a></li>
-	
-	<li><a href="/blog/2018/11/hackintosh-x230/">HackPad X230</a></li>
-	
-</ul>
 
 
             </div>
