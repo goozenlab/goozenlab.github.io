@@ -4,31 +4,48 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/09/boostnote/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/mac/</loc>
+    <lastmod>2019-09-03T09:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/blog/2019/09/opensuse-on-pi3/</loc>
     <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -52,12 +69,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/09/projects/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -560,12 +571,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
-    <lastmod>2019-03-23T16:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/03/ar300m-firmware-update/</loc>
     <lastmod>2019-03-21T06:30:00+07:00</lastmod>
   </url>
@@ -877,6 +882,12 @@
   <url>
     <loc>https://goozenlab.com/tags/sati/</loc>
     <lastmod>2018-09-27T06:30:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/health/</loc>
+    <lastmod>2018-09-26T13:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

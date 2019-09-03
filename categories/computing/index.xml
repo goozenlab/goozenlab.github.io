@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Sep 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>boostnote</title>
+      <link>https://goozenlab.com/blog/2019/09/boostnote/</link>
+      <pubDate>Tue, 03 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/boostnote/</guid>
+      <description>情報やメモの流れを考えています。 だらしないだけなのかもしてないけど、分散させると所在が掴めなって訳が分からなくなるし、 一箇所にまとめるとグジャグジャになる。 で、</description>
+    </item>
     
     <item>
       <title>Projects ページ</title>
