@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Sep 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 04 Sep 2019 12:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>https://goozenlab.com/tags/raspberry-pi/</link>
+      <pubDate>Wed, 04 Sep 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sway</title>
+      <link>https://goozenlab.com/tags/sway/</link>
+      <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/sway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update</title>
+      <link>https://goozenlab.com/tags/update/</link>
+      <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/update/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mac</title>
@@ -64,15 +91,6 @@
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry pi</title>
-      <link>https://goozenlab.com/tags/raspberry-pi/</link>
-      <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
@@ -271,15 +289,6 @@
       <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/littlist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>update</title>
-      <link>https://goozenlab.com/tags/update/</link>
-      <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/update/</guid>
       <description></description>
     </item>
     

@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Sep 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>音楽サービス</title>
+      <link>https://goozenlab.com/blog/2019/09/last-fm/</link>
+      <pubDate>Thu, 12 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/last-fm/</guid>
+      <description>聞いた音楽のリストを提供して、オススメを紹介してくれたり、自分の嗜好を分析してくれる、 https://www.last.fm というサービスがあります。 スポティファイを使うにあたってちょっと試しに同</description>
+    </item>
+    
+    <item>
+      <title>パイ・サーバー必要機材の購入</title>
+      <link>https://goozenlab.com/blog/2019/09/shiop-pi/</link>
+      <pubDate>Wed, 04 Sep 2019 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/shiop-pi/</guid>
+      <description>パイ・サーバー構築に向けて機材の調達をします。 サービスの少ない簡単なホームサーバーであれば、パイ・ゼロで十分です。 もし、いろいろなサービス（特にLAMP関連サー</description>
+    </item>
+    
+    <item>
+      <title>VaioP Reloaded 追記情報</title>
+      <link>https://goozenlab.com/blog/2019/09/update-vaiop-reloaded/</link>
+      <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/update-vaiop-reloaded/</guid>
+      <description>お古のVaio Pにインストールする予定のSwayのリサーチ中です。 思いの外あまり有益な情報は見つからず、、インストールベースが少ないのか知らんと。。 と心配になり</description>
+    </item>
     
     <item>
       <title>boostnote</title>
