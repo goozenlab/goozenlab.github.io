@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ネットスピードを計測 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-thumb/" class="pure-menu-link">travel thumb machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						
+					</ul>
+					
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-09-05</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/logging">logging</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>ネットスピードを計測</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>コマンドでサーバーから外へのネットスピードを計ります。
+おなじみの
+<a href="https://www.speedtest.net">https://www.speedtest.net</a>
+を利用しているようです。</p>
+
+<p><img src="/images/2019-09-01-speedtest-00.png" alt="Speedtest" /></p>
+
+<h2 id="インストール">インストール</h2>
+
+<p>パイソンのモジュールなので<code>pip install speedtest-cli</code>でインストールは可能のようですが、
+ラズビアンではパッケージもあるようなのでそちらを利用します。バージョン2.0.2-1がインストールされます。</p>
+
+<pre><code>pi@tacos:~ $ sudo apt install speedtest-cli
+Get:1 http://mirror1.ku.ac.th/raspbian/raspbian buster/main armhf speedtest-cli all 2.0.2-1 [23.3 kB]
+</code></pre>
+
+<h2 id="使い方">使い方</h2>
+
+<p>コマンド<code>speedtest</code>でいたって簡単です。<code>speedtest --share</code>で結果をシェアーする事ができます。</p>
+
+<pre><code>pi@tacos:~ $ speedtest --share
+
+Hosted by AIS (Phitsanulok) [345.39 km]: 23.406 ms
+Testing download speed................................................................................
+Download: 10.13 Mbit/s
+Testing upload speed......................................................................................................
+Upload: 2.14 Mbit/s
+Share results: http://www.speedtest.net/result/8556438892.png
+pi@tacos:~ $ 
+</code></pre>
+
+<p><img src="http://www.speedtest.net/result/8556438892.png" alt="Speedtest" /></p>
+
+<p>※ チェンライにて滞在中の安宿から、最近は夜の10時頃に切られてしまうんですが、割とがんばってるのでは。</p>
+
+<p>そして、書き出しオプションもありフォーマットが選べます。</p>
+
+<ul>
+<li>simple</li>
+<li>csv</li>
+<li>json：割と詳細にわたって情報が得られます。</li>
+</ul>
+
+<p>情報もアップロードされていたりもするみたいですね。。</p>
+
+<pre><code>pi@tacos:~ $ speedtest --simple
+Ping: 6.648 ms
+Download: 10.64 Mbit/s
+Upload: 2.23 Mbit/s
+pi@tacos:~ $ speedtest --csv
+pi@tacos:~ $ speedtest --json | jq .
+
+{
+  &quot;download&quot;: 9435120.481740829,
+  &quot;upload&quot;: 4211070.094284847,
+  &quot;ping&quot;: 6.735,
+  &quot;server&quot;: {
+    &quot;url&quot;: &quot;http://speedtest-cri1.3bb.co.th/speedtest/upload.php&quot;,
+    &quot;lat&quot;: &quot;19.9105&quot;,
+    &quot;lon&quot;: &quot;99.8406&quot;,
+    &quot;name&quot;: &quot;Chiang Rai&quot;,
+    &quot;country&quot;: &quot;Thailand&quot;,
+    &quot;cc&quot;: &quot;TH&quot;,
+    &quot;sponsor&quot;: &quot;3BB&quot;,
+    &quot;id&quot;: &quot;25116&quot;,
+    &quot;host&quot;: &quot;speedtest-cri1.3bb.co.th:8080&quot;,
+    &quot;d&quot;: 1.3948772586368514,
+    &quot;latency&quot;: 6.735
+  },
+  &quot;timestamp&quot;: &quot;2019-09-01T12:55:13.449757Z&quot;,
+  &quot;bytes_sent&quot;: 5472256,
+  &quot;bytes_received&quot;: 11827776,
+  &quot;share&quot;: null,
+  &quot;client&quot;: {
+    &quot;ip&quot;: &quot;171.4.241.127&quot;,
+    &quot;lat&quot;: &quot;19.9&quot;,
+    &quot;lon&quot;: &quot;99.8333&quot;,
+    &quot;isp&quot;: &quot;3BB Broadband&quot;,
+    &quot;isprating&quot;: &quot;3.7&quot;,
+    &quot;rating&quot;: &quot;0&quot;,
+    &quot;ispdlavg&quot;: &quot;0&quot;,
+    &quot;ispulavg&quot;: &quot;0&quot;,
+    &quot;loggedin&quot;: &quot;0&quot;,
+    &quot;country&quot;: &quot;TH&quot;
+  }
+}
+</code></pre>
+
+<h2 id="influxdbへ書出">InfluxDBへ書出</h2>
+
+<p>パイソンモジュールなので、パイソンスクリプトで利用することもできます。</p>
+
+<p>が、、なぜかシェルで書いていたようなので、、、<br />
+cronjobで一定期間毎に走らせて、telegrafのデーターベースに追加していきます。
+（春先に動かしていたので、動作上の問題はないと思います）</p>
+
+<pre><code>#!/usr/bin/env sh
+
+timestamp=$(date +%s%N)
+hostname=$(hostname)
+
+INFLUXDB_HOST=127.0.0.1
+INFLUXDB_PORT=8086
+INFLUXDB_DATABASE=telegraf
+
+output=$(/usr/local/bin/speedtest --simple --bytes)
+
+#echo &quot;Output: $output&quot;
+line=$(echo -n &quot;$output&quot; | awk '/Ping/ {print &quot;ping=&quot; $2} /Download/ {print &quot;downstream=&quot; $2} /Upload/ {print &quot;upstream=&quot; $2}' | tr '\n' ',' | head -c -1)
+curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;speedtest,host=$hostname $line $timestamp&quot;
+#echo &quot;New speedtest sent&quot;
+</code></pre>
+
+<p>Pythonに書き換えねば、</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/08/telegraf-pi-install/">Telegrafのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a></li>
+	
+	<li><a href="/blog/2019/03/mi-temperature-monitor/">Xiaomi 気温湿度計</a></li>
+	
+	<li><a href="/blog/2019/09/shiop-pi/">パイ・サーバー必要機材の購入</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

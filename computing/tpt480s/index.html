@@ -138,7 +138,7 @@
                 <h1>multiBoot Thinkpad T480s</h1>
                 <p class="footnote">
                     updated at 
-                    <time class="">2019-09-01</time>
+                    <time class="">2019-09-04</time>
 				</p>
             </div>
             <div class="post-content">
@@ -212,11 +212,15 @@ macOSは未だにel capitanで使っていて、Mavericksである程度完成�
 <!-- 2019-07-27-renew-main-laptop -->
 
 <ul>
-<li>メモリは安くなった16GBを追加＝24GB</li>
-<li>ストレージはおなじみサムソン・EVO.Plus 970 1.0TB</li>
-<li>英語キーボード：eBayで購入。</li>
-<li>wifiカード：Amazonにて、Macbook Proについていたものも使えるかもと思ったりもする</li>
+<li>メモリは安くなった16GBを追加＝24GB：32GBも高いけど<a href="https://amzn.to/2zML7cT">売ってます</a>ね。</li>
+<li>ストレージはおなじみサムソン・<a href="https://amzn.to/2zPW25y">EVO.Plus 970 1.0TB</a></li>
+<li>英語キーボード：eBayで渋々購入。</li>
+<li>wifiカード：Amazonにて購入、Macbookについているカードも使えると最近情報を得る。</li>
 </ul>
+
+<p>※ 品物リンクはアマゾンへ飛びますので、ご了承のほど。</p>
+
+<p>記事：Thinkpad T480sのハードウェアを換装・設定編：バラバラにして彼方此方で再利用</p>
 
 <!-- 
 
@@ -282,6 +286,8 @@ acpiがスリープやバッテリーなどを受け持つ。
 詳しく
 -->
 
+<p>記事：Hackinpad T480sを構築する</p>
+
 <h2 id="windows10">Windows10</h2>
 
 <p>リカバリー・ディスクを作り新しく追加したSSDに復元・インストールします。
@@ -294,19 +300,59 @@ acpiがスリープやバッテリーなどを受け持つ。
 https://www.slideshare.net/zgock/gpu-kvmgtvirtiogpu
 -->
 
+<p>記事：Windowsのリカバリーディスクをファイルにして保存する。
+<!--[続きを読む](https://goozenlab.com/blog/2019/07/pi-full-backup/)--></p>
+
 <h2 id="linux">Linux</h2>
 
+<p>実機での検証などができるように、無駄なくいろんなディストリビューションが入れられるような設定にしてます。
+ファイルシステムはbtrfsを利用します。</p>
+
 <ul>
-<li>インストール</li>
-<li>日本語環境</li>
-<li>スナッパー・ロールバック設定</li>
+<li>debian: <a href="https://www.debian.org">https://www.debian.org</a></li>
+<li>manjaro: <a href="https://manjaro.org">https://manjaro.org</a></li>
+<li>arch linux: <a href="https://www.archlinux.org">https://www.archlinux.org</a></li>
+<li>openSUSE: <a href="https://www.opensuse.org">https://www.opensuse.org</a>
+<!-- + Solus: https://getsol.us/home/（ちょっと気になるので） --></li>
 </ul>
+
+<p>KVMのベースにもなるので、安定かつしっかりと動く環境を作り上げられたら良いなと、
+先数ヶ月かけていろいろ試しながら絞っていけば良いかなと思ってます。</p>
+
+<p>毎日気分に合わせて使い分けられるぜよ！</p>
+
+<p>記事：インストール・設定編</p>
+
+<ul>
+<li>debian:</li>
+<li>manjaro:</li>
+<li>arch linux:</li>
+<li>openSUSE:</li>
+</ul>
+
+<p>記事：デスクトップ環境設定編<br />
+記事：日本語環境設定編<br />
+記事：ロールバック設定編</p>
+
+<!-- 
+
+利用する環境は、幾つかを切り替えて使っても良いかなと思ってます。
+デビアン：Gnome、マンジャーロ：xfce、アーチ：swayで
+をメインに考えています。
+余計なソフトを入れなければディスク容量もそこまで大きくはならないし（私見）
+イニシャルの時点で、
+余計なものは入れたくは無いので、
+どのディストリビューションも最低限での設定になっているます。
+btrfsの領域はこんな感じになっています。
+
+-->
 
 <div class="attention">現在リサーチ中、9月末に作業をスタートします。</div>
 
 <hr />
 
 <ul>
+<li>2019-09-04：頭・デザインの整理のため、ちまちま加筆したりしてます。</li>
 <li>2019-09-01：アイディアや仕様がほぼ頭の中で決定したのでページをアップ。（9月半ばに再スタート）</li>
 </ul>
 
