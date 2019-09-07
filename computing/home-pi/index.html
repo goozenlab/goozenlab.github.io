@@ -72,8 +72,8 @@
 					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
 					<ul class="pure-menu-children">
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-thumb/" class="pure-menu-link">travel thumb machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
@@ -152,17 +152,19 @@
 スマートフォンも一人一台の時代です。
 家に置いてある端末の数がどんどん増えてきてます。</p>
 
+<p>そしてさらにもう一台！を。</p>
+
 <h2 id="母に捧げるホームメードのラズベリーパイ">母に捧げるホームメードのラズベリーパイ</h2>
 
 <p>：：目的：：</p>
 
 <p>自分でここ数ヶ月間使ってみたところ、個人宅使用であれば、
-この安価なシングルボードコンピューターでも十分役割を担えます。</p>
+この安価なシングルボードコンピューター、パイ・ゼロでも十分役割を担えます。</p>
 
 <ul>
 <li><b>PiHole</b> (Adblocker)</li>
 <li><b>Syncthing</b> (Sync Server)</li>
-<li><b>Radicale</b> (CalDAV, contactDAV)</li>
+<li><b>Radicale</b> (calDAV, cardDAV)</li>
 </ul>
 
 <p>ただ、導入にあたり<code>ターミナル</code>を使ってアクセスしたりするので、ちょっとだけ壁があるかもしれませんが、
@@ -191,7 +193,7 @@
 
 <ul>
 <li><a href="https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/">ラズビアンをインストール</a>：様々なディストリビューションがありますが、ラズベリーパイでは一番メジャーな<strong>Raspbian</strong>を選択。モニターもキーボードも接続せずにインストールします。</li>
-<li>ネットワーク：静的なIP番号が必要になります。 端末は花の名前にしているので、サーバー名はタンポポ。</li>
+<li>ネットワーク：静的なIP番号が必要になります。サーバー名は草花の名前にしているのでタンポポ。</li>
 <li><a href="https://goozenlab.com/blog/2019/06/rsa-ssh-login/">SSH簡単ログイン</a>：クライアントからパスワードではなく<strong>暗号鍵</strong>を使って簡単にアクセスできるようにします。</li>
 </ul>
 
@@ -208,7 +210,7 @@
 <li><b>Syncthing</b> (Sync Server)</li>
 </ul>
 
-<p>もう一つぐらいサービス（LAMPサービス類以外）を走らせても問題無いと思います。</p>
+<p>もう一つぐらいサービス：Squidとか（LAMPサービス類以外）を走らせても大丈夫かなと思います。</p>
 
 <div class="attention"><b>注意</b> セキュリティーに関しての記事はありませんので
 情報が必要な方は他の方のサイトを検索・参考にされてください。</div>
@@ -268,18 +270,23 @@
 そして、広告がいたるところに顔を出してきます。
 アドブロックソフトなどを端末入れることもできますが、
 母とかにそういった面倒はちょっと無理のようですし、
-回線の間にブロックソフト入れるのが良い
+アップデート作業もままならんので、
+回線の間にブロックソフト入れるのが最善策のように思える。
+
+いつも間にかiPodなんぞも持ってたりするし、
+姪っ子が持ってくるものも数年で変わるだろう。
 
 外出時は電話をラインぐらいらしいので、その時はまぁ我慢ということで、
 
 これで家にある全ての端末から広告をブロックできます。
-嬉しいことに、アプリ内の広告も同様に弾いてくれます。
-ウェブサイトの広告だけでなく、携帯アプリのアドもブロックしてくれるので利便性も高いです。
+嬉しいことに、ウェブサイトの広告だけでなく、携帯アプリのアドもブロックしてくれます。
+
+るので利便性も高いです。
 
 遊びにくる甥や姪の端末にも設定の必要なし、
 
-掛かる費用もそんなではなく、小さく、消費電力も低いので、 
 
+掛かる費用もそんなではなく、小さく、消費電力も低いので、 
 実家のネットワーク環境にアドブロック・サーバーを導入します。
 
 広告が嫌な感じで入ってくるのは仕方のないことではあるのですが、
