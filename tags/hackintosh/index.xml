@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Sep 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 05 Oct 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>T480sでハッキントッシュ</title>
+      <link>https://goozenlab.com/blog/2019/10/hackintosh-t480s/</link>
+      <pubDate>Sat, 05 Oct 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/hackintosh-t480s/</guid>
+      <description>日本に戻ってきて、ちまちまThinkpad T480sを魔改造中。 取り敢えず、Hackintosh、Windows、Debian、Manjaroのクワトロ？・ブー</description>
+    </item>
     
     <item>
       <title>Projects ページ</title>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>T480sでハッキントッシュ | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+						
+					</ul>
+					
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-10-05</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/hackintosh">hackintosh</a> <a href="https://goozenlab.com/tags/thinkpad">thinkpad</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/mumble">mumble</a> 
+                    
+
+                    
+                </p>
+                <h1>T480sでハッキントッシュ</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>日本に戻ってきて、ちまちまThinkpad T480sを魔改造中。</p>
+
+<p><img src="/images/2019-10-02-hackintosh-t480s.jpg" alt="Hackintosh on Thinkpad T480s" /></p>
+
+<p>取り敢えず、<strong>Hackintosh</strong>、Windows、Debian、Manjaroのクワトロ？・ブート端末に仕上がりました。
+ひと段落着いたので、まずはメインのハッキントッシュの使い心地レビュー。</p>
+
+<h2 id="インストール">インストール</h2>
+
+<p><img src="/images/2019-09-20-clover-00.png" alt="Clover" /></p>
+
+<p>インストール自体はちょっと難がありました。
+事前に調べた必要なファイル群はギットハブにいくつかのレポジトリがあるのですが、
+一番新しいのはポインターがうまく動かない不具合があって上手くいかず。</p>
+
+<p>他のものを試したりして、結局はちょっと前の物をベースにし、
+他のレポジトリーに入っているツールを使って調整してようやくインストーラーが動き、
+インストールも事なく終了しました。</p>
+
+<p>細かい作業履歴は後ほどまとめる予定です。。
+ちとメモを取り忘れたりしてるんですが、EFIファイルを公開するかな。</p>
+
+<h2 id="使えるものと使えないもの">使えるものと使えないもの</h2>
+
+<p><img src="/images/2019-10-02-hackintosh-00.jpg" alt="Hackintosh on Thinkpad T480s" /></p>
+
+<p>さて何が使えてなにが使えないかですが、</p>
+
+<p>まず、<strong>内臓のWifiカード</strong>は認識されません。
+Wifiを使うには対応しているカードに取り換えるかWifiドングルをつかう必要があります。
+Wifiカードが手元に以前買ったものがあるのですが、よくみると差し込み部分の形状が違う。。
+ピンの配列は同じようなので削れば差し込めるような気がするので、ヤスリを見つけて挑戦するかどうか。。（去年はオーブンでマザーボードを焼いたり、今年はやすりか、、あまり関係性の低い余計な作業はしたくないんだけど。。）
+今の所ちょっと保留して内臓の有線LANでネットに繋いでます。</p>
+
+<p><strong>トラックパッド</strong>はNGです。トラックポイントを使ってます。
+カーネルエクステンションを別の物に入れ替えると、
+逆にトラックパッドが使えトラックポイントが無効にすることもできるようです。</p>
+
+<p>どちらか一つしか使えないということのようです。</p>
+
+<p>そして真ん中のボタンの挙動が変なのと、
+気にならないくらいですが時に最初のクリックが無視されるような気がします。
+（確か、何かしらのパッチかカーネルエクステンションを修正すれば使えるようになると、何処かで見てような。）</p>
+
+<ul>
+<li>キーボードからのボリューム・照度設定なども問題なし。</li>
+<li>SDカードのスロットは使えない。</li>
+<li>フロントカメラは使える。</li>
+<li>USBのポートもオッケー。</li>
+<li>HDMIは手元にケーブルも何もないので使えるかは分かりません。</li>
+<li>BTは認識はしているようですが使えません。（これもカーネルエクステンションでなんとかなりそう。。）</li>
+<li>音もなります。レビューでは酷評されている内臓スピーカーですが、思ったよりまともな音が出ます（私見）。</li>
+<li><strong>スリープ</strong>に入るのに30秒くらいかかります。復帰は数秒で問題なし。システムの起動・終了も通常のマック（Macbook Air11, 2014)と変わりないです。</li>
+</ul>
+
+<h2 id="バッテリー">バッテリー</h2>
+
+<p>そして持ち歩く前提のラップトップ端末ですので、肝心なバッテリーの持ちですが、</p>
+
+<ul>
+<li>スリープは1時間で1％くらいの消費</li>
+<li>1時間、約15％：ワイファイ無しのテキスト編集のみの作業。</li>
+<li>1時間20％の消費：有線でネットに接続しYoutubeを80%のDisplay照度で鑑賞。</li>
+</ul>
+
+<p>まぁ、テキストベースの作業で連続<strong>6時間〜</strong>ぐらいは使えるのではないかなと、
+そこまで集中力はないので、なんとか1日の作業がこなせるくらいだと思います。
+細かい情報が無かったので最悪４時間くらいの覚悟をしていたのですが、
+もう一踏ん張り欲しいとこ、ギリギリ及第点かな。
+CPUの負荷が高いであろうXcodeでシミュレーターを走らせてりしての時間計測はまた後ほど、
+充電時間はそれほど長くは感じません。繋いで気が付いたら満充電になっています。</p>
+
+<!--
+ネパールとか計画停電のあるところだとちょっとキツイかもしれん。（行く予定あり）
+-->
+
+<p>そして電源関係がうまく動いていないようで、放っておいてもスリープしない時があります。ハイバーネートはしないです。
+使っているとバッテリーの残量警告はありますが、限界までバッテリーを使い果たしおちます。
+（こればバッテリー上あまり良くないと、でも時に完全放電をしたい人には良いかも、、）</p>
+
+<h2 id="使用感と雑感">使用感と雑感</h2>
+
+<p>4・5日経ちましたがカーネルパニックも無いし、通常の使用（ブログ書きと画像の修正ぐらい）ではほとんど問題ありません。</p>
+
+<p>ただ数日使っていて、マックブックのトラックパッドの偉大さを改めて確認しました。
+２本指のスクロールなど様々な動作が楽な事、楽な事。
+トラックポイントはちょっと慣れが必要かな、
+ポインターのスピードを最高にしてもちょっと感覚的に重い。
+ユーチューブを見ていて、ウィンドウズやLinuxのユーザーは未だマウスを使っている人が多いのが少し不思議だったけど、ちょっと納得しました。</p>
+
+<!--ただし、ブラインドタッチバリバリのキーボードにずっと手を置いている人にはトラックポイントも悪くないかな。-->
+
+<p>大きな切替え理由であるキーボードの打ち心地は書くまでもなく良い！。
+ただし、それによって文章の質が上がるという訳ではないですが。。</p>
+
+<p>ただ、キーボード矢印キーの横に配置されている<strong>PgUp+Dn</strong>がちょっと邪魔。
+キミらはなぜにここにいる？？カーソルを動かすときに間違ってる押すことがある。
+ちょっとイラっとする。</p>
+
+<p>そして、スペースキー横の<strong>PrtSc</strong>を押すとポインターがフリーズします（もう一度押すと復帰）。
+と、<strong>キャップスロック</strong>をコマンドキーなどに割り当てると不具合が出ます。</p>
+
+<p>それ以外はなかなかよろしいというか、マックブックと同じ。</p>
+
+<p>あとは環境を行ったり来たりすると、マックでのコマンドキーの役割がWinodws、Linuxではコントロールキーになって位置が逆になる。。。
+操作感に統一性を持ちたいので、さて、いったいどっちにするか、、、</p>
+
+<p>修正できることもままあるようですし、カーネル・エクステンションもアップデートされているので、ちまちまと情報収集して修正していきたいと思ってます。
+（プロジェクトページは随時更新します）</p>
+
+<!--
+ただもともとWindow使いでは無いのでWinodwsの居場所がなくなってますね。
+ThinkpadのファームウェアもLinuxからアップデートできるようなので、
+使う意味がなくなってきてます。。
+-->
+
+<p>アップルのハードウェアは非常に高価で融通がききませんが、macOSはいいですよねぇ、ほんと（ただしどんどん閉鎖的になってきているのがね。）。
+多分最近の端末に入っているTチップの関係でいずれはハッキントッシュも難しくなりそうですし、
+私はこの端末と心中ですわ。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2018/11/hackintosh-x230/">HackPad X230</a></li>
+	
+	<li><a href="/blog/2019/09/projects/">Projects ページ</a></li>
+	
+	<li><a href="/blog/2019/07/renew-main-laptop/">新しい端末をポチッとな</a></li>
+	
+	<li><a href="/blog/2018/11/applexit/">Appleからの離脱</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
