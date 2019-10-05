@@ -22,5 +22,23 @@
       <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストールをする。 結局ライブ</description>
     </item>
     
+    <item>
+      <title>chroniumosをインストール</title>
+      <link>https://goozenlab.com/blog/2016/06/chroniumos/</link>
+      <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2016/06/chroniumos/</guid>
+      <description>暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファイルをダウンロードし</description>
+    </item>
+    
+    <item>
+      <title>elementaryOSをインストール</title>
+      <link>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</link>
+      <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</guid>
+      <description>デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCP</description>
+    </item>
+    
   </channel>
 </rss>

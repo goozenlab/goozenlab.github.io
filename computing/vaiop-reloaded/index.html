@@ -73,10 +73,11 @@
 					<ul class="pure-menu-children">
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 						
 					</ul>
 					
@@ -158,24 +159,29 @@
 <li>Storage: 64GB SSD</li>
 </ul>
 
-<p>スペックを改めて見てみると、ラズベリー・パイと同等な感じなのか、、</p>
+<p>スペックを改めて見てみると、ラズベリー・パイと同等な感じなのか、10年戦士ももうヨボヨボというところか、、</p>
 
 <p><a href="https://en.wikipedia.org/wiki/Sony_Vaio_P_series">https://en.wikipedia.org/wiki/Sony_Vaio_P_series</a></p>
 
 <p>もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、
 これを最後のアップデートとして引退させます。
-持ち出しエディターか、オフグリッド端末で使おうかなと、、
-あっ、コールドストレージでも良いか、、</p>
+以前はウェブサーバーとして運用してたりもしてましたが、
+（ルーターの横にアクロバチック状態で数ヶ月運用）</p>
+
+<p><img src="/images/2011-05-18-home-server.jpg" alt="Home server" /></p>
+
+<p>さて今回は持ち出しエディターか、オフグリッド端末で使おうかなと、、
+あっ、コールドストレージでも良いか、、と微妙な感じです。</p>
 
 <p>ネタでもありますので、引っ張り出して再構築を行います。
-使い物にならなかったら、CoreOSでも入れるかな。。</p>
+使い物にならなかったら、家鯖復活でもよし、CoreOSでも入れるもよしで。。。</p>
 
 <p>当初の目的は幾つかあって、以下の3つ。</p>
 
 <ol>
 <li>debian.<b>buster</b></li>
 <li><del>Btrfs with RollBack</del>：やぱやめた。XFSにしとく。</li>
-<li>Wayland + <b>Sway</b>: swayのパッケージが遠い〜な〜〜。。
+<li>Wayland + <b>Sway</b>: swayのパッケージが遠い〜な〜〜、でも動くみたいです。
 
 <ul>
 <li><a href="https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation">https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation</a></li>
@@ -183,32 +189,31 @@
 </ul></li>
 </ol>
 
+<p>今までのパターンですと、Gnomeデスクトップはちょっと使い物にならなかったので、
+今回から（デビアンにしては珍しく早くも）対応されたウェイランドにちょっと期待を寄せています。</p>
+
 <hr />
 
 <h2 id="インストール">インストール</h2>
 
-<!--
-やり直しもそんなに時間のかかるものでは無いので、予想のつくデビアンは後回しにして、とりあえず最初にMxLinuxよりインストールする。
+<!-- 
+さて、行ってみましょう。インストールはネットインストール用のisoを使います。
+細かいインストール作業はまぁ、情報にもならないので割愛させていただきます。
 
-記事：
-
-+ VaioPにMxLinux [インストール編]：
-+ VaioPにMxLinux [環境設定編]：
-+ VaioPで動かすMxLinuxの使用感
-
+インストール後の動作チェック：照度変更ボタンや 
 -->
 
 <h2 id="wayland-sway">Wayland + Sway</h2>
 
 <p>2005年の<strong>ThinkPad T60</strong>でもGnomeDesktopが思って以上に軽快に動いています！(Ubuntu19、楽だしこっちにするか。。)。</p>
 
+<!-- [Wayland on 14 year old laptop ThinkPad T60](https://goozenlab.com/blog/2019/09/update-vaiop-reloaded/) -->
+
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/r_cbNfIZSCo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/r_cbNfIZSCo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
-<p><a href="https://www.youtube.com/watch?v=r_cbNfIZSCo">Linux Wayland on 14 year old laptop ThinkPad T60? Runs beautiful!</a></p>
 
 <h2 id="日本語環境">日本語環境</h2>
 
@@ -216,13 +221,25 @@
 
 <h2 id="雑感">雑感</h2>
 
+<h2 id="おまけ">おまけ</h2>
+
 <h2 id="追記">追記：</h2>
 
 <p>2019-09-03：ThinkPad T60 + Ubuntu19でGnomeDesktopが動く衝撃動画を追加。</p>
 
 <!--
 
-続きを読む
+ロジカルボリュームを使って、他のディストリビューションも入れてみました。
+Manjaro, CrunchBang++も
+
+4GB SWAP
+60GB - LINUX
+20GB : Debian
+20GB : Manjaro
+20 bensen
+
+で分ければ良いかもしれん。。
+
 
 ## デスクトップ環境
 

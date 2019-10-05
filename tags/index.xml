@@ -8,17 +8,44 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 07 Sep 2019 12:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 12:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>raspberry pi</title>
+      <link>https://goozenlab.com/tags/raspberry-pi/</link>
+      <pubDate>Tue, 17 Sep 2019 12:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://goozenlab.com/tags/linux/</link>
+      <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>macos</title>
       <link>https://goozenlab.com/tags/macos/</link>
-      <pubDate>Sat, 07 Sep 2019 12:30:00 +0700</pubDate>
+      <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>password</title>
+      <link>https://goozenlab.com/tags/password/</link>
+      <pubDate>Tue, 10 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/password/</guid>
       <description></description>
     </item>
     
@@ -32,29 +59,11 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://goozenlab.com/tags/linux/</link>
-      <pubDate>Fri, 06 Sep 2019 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>logging</title>
       <link>https://goozenlab.com/tags/logging/</link>
       <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/logging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry pi</title>
-      <link>https://goozenlab.com/tags/raspberry-pi/</link>
-      <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
@@ -221,20 +230,20 @@
     </item>
     
     <item>
-      <title>VPNGate</title>
-      <link>https://goozenlab.com/tags/vpngate/</link>
-      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/vpngate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>openVPN</title>
       <link>https://goozenlab.com/tags/openvpn/</link>
       <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/openvpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPNGate</title>
+      <link>https://goozenlab.com/tags/vpngate/</link>
+      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/vpngate/</guid>
       <description></description>
     </item>
     
@@ -572,7 +581,7 @@
     </item>
     
     <item>
-      <title>tajikistan</title>
+      <title>Tajikistan</title>
       <link>https://goozenlab.com/tags/tajikistan/</link>
       <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -644,15 +653,6 @@
     </item>
     
     <item>
-      <title>DIY</title>
-      <link>https://goozenlab.com/tags/diy/</link>
-      <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/diy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>nepal</title>
       <link>https://goozenlab.com/tags/nepal/</link>
       <pubDate>Wed, 08 Apr 2015 18:00:00 +0700</pubDate>
@@ -685,6 +685,15 @@
       <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIY</title>
+      <link>https://goozenlab.com/tags/diy/</link>
+      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/diy/</guid>
       <description></description>
     </item>
     

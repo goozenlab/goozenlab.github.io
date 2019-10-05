@@ -8,10 +8,46 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 08 Sep 2019 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 14:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>B&amp;O P2 BT スピーカー</title>
+      <link>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</link>
+      <pubDate>Fri, 04 Oct 2019 14:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</guid>
+      <description>消費税導入前に煽られて購入したグッズの一つ、BTスピーカ。 以前も小さいBTスピーカーを一台持っていたのですが、 大きさ故の限界と言うか、携帯性により犠牲になった低</description>
+    </item>
+    
+    <item>
+      <title>知られざるショートカット</title>
+      <link>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</link>
+      <pubDate>Fri, 13 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</guid>
+      <description>あまり知られていない、知る人ぞ知るショートカットだと思いますが、 割と使い勝手が良いので紹介。 テキストファイルなどで編集して閉じるときなどにでるダイアログですが、</description>
+    </item>
+    
+    <item>
+      <title>悲しい葉っぱ</title>
+      <link>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</link>
+      <pubDate>Thu, 12 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</guid>
+      <description>木を切り倒すことは、われわれの祖先の魂への攻撃だ。鉱物を求め地面を掘ることは、地球の心臓を突き刺しているということだ。 われわれは皆、同じ空気を吸い、同じ水を飲ん</description>
+    </item>
+    
+    <item>
+      <title>エディター紛争</title>
+      <link>https://goozenlab.com/blog/2019/09/end-of-editor-war/</link>
+      <pubDate>Wed, 11 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/end-of-editor-war/</guid>
+      <description>彼ノ地タイ国ニテ終止符ヲ打ツ。 端末の設定やら整理やら、ちょっと環境を再構築中です。 ここ最近の傾向でなるべく・オープンソースかつマルチプラットフォームのものを選ぶ</description>
+    </item>
     
     <item>
       <title>音楽サービス</title>
@@ -425,6 +461,15 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/05/main-notebook/</guid>
       <description>日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。 昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思った以上に快適。（S</description>
+    </item>
+    
+    <item>
+      <title>elementaryOSをインストール</title>
+      <link>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</link>
+      <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</guid>
+      <description>デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのvaioP (新しいCP</description>
     </item>
     
     <item>

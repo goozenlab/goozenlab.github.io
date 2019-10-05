@@ -73,10 +73,11 @@
 					<ul class="pure-menu-children">
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 						
 					</ul>
 					
@@ -207,15 +208,15 @@
 <pre><code>pi@raspberry:~ $ diff /etc/squid/squid.conf.orig /etc/squid/squid.conf
 
 1190,1193c1190,1193
-&lt; acl localnet src 100.64.0.0/10		# RFC 6598 shared address space (CGN)
-&lt; acl localnet src 169.254.0.0/16 	# RFC 3927 link-local (directly plugged) machines
-&lt; acl localnet src 172.16.0.0/12		# RFC 1918 local private network (LAN)
-&lt; acl localnet src 192.168.0.0/16		# RFC 1918 local private network (LAN)
+&lt; acl localnet src 100.64.0.0/10        # RFC 6598 shared address space (CGN)
+&lt; acl localnet src 169.254.0.0/16   # RFC 3927 link-local (directly plugged) machines
+&lt; acl localnet src 172.16.0.0/12        # RFC 1918 local private network (LAN)
+&lt; acl localnet src 192.168.0.0/16       # RFC 1918 local private network (LAN)
 ---
-&gt; #acl localnet src 100.64.0.0/10		# RFC 6598 shared address space (CGN)
-&gt; #acl localnet src 169.254.0.0/16 	# RFC 3927 link-local (directly plugged) machines
-&gt; #acl localnet src 172.16.0.0/12		# RFC 1918 local private network (LAN)
-&gt; #acl localnet src 192.168.0.0/16		# RFC 1918 local private network (LAN)
+&gt; #acl localnet src 100.64.0.0/10       # RFC 6598 shared address space (CGN)
+&gt; #acl localnet src 169.254.0.0/16  # RFC 3927 link-local (directly plugged) machines
+&gt; #acl localnet src 172.16.0.0/12       # RFC 1918 local private network (LAN)
+&gt; #acl localnet src 192.168.0.0/16      # RFC 1918 local private network (LAN)
 1407c1407
 &lt; #http_access allow localnet
 ---

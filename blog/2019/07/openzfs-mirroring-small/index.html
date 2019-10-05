@@ -73,10 +73,11 @@
 					<ul class="pure-menu-children">
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 						
 					</ul>
 					
@@ -190,11 +191,11 @@ gallo:~ jin$ zpool status
   scan: none requested
 config:
 
-	NAME         STATE     READ WRITE CKSUM
-	Work         ONLINE       0     0     0
-	  mirror-0   ONLINE       0     0     0
-	    disk0s6  ONLINE       0     0     0
-	    disk3s2  ONLINE       0     0     0
+    NAME         STATE     READ WRITE CKSUM
+    Work         ONLINE       0     0     0
+      mirror-0   ONLINE       0     0     0
+        disk0s6  ONLINE       0     0     0
+        disk3s2  ONLINE       0     0     0
 
 errors: No known data errors
 gallo:~ jin$ sudo chmod 777 /Volumes/Work
@@ -213,9 +214,9 @@ gallo:~ jin$ sudo chmod 777 /Volumes/Work
   pool: Work
  state: DEGRADED
 ....
-	  mirror-0                                      DEGRADED     0     0     0
-	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
-	    12934696169980452171                        UNAVAIL      0     0     0  was /private/var/run/disk/by-id/media-871E499C-DE42-4E33-A3B2-1530B7575307
+      mirror-0                                      DEGRADED     0     0     0
+        media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
+        12934696169980452171                        UNAVAIL      0     0     0  was /private/var/run/disk/by-id/media-871E499C-DE42-4E33-A3B2-1530B7575307
 </code></pre>
 
 <p><strong>UNAVAIL</strong>になります。使用上問題はないようですが、シャットダウン時に歯車がぐるぐる、強制終了。ちと怖い。</p>
@@ -229,14 +230,14 @@ gallo:~ jin$ sudo chmod 777 /Volumes/Work
  state: ONLINE
 …
   scan: resilver in progress since Tue Jul 30 07:09:24 2019
-	4.12G scanned at 50.8M/s, 1.40G issued at 17.2M/s, 4.12G total
-	1.44G resilvered, 33.88% done, 0 days 00:02:41 to go
+    4.12G scanned at 50.8M/s, 1.40G issued at 17.2M/s, 4.12G total
+    1.44G resilvered, 33.88% done, 0 days 00:02:41 to go
 …
-	NAME                                            STATE     READ WRITE CKSUM
-	Work                                            ONLINE       0     0    22
-	  mirror-0                                      ONLINE       0     0    44
-	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0    44
-	    media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0    10
+    NAME                                            STATE     READ WRITE CKSUM
+    Work                                            ONLINE       0     0    22
+      mirror-0                                      ONLINE       0     0    44
+        media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0    44
+        media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0    10
 
 errors: 1 data errors, use '-v' for a list
 </code></pre>
@@ -254,9 +255,9 @@ gallo:~ jin$ zpool status
   pool: Work
  state: DEGRADED
 ....
-	  mirror-0                                      DEGRADED     0     0     0
-	    media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
-	    media-871E499C-DE42-4E33-A3B2-1530B7575307  OFFLINE      0     0     0
+      mirror-0                                      DEGRADED     0     0     0
+        media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
+        media-871E499C-DE42-4E33-A3B2-1530B7575307  OFFLINE      0     0     0
 
 errors: No known data errors
 </code></pre>

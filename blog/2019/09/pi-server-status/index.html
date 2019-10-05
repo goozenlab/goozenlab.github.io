@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>パイ・サーバーの現状 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+						
+					</ul>
+					
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-09-09</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/server">server</a> 
+                    
+
+                    
+                </p>
+                <h1>パイ・サーバーの現状</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>移動を数日後に控え、空調の効いたショッピングセンターで
+進行中のパイ・サーバーの現状、使用感を少しまとめてみる。</p>
+
+<p><img src="/images/2019-09-08-grafana-weather.png" alt="Gafana" /></p>
+
+<p>さて、パイ・サーバーの現状は、サービスのインストールはほぼ終了、
+リバースプロキシーでサブドメインでアクセスを可能にして動かしています。
+そしてこの１ヶ月ほどはゆるゆると運用してます。</p>
+
+<h2 id="サービス">サービス</h2>
+
+<p>さて、動作中のサービスは以下。</p>
+
+<ul>
+<li><b>Pihole</b>：ローカルDNSとしても動いてます。おすすめ、アドブロッカー</li>
+<li>Squid：Polipoからアップデート、どちらでもそこまで違いがあるようには思えないし、恩恵がそこまであるようにも思えない。要らんかも、、</li>
+<li><b>Syncthing</b>：常時オンでスマフォから心拍数のデーターを取ってきて処理したりしてます。</li>
+<li><b>Radicale</b>：カレンダー・コンタクトサーバー、住所録とスケジュールの共有</li>
+<li>LAMP (debian | nginx | mariaDB | php7.3)
+
+<ul>
+<li>Tiny Tiny <b>RSS</b>：RSSサーバー、minifluxに切り替えるかも、クライアントのマックではReederを使ってます。</li>
+<li><b>Kanboard</b>：ちょっと動作が緩慢、phpのキャッシュ量を増やしてギリギリストレスにならず使えるかどうかという感じ。
+<img src="/images/2019-08-29-kanboard-main-00.png" alt="Kanboard" /></li>
+<li>Walabag：ポケットのオープンソース版、同前。あまり使わず。私的にはInstapaperだけで十分かな。。
+<img src="/images/2019-09-08-wallabag.png" alt="Wallabag" /></li>
+</ul></li>
+<li><b>Grafana</b>：天気や為替情報、心拍数などちょっとしたライフログとして使ってます。
+<img src="/images/2019-09-08-grafana-health.png" alt="Gafana" />
+
+<ul>
+<li>InfluxDB: GrafanaのデーターソースDB</li>
+<li>Telegraf：モニタリングツール。割とリソースを取っているのではと、、個人使用なのである程度動作状況が把握できれば切ってしまっても良いかも。</li>
+</ul></li>
+<li>Gitea：インストールはすれどもいまだ未使用、ドッカーで動かせば良いかなと思っている。</li>
+</ul>
+
+<p>※<b>太字</b>はおすすめ。</p>
+
+<h2 id="ネットワーク">ネットワーク</h2>
+
+<p>ネットワークの構成は以下、openWrtで動いている<a href="https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/">トラベルルーター</a>をリピーターとして使ってます。
+パイ・サーバーはDNSとプロキシー、その他サービスを提供してます。
+パイ・サーバー、ラップトップ、スマフォが10.0.0.*/24の同一ネットワーク上で動いてます。</p>
+
+<p>∨ internet ^<br />
+　　 | |<br />
+　　 | |<br />
+[wifi spot @ GH/Cafe]<br />
+　　 | | wifi<br />
+[GL.iNet Travel Router]<br />
+　　 | |<br />
+　　 | | wifi as repeater<br />
+　　 | |<br />
+10.0.0.* = [Pi 3A+ Server: DNS , Proxy] = [Macbook] = [Smart Phones]</p>
+
+<p>宿のアウトレットの数が少ないのと、ちょっとケーブルを持ってくるのを忘れたりもしたので、
+スマフォの充電時などでたまに電源をオフすることがありました。
+最長10日間ぐらいかな、<a href="https://goozenlab.com/blog/2019/08/pi-swap-dphys/">スワップ容量</a>を初期設定の100MBから増量して以来安定して動いてます。</p>
+
+<h2 id="cpuとメモリー使用量">CPUとメモリー使用量</h2>
+
+<p>モニタリングソフトのTelegrafを見てみると、CPUの負荷は少ないようです。
+ただ、RAMの利用がちょっとかつかつのようで、
+メモリーと同量取っているスワップファイルも半分以上消費してます。
+ほんと、このパイ・3A+のRamが１GBであったら最高だったのに、と。</p>
+
+<p><img src="/images/2019-09-08-grafana-telegraf.png" alt="Gafana" /></p>
+
+<p>Ramが足りないからなのかgrafanaやkanboardなどのサーバー側でのグラフィック処理があるものを動かすともっさりした感じになります。読み込み時など待たされることが多々。</p>
+
+<p>topで見てみると、データーベースのサービス・プロセスが多くRamを消費してます。</p>
+
+<p><img src="/images/2019-09-09-top.png" alt="top" />
+<!-- ![htop](/images/2019-09-08-htop.png) --></p>
+
+<p>そこまで多くのことを行っているわけでは無いので調整できないかなと、、
+ちょとリサーチします。</p>
+
+<hr />
+
+<p>あと出来ることといえば、サービスを整理して、
+ローカルのドッカーで動かしても支障の無いものは移動してしまう。<br />
+gitteaとkanboardはローカルで作業しているときにのみ使うサービスなので
+ローカルのドッカーで動かしても問題はほとんど無いのでオフにして動かしてみたりしてます。</p>
+
+<!--
+ と、、RSSサーバーはMinifluxに取り替えようかなとも思ってます。
+（DBもPostgreSQLに変更になる。。やめとくかな。。）
+-->
+
+<p>そして、最終的にはトラベルルーター化させてプロジェクトはとりあえず完成・終了になります。
+現在手元にWifiドングルが無いので、9月末にはドングルを付けアクセスポイント化する予定。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/09/speedtest-cli/">ネットスピードを計測</a></li>
+	
+	<li><a href="/blog/2019/09/shiop-pi/">パイ・サーバー必要機材の購入</a></li>
+	
+	<li><a href="/blog/2019/09/opensuse-on-pi3/">OpenSuse on Pi 3B</a></li>
+	
+	<li><a href="/blog/2019/08/kanboard-pi-install/">Kanboardのインストール</a></li>
+	
+	<li><a href="/blog/2019/08/radicale-pi-install/">Radicaleのインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

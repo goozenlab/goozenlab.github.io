@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 14:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>B&amp;O P2 BT スピーカー</title>
+      <link>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</link>
+      <pubDate>Fri, 04 Oct 2019 14:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</guid>
+      <description>消費税導入前に煽られて購入したグッズの一つ、BTスピーカ。 以前も小さいBTスピーカーを一台持っていたのですが、 大きさ故の限界と言うか、携帯性により犠牲になった低</description>
+    </item>
+    
+    <item>
+      <title>iPod Here Now</title>
+      <link>https://goozenlab.com/computing/ipod-here-now/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/ipod-here-now/</guid>
+      <description>Rockbox</description>
+    </item>
     
     <item>
       <title>MicroG &#43; F-Droid</title>
@@ -20,6 +38,78 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/optout-phone/</guid>
       <description>自由へむけカスタムロムを使いグーグル・アンドロイドからのオプトアウト。</description>
+    </item>
+    
+    <item>
+      <title>パイ・3AサーバーのSDカードを3Bへ</title>
+      <link>https://goozenlab.com/blog/2019/09/pi-3b-server-comparison/</link>
+      <pubDate>Tue, 17 Sep 2019 12:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/pi-3b-server-comparison/</guid>
+      <description>日本への帰国を数日後に控えて、起動中のパイ・3AサーバーのSDカードをパイ・3Bに入れ替えてみました。 以下のソフトウェアーが動いとります。太字がよく使っているも</description>
+    </item>
+    
+    <item>
+      <title>Live Linux on Macbook Air </title>
+      <link>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</link>
+      <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</guid>
+      <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook Airにて、 Linu</description>
+    </item>
+    
+    <item>
+      <title>パイでZRamを試す</title>
+      <link>https://goozenlab.com/blog/2019/09/pi-zram/</link>
+      <pubDate>Sat, 14 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/pi-zram/</guid>
+      <description>パイ・３A＋(Ram512MB)で運用中のサーバー、ちょっとRamを効率的にできないかと調べていて、 使用していないRamを圧縮して脇に退け、利用できる容量を確保</description>
+    </item>
+    
+    <item>
+      <title>知られざるショートカット</title>
+      <link>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</link>
+      <pubDate>Fri, 13 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</guid>
+      <description>あまり知られていない、知る人ぞ知るショートカットだと思いますが、 割と使い勝手が良いので紹介。 テキストファイルなどで編集して閉じるときなどにでるダイアログですが、</description>
+    </item>
+    
+    <item>
+      <title>悲しい葉っぱ</title>
+      <link>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</link>
+      <pubDate>Thu, 12 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</guid>
+      <description>木を切り倒すことは、われわれの祖先の魂への攻撃だ。鉱物を求め地面を掘ることは、地球の心臓を突き刺しているということだ。 われわれは皆、同じ空気を吸い、同じ水を飲ん</description>
+    </item>
+    
+    <item>
+      <title>エディター紛争</title>
+      <link>https://goozenlab.com/blog/2019/09/end-of-editor-war/</link>
+      <pubDate>Wed, 11 Sep 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/end-of-editor-war/</guid>
+      <description>彼ノ地タイ国ニテ終止符ヲ打ツ。 端末の設定やら整理やら、ちょっと環境を再構築中です。 ここ最近の傾向でなるべく・オープンソースかつマルチプラットフォームのものを選ぶ</description>
+    </item>
+    
+    <item>
+      <title>パスワードをK-9からリカバリー</title>
+      <link>https://goozenlab.com/blog/2019/09/k9-password/</link>
+      <pubDate>Tue, 10 Sep 2019 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/k9-password/</guid>
+      <description>パスワードを忘れる。。 というか、enpassのものが使えない、、おかしい。 いろいろリセット・リカバリーを試すが、ちょっと面倒・無理だったので、 現在使用中のアンド</description>
+    </item>
+    
+    <item>
+      <title>パイ・サーバーの現状</title>
+      <link>https://goozenlab.com/blog/2019/09/pi-server-status/</link>
+      <pubDate>Mon, 09 Sep 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/09/pi-server-status/</guid>
+      <description>移動を数日後に控え、空調の効いたショッピングセンターで 進行中のパイ・サーバーの現状、使用感を少しまとめてみる。 さて、パイ・サーバーの現状は、サービスのインストー</description>
     </item>
     
     <item>
@@ -3681,21 +3771,21 @@ I tried to make it simple and look clean on text and also on iPhone/iPod. If you
     </item>
     
     <item>
-      <title>Listaria v1.5.3</title>
-      <link>https://goozenlab.com/blog/2013/07/listaria-153/</link>
-      <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/listaria-153/</guid>
-      <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更。 タイでは１キロ、2</description>
-    </item>
-    
-    <item>
       <title>ippuku v1.5.0</title>
       <link>https://goozenlab.com/blog/2013/07/ippuku-150/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/ippuku-150/</guid>
       <description>iOS7が発表され、それにそったデザインに少し変更した物をアップします。 機能の追加はありませんが、ちょっとした所に手を入れました。 日付けを挟む所(午前０時）にラ</description>
+    </item>
+    
+    <item>
+      <title>Listaria v1.5.3</title>
+      <link>https://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更。 タイでは１キロ、2</description>
     </item>
     
     <item>
@@ -4519,6 +4609,41 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/iapp/littlist/</guid>
       <description>小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。 ビジネスが中心のタスク管理ソフトを、生活に近く</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.com/blog/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/1/01/</guid>
+      <description>ブートマネージャーの設定 端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、前にインストールしたManjaroのブートローダーを使いたいと思ったので、変更する方法を探しました。
+このプロセスも一体何処のどやつ（BIOSだかシステムだか）が仕切っているのだか、、、
+BIOSからブートオプションへ飛ぶと、もう使っていないシステムの記載があったり これまでに色々とインストールをしてきたので様々なブートローダーが書き込まれているようです。
+さてと、
+EFIのブート関連を設定するのにコマンドが用意されています。 Linux（デビアンとManjaro）であればすでにインストールされているefibootmgrを使います。
+まずは、 efibootmgrにて現在の設定状況が表示されます。
+（スクショ）
+Orderの所が起動の順番になります。 （なんか随分と沢山あるな。。）
+そして、変更には、
+マンジャーロのブートローダーは0002なので、 そのあとはいままで通りに、
+新しくインストールされたOSのブートローダーが優先されます。 変更をするには
+sudo efibootmgr -O &amp;lsquo;0002,0003,0080&amp;hellip;&amp;hellip;.&amp;rsquo;
+にて最初に立ち上がるブートローダーを選択できます。
+おまけ
+ハッキントッシュのためのブートローダーはCloverというものを使います。
+CloverよりLinuxを起動することもできるのですが、 Linuxでスナップショットでのブートを試みる予定なので、 ブートローダーはLinuxのものを使うことにします。
+直接マックを起動することはできないようなので、 GrubよりCloverを呼び出す設定にします。
+設定するファイルは、
+え?/Eetc/grub.d/40_custom
+で以下を追加します。
+その後、
+Uupdate-grubで設定をアップデートします。
+Ggrub-mkconfigにて自動でEFIから他のOS状況を取り込むことができます。
+あとは起動の時間調整。
+画面が小さいので、少し大きくする。
+そして、基本MacOSをそのまま立ち上げ、あるキーを押されている時だけブートローダーを起動するような設定にする。 （マックでオプションキーを押すと起動ディスクの選択ができるように、）
+ウィンドウズ・キー（左のオプションキー）をマックでもスポットライトに割り当てられないかなと、、動作を統一させたいのだけど、、</description>
     </item>
     
     <item>

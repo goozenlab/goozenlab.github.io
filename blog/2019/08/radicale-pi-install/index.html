@@ -73,10 +73,11 @@
 					<ul class="pure-menu-children">
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 						
 					</ul>
 					
@@ -199,8 +200,8 @@ server {
     server_name radicale.goozen.lab;
 
     location /radicale/ { # The trailing / is important!
-        proxy_pass 		http://localhost:5232/; # The / is important!
-        proxy_set_header	X-Script-Name /radicale;
+        proxy_pass      http://localhost:5232/; # The / is important!
+        proxy_set_header    X-Script-Name /radicale;
         proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_pass_header Authorization;
     }
