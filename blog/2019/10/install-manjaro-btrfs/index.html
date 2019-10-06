@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Btrfsにマンジャーロ | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+						
+					</ul>
+					
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2019-10-07</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Btrfsにマンジャーロ</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2019-10-01-manjaro-cafe.jpg" alt="Debian on Thinkpad T480S" /></p>
+
+<p>2018年一番人気のディストリビューション<strong>Manjaro</strong>、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになってます。コミュニティーが親切なようで評判が良いようです。そしてつい先月の9月に法人化しました。</p>
+
+<hr />
+
+<p>先日のデビアンのインストールに続き、こちらManjaroもBtrfsにシステムをインストールをします。</p>
+
+<p>様々なウィンドウ・マネージャーのLiveイメージがありますが、
+そのディスクではBtrfsへのインストールはうまくいかないので、
+シンプルなテキストベースのインストーラー、
+<strong>アーキテクト</strong>のISOを使います。<br />
+<a href="https://manjaro.org/download/official/architect/">https://manjaro.org/download/official/architect/</a></p>
+
+<p>アーキテクトではインストールの途中でBtrfsのパーティション・サブボリュームを作成及びマウントすることができます。</p>
+
+<!-- 
+デビアンで行ったような、途中で裏に回って悪さをする必要はありません。
+-->
+
+<p>細かいインストールの過程は割愛しますが、流れに沿って進めます。</p>
+
+<p>Btrfsのサブボリュームの設定は、デビアンを同居させるのでデフォルトの設定ではなくて、マニュアル設定でルートパーティションを@manjaroに変更して進めます。</p>
+
+<ul>
+<li>Default : @, @home, @cache (/var/cache)<br /></li>
+<li>Change : @manjaro, @home, @cache,</li>
+</ul>
+
+<p>作成したサブボリュームを割り当て、
+スワップのパーティションを指定し、
+EFIパーティションをフォーマットせずに<code>boot/efi</code>に割り当てます。</p>
+
+<p>その後もインストラーにそって作業を継続します。
+テキストベースでLinuxをインストールしたことがあればそこまで難しくもクセもなく、
+ほぼデフォルトの状態で問題ありませんでした。</p>
+
+<p>ウィンドウマネージャはちょっとMacOSに似ている感じがあって軽量でもあるらしいバジーを選びました。インストール時には一つしか選べませんがデスクトップのインストールはフルかミニマルが選べます。
+試したところオフィスソフトなどがインストールされて、大体１GBくらいの違いがありました。フルでも４GBいかないぐらいです。</p>
+
+<p>終了後、再起動。</p>
+
+<hr />
+
+<p>Linuxのデスクトップ環境も最近のものは色合いとか雰囲気がどんどん仕上がりが良くなってきてると思います。どんどんウィンドウズが遠のきます。使いたいソフトがある訳ではないので、もしかしたら立ち上げもしないかもしれん。。</p>
+
+<p>無線LANなどすべてデフォルトの状態で使えました、設定はディスプレイの解像度だけ。すばらし～。</p>
+
+<p><img src="/images/2019-10-01-manjaro-process.jpg" alt="Manjaro Thinkpad T480s" /></p>
+
+<p>バジーは軽いとの触れ込みでしたが、DebianのGnomeに比べるとちょっとリソースが高めです。しかしながら使ってみたところ、バッテリーの持ちはこちらの方が良さそうな感じです。１時間使って11%消費、デビアンですと13％くらいなので、見積りでは９時間は持つと。</p>
+
+<p>でもManjaroはパッケージにSnappy:
+<a href="https://snapcraft.io/">https://snapcraft.io/</a>
+を採用してみたりと少しね、Ubuntuと香りが似てきてるのが気になる。まぁテーマをバックアップしてArchを入れればいいのだけどね、、</p>
+
+<blockquote>
+<p>Snappyとはカノニカルが設計・開発したソフトウェアデプロイメントシステムかつパッケージ管理システムであり、元々はUbuntu Phone オペレーティングシステム用に設計・開発された。Snappyのパッケージは &lsquo;Snap&rsquo; と呼ばれ、Snapを使うツールは &lsquo;Snapd&rsquo; と呼ばれる。Snapは様々なLinuxディストリビューションで動作するので、ディストリビューションの上流のソフトウェアデプロイメントに依存しない。Snappyのシステムは携帯電話、クラウド、IoTやデスクトップパソコン向けに設計されている。
+<a href="https://ja.wikipedia.org/wiki/Snappy">https://ja.wikipedia.org/wiki/Snappy</a></p>
+</blockquote>
+
+<p>主要なソフトもあるので、ようやくLinux・デスクトップの時代が到来と言えるんじゃないかと。
+と思ったりもしたけど、コンピューター自体の存続が怪しいか、、ちょっと先日発表されたマイクロソフトの新しいハードウェアが気になる。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/10/install-debian-btrfs/">デビアンをBtrfsにインストール</a></li>
+	
+	<li><a href="/blog/2019/09/live-linux-macbook-air/">Live Linux on Macbook Air </a></li>
+	
+	<li><a href="/blog/2019/09/linux-distribution/">おすすめLinuxディストリビューション</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
