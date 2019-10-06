@@ -4,12 +4,37 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-10-05T09:00:00+07:00</lastmod>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-10-05T09:00:00+07:00</lastmod>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/linux/</loc>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/10/install-debian-btrfs/</loc>
+    <lastmod>2019-10-06T09:30:00+09:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-10-05T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/10/hackintosh-t480s/</loc>
-    <lastmod>2019-10-05T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
     <lastmod>2019-10-05T09:00:00+07:00</lastmod>
   </url>
   
@@ -63,11 +78,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-09-17T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
     <lastmod>2019-09-17T12:00:00+07:00</lastmod>
   </url>
@@ -75,11 +85,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/09/pi-3b-server-comparison/</loc>
     <lastmod>2019-09-17T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2019-09-15T09:30:00+07:00</lastmod>
   </url>
   
   <url>
