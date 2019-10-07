@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 07 Oct 2019 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2019 09:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ブートマネージャーの設定</title>
+      <link>https://goozenlab.com/blog/2019/10/multios-boot-loader/</link>
+      <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/multios-boot-loader/</guid>
+      <description>端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、事前にインストールしてあるManjaroのブー</description>
+    </item>
     
     <item>
       <title>Btrfsにマンジャーロ</title>

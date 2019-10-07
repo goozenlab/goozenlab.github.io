@@ -164,8 +164,6 @@
 <strong>ハッキントッシュ</strong>から<strong>kvm</strong>まで、
 カッティングエッジ（死語か？）でキレッキレ（これも死語か？）な端末にしたいと思います。</p>
 
-<div class="attention">現在リサーチ中、9月末に作業をスタートします。</div>
-
 <!-- 
 
 もうマックは買わないと決め、しかしmacOSを捨てるわけにはいかないので、
@@ -203,7 +201,7 @@ macOSは未だにel capitanで使っていて、Mavericksである程度完成�
 
 <h2 id="ハードウェアアップデート">ハードウェアアップデート</h2>
 
-<p>めいいっぱい周回遅れ（でもこの方がいろいろと情報が集まって悪くもないんですけどね）ですが、
+<p>周回遅れ（でもこの方がいろいろと情報が集まって悪くもないんですけどね）ですが、
 今年の7月ごろの最後の在庫処分セールのタイミングで購入。
 安くなるのを待ってたら、上海セレクションが選べなくなり、
 米沢セレクトの日本語キーボードしか選択できなくなる。
@@ -212,19 +210,25 @@ macOSは未だにel capitanで使っていて、Mavericksである程度完成�
 指紋認証はWinodwsでしか使えないんだよね。。
 追加で以下のものも購入。</p>
 
-<!-- 2019-07-27-renew-main-laptop -->
+<p><img src="/images/2019-10-01-thinkpad-inside-00.jpg" alt="Thinkpad T480s" /></p>
 
 <ul>
-<li>メモリは安くなった16GBを追加＝24GB：32GBも高いけど<a href="https://amzn.to/2zML7cT">売ってます</a>ね。</li>
+<li>メモリは安くなった16GBを追加して24GBに：32GBも高いけど<a href="https://amzn.to/2zML7cT">売ってます</a>ね。</li>
 <li>ストレージはおなじみサムソン・<a href="https://amzn.to/2A1iE33">EVO.Plus 970 1.0TB</a>にしようと思ったけど、コストパフォーマンスをとって<a href="https://amzn.to/2UWC5n3">シリコンパワー</a>のものにする、ほぼ半額ですしね。</li>
 <li>英語キーボード：eBayで渋々購入(US$45.77)。</li>
-<li>wifiカード：Lenovo純正無線LANカードの<a href="https://amzn.to/2HQK0x7">BCM94352Z</a>、Macbookについているカードも使えると最近情報を得る。</li>
+<li>wifiカード：Lenovo純正無線LANカードのBCM94352Z、コネクターの形状が違かったので削って使う。Macbookについているカードも使えると最近新たに情報を得る。</li>
 <li>取り替えたSSDのための<a href="https://amzn.to/2HQZTDU">外付けケース</a>：デビアン・スティック端末にする？。</li>
 </ul>
 
 <p>※ 品物リンクはアマゾンへ飛びますので、ご了承のほど。</p>
 
-<div class="attention"><b>注意：</b></br>BIOS設定より「内蔵バッテリーの無効化」を行ったうえで作業を行いましょう。</div>
+<p>ネジを6本緩めるだけでマザーボードへアクセスできます。キーボードはトラックパッドのボタンをとり隠れているネジを緩めて取り外します。
+両方とも簡単に行うことができます。
+キーボードはThinkpad独特だった水を掛けても大丈夫な仕様にはなっていませんので注意。</p>
+
+<div class="attention"><b>注意：</b></br>作業は、BIOS設定より「内蔵バッテリーの無効化」を行ったうえで行いましょう。作業終了後は電源を繋げないと起動しません。</div>
+
+<p>記事：<a href="">Broadcom Wifiに交換</a>：無理くりWifiカードを使えるようにする。</p>
 
 <!-- 
 TDBT USB-C M.2 NVMe SSD ヒートシンク付外付けケース 
@@ -244,10 +248,7 @@ https://amzn.to/2HQK0x7
 https://www.amazon.co.jp/gp/product/B06XDD1FTT/
 -->
 
-<p>記事：Thinkpad T480sのハードウェアを換装・設定編：バラバラにして彼方此方で再利用</p>
-
 <!-- 
-
 ストレージは安心できるシステムを作れたらなと、、
 半分を**zfs**でミラーリングし重要なデーターなどはこちらに保存します。
 Linuxの領域は**btrfs**で組み、できればロールバックも可能します。
@@ -277,15 +278,17 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 
 1TBのSSDのパーティションはこんな感じです。
 
-1. 170GB: macOS.mojave
-2. 100GB: windows10
-3. 150GB:Linux
+2. 80GB: windows10
+1. 230GB: macOS.mojave
+3. 160GB:Linux
     3. buster
     3. manjaro
     4. arch
-5. 7GB: Swap
 4. 32GB: 共有（ZFS.mirror）
 4. 500GB: 共有（ZFS.mirror）
+5. 7GB: Swap
+
+
 
 + 使うファイルシステム：btrfs, zfs（これでかなりバックアップシステムは十分では）
 + kvmとdocker：仮想環境もマルチOS できれば全部仮想化したい
@@ -295,69 +298,63 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 
 <h2 id="hackinpad-t480s">Hackinpad T480s</h2>
 
-<ul>
-<li><a href="https://github.com/vumvo/myt480s">https://github.com/vumvo/myt480s</a> on Apr 24</li>
-<li><a href="https://github.com/linusyang92/macOS-ThinkPad-T480s">https://github.com/linusyang92/macOS-ThinkPad-T480s</a> on May 4 with Tools</li>
-<li><a href="https://github.com/lisovskiy01/T480s-hackintosh">https://github.com/lisovskiy01/T480s-hackintosh</a> on Aug 6</li>
-<li><a href="https://github.com/kk1987/T480s-hackintosh">https://github.com/kk1987/T480s-hackintosh</a> on Nov 13, 2018</li>
-<li><a href="https://github.com/tylernguyen/x1c6-hackintosh">https://github.com/tylernguyen/x1c6-hackintosh</a></li>
-</ul>
-
-<!-- 
-そして、他のものと比較しつつ作業をする。
-acpiがスリープやバッテリーなどを受け持つ。
-
-詳しく
--->
+<p>MacOS Mojaveをインストールします。ほんの少し不具合がありますが、問題なく使えてます。
+いくつかの情報・必要なファイルがギットハブにて公開されています。</p>
 
 <p>記事：Hackinpad T480sを構築する</p>
+
+<p>参照：</p>
+
+<ul>
+<li><a href="https://github.com/linusyang92/macOS-ThinkPad-T480s">https://github.com/linusyang92/macOS-ThinkPad-T480s</a></li>
+<li><a href="https://github.com/lisovskiy01/T480s-hackintosh">https://github.com/lisovskiy01/T480s-hackintosh</a></li>
+</ul>
+
+<!--
++ https://github.com/vumvo/myt480s on Apr 24
++ https://github.com/linusyang92/macOS-ThinkPad-T480s on May 4 with Tools
++ https://github.com/lisovskiy01/T480s-hackintosh on Aug 6
++ https://github.com/kk1987/T480s-hackintosh on Nov 13, 2018
++ https://github.com/tylernguyen/x1c6-hackintosh
+-->
 
 <h2 id="windows10">Windows10</h2>
 
 <p>リカバリー・ディスクを作り新しく追加したSSDに復元・インストールします。
-復元後はディスクを丸ごとバックアップしてファイルサーバーに保管しておきます。
-多分利用頻度はそんなに多く無いと思いますので、
+設定があったかもしれないけれど、一気にパーティションをフラットにされる。。
+復元SDカードは保管しておきます。
+多分利用頻度はそんなに多く無いと思うので、
 ゆくゆくはlinux.kvm環境内で構築してみようかなと思ってます。</p>
-
-<!-- 
-リカバリーディスクを作って、ファイルとしてバックアップしておく。
-https://www.slideshare.net/zgock/gpu-kvmgtvirtiogpu
--->
-
-<p>記事：Windowsのリカバリーディスクをファイルにして保存する。
-<!--[続きを読む](https://goozenlab.com/blog/2019/07/pi-full-backup/)--></p>
 
 <h2 id="linux">Linux</h2>
 
-<p>実機での検証などができるように、無駄なくいろんなディストリビューションが入れられるような設定にします。
-ファイルシステムはbtrfsを利用します。</p>
+<p>無駄なくいろんなディストリビューションが入れられるような設定にするため、
+ファイルシステムにbtrfsを利用します。色々インストールしてみましたが、以下の３つに
+絞りました。</p>
 
 <ul>
-<li>debian <a href="https://www.debian.org">https://www.debian.org</a> : gnome/wayland + fxce + sway</li>
-<li>manjaro <a href="https://manjaro.org">https://manjaro.org</a> : fxce-4.14 + budgie</li>
-<li>openSUSE <a href="https://www.opensuse.org">https://www.opensuse.org</a> : fxce-4.14</li>
-<li>Solus <a href="https://getsol.us/home/">https://getsol.us/home/</a> : budgie</li>
+<li>debian: 一番キヨキヨしいディストロ。久しぶりにインストールしましたが、凄く良くなってます。Gnomeも好印象。<a href="https://www.debian.org">https://www.debian.org</a></li>
+<li>manjaro: バランスが良くデフォルトの格好いいディストロ。budgie　<a href="https://manjaro.org">https://manjaro.org</a></li>
+<li>arch linux: ちょっとManjaroがいやらしくなってきそうなのでインストールする。<a href="https://www.archlinux.org">https://www.archlinux.org</a></li>
 </ul>
 
 <p>気になるけれど入れないディストリビューション</p>
 
 <ul>
-<li>Qubes OS <a href="https://www.qubes-os.org">https://www.qubes-os.org</a> : Btrfでのインストールができないようなので保留。</li>
-<li>arch linux <a href="https://www.archlinux.org">https://www.archlinux.org</a> : Manjaroが思いの外良さそうなのでこちらはやめておく。</li>
+<li><a href="https://www.qubes-os.org">Qubes OS</a> : 非常にきになるけれど、Btrfのサブボリューム上にインストールができないようなので保留。</li>
+<li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、特色が無い。</li>
+<li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先。</li>
 </ul>
 
 <p>KVMのベースにもなるので、安定かつしっかりと動く環境を作り上げられたら良いなと、
 先数ヶ月かけていろいろ試しながら絞っていけば良いかなと思ってます。</p>
 
-<p>毎日気分に合わせて使い分けられるぜよ！</p>
-
 <p>記事：インストール・設定編</p>
 
 <ul>
-<li>openSUSE：btrfs推しのディストリビューション</li>
 <li>debian：安定度の高さといえばこちら</li>
 <li>manjaro：ローリングリリースかつ快適さと安定度のバランスが一番良さそう（もう冒険はしたく無いけど、新しいソフトが使いたい。）</li>
-<li>solus：独立系も少し隙間もありそうだし、ちょっと試したかったので</li>
+<li>arch：こちらも清々しいディストロ。インストールに難あり。</li>
 </ul>
 
 <p>記事：デスクトップ環境設定編<br />
@@ -366,8 +363,8 @@ https://www.slideshare.net/zgock/gpu-kvmgtvirtiogpu
 
 <!-- 
 
-利用する環境は、幾つかを切り替えて使っても良いかなと思ってます。
-デビアン：Gnome、マンジャーロ：xfce、アーチ：swayで
+ホームを共有しているので、利用する環境を幾つかを切り替えて使って行こうと思ってます。
+
 をメインに考えています。
 余計なソフトを入れなければディスク容量もそこまで大きくはならないし（私見）
 イニシャルの時点で、
@@ -376,11 +373,11 @@ https://www.slideshare.net/zgock/gpu-kvmgtvirtiogpu
 btrfsの領域はこんな感じになっています。
 -->
 
-<div class="attention">現在リサーチ中、9月末に作業をスタートします。</div>
-
 <hr />
 
 <ul>
+<li>2019-10-07：マルチOSインストール作業は、Windows（サイズを縮小）、Hackintosh、Manjaro、Busterの順で行いました。＋Archをあとでインストールする予定。</li>
+<li>2019-10-01：無事ハッキントッシュ設定終了、Wifiカードも交換、ほんの少しの不具合のみで動作中。Macbookより環境を移行中。</li>
 <li>2019-09-04：頭・デザインの整理のため、ちまちま加筆したりしてます。</li>
 <li>2019-09-01：アイディアや仕様がほぼ頭の中で決定したのでページをアップ。（9月半ばに再スタート）</li>
 </ul>
