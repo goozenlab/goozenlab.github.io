@@ -146,12 +146,12 @@
                 
 
 <p>ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたりから不自由な感じがしてきたので、
-ちょっと環境を変えることにしました。
-多分これで壊れない限り、できればリタイヤーするまで使い続けたられたら良いなと思ってます。</p>
+ちょっと環境を変えることにしました。<strong>ハッキントッシュ</strong>から<strong>kvm</strong>まで、
+カッティングエッジ（死語か？）でキレッキレ（これも死語か？）な端末にしたいと思います。</p>
 
 <p><img src="/images/2019-07-14-thinkpad-t480s-01.jpg" alt="Thinkpad T480s" /></p>
 
-<p>ヘキサOSで行けるところまで行ってみます。久しぶりに血がさわぐぜ。</p>
+<p>ヘキサOSを目標に行けるところまで行ってみます。久しぶりに血がさわぐぜ。</p>
 
 <blockquote>
 <p><b>ヘキサ (Hexa)</b><br />
@@ -160,44 +160,25 @@
 <p><a href="https://ja.wikipedia.org/wiki/ヘキサ">https://ja.wikipedia.org/wiki/ヘキサ</a></p>
 </blockquote>
 
-<p>ThinkpadはLinuxフレンドリーでもあるので、
-<strong>ハッキントッシュ</strong>から<strong>kvm</strong>まで、
-カッティングエッジ（死語か？）でキレッキレ（これも死語か？）な端末にしたいと思います。</p>
+<p>結局６つは手に余ると思い結局５つのOSをインストールしました。
+インストールした順番は以下です。
+Windowsのリカバリーディスクが一気に全ての領域をフォーマットしてしまったので、
+私のやり方が悪かったかもしれないけれど、はじめにインストールするのが良いと思います。</p>
 
-<!-- 
+<ol>
+<li>windows10: ディスクを縮小し他のOS領域を確保</li>
+<li>macOS: movaje、ちとトラブルが問題なく動いてます</li>
+<li>linux:久しぶりにインストールしましたが全体的にすごく良くなってます。
 
-もうマックは買わないと決め、しかしmacOSを捨てるわけにはいかないので、
-禁断の未熟な青リンゴ化、**ハッキントッシュ**。
+<ol>
+<li>Manjaro: ちょっと格好良い、バランスの取れた環境（バジー）</li>
+<li>Debian: 安定Linux環境（Gnome)</li>
+<li>Arch: 鼻血覚悟のブリーディングエッジな環境（これからインストール）</li>
+</ol></li>
+</ol>
 
-もろもろ美味しい所をてんこ盛りにしてます。
-トールの順番は、
-
-1. macOS: movaje
-2. windows10: リカバリーディスクより復元
-3. linux: openSUSE & Arch（とりあえず両方試して、安定している方を採用する予定。できればArchを使いたいのだけどね。）
-
-/homeを共有していしまう。
-そんなに違いのあるものをインストールはしていないので大丈夫でしょう。
-
-気分に合わせて使い分けてます。
-感覚的に比較できるし、ほぼ同じ環境で動かしています。
-
-linuxはローリングリリースなので、これで、インストールの手間も、
-SSDが壊れない限り、大丈夫かなと、、
-
-macOSは未だにel capitanで使っていて、Mavericksである程度完成の域に達した感じでもある、
-アップグレードも新バージョンのXcoedeを使うがためにしているようなもので、
-カッタリーナはちょっとセキュリィー関連が厳格になりすぎているので、どんどん不自由になってきてます。
-セキュリティー的に
-力をいいれいますね、悪いことではありませんが、
-
-
-
-モハベでもう良いかなと、
-、Xcodeもv10で完成の域に達している感じもするし、
-もうアップデートはしません。
-
--->
+<p>Linuxはホームディレクトリーを共有しているので、数ヶ月はあっちこっち試してみて絞っていくかもしれません。
+多分これで壊れない限り、できればリタイヤーするまで使い続けたられたら良いなーと。</p>
 
 <h2 id="ハードウェアアップデート">ハードウェアアップデート</h2>
 
@@ -220,15 +201,15 @@ macOSは未だにel capitanで使っていて、Mavericksである程度完成�
 <li>取り替えたSSDのための<a href="https://amzn.to/2HQZTDU">外付けケース</a>：デビアン・スティック端末にする？。</li>
 </ul>
 
+<p>記事：<a href="https://goozenlab.com/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifiに交換</a>：無理くりWifiカードを使えるようにする。</p>
+
 <p>※ 品物リンクはアマゾンへ飛びますので、ご了承のほど。</p>
 
-<p>ネジを6本緩めるだけでマザーボードへアクセスできます。キーボードはトラックパッドのボタンをとり隠れているネジを緩めて取り外します。
-両方とも簡単に行うことができます。
-キーボードはThinkpad独特だった水を掛けても大丈夫な仕様にはなっていませんので注意。</p>
+<p>裏蓋のネジを6本緩めるだけでマザーボードへアクセスできます。キーボードはトラックパッドのボタンをとり隠れているネジを緩めて取り外します。
+両方とも簡単に行うことができました。
+ただキーボードはThinkpad独特だった水を掛けても大丈夫な仕様にはなっていませんので注意。</p>
 
-<div class="attention"><b>注意：</b></br>作業は、BIOS設定より「内蔵バッテリーの無効化」を行ったうえで行いましょう。作業終了後は電源を繋げないと起動しません。</div>
-
-<p>記事：<a href="">Broadcom Wifiに交換</a>：無理くりWifiカードを使えるようにする。</p>
+<div class="attention"><b>注意：</b></br>ハードウェアの交換作業は、BIOS設定より「内蔵バッテリーの無効化」を行ったうえで行いましょう。作業終了後は電源を繋げないと起動しません。最初壊れたかと思って冷や汗をかきました。。</div>
 
 <!-- 
 TDBT USB-C M.2 NVMe SSD ヒートシンク付外付けケース 
@@ -298,32 +279,18 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 
 <h2 id="hackinpad-t480s">Hackinpad T480s</h2>
 
-<p>MacOS Mojaveをインストールします。ほんの少し不具合がありますが、問題なく使えてます。
-いくつかの情報・必要なファイルがギットハブにて公開されています。</p>
+<p>MacOS Mojaveをインストール。少しインストールは難があり、ほーんの少しだけ不具合がありますが、問題なく使えてます。
+使い勝手は<a href="https://goozenlab.com/blog/2019/10/hackintosh-t480s/">こちら</a> に書いてます。
+最新OSのカタリーナはbeta版をMacbookで試して見ましたが、窮屈さが増しているようなのでアップグレードする予定はありません。</p>
 
-<p>記事：Hackinpad T480sを構築する</p>
-
-<p>参照：</p>
-
-<ul>
-<li><a href="https://github.com/linusyang92/macOS-ThinkPad-T480s">https://github.com/linusyang92/macOS-ThinkPad-T480s</a></li>
-<li><a href="https://github.com/lisovskiy01/T480s-hackintosh">https://github.com/lisovskiy01/T480s-hackintosh</a></li>
-</ul>
-
-<!--
-+ https://github.com/vumvo/myt480s on Apr 24
-+ https://github.com/linusyang92/macOS-ThinkPad-T480s on May 4 with Tools
-+ https://github.com/lisovskiy01/T480s-hackintosh on Aug 6
-+ https://github.com/kk1987/T480s-hackintosh on Nov 13, 2018
-+ https://github.com/tylernguyen/x1c6-hackintosh
--->
+<p>記事：ハッキントッシュT480sを構築：インストール方法をまとめました。2019年10月での情報。</p>
 
 <h2 id="windows10">Windows10</h2>
 
 <p>リカバリー・ディスクを作り新しく追加したSSDに復元・インストールします。
 設定があったかもしれないけれど、一気にパーティションをフラットにされる。。
 復元SDカードは保管しておきます。
-多分利用頻度はそんなに多く無いと思うので、
+未だ数回しか立ち上げてないし、多分利用頻度はそんなに多く無いと思うので、
 ゆくゆくはlinux.kvm環境内で構築してみようかなと思ってます。</p>
 
 <h2 id="linux">Linux</h2>
@@ -333,21 +300,21 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 絞りました。</p>
 
 <ul>
-<li>debian: 一番キヨキヨしいディストロ。久しぶりにインストールしましたが、凄く良くなってます。Gnomeも好印象。<a href="https://www.debian.org">https://www.debian.org</a></li>
-<li>manjaro: バランスが良くデフォルトの格好いいディストロ。budgie　<a href="https://manjaro.org">https://manjaro.org</a></li>
-<li>arch linux: ちょっとManjaroがいやらしくなってきそうなのでインストールする。<a href="https://www.archlinux.org">https://www.archlinux.org</a></li>
+<li>debian: 一番キヨキヨしいディストロ。久しぶりにインストールしましたが、凄く良くなってます。WindowManagerのGnomeも好きではなかってけど、使ってみたら割と好印象。<a href="https://www.debian.org">https://www.debian.org</a></li>
+<li>manjaro: バランスが良くデフォルトの格好いいディストロ。シンプルなbudgieで使ってます　<a href="https://manjaro.org">https://manjaro.org</a></li>
+<li>arch linux: ちょっとManjaroがいやらしくなってきそうなのでインストールことにする。Swayで使うかどうか、、<a href="https://www.archlinux.org">https://www.archlinux.org</a></li>
 </ul>
 
 <p>気になるけれど入れないディストリビューション</p>
 
 <ul>
 <li><a href="https://www.qubes-os.org">Qubes OS</a> : 非常にきになるけれど、Btrfのサブボリューム上にインストールができないようなので保留。</li>
-<li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、特色が無い。</li>
-<li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先。</li>
+<li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、どうも特色が無い。</li>
+<li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先、これもBtrfsへのインストールに難あり。</li>
 </ul>
 
 <p>KVMのベースにもなるので、安定かつしっかりと動く環境を作り上げられたら良いなと、
-先数ヶ月かけていろいろ試しながら絞っていけば良いかなと思ってます。</p>
+先数ヶ月かけていろいろ試しつつ使って行きます。</p>
 
 <p>記事：インストール・設定編</p>
 
@@ -360,18 +327,6 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 <p>記事：デスクトップ環境設定編<br />
 記事：日本語環境設定編<br />
 記事：ロールバック設定編</p>
-
-<!-- 
-
-ホームを共有しているので、利用する環境を幾つかを切り替えて使って行こうと思ってます。
-
-をメインに考えています。
-余計なソフトを入れなければディスク容量もそこまで大きくはならないし（私見）
-イニシャルの時点で、
-余計なものは入れたくは無いので、
-どのディストリビューションも最低限での設定になっているます。
-btrfsの領域はこんな感じになっています。
--->
 
 <hr />
 

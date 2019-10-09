@@ -8,24 +8,15 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 08 Oct 2019 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 20:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>linux</title>
-      <link>https://goozenlab.com/tags/linux/</link>
-      <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hackintosh</title>
       <link>https://goozenlab.com/tags/hackintosh/</link>
-      <pubDate>Sat, 05 Oct 2019 09:00:00 +0700</pubDate>
+      <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/hackintosh/</guid>
       <description></description>
@@ -34,9 +25,18 @@
     <item>
       <title>thinkpad</title>
       <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Sat, 05 Oct 2019 09:00:00 +0700</pubDate>
+      <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://goozenlab.com/tags/linux/</link>
+      <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/linux/</guid>
       <description></description>
     </item>
     

@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Oct 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 20:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ハッキントッシュ Wifiカード</title>
+      <link>https://goozenlab.com/blog/2019/10/hackintosh-t480s-wifi/</link>
+      <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/hackintosh-t480s-wifi/</guid>
+      <description>ハッキントッシュ化したThinkpadですが、 作業がひと段落し安定して動作しています。 ただ残念なことに付属のインテルWifiカードは使えません。 ドングルを使うの</description>
+    </item>
     
     <item>
       <title>T480sでハッキントッシュ</title>
