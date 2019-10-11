@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 09 Oct 2019 20:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 15:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>白金化のプライス</title>
+      <link>https://goozenlab.com/blog/2019/10/hackintosh-price/</link>
+      <pubDate>Fri, 11 Oct 2019 15:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/10/hackintosh-price/</guid>
+      <description>嵐の前のしづけさ、久しぶりに大型の台風が近づいてきているようです。 猛烈な台風とか記録的な暴風・大雨とか表現をされるのですが、 （「狩野川台風」に匹敵すると言われて</description>
+    </item>
     
     <item>
       <title>ハッキントッシュ Wifiカード</title>

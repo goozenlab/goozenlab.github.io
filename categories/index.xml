@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 18:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 15:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>computing</title>
+      <link>https://goozenlab.com/categories/computing/</link>
+      <pubDate>Fri, 11 Oct 2019 15:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/computing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mumble</title>
@@ -19,15 +28,6 @@
       <pubDate>Thu, 10 Oct 2019 18:00:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/categories/mumble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computing</title>
-      <link>https://goozenlab.com/categories/computing/</link>
-      <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/computing/</guid>
       <description></description>
     </item>
     
