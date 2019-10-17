@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Posts | goozenlab</title>
+  <title>ディスクユーティリティでソフトウェアRaidを構築：MacOS編 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -140,22 +140,111 @@
                     <time class="">2019-10-17</time>
 		            
                     
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/mac">mac</a> 
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>Posts</h1>
+                <h1>ディスクユーティリティでソフトウェアRaidを構築：MacOS編</h1>
             </div>
 
             <div class="post-content">
-                
+                <p><img src="/images/2019-09-23-software-raid-07.jpg" alt="Software Raid on DiskUtility" /></p>
+
+<p>持っていたファイルサーバーのハードが壊れていくつかのハードディスクが行き場なく手元に残ってました。
+信頼失墜なので同じファイルサーバーを買ってリカバリーするつもりもなかったので、バックアップももうひとつあったので、余ったディスクを使ってソフトウェアRAIDを組むことにしました。</p>
+
+<p>二つもしくはそれ以上のなるべく同容量のディスクを用意します。両方ともフォーマットしておきます。
+DiskUtiliyのメニューよりRaid アシスタントを選択します。</p>
+
+<p><img src="/images/2019-09-23-software-raid-01.jpg" alt="Software Raid on DiskUtility" /></p>
+
+<p>RAIDのタイプを選びます。バックアップ用で2台での運用なので、ミラーリングのRAID1を選択しました。
+（3台以上での構築の場合でのRAID（ストライピング＋パリティー）がないのがちょっと残念かな。）</p>
+
+<p><img src="/images/2019-09-23-software-raid-02.png" alt="Software Raid on DiskUtility" /></p>
+
+<p>使用するディスクにチェックマークを入れます。
+<img src="/images/2019-09-23-software-raid-03.png" alt="Software Raid on DiskUtility" /></p>
+
+<p>そして、ボリューム名（後でも変更可能）とファイルフォーマットとチャンクサイズが選択できます。
+ちょっと古いMacOSやLinuxでもアクセスするかもしれないので、HFSでフォーマットします。
+チャンクサイズは動画や大きい写真などを置いてならば、サイズを大きくすると良いパフォーマンスが得られるらしいです。</p>
+
+<p><img src="/images/2019-09-23-software-raid-05.png" alt="Software Raid on DiskUtility" /></p>
+
+<p>そして、次へ、構築にはそんなに時間はかかりませんでした。</p>
+
+<p><img src="/images/2019-09-23-software-raid-06.png" alt="Software Raid on DiskUtility" /></p>
+
+<p><img src="/images/2019-09-23-software-raid-08.png" alt="Software Raid on DiskUtility" /></p>
+
+<div class="attention"><b>注意</b>アップルのソフトウェアRAIDでは残念ながらOpenZFSのように片方だけでしばし運用し、
+つなぎ直しでリビルドとは行かないようです、整合性が取れず同期が取れなくなりエラーになります。</div>
+
+<p>一方のディスクがちょっと古く割と酷使してきているので先々ちょっと不安。
+試しにディスクを交換（厳密にはRaidの片一方のディスクに問題が起き、再フォーマットしてつなぎ直す作業）してみました。</p>
+
+<p><img src="/images/2019-09-23-software-raid-11.png" alt="Software Raid on DiskUtility" /></p>
+
+<p>プラスボタンで追加するディスクを選択して、リペアーボタンをクリックして再構築が開始します。終了後に問題のあるディスクをマイナスボタンで取り除きます。</p>
+
+<p><img src="/images/2019-09-23-software-raid-12.png" alt="Software Raid on DiskUtility" /></p>
+
+<p>ただ２つのハードディスクを繋げるのに、USBハブがないと左右のUSBポートを使わなければいけないのがちょっと面倒かな。。</p>
+
+<p>一台に全てのファイルを置いておくのはちょっと心配だし、２つのハードディスクがあれば簡単に構築できるので私のようなあまり大きいファイルが無いユーザーであれば利便性は高いと思いました。</p>
+
 				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/09/boostnote/">boostnote</a></li>
+	
+	<li><a href="/blog/2019/03/netdata-mac/">Netdata ダークモード・モニタリングソフト</a></li>
+	
+	<li><a href="/blog/2019/03/macbook-air-2018/">さりげなく、再登場。</a></li>
+	
+	<li><a href="/blog/2018/11/replace-mba-logicboard/">MBA11のロジックボード換装</a></li>
+	
+	<li><a href="/blog/2018/11/macbook-air-2018/">新しいMacBook Air</a></li>
+	
+</ul>
 
 
             </div>
        		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
         </div>
 	</div>
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
