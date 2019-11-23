@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 16 Nov 2019 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 13:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>oneplus</title>
+      <link>https://goozenlab.com/tags/oneplus/</link>
+      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/oneplus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips&amp;tricks</title>
+      <link>https://goozenlab.com/tags/tipstricks/</link>
+      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/tipstricks/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -145,15 +163,6 @@
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/ipod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips&amp;tricks</title>
-      <link>https://goozenlab.com/tags/tipstricks/</link>
-      <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/tipstricks/</guid>
       <description></description>
     </item>
     

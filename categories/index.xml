@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 16 Nov 2019 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 13:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>smart phone</title>
+      <link>https://goozenlab.com/categories/smart-phone/</link>
+      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/smart-phone/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>computing</title>
