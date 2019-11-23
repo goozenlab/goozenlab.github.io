@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hackintosh on goozenlab</title>
@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 11 Oct 2019 15:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 09:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ブートローダー</title>
+      <link>https://goozenlab.com/blog/2019/11/from-grub-clover/</link>
+      <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/11/from-grub-clover/</guid>
+      <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linuxでスナップショット</description>
+    </item>
     
     <item>
       <title>白金化のプライス</title>

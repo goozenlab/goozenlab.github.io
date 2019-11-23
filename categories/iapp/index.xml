@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iApp on goozenlab</title>
@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 29 Sep 2018 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 20:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/iapp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iApplications status</title>
+      <link>https://goozenlab.com/blog/2019/11/iapplication-status/</link>
+      <pubDate>Fri, 15 Nov 2019 20:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/11/iapplication-status/</guid>
+      <description>ようやく新しいハッキントッシュ端末の設定がひと段落（時に落ちたりしてますが、）したので、 やっとこさアプリの更新に着手。 気がつけばいくつかのソフトは数年振りの更新</description>
+    </item>
     
     <item>
       <title>littlist v2.10.0</title>

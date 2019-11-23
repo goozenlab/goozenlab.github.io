@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>computing on goozenlab</title>
@@ -8,15 +8,33 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 17 Oct 2019 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 09:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Linuxのメールクライアント：Geary</title>
+      <link>https://goozenlab.com/blog/2019/11/linux-mail-client/</link>
+      <pubDate>Sat, 16 Nov 2019 09:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/11/linux-mail-client/</guid>
+      <description>Linuxでのメールクライアント、いくつかあるのですが 一番人気？のThunderbirdは重そうで使いたくないし、 GnomeのEvolutionもThunder</description>
+    </item>
+    
+    <item>
+      <title>ブートローダー</title>
+      <link>https://goozenlab.com/blog/2019/11/from-grub-clover/</link>
+      <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/11/from-grub-clover/</guid>
+      <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linuxでスナップショット</description>
+    </item>
+    
+    <item>
       <title>ディスクユーティリティでソフトウェアRaidを構築：MacOS編</title>
       <link>https://goozenlab.com/blog/2019/10/macos-software-raid/</link>
-      <pubDate>Thu, 17 Oct 2019 20:00:00 +0900</pubDate>
+      <pubDate>Thu, 17 Oct 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/10/macos-software-raid/</guid>
       <description>持っていたファイルサーバーのハードが壊れていくつかのハードディスクが行き場なく手元に残ってました。 信頼失墜なので同じファイルサーバーを買ってリカバリーするつもり</description>
