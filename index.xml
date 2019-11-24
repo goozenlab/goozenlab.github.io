@@ -8,15 +8,24 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 24 Nov 2019 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 22:57:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>“Oneplus 3tを分解修理&#34;</title>
+      <title>ippuku 1.12.0</title>
+      <link>https://goozenlab.com/blog/2019/11/ippuku-1120/</link>
+      <pubDate>Sun, 24 Nov 2019 22:57:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/11/ippuku-1120/</guid>
+      <description>気がつけば三年振りのマナーアップデート、その間にiPhonexなんかが発売されていました。 一体その間何をしてたんやろか。。。 さてさて、、 開発端末を新しく変えよう</description>
+    </item>
+    
+    <item>
+      <title>Oneplus 3tを分解修理</title>
       <link>https://goozenlab.com/blog/2019/11/fix-oneplus/</link>
-      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/11/fix-oneplus/</guid>
       <description>OnePlusをちまちま分解・修理。 今年の夏にNokia7Plusの代わりにしようと思って購入したOnePlus3Tのカメラが逝かれました。 近視の私が眼鏡なしで</description>

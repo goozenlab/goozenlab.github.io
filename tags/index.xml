@@ -8,15 +8,33 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 24 Nov 2019 13:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 22:57:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>ippuku</title>
+      <link>https://goozenlab.com/tags/ippuku/</link>
+      <pubDate>Sun, 24 Nov 2019 22:57:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/ippuku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update</title>
+      <link>https://goozenlab.com/tags/update/</link>
+      <pubDate>Sun, 24 Nov 2019 22:57:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>oneplus</title>
       <link>https://goozenlab.com/tags/oneplus/</link>
-      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/oneplus/</guid>
       <description></description>
@@ -25,7 +43,7 @@
     <item>
       <title>tips&amp;tricks</title>
       <link>https://goozenlab.com/tags/tipstricks/</link>
-      <pubDate>Sun, 24 Nov 2019 13:00:00 +0700</pubDate>
+      <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/tipstricks/</guid>
       <description></description>
@@ -37,15 +55,6 @@
       <pubDate>Sat, 16 Nov 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>update</title>
-      <link>https://goozenlab.com/tags/update/</link>
-      <pubDate>Fri, 15 Nov 2019 20:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/update/</guid>
       <description></description>
     </item>
     
@@ -68,7 +77,7 @@
     </item>
     
     <item>
-      <title>thinkpad</title>
+      <title>“thinkpad”</title>
       <link>https://goozenlab.com/tags/thinkpad/</link>
       <pubDate>Fri, 11 Oct 2019 15:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -541,15 +550,6 @@
       <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/doop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ippuku</title>
-      <link>https://goozenlab.com/tags/ippuku/</link>
-      <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/ippuku/</guid>
       <description></description>
     </item>
     
