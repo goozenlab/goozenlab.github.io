@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>アヌラーダプラ、スリランカのインターネット事情 | goozenlab</title>
+  <title>youtube動画をダウンロード | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -137,75 +137,113 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2017-03-25</time>
+                    <time class="">2019-12-03</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/srilanka">srilanka</a> <a href="https://goozenlab.com/tags/internet">internet</a> 
+                    tags:<a href="https://goozenlab.com/tags/mac">mac</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/nomad">nomad</a> 
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>アヌラーダプラ、スリランカのインターネット事情</h1>
+                <h1>youtube動画をダウンロード</h1>
             </div>
 
             <div class="post-content">
-                <p>スリランカ、文化三角地帯のアヌラーダプラにいます。チャリダーデビューの予定でしたが、残念ながら単身での旅行。</p>
+                
 
-<p>道で声をかけられた宿にチェックイン時、「Wifiは使えるの？」と聞くと、オーナーがルーターを持って来て電源を入れ。<br />
-「Wifi、レディー！」と言われ、<br />
-「おめぇ、バカにしとんのか？回線繋がってないやんけ！」</p>
+<p>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。
+割とあっさり見つかり、割と簡単。。</p>
 
-<p>とまぁ、、なるほど、スリランカでは他アジアのようにADSL回線ではなく、携帯通信回線を使ったWifiサービスがメジャーのようです。</p>
+<h2 id="インストール">インストール</h2>
 
-<p>おちょくられていると思いました、恐れ入りました。</p>
+<p>さて、インストールはbrewで一発。</p>
 
-<p><img src="/images/2017-03-26-cat-anuradhapura.jpg" alt="cat Srilanka" /></p>
+<pre><code>guiness:~ jin$ brew install youtube-dl
+</code></pre>
 
-<p>離れ小島のようですが、スピードはそれなりに出ているようです。ただし、体感スピードはちょっと計測値よりは遅い感じ、ADSLと近いかな。動画を見るとかでなければ、これといった問題はない。</p>
+<h2 id="使い方">使い方</h2>
 
-<p>下り：51.85Mps<br />
-上り：2.04Mps<br />
-(アプリSpeedtestを使用）</p>
+<p>使い方はシンプル。動画のリンクをコピペで行けます。</p>
 
-<p>さて、本当はビーチに行く予定だったのですが、縁がないのか、アヌラーダプラでプラプラしてます。普通の人は１・２泊で抜けて行くと思いますがしばし逗留。ちなみに東海岸のビーチ、トランコマリー行きのバスは１日に２便：8:00と12:00にニューバススタンドより発。</p>
+<p>インストールをするにあたって
+まずはダウンロードのフォーマットを決めます。
+コマンドは
+<code>youtube-dl -F &lt;&lt;ADDRESS&gt;&gt;</code>
+でダウンドード可能な様々なサイズ・フォーマットが表示されます。</p>
 
-<p>折角なので、おすすめレストラン、サルガド’スの紹介。場所はメインストリートにあるスーパーFoodCityより北へ少し行った所。歩き方の地図にも載ってます。</p>
+<p>一番最後に(best)とついているものが画質がベストということです。
+サイズ表記もあるので、小さいファイルの選択もできます。
+<code>video only</code>もあるので要注意。</p>
 
-<p><img src="/images/2017-03-26-salgado.jpg" alt="salgado" /></p>
+<pre><code>guiness:~ jin$ youtube-dl -F https://www.youtube.com/watch?v=iwOLsVmxdO8
+[youtube] iwOLsVmxdO8: Downloading webpage
+[youtube] iwOLsVmxdO8: Downloading video info webpage
+[info] Available formats for iwOLsVmxdO8:
+format code  extension  resolution note
+249          webm       audio only tiny   92k , opus @ 50k (48000Hz), 177.18MiB
+250          webm       audio only tiny  101k , opus @ 70k (48000Hz), 209.97MiB
+251          webm       audio only tiny  150k , opus @160k (48000Hz), 380.65MiB
+140          m4a        audio only tiny  159k , m4a_dash container, mp4a.40.2@128k (44100Hz), 470.50MiB
+160          mp4        256x144    144p  135k , avc1.4d400c, 30fps, video only, 240.65MiB
+133          mp4        426x240    240p  247k , avc1.4d4015, 30fps, video only, 474.56MiB
+278          webm       256x144    144p  250k , webm container, vp9, 30fps, video only, 316.93MiB
+242          webm       426x240    240p  251k , vp9, 30fps, video only, 603.08MiB
+243          webm       640x360    360p  435k , vp9, 30fps, video only, 1.08GiB
+134          mp4        640x360    360p  638k , avc1.4d401e, 30fps, video only, 1.13GiB
+244          webm       854x480    480p  773k , vp9, 30fps, video only, 1.88GiB
+135          mp4        854x480    480p 1343k , avc1.4d401f, 30fps, video only, 2.11GiB
+247          webm       1280x720   720p 1532k , vp9, 30fps, video only, 3.70GiB
+136          mp4        1280x720   720p 2562k , avc1.4d401f, 30fps, video only, 3.70GiB
+248          webm       1920x1080  1080p 2710k , vp9, 30fps, video only, 6.55GiB
+137          mp4        1920x1080  1080p 4337k , avc1.640028, 30fps, video only, 6.18GiB
+43           webm       640x360    360p , vp8.0, vorbis@128k, 2.63GiB
+18           mp4        640x360    360p  577k , avc1.42001E, mp4a.40.2@ 96k (44100Hz), 2.05GiB
+22           mp4        1280x720   720p 1171k , avc1.64001F, mp4a.40.2@192k (44100Hz) (best)
+guiness:~ jin$ 
+</code></pre>
 
-<p>ほぼ毎日のように通いましたが、毎回違う野菜のカレーがでます、値段もお手ごろ。
-ライス＆カレー（ベジ：１３０ルピー）はおかわり自由です。手で食べましょうね。
-写真はちょっと地味な日のライス＆カリー。</p>
+<p>ファイルのダウンロードフォルダに移動して、フォーマットを選択しダウンロードをします。</p>
 
-<p><img src="/images/2017-03-26-ricecurry.jpg" alt="rice &amp; curry" /></p>
+<p>ダウンロードは
+<code>youtube-dl -f #FORMAT &lt;&lt;ADDRESS&gt;&gt;</code>
+オプションは小文字の<strong>f</strong>です。FORMATはリストの一番最初にある数字を入れます。</p>
 
-<p>ご飯を食べた後は甘ぁ〜い、フルーツサラダ（１００ルピー）。</p>
+<p>その他のオプションは<code>youtube-dl --help</code>にて見ることができます。</p>
 
-<p><img src="/images/2017-03-26-frutessalad.jpg" alt="Frutes Salad" /></p>
+<pre><code>guiness:~ jin$ cd Downloads/
+guiness:Downloads jin$ youtube-dl -f 22  https://www.youtube.com/watch?v=iwOLsVmxdO8
+[youtube] iwOLsVmxdO8: Downloading webpage
+[youtube] iwOLsVmxdO8: Downloading video info webpage
+[download] Destination: 【東日本大震災】11th March  '11. 14;46 - 22;54, 8h28min (East Japan Great Earthquake)-iwOLsVmxdO8.mp4
+[download] 100% of 4.16GiB in 12:09
+guiness:Downloads jin$
+</code></pre>
 
-<p>従業員のおばちゃん達は反応がとろいですが、不愛想というわけではないです。</p>
+<p>当時日本には居なかったのでちょっと心が落ち着いたら見てみたいと思います。。</p>
+
+<p>明日からタイだでよ。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2012/03/internet-kandy/">スリランカ、キャンディーのインターネット事情</a></li>
+	<li><a href="/blog/2019/10/macos-software-raid/">ディスクユーティリティでソフトウェアRaidを構築：MacOS編</a></li>
 	
-	<li><a href="/blog/2016/06/internet-nongkhai/">ノンカイ、タイのインターネット事情</a></li>
+	<li><a href="/blog/2019/09/boostnote/">boostnote</a></li>
 	
-	<li><a href="/blog/2016/06/internet-nakhonphanom/">ナコンパノム、タイのインターネット事情</a></li>
+	<li><a href="/blog/2019/03/netdata-mac/">Netdata ダークモード・モニタリングソフト</a></li>
 	
-	<li><a href="/blog/2016/06/internet-mukdahan/">ムクダハン、タイのインターネット事情</a></li>
+	<li><a href="/blog/2019/03/macbook-air-2018/">さりげなく、再登場。</a></li>
 	
-	<li><a href="/blog/2016/06/internet-savannakhet/">サワナケート、ラオスのインターネット事情</a></li>
+	<li><a href="/blog/2018/11/replace-mba-logicboard/">MBA11のロジックボード換装</a></li>
 	
 </ul>
 

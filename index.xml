@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 24 Nov 2019 22:57:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 18:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>youtube動画をダウンロード</title>
+      <link>https://goozenlab.com/blog/2019/12/download-youtube/</link>
+      <pubDate>Tue, 03 Dec 2019 18:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/download-youtube/</guid>
+      <description>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。 割とあっさり見つかり、割と簡単。。 インストール さて、インストールはbrewで一発。</description>
+    </item>
     
     <item>
       <title>ippuku 1.12.0</title>
@@ -4726,40 +4735,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/iapp/littlist/</guid>
       <description>小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。 ビジネスが中心のタスク管理ソフトを、生活に近く</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>参照：
- https://github.com/linusyang92/macOS-ThinkPad-T480s https://github.com/lisovskiy01/T480s-hackintosh  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>消費税アップ＋脱アマゾン
-消費税もアップしました。 こういうのは機会というものだろうので、 自分の消費活動や意識（やすけりゃい～さぁ～）をちょっと変えます。
-そして、この日本ではもうもう必要なもの以外は、 極力買わないようにしようと思います。
-大きな買い物で必要なものがあったら、香港、タイ、もしくは日本で免税措置で買います。 もちろん日本でしか買えないものや、良心的な小さい企業はなるべくサポートしたいと思います。
-そして、チェーン店やコンビニはなるべく利用しないようにする。 スーパーより近所のお米屋や野菜屋さんを少し値段が高くても利用する。
-アマゾンも最近あった情報漏洩の件での対応があまりにもいい加減なので、
-しかもマスコミも忖度しているのか、控え目な報道であっという間に消える。。。
-住所の情報を消して近くのコンビニで受け取る設定にして、 クレジットカード情報は抜きます。
-アマゾンでの買い物も極力に控えて今年中にオプトアウトする。 生活用品なんかも、近くのドラッグストアより全然安いんだけどね。
-&amp;lt;!— アマゾンは利益をためずに、資金を設備投資などに全て回すと聞いたことがあるので、 現金を溜め込むような企業に比べればある意味、健全であるような、、 法人組織ってのは理解しがたいのですけどね、、節税行為とか、
-最初は不買からスタート、回収に入りますので？引き続きアフィリエイト掲載はおせわになりやす。
-で、記念すべきアマゾンでの最後のお買い物は、こちら！
-で履歴を見て最初のお買い物をチェック！
-HPプリンターでした。でも、確か１ヶ月お試しキャンペーンペーンで送り返したような。。
-いくら使ったかも調べることができるようですが、怖くて見てません。 （でも、多分総額はヨドバシさんの方がぜんぜん多いと思うけどね。）
-デジタルに近い人だと思うのですが、 支払いは現金ですし、 お金を使うことは、ひととの繋がりでもあると最近特に思うので、 最近はお金を使う先はなるべく人が見える所にとアナログ化してるところも。。 ネットでも個人経営のお店とかで買うようにとか、 ―&amp;gt;</description>
     </item>
     
     <item>
