@@ -198,13 +198,22 @@ pi@tacos:~ $
 server {
     listen 80;
     server_name radicale.goozen.lab;
+    auth_basic "Not currently available";
 
-    location /radicale/ { # The trailing / is important!
-        proxy_pass      http://localhost:5232/; # The / is important!
-        proxy_set_header    X-Script-Name /radicale;
-        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass_header Authorization;
-    }
+    location / {
+        proxy_pass http://localhost:5232/;
+        proxy_buffering on;
+        #proxy_set_header X-Script-Name /radicale;
+        #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        #proxy_pass_header Authorization;
+        #proxy_redirect off;
+
+
+        # Place the files somewhere nginx is allowed to access (e.g. /etc/nginx/...).
+        #proxy_ssl_certificate         /path/to/client_cert.pem;
+        #proxy_ssl_certificate_key     /path/to/client_key.pem;
+        #proxy_ssl_trusted_certificate /path/to/server_cert.pem;
+	}
 }
 ```
 -->
