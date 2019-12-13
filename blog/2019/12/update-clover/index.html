@@ -160,8 +160,9 @@
 
 <p><img src="/images/2019-12-13-clover-configrator.png" alt="Clover Configurator" /></p>
 
-<p>ハッキントッシュ用のブートローダーのクローバー。
-怖くてあまりアップデートはしたくないのだけれども、
+<p>ハッキントッシュ用ブートローダーのクローバー。
+怖くてあまりいじりたくないのだけれども、
+あまり放っておくのも怖いので、
 ブートローダーとカーネルエクステンションをアップデートしました。</p>
 
 <p>作業はClover Configuratorというツールを使います。
@@ -189,10 +190,16 @@
 <li>try to emulate as close to a genuine Mac as possible.</li>
 </ul>
 
-<p>ということらしい。。。</p>
+<p>ということらしい。。。ちと訳すの面倒なのでそのまま。。</p>
 
 <p>次にバッテリーマネージャー関連、ACPIBatteryManagerがインストールされているので、
-SMCBatteryManagerが不具合を起こすので抜きます。</p>
+SMCBatteryManagerをとりあえずbackupに移動しておきます。</p>
+
+<div class=hint>
+不具合が起こることを考えて、
+ブートパーティションのファイルをいじることができるので、
+Linuxを別のパーティションにインストールしておくと便利です。
+</div>
 
 <p><img src="/images/2019-12-13-kext-list.png" alt="kext list" /></p>
 
