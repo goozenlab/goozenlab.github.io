@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 Nov 2019 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 08:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clover Update</title>
+      <link>https://goozenlab.com/blog/2019/12/update-clover/</link>
+      <pubDate>Fri, 13 Dec 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/update-clover/</guid>
+      <description>ハッキントッシュ用のブートローダーのクローバー。 怖くてあまりアップデートはしたくないのだけれども、 ブートローダーとカーネルエクステンションをアップデートしました</description>
+    </item>
     
     <item>
       <title>ブートローダー</title>
