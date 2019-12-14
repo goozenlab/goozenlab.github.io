@@ -224,17 +224,17 @@ STOP_CHARGE_THRESH_BAT0=80
 
 <h3 id="thinkpadでのみ使えるコマンド">Thinkpadでのみ使えるコマンド</h3>
 
-<p>バッテリーを満充電する。Charge battery to full capacity</p>
+<p>バッテリーを満充電（100％）する。</p>
 
 <pre><code>$ sudo tlp fullcharge [ BAT0 | BAT1 ] 
 </code></pre>
 
-<p>バッテリーを一度バッテリーの上限までチャージする。（私の使い方では、60%では充電は開始しないのだけどちょっと長く持ち出す予定がある時などに使う事になる。）</p>
+<p>バッテリーを一度設定上限（80％）までチャージする。（私の使い方では、60%では充電は開始しないのだけどちょっと長く持ち出す予定がある時などに使う事になる。）</p>
 
 <pre><code>$ sudo tlp chargeonce [ BAT0 | BAT1 ] 
 </code></pre>
 
-<p>バッテリーを放電する。ACプラグを差しておく必要があります。</p>
+<p>バッテリーを放電（0％）させる。ACプラグを差しておく必要があります。</p>
 
 <pre><code>$ sudo tlp discharge [ BAT0 | BAT1 ] 
 </code></pre>
@@ -250,16 +250,16 @@ STOP_CHARGE_THRESH_BAT0=80
 
 <h2 id="on-macos-movaje">on macOS Movaje</h2>
 
-<p>最近どんどんと安定してきている、ハッキントッシュのモハベ環境でも使える模様。。</p>
+<p>最近どんどんと安定してきている、ハッキントッシュのモハベ環境でも設定が生きている。。</p>
 
 <p><img src="/images/2019-12-14-tlp-macos.png" alt="tlp on MacOS" /></p>
 
 <div class=note>
 BIOSへの書き込みになっているのでしょうか？
-<b>ハッキントッシュ</b>を利用している最中にも有効！！になっています。
+<b>ハッキントッシュ</b>利用可能！！になっています。
 </div>
 
-<p>不思議、、、タナボタやな。。</p>
+<p>不思議、、、でもタナボタやな。。</p>
 
 				
 

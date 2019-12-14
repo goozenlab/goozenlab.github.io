@@ -173,7 +173,7 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <ol>
 <li>Manjaro: ちょっと格好良い、バランスの取れた環境（バジー）</li>
 <li>Debian: 安定Linux環境（Gnome)</li>
-<li>Arch: 鼻血覚悟のブリーディングエッジな環境（これからインストール）</li>
+<li>Arch: 鼻血覚悟のブリーディングエッジな環境</li>
 </ol></li>
 </ol>
 
@@ -213,7 +213,9 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 
 <h2 id="disk構成">Disk構成</h2>
 
-<p>シリコンパワーの1TB.SSDのパーティションはこんな感じです。</p>
+<p>シリコンパワーの1TB.SSDのパーティションはこんな感じです。
+ストレージは安心できるシステムを作れたらなと思い半分を<strong>zfs</strong>でミラーリングし重要なデーターなどを保存します。
+Linuxの領域は<strong>btrfs</strong>で組み、できればロールバックを可能にする予定。</p>
 
 <ol>
 <li>80GB: windows10</li>
@@ -227,8 +229,8 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <li>home</li>
 <li>cache</li>
 </ol></li>
-<li>32GB: 共有（ZFS.mirror）</li>
-<li>500GB: 共有（ZFS.mirror）</li>
+<li>32GB: 共有（zfs.mirror &lt;-&gt; 32GB Memory Stick）</li>
+<li>500GB: 共有（ZFS.mirror &lt;-&gt; 500GB SSD）</li>
 <li>7GB: Swap</li>
 </ol>
 
@@ -267,7 +269,7 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <ul>
 <li><a href="https://www.qubes-os.org">Qubes OS</a> : 非常にきになるけれど、Btrfのサブボリューム上にインストールができないようなので保留。</li>
 <li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、どうも特色が無いし、パーティションを細切れにするのがちょっと違和感。</li>
-<li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先、これもBtrfsへのインストールに難あり。</li>
+<li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先、これもBtrfsへのインストールに難あり。（未完）</li>
 </ul>
 
 <p>KVMのベースにもなるので、安定かつしっかりと動く環境を作り上げられたら良いなと、
@@ -276,20 +278,15 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <p>記事：インストール・設定編</p>
 
 <ul>
-<li>debian：安定度の高さといえばこちら</li>
-<li>manjaro：ローリングリリースかつ快適さと安定度のバランスが一番良さそう（もう冒険はしたく無いけど、新しいソフトが使いたい。）</li>
-<li>arch：こちらも清々しいディストロ。インストールに難あり。</li>
+<li><a href="https://goozenlab.com/blog/2019/10/install-debian-btrfs/">デビアンをBtrfsにインストール</a>：安定度の高さといえばこちら</li>
+<li><a href="https://goozenlab.com/blog/2019/10/install-manjaro-btrfs/">Btrfsにマンジャーロ</a>：ローリングリリースかつ快適さと安定度のバランスが一番良さそう（もう冒険はしたく無いけど、新しいソフトが使いたいという人向け。）</li>
+<li><a href="https://goozenlab.com/blog/2019/12/install-arch-btrfs/">BtrfsにArch: インストール</a>
+：こちらも清々しいディストロ。インストールや設定に難あり。</li>
 </ul>
 
 <p>記事：デスクトップ環境設定編<br />
 記事：日本語環境設定編<br />
 記事：ロールバック設定編</p>
-
-<!--
-ストレージは安心できるシステムを作れたらなと、、
-半分を**zfs**でミラーリングし重要なデーターなどはこちらに保存します。
-Linuxの領域は**btrfs**で組み、できればロールバックも可能します。
--->
 
 <hr />
 

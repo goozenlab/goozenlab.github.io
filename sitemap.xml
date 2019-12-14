@@ -3,33 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/tags/arch/</loc>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</loc>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2019-12-14T09:30:00+07:00</lastmod>
+    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
@@ -765,11 +775,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/03/ar300m-firmware-update/</loc>
     <lastmod>2019-03-21T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/arch/</loc>
-    <lastmod>2019-03-20T15:30:00+07:00</lastmod>
   </url>
   
   <url>

@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Clover Update | goozenlab</title>
+  <title>BtrfsにArchをインストール | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -137,13 +137,13 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-12-13</time>
+                    <time class="">2019-12-15</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/hackintosh">hackintosh</a> <a href="https://goozenlab.com/tags/mac">mac</a> 
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> <a href="https://goozenlab.com/tags/arch">arch</a> 
                     
 
                     
@@ -152,83 +152,283 @@
 
                     
                 </p>
-                <h1>Clover Update</h1>
+                <h1>BtrfsにArchをインストール</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p><img src="/images/2019-12-13-clover-configrator.png" alt="Clover Configurator" /></p>
+<p>すでにDebianとManjaroで利用中のBTRFSパーティションに
+あらたにArchを追加・新規インストールした際のメモ。</p>
 
-<p>ハッキントッシュ用ブートローダーのクローバー。
-怖くてあまりいじりたくないのだけれども、
-あまり放っておくのも怖いので、
-ブートローダーとカーネルエクステンションをアップデートしました。</p>
-
-<p>作業はClover Configuratorというツールを使います。
-左のリストのInstall/Update Cloverをクリック。4895から5100へと割と大きくアップデートになる。</p>
-
-<p><img src="/images/2019-12-13-clover-update.png" alt="Clover Updatre" /></p>
-
-<p>Updateボタンをポチッとなと新しいファイルを落として、インストール作業をして再起動します。</p>
-
-<h2 id="カーネルエクステンション">カーネルエクステンション</h2>
-
-<p>そして、いまひとつ何をしているかが理解できないでいるカーネルエクステンションを更新します。
-アップデートされたカーネルエクステンションは色付けされるので、選択してダウンロードします。</p>
-
-<p><img src="/images/2019-12-13-kext-update.png" alt="kext update on Clover" /></p>
-
-<p>そして不具合を起こすエクステンションがあるので整理をしました。</p>
-
-<p>まずは機能が同じであった、FakeSMCとVirtualSMCの両方がインストールされていたのでFakeSMCを外しました。
-両エクステンションとも役割が同じだそうですが、VirtualSMCの方が</p>
-
-<ul>
-<li>a cleaner codebase: less bugs</li>
-<li>modular API design: more plugins for it can be written easily (mostly sensors)</li>
-<li>try to emulate as close to a genuine Mac as possible.</li>
-</ul>
-
-<p>ということらしい。。。ちと訳すの面倒なのでそのまま。。</p>
-
-<p>次にバッテリーマネージャー関連では
-ACPIBatteryManagerとSMCBatteryManagerがインストールされていて衝突しているよう。
-起動の途中で止まってしまうので、一方をbackupに移動しておきます。ちょっと様子見。</p>
-
-<div class=hint>
-不具合が起こることを考えて、
-ブートパーティションのファイルをいじることができるので、
-Linuxを別のパーティションにインストールしておくと便利です。
-</div>
-
-<p><img src="/images/2019-12-13-kext-list.png" alt="kext list" /></p>
-
-<p>ファルダーの中身はこんな感じになってます。</p>
-
-<p>で、今の所とりあえず問題なく動いてます。（安堵）</p>
+<p>自分の作業メモとして残す。</p>
 
 <div class=note>
-<b>追記(12/15)：</b>
-ACPIBatteryManagerを抜いてSMCBatteryManageに切り替えたところ安定しました。
-パッチが当てられなかったのも問題なくできましたし、スリープ中に落ちることも今の所ありません。
-BTの接続も安定しとります。ただ、期待したバッテリーの駆動時間は変わりなしネットなしで１時間で１５％消費。
+現在Wifiネットワーク設定方法がいくつかの選択肢があって、
+Window Magagerも何で使うかをまだ決めていないので、
+少々面倒になりつつあるのでとりあえず放置。
+現在デビアン＆マンジャーロを使ってます。
 </div>
+
+<p>インストールメディアの作成はお馴染みのEtcherを使う。</p>
+
+<p>Thinkpad T480sを使っているので、ネットワークケーブルをつなぎ、
+起動後F12を押しブートメニュー、USBスティックで起動。</p>
+
+<p>自動でログインされる。</p>
+
+<pre><code>root@archiso #
+</code></pre>
+
+<h2 id="サブボリュームの作成-マウント">サブボリュームの作成・マウント</h2>
+
+<p>すでに、BTRFSでのフォーマットがされているので、
+パーティションをマウントしてArchのためのサブボリュームを作る。</p>
+
+<pre><code>root@archiso # mount /dev/nvme0n1p5 /mnt
+root@archiso # btrfs subvolume create /mnt/@arch
+</code></pre>
+
+<p>※ ちなみに削除は
+<code>btrfs subvolume delete /mnt/@arch</code>
+、パーティションのフォーマットは
+<code>mkfs.btrfs -L “Linuxes” /dev/nvme0n1p5</code></p>
+
+<p>/homeと/var/cacheは共有しているので、
+すでに
+@debian, @manjaro, @cache, @home
+がある。</p>
+
+<pre><code>root@archiso # cat /mnt/@manjaro/etc/fstab
+</code></pre>
+
+<p>でマンジャーロで使っているマウントオプションを表示しておく。</p>
+
+<p>そして、マウントを解除、必要なディレクトリを作成、インストール先をマウントする。</p>
+
+<pre><code>root@archiso # umount /mnt
+root@archiso # mount /dev/nvme0n1p5 /mnt -o rw,noatime,,,,,subvol=@arch
+
+root@archiso # mkdir -p /mnt/home
+root@archiso # mkdir -p /mnt/var/cache
+root@archiso # mount /dev/nvme0n1p5 /mnt/home -o rw,noatime,,,,,subvol=@home
+root@archiso # mount /dev/nvme0n1p5 /mnt/var/cache -o rw,noatime,,,,,subvol=@cache
+
+root@archiso # mkdir -p /mnt/boot/efi
+root@archiso # mount /dev/nvme0n1p1 /mnt/boot/efi
+</code></pre>
+
+<h2 id="インストール作業">インストール作業</h2>
+
+<p>エラーが出たので、Keyringをリフレッシュして、ミラーを選択。
+vimは入っていない、インストールされているnanoの使い方が分からん＋日本探しがちと面倒。
+（ALT+6でコピー、CTR+uでペースト）</p>
+
+<pre><code>root@archiso # pacman -Sy archlinux-keyring
+root@archiso # nano /etc/pacman.d/mirrorlist
+</code></pre>
+
+<p>ベース・システムをインストール。とりあえず、ノーマルのカーネル。
+（血をみる環境にするつもりならlinux-zenかな。）</p>
+
+<pre><code>root@archiso # pacstrap /mnt base base-devel linux linux-headers
+</code></pre>
+
+<p>fstabを書き込み、subvol表記がダブるので修正。
+swapは後から追加する。
+<code>swapon /dev/nvme0n1p10</code>で有効にできたかも。</p>
+
+<pre><code>root@archiso # genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+root@archiso # nano /mnt/etc/fstab
+</code></pre>
+
+<h2 id="システムの基本設定">システムの基本設定</h2>
+
+<pre><code>root@archiso # arch-chroot /mnt
+root@archiso # pacman -S vim
+</code></pre>
+
+<p>nanoもviもないのでインストール。
+私はvim、お好みでnano。</p>
+
+<h3 id="ロケーション-ハードウェアクロック-ホスト名の設定">ロケーション、ハードウェアクロック、ホスト名の設定。</h3>
+
+<pre><code>root@archiso # ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+root@archiso # hwclock --systohc --utc
+</code></pre>
+
+<h3 id="ロケールの設定">ロケールの設定</h3>
+
+<pre><code>root@archiso # vim /etc/locale.gen
+root@archiso # locale-gen
+
+root@archiso # echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+root@archiso # export LANG=en_US.UTF-8 
+
+root@archiso # echo guiness &gt; /etc/hostname
+root@archiso # vim /etc/hosts
+
+127.0.0.1   localhost
+::1     localhost
+127.0.1.1   guiness.localdomain guiness
+</code></pre>
+
+<h3 id="btrfsのための調整">BTRFSのための調整</h3>
+
+<pre><code>root@archiso # vim /etc/mkinitcpio.conf
+
+52行目：HOOKS=( base … -fsck, +btrfs)
+
+root@archiso # mkinitcpio -P
+</code></pre>
+
+<h3 id="ユーザーとパスワード">ユーザーとパスワード</h3>
+
+<p>パスワードとユーザーの設定、wheelユーザーにsudoの権限を与える。
+viがないと怒られるたら、vimにシンボリックリンクをはる。</p>
+
+<pre><code>root@archiso # passwd
+root@archiso # useradd -m -G users,wheel,storage,power,network -s /bin/zsh -c “NAME” jin
+root@archiso # passwd jin
+root@archiso # passwd visudo
+</code></pre>
+
+<h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
+
+<p>ブートマネージャーGrub関連のインストール</p>
+
+<pre><code>root@archiso # pacman -S btrfs-progs dosfstools efibootmgr grub
+root@archiso # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch 
+</code></pre>
+
+<p>設定の書き出し。</p>
+
+<pre><code>root@archiso # grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
+
+<h2 id="有線lan設定">有線LAN設定</h2>
+
+<p>有線の設定ファイルを作成する。</p>
+
+<pre><code>root@archiso # vim /etc/systemd/network/20-wired.network
+ 
+[Match]
+Name=enp0s31f6
+
+[Network]
+DHCP=ipv4
+</code></pre>
+
+<p>ipアドレスは取れたけれどDNSの設定は他のところする必要がある。
+ルーターのDNSアドレスをとりあえず加える。</p>
+
+<pre><code>root@archiso # vim /etc/systemd/resolved.cof
+
+DNS=10.10.10.10
+</code></pre>
+
+<p>そしてサービスを登録しておく。</p>
+
+<pre><code>root@archiso # systemctl restart systemd-networkd.service
+root@archiso # systemctl start systemd-resolved.service
+</code></pre>
+
+<p>でとりあえず、ネットワークに繋がる。ネットワーク関連は鬼門。</p>
+
+<p><a href="https://wiki.archlinux.jp/index.php/Systemd-networkd">https://wiki.archlinux.jp/index.php/Systemd-networkd</a></p>
+
+<h2 id="終了">終了</h2>
+
+<p>マウントを解除して終了。</p>
+
+<pre><code>root@archiso # exit
+root@archiso # umount /mnt/boot/efi
+root@archiso # umount /mnt/var/cache
+root@archiso # umount /mnt/home
+root@archiso # umount /mnt/
+root@archiso # reboot
+</code></pre>
+
+<p>とりあえず、ベアメタル環境ができあがる。</p>
+
+<p>wifiとzfsはdkmsを使う。</p>
+
+<!--
+ 
+無線LANの設定
+netctl iw
+
+wpa_supplicant
+
+## Software Installation ===
+
+
+#### Sway
+
+
+#### Snapper: Automatic Snapshots ===
+
+LOOK　FOR　MORE　INFORMATION!!!
+
+Install the packages: grub-btrfs, snapper. 
+
+Follow the instructions at snapper wiki for configuration. 
+Make sure to start and enable appropriate systemd services. 
+grub-btrfs adds the snapshots entries into grub menu, therefore allowing us to recover from system failure. 
+To enable automatic updation of grub menu, run the following:
+
+curl -o 10-update_grub.conf "https://raw.githubusercontent.com/Antynea/grub-btrfs/master/10-update_grub.conf"
+sudo cp 10-update_grub.conf /etc/systemd/system/snapper-timeline.service.d/
+sudo cp 10-update_grub.conf /etc/systemd/system/snapper-cleanup.service.d/
+rm 10-update_grub.conf
+
+This will run the grub-mkconfig -o /etc/default/grub command each time a snapshot is created or deleted. 
+Your snapshots will now appear in the grub menu under “Snapshots”.
+
+
+#### Hardening
+
+chmod 700 /boot /etc/{iptables,arptables}
+
+nano /etc/securetty
+ * Comment tty1
+
+nano /etc/iptables/iptables.rules
+ *filter
+ :INPUT DROP [0:0]
+ :FORWARD DROP [0:0]
+ :OUTPUT ACCEPT [0:0]
+ -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT 
+ -A INPUT -i lo -j ACCEPT 
+ -A INPUT -p udp --sport 53 -j ACCEPT
+ -A INPUT -p icmp -j REJECT
+ -A INPUT -p tcp -j REJECT --reject-with tcp-reset 
+ -A INPUT -p udp -j REJECT --reject-with icmp-port-unreachable 
+ -A INPUT -j REJECT --reject-with icmp-proto-unreachable 
+ COMMIT
+systemctl enable iptables.service
+
+nano /etc/sysctl.conf
+ * net.ipv4.conf.all.log_martians = 1
+ * net.ipv4.conf.all.rp_filter = 1
+ * net.ipv4.icmp_echo_ignore_broadcasts = 1
+ * net.ipv4.icmp_ignore_bogus_error_responses = 1
+-->
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/12/download-youtube/">youtube動画をダウンロード</a></li>
+	<li><a href="/blog/2019/12/linux-thinkpad-tlp/">TLPの設定</a></li>
 	
-	<li><a href="/blog/2019/11/from-grub-clover/">ブートローダー</a></li>
+	<li><a href="/blog/2019/10/multios-boot-loader/">ブートマネージャーの設定</a></li>
 	
-	<li><a href="/blog/2019/10/macos-software-raid/">ディスクユーティリティでソフトウェアRaidを構築：MacOS編</a></li>
+	<li><a href="/blog/2019/10/install-manjaro-btrfs/">Btrfsにマンジャーロ</a></li>
 	
-	<li><a href="/blog/2019/10/hackintosh-price/">白金化のプライス</a></li>
+	<li><a href="/blog/2019/10/install-debian-btrfs/">デビアンをBtrfsにインストール</a></li>
 	
-	<li><a href="/blog/2019/10/hackintosh-t480s-wifi/">ハッキントッシュ Wifiカード</a></li>
+	<li><a href="/blog/2019/09/live-linux-macbook-air/">Live Linux on Macbook Air </a></li>
 	
 </ul>
 
