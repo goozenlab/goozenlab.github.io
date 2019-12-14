@@ -139,7 +139,7 @@
                 <h1>multiBoot Thinkpad T480s</h1>
                 <p class="footnote">
                     updated at 
-                    <time class=""></time>
+                    <time class="">2019-12-1３</time>
 				</p>
             </div>
             <div class="post-content">
@@ -178,7 +178,7 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 </ol>
 
 <p>Linuxはホームディレクトリーを共有しているので、数ヶ月はあっちこっち試してみて絞っていくかもしれません。
-多分これで壊れない限り、できればリタイヤーするまで使い続けたられたら良いなーと。</p>
+多分これで壊れない限り、できればリタイヤするまで使い続けたられたら良いなーと。</p>
 
 <h2 id="ハードウェアアップデート">ハードウェアアップデート</h2>
 
@@ -211,67 +211,28 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 
 <div class="attention"><b>注意：</b></br>ハードウェアの交換作業は、BIOS設定より「内蔵バッテリーの無効化」を行ったうえで行いましょう。作業終了後は電源を繋げないと起動しません。最初壊れたかと思って冷や汗をかきました。。</div>
 
-<!-- 
-TDBT USB-C M.2 NVMe SSD ヒートシンク付外付けケース 
-https://amzn.to/2HQZTDU
-https://www.amazon.co.jp/gp/product/B07WP5ZD7T/
+<h2 id="disk構成">Disk構成</h2>
 
-Samsung SSD 1TB 970 EVO Plus
-https://amzn.to/2A1iE33
-https://www.amazon.co.jp/gp/product/B07MZ2JHGR/
+<p>シリコンパワーの1TB.SSDのパーティションはこんな感じです。</p>
 
-シリコンパワー SSD 1TB P34A80シリーズ
-https://amzn.to/2UWC5n3
-https://www.amazon.co.jp/gp/product/B07MV5FVMS/
+<ol>
+<li>80GB: windows10</li>
+<li>230GB: macOS.mojave</li>
+<li>160GB: Linux.btrfs
 
-BCM4352 867Mbps 802.11a/b/g/n/ac WLAN + Bluetooth 4.0 M.2 無線LANカード for Lenovo B40 B50 Y50 Yoga 3 Pro
-https://amzn.to/2HQK0x7
-https://www.amazon.co.jp/gp/product/B06XDD1FTT/
--->
+<ol>
+<li>buster</li>
+<li>manjaro</li>
+<li>arch</li>
+<li>home</li>
+<li>cache</li>
+</ol></li>
+<li>32GB: 共有（ZFS.mirror）</li>
+<li>500GB: 共有（ZFS.mirror）</li>
+<li>7GB: Swap</li>
+</ol>
 
-<!-- 
-ストレージは安心できるシステムを作れたらなと、、
-半分を**zfs**でミラーリングし重要なデーターなどはこちらに保存します。
-Linuxの領域は**btrfs**で組み、できればロールバックも可能します。
-
-[Thinkapd T480sのキーボード、RAM、SSDを交換]する。
-
-[SSDファームウェアをアップグレード]：ハッキントッシュ化に必要です。
-
-
-そして、RAMとSSDも追加購入。
-そして、マックで使える、wifiカードを取り替えます。
-リカバリーディスクは、imgファイルに変換して圧縮して保存しておきます。
-余った、SSDはケースに入れてバックアップディスク兼
-旅先でもし、端末が盗難にあった時などの緊急用Debianとして使います。
-
-こちらも設定して、丸ごとイメージをバックアップしておきます。
-後々USBメモリーに変更するかもしれないし、
-都度作るのも面倒なので、
-
-
-焼くときは`etcher`にて
-
-
-交換作業んなどは[こちら]()より
-
-
-1TBのSSDのパーティションはこんな感じです。
-
-2. 80GB: windows10
-1. 230GB: macOS.mojave
-3. 160GB:Linux
-    3. buster
-    3. manjaro
-    4. arch
-4. 32GB: 共有（ZFS.mirror）
-4. 500GB: 共有（ZFS.mirror）
-5. 7GB: Swap
-
-+ 使うファイルシステム：btrfs, zfs（これでかなりバックアップシステムは十分では）
-+ kvmとdocker：仮想環境もマルチOS できれば全部仮想化したい
-
--->
+<p><img src="/images/2019-12-13-partition-tp480s.png" alt="Partition Table" /></p>
 
 <h2 id="hackinpad-t480s">Hackinpad T480s</h2>
 
@@ -292,8 +253,8 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 <h2 id="linux">Linux</h2>
 
 <p>無駄なくいろんなディストリビューションが入れられるような設定にするため、
-ファイルシステムにbtrfsを利用します。色々インストールしてみましたが、以下の２つに
-絞りました。</p>
+ファイルシステムにbtrfsを利用します。
+色々インストールしてみましたが、以下の３つに絞りました。</p>
 
 <ul>
 <li>debian: 一番キヨキヨしいディストロ。久しぶりにインストールしましたが、凄く良くなってます。WindowManagerのGnomeも好きではなかったけど、使ってみたら割と好印象。<a href="https://www.debian.org">https://www.debian.org</a></li>
@@ -305,7 +266,7 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 
 <ul>
 <li><a href="https://www.qubes-os.org">Qubes OS</a> : 非常にきになるけれど、Btrfのサブボリューム上にインストールができないようなので保留。</li>
-<li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、どうも特色が無い。</li>
+<li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、どうも特色が無いし、パーティションを細切れにするのがちょっと違和感。</li>
 <li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先、これもBtrfsへのインストールに難あり。</li>
 </ul>
 
@@ -324,14 +285,39 @@ Linuxの領域は**btrfs**で組み、できればロールバックも可能し
 記事：日本語環境設定編<br />
 記事：ロールバック設定編</p>
 
+<!--
+ストレージは安心できるシステムを作れたらなと、、
+半分を**zfs**でミラーリングし重要なデーターなどはこちらに保存します。
+Linuxの領域は**btrfs**で組み、できればロールバックも可能します。
+-->
+
 <hr />
 
 <ul>
+<li>2019-12-14：Disk構成を追加。マシーンは安定稼働してます。</li>
 <li>2019-10-07：マルチOSインストール作業は、Windows（サイズを縮小）、Hackintosh、Manjaro、Busterの順で行いました。＋Archをあとでインストールする予定。</li>
 <li>2019-10-01：無事ハッキントッシュ設定終了、Wifiカードも交換、ほんの少しの不具合のみで動作中。Macbookより環境を移行中。</li>
 <li>2019-09-04：頭・デザインの整理のため、ちまちま加筆したりしてます。</li>
 <li>2019-09-01：アイディアや仕様がほぼ頭の中で決定したのでページをアップ。（9月半ばに再スタート）</li>
 </ul>
+
+<!--
+TDBT USB-C M.2 NVMe SSD ヒートシンク付外付けケース 
+https://amzn.to/2HQZTDU
+https://www.amazon.co.jp/gp/product/B07WP5ZD7T/
+
+Samsung SSD 1TB 970 EVO Plus
+https://amzn.to/2A1iE33
+https://www.amazon.co.jp/gp/product/B07MZ2JHGR/
+
+シリコンパワー SSD 1TB P34A80シリーズ
+https://amzn.to/2UWC5n3
+https://www.amazon.co.jp/gp/product/B07MV5FVMS/
+
+BCM4352 867Mbps 802.11a/b/g/n/ac WLAN + Bluetooth 4.0 M.2 無線LANカード for Lenovo B40 B50 Y50 Yoga 3 Pro
+https://amzn.to/2HQK0x7
+https://www.amazon.co.jp/gp/product/B06XDD1FTT/
+-->
 
 				
 

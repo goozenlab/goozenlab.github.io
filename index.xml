@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 13 Dec 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2019 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TLPの設定</title>
+      <link>https://goozenlab.com/blog/2019/12/linux-thinkpad-tlp/</link>
+      <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/linux-thinkpad-tlp/</guid>
+      <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％から８０％の利用にとどめて、 ３０</description>
+    </item>
     
     <item>
       <title>Clover Update</title>
@@ -793,7 +802,7 @@
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/home-pi/</guid>
-      <description>現在リサーチ・作業中・下書中、随時更新してます。 一家に一台 多分、ほとんどの家庭ではインターネット回線がつながっていると思いますし、 スマートフォンも一人一台の時代</description>
+      <description>一家に一台 多分、ほとんどの家庭ではインターネット回線がつながっていると思いますし、 スマートフォンも一人一台の時代です。 家にあるインターネットへの接続機器の数がど</description>
     </item>
     
     <item>
