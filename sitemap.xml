@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/categories/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/manjaro/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/12/conflict-manjaro/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-12-16T09:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/tags/arch/</loc>
     <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
@@ -13,32 +48,12 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
     <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-12-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
     <lastmod>2019-12-15T07:30:00+07:00</lastmod>
   </url>
   
@@ -63,16 +78,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
-    <lastmod>2019-12-13T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-12-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/xiaomi/</loc>
     <lastmod>2019-12-12T19:30:00+07:00</lastmod>
   </url>
@@ -80,6 +85,11 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/12/ecommend-xiaomi/</loc>
     <lastmod>2019-12-12T19:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/mac/</loc>
+    <lastmod>2019-12-03T18:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -589,6 +599,11 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2019/07/max3-microg/</loc>
+    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/optout/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
   </url>
   
@@ -3225,6 +3240,11 @@
   <url>
     <loc>https://goozenlab.com/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/1/01/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 07:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>manjaro国境越えて</title>
+      <link>https://goozenlab.com/blog/2019/12/conflict-manjaro/</link>
+      <pubDate>Mon, 16 Dec 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/conflict-manjaro/</guid>
+      <description>manjaroで少々ほころびが出だす。 久しぶりにアップデートをするとコンフリクトが起こる。 しかもファイルが見つからんなど色々と不具合が広まりつつあった。 で、ちょ</description>
+    </item>
     
     <item>
       <title>BtrfsにArchをインストール</title>
@@ -4771,6 +4780,15 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/iapp/littlist/</guid>
       <description>小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。 ビジネスが中心のタスク管理ソフトを、生活に近く</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.com/blog/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/1/01/</guid>
+      <description></description>
     </item>
     
     <item>
