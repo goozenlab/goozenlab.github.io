@@ -8,13 +8,22 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 16 Dec 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>manjaro国境越えて</title>
+      <title>カロリー表</title>
+      <link>https://goozenlab.com/blog/2019/12/calories/</link>
+      <pubDate>Tue, 17 Dec 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/calories/</guid>
+      <description>摂取と消費のカロリーの票を作っておく。 ほぼフルータリアン生活（バナナが主食、牛乳付き）だと摂取カロリーは１０００kcalは行かなそう。 体重は53キロぐらいで下げ</description>
+    </item>
+    
+    <item>
+      <title>manjaro、国境を越えて調子を崩す</title>
       <link>https://goozenlab.com/blog/2019/12/conflict-manjaro/</link>
       <pubDate>Mon, 16 Dec 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -4780,15 +4789,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/iapp/littlist/</guid>
       <description>小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。 ビジネスが中心のタスク管理ソフトを、生活に近く</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description></description>
     </item>
     
     <item>

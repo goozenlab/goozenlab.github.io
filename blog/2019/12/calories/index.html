@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>TLPの設定 | goozenlab</title>
+  <title>カロリー表 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -137,145 +137,202 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2019-12-14</time>
+                    <time class="">2019-12-17</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> <a href="https://goozenlab.com/tags/thinkpad">thinkpad</a> 
+                    tags:<a href="https://goozenlab.com/tags/health">health</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    categories:<a href="https://goozenlab.com/categories/life">life</a> 
                     
 
                     
                 </p>
-                <h1>TLPの設定</h1>
+                <h1>カロリー表</h1>
             </div>
 
             <div class="post-content">
                 
 
-<p>Thinkpad T480sにてバッテリーを長持ちさせるために、</p>
+<p><img src="/images/2019-12-17-breakfast-japan.jpg" alt="玄米菜食" /></p>
 
-<p>Linux Advanced Power Management: <a href="https://linrunner.de/en/tlp/tlp.html">https://linrunner.de/en/tlp/tlp.html</a></p>
+<p>摂取と消費のカロリーの票を作っておく。
+ほぼフルータリアン生活（バナナが主食、牛乳付き）だと摂取カロリーは１０００kcalは行かなそう。
+体重は<strong>53キロ</strong>ぐらいで下げ止まり、一食を玄米菜食（上記の写真）にすると<strong>57キロ</strong>ぐらいで落ち着く。
+（身長は177cmで、最低体重は今の所、去年の山籠り時（遭難したわけではない）の48キロ。）</p>
 
-<p>というソフトを使います。</p>
+<h2 id="摂取カロリー">摂取カロリー</h2>
 
-<p>理想的なノートブックでのバッテリー利用は２０％から８０％の利用にとどめて、
-３０％から７０％とかの中途半端な充電をなるべく避けるのが効果的と言われてます。
-（レノボのサイトでは４５％〜５０％が良いと書いてありました。）</p>
+<p>よく食べるもののカロリーをリストアップ。</p>
+
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>玄米</td>
+            <td>165kcal</td>
+            <td>264kcal（1膳：160g ）</td>
+        </tr>
+        <tr>
+            <td>牛乳</td>
+            <td>66kcal</td>
+            <td>165kcal（250ml）</td>
+        </tr>
+        <tr>
+            <td>ココナッツウォーター</td>
+            <td>23kcal</td>
+            <td>57kcal（250ml）</td>
+        </tr>
+        <tr>
+            <td>ビール</td>
+            <td></td>
+            <td>576kcal（350ml缶）</td>
+        </tr>
+        <tr>
+            <td>ハチミツ</td>
+            <td>308kcal</td>
+            <td>65kcal（大さじ１）</td>
+        </tr>
+        <tr>
+            <td>バナナ</td>
+            <td>86kcal</td>
+            <td>129kcal（タイバナナ2本：150g）</td>
+        </tr>
+        <tr>
+            <td>パパイヤ</td>
+            <td>38kcal</td>
+            <td>95kcal（10バーツ：250g）</td>
+        </tr>
+        <tr>
+            <td>ドラゴンフルーツ</td>
+            <td>50kcal</td>
+            <td>凍らせて氷がわり</td>
+        </tr>
+        <tr>
+            <td>カシューナッツ</td>
+            <td> 576kcal</td>
+            <td>121kcal（一掴み：21g ）</td>
+        </tr>
+        <tr>
+            <td>アーモンド</td>
+            <td>606kcal</td>
+            <td>73kcal（10粒：12g）</td>
+        </tr>
+        <tr>
+            <td>胡桃</td>
+            <td>674kcal</td>
+            <td>27kcal（1個：4g ）</td>
+        </tr>
+   </tbody>
+</table>
 
 <ul>
-<li><a href="https://support.lenovo.com/gb/ja/solutions/ht078208?tabname=solutions">https://support.lenovo.com/gb/ja/solutions/ht078208?tabname=solutions</a></li>
-<li><a href="https://support.lenovo.com/jp/ja/solutions/syj0-0023b00">https://support.lenovo.com/jp/ja/solutions/syj0-0023b00</a></li>
-<li><a href="https://support.lenovo.com/us/ja/solutions/ht069687">https://support.lenovo.com/us/ja/solutions/ht069687</a></li>
+<li>バナナジュース：350kcal</li>
+<li>パパイヤミルク：260kcal</li>
 </ul>
 
-<p>Linuxでは上記のソフト（ソフト名はtlp）よりバッテリーの使い方に設定を行う事ができます。</p>
+<p><img src="/images/2016-12-28-breakfast.jpg" alt=" breakfast " /></p>
 
-<p>Manjaroではデフォルトでの状態でインストールされていました。
-Debianではインストールの必要があります。必要なカーネルモジュールの一緒にインストールします。</p>
+<p>写真のような菜食でのカロリーは４００～５００kcalぐらいか？。。</p>
 
-<pre><code>$ sudo apt install tlp tlp-rdw acpi-call-dkms 
-</code></pre>
+<h2 id="消費カロリー">消費カロリー</h2>
 
-<h2 id="設定">設定</h2>
+<p><img src="/images/2019-12-17-swimming.jpg" alt="Swimming Pool" /></p>
 
-<p>設定ファイルは<code>/etc/default/tlp</code>です。</p>
+<p>基礎代謝量は
+<a href="https://keisan.casio.jp/exec/system/1161228736">https://keisan.casio.jp/exec/system/1161228736</a>
+より計算。
+運動カロリーは
+<a href="https://www.karadakara.com/help/note/syohi.html">https://www.karadakara.com/help/note/syohi.html</a>
+より。</p>
 
-<p>電源を接続して利用している時にはバッテリーが無駄に充電されないようにするために、
-バッテリーの充電開始・終了パーセントを設定します。</p>
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>基礎代謝：57kg</td>
+            <td>1,428kcal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>基礎代謝：53kg</td>
+            <td>1,374kcal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>歩行 4km/時</td>
+            <td></td>
+            <td>1分間 2.83 kcal / 1km 42.44 kca</td>
+        </tr>
+        <tr>
+            <td>歩行 5km/時</td>
+            <td></td>
+            <td>1分間 3.96 kcal / 1km 47.52 kcal</td>
+        </tr>
+        <tr>
+            <td>平泳ぎ：45分</td>
+            <td>230kcal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>自転車 <16km：60分</td>
+            <td> 225kcal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>腕立て</td>
+            <td></td>
+            <td>1回 0.42 kcal</td>
+        </tr>
+        <tr>
+            <td>腹筋</td>
+            <td></td>
+            <td>1回 0.56 kcal</td>
+        </tr>
+        <tr>
+            <td>スクワット</td>
+            <td></td>
+            <td>1回 0.42 kcal</td>
+        </tr>
+        <tr>
+            <td>階段昇降</td>
+            <td></td>
+            <td>1段 0.08 kcal</td>
+        </tr>
+   </tbody>
+</table>    
 
-<pre><code>$ sudo vi /etc/default/tlp
-
-# Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module
-# required). Charging starts when the remaining capacity falls below the
-# START_CHARGE_THRESH value and stops when exceeding the STOP_CHARGE_THRESH value.
-
-# Main / Internal battery (values in %)
-# Default: &lt;none&gt;
-START_CHARGE_THRESH_BAT0=40
-STOP_CHARGE_THRESH_BAT0=80
-
-# Ultrabay / Slice / Replaceable battery (values in %)
-# Default: &lt;none&gt;
-#START_CHARGE_THRESH_BAT1=75
-#STOP_CHARGE_THRESH_BAT1=80
-</code></pre>
-
-<p>初期設定での充電開始は７５％からになっていて、頻繁に長い間端末を持ち出す人はこれくらいでいいのかもしれませんが、
-自分は外で２時間使えれば今の所充分なので、無駄な充電を避けるためにバッテリー充電開始を少し前にずらし、
-バッテリーが４０％を切ったら充電を開始するようにします。</p>
-
-<p>ウルトラベイ・バッテリーの設定もできます。T480のように内部に２つバッテリーのあるタイプは一体どうなるんだろ？。</p>
-
-<h2 id="コマンド">コマンド</h2>
-
-<p>バッテリーの状況を確認するためのコマンドは
-<code>sudo tlp-stat -b</code>
-です。オプションも豊富です。</p>
-
-<p><a href="https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#commands">https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#commands</a></p>
-
-<p><img src="/images/2019-12-13-tlp-stat-b.png" alt="sudo tlp-stat -b" /></p>
-
-<h3 id="thinkpadでのみ使えるコマンド">Thinkpadでのみ使えるコマンド</h3>
-
-<p>バッテリーを満充電（100％）する。</p>
-
-<pre><code>$ sudo tlp fullcharge [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーを一度設定上限（80％）までチャージする。（私の使い方では、60%では充電は開始しないのだけどちょっと長く持ち出す予定がある時などに使う事になる。）</p>
-
-<pre><code>$ sudo tlp chargeonce [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーを放電（0％）させる。ACプラグを差しておく必要があります。</p>
-
-<pre><code>$ sudo tlp discharge [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーの再調整・リフレッシュをします。バッテリーを満充電・完全放電を行います。こちらもACプラグを差しておく必要があります。レノボのサイトでも数ヶ月に一度、リフレッシュ（バッテリー内部ゲージのリセット）を行うことを勧めています。</p>
-
-<pre><code>$ sudo tlp recalibrate [ BAT0 | BAT1 ]
-</code></pre>
-
-<p>むやみにバッテリーの充電を繰り返すこともなくなりそうなので、バッテリーの延命にはかなり効果が期待できるのではと思ってます。</p>
-
-<hr />
-
-<h2 id="on-macos-movaje">on macOS Movaje</h2>
-
-<p>最近どんどんと安定してきているハッキントッシュのモハベ環境でも
-ソフトはインストールされていないのに設定が生きている。。</p>
-
-<p><img src="/images/2019-12-14-tlp-macos.png" alt="tlp on MacOS" /></p>
-
-<div class=note>
-BIOSへの書き込みになっているのでしょうか？
-<b>ハッキントッシュ</b>でも利用可能！！になっています。
-</div>
-
-<p>不思議、、、でもタナボタやな。。</p>
+<p>※ 今年は断食年越しをしようかな。。と思ってます。来年の2月にはタイ・カンチャナブリでのヴィパッサナーを久しぶりに取る予定です。
+　</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/10/multios-boot-loader/">ブートマネージャーの設定</a></li>
+	<li><a href="/blog/2019/09/baking-soda-gargle/">重曹水でうがい</a></li>
 	
-	<li><a href="/blog/2019/10/install-manjaro-btrfs/">Btrfsにマンジャーロ</a></li>
+	<li><a href="/blog/2018/09/dry-fasting/">ドライ・ファスティング</a></li>
 	
-	<li><a href="/blog/2019/10/install-debian-btrfs/">デビアンをBtrfsにインストール</a></li>
+	<li><a href="/blog/2018/09/fruitarianism-30/">フルータリアン・１ヶ月</a></li>
 	
-	<li><a href="/blog/2019/10/hackintosh-t480s/">T480sでハッキントッシュ</a></li>
-	
-	<li><a href="/blog/2019/09/live-linux-macbook-air/">Live Linux on Macbook Air </a></li>
+	<li><a href="/blog/2018/09/nuts-nutrition/">ナッツの効用と摂取量</a></li>
 	
 </ul>
 

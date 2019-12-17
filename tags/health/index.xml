@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 05 Sep 2019 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/health/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>カロリー表</title>
+      <link>https://goozenlab.com/blog/2019/12/calories/</link>
+      <pubDate>Tue, 17 Dec 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/calories/</guid>
+      <description>摂取と消費のカロリーの票を作っておく。 ほぼフルータリアン生活（バナナが主食、牛乳付き）だと摂取カロリーは１０００kcalは行かなそう。 体重は53キロぐらいで下げ</description>
+    </item>
     
     <item>
       <title>重曹水でうがい</title>
