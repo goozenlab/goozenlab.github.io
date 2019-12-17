@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-
+	
   
   <meta charset="utf-8">
-  <title>Posts | goozenlab</title>
+  <title>Xcode11でビルドエラー | application | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
+  
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,6 +58,8 @@
 
 
  
+  
+  
 </head>
 <body>
 
@@ -133,31 +136,98 @@
 
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
-	<div class="pure-u-11-12 pure-u-md-14-24">
-        <div class="post">
-            <div class="post-title">
-                <p class="footnote">
+    	<div class="pure-u-22-24 pure-u-md-14-24">
+        	<div class="post">
+            	<div class="post-title">
+                	<p class="footnote">
                     <time class="">2019-12-18</time>
 		            
                     
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/xcode">xcode</a> 
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/develop">develop</a> 
                     
 
                     
                 </p>
-                <h1>Posts</h1>
-            </div>
+                	<h1>Xcode11でビルドエラー</h1>
+                </div>
+        
+            	
+            	<div class="post-content">
+            		
 
-            <div class="post-content">
-                
-				
+<p><img src="/images/2019-12-17-xcode-error.png" alt="Command CodeSign failed with a nonzero exit code" /></p>
 
+<p>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。
+今回は</p>
 
-            </div>
-       		
-        </div>
-	</div>
+<h2 id="command-codesign-failed-with-a-nonzero-exit-code">Command CodeSign failed with a nonzero exit code</h2>
+
+<p>のエラーでビルドができません。</p>
+
+<p>サイニングでのエラーのようなので、コードのエラーないようですが、
+ビルドの再構築などを行ってもエラーが消えません。調べてみた所私だけの症状ではないようで、</p>
+
+<ol>
+<li>キーチェーンアクセス</li>
+<li>画面左上の<strong>login</strong>をロックする（コントロール＋クリックより）</li>
+<li>ロックを解除する</li>
+<li>プロジェクトをクリーンにする</li>
+<li>ビルドする</li>
+</ol>
+
+<p>の作業で治ると出ているが変わらず、ちょっとしたの方まで進んでみると、</p>
+
+<p>エラーメッセージの下から２行目に</p>
+
+<h2 id="resource-fork-finder-information-or-similar-detritus-not-allowed">resource fork, Finder information, or similar detritus not allowed.</h2>
+
+<p>がある場合は、</p>
+
+<pre><code>$ xattr -cr &lt;プロジェクトフォルダー&gt;
+</code></pre>
+
+<p>を使えとのことで、試した所やっとこさ問題が解決しました。</p>
+
+<p>ちょっと諦めてて、プロジェクトを作り直してSwift５で書き直そうかと思っちゃいましたよ、、</p>
+
+<p>参考：
+<a href="https://stackoverflow.com/questions/52421999/xcode-10-command-codesign-failed-with-a-nonzero-exit-code">https://stackoverflow.com/questions/52421999/xcode-10-command-codesign-failed-with-a-nonzero-exit-code</a></p>
+
+            	</div>
+           		
+            
+            	
+           		<div class="post-content">
+           	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+           		</div>
+           </div>
+		</div>
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 
