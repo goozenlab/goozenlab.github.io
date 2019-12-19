@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MicroG &#43; F-Droid</title>
+      <link>https://goozenlab.com/computing/optout-phone/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/optout-phone/</guid>
+      <description>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、 できる範囲のことはしたいと思い。 自由へむけカスタムロムを使いグーグル・アンドロイドからの</description>
+    </item>
+    
+    <item>
+      <title>Rayzentosh with Opencore</title>
+      <link>https://goozenlab.com/computing/rayzentosh/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/rayzentosh/</guid>
+      <description>現在リサーチ中、作るかどうかはちょっと予算次第。 ラップトップでの使い心地が良いので、 Rayzenチップを使ったちょっと小さめのデスクトップを一台構築したいと思っ</description>
+    </item>
     
     <item>
       <title>Xcode11でビルドエラー</title>
@@ -218,15 +236,6 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/ipod-here-now/</guid>
       <description>Rockbox</description>
-    </item>
-    
-    <item>
-      <title>MicroG &#43; F-Droid</title>
-      <link>https://goozenlab.com/computing/optout-phone/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/computing/optout-phone/</guid>
-      <description>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、 できる範囲のことはしたいと思い。 自由へむけカスタムロムを使いグーグル・アンドロイドからの</description>
     </item>
     
     <item>
