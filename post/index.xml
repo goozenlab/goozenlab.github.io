@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 20 Dec 2019 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>リナックスのウィンドウマネージャーについて</title>
+      <link>https://goozenlab.com/blog/2019/12/linux-windowmamager/</link>
+      <pubDate>Fri, 20 Dec 2019 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/linux-windowmamager/</guid>
+      <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：debian buster 試験環境：M</description>
+    </item>
     
     <item>
       <title>Xcode11でビルドエラー</title>
