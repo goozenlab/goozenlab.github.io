@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 16:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SIMフリー端末について</title>
+      <link>https://goozenlab.com/blog/2019/12/abot-sim-free/</link>
+      <pubDate>Sat, 21 Dec 2019 16:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/abot-sim-free/</guid>
+      <description>シャオミが日本に上陸し、SIMフリー端末も賑やかになってきました。 中国製品の質もどんどんよくなりました。 端末のチョイスが増えることは非常に良いことと思えます。 写</description>
+    </item>
     
     <item>
       <title>リナックスのウィンドウマネージャーについて</title>
