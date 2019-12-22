@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>thinkpad</title>
+      <link>https://goozenlab.com/tags/thinkpad/</link>
+      <pubDate>Sun, 22 Dec 2019 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/thinkpad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -55,15 +64,6 @@
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/arch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>thinkpad</title>
-      <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/thinkpad/</guid>
       <description></description>
     </item>
     
@@ -608,7 +608,7 @@
     </item>
     
     <item>
-      <title>tajikistan</title>
+      <title>Tajikistan</title>
       <link>https://goozenlab.com/tags/tajikistan/</link>
       <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
       <author>jin@goozenlab.com (jin)</author>

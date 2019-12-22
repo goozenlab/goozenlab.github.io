@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 21 Dec 2019 16:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thinkvision M14をタイで通販</title>
+      <link>https://goozenlab.com/blog/2019/12/thinkvision-m14/</link>
+      <pubDate>Sun, 22 Dec 2019 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/thinkvision-m14/</guid>
+      <description>サブディスプレイのThinkvison M14が気になっていて、 アメリカでは$249で売っているので、日本では少し割高なような感じがしてて、 セールを待ってました。</description>
+    </item>
     
     <item>
       <title>SIMフリー端末について</title>
@@ -41,11 +50,11 @@
     </item>
     
     <item>
-      <title>Rayzentosh with Opencore</title>
-      <link>https://goozenlab.com/computing/rayzentosh/</link>
+      <title>Ryzentosh with Opencore</title>
+      <link>https://goozenlab.com/computing/ryzentosh/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/computing/rayzentosh/</guid>
+      <guid>https://goozenlab.com/computing/ryzentosh/</guid>
       <description>現在リサーチ中、作るかどうかはちょっと予算次第。 ラップトップでの使い心地が良いので、 Rayzenチップを使ったちょっと小さめのデスクトップを一台構築したいと思っ</description>
     </item>
     
