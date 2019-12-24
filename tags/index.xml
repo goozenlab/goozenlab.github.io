@@ -8,15 +8,24 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Dec 2019 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2019 08:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>hackintosh</title>
+      <link>https://goozenlab.com/tags/hackintosh/</link>
+      <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/hackintosh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>thinkpad</title>
       <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Sun, 22 Dec 2019 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/thinkpad/</guid>
       <description></description>
@@ -64,15 +73,6 @@
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/arch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackintosh</title>
-      <link>https://goozenlab.com/tags/hackintosh/</link>
-      <pubDate>Fri, 13 Dec 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/hackintosh/</guid>
       <description></description>
     </item>
     

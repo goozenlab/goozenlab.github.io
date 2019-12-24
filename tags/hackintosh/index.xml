@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 13 Dec 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2019 08:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ハッキントッシュで数ヶ月</title>
+      <link>https://goozenlab.com/blog/2019/12/hackintosh-t480s-review2/</link>
+      <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/hackintosh-t480s-review2/</guid>
+      <description>Thinkpad T480s ハッキントッシュをこんな感じで使ってます。最近タイで買ったThinkVision付き。 （手作りスタンディング・テーブルについてのツッコミはいらんですよ。。）</description>
+    </item>
     
     <item>
       <title>Clover Update</title>
