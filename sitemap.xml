@@ -4,7 +4,37 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2019-12-24T08:30:00+07:00</lastmod>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/optout/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2019/12/optout-amazon/</loc>
+    <lastmod>2019-12-25T08:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -13,22 +43,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2019-12-24T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/hackintosh/</loc>
-    <lastmod>2019-12-24T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2019-12-24T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
     <lastmod>2019-12-24T08:30:00+07:00</lastmod>
   </url>
   
@@ -40,11 +55,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2019/12/hackintosh-t480s-review2/</loc>
     <lastmod>2019-12-24T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2019-12-23T08:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -649,11 +659,6 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2019/07/max3-microg/</loc>
-    <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/optout/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
   </url>
   
@@ -3280,6 +3285,11 @@
   <url>
     <loc>https://goozenlab.com/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/computing/nomad-goods/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

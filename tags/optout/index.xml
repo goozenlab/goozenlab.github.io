@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/optout/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>脱アマゾン</title>
+      <link>https://goozenlab.com/blog/2019/12/optout-amazon/</link>
+      <pubDate>Wed, 25 Dec 2019 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/optout-amazon/</guid>
+      <description>アマゾンの今年秋にあった情報漏洩。事の重大さの割には対応があまりにもいい加減。 しかもマスコミも忖度しているのか、控え目な報道であっという間に消える。。。 で今更ご</description>
+    </item>
     
     <item>
       <title>Max3でmicro-G</title>
