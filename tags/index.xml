@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Dec 2019 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 08:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hackintosh</title>
+      <link>https://goozenlab.com/tags/hackintosh/</link>
+      <pubDate>Sun, 29 Dec 2019 08:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/hackintosh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>optout</title>
@@ -19,15 +28,6 @@
       <pubDate>Wed, 25 Dec 2019 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/optout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackintosh</title>
-      <link>https://goozenlab.com/tags/hackintosh/</link>
-      <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/hackintosh/</guid>
       <description></description>
     </item>
     
