@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 24 Dec 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 09:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>シェル紛争</title>
+      <link>https://goozenlab.com/blog/2019/12/ceasefires-shell/</link>
+      <pubDate>Mon, 30 Dec 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/ceasefires-shell/</guid>
+      <description>平和な一年にするため、エディター紛争の終結に続きシェル戦争も終りにする。 もともとそんなに使ってはいなかったんだけれども、 ラズベリーパイの設定やらなんやらでここ最</description>
+    </item>
     
     <item>
       <title>ハッキントッシュで数ヶ月</title>

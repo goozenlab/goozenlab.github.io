@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 29 Dec 2019 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 11:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linuxをアップデート</title>
+      <link>https://goozenlab.com/blog/2019/12/linux-update/</link>
+      <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/linux-update/</guid>
+      <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとかなりの量のアップデー</description>
+    </item>
+    
+    <item>
+      <title>タイのオレンジジュース</title>
+      <link>https://goozenlab.com/blog/2019/12/thai-orange/</link>
+      <pubDate>Mon, 30 Dec 2019 18:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/thai-orange/</guid>
+      <description>元日までやろうと思っていた断食を昨日途中離脱しました。 断食リカバリーに薄めたオレンジジュースを飲んでます。 今の所オレンジジュースだけでお腹いっぱい状態、、 さてタ</description>
+    </item>
+    
+    <item>
+      <title>シェル紛争</title>
+      <link>https://goozenlab.com/blog/2019/12/ceasefires-shell/</link>
+      <pubDate>Mon, 30 Dec 2019 09:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2019/12/ceasefires-shell/</guid>
+      <description>平和な一年にするため、エディター紛争の終結に続きシェル戦争も終りにする。 もともとそんなに使ってはいなかったんだけれども、 ラズベリーパイの設定やらなんやらでここ最</description>
+    </item>
     
     <item>
       <title>Clover easter egg</title>
@@ -19,7 +46,7 @@
       <pubDate>Sun, 29 Dec 2019 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/clover-extra/</guid>
-      <description>久しぶりに再起動をしたところ、クローバーことブートローダーが真っ赤に！ メガネを外したままの状態だったのでチラチラを流れる雪のようなものだけが見え、 文字などはよく</description>
+      <description>久しぶりに端末を再起動をしたところ、クローバーことブートローダーが真っ赤に！ メガネを外したままの状態だったのでチラチラを流れる雪のようなものだけが見え、 文字など</description>
     </item>
     
     <item>
