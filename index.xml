@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 12:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 03:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>USBStick Linux</title>
+      <link>https://goozenlab.com/blog/2020/01/stick-linux/</link>
+      <pubDate>Fri, 03 Jan 2020 03:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/stick-linux/</guid>
+      <description>64GBのメモリーステイックで緊急用のLinuxマシーンを作ります。 馴染み深いデビアンにしようかと思ったけど、同じものを使うのはちょっとなと思ったので、 ちとディ</description>
+    </item>
     
     <item>
       <title>2020年の年明け</title>
@@ -19,7 +28,7 @@
       <pubDate>Wed, 01 Jan 2020 12:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/new-year/</guid>
-      <description>あけましておめでとうございます。 いやぁー、おいらも楽器箱に入れてもらってどっか景色・景気の良い所に連れて行ってもらえんかしら。。ほんま。 さて、同じところでは正月</description>
+      <description>あけましておめでとうございます。 いやぁー、おいらも楽器箱にでも入れてもらってどっか景色・景気の良い所に連れて行ってもらえんかしら。。ほんま。 さて、同じところでは</description>
     </item>
     
     <item>
