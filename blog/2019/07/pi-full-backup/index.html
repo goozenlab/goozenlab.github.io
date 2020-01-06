@@ -181,7 +181,7 @@
 
 <p><img src="/images/2019-07-12-fullbackup-disk-info.png" alt="Pi Full Backup on Mac" /></p>
 
-<p>折角なのでファイル名には日付<code>date +%Y%m%d_%H%M</code>もつけておきます。アウトプットは<strong>20190712-raspbian_pi3_backup__1058.img</strong>になります。</p>
+<p>折角なのでファイル名には日付<code>date +%Y%m%d_%H%M</code>もつけておきます。アウトプットは<strong>20190712-raspbian_pi3_backup.img</strong>になります。</p>
 
 <pre><code>jin@gallo:Desktop $ sudo dd bs=4m if=/dev/rdisk# of=`date +%Y%m%d`-raspbian_pi3_backup.img
 Password:
@@ -196,6 +196,10 @@ jin@gallo:Desktop $
 <p><img src="/images/2019-07-12-fullbackup-image-zip.png" alt="Pi Full Backup on MAc" /></p>
 
 <p><code>ecthar</code>ではzip形式でも焼き込みに対応しているようのなので、zipで保存しておくのが良いです。</p>
+
+<p>※ gz方式では、
+<code>tar cvzf 20190712-raspbian_pi3_backup.img.gz 20190712-raspbian_pi3_backup.img</code>
+にて圧縮。</p>
 
 <h2 id="復元">復元</h2>
 

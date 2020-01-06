@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Ryzentosh with Opencore | goozenlab</title>
+  <title>Ryzentosh | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -136,7 +136,7 @@
 	<div class="pure-u-11-12 pure-u-md-14-24">
         <div class="post">			
             <div class="post-title">
-                <h1>Ryzentosh with Opencore</h1>
+                <h1>Ryzentosh</h1>
                 <p class="footnote">
                     updated at 
                     <time class="">2019-12-1３</time>
@@ -145,33 +145,57 @@
             <div class="post-content">
                 
 
-<div class="note">現在リサーチ中、作るかどうかはちょっと予算次第。</div>
+<div class="note">現在リサーチ中、作るかどうかはちょっと予算次第。妄想で終わる可能性も有り。</div>
 
-<p>ラップトップでの使い心地が良いので、
-Rayzenチップを使ったちょっと小さめのデスクトップを一台構築したいと思ってます。</p>
+<p>ラップトップでのハッキントッシュの使い心地が思いの外良いので、
+Ryzenを使ったちょっと小さめのデスクトップを一台構築したいと思ってます。</p>
 
-<p>ハッキントッシュ・レディーな機材をリサーチ中。</p>
+<p>次の次のオリンピックぐらいまで使えるような、ハッキントッシュ・レディーな機材をリサーチ中。ノートブックと違いバッテリー関連の問題を抱えることはないようなので、チップセットだけ気をつければそんなに障害はないように思える。
+（ノートブックのインストールに比べて敷居が低い。）</p>
 
 <h2 id="hardware">Hardware</h2>
 
 <ul>
-<li>Case: Ncase M1 v6 <a href="https://SFFlab.com：頻繁に買い換えるものではないので少し贅沢に">https://SFFlab.com：頻繁に買い換えるものではないので少し贅沢に</a></li>
-<li>Power Supply: Corsair SF600 (Platinum)　地味に重要なパーツ</li>
-<li>Motherboard: Asus X570-I Strix, ASRock Z390i Phantom Gaming AC, Gigabyte X570 I Aorus Pro Wifi：動作の確認の取れているマザーボード（付属のWifiチップは全滅。）ドングルが必要になる。</li>
-<li>CPU: AMD Ryzen 3600X（コストパフォーマンスを重視かつ電力も控え目なもの）</li>
-<li>GPU: ATI Radeon（よりどりみどり）</li>
-<li>Storage: SSDs（お下がりを利用）</li>
-</ul>
-
-<p>ラムの高さがクーラーと干渉したりするらしいので要注意。なるべく静かなものを選ぶ</p>
+<li>Case: Ncase M1 v6：頻繁に買い換えるものではないので少し贅沢に @ <a href="https://SFFlab.com">https://SFFlab.com</a></li>
+<li>Power Supply: Corsair SF600 (Platinum)　地味に重要なパーツと聞く。</li>
+<li>Motherboard: 動作の確認の取れているマザーボード（付属のWifiチップは全滅。）ドングルもしくは対応していているカードに変更する必要になる。
 
 <ul>
-<li>Ram: G-Skill 32GB 3200MHz Trident Z Neo, 32GB Corsair Vengeance LPX DDR4-3200</li>
-<li>Cooler: Noctua NH-L12S</li>
-<li>Fan: Noctua Chromax NF-F12:</li>
+<li>GIGABYTE X570 I AORUS PRO WIFI ¥26000</li>
+<li>GIGABYTE B450 I AORUS PRO WIFI ¥13000</li>
+<li>Asus ROG STRIX X570-I GAMING ¥36000</li>
+<li>Asus ROG STRIX B450-I GAMING ¥16249
+<!-- INTEL: ASRock Z390i Phantom Gaming A --></li>
+</ul></li>
+<li>CPU: AMD Ryzen 3700X（コストパフォーマンスを重視かつ電力も控え目）</li>
+<li>32GB Ram: お値段次第で良いような気がするパーツ。長期保証があればなおよし。</li>
+<li>Storage: SSDs（他の端末で使っている、お下がりを利用）</li>
+<li>GPU: ATI Radeon（よりどりみどりの内、中古のVEGAにでもするかな。）</li>
+</ul>
+
+<p>クーリングシステム：ラムの高さがクーラーと干渉したりするらしいので要注意。なるべく静かなものを選びたい。</p>
+
+<ul>
+<li>CPU Cooler：まぁ使い方を見ても、予算的にも空冷でいいのだけど気になる水冷システム。
+
+<ul>
+<li>Noctua U9S</li>
+<li>Noctua NH-L12S</li>
+<li>水冷システム：NZXT Kraken X52 240mm Cooler</li>
+</ul></li>
+<li>Case Fan：小さい個体が故、ケースの対流も考えた方が良いそうです。
+
+<ul>
+<li>Noctua Chromax NF-F12</li>
+</ul></li>
 </ul>
 
 <h2 id="install">Install</h2>
+
+<p>ブートローダーが２種類、CloverとOpenCoreがあります。OpenCoreが後発、じわじわと人気を得ているような感じです。</p>
+
+<p>AMD Vanilla Clover
+<a href="https://github.com/AMD-OSX/AMD_Vanilla">https://github.com/AMD-OSX/AMD_Vanilla</a></p>
 
 <p>Cloverを使っても良いのですが、せっかく新しいブートローダーが出ているので試してみる。</p>
 
@@ -190,14 +214,30 @@ Rayzenチップを使ったちょっと小さめのデスクトップを一台�
 
 <hr />
 
-<p>参考：</p>
+<h2 id="参考サイト">参考サイト</h2>
+
+<ul>
+<li>Best Wifi card for Hackintosh.: <a href="https://hackintoshpro.com/wifi-for-hackintosh/">https://hackintoshpro.com/wifi-for-hackintosh/</a></li>
+<li>Ryzen 7 3700X, Asus B450-F STRIX, RX 570, PCE AC68 Wifi Card, Mojave 10.14.6: <a href="https://forum.amd-osx.com/viewtopic.php?t=9001">https://forum.amd-osx.com/viewtopic.php?t=9001</a></li>
+</ul>
+
+<p>BOOTLOADER:</p>
+
+<ul>
+<li>Clover EFI for Ryzen 3700X &amp; MSI B450I Gaming Plus AC: <a href="https://github.com/portrayer/Clover-Ryzen-MSI-B450I">https://github.com/portrayer/Clover-Ryzen-MSI-B450I</a></li>
+</ul>
+
+<h3 id="パーツ類について参考しにた動画">パーツ類について参考しにた動画</h3>
 
 <ul>
 <li>Building a Mini 16-Core Beast! Ncase M1 + R9 3950X: <a href="https://www.youtube.com/watch?v=4bdEVobyui0">https://www.youtube.com/watch?v=4bdEVobyui0</a></li>
-<li>Best PC Hardware for ITX Builds - 2019 Edition!: <a href="https://www.youtube.com/watch?v=-_QFAWcaGTM">https://www.youtube.com/watch?v=-_QFAWcaGTM</a></li>
-<li>Best Wifi card for Hackintosh.: <a href="https://hackintoshpro.com/wifi-for-hackintosh/">https://hackintoshpro.com/wifi-for-hackintosh/</a></li>
 <li>Casper - The Ryzen 3600 Hackintosh Louqe Ghost ITX PC Build: <a href="https://www.youtube.com/watch?v=KxBUJWH56dQ">https://www.youtube.com/watch?v=KxBUJWH56dQ</a></li>
+<li>PC build in Ncase M1 V6, Ryzen 3900x, Asus X570-I Gaming: <a href="https://www.youtube.com/watch?v=0IeMxPv0sqA">https://www.youtube.com/watch?v=0IeMxPv0sqA</a></li>
 </ul>
+
+<p>※ こちらに白金化総合リンク集あります。<br />
+Hackintosh long-term maintenance model EFI and installation tutorial:
+<a href="https://github.com/daliansky/Hackintosh/blob/master/README_en.md">https://github.com/daliansky/Hackintosh/blob/master/README_en.md</a></p>
 
 <!-- 
 amazon list

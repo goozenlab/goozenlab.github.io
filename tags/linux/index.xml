@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 31 Dec 2019 11:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2020 11:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ファームウェアをアップデート</title>
+      <link>https://goozenlab.com/blog/2020/01/firmware-linux-nonfree/</link>
+      <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/firmware-linux-nonfree/</guid>
+      <description>Thinkapd T480sでのDebain起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだったので そんなに気には</description>
+    </item>
     
     <item>
       <title>Linuxをアップデート</title>

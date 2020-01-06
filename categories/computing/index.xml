@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 30 Dec 2019 09:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jan 2020 21:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ハッキントッシュのバッテリー</title>
+      <link>https://goozenlab.com/blog/2020/01/hackintosh-t480s-batery/</link>
+      <pubDate>Mon, 06 Jan 2020 21:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/hackintosh-t480s-batery/</guid>
+      <description>時々Redditに気になるハッキントッシュ情報が流れます。 今回はこのT480sの唯一の弱点とも言えるバッテリー関連情報。 なんとハッキントッシュのBIOS設定をM</description>
+    </item>
     
     <item>
       <title>シェル紛争</title>
