@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 06 Jan 2020 21:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>debian</title>
+      <link>https://goozenlab.com/tags/debian/</link>
+      <pubDate>Wed, 08 Jan 2020 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/debian/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hackintosh</title>
@@ -95,7 +104,7 @@
     </item>
     
     <item>
-      <title>arch</title>
+      <title>Arch</title>
       <link>https://goozenlab.com/tags/arch/</link>
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
@@ -424,15 +433,6 @@
       <pubDate>Sat, 22 Sep 2018 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/shivambu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>debian</title>
-      <link>https://goozenlab.com/tags/debian/</link>
-      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/debian/</guid>
       <description></description>
     </item>
     

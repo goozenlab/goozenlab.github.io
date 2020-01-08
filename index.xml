@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 06 Jan 2020 21:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 09:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firefox 70 on Buster</title>
+      <link>https://goozenlab.com/blog/2020/01/latest-firefox/</link>
+      <pubDate>Wed, 08 Jan 2020 09:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/latest-firefox/</guid>
+      <description>快適に動作しているデビアンですが、インストールされているファイヤーフォックのバージョンが68.*と少し古いです。 最新のものを使ってもシステムに影響はないだろうと</description>
+    </item>
     
     <item>
       <title>ハッキントッシュのバッテリー</title>
