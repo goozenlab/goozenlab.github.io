@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSCode プラグイン</title>
+      <link>https://goozenlab.com/blog/2020/01/vscode-plugins/</link>
+      <pubDate>Thu, 09 Jan 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/vscode-plugins/</guid>
+      <description>ちょっとした自分のメモとして残します。 導入したプラグインと ちょっとしたショートカットをまとめる。 General Icon表示が見た目が少し華やかになります。ちょっとうざったい</description>
+    </item>
     
     <item>
       <title>Firefox 70 on Buster</title>

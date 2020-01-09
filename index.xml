@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSCode プラグイン</title>
+      <link>https://goozenlab.com/blog/2020/01/vscode-plugins/</link>
+      <pubDate>Thu, 09 Jan 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/vscode-plugins/</guid>
+      <description>ちょっとした自分のメモとして残します。 導入したプラグインと ちょっとしたショートカットをまとめる。 General Icon表示が見た目が少し華やかになります。ちょっとうざったい</description>
+    </item>
     
     <item>
       <title>Firefox 70 on Buster</title>
@@ -803,6 +812,15 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/renew-main-laptop/</guid>
       <description>2011年から8年ぶりにメインマシーンMacbook Pro15, 2011を更新しまーす。 スペックを変えつつ行ったり来たり、 ちょっとウキウキ・ドキドキしながら端末を選び（こ</description>
+    </item>
+    
+    <item>
+      <title>Hackintosh T480s</title>
+      <link>https://goozenlab.com/computing/tpt480s-hackintosh/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/tpt480s-hackintosh/</guid>
+      <description>ハードウェア 英語キーボード：ebayにて購入(US$45.77) 24GB (8GB+16GB)：32GBも高いけど売ってますね。 1TB SSD：シリコンパワー wifiカード：</description>
     </item>
     
     <item>

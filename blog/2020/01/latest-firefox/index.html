@@ -218,6 +218,12 @@ $ modprobe psmouse proto=bare
 <p>で使えるようになりました。。なぜに今更？？</p>
 
 <!--
+
+/etc/default/grub
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash psmouse.proto=bare"
+
+
 Create and open a file /etc/apt/preferences.d/99pin-unstable as root with a text editor, for example using Nano command line text editor:
 
 Paste the following in this file:
