@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Jan 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jan 2020 07:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kali Linux on BTRFS</title>
+      <link>https://goozenlab.com/blog/2020/01/install-kali-btrfs/</link>
+      <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/install-kali-btrfs/</guid>
+      <description>現在Kaliをインストール中のためアップしてます（メモ）。インストールが終了したら整理してアップし直します。 ちょっと変わり種のディストリビューションも入れておき</description>
+    </item>
+    
+    <item>
+      <title>BIOS設定：ハッキントッシュT480s</title>
+      <link>https://goozenlab.com/blog/2020/01/install-hackintosh-t480s/</link>
+      <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/install-hackintosh-t480s/</guid>
+      <description>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。 11月ごろに一回あったシステムアップデートもでき、MagicTrackpadやマルチディス</description>
+    </item>
     
     <item>
       <title>VSCode プラグイン</title>

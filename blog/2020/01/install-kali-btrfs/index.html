@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Kali Linux on BTRFS | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+					
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-01-11</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> <a href="https://goozenlab.com/tags/kali">kali</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Kali Linux on BTRFS</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<div class=note>
+現在Kaliをインストール中のためアップしてます（メモ）。インストールが終了したら整理してアップし直します。
+</div>
+
+<p>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、
+Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。</p>
+
+<p>LinuxのパーティションはBTRFSにしているので、少しインストール方法が変わってきます。
+ありがたいことにドキュメントが整理されています。</p>
+
+<p><a href="https://www.kali.org/docs/base-images/kali-linux-btrfs-install/">https://www.kali.org/docs/base-images/kali-linux-btrfs-install/</a></p>
+
+<p>詳細に書いてありますが、マルチOSということは考慮に入っていないようなので、
+自分の環境に調整しました。</p>
+
+<p>自分（マルチOS)のためのメモでもあるので、インストールを行う方はマニュアルも参照にされてください。</p>
+
+<p>ディスクの作成などは割愛します。<a href="https://www.kali.org/downloads/">こちら</a>からLiveDVDをダウンロードして下さい。</p>
+
+<h2 id="1-live-modeで起動">1. LIVE MODEで起動</h2>
+
+<p>インストーラーとbtrfsのツールをインストール。</p>
+
+<pre><code>$ apt install btrfs-progs debian-installer-launcher
+</code></pre>
+
+<p>Next we have to disconnect the machine from the network
+so to not confuse the installer who want full control over the network settings.</p>
+
+<h2 id="3-インストールをネットワーク設定のドメイン名の登録のところまで進める">3. インストールをネットワーク設定のドメイン名の登録のところまで進める</h2>
+
+<p><img src="/images/2020-01-11-kali-btrfs-11-installation-05.png" alt="Kali install" /></p>
+
+<p>Configure the Network: where you choose a domain name
+作業を止めて、ターミナルを開く。</p>
+
+<hr />
+
+<h2 id="4-ターミナルでの作業">4. ターミナルでの作業</h2>
+
+<h2 id="ディスクの設定">ディスクの設定</h2>
+
+<p>自分の環境ではすでにbtrfsはフォーマットされて
+すでにサブボリュームも制作済み。</p>
+
+<pre><code>$ mount /dev/nvme0n1p5 /mnt
+$ btrfs subvolume create /mnt/@kali
+$ btrfs subvolume create /mnt/@root
+$ btrfs subvol list /mnt
+
+ $ btrfs subvol set-default XXX /mnt
+</code></pre>
+
+<p><strong>！！！ここ重要なり！！！</strong>：指定したサブボリュームIDがマウントオプションが指定されていない時のマウント先になる。
+この場合ID259の@kaliが<code>mount /dev/nvme0n1p5 /mnt</code>実行時にマウントされるという事。</p>
+
+<p>マニュアルでは、home, var/log, root, /.snapshotと切り分けているが、
+ペネトレーションテストなどでの利用を考えているので、homeは共有せず少し調整。</p>
+
+<pre><code>$ btrfs subvolume create /mnt/@home
+$ btrfs subvolume create /mnt/@log
+$ mkdir -p /mnt/@kali/root
+$ mkdir -p /mnt/@kali/home
+$ mkdir -p /mnt/@kali/var/log
+</code></pre>
+
+<pre><code>$ btrfs subvol set-default XXX /mnt/@kali
+$ umount /mnt
+</code></pre>
+
+<p>ターミナルでの作業は終了。インストーラーに戻りパーティションの設定まで進める。</p>
+
+<hr />
+
+<h2 id="5-パーティション設定">5. パーティション設定</h2>
+
+<p>スワップファイルの設定とBTRFSをインストール先に設定する。フォーマットはしないように。
+これで<code>subvol set-default</code> で指定したサブボリュームにインストールされる。</p>
+
+<p>Mnount Point: /<br />
+Format: no keep existing data</p>
+
+<p><img src="/images/2020-01-11-kali-btrfs-28-partitioning-root-5.png" alt="Kali install Set Partition" /></p>
+
+<p>スワップ領域は勝手にフォーマットされるのでUUIDが変わる、他の環境で<code>/etc/fstab/</code>の調整が必要。</p>
+
+<p>最後までインストールを進める。特に変わった設定・変更などはなし。</p>
+
+<h2 id="5-インストール終了の作業">5. インストール終了の作業</h2>
+
+<p>はたまたターミナル、ちとアナログな感じの作業がある。</p>
+
+<p>まず必要かわからないけれど、先にbtrfsの設定したデフォルト値をリセット。</p>
+
+<pre><code>$ mount /dev/nvme0n1p5 /mnt
+$ btrfs subvolume set-default 0 /mnt
+$ umount /mnt
+</code></pre>
+
+<p>インストールはサブボリュームにインストールされているので、
+切り分けるいくつかのサブボリュームを作成・登録する。
+ファイルのコピーとfstabの編集が必要。</p>
+
+<p>サブボリュームのためのフォルダを作成。</p>
+
+<pre><code>mkdir /mnt/kali
+mkdir /mnt/root
+mkdir /mnt/log
+mkdir /mnt/debian
+</code></pre>
+
+<p>インストールされたファイルはまだ圧縮されていないのでこの時点で行う。
+マウントオプションはマンジャーロのものを流用。</p>
+
+<pre><code>mount -t btrfs -o subvol=@kali /dev/nvme0n1p5 /mnt/kali
+mount /dev/nvme0n1p5 /mnt/kali -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@kali
+btrfs filesystem defragment -r -v -clzo /mnt/kali/
+</code></pre>
+
+<p>その他のサブボリュームもマウントする。</p>
+
+<pre><code>mount -t btrfs -o subvol=@root /dev/nvme0n1p5 /mnt/root
+mount -t btrfs -o subvol=@log /dev/nvme0n1p5 /mnt/log
+mount /dev/nvme0n1p5 /mnt/root -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@root
+mount /dev/nvme0n1p5 /mnt/log -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@log
+mv /mnt/kali/root/.* /mnt/root/
+mv /mnt/kali/var/log/*  /mnt/log/
+</code></pre>
+
+<p><code>/etc/fstab/</code>をデビアンから取ってきて編集する。スワップファイルのUUIDも書き換える。</p>
+
+<pre><code>$ cp /mnt/debian/etc/fstab/ /mnt/root/etc/fstab
+$ vi /mnt/root/etc/fstab
+
+UUID=&lt;UUID of btrfs partition&gt; /        btrfs   defaults,subvol=@kali  0 0
+UUID=&lt;UUID of btrfs partition&gt; /root    btrfs   defaults,subvol=@root  0 0
+………
+</code></pre>
+
+<h2 id="6-再起動後に最後の仕上げ">6. 再起動後に最後の仕上げ</h2>
+
+<div class=hint> root パスワード： [ toor ] </div>
+
+<p>we can log in as root and install some more tools we need.
+First let’s install “btrfs-progs”:</p>
+
+<pre><code>$ apt update
+$ apt upgrade
+$ apt install btrfs-progs
+</code></pre>
+
+<p>これで、あとは無線LANドライバーのインストール・Wifi設定
+多分デビアンと同じ作業で自分の環境を作ることができると思います。
+（ただ、ZFSのインストール時にエラーが出るのはちょっとなんですが、、）</p>
+
+<p>Sanpshotを使ったリカバリー方法も記載されていますが、
+思っているやり方とちがうのでそちらは保留してます。</p>
+
+<p>References:</p>
+
+<ul>
+<li>Kali Install on Btrfs: <a href="https://www.kali.org/docs/base-images/kali-linux-btrfs-install/">https://www.kali.org/docs/base-images/kali-linux-btrfs-install/</a></li>
+<li>Btrfs Wiki, Btrfs Debian site, apt-btrfs-snapshot, Snapper: <a href="http://snapper.io/">http://snapper.io/</a></li>
+<li>kali linuxの基本設定をしてみた。: <a href="https://ameblo.jp/shinnaka54/entry-12420242361.html">https://ameblo.jp/shinnaka54/entry-12420242361.html</a></li>
+<li>暗号通貨 とセキュリティ(medium.com): <a href="https://medium.com/ethical-hacking-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/wifi%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC%E3%82%92%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AB%E3%81%99%E3%82%8B-%E6%9C%80%E9%87%8D%E8%A6%81%E3%82%B9%E3%82%AD%E3%83%AB-5ee7a57e5165">WIFIアダプターをモニターモードにする</a></li>
+</ul>
+
+<hr />
+
+<!--
+
+## 基本設定
+
+初期起動サービスについて、現在起動しているサービス
+
+```
+service --status-all
+```
+
+# Sanpshot and Recover
+
+Congratulations, you have just installed a Kali system with automatic snapshotting functionality! Next, we will cover some basic usage examples.
+Usage
+
+Then we set the default subvolume to “5” to satisfy “apt-btrfs-snapshot”:
+
+btrfs subvolume set-default 5 /
+
+Now we can download and install the “apt-btrfs-snapshot” tool from the Ubuntu repository
+
+wget https://launchpad.net/ubuntu/+archive/primary/+files/apt-btrfs-snapshot_3.5.2_all.deb
+apt install ./apt-btrfs-snapshot_3.5.2_all.deb
+
+
+
+Create snapshots
+
+Snapshots are automatically created during apt operations. There are no additional steps required, e.g.:
+
+btrfs-50-example-snapshot
+List snapshots
+
+Firstly, a snapshot is also a subvolume, thus all snapshots also show up when listing btrfs subvolumes, e.g. via btrfs subvolume list /
+
+btrfs-51-example-subvolume-list
+
+To list only the snapshots, we can use the following command: apt-btrfs-snapshot list
+
+btrfs-52-example-snapshot-list
+Delete snapshots
+
+The easiest way to delete a snapshot is by using the following command: apt-btrfs-snapshot delete
+
+btrfs-52-example-snapshot-delete
+
+Voila, it’s gone:
+
+btrfs-53-example-snapshot-list-after-delete
+
+There are more sophisticated ways to delete multiple snapshots, e.g. the following deletes all snapshots older than 2 days:
+
+apt-btrfs-snapshot delete-older-than 2d
+
+Refer to the help output for all the different features of “apt-btrfs-snapshot”
+Rollback
+
+To roll back to a previous snapshot we have to remember two things: - the root “/” of the file system has been installed in a subvolume “/@” and not the root of the btrfs partition “/” - a snapshot is treated like just another subvolume
+
+thus all we have to do is mount the btrfs partition and replace the current root subvolume “@” with the last snapshot. To be safe we’ll backup the curent root (“@”) subvolume. E.g.:
+
+mount /dev/nvme0n1p5 /mnt                                   # mount your root partition (replace "/dev/nvme0n1p5" with yours)
+mv /mnt/@ /mnt/@_badroot                                    # Move the old root away
+mv /mnt/@ /mnt/@apt-snapshot-2019-10-13_18:07:40 /mnt/@     # Roll back to a previous snapshot
+reboot
+
+Full walkthrough from apt full-upgrade to rollback
+full-upgrade
+
+After a new installation we don’t have any snapshots yet as we can see via: apt-btrfs-snapshot list
+
+btrfs-70-Rollback-01.png Let’s do a full system upgrade:
+
+apt update
+apt full-upgrade
+
+btrfs-72-Rollback-03.png
+
+We can observe that a snapshot is being created before any packages are installed:
+
+btrfs-74-Rollback-05.png
+
+Once finished we can confirm that there are no more updates available:
+
+btrfs-74-Rollback-05b.png
+
+If we list the snapshots again we can see the one that has just been created:
+
+btrfs-75-Rollback-06.png
+Rollback
+
+Remember that “/” itself is the subvolume “@”. To rollback to a snapshot, all we have to do is replace “@” with the snapshot we want.
+
+
+First we have to mount the btrfs partition via:
+
+mount /dev/<your btrfs partition> /mnt
+
+If we list the content of that partition we can see all the subvolumes, including the snapshots:
+
+btrfs-77-Rollback-08.png
+
+Before we replace the current root with our snapshot, let’s move “@” away just to be safe:
+
+mv /mnt/@ /mnt/@_badroot
+
+btrfs-78-Rollback-09.png
+
+Now we can pick the snapshot from before the last upgrade and rename it to “@”:
+
+mv /mnt/@apt-snapshot-2019-10-21_23:50:26 /mnt/@
+
+btrfs-79-Rollback-10.png
+
+And that’s all there is to it, here’s the new “@”:
+
+btrfs-80-Rollback-11.png
+
+Let’s reboot for the rollback to take effect:
+
+btrfs-81-Rollback-12.png
+
+Confirming that the rollback worked
+
+After the reboot, we can see that the snapshot is gone, because we rolled back to it:
+
+And if we issue another “apt update”, we can see that we are back to where we were before the snapshot:
+
+Once you confirmed that the system works you can delete the old “root” by mounting the btrfs partition and using the “btrfs subvolume delete” command:
+
+```
+mount /dev/<your btrfs partition> /mnt
+btrfs subvolume delete /mnt/@_badroot
+```
+
+-->
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/01/firmware-linux-nonfree/">ファームウェアをアップデート</a></li>
+	
+	<li><a href="/blog/2019/12/linux-update/">Linuxをアップデート</a></li>
+	
+	<li><a href="/blog/2019/12/linux-windowmamager/">リナックスのウィンドウマネージャーについて</a></li>
+	
+	<li><a href="/blog/2019/12/install-arch-btrfs/">BtrfsにArchをインストール</a></li>
+	
+	<li><a href="/blog/2019/12/linux-thinkpad-tlp/">TLPの設定</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

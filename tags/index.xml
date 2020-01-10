@@ -8,10 +8,46 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 09:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jan 2020 07:30:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>kali</title>
+      <link>https://goozenlab.com/tags/kali/</link>
+      <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/kali/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://goozenlab.com/tags/linux/</link>
+      <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackintosh</title>
+      <link>https://goozenlab.com/tags/hackintosh/</link>
+      <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/hackintosh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinkpad</title>
+      <link>https://goozenlab.com/tags/thinkpad/</link>
+      <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/thinkpad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>debian</title>
@@ -23,38 +59,11 @@
     </item>
     
     <item>
-      <title>hackintosh</title>
-      <link>https://goozenlab.com/tags/hackintosh/</link>
-      <pubDate>Mon, 06 Jan 2020 21:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/hackintosh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>thinkpad</title>
-      <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Mon, 06 Jan 2020 21:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/thinkpad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>debain</title>
       <link>https://goozenlab.com/tags/debain/</link>
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/debain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://goozenlab.com/tags/linux/</link>
-      <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/linux/</guid>
       <description></description>
     </item>
     
