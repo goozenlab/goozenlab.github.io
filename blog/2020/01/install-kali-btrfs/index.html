@@ -158,10 +158,6 @@
             <div class="post-content">
                 
 
-<div class=note>
-現在Kaliをインストール中のためアップしてます（メモ）。インストールが終了したら整理してアップし直します。
-</div>
-
 <p>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、
 Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。</p>
 
@@ -173,30 +169,31 @@ Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする
 <p>詳細に書いてありますが、マルチOSということは考慮に入っていないようなので、
 自分の環境に調整しました。</p>
 
-<p>自分（マルチOS)のためのメモでもあるので、インストールを行う方はマニュアルも参照にされてください。</p>
+<p>自分（マルチOS)のためのメモでもあるので、インストールを行う方はマニュアルを参照にされてください。</p>
 
 <p>ディスクの作成などは割愛します。<a href="https://www.kali.org/downloads/">こちら</a>からLiveDVDをダウンロードして下さい。</p>
 
 <h2 id="1-live-modeで起動">1. LIVE MODEで起動</h2>
 
-<p>インストーラーとbtrfsのツールをインストール。</p>
+<p>他のディストリビューションと違いインストーラーはインストールしないと無い。探しちゃいましたよ。。
+そしてbtrfsのツールもインストール。</p>
 
 <pre><code>$ apt install btrfs-progs debian-installer-launcher
 </code></pre>
 
-<p>Next we have to disconnect the machine from the network
-so to not confuse the installer who want full control over the network settings.</p>
+<p>端末がスリープしてしまった時には</p>
 
-<h2 id="3-インストールをネットワーク設定のドメイン名の登録のところまで進める">3. インストールをネットワーク設定のドメイン名の登録のところまで進める</h2>
+<div class=hint>パスワード： root [ toor ] </div>
+
+<h2 id="2-インストールをネットワーク設定のドメイン名の登録のところまで進める">2. インストールをネットワーク設定のドメイン名の登録のところまで進める</h2>
 
 <p><img src="/images/2020-01-11-kali-btrfs-11-installation-05.png" alt="Kali install" /></p>
 
-<p>Configure the Network: where you choose a domain name
-作業を止めて、ターミナルを開く。</p>
+<p>ここで作業をいったん止めて、ターミナルを開く。</p>
 
 <hr />
 
-<h2 id="4-ターミナルでの作業">4. ターミナルでの作業</h2>
+<h2 id="3-ターミナルでの作業">3. ターミナルでの作業</h2>
 
 <h2 id="ディスクの設定">ディスクの設定</h2>
 
@@ -205,26 +202,23 @@ so to not confuse the installer who want full control over the network settings.
 
 <pre><code>$ mount /dev/nvme0n1p5 /mnt
 $ btrfs subvolume create /mnt/@kali
-$ btrfs subvolume create /mnt/@root
 $ btrfs subvol list /mnt
 
- $ btrfs subvol set-default XXX /mnt
+260  =======　@kali
+
+$ btrfs subvol set-default 260 /mnt
 </code></pre>
 
 <p><strong>！！！ここ重要なり！！！</strong>：指定したサブボリュームIDがマウントオプションが指定されていない時のマウント先になる。
-この場合ID259の@kaliが<code>mount /dev/nvme0n1p5 /mnt</code>実行時にマウントされるという事。</p>
+この場合ID260の@kaliが<code>mount /dev/nvme0n1p5 /mnt</code>実行時にマウントされるという事。</p>
 
 <p>マニュアルでは、home, var/log, root, /.snapshotと切り分けているが、
 ペネトレーションテストなどでの利用を考えているので、homeは共有せず少し調整。</p>
 
-<pre><code>$ btrfs subvolume create /mnt/@home
+<pre><code>$ btrfs subvolume create /mnt/@root
 $ btrfs subvolume create /mnt/@log
 $ mkdir -p /mnt/@kali/root
-$ mkdir -p /mnt/@kali/home
 $ mkdir -p /mnt/@kali/var/log
-</code></pre>
-
-<pre><code>$ btrfs subvol set-default XXX /mnt/@kali
 $ umount /mnt
 </code></pre>
 
@@ -232,7 +226,7 @@ $ umount /mnt
 
 <hr />
 
-<h2 id="5-パーティション設定">5. パーティション設定</h2>
+<h2 id="4-パーティション設定">4. パーティション設定</h2>
 
 <p>スワップファイルの設定とBTRFSをインストール先に設定する。フォーマットはしないように。
 これで<code>subvol set-default</code> で指定したサブボリュームにインストールされる。</p>
@@ -242,17 +236,19 @@ Format: no keep existing data</p>
 
 <p><img src="/images/2020-01-11-kali-btrfs-28-partitioning-root-5.png" alt="Kali install Set Partition" /></p>
 
-<p>スワップ領域は勝手にフォーマットされるのでUUIDが変わる、他の環境で<code>/etc/fstab/</code>の調整が必要。</p>
+<p>スワップ領域はフォーマットをしないと先に進めない。
+UUIDが変わるので他の環境にて<code>/etc/fstab/</code>の調整が必要。</p>
 
-<p>最後までインストールを進める。特に変わった設定・変更などはなし。</p>
+<p>最後までインストールを進める。特に変わった設定・変更などはなく、順調に終了の様子。</p>
 
 <h2 id="5-インストール終了の作業">5. インストール終了の作業</h2>
 
 <p>はたまたターミナル、ちとアナログな感じの作業がある。</p>
 
-<p>まず必要かわからないけれど、先にbtrfsの設定したデフォルト値をリセット。</p>
+<p>まず必要かわからないけれど、先にbtrfsの設定したデフォルト値をリセット。
+なはずですが、うまくいかない。まぁ問題はないのですが、、。</p>
 
-<pre><code>$ mount /dev/nvme0n1p5 /mnt
+<pre><code>$ mount /dev/nvme0n1p5 /mnt　
 $ btrfs subvolume set-default 0 /mnt
 $ umount /mnt
 </code></pre>
@@ -261,57 +257,54 @@ $ umount /mnt
 切り分けるいくつかのサブボリュームを作成・登録する。
 ファイルのコピーとfstabの編集が必要。</p>
 
-<p>サブボリュームのためのフォルダを作成。</p>
+<p>サブボリュームをマウント先のフォルダを作成。</p>
 
-<pre><code>mkdir /mnt/kali
-mkdir /mnt/root
-mkdir /mnt/log
-mkdir /mnt/debian
+<pre><code>$ mkdir /mnt/kali
+$ mkdir /mnt/root
+$ mkdir /mnt/log
 </code></pre>
 
 <p>インストールされたファイルはまだ圧縮されていないのでこの時点で行う。
 マウントオプションはマンジャーロのものを流用。</p>
 
-<pre><code>mount -t btrfs -o subvol=@kali /dev/nvme0n1p5 /mnt/kali
-mount /dev/nvme0n1p5 /mnt/kali -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@kali
-btrfs filesystem defragment -r -v -clzo /mnt/kali/
+<pre><code>$ mount /dev/nvme0n1p5 /mnt/kali -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@kali
+$ btrfs filesystem defragment -r -v -clzo /mnt/kali/
 </code></pre>
 
-<p>その他のサブボリュームもマウントする。</p>
+<p>その他のサブボリュームもマウントしてファイルを移動する。
+mvでエラーが出るが問題はない。</p>
 
-<pre><code>mount -t btrfs -o subvol=@root /dev/nvme0n1p5 /mnt/root
-mount -t btrfs -o subvol=@log /dev/nvme0n1p5 /mnt/log
-mount /dev/nvme0n1p5 /mnt/root -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@root
-mount /dev/nvme0n1p5 /mnt/log -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@log
-mv /mnt/kali/root/.* /mnt/root/
-mv /mnt/kali/var/log/*  /mnt/log/
+<pre><code>$ mount /dev/nvme0n1p5 /mnt/root -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@root
+$ mount /dev/nvme0n1p5 /mnt/log -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@log
+$ mv /mnt/kali/root/.* /mnt/root/
+$ mv /mnt/kali/var/log/*  /mnt/log/
 </code></pre>
 
-<p><code>/etc/fstab/</code>をデビアンから取ってきて編集する。スワップファイルのUUIDも書き換える。</p>
+<p>そして<code>/etc/fstab/</code>をデビアンから取ってきて編集する。
+Manjaroでのオプション
+<code>rw,noatime,compress=lzo,ssd,space_cache,commit=120</code>
+を付け加える。</p>
 
-<pre><code>$ cp /mnt/debian/etc/fstab/ /mnt/root/etc/fstab
+<pre><code>$ cat /mnt/debian/etc/fstab/ &gt;&gt; /mnt/root/etc/fstab
 $ vi /mnt/root/etc/fstab
-
-UUID=&lt;UUID of btrfs partition&gt; /        btrfs   defaults,subvol=@kali  0 0
-UUID=&lt;UUID of btrfs partition&gt; /root    btrfs   defaults,subvol=@root  0 0
-………
 </code></pre>
 
 <h2 id="6-再起動後に最後の仕上げ">6. 再起動後に最後の仕上げ</h2>
 
-<div class=hint> root パスワード： [ toor ] </div>
+<p>再起動するもGrubのインストールができていないよう。
+Manjaroで立ち上げ、<code>sudo update-grub</code>でブートローダーを更新して起動させると問題はないので、
+ブートローダーを多分USB側に書き込んでいるのか、すっきりせず。</p>
 
-<p>we can log in as root and install some more tools we need.
-First let’s install “btrfs-progs”:</p>
+<p>ログインをして必要なファイルをインストール、そして更新・アップデートをする。</p>
 
-<pre><code>$ apt update
+<pre><code>$ apt install btrfs-progs
+$ apt update
 $ apt upgrade
-$ apt install btrfs-progs
 </code></pre>
 
 <p>これで、あとは無線LANドライバーのインストール・Wifi設定
-多分デビアンと同じ作業で自分の環境を作ることができると思います。
-（ただ、ZFSのインストール時にエラーが出るのはちょっとなんですが、、）</p>
+多分デビアンと同じ作業で自分の環境を作ることができる。
+（ただ、ZFSのインストール時にエラーが出るのはちょっと、、）</p>
 
 <p>Sanpshotを使ったリカバリー方法も記載されていますが、
 思っているやり方とちがうのでそちらは保留してます。</p>
@@ -324,8 +317,6 @@ $ apt install btrfs-progs
 <li>kali linuxの基本設定をしてみた。: <a href="https://ameblo.jp/shinnaka54/entry-12420242361.html">https://ameblo.jp/shinnaka54/entry-12420242361.html</a></li>
 <li>暗号通貨 とセキュリティ(medium.com): <a href="https://medium.com/ethical-hacking-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/wifi%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC%E3%82%92%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AB%E3%81%99%E3%82%8B-%E6%9C%80%E9%87%8D%E8%A6%81%E3%82%B9%E3%82%AD%E3%83%AB-5ee7a57e5165">WIFIアダプターをモニターモードにする</a></li>
 </ul>
-
-<hr />
 
 <!--
 
