@@ -71,16 +71,16 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
 					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 					</ul>
-					
 				</li>
                 
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -204,7 +204,10 @@ Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする
 $ btrfs subvolume create /mnt/@kali
 $ btrfs subvol list /mnt
 
-260  =======　@kali
+ID 257 gen 6911 top level 5 path @manjaro
+ID 258 gen 6792 top level 5 path @debian
+ID 259 gen 3914 top level 5 path @arch
+ID 260 gen 6723 top level 5 path @kali
 
 $ btrfs subvol set-default 260 /mnt
 </code></pre>
@@ -251,6 +254,16 @@ UUIDが変わるので他の環境にて<code>/etc/fstab/</code>の調整が必�
 <pre><code>$ mount /dev/nvme0n1p5 /mnt　
 $ btrfs subvolume set-default 0 /mnt
 $ umount /mnt
+</code></pre>
+
+<p>追記：こちらのコマンドでデフォルトの状態に戻りました。</p>
+
+<pre><code>% sudo btrfs subvol set-default 5 /mnt
+</code></pre>
+
+<p>追記：こちらのコマンドでデフォルトの状態に戻りました。</p>
+
+<pre><code>% sudo btrfs subvol set-default 5 /mnt
 </code></pre>
 
 <p>インストールはサブボリュームにインストールされているので、
@@ -315,10 +328,13 @@ $ apt upgrade
 <li>Kali Install on Btrfs: <a href="https://www.kali.org/docs/base-images/kali-linux-btrfs-install/">https://www.kali.org/docs/base-images/kali-linux-btrfs-install/</a></li>
 <li>Btrfs Wiki, Btrfs Debian site, apt-btrfs-snapshot, Snapper: <a href="http://snapper.io/">http://snapper.io/</a></li>
 <li>kali linuxの基本設定をしてみた。: <a href="https://ameblo.jp/shinnaka54/entry-12420242361.html">https://ameblo.jp/shinnaka54/entry-12420242361.html</a></li>
-<li>暗号通貨 とセキュリティ(medium.com): <a href="https://medium.com/ethical-hacking-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/wifi%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC%E3%82%92%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AB%E3%81%99%E3%82%8B-%E6%9C%80%E9%87%8D%E8%A6%81%E3%82%B9%E3%82%AD%E3%83%AB-5ee7a57e5165">WIFIアダプターをモニターモードにする</a></li>
 </ul>
 
 <!--
+
++ 暗号通貨 とセキュリティ(medium.com): [WIFIアダプターをモニターモードにする](https://medium.com/ethical-hacking-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/wifi%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC%E3%82%92%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AB%E3%81%99%E3%82%8B-%E6%9C%80%E9%87%8D%E8%A6%81%E3%82%B9%E3%82%AD%E3%83%AB-5ee7a57e5165)
+
+
 
 ## 基本設定
 

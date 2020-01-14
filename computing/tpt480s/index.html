@@ -71,16 +71,16 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
 					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
 					</ul>
-					
 				</li>
                 
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -171,8 +171,9 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <li>linux:久しぶりにインストールしましたが全体的にすごく良くなってます。
 
 <ol>
-<li>Manjaro: ちょっと格好良い、バランスの取れた環境（バジー）</li>
+<li>Manjaro: ちょっと格好良い、バランスの取れた環境（Plasma<del>バジー</del>）</li>
 <li>Debian: 安定Linux環境（Gnome)</li>
+<li>Kali: ペネトレートテスト環境（Gnome)</li>
 <li><del>Arch: 鼻血覚悟のブリーディングエッジな環境</del></li>
 </ol></li>
 </ol>
@@ -226,8 +227,7 @@ Linuxの領域は<strong>btrfs</strong>で組み、できればロールバッ�
 <li>buster</li>
 <li>manjaro</li>
 <li><del>arch</del></li>
-<li>home</li>
-<li>cache</li>
+<li>kali</li>
 </ol></li>
 <li>32GB: 共有（zfs.mirror &lt;-&gt; 32GB Memory Stick）</li>
 <li>500GB: 共有（ZFS.mirror &lt;-&gt; 500GB SSD）</li>
@@ -263,13 +263,14 @@ Linuxの領域は<strong>btrfs</strong>で組み、できればロールバッ�
 
 <p>無駄なくいろんなディストリビューションが入れられるような設定にするため、
 ファイルシステムにbtrfsを利用します。
-色々インストールしてみましたが、以下の３つに絞りました。</p>
+色々インストールしてみましたが、以下の３つに絞りました。
+KDE（Plasma)とGTK（Gnome)のツールチェーンでディストロを分けるのありかなと、、</p>
 
 <ul>
 <li><a href="https://www.debian.org">debian</a>: 一番清いディストロ。久しぶりにインストールしましたが、凄く良くなってます。WindowManagerのGnomeも好きではなかったけど、使ってみたら割と好印象。</li>
 <li><a href="https://manjaro.org">manjaro</a>: バランスが良く、デフォルトの格好いいディストロ。シンプルなbudgieで使ってます</li>
-<li><del><a href="https://www.archlinux.org">Arch linux</a>: ちょっとManjaroがいやらしくなってきそうなのでインストールことにする。ネットの設定がちとややこしい。</del></li>
-<li>Kali</li>
+<li><del><a href="https://www.archlinux.org">Arch Linux</a>: ちょっとManjaroがいやらしくなってきそうなのでインストールことにする。ネットの設定がちとややこしい。</del></li>
+<li><a href="ttps://www.kali.org">Kali Linux</a>：ペネトレ〜ションツール満載のディストロ。</li>
 </ul>
 
 <p>気になるけれど入れないディストリビューション</p>
@@ -290,6 +291,8 @@ Linuxの領域は<strong>btrfs</strong>で組み、できればロールバッ�
 <li><a href="https://goozenlab.com/blog/2019/10/install-manjaro-btrfs/">マンジャーロ</a>：ローリングリリースかつ快適さと安定度のバランスが一番良さそう（もう冒険はしたく無いけど、新しいソフトが使いたいという人向け。）</li>
 <li><a href="https://goozenlab.com/blog/2019/12/install-arch-btrfs/">BtrfsにArch</a>
 ：こちらも清々しいディストロ。インストールや設定に難あり。</li>
+<li><a href="https://goozenlab.com/blog/2020/01/install-kali-btrfs/">Kali on btrfs</a>
+：変わり種のディストリビューション、WMはGnomeで。ハッカー志望の方はぜひ。</li>
 </ul>
 
 <p>記事：<a href="https://goozenlab.com/blog/2019/12/linux-windowmamager/">ウィンドウマネージャー</a>：LinuxのWMについての私見と雑感。<br />
@@ -299,6 +302,8 @@ Linuxの領域は<strong>btrfs</strong>で組み、できればロールバッ�
 <hr />
 
 <ul>
+<li>2020-01-11：Kali Linuxをインストールする。とりあえずインストール関連は終了かな。</li>
+<li>2019-12-28：KVMを動かすがグラフィックの問題あり、動作も少し緩慢。。</li>
 <li>2019-12-14：Disk構成を追加。マシーンは安定稼働してます。</li>
 <li>2019-10-07：マルチOSインストール作業は、Windows（サイズを縮小）、Hackintosh、Manjaro、Busterの順で行いました。＋Archをあとでインストールする予定。</li>
 <li>2019-10-01：無事ハッキントッシュ設定終了、Wifiカードも交換、ほんの少しの不具合のみで動作中。Macbookより環境を移行中。</li>
