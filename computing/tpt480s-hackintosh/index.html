@@ -139,13 +139,13 @@
                 <h1>Make Hackintosh T480s</h1>
                 <p class="footnote">
                     updated at 
-                    <time class="">2020-01-10</time>
+                    <time class="">2020-01-14</time>
 				</p>
             </div>
             <div class="post-content">
                 
 
-<div class="note">現在チビチビと更新中、アップしないとやる気が出ないので公開。</div>
+<div class="note">現在ビチビと更新中です。アップしないとやる気が出ないので公開。</div>
 
 <p><img src="/images/2020-01-10-hackinpad-t480s-00.jpg" alt="Thinkpad T480s" /></p>
 
@@ -195,7 +195,7 @@ Wifiを使うには対応しているカードに取り換えるかWifiドング
 </ul>
 
 <p><strong>５〜６時間</strong>ぐらいというとこでしょうか、
-Windowsでは５時間くらいとで出ているから悪くないのかもしれません。違いも10パーセントくらいかもしれません。というかWindowsの駆動時間ってほんと正しいの？かなり盛りすぎじゃね？</p>
+Windowsでは５時間くらいとで出ているから悪くないのかもしれません。違いも10パーセントくらいかもしれません。参考までにデビアンとマンジャーロでもチェック。</p>
 
 <p><img src="/images/2020-01-10-windows-battery.png" alt="Thinkpad T480s" /></p>
 
@@ -414,48 +414,61 @@ USBディスクにインストールします。
 
 <h2 id="clover-configurator">Clover Configurator</h2>
 
-<p>そしてさらに、Thinkpad向けに最適化された
-コンフィグファイルに書き換える必要があるので、</p>
+<!--
+そしてさらに、Thinkpad向けに最適化された
+コンフィグファイルに書き換える必要があるので、
 
-<p>Clover Configuratorというアプリをダウンロードします。</p>
+Clover Configuratorというアプリをダウンロードします。
 
-<p><a href="https://mackie100projects.altervista.org/">https://mackie100projects.altervista.org/</a></p>
+https://mackie100projects.altervista.org/
 
-<p>このアプリからCloverやカーネルエクステンションのアップデートもできるので
-入れておきましょう。</p>
+このアプリからCloverやカーネルエクステンションのアップデートもできるので
+入れておきましょう。
 
-<p>アプリを立ち上げます。</p>
+アプリを立ち上げます。
 
-<p>まずは　普段は非表示にされている
-EFIパーティションをマウントします。</p>
+まずは　普段は非表示にされている
+EFIパーティションをマウントします。
 
-<p>左のメニューバーの下の方
-<img src="/images/2020-01-10-clover-mount-efi.png" alt="Clover Configurator: Mount" /></p>
+![Clover Configurator: Mount](/images/2020-01-10-clover-mount-efi.png)
 
-<p>一旦、画面を閉じます。アプリに戻りUSBディスク以下の<code>config,plist</code>を選択して開きます。</p>
 
-<p>私が公開しているEFIのコンフィグにはシリアル番号などは抜いてあります。</p>
 
-<p>この番号はアップルIDに登録されてiCloudサービスなどでの認識のためにも使われるようなので、
-Generate New Numberボタンを数回押して更新してください。</p>
 
-<p><img src="/images/2020-01-10-clover-serial-number.png" alt="Clover Configurator: Serial" /></p>
 
-<p><img src="/images/2020-01-10-clover-custom-uuid.png" alt="Clover Configurator: UUID" /></p>
+一旦、画面を閉じます。アプリに戻りUSBディスク以下の`config,plist`を選択して開きます。
 
-<p>同様に
-基盤のIDも新しく付け加えます。</p>
+私が公開しているEFIのコンフィグにはシリアル番号などは抜いてあります。
+無駄なファイルは入っていないので、どかっとそのままコピー。
 
-<p>これで、ブート・インストール可能なブートディスクの出来上がりです。</p>
 
-<p>そして、後々CloverConfiguratorを使うのでUSBにコピーしておくことをおすすめします。</p>
+この番号はアップルIDに登録されてiCloudサービスなどでの認識のためにも使われるようなので、
+Generate New Numberボタンを数回押して更新してください。
 
-<p>※　このブートディスクは取っておくと良いです。</p>
+![Clover Configurator: Serial](/images/2020-01-10-clover-serial-number.png)
+
+![Clover Configurator: UUID](/images/2020-01-10-clover-custom-uuid.png)
+
+
+＋＋＋＋＋
+
+同様に
+基盤のIDも新しく付け加えます。
+
+
+これで、ブート・インストール可能なブートディスクの出来上がりです。
+
+
+そして、後々CloverConfiguratorを使うのでUSBにコピーしておくことをおすすめします。
+
+※　このブートディスクは取っておくと良いです。
 
 <div class="attention">
 <b>ACPI関連ファイル</b>：電源関連のファイル。BIOSから抜き出してパッチを当てて作ると、ガイドもありますが。私は人からの流用したものを使っています。この辺のファイルをうまく調整できたら多分バッテリーの持ちもよくなるのかな？
 ちょっとリサーチ不足。。後々理解できたら更新します。
 </div>
+
+-->
 
 <h2 id="2-macosのインストール">2. MacOSのインストール</h2>
 

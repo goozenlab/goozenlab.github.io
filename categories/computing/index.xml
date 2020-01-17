@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Jan 2020 08:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linuxでのサンドボックス・アプリ</title>
+      <link>https://goozenlab.com/blog/2020/01/sandbox-app/</link>
+      <pubDate>Fri, 17 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/sandbox-app/</guid>
+      <description>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。 ディストリビューション毎に同じアプリをインストールしているのが少々ディ</description>
+    </item>
     
     <item>
       <title>NCase M1</title>
