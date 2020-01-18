@@ -130,6 +130,8 @@
                 
                 
                 
+                
+                
                 <li>
                     
                     <a href="https://goozenlab.com/blog/2011/01/internet-chiangmai/">チェンマイ、タイのインターネット事情</a>
@@ -193,6 +195,42 @@
                 
                 
                 
+                
+                
+                
+                <li>
+                    
+                    <a href="https://goozenlab.com/blog/1/01/"></a>
+                    <p class="summary">
+                    profile-sync-daemon
+https://wiki.archlinux.jp/index.php/Profile-sync-daemon
+jin@debian:~$ sudo apt install profile-sync-daemon
+jin@debian:~$ psd First time running psd so please edit /home/jin-debian/.config/psd/psd.conf to your liking and run again. jin@debian:~$
+jin@debian:~$ vi .config/psd/psd.conf
+USE_OVERLAYFS=&ldquo;yes&rdquo; BROWSERS=&ldquo;firefox&rdquo;
+jin@debian:~$ sudo modprobe overlay
+/etc/sudoers に以下の行を設定することでユーザーに権限が与えられます。root で /usr/bin/visudo を実行して追加してください:
+jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+jin@debian:~$ psd p I require modinfo but it&rsquo;s not installed. Aborting!
+/sbinへのパスが通ってないのが問題のようなので、 .profileにPATHを追加する
+PATH=&ldquo;/usr/sbin:/sbin&rdquo;
+で、
+jin@debian:~$ psd p Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)
+Systemd service is currently inactive. Systemd resync-timer is currently inactive. Overlayfs v23 is currently active. ...
+                    </p>
+                    <p class="footnote">
+                    submitted <time datetime="0001-01-01T00:00:00Z" class="post-list timeago">0001-01-01T00:00:00Z</time>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                </li>
                 
                 
                 
@@ -773,6 +811,12 @@
         
         
         
+        <a href="/tags/kde" style="font-size:0.75rem">kde</a>
+        
+        
+        
+        
+        
         <a href="/tags/komoot" style="font-size:1.2429680867892154rem">komoot</a>
         
         
@@ -797,7 +841,7 @@
         
         
         
-        <a href="/tags/linux" style="font-size:1.4760857637705067rem">linux</a>
+        <a href="/tags/linux" style="font-size:1.4950678227148748rem">linux</a>
         
         
         

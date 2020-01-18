@@ -4,36 +4,46 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/kde/</loc>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/blog/2020/01/sandbox-app/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <loc>https://goozenlab.com/blog/2020/01/kde-neon/</loc>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-01-17T08:00:00+07:00</lastmod>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2020-01-18T17:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/01/sandbox-app/</loc>
     <lastmod>2020-01-17T08:00:00+07:00</lastmod>
   </url>
   
@@ -3384,6 +3394,11 @@
   
   <url>
     <loc>https://goozenlab.com/computing/nomad-goods/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/1/01/</loc>
     <priority>0</priority>
   </url>
   

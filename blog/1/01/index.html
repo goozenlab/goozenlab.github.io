@@ -71,16 +71,16 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
 					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multiple boot thinkpad t480s</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
-						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P Reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
 						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
-						
 					</ul>
-					
 				</li>
                 
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -151,7 +151,83 @@
             </div>
 
             <div class="post-content">
-                
+                <p>profile-sync-daemon</p>
+
+<p><a href="https://wiki.archlinux.jp/index.php/Profile-sync-daemon">https://wiki.archlinux.jp/index.php/Profile-sync-daemon</a></p>
+
+<p>jin@debian:~$ sudo apt install profile-sync-daemon</p>
+
+<p>jin@debian:~$ psd
+ First time running psd so please edit /home/jin-debian/.config/psd/psd.conf to your liking and run again.
+jin@debian:~$</p>
+
+<p>jin@debian:~$ vi .config/psd/psd.conf</p>
+
+<p>USE_OVERLAYFS=&ldquo;yes&rdquo;
+BROWSERS=&ldquo;firefox&rdquo;</p>
+
+<p>jin@debian:~$ sudo modprobe overlay</p>
+
+<p>/etc/sudoers に以下の行を設定することでユーザーに権限が与えられます。root で /usr/bin/visudo を実行して追加してください:</p>
+
+<p>jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper</p>
+
+<p>jin@debian:~$ psd p
+ I require modinfo but it&rsquo;s not installed. Aborting!</p>
+
+<p>/sbinへのパスが通ってないのが問題のようなので、
+.profileにPATHを追加する</p>
+
+<p>PATH=&ldquo;/usr/sbin:/sbin&rdquo;</p>
+
+<p>で、</p>
+
+<p>jin@debian:~$ psd p
+Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)</p>
+
+<p>Systemd service is currently inactive.
+ Systemd resync-timer is currently inactive.
+ Overlayfs v23 is currently active.</p>
+
+<p>Psd will manage the following per /home/jin-debian/.config/psd/psd.conf:</p>
+
+<p>browser/psname:  firefox/firefox
+ owner/group id:  jin/1000
+ sync target:     /home/jin-debian/.mozilla/firefox/25pb77js.default
+ tmpfs dir:       /run/user/1000/jin-firefox-25pb77js.default
+ profile size:    4.0K
+ overlayfs size:<br />
+ recovery dirs:   none</p>
+
+<p>browser/psname:  firefox/firefox
+ owner/group id:  jin/1000
+ sync target:     /home/jin-debian/.mozilla/firefox/6uxssp9i.default-esr
+ tmpfs dir:       /run/user/1000/jin-firefox-6uxssp9i.default-esr
+ profile size:    51M
+ overlayfs size:<br />
+ recovery dirs:   none</p>
+
+<p>jin@debian:~$</p>
+
+<p>ユーザーモードで立ち上げます。</p>
+
+<p>jin@debian:~$ systemctl &ndash;user start psd
+jin@debian:~$ systemctl &ndash;user status psd
+● psd.service - Profile-sync-daemon
+   Loaded: loaded (/usr/lib/systemd/user/psd.service; disabled; vendor preset: enabled)
+   Active: active (exited) since Fri 2020-01-17 20:16:49 +07; 10min ago
+     Docs: man:psd(1)
+           man:profile-sync-daemon(1)
+           <a href="https://wiki.archlinux.org/index.php/Profile-sync-daemon">https://wiki.archlinux.org/index.php/Profile-sync-daemon</a>
+  Process: 3305 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+ Main PID: 3305 (code=exited, status=0/SUCCESS)</p>
+
+<p>Jan 17 20:16:49 debian systemd[1059]: Starting Profile-sync-daemon&hellip;
+Jan 17 20:16:49 debian systemd[1059]: Started Profile-sync-daemon.
+jin@debian:~$ systemctl &ndash;user enable psd
+Created symlink /home/jin-debian/.config/systemd/user/default.target.wants/psd.service → /usr/lib/systemd/user/psd.service.
+jin@debian:~$</p>
+
             </div>
         </div>
 	</div>
