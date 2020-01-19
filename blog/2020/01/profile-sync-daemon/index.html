@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Categories | goozenlab</title>
+  <title>ブラウザーのプロファイルをRAMディスクへ | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -130,128 +130,172 @@
     <div class="pure-u-1-24 pure-u-md-1-24"></div>
 </div>
 
+
 <div class="pure-g">
-<div class="pure-u-1-24 pure-u-md-5-24"></div>
-<div class="pure-u-11-12 pure-u-md-5-8">
-	<p class="posts-name">Categories:</p>
-	<div class="post-content">
-		<ul class="posts">
-		
-		
-			<li>
-				<a href="iapp">iapp</a>
-				<span>&#40;111&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mumble">mumble</a>
-				<span>&#40;71&#41;</span>
-			</li>
-		
-			<li>
-				<a href="nomad">nomad</a>
-				<span>&#40;70&#41;</span>
-			</li>
-		
-			<li>
-				<a href="computing">computing</a>
-				<span>&#40;56&#41;</span>
-			</li>
-		
-			<li>
-				<a href="server">server</a>
-				<span>&#40;50&#41;</span>
-			</li>
-		
-			<li>
-				<a href="develop">develop</a>
-				<span>&#40;39&#41;</span>
-			</li>
-		
-			<li>
-				<a href="life">life</a>
-				<span>&#40;22&#41;</span>
-			</li>
-		
-			<li>
-				<a href="android">android</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="travel">travel</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="web">web</a>
-				<span>&#40;12&#41;</span>
-			</li>
-		
-			<li>
-				<a href="bicycle">bicycle</a>
-				<span>&#40;11&#41;</span>
-			</li>
-		
-			<li>
-				<a href="snakefoot">snakefoot</a>
-				<span>&#40;10&#41;</span>
-			</li>
-		
-			<li>
-				<a href="backpack">backpack</a>
-				<span>&#40;5&#41;</span>
-			</li>
-		
-			<li>
-				<a href="router">router</a>
-				<span>&#40;3&#41;</span>
-			</li>
-		
-			<li>
-				<a href="smart-watch">smart-watch</a>
-				<span>&#40;3&#41;</span>
-			</li>
-		
-			<li>
-				<a href="goods">goods</a>
-				<span>&#40;2&#41;</span>
-			</li>
-		
-			<li>
-				<a href="development">development</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mac">mac</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="macos">macos</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="security">security</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="smart-phone">smart-phone</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="youtube">youtube</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-		</ul>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-01-19</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>ブラウザーのプロファイルをRAMディスクへ</h1>
+            </div>
+
+            <div class="post-content">
+                <p>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。</p>
+
+<p>パッケージがあるのでAPTでインストール、設定をします。
+<code>.config/psd/psd.conf</code>を開きブラウザーを指定、オーバーレイを有効にします。
+ほとんどのブラウザーに対応してます。
+複数追加するにはスペースで間をあけて加えていきます。（例：”firefox vivaldi brave”）</p>
+
+<pre><code>jin@debian:~$ sudo apt install profile-sync-daemon
+jin@debian:~$ psd
+ First time running psd so please edit /home/jin/.config/psd/psd.conf to your liking and run again.
+jin@debian:~$ vi .config/psd/psd.conf
+
+USE_OVERLAYFS=&quot;yes&quot;
+BROWSERS=&quot;firefox”
+</code></pre>
+
+<p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
+
+<pre><code>jin@debian:~$ sudo modprobe overlay
+jin@debian:~$ sudo visudo
+
+jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+</code></pre>
+
+<p>しかしながら、modinfoにアクセスできないとエラーが出る。。インストールはされているのだけど、、</p>
+
+<pre><code>jin@debian:~$ psd p
+ I require modinfo but it's not installed. Aborting!
+</code></pre>
+
+<p><code>/sbin</code>へパスが通ってないのが問題の様だったので、とりあえず.profile にPATHを追加します。</p>
+
+<pre><code>jin@debian:~$ vi .profile
+
+PATH=&quot;/usr/sbin:/sbin&quot;
+</code></pre>
+
+<p>でもう一度。</p>
+
+<pre><code>jin@debian:~$ psd p
+Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)
+
+ Systemd service is currently inactive.
+ Systemd resync-timer is currently inactive.
+ Overlayfs v23 is currently active.
+
+Psd will manage the following per /home/jin/.config/psd/psd.conf:
+
+ browser/psname:  firefox/firefox
+ owner/group id:  jin/1000
+ sync target:     /home/jin/.mozilla/firefox/25pb77js.default
+ tmpfs dir:       /run/user/1000/jin-firefox-25pb77js.default
+ profile size:    4.0K
+ overlayfs size:
+ recovery dirs:   none
+
+ browser/psname:  firefox/firefox
+ owner/group id:  jin/1000
+ sync target:     /home/jin/.mozilla/firefox/6uxssp9i.default-esr
+ tmpfs dir:       /run/user/1000/jin-firefox-6uxssp9i.default-esr
+ profile size:    51M
+ overlayfs size:
+ recovery dirs:   none
+</code></pre>
+
+<p>なぜかファイヤーフォックスのプロファイルが二つありますが動きました。<br />
+そして仕上げに起動時にユーザーモードで動作させるため
+<code>systemctl --user enable psd</code>
+で登録します。</p>
+
+<pre><code>jin@debian:~$ systemctl --user start psd
+jin@debian:~$ systemctl --user status psd
+● psd.service - Profile-sync-daemon
+   Loaded: loaded (/usr/lib/systemd/user/psd.service; disabled; vendor preset: enabled)
+   Active: active (exited) since Fri 2020-01-17 20:16:49 +07; 10min ago
+     Docs: man:psd(1)
+           man:profile-sync-daemon(1)
+           https://wiki.archlinux.org/index.php/Profile-sync-daemon
+  Process: 3305 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+ Main PID: 3305 (code=exited, status=0/SUCCESS)
+
+Jan 17 20:16:49 debian systemd[1059]: Starting Profile-sync-daemon...
+Jan 17 20:16:49 debian systemd[1059]: Started Profile-sync-daemon.
+jin@debian:~$ systemctl --user enable psd
+Created symlink /home/jin/.config/systemd/user/default.target.wants/psd.service → /usr/lib/systemd/user/psd.service.
+</code></pre>
+
+<p>ちょっと使ってみましたが、スピードに関してはそんなに違いは感じられませんねぇ。
+ただSSDへの読み書きは軽減されるのでそちらの恩恵はあるのではないかと思ってます。</p>
+
+<p>参照：<a href="https://wiki.archlinux.jp/index.php/Profile-sync-daemon">https://wiki.archlinux.jp/index.php/Profile-sync-daemon</a></p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/01/kde-neon/">Neonを推す</a></li>
+	
+	<li><a href="/blog/2020/01/sandbox-app/">Linuxでのサンドボックス・アプリ</a></li>
+	
+	<li><a href="/blog/2020/01/install-kali-btrfs/">Kali Linux on BTRFS</a></li>
+	
+	<li><a href="/blog/2020/01/firmware-linux-nonfree/">ファームウェアをアップデート</a></li>
+	
+	<li><a href="/blog/2019/12/linux-update/">Linuxをアップデート</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
 	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-<div class="pure-u-1-24 pure-u-md-1-6"></div>
+
 
 <div class="footer pure-g">
     <div class="pure-u-1-24 pure-u-md-3-24"></div>

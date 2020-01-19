@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 18 Jan 2020 17:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ブラウザーのプロファイルをRAMディスクへ</title>
+      <link>https://goozenlab.com/blog/2020/01/profile-sync-daemon/</link>
+      <pubDate>Sun, 19 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/profile-sync-daemon/</guid>
+      <description>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。 パッケージがあるのでAPTでインストー</description>
+    </item>
     
     <item>
       <title>Neonを推す</title>
@@ -253,7 +262,7 @@
       <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/linux-thinkpad-tlp/</guid>
-      <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％から８０％の利用にとどめて、 ３０</description>
+      <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％～８０％の利用にとどめて、 ３０％</description>
     </item>
     
     <item>
@@ -4538,29 +4547,6 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2010/11/littlist-naming/</guid>
       <description>littlistというネーミングは、 Little + List で付けたのですが、じっと見ていて、 Little + ist というのもありだなと、というかこっちの方が格好いいなと、 （ゆるーいMinima</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>profile-sync-daemon
-https://wiki.archlinux.jp/index.php/Profile-sync-daemon
-jin@debian:~$ sudo apt install profile-sync-daemon
-jin@debian:~$ psd First time running psd so please edit /home/jin-debian/.config/psd/psd.conf to your liking and run again. jin@debian:~$
-jin@debian:~$ vi .config/psd/psd.conf
-USE_OVERLAYFS=&amp;ldquo;yes&amp;rdquo; BROWSERS=&amp;ldquo;firefox&amp;rdquo;
-jin@debian:~$ sudo modprobe overlay
-/etc/sudoers に以下の行を設定することでユーザーに権限が与えられます。root で /usr/bin/visudo を実行して追加してください:
-jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
-jin@debian:~$ psd p I require modinfo but it&amp;rsquo;s not installed. Aborting!
-/sbinへのパスが通ってないのが問題のようなので、 .profileにPATHを追加する
-PATH=&amp;ldquo;/usr/sbin:/sbin&amp;rdquo;
-で、
-jin@debian:~$ psd p Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)
-Systemd service is currently inactive. Systemd resync-timer is currently inactive. Overlayfs v23 is currently active.</description>
     </item>
     
   </channel>

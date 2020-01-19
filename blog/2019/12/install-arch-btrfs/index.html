@@ -177,7 +177,7 @@ Window Magagerも何で使うかをまだ決めていないので、
 
 <p>自動でログインされる。</p>
 
-<pre><code>root@archiso #
+<pre><code>root@archiso $
 </code></pre>
 
 <h2 id="サブボリュームの作成-マウント">サブボリュームの作成・マウント</h2>
@@ -185,8 +185,8 @@ Window Magagerも何で使うかをまだ決めていないので、
 <p>すでに、BTRFSでのフォーマットがされているので、
 パーティションをマウントしてArchのためのサブボリュームを作る。</p>
 
-<pre><code>root@archiso # mount /dev/nvme0n1p5 /mnt
-root@archiso # btrfs subvolume create /mnt/@arch
+<pre><code>root@archiso $ mount /dev/nvme0n1p5 /mnt
+root@archiso $ btrfs subvolume create /mnt/@arch
 </code></pre>
 
 <p>※ ちなみに削除は
@@ -199,23 +199,23 @@ root@archiso # btrfs subvolume create /mnt/@arch
 @debian, @manjaro, @cache, @home
 がある。</p>
 
-<pre><code>root@archiso # cat /mnt/@manjaro/etc/fstab
+<pre><code>root@archiso $ cat /mnt/@manjaro/etc/fstab
 </code></pre>
 
 <p>でマンジャーロで使っているマウントオプションを表示しておく。</p>
 
 <p>そして、マウントを解除、必要なディレクトリを作成、インストール先をマウントする。</p>
 
-<pre><code>root@archiso # umount /mnt
-root@archiso # mount /dev/nvme0n1p5 /mnt -o rw,noatime,,,,,subvol=@arch
+<pre><code>root@archiso $ umount /mnt
+root@archiso $ mount /dev/nvme0n1p5 /mnt -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@arch
 
-root@archiso # mkdir -p /mnt/home
-root@archiso # mkdir -p /mnt/var/cache
-root@archiso # mount /dev/nvme0n1p5 /mnt/home -o rw,noatime,,,,,subvol=@home
-root@archiso # mount /dev/nvme0n1p5 /mnt/var/cache -o rw,noatime,,,,,subvol=@cache
+root@archiso $ mkdir -p /mnt/home
+root@archiso $ mkdir -p /mnt/var/cache
+root@archiso $ mount /dev/nvme0n1p5 /mnt/home -o rw,noatime,,,,,subvol=@home
+root@archiso $ mount /dev/nvme0n1p5 /mnt/var/cache -o rw,noatime,,,,,subvol=@cache
 
-root@archiso # mkdir -p /mnt/boot/efi
-root@archiso # mount /dev/nvme0n1p1 /mnt/boot/efi
+root@archiso $ mkdir -p /mnt/boot/efi
+root@archiso $ mount /dev/nvme0n1p1 /mnt/boot/efi
 </code></pre>
 
 <h2 id="インストール作業">インストール作業</h2>
@@ -224,28 +224,28 @@ root@archiso # mount /dev/nvme0n1p1 /mnt/boot/efi
 vimは入っていない、インストールされているnanoの使い方が分からん＋日本探しがちと面倒。
 （ALT+6でコピー、CTR+uでペースト）</p>
 
-<pre><code>root@archiso # pacman -Sy archlinux-keyring
-root@archiso # nano /etc/pacman.d/mirrorlist
+<pre><code>root@archiso $ pacman -Sy archlinux-keyring
+root@archiso $ nano /etc/pacman.d/mirrorlist
 </code></pre>
 
 <p>ベース・システムをインストール。とりあえず、ノーマルのカーネル。
 （血をみる環境にするつもりならlinux-zenかな。）</p>
 
-<pre><code>root@archiso # pacstrap /mnt base base-devel linux linux-headers
+<pre><code>root@archiso $ pacstrap /mnt base base-devel linux linux-headers
 </code></pre>
 
 <p>fstabを書き込み、subvol表記がダブるので修正。
 swapは後から追加する。
 <code>swapon /dev/nvme0n1p10</code>で有効にできたかも。</p>
 
-<pre><code>root@archiso # genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
-root@archiso # nano /mnt/etc/fstab
+<pre><code>root@archiso $ genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+root@archiso $ nano /mnt/etc/fstab
 </code></pre>
 
 <h2 id="システムの基本設定">システムの基本設定</h2>
 
-<pre><code>root@archiso # arch-chroot /mnt
-root@archiso # pacman -S vim
+<pre><code>root@archiso $ arch-chroot /mnt
+root@archiso $ pacman -S vim
 </code></pre>
 
 <p>nanoもviもないのでインストール。
@@ -253,20 +253,20 @@ root@archiso # pacman -S vim
 
 <h3 id="ロケーション-ハードウェアクロック-ホスト名の設定">ロケーション、ハードウェアクロック、ホスト名の設定。</h3>
 
-<pre><code>root@archiso # ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-root@archiso # hwclock --systohc --utc
+<pre><code>root@archiso $ ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+root@archiso $ hwclock --systohc --utc
 </code></pre>
 
 <h3 id="ロケールの設定">ロケールの設定</h3>
 
-<pre><code>root@archiso # vim /etc/locale.gen
-root@archiso # locale-gen
+<pre><code>root@archiso $ vim /etc/locale.gen
+root@archiso $ locale-gen
 
-root@archiso # echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
-root@archiso # export LANG=en_US.UTF-8 
+root@archiso $ echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+root@archiso $ export LANG=en_US.UTF-8 
 
-root@archiso # echo guiness &gt; /etc/hostname
-root@archiso # vim /etc/hosts
+root@archiso $ echo guiness &gt; /etc/hostname
+root@archiso $ vim /etc/hosts
 
 127.0.0.1   localhost
 ::1     localhost
@@ -275,11 +275,11 @@ root@archiso # vim /etc/hosts
 
 <h3 id="btrfsのための調整">BTRFSのための調整</h3>
 
-<pre><code>root@archiso # vim /etc/mkinitcpio.conf
+<pre><code>root@archiso $ vim /etc/mkinitcpio.conf
 
 52行目：HOOKS=( base … -fsck, +btrfs)
 
-root@archiso # mkinitcpio -P
+root@archiso $ mkinitcpio -P
 </code></pre>
 
 <h3 id="ユーザーとパスワード">ユーザーとパスワード</h3>
@@ -287,30 +287,30 @@ root@archiso # mkinitcpio -P
 <p>パスワードとユーザーの設定、wheelユーザーにsudoの権限を与える。
 viがないと怒られるたら、vimにシンボリックリンクをはる。</p>
 
-<pre><code>root@archiso # passwd
-root@archiso # useradd -m -G users,wheel,storage,power,network -s /bin/zsh -c “NAME” jin
-root@archiso # passwd jin
-root@archiso # passwd visudo
+<pre><code>root@archiso $ passwd
+root@archiso $ useradd -m -G users,wheel,storage,power,network -s /bin/zsh -c “NAME” jin
+root@archiso $ passwd jin
+root@archiso $ passwd visudo
 </code></pre>
 
 <h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
 
 <p>ブートマネージャーGrub関連のインストール</p>
 
-<pre><code>root@archiso # pacman -S btrfs-progs dosfstools efibootmgr grub
-root@archiso # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch 
+<pre><code>root@archiso $ pacman -S btrfs-progs dosfstools efibootmgr grub
+root@archiso $ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch 
 </code></pre>
 
 <p>設定の書き出し。</p>
 
-<pre><code>root@archiso # grub-mkconfig -o /boot/grub/grub.cfg
+<pre><code>root@archiso $ grub-mkconfig -o /boot/grub/grub.cfg
 </code></pre>
 
 <h2 id="有線lan設定">有線LAN設定</h2>
 
 <p>有線の設定ファイルを作成する。</p>
 
-<pre><code>root@archiso # vim /etc/systemd/network/20-wired.network
+<pre><code>root@archiso $ vim /etc/systemd/network/20-wired.network
 
 [Match]
 Name=enp0s31f6
@@ -322,15 +322,15 @@ DHCP=ipv4
 <p>ipアドレスは取れたけれどDNSの設定は他のところする必要がある。
 ルーターのDNSアドレスをとりあえず加える。</p>
 
-<pre><code>root@archiso # vim /etc/systemd/resolved.cof
+<pre><code>root@archiso $ vim /etc/systemd/resolved.cof
 
 DNS=10.10.10.10
 </code></pre>
 
 <p>そしてサービスを登録しておく。</p>
 
-<pre><code>root@archiso # systemctl restart systemd-networkd.service
-root@archiso # systemctl start systemd-resolved.service
+<pre><code>root@archiso $ systemctl restart systemd-networkd.service
+root@archiso $ systemctl start systemd-resolved.service
 </code></pre>
 
 <p>でとりあえず、ネットワークに繋がる。ネットワーク関連は鬼門。</p>
@@ -341,12 +341,12 @@ root@archiso # systemctl start systemd-resolved.service
 
 <p>マウントを解除して終了。</p>
 
-<pre><code>root@archiso # exit
-root@archiso # umount /mnt/boot/efi
-root@archiso # umount /mnt/var/cache
-root@archiso # umount /mnt/home
-root@archiso # umount /mnt/
-root@archiso # reboot
+<pre><code>root@archiso $ exit
+root@archiso $ umount /mnt/boot/efi
+root@archiso $ umount /mnt/var/cache
+root@archiso $ umount /mnt/home
+root@archiso $ umount /mnt/
+root@archiso $ reboot
 </code></pre>
 
 <p>とりあえず、ベアメタル環境ができあがる。</p>

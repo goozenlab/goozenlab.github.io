@@ -261,35 +261,23 @@ $ umount /mnt
 <pre><code>% sudo btrfs subvol set-default 5 /mnt
 </code></pre>
 
-<p>追記：こちらのコマンドでデフォルトの状態に戻りました。</p>
-
-<pre><code>% sudo btrfs subvol set-default 5 /mnt
-</code></pre>
-
 <p>インストールはサブボリュームにインストールされているので、
 切り分けるいくつかのサブボリュームを作成・登録する。
 ファイルのコピーとfstabの編集が必要。</p>
 
-<p>サブボリュームをマウント先のフォルダを作成。</p>
-
-<pre><code>$ mkdir /mnt/kali
-$ mkdir /mnt/root
-$ mkdir /mnt/log
-</code></pre>
-
 <p>インストールされたファイルはまだ圧縮されていないのでこの時点で行う。
 マウントオプションはマンジャーロのものを流用。</p>
 
-<pre><code>$ mount /dev/nvme0n1p5 /mnt/kali -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@kali
-$ btrfs filesystem defragment -r -v -clzo /mnt/kali/
+<pre><code>$ mount /dev/nvme0n1p5 /mnt/kali -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@kali
+$ btrfs filesystem defragment -r -v -clzo /mnt/kali/
 </code></pre>
 
 <p>その他のサブボリュームもマウントしてファイルを移動する。
 mvでエラーが出るが問題はない。</p>
 
-<pre><code>$ mount /dev/nvme0n1p5 /mnt/root -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@root
-$ mount /dev/nvme0n1p5 /mnt/log -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@log
-$ mv /mnt/kali/root/.* /mnt/root/
+<pre><code>$ mount /dev/nvme0n1p5 /mnt/root -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@root
+$ mount /dev/nvme0n1p5 /mnt/log -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@log
+$ mv /mnt/kali/root/.* /mnt/root/
 $ mv /mnt/kali/var/log/*  /mnt/log/
 </code></pre>
 
