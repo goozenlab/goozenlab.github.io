@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo v2.8.2 | goozenlab</title>
+  <title>最新版のFirefoxをデビアンでつかう | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -137,53 +137,187 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2015-03-07</time>
+                    <time class="">2020-01-21</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/ohayo">ohayo</a> <a href="https://goozenlab.com/tags/update">update</a> 
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> <a href="https://goozenlab.com/tags/debian">debian</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/iapp">iapp</a> 
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>ohayo v2.8.2</h1>
+                <h1>最新版のFirefoxをデビアンでつかう</h1>
             </div>
 
             <div class="post-content">
-                <p>うーーーん、ホットフィックスです。</p>
+                
 
-<ul>
-<li>バグ
+<p>オススメ・ディストロの一つ、デビアン環境がなかな良いです。
+ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン<code>68.x</code>がインストールされます。
+Firefox自体は頻繁に更新され新しい機能も次々追加されています。
+セキュティーパッチも迅速に対応されているので最新版に入れ替えても問題はないだろうと、入れ替える事にします。</p>
 
-<ul>
-<li>朝のメッセージがずれてました。。</li>
-</ul></li>
-</ul>
+<p>Mozilla.orgよりバイナリーを持ってきたり、Ubuntu向けのPPA登録、AppImageやSnapを使う方法もあるようですが、
+Debianの<code>Apt</code>でできない訳でないのでこちらでインストールする。アップデートも楽だしね。</p>
 
-<p>以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</p>
+<p>ただちょっとした設定が必要で
+<strong>Apt Pinning</strong>
+と言われる方法を使います。</p>
 
-<p><img src="/images/2015-03-08-pokhara-fewa-lake.jpg" alt="Pokhara" /></p>
+<hr />
+
+<p>デビアンでは安定版から開発版までいくつかのパッケージリスト（ディストリビューションと呼ばれてますが混乱を避ける為、とりあえずパッケージリストと呼びます。）に分かれています。安定板で使われているアプリのメジャーアップグレードは時間が掛かる。（次のマイナーアップデート時？）</p>
+
+<h3 id="stable-buster-backports-testing-bullseye-unstable-experiment">Stable(buster) &lt; Backports &lt; Testing(bullseye) &lt; Unstable &lt; Experiment</h3>
+
+<p>てな感じ。右に入ったソフトを検証しだんだんと右に出る移動していくパスになっています。
+次のメジャーアップグレード(bullsey)時にはパッケージが固定され左にスライドします。</p>
+
+<p>パッケージ（ソフトウェア）情報は</p>
+
+<p><a href="https://packages.debian.org/">https://packages.debian.org/</a></p>
+
+<p>にて細かい情報を確認する事ができます。</p>
+
+<p>そして最新版のFirefoxは<code>Unstable</code>のパッケージリストに入っています。<br />
+<a href="https://packages.debian.org/search?searchon=names&amp;keywords=firefox">https://packages.debian.org/search?searchon=names&amp;keywords=firefox</a></p>
+
+<h2 id="apt-pinning">Apt Pinning</h2>
+
+<p>ポリシー（優先順位）が設定されています。
+デフォルトの設定は以下、
+パッケージリストの安定版が５００、バックポートが１００
+になっています。</p>
+
+<p>バックポートでインストールしたもの以外は安定版のパッケージがアップデートされていくということになります。</p>
+
+<pre><code>jin@debian:~$ apt-cache policy
+Package files:
+ 100 /var/lib/dpkg/status
+     release a=now
+ 100 http://deb.debian.org/debian buster-backports/main amd64 Packages
+     release o=Debian Backports,a=buster-backports,n=buster-backports,l=Debian Backports,c=main,b=amd64
+     origin deb.debian.org
+ 500 http://deb.debian.org/debian buster-updates/main amd64 Packages
+     release o=Debian,a=stable-updates,n=buster-updates,l=Debian,c=main,b=amd64
+     origin deb.debian.org
+ 500 http://security.debian.org/debian-security buster/updates/main amd64 Packages
+     release v=10,o=Debian,a=stable,n=buster,l=Debian-Security,c=main,b=amd64
+     origin security.debian.org
+ 500 http://deb.debian.org/debian buster/main amd64 Packages
+     release v=10.2,o=Debian,a=stable,n=buster,l=Debian,c=main,b=amd64
+     origin deb.debian.org
+Pinned packages:
+</code></pre>
+
+<p>Pinningによりパケージごとの設定もできますが、
+今回はパッケージリスト毎のPinningの設定をします。</p>
+
+<h3 id="firefox最新版をインストール">Firefox最新版をインストール</h3>
+
+<p>最新版（v72)をインストールす作業の流れは以下になります。</p>
+
+<ol>
+<li>unstableの apt-source の追加</li>
+<li>各パッケージリストのポリシー設定</li>
+<li>aptの更新</li>
+<li>パッケージを unstable よりインストール</li>
+</ol>
+
+<p>unstable版のAptソースファイル <code>/etc/apt/sources.list.d/unstable.list</code>を作成します。
+ご自分の環境に合わせて修正してください。
+あちこち国境を越える人はその先々でミラーを選んでくれる
+<code>http://deb.debian.org/debian/</code>
+が良いです。</p>
+
+<pre><code>$ sudo vi /etc/apt/sources.list.d/unstable.list
+
+deb http://deb.debian.org/debian/ unstable main contrib non-free
+# deb-src http://deb.debian.org/debian/ unstable main contrib non-free
+
+</code></pre>
+
+<p>ポリシーの設定は<code>/etc/apt/preferences.d/</code>内にstableとunstableの二つのファイルを追加。
+安定版はデフォルトの500に設定しました。</p>
+
+<pre><code>$ sudo vi /etc/apt/preferences.d/stable
+
+Package: *
+Pin: release a=stable
+Pin-Priority: 500
+</code></pre>
+
+<p>buster-backportsのプライオリティがどっから来ているのか100になっているので、
+unstableはそれより少ない値：90にします。
+もしtestingも使うのならば同様のファイルを作り、
+プライオリティはその間の95にすればよい。</p>
+
+<pre><code>sudo vi /etc/apt/preferences.d/unstable
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 90
+</code></pre>
+
+<p>ポリシーを覗いて確認。</p>
+
+<pre><code>jin@debian:~$ apt-cache policy
+Package files:
+ 100 /var/lib/dpkg/status
+     release a=now
+  90 http://deb.debian.org/debian unstable/main amd64 Packages
+     release o=Debian,a=unstable,n=sid,l=Debian,c=main,b=amd64
+     origin deb.debian.org
+ 100 http://deb.debian.org/debian buster-backports/main amd64 Packages
+     release o=Debian Backports,a=buster-backports,n=buster-backports,l=Debian Backports,c=main,b=amd64
+     origin deb.debian.org
+ 500 http://deb.debian.org/debian buster-updates/main amd64 Packages
+     release o=Debian,a=stable-updates,n=buster-updates,l=Debian,c=main,b=amd64
+     origin deb.debian.org
+ 500 http://security.debian.org/debian-security buster/updates/main amd64 Packages
+     release v=10,o=Debian,a=stable,n=buster,l=Debian-Security,c=main,b=amd64
+     origin security.debian.org
+ 500 http://deb.debian.org/debian buster/main amd64 Packages
+     release v=10.2,o=Debian,a=stable,n=buster,l=Debian,c=main,b=amd64
+     origin deb.debian.org
+Pinned packages:
+</code></pre>
+
+<p>パッケージを更新して、UnstableよりFirefoxをインストールします。
+ちなみに<code>sudo apt install firefox/unstable</code>のコマンドだと古いのかうまくいきません。</p>
+
+<pre><code>jin@debian:~$ sudo apt update
+jin@debian:~$ sudo apt install -t unstable firefox
+</code></pre>
+
+<p>依存しているソフトも同時にインストールされます。
+これから先もアップデートも通常と同じように<code>sudo apt update/upgrade</code>できます。</p>
+
+<p>まぁあとは同時に使っているManjaroでのアプリとバージョンを合わせるのに使うくらいかな。
+（ときにアプリによってバージョンアップで保存データの更新があったりするので、)</p>
+
+<p>これで自由度が少し高まったような感じがします。あとは開発版からきになるSwayでもインストールするかな。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2015/02/ohayo-281/">ohayo v2.8.1</a></li>
+	<li><a href="/blog/2020/01/arco-install-btrfs/">ベルギー産のArcoをインストール</a></li>
 	
-	<li><a href="/blog/2014/11/ohayo-280/">ohayo v2.8.0</a></li>
+	<li><a href="/blog/2020/01/profile-sync-daemon/">ブラウザーのプロファイルをRAMディスクへ</a></li>
 	
-	<li><a href="/blog/2013/07/ohayo-250/">ohayo v2.5.0</a></li>
+	<li><a href="/blog/2020/01/kde-neon/">Neonを推す</a></li>
 	
-	<li><a href="/blog/2015/02/pranatice-071/">Pranatice v0.7.1</a></li>
+	<li><a href="/blog/2020/01/sandbox-app/">Linuxでのサンドボックス・アプリ</a></li>
 	
-	<li><a href="/blog/2015/02/sati-165/">Sati v1.6.5</a></li>
+	<li><a href="/blog/2020/01/install-kali-btrfs/">Kali Linux on BTRFS</a></li>
 	
 </ul>
 
