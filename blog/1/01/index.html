@@ -151,82 +151,60 @@
             </div>
 
             <div class="post-content">
-                <p>profile-sync-daemon</p>
+                
 
-<p><a href="https://wiki.archlinux.jp/index.php/Profile-sync-daemon">https://wiki.archlinux.jp/index.php/Profile-sync-daemon</a></p>
+<p>Appimageのアプリ</p>
 
-<p>jin@debian:~$ sudo apt install profile-sync-daemon</p>
+<p>パスワードマネージャーは
+今使っているEnpass（ドロップボックスやOneDriveなのでのクラウド同期が可能）
+と
+セルフホストも可能なBitwarden
+のどちらかを使おうかと、、、</p>
 
-<p>jin@debian:~$ psd
- First time running psd so please edit /home/jin-debian/.config/psd/psd.conf to your liking and run again.
-jin@debian:~$</p>
+<p>で、やはりオープンソースのものをなるべく選ぶ方向性からBitwardenに軍配が上がる。</p>
 
-<p>jin@debian:~$ vi .config/psd/psd.conf</p>
+<p>各プラットフォームのアプリも存在してますし、基本的に無料です。
+もしDropBoxのように課金するよになったらセルフホストで動かせば良いやと、
+モバイル端末では使う機会はないと思うので。</p>
 
-<p>USE_OVERLAYFS=&ldquo;yes&rdquo;
-BROWSERS=&ldquo;firefox&rdquo;</p>
+<p>アプリをダウンロードして以下の流れで実行できます。</p>
 
-<p>jin@debian:~$ sudo modprobe overlay</p>
+<p>$ chmod a+x Application.AppImage
+$ ./Application.AppImage</p>
 
-<p>/etc/sudoers に以下の行を設定することでユーザーに権限が与えられます。root で /usr/bin/visudo を実行して追加してください:</p>
+<p>マンジャーロではダブルクリックでラッパーアプリが面倒を見てくれて、アイコンも追加してくれます。
+楽ちん、しかしデビアンでは嫌われます。無反応。。。</p>
 
-<p>jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper</p>
+<p>コマンドラインで立ち上げるとエラー出ます。やはり一筋縄ではいかんのね。。</p>
 
-<p>jin@debian:~$ psd p
- I require modinfo but it&rsquo;s not installed. Aborting!</p>
+<pre><code>jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage 
+[10007:0119/111853.292478:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /tmp/.mount_BitwarqRE0Qq/chrome-sandbox is owned by root and has mode 4755.
+Trace/breakpoint trap
+</code></pre>
 
-<p>/sbinへのパスが通ってないのが問題のようなので、
-.profileにPATHを追加する</p>
+<h2 id="解決方法">解決方法</h2>
 
-<p>PATH=&ldquo;/usr/sbin:/sbin&rdquo;</p>
+<ol>
+<li>サンドボックス化せずに起動</li>
+</ol>
 
-<p>で、</p>
+<p>&ndash;no-sandboxをオプションに追加すれば動く。アイコンも表示されます。どこにリソースがあるんやろ？</p>
 
-<p>jin@debian:~$ psd p
-Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)</p>
+<pre><code>jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage --no-sandbox
+</code></pre>
 
-<p>Systemd service is currently inactive.
- Systemd resync-timer is currently inactive.
- Overlayfs v23 is currently active.</p>
+<ol>
+<li>カーネルオプションを追加</li>
+</ol>
 
-<p>Psd will manage the following per /home/jin-debian/.config/psd/psd.conf:</p>
+<p>こちらは何をするのはわからないけど、カーネルにオプションを追加でマウスからのダブルクリックで起動が可能になります。</p>
 
-<p>browser/psname:  firefox/firefox
- owner/group id:  jin/1000
- sync target:     /home/jin-debian/.mozilla/firefox/25pb77js.default
- tmpfs dir:       /run/user/1000/jin-firefox-25pb77js.default
- profile size:    4.0K
- overlayfs size:<br />
- recovery dirs:   none</p>
+<pre><code>jin@debian:/opt$ sudo sysctl kernel.unprivileged_userns_clone=1
+kernel.unprivileged_userns_clone = 1
+</code></pre>
 
-<p>browser/psname:  firefox/firefox
- owner/group id:  jin/1000
- sync target:     /home/jin-debian/.mozilla/firefox/6uxssp9i.default-esr
- tmpfs dir:       /run/user/1000/jin-firefox-6uxssp9i.default-esr
- profile size:    51M
- overlayfs size:<br />
- recovery dirs:   none</p>
-
-<p>jin@debian:~$</p>
-
-<p>ユーザーモードで立ち上げます。</p>
-
-<p>jin@debian:~$ systemctl &ndash;user start psd
-jin@debian:~$ systemctl &ndash;user status psd
-● psd.service - Profile-sync-daemon
-   Loaded: loaded (/usr/lib/systemd/user/psd.service; disabled; vendor preset: enabled)
-   Active: active (exited) since Fri 2020-01-17 20:16:49 +07; 10min ago
-     Docs: man:psd(1)
-           man:profile-sync-daemon(1)
-           <a href="https://wiki.archlinux.org/index.php/Profile-sync-daemon">https://wiki.archlinux.org/index.php/Profile-sync-daemon</a>
-  Process: 3305 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
- Main PID: 3305 (code=exited, status=0/SUCCESS)</p>
-
-<p>Jan 17 20:16:49 debian systemd[1059]: Starting Profile-sync-daemon&hellip;
-Jan 17 20:16:49 debian systemd[1059]: Started Profile-sync-daemon.
-jin@debian:~$ systemctl &ndash;user enable psd
-Created symlink /home/jin-debian/.config/systemd/user/default.target.wants/psd.service → /usr/lib/systemd/user/psd.service.
-jin@debian:~$</p>
+<p>今ひとつスッキリしない解決方法ですがバージョンがいくつか上がれば治ると思います。
+Ubuntuでは動いているようです。。</p>
 
             </div>
         </div>

@@ -228,6 +228,38 @@
                 
                 
                 
+                <li>
+                    
+                    <a href="https://goozenlab.com/blog/1/01/"></a>
+                    <p class="summary">
+                    Appimageのアプリ
+パスワードマネージャーは 今使っているEnpass（ドロップボックスやOneDriveなのでのクラウド同期が可能） と セルフホストも可能なBitwarden のどちらかを使おうかと、、、
+で、やはりオープンソースのものをなるべく選ぶ方向性からBitwardenに軍配が上がる。
+各プラットフォームのアプリも存在してますし、基本的に無料です。 もしDropBoxのように課金するよになったらセルフホストで動かせば良いやと、 モバイル端末では使う機会はないと思うので。
+アプリをダウンロードして以下の流れで実行できます。
+$ chmod a+x Application.AppImage $ ./Application.AppImage
+マンジャーロではダブルクリックでラッパーアプリが面倒を見てくれて、アイコンも追加してくれます。 楽ちん、しかしデビアンでは嫌われます。無反応。。。
+コマンドラインで立ち上げるとエラー出ます。やはり一筋縄ではいかんのね。。
+jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage [10007:0119/111853.292478:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /tmp/.mount_BitwarqRE0Qq/chrome-sandbox is owned by root and has mode 4755. Trace/breakpoint trap  解決方法  サンドボックス化せずに起動  &ndash;no-sandboxをオプションに追加すれば動く。アイコンも表示されます。どこにリソースがあるんやろ？
+jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage --no-sandbox   カーネルオプションを追加  こちらは何をするのはわからないけど、カーネルにオプションを追加でマウスからのダブルクリックで起動が可能になります。
+jin@debian:/opt$ sudo sysctl kernel.unprivileged_userns_clone=1 kernel.unprivileged_userns_clone = 1  今ひとつスッキリしない解決方法ですがバージョンがいくつか上がれば治ると思います。 Ubuntuでは動いているようです。。 ...
+                    </p>
+                    <p class="footnote">
+                    submitted <time datetime="0001-01-01T00:00:00Z" class="post-list timeago">0001-01-01T00:00:00Z</time>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                </li>
+                
+                
+                
                 
                 
                 
