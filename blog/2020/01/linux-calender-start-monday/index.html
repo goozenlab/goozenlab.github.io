@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Posts | goozenlab</title>
+  <title>月曜始まりカレンダー | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -140,22 +140,99 @@
                     <time class="">2020-01-22</time>
 		            
                     
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> 
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>Posts</h1>
+                <h1>月曜始まりカレンダー</h1>
             </div>
 
             <div class="post-content">
-                
+                <p><img src="/images/2020-01-19-calender-main.png" alt="Calender" /></p>
+
+<p>カレンダーが日曜日から始まるのはどうも嫌なんです。
+Sundayということで太陽から始まるのはわからなくはないのですが、
+習慣的に月曜が始めというのが染み付いてます。</p>
+
+<p>で、私の環境ではカレンダーは日曜始まりになっています。
+（Linux環境下では日本語環境でも同じか？）
+マックではシステムの設定で個別に設定できるのですが
+LinuxではLocaleの設定に縛られているようです。</p>
+
+<p>月曜日始まりにするには、en_USからen_GBと大英帝国ロケールに変更する必要があるようです。
+Settingの言語設定の所より設定します。</p>
+
+<!-- ![Calender](/images/2020-01-19-calender-us.png) -->
+
+<p><img src="/images/2020-01-19-calender-uk.png" alt="Calender" /></p>
+
+<p>ただし通常インストール時に使うロケール設定しているので、
+設定項目に出てこないと思いますので、
+以下の作業も必要です。</p>
+
+<pre><code>jin@debian:~$ sudo vi /etc/locale.gen
+
+en_GB-UTxxx #コメントを外す
+
+jin@debian:~$ sudo locale-gen
+</code></pre>
+
+<p>にてロケールファイルが作成されSettingsでの選択リストに追加されます。（リブートかログアウトが必要）
+で、フォーマットを変更後月曜始まりになります。</p>
+
+<p>とは言っても最近はエブリデーホリデーなんで曜日の感覚なんて無いんだけどね。。</p>
+
 				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/01/apt-pinning-firefox/">最新版のFirefoxをデビアンでつかう</a></li>
+	
+	<li><a href="/blog/2020/01/arco-install-btrfs/">ベルギー産のArcoをインストール</a></li>
+	
+	<li><a href="/blog/2020/01/profile-sync-daemon/">ブラウザーのプロファイルをRAMディスクへ</a></li>
+	
+	<li><a href="/blog/2020/01/kde-neon/">Neonを推す</a></li>
+	
+	<li><a href="/blog/2020/01/sandbox-app/">Linuxでのサンドボックス・アプリ</a></li>
+	
+</ul>
 
 
             </div>
        		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
         </div>
 	</div>
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
