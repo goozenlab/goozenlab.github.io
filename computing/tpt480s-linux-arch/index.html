@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ohayo v2.8.2 | goozenlab</title>
+  <title>Arch T480s | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -134,58 +134,191 @@
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
 	<div class="pure-u-11-12 pure-u-md-14-24">
-        <div class="post">
+        <div class="post">			
             <div class="post-title">
+                <h1>Arch T480s</h1>
                 <p class="footnote">
-                    <time class="">2015-03-07</time>
-		            
-                    
-                    |
-                    
-                    
-                    tags:<a href="https://goozenlab.com/tags/ohayo">ohayo</a> <a href="https://goozenlab.com/tags/update">update</a> 
-                    
-
-                    
-                    categories:<a href="https://goozenlab.com/categories/iapp">iapp</a> 
-                    
-
-                    
-                </p>
-                <h1>ohayo v2.8.2</h1>
+                    updated at 
+                    <time class="">2020-01-24</time>
+				</p>
             </div>
-
             <div class="post-content">
-                <p>うーーーん、ホットフィックスです。</p>
+                
 
-<ul>
-<li>バグ
+<p>BTRFSパーティションにArchをインストールした際のメモ。</p>
 
-<ul>
-<li>朝のメッセージがずれてました。。</li>
-</ul></li>
-</ul>
+<p>インストールメディアの作成はお馴染みのEtcherを使う。</p>
 
-<p>以上です。どこかのアップデート時に直したような気がするのだが、、、。本当は、こそっと別のものと一緒にアップデートしたかったのですが、、。</p>
+<p>Thinkpad T480sを使っているので、ネットワークケーブルをつなぎ、
+起動後F12を押しブートメニュー、USBスティックで起動。</p>
 
-<p><img src="/images/2015-03-08-pokhara-fewa-lake.jpg" alt="Pokhara" /></p>
+<p>自動でログインされる。</p>
+
+<pre><code>root@archiso $
+</code></pre>
+
+<h2 id="サブボリュームの作成-マウント">サブボリュームの作成・マウント</h2>
+
+<p>すでに、BTRFSでのフォーマットがされているので、
+パーティションをマウントしてArchのためのサブボリュームを作る。</p>
+
+<pre><code>root@archiso $ mount /dev/nvme0n1p5 /mnt
+root@archiso $ btrfs subvolume create /mnt/@arch
+</code></pre>
+
+<p>※ ちなみに削除は
+<code>btrfs subvolume delete /mnt/@arch</code>
+、パーティションのフォーマットは
+<code>mkfs.btrfs -L “Linuxes” /dev/nvme0n1p5</code></p>
+
+<p>/homeと/var/cacheは共有しているので、
+すでに
+@debian, @manjaro, @cache, @home
+がある。</p>
+
+<pre><code>root@archiso $ cat /mnt/@manjaro/etc/fstab
+</code></pre>
+
+<p>でマンジャーロで使っているマウントオプションを表示しておく。</p>
+
+<p>そして、マウントを解除、必要なディレクトリを作成、インストール先をマウントする。</p>
+
+<pre><code>root@archiso $ umount /mnt
+root@archiso $ mount /dev/nvme0n1p5 /mnt -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@arch
+
+root@archiso $ mkdir -p /mnt/home
+root@archiso $ mkdir -p /mnt/var/cache
+root@archiso $ mount /dev/nvme0n1p5 /mnt/home -o rw,noatime,,,,,subvol=@home
+root@archiso $ mount /dev/nvme0n1p5 /mnt/var/cache -o rw,noatime,,,,,subvol=@cache
+
+root@archiso $ mkdir -p /mnt/boot/efi
+root@archiso $ mount /dev/nvme0n1p1 /mnt/boot/efi
+</code></pre>
+
+<h2 id="インストール作業">インストール作業</h2>
+
+<p>エラーが出たので、Keyringをリフレッシュして、ミラーを選択。</p>
+
+<!-- 
+vimは入っていない、インストールされているnanoの使い方が分からん＋日本探しがちと面倒。
+（ALT+6でコピー、CTR+uでペースト）
+-->
+
+<pre><code>root@archiso $ pacman -Sy archlinux-keyring
+root@archiso $ vi /etc/pacman.d/mirrorlist
+</code></pre>
+
+<p>ベース・システムをインストール。とりあえず、ノーマルのカーネル。
+（血をみる環境にするつもりならlinux-zenかな。）</p>
+
+<pre><code>root@archiso $ pacstrap /mnt base base-devel linux-lts linux-lts-headers
+</code></pre>
+
+<p>fstabを書き込み、subvol表記がダブるので修正。
+swapは後から追加する。
+<code>swapon /dev/nvme0n1p10</code>で有効にできたかも。</p>
+
+<pre><code>root@archiso $ genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+root@archiso $ nano /mnt/etc/fstab
+</code></pre>
+
+<h2 id="システムの基本設定">システムの基本設定</h2>
+
+<pre><code>root@archiso $ arch-chroot /mnt
+</code></pre>
+
+<p>nanoもviもないのでインストール。
+私はvim、お好みでnano。</p>
+
+<h3 id="ロケーション-ハードウェアクロック-ホスト名の設定">ロケーション、ハードウェアクロック、ホスト名の設定。</h3>
+
+<pre><code>root@archiso $ ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+root@archiso $ hwclock --systohc --utc
+</code></pre>
+
+<h3 id="ロケールの設定">ロケールの設定</h3>
+
+<pre><code>root@archiso $ vim /etc/locale.gen
+root@archiso $ locale-gen
+
+root@archiso $ echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+root@archiso $ export LANG=en_US.UTF-8 
+
+root@archiso $ echo guiness &gt; /etc/hostname
+root@archiso $ vim /etc/hosts
+
+127.0.0.1   localhost
+::1     localhost
+127.0.1.1   guiness.localdomain guiness
+</code></pre>
+
+<h3 id="btrfsのための調整">BTRFSのための調整</h3>
+
+<pre><code>root@archiso $ pacman -S btrfs-progs
+root@archiso $ vim /etc/mkinitcpio.conf
+
+52行目：HOOKS=( base … -fsck, +btrfs)
+
+root@archiso $ mkinitcpio -P
+</code></pre>
+
+<h3 id="ユーザーとパスワード">ユーザーとパスワード</h3>
+
+<p>パスワードとユーザーの設定、wheelユーザーにsudoの権限を与える。
+viがないと怒られるたら、vimにシンボリックリンクをはる。</p>
+
+<pre><code>root@archiso $ passwd
+root@archiso $ useradd -m -G users,wheel,storage,power,network -s /bin/bash -c “NAME” jin
+root@archiso $ passwd jin
+root@archiso $ visudo
+
+wheelの所をコメントを外す 
+
+</code></pre>
+
+<h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
+
+<p>ブートマネージャーGrub関連のインストール</p>
+
+<pre><code>root@archiso $ pacman -S dosfstools efibootmgr grub
+root@archiso $ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch 
+</code></pre>
+
+<p>設定の書き出し。</p>
+
+<pre><code>root@archiso $ grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
+
+<hr />
+
+<h2 id="gnomeデスクトップ">Gnomeデスクトップ</h2>
+
+<p>ここから一気にGnomeのデスクトップのインストールまで行う。
+gnomeのパッケージにほとんどのものが入っているようですが、ビデオドライバーだけ追加インストールします。
+そして、ログインマネージャーとネットワークマネージャーを起動時に動くように登録します。</p>
+
+<p>そして、私の環境ではWifiのドライバーが必要なので追加でインストールします。</p>
+
+<pre><code>root@archiso $ pacman -S gnome xf86-video-intel
+root@archiso $ systmctl enable gdm
+root@archiso $ systmctl enable NetworkManager
+
+root@archiso $ pacman -S dkms broadcom-wl-dkms
+</code></pre>
+
+<h2 id="終了">終了</h2>
+
+<p>chrootより抜けて再起動。</p>
+
+<pre><code>root@archiso $ exit
+root@archiso $ reboot
+</code></pre>
+
+<p>もっと難しと思っていましたが、思いの外簡単でした、ほとんどす状態なので、サクサク動いています。</p>
+
+<p>音が出ませんが、まぁちびちびと構築していきます。</p>
 
 				
-
-<h3>See Also</h3>
-<ul>
-	
-	<li><a href="/blog/2015/02/ohayo-281/">ohayo v2.8.1</a></li>
-	
-	<li><a href="/blog/2014/11/ohayo-280/">ohayo v2.8.0</a></li>
-	
-	<li><a href="/blog/2013/07/ohayo-250/">ohayo v2.5.0</a></li>
-	
-	<li><a href="/blog/2015/02/pranatice-071/">Pranatice v0.7.1</a></li>
-	
-	<li><a href="/blog/2015/02/sati-165/">Sati v1.6.5</a></li>
-	
-</ul>
 
 
             </div>

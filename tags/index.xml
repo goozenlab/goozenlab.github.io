@@ -8,7 +8,7 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 22 Jan 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,18 @@
     <item>
       <title>linux</title>
       <link>https://goozenlab.com/tags/linux/</link>
-      <pubDate>Wed, 22 Jan 2020 08:00:00 +0700</pubDate>
+      <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://goozenlab.com/tags/mac/</link>
+      <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -172,15 +181,6 @@
       <pubDate>Thu, 12 Dec 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/xiaomi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>https://goozenlab.com/tags/mac/</link>
-      <pubDate>Tue, 03 Dec 2019 18:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     

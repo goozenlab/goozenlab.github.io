@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 10 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arch T480s</title>
+      <link>https://goozenlab.com/computing/tpt480s-linux-arch/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/computing/tpt480s-linux-arch/</guid>
+      <description>BTRFSパーティションにArchをインストールした際のメモ。 インストールメディアの作成はお馴染みのEtcherを使う。 Thinkpad T480sを使っているので、ネットワー</description>
+    </item>
     
     <item>
       <title>Make Hackintosh T480s</title>
