@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>最適なミラーサイト</title>
+      <link>https://goozenlab.com/blog/2020/01/fast-mirror-list/</link>
+      <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/fast-mirror-list/</guid>
+      <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安</description>
+    </item>
     
     <item>
       <title>Arch T480s</title>
@@ -19,7 +28,7 @@
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/tpt480s-linux-arch/</guid>
-      <description>BTRFSパーティションにArchをインストールした際のメモ。 インストールメディアの作成はお馴染みのEtcherを使う。 Thinkpad T480sを使っているので、ネットワー</description>
+      <description>2020年1月下旬に行ったBTRFSパーティションにArchをインストールした際のメモ。 一気にミニマムなGnomeまで、 ネットワークやディスプレイの設定もせずに</description>
     </item>
     
     <item>
@@ -5077,25 +5086,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/nomad-goods/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>Appimageのアプリ
-パスワードマネージャーは 今使っているEnpass（ドロップボックスやOneDriveなのでのクラウド同期が可能） と セルフホストも可能なBitwarden のどちらかを使おうかと、、、
-で、やはりオープンソースのものをなるべく選ぶ方向性からBitwardenに軍配が上がる。
-各プラットフォームのアプリも存在してますし、基本的に無料です。 もしDropBoxのように課金するよになったらセルフホストで動かせば良いやと、 モバイル端末では使う機会はないと思うので。
-アプリをダウンロードして以下の流れで実行できます。
-$ chmod a+x Application.AppImage $ ./Application.AppImage
-マンジャーロではダブルクリックでラッパーアプリが面倒を見てくれて、アイコンも追加してくれます。 楽ちん、しかしデビアンでは嫌われます。無反応。。。
-コマンドラインで立ち上げるとエラー出ます。やはり一筋縄ではいかんのね。。
-jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage [10007:0119/111853.292478:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I&#39;m aborting now. You need to make sure that /tmp/.mount_BitwarqRE0Qq/chrome-sandbox is owned by root and has mode 4755. Trace/breakpoint trap  解決方法  サンドボックス化せずに起動  &amp;ndash;no-sandboxをオプションに追加すれば動く。アイコンも表示されます。どこにリソースがあるんやろ？
-jin@debian:/opt$ ./Bitwarden-1.16.6-x86_64.AppImage --no-sandbox   カーネルオプションを追加  こちらは何をするのはわからないけど、カーネルにオプションを追加でマウスからのダブルクリックで起動が可能になります。
-jin@debian:/opt$ sudo sysctl kernel.unprivileged_userns_clone=1 kernel.unprivileged_userns_clone = 1  今ひとつスッキリしない解決方法ですがバージョンがいくつか上がれば治ると思います。 Ubuntuでは動いているようです。。</description>
     </item>
     
     <item>

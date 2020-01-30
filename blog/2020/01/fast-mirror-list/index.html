@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Posts | goozenlab</title>
+  <title>最適なミラーサイト | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -140,22 +140,144 @@
                     <time class="">2020-01-29</time>
 		            
                     
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/linux">linux</a> 
                     
 
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>Posts</h1>
+                <h1>最適なミラーサイト</h1>
             </div>
 
             <div class="post-content">
                 
+
+<p>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安定しません。。</p>
+
+<p>これからも国境を越えたりすることがままあるので、
+その場所場所で最適な接続先に変更する方法をリサーチ。</p>
+
+<h2 id="arch-manjaro">Arch / Manjaro</h2>
+
+<p>Archとマンジャーロはデビアンとubuntuの関係と似ていて、
+同じパッケージマネージャーを使っていますが違いがちょこちょことあります。</p>
+
+<p>ミラーサイトの選別を行うために
+Archではスクリプト<code>rankmirrors</code>が用意されていますが、
+マンジャーロでも別のスクリプト<code>pacman-mirrors</code>が用意されています。</p>
+
+<p>マンジャーロのほうが、ミラーリストを先にダウンロードしてきてくれたりして少し親切設計かな。</p>
+
+<p>Archではミラーリストをバックアップしておきます。場合によってはファイルを整形しないといけないようですが、
+インストールした後のファイルでそのまま使って問題はありませんでした。</p>
+
+<pre><code>jin@arch $　cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+</code></pre>
+
+<h3 id="速度ベスト１０ミラーサイトを探し出すコマンド">速度ベスト１０ミラーサイトを探し出すコマンド</h3>
+
+<pre><code>jin@manj $ sudo pacman-mirrors --fasttrack 10
+jin@arch $ sudo /usr/bin/rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup &gt; /etc/pacman.d/mirrorlist
+</code></pre>
+
+<p>マンジャーロではスピード順にソートや国ごとに計測して新しいミラーリストを作成することもできます。
+Archだとできないことはないようですが少し面倒なのでパス。</p>
+
+<pre><code>jin@manjaro $ sudo pacman-mirrors --fasttrack
+jin@manjaro $ sudo pacman-mirrors --country Costa_Rica
+</code></pre>
+
+<p>そして新しいミラーへ変更時にはパッケージリストの更新も行う必要があります。</p>
+
+<pre><code>$ pacman -Syyu
+</code></pre>
+
+<p>時によって結果がかなり変わるので、更新が多い時は改めて実施するのが良いかもと思ったりしました。</p>
+
+<p>参考：</p>
+
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Mirrors">https://wiki.archlinux.org/index.php/Mirrors</a></li>
+</ul>
+
+<h2 id="debian">Debian</h2>
+
+<p>ちなみにdebianでは
+<code>deb.debian.org</code>
+を指定するとアクセスしているIPアドレスより、その国のミラーサイトにつながるような設定になっています。
+（と思う）
+その国にあるサーバーが必ずしも最適で最速かと言われるとそうでもないのですが、
+（こちらタイでは、お隣のバングラデシュとかチャイナとかの方がスピードが出るようです。）
+以前あったapt-spyというパッケージは現在unstableにあるので試すかな。。</p>
+
+<p>Apt-spyの使い方</p>
+
+<pre><code>$ sudo apt install -t unstable apt-spy
+$ sudo apt-spy -d stable -a Asia
+</code></pre>
+
+<ul>
+<li>-d : ディストリビューション　stable, testing or unstable</li>
+<li>-a : 地域指定
+
+<ul>
+<li>not set : world-wide</li>
+<li>いずれか一つ：Africa, Asia, Europe, North-America, Oceania or South-America</li>
+</ul></li>
+</ul>
+
+<p>まぁ次の国境越えは日本への帰国の3月なのでその時に試してみます。
+（チケットはあるんだけど、なんか帰りたくなんですけどね、、。）</p>
+
 				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/01/vscodium/">VSCodium</a></li>
+	
+	<li><a href="/blog/2020/01/linux-calender-start-monday/">月曜始まりカレンダー</a></li>
+	
+	<li><a href="/blog/2020/01/apt-pinning-firefox/">最新版のFirefoxをデビアンでつかう</a></li>
+	
+	<li><a href="/blog/2020/01/arco-install-btrfs/">ベルギー産のArcoをインストール</a></li>
+	
+	<li><a href="/blog/2020/01/profile-sync-daemon/">ブラウザーのプロファイルをRAMディスクへ</a></li>
+	
+</ul>
 
 
             </div>
        		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
         </div>
 	</div>
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
