@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jan 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TLP on Arch</title>
+      <link>https://goozenlab.com/blog/2020/02/tlp-arch/</link>
+      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/tlp-arch/</guid>
+      <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時間もチェックもしまし</description>
+    </item>
+    
+    <item>
+      <title>YAYのインストール</title>
+      <link>https://goozenlab.com/blog/2020/01/install-yay/</link>
+      <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/install-yay/</guid>
+      <description>Thinkapd T480s ArchではManjaroも動いているので、 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思っていました。 が、ZFSのライセンスが</description>
+    </item>
+    
+    <item>
+      <title>gpgでファイルを検証</title>
+      <link>https://goozenlab.com/blog/2020/01/gpg-verify/</link>
+      <pubDate>Thu, 30 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/gpg-verify/</guid>
+      <description>Kde NeonのISOファイルを回線が不安定なので配布元でないところから配布されているトレントを使ってダウンロードしました。 まぁ大丈夫でしょうが、Varificat</description>
+    </item>
     
     <item>
       <title>最適なミラーサイト</title>
@@ -4592,6 +4619,22 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2010/11/littlist-naming/</guid>
       <description>littlistというネーミングは、 Little + List で付けたのですが、じっと見ていて、 Little + ist というのもありだなと、というかこっちの方が格好いいなと、 （ゆるーいMinima</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.com/blog/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/1/01/</guid>
+      <description>Standard Note Simplenoteともう一つ。ということで、Standardnotesをインストールしました。
+こちらのアプリはサーバーも抱き合わせのオープンソースプロジェクトですので セルフ・ホストも可能のようです。ドッカーで一発構築できるようです。 ラズベリーパイで軽快に動かせたらよいのだけどね。。
+全てのプラットフォームに移植されていて、LinuxではAppImageで提供されています。
+アプリはライブラリーを含んだ配布方式のAppImageです。実行権を与えてダブルクリック。。 で動かない。。
+ターミナルで立ち上げるとエラーが出てくる。。
+jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage [3563:0116/185840.711069:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I&amp;rsquo;m aborting now. You need to make sure that /tmp/.mount_Standa3whW6B/chrome-sandbox is owned by root and has mode 4755. Trace/breakpoint trap
+検索後解決方法が見つかる。&amp;ndash;no-sandboxのオプションを追加。。でうまく動きました。。 でも毎回ターミナルで立ち上げるのもな、、
+jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage &amp;ndash;no-sandbox Extensions server started at http://localhost:45653 Unable to read JSON file /home/jin-debian/.config/Standard Notes/Updates/settings.json Checking for updates&amp;hellip; [18:56:58:0161] [info] Checking for update [18:56:58:0430] [info] Generated new staging user ID: 74c5e1cd-f242-5a86-a4c7-3890b03245ea Syncing components: 1 Syncing components: 1 Syncing components: 1 Finished checking for updates.</description>
     </item>
     
   </channel>

@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Jan 2020 17:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/arch/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TLP on Arch</title>
+      <link>https://goozenlab.com/blog/2020/02/tlp-arch/</link>
+      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/tlp-arch/</guid>
+      <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時間もチェックもしまし</description>
+    </item>
+    
+    <item>
+      <title>YAYのインストール</title>
+      <link>https://goozenlab.com/blog/2020/01/install-yay/</link>
+      <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/install-yay/</guid>
+      <description>Thinkapd T480s ArchではManjaroも動いているので、 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思っていました。 が、ZFSのライセンスが</description>
+    </item>
+    
+    <item>
+      <title>最適なミラーサイト</title>
+      <link>https://goozenlab.com/blog/2020/01/fast-mirror-list/</link>
+      <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/01/fast-mirror-list/</guid>
+      <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安</description>
+    </item>
     
     <item>
       <title>ベルギー産のArcoをインストール</title>

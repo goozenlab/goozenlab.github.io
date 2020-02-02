@@ -224,9 +224,9 @@ root@archiso $ pacman -Syy
 </code></pre>
 
 <p>ベース・システムをインストール。とりあえず、ノーマルのカーネル（v5.4.x)。
-（血をみる環境にするつもりならlinux-zenかな。）linux-headersは通常必要ないと思いますが、DKMSにて必要なので加えておきます。</p>
+（血をみる環境にするつもりならlinux-zenかな。）<del>linux-headersは通常必要ないと思いますが、DKMSにて必要なので加えておきます。</del></p>
 
-<pre><code>root@archiso $ pacstrap /mnt base base-devel linux linux-headers
+<pre><code>root@archiso $ pacstrap /mnt base linux
 </code></pre>
 
 <p>fstabを書き込み、subvol表記がダブるので修正します。
@@ -323,13 +323,14 @@ gnomeのパッケージにほとんどのものが入っているようですが
 そして、ログインマネージャーとネットワークマネージャーを起動時に動くように登録します。
 これでどれを使えば良いのか等、よくわからなかったArchでのNetwork設定の煩わしさから解放される。</p>
 
-<p>そしてWifiのドライバーも追加でインストールしておく。通常の端末であれば必要はないかも。</p>
+<p>そして取り替えて入っているWifiのドライバーも追加でインストールしておく。通常の端末であれば必要はないと思います。
+とりあえず最低限の環境を構築完了です。</p>
 
 <pre><code>root@archiso $ pacman -S gnome xf86-video-intel
 root@archiso $ systemctl enable gdm
 root@archiso $ systemctl enable NetworkManager
 
-root@archiso $ pacman -S dkms broadcom-wl-dkms
+root@archiso $ pacman -S broadcom-wl
 </code></pre>
 
 <h2 id="終了">終了</h2>

@@ -3,32 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/tags/arch/</loc>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-01-29T08:00:00+07:00</lastmod>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-01-29T08:00:00+07:00</lastmod>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-01-29T08:00:00+07:00</lastmod>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2020-01-29T08:00:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/manjaro/</loc>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-01-29T08:00:00+07:00</lastmod>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/02/tlp-arch/</loc>
+    <lastmod>2020-02-01T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/01/install-yay/</loc>
+    <lastmod>2020-01-31T13:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/01/gpg-verify/</loc>
+    <lastmod>2020-01-30T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/mac/</loc>
+    <lastmod>2020-01-30T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/debian/</loc>
     <lastmod>2020-01-29T08:00:00+07:00</lastmod>
   </url>
   
@@ -48,7 +78,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
+    <loc>https://goozenlab.com/tags/linux/</loc>
     <lastmod>2020-01-23T08:00:00+07:00</lastmod>
   </url>
   
@@ -63,18 +93,8 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/debian/</loc>
-    <lastmod>2020-01-21T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2020/01/apt-pinning-firefox/</loc>
     <lastmod>2020-01-21T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/arch/</loc>
-    <lastmod>2020-01-20T17:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -184,11 +204,6 @@
   
   <url>
     <loc>https://goozenlab.com/tags/debain/</loc>
-    <lastmod>2020-01-04T11:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/manjaro/</loc>
     <lastmod>2020-01-04T11:00:00+07:00</lastmod>
   </url>
   
@@ -3434,6 +3449,11 @@
   
   <url>
     <loc>https://goozenlab.com/computing/nomad-goods/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/1/01/</loc>
     <priority>0</priority>
   </url>
   

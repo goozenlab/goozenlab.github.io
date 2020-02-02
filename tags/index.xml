@@ -8,24 +8,33 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jan 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>linux</title>
-      <link>https://goozenlab.com/tags/linux/</link>
-      <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
+      <title>Arch</title>
+      <link>https://goozenlab.com/tags/arch/</link>
+      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/linux/</guid>
+      <guid>https://goozenlab.com/tags/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjaro</title>
+      <link>https://goozenlab.com/tags/manjaro/</link>
+      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/manjaro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mac</title>
       <link>https://goozenlab.com/tags/mac/</link>
-      <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
+      <pubDate>Thu, 30 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
@@ -34,18 +43,18 @@
     <item>
       <title>debian</title>
       <link>https://goozenlab.com/tags/debian/</link>
-      <pubDate>Tue, 21 Jan 2020 08:00:00 +0700</pubDate>
+      <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/debian/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Arch</title>
-      <link>https://goozenlab.com/tags/arch/</link>
-      <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
+      <title>linux</title>
+      <link>https://goozenlab.com/tags/linux/</link>
+      <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/arch/</guid>
+      <guid>https://goozenlab.com/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -127,15 +136,6 @@
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/debain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>manjaro</title>
-      <link>https://goozenlab.com/tags/manjaro/</link>
-      <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/manjaro/</guid>
       <description></description>
     </item>
     
@@ -653,7 +653,7 @@
     </item>
     
     <item>
-      <title>Tajikistan</title>
+      <title>tajikistan</title>
       <link>https://goozenlab.com/tags/tajikistan/</link>
       <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
       <author>jin@goozenlab.com (jin)</author>
