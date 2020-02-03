@@ -255,22 +255,17 @@ Press Ctrl+C to cancel.
 <p>１時間あたりの消費電力（FULL: 57000mWh)：</p>
 
 <ul>
-<li>8500 [mW] Web + Text</li>
-<li>11000 [mW] YOUTUBE</li>
-<li>19500 [mW] ファイルの解凍</li>
-<li>18000 [mW] VLCで動画再生</li>
+<li>8500mWh [6.7h] Web + Text</li>
+<li>11000mWh [5.2h] YOUTUBE</li>
+<li>19500mWh [2.9h] ファイルの解凍</li>
+<li>18000mWh [3.2h] VLCで動画再生</li>
 </ul>
 
 <p>と、Hackintosh環境とそんなに変わらないようです。Windowsでもこんなん感じなのですかね。。</p>
 
 <p>再調整終了後の状況は</p>
 
-<pre><code>+++ Battery Features: Charge Thresholds and Recalibrate
-natacpi    = active (data, thresholds)
-tpacpi-bat = active (recalibrate)
-tp-smapi   = inactive (ThinkPad not supported)
-
-+++ ThinkPad Battery Status: BAT0 (Main / Internal)
+<pre><code>+++ ThinkPad Battery Status: BAT0 (Main / Internal)
 /sys/class/power_supply/BAT0/energy_now                     =  55800 [mWh]
 /sys/class/power_supply/BAT0/status                         = Full
 
@@ -280,9 +275,6 @@ tpacpi-bat.BAT0.forceDischarge                              =      0
 
 Charge                                                      =  100.0 [%]
 Capacity                                                    =   97.9 [%]
-
-+++ Recommendations
-* Install ethtool to disable Wake On LAN (WOL)
 </code></pre>
 
 <p>経年でじわじわと劣化していくものではあるのですが若干ながらキャパが減りました。

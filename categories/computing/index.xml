@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Feb 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AppImageをデビアンで：AppImage　Launcher</title>
+      <link>https://goozenlab.com/blog/2020/02/appimage-debian/</link>
+      <pubDate>Sun, 02 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/appimage-debian/</guid>
+      <description>ダウンロードして、実行権を与え、ダブルクリックで起動という利便性の高いアプリ配信方式の AppImage ですが、 中には上手く動かないアプリもありました。 Simplenote は問題なく起動して使え</description>
+    </item>
     
     <item>
       <title>TLP on Arch</title>
@@ -28,7 +37,7 @@
       <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/install-yay/</guid>
-      <description>Thinkapd T480s ArchではManjaroも動いているので、 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思っていました。 が、ZFSのライセンスが</description>
+      <description>Archを動かしているThinkapd T480sではManjaroも動かしているので、 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思</description>
     </item>
     
     <item>
