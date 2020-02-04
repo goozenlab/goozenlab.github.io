@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Categories | goozenlab</title>
+  <title>Mozcの環境構築まとめ | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -130,128 +130,148 @@
     <div class="pure-u-1-24 pure-u-md-1-24"></div>
 </div>
 
+
 <div class="pure-g">
-<div class="pure-u-1-24 pure-u-md-5-24"></div>
-<div class="pure-u-11-12 pure-u-md-5-8">
-	<p class="posts-name">Categories:</p>
-	<div class="post-content">
-		<ul class="posts">
-		
-		
-			<li>
-				<a href="iapp">iapp</a>
-				<span>&#40;111&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mumble">mumble</a>
-				<span>&#40;71&#41;</span>
-			</li>
-		
-			<li>
-				<a href="nomad">nomad</a>
-				<span>&#40;70&#41;</span>
-			</li>
-		
-			<li>
-				<a href="computing">computing</a>
-				<span>&#40;66&#41;</span>
-			</li>
-		
-			<li>
-				<a href="server">server</a>
-				<span>&#40;50&#41;</span>
-			</li>
-		
-			<li>
-				<a href="develop">develop</a>
-				<span>&#40;39&#41;</span>
-			</li>
-		
-			<li>
-				<a href="life">life</a>
-				<span>&#40;22&#41;</span>
-			</li>
-		
-			<li>
-				<a href="android">android</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="travel">travel</a>
-				<span>&#40;19&#41;</span>
-			</li>
-		
-			<li>
-				<a href="web">web</a>
-				<span>&#40;12&#41;</span>
-			</li>
-		
-			<li>
-				<a href="bicycle">bicycle</a>
-				<span>&#40;11&#41;</span>
-			</li>
-		
-			<li>
-				<a href="snakefoot">snakefoot</a>
-				<span>&#40;10&#41;</span>
-			</li>
-		
-			<li>
-				<a href="backpack">backpack</a>
-				<span>&#40;5&#41;</span>
-			</li>
-		
-			<li>
-				<a href="router">router</a>
-				<span>&#40;3&#41;</span>
-			</li>
-		
-			<li>
-				<a href="smart-watch">smart-watch</a>
-				<span>&#40;3&#41;</span>
-			</li>
-		
-			<li>
-				<a href="goods">goods</a>
-				<span>&#40;2&#41;</span>
-			</li>
-		
-			<li>
-				<a href="development">development</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="mac">mac</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="macos">macos</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="security">security</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="smart-phone">smart-phone</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-			<li>
-				<a href="youtube">youtube</a>
-				<span>&#40;1&#41;</span>
-			</li>
-		
-		</ul>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-02-04</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/debian">debian</a> <a href="https://goozenlab.com/tags/arch">arch</a> <a href="https://goozenlab.com/tags/manjaro">manjaro</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Mozcの環境構築まとめ</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。
+インストール、設定方法をまとめる。</p>
+
+<h2 id="インストール-debian-ubuntu">インストール：Debian / Ubuntu</h2>
+
+<p>Debian と Ubuntu では</p>
+
+<pre><code>$ sudo apt-get install im-congig fcitx-mozc
+</code></pre>
+
+<p>をインストール、im-congif より fcitx を指定します。</p>
+
+<p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install" /></p>
+
+<p>ペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
+mozc を追加して、キーバインドや候補表示のフォント設定などが行なえます。</p>
+
+<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install" /></p>
+
+<p>再起動でつかえるようになります。</p>
+
+<p>ただし、Mozc ツールはバグがあるらしく、backport よりインストールする必要があります。</p>
+
+<p>コマンドでの辞書ツール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
+
+<pre><code>$ /usr/lib/mozc/mozc_tool --mode=config_dialog
+$ /usr/lib/mozc/mozc_tool --mode=dictionary_tool
+$ /usr/lib/mozc/mozc_tool --mode=word_register_dialog
+</code></pre>
+
+<p>です。頻繁にアクセスするものでないのでそのままにしてます。</p>
+
+<p><img src="/images/2020-02-04-mozc-setting-00.png" alt="Mozc Install" /></p>
+
+<h2 id="インストール-arch-manjaro">インストール：Arch / Manjaro</h2>
+
+<pre><code>$ sudo pacman -S fcitx-mozc fcitx-gtk3 fcitx-qt5
+</code></pre>
+
+<p>こちらもいたって簡単、上記のあソフトをインストールして、
+同様にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
+mozc を追加します。</p>
+
+<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install" /></p>
+
+<p>こちらはこのままでは再起動しても使えないので、
+Mnajaro では、<code>.xprofile</code>
+Arch (wayland)では<code>/etc/enviourment</code>
+に設定を書き入れます。</p>
+
+<pre><code>.xprofile (manjaro) /etc/enviorment (arch)
+
+export XMODIFIERS=&quot;@im=fcitx&quot;
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+</code></pre>
+
+<p>で、問題なく動きます。（最近<strong>mozc-ut2</strong>にアップグレードしました。）</p>
+
+<h2 id="設定">設定</h2>
+
+<!-- ![Mozc Install](/images/2020-02-04-setting-input-02.png) -->
+
+<p>キーバインディングをハッキントッシュと合わせたいんだけどね、、
+ctl か alt のどっちのキーをメインにするか悩む。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/01/fast-mirror-list/">最適なミラーサイト</a></li>
+	
+	<li><a href="/blog/2020/02/tlp-arch/">TLP on Arch</a></li>
+	
+	<li><a href="/blog/2020/02/appimage-debian/">AppImageをデビアンで：AppImage　Launcher</a></li>
+	
+	<li><a href="/blog/2020/01/install-yay/">YAYのインストール</a></li>
+	
+	<li><a href="/blog/2020/01/apt-pinning-firefox/">最新版のFirefoxをデビアンでつかう</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "goozenlabgh" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+       		</div>
+            
+        </div>
 	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-<div class="pure-u-1-24 pure-u-md-1-6"></div>
+
 
 <div class="footer pure-g">
     <div class="pure-u-1-24 pure-u-md-3-24"></div>

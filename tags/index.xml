@@ -8,33 +8,33 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 02 Feb 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>debian</title>
-      <link>https://goozenlab.com/tags/debian/</link>
-      <pubDate>Sun, 02 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/debian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Arch</title>
       <link>https://goozenlab.com/tags/arch/</link>
-      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/arch/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>debian</title>
+      <link>https://goozenlab.com/tags/debian/</link>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>manjaro</title>
       <link>https://goozenlab.com/tags/manjaro/</link>
-      <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/manjaro/</guid>
       <description></description>
