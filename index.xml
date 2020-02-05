@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 04 Feb 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ArchでMagicTrackpad2</title>
+      <link>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</link>
+      <pubDate>Wed, 05 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</guid>
+      <description>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。 ちょっとした穴の補修 Arch の初期状態ではブルートゥースが使えま</description>
+    </item>
     
     <item>
       <title>Mozcの環境構築まとめ</title>
@@ -19,7 +28,7 @@
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 インストール：Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-cong</description>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif より fcitx を指定します。</description>
     </item>
     
     <item>
@@ -5131,22 +5140,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/nomad-goods/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>Standard Note Simplenoteともう一つ。ということで、Standardnotesをインストールしました。
-こちらのアプリはサーバーも抱き合わせのオープンソースプロジェクトですので セルフ・ホストも可能のようです。ドッカーで一発構築できるようです。 ラズベリーパイで軽快に動かせたらよいのだけどね。。
-全てのプラットフォームに移植されていて、LinuxではAppImageで提供されています。
-アプリはライブラリーを含んだ配布方式のAppImageです。実行権を与えてダブルクリック。。 で動かない。。
-ターミナルで立ち上げるとエラーが出てくる。。
-jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage [3563:0116/185840.711069:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I&amp;rsquo;m aborting now. You need to make sure that /tmp/.mount_Standa3whW6B/chrome-sandbox is owned by root and has mode 4755. Trace/breakpoint trap
-検索後解決方法が見つかる。&amp;ndash;no-sandboxのオプションを追加。。でうまく動きました。。 でも毎回ターミナルで立ち上げるのもな、、
-jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage &amp;ndash;no-sandbox Extensions server started at http://localhost:45653 Unable to read JSON file /home/jin-debian/.config/Standard Notes/Updates/settings.json Checking for updates&amp;hellip; [18:56:58:0161] [info] Checking for update [18:56:58:0430] [info] Generated new staging user ID: 74c5e1cd-f242-5a86-a4c7-3890b03245ea Syncing components: 1 Syncing components: 1 Syncing components: 1 Finished checking for updates.</description>
     </item>
     
     <item>

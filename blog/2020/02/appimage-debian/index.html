@@ -287,6 +287,24 @@ ask_to_move = true
 立ち上げるたびにディストリビューションを変えてるけど、今の所 Arch とデビアンが軽快で良い感じです。
 （便利さは Manjaro かな、Plasma は相性がちょっと悪いかも、カスタマイズはちょっと面倒だし。。）</p>
 
+<!--
+
+何が問題なのかはちょっとわからないけれど、オプションを追加せずに起動する方法もあるみたいです。
+
+1. Enable unprivileged access to CLONE_NEWUSER in your kernel. Some kernels support changing this with `sysctl kernel.unprivileged_userns_clone=1`.
+2. Disable sandboxing entirely by launching with --no-sandbox. Adding this argument from JS is unfortunately insufficient, as the GPU process is launched before the main process JS is run.
+
+`/etc/sysctl.d/00-local-userns.conf`
+
+with the following contents:
+
+kernel.unprivileged_userns_clone=1
+
+でファイルをダブルクリックで実行できます。
+アイコンの登録もできんのかな。。
+
+-->
+
 				
 
 <h3>See Also</h3>
