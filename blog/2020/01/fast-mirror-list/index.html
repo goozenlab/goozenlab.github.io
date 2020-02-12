@@ -156,54 +156,35 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安定しません。。</p>
-
+                <p>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安定しません。。</p>
 <p>これからも国境を越えたりすることがままあるので、
 その場所場所で最適な接続先に変更する方法をリサーチ。</p>
-
-<h2 id="arch-manjaro">Arch / Manjaro</h2>
-
+<h2 id="arch--manjaro">Arch / Manjaro</h2>
 <p>Archとマンジャーロはデビアンとubuntuの関係と似ていて、
 同じパッケージマネージャーを使っていますが違いがちょこちょことあります。</p>
-
 <p>ミラーサイトの選別を行うために
-Archではスクリプト<code>rankmirrors</code>が用意されていますが、
+Archではスクリプト<code>rankmirrors (pacman-contrib)</code>が用意されていますが、
 マンジャーロでも別のスクリプト<code>pacman-mirrors</code>が用意されています。</p>
-
 <p>マンジャーロのほうが、ミラーリストを先にダウンロードしてきてくれたりして少し親切設計かな。</p>
-
 <p>Archではミラーリストをバックアップしておきます。場合によってはファイルを整形しないといけないようですが、
 インストールした後のファイルでそのまま使って問題はありませんでした。</p>
-
-<pre><code>jin@arch $　cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-</code></pre>
-
+<pre><code>jin@arch $ sudo pacman -S pacman-contrib
+jin@arch $ cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+</code></pre><p>おまけ：
+<a href="https://www.archlinux.org/mirrorlist/">https://www.archlinux.org/mirrorlist/</a>
+にてミラーリストを取ってこれます。</p>
 <h3 id="速度ベスト１０ミラーサイトを探し出すコマンド">速度ベスト１０ミラーサイトを探し出すコマンド</h3>
-
 <pre><code>jin@manj $ sudo pacman-mirrors --fasttrack 10
-jin@arch $ sudo /usr/bin/rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup &gt; /etc/pacman.d/mirrorlist
-</code></pre>
-
-<p>マンジャーロではスピード順にソートや国ごとに計測して新しいミラーリストを作成することもできます。
+jin@arch $  /usr/bin/rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup | sudo tee /etc/pacman.d/mirrorlist
+</code></pre><p>マンジャーロではスピード順にソートや国ごとに計測して新しいミラーリストを作成することもできます。
 Archだとできないことはないようですが少し面倒なのでパス。</p>
-
 <pre><code>jin@manjaro $ sudo pacman-mirrors --fasttrack
 jin@manjaro $ sudo pacman-mirrors --country Costa_Rica
-</code></pre>
-
-<p>そして新しいミラーへ変更時にはパッケージリストの更新も行う必要があります。</p>
-
+</code></pre><p>そして新しいミラーへ変更時にはパッケージリストの更新も行う必要があります。</p>
 <pre><code>$ pacman -Syyu
-</code></pre>
-
-<p>時によって結果がかなり変わるので、更新が多い時は改めて実施するのが良いかもと思ったりしました。</p>
-
+</code></pre><p>時によって結果がかなり変わるので、更新が多い時は改めて実施するのが良いかもと思ったりしました。</p>
 <p>参考： <a href="https://wiki.archlinux.org/index.php/Mirrors">https://wiki.archlinux.org/index.php/Mirrors</a></p>
-
 <h2 id="debian">Debian</h2>
-
 <p>ちなみにdebianでは
 <code>deb.debian.org</code>
 を指定するとアクセスしているIPアドレスより、その国のミラーサイトにつながるような設定になっています。
@@ -211,25 +192,19 @@ jin@manjaro $ sudo pacman-mirrors --country Costa_Rica
 その国にあるサーバーが必ずしも最適で最速かと言われるとそうでもないのですが、
 （こちらタイでは、お隣のバングラデシュとかチャイナとかの方がスピードが出るようです。）
 以前あったapt-spyというパッケージは現在unstableにあるので試すかな。。</p>
-
 <h3 id="apt-spyの使い方">Apt-spyの使い方</h3>
-
-<p><img src="/images/2020-01-30-apt-spy.png" alt="apt-spy" /></p>
-
+<p><img src="/images/2020-01-30-apt-spy.png" alt="apt-spy"></p>
 <pre><code>$ sudo apt install -t unstable apt-spy
 $ sudo apt-spy -d stable -a Asia
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>-d : ディストリビューション　stable, testing or unstable</li>
 <li>-a : 地域指定
-
 <ul>
 <li>not set : world-wide</li>
 <li>いずれか一つ：Africa, Asia, Europe, North-America, Oceania or South-America</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>まぁ次の国境越えは日本への帰国の3月なのでその時に試してみます。
 （チケットはあるんだけど、なんか帰りたくないのだけどね、、。）</p>
 

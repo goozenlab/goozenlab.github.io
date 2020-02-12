@@ -156,28 +156,19 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-08-12-telegraf-00.png" alt="Telegraf Install" /></p>
-
+                <p><img src="/images/2019-08-12-telegraf-00.png" alt="Telegraf Install"></p>
 <p>システムのモニタリングはtelegraf(ログ収集）-&gt; influxDB(データーベース）-&gt; grafana(表示）で行います。</p>
-
 <p>事前にGrafanaとInfluxDBのインストールが必要です。
 インストールと設定はこちら</p>
-
 <ul>
 <li><a href="https://goozenlab.com/blog/2019/08/grafana-pi-install/">Grafana</a></li>
 <li><a href="https://goozenlab.com/blog/2019/08/influxdb-pi-install/">InfluxDB</a></li>
 </ul>
-
 <p>に簡単ですが書いてます。</p>
-
 <h2 id="インストール">インストール</h2>
-
 <p>telegrafはgrafanaで使っているinfluxDBと開発元が同じです。
 いろいろなツールが出回ってますが、親和性も高いとおもいます。。
 レポジトリも同じところになります。キーを登録し、aptにリストを追加します。</p>
-
 <pre><code>root@raspberrypi:~ # sudo -Es
 root@raspberrypi:~ # curl https://repos.influxdata.com/influxdb.key | apt-key add -
 root@raspberrypi:~ # vi /etc/apt/sources.list.d/influxdb.list
@@ -187,19 +178,13 @@ deb https://repos.influxdata.com/debian buster stable
 
 root@raspberrypi:~ # apt update
 root@raspberrypi:~ # apt install telegraph
-</code></pre>
-
-<p>そしてレポジトリのアップデートと、ソフトのインストールを行います。</p>
-
+</code></pre><p>そしてレポジトリのアップデートと、ソフトのインストールを行います。</p>
 <h2 id="telegrafの設定">telegrafの設定</h2>
-
 <p>設定ファイルは<code>/etc/telegraf/telegraf.conf</code>にあります。
 ファイルを開き、書き出し設定部を有効化します。
 使うデーターベースはinfluxDBになるので、<strong>[[outputs.influxdb]]</strong>
 を探して編集します。</p>
-
 <p>データーベースは作成せず、パスワードもなしで動かします。（セキュリティー上はNG）</p>
-
 <pre><code>pi@tacos:~ $ sudo vi /etc/telegraf/telegraf.conf
 
 [agent]
@@ -212,63 +197,37 @@ database = &quot;telegraf&quot;
 retention_policy = &quot;&quot;
 write_consistency = &quot;any&quot;
 timeout = &quot;5s&quot;
-</code></pre>
-
-<p>設定を有効化するために、サービスを再起動します。</p>
-
+</code></pre><p>設定を有効化するために、サービスを再起動します。</p>
 <pre><code>pi@tacos:~ $ sudo systemctl restart telegraf.service
-</code></pre>
-
-<h2 id="grafanaでの設定">Grafanaでの設定</h2>
-
-<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Main" /></p>
-
+</code></pre><h2 id="grafanaでの設定">Grafanaでの設定</h2>
+<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Main"></p>
 <p>grafananの管理画面にログインします。</p>
-
 <p>データーベースの登録をします。上記の<code>Add data source</code>にて追加します。
 telegrafをスタートした時点から、データーの収集がされています。
 名前をつけて、画面の見えないですが、下の方にデーターベース名を入れる欄があります。</p>
-
-<p><img src="/images/2019-08-12-telegraf-datasource.png" alt="Telegraf Install" /></p>
-
+<p><img src="/images/2019-08-12-telegraf-datasource.png" alt="Telegraf Install"></p>
 <p>そして、ひとつひとつ自分で画面を構築することもできますが、
 テンプレートもたくさん登録されています。</p>
-
 <p>私はこちらのテーマを利用させてもらっています。</p>
-
 <p><a href="https://grafana.com/dashboards/5955">https://grafana.com/dashboards/5955</a></p>
-
 <p>左に並んでいるプラスのアイコンからインポートを選択します。</p>
-
 <p>ID番号に<strong>5955</strong>を入力すると、データーをダウンロードしてきます。データーベース等を指定して設定します。</p>
-
-<p><img src="/images/2019-08-12-telegraf-import-theme.png" alt="Telegraf Install" /></p>
-
+<p><img src="/images/2019-08-12-telegraf-import-theme.png" alt="Telegraf Install"></p>
 <p>ちょっと変更してますが、画面はこちらのようになります。</p>
-
-<p><img src="/images/2019-08-14-grafana-now.png" alt="Grafana 2ays" /></p>
-
-<hr />
-
+<p><img src="/images/2019-08-14-grafana-now.png" alt="Grafana 2ays"></p>
+<hr>
 <h2 id="おまけ">おまけ</h2>
-
 <h3 id="cpuの温度と周波数">CPUの温度と周波数</h3>
-
 <p>CPUの温度は<code>/sys/class/thermal/thermal_zone0/temp</code>にあります。
 周波数はスクリプトを作って収集時に実行させます。</p>
-
 <pre><code>#!/bin/bash
 # 
 # CPU Frequency: rpi-freq
 #
 
 echo &quot;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000 ))&quot;
-</code></pre>
-
-<p>スクリプトは、<code>/usr/local/bin/</code>に保存して、<code>chmod +x</code>で実行権を与えておきます。</p>
-
+</code></pre><p>スクリプトは、<code>/usr/local/bin/</code>に保存して、<code>chmod +x</code>で実行権を与えておきます。</p>
 <p>telegrafでの設定は、以下を追加します。</p>
-
 <pre><code>[[inputs.file]] 
   files = [&quot;/sys/class/thermal/thermal_zone0/temp&quot;]
   name_override = &quot;cpu_temperature&quot;
@@ -278,18 +237,8 @@ echo &quot;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000
 [[inputs.exec]]
   commands = [ &quot;/usr/local/bin/rpi-freq&quot; ]
   name_override = &quot;cpu_frequency &quot;
-</code></pre>
-
-<!--
-```
-#!/bin/bash
-
-awk '{print $1/1000}' /sys/class/thermal/thermal_zone0/temp
-```
-![Grafana Main](/images/2019-07-12-grafana-main.png)
-![Grafana Login](/images/2019-07-12-grafana-login.png)
-
--->
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

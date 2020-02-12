@@ -158,18 +158,12 @@
             <div class="post-content">
                 <p>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。
 ということで、Chromeから余計な機能を抜いたChromiumに変更しました。</p>
-
-<p><img src="/images/2013-07-27-chromium.png" alt="Chromium" /></p>
-
+<p><img src="/images/2013-07-27-chromium.png" alt="Chromium"></p>
 <p>ただし、Chromiumにはオートアップグレード機能（余計な機能の一つ）は付いていません。自分でビルドしてねというスタンス。定期的にXCodeでビルドして使うのはちょっと、、面倒ならChromeを使ってということなのでしょう。</p>
-
 <p>ちょっと調べてみたところ、最新版をビルドしまくっている<a href="https://chromium-build.appspot.com/p/chromium/console">サイト</a>があり、スクリプトを使って最新版に更新できることを<a href="http://hints.macworld.com/article.php?story=20090604081030791">MacWorld</a>で見つけました。（スクリプトは少し調整してます。）</p>
-
-<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br />
+<p>※ 普通にサイトよりダウンロードも出来ます。<a href="https://download-chromium.appspot.com/">こちら</a>から。ずいぶん控えめなところにダウンロードのリンクがあります。<br>
 　情報元:<a href="http://www.chromium.org/getting-involved/download-chromium">http://www.chromium.org/getting-involved/download-chromium</a></p>
-
 <p>ターミナルにてスクリプトを実行します。（スクリプト名はchromium_update.shにしています。）</p>
-
 <pre><code>gallo% sh ./chromium_update.sh
 Setup...
 Checking current version...
@@ -181,20 +175,14 @@ Downloading and unpacking...
 Installing...
 Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
 gallo% 
-</code></pre>
-
-<p>ローカルのアプリが最新であれば、</p>
-
+</code></pre><p>ローカルのアプリが最新であれば、</p>
 <pre><code>gallo% sh ./chromium_update.sh
 Setup...
 Checking current version...
  * your/latest build: 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f / 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f
  * build 8d391c3ad2f0846e9d1366c5d1de5f1b797d799f is the latest one.
 gallo% 
-</code></pre>
-
-<p>と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。</p>
-
+</code></pre><p>と、かなり手入らずです。スクリプトは以下。今のところ問題なく安定して動いてます。一日に数回アップデートされているようです。</p>
 <pre><code>#!/bin/sh
 # Get current build for Chromium on Mac.
 # 
@@ -272,7 +260,6 @@ echo &quot;Done. You're now running build $latestVersion&quot;;
 # ------------------------------------------------------------------------------
 
 </code></pre>
-
 				
 
 <h3>See Also</h3>

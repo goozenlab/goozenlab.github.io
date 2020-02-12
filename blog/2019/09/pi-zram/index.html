@@ -156,43 +156,31 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2019-09-12-zram-top-before.png" alt="ZRam" />
-<img src="/images/2019-09-12-zram-top-after.png" alt="ZRam" /></p>
-
+                <p><img src="/images/2019-09-12-zram-top-before.png" alt="ZRam">
+<img src="/images/2019-09-12-zram-top-after.png" alt="ZRam"></p>
 <p>パイ・３A＋(Ram512MB)で運用中のサーバー、ちょっとRamを効率的にできないかと調べていて、
 使用していないRamを圧縮して脇に退け、利用できる容量を確保する
 <strong>ZRam</strong>というのを見つけました。</p>
-
 <p>カーネルによって対応していないこともあるそうですのでチェックします。
 <code>/lib/modules/4.kernel.version/kernel/drivers/block/zram</code>
 があれば対応していることになります。
 古いOSでなければほぼ対応していると思います。</p>
-
 <pre><code>pi@raspberry:~ $ ls /lib/modules/4.19.58-v7+/kernel/drivers/block/
 aoe  cryptoloop.ko  drbd  nbd.ko  pktcdvd.ko  zram
-</code></pre>
-
-<p>作業はこちらの
+</code></pre><p>作業はこちらの
 <a href="https://github.com/novaspirit/rpi_zram/">https://github.com/novaspirit/rpi_zram/</a>
 を参考にさせてもらいました。ほぼ、コピペ。</p>
-
 <p>スクリプトも利用させていただきます。
 スクリプトは以下の作業を行います。</p>
-
 <ul>
 <li>CPUのコア数に合わせてZRAMを割り当てる,</li>
 <li>使用中のスワップを停止</li>
 <li>ZRAMスワップをスタート</li>
 </ul>
-
 <p>インストールは、スクリプトをダウンロードして実行権を与え、起動時に実行させる、作業になります。</p>
-
 <pre><code>pi@raspberry:~ $ sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/novaspirit/rpi_zram/master/zram.sh
 pi@raspberry:~ $ sudo chmod +x /usr/bin/zram.sh
-</code></pre>
-
-<p>起動時に実行させるには<code>/etc/rc.local</code>のファイルにスクリプトを追加します。</p>
-
+</code></pre><p>起動時に実行させるには<code>/etc/rc.local</code>のファイルにスクリプトを追加します。</p>
 <pre><code>pi@raspberry:~ $ sudo vi /etc/rc.local
 
 # exit 0より前に追加する
@@ -201,27 +189,19 @@ pi@raspberry:~ $ sudo chmod +x /usr/bin/zram.sh
 exit 0
 
 pi@raspberry:~ $ sudo reboot
-</code></pre>
-
-<p>再起動して、動作しているか確認します。文頭の画像は使用前後の<code>Top</code>のスクリーンショットです。</p>
-
+</code></pre><p>再起動して、動作しているか確認します。文頭の画像は使用前後の<code>Top</code>のスクリーンショットです。</p>
 <pre><code>pi@raspberry:~ $ swapon -s
 Filename        Type        Size    Used    Priority
 /dev/zram0      partition   122472  47072   5
 /dev/zram1      partition   122472  48984   5
 /dev/zram2      partition   122472  46344   5
 /dev/zram3      partition   122472  46016   5
-</code></pre>
-
-<p><img src="/images/2019-09-12-zram-swap.png" alt="ZRam" /></p>
-
+</code></pre><p><img src="/images/2019-09-12-zram-swap.png" alt="ZRam"></p>
 <p>無事に動いているようです。そしてスワップの容量は少しだけ減ってます。
 ただし、全体的なパフォーマンスにおいては、、
 若干改善されたかな、気のせいの範囲を超えないくらい、と、微妙です。</p>
-
 <p>Ramがあと少しだけ欲しくて、CPUに少し余裕のあるような状況では効果が出るようですよ。</p>
-
-<!-- top m t m z -->
+<!-- raw HTML omitted -->
 
 				
 

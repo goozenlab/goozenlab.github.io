@@ -156,32 +156,21 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。
+                <p>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。
 割とあっさり見つかり、割と簡単。。</p>
-
 <h2 id="インストール">インストール</h2>
-
 <p>さて、インストールはbrewで一発。</p>
-
 <pre><code>guiness:~ jin$ brew install youtube-dl
-</code></pre>
-
-<h2 id="使い方">使い方</h2>
-
+</code></pre><h2 id="使い方">使い方</h2>
 <p>使い方はシンプル。動画のリンクをコピペで行けます。</p>
-
 <p>インストールをするにあたって
 まずはダウンロードのフォーマットを決めます。
 コマンドは
 <code>youtube-dl -F &lt;&lt;ADDRESS&gt;&gt;</code>
 でダウンドード可能な様々なサイズ・フォーマットが表示されます。</p>
-
 <p>一番最後に(best)とついているものが画質がベストということです。
 サイズ表記もあるので、小さいファイルの選択もできます。
 <code>video only</code>もあるので要注意。</p>
-
 <pre><code>guiness:~ jin$ youtube-dl -F https://www.youtube.com/watch?v=iwOLsVmxdO8
 [youtube] iwOLsVmxdO8: Downloading webpage
 [youtube] iwOLsVmxdO8: Downloading video info webpage
@@ -207,16 +196,11 @@ format code  extension  resolution note
 18           mp4        640x360    360p  577k , avc1.42001E, mp4a.40.2@ 96k (44100Hz), 2.05GiB
 22           mp4        1280x720   720p 1171k , avc1.64001F, mp4a.40.2@192k (44100Hz) (best)
 guiness:~ jin$ 
-</code></pre>
-
-<p>ファイルのダウンロードフォルダに移動して、フォーマットを選択しダウンロードをします。</p>
-
+</code></pre><p>ファイルのダウンロードフォルダに移動して、フォーマットを選択しダウンロードをします。</p>
 <p>ダウンロードは
 <code>youtube-dl -f #FORMAT &lt;&lt;ADDRESS&gt;&gt;</code>
 オプションは小文字の<strong>f</strong>です。FORMATはリストの一番最初にある数字を入れます。</p>
-
 <p>その他のオプションは<code>youtube-dl --help</code>にて見ることができます。</p>
-
 <pre><code>guiness:~ jin$ cd Downloads/
 guiness:Downloads jin$ youtube-dl -f 22  https://www.youtube.com/watch?v=iwOLsVmxdO8
 [youtube] iwOLsVmxdO8: Downloading webpage
@@ -224,10 +208,7 @@ guiness:Downloads jin$ youtube-dl -f 22  https://www.youtube.com/watch?v=iwOLsVm
 [download] Destination: 【東日本大震災】11th March  '11. 14;46 - 22;54, 8h28min (East Japan Great Earthquake)-iwOLsVmxdO8.mp4
 [download] 100% of 4.16GiB in 12:09
 guiness:Downloads jin$
-</code></pre>
-
-<p>当時日本には居なかったのでちょっと心が落ち着いたら見てみたいと思います。。</p>
-
+</code></pre><p>当時日本には居なかったのでちょっと心が落ち着いたら見てみたいと思います。。</p>
 <p>明日からタイだでよ。</p>
 
 				

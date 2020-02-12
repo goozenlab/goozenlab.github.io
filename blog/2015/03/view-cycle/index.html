@@ -156,56 +156,37 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
-
+                <p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
 <h2 id="起動時">起動時</h2>
-
 <p>アプリの起動時には以下の順で呼ばれる。</p>
-
 <ol>
 <li>viewDidLoad()</li>
 <li>viewWillAppear</li>
 <li>viewDidAppear　※すべての画像の処理が終わった後に呼ばれる。あまり使っていない。</li>
 </ol>
-
 <h2 id="モーダルビューより復帰">モーダルビューより復帰</h2>
-
 <p>モーダルビューより戻ってくると以下の処理が再び呼ばれる。</p>
-
-<ol>
+<ol start="2">
 <li>viewWillAppear</li>
 <li>viewDidAppear</li>
 </ol>
-
-<h2 id="ロック-スリープからの復帰時">ロック・スリープからの復帰時</h2>
-
+<h2 id="ロックスリープからの復帰時">ロック・スリープからの復帰時</h2>
 <p>ロック・スリープからの復帰は処理が行われない（厳密には、AppDelegate内では呼ばれる）ので、アプリの戻ってきた時の処理を追加する。
 viewDidLoadに通知の設定する事で可能になる。<code>Setting.bundle</code>でフォントの設定等を変更し、アプリに戻ってきた時に使う。</p>
-
 <pre><code>// Notification Center
 let app: UIApplication = UIApplication.sharedApplication()
 NSNotificationCenter.defaultCenter().addObserver(self, 
         selector: &quot;applicationWillEnterForeground:&quot;, name: UIApplicationWillEnterForegroundNotification, 
         object: app)
-</code></pre>
-
-<p>と処理を追加する。</p>
-
+</code></pre><p>と処理を追加する。</p>
 <pre><code>func applicationWillEnterForeground(notification: NSNotification) {
     println(__FUNCTION__)
     
 }
-</code></pre>
-
-<h2 id="スリープに移行時">スリープに移行時</h2>
-
+</code></pre><h2 id="スリープに移行時">スリープに移行時</h2>
 <p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。</p>
-
 <pre><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &quot;applicationDidEnterBackground:&quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 </code></pre>
-
 				
 
 <h3>See Also</h3>

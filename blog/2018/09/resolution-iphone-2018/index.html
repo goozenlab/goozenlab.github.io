@@ -156,19 +156,15 @@
             </div>
 
             <div class="post-content">
-                <p>さて、新しい端末が出ましたね。開発者大忙し？？<br />
+                <p>さて、新しい端末が出ましたね。開発者大忙し？？<br>
 拙作のアプリでは、端末の横幅でそれに合わせた背景画像を使っていたり、セルの高さを表示画面のサイズに合わせて決めてたりしてます。それに合わせての新しい画像を追加しなければいけないので、どういった扱いになるか調べました。</p>
-
 <p>新しいXシリーズのサイズと解像度は細かいですねぇ。</p>
-
 <ul>
 <li>iPhoneXs Maxは6.5型：1,242px × 2,688px</li>
 <li>iPhoneXsは5.8型：1,125px × 2,436px</li>
 <li>iPhoneXRが6.1型：828px × 1,792px</li>
 </ul>
-
 <p>になっており、一見バラバラのように見えますが、スケールファクターを見てみると、そんなにバラバラな感じではなかった。</p>
-
 <table>
 <thead>
 <tr>
@@ -177,44 +173,37 @@
 <th>Scale Factor</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>*iPhone XS Max　　</td>
 <td>　　1242px × 2688px　　</td>
 <td>　　414x896 @3x</td>
 </tr>
-
 <tr>
 <td>*iPhone XR　　</td>
 <td>　　828px × 1792px　　</td>
 <td>　　414x896 @2x</td>
 </tr>
-
 <tr>
 <td>iPhone 8 Plus　　</td>
 <td>　　1242px × 2208px　　</td>
 <td>　　414x736 @3x</td>
 </tr>
-
 <tr>
 <td>*iPhone XS　　</td>
 <td>　　1125px × 2436px　　</td>
 <td>　　375x812 @3x</td>
 </tr>
-
 <tr>
 <td>iPhone X　　</td>
 <td>　　1125px × 2436px　　</td>
 <td>　　375x812 @3x</td>
 </tr>
-
 <tr>
 <td>iPhone 8　　</td>
 <td>　　750px × 1334px　　</td>
 <td>　　375x667 @2x</td>
 </tr>
-
 <tr>
 <td>iPhone SE　　</td>
 <td>　　640px × 1136px　　</td>
@@ -222,20 +211,14 @@
 </tr>
 </tbody>
 </table>
-
 <p>解像度が違うのですが、Xs MaxとXRは同じベースになります。
 表示域は同じになるので、XRが少し凝縮されて表示されることになるのかな。
 そして、横幅だけを見ると、iPhone 8 Plusと同じ。</p>
-
 <p>我が開発端末のMBP15は、かろうじてiPhone 8に辛勝。。</p>
-
-<p><img src="/images/2018-09-18-display.png" alt="MBP15" /></p>
-
+<p><img src="/images/2018-09-18-display.png" alt="MBP15"></p>
 <p>ということで、アプリでは、新たに、414x896@2xと375x812@3xの画像を作り直す必要が出ました。
 （画像も、サイズに依存しないタイプで作っておけば、iPhone 8 Plusの画像を使いまわせて、修正はいらなかったってことか。。）</p>
-
 <p>で、、、</p>
-
 <p>ぎゃーー。オリジナルファイルはどこに行っちまった？？</p>
 
 				

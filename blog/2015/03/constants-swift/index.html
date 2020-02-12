@@ -158,11 +158,8 @@
             <div class="post-content">
                 <p>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。
 ネットでの情報も増えつつはあるように思えるが、まだまだな感じ。。</p>
-
 <p>分からないことが多々あるが、進めていかないと、、</p>
-
 <p>さて、これが正しい方法なのかは分からないけれども（一抹の不安があるが。。）、コンスタンツの扱いをSwiftにて行うには以下のようにしてます。</p>
-
 <pre><code>//
 //  LocalConstants.swift
 //
@@ -180,18 +177,11 @@ struct Default {
     static let ColorMode = &quot;kawaii&quot;
 }
 
-</code></pre>
-
-<p>で、他からのアクセスは</p>
-
+</code></pre><p>で、他からのアクセスは</p>
 <pre><code>defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
-</code></pre>
-
-<p>のようにしています。</p>
-
+</code></pre><p>のようにしています。</p>
 <p>※ Swiftでのenumが掴めない。意味が分からない。</p>
-
-<p>追記 (<sup>3</sup>&frasl;<sub>22</sub>)：<code>import UIKit</code>を追加する。</p>
+<p>追記 (3/22)：<code>import UIKit</code>を追加する。</p>
 
 				
 

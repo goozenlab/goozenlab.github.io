@@ -156,65 +156,43 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-07-27-openzfs-mac-00.png" alt="2019 07 27 openzfs Mac 00" /></p>
-
+                <p><img src="/images/2019-07-27-openzfs-mac-00.png" alt="2019 07 27 openzfs Mac 00"></p>
 <p>これから端末をトリプル・ブート化するにあたって、
 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは
 あまり多くはなく、昔ながらのFATがファーストチョイスになるのですが、
 ちょっとつまらない。</p>
-
 <p>以前より気になっていたファイルシステム、機能も豊富で安定性も抜群？、
 かつmacOS、Windows、Linuxで共有でき、
 やる気になればmacOSやLinuxのルートも置けるOpenZFSを導入することにしました。</p>
-
 <blockquote>
 <p>ZFSは、主にオラクルのOracle Solaris上で実装されている128ビット・アドレッシングを特徴とするファイルシステム。今まで Solaris (SunOS) で用いられてきた Unix File System (UFS) の次世代ファイルシステムと位置づけられている。 <a href="https://ja.wikipedia.org/wiki/ZFS">https://ja.wikipedia.org/wiki/ZFS</a></p>
 </blockquote>
-
 <p>2005年11月にオープンソース化され、各プラットフォームに移植されています。
 個人利用では敷居が高く宝の持ち腐れな感がありますが、マックで試してみました。</p>
-
 <p>ダウンロード先は以下から、</p>
-
 <ul>
 <li>macOS: <a href="https://openzfsonosx.org">https://openzfsonosx.org</a></li>
 <li>windows: <a href="https://openzfsonwindows.org">https://openzfsonwindows.org</a></li>
 <li>linux: <a href="https://zfsonlinux.org">https://zfsonlinux.org</a></li>
 </ul>
-
-<p><img src="/images/2019-07-27-openzfs-linux-00.png" alt="2019 07 27 openzfs Linux 00" /></p>
-
-<hr />
-
+<p><img src="/images/2019-07-27-openzfs-linux-00.png" alt="2019 07 27 openzfs Linux 00"></p>
+<hr>
 <p>まずは、使うパーティションもしくはディスクのフォーマットをします。
 マックの<code>diskutil</code>を使います。<code>Disk Utility</code>アプリで仕様するディスク・パーティション番号を確認しておきます。
 <strong>diskutil eraseVolume ZFS VOLUME_NAME DISK#PARTION#</strong>
 エラーが出ますが、問題はないようです。</p>
-
 <pre><code>jin$ sudo diskutil eraseVolume ZFS ZDATA01 /dev/disk0s7
-</code></pre>
-
-<p>そして論理ディスク：プールを<code>zpool create</code>で作ります。
+</code></pre><p>そして論理ディスク：プールを<code>zpool create</code>で作ります。
 sudo zpool create <strong>-f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD</strong>  POOL_NAME (mirror, raidz) DISK#PARTION#
 と、Macの環境ではオプションがたくさんつきますが、入れないとエラー地獄に陥ります（私）。</p>
-
-<p>取り敢えず、シングルドライブで運用してみることにしました。ミラーリングだったりRAIDだったりももちろんつくれます。SSDを使う場合は<strong>ashift=13</strong>が良いようです。圧縮機能を追加したい時は<strong>-O compression=lz4</strong>をオプションに追加します。</p>
-
-<p>参照：<a href="https://openzfsonosx.org/wiki/Zpool">https://openzfsonosx.org/wiki/Zpool</a></p>
-
+<p>取り敢えず、シングルドライブで運用してみることにしました。ミラーリングだったりRAIDだったりももちろんつくれます。SSDを使う場合は<strong>ashift=13</strong>が良いようです。圧縮機能を追加したい時は**-O compression=lz4**をオプションに追加します。</p>
+<p>参照：https://openzfsonosx.org/wiki/Zpool</p>
 <pre><code>jin$ sudo zpool create -f -o ashift=12 -O casesensitivity=insensitive -O normalization=formD ZData60 disk0s7
 jin$ sudo chmod 777 /Volumes/ZData60/
-</code></pre>
-
-<p>書き込み時にパーミションの問題が起こるので、個人仕様なので<code>chmod 777</code>で全てのユーザーからアクセス可能にします。
+</code></pre><p>書き込み時にパーミションの問題が起こるので、個人仕様なので<code>chmod 777</code>で全てのユーザーからアクセス可能にします。
 自動的に<code>/Volumes/</code>以下にマウントされます。</p>
-
-<p><img src="/images/2019-07-27-openzfs-initial-setup-01.png" alt="2019 07 27 openzfs Initial Setup 01" /></p>
-
+<p><img src="/images/2019-07-27-openzfs-initial-setup-01.png" alt="2019 07 27 openzfs Initial Setup 01"></p>
 <p><code>zpool status</code>で状況を確認することができます。</p>
-
 <pre><code>jin$ zpool status
   pool: ZData60
  state: ONLINE
@@ -227,49 +205,30 @@ config:
 
 errors: No known data errors
 jin$ 
-</code></pre>
-
-<p>次に<code>Archive</code>と<code>Backup</code>のファイルシステムを作ります。
+</code></pre><p>次に<code>Archive</code>と<code>Backup</code>のファイルシステムを作ります。
 ZData60の内部にフォルダーが作成されますが、
 こちらは自動的に外付けディスクとしてマウントされます。</p>
-
 <pre><code>jin$ sudo zfs create ZData60/Archive
 jin$ sudo zfs create ZData60/Backup
-</code></pre>
-
-<p><img src="/images/2019-07-27-openzfs-initial-setup-02.png" alt="2019 07 27 openzfs Initial Setup 02" /></p>
-
-<p><img src="/images/2019-07-27-openzfs-initial-setup-04.png" alt="2019 07 27 openzfs Initial Setup 04" /></p>
-
+</code></pre><p><img src="/images/2019-07-27-openzfs-initial-setup-02.png" alt="2019 07 27 openzfs Initial Setup 02"></p>
+<p><img src="/images/2019-07-27-openzfs-initial-setup-04.png" alt="2019 07 27 openzfs Initial Setup 04"></p>
 <p>コピーなど少し時間がかかるように思えました。大きいファイルのコピーは途中で小休止します。
 4.3GBを移動で７分ぐらいかかりました。</p>
-
 <p>他OSとの互換性は未検証です。多分問題はないと思いますが、後々リポートします。</p>
-
 <p>お次は、32GBの小さいパーティションを切って、USBメモリースティックとミラリーングを作ろうと思ってます。複数端末間のファイル共有（３~4点ミラーリング）にする予定です。都度追加できるのもZFSの素晴らしいところです。
 （Mac1 &lt;-&gt; USBメモリー &lt;-&gt; Mac2 -&gt; Win2）</p>
-
 <h3 id="おまけ">おまけ</h3>
-
 <pre><code>$ sudo zfs set compression=lz4 $poolname
-</code></pre>
-
-<p>圧縮化は途中で追加できますが、追加した時より新しいファイルのみに適用されます。
+</code></pre><p>圧縮化は途中で追加できますが、追加した時より新しいファイルのみに適用されます。
 必要があれば前もってプールを作成する時に指定するのが良いです。</p>
-
 <p>スクリーンショットに影が、、Mojaveに移行中で設定を変更するのを忘れてました。。</p>
-
 <pre><code>$ defaults write com.apple.screencapture disable-shadow -bool TRUE
 $ killall SystemUIServer
-</code></pre>
-
-<h4 id="追記-8-1-2019">追記＠ <sup>8</sup>&frasl;<sub>1</sub>, 2019</h4>
-
+</code></pre><h4 id="追記-81-2019">追記＠ 8/1, 2019</h4>
 <p>ちょっと不安定になり、久しぶりに　<strong>カーネルパニック</strong>が出ました。（El Capitan + Mail)
 バッテリーの減りがすごく悪くなりました。そして、スポットライトを使ってフリーズが数回。
 で、！！、インデックスの再構築を行ってちょっと落ち着きました。
 多分、スポットライトのファイルにディスクエラーが出ていたので、悪さをしてたかも、、</p>
-
 <p>もう一つ、Hugoというサイトジェネレーターを使っているとたまに、ファイルが読み込めないとエラーが出ます。
 開いてみると問題なし、そして何事なかったのごとくエラーが消えます。一つだけ読み込みも出来ないファイルがありました。サイトのリビルドのスピードが遅くなりました。小さいファイルのやり取りが得意ではないのかな。ちょと怖いな。。</p>
 

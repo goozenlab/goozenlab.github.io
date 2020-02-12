@@ -157,36 +157,21 @@
 
             <div class="post-content">
                 <p>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。</p>
-
 <p>まずは全体的な設定を、info.plistにて <code>View Controller-based status bar appearance</code> を追加。(ここのところがいつも「どれだったっけ？」とわからなくなる。）</p>
-
-<p><img src="/images/2016-08-26-statusbar-info.png" alt="StatusBar on Info.plist" /></p>
-
+<p><img src="/images/2016-08-26-statusbar-info.png" alt="StatusBar on Info.plist"></p>
 <p>info.plistに直接書き込むなら、以下を追加。</p>
-
 <pre><code>&lt;key&gt;UIViewControllerBasedStatusBarAppearance&lt;/key&gt;
     &lt;false/&gt;
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <p>そして、変更したいビューの適当なところ、<code>ViewDidLoad</code> に追加コード。</p>
-
 <pre><code>UIApplication.sharedApplication().statusBarHidden = true
-</code></pre>
-
-<p>もしくは、オーバーライドしても動くはず。</p>
-
+</code></pre><p>もしくは、オーバーライドしても動くはず。</p>
 <pre><code>override func prefersStatusBarHidden() -&gt; Bool {
     return true
 }
-</code></pre>
-
-<p>そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを <code>.LightContent</code> に変更する。</p>
-
+</code></pre><p>そして、ステータスバーの文字色、黒文字を白文字に変えるには、statusBarStyleStyleを <code>.LightContent</code> に変更する。</p>
 <pre><code>UIApplication.sharedApplication().statusBarStyle = .LightContent
 </code></pre>
-
 				
 
 <h3>See Also</h3>

@@ -156,23 +156,14 @@
             </div>
 
             <div class="post-content">
-                
-
-<h2 id="rand">rand()</h2>
-
+                <h2 id="rand">rand()</h2>
 <p>今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。</p>
-
 <pre><code> srand(time(nil));
  rand()%300;
-</code></pre>
-
-<h2 id="arc4random-uniform">arc4random_uniform()</h2>
-
+</code></pre><h2 id="arc4random_uniform">arc4random_uniform()</h2>
 <p>上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下の形に落ち着く。</p>
-
 <pre><code> Int(arc4random_uniform(300))
 </code></pre>
-
 				
 
 <h3>See Also</h3>

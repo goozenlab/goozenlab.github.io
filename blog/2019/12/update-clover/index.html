@@ -156,64 +156,36 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-12-13-clover-configrator.png" alt="Clover Configurator" /></p>
-
+                <p><img src="/images/2019-12-13-clover-configrator.png" alt="Clover Configurator"></p>
 <p>ハッキントッシュ用ブートローダーのクローバー。
 怖くてあまりいじりたくないのだけれども、
 あまり放っておくのも怖いので、
 ブートローダーとカーネルエクステンションをアップデートしました。</p>
-
 <p>作業はClover Configuratorというツールを使います。
 左のリストのInstall/Update Cloverをクリック。4895から5100へと割と大きくアップデートになる。</p>
-
-<p><img src="/images/2019-12-13-clover-update.png" alt="Clover Updatre" /></p>
-
+<p><img src="/images/2019-12-13-clover-update.png" alt="Clover Updatre"></p>
 <p>Updateボタンをポチッとなと新しいファイルを落として、インストール作業をして再起動します。</p>
-
 <h2 id="カーネルエクステンション">カーネルエクステンション</h2>
-
 <p>そして、いまひとつ何をしているかが理解できないでいるカーネルエクステンションを更新します。
 アップデートされたカーネルエクステンションは色付けされるので、選択してダウンロードします。</p>
-
-<p><img src="/images/2019-12-13-kext-update.png" alt="kext update on Clover" /></p>
-
+<p><img src="/images/2019-12-13-kext-update.png" alt="kext update on Clover"></p>
 <p>そして不具合を起こすエクステンションがあるので整理をしました。</p>
-
 <p>まずは機能が同じであった、FakeSMCとVirtualSMCの両方がインストールされていたのでFakeSMCを外しました。
 両エクステンションとも役割が同じだそうですが、VirtualSMCの方が</p>
-
 <ul>
 <li>a cleaner codebase: less bugs</li>
 <li>modular API design: more plugins for it can be written easily (mostly sensors)</li>
 <li>try to emulate as close to a genuine Mac as possible.</li>
 </ul>
-
 <p>ということらしい。。。ちと訳すの面倒なのでそのまま。。</p>
-
 <p>次にバッテリーマネージャー関連では
 ACPIBatteryManagerとSMCBatteryManagerがインストールされていて衝突しているよう。
 起動の途中で止まってしまうので、一方をbackupに移動しておきます。ちょっと様子見。</p>
-
-<div class=hint>
-不具合が起こることを考えて、
-ブートパーティションのファイルをいじることができるので、
-Linuxを別のパーティションにインストールしておくと便利です。
-</div>
-
-<p><img src="/images/2019-12-13-kext-list.png" alt="kext list" /></p>
-
+<!-- raw HTML omitted -->
+<p><img src="/images/2019-12-13-kext-list.png" alt="kext list"></p>
 <p>ファルダーの中身はこんな感じになってます。</p>
-
 <p>で、今の所とりあえず問題なく動いてます。（安堵）</p>
-
-<div class=note>
-<b>追記(12/15)：</b>
-ACPIBatteryManagerを抜いてSMCBatteryManageに切り替えたところ安定しました。
-パッチが当てられなかったのも問題なくできましたし、スリープ中に落ちることも今の所ありません。
-BTの接続も安定しとります。ただ、期待したバッテリーの駆動時間は変わりなしネットなしで１時間で１５％消費。
-</div>
+<!-- raw HTML omitted -->
 
 				
 

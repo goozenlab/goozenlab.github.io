@@ -154,14 +154,9 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>移行のためHugoを<code>nofancy</code>を基にして色々と調整しています。</p>
-
+                <p>移行のためHugoを<code>nofancy</code>を基にして色々と調整しています。</p>
 <h2 id="テンプレート">テンプレート</h2>
-
 <p>このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。</p>
-
 <pre><code>---
 layout: app_page
 title: &quot;(a)のちょっと詳しい使い方&quot;
@@ -174,24 +169,16 @@ footer: true
 
 # アプリページのオクトプレスより移行のyaml
 
-</code></pre>
-
-<p><code>layout: app_page</code> がある事で <code>layout/_default/app_page.html</code> を探しにいき、もしくはコンテンツファイルを別のフォルダー<code>iapp</code>に入れておくと、<code>layout: app_page</code>が無くても<code>layout/iapp/single.html</code>があれば優先して使われるよう。</p>
-
-<p><img src="/images/2015-03-07_hugo-template.png" alt="Hugo Template" />
-<img src="/images/2015-03-07_hugo-template2.png" alt="Hugo Template" /></p>
-
+</code></pre><p><code>layout: app_page</code> がある事で <code>layout/_default/app_page.html</code> を探しにいき、もしくはコンテンツファイルを別のフォルダー<code>iapp</code>に入れておくと、<code>layout: app_page</code>が無くても<code>layout/iapp/single.html</code>があれば優先して使われるよう。</p>
+<p><img src="/images/2015-03-07_hugo-template.png" alt="Hugo Template">
+<img src="/images/2015-03-07_hugo-template2.png" alt="Hugo Template"></p>
 <h2 id="yaml内のカスタム項目を取り込む">Yaml内のカスタム項目を取り込む</h2>
-
 <p>yaml内にあるスマートバナー広告で使う<code>appid: &quot;929324285&quot;</code>は
 以下のようにして <code>partials/header.html</code> に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、<code>.Params</code>を使うのが正解のようです。</p>
-
 <pre><code>{{ if .Params.appid }}
   &lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id={{ .Params.appid }}&quot;&gt;
 {{ end }}
-</code></pre>
-
-<p>しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</p>
+</code></pre><p>しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</p>
 
 				
 

@@ -156,9 +156,7 @@
             </div>
 
             <div class="post-content">
-                
-
-<pre><code>root@iska:~$ docker -v
+                <pre><code>root@iska:~$ docker -v
 Docker version 18.06.3-ce, build d7080c1
 root@iska:~$ docker ps -a
 CONTAINER ID     IMAGE               COMMAND      CREATED        STATUS       NAMES
@@ -166,10 +164,7 @@ CONTAINER ID     IMAGE               COMMAND      CREATED        STATUS       NA
 eb83f6879feb     portainer/portainer &quot;/portainer&quot; 20 hours ago   Exited (2)    heuristic_lalande
 9aa94e1c81af     hello-world         &quot;/hello&quot;     21 hours ago   Exited (0)    awesome_mirzakhani
 root@iska:~$
-</code></pre>
-
-<p>で、あっちに行って、こっちに行ってと、エラーに続くエラー、無駄もいろいろあったかもしれないけれど、よーーーーーやく、動きました。</p>
-
+</code></pre><p>で、あっちに行って、こっちに行ってと、エラーに続くエラー、無駄もいろいろあったかもしれないけれど、よーーーーーやく、動きました。</p>
 <pre><code>Job for docker.service failed because a fatal signal was delivered causing the control process to dump core.
 See &quot;systemctl status docker.service&quot; and &quot;journalctl -xe&quot; for details.
 invoke-rc.d: initscript docker, action &quot;start&quot; failed.
@@ -185,28 +180,17 @@ invoke-rc.d: initscript docker, action &quot;start&quot; failed.
 Mar 02 11:48:14 pi systemd[1]: Starting Docker Application Container Engine...
 dpkg: error processing package docker-ce (--configure):
  subprocess installed post-installation script returned error exit status 1
-</code></pre>
-
-<p>Dockerのインストール方法は本家のサイトで詳しく説明されています。
+</code></pre><p>Dockerのインストール方法は本家のサイトで詳しく説明されています。
 <a href="https://docs.docker.com/install/linux/docker-ce/debian/">Get Docker CE for Debian</a></p>
-
 <p>ラズベリーパイにおいては、今のところはスクリプトを使ってインストールする方法を薦めています。</p>
-
 <p>For Raspbian, installing using the repository is not yet supported. You must instead use the <a href="https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-convenience-script">convenience script</a>.</p>
-
-<hr />
-
+<hr>
 <p>私はお試しdeb.Buster.arm64を使っていますが、多分、今のラズビアンでも動くと思います。Busterも不安定というわけなく動いているので、もう後戻りはしません。
 とりあえず検証も含め、インドに行って戻ってくる6月半ばまでは、このまま行ってみようと思います。</p>
-
 <p>もしかしたら、スクリプトのインストールであれば一発で動いているのかもしれませんが、その後のメンテナンスを考えたら、aptからはなかなか出られんしね。（ちなみにArch.arm64でもpacman経由のドッカーはエラーの内容は違ったけれど、動作しませんでした。）</p>
-
 <h2 id="docker-ce-for-debian">Docker CE for Debian</h2>
-
 <p>ドッカーの公式サイトではラズベリアンの人たちは、スクリプトを利用してねと書いておりますが、まぁい〜だろうと、強引に普通のインストール方法で行う。（そもそも、この辺から良くなかったのかも。。）</p>
-
 <p>サイトにも載っていますが、作業の工程は以下です。</p>
-
 <pre><code>$ apt install apt-transport-https \
 &gt; ca-certificates \
 &gt; curl \
@@ -216,12 +200,8 @@ $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 $ sudo apt-key fingerprint 0EBFCD88
 
 $ sudo add-apt-repository &quot;deb [arch=arm64] https://download.docker.com/linux/debian buster stable&quot;
-</code></pre>
-
-<h3 id="to-install-a-specific-version-of-docker-ce">To install a specific version of Docker CE</h3>
-
+</code></pre><h3 id="to-install-a-specific-version-of-docker-ce">To install a specific version of Docker CE</h3>
 <p>特定のバージョンをインストールする方法。こういった情報が、公式サイトに載っているということは、向こうさんも<strong>いろいろ</strong>と御存知ということなのかもしれん、、とかって思ったりする。まぁ、でも確り、busterのarm64パッケージもビルドしてくれるのはありがたいことです。</p>
-
 <pre><code>$ sudo apt-get update
 $ sudo apt-cache showpkg docker-engine
  or
@@ -240,43 +220,24 @@ $ apt-cache madison docker-ce-cli
  docker-ce-cli | 5:18.09.2~3-0~debian-buster | https://download.docker.com/linux/debian buster/stable arm64 Packages
  docker-ce-cli | 5:18.09.1~3-0~debian-buster | https://download.docker.com/linux/debian buster/stable arm64 Packages
  docker-ce-cli | 5:18.09.0~3-0~debian-buster | https://download.docker.com/linux/debian buster/stable arm64 Packages
-</code></pre>
-
-<p><code>sudo apt-get install docker-ce=&lt;VERSION_STRING&gt; docker-ce-cli=&lt;VERSION_STRING&gt;</code></p>
-
+</code></pre><p><code>sudo apt-get install docker-ce=&lt;VERSION_STRING&gt; docker-ce-cli=&lt;VERSION_STRING&gt;</code></p>
 <p>こお数日試した中で、唯一ドッカーがすっきり動いたのはDietPiです（かなり優秀なディストリビューションです。）。そのDietPiでは最新のバージョンではなくて、18.06.Xを動かしていたような気がしたので、それに習い18.06系をインストールする。ネット上でも18.09.1はエラーがあって、次からのバージョンではパッチが当たると読んだような気がする、、。
 いずれにせよ、ここまでの経過を見ると、一番新しいものは少しリスクがあるように思える。</p>
-
 <p>と言うことで、一つ前のバージョンをインストールします。</p>
-
 <pre><code>$ sudo apt-get install docker-ce=18.06.3~ce~3-0~debian containerd.io
-</code></pre>
-
-<p>そして、<code>apt upgrade</code>時にパッケージをアップグレードされてしまうと元も子もないので、アップグレードから除外します。</p>
-
+</code></pre><p>そして、<code>apt upgrade</code>時にパッケージをアップグレードされてしまうと元も子もないので、アップグレードから除外します。</p>
 <pre><code> $ echo docker-ce hold | sudo dpkg --set-selections
-</code></pre>
-
-<p>晴れて、問題もなくなり、解除する時は。</p>
-
+</code></pre><p>晴れて、問題もなくなり、解除する時は。</p>
 <pre><code> $ echo docker-ce install | sudo dpkg --set-selections
-</code></pre>
-
-<p>にて行います。（追記：3/19）</p>
-
+</code></pre><p>にて行います。（追記：3/19）</p>
 <p>で、アプリを立ち上げます、、、粘り勝ち。。新しいバージョンは6月なかばにタイに戻ったら、別のマイクロSDで検証用環境を作ってインストールしてみます。</p>
-
-<p><img src="/images/2019-03-16-docker-run-finally.png" alt="2019 03 16 Docker Run Finally" /></p>
-
+<p><img src="/images/2019-03-16-docker-run-finally.png" alt="2019 03 16 Docker Run Finally"></p>
 <p>文章にしたらあっさりと短いですが、、、はぁ〜よかった。。
 これで、</p>
-
-<p>「これも、ドッカーで、いこか。」<br />
+<p>「これも、ドッカーで、いこか。」<br>
 「あれも、まぁ〜、ドッカーにしとって。」</p>
-
 <p>と、もうなんでも、CPUが焼き焦げるまで、ドッカーしちゃるわ、ほんとに。</p>
-
-<p>追記：<br />
+<p>追記：<br>
 RPi0はArm6とArm7のどっちつかずのちょっと中途半端な輩の様です。下位互換があれども不具合があるようです。
 DietPiで動かなかったらかなり厳しいと思います。AカップもしくはBカップのパイにするのが良いです。</p>
 

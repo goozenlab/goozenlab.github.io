@@ -157,7 +157,6 @@
 
             <div class="post-content">
                 <p>UIButttonをSwiftでプログラム的に書くと</p>
-
 <pre><code>buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
 buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
 buttonMoodExecelent.tag = TagButtonMood.Execelent
@@ -165,22 +164,12 @@ buttonMoodExecelent.addTarget(self, action: &quot;selectedMood:&quot;, forContro
 buttonMoodExecelent.setBackgroundImage(UIImage(named: &quot;MoodExecelent&quot;), forState: UIControlState.Normal)
 
 self.vew.addSubview(buttonMoodExecelent)
-</code></pre>
-
-<p>テキストタイトルの時には</p>
-
+</code></pre><p>テキストタイトルの時には</p>
 <pre><code>buttonCancel.setTitle(&quot;cancel&quot;, forState: UIControlState.Normal)
-</code></pre>
-
-<p>テキストの色を変えるには、</p>
-
+</code></pre><p>テキストの色を変えるには、</p>
 <pre><code>buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
-</code></pre>
-
-<p>もっと細かく、フォント等も弄りたい時には、</p>
-
+</code></pre><p>もっと細かく、フォント等も弄りたい時には、</p>
 <p><code>setAttributedTitle:forState</code>を使うとさ。</p>
-
 <p>※ ソースは拙作のohayoからコピペ。</p>
 
 				

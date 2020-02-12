@@ -151,69 +151,35 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>OpenZFSの使い方。</p>
-
+                <p>OpenZFSの使い方。</p>
 <h2 id="format">Format</h2>
-
-<p>VolumeName: ZFS. ディスク・パーティション番号<strong>！要注意！</strong></p>
-
+<p>VolumeName: ZFS. ディスク・パーティション番号**！要注意！**</p>
 <pre><code>$ sudo diskutil partitiondisk /dev/disk1 GPTFormat ZFS %noformat% 100%
 $ sudo diskutil eraseVolume ZFS ZDATA01 /dev/disk0s7
-</code></pre>
-
-<h2 id="poolの作成">Poolの作成</h2>
-
-<p>Macで使用時にはオプションが必要。mirrorとraidz。 <code>compression=lz4</code> コンプレション・オン。<br />
+</code></pre><h2 id="poolの作成">Poolの作成</h2>
+<p>Macで使用時にはオプションが必要。mirrorとraidz。 <code>compression=lz4</code> コンプレション・オン。<br>
 SSD: ashift=13, HD: ashift=12</p>
-
 <p>パーミションの変更が必要。</p>
-
 <pre><code>$ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME mirror DISK#PARTION
 $ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME raidz DISK#PARTION
 
-</code></pre>
-
-<h2 id="ファイルシステムの追加">ファイルシステムの追加</h2>
-
+</code></pre><h2 id="ファイルシステムの追加">ファイルシステムの追加</h2>
 <p>同様にパーミションの変更が必要。</p>
-
 <pre><code>$ sudo zfs create POOL_NAME/Shared
-</code></pre>
-
-<p>Macでは自動で<code>/Volumes/Shared</code>割当てられる。変更は</p>
-
+</code></pre><p>Macでは自動で<code>/Volumes/Shared</code>割当てられる。変更は</p>
 <pre><code>% sudo zfs set mountpoint=/NEW/DIRECTORY POOL_NAME/Shared
-</code></pre>
-
-<p>マウントとアンマウンント</p>
-
+</code></pre><p>マウントとアンマウンント</p>
 <pre><code>% sudo zfs mount POOL_NAME/Shared
 % sudo zfs unmount [-f] Shared
-</code></pre>
-
-<h2 id="ミラーリングにディスクの追加">ミラーリングにディスクの追加</h2>
-
+</code></pre><h2 id="ミラーリングにディスクの追加">ミラーリングにディスクの追加</h2>
 <pre><code>$ sudo zpool attach POOL_NAME POOL_DISK NEW_DISK#PARTITION
-</code></pre>
-
-<h2 id="take-snapshot">Take Snapshot</h2>
-
+</code></pre><h2 id="take-snapshot">Take Snapshot</h2>
 <p>日付付きでスナップショットを作成する。</p>
-
 <pre><code>$ sudo zfs snapshot MOUNT_POINT@$(date +%s)
-</code></pre>
-
-<p>確認。</p>
-
+</code></pre><p>確認。</p>
 <pre><code>$ sudo zfs list -t snapshot
-</code></pre>
-
-<p>ロールバック方法。</p>
-
+</code></pre><p>ロールバック方法。</p>
 <h2 id="mount">Mount</h2>
-
 <p>in@gallo:~ $ zfs list -t all
 NAME              USED  AVAIL  REFER  MOUNTPOINT
 Work             3.65G  23.5G  3.65G  /Volumes/Work
@@ -221,14 +187,10 @@ ZData60          27.8G  25.9G  3.43M  /Volumes/ZData60
 ZData60/Archive  16.5G  25.9G  16.5G  /Volumes/ZData60/Archive
 ZData60/Backup   10.8G  25.9G  10.8G  /Volumes/ZData60/Backup
 ZData60/Sync      590M  25.9G   590M  /Volumes/ZData60/Sync</p>
-
-<p>mountpoint=none         # 表示しない
-mountpoint=legacy       # fstabを読み込む</p>
-
+<p>mountpoint=none 		# 表示しない
+mountpoint=legacy		# fstabを読み込む</p>
 <p>root #  sudo zfs create -o mountpoint=/Volumes/Public -o canmount=off ZData60/Public</p>
-
 <p>マック上からは見えないです。</p>
-
 <p>jin@gallo:~ $ sudo zfs create -o mountpoint=legacy ZData60/HOME
 jin@gallo:~ $ zfs list -t all
 NAME              USED  AVAIL  REFER  MOUNTPOINT
@@ -238,9 +200,7 @@ ZData60/Archive  16.5G  16.7G  16.5G  /Volumes/ZMIR/Archive
 ZData60/Backup   20.0G  16.7G  20.0G  /Volumes/ZMIR/Backup
 ZData60/HOME       96K  16.7G    96K  legacy
 ZData60/Sync      591M  16.7G   591M  /Volumes/Sync</p>
-
-<p>tank/home/eschrock -        /mnt           zfs      -       yes     -</p>
-
+<p>tank/home/eschrock -		/mnt		   zfs		-		yes		-</p>
 <p>ZData60/HOME /Volumes/Home zfs   rw</p>
 
             </div>

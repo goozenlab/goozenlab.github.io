@@ -157,30 +157,21 @@
 
             <div class="post-content">
                 <p>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 <code>__PRETTY_FUNCTION__</code> は</p>
-
 <p>Swift では <code>__FILE__, __FUNCTION__, __LINE__ and __COLUMN__</code> のようになります。
 使えそうなのは</p>
-
 <ul>
 <li><code>__FILE__</code>  ：ファイル名</li>
 <li><code>__LINE__</code> ：ライン番号</li>
 <li><code>__FUNCTION__</code> ：ファンクション名</li>
 </ul>
-
 <p>そして、値を表示したい時はそのままかそのままか<code>\(...)</code>で囲み適当に放り込む。もはや%dや%@は必要ないらしい。
 小賢しいウォーニングも出なくなる。</p>
-
 <pre><code>println(__FUNCTION__, self.frame)
 println(__FUNCTION__,&quot;screen is \(self.frame)&quot;)
-</code></pre>
-
-<p>戻りは以下</p>
-
+</code></pre><p>戻りは以下</p>
 <pre><code>(function, (0.0,706.0,414.0,30.0))
 (function, screen is (0.0,706.0,414.0,30.0))
-</code></pre>
-
-<p>Swift Programming Language に書いてあるらしいので読むべ。</p>
+</code></pre><p>Swift Programming Language に書いてあるらしいので読むべ。</p>
 
 				
 

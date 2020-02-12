@@ -143,46 +143,32 @@
 				</p>
             </div>
             <div class="post-content">
-                
-
-<p>ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたりから不自由な感じがしてきたので、
-ちょっと環境を変えることにしました。<strong>ハッキントッシュ</strong>から<del><strong>kvm</strong></del>まで、
+                <p>ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたりから不自由な感じがしてきたので、
+ちょっと環境を変えることにしました。<strong>ハッキントッシュ</strong>から~~**kvm**~~まで、
 カッティングエッジ（死語か？）でキレッキレ（これも死語か？）な端末にしたいと思います。</p>
-
-<p><img src="/images/2019-07-14-thinkpad-t480s-01.jpg" alt="Thinkpad T480s" /></p>
-
+<p><img src="/images/2019-07-14-thinkpad-t480s-01.jpg" alt="Thinkpad T480s"></p>
 <p><del>ヘキサOSを目標に行けるところまで行ってみます。久しぶりに血がさわぐぜ。</del></p>
-
-<!--
-> <b>ヘキサ (Hexa)</b>  
-> ギリシャ語で、「6」。
->
-> https://ja.wikipedia.org/wiki/ヘキサ
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>結局６つは手に余ると思い結局５つのOSをインストールしました。
 インストールした順番は以下です。
 Windowsのリカバリーディスクが一気に全ての領域をフォーマットしてしまったので、
 私のやり方が悪かったかもしれないけれど、はじめにインストールするのが良いと思います。</p>
-
-<ol>
+<ol start="2">
 <li>windows10: ディスクを縮小し他のOS領域を確保</li>
 <li>macOS: movaje、時に落ちる時がありますが、問題なく動いてます</li>
 <li>linux:久しぶりにインストールしましたが全体的にすごく良くなってます。
-
 <ol>
 <li>Manjaro: ちょっと格好良い、バランスの取れた環境（Plasma<del>バジー</del>）</li>
 <li>Debian: 安定Linux環境（Gnome)</li>
 <li>Kali: ペネトレートテスト環境（Gnome)</li>
 <li><del>Arch: 鼻血覚悟のブリーディングエッジな環境</del></li>
-</ol></li>
 </ol>
-
+</li>
+</ol>
 <p>Linuxはホームディレクトリーを共有しているので、数ヶ月はあっちこっち試してみて絞っていくかもしれません。
 多分これで壊れない限り、できればリタイヤするまで使い続けたられたら良いなーと。</p>
-
 <h2 id="ハードウェアアップデート">ハードウェアアップデート</h2>
-
 <p>周回遅れ（でもこの方がいろいろと情報が集まって悪くもないんですけどね）ですが、
 2019年の7月ごろの最後の在庫処分セールのタイミングで購入。
 安くなるのを待ってたら、上海セレクションが選べなくなり、
@@ -191,9 +177,7 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 残り物には福があるとか言いますが、
 指紋認証はWinodwsでしか使えないんだよね。。
 追加で以下のものも購入。</p>
-
-<p><img src="/images/2019-10-01-thinkpad-inside-00.jpg" alt="Thinkpad T480s" /></p>
-
+<p><img src="/images/2019-10-01-thinkpad-inside-00.jpg" alt="Thinkpad T480s"></p>
 <ul>
 <li>メモリは安くなった16GBを追加して24GBに：32GBも高いけど<a href="https://amzn.to/2zML7cT">売ってます</a>ね。</li>
 <li>ストレージはおなじみサムソン・<a href="https://amzn.to/2A1iE33">EVO.Plus 970 1.0TB</a>にしようと思ったけど、コストパフォーマンスをとって<a href="https://amzn.to/2UWC5n3">シリコンパワー</a>のものにする、ほぼ半額ですしね。</li>
@@ -201,91 +185,65 @@ Windowsのリカバリーディスクが一気に全ての領域をフォーマ�
 <li>wifiカード：Lenovo純正無線LANカードのBCM94352Z、コネクターの形状が違かったので削って使う。Macbookについているカードも使えると最近新たに情報を得る。</li>
 <li>取り替えたSSDのための<a href="https://amzn.to/2HQZTDU">外付けケース</a>：デビアン・スティック端末にする？。</li>
 </ul>
-
 <p>記事：<a href="https://goozenlab.com/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifiに交換</a>：無理くりWifiカードを使えるようにする。</p>
-
 <p>※ 品物リンクはアマゾンへ飛びますので、ご了承のほど。</p>
-
 <p>裏蓋のネジを6本緩めるだけでマザーボードへアクセスできます。キーボードはトラックパッドのボタンをとり隠れているネジを緩めて取り外します。
 両方とも簡単に行うことができました。
 ただキーボードはThinkpad独特だった水を掛けても大丈夫な仕様にはなっていませんので注意。</p>
-
-<div class="attention"><b>注意：</b></br>ハードウェアの交換作業は、BIOS設定より「内蔵バッテリーの無効化」を行ったうえで行いましょう。作業終了後は電源を繋げないと起動しません。最初壊れたかと思って冷や汗をかきました。。</div>
-
+<!-- raw HTML omitted -->
 <h2 id="disk構成">Disk構成</h2>
-
 <p>シリコンパワーの1TB.SSDのパーティションはこんな感じです。
 ストレージは安心できるシステムを作れたらなと思い半分を<strong>zfs</strong>でミラーリングし重要なデーターなどを保存します。
 Linuxの領域は<strong>btrfs</strong>で組み、できればロールバックを可能にする予定。</p>
-
-<ol>
+<ol start="2">
 <li>80GB: windows10</li>
 <li>230GB: macOS.mojave</li>
 <li>160GB: Linux.btrfs
-
-<ol>
-<li>buster</li>
-<li>manjaro</li>
-<li><del>arch</del></li>
-<li>kali</li>
-</ol></li>
+3. buster
+3. manjaro
+4. <del>arch</del>
+3. kali</li>
 <li>32GB: 共有（zfs.mirror &lt;-&gt; 32GB Memory Stick）</li>
 <li>500GB: 共有（ZFS.mirror &lt;-&gt; 500GB SSD）</li>
 <li>7GB: Swap</li>
 </ol>
-
-<p><img src="/images/2019-12-13-partition-tp480s.png" alt="Partition Table" /></p>
-
+<p><img src="/images/2019-12-13-partition-tp480s.png" alt="Partition Table"></p>
 <h2 id="hackinpad-t480s">Hackinpad T480s</h2>
-
 <p>MacOS Mojaveをインストール。少しインストールは難があり、ほーんの少しだけ不具合がありますが、問題なく使えてます。
 最新OSのカタリーナはbeta版をMacbookで試して見ましたが、窮屈さが増しているようなのでアップグレードする予定はありません。</p>
-
 <p><a href="https://goozenlab.com/computing/tpt480s-hackintosh/">ハッキントッシュT480sを構築</a>：インストール方法をまとめてます。</p>
-
 <p>記事：</p>
-
 <ul>
 <li><a href="https://goozenlab.com/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifiに交換</a>：無理くりWifiカードを使えるようにする。</li>
-<li><a href="https://goozenlab.com/blog/2019/12/hackintosh-t480s-review2/">数ヶ月使ってのレビュー</a>：どんどん良くなってきてます。<br /></li>
+<li><a href="https://goozenlab.com/blog/2019/12/hackintosh-t480s-review2/">数ヶ月使ってのレビュー</a>：どんどん良くなってきてます。</li>
 <li><a href="https://goozenlab.com/blog/2019/10/hackintosh-t480s/">T480sでハッキントッシュ</a>：インストール後の雑感</li>
 </ul>
-
 <h2 id="windows10">Windows10</h2>
-
 <p>リカバリー・ディスクを作り新しく追加したSSDに復元・インストールします。
 設定があったかもしれないけれど、一気にパーティションをフラットにされる。。
 復元SDカードは保管しておきます。
 未だ数回しか立ち上げてないし、多分利用頻度はそんなに多く無いと思うので、
 ゆくゆくはlinux.kvm環境内で構築してみようかなと思ってます。</p>
-
 <h2 id="linux">Linux</h2>
-
 <p>無駄なくいろんなディストリビューションが入れられるような設定にするため、
 ファイルシステムにbtrfsを利用します。
 色々インストールしてみましたが、以下の３つに絞りました。
 KDE（Plasma)とGTK（Gnome)のツールチェーンでディストロを分けるのありかなと、、</p>
-
 <ul>
 <li><a href="https://www.debian.org">debian</a>: 一番清いディストロ。久しぶりにインストールしましたが、凄く良くなってます。WindowManagerのGnomeも好きではなかったけど、使ってみたら割と好印象。</li>
 <li><a href="https://manjaro.org">manjaro</a>: バランスが良く、デフォルトの格好いいディストロ。シンプルなbudgieで使ってます</li>
 <li><del><a href="https://www.archlinux.org">Arch Linux</a>: ちょっとManjaroがいやらしくなってきそうなのでインストールことにする。ネットの設定がちとややこしい。</del></li>
 <li><a href="https://www.kali.org">Kali Linux</a>：ペネトレ〜ションツール満載のディストロ。</li>
 </ul>
-
 <p>気になるけれど入れないディストリビューション</p>
-
 <ul>
 <li><a href="https://www.qubes-os.org">Qubes OS</a> : 非常にきになるけれど、Btrfのサブボリューム上にインストールができないようなので保留。</li>
 <li><a href="https://www.opensuse.org">openSUSE</a> : Btrfs推しのディストリビューション、どうも特色が無いし、パーティションを細切れにするところにちょっと違和感。</li>
 <li><a href="https://getsol.us/home/">Solus</a> : バジーの開発先、これもBtrfsへのインストールに難あり。（未完）</li>
 </ul>
-
-<p><del>KVMのベースにもなるので、</del>安定かつしっかりと動く環境を作り上げられたら良いなと、
+<p>~~KVMのベースにもなるので、~~安定かつしっかりと動く環境を作り上げられたら良いなと、
 先数ヶ月かけていろいろ試しつつ使って行きます。</p>
-
 <p>記事：インストール（BTRFS)編</p>
-
 <ul>
 <li><a href="https://goozenlab.com/blog/2019/10/install-debian-btrfs/">デビアンをインストール</a>：安定度の高さといえばこちら</li>
 <li><a href="https://goozenlab.com/blog/2019/10/install-manjaro-btrfs/">マンジャーロ</a>：ローリングリリースかつ快適さと安定度のバランスが一番良さそう（もう冒険はしたく無いけど、新しいソフトが使いたいという人向け。）</li>
@@ -294,13 +252,10 @@ KDE（Plasma)とGTK（Gnome)のツールチェーンでディストロを分け�
 <li><a href="https://goozenlab.com/blog/2020/01/install-kali-btrfs/">Kali on btrfs</a>
 ：変わり種のディストリビューション、WMはGnomeで。ハッカー志望の方はぜひ。</li>
 </ul>
-
-<p>記事：<a href="https://goozenlab.com/blog/2019/12/linux-windowmamager/">ウィンドウマネージャー</a>：LinuxのWMについての私見と雑感。<br />
-記事：日本語環境設定編<br />
+<p>記事：<a href="https://goozenlab.com/blog/2019/12/linux-windowmamager/">ウィンドウマネージャー</a>：LinuxのWMについての私見と雑感。<br>
+記事：日本語環境設定編<br>
 記事：ロールバック設定編</p>
-
-<hr />
-
+<hr>
 <ul>
 <li>2020-01-13：KDE Neonをインストールしてみる。Plasmaも良いです。インストールはツールキットで分けようかなと思う。</li>
 <li>2020-01-11：Kali Linuxをインストールする。<del>とりあえずインストール関連は終了かな。</del></li>
@@ -311,24 +266,8 @@ KDE（Plasma)とGTK（Gnome)のツールチェーンでディストロを分け�
 <li>2019-09-04：頭・デザインの整理のため、ちまちま加筆したりしてます。</li>
 <li>2019-09-01：アイディアや仕様がほぼ頭の中で決定したのでページをアップ。（9月半ばに再スタート）</li>
 </ul>
-
-<!--
-TDBT USB-C M.2 NVMe SSD ヒートシンク付外付けケース 
-https://amzn.to/2HQZTDU
-https://www.amazon.co.jp/gp/product/B07WP5ZD7T/
-
-Samsung SSD 1TB 970 EVO Plus
-https://amzn.to/2A1iE33
-https://www.amazon.co.jp/gp/product/B07MZ2JHGR/
-
-シリコンパワー SSD 1TB P34A80シリーズ
-https://amzn.to/2UWC5n3
-https://www.amazon.co.jp/gp/product/B07MV5FVMS/
-
-BCM4352 867Mbps 802.11a/b/g/n/ac WLAN + Bluetooth 4.0 M.2 無線LANカード for Lenovo B40 B50 Y50 Yoga 3 Pro
-https://amzn.to/2HQK0x7
-https://www.amazon.co.jp/gp/product/B06XDD1FTT/
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

@@ -156,94 +156,56 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ちょっと、理解不足というのもあって手をつけていなかった、VPNを少しづつ弄りはじまてます。GL.iNetのルーターにVPN機能が付いているので、クライアントの設定からまずは試してました。サーバー設定は後々。</p>
-
-<p><img src="/images/2019-04-15-vpn-off.png" alt="VPNGate Settings" /></p>
-
+                <p>ちょっと、理解不足というのもあって手をつけていなかった、VPNを少しづつ弄りはじまてます。GL.iNetのルーターにVPN機能が付いているので、クライアントの設定からまずは試してました。サーバー設定は後々。</p>
+<p><img src="/images/2019-04-15-vpn-off.png" alt="VPNGate Settings"></p>
 <p>接続先は日本の筑波大学が主導で進めている無料VPNサーバーサービスのVPNGateにて無料で公開されているVPNサーバーを利用させてもらいます。無料のVPNの中では非常に評判がいいらしいです。</p>
-
 <blockquote>
 <p>VPN Gate 筑波大学による公開 VPN 中継サーバープロジェクト：学術実験サービス。筑波大学および SoftEther が運営。世界中に分散配置された数千台の VPN サーバーに L2TP/IPsec, OpenVPN, MS-SSTP および SoftEther VPN の各種 VPN プロトコルで匿名で接続し、IP アドレスや地域を変更しよう。</p>
 </blockquote>
-
 <p>接続に至っては、いたって簡単でちょっと拍子抜けでした。ただ、こちら（タイ）の方の回線があまり早くないので、、
 <a href="http://radiko.jp">http://radiko.jp</a>
 も飛び飛び。。</p>
-
-<hr />
-
+<hr>
 <h2 id="vpn設定ファイルの入手">VPN設定ファイルの入手</h2>
-
-<p><img src="/images/2019-04-15-vpngate-home.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpngate-home.png" alt="VPNGate Settings"></p>
 <p>まずは、サーバーの設定ファイルを入手します。VPN Gateのホームページ
 <a href="https://www.vpngate.net/">https://www.vpngate.net/</a>
 にアクセスします。現在繋げているIPの情報が中央に表示されます（IPとタイの国旗が表示）。
-ページのすこし下にあるリストより適当なものを選びます。そのサーバーの<code>OpenVPN
-Config file</code>のリンク先に行くと設定ファイルを落とすことができます。</p>
-
-<p><img src="/images/2019-04-15-vpngate-list.png" alt="VPNGate Settings" /></p>
-
-<p><img src="/images/2019-04-15-vpngate-conf.png" alt="VPNGate Settings" /></p>
-
+ページのすこし下にあるリストより適当なものを選びます。そのサーバーの<code>OpenVPN Config file</code>のリンク先に行くと設定ファイルを落とすことができます。</p>
+<p><img src="/images/2019-04-15-vpngate-list.png" alt="VPNGate Settings"></p>
+<p><img src="/images/2019-04-15-vpngate-conf.png" alt="VPNGate Settings"></p>
 <p>いくつかの選択肢があります。環境により違ったものが必要だと思います。私は、IP番号・UDPの設定ファイルを選択、<code>vpngate_190.148.03.03_udp_43100.ovpn</code>のようなファイルがダウンロードされます。</p>
-
-<hr />
-
+<hr>
 <h2 id="ルーター設定">ルーター設定</h2>
-
 <h3 id="設定ファイルの読み込み">設定ファイルの読み込み</h3>
-
 <p>ルーターの設定画面に移動します。左メニューのVPN &gt; OpenVPN Clientを選択します。そして、マネージメント・タブから新しい設定の追加ボタンをおします。
-<img src="/images/2019-04-15-vpn-client-setting-01.png" alt="VPNGate Settings" />
-<img src="/images/2019-04-15-vpn-client-setting-02.png" alt="VPNGate Settings" /></p>
-
+<img src="/images/2019-04-15-vpn-client-setting-01.png" alt="VPNGate Settings">
+<img src="/images/2019-04-15-vpn-client-setting-02.png" alt="VPNGate Settings"></p>
 <p>ダウンロードしたファイルを選択、もしくはドラッグ・ドロップします。</p>
-
-<p><img src="/images/2019-04-15-vpn-client-setting-03.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpn-client-setting-03.png" alt="VPNGate Settings"></p>
 <p>後々わかりやすいように、Descriptonに名前をつけて保存します。</p>
-
-<p><img src="/images/2019-04-15-vpn-client-setting-04.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpn-client-setting-04.png" alt="VPNGate Settings"></p>
 <h3 id="接続">接続</h3>
-
 <p>設定ファイルが読み込まれたので、VPNサーバーに接続します。
 ステータス・タブより、接続先の設定ファイルを選び、接続ボタンを押します。</p>
-
-<p><img src="/images/2019-04-15-vpn-client-connect-01.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpn-client-connect-01.png" alt="VPNGate Settings"></p>
 <p>黄色いドットが表示されている時は問題があるとのこと、接続時のエラーなどログは表示されます。随時対応のほど。数秒後には接続が完了され緑色ボタンに変更されました。流れるパケット量が表示されます。</p>
-
-<p><img src="/images/2019-04-15-vpn-client-connect-02.png" alt="VPNGate Settings" />
-<img src="/images/2019-04-15-vpn-client-connect-03.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpn-client-connect-02.png" alt="VPNGate Settings">
+<img src="/images/2019-04-15-vpn-client-connect-03.png" alt="VPNGate Settings"></p>
 <p>メイン画面では、中央のVPNロゴにチェックマークが入ります。切れているときはバツマークになります。
 VPNとの接続が切れたときにネットの回線が自動的に接続が切れる設定はできないようなので、ちょっと注意が必要かもしれません。</p>
-
-<p><img src="/images/2019-04-15-vpn-on.png" alt="VPNGate Settings" /></p>
-
+<p><img src="/images/2019-04-15-vpn-on.png" alt="VPNGate Settings"></p>
 <p>試しに中米のグアテマラのサーバーの設定ファイルを落として繋いでみました。VPNGateにアクセスするとグアテマラからのアクセスになっています。</p>
-
-<p><img src="/images/2019-04-15-vpngate-guatemala.png" alt="VPNGate Settings" /></p>
-
-<hr />
-
+<p><img src="/images/2019-04-15-vpngate-guatemala.png" alt="VPNGate Settings"></p>
+<hr>
 <p>VPNGateではプライベートなサーバーが多いようなので、環境にもばらつきがあるかもしれません。ただ、基本的な設定は商業用のVPNサーバーと同じような手順になると思います。</p>
-
-<h3 id="ルーターでvpnに接続することの-利点">ルーターでVPNに接続することの<strong>利点</strong></h3>
-
+<h3 id="ルーターでvpnに接続することの利点">ルーターでVPNに接続することの<strong>利点</strong></h3>
 <ul>
 <li>複数の端末からアクセスしても、接続端末は一台になる</li>
 <li>接続端末、一台一台設定をする必要がない</li>
 </ul>
-
 <p>ということだと思います。あと、有料サービスでは接続台数制限があるところもあるようなので、引っかかってしまう人にも利点になります。</p>
-
 <p>さてさて、ExpressVPNにするか、、どこにするか、、、取り立てて現状すぐに必要というわけではないのでしばし保留。</p>
-
 <p>今晩のバスでバンコク、明日の夜にはインドのチェンナイです。ノートブックは持って行きますが、しばし、更新はないかな。。６月にタイに戻ってくる予定です、日本には９月の中旬に帰国です。</p>
 
 				

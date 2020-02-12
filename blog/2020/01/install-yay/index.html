@@ -156,35 +156,23 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Archを動かしているThinkapd T480sではManjaroも動かしているので、
+                <p>Archを動かしているThinkapd T480sではManjaroも動かしているので、
 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思っていました。</p>
-
 <p>が、ZFSのライセンスがらみで
 <code>zfs-linux</code>
 というカーネルパッケージが必要になる。</p>
-
 <p>ということで、AURパッケージマネージャーを渋々インストールすることにする。</p>
-
 <p><a href="https://github.com/Jguer/yay">https://github.com/Jguer/yay</a></p>
-
 <p>インストール時にbase-develもインストールしているので、
 多分必要なパッケージは入っていると思っていましたがgoとgitが足りませんでした。
 でもyayのインストール時にもチェックされますので気を使わないで良いです</p>
-
 <p>作業は以下。</p>
-
 <pre><code>$ sudo pacman -S git go
 $ git clone https://aur.archlinux.org/yay.git
 $ cd yay
 $ makepkg -si
-</code></pre>
-
-<h2 id="使い方">使い方</h2>
-
+</code></pre><h2 id="使い方">使い方</h2>
 <p>使い方はほぼPacmanと同じ、オプションの同じですが、sudoで実行するのはいかんとのこと。</p>
-
 <pre><code>jin@guiness:~$ sud yay -Sy
 Please avoid running yay as root/sudo.
 :: Synchronizing package databases...
@@ -192,22 +180,13 @@ Please avoid running yay as root/sudo.
  extra is up to date
  community is up to date
 jin@guiness:~
-</code></pre>
-
-<p>パッケージの更新 (-Syu)</p>
-
+</code></pre><p>パッケージの更新 (-Syu)</p>
 <pre><code>$ yay -Syu
-</code></pre>
-
-<p>パッケージの検索 (-Ss)</p>
-
+</code></pre><p>パッケージの検索 (-Ss)</p>
 <pre><code>jin@guiness:~$ yay -Ss zfs-linux-lts
 aur/zfs-linux-lts-headers 0.8.3_4.19.98.1-1 (+46 1.27%) 
 aur/zfs-linux-lts 0.8.3_4.19.98.1-1 (+46 1.27%) 
-</code></pre>
-
-<p>システム情報を表示 (-Ps)、goのパッケージがでかいな。。</p>
-
+</code></pre><p>システム情報を表示 (-Ps)、goのパッケージがでかいな。。</p>
 <pre><code>jin@guiness:~$ yay -Ps
 Yay version v9.4.4
 ===========================================
@@ -229,26 +208,17 @@ gimp: 104.3 MiB
 noto-fonts: 91.2 MiB
 ===========================================
 :: Querying AUR...
-</code></pre>
-
-<p>ターミナルでのyayの色付けは<code>/etc/pacman.conf</code>を編集します。</p>
-
+</code></pre><p>ターミナルでのyayの色付けは<code>/etc/pacman.conf</code>を編集します。</p>
 <pre><code>jin@guiness:~$ sudo vi /etc/pacman.conf 
 
 Color #を外す
-</code></pre>
-
-<p>zfs-linux-ltsは新しいlinux-lts待ちになっているようなので、まだインストールはできず、
+</code></pre><p>zfs-linux-ltsは新しいlinux-lts待ちになっているようなので、まだインストールはできず、
 AURを結局使う羽目になったのでパッケージマネージャのPamacを入れてまうかな。</p>
-
 <pre><code>jin@guiness:~$ yay -Ss pamac
 aur/pamac-gtk 9.3.0-1 (+2 1.21%) 
 aur/pamac-common 9.3.0-1 (+2 1.21%) 
-</code></pre>
-
-<p>ちょっと、Linusが「Don&rsquo;t Use」言ってたのを思い出す。。
+</code></pre><p>ちょっと、Linusが「Don&rsquo;t Use」言ってたのを思い出す。。
 でも、Mac、Win、Linuxで共有できるマイクロソフト以外のファイルシステムってないんですよね。。</p>
-
 <p>Winodowsでは対応しているBTRFSを誰かMacOSへ移植してくれませんかねぇ。。</p>
 
 				

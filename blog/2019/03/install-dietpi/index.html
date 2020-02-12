@@ -156,155 +156,85 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-03-03-dietpi-website.png" alt="DietPi Install" /></p>
-
+                <p><img src="/images/2019-03-03-dietpi-website.png" alt="DietPi Install"></p>
 <p>巷で人気のスリムなダイエットパイを小粋なRPi0w：ラズベリーパイ・ゼロWにインストールしました。</p>
-
 <p>まずは、ファイルを落としてきてSDカードにコピーをする。
 いたって簡単、一発の作業です。ラズベリアンなど他のものを入れるときと同じ共通のインストール作業です。各所にて情報は満載なので、情報は満載なので、説明は割愛させてもらいます。DietPi.comにも詳しく説明があります（英語）。</p>
-
 <p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=9#p9">Getting started @ dietpi.com</a></p>
-
 <h2 id="wifi経由インストール設定">Wifi経由インストール設定</h2>
-
 <p>ヘッドレス、Wifi経由のSSHにてインストールをする場合は以下二つの設定ファイルを少しいじる必要がありとは少し違います。ます。ラズベリアンでの設定と少し違います。なお、etcherでディスクを書き込んだ後ではディスクは解除されてしまっています。一度取り出し再度いれなおします。</p>
-
-<p><img src="/images/2019-03-12-edit-files.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-edit-files.png" alt="DietPi Install"></p>
 <p><code>dietpi.txt</code>と<code>dietpi-wifi.txt</code>がbootディスクにあります。お使いのテキストアプリで開きます。（私はTexemate)</p>
-
-<h3 id="dietpi-txt">dietpi.txt</h3>
-
+<h3 id="dietpitxt">dietpi.txt</h3>
 <p>Wifi経由でのインストール設定を有効にします。</p>
-
 <pre><code>18行目：
 Set AUTO_SETUP_NET_WIFI_ENABLED=1
-</code></pre>
-
-<h3 id="dietpi-wifi-txt">dietpi-wifi.txt</h3>
-
+</code></pre><h3 id="dietpi-wifitxt">dietpi-wifi.txt</h3>
 <p>アクセスポイント（名前とパスワード）の設定を書き込みます。普通以下の２カ所で問題はないと思います。</p>
-
 <pre><code>4行目：
 aWIFI_SSID[0]='MySSID'
 6行目：
 aWIFI_KEY[0]='MyWifiKey'
-</code></pre>
-
-<p>ファイルを保存し、マイクロSDカードをパイに挿入して電源を入れ、起動します。</p>
-
+</code></pre><p>ファイルを保存し、マイクロSDカードをパイに挿入して電源を入れ、起動します。</p>
 <p>最初の起動時にはファイルシステムの拡張などが行われるので、少し時間がかかります。少々待ってログインします。</p>
-
-<h2 id="ログイン-ssh接続">ログイン：SSH接続</h2>
-
+<h2 id="ログインssh接続">ログイン：SSH接続</h2>
 <p>SSHサーバーがデフォルトで起動されてますので、
 <code>ssh root@dietpi.local</code>で繋がるはずが、なかなか繋がらず、、ルーターよりアドレスを見つけ出して、IP番号を使ってログインします。</p>
-
 <p>※ 数回インストールの作業を行いましたが、ともにdietpi.localでは繋がりませんでした。問題はこっちなのかあっちなのか、ちょっと分かりません。</p>
-
 <pre><code>ssh root@10.10.10.231
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>username = root</li>
 <li>password = dietpi</li>
 </ul>
-
-<p><img src="/images/2019-03-12-login-ssh.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-login-ssh.png" alt="DietPi Install"></p>
 <p>自動で設定画面が立ち上がます。サーベイの登録確認があります。</p>
-
-<p><img src="/images/2019-03-12-dietpi-login.png" alt="DietPi Install" /></p>
-
-<p><img src="/images/2019-03-12-install-01.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-dietpi-login.png" alt="DietPi Install"></p>
+<p><img src="/images/2019-03-12-install-01.png" alt="DietPi Install"></p>
 <p>そして、システムを最新の状態にアップデートします。ネット環境にもよりますが、時間がかかります。回線が遅いのもあって、かなり心配になりました。</p>
-
-<p><img src="/images/2019-03-12-install-02.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-02.png" alt="DietPi Install"></p>
 <p>途中で問題があると、確認の画面が立ち上がります。ここは回線状態が、あまり優れていないので、、、
 だいたい、重いファイルを落としている時に、我慢できずにエラー扱いになっている様な、セッカチなやつです。</p>
-
-<p><img src="/images/2019-03-12-dietpi-error.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-dietpi-error.png" alt="DietPi Install"></p>
 <p>まぁ仕方ないのですが、、リトライで作業を再開。終了後、再起動がかかります。</p>
-
 <p>そして、ログイン、そしてまた自動で設定が続けられます。パスワードの変更や設定の確認があります。とりあえず、パスワードは変更しておいた方がよろしいと思います。基本OKで問題ないです。</p>
-
-<p><img src="/images/2019-03-12-install-03.png" alt="DietPi Install" /></p>
-
-<p><img src="/images/2019-03-12-install-04.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-03.png" alt="DietPi Install"></p>
+<p><img src="/images/2019-03-12-install-04.png" alt="DietPi Install"></p>
 <p>シリアル機能はオフにしましょう。後々かなりメモリを消費してたりしてました。
 パスワードもへんこうするのが良いと思います。</p>
-
 <p>そして、もう一度再起動・ログイン。（デビアンでは一発で終了だった様な気がするのですが、何度も再起動するんのは、なんか不思議な気分。）</p>
-
 <p>そしてホスト名を変更したいので、<code>DietPi-Config</code>より設定を行います。</p>
-
-<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install"></p>
 <p>DietPi-Config＞６：Security  Options&gt; 2：Change Host nemeにて、ホスト名を変更します</p>
-
-<p><img src="/images/2019-03-12-install-07.png" alt="DietPi Install" />
-<img src="/images/2019-03-12-install-08.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-07.png" alt="DietPi Install">
+<img src="/images/2019-03-12-install-08.png" alt="DietPi Install"></p>
 <p>で、一度再起動します。（ここはキャンセルして作業を続けても問題はないと思います。）そしてまた設定が立ち上がり、今度はソフトをインストールせよとのメッセージが出る。</p>
-
-<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install" /></p>
-
-<p>とりあえず、今のところはしんぷるなじょうたいで良いので、メニュー一番下の、Install: Go &gt;&gt;を選択する。</p>
-
+<p><img src="/images/2019-03-12-install-05.png" alt="DietPi Install"></p>
+<p>とりあえず、今のところはしんぷるなじょうたいで良いので、メニュー一番下の、Install: Go &raquo;を選択する。</p>
 <p>そうすると、今度は最小限だけどかまわないか？とメッセージが表示。</p>
-
-<p><img src="/images/2019-03-12-install-09.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-09.png" alt="DietPi Install"></p>
 <p>オッケーで、さらに再起動。</p>
-
 <p>そして、またまた、設定画面で、終了したよとのメッセージが表示。</p>
-
-<p><img src="/images/2019-03-17-finish-installation.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-17-finish-installation.png" alt="DietPi Install"></p>
 <p>最後の再起動！</p>
-
-<p><img src="/images/2019-03-12-install-10-finish.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-install-10-finish.png" alt="DietPi Install"></p>
 <p>で本当に終了。お疲れ。（9:20 - 10:30)</p>
-
 <p>とりあえず、素の状態でですが、動いてます。ミニマム設定、断捨離マシーンです。プロセスもこんだけです。。（何もできませんが。）</p>
-
-<p><img src="/images/2019-03-12-htop.png" alt="DietPi Install" /></p>
-
-<hr />
-
+<p><img src="/images/2019-03-12-htop.png" alt="DietPi Install"></p>
+<hr>
 <p>いろいろインストールしたいのだけど、まずはルーターの設定が最初なので、
 まずはこのままにしておきます。</p>
-
 <p>ソフトのインストールは<code>dietpi-software</code>を使っても、もちろんデビアンベースなので、<code>apt</code>を使ってもできます。</p>
-
-<p><img src="/images/2019-03-12-dietpi-software-list.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-dietpi-software-list.png" alt="DietPi Install"></p>
 <p>Raspbianでちょっとインストールに問題があった、</p>
-
 <p>Docker, influxDB, Grafana,</p>
-
 <p>や、その他気になる、OwnCloud、Wireguard、 netdata</p>
-
 <p>そして、 わりと簡単にインストールできた、Pi-hole, Syncthing、などなど、</p>
-
 <p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=5#p5">ソフトリスト</a> に入っているソフトがなかなかツボに入りました、自分が必要なものはほとんど入っている様に思えます。やりたいこととか、考えてることはすごく近いんだなんだなとちょっと嬉しく思いました。
 しかも<strong>GNUstep</strong>がリストに入ってるし、親近感が増します。懐かし〜〜。</p>
-
-<p><img src="/images/2019-03-12-dietpi-soft.png" alt="DietPi Install" /></p>
-
+<p><img src="/images/2019-03-12-dietpi-soft.png" alt="DietPi Install"></p>
 <p>ちょっと、確認を少ししたのだけど、わりとサクッと動いてくれたます。（Raspbianでの、苦労は何だったんだと、、）（ちょっと不具合もあるのだけど、、）</p>
-
 <p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=5#p5">リスト</a> を見て、ピタッときたら、是非お試しを。</p>
-
 <p><a href="https://dietpi.com/phpbb/viewtopic.php?f=8&amp;t=9#p9">Getting started @ dietpi.com</a></p>
-
 <p>追記：
 （後々、<code>dietpi-config</code>や<code>dietpi-software</code>の基本的な使い方などを書きたいと思ってます。）</p>
 

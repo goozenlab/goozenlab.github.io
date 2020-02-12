@@ -156,50 +156,32 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-08-13-openweathermap-00.png" alt="Open Weather Map" /></p>
-
+                <p><img src="/images/2019-08-13-openweathermap-00.png" alt="Open Weather Map"></p>
 <p>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが
 <a href="https://openweathermap.org">https://openweathermap.org</a>
 より提供されています。
 行きたい国々の天気をチェック、旅情にあふれます。</p>
-
 <p>最近の流行っている、Grafanaを使ってグラフ化をしたいと思います。</p>
-
 <h2 id="apiキーの取得">APIキーの取得</h2>
-
 <p>APIの使い方はマニュアルに書いてある通りで、まずは無料登録を行ってAPIキーを取得します。
 こちらのサイト
 <a href="https://openweathermap.org/api">https://openweathermap.org/api</a>
 にアクセスして、「Current weather data」の「Subscribe」ボタンを押します。
 一番左の「Free」から、「Get API key and Start」ボタンを押します。
 すると、使い方などが表示されるので説明に沿って進めればOKです。</p>
-
 <p>Freeライセンスは、1分間に60回までしか使ってはいけない（超えると制限される）ので、
 使用回数には注意してください。</p>
-
 <h2 id="天候の取得">天候の取得</h2>
-
 <p>APIキーが取得できたら天候を取得してみます。</p>
-
 <p>APIには天候を取得したい地域の「地名」もしくは「ID」を指定する事ができますが、推奨されているID指定で進めます。</p>
-
 <p>天候を取得したい地域のIDを調べたいので、Webブラウザで検索してみます。</p>
-
 <p>東京の場合はURLにこのように表示されると思います。
 <code>https://openweathermap.org/city/1850147</code></p>
-
-<p><img src="/images/2019-08-14-openweathermap-tokyo.png" alt="Open WEather Map TOKYO" /></p>
-
+<p><img src="/images/2019-08-14-openweathermap-tokyo.png" alt="Open WEather Map TOKYO"></p>
 <p>末尾の<strong>1850147</strong>が都市名を示すIDです。</p>
-
 <pre><code>http://api.openweathermap.org/data/2.5/weather?id={CityID}&amp;units=metric&amp;APPID={APIKey}
-</code></pre>
-
-<p>APIをアクセスをすると下のようなJSON形式のファイルが帰ってきます。
+</code></pre><p>APIをアクセスをすると下のようなJSON形式のファイルが帰ってきます。
 ほぼ必要なデーターは網羅してると思います。</p>
-
 <pre><code>{
   &quot;coord&quot;: {
     &quot;lon&quot;: -155.67,
@@ -243,28 +225,17 @@
   &quot;name&quot;: &quot;Waimea&quot;,
   &quot;cod&quot;: 200
 }
-</code></pre>
-
-<div class="attention">※{APIKey}は自分のAPIキーに、{CityID}は都市名を示すID（東京は”1850147″）に置き換えてください。</div>
-
+</code></pre><!-- raw HTML omitted -->
 <p>ファイルをローカルにダウンロードします。</p>
-
 <pre><code>curl -o /PATH/OUT_PUT_FILE.json &quot;https://api.openweathermap.org/data/2.5/weather?id=$CityID&amp;units=metric&amp;appid=$APPID&quot;
-</code></pre>
-
-<h2 id="jsonファイルをinfluxdbへ登録-by-shell">JSONファイルをInfluxdbへ登録 by shell</h2>
-
+</code></pre><h2 id="jsonファイルをinfluxdbへ登録-by-shell">JSONファイルをInfluxdbへ登録 by shell</h2>
 <p>JSON形式のデータをbashで簡単に扱うためにjqを入れます。
-(参考：<a href="https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61">https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61</a>)</p>
-
+(参考：https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61)</p>
 <pre><code>pi@raspberry:~ $ sudo apt install jq
-</code></pre>
-
-<p>取得したJSONファイルを引数に与えるとデータベースに登録するスクリプトを作成します。
+</code></pre><p>取得したJSONファイルを引数に与えるとデータベースに登録するスクリプトを作成します。
 実行は
 <code>sh weather_update.sh /PATH/OUT_PUT_FILE.json</code>
 で行います。</p>
-
 <pre><code>#!/bin/bash
 #
 # weather_update.sh
@@ -291,51 +262,32 @@ curl -i -XPOST &quot;http://localhost:8086/write?db=${DBNAME}&amp;precision=s&qu
 &quot;weather,city=${city} \
 temp=${temp},temp_min=${temp_min},temp_max=${temp_max},pressure=${pres},humidity=${humi} \
 ${dt}&quot;
-</code></pre>
-
-<p>あとは、場所によって更新間隔がまちまちですが、
+</code></pre><p>あとは、場所によって更新間隔がまちまちですが、
 cronに登録して定期的にデータの取得＆データベースの登録を実行すればOK！</p>
-
 <p>しばらくしてデータが貯まってきたら、「ダッシュボードの作成」の所と同じ手順でパネルに登録すれば完了です。</p>
-
-<div class="attention">※ 上記のスクリプトは`city`の所でエラーが出るかもしれません、、現在スクリプトをパイソンに書き換え中。</div>
-
-<h2 id="おまけ-不快指数の追加">おまけ：不快指数の追加</h2>
-
+<!-- raw HTML omitted -->
+<h2 id="おまけ不快指数の追加">おまけ：不快指数の追加</h2>
 <p>快適度は気温だけでは掴みづらいので、日本ではおなじみ？の不快指数を計算します。
 <strong>65~75</strong>くらいが数値上快適になります。Tシャツ短パン快適生活は70位からかな、、</p>
-
 <blockquote>
 <p>不快指数とは夏の蒸し暑さを数量的に表した指数で、温熱指標の一つ。
 不快指数が75を越えると人口の一割が不快になり、<strong>80</strong>を越えると全員が不快になると言われている。また、日本人の場合、不快指数が77になると不快に感じる人が出はじめ、85になると93%の人が暑さによる不快を感じると言われている。</p>
-
-<p>from <a href="https://ja.wikipedia.org/wiki/不快指数">https://ja.wikipedia.org/wiki/不快指数</a></p>
+<p>from <a href="https://ja.wikipedia.org/wiki/">https://ja.wikipedia.org/wiki/</a>不快指数</p>
 </blockquote>
-
 <p>シェルで小数点計算を入れるため<code>bc</code>をインストールします。</p>
-
 <pre><code>pi@raspberry:~ $ sudo apt install bc
-</code></pre>
-
-<p>不快指数の数式は幾つかあるようですが、
+</code></pre><p>不快指数の数式は幾つかあるようですが、
 日本で使われているもので計算します。
 以下の計算結果をデーターベース登録時に追加します</p>
-
 <pre><code>dii=$(echo &quot;scale=4; 0.81 * $temp + 0.01 * $humi * (0.99 * $temp - 14.3) + 46.3&quot; | bc)
-</code></pre>
-
-<p>さて、現在滞在先はしとしと雨が降るグリーンシーズン（新しい雨季の別名、とても良いネーミングだと思う。）で、
+</code></pre><p>さて、現在滞在先はしとしと雨が降るグリーンシーズン（新しい雨季の別名、とても良いネーミングだと思う。）で、
 日本の梅雨ほどではないけど、ちょっと不快。。
 指数的には、80くらいです。春先に行った酷暑インドでは、85オーバーでまさに修行でした。
 実家のある<strong>東京は85</strong>とかで、やはり、、不快指数はトップです。</p>
-
 <p>データーが溜まっていくとちょっと面白いですねぇ。
 滞在先のネット環境が途切れ途切れですが、、雲量などを追加してこんな感じ、</p>
-
-<p><img src="/images//2019-08-18-grafana-weather.png" alt="Grafana with OpenWeatherMap" /></p>
-
+<p><img src="/images//2019-08-18-grafana-weather.png" alt="Grafana with OpenWeatherMap"></p>
 <p>これで、だいたい天気がつかめるかな。（どこいこかなぁ。。）</p>
-
 <p>引き続き作業中、次回はビットコインの所得・グラフ化、行ってみよー。</p>
 
 				

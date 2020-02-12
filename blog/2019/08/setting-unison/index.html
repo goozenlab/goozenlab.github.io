@@ -156,31 +156,21 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>滞在先、タイ・チェンライで折りたたみ自転車のタイヤチューブ交換をしました。工賃込みで150バーツでした。
+                <p>滞在先、タイ・チェンライで折りたたみ自転車のタイヤチューブ交換をしました。工賃込みで150バーツでした。
 チューブの質がどうだかわかりませんが、安い、ありがたい、ありがとー。</p>
-
 <p>ついでに、ボロボロになった水中眼鏡（度つき）もリフレッシュ、
 ダイソーで買ったゴーグルから目にあたる部分を取り替えて完成。
 ちなみにバンド部分は中古の子供ゴーグル５バーツから流用。
 まぁ、頓珍漢な感じですが、別につけて外を歩くわけではないので、オケ。</p>
-
-<p><img src="/images/2019-08-19-gogle.jpg" alt="水中眼鏡" /></p>
-
+<p><img src="/images/2019-08-19-gogle.jpg" alt="水中眼鏡"></p>
 <p>さて、運用中にのパイ・サーバーとマックブックとの同期を図るため、unisonを設定します。
 設定ファイルを作って<code>unison 設定ファイル名</code>で実行することができます。</p>
-
 <h2 id="同期設定">同期設定</h2>
-
 <p>シンプルな設定ファイルです。新しいファイルを優先して、接続先の設定をします。
 ssh経由の接続ですので鍵でのログイン方式に切り替えると良いと思います。</p>
-
 <p>こちら、<a href="https://goozenlab.com/blog/2019/06/rsa-ssh-login/">SSH簡単ログイン</a>
 を参照のほど。</p>
-
 <p>設定ファイルは<code>vi ~/.unison/tacos_scripts.prf</code>で作成、内容は以下。</p>
-
 <pre><code># tacos_scripts.prf
 # パイ・サーバーとマックブックのスクリプト同期
 times = true
@@ -206,19 +196,11 @@ path =
 
 # 除外ファイルリスト
 include ignore_filelist_macos
-</code></pre>
-
-<div class="attention">※ 注意：unisonのデフォルト設定ではシンボリックリンクを同期しません。</div>
-
+</code></pre><!-- raw HTML omitted -->
 <p>シンボリックリンクも同期したい場合は、以下のような設定をプロファイルに追記します。</p>
-
 <pre><code>follow = Path ディレクトリ名 または ファイル名
-</code></pre>
-
-<h2 id="除外ファイル">除外ファイル</h2>
-
+</code></pre><h2 id="除外ファイル">除外ファイル</h2>
 <p>OSごとに特有のファイルがありますし、同期をしたくないファイルは除外ファイルとして登録しておきます。<code>ignore_filelist_macos</code>にしておきます。設定などのファイル保存先は<code>.unison</code>フォルダーです。</p>
-
 <pre><code>jin@gallo:.unison $ vi ~/.unison/ignore_filelist_macos
 
 addprefsto = unison_ignore
@@ -238,16 +220,11 @@ ignore = Name .FBCLockFolder
 
 ignore = Name .CFUserTextEncoding
 ignore = Name .localized
-</code></pre>
-
-<h2 id="実行">実行</h2>
-
+</code></pre><h2 id="実行">実行</h2>
 <p><code>unison 設定ファイル名</code>で同期します。初回は少し時間がかかるといいますが、ファイル数が少ないので瞬間で終わりました。
 同期するファイルの確認を行います、問題がなければ、そのまま<code>y</code>で続行します。
 同じ名前のファイルがあったら、選択する必要があります（たしか）。</p>
-
-<div class="hint">※ 沢山のファイル（例えば1000とか）がある人は、まずは rsync でファイルをコピーしてから行った方が良いかな。</div>
-
+<!-- raw HTML omitted -->
 <pre><code>jin@gallo:~ $ unison tacos_scripts
 Unison 2.51.2 (ocaml 4.06.1): Contacting server...
 Connected [//gallo.goozen.lab//Volumes/Work/Development/Scripts -&gt; //tacos//home/pi/scripts]
@@ -278,31 +255,18 @@ UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 07:59:09.42 on 18 A
 Saving synchronizer state
 Synchronization complete at 07:59:09  (23 items transferred, 0 skipped, 0 failed)
 jin@gallo:~ $
-</code></pre>
-
-<p>これで、</p>
-
+</code></pre><p>これで、</p>
 <p>スクリプトを端末側で修正・コマンドで同期・サーバー側で実行・確認の繰り返し。</p>
-
 <p>という流作業になる。ちょっとだけ面倒が取れるかな。</p>
-
 <p>※ マック側のファイルのスペースは取った方が良いかもしれん。。キャメルからスネーク式に切り替えるかな。。</p>
-
-<h2 id="おまけ-自動化">おまけ：自動化</h2>
-
+<h2 id="おまけ自動化">おまけ：自動化</h2>
 <p><strong>cron</strong> で定期的にunisonによる同期を実行したい場合は<code>-batch</code>
 オプションを付けて実行すると非対話的に同期が実行されます。</p>
-
 <pre><code>jin@gallo:~ $ unison tacos_scripts -batch
-</code></pre>
-
-<p><code>crontab -e</code>に登録して自動化完了です。</p>
-
+</code></pre><p><code>crontab -e</code>に登録して自動化完了です。</p>
 <h3 id="マックにての自動化">マックにての自動化</h3>
-
 <p>マックでは<code>LaunchAgents</code>を使って自動化ができます。
 設定ファイル<code>~/Library/LaunchAgents/mac-pi-unison.plist</code>を作成します。</p>
-
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
 &lt;plist version=&quot;1.0&quot;&gt;
@@ -337,40 +301,17 @@ jin@gallo:~ $
 &lt;/dict&gt;
 
 &lt;/plist&gt;
-</code></pre>
-
-<p>そして、LaunchAgentsの読み込みます。</p>
-
+</code></pre><p>そして、LaunchAgentsの読み込みます。</p>
 <pre><code>jin@gallo:~ $ launchctl load ~/Library/LaunchAgents/mac-pi-unison.plist
-</code></pre>
-
-<p>これで、バックグラウンドで5分ごとに動いてくれるようになります。
+</code></pre><p>これで、バックグラウンドで5分ごとに動いてくれるようになります。
 ただ、私は<code>hazel</code>というアプリを持っているので、それでファイル更新にトリガーで動かしても良いなと思いました。</p>
-
 <p>参考：</p>
-
 <ul>
 <li><a href="http://uzy-exe.hateblo.jp/entry/2013/12/29/071159">unisonによる2台のサーバ間でのファイル同期</a></li>
 <li><a href="https://88171.net/unison_manual_ja">Unisonマニュアル私的日本語訳 - 88171.net</a></li>
 </ul>
-
-<!--
-## おまけ
-
-バックグラウンで静かに走っているのは良いのですが、ちょっと寂しいので同期をしたときに、通知するアップルスクリプトを追加しました。
-
-$1にさっきの設定ファイル(.prf)を拡張子なしで渡してやる．
-
-~/Documents/exec/nortificate.sh
-
-```
-#!/bin/bash
-
-unison "$1"
-
-echo 'display notification "Unison Notifier" with title "Unison" subtitle "ファイルを同期しました。"' | osascript
-```
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

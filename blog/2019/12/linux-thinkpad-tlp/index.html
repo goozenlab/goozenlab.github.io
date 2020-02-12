@@ -156,39 +156,25 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Thinkpad T480sにてバッテリーを長持ちさせるために、</p>
-
+                <p>Thinkpad T480sにてバッテリーを長持ちさせるために、</p>
 <p>Linux Advanced Power Management: <a href="https://linrunner.de/en/tlp/tlp.html">https://linrunner.de/en/tlp/tlp.html</a></p>
-
 <p>というソフトを使います。</p>
-
 <p>理想的なノートブックでのバッテリー利用は２０％～８０％の利用にとどめて、
 ３０％から７０％とかの中途半端な充電をなるべく避けるのが効果的と言われてます。
 （レノボのサイトでは４５％〜５０％が良いと書いてありました。）</p>
-
 <ul>
 <li><a href="https://support.lenovo.com/gb/ja/solutions/ht078208?tabname=solutions">https://support.lenovo.com/gb/ja/solutions/ht078208?tabname=solutions</a></li>
 <li><a href="https://support.lenovo.com/jp/ja/solutions/syj0-0023b00">https://support.lenovo.com/jp/ja/solutions/syj0-0023b00</a></li>
 <li><a href="https://support.lenovo.com/us/ja/solutions/ht069687">https://support.lenovo.com/us/ja/solutions/ht069687</a></li>
 </ul>
-
 <p>Linuxでは上記のソフト（ソフト名はtlp）よりバッテリーの使い方に設定を行う事ができます。</p>
-
 <p>Manjaroではデフォルトでの状態でインストールされていました。
 Debianではインストールの必要があります。必要なカーネルモジュールと一緒にインストールします。</p>
-
 <pre><code>$ sudo apt install tlp tlp-rdw acpi-call-dkms 
-</code></pre>
-
-<h2 id="設定">設定</h2>
-
+</code></pre><h2 id="設定">設定</h2>
 <p>設定ファイルは<code>/etc/default/tlp</code>です。</p>
-
 <p>電源を接続して利用している時にはバッテリーが無駄に充電されないようにするために、
 バッテリーの充電開始・終了パーセントを設定します。</p>
-
 <pre><code>$ sudo vi /etc/default/tlp
 
 # Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module
@@ -204,62 +190,32 @@ STOP_CHARGE_THRESH_BAT0=80
 # Default: &lt;none&gt;
 #START_CHARGE_THRESH_BAT1=75
 #STOP_CHARGE_THRESH_BAT1=80
-</code></pre>
-
-<p>初期設定での充電開始は７５％からになっていて、頻繁に長い間端末を持ち出す人はこれくらいでいいのかもしれませんが、
+</code></pre><p>初期設定での充電開始は７５％からになっていて、頻繁に長い間端末を持ち出す人はこれくらいでいいのかもしれませんが、
 自分は外で２時間使えれば今の所充分なので、無駄な充電を避けるためにバッテリー充電開始を少し前にずらし、
 バッテリーが４０％を切ったら充電を開始するようにします。</p>
-
 <p>ウルトラベイ・バッテリーの設定もできます。T480のように内部に２つバッテリーのあるタイプは一体どうなるんだろ？。</p>
-
 <h2 id="コマンド">コマンド</h2>
-
 <p>バッテリーの状況を確認するためのコマンドは
 <code>sudo tlp-stat -b</code>
 です。オプションも豊富です。</p>
-
 <p><a href="https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#commands">https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#commands</a></p>
-
-<p><img src="/images/2019-12-13-tlp-stat-b.png" alt="sudo tlp-stat -b" /></p>
-
+<p><img src="/images/2019-12-13-tlp-stat-b.png" alt="sudo tlp-stat -b"></p>
 <h3 id="thinkpadでのみ使えるコマンド">Thinkpadでのみ使えるコマンド</h3>
-
 <p>バッテリーを満充電（100％）する。</p>
-
 <pre><code>$ sudo tlp fullcharge [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーを一度設定上限（80％）までチャージする。（私の使い方では、60%では充電は開始しないのだけどちょっと長く持ち出す予定がある時などに使う事になる。）</p>
-
+</code></pre><p>バッテリーを一度設定上限（80％）までチャージする。（私の使い方では、60%では充電は開始しないのだけどちょっと長く持ち出す予定がある時などに使う事になる。）</p>
 <pre><code>$ sudo tlp chargeonce [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーを放電（0％）させる。ACプラグを差しておく必要があります。</p>
-
+</code></pre><p>バッテリーを放電（0％）させる。ACプラグを差しておく必要があります。</p>
 <pre><code>$ sudo tlp discharge [ BAT0 | BAT1 ] 
-</code></pre>
-
-<p>バッテリーの再調整・リフレッシュをします。バッテリーを満充電・完全放電を行います。こちらもACプラグを差しておく必要があります。レノボのサイトでも数ヶ月に一度、リフレッシュ（バッテリー内部ゲージのリセット）を行うことを勧めています。</p>
-
+</code></pre><p>バッテリーの再調整・リフレッシュをします。バッテリーを満充電・完全放電を行います。こちらもACプラグを差しておく必要があります。レノボのサイトでも数ヶ月に一度、リフレッシュ（バッテリー内部ゲージのリセット）を行うことを勧めています。</p>
 <pre><code>$ sudo tlp recalibrate [ BAT0 | BAT1 ]
-</code></pre>
-
-<p>むやみにバッテリーの充電を繰り返すこともなくなりそうなので、バッテリーの延命にはかなり効果が期待できるのではと思ってます。</p>
-
-<hr />
-
+</code></pre><p>むやみにバッテリーの充電を繰り返すこともなくなりそうなので、バッテリーの延命にはかなり効果が期待できるのではと思ってます。</p>
+<hr>
 <h2 id="on-macos-movaje">on macOS Movaje</h2>
-
 <p>最近どんどんと安定してきているハッキントッシュのモハベ環境でも
 ソフトはインストールされていないのに設定が生きている。。</p>
-
-<p><img src="/images/2019-12-14-tlp-macos.png" alt="tlp on MacOS" /></p>
-
-<div class=note>
-BIOSへの書き込みになっているのでしょうか？
-<b>ハッキントッシュ</b>でも利用可能！！になっています。
-</div>
-
+<p><img src="/images/2019-12-14-tlp-macos.png" alt="tlp on MacOS"></p>
+<!-- raw HTML omitted -->
 <p>不思議、、、でもタナボタやな。。</p>
 
 				

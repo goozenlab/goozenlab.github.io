@@ -151,28 +151,16 @@
             </div>
 
             <div class="post-content">
-                
-
-<h2 id="アプリについて">アプリについて</h2>
-
+                <h2 id="アプリについて">アプリについて</h2>
 <p>使い勝手は拙作のリトリストを踏襲し、タスクをテキスト形式で管理したいとの事からのスタート、ネット上で &ldquo;<strong>todo.txt</strong>&rdquo; という物を見つけそのクライアントを作ることがプロジェクトの始まり。</p>
-
-<p>しかしながら、&rdquo;todo.txt&rdquo; の形式がちょっと好きになれず、書式は結局、ブログの更新でも使っている、<strong>マークダウン形式</strong>に変更。少しtodo.txtの要素を取り込み、シンプルな形に整えました。</p>
-
+<p>しかしながら、&ldquo;todo.txt&rdquo; の形式がちょっと好きになれず、書式は結局、ブログの更新でも使っている、<strong>マークダウン形式</strong>に変更。少しtodo.txtの要素を取り込み、シンプルな形に整えました。</p>
 <p>入力はコンピューターをメイン、閲覧はiOS端末。(コンピューター(6.5:3.5)iOS端末)   一日の始めや、終わりに、ジーーッとリストを眺め、サッとやる事の整理をコンピューターを使って書き出し、日中はiOS端末でタスクの確認・更新  というような使い方を想定して作りました。</p>
-
 <h2 id="dropboxへの認証">Dropboxへの認証</h2>
-
 <p>Dropboxへの接続はナビゲーションバーの左側のボタンを押して認証プロセスを行います。</p>
-
 <p>Dropboxに接続に成功するとDropboxフォルダーに新しいAppsフォルダーとその中に<code>(a)</code>フォルダーが作られ、さらにその中にtodo.mdというファイルが端末よりコピーされます。アプリからはこの<strong>フォルダー内のみアクセス</strong>が可能になっています。ほかのディレクトリーには、移動は不可、勝手にファイルを置いたり読み込んだりもできません。</p>
-
 <p>ファイルの保管場所は <code>~/Dropbox/Apps/(a)/todo.md</code> です（固定）</p>
-
-<h2 id="todo-md-書式の説明">todo.md 書式の説明</h2>
-
+<h2 id="todomd-書式の説明">todo.md 書式の説明</h2>
 <p>マークダウンの形式にそっていますので、ブログをマークダウンで書いている人などは違和感無く使うことができると思います。</p>
-
 <pre><code>
 # メインタイトル
 
@@ -188,142 +176,102 @@
 4. 並び順は iOSでの端末の表示順と同じ
 1. 2行以上あける： プロジェクトなしのタスクして扱われます
 
-</code></pre>
-
-<p><img src="/images/manual/a-todomd-MouSnapShot.png" alt="Mou" />
+</code></pre><p><img src="/images/manual/a-todomd-MouSnapShot.png" alt="Mou">
 ※下のスクリーンショットはこのFileをつかってます（マークダウンの編集ソフトはかなり優秀でおすすめの <a href="http://25.io/mou/">Mou</a>。</p>
-
-<p><img src="/images/manual/a-MainView.png" alt="Main" />
-<img src="/images/manual/a-MainView-Cataegory.png" alt="Main category" />
-<img src="/images/manual/a-MainView-etc.png" alt="Main etc" /></p>
-
+<p><img src="/images/manual/a-MainView.png" alt="Main">
+<img src="/images/manual/a-MainView-Cataegory.png" alt="Main category">
+<img src="/images/manual/a-MainView-etc.png" alt="Main etc"></p>
 <ol>
 <li><code>#</code> h1ヘッダーはナビゲーションバーのメインタイトルになります</li>
 <li><code>##</code>のh2はプロジェクトとしてナビゲーションバーのタイトルになります</li>
 <li><code>1-9.</code> はバーの色を表します</li>
 <li><code>*, +</code> で入力したタスクはバーがグレーになります</li>
-<li><code>タイトル</code>：<code>メモ</code>（:または：）</li>
+<li><code>タイトル</code>：<code>メモ </code>（:または：）</li>
 <li>メモがある時は<code>左のバーに切り込み</code>が入ります</li>
 <li>強調されたタスクは左肩に赤いドットが表示され、RedHot Listとアプバッジに登録されます</li>
 <li>日付のフォーマットは <code>2015-11-11 12:30</code> がデフォルトです。読み込みは <code>2015/11/11 12:30</code> でも可能です（-の代わりに/でも）</li>
-<li>期日の設定は &ldquo;<code>@日付</code>&rdquo; もしくは &ldquo;<code>BY! 日付</code>&ldquo;で表します</li>
-<li>終了したタスクは、タスクの前に &ldquo;<code>x 完了日時</code>&ldquo;がつきます</li>
+<li>期日の設定は &ldquo;<code>@日付</code>&rdquo; もしくは &ldquo;<code>BY! 日付</code>&quot;で表します</li>
+<li>終了したタスクは、タスクの前に &ldquo;<code>x 完了日時</code>&quot;がつきます</li>
 </ol>
-
-<h2 id="a-の使い方">(a)の使い方</h2>
-
+<h2 id="aの使い方">(a)の使い方</h2>
 <h3 id="ナビゲーションバー">ナビゲーションバー</h3>
-
-<ol>
-<li>左右へのスワイプ：プロジェクトリスト間の移動<br />
-<img src="/images/manual/a-MainView-NavBar.png" alt="Navigation Bar" />
-<img src="/images/manual/a-MainView-Cataegory-NavBar.png" alt="Navigation Bar" />
-<img src="/images/manual/a-MainView-etc-NavBar.png" alt="Navigation Bar" /></li>
-<li>ロングタップ：左肩にドットの表示されたタスクのリスト、ロングタップでもとにリストに戻る<br />
-<img src="/images/manual/a-MainView-RedDot-NavBar.png" alt="RedDot" /></li>
-<li>上方向にスワイプ：期日の設定がされたタスクのリスト、左スワイプかロングタップでもとにリストに戻る<br />
-<img src="/images/manual/a-MainView-DueDate-NavBar.png" alt="RedDot" /></li>
+<ol start="3">
+<li>左右へのスワイプ：プロジェクトリスト間の移動<br>
+<img src="/images/manual/a-MainView-NavBar.png" alt="Navigation Bar">
+<img src="/images/manual/a-MainView-Cataegory-NavBar.png" alt="Navigation Bar">
+<img src="/images/manual/a-MainView-etc-NavBar.png" alt="Navigation Bar"></li>
+<li>ロングタップ：左肩にドットの表示されたタスクのリスト、ロングタップでもとにリストに戻る<br>
+<img src="/images/manual/a-MainView-RedDot-NavBar.png" alt="RedDot"></li>
+<li>上方向にスワイプ：期日の設定がされたタスクのリスト、左スワイプかロングタップでもとにリストに戻る<br>
+<img src="/images/manual/a-MainView-DueDate-NavBar.png" alt="RedDot"></li>
 </ol>
-
 <h2 id="テーブルセル">テーブルセル</h2>
-
 <h3 id="タップ">タップ</h3>
-
-<p><img src="/images/manual/a-cell-detail.png" alt="Cell" /></p>
-
+<p><img src="/images/manual/a-cell-detail.png" alt="Cell"></p>
 <ol>
 <li>シングルタップ：メモ -(ローテーション-)&gt; 期日の表示</li>
 <li>ダブルタップ：タスクの編集</li>
 <li>ロングタップ：左肩に赤ドット、強調表示に変更</li>
-<li>右へスワイプ：左のバーよりスワイプで色の変更<br />
-<img src="/images/manual/a-color-swipe.png" alt="Cell swipe" /></li>
-<li>左へスワイプ：削除と完了ボタン<br />
-<img src="/images/manual/a-SwipeLeft.png" alt="Cell swipe" />
-
+<li>右へスワイプ：左のバーよりスワイプで色の変更<br>
+<img src="/images/manual/a-color-swipe.png" alt="Cell swipe"></li>
+<li>左へスワイプ：削除と完了ボタン<br>
+<img src="/images/manual/a-SwipeLeft.png" alt="Cell swipe">
 <ol>
-<li>完了のボタンを押すと、ボタンを押した時間が完了時間として登録されます。<br /></li>
+<li>完了のボタンを押すと、ボタンを押した時間が完了時間として登録されます。</li>
 <li>※ 完了の解除方法
-
-<ol>
-<li>完了済みのタスクに再度完了のボタンをタップ</li>
-<li>編集ページにてチェックマークの入ったボタンをタップ</li>
-</ol></li>
-</ol></li>
+3. 完了済みのタスクに再度完了のボタンをタップ
+3. 編集ページにてチェックマークの入ったボタンをタップ</li>
 </ol>
-
+</li>
+</ol>
 <h3 id="左バーの色変更の順番">左バーの色変更の順番</h3>
-
-<p><img src="/images/manual/manual/color-default.png" alt="Color-Mode" /> &lt;-Normal , Kawaii -&gt;
-<img src="/images/manual/manual/color-kawaii.png" alt="Color-Mode" /></p>
-
+<p><img src="/images/manual/manual/color-default.png" alt="Color-Mode"> &lt;-Normal , Kawaii -&gt;
+<img src="/images/manual/manual/color-kawaii.png" alt="Color-Mode"></p>
 <h3 id="期日と色の変化">期日と色の変化</h3>
-
 <p>期日設定がある時は右端に色がつきます。期日が近づくとともに色が変化します。最後の赤ドットは期日を超えた印になります。
-<img src="/images/manual/a-color-duedate.png" alt="Due date" /></p>
-
+<img src="/images/manual/a-color-duedate.png" alt="Due date"></p>
 <h2 id="タスクの追加と編集">タスクの追加と編集</h2>
-
 <p>追加は、ナビゲーションバーの<strong>＋</strong>ボタンより、編集はタスクの<strong>ダブルタップ</strong>で編集画面に移行します。</p>
-
-<p>期日の設定は<br />
- 色のついたドットが期日のオン・オフのボタンの役割しています。(色は期日に合わせ変化します)<br />
- そして、オンになった時に表示される日付をタップすると日時を設定する事ができます。</p>
-
-<p><img src="/images/manual/a-DetailView.png" alt="Due date" />
-<img src="/images/manual/a-DetailView-DatePicke.png" alt="Due date" /></p>
-
+<p>期日の設定は<br>
+色のついたドットが期日のオン・オフのボタンの役割しています。(色は期日に合わせ変化します)<br>
+そして、オンになった時に表示される日付をタップすると日時を設定する事ができます。</p>
+<p><img src="/images/manual/a-DetailView.png" alt="Due date">
+<img src="/images/manual/a-DetailView-DatePicke.png" alt="Due date"></p>
 <h2 id="同期について">同期について</h2>
-
 <p>スリープ・ロック時にクラウドにアップロードし、アンロック・スリープから立上がる時に更新があればダウンロードします。
 少し慣れが必要かもしれませんが、特に複数のiOS端末で利用する場合は</p>
-
 <ul>
-<li>「ホームボタンを押す」＝「クラウドに保存」<br /></li>
+<li>「ホームボタンを押す」＝「クラウドに保存」</li>
 <li>「スリープ・ロックから復帰」＝「クラウドからファイル更新」</li>
 </ul>
-
 <p>という事を、念頭において使ってください。完全な同期ではありませんので、ファイルの更新のタイミングをほんの少し意識しつつ使ってもらえるとありがたいです。</p>
-
 <p>##リンクの解除方法
 ホーム&gt; 設定&gt; (a) よりDropboxのリンクを解除を<strong>オン</strong>します。次回立ち上げ時にリンクが解除されます。ナビゲーションバーの左に接続のボタンが表示されます。再接続、アカウントの変更等をするときはこのボタンより行います。（画面上にボタンを配置する事も考えましたが、頻繁にアクセスする物でなく見た目も余計なボタンが入るのを嫌って設定より行う事にしています。）</p>
-
-<p><img src="/images/manual/a-Setting-unlink.png" alt="Unlink" /></p>
-
+<p><img src="/images/manual/a-Setting-unlink.png" alt="Unlink"></p>
 <h2 id="ホーム-設定-a">ホーム&gt; 設定&gt; (a)</h2>
-
 <h3 id="表示の設定">表示の設定</h3>
-
 <ol>
 <li>フォントを選択</li>
-<li>カラーモードの選択<br />
-<img src="/images/manual/a-MainView.png" alt="Color mode" />
-<img src="/images/manual/a-ColorModeDark.png" alt="Color mode" />
-<img src="/images/manual/a-ColorModeKawaii.png" alt="Color mode" /></li>
+<li>カラーモードの選択<br>
+<img src="/images/manual/a-MainView.png" alt="Color mode">
+<img src="/images/manual/a-ColorModeDark.png" alt="Color mode">
+<img src="/images/manual/a-ColorModeKawaii.png" alt="Color mode"></li>
 </ol>
-
 <p>※ Kawaiiモードでの赤ドットはピンクな<strong>ハートマーク</strong>になります。</p>
-
-<h3 id="書出し-読み込み書式の設定">書出し・読み込み書式の設定</h3>
-
+<h3 id="書出し読み込み書式の設定">書出し・読み込み書式の設定</h3>
 <p>設定よりいくつかの項目は書式を変更する事ができます。ご自身が見やすいと思われる物に変更してください。</p>
-
 <ol>
 <li>日付書式：2015-12-31, 12-31-2015, 31-12-2015 の３種類</li>
 <li>強調の表記を **強調** か __強調__ の選択</li>
-<li>左のバーがクレーのタスクの表記：*, +, -のどれか
-<!-- 3. 日付のヘッダーを"BY!"を自分好みに（例、"期限："とか？）--></li>
+<li>左のバーがクレーのタスクの表記：*, +, -のどれか</li>
 </ol>
-
+<!-- raw HTML omitted -->
 <h3 id="その他">その他</h3>
-
 <ol>
 <li>Dropboxのリンクを解除：次回のアプリの立ち上げ時に解除されます。</li>
 </ol>
-
 <h2 id="なんかよく分からない状況になってしまった時">なんかよく分からない状況になってしまった時</h2>
-
 <p>データーが自分が思っているファイルに定まらず、勝手に同期をされてしまっている時は、</p>
-
 <ol>
 <li>iOS端末の通信が生きている事を確認</li>
 <li>アプリとdropboxの接続ができているかの確認はアプリのナビゲーションバーの左に何も無ければ同期ができているという事です</li>
@@ -334,34 +282,21 @@
 <li>画面に進行中画面が表示され、Dropbox上のファイルがダウンロードされます</li>
 <li>データーが更新され、コンピューターとiOS端末のファイルが同期されます</li>
 </ol>
-
 <p>※同期における注意点※</p>
-
 <ul>
 <li>「ホームボタンを押す」＝「クラウドに保存」  (※ ローカルのファイルが優先されます)</li>
 <li>「スリープ・ロックから復帰」＝「クラウドからファイル更新」</li>
 </ul>
-
 <h3 id="おまけ">おまけ</h3>
-
 <h4 id="ちょっとしたこだわり">ちょっとしたこだわり</h4>
-
 <p>一画面になるべくビッタリにテーブルセルが収まるようにセルの高さは端末によって微調整 (ip4:60, ip5:63, ip6:67px) してます。一番下のところが欠けてたり、少しだけ表示されていたりするとあまり美しくないと、、妙なところにこだわりってます。</p>
-
 <h4 id="アプリの名前">アプリの名前</h4>
-
-<p>アプリ名は珍しく初期段階で思いつきました。todo.txtで使われる書式の優先順位：高に付けられる (A) 。で、ちょっと柔らかく小文字の <strong>(a)</strong> に。書式の変更とともにアプリ名を変更しようかとも思いましたが、(a) が日本語だと、<strong>「かっこ、えー」</strong> -&gt; <strong>「格好えー」</strong>と「格好いい」と響きが近い事に気づき、そのままにしました。アプリのネーミングは個人開発者としてはかなりの悩みどころ、シンプルで響きも良いの物はなかなか出てこないので、名前とアプリ自体の関連性が薄くなってしまうが玉にきずだが、ご勘弁のほど。（そんなに難しい事ではないので、いずれ対応するかも？使いたい人います？）最後のiTuneConnectに申請時になってカッコは使ってはだめとアップロード時にエラーがでる。ターゲット名を変更し、Info.plistに Bunle Display Name に (a) を入れてなんとか通りました。かなりドキッっとしました。</p>
-
+<p>アプリ名は珍しく初期段階で思いつきました。todo.txtで使われる書式の優先順位：高に付けられる (A) 。で、ちょっと柔らかく小文字の <strong>(a)</strong> に。書式の変更とともにアプリ名を変更しようかとも思いましたが、(a) が日本語だと、<strong>「かっこ、えー」</strong> -&gt; **「格好えー」**と「格好いい」と響きが近い事に気づき、そのままにしました。アプリのネーミングは個人開発者としてはかなりの悩みどころ、シンプルで響きも良いの物はなかなか出てこないので、名前とアプリ自体の関連性が薄くなってしまうが玉にきずだが、ご勘弁のほど。（そんなに難しい事ではないので、いずれ対応するかも？使いたい人います？）最後のiTuneConnectに申請時になってカッコは使ってはだめとアップロード時にエラーがでる。ターゲット名を変更し、Info.plistに Bunle Display Name に (a) を入れてなんとか通りました。かなりドキッっとしました。</p>
 <h4 id="ぼやき">ぼやき</h4>
-
 <p>終わったタスクをどうすべきか、、自動で消してしまうか、ログブックを作って放り込むか。。。自分は捨てる派なんだが、これをやったっけという意味での確認には必要な気もするが、、とっておく人の方が多いのでしょうか？？、完了時に使うxを大文字と小文字で（捨てる、取っておく）フラグにする事までは浮かんだのだけど、、</p>
-
 <p>終了済みタスクの表示方法ももう少し分かりやすくスマートな方法があるような気がする。。</p>
-
 <p>テキストにてダァーーとリストが並んでいるの眺めると全体がイメージできるような気がします。全体がイメージできると何かこう、、、何かが浮かんでくるような、、、気がしていて、、、 とは言っても、ノマド中の私にはやるべき事が沢山ある訳では全くないのですが、、</p>
-
 <p>画面が大きくなって編集画面が質素に見える。。。</p>
-
 <p>旅には役に立ちそうなマップも <code>MAP: location name @ 6.1234618,102.2403237</code> こんな形で取り入れるか。。どうするか。</p>
 
             </div>

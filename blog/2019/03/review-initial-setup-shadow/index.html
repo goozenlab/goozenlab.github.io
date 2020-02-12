@@ -156,28 +156,17 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている
+                <p>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている
 <a href="https://www.gl-inet.com/products/gl-ar300m/">Shadow AR-300M</a> のレビューをしたいと思います。</p>
-
-<p><img src="/images/2019-03-10-glinet-shadow.png" alt="GLinet Shadow" /></p>
-
+<p><img src="/images/2019-03-10-glinet-shadow.png" alt="GLinet Shadow"></p>
 <p>このルーターに辿り着いたのは、PiHoleをラズベリアンにインストールしたりして、その流れで情報が入りました。</p>
-
 <p>タイミング良く、VPNやセキュリティーのためちょっとなんとかしたいな、と思っていた矢先でした。</p>
-
 <p>ソフトがインストールできる、PiHole同じ様な、Privoxyという広告ブロッキング・プロキシがあると、
 しかも、オープンソースで様々なソフトがインストールできる。</p>
-
 <p><a href="https://openwrt.org/toh/recommended_routers">Recommended routers</a></p>
-
 <h2 id="作り">作り</h2>
-
-<p><img src="/images/2019-03-11-ar300m.jpg" alt="AR300M" /></p>
-
+<p><img src="/images/2019-03-11-ar300m.jpg" alt="AR300M"></p>
 <p>ちっちゃくて軽く、おもちゃのようです。しかし、見た目以上に高性能なようで、</p>
-
 <ul>
 <li>Atheros QCA9531 650MHz</li>
 <li>DDRII 128MB</li>
@@ -188,77 +177,49 @@
 <li>58x58x25mm</li>
 <li>39g</li>
 </ul>
-
 <p>というスペックです。 5Gのワイファイは付いていませんが、アドオンで追加できるそうです。製造元のサイトにもまだありませんでしたけれども、。
 消費電力も2W以下で、モバイルバッテリーでもかなりの時間動くのではないかと、想像。（追加ソフトの各種設定が終わったら、時間を設けて検証します。）
 GPIOやPCIeが付いてるので、モジュールとかつけることもできる？のでしょうか、ちょっと気になります。（<a href="https://www.adafruit.com/product/3527">ちっちゃい液晶</a> とか入れたい。ピンはある様だし、ライブラリが動けば、、）</p>
-
 <p>内部の写真は、こんな感じです。あまりスペースはありません。分解はまだしてません。</p>
-
-<p><img src="/images/2019-03-11-GL-AR300M-PINOUT.jpg" alt="AR300M-PINOUT" /></p>
-
+<p><img src="/images/2019-03-11-GL-AR300M-PINOUT.jpg" alt="AR300M-PINOUT"></p>
 <h2 id="初期設定">初期設定</h2>
-
 <p>有線でも無線でも設定ができます。IPアドレスは<code>192.168.8.1</code>。無線LANの場合はアクセスポイントから入ります。</p>
-
 <ul>
 <li>SSID：GL-XXXX</li>
 <li>パスワード： goodlife</li>
 </ul>
-
 <p>ルーターにアクセスすると、自動で初期設定が始まります。</p>
-
-<p><img src="/images/2019-03-11-initial-setting-01.png" alt="GL-AR300M" /></p>
-
+<p><img src="/images/2019-03-11-initial-setting-01.png" alt="GL-AR300M"></p>
 <p>言語設定、タイムゾーン設定とパスワードの設定を行います。
 終了後は再起動されます。</p>
-
-<p><img src="/images/2019-03-11-initial-setting-02.png" alt="GL-AR300M" /></p>
-
-<p><img src="/images/2019-03-11-initial-setting-03.png" alt="GL-AR300M" /></p>
-
-<p><img src="/images/2019-03-11-initial-setting-04.png" alt="GL-AR300M" /></p>
-
-<hr />
-
+<p><img src="/images/2019-03-11-initial-setting-02.png" alt="GL-AR300M"></p>
+<p><img src="/images/2019-03-11-initial-setting-03.png" alt="GL-AR300M"></p>
+<p><img src="/images/2019-03-11-initial-setting-04.png" alt="GL-AR300M"></p>
+<hr>
 <p>特にリピーターモードで通信が安定しないと、ユーザーサポートページに書いてあったので、現在滞在中のアパートの通信環境が非常に悪いので、ちょっと心配であったのだけれど、
 心配は杞憂に終わり、あっさりよく切れてたのが、逆にすごく通信が粘り強くなりました。</p>
-
 <p>そして、なぜか使っているMacBookのWifiの感度まで上がっています。今まで見えなかった、横のアパートのAPをつかむ様になりました。電波って見えないけど、なんか不思議ですよね。。</p>
-
-<p><img src="/images/2019-03-11-initial-setting-05.png" alt="GL-AR300M" />
-<img src="/images/2019-03-11-initial-setting-07.png" alt="GL-AR300M" /></p>
-
+<p><img src="/images/2019-03-11-initial-setting-05.png" alt="GL-AR300M">
+<img src="/images/2019-03-11-initial-setting-07.png" alt="GL-AR300M"></p>
 <p>回線のスピードには改善は見られない様だけれども、接続はかなり良くなりました。</p>
-
 <p>これはこのルーターだからという訳ではなさそう、、</p>
-
-<p><img src="/images/2019-03-11-initial-setting-08.png" alt="GL-AR300M" />
-<img src="/images/2019-03-11-initial-setting-09.png" alt="GL-AR300M" />
-<img src="/images/2019-03-11-initial-setting-10.png" alt="GL-AR300M" /></p>
-
+<p><img src="/images/2019-03-11-initial-setting-08.png" alt="GL-AR300M">
+<img src="/images/2019-03-11-initial-setting-09.png" alt="GL-AR300M">
+<img src="/images/2019-03-11-initial-setting-10.png" alt="GL-AR300M"></p>
 <h2 id="特徴">特徴</h2>
-
 <p>様々なソフト（privoxy, munin-node, squid, tor, wireguard)をインストールすることができます。かなり自由度の高いルーターだと思います。オープンソースです。しかも、Torのオープン・ファームウェアまである。。</p>
-
-<p><img src="/images/2019-03-11-initial-setting-06.png" alt="GL-AR300M" />
-<img src="/images/2019-03-11-initial-setting-software.png" alt="GL-AR300M" /></p>
-
+<p><img src="/images/2019-03-11-initial-setting-06.png" alt="GL-AR300M">
+<img src="/images/2019-03-11-initial-setting-software.png" alt="GL-AR300M"></p>
 <p>そして、Advance Settingで使うことになる、LuCI</p>
-
 <p>簡単な設定は、他社と同じ様にウェブを通して設定ができます。
 細かい設定は、SSHで端末に入ってもできるし、アドバンスメニューから、
 OpenWrtのフロントエンド、LuCIより設定することができます。</p>
-
 <p>気になっている、VPN+TORなどもインストールできる様なので、</p>
-
+<h2 id="heading"></h2>
 <p>詳細設定はLuCIを使って行います。SSHでログインして、confファイルをいじることももちろんできます。</p>
-
-<p><img src="/images/2019-03-11-initial-setting-11.png" alt="GL-AR300M" />
-<img src="/images/2019-03-11-initial-setting-12.png" alt="GL-AR300M" /></p>
-
+<p><img src="/images/2019-03-11-initial-setting-11.png" alt="GL-AR300M">
+<img src="/images/2019-03-11-initial-setting-12.png" alt="GL-AR300M"></p>
 <p>さて次回は、アドバンス設定ページ、LuCIで詳細設定とソフトのインストール作業をしたいと思います。</p>
-
 <p>英文ですが、このルーターのドキュメントも公式サイトで公開されています。
 <a href="https://docs.gl-inet.com/en/2/hardware/ar300m/">https://docs.gl-inet.com/en/2/hardware/ar300m/</a></p>
 

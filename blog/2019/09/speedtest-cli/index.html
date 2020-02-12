@@ -156,28 +156,18 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>コマンドでサーバーから外へのネットスピードを計ります。
+                <p>コマンドでサーバーから外へのネットスピードを計ります。
 おなじみの
 <a href="https://www.speedtest.net">https://www.speedtest.net</a>
 を利用しているようです。</p>
-
-<p><img src="/images/2019-09-01-speedtest-00.png" alt="Speedtest" /></p>
-
+<p><img src="/images/2019-09-01-speedtest-00.png" alt="Speedtest"></p>
 <h2 id="インストール">インストール</h2>
-
 <p>パイソンのモジュールなので<code>pip install speedtest-cli</code>でインストールは可能のようですが、
 ラズビアンではパッケージもあるようなのでそちらを利用します。バージョン2.0.2-1がインストールされます。</p>
-
 <pre><code>pi@tacos:~ $ sudo apt install speedtest-cli
 Get:1 http://mirror1.ku.ac.th/raspbian/raspbian buster/main armhf speedtest-cli all 2.0.2-1 [23.3 kB]
-</code></pre>
-
-<h2 id="使い方">使い方</h2>
-
+</code></pre><h2 id="使い方">使い方</h2>
 <p>コマンド<code>speedtest</code>でいたって簡単です。<code>speedtest --share</code>で結果をシェアーする事ができます。</p>
-
 <pre><code>pi@tacos:~ $ speedtest --share
 
 Hosted by AIS (Phitsanulok) [345.39 km]: 23.406 ms
@@ -187,22 +177,15 @@ Testing upload speed............................................................
 Upload: 2.14 Mbit/s
 Share results: http://www.speedtest.net/result/8556438892.png
 pi@tacos:~ $ 
-</code></pre>
-
-<p><img src="http://www.speedtest.net/result/8556438892.png" alt="Speedtest" /></p>
-
+</code></pre><p><img src="http://www.speedtest.net/result/8556438892.png" alt="Speedtest"></p>
 <p>※ チェンライにて滞在中の安宿から、最近は夜の10時頃に切られてしまうんですが、割とがんばってるのでは。</p>
-
 <p>そして、書き出しオプションもありフォーマットが選べます。</p>
-
 <ul>
 <li>simple</li>
 <li>csv</li>
 <li>json：割と詳細にわたって情報が得られます。</li>
 </ul>
-
 <p>情報もアップロードされていたりもするみたいですね。。</p>
-
 <pre><code>pi@tacos:~ $ speedtest --simple
 Ping: 6.648 ms
 Download: 10.64 Mbit/s
@@ -244,16 +227,11 @@ pi@tacos:~ $ speedtest --json | jq .
     &quot;country&quot;: &quot;TH&quot;
   }
 }
-</code></pre>
-
-<h2 id="influxdbへ書出">InfluxDBへ書出</h2>
-
+</code></pre><h2 id="influxdbへ書出">InfluxDBへ書出</h2>
 <p>パイソンモジュールなので、パイソンスクリプトで利用することもできます。</p>
-
-<p>が、、なぜかシェルで書いていたようなので、、、<br />
+<p>が、、なぜかシェルで書いていたようなので、、、<br>
 cronjobで一定期間毎に走らせて、telegrafのデーターベースに追加していきます。
 （春先に動かしていたので、動作上の問題はないと思います）</p>
-
 <pre><code>#!/usr/bin/env sh
 
 timestamp=$(date +%s%N)
@@ -269,9 +247,7 @@ output=$(/usr/local/bin/speedtest --simple --bytes)
 line=$(echo -n &quot;$output&quot; | awk '/Ping/ {print &quot;ping=&quot; $2} /Download/ {print &quot;downstream=&quot; $2} /Upload/ {print &quot;upstream=&quot; $2}' | tr '\n' ',' | head -c -1)
 curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;speedtest,host=$hostname $line $timestamp&quot;
 #echo &quot;New speedtest sent&quot;
-</code></pre>
-
-<p>Pythonに書き換えねば、</p>
+</code></pre><p>Pythonに書き換えねば、</p>
 
 				
 

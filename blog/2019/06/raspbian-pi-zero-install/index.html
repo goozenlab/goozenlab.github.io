@@ -156,76 +156,47 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。
+                <p>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。
 酷暑インドから戻ってきたので、３０度とはいえ気持ち涼しい北タイです。</p>
-
 <p>さて、何をしていたか忘却の彼方。。</p>
-
 <p>振り出しに戻りラズベリーパイ・ゼロにラズビアンをヘッドレス・インストール。
 キーボードとモニターをつなげることなくインストールしました。
 少々の手間で簡単にできます。サーバー目的で使うのならばこちらの方法が面倒もなく良いです。</p>
-
 <p>まずはイメージを
 <a href="https://www.raspberrypi.org/downloads/raspbian/">こちら</a>
 よりダウンロードします。
 サーバー用途で使うので、Raspbian Stretch Liteを選択します。</p>
-
-<p><img src="/images/2019-06-20-raspbian-pi-zero-install-stretch-lite.png" alt="Install Raspbian on Pi zero" /></p>
-
+<p><img src="/images/2019-06-20-raspbian-pi-zero-install-stretch-lite.png" alt="Install Raspbian on Pi zero"></p>
 <ul>
 <li><a href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a></li>
 </ul>
-
 <p>マイクロSDへの書き込みは幾つかソフトがあるようですが、随分お世話になってる<strong>etcher</strong>というソフトを使います。</p>
-
 <ul>
 <li><a href="https://etcher.io">https://etcher.io</a></li>
 </ul>
-
 <p>今まで気がつかなかったのですが、<strong>zipの状態</strong>からでも書き込みことができるようです。
 一手間省けるし、ディスクの領域がセーブできるのありがたいです。</p>
-
-<p><img src="/images/2019-06-20-raspbian-pi-zero-install-etcher.png" alt="Install Raspbian on Pi zero" /></p>
-
+<p><img src="/images/2019-06-20-raspbian-pi-zero-install-etcher.png" alt="Install Raspbian on Pi zero"></p>
 <h2 id="書き込み後の設定">書き込み後の設定</h2>
-
 <p>書き込み後はマイクロSDはマウントされていないので、マイクロSDを抜き差しします。bootというパーティションがマウントされます。
 bootパーティションの中にある<code>cmdline.txt</code>と<code>config.txt</code>を編集します。</p>
-
-<h3 id="cmdline-txt-rootwaitの後に追加-一行です">cmdline.txt (rootwaitの後に追加：一行です。)</h3>
-
+<h3 id="cmdlinetxt-rootwaitの後に追加一行です">cmdline.txt (rootwaitの後に追加：一行です。)</h3>
 <pre><code>modules-load=dwc2,g_ether
-</code></pre>
-
-<h3 id="config-txt-最終行に追加">config.txt（最終行に追加）</h3>
-
+</code></pre><h3 id="configtxt最終行に追加">config.txt（最終行に追加）</h3>
 <pre><code>dtoverlay=dwc2
-</code></pre>
-
-<h3 id="ssh">ssh</h3>
-
+</code></pre><h3 id="ssh">ssh</h3>
 <p>sshでアクセスをするために、boot以下に<code>ssh</code>ファイルを作成します。
 (フォルダーでも良いそうです。）
 ターミナルより、</p>
-
 <pre><code>$ touch /Volumes/boot/ssh
-</code></pre>
-
-<p>電源を落とすとファイルが消えてしまいますので要注意です。</p>
-
+</code></pre><p>電源を落とすとファイルが消えてしまいますので要注意です。</p>
 <p>※ wifiの設定ファイルを書き込んで行う方法もあるようですが、一回試すもうまく行かずそれ以来試してません。）</p>
-
 <h2 id="起動と起動後の設定">起動と起動後の設定</h2>
-
 <p>書き込んだマイクロSDをラズベリーパイ・ゼロに入れます。
 一番外側のUSBポートは電源用ポートなので、内側の電源兼データーUSBポートにケーブルをつなぎます。
 電源が入り、少し作業があるようなので、しばし待ちます。</p>
-
 <p>端末の無線LANの接続はオフにして、ターミナルから<code>ssh pi@raspberrypi.local</code>でアクセスします。
 パスワードは<strong>raspberry</strong>です。</p>
-
 <pre><code>$ ssh pi@raspberrypi.local
 The authenticity of host 'raspberrypi.local (fe80::e5a5:6205:ef11:6bb3%en5)' can't be established.
 ECDSA key fingerprint is SHA256:ZVyo2zpzsGmLJBje8VXsS6CmcRnXhDWwaQGQ4PebjWM.
@@ -245,47 +216,27 @@ SSH is enabled and the default password for the 'pi' user has not been changed.
 This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
 
 $
-</code></pre>
-
-<p>ログイン後、基本的な設定を行います。<code>raspi-config</code>というコマンドがあります。</p>
-
+</code></pre><p>ログイン後、基本的な設定を行います。<code>raspi-config</code>というコマンドがあります。</p>
 <pre><code>$ sudo raspi-config
-</code></pre>
-
-<p><img src="/images/2019-06-20-raspbian-pi-zero-install-config-01.png" alt="Install Raspbian on Pi zero" /></p>
-
+</code></pre><p><img src="/images/2019-06-20-raspbian-pi-zero-install-config-01.png" alt="Install Raspbian on Pi zero"></p>
 <p>passwdの変更、wifiのアクセスポイント追加、sshサービスの有効化、localeやtimezoneを変更します。
 作業終了後は自動でリブートします。</p>
-
-<p><img src="/images/2019-06-20-raspbian-pi-zero-install-config-02.png" alt="Install Raspbian on Pi zero" /></p>
-
+<p><img src="/images/2019-06-20-raspbian-pi-zero-install-config-02.png" alt="Install Raspbian on Pi zero"></p>
 <p>wifiを設定したので、これでケーブルでの接続は不要になります。
 電源を落として、</p>
-
 <pre><code>$ sudo shutdown
-</code></pre>
-
-<p>ケーブルを抜いて再起動します。</p>
-
-<h2 id="おまけ-busterへアップデート">おまけ：Busterへアップデート</h2>
-
+</code></pre><p>ケーブルを抜いて再起動します。</p>
+<h2 id="おまけbusterへアップデート">おまけ：Busterへアップデート</h2>
 <p>再起動後にはipアドレスが変わるので、ルーターよりアドレスを確認します。
 ターミナルより<code>ssh pi@&lt;IP_ADDRESS&gt;</code>で接続します。</p>
-
-<p><img src="/images/2019-06-20-raspbian-pi-zero-install-ip.png" alt="Install Raspbian on Pi zero" /></p>
-
+<p><img src="/images/2019-06-20-raspbian-pi-zero-install-ip.png" alt="Install Raspbian on Pi zero"></p>
 <p>通常ならばここで、</p>
-
 <pre><code>$ sudo apt-get update
 $ sudo apt-get upgrade
-</code></pre>
-
-<p>システムの更新を行いますが、来月にはアップデートされるbusterには気になるパッケージが入っていたりしたので、
+</code></pre><p>システムの更新を行いますが、来月にはアップデートされるbusterには気になるパッケージが入っていたりしたので、
 アップグレードします。</p>
-
 <p>ラズビアンでは公式にバスターはリリースはされていませんが、何故かレポジトリーは存在して、パッケージも提供されています。
 aptのファイル変更でアップデートを行いました。</p>
-
 <pre><code>$ sudo sync
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -296,12 +247,8 @@ $ sudo apt-get -y dist-upgrade
 $ sudo apt autoremove
 $ sudo sync
 $ sudo reboot
-</code></pre>
-
-<p><code>sudo sync</code>の意味が今ひとつわからないのだけども、とりあえずエラーなくアップグレードできました。</p>
-
+</code></pre><p><code>sudo sync</code>の意味が今ひとつわからないのだけども、とりあえずエラーなくアップグレードできました。</p>
 <p>プチルーターの検証とかに使ってみようかなと思ったりしてます。</p>
-
 <p>おまけのおまけ：時を同じくして、新しいバージョン（バスター）にアップグレードされていました。本家のDebianからは７月６日にオフィシャルリリースです。arm64にも対応するようなので、ちょっと楽しみでもあります。</p>
 
 				

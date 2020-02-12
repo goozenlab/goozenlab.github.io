@@ -157,11 +157,9 @@
 
             <div class="post-content">
                 <p>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしました。ついでにアプリの名前も小文字に変更。</p>
-
 <p>ついでに、ネット各所に載って
 いますが、バージョンとビルドの番号を設定に半自動に書き込むコピペスクリプトをTargetのBuild Phases追加する。
 ビルドのカウントはされるが、アプリ更新時の設定への書出しは自分でInfo.plistに書き込む必要がある形にしています。</p>
-
 <pre><code>agvtool bump
 # agvtool bump -all #Info.plistも更新したいとき
 
@@ -188,15 +186,10 @@ fi
 /usr/libexec/PlistBuddy -c &quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&quot; $rootPlistFileDestination
 /usr/libexec/PlistBuddy -c &quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&quot; $rootPlistFileDestination
 
-</code></pre>
-
-<p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
-
-<p><img src="/images/2015-01-26_versionning_dev.png" alt="Dev" />
-<img src="/images/2015-01-26_versionning_app.png" alt="App" /></p>
-
+</code></pre><p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
+<p><img src="/images/2015-01-26_versionning_dev.png" alt="Dev">
+<img src="/images/2015-01-26_versionning_app.png" alt="App"></p>
 <p>以下を Setting.bundle/Root.plistに加える事もお忘れなく。</p>
-
 <pre><code>        &lt;dict&gt;
             &lt;key&gt;Title&lt;/key&gt;
             &lt;string&gt;About&lt;/string&gt;
@@ -225,12 +218,9 @@ fi
             &lt;key&gt;Key&lt;/key&gt;
             &lt;string&gt;app_build_number&lt;/string&gt;
         &lt;/dict&gt;
-</code></pre>
-
-<p>追記：<br />
+</code></pre><p>追記：<br>
 少しカッコつけてビルドした場所を書き加えました。これで少し作業のモチベーションが上がるかもしれん。。</p>
-
-<p><img src="/images/2015-01-19_a_release.png" alt="Release" /></p>
+<p><img src="/images/2015-01-19_a_release.png" alt="Release"></p>
 
 				
 

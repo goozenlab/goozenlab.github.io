@@ -156,16 +156,12 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>パイとのファイル共有を行います。（とりあえず、マック・パイ）
+                <p>パイとのファイル共有を行います。（とりあえず、マック・パイ）
 NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしました。</p>
-
 <p>raspbianのデフォルトの状態ではNFSはインストールされていないので、
 まずはインストール
 <code>sudo apt-get install nfs-kernel-server -y</code>
 します。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo -Es
 root@raspberrypi:~ # apt install nfs-kernel-server -y
 Reading package lists... Done
@@ -194,87 +190,50 @@ Creating config file /etc/default/nfs-kernel-server with new version
 Processing triggers for systemd (232-25+deb9u11) ...
 Processing triggers for man-db (2.7.6.1-2) ...
 root@raspberrypi:~ #
-</code></pre>
-
-<h2 id="設定">設定</h2>
-
+</code></pre><h2 id="設定">設定</h2>
 <p>piユーザーのuidとgidの番号を調べます。</p>
-
 <pre><code>root@raspberrypi:~ $ id pi
 uid=1000(pi) gid=1000(pi) groups=1000(pi),4(adm)......
-</code></pre>
-
-<p>シェアーするフォルダーを作り、アクセス権を設定します。
+</code></pre><p>シェアーするフォルダーを作り、アクセス権を設定します。
 そしてNFSの設定ファイル<code>/etc/exports</code>にシェアフォルダーの情報を書き込みます。</p>
-
 <pre><code>root@raspberrypi:~ $ mkdir /home/pi/share
 root@raspberrypi:~ $ chmod -R 777 /home/pi/share
-</code></pre>
-
-<p>NFSサーバー設定ファイル<code>/etc/exports</code>に書き込む書式は、</p>
-
+</code></pre><p>NFSサーバー設定ファイル<code>/etc/exports</code>に書き込む書式は、</p>
 <p>/home/pi/share（シェア・フォルダー） 10.0.0.0/16（受け付けるIP） (rw,sync)（設定）</p>
-
-<p>になります。すべてのIPアドレスから受け付ける時はIPアドレスの所に*印をつけます。
- * と ( の間にはスペースは入れませんのでお気をつけのほど。</p>
-
+<p>になります。すべてのIPアドレスから受け付ける時はIPアドレスの所に*印をつけます。</p>
+<ul>
+<li>と ( の間にはスペースは入れませんのでお気をつけのほど。</li>
+</ul>
 <p>/home/pi/share *(rw,sync)</p>
-
 <p>そして、マックとの接続にはオプションの<code>insecure</code>が必要とのこと。そのた色々なオプションが付いてきます。</p>
-
 <pre><code>root@raspberrypi:~ $ vi /etc/exports
 
 /home/pi 10.0.0.0/24(rw,all_squash,insecure,sync,no_subtree_check,anonuid=1000,anongid=1000)
 
-</code></pre>
-
-<h2 id="client-on-mac">Client on Mac</h2>
-
+</code></pre><h2 id="client-on-mac">Client on Mac</h2>
 <p>mac側でマウントするときはファインダーより
 Go(移動)&gt;Connect Server(サーバーに接続）
 若しくはコマンド+Kで
 Server Addressの欄に
 <code>nfs://&lt;&lt;SERVER IP&gt;&gt;/home/pi/share</code>
 を入力します。</p>
-
-<p><img src="/images/2019-07-07-pi-nfs-mac.png" alt="Access NFS" /></p>
-
+<p><img src="/images/2019-07-07-pi-nfs-mac.png" alt="Access NFS"></p>
 <p>フォルダー名を変えたいなどの理由があれば、コマンドラインでも接続できます。</p>
-
 <pre><code># sudo mkdir /Volumes/share_nfs
 # sudo mount_nfs -P &lt;&lt;SERVER IP&gt;&gt;:/home/pi/share /Volumes/share_nfs
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <p>さて、接続はすぐにできました。楽勝だなと思いましたが、全く使い物にならないほど転送速度が遅いです。
 1KBに満たないテキストファイルのコピーも1分近く掛かりました。
 しかも接続を何回か繰り返したら、ファインダーが落ちます、カーネルパニックは起こしませんが復帰しません。
 結局再起動になります。</p>
-
 <p>マックの環境がちょっと古いElCapitanなのが問題なのか、、パイ側なのか、、
 Syncthingは良いスピードで動いているので、NFSの問題なのか？？。</p>
-
 <p>深追いせずに切り捨てます。SAMBAをためそ。</p>
-
 <p>解決方法ご存知方がいらっしゃったら、ご教授のほど、、。</p>
-
-<!--
-
-### オプション
-
-以下のオプションでパフォーマンスが良くなると見つけましたが、試していません。
-
-``
-$ sudo mount -t nfs -o soft,intr,rsize=8192,wsize=8192,timeo=900,retrans=3,proto=tcp nas01:/sales /private/sales
-OR
-$ sudo mount -t nfs nfs -o soft,timeo=900,retrans=3,vers=3, proto=tcp nas01:/sales /private/sales
-```
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h3 id="参照サイト">参照サイト</h3>
-
-<p>How to Setup Raspberry Pi NFS Server：<a href="https://pimylifeup.com/raspberry-pi-nfs/">https://pimylifeup.com/raspberry-pi-nfs/</a></p>
+<p>How to Setup Raspberry Pi NFS Server：https://pimylifeup.com/raspberry-pi-nfs/</p>
 
 				
 

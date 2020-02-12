@@ -156,47 +156,31 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。</p>
-
+                <p>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。</p>
 <p>ブロックでっせ！と、こんな感じで出てきます、</p>
-
-<p><img src="/images/2016-09-11-block-enumerateLines.png" alt=" block-enumerateLines " /></p>
-
+<p><img src="/images/2016-09-11-block-enumerateLines.png" alt=" block-enumerateLines "></p>
 <p>ダブルクリックで、意味がわからなくなる。この前置詞 <code>in</code> ちゅーのが曲者、どこの中じゃ？。</p>
-
-<p><img src="/images/2016-09-11-block-enumerateLines-click.png" alt=" block-enumerateLines-click" /></p>
-
+<p><img src="/images/2016-09-11-block-enumerateLines-click.png" alt=" block-enumerateLines-click"></p>
 <h2 id="その一">その一</h2>
-
 <pre><code>addressString.enumerateLines ({
     (line: String, inout stop: Bool) -&gt; () in
     
     print(line)
 })
-</code></pre>
-
-<h2 id="trailing-closure-syntax-を抜いてます">Trailing closure syntax：（）を抜いてます。</h2>
-
+</code></pre><h2 id="trailing-closure-syntaxを抜いてます">Trailing closure syntax：（）を抜いてます。</h2>
 <pre><code>addressString.enumerateLines {
     (line: String, inout stop: Bool) in
     
     print(line)
 }
-</code></pre>
-
-<h2 id="xcodeの簡易バージョン">XCodeの簡易バージョン</h2>
-
+</code></pre><h2 id="xcodeの簡易バージョン">XCodeの簡易バージョン</h2>
 <p>これが一番意味がつかめないのですが、最初に出てきたときによく見ろということですな。</p>
-
 <pre><code>addressString.enumerateLines {
     (line, stop) in
     
     println(line)
 }
 </code></pre>
-
 				
 
 <h3>See Also</h3>

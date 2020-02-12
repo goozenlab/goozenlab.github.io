@@ -156,47 +156,32 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2018-12-20-unlock.png" alt="Max Unlock" /></p>
-
+                <p><img src="/images/2018-12-20-unlock.png" alt="Max Unlock"></p>
 <p>まだ、Max3ではカスタムロムは出てきてはいないのだけれども、
 もうブートローダーはロック解除できなくなるなどとの噂が流れていたりもしているので、
 とりあえず、2018年12月現在のXiaomiデバイスのブートローダーロック解除方法を書いておきます。
 すべてのシャオミ・スマートフォンで同じ方法になると思います。</p>
-
 <p>数年前とは少し違う手順になっています。少しだけ簡易化されました。</p>
-
 <ol>
 <li>端末をデベロッパーモードに変更</li>
-<li>Developer Options &gt; Mi UnLock Status より端末の登録（<code>Mi Account</code>への登録が必要あります。）<br />
-<img src="/images/2018-11-16-developer-mode.png" alt="Max Unlock" />
-<img src="/images/2018-11-16-unlock-satus.png" alt="Max Unlock" /></li>
+<li>Developer Options &gt; Mi UnLock Status より端末の登録（<code>Mi Account</code>への登録が必要あります。）<br>
+<img src="/images/2018-11-16-developer-mode.png" alt="Max Unlock">
+<img src="/images/2018-11-16-unlock-satus.png" alt="Max Unlock"></li>
 <li>unLock Tool をダウンロード</li>
 <li>端末をつなぎ、アプリを実行。途中数回データーが消去されるとの確認のダイアログが表示される。</li>
 </ol>
-
-<p><img src="/images/2018-12-20-unlock-success.png" alt="Max Unlock" /></p>
-
+<p><img src="/images/2018-12-20-unlock-success.png" alt="Max Unlock"></p>
 <p>端末にてロックが解除されたことを確認できます。</p>
-
-<p><img src="/images/2018-12-20-developer-mode.png" alt="Max Unlock" />
-<img src="/images/2018-12-20-unlock-satus.png" alt="Max Unlock" /></p>
-
-<hr />
-
+<p><img src="/images/2018-12-20-developer-mode.png" alt="Max Unlock">
+<img src="/images/2018-12-20-unlock-satus.png" alt="Max Unlock"></p>
+<hr>
 <p>しかし実際は、上記のようにはあっさりとはいきませんで、<code>Cann't unlock. Your account isn't associated with a phone number</code>のエラーがで先に進みませんでした。電話番号と紐付けができていないとのエラー。</p>
-
-<p><img src="/images/2018-12-20-unlock-error.png" alt="Max Unlock" /></p>
-
+<p><img src="/images/2018-12-20-unlock-error.png" alt="Max Unlock"></p>
 <p>電話番号の入ったシムが必要なのかと思ったりして、試行錯誤しました。結局のところ、Mi Accountにて、リカバリー用電話番号が未登録だったことが問題だったのようで、番号を登録（SMSでの認証が必要）することで、エラーを回避しロックの解除ができました。</p>
-
-<p><img src="/images/2018-12-20-mi-recovery.png" alt="Max Unlock" /></p>
-
-<hr />
-
+<p><img src="/images/2018-12-20-mi-recovery.png" alt="Max Unlock"></p>
+<hr>
 <p>そして、MIUI.EUを試しにインストールするも、<code>Reset Phone</code>という画面が立ち上がる。リセットボタンを押すと再起動しブートローダーが起動、ファクトリーリセットをしても、リセットループに陥る。。。</p>
-
 <p>結局XDAにて<a href="https://forum.xda-developers.com/mi-max-3/how-to/rom-official-recovery-fastboot-roms-mi-t3827503">ファーストブート用ロム</a> をとってきて、<code>flash-all</code>で元に戻す。LinageOSを入れたいので早く対応してくれないかなと、残念だけど、気長に待つことにする。う〜〜〜ん。Poco Phoneにしておけばよかったかなぁ。。</p>
-
 <p><strong>追記</strong>：どこかしらで、ファクトリーリセットは１回ではデーターが完全に削除されないと情報を得る。ちょっとまた時間をとって、複数回ファクトリーリセットを試み、Data/Cacheも同様に複数回Wipeをして立ち上げたところ上手くいきました。。。う～ん。解決はしたものの。。。げぜぬ。。</p>
 
 				

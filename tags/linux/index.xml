@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 23 Jan 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Standard Notes</title>
+      <link>https://goozenlab.com/blog/2020/02/standardnotes/</link>
+      <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/standardnotes/</guid>
+      <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあったり、 データを暗号</description>
+    </item>
     
     <item>
       <title>VSCodium</title>
@@ -109,7 +118,7 @@
       <pubDate>Fri, 20 Dec 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/linux-windowmamager/</guid>
-      <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：debian buster 試験環境：M</description>
+      <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 ついでにちょっとインストールした</description>
     </item>
     
     <item>
@@ -118,7 +127,7 @@
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</guid>
-      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモとして残す。 現在Wif</description>
+      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモとして残す。 インストー</description>
     </item>
     
     <item>

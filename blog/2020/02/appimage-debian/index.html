@@ -156,41 +156,30 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2020-01-13-appimage-org.png" alt="AppImage" /></p>
-
+                <p><img src="/images/2020-01-13-appimage-org.png" alt="AppImage"></p>
 <p>ダウンロードして、実行権を与え、ダブルクリックで起動という利便性の高いアプリ配信方式の AppImage ですが、
 中には上手く動かないアプリもありました。</p>
-
 <p>Simplenote は問題なく起動して使えるのですが、
 移行を考える中で重要なアプリの中のパスワードマネージャー、Bitwarden（Firefox の中でのみ動かせばよいのだけど）や
 Simplenote の代替にと思っている Standardnote がダブルクリックをしても反応なし。
 無視されます。</p>
-
 <pre><code>jin@debian:~$ ./Bitwarden-1.16.6-x86_64_849699e8ffd5ea4b49ba5ed229889e60.AppImage
 Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
 [15234:0131/095859.949360:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /tmp/.mount_BitwarvBIpCw/chrome-sandbox is owned by root and has mode 4755.
 Trace/breakpoint trap
-</code></pre>
-
-<p>対処方法があり、
+</code></pre><p>対処方法があり、
 <code>--no-sandbox</code>
 のオプションを追加して起動することで回避でできます。
 （以前の投稿とかぶる。）</p>
-
 <p>しかし、Gnome デスクトップ上でのアイコン表示がないので、
 アプリの立ち上げをコマンドラインでする必要があります。
 しかしながら少し気が引けるのでアイコンの表示方法をリサーチ。</p>
-
 <p>Gnome デスクトップへの登録は、
 <code>~/.local/share/applications/</code>
 以下に<strong>application.desktop</strong>
 というファイルを置くことで登録されるということで、</p>
-
 <p>まず、立ち上げるとアイコンは表示されるので、
 アプリケーションのパッケージをマウントする方法があり中身を見てみました。</p>
-
 <pre><code>jin@debian:~/Downloads$ ./Simplenote-linux-1.14.0-x86_64.AppImage --appimage-mount
 jin@debian:~/Downloads$ ls/tmp/.mount_SimpleFF9b70
 AppRun                  LICENSE.electron.txt    simplenote.desktop
@@ -200,59 +189,36 @@ icudtl.dat              natives_blob.bin        swiftshader
 libEGL.so               resources               usr
 libffmpeg.so            resources.pak           v8_context_snapshot.bin
 libGLESv2.so            simplenote
-</code></pre>
-
-<p>その中で見つけた
+</code></pre><p>その中で見つけた
 <code>simplenote.desktop</code>
 を所定の場所にコピーするも上手く行かず。
 ファイルをちょっと編集すれば動くようにもなるのだろうけれども、
 その時点で Manjaro では AppImageLanucher というアプリがあったと思い出す。</p>
-
 <h2 id="appimage-launcher">AppImage Launcher</h2>
-
-<p><img src="/images/2020-01-31-github-appimagelauncher.png" alt="AppImage on Debian" /></p>
-
+<p><img src="/images/2020-01-31-github-appimagelauncher.png" alt="AppImage on Debian"></p>
 <p><a href="https://github.com/TheAssassin/AppImageLauncher">https://github.com/TheAssassin/AppImageLauncher</a></p>
-
 <p>このアプリがシンプルな作業を代行してくれます。
 Arch 系では AUR にてインストール、デビアンでは Ubuntu のパッケージのものが使えます。</p>
-
-<p><img src="/images/2020-01-31-appimage-install-01.png" alt="AppImage on Debian" /></p>
-
+<p><img src="/images/2020-01-31-appimage-install-01.png" alt="AppImage on Debian"></p>
 <p>しかし、最初に書いてあるように、ビットワルデンのアイコンをクリックしても動きません。</p>
-
-<p><img src="/images/2020-01-31-appimagelauncer-desktop.png" alt="AppImage on Debian" /></p>
-
+<p><img src="/images/2020-01-31-appimagelauncer-desktop.png" alt="AppImage on Debian"></p>
 <p>上記のエラーが絡んでいるようで、そこまで気はきいてはないようです。
 多分エラーはデビアン特有のものなのかな。</p>
-
 <p>さて、</p>
-
 <p><code>~/.local/share/applications/</code>
 の中に、app***.desktop ファイルが作成されているので、
 そちらを見て、すこしばかり調整しました。</p>
-
-<h3 id="no-sandbox">&rdquo;&ndash;no-sandbox&rdquo;</h3>
-
+<h3 id="--no-sandbox">&ldquo;&ndash;no-sandbox&rdquo;</h3>
 <p>を起動時のオプションに指定します。</p>
-
-<p><img src="/images/2020-01-31-appimage-desktop.png" alt="AppImage on Debian" /></p>
-
+<p><img src="/images/2020-01-31-appimage-desktop.png" alt="AppImage on Debian"></p>
 <p>で、動くようになりました。</p>
-
-<!--
-![AppImage on Debian](/images/2020-01-31-appimage-install-02.png)
-![AppImage on Debian](/images/2020-01-31-appimage-download.png)
-![AppImage on Debian](/images/2020-01-31-appimage-install-bitwarden.png)
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="config-ファイル">config ファイル</h2>
-
 <p>他の Linux でも共有したいので、ちょっと Application フォルダーが作られるのがちと嫌なのですが、
 AppImage Launcher 自体の設定ファイルは、
 <code>~/.config/appimagelauncher.cfg</code>
 にあります。保存先を変えるかな。</p>
-
 <pre><code>jin@debian:~$ cat ~/.config/appimagelauncher.cfg
 
 [AppImageLauncher]
@@ -263,12 +229,8 @@ ask_to_move = true
 [appimagelauncherd]
 # additional_directories_to_watch = ~/otherApplications:/even/more/applications
 # monitor_mounted_filesystems = fals
-</code></pre>
-
-<p>Simplenote は deb パッケージで提供されているものより、AppImage のサイズが何故か小さいし、こちらに変えよかな。</p>
-
+</code></pre><p>Simplenote は deb パッケージで提供されているものより、AppImage のサイズが何故か小さいし、こちらに変えよかな。</p>
 <p>AppImage できになるソフトは、</p>
-
 <ul>
 <li>Bitwarden</li>
 <li>Standardnote</li>
@@ -276,34 +238,15 @@ ask_to_move = true
 <li>VSCodium / OSS-Code</li>
 <li>Tutanota Client</li>
 </ul>
-
 <p>と割と良いかもです。で Electron を使っているソフトは AppImage で入れるのが良いような気がする。。</p>
-
 <p>さて、小遣い帳も Homebank に切り替えたしオフィス関連は LibreOffice でほぼ行けそう。。
 日本語の変換もマックのことえりと賢さはどっこいどっこい。
 ちょっと最近のことえりはおせっかいなところがあるので、Mozc も悪くないです。</p>
-
 <p>Linux を使っている時間がちょっと長くなってきてます。
 立ち上げるたびにディストリビューションを変えてるけど、今の所 Arch とデビアンが軽快で良い感じです。
 （便利さは Manjaro かな、Plasma は相性がちょっと悪いかも、カスタマイズはちょっと面倒だし。。）</p>
-
-<!--
-
-何が問題なのかはちょっとわからないけれど、オプションを追加せずに起動する方法もあるみたいです。
-
-1. Enable unprivileged access to CLONE_NEWUSER in your kernel. Some kernels support changing this with `sysctl kernel.unprivileged_userns_clone=1`.
-2. Disable sandboxing entirely by launching with --no-sandbox. Adding this argument from JS is unfortunately insufficient, as the GPU process is launched before the main process JS is run.
-
-`/etc/sysctl.d/00-local-userns.conf`
-
-with the following contents:
-
-kernel.unprivileged_userns_clone=1
-
-でファイルをダブルクリックで実行できます。
-アイコンの登録もできんのかな。。
-
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

@@ -156,63 +156,35 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>デバイスの登録と、同期設定を行います。インストールと初期設定は<a href="https://goozenlab.com/blog/2019/06/syncthing-install/">こちら</a>にあります。ご参照の程。</p>
-
-<p><img src="/images/2019-06-30-syncthing-install-01.png" alt="" /></p>
-
+                <p>デバイスの登録と、同期設定を行います。インストールと初期設定は<a href="https://goozenlab.com/blog/2019/06/syncthing-install/">こちら</a>にあります。ご参照の程。</p>
+<p><img src="/images/2019-06-30-syncthing-install-01.png" alt=""></p>
 <h2 id="デバイスの登録">デバイスの登録</h2>
-
 <p>回線がつながっている状況で行えば、
 Add Remove Deviceボタンより始めます。
 なぜだか分かりませんが、マックブック側からだと、サーバー側のアドレスを見つけることができます。近くのデバイスリストから選び、デバイス名を入力して保存します。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-device-01.png" alt="Syncthing Device Settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-device-01.png" alt="Syncthing Device Settings"></p>
 <p>少しすると、サーバー側で、マックブックから同期リクエストの確認が飛んできます。
 緑ボタンのAdd Deviceを押して、デバイス名を入力して登録します。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-device-00.png" alt="Syncthing Device Settings" /></p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-device-02.png" alt="Syncthing Device Settings" /></p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-device-03.png" alt="Syncthing Device Settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-device-00.png" alt="Syncthing Device Settings"></p>
+<p><img src="/images/2019-07-01-syncthing-settings-device-02.png" alt="Syncthing Device Settings"></p>
+<p><img src="/images/2019-07-01-syncthing-settings-device-03.png" alt="Syncthing Device Settings"></p>
 <p>端末が登録されて、お互いから確認ができます。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-device-04.png" alt="Syncthing Device Settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-device-04.png" alt="Syncthing Device Settings"></p>
 <h2 id="同期設定">同期設定</h2>
-
 <p>同期するフォルダーを設定します。スクリーンショットではすでに幾つかの端末を登録している状態ですが、複数のアンドロイド、パイ・サーバーとマックブックを同期します。（非常に残念ながらiOSにはアプリがありませんので、蚊帳の外です。）</p>
-
 <p>マックブックよりFoldersの右下にあるAdd Folderボタンを押して登録します。ラベル名と同期するフォルダーのパスを入力します。フォルダーをドラッグ＆ドロップすることもできます。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-folder-01.png" alt="Syncthing folder settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-folder-01.png" alt="Syncthing folder settings"></p>
 <p>上部のタブ：Shareingを選択しシェアーする相手を選びます。登録されているデバイスが表示されますので、チェックマーックを入れます。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-folder-02.png" alt="Syncthing folder settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-folder-02.png" alt="Syncthing folder settings"></p>
 <p>サーバー側のSyncthingにて、デバイスの登録と同じようにフォルダーのシェアーのリクエストが飛んできます。問題なければAddを押して、サーバー側の同期先フォルダーを指定します。事前にフォルダーを作っておく必要はありません。手打ちですので打ち間違いにご注意のほど。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-folder-04.png" alt="Syncthing folder settings" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-folder-04.png" alt="Syncthing folder settings"></p>
 <p>以上にて、フォルダーの同期ができます。</p>
-
 <p>※ いろいろ設定をいじっていて、ファイルが消されてしまったことがありますので、複数の端末で同期を行う場合は同期するフォルダーを<strong>空の状態</strong>から始めた方が良いかもしれません。いずれにせよ、<strong>バックアップ</strong>はしておきましょうね。</p>
-
-<hr />
-
+<hr>
 <p>ローカル接続になるので、今までのDropboxを使った形に比べて作業もあっという間に終わります。</p>
-
 <p>設定上でもう一つ、今回の使用はローカルネットワーク内のみにての運用になるので、設定のグローバルディスカバリーのチェックマークは外しておきます。</p>
-
-<p><img src="/images/2019-07-01-syncthing-settings-01.png" alt="Syncthing setting" /></p>
-
+<p><img src="/images/2019-07-01-syncthing-settings-01.png" alt="Syncthing setting"></p>
 <p>ちょっとしたファイルのやり取り、固定した共有ファイルの同期にはなかなか使えるソフトです。私は携帯からは画像ファイルの取り込み、端末同士ではDesktopやDownloadフォルダーの同期をしてます。</p>
-
 <p>パイ・サーバーなど構築している人や、サーバーがなくても同期可能なのでオススメです。</p>
 
 				

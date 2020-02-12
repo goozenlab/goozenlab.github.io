@@ -156,21 +156,12 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTorも)・サーバーを入れて串刺しにするかちょっと考えてます。</p>
-
+                <p>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTorも)・サーバーを入れて串刺しにするかちょっと考えてます。</p>
 <p>アクセス・ポイント化する為に必要なソフトは以下の二つ＋最後の方でもう一つ（任意）です。aptでインストールします。</p>
-
 <pre><code>pi@cashu:~ $ sudo apt install hostapd dnsmasq
-</code></pre>
-
-<div class="attention"><b>※</b> dnsmasqはpiholeとインストール時にコンフリクトします。dnsmasqを停止して、piholeインストールしました。最初にpiholeをインストールしておけば、こちらでインストールする必要はなかったかも。</div>
-
+</code></pre><!-- raw HTML omitted -->
 <h2 id="wlan0設定">wlan0設定</h2>
-
 <p>無線LANの設定します。まずは、ドライバーなどしっかり認識されているかチェック。（ちょっと心配だった。）</p>
-
 <pre><code>pi@cashu:~ $ iwconfig
 lo        no wireless extensions.
 eth0      no wireless extensions.
@@ -181,30 +172,20 @@ wlan0     IEEE 802.11  ESSID:off/any
           Power Management:on
 docker0   no wireless extensions.
 root@iska:~$
-</code></pre>
-
-<p>認識はされているようなので、設定をします。<code>wlan0</code>のファイルを追加して編集します。</p>
-
+</code></pre><p>認識はされているようなので、設定をします。<code>wlan0 </code>のファイルを追加して編集します。</p>
 <pre><code>pi@cashu:~ $ sudo vi /etc/network/interfaces.d/wlan0 
-</code></pre>
-
-<p>基本的なIPアドレスの割り当ての設定ですが、一点だけ違いがあります。
+</code></pre><p>基本的なIPアドレスの割り当ての設定ですが、一点だけ違いがあります。
 hostapdは起動時に立ち上げられますが、自分の環境ではwlan0の認識がその後になってしまっているようです。
 wlan0が起動された後にもう一度、hostapd起動します（※注意）。ここの部分にたどり着くまで、かなり時間がかかりましたよ。。。</p>
-
 <pre><code>auto wlan0
 
 iface wlan0 inet static
   post-up /usr/sbin/hostapd -B /etc/hostapd/hostapd.conf # &lt;&lt;-- ※注意
   address 10.0.0.10
   netmask 255.255.255.0
-</code></pre>
-
-<h2 id="hostapdの設定">hostapdの設定</h2>
-
+</code></pre><h2 id="hostapdの設定">hostapdの設定</h2>
 <p>お次はアクセス・ポイントを設定します。この部分は
 <code>vi /etc/hostapd/hostapd.conf</code>で新規ファイルを作って下記を書き込みます。最近の３B＋では80211a、5Ghzも使えるので、そちらを使う場合は少し変更が必要です。以下の設定は11g.2.4Ghzバージョンです。オリジナルの設定ファイルはかなりボリュームがあります。　</p>
-
 <pre><code># This is the name of the WiFi interface we configured above
 interface=wlan0
 driver=nl80211
@@ -239,41 +220,22 @@ wpa_passphrase=raspberry
 
 # Use AES, instead of TKIP
 rsn_pairwise=CCMP
-</code></pre>
-
-<p>保存して閉じます。SSIDやwpa_passphrase（パスワード）は環境に合わせて編集してください。そして、プロセスの設定を行います。</p>
-
+</code></pre><p>保存して閉じます。SSIDやwpa_passphrase（パスワード）は環境に合わせて編集してください。そして、プロセスの設定を行います。</p>
 <pre><code>pi@cashu:~ $ sudo vi /etc/default/hostapd
-</code></pre>
-
-<p>読み込む設定ファイルを指定します。コメントを外して読み取り先を書き込みます。</p>
-
+</code></pre><p>読み込む設定ファイルを指定します。コメントを外して読み取り先を書き込みます。</p>
 <pre><code>DAEMON_CONF=&quot;/etc/hostapd/hostapd.conf&quot;
-</code></pre>
-
-<p>で、動作確認をします。エラーがあればその内容が表示されると思います。問題なく起動したので、Ctl+cでシェルに戻ります。</p>
-
+</code></pre><p>で、動作確認をします。エラーがあればその内容が表示されると思います。問題なく起動したので、Ctl+cでシェルに戻ります。</p>
 <pre><code>pi@cashu:~ $ sudo hostapd -d /etc/hostapd/hostapd.conf
-</code></pre>
-
-<p>起動時に動くようにします。</p>
-
+</code></pre><p>起動時に動くようにします。</p>
 <pre><code>pi@cashu:~ $ sudo systemctl enable hostapd
-</code></pre>
-
-<p>ここで、ちょっと難が出ますが、結果オーライというか、起動時に立ち上げないでもいいような気もしますが、、、動いているので不問にします。</p>
-
+</code></pre><p>ここで、ちょっと難が出ますが、結果オーライというか、起動時に立ち上げないでもいいような気もしますが、、、動いているので不問にします。</p>
 <pre><code>pi@cashu:~ $ sudo systemctl status hostapd
 ● hostapd.service
    Loaded: masked (Reason: Unit hostapd.service is masked.)
    Active: inactive (dead)
 root@iska:~#
-</code></pre>
-
-<h2 id="dnsmasq">dnsmasq</h2>
-
+</code></pre><h2 id="dnsmasq">dnsmasq</h2>
 <p>次は、アクセスポイントにアクセスしに来た端末へのアドレスの　ための<code>dnsmasq</code>を設定します。シンプルに番号を割り当てるだけのdhcpサーバーの簡易バージョンです。MACアドレスとIP、ホスト名を書き込んだ設定ファイルを使えば任意の番号を指定の端末に割り振ることもできます。（今回はしてません。）</p>
-
 <pre><code># Use interface wlan0
 interface=wlan0
 #except-interface=eth0 
@@ -297,42 +259,23 @@ bogus-priv
 # Assign IP addresses 
 # with a 24 hour lease time
 dhcp-range=10.0.0.20,255.255.255.0,24h
-</code></pre>
-
-<p><code>listen-address, DNSserver, dhcp-range</code>は編集してください。listen-addressはwlan0で割り当てたIP番号と同じにしてください。</p>
-
+</code></pre><p><code>listen-address, DNSserver, dhcp-range</code>は編集してください。listen-addressはwlan0で割り当てたIP番号と同じにしてください。</p>
 <h2 id="iptables-ポートフォワード">iptables: ポートフォワード</h2>
-
 <p>無線LANに入ってくる通信を、有線LANに振り分けてあげる必要があります。無線LANの通信はそのまま有線LANに流れていきますのでセキュリティー的にはNGです。まあ、個人での環境では問題はありませんが、状況により慎重にした方が良い時もありますのでご注意のほど。</p>
-
 <p>まずは、システム設定を変更します。<code>sudo sh -c &quot;echo 1 &gt; /proc/sys/net/ipv4/ip_forward&quot;</code>
 で一発でできますが、<code>vi /etc/sysctl.conf</code>で直接設定をいじることもできます。</p>
-
 <p>で、再起動します。</p>
-
 <p>そして、パケットの流れを設定に追加します。何処のものが何処から何処へ行く、と言う意味があります、大文字小文字の違いも意味があります。本来なら、ここでポートの番号やらなんやら追加され、呪文のようになります。</p>
-
 <pre><code>pi@cashu:~ $ sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 pi@cashu:~ $ sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 pi@cashu:~ $ sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
-</code></pre>
-
-<p><code>iptables</code>の設定はシャットダウンすると消えてしまいます。iptables設定を保存するためのツールをインストールします。</p>
-
+</code></pre><p><code>iptables</code>の設定はシャットダウンすると消えてしまいます。iptables設定を保存するためのツールをインストールします。</p>
 <pre><code>pi@cashu:~ $ sudo apt-get install iptables-persistent
-</code></pre>
-
-<p>途中に、ipv4, ipv6の状態を保存するか？との質問があります。”はい”で現在のiptablesの設定内容が、/etc/iptables/rules.v4 に保存されます。起動時に毎回呼び出され、読み込まれます。</p>
-
+</code></pre><p>途中に、ipv4, ipv6の状態を保存するか？との質問があります。”はい”で現在のiptablesの設定内容が、/etc/iptables/rules.v4 に保存されます。起動時に毎回呼び出され、読み込まれます。</p>
 <p>以上の設定が終わったらリブートし完了です。</p>
-
-<div class=“hint”>※　後々`iptables`を変更・追加などをした場合は、`/etc/iptables/rules.v4`に追加書き込みます。</div>
-
+<!-- raw HTML omitted -->
 <pre><code>pi@cashu:~ $ sudo iptables-save | sudo tee /etc/iptables/rules.v4
-</code></pre>
-
-<div class="attention"><b>※</b> 無線のdhcpで使うIP番号割り当てを有線で使っているIP番号とちょっとバッティングさせてしまい、有線LANが外に出てかない、という不具合がありました。まったくの凡ミスですが、お気をつけのほど。</div>
-
+</code></pre><!-- raw HTML omitted -->
 <p>と、Debianの64bit対応Busterは割と問題なく今の所動いてます。大ハマりだった、ドッカーも起動してます。動作が機敏な感じが。。（RPi0Wと比べたら当たり前か。）あとはBTが動いてくれれば、、。</p>
 
 				

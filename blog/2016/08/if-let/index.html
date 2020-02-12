@@ -157,11 +157,8 @@
 
             <div class="post-content">
                 <p><code>fatal error: unexpectedly found nil while unwrapping an Optional value</code></p>
-
 <p>nil値が戻ってくる可能性のある時の処理方法。</p>
-
 <p>tableCellに値を渡す時を例に、</p>
-
 <pre><code># if let xx  = yy { } else { }
 
 if let lock  = event.isLocked as? Bool {
@@ -169,24 +166,16 @@ if let lock  = event.isLocked as? Bool {
 } else {
     cell.isLocked = false
 }
-</code></pre>
-
-<p>で新しく、<code>guard let</code> なんてのが出てきて、こんな風に書き換える事ができ、（<code>else</code>以降の役割がよくわからない。）</p>
-
+</code></pre><p>で新しく、<code>guard let</code> なんてのが出てきて、こんな風に書き換える事ができ、（<code>else</code>以降の役割がよくわからない。）</p>
 <pre><code># guard let xx = y else {]
 
 guard let lock  = event.isLocked as? Bool else { return }
 cell.isLocked = lock
 
-</code></pre>
-
-<p>そしてしかも、簡略した（?：ニル、？：なの）<code>xx = yy ??</code> もある。</p>
-
+</code></pre><p>そしてしかも、簡略した（?：ニル、？：なの）<code>xx = yy ??</code> もある。</p>
 <pre><code># xx = yy ??
 cell.isLocked = event.isLocked as? Bool ?? false
-</code></pre>
-
-<p>基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。</p>
+</code></pre><p>基本的に同じものなのだろうか？一番下のものがなんとなく分かりやすい気も個人的にはするのだが、あまり推奨はされていないようにも思われる。。。場合によって使い分けるのが良いのか。。</p>
 
 				
 

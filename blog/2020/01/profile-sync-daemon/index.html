@@ -157,12 +157,10 @@
 
             <div class="post-content">
                 <p>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。</p>
-
 <p>パッケージがあるのでAPTでインストール、設定をします。
 <code>.config/psd/psd.conf</code>を開きブラウザーを指定、オーバーレイを有効にします。
 ほとんどのブラウザーに対応してます。
 複数追加するにはスペースで間をあけて加えていきます。（例：”firefox vivaldi brave”）</p>
-
 <pre><code>jin@debian:~$ sudo apt install profile-sync-daemon
 jin@debian:~$ psd
  First time running psd so please edit /home/jin/.config/psd/psd.conf to your liking and run again.
@@ -170,31 +168,19 @@ jin@debian:~$ vi .config/psd/psd.conf
 
 USE_OVERLAYFS=&quot;yes&quot;
 BROWSERS=&quot;firefox”
-</code></pre>
-
-<p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
-
+</code></pre><p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
 <pre><code>jin@debian:~$ sudo modprobe overlay
 jin@debian:~$ sudo visudo
 
 jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
-</code></pre>
-
-<p>しかしながら、modinfoにアクセスできないとエラーが出る。。インストールはされているのだけど、、</p>
-
+</code></pre><p>しかしながら、modinfoにアクセスできないとエラーが出る。。インストールはされているのだけど、、</p>
 <pre><code>jin@debian:~$ psd p
  I require modinfo but it's not installed. Aborting!
-</code></pre>
-
-<p><code>/sbin</code>へパスが通ってないのが問題の様だったので、とりあえず.profile にPATHを追加します。</p>
-
+</code></pre><p><code>/sbin</code>へパスが通ってないのが問題の様だったので、とりあえず.profile にPATHを追加します。</p>
 <pre><code>jin@debian:~$ vi .profile
 
 PATH=&quot;/usr/sbin:/sbin&quot;
-</code></pre>
-
-<p>でもう一度。</p>
-
+</code></pre><p>でもう一度。</p>
 <pre><code>jin@debian:~$ psd p
 Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)
 
@@ -219,13 +205,10 @@ Psd will manage the following per /home/jin/.config/psd/psd.conf:
  profile size:    51M
  overlayfs size:
  recovery dirs:   none
-</code></pre>
-
-<p>なぜかファイヤーフォックスのプロファイルが二つありますが動きました。<br />
+</code></pre><p>なぜかファイヤーフォックスのプロファイルが二つありますが動きました。<br>
 そして仕上げに起動時にユーザーモードで動作させるため
 <code>systemctl --user enable psd</code>
 で登録します。</p>
-
 <pre><code>jin@debian:~$ systemctl --user start psd
 jin@debian:~$ systemctl --user status psd
 ● psd.service - Profile-sync-daemon
@@ -241,12 +224,9 @@ Jan 17 20:16:49 debian systemd[1059]: Starting Profile-sync-daemon...
 Jan 17 20:16:49 debian systemd[1059]: Started Profile-sync-daemon.
 jin@debian:~$ systemctl --user enable psd
 Created symlink /home/jin/.config/systemd/user/default.target.wants/psd.service → /usr/lib/systemd/user/psd.service.
-</code></pre>
-
-<p>ちょっと使ってみましたが、スピードに関してはそんなに違いは感じられませんねぇ。
+</code></pre><p>ちょっと使ってみましたが、スピードに関してはそんなに違いは感じられませんねぇ。
 ただSSDへの読み書きは軽減されるのでそちらの恩恵はあるのではないかと思ってます。</p>
-
-<p>参照：<a href="https://wiki.archlinux.jp/index.php/Profile-sync-daemon">https://wiki.archlinux.jp/index.php/Profile-sync-daemon</a></p>
+<p>参照：https://wiki.archlinux.jp/index.php/Profile-sync-daemon</p>
 
 				
 

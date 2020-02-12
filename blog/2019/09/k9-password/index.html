@@ -156,56 +156,37 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>パスワードを忘れる。。
+                <p>パスワードを忘れる。。
 というか、enpassのものが使えない、、おかしい。</p>
-
 <p>いろいろリセット・リカバリーを試すが、ちょっと面倒・無理だったので、
 現在使用中のアンドロイドメール・アプリ<strong>K-9</strong>からパスワードをリカバリーしました。</p>
-
 <h2 id="k-9の設定ファイル">K-9の設定ファイル</h2>
-
 <p>アプリの設定などのデーターは
 <code>/data/data/com.fsck.k9/datadases</code>に保管されています。
 お目当の設定sqliteファイルは一番下にある
 <strong>preferences_storage</strong>
 です。
 私の端末はSyncthingで同期をしているので、ファイルをダウンロードフォルダーにコピーします。</p>
-
-<p><img src="/images/2019-09-10-k9-databases.png" alt="K9 Passwd DB" /></p>
-
+<p><img src="/images/2019-09-10-k9-databases.png" alt="K9 Passwd DB"></p>
 <p>マックに持ってきたファイルを <a href="https://sqlitebrowser.org">DB Browser for SQLite</a> を使って開きます。Browse Dataタブ、preferences_storageのテーブルを選択します。</p>
-
-<p><img src="/images/2019-09-10-k9-password.png" alt="K9 Passwd DB" /></p>
-
+<p><img src="/images/2019-09-10-k9-password.png" alt="K9 Passwd DB"></p>
 <p>私のファイルでは５３行目になりますが、<code>XXXX-XXX-XXXX.transportUri</code>の値をコピーします。
 長いパスワードのような数値が<strong>base64で暗号化された文字列</strong>になります。</p>
-
 <h2 id="デコード">デコード</h2>
-
 <p>暗号化された文字列をデコードするにはふた通りの方法があります。</p>
-
 <ol>
 <li>オンラインサービスの <a href="http://www.base64decode.org/">online decoder </a> を使う（あまりおすすめではないが、思わず使ってしまった。。）
-<img src="/images/2019-09-10-base64decode.png" alt="base64decode" /></li>
-
-<li><p>ターミナルより<code>echo yourstingvalue | base64 –D</code>実行するとデコードされた文字列が表示されます。でけたのね。。</p>
-
+<img src="/images/2019-09-10-base64decode.png" alt="base64decode"></li>
+<li>ターミナルより<code>echo yourstingvalue | base64 –D</code>実行するとデコードされた文字列が表示されます。でけたのね。。</li>
+</ol>
 <pre><code>jin@gallo:~ $ echo c210.....XXXXXX | base64 -D
 smtp+ssl+://XXXXX%40gmail.com:&lt;&lt;PASSWD_HERE&gt;&gt;@smtp.gmail.
-</code></pre></li>
-</ol>
-
-<p>パスワードに記号などを入れているときは変換の必要があるかもしれまん（!が%21とか）。変換リストはこちらの <a href="http://www.nicolas-hoffmann.net/utilitaires/codes-hexas-ascii-unicode-utf8-caracteres-usuels.php">テーブル</a> を参照のほど。</p>
-
+</code></pre><p>パスワードに記号などを入れているときは変換の必要があるかもしれまん（!が%21とか）。変換リストはこちらの <a href="http://www.nicolas-hoffmann.net/utilitaires/codes-hexas-ascii-unicode-utf8-caracteres-usuels.php">テーブル</a> を参照のほど。</p>
 <p>パスワードをリセット＆無事にリカバリー、とついでにパスワードの変更も行いました。</p>
-
 <p>で、不思議なことに、パスワードを照らし合わせてみると、
 enpassには入っているのは正しかったのだけどねぇ。。
 ブラウザの問題のように思えるが、意味不明ですな。</p>
-
-<p>参照：<a href="https://cryptofuture.wordpress.com/2013/12/07/k-9-mail-password/">https://cryptofuture.wordpress.com/2013/12/07/k-9-mail-password/</a></p>
+<p>参照：https://cryptofuture.wordpress.com/2013/12/07/k-9-mail-password/</p>
 
 				
 

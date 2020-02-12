@@ -156,91 +156,51 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>快適に動作しているデビアンですが、インストールされているファイヤーフォックのバージョンが<code>68.*</code>と少し古いです。
+                <p>快適に動作しているデビアンですが、インストールされているファイヤーフォックのバージョンが<code>68.*</code>と少し古いです。
 最新のものを使ってもシステムに影響はないだろうと思い、最新版をインストールします。</p>
-
 <p>デビアンでは
 最新版のファイヤーフォックスは<code>unstabl (sid)</code>のディストリビューションに入っています。</p>
-
 <p>デビアンのパッケージは、</p>
-
 <ul>
 <li>stable : buster</li>
 <li>testing : bullseye</li>
 <li>sid : unstable</li>
 <li>experimental</li>
 </ul>
-
 <p>と（いつからかexperimentalが増えたような？）分けられています。
 testingは次期バージョンのディストリビューション：bullseye、stableより下に行くほど不安定という感じですかね。</p>
-
 <p>まずは、sid（unstableでも良いと思う）よりパッケージをインストールするためにaptのソースリストを追加します。</p>
-
 <pre><code>$ vi /etc/apt/source.list.d/sid.list
 
 
 deb http://deb.debian.org/debian/ sid main
 # deb http://deb.debian.org/debian/ unstable main
-</code></pre>
-
-<p>そしてファイヤーフォックスをインストールして、すでに入っているファイヤーフォックスを削除します。
+</code></pre><p>そしてファイヤーフォックスをインストールして、すでに入っているファイヤーフォックスを削除します。
 ** -t sid**
 がターゲットのオプションです。
 パッケージが違うからか、環境設定が新しくなりますのでご用心のほど。
 （ブックマークなどは以前の設定より持ってこれる）</p>
-
 <pre><code>$ sudo apt update
 $ sudo apt install -t sid firefox
 $ 
 $ sudo apt purge firefox-esr
-</code></pre>
-
-<p>マンジャーロも悪くないのですが、デビアンの印象が良いです。
+</code></pre><p>マンジャーロも悪くないのですが、デビアンの印象が良いです。
 パッケージ古いとか言われていますが、
 新版のアプリが使いたい場合は状況に応じて、
 ディストリビューションを使い分けてインストールすれば良いかなと思ってます。</p>
-
 <p>パッケージの検索はこちら：
 <a href="https://www.debian.org/distrib/packages">https://www.debian.org/distrib/packages</a></p>
-
 <h2 id="おまけ">おまけ</h2>
-
 <p>いきなりトラックポイントが動かなくなってしまう不具合が発生。
 以前からたまにあったのだけど、再起動でほとんど問題は回避できてました。
 しかし数回りブートをしても状況変わらず。調べて見ました。</p>
-
 <pre><code>$ rmmod psmouse
 $ modprobe psmouse proto=bare
-</code></pre>
-
-<p>で使えるようになりました。。なぜに今更？？</p>
-
-<!--
-
-/etc/default/grub
-
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash psmouse.proto=bare"
-
-
-Create and open a file /etc/apt/preferences.d/99pin-unstable as root with a text editor, for example using Nano command line text editor:
-
-Paste the following in this file:
-
-Package: *
-Pin: release a=stable
-Pin-Priority: 900
-
-Package: *
-Pin release a=unstable
-Pin-Priority: 10
-
-----
-```
-APT::Default-Release
-```
--->
+</code></pre><p>で使えるようになりました。。なぜに今更？？</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote>
 
 				
 

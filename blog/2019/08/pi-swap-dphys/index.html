@@ -156,21 +156,13 @@
             </div>
 
             <div class="post-content">
-                
-
-<!--
-ちょっと、宿のネット環境が非常に芳しくないので、北上、チェンライに移動してきました。
-雨の降る中、びしょ濡れで、
--->
-
+                <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>さて、パイ・メモリーが弾けんばかりパツパツです。
 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミングでハングアップする様になりました。CPUへの負荷はそれほど高くないので、ちょっともったいない。。</p>
-
-<p><img src="/images/2019-08-09-pia-running-test.jpg" alt="Pi 3A+ Monitoring" /></p>
-
+<p><img src="/images/2019-08-09-pia-running-test.jpg" alt="Pi 3A+ Monitoring"></p>
 <p>持ち出しサーバーを計画中で色々お試しを含めて検証中で、
 運用中のアプリが以下</p>
-
 <ul>
 <li><a href="https://goozenlab.com/blog/2019/07/pi-lamp-install/">LAMP: Nginx + mariaDB + php7.3</a></li>
 <li>Grafana</li>
@@ -184,9 +176,7 @@
 <li>dokuWiki</li>
 <li><a href="https://goozenlab.com/blog/2019/08/firefly-pi-install/">Firefly iii</a></li>
 </ul>
-
 <p>になります、限界にチャレンジというか、なんというか。</p>
-
 <p>さて、
 パイでのスワップ設定は、
 多分microSDへの負荷を考えてのことでしょうが、
@@ -194,25 +184,16 @@
 そうではなく、ハングアップしたりストールしたりします。
 今の状態では問題があるので、
 通常のLinuxのようにスワップのサイズをメモリーと同量に変更したいと思います。</p>
-
 <h3 id="dphys-swapfile">dphys-swapfile</h3>
-
 <p>Raspbianでは、スワップは別のパーティションで分けられているわけではなくて、
 dphys-swapfileというソフトで管理されています。</p>
-
 <p>スワップのオン・オフなどをこのコマンドで行います。</p>
-
 <p>ちなみに、<strong>スワップファイル自体を無効</strong>にする方法は以下、</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo systemctl disable dphys-swapfile
 pi@raspberrypi:~ $ sudo dphys-swapfile swapoff
-</code></pre>
-
-<p>にて可能です。
+</code></pre><p>にて可能です。
 起動時にオンになってしまうのでサービスも止めます。</p>
-
 <p>さて、サイズの変更方法ですが、こちらは<strong>設定ファイル</strong>をいじります。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo vi /etc/dphys-swapfile
 
 #CONF_SWAPFILE=/var/swap
@@ -220,45 +201,32 @@ CONF_SWAPSIZE=100
 #CONF_SWAPFACTOR=2
 #CONF_MAXSWAP=2048
 
-</code></pre>
-
-<p>4つの項目を有効化・設定変更することができます。</p>
-
+</code></pre><p>4つの項目を有効化・設定変更することができます。</p>
 <ul>
 <li>スワップファイルの位置</li>
 <li>スワップサイズの変更：容量の指定</li>
 <li>スワップサイズの変更：メモリーに対する倍数</li>
 <li>スワップサイズの最大値</li>
 </ul>
-
 <p>サイズを直接設定してもよいけれど、
 SDカードをパイ３Bに差し替えたりもするので、
 <code>CONF_SWAPSIZE</code>をコメントアウトして、メモリーと同量に値する<code>倍数=1</code>に変更しました。</p>
-
 <pre><code>#CONF_SWAPSIZE=100
 CONF_SWAPFACTOR=1
-</code></pre>
-
-<p>編集後再起動、少し使った後の割り当てはこんな感じになります。
+</code></pre><p>編集後再起動、少し使った後の割り当てはこんな感じになります。
 ちょうど、初期設定の100MB時より少し必要な状態だった様です。
 様子を見て必要最低限に変更するかな。</p>
-
 <pre><code>pi@raspberrypi:~ $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          430Mi       258Mi        47Mi        19Mi       124Mi       102Mi
 Swap:         439Mi       137Mi       302Mi
-</code></pre>
-
-<p><img src="/images/2019-08-09-pia-swap-settings-00.png" alt="Pi 3A+ Monitoring" /></p>
-
+</code></pre><p><img src="/images/2019-08-09-pia-swap-settings-00.png" alt="Pi 3A+ Monitoring"></p>
 <p>動作も少し落ち着いた様に思えます。
 microSDへの負荷が増えてしまうのが心配ですが、当分これで運用して行ってみたいともいます。
 ソフトウェアもあと幾つかインストールするつもりです。</p>
-
 <p>microSDへの書き込みを抑えることもできるので、そちらも調整します。
 こちら、<a href="https://goozenlab.com/blog/2019/08/pi-swapiness/">Swapinessの変更</a>
 でハッピーになれます。ご参照にほど。</p>
-
 <p>参照（ありがとう）：
 <a href="https://a244.hateblo.jp/entry/2016/12/12/010429">https://a244.hateblo.jp/entry/2016/12/12/010429</a></p>
 

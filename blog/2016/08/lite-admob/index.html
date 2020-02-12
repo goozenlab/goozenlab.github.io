@@ -160,10 +160,7 @@
         
             	
             	<div class="post-content">
-            		
-
-<p>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)</p>
-
+            		<p>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広告を表示するため、コード内のマクロで作業の分離を行います。(XCode7.3.1にて)</p>
 <ol>
 <li>ターゲットのコピーと調整</li>
 <li>スキームの変更</li>
@@ -171,85 +168,46 @@
 <li>コンパイル時のマクロ設定</li>
 <li>アイコンの追加</li>
 </ol>
-
 <p>が主な作業の流れになります。</p>
-
-<hr />
-
+<hr>
 <p>まずはプロジェクトのメインターゲットを Duplicate します。</p>
-
-<p><img src="/images/2016-08-22-lite-duplicate.png" alt="Duplicate Target" /></p>
-
-<p><img src="/images/2016-08-22-lite-duplicate-dailog.png" alt="" /></p>
-
-<p><img src="/images/2016-08-22-lite-rename-target.png" alt="" /></p>
-
-<p><img src="/images/2016-08-22-lite-manage-scheme.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-duplicate.png" alt="Duplicate Target"></p>
+<p><img src="/images/2016-08-22-lite-duplicate-dailog.png" alt=""></p>
+<p><img src="/images/2016-08-22-lite-rename-target.png" alt=""></p>
+<p><img src="/images/2016-08-22-lite-manage-scheme.png" alt=""></p>
 <p>スキーム名の変更はできないようなので、Editボタンの上の＋より、新しいスキームを追加します。ここの、cosper copyのものは＋の横のーボタンで消去します。</p>
-
-<p><img src="/images/2016-08-22-lite-add-scheme.png" alt="" /></p>
-
-<p><img src="/images/2016-08-22-lite-delete-scheme.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-add-scheme.png" alt=""></p>
+<p><img src="/images/2016-08-22-lite-delete-scheme.png" alt=""></p>
 <p>Info.plistのコピーの <code>cosper copy-Info.plist</code> はなぜか諸々のファイルのフォルダーの外に作られます。ちょっと面倒ですが、リネームしリファレンスから除き、プロジェクトにコピーして移動、そしていらなくなったファイルを削除をしましょう。</p>
-
-<p><img src="/images/2016-08-22-lite-rename.png" alt="" /></p>
-
-<p><img src="/images/2016-08-22-lite-taget-info-copy.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-rename.png" alt=""></p>
+<p><img src="/images/2016-08-22-lite-taget-info-copy.png" alt=""></p>
 <p>そしてビルドセッティング内のInfo.plistパラメーターをディレクトリー名を含めたファイル名に変更します。</p>
-
-<p><img src="/images/2016-08-22-lite-target-info-rename.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-target-info-rename.png" alt=""></p>
 <p>そして、ターゲットの設定をします。（バンドル名やその他必要なもの）</p>
-
-<p><img src="/images/2016-08-22-lite-target-general.png" alt="" /></p>
-
-<hr />
-
+<p><img src="/images/2016-08-22-lite-target-general.png" alt=""></p>
+<hr>
 <p>最後に、コンパイル時のマクロ設定をします。<code>#if LITE</code> で処理を分岐できるようにします。LITE_VERSIONでもFREE_VERSIONでもご自分に適したものにしてください。</p>
-
 <p>マクロの設定は、ビルドセティングより、右のサーチボックスから検索していくと良いです。フル・ライト両方のターゲットで設定が必要です。ライトにて <code>LITE=1</code> を、</p>
-
-<p><img src="/images/2016-08-22-lite-macro-lite.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-macro-lite.png" alt=""></p>
 <p>フルバージョンの方には <code>LITE=0</code> を書き込みます。選択すると入力画面が出てきます。</p>
-
-<p><img src="/images/2016-08-22-lite-macro-full.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-macro-full.png" alt=""></p>
 <p>そして、ライトバージョンでは、コンパイラーのカスタムフラグを設定します。</p>
-
-<p><img src="/images/2016-08-22-lite-macro-flag.png" alt="" /></p>
-
-<hr />
-
+<p><img src="/images/2016-08-22-lite-macro-flag.png" alt=""></p>
+<hr>
 <p>アイコンもライトバージョン用に追加、変更します。アイコンは、Assets.xcassetsより作成し、ターゲットにて設定します。</p>
-
-<p><img src="/images/2016-08-22-lite-add-icon.png" alt="" /></p>
-
-<p><img src="/images/2016-08-22-lite-icon-resource.png" alt="" /></p>
-
+<p><img src="/images/2016-08-22-lite-add-icon.png" alt=""></p>
+<p><img src="/images/2016-08-22-lite-icon-resource.png" alt=""></p>
 <p>これで、ライトバージョンのターゲットが完成です。次に、ライトバージョンに広告を入れたいと思います。</p>
-
 <h2 id="admobの追加">AdMobの追加</h2>
-
-<p>iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに <code>target 'xx lite' do ...</code> で切り分ければいいのかな。）</p>
-
+<p>iAdは終了してしまいましたので、定番Googleの AdMob をインストールします。CocoaPods を使って簡単にプロジェクトに追加することもできるのですが、私の開発機の不思議な不具合でココポッドを設定していません。。ファイルを落としてフレームワークを追加という手動インストールをします。（また、近くCocoaPodsを使った方法をアップデートするかもしれません。とりあえずココポッドでのインストール時には、Podfileに <code>target 'xx lite' do ... </code> で切り分ければいいのかな。）</p>
 <h3 id="フレームワーク">フレームワーク</h3>
-
 <p>必要なフレームワークは、以下。</p>
-
 <ul>
 <li>GoogleMobileAds.framework: Googleサイトよりダウンロード、プロジェクトに<strong>コピー</strong> (ターゲットをライトバージョンのみにするのを忘れずに）</li>
 </ul>
-
-<p><img src="/images/2016-08-24-admob-copy-framework.png" alt="" /></p>
-
+<p><img src="/images/2016-08-24-admob-copy-framework.png" alt=""></p>
 <p>プロジェクトからターゲットを選択して、一番下のLinked Frameworks and Librariesより追加、コマンド＋クリックで複数選択可能。</p>
-
-<p><img src="/images/2016-08-24-admob-add-frameworks.png" alt="" /></p>
-
+<p><img src="/images/2016-08-24-admob-add-frameworks.png" alt=""></p>
 <ul>
 <li>AdSupport</li>
 <li>AudioToolbox</li>
@@ -262,24 +220,16 @@
 <li>StoreKit</li>
 <li>SystemConfiguration</li>
 </ul>
-
 <p>以上で準備完了。実装していきます。</p>
-
-<hr />
-
+<hr>
 <h3 id="コーディング">コーディング</h3>
-
 <p>マクロを使って、以下の形で処理を分けることができます。</p>
-
 <pre><code>#if LITE
     // ライトバージョンで行う処理
 #else
     // フルバージョンでの処理
 #endif
-</code></pre>
-
-<p>下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）</p>
-
+</code></pre><p>下記の例は、テーブルビューを使ったアプリでの表示例になっています。テーブルビューのヘッダー部分に広告が表示されます。（実際に使っているコードから引用。）</p>
 <pre><code>import UIKit
 import CoreData
 #if LITE
@@ -312,12 +262,8 @@ class ListTableViewController: UITableViewController,NSFetchedResultsControllerD
 
     .......
     
-</code></pre>
-
-<p>アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。</p>
-
-<p><img src="/images/2016-08-24-admob-extensrion.png" alt="" /></p>
-
+</code></pre><p>アドモブ用の処理ファイルを別にします。こちらもターゲットをライトバージョンのみにします。（ちょっとすっきりする。）デレゲートにて広告を受け取ったときにテーブルヘッダーに表示する形をとってます。</p>
+<p><img src="/images/2016-08-24-admob-extensrion.png" alt=""></p>
 <pre><code>//
 //  Admob.swift
 //
@@ -360,9 +306,7 @@ extension ListTableViewController: GADBannerViewDelegate {
     }
     
 }
-</code></pre>
-
-<p>割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）</p>
+</code></pre><p>割とあっさりと行きます。（こんな簡単だったけか？？なんか忘れてんのかと、ちと不安。。）</p>
 
             	</div>
            		

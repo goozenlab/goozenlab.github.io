@@ -156,39 +156,25 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2020-01-16-vscodium.png" alt="VSCodium" /></p>
-
+                <p><img src="/images/2020-01-16-vscodium.png" alt="VSCodium"></p>
 <p>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。</p>
-
 <p>VSCodeはオープンソースで公開されていますがマイクロソフトから提供されているVSCodeはテレメトリー機能が独自に追加されています。
 まぁ、IP番号や使っている端末情報くらいはくれてやってもいいですけどね。。
 そう言ったちょっとしたコードを利用せずにビルドされたアプリがVSCodoiumになります。
 よりクリーンということかな。</p>
-
-<p><img src="/images/2020-01-16-vscodium-use.png" alt="VSCodium" /></p>
-
+<p><img src="/images/2020-01-16-vscodium-use.png" alt="VSCodium"></p>
 <p>こちらが配布元
 <a href="https://github.com/VSCodium/vscodium">https://github.com/VSCodium/vscodium</a></p>
-
 <p>見た目や使い方は当たり前ですが全く同じです。アップデートもほぼ同時、時間差もないです。</p>
-
 <p>デビアンではレポジトリーも公開されているので以下のようにしてインストールを行います。</p>
-
 <pre><code>wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
 sudo apt-add-repository 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main'
 sudo apt update
 sudo apt install codium
-</code></pre>
-
-<p>MacOSではBrewのcaskに登録されています。</p>
-
+</code></pre><p>MacOSではBrewのcaskに登録されています。</p>
 <pre><code>brew cask install vscodium
-</code></pre>
-
-<p>ManjaroではPamac内からCode-OSSという名前で登録されています。</p>
-
-<p><img src="/images/2020-01-21-ode-oss.png" alt="Coe-OSS" /></p>
-
+</code></pre><p>ManjaroではPamac内からCode-OSSという名前で登録されています。</p>
+<p><img src="/images/2020-01-21-ode-oss.png" alt="Coe-OSS"></p>
 <p>各所で使いまわしていると、どのOSで作業しているかわからなくなります。
 Linuxでの動作が若干ながら軽い気がする。</p>
 

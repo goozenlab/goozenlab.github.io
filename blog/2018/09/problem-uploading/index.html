@@ -160,38 +160,24 @@
         
             	
             	<div class="post-content">
-            		<p><img src="/images/2018-09-28-problem-uploading.png" alt="Problem Uploading" /></p>
-
+            		<p><img src="/images/2018-09-28-problem-uploading.png" alt="Problem Uploading"></p>
 <p>毎回というか、Xcodeをアップグレードすると問題なっているような気がする。</p>
-
 <p>プロファイルを作り直したり、書き出しのオプションを変えたりとか、Application LoaderというXcodeについてくるソフトを使ったり、
 毎回ネットを徘徊して、なんとか、凌いだような気がします。</p>
-
 <p>今回も、Xcode10にアップグレードし（非常に後悔。。）更新したファイルをアップロードするも、</p>
-
 <p><strong>Authenticating with the iTunes store</strong></p>
-
 <p>から先に進まない。デジャブーーーー。（こういうエラーは意欲を削ぐんですよね。。）</p>
-
-<p>で、いつもお世話になっている。<a href="https://stackoverflow.com">https://stackoverflow.com</a> より解決法を見つける。</p>
-
+<p>で、いつもお世話になっている。https://stackoverflow.com より解決法を見つける。</p>
 <p><code>.itmstransporter/</code>のファイルが問題のようで、再構築することで問題が解決できるそうです。</p>
-
 <p>とりあえずバックアップをして作り直します。
 私は、面倒なので、<code>rm -rf .itmstransporter/</code>一気に消してしまいました。問題はなし。</p>
-
 <p>そしてターミナルより、</p>
-
 <pre><code>$ cd ~  
 $ mv .itmstransporter/ .old_itmstransporter/ 
 $ /Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter
-</code></pre>
-
-<p>しばし、ダウンロードしたり、再構築に時間がかかりますが、作業終了後。Xcodeに戻りふたたび挑戦、、、</p>
-
+</code></pre><p>しばし、ダウンロードしたり、再構築に時間がかかりますが、作業終了後。Xcodeに戻りふたたび挑戦、、、</p>
 <p>ハラ〜ショ、うまくいきました！あ〜〜〜、スッキリした。
 （なんのファイルが入っているかちょっとわからないけれど、以前のバージョンで作ったものが邪魔をしてるのか？。）</p>
-
 <p>しかしながら、、まだまだ続くエラー三昧。。</p>
 
             	</div>

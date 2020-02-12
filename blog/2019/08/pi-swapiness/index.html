@@ -156,55 +156,35 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、
+                <p>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、
 少しばかり躊躇します。しかしその代わりに、
 カーネルによりスワップへの書き込みを極力減らすようにします。
 書込み実行傾向値<code>vm.swappiness</code>を設定することで可能になります。</p>
-
 <p>vm.swappinessの値は0から100までが設定範囲です。
 値が大きいほどスワップに書き込まれる傾向が強くなります。</p>
-
 <p>デフォルト値は<code>60</code>なので、
 スワップの利用は極力利避けたいということで、<code>1</code>にしました。
 <code>/etc/sysctl.conf</code>の最後に<code>vm.swappiness=1</code>を付け加えます。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo vi /etc/sysctl.conf
 
 vm.swappiness=1
 
-</code></pre>
-
-<p>※ vm.swappinessはカーネル・パラメータの値によって制御され、/proc/sys/vm/swappinessとして表示されます)</p>
-
-<hr />
-
+</code></pre><p>※ vm.swappinessはカーネル・パラメータの値によって制御され、/proc/sys/vm/swappinessとして表示されます)</p>
+<hr>
 <h2 id="おまけ">おまけ</h2>
-
 <p>スワップファイル自体を無効にする方法もあります。</p>
-
 <p>Raspbianでのスワップファイルは<strong>dphys-swapfile</strong>を使って起動時に有効化されています。
 無効化も同じコマンドで行います。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo dphys-swapfile swapoff
-</code></pre>
-
-<p><code>dphys-swapfile swapoff</code>にて無効化して、起動時の起動を停止します。
+</code></pre><p><code>dphys-swapfile swapoff</code>にて無効化して、起動時の起動を停止します。
 停止は<code>systemctl disable</code>を使って行います。作業後再起動します。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo systemctl stop dphys-swapfile
 pi@raspberrypi:~ $ sudo systemctl disable dphys-swapfile
 pi@raspberrypi:~ $ sudo shutdown
-</code></pre>
-
-<p>以上で完了です。不具合があったりして、元に戻す場合はサービスを再開・登録をします。</p>
-
+</code></pre><p>以上で完了です。不具合があったりして、元に戻す場合はサービスを再開・登録をします。</p>
 <pre><code>pi@raspberrypi:~ $ sudo systemctl start dphys-swapfile
 pi@raspberrypi:~ $ sudo systemctl enable dphys-swapfile
-</code></pre>
-
-<p>SDカードの延命化もいろいろ調べましたが、32GBで500円くらいですし、
+</code></pre><p>SDカードの延命化もいろいろ調べましたが、32GBで500円くらいですし、
 10年保証だったりするので、過剰なまでに気にしないでも良いかなと思いました。</p>
 
 				

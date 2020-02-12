@@ -156,71 +156,47 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>今までは、様々なディストリビューションを試したり、
+                <p>今までは、様々なディストリビューションを試したり、
 トライアンドエラーでクリーンインストールを何度もしてきましたが、
 64bit環境を諦め、セルフホストパイサーバーはRaspbian.Basterでいくと決定。
 アップグレード時にブートしなくなるとかいうことがあったので、
 ある程度の作業が進んだらバックアップすることにする。</p>
-
 <p>ネットで見た<code>rsync</code>を使ったフルバックアップも試しましたが、うまく動きませんでしたので、
 端末にてイメージファイルを作る方法で試してみました。</p>
-
 <h2 id="バックアップ">バックアップ</h2>
-
 <p>さて、マックのディスクユティリティーだと、bootパーティション、パーティション毎のイメージは作れるものの、ディスク全体のイメージのバックアップはできません（macOS ElCapitan)。</p>
-
-<p><img src="/images/2019-07-12-fullbackup-deiskutil.png" alt="Pi Full Backup on MAc" /></p>
-
+<p><img src="/images/2019-07-12-fullbackup-deiskutil.png" alt="Pi Full Backup on MAc"></p>
 <p>しかしコマンドを使えば問題なし、ターミナルより<code>dd</code>を使ってディスク全体を書き出します。</p>
-
 <p>まずはディスク番号を探します。
 ディスクユティリティーからSDカードを選び、<code>コマンド＋i</code>で情報が見れます。
 外部に一つ目のディスクならば、ほぼ<code>/dev/rdisk1</code>です。</p>
-
-<p><img src="/images/2019-07-12-fullbackup-disk-info.png" alt="Pi Full Backup on Mac" /></p>
-
+<p><img src="/images/2019-07-12-fullbackup-disk-info.png" alt="Pi Full Backup on Mac"></p>
 <p>折角なのでファイル名には日付<code>date +%Y%m%d_%H%M</code>もつけておきます。アウトプットは<strong>20190712-raspbian_pi3_backup.img</strong>になります。</p>
-
 <pre><code>jin@gallo:Desktop $ sudo dd bs=4m if=/dev/rdisk# of=`date +%Y%m%d`-raspbian_pi3_backup.img
 Password:
 7632+0 records in
 7632+0 records out
 32010928128 bytes transferred in 634.113105 secs (50481417 bytes/sec)
 jin@gallo:Desktop $
-</code></pre>
-
-<p>32GBのSDカードで10分ほど、思ったり早く終了しました。まるまるバックアップなので容量もそれなりにあります。ファインダーより圧縮してかなりスリムダウンしました。</p>
-
-<p><img src="/images/2019-07-12-fullbackup-image-zip.png" alt="Pi Full Backup on MAc" /></p>
-
+</code></pre><p>32GBのSDカードで10分ほど、思ったり早く終了しました。まるまるバックアップなので容量もそれなりにあります。ファインダーより圧縮してかなりスリムダウンしました。</p>
+<p><img src="/images/2019-07-12-fullbackup-image-zip.png" alt="Pi Full Backup on MAc"></p>
 <p><code>ecthar</code>ではzip形式でも焼き込みに対応しているようのなので、zipで保存しておくのが良いです。</p>
-
 <p>※ gz方式では、
 <code>tar cvzf 20190712-raspbian_pi3_backup.img.gz 20190712-raspbian_pi3_backup.img</code>
 にて圧縮。</p>
-
 <h2 id="復元">復元</h2>
-
 <p>復元はまず、もう一枚の同じ容量のSDカードを用意します。
 （大きいカードであればパイのディスク拡張コマンドで拡げることができると思います。後々確認。）
 そしておなじみの<code>etcher</code>イメージ書き込みソフトを使います。</p>
-
-<p><img src="/images/2019-07-12-fullbackup-etcher.png" alt="Pi Full Backup on MAc" /></p>
-
+<p><img src="/images/2019-07-12-fullbackup-etcher.png" alt="Pi Full Backup on MAc"></p>
 <p>書き込みは少々時間がかかりましたが、復元したディスクをパイに入れてみて起動。
 無事に動きました。</p>
-
 <p>追記：
 圧縮したzipの状態からの復元は容量の何某の<strong>エラーで失敗</strong>しました。解凍しての復元は問題なかったです。ウーーン、なぜに。。そして何回か試しましたが、緊急性のないサーバーであればこのバックアップ方式悪くないかなと思ってます。</p>
-
-<hr />
-
+<hr>
 <p>作業全体で３０〜４０分ぐらい掛かりました。rsyncなどの同期バックアップに比べると非常に遅いのですが、遅いといえども10分ぐらいでバックアップできますし、フルリカバリー時の簡易さは勝っています（その間のデーターはなくなりますが、）。
 定期的にサーバーを止め、カードを抜いて書き出す。
 手間もそこまでではないので、新しいサービスを導入する前後などに行なおうかなと思ってます。</p>
-
 <p>現在LAMP, Syncthing, Grafana, tt-Rss, Gitea, telegrafを導入済み。３歩進んで２歩下がる感じですが、ちびちび確認しながら進めていこうかなと、、</p>
 
 				

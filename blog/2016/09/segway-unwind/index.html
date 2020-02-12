@@ -155,29 +155,20 @@
 
             <div class="post-content">
                 <p>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでいろいろ探しても、どこにもそれらしくものが見つかりません。使うのやめようかとも思いましたが、調べました。簡単にどこかでコントロールクリックすればできると思ってましたが、違いました。</p>
-
 <p>使いたい例は、ListVC（リストViewController)からセグウェイでDetailVCに行き、DetailVCにて編集終了後、unWindするという流れ。</p>
-
 <ol>
 <li>ListVCからDetailVCにセグウェイを設定（コントロールドラッグ）</li>
 <li>ListVCに下記のコードを追加</li>
 <li>DetailVCのexitをクリック、コネクションインスペクターにコードで追加したファンクションが<strong>表示</strong>される</li>
 <li>リンクをボタンなりに繋ぐ</li>
 </ol>
-
-<p><img src="/images/2016-09-08-segway-unwind.png" alt=" segway-unwind" /></p>
-
+<p><img src="/images/2016-09-08-segway-unwind.png" alt=" segway-unwind"></p>
 <p>ListVCに追加したコードは、</p>
-
 <pre><code>@IBAction func unwind___XXX___(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) または (unwindSegue: UIStoryboardSegue)
  {
 }
-</code></pre>
-
-<p>いろいろ試したところ、<code>@IBAction func unwind___XXX___</code> が入っていれば認識されるよう<code>___XXX___</code>の部分は必要なものに置き換えてください。引数も<code>(unwindSegue: UIStoryboardSegue)</code>が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。</p>
-
+</code></pre><p>いろいろ試したところ、<code>@IBAction func unwind___XXX___</code> が入っていれば認識されるよう<code>___XXX___</code>の部分は必要なものに置き換えてください。引数も<code>(unwindSegue: UIStoryboardSegue)</code>が入っていれば問題は無いようですが、こちらも追加・変更可能のようです。</p>
 <p>あとListVCでデーターを処理して、以前からのデレゲートでの処理と同じになります。</p>
-
 <pre><code>@IBAction func unwindFromDetailView(unwindSegue: UIStoryboardSegue) {
 
 	// 処理
@@ -186,16 +177,11 @@
 	.........
 	
 }
-</code></pre>
-
-<p>XCode7では、unwind&hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。</p>
-
+</code></pre><p>XCode7では、unwind&hellip;をタイプすると下記のコードを書き出してくれますが動きません。中途半端だ、、ちょっと数時間、嫌〜〜な気分になりました。。。</p>
 <pre><code>override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
         &lt;#code#&gt;
     }
-</code></pre>
-
-<p>やっぱり、ストーリーボードは好きになれません。。</p>
+</code></pre><p>やっぱり、ストーリーボードは好きになれません。。</p>
 
 				
 

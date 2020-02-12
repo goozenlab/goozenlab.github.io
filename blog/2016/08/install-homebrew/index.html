@@ -154,10 +154,7 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。</p>
-
+                <p>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。</p>
 <pre><code>$ cd /usr/local/
 total 24
 drwxr-xr-x   14 jin  admin   476B Mar 29 10:51 .git/
@@ -178,22 +175,13 @@ drwxr-xr-x   18 jin  admin   612B Apr 18  2015 lib/
 drwxr-xr-x    9 jin  admin   306B Mar 29 10:53 opt/
 drwxr-xr-x    4 jin  admin   136B Mar  5  2015 share/
 drwxr-xr-x    3 jin  admin   102B Apr  1  2015 var/
-</code></pre>
-
-<p>という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の<code>~/.brew</code> にする。（よくよく考えると、<code>~/Library/Homebrew</code>でも良かったかなと思ったりする。）</p>
-
+</code></pre><p>という事で、再インストールは Homebrew のインストール先を変更する事に、スッキリとホームディレクトリー内の<code>~/.brew</code> にする。（よくよく考えると、<code>~/Library/Homebrew</code>でも良かったかなと思ったりする。）</p>
 <h2 id="homebrew-のインストール">Homebrew のインストール</h2>
-
 <p>コピーもしくはクローンでインストールできます。私はサイト上にあった方法のコピーでインストールを行いました。ちなみに、gitでは <code>$ git clone https://github.com/Homebrew/brew.git ~/.brew</code> 。</p>
-
 <pre><code>$ cd
 $ mkdir .brew &amp;&amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C .brew
-</code></pre>
-
-<h2 id="実行パスの設定">実行パスの設定</h2>
-
+</code></pre><h2 id="実行パスの設定">実行パスの設定</h2>
 <p>とりあえず、PREFIXなど状況をチェック。</p>
-
 <pre><code>$ .brew/bin/brew config
 HOMEBREW_VERSION: 0.9.9
 ORIGIN: (none)
@@ -218,17 +206,11 @@ CLT: N/A
 X11: N/A
 $ .brew/bin/brew --cache
 /Users/jin/Library/Caches/Homebrew
-</code></pre>
-
-<p>問題は無いようなので、実行パスを<code>.bash_profile</code>に書き込みます。
+</code></pre><p>問題は無いようなので、実行パスを<code>.bash_profile</code>に書き込みます。
 そしてCacheの保存先は、<code>/Users/jin/Library/Caches/Homebrew</code> になっているのでこれもついでに変更します。</p>
-
 <pre><code>export PATH=$HOME/.brew/bin:$PATH
 export HOMEBREW_CACHE=$HOME/.brew/cache
-</code></pre>
-
-<p>実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。</p>
-
+</code></pre><p>実行をする前に、確認。警告が出るけど、まぁ大丈夫でしょう。。（必要無いような気もするけれど。）そして、hugoをインストールする。</p>
 <pre><code>$ brew doctor
 Please note that these warnings are just used to help the Homebrew maintainers
 with debugging if you file an issue. If everything you use Homebrew for is
@@ -257,9 +239,7 @@ Bash completion has been installed to:
   /Users/jin/.brew/etc/bash_completion.d
 ==&gt; Summary
 🍺  /Users/jin/.brew/Cellar/hugo/0.16: 29 files, 17.6M
-</code></pre>
-
-<p>とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。</p>
+</code></pre><p>とりあえず、hugoは動いてます。ちょっとアプリの移行が終わったら、pythonで機械学習の諸々を試してみようかな。。。</p>
 
 				
 

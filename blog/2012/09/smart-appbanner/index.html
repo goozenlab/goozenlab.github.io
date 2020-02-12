@@ -154,24 +154,14 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。</p>
-
+                <p>iOS6のSafariから対応するSmartAppBannerをアプリページに設置します。</p>
 <p>ヘッダーに一行追加するだけです。あら簡単。（APP_IDは個別の番号です。）</p>
-
 <p><code>&lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id=APP_ID&quot;&gt;</code></p>
-
 <p>百聞は一見に如かず、iOS端末にてこのように表示されます。あら不思議。</p>
-
-<p><img src="/images/2012-09-29-appbanner.png" alt="App smart banner" /></p>
-
+<p><img src="/images/2012-09-29-appbanner.png" alt="App smart banner"></p>
 <p>簡易広告のようなものです。ダウンロードが増えるとは思わないけど、開発者にとってはありがたいことだとおもいます。</p>
-
 <h2 id="カスタマイズ">カスタマイズ</h2>
-
 <p>オクトプレスでは表示するページのヘッダーに <code>appid:####</code> を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）</p>
-
 <pre><code>---
 layout: page
 title: &quot;littlist&quot;
@@ -183,10 +173,7 @@ sharing: true
 footer: true
 ---
 
-</code></pre>
-
-<p>そして、ヘッダーのカスタムテンプレートファイル、<code>source/_includes/custom/head.html</code> に1行目を追加します。</p>
-
+</code></pre><p>そして、ヘッダーのカスタムテンプレートファイル、<code>source/_includes/custom/head.html</code> に1行目を追加します。</p>
 <pre><code>//追加
 {% if page.appid }
 &lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id={{ page.appid }}&quot;&gt;
@@ -196,9 +183,7 @@ footer: true
 &lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
 &lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
 
-</code></pre>
-
-<p>で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。</p>
+</code></pre><p>で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。</p>
 
 				
 

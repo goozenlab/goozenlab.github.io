@@ -156,41 +156,26 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2020-02-04-magictrackpad.png" alt="Magictrackpad2" /></p>
-
+                <p><img src="/images/2020-02-04-magictrackpad.png" alt="Magictrackpad2"></p>
 <p>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。</p>
-
 <h2 id="ちょっとした穴の補修">ちょっとした穴の補修</h2>
-
 <p>Arch の初期状態ではブルートゥースが使えません。
 オンになっているもオフになっていました。
 bluez というソフトは入っているようなのですが、、</p>
-
-<p><img src="/images/2020-02-01-bt-connection-00.png" alt="BT Settings" /></p>
-
+<p><img src="/images/2020-02-01-bt-connection-00.png" alt="BT Settings"></p>
 <p>Wiki を覗くと
 <code>bluez-util</code>
 が必要なようでインストール。書いたあった他のソフトはインストールされていたので、中途半端にインストールされていた様子。</p>
-
 <p>そして、下画像の様にサービスをスタートすることで有効化があっさりできました。</p>
-
-<p><img src="/images/2020-02-01-bt-connection-04.png" alt="BT Settings" /></p>
-
+<p><img src="/images/2020-02-01-bt-connection-04.png" alt="BT Settings"></p>
 <p>そして、マジックトラックパッドに関しては色々と調べていた最中で、
 カーネル 4.20 以降より対応しているとのことですが、
 カーネル 5.4 で動いている Manjaro では認識はするものの使えませんでした。</p>
-
 <p>とりあえずダメ元で、Arch でも認識はしているので繋がるか試してみたところ、</p>
-
-<p><img src="/images/2020-02-01-bt-connection-03.png" alt="BT Settings" /></p>
-
+<p><img src="/images/2020-02-01-bt-connection-03.png" alt="BT Settings"></p>
 <p>、、動いたーー。</p>
-
 <p>何かしらの設定が必要かもしれないと思っていたので、ちょっとラッキー。
 デバイスもしっかり掴んでいます。</p>
-
 <pre><code>jin@guiness:~$ sudo  libinput list-devices
 
 Device:           Apple Inc. Magic Trackpad 2
@@ -248,38 +233,20 @@ Click methods:    *button-areas clickfinger
 Disable-w-typing: enabled
 Accel profiles:   none
 Rotation:         n/a
-</code></pre>
-
-<p>動きはマックに比べると少し鈍いかな。
+</code></pre><p>動きはマックに比べると少し鈍いかな。
 加速感とかの使用感はマックでの方がやはり上です。</p>
-
 <p>しかし何と！Gnone では４本指スワイプでワークスペースを移動できます。
 ４本指スワイプが可能になっているので、
 ２本指、３本スワイプに指動作を割り当てられるかも。。</p>
-
 <p>そんなわけで、Arch の環境がかなり良くなってきます。
 ちょっときになるのは、ターミナル実行時にたまにプチフリーズを起こすことと、、</p>
-
 <p>で、本体についているトラックパッドを無効化したいのだけど、、
 BIOS では無効化しているはずなのですが無視される。</p>
-
 <p><a href="https://github.com/rohitpid/Linux-Magic-Trackpad-2-Driver">https://github.com/rohitpid/Linux-Magic-Trackpad-2-Driver</a></p>
-
 <p>追記：調子にのっってデビアン、バスターのカーネルをバックポート版（5.4)に入れ替えて試してみたところ、
 認識・接続はうまくいくも動作が安定しませんでした。接続が安定しないのか動きをうまく追随してこなく、一気に動いたりします。。（調整は可能かもしれん。。とりあえず放置。）</p>
-
-<!--
-
-無効化
-
-jin@guiness:~$ journalctl | grep Elan
-Feb 01 14:10:40 guiness kernel: psmouse serio1: elantech: Elan sample query result 00, 20, c9
-Feb 01 14:10:40 guiness kernel: elan_i2c 1-0015: Elan Touchpad: Module ID: 0x0020, Firmware: 0x0001, Sample: 0x0000, IAP: 0x0000
-Feb 01 14:10:40 guiness kernel: input: Elan Touchpad as /devices/pci0000:00/0000:00:1f.4/i2c-1/1-0015/input/input9
-Feb 01 14:10:40 guiness kernel: input: Elan TrackPoint as /devices/pci0000:00/0000:00:1f.4/i2c-1/1-0015/input/input10
-Feb 01 14:17:04 guiness gnome-shell[1103]: libinput error: event7  - Elan Touchpad: kernel bug: Touch jump detected and discarded.
-jin@guiness:~$
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

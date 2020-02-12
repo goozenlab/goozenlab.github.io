@@ -156,47 +156,31 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>オススメ・ディストロの一つ、デビアン環境がなかな良いです。
+                <p>オススメ・ディストロの一つ、デビアン環境がなかな良いです。
 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン<code>68.x</code>がインストールされます。
 Firefox自体は頻繁に更新され新しい機能も次々追加されています。
 セキュティーパッチも迅速に対応されているので最新版に入れ替えても問題はないだろうと、入れ替える事にします。</p>
-
 <p>Mozilla.orgよりバイナリーを持ってきたり、Ubuntu向けのPPA登録、AppImageやSnapを使う方法もあるようですが、
 Debianの<code>Apt</code>でできない訳でないのでこちらでインストールする。アップデートも楽だしね。</p>
-
 <p>ただちょっとした設定が必要で
 <strong>Apt Pinning</strong>
 と言われる方法を使います。</p>
-
-<hr />
-
+<hr>
 <p>デビアンでは安定版から開発版までいくつかのパッケージリスト（ディストリビューションと呼ばれてますが混乱を避ける為、とりあえずパッケージリストと呼びます。）に分かれています。安定板で使われているアプリのメジャーアップグレードは時間が掛かる。（次のマイナーアップデート時？）</p>
-
-<h3 id="stable-buster-backports-testing-bullseye-unstable-experiment">Stable(buster) &lt; Backports &lt; Testing(bullseye) &lt; Unstable &lt; Experiment</h3>
-
+<h3 id="stablebuster--backports--testingbullseye--unstable--experiment">Stable(buster) &lt; Backports &lt; Testing(bullseye) &lt; Unstable &lt; Experiment</h3>
 <p>てな感じ。新しいバージョンはExperiment/Unstableに入り検証を経てだんだん左に移動していくパスになっています。
 次のメジャーアップグレード(bullsey)時にはパッケージが固定され左にスライドします。</p>
-
 <p>パッケージ（ソフトウェア）情報は</p>
-
 <p><a href="https://packages.debian.org/">https://packages.debian.org/</a></p>
-
 <p>にて細かい情報を確認する事ができます。</p>
-
-<p>そして最新版のFirefoxは<code>Unstable</code>のパッケージリストに入っています。<br />
+<p>そして最新版のFirefoxは<code>Unstable</code>のパッケージリストに入っています。<br>
 <a href="https://packages.debian.org/search?searchon=names&amp;keywords=firefox">https://packages.debian.org/search?searchon=names&amp;keywords=firefox</a></p>
-
 <h2 id="apt-pinning">Apt Pinning</h2>
-
 <p>ポリシー（優先順位）が設定されています。
 デフォルトの設定は以下、
 パッケージリストの安定版が５００、バックポートが１００
 になっています。</p>
-
 <p>バックポートでインストールしたもの以外は安定版のパッケージがアップデートされていくということになります。</p>
-
 <pre><code>jin@debian:~$ apt-cache policy
 Package files:
  100 /var/lib/dpkg/status
@@ -214,59 +198,43 @@ Package files:
      release v=10.2,o=Debian,a=stable,n=buster,l=Debian,c=main,b=amd64
      origin deb.debian.org
 Pinned packages:
-</code></pre>
-
-<p>Pinningによりパケージごとの設定もできますが、
+</code></pre><p>Pinningによりパケージごとの設定もできますが、
 今回はパッケージリスト毎のPinningの設定をします。</p>
-
 <h3 id="firefox最新版をインストール">Firefox最新版をインストール</h3>
-
 <p>最新版（v72)をインストールす作業の流れは以下になります。</p>
-
 <ol>
 <li>unstableの apt-source の追加</li>
 <li>各パッケージリストのポリシー設定</li>
 <li>aptの更新</li>
 <li>パッケージを unstable よりインストール</li>
 </ol>
-
 <p>unstable版のAptソースファイル <code>/etc/apt/sources.list.d/unstable.list</code>を作成します。
 ご自分の環境に合わせて修正してください。
 あちこち国境を越える人はその先々でミラーを選んでくれる
 <code>http://deb.debian.org/debian/</code>
 が良いです。</p>
-
 <pre><code>$ sudo vi /etc/apt/sources.list.d/unstable.list
 
 deb http://deb.debian.org/debian/ unstable main contrib non-free
 # deb-src http://deb.debian.org/debian/ unstable main contrib non-free
 
-</code></pre>
-
-<p>ポリシーの設定は<code>/etc/apt/preferences.d/</code>内にstableとunstableの二つのファイルを追加。
+</code></pre><p>ポリシーの設定は<code>/etc/apt/preferences.d/</code>内にstableとunstableの二つのファイルを追加。
 安定版はデフォルトの500に設定しました。</p>
-
 <pre><code>$ sudo vi /etc/apt/preferences.d/stable
 
 Package: *
 Pin: release a=stable
 Pin-Priority: 500
-</code></pre>
-
-<p>buster-backportsのプライオリティがどっから来ているのか100になっているので、
+</code></pre><p>buster-backportsのプライオリティがどっから来ているのか100になっているので、
 unstableはそれより少ない値：90にします。
 もしtestingも使うのならば同様のファイルを作り、
 プライオリティはその間の95にすればよい。</p>
-
 <pre><code>sudo vi /etc/apt/preferences.d/unstable
 
 Package: *
 Pin: release a=unstable
 Pin-Priority: 90
-</code></pre>
-
-<p>ポリシーを覗いて確認。</p>
-
+</code></pre><p>ポリシーを覗いて確認。</p>
 <pre><code>jin@debian:~$ apt-cache policy
 Package files:
  100 /var/lib/dpkg/status
@@ -287,21 +255,14 @@ Package files:
      release v=10.2,o=Debian,a=stable,n=buster,l=Debian,c=main,b=amd64
      origin deb.debian.org
 Pinned packages:
-</code></pre>
-
-<p>パッケージを更新して、UnstableよりFirefoxをインストールします。
+</code></pre><p>パッケージを更新して、UnstableよりFirefoxをインストールします。
 ちなみに<code>sudo apt install firefox/unstable</code>のコマンドだと古いのかうまくいきません。</p>
-
 <pre><code>jin@debian:~$ sudo apt update
 jin@debian:~$ sudo apt install -t unstable firefox
-</code></pre>
-
-<p>依存しているソフトも同時にインストールされます。
+</code></pre><p>依存しているソフトも同時にインストールされます。
 これから先もアップデートも通常と同じように<code>sudo apt update/upgrade</code>できます。</p>
-
 <p>まぁあとは同時に使っているManjaroでのアプリとバージョンを合わせるのに使うくらいかな。
 （ときにアプリによってバージョンアップで保存データの更新があったりするので、)</p>
-
 <p>これで自由度が少し高まったような感じがします。あとは開発版からきになるSwayでもインストールするかな。</p>
 
 				

@@ -154,101 +154,60 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできるようにしました。公開鍵をサーバーに登録するだけの作業でできます。</p>
-
+                <p>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできるようにしました。公開鍵をサーバーに登録するだけの作業でできます。</p>
 <p>追記7月10日：<strong>openWrt</strong>での設定を一番下に追加しました。</p>
-
 <h2 id="鍵をつくる">鍵をつくる</h2>
-
 <p>まずは鍵が必要です。一発でできます。鍵の名前を変えたい場合は<code>-f &lt;&lt;鍵の名前&gt;&gt;</code>を追加します。</p>
-
 <pre><code>$ ssh-keygen -t rsa
 $ ssh-keygen -t rsa -f &lt;&lt;鍵の名前&gt;&gt;
-</code></pre>
-
-<p>デフォルトでは秘密鍵<code>id_rsa</code>と
+</code></pre><p>デフォルトでは秘密鍵<code>id_rsa</code>と
 公開鍵<code>id_rsa.pub</code>
 が作られます。</p>
-
 <p>今回はローカルサーバーのみで使う予定なので、パスフレーズは入力していませんが、
 セキュリティー上設定しましょう。10文字以上でセキュリティー的にかなり安全になるようです。</p>
-
-<h3 id="公開鍵をパイ-サーバーに転送する">公開鍵をパイ・サーバーに転送する</h3>
-
+<h3 id="公開鍵をパイサーバーに転送する">公開鍵をパイ・サーバーに転送する</h3>
 <p>公開鍵をサーバーへ持って行きます。ssh+cpなのか<code>scp ~/.ssh/id_rsa.pub &lt;&lt;USER&gt;&gt;@&lt;&lt;SERVER&gt;&gt;:&lt;&lt;保存先&gt;&gt;</code>で取り敢えず完了。</p>
-
 <pre><code>$ scp ~/.ssh/id_rsa.pub pi@10.0.0.65:~/
 pi@10.0.0.65's password:
 id_rsa.pub
 $
-</code></pre>
-
-<p>クライアント側での最初の設定は以上です。</p>
-
-<hr />
-
-<h2 id="パイ-サーバーでの作業">パイ・サーバーでの作業</h2>
-
+</code></pre><p>クライアント側での最初の設定は以上です。</p>
+<hr>
+<h2 id="パイサーバーでの作業">パイ・サーバーでの作業</h2>
 <p>サーバーに今まで通りパスワードを使ってログインします。</p>
-
 <h3 id="公開鍵を登録">公開鍵を登録</h3>
-
 <p>サーバーで受け取った公開鍵をssh接続許可リスト<strong>authorized_keys</strong>に登録します。そしてサーバー上ではssh関連のフォルダー・ファイルは作成されていないと思います。
 まずは<code>.ssh</code>フォルダーと空のファイル<code>authorized_keys</code>を作ります。同時にアクセス権の設定も行います。</p>
-
 <pre><code>$ mkdir ~/.ssh
 $ touch ~/.ssh/authorized_keys
 $ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys
-</code></pre>
-
-<p>そして、公開鍵をauthorized_keysに登録します。書き込まれているか確認して受け取った公開鍵も消してしまいます。
+</code></pre><p>そして、公開鍵をauthorized_keysに登録します。書き込まれているか確認して受け取った公開鍵も消してしまいます。
 （同じ端末で作業をしてるから、コピペでも良かったかな。。と今更ながら思う。） </p>
-
 <pre><code>$ cat id_rsa.pub &gt;&gt;  ~/.ssh/authorized_keys
 $ cat ~/.ssh/authorized_keys
 $ rm id_rsa.pub
-</code></pre>
-
-<h3 id="sshサーバーの設定">sshサーバーの設定</h3>
-
+</code></pre><h3 id="sshサーバーの設定">sshサーバーの設定</h3>
 <p>パイ側で/etc/ssh/sshd_configを編集し、rsa公開鍵認証を有効にします。
 root権限で作業を行います。次いでにルートでのログインも無効にします。</p>
-
 <pre><code>$ sudo -Es
 # vi /etc/ssh/sshd_config
-</code></pre>
-
-<p>rootログインの無効化、公開鍵でのアクセス設定、パスワード認証の無効化を設定します。以下の行を見つけコメントを外し、<strong>yes/no</strong>を編集をします。終了後、サービスを再起動<code>systemctl restart ssh</code>します。</p>
-
-<p>PermitRootLogin prohibit-password<br />
-PubkeyAuthentication yes<br />
-AuthorizedKeysFile .ssh/authorized_keys<br />
+</code></pre><p>rootログインの無効化、公開鍵でのアクセス設定、パスワード認証の無効化を設定します。以下の行を見つけコメントを外し、<strong>yes/no</strong>を編集をします。終了後、サービスを再起動<code>systemctl restart ssh</code>します。</p>
+<p>PermitRootLogin prohibit-password<br>
+PubkeyAuthentication yes<br>
+AuthorizedKeysFile .ssh/authorized_keys<br>
 PasswordAuthentication no</p>
-
 <pre><code># systemctl restart ssh
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h2 id="ssh接続設定">ssh接続設定</h2>
-
 <p>クライアントに戻り最後の仕上げです。</p>
-
 <p>アクセスを簡単にするために<code>~/.ssh/config</code>を編集します。</p>
-
 <p>下記のように、ホスト名、アドレス、ポート番号、サーバーに送った公開鍵の秘密鍵のファイル名<code>id_rsa</code>を書き加えます。書き加えます。</p>
-
 <pre><code>Host tacos 
  Hostname 10.0.0.65
  Port 22
  User pi
  IdentityFile ~/.ssh/id_rsa
-</code></pre>
-
-<p>アクセスは<code>ssh tacos</code>でオッケー、パスワードも入力する必要もないです。</p>
-
+</code></pre><p>アクセスは<code>ssh tacos</code>でオッケー、パスワードも入力する必要もないです。</p>
 <pre><code>$ ssh tacos
 Linux raspberrypi 4.19.42+ #1219 Tue May 14 21:16:38 BST 2019 armv6l
 
@@ -260,19 +219,13 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri Jun 28 19:14:36 2019 from 10.0.0.228
 pi@raspberrypi:~ $
-</code></pre>
-
-<h3 id="参照サイト">参照サイト</h3>
-
+</code></pre><h3 id="参照サイト">参照サイト</h3>
 <ul>
 <li><a href="https://qiita.com/m1220/items/9dc3856bbcf985577023">RSA公開鍵認証によるssh接続設定について（Macbook -&gt; VPS）
 </a></li>
 </ul>
-
-<hr />
-
-<h2 id="おまけ-openwrtにて">おまけ：OpenWrtにて</h2>
-
+<hr>
+<h2 id="おまけopenwrtにて">おまけ：OpenWrtにて</h2>
 <pre><code>  _______                     ________        __
  |       |.-----.-----.-----.|  |  |  |.----.|  |_
  |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
@@ -281,27 +234,17 @@ pi@raspberrypi:~ $
  -----------------------------------------------------
  OpenWrt 18.06.1, r7258-5eb055306f
  -----------------------------------------------------
-</code></pre>
-
-<p>鍵をサーバー（ルーター）に登録までは同じです。</p>
-
+</code></pre><p>鍵をサーバー（ルーター）に登録までは同じです。</p>
 <p>sshサービスは<code>dropbear</code>を使っているので、少し設定が変わります。</p>
-
 <p>登録した鍵ファイルの<code>authorized_keys</code>をdropbearの設定場所にコピーします。
 ファイルのパーミションを設定もします。</p>
-
 <pre><code>root@shadow:~# cp /root/.ssh/authorized_keys /etc/dropbear/
 root@shadow:~# chmod 700 /etc/dropbear
 root@shadow:~# chmod 600 /etc/dropbear/authorized_keys
-</code></pre>
-
-<p>パスワードでのログインを禁止する設定をします。</p>
-
+</code></pre><p>パスワードでのログインを禁止する設定をします。</p>
 <pre><code>root@shadow:~# uci set dropbear.@dropbear[0].PasswordAuth=off
 root@shadow:~# uci commit dropbear
-</code></pre>
-
-<p>そして、上記のように<code>~/.ssh/config</code>を編集して簡単にアクセスできるようにして終了。</p>
+</code></pre><p>そして、上記のように<code>~/.ssh/config</code>を編集して簡単にアクセスできるようにして終了。</p>
 
 				
 

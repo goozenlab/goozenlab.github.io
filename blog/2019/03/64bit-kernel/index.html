@@ -156,57 +156,33 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>頑なにこだわり続けてた64bit化。
+                <p>頑なにこだわり続けてた64bit化。
 Archを試したり、公式に64bitをサポートしているopenSuseやDebian.Buster PREVIEW版を試したり、busterで作ったカーネルをラズビアンに入れてみたりと、
 色々チャレンジしました。</p>
-
 <p>自分の場合、ブルートゥースがマストなので、鬼門になる。自分でカーネルをビルドするも機能しない、カーネル・オプションの設定も間違いはないように思えるが、まぁ、色々試すもうまくいかず。
 ハード的に少しトリッキーでもあると書いてあるところもあったし、ちょっと他の調整もひつようなのかもしれん。。ブルートゥースが問題なく使えるのは、ラズビアンとダイエットパイのみ（32bit)でした。</p>
-
 <p>最後の方で見つけた、Pi3.64用のGentooをインストールしようかとも思ったけれど、、、この、ディストリビューションの存在は相当前から知っていはいるが、癖のあるディストリビューションなので未だインストールもしたことなし。手をつけてませんでした。で、そんな中、そのGentooで使われているカーネルを拝借する方法が出てました。</p>
-
 <p><a href="https://www.raspberrypi.org/forums/viewtopic.php?p=1424256#p1424113">https://www.raspberrypi.org/forums/viewtopic.php?p=1424256#p1424113</a></p>
-
 <p>投稿記事の真ん中あたりです。投稿者は
 <a href="https://github.com/sakaki-/gentoo-on-rpi3-64bit">sakakiさん</a>
 、日本の方なのかな、PiB3をGentooで動かしてます。
 しかも、ブルートゥースも動くと書いてあったので、試してみたところ、うまくいきました。</p>
-
 <p>作業手順は丁寧に説明をされています。ほぼ、出ているままです。</p>
-
 <h2 id="download">Download</h2>
-
-<p>ここでは<code>4.19.30.20190326/bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz</code>をダウンロードしてますが、ていき的にアップデートされているようです。<a href="https://github.com/sakaki-/bcmrpi3-kernel-bis#installation">https://github.com/sakaki-/bcmrpi3-kernel-bis#installation</a></p>
-
+<p>ここでは<code>4.19.30.20190326/bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz</code>をダウンロードしてますが、ていき的にアップデートされているようです。https://github.com/sakaki-/bcmrpi3-kernel-bis#installation</p>
 <pre><code>pi@raspberrypi:~ $ wget -c https://github.com/sakaki-/bcmrpi3-kernel-bis/releases/download/4.19.30.20190326/bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz
 
-</code></pre>
-
-<h2 id="作業">作業</h2>
-
+</code></pre><h2 id="作業">作業</h2>
 <p>まず、レポジトリーにあるカーネルをaptでアップデートされないように、保留にします。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo apt-mark hold raspberrypi-kernel
-</code></pre>
-
-<p>以前の32bit環境の設定などを、バックアップします</p>
-
+</code></pre><p>以前の32bit環境の設定などを、バックアップします</p>
 <pre><code>pi@raspberrypi:~ $ sudo mkdir -pv /boot/r32-dtbs
 pi@raspberrypi:~ $ sudo mv -v /boot/*.dtb /boot/r32-dtbs/
-</code></pre>
-
-<h2 id="インストール作業">インストール作業</h2>
-
+</code></pre><h2 id="インストール作業">インストール作業</h2>
 <p>落としたカーネルファイル一気に展開します。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo tar --exclude='COPYING.linux' -xJf bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz -C /
 pi@raspberrypi:~ $ sync
-</code></pre>
-
-<p>新しい、デバイストリーなどを整理します。プートパーティションの中は以下のようになります。</p>
-
+</code></pre><p>新しい、デバイストリーなどを整理します。プートパーティションの中は以下のようになります。</p>
 <pre><code>pi@raspberrypi:~ $ sudo mkdir -pv /boot/r64-dtbs
 pi@raspberrypi:~ $ sudo cp -v /boot/*.dtb /boot/r64-dtbs/
 pi@raspberrypi:~ $ 
@@ -216,30 +192,18 @@ pi@raspberrypi:~ $ ls -a /boot/
 .Trashes    LICENCE.broadcom  bcm2710-rpi-3-b.dtb       cmdline.txt          fixup_cd.dat  kernel.img   r32-dtbs     start_db.elf
 ._.Trashes  LICENSE.oracle    bcm2710-rpi-cm3.dtb       config               fixup_db.dat  kernel7.img  r64-dtbs     start_x.elf
 pi@raspberrypi:~ $
-</code></pre>
-
-<p>そして、再起動します。</p>
-
+</code></pre><p>そして、再起動します。</p>
 <pre><code>pi@raspberrypi:~ $ sudo reboot
-</code></pre>
-
-<p><img src="/images/2019-03-28-kernel-arm64.png" alt="64bit Kernel" /></p>
-
+</code></pre><p><img src="/images/2019-03-28-kernel-arm64.png" alt="64bit Kernel"></p>
 <p>そして、ブルートゥースも、cpufreqも動きましたぁ。。</p>
-
 <h3 id="イイェイ">！！イイェイ！！！</h3>
-
-<p><img src="/images/2019-03-28-bt-running.png" alt="BT Running" /></p>
-
+<p><img src="/images/2019-03-28-bt-running.png" alt="BT Running"></p>
 <p>あぁ〜〜〜〜〜、長い道のりだったでよ。。。</p>
-
 <p>さて、これのユーザーランドは32bit環境なので、さて、もう一丁最後の仕上げと行くか、、どうするか、、</p>
-
 <ul>
 <li><a href="https://github.com/jdonald/raspbian-multiarch">jdonald/raspbian-multiarch</a></li>
 <li><a href="https://wiki.debian.org/Multiarch/HOWTO">https://wiki.debian.org/Multiarch/HOWTO</a></li>
 </ul>
-
 <p>で、ちょっと試してみるも、、、まぁ、ちょっとよくわからない。。で、当分はこのままの形で運用していきます。
 ６月頃には少し、落ちつていればな、、と期待しつつ。</p>
 

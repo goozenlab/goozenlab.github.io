@@ -156,69 +156,41 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。
+                <p>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。
 インストール、設定方法をまとめる。</p>
-
-<h2 id="debian-ubuntu">Debian / Ubuntu</h2>
-
+<h2 id="debian--ubuntu">Debian / Ubuntu</h2>
 <p>Debian と Ubuntu では</p>
-
 <pre><code>$ sudo apt-get install im-congig fcitx-mozc
-</code></pre>
-
-<p>をインストール、im-congif より fcitx を指定します。</p>
-
-<p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install" /></p>
-
+</code></pre><p>をインストール、im-congif より fcitx を指定します。</p>
+<p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install"></p>
 <p>次にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
 mozc を追加して、キーバインドや候補表示のフォント設定などが行なえます。</p>
-
-<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install" /></p>
-
+<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
 <p>そして、再起動でつかえるようになります。</p>
-
 <p>ただし、Mozc ツールはバグがあるらしく backport よりインストールする必要があります。コマンドで詳細設定のツールを起動する必要があります。</p>
-
 <p>コマンドからの辞書ツール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
-
 <pre><code>$ /usr/lib/mozc/mozc_tool --mode=config_dialog
 $ /usr/lib/mozc/mozc_tool --mode=dictionary_tool
 $ /usr/lib/mozc/mozc_tool --mode=word_register_dialog
-</code></pre>
-
-<p>です。頻繁にアクセスするものでないのでそのままにしてます。</p>
-
-<p><img src="/images/2020-02-04-mozc-setting-00.png" alt="Mozc Install" /></p>
-
-<h2 id="arch-manjaro">Arch / Manjaro</h2>
-
+</code></pre><p>です。頻繁にアクセスするものでないのでそのままにしてます。</p>
+<p><img src="/images/2020-02-04-mozc-setting-00.png" alt="Mozc Install"></p>
+<h2 id="arch--manjaro">Arch / Manjaro</h2>
 <pre><code>$ sudo pacman -S fcitx-mozc fcitx-gtk3 fcitx-qt5
-</code></pre>
-
-<p>こちらもいたって簡単、上記のソフトをインストールして、
+</code></pre><p>こちらもいたって簡単、上記のソフトをインストールして、
 同様にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
 そして mozc を追加します。</p>
-
-<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install" /></p>
-
+<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
 <p>こちらはこのままでは再起動しても使えないので、
 Mnajaro では、<code>.xprofile</code>
 Arch (wayland)では<code>/etc/enviourment</code>
 に設定を書き入れます。</p>
-
 <pre><code>.xprofile (manjaro) /etc/enviorment (arch)
 
 export XMODIFIERS=&quot;@im=fcitx&quot;
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
-</code></pre>
-
-<p>で、問題なく動きます。（最近<strong>mozc-ut2</strong>にアップグレードしました。）</p>
-
-<!-- ![Mozc Install](/images/2020-02-04-setting-input-02.png) -->
-
+</code></pre><p>で、問題なく動きます。（最近<strong>mozc-ut2</strong>にアップグレードしました。）</p>
+<!-- raw HTML omitted -->
 <p>キーバインディングをハッキントッシュと合わせたいんだけどね、、
 ctl か alt のどっちのキーをメインにするか悩む。。</p>
 

@@ -156,44 +156,30 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>安宿にて、宿の猫が部屋に入り込み、ベッドを占領される。
+                <p>安宿にて、宿の猫が部屋に入り込み、ベッドを占領される。
 扇風機の風が心地よいのかぐっすりと寝ている。</p>
-
-<p><img src="/images/2019-09-06-cat-sleeping.jpg" alt="Sleeping Cat" /></p>
-
+<p><img src="/images/2019-09-06-cat-sleeping.jpg" alt="Sleeping Cat"></p>
 <p>おかげで外には出れず、、部屋でちまちまと文章を書いてる。</p>
-
 <p>でも、猫ってわりと寝相が悪いんだなと、、
 気がついたら、頭の位置が180度回転してる。。</p>
-
-<p><img src="/images/2019-09-06-syncthing-dropbox-memory.png" alt="Syncthing Dropbox Memory Usage" /></p>
-
+<p><img src="/images/2019-09-06-syncthing-dropbox-memory.png" alt="Syncthing Dropbox Memory Usage"></p>
 <p>カレンダーのファイルやなんやと、ちょっと同期するファイルが増えてきてます。
 Syncthingを同期をするたびにわざわざ立ち上げてましたが、
 やはり面倒になってきたので常時立ち上げておくことにしました。</p>
-
 <p>しかし常時オンというのはバッテリーの消費上あまり気が進まないので、
 CPUへの負担やメモリー使用状況などまずはチェックすることしました。
 そして、類似サービスの<strong>Dropbox</strong>と比較をしてみて、酷ければ再考。</p>
-
 <h2 id="結果">結果</h2>
-
 <p>通常立ち上げているドロップボックスとさほど変わりが無いようです。
 スレッドの数もメモリーも控えめです。
 メモリがガリガリと増えていくこともなく安定して動作しています。</p>
-
-<p><img src="/images/2019-09-06-dropbox-syncthing-cpu.gif" alt="Syncthing Dropbox CPU Usage" /></p>
-
+<p><img src="/images/2019-09-06-dropbox-syncthing-cpu.gif" alt="Syncthing Dropbox CPU Usage"></p>
 <p>同期時には10％くらいにCPUの消費がありますが、
 同期しているアンドロイドフォンからの写真やスクショの転送もあっという間です。
 まぁ、常時立ち上げていても問題は無しと判断しました。やはり・快適＆気楽ですね。</p>
-
-<p>自動で起動させるためには自分で <b>LaunchAgents</b>のサービスを使って行うと思ってましたが、
+<p>自動で起動させるためには自分で <!-- raw HTML omitted -->LaunchAgents<!-- raw HTML omitted -->のサービスを使って行うと思ってましたが、
 <code>brew services start syncthing</code>
 でbrewが代理で行ってくれます、らっくー。</p>
-
 <pre><code>🍺  /usr/local/Cellar/syncthing/1.2.2: 23 files, 19.9MB, built in 47 seconds
 ==&gt; syncthing
 To have launchd start syncthing now and restart at login:
@@ -212,13 +198,10 @@ Unpacking objects: 100% (14/14), done.
 Tapped 1 command (43 files, 59.8KB).
 ==&gt; Successfully started `syncthing` (label: homebrew.mxcl.syncthing)
 jin@gallo:~ $
-</code></pre>
-
-<p>チェックしてみたところ、中身はやはりLaunchAgentsのサービスのようです。
+</code></pre><p>チェックしてみたところ、中身はやはりLaunchAgentsのサービスのようです。
 <code>~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist</code>
 のファイルが作られサービスに登録されます。
 ファイルの中身はこんな感じです。</p>
-
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
 &lt;plist version=&quot;1.0&quot;&gt;
@@ -246,24 +229,16 @@ jin@gallo:~ $
     &lt;string&gt;/usr/local/var/log/syncthing.log&lt;/string&gt;
   &lt;/dict&gt;
 &lt;/plist&gt;
-</code></pre>
-
-<p>登録を解除したいときには<code>launchctl</code>で行えます。
+</code></pre><p>登録を解除したいときには<code>launchctl</code>で行えます。
 再登録に関しても同様。</p>
-
 <pre><code>jin@gallo:~ $ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
 jin@gallo:~ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
-</code></pre>
-
-<p>追加の設定・変更のためのウェブ管理画面へ行くには：
-<a href="http://localhost:8384">http://localhost:8384</a>
+</code></pre><p>追加の設定・変更のためのウェブ管理画面へ行くには：
+http://localhost:8384
 にアクセスします。設定を変更・追加した時はここから再起動を行います。</p>
-
-<hr />
-
+<hr>
 <p>ドロップボックスのアプリからはジワジワとオプトアウトしつつあります。。
 (enpassの同期は３台以上でも同期できるようなのでそのまま使わせてもらってますが。。）</p>
-
 <p>Syncthingは推しです。Unisonや他の同期のソフトなどを入れたりすれば、
 ファイルの更新が頻繁にある容量の少ないファイルがメインの場合は
 NASよりも良と思います。

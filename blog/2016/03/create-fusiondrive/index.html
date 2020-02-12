@@ -156,22 +156,15 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。</p>
-
+                <p>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。Fusion化のターミナルでの作業は簡単に書くと以下の流れになる。</p>
 <ol>
 <li>ディスク番号確認：diskutil list</li>
 <li>フュージョンドライブ作成：diskutil cs create</li>
 <li>ボリューム作成：diskutil coreStorage createVolume</li>
 </ol>
-
 <h2 id="詳細">詳細</h2>
-
 <p>Fusion化を行うディスクの番号を <code>diskutil list</code> にて把握。そして <code>diskutil cs create &quot;Fusion Drive&quot; disk1 disk2</code> にてLogical Volume Groupを構築。</p>
-
 <p>※この作業はMacBookProをMacBookAirに繋いで行っている為ディスク番号は disk1 と disk2 になっている。通常なら disk0 と disk1 になる。</p>
-
 <pre><code>shingha:~ $ diskutil cs create &quot;Fusion Drive&quot; disk1 disk2
 Started CoreStorage operation
 Unmounting disk1
@@ -194,10 +187,7 @@ Discovered new Logical Volume Group &quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&q
 Core Storage LVG UUID: 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
 Finished CoreStorage operation
 shingha:~ $ 
-</code></pre>
-
-<p>Volumeを <code>diskutil cs createVolume &quot;new Logical Volume Group 番号&quot; jhfs+ &quot;Fusion.11&quot; 100%</code> で作成。Fusion.11がファインダーで表示される。</p>
-
+</code></pre><p>Volumeを <code>diskutil cs createVolume &quot;new Logical Volume Group 番号&quot; jhfs+ &quot;Fusion.11&quot; 100%</code> で作成。Fusion.11がファインダーで表示される。</p>
 <pre><code>shingha:~ $ diskutil cs createVolume &quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&quot; jhfs+ &quot;Fusion.11&quot; 100%
 The Core Storage Logical Volume Group UUID is 670F5705-EC7F-4D52-XXXX-A465FFA3EE12
 Started CoreStorage operation
@@ -209,21 +199,12 @@ Core Storage LV UUID: E61D3EA0-4744-4B23-XXXX-533D19B9D00C
 Core Storage disk: disk3
 Finished CoreStorage operation
 shingha:~ $
-</code></pre>
-
-<h2 id="フュージョン化の解除">フュージョン化の解除</h2>
-
+</code></pre><h2 id="フュージョン化の解除">フュージョン化の解除</h2>
 <p>一つになったドライブの解除方法は <code>diskutil cs deleteVolume</code> というコマンドもあるが</p>
-
 <pre><code>diskutil cs delete &quot;670F5705-EC7F-4D52-XXXX-A465FFA3EE12&quot;
-</code></pre>
-
-<p>の一発で行けると、思う・・。</p>
-
+</code></pre><p>の一発で行けると、思う・・。</p>
 <h2 id="リカバリーusb-stick">リカバリーUSB Stick</h2>
-
 <p>次いでに、リカバリーUSB Stickの作成方法は、AppStoreよりエルキャピタンのインストールアプリをダウンロード、USB Stickを初期化し（ディスクの名前はデフォルトのUntitled) 以下のコマンドで作る事ができる。Copying installer files to disk&hellip; で動きが止まり思ったより時間が掛かる。</p>
-
 <pre><code>shingha:~ $ sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --nointeraction
 Password:
 Erasing Disk: 0%... 10%... 20%... 30%...100%...
@@ -235,7 +216,6 @@ Copy complete.
 Done.
 shingha:~ $ 
 </code></pre>
-
 				
 
 <h3>See Also</h3>

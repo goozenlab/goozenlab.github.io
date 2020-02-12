@@ -156,42 +156,27 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ラズベリーパイ・サーバーにLAMP環境をインストールしました。
+                <p>ラズベリーパイ・サーバーにLAMP環境をインストールしました。
 Wordpressなどのサービスなどを使うのに必要です。</p>
-
 <p><strong>LAMP</strong>とは(Linux+Apache+MySQL+PHP)の略称。
 インストールするソフトウェアは、ウェブサーバーはNginx、MySQLは名前を変更されたmariaDB。PHPは機能も豊かになったと言われる最新のv.7.3にします。</p>
-
 <ul>
 <li>Linux: Ubuntu 18.04 LTS arm64 (とりあえず）</li>
 <li>Apache: Nginx</li>
 <li>MySQL: mariaDB</li>
 <li>PHP: php7.3</li>
 </ul>
-
 <h2 id="mariadb">MariaDB</h2>
-
 <p>開発者の娘さんの名前から来ているそうです。ルートのパスワード設定を求められることもなく、あっさりインストール終了。パスワードなしでルートにてデータベースにログインできるのはローカルホストからだけという仕様になっているそうです。必要があれば変更してください。</p>
-
 <pre><code>$ sudo apt install mariadb-server
-</code></pre>
-
-<h2 id="nginx">Nginx</h2>
-
+</code></pre><h2 id="nginx">Nginx</h2>
 <p>エヌジンクスと読むそうです。ヌグゥインクスとかではありません。
 (Gnomeもそうだけど、オープソース業界では読み方が厄介〜。）</p>
-
 <p>最新のmainlineを追うことも考えましたが、個人使用ですので、まぁそのまま。
 こちらも、色々と追加パッケージがインストールされましたが、何事もなく終了。</p>
-
 <pre><code>$ sudo apt install nginx
-</code></pre>
-
-<p>設定ファイルは、<code>sudo vi /etc/nginx/sites-enabled/default</code> phpを使うのに設定を少しいじります。
+</code></pre><p>設定ファイルは、<code>sudo vi /etc/nginx/sites-enabled/default</code> phpを使うのに設定を少しいじります。
 location ~ .php$部分のコメントを外し、phpはバージョン7.3をインストールするので<code>php7.0-fpm</code>を<code>php7.3-fpm</code>に変更します。</p>
-
 <pre><code>$ sudo vi /etc/nginx/sites-enabled/default
 
 
@@ -202,31 +187,21 @@ location ~ \.php$ {
                 # With php-fpm (or other unix sockets):
                 fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
                 }
-</code></pre>
-
-<h2 id="php7-3">Php7.3</h2>
-
-<p>Php7.3はdebianバスター１０ではパッケージに導入されましたが、Ubuntuのデフォルトのパッケージには含まれていませんので、php7.3のレポジトリー<code>ppa:ondrej/php</code>より拝借します。</p>
-
+</code></pre><h2 id="php73">Php7.3</h2>
+<p>Php7.3はdebianバスター１０ではパッケージに導入されましたが、Ubuntuのデフォルトのパッケージには含まれていませんので、php7.3のレポジトリー<code> ppa:ondrej/php</code>より拝借します。</p>
 <pre><code>$ sudo add-apt-repository ppa:ondrej/php
 $ sudo apt install php7.3 php7.3-fpm php7.3-cli php7.3-curl php7.3-mbstring php7.3-json php7.3-intl php7.3-gd php7.3-mysql php7.3-xml php7.3-opcache
-</code></pre>
-
-<p>上記のインストールパッケージはTT-RSSをインストールするためのものです。
+</code></pre><p>上記のインストールパッケージはTT-RSSをインストールするためのものです。
 使用するサービスによって少し違うかもしれませんので都度変更のほど。</p>
-
 <p>パッケージの
 <code>opcache</code>
 は有効化されていないのでPHPの設定ファイルをいじります。opcacheの設定はかなり下の方（1800行位？）です。下記３つのラインのコメント<code>;</code>を取り払き有効化します。</p>
-
 <pre><code>$ sudo vi /etc/php/7.3/fpm/php.ini
 
 ;opcache.enable=1
 ;opcache.memory_consumption=128
 ;opcache.max_accelerated_files=10000
-</code></pre>
-
-<p>これで、基本的なLAMPのインストールが終了です。
+</code></pre><p>これで、基本的なLAMPのインストールが終了です。
 TT-RSSやGitea等、セルフホストのサービスを幾つか入れようと思ってます。</p>
 
 				

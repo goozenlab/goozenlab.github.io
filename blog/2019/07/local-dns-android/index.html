@@ -158,45 +158,29 @@
             <div class="post-content">
                 <p>タイ北部、日本の梅雨のようなぐずぐずした天気が続いてましたが、
 一転ここ数日は晴天の熱い日が続いてます。</p>
-
 <p>さて、</p>
-
 <p>今までは、アンドロイド端末からローカルネットのサーバー機へのアクセスはIPを番号直打ち（例：RSSサーバーの更新：<code>10.0.0.10/tt-rss</code>）をして行っていましたが、
 サーバー側でIP番号をサブドメイン（例：rss.domain.local）に変更し、<strong>dnsmasq</strong>という仮DNSサーバーを導入したので、その対応に向けて作業をしました。</p>
-
 <p>で、ちょっと難儀しました。</p>
-
 <p>通常であるならば、アンドロイド端末のネットワーク設定にローカルネットのDNSを割り当ててあげればそれで済むはずなのですが、、、（iPhoneでは、DHCP＞DNS設定変更の一発で問題なく行けました。）</p>
-
-<p><img src="/images/2019-07-19-local-dns-android-settings.png" alt="DNS on Android" /></p>
-
-<p>繋がってくれません（悶絶）。<br />
+<p><img src="/images/2019-07-19-local-dns-android-settings.png" alt="DNS on Android"></p>
+<p>繋がってくれません（悶絶）。<br>
 turmxでピングをしても音沙汰なし、、</p>
-
 <p>いろいろ調べていると、
 DNSは諸々、勝手に<code>8.8.8.8</code>のめでたい番号にセキュリティーという名目上、半強制的に向けられているいる、、らしい。（以前そんな話を何処かで聞いて、当時はアンドロイド端末を持っていなかったので都市伝説ような話だと思ってた。。）</p>
-
 <p>で仕方がないと思って未だ色々と設定・検証中の端末（Lineage+MicroG)をいじっていると、
 <strong>Blokade</strong>という広告ブロックアプリの左側に並ぶ４つのアイコンの下から２番目<code>Default DNS</code>とラベルのあるアイコンを押すとDNSの設定画面に移行できることを発見する。</p>
-
-<p><img src="/images/2019-07-19-local-dns-android-blokada-main.png" alt="DNS on Android" />
-<img src="/images/2019-07-19-local-dns-android-blokada-dns.png" alt="DNS on Android" /></p>
-
+<p><img src="/images/2019-07-19-local-dns-android-blokada-main.png" alt="DNS on Android">
+<img src="/images/2019-07-19-local-dns-android-blokada-dns.png" alt="DNS on Android"></p>
 <p>試してみるも、、、ビミョ。設定があるので何かしらこちらの問題かもしれないけれど、うまくいかず。。</p>
-
 <p>で、類似アプリの<strong>DNS66</strong>（ルート６６と掛けてるのかな、両者オープンソースですし共にオススメ。）をインストール。上部タブに同じような設定があり試したところ、</p>
-
-<p><img src="/images/2019-07-19-local-dns-android-dns66-main.png" alt="DNS on Android" />
-<img src="/images/2019-07-19-local-dns-android-dns66-dns.png" alt="DNS on Android" /></p>
-
+<p><img src="/images/2019-07-19-local-dns-android-dns66-main.png" alt="DNS on Android">
+<img src="/images/2019-07-19-local-dns-android-dns66-dns.png" alt="DNS on Android"></p>
 <p>Fennecからも偽ドメイン名（Grafana）で接続でき、
 カレンダー・コンタクト同期（Nextcloud)、RSSビューワー（TinyTiny RSS)も無事つながりました！</p>
-
-<p><img src="/images/2019-07-19-local-dns-android-fennec.png" alt="Grafana" /></p>
-
+<p><img src="/images/2019-07-19-local-dns-android-fennec.png" alt="Grafana"></p>
 <p>これでサーバー側のIPアドレスが変わっても、サーバー側の設定変更だけで済むのでありがたや。。
 まぁ、こんなんなら、最初から設定に入れられるようにすんなよと、毒を吐きたくなりますな。。</p>
-
 <p>ほーーんと、セキュリティーとプライバシーを考えたら<code>Sign in with Apple</code>もすごく良さそうだしiPhoneは優秀だな、とつくづく思いました。（邪悪なアプリは沢山ありますがね。）
 新しい端末は高くって手が届かないので<strong>iHackOS</strong>とかでんでしょうかね。</p>
 

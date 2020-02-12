@@ -159,27 +159,18 @@
             	
             	<div class="post-content">
             		<p>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。</p>
-
 <p>以前インストールした時に、ちょっと須藤&amp;ジェム地獄に陥ったので今回は、sudo-less で <code>~/.gem</code> 内にインストール。</p>
-
 <p>まずは、bashの設定 <code>~/.bash_profile</code> を弄ります。</p>
-
 <pre><code># sudo-less Gem
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/ruby/2.0.0/bin:$PATH
-</code></pre>
-
-<p>cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）</p>
-
+</code></pre><p>cocoapodsを普通にインストールをすると、activesupportのインストールの所でエラーになります。ルビーのバージョンが低いとのエラーで、色々と方法はあるのですが、ルビー自体を別にインストールするのも今はちょっと避けたかったので、引っかかりのあるパッケージを手動でインストールすることで問題の解決をはかります。（前のバージョンということか、、）</p>
 <p>ディレクトリーを作り、<code>--user-install</code>のオプションをつけインストールをします。</p>
-
 <pre><code>$ cd
 $ mkdir .gem
 $ gem install activesupport -v 4.2.6 --user-install
 $ gem install cocoapods --user-install
-</code></pre>
-
-<pre><code>$ gem install activesupport -v 4.2.6 --user-install
+</code></pre><pre><code>$ gem install activesupport -v 4.2.6 --user-install
 Fetching: i18n-0.7.0.gem (100%)
 Successfully installed i18n-0.7.0
 Fetching: thread_safe-0.3.5.gem (100%)
@@ -280,9 +271,7 @@ Installing ri documentation for cocoapods-1.0.1
 Parsing documentation for concurrent-ruby-1.0.2
 Installing ri documentation for concurrent-ruby-1.0.2
 19 gems installed
-</code></pre>
-
-<p>で、無事終了、インストールできました。これで、(a)の移行ができる。</p>
+</code></pre><p>で、無事終了、インストールできました。これで、(a)の移行ができる。</p>
 
             	</div>
            		

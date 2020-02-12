@@ -162,17 +162,12 @@
 そんなに気にはしていませんでした。
 元日に緊急用のKali LinuxをUSBスティックにインストールした時に
 なんか勝手に本体側のスワップ領域をフォーマットされてしまったようで起動時に少し待たされる。</p>
-
 <p>おかげ様ででエラーの内容が見て取れる。</p>
-
 <p>起動時に問題になっていたのは、i915/kb・・・・のファームウェアが見つからないというエラーでした。</p>
-
 <p><a href="https://wiki.debain.org/Firmware">https://wiki.debain.org/Firmware</a></p>
-
 <p>を見ろとのエラーメッセージが添えてありました。デビアンのウィキも非常に良いです。
 そして必要なパッケージ、最近の端末では多いらしい、
 non-freeの<code>firmware-linux-nonfree</code>をインストールする。</p>
-
 <pre><code>[jin@guiness ~]$ sudo apt install firmware-linux-nonfree
 -----
 Processing triggers for initramfs-tools (0.133+deb10u1) ...
@@ -183,28 +178,20 @@ I: The initramfs will attempt to resume from /dev/nvme0n1p10
 I: (UUID=e34c6d46-77f1-4b3a-814b-f8c2c03b3d3c)
 I: Set the RESUME variable to override this.
 [jin@guiness ~]$
-</code></pre>
-
-<p>しかし上記のスワップ。パーティションの関係でアップデートに失敗する。</p>
-
+</code></pre><p>しかし上記のスワップ。パーティションの関係でアップデートに失敗する。</p>
 <p>ちょっと調べて修正します。
 <code>/etc/initramfs-tools/conf.d/resume</code>
 に新しいスワップ・パーティションのUUIDに変更し保存、
 <code>sudo update-initramfs -u</code>
 にてもう一度試みる。</p>
-
 <pre><code>[jin@guiness ~]$ sudo vi /etc/initramfs-tools/conf.d/resume 
 [jin@guiness ~]$ sudo update-initramfs -u
 update-initramfs: Generating /boot/initrd.img-4.19.0-6-amd64
 [jin@guiness ~]$
-</code></pre>
-
-<p>そしてもう一つ、
+</code></pre><p>そしてもう一つ、
 <code>/etc/fstab</code>
 のスワップにも新しいUUIDを割り当てます。</p>
-
 <p>そして再起動、ほーーんの少し起動が早くなった。。</p>
-
 <p>ような気がする。</p>
 
 				

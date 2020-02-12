@@ -156,34 +156,22 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ZFSを検証中、第２弾です。
+                <p>ZFSを検証中、第２弾です。
 今回は複数端末間でのファイル同期を念頭に、
 持ち出し用を想定して小規模なミラーリンングを構築します。</p>
-
 <p>ThinkPad（メイン）&lt;-&gt; 32GB USBMemory  &lt;-&gt; MBAir11（ちょい外出）</p>
-
 <p>と３点ミラーリンングを考えてます。繋いだり繋がなかったり、ゆるゆる運用します。</p>
-
 <p>最初に手元にあるMacbookAir11とメモリースティックの２つでミラーリングを設定します。</p>
-
 <p>まずは、各々のパーティションをフォーマットします。マックでは<code>Disk Utility</code>にて32GBの新しいパーティションを作成します。
 32GBのUSBディスクはMBRになっているのを<strong>GPT</strong>に、こちらもDisk Utilityを使って変更します。</p>
-
 <p>そしてマックの新しいパーティションとUSBメモリーのパーティションをフォーマットします。
 USBメッモリーはノートブックで一つしかSSDを積んでいないのに<code>disk3</code>でした。</p>
-
-<p><code>diskutil eraseVolume ZFS VOLUME_NAME DISK#P#</code>のコマンドで行います。エラーが出ますが問題ないようです。ディスク・パーティション番号は要注意です。DiskUtilityで<strong>再度確認！</strong>をしましょう。</p>
-
+<p><code>diskutil eraseVolume ZFS VOLUME_NAME DISK#P#</code>のコマンドで行います。エラーが出ますが問題ないようです。ディスク・パーティション番号は要注意です。DiskUtilityで**再度確認！**をしましょう。</p>
 <pre><code>gallo:~ jin$ sudo diskutil eraseVolume ZFS ZMIRA01 disk3s2
 gallo:~ jin$ sudo diskutil eraseVolume ZFS ZMIRA02 disk0s6
-</code></pre>
-
-<p>ミラーリングを構築します。とりあえず2つのパーティションを使います。
+</code></pre><p>ミラーリングを構築します。とりあえず2つのパーティションを使います。
 コマンドは<code>zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD POOL_NAME mirror DISK#1 DISK#2</code>です。後でディスクの追加をすることも可能です。
 同時に、ボリュームへの書き込みは権限が必要と出てくるのでパーミションの変更も行います。</p>
-
 <pre><code>gallo:~ jin$ sudo zpool create -f -o ashift=13 -O casesensitivity=insensitive -O compression=lz4 -O normalization=formD Work mirror disk0s6 disk3s2
 gallo:~ jin$ zpool status
   pool: Work
@@ -199,17 +187,11 @@ config:
 
 errors: No known data errors
 gallo:~ jin$ sudo chmod 777 /Volumes/Work
-</code></pre>
-
-<p>以上でミラーリングの構築は完了です。しばしこの状態で運用していきます。</p>
-
-<hr />
-
+</code></pre><p>以上でミラーリングの構築は完了です。しばしこの状態で運用していきます。</p>
+<hr>
 <h2 id="運用">運用</h2>
-
 <p>ストレステストというか、本番機で問題になるのは避けたいので、色々とテストしました。
 まず、いきなりUSBメモリーをブチッと抜くと、</p>
-
 <pre><code>gallo:~ jin$ zpool status
   pool: Work
  state: DEGRADED
@@ -217,14 +199,10 @@ gallo:~ jin$ sudo chmod 777 /Volumes/Work
       mirror-0                                      DEGRADED     0     0     0
         media-B6AF4D9A-9930-4079-9D67-E1E6020C0BED  ONLINE       0     0     0
         12934696169980452171                        UNAVAIL      0     0     0  was /private/var/run/disk/by-id/media-871E499C-DE42-4E33-A3B2-1530B7575307
-</code></pre>
-
-<p><strong>UNAVAIL</strong>になります。使用上問題はないようですが、シャットダウン時に歯車がぐるぐる、強制終了。ちと怖い。</p>
-
+</code></pre><p><strong>UNAVAIL</strong>になります。使用上問題はないようですが、シャットダウン時に歯車がぐるぐる、強制終了。ちと怖い。</p>
 <p>ディスクをオンラインに戻すには、<code>zpool online POOL_NAME DISK_ID</code>を実行します。
 ディスクIDは<code>media-B6AF4D9A-xxxx</code>ディスクに割当られた番号です。
 何事もなかったようにONLINEに戻ります。<code>zpool status</code>にて経過情報が見ることができます。</p>
-
 <pre><code>gallo:~ jin$ zpool status Work
   pool: Work
  state: ONLINE
@@ -240,16 +218,11 @@ gallo:~ jin$ sudo chmod 777 /Volumes/Work
         media-871E499C-DE42-4E33-A3B2-1530B7575307  ONLINE       0     0    10
 
 errors: 1 data errors, use '-v' for a list
-</code></pre>
-
-<p>USBメモリーにはアクセスランプがついていないので、
+</code></pre><p>USBメモリーにはアクセスランプがついていないので、
 書き込みのタイミングや具合はちょっと掴めませんが、
 アクティビティ・モニターで見てみると控えめに同期しているとみえます。</p>
-
-<p><img src="/images/2019-07-30openzfs-activity.png" alt="Disk Activity" /></p>
-
+<p><img src="/images/2019-07-30openzfs-activity.png" alt="Disk Activity"></p>
 <p>おしとやかに、前もって<code>zpool offline POOL_NAME DISK_ID</code>でオフラインをすると<strong>OFFLINE</strong>になります。少しだけ安心。</p>
-
 <pre><code>gallo:~ jin$ zpool offline Work media-871E499C-DE42-4E33-A3B2-1530B7575307
 gallo:~ jin$ zpool status
   pool: Work
@@ -260,48 +233,30 @@ gallo:~ jin$ zpool status
         media-871E499C-DE42-4E33-A3B2-1530B7575307  OFFLINE      0     0     0
 
 errors: No known data errors
-</code></pre>
-
-<p>で、USBを抜いて作業。そして、USBメモリーを再度接続しても自動ではマウントはされませんでした。</p>
-
+</code></pre><p>で、USBを抜いて作業。そして、USBメモリーを再度接続しても自動ではマウントはされませんでした。</p>
 <p>ブチっと抜いて、適当にぶっさして、勝手に同期という訳には行きませんでした、無念。</p>
-
 <p>まぁ、オンラインにして同期、そして他の端末に挿したままブートとちょっと考えながら差し替えを行えば良いだけです。
 USBも最近の少し早いやつなので、textベースの作業なら引きずられることはないだろうと思います。</p>
-
 <p>取り敢えず、このまま検証続行。</p>
-
 <p>※ USBメモリーが粗悪品なのか分かりませんが、刺しっぱなしだとかなりメモリーが熱くなる。</p>
-
 <p>今のところ端末はひとつですし、同期よりもバックアップに近い使い方になっているので、
 再起動時にUSBメモリーを刺して、
 起動後に同期が終了してるだろうタイミングでオフラインにし抜いて使ってます。
 （rsyncなどでバックアップを取ったりするよりは楽かも。。）</p>
-
 <h3 id="エラー対応">エラー対応</h3>
-
 <p>色々抜き差ししたり使っているとエラーが上がってきます。
 すぐに消えてるかなと思いきや、結構居座っています。
 そんな時は<code>zpool scrub</code>で修復します。
 コマンドはすぐに復帰しますが、
 バックグランドで動いています。</p>
-
 <pre><code>jin@gallo:~ $ sudo zpool scrub Work
-</code></pre>
-
-<h3 id="３点ミラーリング-未検証">３点ミラーリング（未検証）</h3>
-
+</code></pre><h3 id="３点ミラーリング未検証">３点ミラーリング（未検証）</h3>
 <p>現在手元にもう一方の端末がないので行なっていませんが、
 同期先の追加は<code>zpool atatch disk</code>、</p>
-
 <pre><code>jin@guiness:~ $ sudo zpool atatch disk media-B6AF4D9A-9930-xxx newdisk
-</code></pre>
-
-<p>で３点ミラーの構築が完了。（夢の中）</p>
-
+</code></pre><p>で３点ミラーの構築が完了。（夢の中）</p>
 <p>帰国後の9月半ばに追記します。</p>
-
-<p>参考：<a href="https://postd.cc/who-needs-git-when-you-got-zfs/">https://postd.cc/who-needs-git-when-you-got-zfs/</a></p>
+<p>参考：https://postd.cc/who-needs-git-when-you-got-zfs/</p>
 
 				
 

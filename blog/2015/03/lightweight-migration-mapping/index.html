@@ -157,30 +157,18 @@
 
             <div class="post-content">
                 <p>タイトルが長げーーーーーーな。。</p>
-
 <p>さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが原因です。（だとおもいます。）</p>
-
 <p>そんなときは、マッピングファイルを作成して、</p>
-
-<p><img src="/images/2015-03-02-db-migration2.png" alt="Migration 1" /></p>
-
+<p><img src="/images/2015-03-02-db-migration2.png" alt="Migration 1"></p>
 <p>ファイルを訂正、追加して（source, destinationに注意）</p>
-
-<p><img src="/images/2015-03-02-db-migration1.png" alt="Migration 2" /></p>
-
+<p><img src="/images/2015-03-02-db-migration1.png" alt="Migration 2"></p>
 <p>あとは、optionsの設定を加え、</p>
-
 <pre><code>NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @(YES),
                               NSInferMappingModelAutomaticallyOption: @(YES)}
-</code></pre>
-
-<pre><code>if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;error]) {
+</code></pre><pre><code>if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&amp;error]) {
 
 # options:nil の箇所を options:options に変更
-</code></pre>
-
-<p>通常通り処理を行えば、うまく行きます。</p>
-
+</code></pre><p>通常通り処理を行えば、うまく行きます。</p>
 <pre><code>- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
     if (_persistentStoreCoordinator != nil) {
@@ -212,10 +200,7 @@
     return _persistentStoreCoordinator;
 }
 
-</code></pre>
-
-<p>lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。</p>
-
+</code></pre><p>lightweight migrationでマッピングファイルが使えるとは知りませんでした。というかファイルの存在自体も知らなかった。。</p>
 <p>でも、これで変更の流れもつかめるしありがたや。</p>
 
 				

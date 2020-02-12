@@ -156,53 +156,32 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>そろそデビアンXこと<strong>Buster</strong>のリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったような。。おっ、Ryzenの販売だったわ。。</p>
-
+                <p>そろそデビアンXこと<strong>Buster</strong>のリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったような。。おっ、Ryzenの販売だったわ。。</p>
 <p>さーて、パイで運用のサーバー機。
 とりあえず<strong>再</strong>構築・検証中の中途半端な状態ですが、pihole、polipo+ziproxy、syncthingと遅くて使い物にならないNFSサーバーが常時動いてます。</p>
-
-<p><img src="/images/2019-07-06-manage-cpu-4core.png" alt="Manage Core" /></p>
-
+<p><img src="/images/2019-07-06-manage-cpu-4core.png" alt="Manage Core"></p>
 <p>パイ・ゼロ、現状では問題無いのですが、LAMPの環境をインストールしたりするとシングルコアだと少し心もとなくなります、
 しかしB・パイのクアッドコアでLAMPの環境を使ってみた感じは個人ユースなので若干オーバースペック気味な感じがありました。</p>
-
 <p>ちょっといじれないかなと思って調べてみると、数値を入れ込むことで、コアをオフにできると出てきました。が、、</p>
-
 <pre><code>$ echo 0 | sudo tee /sys/devices/system/cpu/cpu2/online
-</code></pre>
-
-<p>パーミッションエラーで書き換えられません。というかファイル自体もありません。
+</code></pre><p>パーミッションエラーで書き換えられません。というかファイル自体もありません。
 それらしきファイルを見つけるも、書き換えは同様にパーミッションのエラーが出ます。</p>
-
 <pre><code>bash -c 'echo &quot;0-1&quot; &gt; /sys/devices/system/cpu/online'
-</code></pre>
-
-<p>で、諦めようと思った矢先に見つけました。</p>
-
+</code></pre><p>で、諦めようと思った矢先に見つけました。</p>
 <h2 id="解決法">解決法</h2>
-
 <p>こちらにみごとな解決方法が載っていました。
-いたってシンプルでRaspbianらしく<strong>/boot/cmdline.txt</strong>をいじります。</p>
-
+いたってシンプルでRaspbianらしく**/boot/cmdline.txt**をいじります。</p>
 <p>Deactivate Cores:
 <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;t=99372">https://www.raspberrypi.org/forums/viewtopic.php?f=29&amp;t=99372</a></p>
-
 <p>Dualコアで運用するには<code>/boot/cmdline.txt</code>に</p>
-
-<h3 id="maxcpus-2">maxcpus=2</h3>
-
+<h3 id="maxcpus2">maxcpus=2</h3>
 <p>を加えることで2コアで動きます。数値（１から４）を変えることでコア数を指定でき、
 変更後再起動で指定のコア数で動作します。
 ただ残念ですが起動後に動的に変更はできないみたいです。</p>
-
-<p><img src="/images/2019-07-06-manage-cpu-2core.png" alt="Manage Core" /></p>
-
+<p><img src="/images/2019-07-06-manage-cpu-2core.png" alt="Manage Core"></p>
 <p>バッテリーで動かすことになるので、気になるのが消費電力。
 シングルコアのパイ・ゼロと４コアのパイ・３Bはほぼ倍の違いがありました。
 その間くらいで収まってくれれば御の字。</p>
-
 <p>後々検証してみます。</p>
 
 				

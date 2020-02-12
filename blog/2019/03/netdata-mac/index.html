@@ -156,55 +156,32 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2019-03-23-netdata-mac-00.png" alt="Netdata on Mac 00" /></p>
-
+                <p><img src="/images/2019-03-23-netdata-mac-00.png" alt="Netdata on Mac 00"></p>
 <p>滞在中のタイ、チェンマイ。酷暑に向かい、日に日に熱くなってきてます。しかも、ここ数日はかーーなりガスってます。PMが飛びまくっているようです。内陸にあるチェンマイですが、かなりPMの環境は芳しく無いと聞きます。マスクをして街を歩く人たちが割といます。</p>
-
 <p>そして、今日は確か数年ぶりの総選挙のような気が、、で、心なしか街が静かに思える。
 マインドフルで選挙に行っていただきたい。ちなみにタイでは選挙中（仏教の休日も）はお酒は売ってもらえません。（悪いことは期待しなけど、ちょっと強気なバーツが、、落ち着いてくれると、、日本帰国時に免税でiPad Mini5を買って帰るのだが。。）</p>
-
 <p>さて、最近はラズパイをいじっいてます。10年ぶりくらいに、linuxをインストール・設定をしたり、先日はカーネルをビルドしてみたりと、うまくいったりいかなかったり、昔とそんなに変わってないなと、、デジャブ感を感じつつ、ちょっとのイライラと懐かしさを感じつつ作業をしてます。</p>
-
 <p>そんな中、オサレアプリ発見。<strong>Netdata</strong>というアプリの名前からは想像できないほど、カッコ良いソフトを見つけました。
 ダークモード・デザインのモニタリングのソフトです。しかも、フリーウェアです。そして、かなり出来が良いです。
 で、さらにありがたいことに、マックでも動きます。</p>
-
 <p>面倒なインストールも、brewで一発、</p>
-
 <pre><code>$ brew install netdata
-</code></pre>
-
-<p>起動もコマンドラインで一発、、？、ターミナルを開いて、パシッとバックグランドで起動。</p>
-
+</code></pre><p>起動もコマンドラインで一発、、？、ターミナルを開いて、パシッとバックグランドで起動。</p>
 <pre><code>$ /usr/local/sbin/netdata -D
-</code></pre>
-
-<p>そして、ウェブブラウザーを立ち上げ <a href="http://localhost:19999">http://localhost:19999</a> にアクセスします。ターミナルを閉じたらアプリは終了します。もしくはターミナル内にて ( Ctr+c )で抜けられます。</p>
-
+</code></pre><p>そして、ウェブブラウザーを立ち上げ http://localhost:19999 にアクセスします。ターミナルを閉じたらアプリは終了します。もしくはターミナル内にて ( Ctr+c )で抜けられます。</p>
 <p>起動時に立ち上げておきたい人は、これまたターミナル経由ですが、
 （おっ、brewも進化してるね。。plistとか書くのかと思ったけど、）</p>
-
 <pre><code>$ brew services start netdata
-</code></pre>
-
-<p>で起動時に動いていてくれます。</p>
-
-<p><img src="/images/2019-03-23-netdata-mac-01.png" alt="Netdata on Mac 01" /></p>
-
+</code></pre><p>で起動時に動いていてくれます。</p>
+<p><img src="/images/2019-03-23-netdata-mac-01.png" alt="Netdata on Mac 01"></p>
 <p>しかも早くて、思いの外そこまでリソースを使っていないようです。
 最近のマシーンを使っている皆様でしたら、バックグランドで起動させておいても問題はなさそうです。</p>
-
 <p>そんなにじっーーーと見るようなソフトでは無いのですが、</p>
-
 <p>まぁ、ちょっと暇の時に立ち上げて、眺めて、ちょっと夢想したり、、ちょっと余計なことを考えたり。。
 するのが、良いかと。時間つぶしに。。。</p>
-
 <p>さらに、さらに、openWrtでも！</p>
-
-<p><img src="/images/2019-03-23-netdata-router-01.png" alt="Netdata on router" /></p>
-
-<p><img src="/images/2019-03-23-netdata-router-02.png" alt="Netdata on router" /></p>
-
+<p><img src="/images/2019-03-23-netdata-router-01.png" alt="Netdata on router"></p>
+<p><img src="/images/2019-03-23-netdata-router-02.png" alt="Netdata on router"></p>
 <p>で、この
 <a href="https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/">小さいルーター</a>
 にもアドバンス設定経由で入れられます。しかも、さくっと動いてます。。</p>

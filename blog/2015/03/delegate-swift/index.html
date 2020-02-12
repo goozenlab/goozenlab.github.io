@@ -156,28 +156,16 @@
             </div>
 
             <div class="post-content">
-                
-
-<h2 id="デレゲートするクラス">デレゲートするクラス</h2>
-
+                <h2 id="デレゲートするクラス">デレゲートするクラス</h2>
 <p>以下の３つを書き加えればよい。</p>
-
 <pre><code>protocol MainHeaderViewDelegate {
     func sleepingTimerDidFinish(controller: MainHeaderView)
 }
 
-</code></pre>
-
-<pre><code>var delegate:MainHeaderViewDelegate? = nil
-</code></pre>
-
-<pre><code> self.delegate!.sleepingTimerDidFinish(self)
-</code></pre>
-
-<h2 id="デレゲートで値を受け取るクラス">デレゲートで値を受け取るクラス</h2>
-
+</code></pre><pre><code>var delegate:MainHeaderViewDelegate? = nil
+</code></pre><pre><code> self.delegate!.sleepingTimerDidFinish(self)
+</code></pre><h2 id="デレゲートで値を受け取るクラス">デレゲートで値を受け取るクラス</h2>
 <p><code>MainHeaderViewDelegate</code> と、functionを追加、処理を書き込みます。</p>
-
 <pre><code>class MainViewController: UIViewController, MainHeaderViewDelegate {
 
    //////
@@ -189,9 +177,7 @@
    /////
    
 }
-</code></pre>
-
-<p>※ ソースは拙作のohayoからコピペ。</p>
+</code></pre><p>※ ソースは拙作のohayoからコピペ。</p>
 
 				
 

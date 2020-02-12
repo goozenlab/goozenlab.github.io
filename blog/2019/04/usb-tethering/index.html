@@ -156,47 +156,20 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2019-03-26-tethering-usb-router-02.png" alt="USB Tethering" /></p>
-
+                <p><img src="/images/2019-03-26-tethering-usb-router-02.png" alt="USB Tethering"></p>
 <p>手元にあるアンドロイド・フォン（Nokia 7PlusとMi Max3）にシムをいれてルーター：GL.iNet GL-AR150にてテザリングを行ってみる。近々行くインドに向けての確認作業でもあります。</p>
-
 <p>ルーターもフォーラムではちょっと接続問題があったりと聞き見しましたが、今の所問題なく、安定して動いてくれてます。</p>
-
 <p>さて、USBテザリングですが、Nokia 7Plusは繋げても無反応でした、理由はわからず。ちょっと、これは問題になるかもと思いつつMi Max3を接続してみたところ、こちらはあっさりと認識されました（安堵）。usb0という接続名が割り当てられます。</p>
-
-<p><img src="/images/2019-03-26-tethering-usb-router-01.png" alt="USB Tethering" /></p>
-
+<p><img src="/images/2019-03-26-tethering-usb-router-01.png" alt="USB Tethering"></p>
 <p>無線LANでつながっている回線はそのままになっています。どちらが優先されるのかはわかりませんが、警告が出ますが接続を解除します。</p>
-
-<p><img src="/images/2019-03-26-tethering-usb-router-03.png" alt="USB Tethering" /></p>
-
-<p><img src="/images/2019-03-26-tethering-usb-router-04.png" alt="USB Tethering" /></p>
-
+<p><img src="/images/2019-03-26-tethering-usb-router-03.png" alt="USB Tethering"></p>
+<p><img src="/images/2019-03-26-tethering-usb-router-04.png" alt="USB Tethering"></p>
 <p>意外なほど簡単にできました。Mi Maxはバッテリー容量が多いし、他の端末に電源供給もできます。通信のみでの利用なら１日は余裕で持ってくれそうである（インドにて確認予定）。
 電力事情があまり良くないインドで活躍してくれることを期待。
 （インドもここ数年すざましく、携帯事情が好転してますので、割と天国かもしれん。。）</p>
-
 <p>滞在中にOnePlusの発表会もあるし、インドの携帯価格は他の国より安く設定されているので、携帯を買ってくるかな。。</p>
-
-<!-- 
-
-https://www.raspberrypi.org/forums/viewtopic.php?t=6543
-if your phone supports tethering on raspbian, your phone will be visible as usb0 network device via ifconfig command. Then you may add the line:
-
-to /etc/network/interfaces file and finally run the command ifup usb0 to start the connection.
-
-1. does your phone need to turn on tethering ?
-2. is your USB cable a data one or just a charging one (it took me some time a few weeks ago to understand why I couldn't connect my phone as a storage unit using a USB cable which turned out to be a charging one)
-3. did you enable network over usb on your rPI?
-
-to enable network over usb, run ifconfig to check which usb is providing the tethering. (in my case, usb0) edit the /etc/network/interfaces file to add these 2 lines at the bottom (if usb0):
-
-allow-hotplug usb0
-iface usb0 inet dhcp
-then restart networking: sudo /etc/init.d/networking restart
-and unplug replug your phone
-
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

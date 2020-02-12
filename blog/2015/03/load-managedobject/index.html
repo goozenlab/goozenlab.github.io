@@ -160,42 +160,28 @@
         
             	
             	<div class="post-content">
-            		
-
-<p>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、<a href="/blog/2015/03/unable-to-load-class/">クラスが読み込めず</a>で書いた問題が解決しました。</p>
-
+            		<p>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、<a href="/blog/2015/03/unable-to-load-class/">クラスが読み込めず</a>で書いた問題が解決しました。</p>
 <p>問題のエラーログ</p>
-
 <pre><code>CoreData: warning: 
 Unable to load class named 'Item' for entity 'Item'.  
 Class not found, using default NSManagedObject instead.
-</code></pre>
-
-<p>もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。</p>
-
-<p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1" /></p>
-
+</code></pre><p>もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。</p>
+<p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1"></p>
 <ol>
 <li>xcdatamodeldファイルを選択</li>
 <li>CONFIGURATIONSを選択</li>
 <li>右に出てくるEntitiies以下のClass名を<code>ディレクトリー名.Entity名</code>にする</li>
 </ol>
-
-<p><img src="/images/2015-03-20-class-unload2.png" alt="Class unload2" /></p>
-
-<p>※ 注意点は上記の場合<code>kitchen.Item</code>では無く<code>tapas.Item</code>と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。<br />
+<p><img src="/images/2015-03-20-class-unload2.png" alt="Class unload2"></p>
+<p>※ 注意点は上記の場合<code>kitchen.Item</code>では無く<code>tapas.Item</code>と、xcdatamodeld名では無く、ディレクトリ名を入れる事。見事にハマりました。<br>
 （散歩中に「もしや、ディレクトリー名では。。」と閃きました。なんでわざわざ<code>kitchen.xcdatamodeld</code>という名前にしているのかは、自分で作ったのに不明。なんで余計な事をする？と自分に問い詰めたい。。）</p>
-
 <h2 id="うまく行かない場合">うまく行かない場合</h2>
-
-<ol>
+<ol start="5">
 <li>キャッシュをクリアーする</li>
 <li>DerivedDataのデーターを消す</li>
 <li>新しいプロジェクトを作って、Modelを移行して試す</li>
 </ol>
-
 <p>※ 使っていたプロジェクトのままで動いた場合と（tapas)、キャッシュやDerivedDataのデーターを抜いてもうまく行かず、新しいプロジェクトを作り直してうまく行く場合がありました（ohaYo)。</p>
-
 <p>蛇足：ネットでぱっと見て試すもうまく行かず、後で読み返すとその注意点が書いてあったりします。
 小学校の通信簿に「少し聞いただけで、全部理解したと思ってしまうところがあります。もう少しじっくりと。（やれどーだこーだ）。」書いてあった事をふと思い出す。</p>
 

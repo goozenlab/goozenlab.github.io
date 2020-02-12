@@ -151,61 +151,32 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>visit <a href="http://">website</a></p>
-
+                <p>visit <a href="http://">website</a></p>
 <h2 id="installと設定">Installと設定</h2>
-
 <pre><code>$ ruby &lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-</code></pre>
-
-<p>Homebrewの利用状況の統計（？）機能の無効化するために、.profileに下記の一行を追加。</p>
-
+</code></pre><p>Homebrewの利用状況の統計（？）機能の無効化するために、.profileに下記の一行を追加。</p>
 <pre><code>export HOMEBREW_NO_ANALYTICS=1
-</code></pre>
-
-<h2 id="アップデートとアップグレード">アップデートとアップグレード</h2>
-
+</code></pre><h2 id="アップデートとアップグレード">アップデートとアップグレード</h2>
 <p>aptと似ている。</p>
-
 <h3 id="update">update</h3>
-
 <p>Homebrew本体を最新バージョンにし、Formulaに追加・変更があったら、それらをアップするコマンドがupdate。
 この時、インストールされたパッケージはアップデートされない。</p>
-
 <pre><code>$ brew update
-</code></pre>
-
-<h3 id="upgrade">upgrade</h3>
-
+</code></pre><h3 id="upgrade">upgrade</h3>
 <p>インストール済みのパッケージを最新バージョンにするには、upgradeコマンドを使う。</p>
-
 <pre><code>$ brew upgrade
 $ brew upgrade [formula]
-</code></pre>
-
-<h3 id="cleanup">cleanup</h3>
-
+</code></pre><h3 id="cleanup">cleanup</h3>
 <p>アップデート、アップグレードした時に古いバージョンが残る。</p>
-
 <pre><code>$ brew cleanup
 $ brew cleanup [formula]
-</code></pre>
-
-<h2 id="パッケージを探す">パッケージを探す</h2>
-
+</code></pre><h2 id="パッケージを探す">パッケージを探す</h2>
 <p>searchかエイリアスの<code>-S</code></p>
-
 <pre><code>$ brew search [text]
-</code></pre>
-
-<h2 id="brewで入れたコマンドを一時的にオン-オフ">Brewで入れたコマンドを一時的にオン・オフ</h2>
-
+</code></pre><h2 id="brewで入れたコマンドを一時的にオンオフ">Brewで入れたコマンドを一時的にオン・オフ</h2>
 <pre><code>$ brew unlink PACKAGE_NAME
 $ brew link PACKAGE_NAME
 </code></pre>
-
             </div>
         </div>
 	</div>

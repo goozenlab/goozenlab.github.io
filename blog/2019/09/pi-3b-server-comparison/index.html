@@ -157,41 +157,29 @@
 
             <div class="post-content">
                 <p>日本への帰国を数日後に控えて、起動中のパイ・3AサーバーのSDカードをパイ・3Bに入れ替えてみました。</p>
-
 <p>以下のソフトウェアーが動いとります。太字がよく使っているものです。</p>
-
 <ul>
-<li><b>Pihole</b>、Squid、<b>Syncthing</b>、<b>Radicale</b></li>
-<li>LAMP (debian | nginx | mariaDB | php7.3)： <b>Tiny Tiny RSS</b>、<b>Kanboard</b>、Walabag、FireFlyIII</li>
-<li><b>Grafana</b>、InfluxDB、Telegraf、為替レートや気温をモニターリング。</li>
+<li><!-- raw HTML omitted -->Pihole<!-- raw HTML omitted -->、Squid、<!-- raw HTML omitted -->Syncthing<!-- raw HTML omitted -->、<!-- raw HTML omitted -->Radicale<!-- raw HTML omitted --></li>
+<li>LAMP (debian | nginx | mariaDB | php7.3)： <!-- raw HTML omitted -->Tiny Tiny RSS<!-- raw HTML omitted -->、<!-- raw HTML omitted -->Kanboard<!-- raw HTML omitted -->、Walabag、FireFlyIII</li>
+<li><!-- raw HTML omitted -->Grafana<!-- raw HTML omitted -->、InfluxDB、Telegraf、為替レートや気温をモニターリング。</li>
 <li>Gitea：ちょっとまだ使ってません。割とメモリーの割り当てがあるようです。</li>
 </ul>
-
 <p>パイ3BのCPUスペックは3Aとさほど変わらないのですが、
 Ramの容量が倍の1GBあります。</p>
-
 <p>トップはこんな感じ、上が3A+で下が3Bです。
 ちょうど500MBくらいのRamの消費容量のようで明らかに余裕があります。</p>
-
-<p><img src="/images/2019-09-12-zram-top-after.png" alt="Top on Pi3A+" /></p>
-
-<p><img src="/images/2019-09-16-top-pi3b.png" alt="Top on Pi3B" /></p>
-
+<p><img src="/images/2019-09-12-zram-top-after.png" alt="Top on Pi3A+"></p>
+<p><img src="/images/2019-09-16-top-pi3b.png" alt="Top on Pi3B"></p>
 <p>モニタリングツールで見ると以下のようです。ちょうど真ん中あたりが切り替え時。あと少しだけパイ・3Aにメモリーがあれば、、。</p>
-
-<p><img src="/images/2019-09-16-grafana-pi3b.png" alt="Grafana on Pi3B" /></p>
-
+<p><img src="/images/2019-09-16-grafana-pi3b.png" alt="Grafana on Pi3B"></p>
 <p>グラファナでのモニターリングも切り替え時にもたついてましたが、余裕な感じです。
 Kanboardで引っかかっていたクライアントからのアクセスも軽快です。</p>
-
 <p>体感できる程の違いがあるとは思いませんでしたので、ちょっと驚き。
 ただ、バッテリーで動かすとA3に比べると２〜３割くらいダウンしてしまう。
 この問題も10,000mAhのモバイルバッテリーを使えばクリアーできるのだけど、
 持ち運びを考えているのでちょっと考えもの。。</p>
-
 <p>バランス的にRamをアップグレードしてくれるだけで良いのだけどね、、、
 半田付けで取り替えられんのかな？？</p>
-
 <p>来週にはパイ・４Bが手元に入ります、またまたSDカードを移してどんな感じか検証してみます。</p>
 
 				

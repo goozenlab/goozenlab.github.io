@@ -156,74 +156,55 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>雨季の中、珍しく天気の良い日（！暑い！）です。
+                <p>雨季の中、珍しく天気の良い日（！暑い！）です。
 滞在先、自転車がパンクしました。近所の自転車屋さんが割としっかりしていて、
 なかなかの対応をしていただきました。ありがたや。
 データーも溜まってきてのでバックアップしなければとの、啓示なのかも。</p>
-
 <p>さて、せっせと、設定ファイルやスクリプトを書いてます。</p>
-
 <p>端末にて、編集、サーバーでもちょっとだけ変更・実行・確認、そして端末にてまた編集。。</p>
-
 <p>「少しだったらサーバーの方で直して」ってのが悪で、先祖返りを起こしたり。。
 ファイルのやり取りがちょっと面倒になる。</p>
-
 <p>既にインストールしている<code>syncthing</code>で同期しながらってのも考えたけれど、
 回線が不安定なのもあり今ひとつ信用に欠ける。
 やはりここは、半自動でいいやと、、
 割と利便性が高そうな<code>unison</code>でスクリプトを扱うフォルダー同期することにする。
 ついでに端末側のアップル・スクリプトとかのバックアップ先にもなるので、
 一石二鳥にもなるか。。</p>
-
-<p><img src="/images/2019-08-17-unison-00.png" alt="Unison" /></p>
-
+<p><img src="/images/2019-08-17-unison-00.png" alt="Unison"></p>
 <p>さて、このunisonにはインストール時の注意点があります。
 <strong>同期したいサーバ間のunisonのバージョンは必ず一致し</strong>
 ていなければいけないという点で、
 （まぁ、あっちがたてば、こっちがへっこむみたいな。。）
 unisonのバージョンが一致してなければ同期に失敗します。</p>
-
 <p>で、やはりバージョンが合いません。
 mac.brewの環境では<code>version 2.51.2</code>、
 ラズビアン・バスターでは<code>version 2.48.4</code>が
 インストールされます。</p>
-
 <p>brewでは<strong>ダウングレード</strong>も可能らしいですが、該当のファイルが見つけられず断念。</p>
-
 <p>ということで、
 ラズビアン・パイ側のunisonを新しいバージョンにするしかない。
 しかし、残念ながら<code>sid</code>バージョンでも同じバージョンはなく、
 開発サイトにあるバイナリーはパイと互換性のあるものは存在しないので、
 <code>ビルド</code>することになる。（ちょっと嬉しかったり。）</p>
-
-<h2 id="build-unison-v2-51-2">Build Unison v2.51.2</h2>
-
-<p><img src="/images/2019-08-17-unison-releaseM.png" alt="Unison" /></p>
-
+<h2 id="build-unison-v2512">Build Unison v2.51.2</h2>
+<p><img src="/images/2019-08-17-unison-releaseM.png" alt="Unison"></p>
 <p>わからんなりに進める。以前にもどこかで同様の作業したような気がして、
 <code>ocaml</code>が必要だったとの記憶がある。
 ビルドのツールと一緒にダウンロードします。</p>
-
 <p>そしてギットハブよりマックと同じバージョンのソースコードをとってきます。
 最新のバージョンでした。</p>
-
 <pre><code>pi@raspberry:~ $ sudo apt-get install build-essential ocaml-nox
 pi@raspberry:~ $ wget -c https://github.com/bcpierce00/unison/archive/v2.51.2.zip
 pi@raspberry:~ $ unzip v2.51.2.zip
 pi@raspberry:~ $ cd unison-2.51.2
 pi@raspberry:~/unison-2.51.2 $ make
-</code></pre>
-
-<p>解凍して、ビルドします。<code>make</code>で警告が幾つか出ますが5分ぐらいで終了しました。
+</code></pre><p>解凍して、ビルドします。<code>make</code>で警告が幾つか出ますが5分ぐらいで終了しました。
 <code>make install</code>はトンチンカンな感じでエラーが出たので、
 バイナリーを直接<code>/usr/bin/</code>へ持って行くことにする。
 で、ちょっと見てみると、これがなんかたらい回しな感じです。
 理由があるのかもしれなので、流儀に合わせます（？）
-<code>update-alternatives</code>なんてコマンドが、あるんですね。。。
+<code>update-alternatives </code>なんてコマンドが、あるんですね。。。
 でも、manのファイルを消さんでも。。</p>
-
 <pre><code>pi@raspberry:~/unison-2.51.2 $ ls -la /usr/bin/ | grep unison
 lrwxrwxrwx  1 root root          24 Aug 17 19:03 unison -&gt; /etc/alternatives/unison
 lrwxrwxrwx  1 root root          13 Oct 30  2017 unison-2.48 -&gt; unison-2.48.4
@@ -248,10 +229,7 @@ lrwxrwxrwx  1 root root          11 Aug 17 19:33 unison-latest-stable -&gt; unis
 
 pi@raspberry:/usr/bin $ unison -version
 unison version 2.51.2 (ocaml 4.05.0)
-</code></pre>
-
-<p>で、とりあえずバージョンが揃いました。</p>
-
+</code></pre><p>で、とりあえずバージョンが揃いました。</p>
 <p>めでたし。ちゃんと使えてますよぉ。</p>
 
 				

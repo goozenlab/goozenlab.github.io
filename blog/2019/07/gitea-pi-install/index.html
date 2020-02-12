@@ -156,70 +156,47 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>何でもセルフホスト・パイ・サーバー計画続行中です。
+                <p>何でもセルフホスト・パイ・サーバー計画続行中です。
 今回はgitlabほど仰々しくないgolangで書かれた、
 gitサーバーことgiteaをインストールしました。</p>
-
-<p><img src="/images/2019-07-12-gitea-00.png" alt="Gitea install on Pi" /></p>
-
+<p><img src="/images/2019-07-12-gitea-00.png" alt="Gitea install on Pi"></p>
 <p>サービスを動かすためのユーザーを作ります。<code>--disabled-password</code>のオプションをつけることでログインはできません。giteaを動かすためだけのユーザーになります。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo -Es
 root@raspberrypi:~ # sudo adduser --system --shell /bin/bash --group --disabled-password --home /home/git git
 Adding system user `git' (UID 111) ...
 Adding new group `git' (GID 116) ...
 Adding new user `git' (UID 111) with group `git' ...
 Creating home directory `/home/git' ...
-</code></pre>
-
-<p>そして必要なフォルダーを作成し運用環境を整えます。</p>
-
+</code></pre><p>そして必要なフォルダーを作成し運用環境を整えます。</p>
 <pre><code>root@raspberrypi:~ # mkdir -p /var/lib/gitea/{custom,data,indexers,public,log}
 root@raspberrypi:~ # chown git:git /var/lib/gitea/{data,indexers,log}
 root@raspberrypi:~ # chmod 750 /var/lib/gitea/{data,indexers,log}
 root@raspberrypi:~ # mkdir /etc/gitea
 root@raspberrypi:~ # chown root:git /etc/gitea
 root@raspberrypi:~ # chmod 770 /etc/gitea
-</code></pre>
-
-<h2 id="データーベースの作成">データーベースの作成</h2>
-
+</code></pre><h2 id="データーベースの作成">データーベースの作成</h2>
 <p>giteaで使うmariaDBのデーターベースを作っておきます。</p>
-
 <ul>
 <li>DB Name: gitea_db</li>
 <li>DB user/passwd: gitea-user / git-tea-user</li>
 </ul>
-
 <p>作業は以下’の通り、</p>
-
 <pre><code>root@raspberrypi:~ # mysql -u root
 MariaDB [(none)]&gt; CREATE DATABASE gitea_db;
 MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON gitea_db.* TO 'gitea-user'@'localhost' IDENTIFIED BY &quot;git-tea-user&quot;;
 MariaDB [(none)]&gt; exit
-</code></pre>
-
-<h2 id="バイナリーのダウンロード">バイナリーのダウンロード</h2>
-
+</code></pre><h2 id="バイナリーのダウンロード">バイナリーのダウンロード</h2>
 <p>デビアンではパッケージに登録されているも、メンテナンスはされていないようなのです。
 基本的にシングル・バイナリーで動くようなので、
 環境に合ったバイナリーを直接サイトよりダウンロードして使うことにします。
 ラズベリーパイでは<code>arm7</code>のバイナリーは動作しないようなので、<strong>arm6</strong>のバイナリーをダウンロードします。
 実行権限を追加して、<code>/usr/local/bin/</code>に移動します。</p>
-
 <pre><code>root@raspberrypi:~ # wget -c -O gitea https://dl.gitea.io/gitea/1.8.3/gitea-1.8.3-linux-arm-6
 root@raspberrypi:~ # chmod +x gitea
 root@raspberrypi:~ # mv gitea /usr/local/bin/
-</code></pre>
-
-<p>download page : <a href="https://dl.gitea.io/gitea/">https://dl.gitea.io/gitea/</a></p>
-
+</code></pre><p>download page : <a href="https://dl.gitea.io/gitea/">https://dl.gitea.io/gitea/</a></p>
 <h2 id="systemd-サービス">Systemd サービス</h2>
-
 <p>バイナリーを実行するためにsystemdのファイル<code>/usr/lib/systemd/system/gitea.service</code>を作ります。使っているサーバーのサービスをコメントアウトします。（RequiresもAfterにしたけれど、違いがわかりません。）</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo vi /usr/lib/systemd/system/gitea.service
 
 [Unit]
@@ -255,11 +232,8 @@ Environment=USER=git HOME=/home/git GITEA_WORK_DIR=/var/lib/gitea
 
 [Install]
 WantedBy=multi-user.target 
-</code></pre>
-
-<p>起動時に動作するように登録して、サービスを開始します。
+</code></pre><p>起動時に動作するように登録して、サービスを開始します。
 <code>sudo systemctl start gitea</code>にてエラーが上がっていないか動作の確認をします。</p>
-
 <pre><code>pi@raspberrypi:~ $ sudo systemctl enable gitea
 pi@raspberrypi:~ $ sudo systemctl start gitea
 pi@raspberrypi:~ $ sudo systemctl start gitea
@@ -274,119 +248,35 @@ pi@raspberrypi:~ $ sudo systemctl start gitea
 
 Jul 12 11:18:42 raspberrypi systemd[1]: Started Gitea (Git with a cup of tea).
 Jul 12 11:18:49 raspberrypi gitea[984]: 2019/07/12 11:18:49 Serving [::]:3000 with pid 984
-</code></pre>
-
-<p>無事に起動しました。</p>
-
+</code></pre><p>無事に起動しました。</p>
 <h2 id="giteaの設定">giteaの設定</h2>
-
 <p>最初にgiteaを設定します。アクセスは、<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;:3000/install</code>になります。
 データベースやその他の基本設定をします。</p>
-
-<p><img src="/images/2019-07-12-gitea-conf-01.png" alt="Gitea install on Pi" /></p>
-
+<p><img src="/images/2019-07-12-gitea-conf-01.png" alt="Gitea install on Pi"></p>
 <p>SSHドメインとベースURLにはIPかドメイン名を入れる必要があります。
 ポート番号はgrafanaとかぶりますので、grafanaのポート番号を変更しました。
 最初にログインしたユーザーが管理者になります。もしそうでない場合は、あらかじめ設定しておくのがよろしいようです。
 お一人様なのでそのまま。</p>
-
-<p><img src="/images/2019-07-12-gitea-conf-02.png" alt="Gitea install on Pi" /></p>
-
+<p><img src="/images/2019-07-12-gitea-conf-02.png" alt="Gitea install on Pi"></p>
 <p>複数人で使う場合は<code>Disable Self-registration</code>のボックスはチェックしたほうが良いそうです。（勝手にアカウントを追加できないようになる）
 サーバー設定以下にあったような。。
 シンプルな設定になっているので、使っている環境に合わせて変えてください。</p>
-
-<p><img src="/images/2019-07-12-gitea-conf-03.png" alt="Gitea install on Pi" /></p>
-
+<p><img src="/images/2019-07-12-gitea-conf-03.png" alt="Gitea install on Pi"></p>
 <p>後々変更するには、<code>/etc/gitea/app.ini</code>のファイルを変更します。</p>
-
-<hr />
-
+<hr>
 <p>インストールが終了したのちにユーザーを登録し、サインインします。</p>
-
-<p><img src="/images/2019-07-12-gitea-register-00.png" alt="Gitea install on Pi" />
-<img src="/images/2019-07-12-gitea-signin-00.png" alt="Gitea install on Pi" /></p>
-
+<p><img src="/images/2019-07-12-gitea-register-00.png" alt="Gitea install on Pi">
+<img src="/images/2019-07-12-gitea-signin-00.png" alt="Gitea install on Pi"></p>
 <p>基本githubと似てますが、ちょっとすっきりしてます。個人用途では十分に思えます。</p>
-
-<!--![Gitea install on Pi](/images/2019-07-12-gitea-main-00.png)-->
-
-<p><img src="/images/2019-07-12-gitea-main-01.png" alt="Gitea install on Pi" /></p>
-
+<!-- raw HTML omitted -->
+<p><img src="/images/2019-07-12-gitea-main-01.png" alt="Gitea install on Pi"></p>
 <p>外でフラフラと作業をので、回線に依存しないのはちょっとありがたいんですよね。
 個人のプロジェクトはこちらに放り込もうと思ってます。
 恥ずかしいコードも人に見られることもなくやりたい放題できます。</p>
-
-<!--
-## supervisorとは？
-
-https://github.com/go-gitea/gitea/blob/master/contrib/supervisor/gitea
-
-Using supervisor
-Install supervisor by running below command in terminal:
-
-sudo apt install supervisor
-
-Create a log dir for the supervisor logs:
-
-# assuming Gitea is installed in /home/git/gitea/
-mkdir /home/git/gitea/log/supervisor
-Open supervisor config file in a file editor:
-
-sudo vim /etc/supervisor/supervisord.conf
-Append the configuration from the sample supervisord config.
-
-Change the user (git) and home (/home/git) settings to match the deployment environment. Change the PORT or remove the -p flag if default port is used.
-
-Lastly enable and start supervisor at boot:
-
-sudo systemctl enable supervisor
-sudo systemctl start supervisor
-
--->
-
-<!--
-
-Setting up Nginx
-
-I'm a big fan of Nginx as it's a rock solid piece of software and
- as such I decided to use Nginx as a reverse proxy that performs SSL termination for the Gitea server. 
- Gitea could just as easily be run with a different reverse proxy (such as Apache) or entirely standalone.
-
-
-Next let's go ahead and add an enabled site entry for Gitea by creating the following enabled site file:
-
-```
-pi@raspberrypi:~ $ sudo vim /etc/nginx/sites-enabled/gitea
-
-server {
-    listen 80;
-    server_name <your-domain>;
-
-    location / {
-        proxy_pass http://localhost:3000;
-    }
-
-    proxy_set_header X-Real-IP $remote_addr;
-}
-```
-
-This sets up a listener that listens on port 80 and reverse proxies to the local port 3000 where Gitea will be running. 
-Additionally we're adding the proxy_set_header here 
-so that we can get accurate remote ip addresses in the Gitea logs which we'll use later for fail2ban.
-
-Also, don't panic that we've only added a listener for port 80,
-we'll soon be using let's encrypt to create an SSL certificate 
- and rewrite this listener to enforce HTTPS for all traffic.
-
-Finally let's go ahead and remove the default enabled site and reload the configuration:
-
-pi@raspberrypi:~ $ sudo rm /etc/nginx/sites-enabled/default
-pi@raspberrypi:~ $ sudo service nginx reload
-
-Once this is done, you should be able to manually start your Gitea server 
-and visit it on port 80 to see the Gitea interface.
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 				
 

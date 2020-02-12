@@ -143,91 +143,62 @@
 				</p>
             </div>
             <div class="post-content">
-                
-
-<p><img src="/images/2019-09-01-sony-vaio-00.jpg" alt="Vaio P" /></p>
-
+                <p><img src="/images/2019-09-01-sony-vaio-00.jpg" alt="Vaio P"></p>
 <p>Strechで問題なく動いているタンスタンマツ、Sony <strong>Vaio P</strong> リバイバル
 希望、ほんと今のスペックで作っていただきたい。</p>
-
 <ul>
 <li>VPC-P111KX (Green)</li>
 <li>Intel Atom Z530 @ 1.6 GHz</li>
 <li>RAM: 2GB DDR2</li>
 <li>Storage: 64GB SSD</li>
 </ul>
-
 <p>スペックを改めて見てみると、ラズベリー・パイと同等な感じなのか、10年戦士ももうヨボヨボというところか、、</p>
-
 <p><a href="https://en.wikipedia.org/wiki/Sony_Vaio_P_series">https://en.wikipedia.org/wiki/Sony_Vaio_P_series</a></p>
-
 <p>もう新しいものを追っかけるのも辛くなってきたきた年頃ですし、
 これを最後のアップデートとして引退させます。
 以前はウェブサーバーとして運用してたりもしてましたが、
 （ルーターの横にアクロバチック状態で数ヶ月運用）</p>
-
-<p><img src="/images/2011-05-18-home-server.jpg" alt="Home server" /></p>
-
+<p><img src="/images/2011-05-18-home-server.jpg" alt="Home server"></p>
 <p>さて今回は持ち出しエディターか、オフグリッド端末で使おうかなと、、
 あっ、コールドストレージでも良いか、、と微妙な感じです。</p>
-
 <p>ネタでもありますので、引っ張り出して再構築を行います。
 使い物にならなかったら、家鯖復活でもよし、CoreOSでも入れるもよしで。。。</p>
-
 <p>当初の目的は幾つかあって、以下の3つ。</p>
-
 <ol>
-<li><del>debian.<b>buster</b></del>　Bunsenlab -&gt; Manjaro XFCE</li>
+<li><del>debian.<!-- raw HTML omitted -->buster<!-- raw HTML omitted --></del>　Bunsenlab -&gt; Manjaro XFCE</li>
 <li><del>Btrfs with RollBack</del>：やぱやめた。XFSにしとく。</li>
-<li><del>Wayland + <b>Sway</b>: swayのパッケージが遠い〜な〜〜、でも動くみたいです。</del>
-
+<li><del>Wayland + <!-- raw HTML omitted -->Sway<!-- raw HTML omitted -->: swayのパッケージが遠い〜な〜〜、でも動くみたいです。</del>
 <ul>
 <li><a href="https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation">https://github.com/swaywm/sway/wiki/Debian-10-(Buster)-Installation</a></li>
 <li><a href="https://packages.debian.org/search?keywords=sway">https://packages.debian.org/search?keywords=sway</a></li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <p>今までのパターンですと、Gnomeデスクトップはちょっと使い物にならなかったので、
 今回から（デビアンにしては珍しく早くも）対応されたウェイランドにちょっと期待を寄せていましたが、流石に端末が古すぎるのかちょっと無理がありました。</p>
-
 <p>で、目的は無視して大幅な予定変更を余儀無くされる。</p>
-
-<hr />
-
-<h2 id="インストール-結局マンジャーロ">インストール：結局マンジャーロ</h2>
-
+<hr>
+<h2 id="インストール結局マンジャーロ">インストール：結局マンジャーロ</h2>
 <p>デビアンのバスターをインストールするも少し動作が緩慢でしたので予定を変更。以前インストールしたことがあるCrunchbang。開発は終了してしまいましたが、枝が分かれ２つのディストリビューションが引きついでます。両者とも似たような感じですが、開発がより活発そうな、Bunsenlabをインストールしました。</p>
-
-<p><img src="/images/2019-09-13-bunsenlab.png" alt="Bunsenlab" /></p>
-
-<!--![Crunchbang ++](/images/2019-09-13-crunchbang-plusplus.png)-->
-
+<p><img src="/images/2019-09-13-bunsenlab.png" alt="Bunsenlab"></p>
+<!-- raw HTML omitted -->
 <p>で、さらに他の端末で使っているManjaroの印象が良かったので、32Bitもサポートされているし、XFCEバージョンをインストール。すんなり終了。
 Wifiも、ディスプレイ照度・音量のショートカットも使えます。
 試用感はデビアン９でのXFCEと同じような感じで動作もギリギリセーフ。これでFIXです。</p>
-
-<h2 id="マンジャーロ-雑感">マンジャーロ：雑感</h2>
-
+<h2 id="マンジャーロ雑感">マンジャーロ：雑感</h2>
 <p>使えない機能は今の所無いようです。
 ただ老眼の始まっている私には、ディスプレイが細くて辛い。。</p>
-
 <p>ただし動画は厳しいというか無理。Youtubeは勿論見れません、カクカクです。
 文章を書いたりするような作業以外は厳しいかもしれません。</p>
-
 <p>テキスト編集作業でバッテリーは2時間ぐらい持ちました。
 （ほんと、これで、バッテリーの持ちが倍くらいあれば最強なんだけどね、地味に売れると思うけど、、）</p>
-
 <p>内臓SSDの容量は64GBですし、ちょっと使い道に悩む。</p>
-
 <h2 id="おまけ">おまけ</h2>
-
 <p>作りは良く壊れそうも無いので、ビットコインのコールドストレージにするかなと思ったり。</p>
-
 <h2 id="追記">追記：</h2>
-
-<p>2019-11-01：加筆する。中途半端だけど取り敢えず、ミッション・コンプリート。<br />
-2019-10-20：Manjaro 32bit XFCEをインストール。<br />
-2019-10-03：Bunsenlabをインストール。<br />
+<p>2019-11-01：加筆する。中途半端だけど取り敢えず、ミッション・コンプリート。<br>
+2019-10-20：Manjaro 32bit XFCEをインストール。<br>
+2019-10-03：Bunsenlabをインストール。<br>
 2019-09-03：ThinkPad T60 + Ubuntu19でGnomeDesktopが動く衝撃動画を追加。</p>
 
 				

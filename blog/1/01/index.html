@@ -151,86 +151,44 @@
             </div>
 
             <div class="post-content">
-                
-
-<h1 id="standard-note">Standard Note</h1>
-
-<p>Simplenoteともう一つ。ということで、Standardnotesをインストールしました。</p>
-
-<p>こちらのアプリはサーバーも抱き合わせのオープンソースプロジェクトですので
-セルフ・ホストも可能のようです。ドッカーで一発構築できるようです。
-ラズベリーパイで軽快に動かせたらよいのだけどね。。</p>
-
-<p>全てのプラットフォームに移植されていて、LinuxではAppImageで提供されています。</p>
-
-<p>アプリはライブラリーを含んだ配布方式のAppImageです。実行権を与えてダブルクリック。。
-で動かない。。</p>
-
-<p>ターミナルで立ち上げるとエラーが出てくる。。</p>
-
-<p>jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage
-[3563:0116/185840.711069:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found,
-but is not configured correctly. Rather than run without sandboxing I&rsquo;m aborting now.
-You need to make sure that /tmp/.mount_Standa3whW6B/chrome-sandbox is owned by root and has mode 4755.
-Trace/breakpoint trap</p>
-
-<p>検索後解決方法が見つかる。&ndash;no-sandboxのオプションを追加。。でうまく動きました。。
-でも毎回ターミナルで立ち上げるのもな、、</p>
-
-<p>jin@debian:/opt$ ./Standard-Notes-3.0.25.AppImage &ndash;no-sandbox
-Extensions server started at <a href="http://localhost:45653">http://localhost:45653</a>
-Unable to read JSON file /home/jin-debian/.config/Standard Notes/Updates/settings.json
-Checking for updates&hellip;
-[18:56:58:0161] [info] Checking for update
-[18:56:58:0430] [info] Generated new staging user ID: 74c5e1cd-f242-5a86-a4c7-3890b03245ea
-Syncing components: 1
-Syncing components: 1
-Syncing components: 1
-Finished checking for updates. Latest version: 3.0.25 Current version: 3.0.25
-Data backup succesfully saved:  2020-01-16T11-57-01.638Z.txt
-[18:57:02:0256] [info] Update for version 3.0.25 is not available (latest version: 3.0.25, downgrade is disallowed).
-Syncing components: 1
-Error: Object has been destroyed
-    at /tmp/.mount_StandakVj231/resources/electron.asar/browser/api/web-contents.js:245:33
-    at processTicksAndRejections (internal/process/task_queues.js:79:9)</p>
-
-<p>何が問題なのかはちょっとわからないけれど、オプションを追加せずに起動する方法もあるみたいです。</p>
-
-<ol>
-<li>Enable unprivileged access to CLONE_NEWUSER in your kernel. Some kernels support changing this with <code>sysctl kernel.unprivileged_userns_clone=1</code>.</li>
-<li>Disable sandboxing entirely by launching with &ndash;no-sandbox. Adding this argument from JS is unfortunately insufficient, as the GPU process is launched before the main process JS is run.</li>
-</ol>
-
-<p><code>/etc/sysctl.d/00-local-userns.conf</code></p>
-
-<p>with the following contents:</p>
-
-<p>kernel.unprivileged_userns_clone=1</p>
-
-<p>でファイルをダブルクリックで実行できます。
-アイコンの登録もできんのかな。。</p>
-
-<p>Visual Studioも軽快に動いているし、Moscもまぁそんなに悪くない。</p>
-
-<p>どんどん、ただ、こちらLinuxは複雑化して、いろいろ使いまわしてます。</p>
-
-<p>今の所、デビアンの出来が非常に良いのでメインになりつつあり、
-Manjaroも悪くないのですが、KDE Neonがかーなりよく作られてます。
-デフォルトの設定がBashとかVimとかの、初心者向けによく作られてます。</p>
-
-<p>非常におすすめ。（他のUbuntu系のディストリビューションは試してないけど、更に良いということなのか？ちょっと気になったりする。</p>
-
-<p><img src="/images/2020-01-17-standardnote-00.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-02.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-03.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-04.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-05.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-06.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-app-00.png" alt="standardnote" />
-<img src="/images/2020-01-17-standardnote-screen.png" alt="standardnote" /></p>
-
-<p>Self Hosting with Docker
-<a href="https://docs.standardnotes.org/self-hosting/self-hosting-with-docker">https://docs.standardnotes.org/self-hosting/self-hosting-with-docker</a></p>
+                <p>2020-02-18</p>
+<p>idea-ce-linux</p>
+<p>アンドロイドの開発はするつもりはあまりないのだけれども、
+オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、
+開発環境をインストールしてみました。</p>
+<p>オープンソースの IDE もいくつかあるのですが、今回は少し端折って簡単に
+InteliJ
+のものをインストールします。</p>
+<p>intellij install on arch ??</p>
+<p><img src="/images/2020-01-17-idea-app.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-02.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-04.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-05.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-06.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-07.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-08.png" alt="IdeaCE"></p>
+<p>で、準備完了。</p>
+<p>やりたい事をまとめると、</p>
+<p>普段使いをしているアプリのちょっとしたところを自分好みにする。</p>
+<h2 id="task">Task</h2>
+<p>レイアウトの調整、右のバーが太い、補足する、文字を大きくする。
+割と簡単に行えるかも、</p>
+<h2 id="tt-rss">TT-RSS</h2>
+<p>スワイプ時の挙動を追加したい。
+自分は、Wallagbag と Instapaper しか使わないので、</p>
+<p>スピードは Feeder が早いので、そちらのソースコードを持ってくるかな、</p>
+<p>自分のメイン端末は７インチのものなので、少しレイアウトに余裕を持たせて
+表示量を増やす。</p>
+<p>バラーーっと見て一気に消去。</p>
+<h2 id="k-9">K-9</h2>
+<p>バーを細くして</p>
+<p>両端のアイコンの大きさを調整。</p>
+<p>スワイプで消去機能を追加</p>
+<p>アイコンも変える。</p>
+<p>多分割と簡単にできそうかな。。</p>
+<p>GZ-9
+GZask
+Tiny GZZ</p>
 
             </div>
         </div>

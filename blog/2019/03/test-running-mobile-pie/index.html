@@ -156,55 +156,33 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>数年ぶりの選挙があったこの週末は、飲み屋も閉まってたりで、街がしーーーんと、すごく静かでした。さて、さて、これからどうなることやら。。（北部タイにて）</p>
-
+                <p>数年ぶりの選挙があったこの週末は、飲み屋も閉まってたりで、街がしーーーんと、すごく静かでした。さて、さて、これからどうなることやら。。（北部タイにて）</p>
 <p>さて、手元にあるラズパイ２機（パイ３BとゼロW）をモバイル・バッテリーで動かしてみて、稼働時間ををちょっと測ってみました。</p>
-
-<p><img src="/images/2019-03-24-running-mobile-pie.jpg" alt="Pi Running with M. Batttery" /></p>
-
+<p><img src="/images/2019-03-24-running-mobile-pie.jpg" alt="Pi Running with M. Batttery"></p>
 <p>使用したのはシャオミの行動電源10,00mAh高配版（グレーの物）、USBの出力口が二つ付いていればルーターとセットで測りたかったのですが、一つしか付いていないので、パイの稼働時間のみの測定しました。</p>
-
 <p>計測方法はいたって簡易的に、シンプルな二つのシェル・スクリプトをcronで走らせて行いました。</p>
-
 <pre><code># crontab -e
 
 @reboot /root/task_on_reboot.sh
 * * * * * /root/update_uptime.sh
-</code></pre>
-
-<p>あまりお忙しそうではないので、1分おきに生きているかどうかの確認をして、リブートした時に最後の書き置きをコピーするという段取りです。</p>
-
+</code></pre><p>あまりお忙しそうではないので、1分おきに生きているかどうかの確認をして、リブートした時に最後の書き置きをコピーするという段取りです。</p>
 <p>スクリプトは以下の：<code>update_uptime.sh</code>と<code>task_on_reboot.sh</code>を使いました。</p>
-
 <pre><code>#!/bin/sh
 # update_uptime.sh
 
 uptime &gt; /root/uptime.log
-</code></pre>
-
-<pre><code>#!/bin/sh
+</code></pre><pre><code>#!/bin/sh
 # task_on_reboot.sh
 
 cat /root/uptime.log &gt;&gt; /root/reboot.log
 echo &quot;Reboot @ $(date)&quot; &gt;&gt; /root/reboot.log
-</code></pre>
-
-<p>両機種ともアドブロッカーのパイ・ホールを入れてます。パイ３BではGrafana、influxdb、telegrafなどが後ろで動いています。</p>
-
+</code></pre><p>両機種ともアドブロッカーのパイ・ホールを入れてます。パイ３BではGrafana、influxdb、telegrafなどが後ろで動いています。</p>
 <p>バッテリーが少なくなると、だんだんLEDの点滅間隔が遅くなっているような。。。。</p>
-
 <h2 id="結果">結果</h2>
-
 <h3 id="1-pie-zero-w-dietpi">1. Pie Zero W (DietPi)</h3>
-
 <p><strong>2日と2時間50分</strong> 約50時間と大健闘。</p>
-
 <p>Piholeと検証用のnextCloudしか動いてなくて、そんなに仕事量が多く無いというのもありますが、思いの外持ちました。より小さい、モバイルバッテリーでルーターをつけても1日はもつ感じです。ルーターをつけても、1日は外に出ていても問題はない。</p>
-
 <p>音楽用の持ち歩き端末でもいいかなと、手持ちのMi Max3とUSBでテザリングができれば、電源も取れるし、バッテリーフリーの音楽サーバーになるってことか？ちょっと夢が広がる使い方ができるかもしれん。（まぁ、スマートフォンで全部できるのだけどね。）</p>
-
 <pre><code>Booted
  05:10:01 up  8:24,  1 user,  load average: 0.09, 0.15, 0.11
 Reboot @ Wed 20 Mar 11:16:51 +07 2019
@@ -212,23 +190,15 @@ Reboot @ Wed 20 Mar 11:16:51 +07 2019
 Reboot @ Wed 20 Mar 11:30:11 +07 2019
  23:43:01 up 1 day, 12:13,  0 users,  load average: 0.26, 0.28, 0.27
 -----
-</code></pre>
-
-<p>現在：ドロップボックスの代替として、NextCloud・ローカル貯蔵庫として運用中です。携帯で撮った写真の保存先として試験運用（ドロップボックスがねぇ、、）。</p>
-
-<h3 id="2-pi-3b-debian-buster-w-64bit-kernel">2. Pi 3B (debian.buster w/ 64bit Kernel)</h3>
-
+</code></pre><p>現在：ドロップボックスの代替として、NextCloud・ローカル貯蔵庫として運用中です。携帯で撮った写真の保存先として試験運用（ドロップボックスがねぇ、、）。</p>
+<h3 id="2-pi-3b-debianbuster-w-64bit-kernel">2. Pi 3B (debian.buster w/ 64bit Kernel)</h3>
 <p><strong>22時間30分</strong>、と１日に届きませんでした。Pie Zero Wのほぼ半分。倍の電力でスピードも倍以上。</p>
-
 <p>ラズビアンをベースに64bit化したシステムの
 <a href="https://wiki.debian.org/RaspberryPi3">raspberry-pi-3-buster-PREVIEW</a>
 に、ビルドしたカーネルを付けて動かしてます。</p>
-
-<p>細かい調整はしてませんし、cpufreqがうまく働いていないようで、モードを変えても、 &ldquo;ondemand&rdquo;にしばししたら切り替わるようで、ほぼ、1.2Ghzに固定され動作してました。CPUは数パーセントしか使っていない。
+<p>細かい調整はしてませんし、cpufreqがうまく働いていないようで、モードを変えても、 &ldquo;ondemand&quot;にしばししたら切り替わるようで、ほぼ、1.2Ghzに固定され動作してました。CPUは数パーセントしか使っていない。
 他にバックグラウンドで Grafana + Influxdb + telegraf が動いています。途中でアクセスポイントのソフトを入れたりしました。多分、実際の使用環境ではアクセス・ポイントとしても働いてもらうことになるので、これよりは短くなると思われます。また、環境が整ったら計測してみます。</p>
-
 <p>できれば、もう一回り小さいモバイル・バッテリーで１日は持ってくれれば非常にハッピーになれるのだけどね。。</p>
-
 <pre><code>Booted 
  17:19:01 up  6:53,  1 user,  load average: 0.17, 0.13, 0.05
 Reboot @ Sat Mar 23 17:19:55 +07 2019
@@ -236,28 +206,18 @@ Reboot @ Sat Mar 23 17:19:55 +07 2019
 Reboot @ Sun Mar 24 03:38:06 +07 2019
  09:13:01 up  5:22,  1 user,  load average: 0.07, 0.06, 0.02
 Reboot @ Sun Mar 24 09:13:29 +07 2019
-</code></pre>
-
-<p><img src="/images/2019-03-24-grafana-working.png" alt="Grafana" />
+</code></pre><p><img src="/images/2019-03-24-grafana-working.png" alt="Grafana">
 [カーネル5ビルド中]</p>
-
 <p>今後の追加予定：
 BTで、気温計のログを取って、Grafanaでモニターリング。いずれ、スマートウォッチと連動させて、健康ログを作りたい。</p>
-
-<hr />
-
+<hr>
 <p>やはり、ゼロは消費電力が少ないです。少し調整すればもう少しは持ちそうですし、３Bもなかなか健闘してると思います。
 いずれにせよ、処理能力の違いを考えたら妥当な結果でもある。</p>
-
 <p>購入時に３Bか３B＋のどちらにするか少々悩みましたが、3B+にしたら消費電力がさらに上がるとのことなので、
 ３Bは私の利用目的から考えたらこの選択は、グッチョイでした。そして、バッテリーはアウトレット -&gt; モバイル・バッテリ -&gt; RPi 3Bで繋いでも、充電ができました。</p>
-
 <p>でも、ほとんど、処理に負担のかかる作業はしていないので、逆に周波数を下げ、幅をもたせて運用しても良いかも、ちょっと１回クロックを下げて（800 &lt;-&gt; 300とか）テストしてみても良いかなと思ったりしてます。</p>
-
 <p>時間や用途に合わせて調整することもできそうです。</p>
-
 <p>個人的にはルーターをつけた状態で20時間を最低限の設定にして、色々調整していきたいと思います。</p>
-
 <p>さて、日本はそろそろ桜のシーズンなんですよね。ちょっと、日本が恋しくなる時期。こちらは酷暑、、インドに向かうもあちらも酷暑。</p>
 
 				

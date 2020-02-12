@@ -156,67 +156,38 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>端末のアプリデータをバックアップ、復元。</p>
-
+                <p>端末のアプリデータをバックアップ、復元。</p>
 <p>クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストールがきなくなる不具合。</p>
-
-<p><img src="/images/2016-09-02-appinstall-fail.png" alt="appinstall-fail" /></p>
-
+<p><img src="/images/2016-09-02-appinstall-fail.png" alt="appinstall-fail"></p>
 <p>この不具合は、実機に入っているアプリを消去して再インストールすることで解決はするのですが、中に入っているデーターが消えてしまします。そこで、以前は iExplore というソフトを行って実機からバックアップを取っていたのを、いつからか、XCodeでもできるようになっていたのでメモ。（開発環境がXCode5から一気にXCode7になったので、、まぁ改悪は今の所無いのだけど、、分からんことが一杯だな。。）</p>
-
-<h2 id="データーのバックアップ-復元">データーのバックアップ・復元</h2>
-
+<h2 id="データーのバックアップ復元">データーのバックアップ・復元</h2>
 <p>まずは、XCodeにて、メニューの Window - Device にて端末を選択します。インストールされたソフトがリストされます。データーをバックアップ・復元したいアプリを選択します。下の＋・ー・歯車の歯車を選択するとコンテナに対するメニューが表示されます。</p>
-
-<p><img src="/images/2016-09-02-container-download.png" alt="Container download" /></p>
-
+<p><img src="/images/2016-09-02-container-download.png" alt="Container download"></p>
 <p>実機にインストール前に、</p>
-
 <ol>
 <li>コンテナをダウンロード</li>
 <li>エラーの出るアプリを消去</li>
 <li>アプリを再インストール</li>
 <li>コンテナのリプレース</li>
 </ol>
-
-<p><img src="/images/2016-09-02-container-replace.png" alt="Container replace" /></p>
-
+<p><img src="/images/2016-09-02-container-replace.png" alt="Container replace"></p>
 <p>にて作業を終えます。</p>
-
 <h2 id="コンテナファイル">コンテナファイル</h2>
-
 <p>そこで、コンテナファイルの中身を見てみます。ダウンロードすると以下のような <code>****.xcappdata</code> が保存されます。Ctr+Clickで中身を見てみると以下のようになってます。</p>
-
-<p><img src="/images/2016-09-02-appdata.png" alt="Appdata" /></p>
-
+<p><img src="/images/2016-09-02-appdata.png" alt="Appdata"></p>
 <p>Documentフォルダー内にある <code>*.sql</code> の三つのファイルがアプリのデーターになります。Libraryのなかには設定用のplistファイルがあります。</p>
-
-<p><img src="/images/2016-09-02-appdata-detail.png" alt="Appdata detail" /></p>
-
+<p><img src="/images/2016-09-02-appdata-detail.png" alt="Appdata detail"></p>
 <p>※そしてこのファイルをシミュレーターに入れることでデーターを更新することもできます。スクリーンショットを撮るためにアプリのデーターが必要だったりする時などに役に立ちます。</p>
-
 <h2 id="シミュレータヘのデーター移行">シミュレータヘのデーター移行</h2>
-
 <p>シミュレータのデーターはちょと厄介なとこにあり、探すのに一苦労します。たくさんインストールする前に、探してどこかにメモしておきましょう。</p>
-
 <p>まずは、Simulatorの識別番号を XCodeのDeviceより確認します。</p>
-
-<p><img src="/images/2016-09-02-simulator-identifier.png" alt="simulator-identifier" /></p>
-
+<p><img src="/images/2016-09-02-simulator-identifier.png" alt="simulator-identifier"></p>
 <p>ファインダーに戻り、ライブラリーに入り。</p>
-
 <p>~/Library/Developer/CoreSimulator/Devices/<strong>IDENTIFIER for Simulator</strong>/data/Containers/Data/Application/<strong>IDENTIFIER for Application</strong>/Documents</p>
-
 <p>に移動して、上の<code>*.sql</code> の三つのファイルを上書きます。</p>
-
-<p><img src="/images/2016-09-02-simulator-app-directory.png" alt="simulator-app-directory" /></p>
-
+<p><img src="/images/2016-09-02-simulator-app-directory.png" alt="simulator-app-directory"></p>
 <h2 id="シミュレータのデーターを実機で使う">シミュレータのデーターを実機で使う</h2>
-
 <p>逆に、実機にシミュレーターのデーターを使いたいときは、ダウンロードした、<code>****.xcappdata</code> ファイルのなかの<code>*.sql</code> の三つのファイルをシミュレーターのもので上書きして、実機のコンテナをリプレースします。</p>
-
 <p>iExploreが使えなくなって難儀していたので、同じような問題を抱えた方にお役に立てば。。</p>
 
 				

@@ -156,54 +156,34 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>何でもセルフホスト・パイ・サーバー計画続行中。
+                <p>何でもセルフホスト・パイ・サーバー計画続行中。
 今回は<strong>Pocket</strong>の代替ソフトのwallabagをインストールしました。
 Kindle版があるのがちょっと気になる。</p>
-
-<p><img src="/images/2019-08-07-wallabag-00.jpg" alt="Wallabag" /></p>
-
+<p><img src="/images/2019-08-07-wallabag-00.jpg" alt="Wallabag"></p>
 <p>インストール作業についてはドキュメントにて確りと書かれています。</p>
-
 <p><a href="https://doc.wallabag.org/en/admin/installation/installation.html">https://doc.wallabag.org/en/admin/installation/installation.html</a></p>
-
 <p>さて、まずは事前に必要なパッケージをインストールします。</p>
-
 <ul>
 <li>composer</li>
 <li>php</li>
 </ul>
-
 <h3 id="composer">composer</h3>
-
 <p>1.8.0以上のバージョンが必要ですが、busterのパッケージは
 <code>1.8.4-1</code>なので問題ありません、gitとmakeも必要なので一緒にインストールします。</p>
-
 <pre><code>pi@tacos:~ $ sudo apt install git make composer
-</code></pre>
-
-<h3 id="php">php</h3>
-
+</code></pre><h3 id="php">php</h3>
 <p>phpモジュールが必要です。
 サイトに書いて有る2つのモジュール<strong>php-session</strong>と<strong>php-hash</strong>が見つかりらず、
 幾つかのモジュールはまとめられていました。</p>
-
 <ul>
 <li>php7.3-common: php7.3-ctyp php7.3-icon php-iconv php7.3-gettext php7.3-pdo php7.3-tokenizer</li>
 <li>php7.3-xml: php7.3-dom php7.3-simplexml</li>
 </ul>
-
 <p>とりあえずあるものをインストールしてそのまま続行します。</p>
-
 <pre><code>pi@tacos:/var/www $ sudo apt install php7.3-common php7.3-xml php7.3-json php7.3-gd php7.3-mbstring php7.3-xml php7.3-tidy  php7.3-curl php7.3-bcmath
-</code></pre>
-
-<h2 id="nginx">Nginx</h2>
-
+</code></pre><h2 id="nginx">Nginx</h2>
 <p>後でも構いませんが、事前にnginxの設定を行ってしまいます。
 サイトのドキュメントよりコピーです。<code>fastcgi_pass unix</code>の編集だけで問題なく動きました。</p>
-
 <pre><code>server {
     server_name wallabag.goozen.lab;
     root /var/www/wallabag/web;
@@ -246,34 +226,22 @@ Kindle版があるのがちょっと気になる。</p>
     error_log /var/log/nginx/wallabag_error.log;
     access_log /var/log/nginx/wallabag_access.log;
 }
-</code></pre>
-
-<p>そして、サブドメインのためのホストファイルを設定します。</p>
-
+</code></pre><p>そして、サブドメインのためのホストファイルを設定します。</p>
 <pre><code>pi@tacos:~ $ sudo vi  /etc/hosts
 
 10.0.0.10   wallabag.goozen.lab
-</code></pre>
-
-<h2 id="mariadb">MariaDB</h2>
-
+</code></pre><h2 id="mariadb">MariaDB</h2>
 <p>事前にデーターベースを用意します。
 データーベース名・ユーザー名・パスワードは変更してください。</p>
-
 <pre><code>pi@tacos:~ $ sudo mysql -u root
 MariaDB [(none)]&gt; CREATE DATABASE wallabag; 
 MariaDB [(none)]&gt; CREATE USER 'wallabag-user'@'localhost' IDENTIFIED BY 'wallabag-pa$$word';
 MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON wallabag.* TO 'wallabag-user'@'localhost';
 MariaDB [(none)]&gt; exit;
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h2 id="インストール">インストール</h2>
-
 <p>Wallagbagのインストールををします。
 作業の流れは以下の様になります。</p>
-
 <pre><code>pi@tacos:~ $ cd /var/www/
 pi@tacos:~ $ sudo git clone https://github.com/wallabag/wallabag.git 
 pi@tacos:~ $ sudo chown -R www-data:www-data /var/www/wallabag
@@ -282,32 +250,19 @@ pi@tacos:~ $ sudo chown -R www-data:www-data /var/www/wallabag
 pi@tacos:~ $ sudo -u www-data /bin/bash
 pi@tacos:~ $ cd /var/www/wallabag/
 pi@tacos:~ $ make install
-</code></pre>
-
-<p>データーベース等、様々な設定を行います。（データーベース設定以外は、ほとんどデフォルト。）</p>
-
-<p><img src="/images/2019-08-07-wallabag-install-01.png" alt="Wallabag Install" /><br />
-<img src="/images/2019-08-07-wallabag-install-02.png" alt="Wallabag Install" /></p>
-
+</code></pre><p>データーベース等、様々な設定を行います。（データーベース設定以外は、ほとんどデフォルト。）</p>
+<p><img src="/images/2019-08-07-wallabag-install-01.png" alt="Wallabag Install"><br>
+<img src="/images/2019-08-07-wallabag-install-02.png" alt="Wallabag Install"></p>
 <p>間違ってしまったり、変更をするときは<code>parameters.yml</code> を編集します。</p>
-
 <pre><code>pi@tacos:~ $ sudo vi /var/www/wallabag/app/config/parameters.yml
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <p>インストール終了後
-<a href="http://IP_or_DOMAIN_NAME">http://IP_or_DOMAIN_NAME</a>
+http://IP_or_DOMAIN_NAME
 にてアクセスします。</p>
-
-<p><img src="/images/2019-08-07-wallabag-login-00.png" alt="Wallabag Login" /></p>
-
+<p><img src="/images/2019-08-07-wallabag-login-00.png" alt="Wallabag Login"></p>
 <p>設定を行った時に入力した、アドミンアカウントでログインし、新しいユーザーを追加します。</p>
-
 <p>クライアント・アプリも豊富ですので、様々な端末で情報共有ができます。</p>
-
-<p><img src="/images/2019-08-07-wallabag-main-00.png" alt="Wallabag" /></p>
-
+<p><img src="/images/2019-08-07-wallabag-main-00.png" alt="Wallabag"></p>
 <p>こんな感じの画面です。ポケットと似てますね。</p>
 
 				

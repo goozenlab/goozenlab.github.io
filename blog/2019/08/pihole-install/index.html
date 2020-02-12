@@ -156,71 +156,46 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-09-05-pihole.png" alt="Pihole" /></p>
-
+                <p><img src="/images/2019-09-05-pihole.png" alt="Pihole"></p>
 <p>アドブロックかつフィルターリングプロキシーソフトの<strong>Privoxy</strong>が敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、
 評判が高くインストールや設定も簡単な<strong>pihole</strong>を追加導入しました。</p>
-
 <p>パイゼロではスムースにインストールされるも、パイ３ではなーーんかうまくいかなかったので再挑戦になります。</p>
-
 <p>インストール作業はスクリプトで一発インストールです。</p>
-
 <pre><code>$ curl -sSL https://install.pi-hole.net | bash
-</code></pre>
-
-<p>固定のip番号が必要になります。
+</code></pre><p>固定のip番号が必要になります。
 web管理画面はおしゃれな感じで悪くないのですが、
 nginxで設定するのも少し面倒ですし、、
 コンソールのステータスモニターがあるので、インストールはしません。
 （画像が小さくてスンマセン。。）</p>
-
-<p><img src="/images/2019-08-03-pihole-install-00.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-01.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-02.png" alt="Pihole Inatall" /><br />
-<img src="/images/2019-08-03-pihole-install-03.png" alt="Pihole Inatall" /></p>
-
+<p><img src="/images/2019-08-03-pihole-install-00.png" alt="Pihole Inatall"><br>
+<img src="/images/2019-08-03-pihole-install-01.png" alt="Pihole Inatall"><br>
+<img src="/images/2019-08-03-pihole-install-02.png" alt="Pihole Inatall"><br>
+<img src="/images/2019-08-03-pihole-install-03.png" alt="Pihole Inatall"></p>
 <p>で、途中でファイルのダウンロードができないとエラーが出ました。</p>
-
-<p><img src="/images/2019-08-03-pihole-install-error.png" alt="Pihole Inatall" /></p>
-
+<p><img src="/images/2019-08-03-pihole-install-error.png" alt="Pihole Inatall"></p>
 <p>ちょっと見てみると、resolveconf で勝手にDNSの設定が書き換えられてしまってました。
 DNSが自分に向けられてて、そこから先に向かわないようです。
 （多分中途半端に動作・設定中ということか？）
 <code>resolvconf.conf</code>をルーターのDNSに変更し再度インストール。</p>
-
 <pre><code>pi@tacos:~ $ sudo vi /etc/resolvconf.conf
 
 name_servers=10.0.0.20  #とりあえずルーターのDNSに変更
 
-</code></pre>
-
-<p>で、ファイルも無事にダウンロードされ、インストールが進み、</p>
-
-<p><img src="/images/2019-08-03-pihole-install-04.png" alt="Pi-hole Inatall" /></p>
-
+</code></pre><p>で、ファイルも無事にダウンロードされ、インストールが進み、</p>
+<p><img src="/images/2019-08-03-pihole-install-04.png" alt="Pi-hole Inatall"></p>
 <p>ことなく終了しました。</p>
-
 <p>コンソール画面でのステータス表示は<code>pihole -c</code>で行うことができます。
 ウェブの管理画面を通してする設定は、このコマンドで行うことができます。</p>
-
 <pre><code>$ pihole -c 
-</code></pre>
-
-<p><img src="/images/2019-08-03-pihole-cosole.png" alt="Pihole Inatall" /></p>
-
+</code></pre><p><img src="/images/2019-08-03-pihole-cosole.png" alt="Pihole Inatall"></p>
 <h2 id="ローカルdns">ローカルDNS</h2>
-
 <p>dmsmasqで動かしていた、ローカル内でのDNS設定もそのまま引き継がれました。
 設定の修正やら必要だと思っていたのですが、何も必要ありませんでした。
 /etc/hostsのファイルも読み込まれているようです。ありがたや。</p>
-
 <p>まぁ、広告ありのページをみてると、ピカピカしすぎて、
 目が痛くなります。「なんか賑やかだね〜、ここは。」みたいな地方から東京に出てきた人みたいな感じ。
 （とはいえこのサイトもアドセンスの広告も貼っているんですけどね。。）
 これですっきりしました。</p>
-
 <p>※ 現在はパイ３Bで動かしていますが、パイゼロで運用して一家に一台あると良いですよ、実家に一台導入予定。ムチャ、オススメです。（ムチャって、Muchasと似てるな、とふと書いてて思った。）</p>
 
 				

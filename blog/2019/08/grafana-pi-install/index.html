@@ -156,19 +156,13 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-08-10-grafana-00.png" alt="Grafana Install" /></p>
-
+                <p><img src="/images/2019-08-10-grafana-00.png" alt="Grafana Install"></p>
 <h2 id="インストール">インストール</h2>
-
 <p>バスターのパッケージではかなりの追加パッケージが必要なのですが、
 開発会社レポジトリーのバージョンは追加のパッケージも全くありません。
 心配がよぎるがインストールは問題なく終了。</p>
-
 <p>鍵を登録、<code>apt source</code>の追加、パッケージのアップデート、
 そしてインストールの手順になります。</p>
-
 <pre><code>root@raspberrypi:~ # sudo -Es
 root@raspberrypi:~ # curl https://packages.grafana.com/gpg.key | apt-key add -
 root@raspberrypi:~ # vi /etc/apt/sources.list.d/grafana.list
@@ -177,34 +171,22 @@ deb https://packages.grafana.com/oss/deb stable main
 
 root@raspberrypi:~ # apt update
 root@raspberrypi:~ # apt install grafana
-</code></pre>
-
-<p>サービスを起動時に登録、そしてスタートします。</p>
-
+</code></pre><p>サービスを起動時に登録、そしてスタートします。</p>
 <pre><code>root@raspberrypi:~ # systemctl enable grafana-server
 root@raspberrypi:~ # systemctl start grafana-server
-</code></pre>
-
-<p><code>http://&lt;IP_ADDRESS&gt;:3000/login</code>にアクセスします。
+</code></pre><p><code>http://&lt;IP_ADDRESS&gt;:3000/login</code>にアクセスします。
 pi0ではアクセスできず、もしやと思ってSDカードをpi3に入れ替えて動かしてみると、
 アクセス画面に到着！。。。（キャッシュの問題なのか何なのか。。）
 まっ、エラーもなく、珍しく何事もなく無事終了。</p>
-
 <ul>
 <li>ID : PASSWD = admin : admin</li>
 </ul>
-
 <p>にてログインします。</p>
-
-<p><img src="/images/2019-07-12-grafana-login.png" alt="Grafana Install" /></p>
-
+<p><img src="/images/2019-07-12-grafana-login.png" alt="Grafana Install"></p>
 <p>新しいパスワードを入力して継続。（スキップすることも可能ですが、非推奨。）</p>
-
-<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Install" /></p>
-
+<p><img src="/images/2019-07-12-grafana-main.png" alt="Grafana Install"></p>
 <p>サーバーのモニタリング、シャオミの気温計をつなげたりして
 IOTのモニタリングに使う予定です。</p>
-
 <p>参照：<a href="http://docs.grafana.org/installation/debian/">Install on Debian</a></p>
 
 				

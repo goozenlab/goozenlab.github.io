@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 04 Feb 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 18:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>動画を撮って出し</title>
+      <link>https://goozenlab.com/blog/2020/02/obs-kdenline/</link>
+      <pubDate>Wed, 12 Feb 2020 18:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/obs-kdenline/</guid>
+      <description>ほとんど撮って出しのシンプルな Gnome デスクトップ動画をアップしました。 ショートカットやウィンドウ配置の動きなどを追ってます。 ランチャーから設定の内部までいけるし、 キ</description>
+    </item>
     
     <item>
       <title>Mozcの環境構築まとめ</title>

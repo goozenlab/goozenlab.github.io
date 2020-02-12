@@ -143,60 +143,37 @@
 				</p>
             </div>
             <div class="post-content">
-                
-
-<p>2020年1月下旬に行ったBTRFSパーティションにArchをインストールした際のメモ。</p>
-
+                <p>2020年1月下旬に行ったBTRFSパーティションにArchをインストールした際のメモ。</p>
 <p>一気にミニマムなGnomeまで、
 ネットワークやディスプレイの設定もせずにエラーなくインストールできました。
 ボリュームキーや照度設定キーも使えるし、
 ちょっとした調整は必要ですが、面倒な設定は今の所必要はないようです。</p>
-
 <p>以外にも簡単で拍子抜けちょっと驚き。
 （以前試した時はもっと面倒だったような気が。。）</p>
-
-<!-- もし間違いを見つけた方がいらっしゃたらご連絡のほど、 -->
-
-<hr />
-
+<!-- raw HTML omitted -->
+<hr>
 <p>インストールメディアの作成はお馴染みのEtcherを使う。</p>
-
 <p>Thinkpad T480sを使っているので、ネットワークケーブルをつなぎ、
 起動後F12を押しブートメニュー、USBスティックで起動。</p>
-
 <p>自動でログインされる。</p>
-
 <pre><code>root@archiso $
-</code></pre>
-
-<h2 id="サブボリュームの作成-マウント">サブボリュームの作成・マウント</h2>
-
+</code></pre><h2 id="サブボリュームの作成マウント">サブボリュームの作成・マウント</h2>
 <p>すでに、BTRFSでのフォーマットがされているので、
 パーティションをマウントしてArchのためのサブボリュームを作る。</p>
-
 <pre><code>root@archiso $ mount /dev/nvme0n1p5 /mnt
 root@archiso $ btrfs subvolume create /mnt/@arch
-</code></pre>
-
-<p>※ ちなみに削除は
+</code></pre><p>※ ちなみに削除は
 <code>btrfs subvolume delete /mnt/@arch</code>
 、パーティションのフォーマットは
 <code>mkfs.btrfs -L “Linuxes” /dev/nvme0n1p5</code></p>
-
 <p>/homeと/var/cache/pacman/pkgは共有しているので、
 すでに
 @debian, @manjaro, @pkg, @home
 がある。</p>
-
 <pre><code>root@archiso $ cat /mnt/@manjaro/etc/fstab
-</code></pre>
-
-<p>でマンジャーロで使っているマウントオプションを表示しておく。</p>
-
+</code></pre><p>でマンジャーロで使っているマウントオプションを表示しておく。</p>
 <p>rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@</p>
-
 <p>そして、マウントを解除、必要なディレクトリを作成、インストール先をマウントする。</p>
-
 <pre><code>root@archiso $ umount /mnt
 root@archiso $ mount /dev/nvme0n1p5 /mnt -o rw,noatime,compress=lzo,ssd,space_cache,commit=120,subvol=@arch
 
@@ -204,64 +181,37 @@ root@archiso $ mkdir -p /mnt/home
 root@archiso $ mkdir -p /mnt/var/cache/pacman/pkg
 root@archiso $ mount /dev/nvme0n1p5 /mnt/home -o rw,noatime,,,,,subvol=@home
 root@archiso $ mount /dev/nvme0n1p5 /mnt/var/cache/pacman/pkg -o rw,noatime,,,,,subvol=@pkg
-</code></pre>
-
-<p>そしてブートパーティションのEFIをマウントするのを忘れないよう。</p>
-
+</code></pre><p>そしてブートパーティションのEFIをマウントするのを忘れないよう。</p>
 <pre><code>root@archiso $ mkdir -p /mnt/boot/efi
 root@archiso $ mount /dev/nvme0n1p1 /mnt/boot/efi
-</code></pre>
-
-<h2 id="インストール作業">インストール作業</h2>
-
+</code></pre><h2 id="インストール作業">インストール作業</h2>
 <p>エラーが出たのでKeyringをリフレッシュ、
 そして出先でもあるのでスピードの速いミラーサイト先を抜き出します。（pacman-contribにあるrankmirrorsを使います。）</p>
-
 <pre><code>root@archiso $ pacman -S archlinux-keyring pacman-contrib
 root@archiso $ cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 root@archiso $ /usr/bin/rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup &gt; /etc/pacman.d/mirrorlist
 root@archiso $ pacman -Syy
-</code></pre>
-
-<p>ベース・システムをインストール。とりあえず、ノーマルのカーネル（v5.4.x)。
+</code></pre><p>ベース・システムをインストール。とりあえず、ノーマルのカーネル（v5.4.x)。
 （血をみる環境にするつもりならlinux-zenかな。）<del>linux-headersは通常必要ないと思いますが、DKMSにて必要なので加えておきます。</del></p>
-
 <pre><code>root@archiso $ pacstrap /mnt base linux
-</code></pre>
-
-<p>fstabを書き込み、subvol表記がダブるので修正します。
+</code></pre><p>fstabを書き込み、subvol表記がダブるので修正します。
 swapは後から追加する。</p>
-
 <p>※　swapはfstabに記述しなくても勝手に有効化されます。（何故？）</p>
-
 <pre><code>root@archiso $ genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
 root@archiso $ nano /mnt/etc/fstab
-</code></pre>
-
-<p>もう一度更新するかもしれないので、
+</code></pre><p>もう一度更新するかもしれないので、
 先ほどのミラーサイトリストをインストール先にもコピーしておきます。
 （ミラーサイト設定はインストール先に引き継がれています。）</p>
-
 <pre><code>root@archiso $ /etc/pacman.d/mirrorlist.backup /mnt/etc/pacman.d/mirrorlist.backup
-</code></pre>
-
-<h2 id="システムの基本設定">システムの基本設定</h2>
-
+</code></pre><h2 id="システムの基本設定">システムの基本設定</h2>
 <p>システムに入ります。
 nanoもviもないのでお好みのものをインストール。</p>
-
 <pre><code>root@archiso $ arch-chroot /mnt
 root@archiso $ pacman -S vi
-</code></pre>
-
-<h3 id="ロケーション-ハードウェアクロック-ホスト名の設定">ロケーション、ハードウェアクロック、ホスト名の設定。</h3>
-
+</code></pre><h3 id="ロケーションハードウェアクロックホスト名の設定">ロケーション、ハードウェアクロック、ホスト名の設定。</h3>
 <pre><code>root@archiso $ ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 root@archiso $ hwclock --systohc --utc
-</code></pre>
-
-<h3 id="ロケールの設定">ロケールの設定</h3>
-
+</code></pre><h3 id="ロケールの設定">ロケールの設定</h3>
 <pre><code>root@archiso $ vi /etc/locale.gen
 root@archiso $ locale-gen
 
@@ -274,26 +224,17 @@ root@archiso $ vi /etc/hosts
 127.0.0.1   localhost
 ::1     localhost
 127.0.1.1   guiness.localdomain guiness
-</code></pre>
-
-<h3 id="btrfsのための調整">BTRFSのための調整</h3>
-
+</code></pre><h3 id="btrfsのための調整">BTRFSのための調整</h3>
 <p>fsckを抜き、btrfsを追加します。</p>
-
 <pre><code>root@archiso $ pacman -S btrfs-progs
 root@archiso $ vi /etc/mkinitcpio.conf
 
 52行目：HOOKS=( base … -fsck, +btrfs)
 
 root@archiso $ mkinitcpio -P
-</code></pre>
-
-<p>ファームウェアが無いと警告が出ますが後々インストールするので問題はないです。</p>
-
+</code></pre><p>ファームウェアが無いと警告が出ますが後々インストールするので問題はないです。</p>
 <h3 id="ユーザーとパスワード">ユーザーとパスワード</h3>
-
 <p>パスワードとユーザーの設定、wheelユーザーにsudoの権限を与える。</p>
-
 <pre><code>root@archiso $ passwd
 root@archiso $ useradd -m -G users,wheel,storage,power,network -s /bin/bash -c “NAME” jin
 root@archiso $ passwd jin
@@ -301,89 +242,42 @@ root@archiso $ vi /etc/sudores
 
 wheelの所をコメントを外す
 
-</code></pre>
-
-<h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
-
+</code></pre><h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
 <p>ブートマネージャーGrub関連のインストール。</p>
-
 <pre><code>root@archiso $ pacman -S dosfstools efibootmgr grub
 root@archiso $ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch 
-</code></pre>
-
-<p>設定の書き出し。</p>
-
+</code></pre><p>設定の書き出し。</p>
 <pre><code>root@archiso $ grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre>
-
-<h2 id="gnomeデスクトップ">Gnomeデスクトップ</h2>
-
+</code></pre><h2 id="gnomeデスクトップ">Gnomeデスクトップ</h2>
 <p>ここから一気にGnomeのデスクトップのインストールまで行う。
 gnomeのパッケージにほとんどのものが入っているようですが、ビデオドライバーだけ追加インストール。
 そして、ログインマネージャーとネットワークマネージャーを起動時に動くように登録します。
 これでどれを使えば良いのか等、よくわからなかったArchでのNetwork設定の煩わしさから解放される。</p>
-
 <p>そして取り替えて入っているWifiのドライバーも追加でインストールしておく。通常の端末であれば必要はないと思います。
 とりあえず最低限の環境を構築完了です。</p>
-
 <pre><code>root@archiso $ pacman -S gnome xf86-video-intel
 root@archiso $ systemctl enable gdm
 root@archiso $ systemctl enable NetworkManager
 
 root@archiso $ pacman -S broadcom-wl
-</code></pre>
-
-<h2 id="終了">終了</h2>
-
+</code></pre><h2 id="終了">終了</h2>
 <p>chrootより抜けて再起動。有線LANから解放。</p>
-
 <pre><code>root@archiso $ exit
 root@archiso $ reboot
-</code></pre>
-
-<p>ArchのインストールはNetworkの設定が難しいと思ってて、
+</code></pre><p>ArchのインストールはNetworkの設定が難しいと思ってて、
 敬遠しがちであったけれど、このかたちで一発で行けました。
 （多分他のWMでも同じだと思う。）</p>
-
 <p>音は出ないと思っていましたが普通にユーチューブも再生できました。
 照度・音量調整キーも問題く動作します。
 ほとんど素の状態なので他のディストリビューションと比べてもメチャ快適に動いています。</p>
-
 <p>デビアンをメインにしようと思ってたけど、こっちにしようかなちょっと考えもの。</p>
-
 <p>日本語環境も簡単に構築できました。
 ただし、設定は/etc/enviormentに書いておく必要があります。</p>
-
 <p>（つづく）</p>
-
-<!--
-
-
-root@archiso $ pacman -S pacman-contrib
-root@archiso $ cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-root@archiso $ /usr/bin/rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
-
-
-
-yay install
-
-$ sudo pacman -S git wget yajl
-$ cd /tmp
-
-# Do not use sudo...you if you do, your download will be owned by root but 
-# you cannot make the package as root
-
-$ git clone https://aur.archlinux.org/yay.git
-$ cd yay
-$ makepkg -si
-
-$ yay -S pamac-aur
-
-It will ask for some inputs.  I selected 1.) pamac-aur
-I removed dependencies after install
-I selected None on the next prompt.
-
--->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote>
 
 				
 

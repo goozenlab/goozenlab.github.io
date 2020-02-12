@@ -156,37 +156,24 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Kde NeonのISOファイルを回線が不安定なので配布元でないところから配布されているトレントを使ってダウンロードしました。
+                <p>Kde NeonのISOファイルを回線が不安定なので配布元でないところから配布されているトレントを使ってダウンロードしました。
 まぁ大丈夫でしょうが、Varification：検証を行いました。</p>
-
-<p><img src="/images/2020-01-17-mac-gpg-suite.png" alt="GPG Suite" /></p>
-
+<p><img src="/images/2020-01-17-mac-gpg-suite.png" alt="GPG Suite"></p>
 <p>gpgでファイルを確認します。</p>
-
 <p>マックにてまずは、GPP TOOLが必要です。サイト
 <a href="https://gpgtools.org/">https://gpgtools.org/</a>
 からダウンロードもできますが、brewで一発です。</p>
-
 <pre><code>brew cask install gpg-suite
-</code></pre>
-
-<h2 id="検証">検証</h2>
-
+</code></pre><h2 id="検証">検証</h2>
 <p>ファイルを検証する場合,そのファイルと同時に署名ファイルも同時にダウンロードする必要があります。</p>
-
 <p>今回は以下の二つ</p>
-
 <ul>
 <li>neon-user-20200102-1116.iso</li>
 <li>neon-user-20200102-1116.iso.sig</li>
 </ul>
-
 <p>確認方法は
 <code>gpg --verify file.sig file</code>
 で行います。署名されたfileがfile.sigと同じディレクトリにある場合,はfileの指定を省略できます.</p>
-
 <pre><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
 gpg: assuming signed data in 'neon-user-20200102-1116.iso'
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
@@ -195,20 +182,14 @@ gpg: key DEACEA00075E1D76: new key but contains no user ID - skipped
 gpg: Total number processed: 1
 gpg:           w/o user IDs: 1
 gpg: Can't check signature: No public key
-</code></pre>
-
-<p>相手の公開鍵が見当たらないのでダウンロードします。<br />
+</code></pre><p>相手の公開鍵が見当たらないのでダウンロードします。<br>
 <code>RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76</code>
 の鍵アドレスを使ってキーサーバーに問い合わせをします。</p>
-
 <pre><code>jin@guiness: $ gpg --keyserver keys.gnupg.net --recv-key 348C8651206633FD983A8FC4DEACEA00075E1D76
 gpg: key DEACEA00075E1D76: public key &quot;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&quot; imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-</code></pre>
-
-<p>そしてもう一度実行します。今回はエラーなく終了。</p>
-
+</code></pre><p>そしてもう一度実行します。今回はエラーなく終了。</p>
 <pre><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
 gpg: assuming signed data in 'neon-user-20200102-1116.iso'
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
@@ -218,7 +199,6 @@ gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 348C 8651 2066 33FD 983A  8FC4 DEAC EA00 075E 1D76
 </code></pre>
-
 				
 
 <h3>See Also</h3>

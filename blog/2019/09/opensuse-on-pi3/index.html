@@ -156,57 +156,39 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2019-08-31-opensuse-00.png" alt="openSuse" /></p>
-
+                <p><img src="/images/2019-08-31-opensuse-00.png" alt="openSuse"></p>
 <p>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、
 パイの64bitバージョンも配布されているので試してみました。</p>
-
-<div class="attention"><b>結果</b>：wifiカードが認識されず、うまくいかなかったです。チャレンジしてみたい方は以下の方法がサイトに載っていた方法です。</div>
-
+<!-- raw HTML omitted -->
 <p><a href="https://www.suse.com/c/opensuse-raspberry-pi-3-zero-functional-system-easy-steps/">https://www.suse.com/c/opensuse-raspberry-pi-3-zero-functional-system-easy-steps/</a></p>
-
 <p>インストールのプロセスは他のOSと同じです。</p>
-
 <ul>
 <li>イメージをダウンロード</li>
 <li>SDカードに焼き</li>
 <li>ルーターとパイを有線でつなぎ</li>
 <li>起動</li>
 </ul>
-
 <p>うまく行かなかったので詳細は省略させていただきます。</p>
-
 <p>初期状態ではWifiのインターフェイスは認識されないので有線でアクセスします。
 SSHではアクセスが可能なので、ヘッドレスでインストールは可能です。</p>
-
 <pre><code>jin@gallo:~ $ ssh root@10.0.0.226
 Password:
 Have a lot of fun...
 localhost:~ #
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>Login / Passwd : root / linux</li>
 </ul>
-
 <p>Wifiを有効化するプロセスは以下のようになります。</p>
-
 <pre><code>localhost:~ # vi nano/etc/dracut.conf.d/raspberrypi_modules.conf
 
 add_drivers+=&quot; sdhci-iproc bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
 # Workaround for Wifi
 #omit_drivers+=&quot; sdhci-iproc&quot;
-</code></pre>
-
-<p>一行目の<code>sdhci-iproc</code>を削除して、最後の行のコメントを取り、以下のように書き換えます。</p>
-
+</code></pre><p>一行目の<code>sdhci-iproc</code>を削除して、最後の行のコメントを取り、以下のように書き換えます。</p>
 <pre><code>add_drivers+=&quot; bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
 # Workaround for Wifi
 omit_drivers+=&quot; sdhci-iproc&quot;
-</code></pre>
-
-<p>そして、<code>mkinitrd -f</code>のコマンドを走らせます。</p>
-
+</code></pre><p>そして、<code>mkinitrd -f</code>のコマンドを走らせます。</p>
 <pre><code>localhost:~ # mkinitrd -f
 Creating initrd: /boot/initrd-4.20.13-1-default
 dracut: Executing: /usr/bin/dracut --logfile /var/log/YaST2/mkinitrd.log --force /boot/initrd-4.20.13-1-default 4.20.13-1-default
@@ -224,19 +206,14 @@ dracut: *** Creating image file '/boot/initrd-4.20.13-1-default' ***
 dracut: *** Creating initramfs image file '/boot/initrd-4.20.13-1-default' done ***
 
 localhost:~ # reboot
-</code></pre>
-
-<p>再起動します。
+</code></pre><p>再起動します。
 ログインし<code>yast</code>という設定ツールを起動します。Wifiカードは認識されているはずですが、
 見当たらず、、、（画像も撮り忘れる）</p>
-
 <pre><code>jin@gallo:~ $ ssh root@10.0.0.226
 Password:
 Have a lot of fun...
 localhost:~ # yast
-</code></pre>
-
-<p>撃沈ということであっさり撤退。</p>
+</code></pre><p>撃沈ということであっさり撤退。</p>
 
 				
 

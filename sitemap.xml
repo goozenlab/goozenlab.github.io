@@ -3,48 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/categories/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/manjaro/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/obs/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/02/obs-kdenline/</loc>
+    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/tags/arch/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/debian/</loc>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/linux/</loc>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/macos/</loc>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/02/standardnotes/</loc>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</loc>
     <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/debian/</loc>
-    <lastmod>2020-02-04T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/manjaro/</loc>
-    <lastmod>2020-02-04T08:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -90,11 +115,6 @@
   <url>
     <loc>https://goozenlab.com/computing/</loc>
     <lastmod>2020-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/linux/</loc>
-    <lastmod>2020-01-23T08:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -494,11 +514,6 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</loc>
-    <lastmod>2019-09-15T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/macos/</loc>
     <lastmod>2019-09-15T09:30:00+07:00</lastmod>
   </url>
   
@@ -3464,6 +3479,11 @@
   
   <url>
     <loc>https://goozenlab.com/computing/nomad-goods/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/1/01/</loc>
     <priority>0</priority>
   </url>
   

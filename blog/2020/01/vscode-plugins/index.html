@@ -154,97 +154,86 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>ちょっとした自分のメモとして残します。
+                <p>ちょっとした自分のメモとして残します。
 導入したプラグインと
 ちょっとしたショートカットをまとめる。</p>
-
 <h2 id="general">General</h2>
-
-<ol>
-<li><p>Icon表示が見た目が少し華やかになります。ちょっとうざったいかも。<br />
-vscode-icons: <a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons">https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons</a></p></li>
-
-<li><p>タブや空白が入っている箇所に対して赤く強調表示をするようにしてくれます。余計な空白が見て取れます。<br />
-Trailing Spaces: <a href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces">https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces</a><br />
+<ol start="0">
+<li>
+<p>Icon表示が見た目が少し華やかになります。ちょっとうざったいかも。<br>
+vscode-icons: <a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons">https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons</a></p>
+</li>
+<li>
+<p>タブや空白が入っている箇所に対して赤く強調表示をするようにしてくれます。余計な空白が見て取れます。<br>
+Trailing Spaces: <a href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces">https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces</a><br>
 ちなみに、以下の設定をすればファイル保存時に自動で末尾の空白を削除してくれる。</p>
-
+</li>
+</ol>
 <pre><code>$ vi ~/.vscode/settings.jason
 
 {
-&quot;files.trimTrailingWhitespace&quot;: true
+    &quot;files.trimTrailingWhitespace&quot;: true
 }
-</code></pre></li>
-
-<li><p>ブックマークを付けて手軽に移動、ちょっとしたブレークポイントみたいな感じで使える？<br />
-Bookmarks: <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks">https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks</a><br />
+</code></pre><ol start="2">
+<li>
+<p>ブックマークを付けて手軽に移動、ちょっとしたブレークポイントみたいな感じで使える？<br>
+Bookmarks: <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks">https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks</a><br>
 ショートカットキー動作</p>
-
 <ul>
 <li>［ Command ］+［ Option ］+［ k ］ブックマークを作成</li>
 <li>［ Command ］+［ Option ］+［ l ］  次のブックマークに移動</li>
 <li>［ Command ］+［ Option ］+［ j ］  前のブックマークに移動</li>
-</ul></li>
-
-<li><p>入れ子にした括弧についても階層ごとに水色や黄色や紫に色付けしてくれます。分かりやすくなるとも言えるし、ちょっと目がチカチカする感じもある。<br />
-Bracket Pair Colorizer: <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer</a></p></li>
-
-<li><p>FIXMEとかTODOをハイライトしてくれます。Xcodeで使っている記述なので入れておく。<br />
-ToDo highlite: <a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight</a></p></li>
+</ul>
+</li>
+<li>
+<p>入れ子にした括弧についても階層ごとに水色や黄色や紫に色付けしてくれます。分かりやすくなるとも言えるし、ちょっと目がチカチカする感じもある。<br>
+Bracket Pair Colorizer: <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer</a></p>
+</li>
+<li>
+<p>FIXMEとかTODOをハイライトしてくれます。Xcodeで使っている記述なので入れておく。<br>
+ToDo highlite: <a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight</a></p>
+</li>
 </ol>
-
 <h3 id="html">HTML</h3>
-
 <p>もうそんなに書かなくなったhtml関連の為にインストールしたプラグイン。
 どれも定番かつマストかな。他にもいっぱいある。</p>
-
 <ol>
-<li><p>自動的に終了タグを生成してくれるプラグイン<br />
-Auto Close Tag: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag　">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag　</a></p></li>
-
-<li><p>開始タグを修正したときに、自動的に対になる終了タグを修正してくれるプラグイン<br />
-Auto Rename Tag: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag</a></p></li>
-
-<li><p>CSSクラスを指定するときに、入力補完してくれるのがこのプラグイン<br />
-IntelliSense for CSS class names in HTML: <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion</a></p></li>
-
-<li><p>カラーコードに色をつけてくれます。特にwebページの編集時に有効かな。<br />
-Color highlight: <a href="https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight">https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight</a></p></li>
-
-<li><p>HTML向けのスニペット。ぱぱっとコードを追加してくれます。<br />
-HTMLSnippets: <a href="https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets">https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets</a></p></li>
+<li>
+<p>自動的に終了タグを生成してくれるプラグイン<br>
+Auto Close Tag: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag</a>　</p>
+</li>
+<li>
+<p>開始タグを修正したときに、自動的に対になる終了タグを修正してくれるプラグイン<br>
+Auto Rename Tag: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag</a></p>
+</li>
+<li>
+<p>CSSクラスを指定するときに、入力補完してくれるのがこのプラグイン<br>
+IntelliSense for CSS class names in HTML: <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion</a></p>
+</li>
+<li>
+<p>カラーコードに色をつけてくれます。特にwebページの編集時に有効かな。<br>
+Color highlight: <a href="https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight">https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight</a></p>
+</li>
+<li>
+<p>HTML向けのスニペット。ぱぱっとコードを追加してくれます。<br>
+HTMLSnippets: <a href="https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets">https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets</a></p>
+</li>
 </ol>
-
-<hr />
-
+<hr>
 <h2 id="command">Command</h2>
-
 <h3 id="直近閉じたタブを開き直す">直近閉じたタブを開き直す</h3>
-
 <p>⌘ + ⇧ + T</p>
-
 <h3 id="コードの自動フォーマット-prettier以外">コードの自動フォーマット (Prettier以外)</h3>
-
 <p>⌃ + ⌥ + F</p>
-
 <h3 id="選択行の上下移動">選択行の上下移動</h3>
-
 <p>⌥ + 上下の矢印キー</p>
-
-<h3 id="zen-集中モード">Zen：集中モード</h3>
-
+<h3 id="zen集中モード">Zen：集中モード</h3>
 <p>⌘ + K （押した後）　Z</p>
-
-<hr />
-
+<hr>
 <h2 id="tips">Tips</h2>
-
 <h3 id="cpu使用の軽減">CPU使用の軽減</h3>
-
 <p>サイズの大きいファイルがあるとCPU使用率(CodeHelper)が高くなってしまうことがある。
 以下のオプションで参照から除外するディレクトリを設定しておくと良い。</p>
-
 <pre><code>$ vi ~/.vscode/settings.jason
 
 {
@@ -252,21 +241,14 @@ HTMLSnippets: <a href="https://marketplace.visualstudio.com/items?itemName=abusa
             &quot;**/images/**&quot;: true
     }
 }
-</code></pre>
-
-<h3 id="起動時に無題ファイルを開く">起動時に無題ファイルを開く</h3>
-
+</code></pre><h3 id="起動時に無題ファイルを開く">起動時に無題ファイルを開く</h3>
 <pre><code>$ vi ~/.vscode/settings.jason
 
 {
     &quot;workbench.startupEditor&quot;: &quot;newUntitledFile&quot;
 }
-</code></pre>
-
-<h3 id="タイトルバーの色をプロジェクトごとに違うものにする">タイトルバーの色をプロジェクトごとに違うものにする</h3>
-
+</code></pre><h3 id="タイトルバーの色をプロジェクトごとに違うものにする">タイトルバーの色をプロジェクトごとに違うものにする</h3>
 <p>プロジェクト・ディレクトリーにある<code>.vscode/settings.jason</code>に以下の4行を追加追加するこで可能です。</p>
-
 <pre><code>$ vi ~/PROJECT_DIRECTORY/.vscode/settings.jason
 
 {
@@ -277,15 +259,11 @@ HTMLSnippets: <a href="https://marketplace.visualstudio.com/items?itemName=abusa
         // &quot;activityBar.foreground&quot;: &quot;#000000&quot;    // 左アクティブバーの文字色
     }
 }
-</code></pre>
-
-<p>参照：<a href="https://qiita.com/kabosusoba/items/3afad300ef1ea9ddd50b">https://qiita.com/kabosusoba/items/3afad300ef1ea9ddd50b</a></p>
-
+</code></pre><p>参照：https://qiita.com/kabosusoba/items/3afad300ef1ea9ddd50b</p>
 <p>と色々とカスタマイズも可能、
 <code>.vscode/settings.jason</code>
 を編集すればさらに細かく設定できます。
 そして、作業に合わせたスニペットなどを作成すればさらに使いやすくなるでしょう。</p>
-
 <p>とりあえずスタートとしては悪くないかな。</p>
 
 				

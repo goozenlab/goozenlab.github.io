@@ -156,29 +156,20 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>TLPことAdvance Power Manager for Linux
+                <p>TLPことAdvance Power Manager for Linux
 をデビアンではすでにインストールしましたが、
 Manjaroにもインストールします。
 ついでにバッテリーの持ち時間もチェックもしました。</p>
-
 <p>BIOSからの設定を読み込んでくるようなのか問題なく動いているのですがインストール・再設定をします。</p>
-
 <p>さて、Manjaro-Thinkpadですが、
 すでにTLP自体はインストールされているようなので、追加にいくつかのパッケージをインストール。
 設定を行い、コンフリクトを起こすサービスを停止します。</p>
-
 <pre><code>jin@guiness:~$ sudo pacman -S tlp tlp-rdw acpi_call smartmontools
 jin@guiness:~$ sudo tlp-stat
 jin@guiness:~$ sudo vi /etc/default/tlp
 jin@guiness:~$ sudo systemctl mask systemd-rfkill.service
-</code></pre>
-
-<p>※ tp_smapi-dkms (AUR)はThinpadようにも関わらず動きませんでした。</p>
-
+</code></pre><p>※ tp_smapi-dkms (AUR)はThinpadようにも関わらず動きませんでした。</p>
 <p>tlp-statで状況を覗くとこんな感じになっています。</p>
-
 <pre><code>+++ Battery Features: Charge Thresholds and Recalibrate
 natacpi    = active (data, thresholds)
 tpacpi-bat = inactive (kernel module 'acpi_call' not installed)
@@ -199,11 +190,8 @@ tp-smapi   = inactive (ThinkPad not supported)
 
 Charge                                                      =   59.3 [%]
 Capacity                                                    =   98.1 [%]
-</code></pre>
-
-<p>smartmontoolsもインストールしたのでSSDの情報も取ることできます。
+</code></pre><p>smartmontoolsもインストールしたのでSSDの情報も取ることできます。
 割と熱を持つパーツだと思っていましたが思ったよりクールなやつでした。</p>
-
 <pre><code>/dev/nvme0n1:
   Type      = NVMe
   Model     = SPCC M.2 PCIe SSD
@@ -223,13 +211,9 @@ Capacity                                                    =   98.1 [%]
     Power On Hours:                     737
     Unsafe Shutdowns:                   230
     Media and Data Integrity Errors:    0
-</code></pre>
-
-<h2 id="バッテリーの微調整">バッテリーの微調整</h2>
-
+</code></pre><h2 id="バッテリーの微調整">バッテリーの微調整</h2>
 <p>ついでと言っては何ですが数カ月ごとに行うのが良いとされているバッテリー再調整を行う。
 （電源につないだままにしておく必要があります。）</p>
-
 <pre><code>$ sudo tlp recalibrate
 
 Currently discharging battery BAT0:
@@ -241,30 +225,21 @@ power              =  10828 [mW]
 state              = Discharging
 force discharge    = 1
 Press Ctrl+C to cancel.
-</code></pre>
-
-<p>放電が行われた後、一気に100％まで充電が行われます。</p>
-
+</code></pre><p>放電が行われた後、一気に100％まで充電が行われます。</p>
 <p>9時頃からスタート、
 スクショを時間おきに撮ってバッテリーチェック。</p>
-
 <p>無線LANをつないでちょっとした文章の作成など、
 途中外へ果物を買いに行ったり、コーヒーを作ったりしましたが、
 計算してみると</p>
-
 <p>１時間あたりの消費電力（FULL: 57000mWh)：</p>
-
 <ul>
 <li>8500mWh [6.7h] Web + Text</li>
 <li>11000mWh [5.2h] YOUTUBE</li>
 <li>19500mWh [2.9h] ファイルの解凍</li>
 <li>18000mWh [3.2h] VLCで動画再生</li>
 </ul>
-
 <p>と、Hackintosh環境とそんなに変わらないようです。Windowsでもこんなん感じなのですかね。。</p>
-
 <p>再調整終了後の状況は</p>
-
 <pre><code>+++ ThinkPad Battery Status: BAT0 (Main / Internal)
 /sys/class/power_supply/BAT0/energy_now                     =  55800 [mWh]
 /sys/class/power_supply/BAT0/status                         = Full
@@ -275,14 +250,10 @@ tpacpi-bat.BAT0.forceDischarge                              =      0
 
 Charge                                                      =  100.0 [%]
 Capacity                                                    =   97.9 [%]
-</code></pre>
-
-<p>経年でじわじわと劣化していくものではあるのですが若干ながらキャパが減りました。
+</code></pre><p>経年でじわじわと劣化していくものではあるのですが若干ながらキャパが減りました。
 １ヶ月で0.2%の劣化であれば3年で8%以下なのですごく良いのではないかと、、
 まぁ、Thinkpadなのでバッテリーの交換も楽なので問題は無いですけどね。。</p>
-
 <p>参照：</p>
-
 <ul>
 <li><a href="https://wiki.archlinux.org/index.php/TLP">https://wiki.archlinux.org/index.php/TLP</a></li>
 <li><a href="https://wiki.archlinux.org/index.php/Tp_smapi">https://wiki.archlinux.org/index.php/Tp_smapi</a></li>

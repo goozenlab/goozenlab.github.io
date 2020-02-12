@@ -156,55 +156,34 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2018-04-01-debian-vaio-p-01.jpg" alt="Debian on VAIO type P" /></p>
-
+                <p><img src="/images/2018-04-01-debian-vaio-p-01.jpg" alt="Debian on VAIO type P"></p>
 <p>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストールをする。</p>
-
 <p>結局ライブイメージからのインストールだと、空き容量が少し少なくなるようなので（２〜３GBくらい）、CDのイメージからインストールをする。</p>
-
 <p>バックアップ端末、ほぼオフグリッド端末なのでシンプルかつ、スワップファイルのパーティションを切らないでインストールしました。
 ログイン画面の表示まで２０秒ぐらいで起動します。</p>
-
 <p><strong>画面設定も一発、照度の変更もできます。スリープも可能。</strong></p>
-
 <p>しかしながら、Youtubeはカクカクです。ビデオ関係はNGですが、素の状態で問題なく使うことができる。思いの外サクサク動いてます。</p>
-
 <p>もう少しバッテリーの持ちが良ければ持ち出し端末して使えるのだけど、根強いファンもいるようですし、ぜひリバイバルしてほしい端末なんですけどね。</p>
-
 <p>少し作業をして、Macbook Pro15に戻ると画面の大きさにちょっとびっくりします。</p>
-
 <p>Syncthingでデーターを共有してます。</p>
-
-<h2 id="ssdでスワップ-ファイル">SSDでスワップ・ファイル</h2>
-
+<h2 id="ssdでスワップファイル">SSDでスワップ・ファイル</h2>
 <p>もしSSDでスワップ・パーティションを構成した場合は、カーネルによりスワップへの予測書込みが実行される傾向値を変更します。
 (vm.swappinessの値によって制御され、/proc/sys/vm/swappinessとして表示されます)</p>
-
 <p>vm.swappinessの値は0から100までの範囲であり、値が大きいほど、スワップに書き込まれる傾向が強くなります。<strong>デフォルト値は60</strong> です。SSDでスワップが構成されたときの <strong>推奨値は1</strong> です。</p>
-
 <p>次のコマンドを使用して変更します。</p>
-
 <pre><code>$ echo &quot;vm.swappiness = 1&quot; &gt;&gt; /etc/sysctl.conf
 $ sysctl -p
 vm.swappiness = 1
-</code></pre>
-
-<h2 id="メモリのチューニング">メモリのチューニング</h2>
-
+</code></pre><h2 id="メモリのチューニング">メモリのチューニング</h2>
 <p>GPUとCPUのメモリが共通なので、Kernelパラメータでメモリを制限するとGPUメモリが高速化します。
 端末から <code>sudo nano /etc/default/grub</code></p>
-
 <pre><code># メモリ1GBの機種なら
 GRUB_CMDLINE_LINUX=&quot;mem=896mb&quot;
 
 # メモリ2GBの機種なら
 GRUB_CMDLINE_LINUX=&quot;mem=1920mb&quot;
 
-</code></pre>
-
-<p>追加して保存、 <code>$ sudo update-grub</code>  更新し再起動します。</p>
+</code></pre><p>追加して保存、 <code>$ sudo update-grub</code>  更新し再起動します。</p>
 
 				
 

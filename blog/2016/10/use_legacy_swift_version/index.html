@@ -156,29 +156,17 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をすることができたのですが、立ち上げるたびに何度も変換を即されて先に進めないプロジェクトがありました。</p>
-
-<p><img src="/images/2016-10-07-use_legacy_swift_version_error.png" alt=" use_legacy_swift_version_error" /></p>
-
+                <p>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をすることができたのですが、立ち上げるたびに何度も変換を即されて先に進めないプロジェクトがありました。</p>
+<p><img src="/images/2016-10-07-use_legacy_swift_version_error.png" alt=" use_legacy_swift_version_error"></p>
 <p>問題は、Build Settings 内の項目”Use Legacy Swift Language Version”が更新されていないということのようです。なぜにこのプロジェクトにだけにおこるのかはちょっと不明かつ、嫌な感じでもある。</p>
-
-<p><img src="/images/2016-10-07-use_legacy_swift_version_unspecified.png" alt=" use_legacy_swift_version_unspecified" /></p>
-
+<p><img src="/images/2016-10-07-use_legacy_swift_version_unspecified.png" alt=" use_legacy_swift_version_unspecified"></p>
 <h2 id="解決法">解決法</h2>
-
 <p>Swift 3を使うときは「NO」。</p>
-
-<p><img src="/images/2016-10-07-use_legacy_swift_version_no.png" alt=" use_legacy_swift_version_no" /></p>
-
+<p><img src="/images/2016-10-07-use_legacy_swift_version_no.png" alt=" use_legacy_swift_version_no"></p>
 <p>Swift 2.3にて動かすときは「YES」です。</p>
-
-<p><img src="/images/2016-10-07-use_legacy_swift_version_yes.png" alt=" use_legacy_swift_version_yes" /></p>
-
+<p><img src="/images/2016-10-07-use_legacy_swift_version_yes.png" alt=" use_legacy_swift_version_yes"></p>
 <p>そして、プロジェクトの方も変えておきます。</p>
-
-<p><img src="/images/2016-10-07-use_legacy_swift_version_project.png" alt=" use_legacy_swift_version_project" /></p>
+<p><img src="/images/2016-10-07-use_legacy_swift_version_project.png" alt=" use_legacy_swift_version_project"></p>
 
 				
 

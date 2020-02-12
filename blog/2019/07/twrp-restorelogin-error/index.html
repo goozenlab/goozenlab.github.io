@@ -158,44 +158,36 @@
             <div class="post-content">
                 <p>Mi Max3でのカスタムロム界隈はあまり活発でなかったのですが、ようやくLineageOSのカスタムロムが出てきたので、取り敢えず今使っている環境をTWRPを使ってバックアップ、リストア（復元）を行いました。
 16GBのフル・バックアップの作業は１２〜３分くらいで終わり、リストアーの作業は７～８分で完了。</p>
-
-<p><img src="/images/2019-07-02-max3-twrp-restore.png" alt="TWRP Restore" /></p>
-
+<p><img src="/images/2019-07-02-max3-twrp-restore.png" alt="TWRP Restore"></p>
 <p>しかしながら、リストア後に再起動すると、ログインを求められ、使っていたパターンを入力しても受け付けてくれません。まぁ、戻ることもないからいいかなと思ったけれど、ちょっと調べてみたら解決方法が見つかりました。</p>
-
 <p>en.miui のフォーラムよりのこちら、
 <a href="http://en.miui.com/thread-4502384-1-1.html">Wrong password after TWRP Restore.</a>
 に解決方法が載ってました。</p>
-
 <ol>
 <li>TWRPで起動</li>
 <li>選択：Advanced</li>
 <li>選択：File manager</li>
 <li>/data/systemに移動</li>
 <li>以下のファイルを探す
-
 <ul>
 <li>gatekeeper.password.key *※</li>
 <li>gatekeeper.pattern.key *※</li>
 <li>locksettings.db-wal</li>
 <li>locksettings.db-shm</li>
 <li>locksettings.db</li>
-</ul></li>
-<li>ファイルを選択して消去<br />
-<img src="/images/2019-07-02-max3-twrp-locksetting.png" alt="TWRP Restore" /></li>
+</ul>
+</li>
+<li>ファイルを選択して消去<br>
+<img src="/images/2019-07-02-max3-twrp-locksetting.png" alt="TWRP Restore"></li>
 <li>再起動</li>
 </ol>
-
 <p>※ 環境により、<code>gatekeeper.password.key, gatekeeper.pattern.key</code>
 の代わりに、<code>password.key, pattern.key</code>
 の場合があるようです。私の環境では、<strong>xxx.key</strong>のファイルはありませんでした。
 locksettings.db関連の３つのファイルを消去後・再起動します。パターンでのログインは無効化されますので、再設定する必要があります。指紋認証のデーターは保持されています。</p>
-
 <p>TWRPのスクリーンショットは電源ボタンとボリュームダウンの同時押しで撮れます。
 作業の最後の方で気がつきました。</p>
-
 <p>ほっ、</p>
-
 <p>これで、いろいろとカスタムロムを試せる。LinageOSとASOiPとMicroGを試してみるつもりです。</p>
 
 				

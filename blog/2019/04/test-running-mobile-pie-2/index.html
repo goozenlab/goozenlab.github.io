@@ -156,92 +156,53 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。
+                <p>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。
 ということこで、モバイル・バッテリー稼働時間テスト<strong>第２弾</strong>です。今回はラズベリーパイとルーターをバッテリーに繋げて時間を計測してみました。持ち出しルーターキット、ノマド・ルーター。ちょっと本番環境に近い感じで行ってみました。</p>
-
-<hr />
-
-<h3 id="pi-3b-glinet-shadow-ar-300m">Pi 3B + GLiNet Shadow AR-300M</h3>
-
-<p><img src="/images/2019-03-12-kit-pi3b.jpg" alt="Pi 3B + Shadow" /></p>
-
+<hr>
+<h3 id="pi-3b--glinet-shadow-ar-300m">Pi 3B + GLiNet Shadow AR-300M</h3>
+<p><img src="/images/2019-03-12-kit-pi3b.jpg" alt="Pi 3B + Shadow"></p>
 <pre><code>Booted 
  23:01:01 up 14:10,  0 users,  load average: 0.04, 0.01, 0.00
 Reboot @ Mon Apr  1 22:50:19 +07 2019
-</code></pre>
-
-<p><strong>14時間10分</strong>、と悪くはないかな。。</p>
-
+</code></pre><p><strong>14時間10分</strong>、と悪くはないかな。。</p>
 <p>ラズベリーパイはイーサーネットケーブルでルーターと繋いで、バックグラウンドで<strong>grafana/influxdb.telegraf</strong>を走らせています。スピードテストを入れ劣悪なネット環境をモニタリングする。</p>
-
-<p><img src="/images/2019-04-04-running-mobile-pie-02.png" alt="Test on Battery" /></p>
-
+<p><img src="/images/2019-04-04-running-mobile-pie-02.png" alt="Test on Battery"></p>
 <p>今のところWifiはオフ、電源関連の調整はしていません。ルーターはアクセスポイントリピーターとして動作しています。</p>
-
 <p>パイの設定構築は未だ試行錯誤中なのですが、ちょっとインド行きが近づいてきていて、それまでに仕上げたかったのだけど、いろいろと寄り道をして、どーーも、、なんとも、大ハマり、なかなか前進しません。最終的にはパイをwifiアクセス・ポイント化し、ルーターは<strong>WireGuardVPNサーバー</strong>化。</p>
-
 <p>となると、ちょっと電力的に辛そう、なんとか20時間ぐらいはもつぐらいでまとめたいと思ってるんだけど。Pi 3Bはオーバースペックかな、DualCoreで省電力ものとか無いかしらん。ちょっと他の小さいもの、NeoPiとかを物色中。（６月以降の宿題）</p>
-
-<h3 id="pi-zerow-shadow">Pi zeroW + Shadow</h3>
-
+<h3 id="pi-zerow--shadow">Pi zeroW + Shadow</h3>
 <p>そして、バッテリーが大きいが、ちょっとスリムダウンして軽装バージョンで試す。</p>
-
-<p><img src="/images/2019-04-03-running-router-pi0w.jpg" alt="Pi zeroW + Shadow" /></p>
-
+<p><img src="/images/2019-04-03-running-router-pi0w.jpg" alt="Pi zeroW + Shadow"></p>
 <pre><code>Reboot @ Wed  3 Apr 08:53:54 +07 2019
  09:01:02 up 10 min,  0 users,  load average: 1.44, 1.04, 0.44
 Reboot @ Wed  3 Apr 09:01:27 +07 2019
  10:00:01 up 1 day, 58 min,  1 user,  load average: 0.10, 0.25, 0.44
 Reboot @ Thu  4 Apr 09:50:52 +07 2019
-</code></pre>
-
-<p><strong>25時間10分</strong></p>
-
+</code></pre><p><strong>25時間10分</strong></p>
 <p>前回の単体テストで、Pi zeroWは50時間ちかく動作したので、消費電力はルーターと折半の形となりました。30時間を超えることを期待していたのだけど、思いの外ルーターの電力が多いのか、ギリギリ及第点かな。</p>
-
-<p><img src="/images/2019-04-04-running-mobile-pie-04.png" alt="Test on Battery" /></p>
-
+<p><img src="/images/2019-04-04-running-mobile-pie-04.png" alt="Test on Battery"></p>
 <p>状況はパイ3Bのテストと同じくバックグラウンドでgrafanaとinfluxdb、telegrafを走らせ、追加で、<strong>PiHole</strong>と5分毎にMiの<strong>気温・湿度計</strong>よりBTでデーターを取ってきてます。IOTって面白いですね、Aruduinoとか気になり始めてます。Influxdbが割とリソース食いなんですよねぇ。。パイホールのコンソールとリソースモニターは以下の画像にて。</p>
-
-<p><img src="/images/2019-04-04-running-mobile-pie-05.png" alt="Test on Battery" /></p>
-
-<p><img src="/images/2019-04-04-running-mobile-pie-01.png" alt="Test on Battery" /></p>
-
+<p><img src="/images/2019-04-04-running-mobile-pie-05.png" alt="Test on Battery"></p>
+<p><img src="/images/2019-04-04-running-mobile-pie-01.png" alt="Test on Battery"></p>
 <p>これなら、バッテリーを少し小さいものにしても半日は持ちそうな感じである。持ち出しも、まぁギリギリ良いかな。</p>
-
 <p>ただ、ゼロパイは電力的には良いけども、ちょっと非力。これにnextCloudを入れたらちょっと、もっさり感が出始めた。</p>
-
 <p>で、近々行くインドには荷物を少なくして行きたいので、Pi zeroWとShadowを持って行こうかなと思います。<strong>第３弾</strong>はインド（滞在１ヶ月半）にて。</p>
-
 <h3 id="充電">充電</h3>
-
 <p>ちなみに、ルーター・パイをつなげたままモバイルバッテリーの充電を行ったところ、Nokia7+に付いてきたUSBファーストチャージャーをつかってだいたい７〜８時間くらいで充電完了しました。</p>
-
 <p>毎日夜の間充電する形であれば、5,000mAhの小さいバッテリーでも運用可能ということか。。
 バッテリーのついたUSB充電器が気になってるのだけど、、微妙ですな。。</p>
-
 <p>出先での充電・放電サイクルをちょっと考えんと。</p>
-
-<hr />
-
+<hr>
 <h2 id="おまけ">おまけ</h2>
-
 <p>インドの携帯通信サービスはかなりてんこ盛りで、28日間のプランで</p>
-
 <ul>
 <li>電話はインド全土にかけ放題</li>
 <li>SMSは1日100通</li>
 <li>データー通信は<strong>1日に1.5GB</strong></li>
 </ul>
-
 <p>必要十分な量です。しかも、お値段なんと！</p>
-
-<h3 id="４週間-rs-199-日本円で三百と十円です">４週間、Rs.199 = 日本円で三百と十円です！</h3>
-
+<h3 id="４週間rs199--日本円で三百と十円です">４週間、Rs.199 = 日本円で三百と十円です！</h3>
 <p>ルーター＋携帯のテザリンで常時接続環境が通信量を気にせず使える。</p>
-
 <p>ただ、電力事情が行くところによるけど、問題があったりするんですよね。。
 今回の訪問先はタミル地域なので、原発のある州だし、、どうなることやら、、</p>
 

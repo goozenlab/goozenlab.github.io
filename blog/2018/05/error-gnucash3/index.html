@@ -157,18 +157,11 @@
 
             <div class="post-content">
                 <p>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、</p>
-
 <pre><code>No suitable backend was found.
-</code></pre>
-
-<p>というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 <code>Gnucash.app/Contents/Resources/etc/gnucash/environment</code> の最終行に、</p>
-
+</code></pre><p>というエラーが上がってきました。保存ファイルをSQLタイプにしていると起こるエラーらしく、パッチが必要とのこと。アプリ内部 <code>Gnucash.app/Contents/Resources/etc/gnucash/environment</code> の最終行に、</p>
 <pre><code>GNC_DBD_DIR={SYS_LIB}/dbd
-</code></pre>
-
-<p>を追加することで、エラーを回避できます。
+</code></pre><p>を追加することで、エラーを回避できます。
 多分、次回アップデートで修正されるとは思います。</p>
-
 <p>GUIフレームワークがGTK+ 3に変更され、見た目が少し変わりました。そのおかげで？、動作が重くなりました。現状の2.6系でも問題はなかったのでアップデートは中止し、ダウングレード、以前の状態で使ってます。</p>
 
 				

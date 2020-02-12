@@ -160,20 +160,13 @@
         
             	
             	<div class="post-content">
-            		
-
-<p><img src="/images/2019-12-17-xcode-error.png" alt="Command CodeSign failed with a nonzero exit code" /></p>
-
+            		<p><img src="/images/2019-12-17-xcode-error.png" alt="Command CodeSign failed with a nonzero exit code"></p>
 <p>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。
 今回は</p>
-
 <h2 id="command-codesign-failed-with-a-nonzero-exit-code">Command CodeSign failed with a nonzero exit code</h2>
-
 <p>のエラーでビルドができません。</p>
-
 <p>サイニングでのエラーのようなので、コードのエラーないようですが、
 ビルドの再構築などを行ってもエラーが消えません。調べてみた所私だけの症状ではないようで、</p>
-
 <ol>
 <li>キーチェーンアクセス</li>
 <li>画面左上の<strong>login</strong>をロックする（コントロール＋クリックより）</li>
@@ -181,33 +174,22 @@
 <li>プロジェクトをクリーンにする</li>
 <li>ビルドする</li>
 </ol>
-
 <p>の作業で治ると出ているが変わらず、ちょっとしたの方まで読み進んでみると、</p>
-
 <p>エラーメッセージの下から２行目に</p>
-
 <h2 id="resource-fork-finder-information-or-similar-detritus-not-allowed">resource fork, Finder information, or similar detritus not allowed.</h2>
-
 <p>がある場合は、</p>
-
 <pre><code>$ xattr -cr &lt;プロジェクトフォルダー&gt;
-</code></pre>
-
-<p>を使えとのことで、試した所やっとこさ問題が解決しました。</p>
-
-<p>NAME:<br />
-     xattr &ndash; display and manipulate extended attributes</p>
-
-<p>DESCRIPTION:<br />
-     The xattr command can be used to display, modify or remove the extended
-     attributes of one or more files, including directories and symbolic links.
-     Extended attributes are arbitrary metadata stored with a file, but separate
-     from the filesystem attributes (such as modification time or file size).  The
-     metadata is often a null-terminated UTF-8 string, but can also be arbitrary
-     binary data.</p>
-
+</code></pre><p>を使えとのことで、試した所やっとこさ問題が解決しました。</p>
+<p>NAME:<br>
+xattr &ndash; display and manipulate extended attributes</p>
+<p>DESCRIPTION:<br>
+The xattr command can be used to display, modify or remove the extended
+attributes of one or more files, including directories and symbolic links.
+Extended attributes are arbitrary metadata stored with a file, but separate
+from the filesystem attributes (such as modification time or file size).  The
+metadata is often a null-terminated UTF-8 string, but can also be arbitrary
+binary data.</p>
 <p>ちょっと諦めてて、プロジェクトを作り直してSwift５で書き直すところでしたよ、、</p>
-
 <p>参考：
 <a href="https://stackoverflow.com/questions/52421999/xcode-10-command-codesign-failed-with-a-nonzero-exit-code">https://stackoverflow.com/questions/52421999/xcode-10-command-codesign-failed-with-a-nonzero-exit-code</a></p>
 

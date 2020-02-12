@@ -156,71 +156,45 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-10-01-debian-cafe.jpg" alt="Debian on Thinkpad T480S" /></p>
-
+                <p><img src="/images/2019-10-01-debian-cafe.jpg" alt="Debian on Thinkpad T480S"></p>
 <p>Thinkpad T480S マルチOS環境第２弾。
 Thinkpadに自由を！。</p>
-
 <p>ファイルロスト不安症ではないけれど、スナップショットを取ることのできるBtrfsにデビアンをインストールします。（本当はZFSで構築したかったのだけどね。。マンジャーロと同居させてます。）</p>
-
 <blockquote>
-<p><b>Btrfs（B-tree file system : バター エフエス、またはB木 『ビーツリー』 エフエスと読む）</b>はLinux向けのコピーオンライトのファイルシステムで、オラクルによって2007年に発表されGPLの元で公開されている。 BtrfsはZFSファイルシステムの影響を受けて開発され、スナップショットやコピーオンライトの機能を持ち、他のLinuxファイルシステムが現在持っている多くの制約を受けないことが期待されている。
- <a href="https://ja.wikipedia.org/wiki/Btrfs">https://ja.wikipedia.org/wiki/Btrfs</a></p>
+<p><!-- raw HTML omitted -->Btrfs（B-tree file system : バター エフエス、またはB木 『ビーツリー』 エフエスと読む）<!-- raw HTML omitted -->はLinux向けのコピーオンライトのファイルシステムで、オラクルによって2007年に発表されGPLの元で公開されている。 BtrfsはZFSファイルシステムの影響を受けて開発され、スナップショットやコピーオンライトの機能を持ち、他のLinuxファイルシステムが現在持っている多くの制約を受けないことが期待されている。
+<a href="https://ja.wikipedia.org/wiki/Btrfs">https://ja.wikipedia.org/wiki/Btrfs</a></p>
 </blockquote>
-
 <p>Debian Busterでのグラフィック・インストーラーのベースになっている
 カラマリ・インストーラーはイカしてなくちょっと空回りしているようなので、
 融通の利く、古き良きテキストベースのインストーラーを使用します。</p>
-
 <p><a href="https://www.debian.org/CD/netinst/">https://www.debian.org/CD/netinst/</a>
 よりISOをダウンロードして起動ディスクを作成します。</p>
-
 <h2 id="インストール">インストール</h2>
-
 <p>起動ディスクより起動後、</p>
-
-<h2 id="advance-expart-install">advance -&gt; expart install</h2>
-
+<h2 id="advance---expart-install">advance -&gt; expart install</h2>
 <p>を選択し進めます、昔ながらのテキスト・インストーラーになります。</p>
-
 <p>Btrfsの設定を行うために、パーテション設定後に抜ける必要があるのでこの方法をとります。
 他のオプションですとパーテションの設定後有無を言わせずにインストールが続行されてしまいサブボリュームの設定ができません。</p>
-
 <p>エクスパート・インストールだけに色々と設定事項が多いのですが、ほぼデフォルトで問題はないです。
 そしてパーティションの設定まで進めます。</p>
-
 <p>パーティション設定は、自動割り当てではなくマニュアルで行います。
 Btrfsを仮マウントします。（fstabが必要でのちに書き換えます。）</p>
-
-<p><img src="/images/2019-10-01-debian-install-partition.jpg" alt="Install Debian" /><br />
+<p><img src="/images/2019-10-01-debian-install-partition.jpg" alt="Install Debian"><br>
 ※ちょっと私の環境はZFSがあったりしてぐじゃぐじゃ、悪しからず。。</p>
-
-<div class="attention"><b>重要</b>なのは、ルートにBtrfsのボリュームをマウントすること。
-（下の画像では既にManjaroがインストールされているので、フォーマットはしませんが、最初にインストールするときはフォーマットする必要があります。）</div>
-
-<p><img src="/images//2019-10-01-debian-install-btrfs.jpg" alt="Install Debian" /></p>
-
+<!-- raw HTML omitted -->
+<p><img src="/images//2019-10-01-debian-install-btrfs.jpg" alt="Install Debian"></p>
 <p>EFIパーティションは既に読み込まれていましたが確認します。
 Btrfsではスワップファイルは４系のカーネルではサポートされていないとのことで、スワップ・パーティションも作成します。</p>
-
 <p>書き込んでパーテション設定を終了します。</p>
-
-<!--
-![Debian on Thinkpad T480S](/images/2019-09-29-debian-00.png)
--->
-
-<hr />
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
 <p>お次はベース・システムのインストールになるのですが、
 Btrfsのサブボリュームを作成・再マウント作業を行う必要があるので
-二つめのコンソール(  <b>Alt + F2</b>)に移動します。
+二つめのコンソール(  <!-- raw HTML omitted -->Alt + F2<!-- raw HTML omitted -->)に移動します。
 作業の経過ログは（Alt + F4)で確認ができます。</p>
-
 <p>そして以下、作業内容です。
 （既にあるマウントを解除して、サブボリュームを作成・マウント。そしてfstabを変更・追記。）</p>
-
 <pre><code># マウントの解除
 umount /target/boot/efi
 umount /target
@@ -256,12 +230,9 @@ mount /dev/nvme##FIRST_PARTITION /target/boot/efi
 
 #  マウントを解除
 umount /mnt
-</code></pre>
-
-<p>そしてFstabを以下のように編集します。UUIDはfstabに書き込まれています。
+</code></pre><p>そしてFstabを以下のように編集します。UUIDはfstabに書き込まれています。
 オプションはManjaroをインストールした時につけられていたものです。
 変更が必要であれば行ってください。</p>
-
 <pre><code># Fstabを編集
 # 行のカットはCtrl+k、ペーストはCtrl+u
 nano /target/etc/fstab
@@ -277,55 +248,35 @@ UUID=d30c6eea-6cf1-4976-b364-76ab2200011e    /var/cache    btrfs rw,noatime,comp
 UUID=5685-2E07          /boot/efi     vfat
 # SWAP
 UUID=b1e64f8f-c291-4f6b-873e-5ad325527005     none          swap defaults,pri=-2    0 0
-</code></pre>
-
-<p>裏での作業は終了です。</p>
-
+</code></pre><p>裏での作業は終了です。</p>
 <p><code>Alt+F1</code>を押してインストーラーに戻りインストールを続行します。</p>
-
-<hr />
-
+<hr>
 <p>ベース・システムをインストールして、パッケージを選択し、使うWindowマネージャーを選択（Debianにしては珍しく比較的新しいバージョンのGnomeがオススメ。）、
 ブートローダーをインストールし終了です。</p>
-
-<div class="hint">※ インテルのWifiチップのドライバーはライセンスの関係でnon-free・contribのレポジトリーにありますので、バックポートも同様にインストール途中に選択しておきます。</div>
-
+<!-- raw HTML omitted -->
 <p>インストール後のリソースはこんな感じです。ディスクの容量に関しては、Manjaroが既に入っているのでその合算です。
 CPUリソース数パーセントとManjaroより低く、穏やかに動いてます。Wifi接続してちょっとウェブサーフィンの使用時間１時間でだいたい13％バッテリーが消費されます。
 7時間半は持つくらいの見積もりで悪くないです。</p>
-
-<p><img src="/images/2019-09-29-debian-resource.png" alt="Debian on Thinkpad T480S" /></p>
-
+<p><img src="/images/2019-09-29-debian-resource.png" alt="Debian on Thinkpad T480S"></p>
 <p>最近の機種なので、非常にキビキビ動きます。ひさ〜〜しぶりにインストールしてのですが、すごく勝手が良くなってます。ちょっと驚きです。</p>
-
 <p>ワイファイ（インストール：<code>sudo apt install firmware-iwlwifi</code>）もブルートゥースのスピーカーの接続も一発でした。</p>
-
 <p>存在を知らんかったDebianのWikiも充実してます。</p>
-
 <h2 id="他のディストロについて">他のディストロについて、</h2>
-
 <p>私の環境ではDebianとManjaroを一つのBtrfsパーティション内で共存、＠home、＠cacheを共有してます。
 ManjaroのインストーラーではBtrfのルートパーティションの選択にちょっと問題があるようなので、
-その場合はManjaroを<b>最初</b>にインストールすることを勧めます。</p>
-
-<div class="hint"><b>追記</b>：もしくは、一番最初にManjaro用のサブボリュームを作っておく。Manjaroでは多分最初のサブボリュームをルートに割り当てる設定になっているようです。</div>
-
+その場合はManjaroを<!-- raw HTML omitted -->最初<!-- raw HTML omitted -->にインストールすることを勧めます。</p>
+<!-- raw HTML omitted -->
 <p>2019年躍進中の<strong>MX Linux</strong>は評判が良いらしいのでインストールしてみましたが無難な感じ。
 素のデビアン・バスターの出来が思った以上の良かったので、実機にはインストールをするのを中止する。</p>
-
 <p>そして、ちょっと気になっていた<strong>PureOS</strong>はレビューを見たところ、
 特別なセキュリティー関連の設定がされているかと思いきやそうでも無いようで、
 殆ど素のDebianと同じらしいとのこと、なのでパス。</p>
-
 <p>さらにスノーデン氏オススメDebainベースの<strong>QubesOS</strong>、</p>
-
-<p><img src="/images/2019-07-05-Qubes-OS-A-reasonably-secure-operating-system-500x125.png" alt="QubeOS " /></p>
-
+<p><img src="/images/2019-07-05-Qubes-OS-A-reasonably-secure-operating-system-500x125.png" alt="QubeOS "></p>
 <p>仮想環境を使い分け、通信もTorを使って隠匿化する、使う用途に分けて設定を変える等、
 セキュリティー的にはかなり理にかなったディストリビューションでインストールしてみたかったのだけど、、インストーラーの作りが悪く断念。
 最初にディスクを全部使ってインストールするなら良いかもしれないけど、
 時期遅し、今更やり直しは勘弁なので仮想環境で入れるかな。またの機会にします。</p>
-
 <p>本当は３つ４つの違ったLinuxをインストールしようと思ってましたが、違いも見出せないし、安定版とちょっと冒険バージョンの２つでいいかなと思い、マンジャーロとバスターにしました。</p>
 
 				

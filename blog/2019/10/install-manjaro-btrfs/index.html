@@ -156,67 +156,45 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2019-10-01-manjaro-cafe.jpg" alt="Debian on Thinkpad T480S" /></p>
-
+                <p><img src="/images/2019-10-01-manjaro-cafe.jpg" alt="Debian on Thinkpad T480S"></p>
 <p>2018年一番人気のディストリビューション<strong>Manjaro</strong>、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになってます。コミュニティーが親切なようで評判が良いようです。そしてつい先月の9月に法人化しました。</p>
-
-<hr />
-
+<hr>
 <p>先日のデビアンのインストールに続き、こちらManjaroもBtrfsにシステムをインストールをします。</p>
-
 <p>様々なウィンドウ・マネージャーのLiveイメージがありますが、
 そのディスクではBtrfsへのインストールはうまくいかないので、
 シンプルなテキストベースのインストーラー、
-<strong>アーキテクト</strong>のISOを使います。<br />
+<strong>アーキテクト</strong>のISOを使います。<br>
 <a href="https://manjaro.org/download/official/architect/">https://manjaro.org/download/official/architect/</a></p>
-
 <p>アーキテクトではインストールの途中でBtrfsのパーティション・サブボリュームを作成及びマウントすることができます。</p>
-
-<!-- 
-デビアンで行ったような、途中で裏に回って悪さをする必要はありません。
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>細かいインストールの過程は割愛しますが、流れに沿って進めます。</p>
-
 <p>Btrfsのサブボリュームの設定は、デビアンを同居させるのでデフォルトの設定ではなくて、マニュアル設定でルートパーティションを@manjaroに変更して進めます。</p>
-
 <ul>
-<li>Default : @, @home, @cache (/var/cache)<br /></li>
+<li>Default : @, @home, @cache (/var/cache)</li>
 <li>Change : @manjaro, @home, @cache,</li>
 </ul>
-
 <p>作成したサブボリュームを割り当て、
 スワップのパーティションを指定し、
 EFIパーティションをフォーマットせずに<code>boot/efi</code>に割り当てます。</p>
-
 <p>その後もインストラーにそって作業を継続します。
 テキストベースでLinuxをインストールしたことがあればそこまで難しくもクセもなく、
 ほぼデフォルトの状態で問題ありませんでした。</p>
-
 <p>ウィンドウマネージャはちょっとMacOSに似ている感じがあって軽量でもあるらしいバジーを選びました。インストール時には一つしか選べませんがデスクトップのインストールはフルかミニマルが選べます。
 試したところオフィスソフトなどがインストールされて、大体１GBくらいの違いがありました。フルでも４GBいかないぐらいです。</p>
-
 <p>終了後、再起動。</p>
-
-<hr />
-
+<hr>
 <p>Linuxのデスクトップ環境も最近のものは色合いとか雰囲気がどんどん仕上がりが良くなってきてると思います。どんどんウィンドウズが遠のきます。使いたいソフトがある訳ではないので、もしかしたら立ち上げもしないかもしれん。。</p>
-
 <p>無線LANなどすべてデフォルトの状態で使えました、設定はディスプレイの解像度だけ。すばらし～。</p>
-
-<p><img src="/images/2019-10-01-manjaro-process.jpg" alt="Manjaro Thinkpad T480s" /></p>
-
+<p><img src="/images/2019-10-01-manjaro-process.jpg" alt="Manjaro Thinkpad T480s"></p>
 <p>バジーは軽いとの触れ込みでしたが、DebianのGnomeに比べるとちょっとリソースが高めです。しかしながら使ってみたところ、バッテリーの持ちはこちらの方が良さそうな感じです。１時間使って11%消費、デビアンですと13％くらいなので、見積りでは９時間は持つと。</p>
-
 <p>でもManjaroはパッケージにSnappy:
 <a href="https://snapcraft.io/">https://snapcraft.io/</a>
 を採用してみたりと少しね、Ubuntuと香りが似てきてるのが気になる。まぁテーマをバックアップしてArchを入れればいいのだけどね、、</p>
-
 <blockquote>
 <p>Snappyとはカノニカルが設計・開発したソフトウェアデプロイメントシステムかつパッケージ管理システムであり、元々はUbuntu Phone オペレーティングシステム用に設計・開発された。Snappyのパッケージは &lsquo;Snap&rsquo; と呼ばれ、Snapを使うツールは &lsquo;Snapd&rsquo; と呼ばれる。Snapは様々なLinuxディストリビューションで動作するので、ディストリビューションの上流のソフトウェアデプロイメントに依存しない。Snappyのシステムは携帯電話、クラウド、IoTやデスクトップパソコン向けに設計されている。
 <a href="https://ja.wikipedia.org/wiki/Snappy">https://ja.wikipedia.org/wiki/Snappy</a></p>
 </blockquote>
-
 <p>主要なソフトもあるので、ようやくLinux・デスクトップの時代が到来と言えるんじゃないかと。
 と思ったりもしたけど、コンピューター自体の存続が怪しいか、、ちょっと先日発表されたマイクロソフトの新しいハードウェアが気になる。。</p>
 

@@ -156,63 +156,43 @@
             </div>
 
             <div class="post-content">
-                <p><img src="/images/2020-01-06-about-mac-14.1.png" alt="about this" /></p>
-
+                <p><img src="/images/2020-01-06-about-mac-14.1.png" alt="about this"></p>
 <p>時々Redditに気になるハッキントッシュ情報が流れます。
 今回はこのT480sの唯一の弱点とも言えるバッテリー関連情報。</p>
-
 <p>なんとハッキントッシュのBIOS設定をMacbook Pro 2017から2019のものに入れ替えると劇的に改善する、</p>
-
 <p>という情報を得たので早速検証して見ました。</p>
-
 <p>まずは現在の設定でのバッテリーの消費状況は</p>
-
-<p><img src="/images/2020-01-06-battery-left-14.1.png" alt="Battery Monitor" /></p>
-
+<p><img src="/images/2020-01-06-battery-left-14.1.png" alt="Battery Monitor"></p>
 <p>80%くらいで残り時間が<strong>４時間半</strong>くらいと計測されます。実際はもう少し持ちます。</p>
-
 <p>そしてBIOSの変更はClove Configuratorを使って行います。
 同時にシリアル番号なども新しいものに書き換えます。
 とりあえずテストなので、作業の詳細はちょっと割愛します。</p>
-
-<p><img src="/images/2020-01-06-about-mac-15.4.png" alt="about this" /></p>
-
+<p><img src="/images/2020-01-06-about-mac-15.4.png" alt="about this"></p>
 <p>そして再起動後、少し時間をおいておいて見ると、</p>
-
-<p><img src="/images/2020-01-06-battery-left-15.4.png" alt="Battery Monitor" /></p>
-
+<p><img src="/images/2020-01-06-battery-left-15.4.png" alt="Battery Monitor"></p>
 <p><strong>10時間</strong>と倍近くの値が出てきました。Redditに出ていたような結果になります。
 iStatusがちょっと新しいもの贔屓なんだろうか、、
 ダブルスコアーはちょっと行き過ぎのような気もする。</p>
-
 <p>まぁ嘘ではなさそうではあるのでしばし使ってみました。</p>
-
 <ul>
 <li>13:40 76% 10:10</li>
 </ul>
-
 <p>使っている間に数値は刻々と変わり、あっという間に半分近くになる、</p>
-
 <ul>
 <li>14:25 66% 5:00</li>
 <li>14:45 61% 4:40 (20min 5%)</li>
 </ul>
-
 <p>で、１時間で14％くらいの消費です。微妙な結果。
 しかもBTが使えなくなる。。</p>
-
 <p>環境をもとに戻して使ってみると、最初の数値は悲しいまで、、しかしこちらは途中から粘り腰。</p>
-
 <ul>
 <li>14:45 60% 2:47</li>
 <li>14:55 57% 4:10</li>
 <li>15:15 52% 3:50 (20min 5%)</li>
 <li>15:50 43% 3:05</li>
 </ul>
-
 <p>と、だいたい１時間で16％くらいに落ち着く。
 80%から使い切って５時間は持つ計算になります。</p>
-
 <p>違いがないとも言えるような、ほーーんの少しだけの差です。
 Windowsではそれなりに持つのだろうのでちと残念ですな。</p>
 

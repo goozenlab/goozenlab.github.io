@@ -156,16 +156,10 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
-
+                <p>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラーでとシステム環境に出たり入ったりする機会が増えました。</p>
 <p>ただ一連の作業がちょっと面倒なので、<strong>アップルスクリプト</strong>＋Alfredを使って作業を簡略化しました。</p>
-
 <p>まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。</p>
-
 <p><strong>※</strong> MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。</p>
-
 <pre><code>
 tell application &quot;System Preferences&quot;
     activate
@@ -189,10 +183,7 @@ do shell script &quot;terminal-notifier -message \&quot;Color mode has been chan
 
 tell application &quot;System Preferences&quot; to quit
 
-</code></pre>
-
-<p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
-
+</code></pre><p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
 <pre><code>tell application &quot;System Preferences&quot;
     activate
     set current pane to pane &quot;com.apple.preference.universalaccess&quot;
@@ -219,43 +210,23 @@ tell application &quot;System Events&quot;
         end tell
     end if
 end tell
-</code></pre>
-
-<p><img src="/images/2013-02-25-checkUIElements.png" alt="UIElement" /></p>
-
-<p><code>checkbox &quot;Use grayscale&quot; of group 1 of window &quot;Accessibility&quot; of application process &quot;System Preferences&quot; of application &quot;System Events&quot;</code>でこのgroup 1の&rdquo;Use grayscale&rdquo;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &ldquo;Use grayscale&rdquo;はclick checkbox 2、window &ldquo;Accessibility&rdquo;はwindow 1, first windowでも動きます。</p>
-
+</code></pre><p><img src="/images/2013-02-25-checkUIElements.png" alt="UIElement"></p>
+<p><code>checkbox &quot;Use grayscale&quot; of group 1 of window &quot;Accessibility&quot; of application process &quot;System Preferences&quot; of application &quot;System Events&quot;</code>でこのgroup 1の&quot;Use grayscale&quot;をクリックすれば良い事が分かります。表記の仕方がいくつかあるようで、click checkbox &ldquo;Use grayscale&quot;はclick checkbox 2、window &ldquo;Accessibility&quot;はwindow 1, first windowでも動きます。</p>
 <p>後はそのパーツに値を入れてあげれば良し。</p>
-
 <p>そして、スクリプトエディターからプログラムとして保存します。私は~/Library/Scriptsに保存してます。そして、お勧めランチャーのアルフレッドに~/Library/Scriptsを登録します。私の環境では以前やって登録したような、、、問題なく動いてます。</p>
-
 <p>スクリプトで登録して、スクリプトメニューバーから操作も可能です。スクリプトエディターの環境設定にメニューバー登録の設定の箇所があります。</p>
-
 <p>アップルスクリプトでいろんな事が出来るのにちょっと驚きです。</p>
-
 <p>ただ、、別にコンピューターの処理速度が遅い訳ではないでしょうが、バシッとは変わらず</p>
-
 <p>、、、トッ（環境設定が立ち上がり）、、、、、（ちょっと心配になる）、、パッ 。</p>
-
 <p>と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。</p>
-
 <h2 id="おまけ">おまけ</h2>
-
 <p>ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある<code>Info.plist</code>に</p>
-
-<pre><code class="language-plain">    &lt;key&gt;LSUIElement&lt;/key&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">    &lt;key&gt;LSUIElement&lt;/key&gt;
     &lt;true/&gt;
-</code></pre>
-
-<p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
-
+</code></pre></div><p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
 <p>そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに</p>
-
 <pre><code>do shell script &quot;terminal-notifier -message \&quot;Color mode has been changed.\&quot; -title \&quot;Diplay\&quot;&quot;
-</code></pre>
-
-<p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
-
+</code></pre><p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
 <p>お次ぎはUSBオーディオの選択/解除かな。。</p>
 
 				

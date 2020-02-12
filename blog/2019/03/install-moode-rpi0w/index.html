@@ -156,37 +156,24 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>オーディオ・ラジオサーバーの<a href="http://moodeaudio.org">moOde audio player</a>をラズベリーパイ・ゼロにインストールしました。
+                <p>オーディオ・ラジオサーバーの<a href="http://moodeaudio.org">moOde audio player</a>をラズベリーパイ・ゼロにインストールしました。
 moOde Audioホームページからダウンロードするイメージ・ファイルは、
 エラーが出たり、やり直そうと思っても、最初からになってしまったりと、なかなか落とせなかったので、
 公式に提供されているインストール・スクリプト使って作業を行いました。</p>
-
 <p>ネット回線が貧弱な環境にいるので５時間くらいかかりましたが、問題なくすっきりとインストールできました。</p>
-
 <p>手元にはすでに、Raspbianのイメージファイルがあるので、それをマイクロSDカードに書き込み、
 SSHでログインできる様に少し変更を加え、カードをpi０に入れて起動します。</p>
-
 <p>インストール方法は各所にて解説されていますので、省略します。</p>
-
 <p>そして使っている端末から（私はマックブック）でログインします。</p>
-
 <pre><code>ssh pii@raspberrypi.local
-</code></pre>
-
-<p>ここで、アップデートなどの作業は必要ありません。</p>
-
+</code></pre><p>ここで、アップデートなどの作業は必要ありません。</p>
 <p>以下の様にシェルスクリプトを落としてきて、実行します。</p>
-
 <ul>
 <li>sudo wget -q <a href="http://moodeaudio.org/downloads/mos/mosbuild.sh">http://moodeaudio.org/downloads/mos/mosbuild.sh</a> -O /home/pi/mosbuild.sh</li>
 <li>sudo chmod +x /home/pi/mosbuild.sh</li>
 <li>sudo ./mosbuild.sh</li>
 </ul>
-
 <p>最初にWifi＋環境上の基本的な設定を行います。</p>
-
 <pre><code>****************************************************************
 **
 **  Moode OS Builder v2.7
@@ -271,23 +258,17 @@ mkdir: cannot create directory ‘part2/home/pi/mosbuild’: File exists
 ** Power off the Pi (y/n)? y
 Connection to raspberrypi.local closed by remote host.
 Connection to raspberrypi.local closed.
-</code></pre>
-
-<p>ケーブルを抜き、再起動します。
+</code></pre><p>ケーブルを抜き、再起動します。
 あさの6時半ごろスタート、非常に環境の悪いマンションの共有ネットにて、インストールが始まります。
 再起動後ふと見ると、LEDのランプが付いていないので、心配になりましたが、動いてます。</p>
-
 <p>再起動後のログインは設定が変更されていて、以下の様になります。</p>
-
 <ul>
 <li>host： moode.local</li>
 <li>user： pi</li>
 <li>pass： moodeaudio</li>
 </ul>
-
 <p>何もなかった様に繋がります。裏ではインストール作業が行われています。
 インストールの経過を見るために幾つかのコマンド（mosbrief, moslast, moslog）が用意されています。</p>
-
 <pre><code>pi@moode:~ $ mosbrief
 // STEP 2 - Direct build so no need to expand Root partition
 // STEP 3A - Install core packages
@@ -327,17 +308,13 @@ Synchronizing state of bluetooth.service with SysV service script with /lib/syst
 Executing: /lib/systemd/systemd-sysv-install disable bluetooth
 Removed /etc/systemd/system/dbus-org.bluez.service.
 （延々とログが書き出されていきます。）
-</code></pre>
-
-<p>途中エラーのため、手動でリブートする必要がありました。
+</code></pre><p>途中エラーのため、手動でリブートする必要がありました。
 おかしいと思ったら<code>mosbrief or moslog</code>で状況を確認してください。
 aptでファイルをインストールしたり、スクリプトで、makeをしたりと、
 割と大忙しなインストール作業のようです。</p>
-
 <p>インストールが終了したら。最後のリブート（途中数回来起動します）。
 10時半ごろ終了しました。以下、インストールの詳細。
 幾つかエラーが出て、やり直したところもあります。</p>
-
 <pre><code>pi@moode:~ $ mosbrief
 // STEP 2 - Direct build so no need to expand Root partition
 // STEP 3A - Install core packages
@@ -366,61 +343,37 @@ aptでファイルをインストールしたり、スクリプトで、makeを�
 ** STEP 10 - Squashfs option not selected
 // STEP 11 - Optionally, install updated Linux Kernel
 pi@moode:~ $
-</code></pre>
-
-<p>使っているブラウザーより、割り当てられたアドレスにアクセスします。
+</code></pre><p>使っているブラウザーより、割り当てられたアドレスにアクセスします。
 随分、シンプルな画面です。右上の控えめな<strong>m⋎</strong>が設定メニューです。
 下部中央が画面の切り替えになっています。</p>
-
-<p><img src="/images/2019-03-07-moode-main.png" alt="moOde" /></p>
-
+<p><img src="/images/2019-03-07-moode-main.png" alt="moOde"></p>
 <p>そして、rpi0w端末の仕事っぷりをチェック。プロセスもさほど取られていない様なので、ちょっと他のサービスも裏で走らせてしまおうかなとか思ってます。</p>
-
-<p><img src="/images/2019-03-07-moode-top.png" alt="top on rp0w" /></p>
-
+<p><img src="/images/2019-03-07-moode-top.png" alt="top on rp0w"></p>
 <p>そして、このrp0wにはオーディオジャックが付いていないことに気づく。。</p>
-
-<hr />
-
+<hr>
 <h3 id="bt接続">BT接続</h3>
-
 <p>手元に香港小米家で買った、小米藍牙音頻接收器ことBT Audio Recieverを持っているのに気付き、設定を行いました。中国語、で何かしら喋ります。香港で買ったものだから、広東語だと思う。。。変更は不可の様です。</p>
-
-<p><img src="/images/2019-03-07-mi-bt-reciever.png" alt="BT Audio Reciever" /></p>
-
+<p><img src="/images/2019-03-07-mi-bt-reciever.png" alt="BT Audio Reciever"></p>
 <p>さて、何れにせよ、設定を行ってみました。右上のmより始めます。configurationをクリック。</p>
-
-<p><img src="/images/2019-03-07-config.png" alt="" /></p>
-
+<p><img src="/images/2019-03-07-config.png" alt=""></p>
 <p>そして、システムより（確か）、ブルートゥースの有効化をします。
 そうすると（確か）、画面上にBlueZというアイコンが表示されると思います。</p>
-
-<p><img src="/images/2019-03-07-bt-setting.png" alt="" /></p>
-
+<p><img src="/images/2019-03-07-bt-setting.png" alt=""></p>
 <p>設定より、下のオーディオ・アウトプットをブルートゥース経由に変更します。
 まずはスキャンをして、レシーバーを探します。そしてペアリングをして終了。</p>
-
-<p><img src="/images/2019-03-07-bt-scan.png" alt="" />
-<img src="/images/2019-03-07-bt-connect.png" alt="" /></p>
-
+<p><img src="/images/2019-03-07-bt-scan.png" alt="">
+<img src="/images/2019-03-07-bt-connect.png" alt=""></p>
 <p>なんか中国語で喋ってる、、</p>
-
-<p><img src="/images/2019-03-07-moode-playing.png" alt="" /></p>
-
+<p><img src="/images/2019-03-07-moode-playing.png" alt=""></p>
 <p>ラジオセクションから、Jazzチャンネルを選んでみるも音が聞こえず。
 ボリューム設定が０になって様で、プチプチと音量を上げる。。</p>
-
-<p>おっっ、聞こえた。<br />
+<p>おっっ、聞こえた。<br>
 わっ、しかも期待したより音が良い！</p>
-
 <p>ちょっと幸せかもしれん。。もう嬉しくて、目から鼻血が出そうです。</p>
-
 <p>いやぁ、このラズベリーパイは本当ご機嫌だねぇ。。</p>
-
 <p>来週にはRPiB3が届きます。こちらは、ノマドサーバーになる予定です。そして、ノマドルーターもシンガポールからタイに向けて発送中。</p>
-
 <p>数日後の追記：
-うーん残念なことが二つ。まずは、ラジオの登録数が少ないこと、登録はできる様だけれどもどうもうまくいかない。そして、もう一つはSCROBBLES。Last.fmに聴いた音楽のデーターを送りたいのだけど、設定はあるにもかかわらず、うまく送れない様、時差があるのか？。<br />
+うーん残念なことが二つ。まずは、ラジオの登録数が少ないこと、登録はできる様だけれどもどうもうまくいかない。そして、もう一つはSCROBBLES。Last.fmに聴いた音楽のデーターを送りたいのだけど、設定はあるにもかかわらず、うまく送れない様、時差があるのか？。<br>
 で、試しに入れた、VolumioはSCROBBLESはすぐに更新される様だけど、こっちはBTでの接続がいかん。。こっちではこれが動いて、あっちではこれが動かない、、フリーウェア系のドツボに陥った、、、数年更新のない、Runeを試してみるか。。。</p>
 
 				

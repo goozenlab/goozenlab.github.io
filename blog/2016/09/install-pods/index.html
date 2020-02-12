@@ -159,15 +159,11 @@
             	
             	<div class="post-content">
             		<p>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。</p>
-
 <pre><code>$ pod install
 Setting up CocoaPods master repo
 [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
 You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
-</code></pre>
-
-<p>で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）</p>
-
+</code></pre><p>で、回線状況悪く途中で回線が切断されエラー。（後もーちょいなのに、、）</p>
 <pre><code>$ cd .cocoapods/repos/
 $ git clone https://github.com/CocoaPods/Specs.git
 Cloning into 'Specs'...
@@ -179,15 +175,10 @@ fatal: The remote end hung up unexpectedly
 fatal: early EOF
 fatal: index-pack failed
 $
-</code></pre>
-
-<p>思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
+</code></pre><p>思ったよりファイルが大きいです（310MBくらい）。回線状況が悪い中でいるので終了まで結構時間がかかりました。朝の５時に起きて、早朝の誰も使っていないだろう時間帯でようやく完了。
 （途中回線が切れること数回、、、）</p>
-
-<p><img src="/images/2016-09-01-cocoapod-install.png" alt="pods install" /></p>
-
+<p><img src="/images/2016-09-01-cocoapod-install.png" alt="pods install"></p>
 <p>で改めて、プロジェクトディレクトリーの移動して、ポッドのインストール。今回は別件でエラーが出るが、まぁスムースに終了。</p>
-
 <pre><code>$ pod install
 Downloading dependencies
 Installing Alamofire (3.3.1)
@@ -199,12 +190,8 @@ Integrating client project
 [!] Please close any current Xcode sessions and use `(a).xcworkspace` for this project from now on.
 Pod installation complete! There are 2 dependencies from the Podfile and 3 total pods installed.
 $
-</code></pre>
-
-<p>ネット上では、<code>pod install --no-repo-update --verbose</code> でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。</p>
-
+</code></pre><p>ネット上では、<code>pod install --no-repo-update --verbose</code> でインストールというのも見ました。もし引き続きエラーが出る方はお試しを。</p>
 <p>swiftのライブラリーに切り替えたり、ライブラリを追加インストールや削除するときは、Podfileにライブラリを追加・削除し、アップデートします。</p>
-
 <pre><code>$ pod update
 Update all pods
 Updating local specs repositories
@@ -218,10 +205,7 @@ Using SwiftyDropbox (3.2.0)
 Generating Pods project
 Integrating client project
 Pod installation complete! There are 3 dependencies from the Podfile and 4 total pods installed.
-</code></pre>
-
-<p>こんな感じで終了。</p>
-
+</code></pre><p>こんな感じで終了。</p>
 <p>安堵。</p>
 
             	</div>

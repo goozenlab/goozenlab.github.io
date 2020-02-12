@@ -157,21 +157,12 @@
 
             <div class="post-content">
                 <p>NSDateでの <code>[NSDate date]</code> はシンプルにイニシャライザーに統合され？、Swiftでは</p>
-
 <pre><code>NSDate()
-</code></pre>
-
-<p>でよろしい。</p>
-
+</code></pre><p>でよろしい。</p>
 <pre><code>[NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60]
-</code></pre>
-
-<p>を、Swiftで書いてみると、</p>
-
+</code></pre><p>を、Swiftで書いてみると、</p>
 <pre><code>NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60)
-</code></pre>
-
-<p>エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、<br />
+</code></pre><p>エラーが出る。hoursGoodSleep は Float だし抜かりは無いような、、、<br>
 正しくは、<code>Double</code>でエラーは消える。こうゆう所は割と厳しいのね。。</p>
 
 				

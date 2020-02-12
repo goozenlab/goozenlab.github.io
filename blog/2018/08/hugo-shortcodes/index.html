@@ -154,46 +154,29 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Hugoには投稿記事から簡単なカスタムスニペットを呼び出すための、ショートコードと呼ばれるものがあります。</p>
-
+                <p>Hugoには投稿記事から簡単なカスタムスニペットを呼び出すための、ショートコードと呼ばれるものがあります。</p>
 <p>例のようにユーチューブの動画を埋め込んだり、アマゾンの商品番号からフィリエイトのタグを埋め込んだりなど、
 ポストごとにタグを打ち込んでいくような必要があり、頻繁に使用する必要がある場合にショートコードを使うとかなり便利です。後々の更新などもショートコードを変更するだけなので、メンテナンスも楽になります。（でも使いすぎると、他のジェネレーターに変えた時の意向が面倒かな。。）</p>
-
-<hr />
-
+<hr>
 <h2 id="テンプレートファイルの保管先とタイプ">テンプレートファイルの保管先とタイプ</h2>
-
 <p>Hugoの諸々のテンプレートファイルはほぼ全て同じ場所に保管されます。ショートコードも同様に  <code>/layouts/shortcodes/</code> に保存します。</p>
-
 <p>ファイル名は<code>ショートコード名.html</code> とします。</p>
-
-<h2 id="使用例-ユーチューブタグ">使用例（ユーチューブタグ）</h2>
-
+<h2 id="使用例ユーチューブタグ">使用例（ユーチューブタグ）</h2>
 <p>youtubeの動画を埋め込むタグを作ります。フィル名は <code>youtube.html</code>になります。そのファイルを<code>/layouts/shortcodes/</code>に保存します。</p>
-
 <p><code>youtube.html</code>の中身は以下、<code>{{ index .Params 0 }}</code>でパラメータを読み込みます。</p>
-
 <pre><code>&lt;div class=&quot;embed video-player&quot;&gt;
 &lt;iframe class=&quot;youtube-player&quot; type=&quot;text/html&quot; width=&quot;640&quot; height=&quot;385&quot; src=&quot;http://www.youtube.com/embed/{{ index .Params 0 }}&quot; allowfullscreen frameborder=&quot;0&quot;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-</code></pre>
-
-<p>投稿記事へショートコードの埋め込みはシンプルで、<strong>{{ &lt; youtube _WEMtYj2pJc &gt; }}</strong>を挿入するだけです。
+</code></pre><p>投稿記事へショートコードの埋め込みはシンプルで、**{{ &lt; youtube _WEMtYj2pJc &gt; }}**を挿入するだけです。
 ちと、勝手ながら猫動画を。。</p>
-
 <p>表示は以下のようになります。</p>
-
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/_WEMtYj2pJc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>書き出されるコードは以下。</p>
-
 <pre><code>&lt;div class=&quot;embed video-player&quot;&gt;
     &lt;iframe class=&quot;youtube-player&quot; type=&quot;text/html&quot;
         width=&quot;640&quot; height=&quot;385&quot;
@@ -201,9 +184,7 @@
         allowfullscreen frameborder=&quot;0&quot;&gt;
     &lt;/iframe&gt;
 &lt;/div&gt;
-</code></pre>
-
-<p>複数のパラメーターをとってきたりもできるらしいので、もう少し細かいことを知りたい方は本家の<a href="https://gohugo.io/content-management/shortcodes/">ドキュメント</a> を参照してください。</p>
+</code></pre><p>複数のパラメーターをとってきたりもできるらしいので、もう少し細かいことを知りたい方は本家の<a href="https://gohugo.io/content-management/shortcodes/">ドキュメント</a> を参照してください。</p>
 
 				
 

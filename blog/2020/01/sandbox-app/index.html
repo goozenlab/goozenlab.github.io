@@ -156,60 +156,40 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2020-01-13-flatpak-org.png" alt="" /></p>
-
+                <p><img src="/images/2020-01-13-flatpak-org.png" alt=""></p>
 <p>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。
 ディストリビューション毎に同じアプリをインストールしているのが少々ディスク領域が無駄ではなかろうかと思ってました。</p>
-
-<p><img src="/images/2020-01-13-appimage-org.png" alt="" />
-<!--いずれもライブラリーなどを含んで配布されるので、ディストリビューションに依存されません。
- --></p>
-
+<p><img src="/images/2020-01-13-appimage-org.png" alt=""></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>最近ディストリビューションに依存しないアプリの配布方法も存在していたようなのでちょっとリサーチ。
 オープンソース界隈の良いところでもありちょっと面倒なところでもあるのですが、チョイスがあります。</p>
-
-<p><img src="/images/2020-01-13-snap-io.png" alt="" /></p>
-
+<p><img src="/images/2020-01-13-snap-io.png" alt=""></p>
 <ul>
 <li>Snap: <a href="https://snapcraft.io/">https://snapcraft.io/</a></li>
 <li>Flatpak: <a href="https://flatpak.org/">https://flatpak.org/</a></li>
 <li>AppImage: <a href="https://appimage.org/">https://appimage.org/</a></li>
 </ul>
-
 <p>の３つがあります。</p>
-
 <p>SnapはUbuntuの会社が開発、残り二つは独自系。
 AppImageは動かすための他の追加アプリやライブラリーをインストールする必要がないのが強みで、
 ダウンロードして解凍し実行権を与えれば動きます。他の２つはアプリをインストールする必要があります。</p>
-
 <p>DebianのWikiにはFlatpakの記載があるので、推しということか？</p>
-
 <p>各々アプストアーがあります。GnomeやKDEでのプラグインもあって、一発でインストールもできます。</p>
-
-<p><img src="/images/2020-01-13-flathub.png" alt="Flathub" /></p>
-
+<p><img src="/images/2020-01-13-flathub.png" alt="Flathub"></p>
 <p>アプストアー：</p>
-
 <ul>
 <li>Snap: <a href="https://snapcraft.io/">https://snapcraft.io/</a></li>
 <li>Flatpak: <a href="https://flathub.org/home">https://flathub.org/home</a></li>
 <li>AppImage: <a href="https://appimage.github.io">https://appimage.github.io</a></li>
 </ul>
-
 <p>本当はアプリケーションの必要のないAppImageが良さそうなのだけれどもサポートしているアプリが少ない。
 使いそうなアプリケーションを調べてみてみると、SnapとFlatpakはメジャーなところはカバーしている。</p>
-
 <p>Ubuntuをけぎららっているわけではありませんが、Flatpakを使うことにします。</p>
-
 <p>Snapでのシンプルノートのダウンロード先およびディストリビューションのマップ。Archがそこそこ入っているのには少し驚き。Debianはもう少し頑張っても良いのですけどね、Ubuntuの独り勝ちですな。</p>
-
-<p><img src="/images/2020-01-13-snap-io-region.png" alt="" /></p>
-
+<p><img src="/images/2020-01-13-snap-io-region.png" alt=""></p>
 <p>インストールするソフトは以下で、SnapとFlatpakには配布されていました。
 特に大きいLibreofficeが共有できるようであればありがたや。</p>
-
 <ul>
 <li>Gimp</li>
 <li>Darktable</li>
@@ -226,28 +206,20 @@ AppImageは動かすための他の追加アプリやライブラリーをイン
 <li>Stellarium</li>
 <li>FlightGear</li>
 </ul>
-
 <p>そして見当たらなかった使いたいアプリはAppImageで提供されています（SimplenoteはSnapでも配布されています）。</p>
-
 <ul>
 <li>Simplenote: <a href="https://github.com/Automattic/simplenote-electron/releases">https://github.com/Automattic/simplenote-electron/releases</a></li>
 <li>Enpass: <a href="https://appimage.github.io/Enpass/">https://appimage.github.io/Enpass/</a></li>
 <li>Bitwarden: <a href="https://github.com/bitwarden/desktop/releases">https://github.com/bitwarden/desktop/releases</a></li>
 </ul>
-
 <p>アプストアーらしきものを巡ってみて、Snapに対応しているものが多いのですが、
 FlatPakにする。</p>
-
 <p>アプリを共有すれば、ディスクの節約にもなるでしょう。</p>
-
 <h2 id="試すがなんじゃこりゃ">試すがなんじゃこりゃ〜</h2>
-
 <p>で、いくつかインストールしてみました、、、、</p>
-
 <p>しかしながらインストールにえらく時間がかかる。プログラムが止まってるかと思うこと、数回試す。。。
 そして、通常の単体パッケージは<strong>32MB</strong>くらいのアプリをダウンロードするも
-もろもろのパッケージがついてきて<strong>！1.9GB！</strong>と、、</p>
-
+もろもろのパッケージがついてきて**！1.9GB！**と、、</p>
 <pre><code>jin@neon:/var/lib/flatpak$ du -h --max-depth=1
 1.9G    ./repo
 2.4M    ./appstream
@@ -274,18 +246,12 @@ jin@neon:/var/lib/flatpak$ du -h --max-depth=1
 148K    ./exports
 3.2G    .
 jin@neon:/var/lib/flatpak$
-</code></pre>
-
-<p>そして更にいくつかそんなに大きくないアプリを追加するとさらに<strong>！1GB増量！</strong></p>
-
+</code></pre><p>そして更にいくつかそんなに大きくないアプリを追加するとさらに**！1GB増量！**</p>
 <p>ある程度必要なものがダウンロードし終わるとそこまで増えないとはいえども、
 これでは普通にディストリビューションの使用量と同じくらいになるのでは？</p>
-
 <p>と、、まぁ、、</p>
-
 <p>これではディスクの容量節約にはなりませんのでアイディアは悪くないのだけどね、使えず。
 使うのはAppImageだけにしときます。</p>
-
 <p>うぬぬ。</p>
 
 				

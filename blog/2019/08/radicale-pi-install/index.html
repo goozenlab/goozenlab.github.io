@@ -156,24 +156,15 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-08-28-radicale-00.png" alt="Radicale" /></p>
-
+                <p><img src="/images/2019-08-28-radicale-00.png" alt="Radicale"></p>
 <p>カレンダー・コンタクトサーバーを導入しました。
 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局nextCloudをインストールしました。）。
 まぁ、スムースに動いてます。
 ちょっと重いnextCloudからの移行、さっぱりしました。</p>
-
 <h2 id="インストール">インストール</h2>
-
 <p>インストールはaptで一発です。幾つかの必要なものもインストールされました。</p>
-
 <pre><code>pi@tacos:~ $ sudo apt install radicale
-</code></pre>
-
-<p>サービスの起動・停止は<code>systemctl</code>でコントロールができます。</p>
-
+</code></pre><p>サービスの起動・停止は<code>systemctl</code>でコントロールができます。</p>
 <pre><code>pi@tacos:~ $ sudo systemctl status radicale.service
 ● radicale.service - LSB: Radicale CalDAV and CardDAV server
    Loaded: loaded (/etc/init.d/radicale; generated)
@@ -189,56 +180,18 @@ Aug 28 12:36:38 tacos systemd[1]: Starting LSB: Radicale CalDAV and CardDAV serv
 Aug 28 12:36:41 tacos radicale[24951]: Starting Radicale CalDAV server : radicale.
 Aug 28 12:36:41 tacos systemd[1]: Started LSB: Radicale CalDAV and CardDAV server.
 pi@tacos:~ $
-</code></pre>
-
-<!--
-## リバースプロキシー設定
-
-```
-server {
-    listen 80;
-    server_name radicale.goozen.lab;
-    auth_basic "Not currently available";
-
-    location / {
-        proxy_pass http://localhost:5232/;
-        proxy_buffering on;
-        #proxy_set_header X-Script-Name /radicale;
-        #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        #proxy_pass_header Authorization;
-        #proxy_redirect off;
-
-
-        # Place the files somewhere nginx is allowed to access (e.g. /etc/nginx/...).
-        #proxy_ssl_certificate         /path/to/client_cert.pem;
-        #proxy_ssl_certificate_key     /path/to/client_key.pem;
-        #proxy_ssl_trusted_certificate /path/to/server_cert.pem;
-    }
-}
-```
--->
-
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="設定">設定</h2>
-
-<!--
-```
-pi@tacos:~ $ sudo cp /etc/radicale/config /etc/radicale/config.orig
-pi@tacos:~ $ sudo vi /etc/radicale/config
-```
--->
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>設定ファイルは<code>/etc/radicale/config</code>になります。
 基本デフォルトで問題無いようです。
 ホストの設定をして、アクセスのためのパスワードファイルを作ります。</p>
-
 <p><code>htpasswd</code>を使うために<code>apache2-utils</code>をインストールします。</p>
-
 <pre><code>pi@tacos:~ $ sudo apt-get install apache2-utils
-</code></pre>
-
-<p>$USERと$USER２のパスワードを<code>home/pi/.radicale_htpasswd</code>に保存します。
+</code></pre><p>$USERと$USER２のパスワードを<code>home/pi/.radicale_htpasswd</code>に保存します。
 暗号化タイプは<code>bcrypt</code>、とても安全ということです。</p>
-
 <pre><code># Create a new htpasswd file with the user &quot;$USER&quot;
 pi@tacos:~ $ htpasswd -B -c /home/pi/.radicale_htpasswd $USER
 New password:
@@ -247,10 +200,7 @@ Re-type new password:
 pi@tacos:~ $  htpasswd -B /home/pi/.radicale_htpasswd $USER2
 New password:
 Re-type new password:
-</code></pre>
-
-<p>そして認証のタイプ、ファイルの保管先などの設定をファイルに書き込ます。</p>
-
+</code></pre><p>そして認証のタイプ、ファイルの保管先などの設定をファイルに書き込ます。</p>
 <pre><code>pi@tacos:~ $ sudo vi /etc/radicale/config
 
 [auth]
@@ -258,92 +208,59 @@ type = htpasswd
 htpasswd_filename = /home/pi/.radicale_htpasswd
 htpasswd_encryption = bcrypt
 
-</code></pre>
-
-<p>ちなみに、ストレージ先は
+</code></pre><p>ちなみに、ストレージ先は
 <code>/var/lib/radicale/collections</code>
 になります。</p>
-
-<div class="attention">リバースプロキシーの設定もサイトに記載されてありましたが、ちょっとうまく動きませんでした。色気の無いIP直打ちで今のところ運用中。</div>
-
+<!-- raw HTML omitted -->
 <h2 id="アクセス">アクセス</h2>
-
 <p><code>http://&lt;&lt;HOST_OR_IP&gt;&gt;:5232/</code>にアクセス、
 設定したユーザー・パスワードでログインします。
 非常にシンプルなデザインになってます。</p>
-
 <p>データーが無いので、名称とタイプを記入し作成します。
 アドレスブックと、カレンダー数種を作りました。</p>
-
-<p><img src="/images/2019-08-28-radicale-01.png" alt="Radicale" /></p>
-
+<p><img src="/images/2019-08-28-radicale-01.png" alt="Radicale"></p>
 <p>作成したものにはURLアドレスが添えされ、外部からのアクセスが可能になります。
 ここで色々とファイルを弄るという感じではありません、保存場所という感じです。
 まぁ頻繁にアクセスすることは無いので十分です。</p>
-
-<p><img src="/images/2019-08-28-radicale-02.png" alt="Radicale" /></p>
-
-<div class="hint">タイプをタスクの入ったものにすると、リマインダーでの同期も可能になります。ジャーナルはちょっと分からず。。</div>
-
+<p><img src="/images/2019-08-28-radicale-02.png" alt="Radicale"></p>
+<!-- raw HTML omitted -->
 <h2 id="macより">Macより</h2>
-
 <p>マックからの接続はそんなに複雑ではありません。
 住所録の設定はシステム設定の<code>インターネットアカウント</code>より行います。</p>
-
-<p><img src="/images/2019-08-28-radicale-address.png" alt="Radicale" /></p>
-
+<p><img src="/images/2019-08-28-radicale-address.png" alt="Radicale"></p>
 <p>CardDAVアカウント追加し、Radicalで作成した住所録のアドレスと
 ユーザー名・パスワードを入れて登録します。</p>
-
-<p><img src="/images/2019-08-28-radicale-address-mac.png" alt="Radicale" /></p>
-
+<p><img src="/images/2019-08-28-radicale-address-mac.png" alt="Radicale"></p>
 <p>カレンダー設定も<code>インターネットアカウント</code>より行います。
 ただ、こちらは上記の住所録とはちがいアドバンス・セッティングで登録します。</p>
-
-<p><img src="/images/2019-08-28-radicale-calendar-mac-01.png" alt="Radicale" /></p>
-
+<p><img src="/images/2019-08-28-radicale-calendar-mac-01.png" alt="Radicale"></p>
 <p>カレンダーのアドレスは
 <code>http://10.0.0.10:5232/jin/86a7b038-e297-377c1-278a3859498a/</code>
 と、こんな感じですが、分割して設定します。
 複数のカレンダー（パーソナル・ビジネス等）をまとめて取り込むことができます。</p>
-
 <ul>
-<li>Server: Address: &lt;<HOST>&gt;</li>
+<li>Server: Address: &laquo;HOST&raquo;</li>
 <li>Server Path: /$USER</li>
 <li>Port: 5232</li>
 <li>SSLのチェックはオフに</li>
 </ul>
-
-<p><img src="/images/2019-08-28-radicale-calendar-mac-02.png" alt="Radicale" /></p>
-
-<div class="hint">マニュアル設定でサーバーアドレスを<b>http://$HOST$:5232/$USER/</b>でもよかったのかも。。</div>
-
+<p><img src="/images/2019-08-28-radicale-calendar-mac-02.png" alt="Radicale"></p>
+<!-- raw HTML omitted -->
 <p>アカウントに名前を付けておきます。そして！リマインダーも同期が可能でした。（確認済み）</p>
-
-<p><img src="/images/2019-08-28-radicale-calendar-mac-03.png" alt="Radicale" /></p>
-
+<p><img src="/images/2019-08-28-radicale-calendar-mac-03.png" alt="Radicale"></p>
 <h2 id="androidより">Androidより</h2>
-
 <p>オープンソースの<code>DAVx5</code>を使ってデーターの同期を行います。</p>
-
-<p><img src="/images/2019-08-28-radicale-android-davx.png" alt="DAVx5" /></p>
-
+<p><img src="/images/2019-08-28-radicale-android-davx.png" alt="DAVx5"></p>
 <p>これまたオープンソースのカレンダーアプリ<code>etar</code>とタスクアプリ<code>Task</code>に自動で取り込まれます。</p>
-
-<p><img src="/images/2019-08-28-radicale-android-etar.png" alt="etar" />
-<img src="/images/2019-08-28-radicale-android-task.png" alt="task" /></p>
-
+<p><img src="/images/2019-08-28-radicale-android-etar.png" alt="etar">
+<img src="/images/2019-08-28-radicale-android-task.png" alt="task"></p>
 <p>付属するコンタクトアプリの同期は少し方法が違って、<code>設定＞アカウント</code>を経て設定を行います。</p>
-
 <p>まぁ、そんなに頻繁に同期するわけでは無いですが、小気味よく動いてくれています。</p>
-
 <p>これでネット上に置いてある細切れになっているコンタクトなどを一箇所まとめ、
 避難かつ共有もできるようになりました。</p>
-
-<p>というか、断捨離でコンタクトを一掃整理しました。<br />
+<p>というか、断捨離でコンタクトを一掃整理しました。<br>
 連絡が長い期間途絶えてる人は、サヨ〜〜ナ〜ラ〜〜。</p>
-
-<div class="note">ちょっとしたらもう一度最初からサーバーの構築する予定なので、カレンダー・タスク・アドレス帳の同期についても、まとめてもう少し丁寧に書きなおします。</div>
+<!-- raw HTML omitted -->
 
 				
 

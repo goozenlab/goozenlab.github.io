@@ -156,71 +156,42 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-09-05-syncthing.png" alt="Syncthing" /></p>
-
+                <p><img src="/images/2019-09-05-syncthing.png" alt="Syncthing"></p>
 <p><strong>Dropbox</strong>をブログの写真やスクリーンショットをマックブックに移動するために使っていました。
 問題はインターネットの回線が必要なこと。
 日本国内のように光通信で網羅されている環境では気にするまででもないのでしょうが、
 最近の滞在先があまり通信環境が良くないところなので、
 物理的にすぐそこにあるのに、なかなか、アップロードもダウンロードもできない状態が重なり、ちょっとストレス。</p>
-
 <p>しかも、最近Dropboxが接続台数制限をかけ始め、ちょっと怪しげな雰囲気になってきましたし、自前でパイ・サーバーやルーターを構築したりしているので、この辺りを改善に向けちょっと作業をしました。
 <strong>nextCloud</strong>や<strong>pydio</strong>を試してみましたが、ちょっと、MariaDBやwebサーバーなどをインストールしなければいけないし、規模が大きくパイ・ゼロでの運用は少し荷が重いようです。</p>
-
 <p>矛先を変えアップルのエアー・ドロップような感覚で使えそうな、ピアツーピアの<strong>Syncthing</strong>を導入しました。ちょっとアンドロイドのアプリが割りに落ちますが、これはアプリの問題なのか、不安定な通信状況による不具合なのかは定かではないのだけれど、なかなか好感触。唯一残念なところはiOSのクライアントがないところ。ただ持っているiOS端末はアプリ検証用のiPhone5Sなので、切り捨てます。画像のやり取りはマックブックに直接繋げて行います。
 macOSへはbrewよりインストールが可能なのでまぁ良しとしました。</p>
-
 <p>まぁ、さて、ラズビアン・パイゼロにインストール。</p>
-
 <pre><code>$ sudo apt install syncthing
-</code></pre>
-
-<p>で、インストールはおわり。</p>
-
+</code></pre><p>で、インストールはおわり。</p>
 <h2 id="設定">設定</h2>
-
 <p>ヘッドレスで運用しているパイ・サーバーの場合、sshでサーバーに接続し、syncthingを起動しても設定のためのWebページが開きません。デバイス登録、共有フォルダーの設定などができません。</p>
-
 <p>SSHでポート番号を振り分けることもできるらしく、syncthingで使われるポート：8384をローカルのポート：9999に割り当て、（もちろん9999以外のポートを使っても構いません。）ローカル・マックブックで作業を行います。</p>
-
-<p>&lt;&lt;パイ・サーバー&gt;&gt;:8384 &lt;- を・へ -&gt; &lt;&lt;ローカル&gt;&gt;:9999</p>
-
+<p>&laquo;パイ・サーバー&raquo;:8384 &lt;- を・へ -&gt; &laquo;ローカル&raquo;:9999</p>
 <p>マックブックから、SSHコマンド<code>ssh -L 9999:localhost:8384 ユーザー名@ホスト名orアドレス</code>でサーバーへ接続します。</p>
-
 <pre><code>$ ssh -L 9999:localhost:8384 pi@10.0.0.65
 $ syncthing
-</code></pre>
-
-<p>SSHで接続したまま、syncthingを起動します。</p>
-
-<p><img src="/images/2019-06-30-syncthing-install-00.png" alt="" /></p>
-
+</code></pre><p>SSHで接続したまま、syncthingを起動します。</p>
+<p><img src="/images/2019-06-30-syncthing-install-00.png" alt=""></p>
 <p>マックブックのWebブラウザで<code>http://127.0.0.1:9999</code>にてリモートで動いているSyncthingの設定画面が表示されるはずです。そしてローカルで動かしているSyncthingは<code>http://127.0.0.1:8384</code>で立ち上げます。</p>
-
 <p>左にサーバー、右にマックブックの画面を開いてます。ここでデバイスの登録、共有するフォルダーの設定などを行います。</p>
-
-<p><img src="/images/2019-06-30-syncthing-install-01.png" alt="" /></p>
-
+<p><img src="/images/2019-06-30-syncthing-install-01.png" alt=""></p>
 <h2 id="自動起動">自動起動</h2>
-
 <p>サーバにての作業が続きます。syncthingを起動時に動かすために、syncthingサービスを
 systemdに登録します。ユーザー名「pi」は、ご自身のものに変えて実行してください。</p>
-
 <pre><code>$ sudo -Es
 # cp /lib/systemd/system/syncthing@.service /etc/systemd/system/syncthing@pi.service
 # systemctl start syncthing@pi.service
 # systemctl enable syncthing@pi.service
-</code></pre>
-
-<p>参照：<a href="https://docs.syncthing.net/users/autostart.html#linux">https://docs.syncthing.net/users/autostart.html#linux</a></p>
-
-<hr />
-
+</code></pre><p>参照：https://docs.syncthing.net/users/autostart.html#linux</p>
+<hr>
 <p>転送もローカル・ネットワークなので、繋がっていれば瞬間です。
 これで、ネットがつながっていないところでもルーターが必要ですが、携帯で撮った写真をマックブックに持ってくることができます。</p>
-
 <p>パート2：<a href="https://goozenlab.com/blog/2019/07/syncthing-settings/">デバイスの登録と、同期設定</a></p>
 
 				

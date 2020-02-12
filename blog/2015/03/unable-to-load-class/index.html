@@ -161,40 +161,27 @@
             	
             	<div class="post-content">
             		<p>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。</p>
-
 <p>さて、さて、まずは、</p>
-
 <pre><code>2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
 Unable to load class named 'Item' for entity 'Item'.  
 Class not found, using default NSManagedObject instead.
-</code></pre>
-
-<p>というエラーがでる。ファイルはあるのだが、、</p>
-
+</code></pre><p>というエラーがでる。ファイルはあるのだが、、</p>
 <p>これは、動く。</p>
-
 <pre><code>func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
     var cell = cell as ListViewCell
     cell.textLabel?.text = item.valueForKey(&quot;name&quot;)!.description
 }
-</code></pre>
-
-<p>で、動かなーーーーい。。。</p>
-
+</code></pre><p>で、動かなーーーーい。。。</p>
 <pre><code>func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as Item
     var cell = cell as ListViewCell
     cell.textLabel?.text = item.name
 }
-</code></pre>
-
-<p>ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
+</code></pre><p>ネットで調べるにも、、、停電かつ、ネットが途切れ途切れ。。。二進も三進もいかん。。
 解決したら加筆します。とりあえず保留。（素直にストーリーボードを使うかな。）</p>
-
 <p>追記 @ 3/20：解決しました。詳細は<a href="https://goozenlab.com/blog/2015/03/load-managedobject/">こちら</a>)より。</p>
-
-<p><img src="/images/2015-03-12-pockhara.jpg" alt="Pokhara street" /></p>
+<p><img src="/images/2015-03-12-pockhara.jpg" alt="Pokhara street"></p>
 
             	</div>
            		

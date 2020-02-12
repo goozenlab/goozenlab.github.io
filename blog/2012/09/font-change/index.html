@@ -156,13 +156,9 @@
             <div class="post-content">
                 <p>オクトプレスに移行して今度はレイアウトをいじり始めてます。デカ文字調整は<code>source/stylesheets/screen.css</code> を変更して終了とおもいきや、だぁーーっと、一直線のファイルでてきます。うむむっ、これは警告なのか？一抹の不安がよぎりました。単純に気になる文字の大きさをちょっと変えたいだけなのに何か変んな感じです。
 （デフォルトテーマの文字の大きさが、ちと、デカ過ぎやしませんか？いったいどんな液晶を使ってるんでしょうか？開発者殿。）</p>
-
 <p>こちらの<a href="http://tokkonopapa.github.com/blog/2011/12/29/octopress-classic-theme-structure/">Octopressのテーマ - Classicの構成</a>のおかげで、なーんとなく構造はつかめたような気がするが、見た事のないsassファイルでつまずきました。</p>
-
 <p>で、<a href="http://hail2u.net/documents/sass-tutorial.html">Sass - チュートリアル</a>をよみ、その他のページを流し読み、少し分かった気になる。</p>
-
 <p>で、取りあえずフォントの変更は<code>sass/layput/_typography.sass</code>の40行目のbodyのfont-sizeを変えあげればよし、全体のフォントのサイズが変わり?ます。（1.15emから1.0emで10％程縮小されます。）</p>
-
 <pre><code>h1 {
   font-size: 2.2em; // ここを変えてもなにも変わらない。    
   line-height: 1.2em;
@@ -172,17 +168,12 @@
   body { font-size: 1.0em; } // 全てのフォントの大きさが変わる default:1.15em
   h1 { font-size: 2.2em; line-height: 1.2em; } // 本文でのh1 default:2.6em
 }
-</code></pre>
-
-<p>で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。</p>
-
+</code></pre><p>で、今度は余白が気になり始めました。。ほんとは全体のデザインにも手を付けたいのだけど、、うぅーーーん。来週からインドでアシュラム生活。。</p>
 <p>追記：出発前に <code>sass/custom/_colors.scss</code> をアプリで使う色にちょっと変更してみました。</p>
-
 <pre><code>$page-bg: #c0c6c9;      // 灰青
 $header-bg: #9ea1a3;    // 錫色
 $text-color: #383c3c;   // 羊羹色
 </code></pre>
-
 				
 
 

@@ -156,74 +156,47 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>Raspberry  Pi にてのMicroSDカードのパフォーマンス</p>
-
+                <p>Raspberry  Pi にてのMicroSDカードのパフォーマンス</p>
 <p>手元にあったマイクロSDカード、あそこで買ったり、ここで買ったりと、
 改めて見てみると、メーカーは違えとも、規格やサイズは同じ。</p>
-
 <p>デジカメに入れていたり、携帯に入れていたりして使っていたのだけど、ちょっと速度差がある様に感じたので、
 ラズベリーパイで色々試験運転中、タイミングも良いということで、チェックしてみました。</p>
-
 <p>とはいえ、そこまで詳しく知りたいというわけでは無いので、簡易テストでスピードを測ってみる。</p>
-
 <pre><code>pi@pi:~ $ dd if=/dev/zero of=/tmp/output conv=fdatasync bs=384k count=1k; rm -f /tmp/output
-</code></pre>
-
-<h2 id="結果-成績の良い順">結果：成績の良い順</h2>
-
+</code></pre><h2 id="結果成績の良い順">結果：成績の良い順</h2>
 <ul>
 <li>Lexer 16GB: Class10 HC1 on DietPie.RPi0W</li>
 </ul>
-
 <p>402653184 bytes (403 MB, 384 MiB) copied, 23.3597 s, <strong>17.3 MB/s</strong></p>
-
 <ul>
 <li>SanDisk Ultra 16GB: Class10 HC1 on DietPie.RPi0W</li>
 </ul>
-
 <p>402653184 bytes (403 MB, 384 MiB) copied, 24.4524 s, <strong>16.5 MB/s</strong></p>
-
 <ul>
 <li>Toshiba  16GB: Class10 HC1 on DietPie.RPi0W</li>
 </ul>
-
 <p>402653184 bytes (403 MB, 384 MiB) copied, 31.2713 s, <strong>12.9 MB/s</strong></p>
-
 <ul>
 <li>Samsung EVO Plus 32GB: Class10 HC1 on ArchLinux.RPi3B</li>
 </ul>
-
 <p>402653184 bytes (403 MB, 384 MiB) copied, 1.3863 s, <strong>290 MB/s</strong></p>
-
 <p>うぬ？？えらく早くないか？？RPi3Bだからなのか、、、。（追記：3月13日）</p>
-
 <p>on Raspbian.RPi3B
 402653184 bytes (403 MB, 384 MiB) copied, 31.995 s, <strong>12.6 MB/s</strong></p>
-
-<p>on DietPi.RPi3B<br />
+<p>on DietPi.RPi3B<br>
 402653184 bytes (403 MB, 384 MiB) copied, 0.831691 s, <strong>484 MB/s</strong></p>
-
-<hr />
-
+<hr>
 <h2 id="おまけ">おまけ</h2>
-
 <h3 id="pi-zeroシリアル接続速度">Pi Zeroシリアル接続速度</h3>
-
 <ul>
 <li>MacBook Air11 -&gt; Raspberry Pie Zero W へのUSB Gadget Mode時の転送速度</li>
 </ul>
-
 <p>RPi0wでは、ネットの通信環境が良くないので、MacBookのUSBポートにつないで作業もしています。
 もし早ければ、RPiB3（いろいろサーバー）にPi Zeroを直付して使おうかなと、
 気になったので、簡単な転送テストを行ってみました。</p>
-
 <pre><code>gallo:~ jin$ scp 2018-11-13-raspbian-stretch-lite.img pi@pi-hole.local:
 2018-11-13-raspbian-stretch-lite.img        41%  733MB   5.0MB/s   03:28
-</code></pre>
-
-<p>途中ですが終りまでコンスタントに、5.0 MB/s (40.0 Mbps)。思ったより遅い。
+</code></pre><p>途中ですが終りまでコンスタントに、5.0 MB/s (40.0 Mbps)。思ったより遅い。
 USB 2.0は規格上480Mbpsの通信が可能で、実効速度でも40MB/秒程度のスピードは出るらしいし、
 Wifiだと、802.11bで11Mbps、802.11g 54Mbps、802.11a 36～54Mbpsなので、
 Wifiの速度に比べると安定していて良いのかもしれない。時間があったら、ちょっと分けてみるかな。

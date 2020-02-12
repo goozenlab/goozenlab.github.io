@@ -157,15 +157,10 @@
 
             <div class="post-content">
                 <p>リマインダーへの日時の書き込み</p>
-
 <p>読み込み時には</p>
-
 <pre><code>event.dueDate = eventToRead.dueDateComponents.date;
 event.timeZone = eventToRead.dueDateComponents.timeZone;
-</code></pre>
-
-<p>と、あっさりと行くのですが、<code>.dueDateComponents.date</code> は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。</p>
-
+</code></pre><p>と、あっさりと行くのですが、<code>.dueDateComponents.date</code> は readonly で書き込み時には日時をバラバラにしてまとめて書き込みます。</p>
 <pre><code>
   NSCalendar *gregorian = [[NSCalendar alloc]
                            initWithCalendarIdentifier:NSGregorianCalendar];
@@ -178,7 +173,6 @@ event.timeZone = eventToRead.dueDateComponents.timeZone;
   eventToWrite.timeZone = eventToExport.timeZone;
   
 </code></pre>
-
 				
 
 <h3>See Also</h3>

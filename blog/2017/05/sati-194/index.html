@@ -162,17 +162,11 @@
         
             	
             	<div class="post-content">
-            		
-
-<p>1.9.3をアップデートし、間髪を入れずにiOS10にて音が <strong>”Tri-Tone”</strong> に変わってしまうバグのホットフィックスアップデートです。  ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。余計な１タップが減ります。</p>
-
+            		<p>1.9.3をアップデートし、間髪を入れずにiOS10にて音が <strong>”Tri-Tone”</strong> に変わってしまうバグのホットフィックスアップデートです。  ついでに、瞑想開始時にでるアラートを２秒後に自動で消えるようにしました。余計な１タップが減ります。</p>
 <p>アプリは一時配信を中断。ダウンロードしてしまったユーザーの方々申し訳有りません。</p>
-
 <h2 id="unnotification-ios10">UNNotification (iOS10)</h2>
-
-<p>まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。<br />
+<p>まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。<br>
 そして、今更ながら、iOS10からは通知の仕様が変更されていたのを知らなかった。</p>
-
 <pre><code>func registerAlarm(_ atDate: Date, soundName: String, identifier: String) {
     //print(&quot;fire: &quot; + atDate.description + &quot; with sound:&quot; + soundName + &quot; with identifier:&quot; + identifier)
     if #available(iOS 10.0, *) {
@@ -209,12 +203,8 @@
         }
     }
 }
-</code></pre>
-
-<p>検証用端末iPhone5Sを10.0.1から10.3.2にアップデートし、実機にてテストを1日行いアプストアに申請しました。</p>
-
+</code></pre><p>検証用端末iPhone5Sを10.0.1から10.3.2にアップデートし、実機にてテストを1日行いアプストアに申請しました。</p>
 <p>数日後？にはアップされると思います。ダウンロードしてしまったiOS10ユーザーの方々もうすこし我慢のほどよろしくお願いします。</p>
-
 <p>追記：
 20日に申請が通りました。おさわがせしました。</p>
 

@@ -154,62 +154,46 @@
             </div>
 
             <div class="post-content">
-                
-
-<p><img src="/images/2019-02-21-twrp-recovery.png" alt="TWRP" /></p>
-
+                <p><img src="/images/2019-02-21-twrp-recovery.png" alt="TWRP"></p>
 <p>TWRPはLineageOSの前身、CyanogenModの頃から開発され、カスタムロムを焼き付けるためのソフトとして重宝されてきました。</p>
-
 <blockquote>
 <p>Cyanogenとその他の開発者たちは、Open Android Alliance（Open Handset Allianceではない）を構成している。これは、「完全にカスタマイズできて、Googleや他の権利に頼らないAndroidの雰囲気」への貢献をゴールとする組織である。</p>
 </blockquote>
-
 <p>新機種への対応も早く、ルート化後の欠かせないツールになっています。開発陣に感謝です。</p>
-
 <p>そのTWRPを使って現在使用中のフルバックアップ・復元方法を行います。
 ルート化は端末によって異なるので割愛します。TWRPのインストール方法はXDAの<a href="https://www.xda-developers.com/how-to-install-twrp/">こちら</a>から。</p>
-
 <h3 id="事前に必要なこと">事前に必要なこと</h3>
-
 <p>事前に以下の項目が必要になります。</p>
-
 <ol>
 <li>ルート権限：ロム全体をバックするためには必ずルート権限が必要になります。Majisticをカスタムロムにインストールすることで、可能になります。</li>
 <li>TWRP： バックアップ・復元のために使うソフトです。カスタムロムを焼くときにお世話になるソフトでもあります。</li>
 <li>空容量：各自異なりますが、必要な容量を確保しましょう。足りない時は、警告が出ます。</li>
 <li>バッテリー残量：万一に備えてバッテリーも70%くらいの残量状態から作業を始めましょう。</li>
 </ol>
-
 <h3 id="バックアップ">バックアップ</h3>
-
 <ol>
 <li>TWRPモードに入るためにFastboot状態で起動します。（電源を落として、電源ボタン＋ボリュームアップボタンを押しつつ起動すると、Fastbootで起動します。）</li>
 <li>TWRPモードに入ります。右にあるボタンの中の<strong>Backup</strong>を選択します。</li>
 <li>次の項目をチェックする。３つのパーティションが必要です。
-
 <ol>
 <li><strong>Boot,</strong></li>
 <li><strong>Data</strong></li>
 <li><strong>System</strong></li>
-</ol></li>
+</ol>
+</li>
 <li>（オプション）バックアップファイルの名前を変更することもできます。</li>
 <li>バックアップのスタートは<strong>Backup</strong>を押してください。</li>
 <li>完了後、<strong>Reboot System</strong>を押して再起動します。</li>
 </ol>
-
 <p>バックアップのファイルはどこかにとって置くのが良いと思います。</p>
-
 <h2 id="復元">復元</h2>
-
 <ol>
 <li>TWRPモードに入るためにFastboot状態で起動します。</li>
 <li><strong>Restore</strong>ボタンを押します。</li>
 <li>復元したいバックアップのフォルダーを選択します。</li>
 <li>完了後、<strong>Reboot System</strong>を押して再起動します。</li>
 </ol>
-
 <p>バックアップされた、ロムで起動されます。イェイ。</p>
-
 <p>と、思いきや、旧正月以降のロムではまた暗号化されてしまうそうです。。うむむ。
 この開発者さんは、LineageOSの移植をされてる方だから、できればそちらに尽力していただきたいのだけどね。。</p>
 

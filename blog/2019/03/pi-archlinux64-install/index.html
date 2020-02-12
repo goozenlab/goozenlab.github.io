@@ -156,50 +156,32 @@
             </div>
 
             <div class="post-content">
-                
-
-<p>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。）</p>
-
+                <p>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。）</p>
 <p>ラズベリアンにダイエット・パイをちょっと弄って、今回はArchLinux.arm64を導入してみたいと思います。</p>
-
 <p><a href="https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3">https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3</a></p>
-
 <p>色々と比較検討をしていて、折角ラズベリーパイ３Bは64bit対応であるにもかかわらず、
 現在、販売されている、ラズベリーパイは規格が、arm6, arm7, arm8と32bitと64bitのチップが混在してるため下位互換を保つ為の理由で32bitにて動いてます。</p>
-
 <p>パイ・ゼロで動いて、パイ３で不具合があったり、その逆だったりがあるのは、その辺に問題があるのではないかという人もいるのを、ネット上で見ました。</p>
-
 <p>真偽のほどはよくわからないけれど、それならば、自分でソースコードからビルドできる環境にするのが一番効率が良いように思えて、それがスムーズに可能なのはGentooとArchなのかなと、、。</p>
-
 <p>ということもあって、Archに白羽の矢が立ちました。
 本来はサーバー用途で使うので、安定環境を第一に考えたいのですが、
 動かしたいソフトがうまく動かなかったりして、動いてもバージョンが古く不都合があったり、
 気になっていたディストリビューションでもあったので、ちと、期待を込めて、頑張ってみました。</p>
-
-<hr />
-
-<h2 id="準備-起動ディスクを作成">準備：起動ディスクを作成</h2>
-
+<hr>
+<h2 id="準備起動ディスクを作成">準備：起動ディスクを作成</h2>
 <p>さて、まずはインストール用のマイクロSDカードを作成します。インストール用というかそのまま起動用のディスクになります。インストールの作業については非常によくまとまったWikiがあるので、詳細は割愛します。</p>
-
 <p>ArchLinux鬼門のインストール。公式ページのインストラクションが！本当に！良いです。
 個人の方々のブログも参考にしつつ作業を行いました。</p>
-
 <p><a href="https://wiki.archlinux.jp/index.php/Raspberry_Pi">https://wiki.archlinux.jp/index.php/Raspberry_Pi</a></p>
-
 <p>2017年くらいから、インストールをSSH経由でできる様になっているので、モニターとキーボードを繋げないで作業ができるのは、非常にありがたいです。</p>
-
 <p>しかし、作業にLinuxの端末が必要なのが、ちょっと。作業・検証機のPiZeroWにカードリーダーをつないで作業を行いました。</p>
-
-<p><img src="/images/2019-03-26-install-arch.png" alt="ArchLinux Raspberry Pi " /></p>
-
+<p><img src="/images/2019-03-26-install-arch.png" alt="ArchLinux Raspberry Pi "></p>
 <p>一連の流れはこんな感じ</p>
-
 <ol>
 <li>マイクロSDカードの確認：本体にディスクが一つ、外部に何もつないでいなければほとんどのケースで、/dev/sdaになります。</li>
 <li>マイクロSDカードのパーテーション操作。</li>
 <li>マイクロSDカードのフォーマット＋マウント</li>
-<li>ファイルシステムをダウンロード<br />
+<li>ファイルシステムをダウンロード<br>
 途中でSSHの接続が切れてやり直しました。その様な時は、オプションの<code>-c -b</code> をつけて再実行かつバックグラウンドで実行します。（c: continue, b: backgroundだと）経過はログに書き込まれます。</li>
 <li><code>bsdtar</code>は別途インストールの必要がありました。</li>
 <li><code>bsdtar</code>にて落としたファイルを解凍：以下の作業は、<code>su</code>ではなく、<code>root</code>として行ってください（公式ウィキより）。</li>
@@ -207,35 +189,24 @@
 <li>ファイルシステムの書き込み、同期</li>
 <li>マウントを解除し、マイクロSDカードを取り出す</li>
 </ol>
-
 <p>半分終了</p>
-
-<hr />
-
+<hr>
 <h2 id="archをインストーする端末での作業">Archをインストーする端末での作業</h2>
-
 <p>取り出したマイクロSDカードをRaspberry Pi 3に挿入して電源を入れます。ネットワークランプがピカピカ着いたら無事起動中と言うメッセージです。SSHのサービスは起動時に有効化されます。</p>
-
 <p>同じネットワーク内の端末のターミナルより接続します。
 あらかじめ設定されているアカウントは二つありますが、ルートでの接続は禁止されているので、
 alarmアカウントでログインします。</p>
-
 <ul>
 <li>userID: alarm / password: alarm</li>
 <li>userID: root / password: root</li>
 </ul>
-
 <p>接続先は<code>alarm.local</code>では見つからなかったので、ルーターよりIP番号を調べて<code>ssh alarm＠&lt;&lt;IP NUMBER&gt;&gt;</code>で接続します。</p>
-
 <pre><code>gallo:~ jin$ ssh alarm@alarm.local
 gallo:~ jin$ ssh alarm＠&lt;&lt;IP NUMBER&gt;&gt;
 [alarm@alarm ~]$  su root
 Password: root
 [root@alarm alarm]$ 
-</code></pre>
-
-<h3 id="pacman-keyの鍵の初期化と登録をします">pacman-keyの鍵の初期化と登録をします。</h3>
-
+</code></pre><h3 id="pacman-keyの鍵の初期化と登録をします">pacman-keyの鍵の初期化と登録をします。</h3>
 <pre><code>[root@alarm alarm]$ pacman-key --init
 
 gpg: /etc/pacman.d/gnupg/trustdb.gpg: trustdb created
@@ -249,47 +220,28 @@ gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: depth: 1  valid:   3  signed:   1  trust: 0-, 0q, 0n, 3m, 0f, 0u
 gpg: depth: 2  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
 [root@alarm alarm]$ 
-</code></pre>
-
-<h3 id="パスワードの変更">パスワードの変更</h3>
-
+</code></pre><h3 id="パスワードの変更">パスワードの変更</h3>
 <p>そして、セキュリティー上、ルートのパスワードを変更しましょう。</p>
-
 <pre><code>[root@alarm alarm]$ passwd
 New password:
 Retype new password:
 passwd: password updated successfully
-</code></pre>
-
-<h3 id="ユーザーを作る">ユーザーを作る。</h3>
-
+</code></pre><h3 id="ユーザーを作る">ユーザーを作る。</h3>
 <p>今の状態だと、アカウントは、<code>root</code>と<code>alarm</code>しかありません。
 自分のアカウントを作ります。</p>
-
 <pre><code>[root@alarm alarm]$ useradd -m -g wheel &lt;&lt;USER&gt;&gt;
 [root@alarm alarm]$ passwd &lt;&lt;USER&gt;&gt;
-</code></pre>
-
-<h3 id="sudo">sudo</h3>
-
+</code></pre><h3 id="sudo">sudo</h3>
 <p>ユーザーアカウントで<code>sudo</code>をインストールして使えるようにします。</p>
-
 <pre><code>[root@alarm alarm]$ pacman -S sudo
 [root@alarm alarm]$ visudo
-</code></pre>
-
-<p>以下の２項目を探し、コメントを除きます。</p>
-
+</code></pre><p>以下の２項目を探し、コメントを除きます。</p>
 <pre><code>Defaults env_keep += “HOME”`
 # sudo したときユーザの $HOME を参照できるようにする
 %wheel ALL=(ALL) ALL
 # wheel グループのユーザに sudo する権限を与える。
-</code></pre>
-
-<h3 id="タイムゾーン">タイムゾーン</h3>
-
+</code></pre><h3 id="タイムゾーン">タイムゾーン</h3>
 <p>タイムゾーンを設定する</p>
-
 <pre><code>[root@alarm alarm]$ timedatectl status
                Local time: Tue 2019-03-12 22:47:05 UTC
            Universal time: Tue 2019-03-12 22:47:05 UTC
@@ -302,56 +254,35 @@ System clock synchronized: yes
            Universal time: Tue 2019-03-12 22:47:59 UTC
                 Time zone: Asia/Bangkok (+07, +0700)
 [root@alarm alarm]#
-</code></pre>
-
-<h3 id="locale">locale</h3>
-
+</code></pre><h3 id="locale">locale</h3>
 <p>localeの設定も行う</p>
-
 <pre><code>[root@alarm alarm]$ vi /etc/locale.gen
 [root@alarm alarm]$ locale-gen
 Generating locales...
   en_US.UTF-8... done
   ja_JP.EUC-JP... done
 Generation complete.
-</code></pre>
-
-<h3 id="アップデート">アップデート</h3>
-
+</code></pre><h3 id="アップデート">アップデート</h3>
 <p>インストール用のOSイメージは、最新のパッケージと時差があるので、アップデートされているソフトウェアがあります。システム全体をアップデートします。
 -Syyと-Syuuはapt updateとapt upgradeのような関係です。</p>
-
 <p>割とイメージファイルが作られたのが、十日前くらいなので、そんなに更新するパッケージの量は多くありませんでした、しかし、回線が遅く途中で嫌われたりしましたが、とりあえず無事に完了。</p>
-
 <pre><code>[root@alarm alarm]$ pacman -Syy
 [root@alarm alarm]$ pacman -Syuu
-</code></pre>
-
-<p>pacmanの使い方は公式ドキュメントにて。<a href="https://wiki.archlinux.jp/index.php/Pacman">pacman - ArchWiki</a> ArchのWikiはすごく充実してます。</p>
-
+</code></pre><p>pacmanの使い方は公式ドキュメントにて。<a href="https://wiki.archlinux.jp/index.php/Pacman">pacman - ArchWiki</a> ArchのWikiはすごく充実してます。</p>
 <h3 id="disk-speed">disk speed</h3>
-
 <p>ここでちょっと脱線、以前行った読み込みテストを忘れないうちにここで行う。結果は爆速、<strong>290 MB/s</strong> と出る。64bit化の恩恵化？ほんまかいなと疑いぶかい結果となる。使ったマイクロSDカードはサムソンのEvoPlus 32GB (180B: ¥650)。（ちょっと方法を変えるかな。）
 ちなみに、RPi0WでのSDカードは同じ規格のもので、Lexer 16GBdでの結果は17.3MB。1/17のスピードって、何が起こった？。</p>
-
 <pre><code>[root@alarm alarm]$ dd if=/dev/zero of=/tmp/output conv=fdatasync bs=384k count=1k; rm -f /tmp/output
 1024+0 records in
 1024+0 records out
 402653184 bytes (403 MB, 384 MiB) copied, 1.3863 s, 290 MB/s
 [root@alarm alarm]#
-</code></pre>
-
-<h3 id="hostname">Hostname</h3>
-
+</code></pre><h3 id="hostname">Hostname</h3>
 <p>最後にホストネーム<code>/etc/hostname</code>を変えます。私の命名規則：ルーターは雲、小型サーバーは鳥の名前、ラップトップはビール名、Pi0Wサーバー：つまみ名、でやっとります。とりあえず一服、ひと段落。</p>
-
 <pre><code># vi /etc/hosts
 127.0.0.1 localhost iska
 ::1 localhost iska
-</code></pre>
-
-<p>（つづく）</p>
-
+</code></pre><p>（つづく）</p>
 <p>で、Dockerをインストールするもののエラーで上がらず。。。心が折れそう、、さてさて。。。</p>
 
 				

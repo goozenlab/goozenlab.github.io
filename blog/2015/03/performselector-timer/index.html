@@ -157,23 +157,16 @@
 
             <div class="post-content">
                 <p>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。</p>
-
 <pre><code>[NSObject cancelPreviousPerformRequestsWithTarget:self
                                          selector:@selector(notifiyUpdate)
                                            object:nil];
 [self performSelector:@selector(notifiyUpdate)
            withObject:nil
            afterDelay:kUpdateCellShortInterval];
-</code></pre>
-
-<p>object-cで上記に書かれた<code>performSelector</code>はSwiftでは無くなってしまったようなので、以下のコードでは動かない。</p>
-
+</code></pre><p>object-cで上記に書かれた<code>performSelector</code>はSwiftでは無くなってしまったようなので、以下のコードでは動かない。</p>
 <pre><code> NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: notify, object: nil)
  NSObject.performSelector(notify, withObject: self, afterDelay: Interval.UpdateCell)
-</code></pre>
-
-<p>幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、<code>cancelPreviousPerformRequestsWithTarget</code>が無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。</p>
-
+</code></pre><p>幾つかの方法があるようですが、タイマーを使った方法が簡易でよいのですが、<code>cancelPreviousPerformRequestsWithTarget</code>が無用になってしまう。処理の事前キャンセルも必要があるので、少し修正して最終的には以下のようになる。</p>
 <pre><code>private var tapTimer: NSTimer?
 
 // 処理
@@ -187,7 +180,6 @@ func cancelTimer() {
     }
 }
 </code></pre>
-
 				
 
 <h3>See Also</h3>
