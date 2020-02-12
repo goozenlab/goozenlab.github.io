@@ -196,7 +196,7 @@ path =
 
 # 除外ファイルリスト
 include ignore_filelist_macos
-</code></pre><!-- raw HTML omitted -->
+</code></pre><div class="attention">※ 注意：unisonのデフォルト設定ではシンボリックリンクを同期しません。</div>
 <p>シンボリックリンクも同期したい場合は、以下のような設定をプロファイルに追記します。</p>
 <pre><code>follow = Path ディレクトリ名 または ファイル名
 </code></pre><h2 id="除外ファイル">除外ファイル</h2>
@@ -224,7 +224,7 @@ ignore = Name .localized
 <p><code>unison 設定ファイル名</code>で同期します。初回は少し時間がかかるといいますが、ファイル数が少ないので瞬間で終わりました。
 同期するファイルの確認を行います、問題がなければ、そのまま<code>y</code>で続行します。
 同じ名前のファイルがあったら、選択する必要があります（たしか）。</p>
-<!-- raw HTML omitted -->
+<div class="hint">※ 沢山のファイル（例えば1000とか）がある人は、まずは rsync でファイルをコピーしてから行った方が良いかな。</div>
 <pre><code>jin@gallo:~ $ unison tacos_scripts
 Unison 2.51.2 (ocaml 4.06.1): Contacting server...
 Connected [//gallo.goozen.lab//Volumes/Work/Development/Scripts -&gt; //tacos//home/pi/scripts]
@@ -310,8 +310,23 @@ jin@gallo:~ $
 <li><a href="http://uzy-exe.hateblo.jp/entry/2013/12/29/071159">unisonによる2台のサーバ間でのファイル同期</a></li>
 <li><a href="https://88171.net/unison_manual_ja">Unisonマニュアル私的日本語訳 - 88171.net</a></li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+## おまけ
+
+バックグラウンで静かに走っているのは良いのですが、ちょっと寂しいので同期をしたときに、通知するアップルスクリプトを追加しました。
+
+$1にさっきの設定ファイル(.prf)を拡張子なしで渡してやる．
+
+~/Documents/exec/nortificate.sh
+
+```
+#!/bin/bash
+
+unison "$1"
+
+echo 'display notification "Unison Notifier" with title "Unison" subtitle "ファイルを同期しました。"' | osascript
+```
+-->
 
 				
 

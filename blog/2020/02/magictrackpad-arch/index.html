@@ -245,8 +245,18 @@ BIOS では無効化しているはずなのですが無視される。</p>
 <p><a href="https://github.com/rohitpid/Linux-Magic-Trackpad-2-Driver">https://github.com/rohitpid/Linux-Magic-Trackpad-2-Driver</a></p>
 <p>追記：調子にのっってデビアン、バスターのカーネルをバックポート版（5.4)に入れ替えて試してみたところ、
 認識・接続はうまくいくも動作が安定しませんでした。接続が安定しないのか動きをうまく追随してこなく、一気に動いたりします。。（調整は可能かもしれん。。とりあえず放置。）</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+無効化
+
+jin@guiness:~$ journalctl | grep Elan
+Feb 01 14:10:40 guiness kernel: psmouse serio1: elantech: Elan sample query result 00, 20, c9
+Feb 01 14:10:40 guiness kernel: elan_i2c 1-0015: Elan Touchpad: Module ID: 0x0020, Firmware: 0x0001, Sample: 0x0000, IAP: 0x0000
+Feb 01 14:10:40 guiness kernel: input: Elan Touchpad as /devices/pci0000:00/0000:00:1f.4/i2c-1/1-0015/input/input9
+Feb 01 14:10:40 guiness kernel: input: Elan TrackPoint as /devices/pci0000:00/0000:00:1f.4/i2c-1/1-0015/input/input10
+Feb 01 14:17:04 guiness gnome-shell[1103]: libinput error: event7  - Elan Touchpad: kernel bug: Touch jump detected and discarded.
+jin@guiness:~$
+-->
 
 				
 

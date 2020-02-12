@@ -159,7 +159,7 @@
                 <p>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTorも)・サーバーを入れて串刺しにするかちょっと考えてます。</p>
 <p>アクセス・ポイント化する為に必要なソフトは以下の二つ＋最後の方でもう一つ（任意）です。aptでインストールします。</p>
 <pre><code>pi@cashu:~ $ sudo apt install hostapd dnsmasq
-</code></pre><!-- raw HTML omitted -->
+</code></pre><div class="attention"><b>※</b> dnsmasqはpiholeとインストール時にコンフリクトします。dnsmasqを停止して、piholeインストールしました。最初にpiholeをインストールしておけば、こちらでインストールする必要はなかったかも。</div>
 <h2 id="wlan0設定">wlan0設定</h2>
 <p>無線LANの設定します。まずは、ドライバーなどしっかり認識されているかチェック。（ちょっと心配だった。）</p>
 <pre><code>pi@cashu:~ $ iwconfig
@@ -273,9 +273,9 @@ pi@cashu:~ $ sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 <pre><code>pi@cashu:~ $ sudo apt-get install iptables-persistent
 </code></pre><p>途中に、ipv4, ipv6の状態を保存するか？との質問があります。”はい”で現在のiptablesの設定内容が、/etc/iptables/rules.v4 に保存されます。起動時に毎回呼び出され、読み込まれます。</p>
 <p>以上の設定が終わったらリブートし完了です。</p>
-<!-- raw HTML omitted -->
+<div class=“hint”>※　後々`iptables`を変更・追加などをした場合は、`/etc/iptables/rules.v4`に追加書き込みます。</div>
 <pre><code>pi@cashu:~ $ sudo iptables-save | sudo tee /etc/iptables/rules.v4
-</code></pre><!-- raw HTML omitted -->
+</code></pre><div class="attention"><b>※</b> 無線のdhcpで使うIP番号割り当てを有線で使っているIP番号とちょっとバッティングさせてしまい、有線LANが外に出てかない、という不具合がありました。まったくの凡ミスですが、お気をつけのほど。</div>
 <p>と、Debianの64bit対応Busterは割と問題なく今の所動いてます。大ハマりだった、ドッカーも起動してます。動作が機敏な感じが。。（RPi0Wと比べたら当たり前か。）あとはBTが動いてくれれば、、。</p>
 
 				

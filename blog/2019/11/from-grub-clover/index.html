@@ -195,8 +195,88 @@ chainloader /EFI/clover/CLOVERX64.efi
 （理由は分から無いのだけれど、多分どこかのカーネルエクステンションが邪魔をしているのだと思う。
 昔のMacのSystem7とかの拡張機能を思い出しました。）</p>
 <p>そして、たま〜にリブート時にFanErrorが出ます。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+## 微調整
+
+そしてちょっと気になる所を調整します、
+
+まずは老眼対応。解像度が細かいく小さい文字が見えづらいのでこれどもかと言うくらいに拡大する。
+
+
+そして、使うOSも毎回選択するものでは無いので、ブートメニューが表示され3秒間入力待ちになるのが、別に急いでいるわけでは無いけれど、気分的にちょっとうざったいので、
+
+特定のキーが押されていないときはデフォルトのシステムで起動という形（MacOSのように）にする。ブートでの待ち時間はゼロ。
+
+
+表示時間をゼロにことで、ブートメニュは表示されませんが、
+必要な時にはShiftキーを押すことでブートローダーのメニューにアクセスすることができます。
+
+
+そして、基本MacOSのためのCloverをそのまま立ち上げ、
+シフトキーを押されている時だけブートローダーを起動するような設定にする。
+マックでオプションキーを押すと起動ディスクの選択ができるようになります。
+（ウィンドウズ・キー（左のオプションキー）をマックでもスポットライトに割り当てられないかなと、、）
+
+その１：一気にブートさせたい、毎回リターンキーを打って選択するのが面倒である。
+
+
+一気に流れていく。
+
+sudo gedit /etc/default/grub
+
+
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_TIMEOUT=0
+
+
+grep menuentry /boot/grub/grub.cfg
+
+
+then modify the line
+
+GRUB_DEFAULT="0" (first line of boot)
+
+to
+
+GRUB_DEFAULT="N"
+
+
+その２：デフォルトのシステムを決める
+
+デフォルトで一気に起動、もし他のシステムで立ち上げたい時には
+BIOS画面表示後、シフト・キーでブートローダーが起動します。
+
+
+そこで使うシステムを選択してブート。
+
+
+
+その２：自動したシステムを保存します。
+
+時に、ハッキントッシュを利用中、スリープ時に落ちていることがあります。
+起動すると、デフォルトのManjaroが立ち上がってる事があります。
+
+
+Saved method - In my preferred way, I made the following changes from the standard grub file.
+
+I changed the value of GRUB_DEFAULT to saved:
+
+GRUB_DEFAULT=saved
+
+I enabled the SAVEDEFAULT functionality by adding the following line:
+
+GRUB_SAVEDEFAULT=true
+
+変えたい時には、
+ブート時にShiftキーかESCキーでブート画面にたどり着きます。
+
+
+問題点：
+
+Snapshotsを使った時にメニューでの作業があったりするので少し面倒になるかしれない。後々、まぁ使って見て考えます。
+
+-->
 
 				
 

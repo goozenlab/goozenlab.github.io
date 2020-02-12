@@ -218,7 +218,7 @@ pi@raspberry:~ $
 そのまま踏襲しました。（なんでこうやった？？自問。でも不問。）
 適当なシェル・スクリプトですので参考まで、、</p>
 <p>まず、JSON形式のデータをbashで扱うために<code>jq</code>というライブラリーが必要ですので、</p>
-<!-- raw HTML omitted -->
+<!-- (参考：https://qiita.com/asukiaaa/items/a9413b2cc60c598c3d61) -->
 <p>インストールします。</p>
 <pre><code>pi@raspberry:~ $ sudo apt install jq
 </code></pre><p>値の所得は、パイソン・スクリプトでJSON形式で落とします。
@@ -317,7 +317,7 @@ curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABA
 （値動きが激しいので、少しこまめにチェック。）</p>
 <pre><code>*/15 * * * * /home/pi/scripts/update_btc_jpy.sh
 </code></pre><p>これで、取り込みと、データーベースへの登録が完了。</p>
-<!-- raw HTML omitted -->
+<div class="note">※ pyhthonで書き換え中ですが、日付の扱いでちょっと戸惑ってます。。あとはすごくスッキリするんですけどね。のちの追記します。</div>
 <h2 id="grafana">Grafana</h2>
 <p>取り込んだデーターをGrafanaを使って表示します。
 データーソースの登録とグラフの作成が必要になります。
@@ -394,8 +394,18 @@ sqlの知識のある人は複雑なグラフを作り出すことも可能で�
 <p>簡単なシステムです。現在パイ・3A+で運用してますが、
 パイ・ゼロでも、一つ二つだけのアプリケーションならば、スムーズに動きます（ゼロ：パイホールとグラファナで実証済み）ので、
 専属サーバーとして動かしても面白いかも。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+参考：
++ pybitflyer をつかって Python で ビットコインレートを取得してみた: 
+https://futurismo.biz/archives/6401/
+
+過去データー
+http://api.bitcoincharts.com/v1/csv/
+
+Grafanaでローソク足チャートを表示する方法
+https://hassiweb-programming.blogspot.com/2019/01/Grafana-Candlestick-Chart.html
+https://github.com/ilgizar/ilgizar-candlestick-panel
+-->
 
 				
 

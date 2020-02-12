@@ -159,7 +159,12 @@
                 <p>すでにDebianとManjaroで利用中のBTRFSパーティションに
 あらたにArchを追加・新規インストールした際のメモ。</p>
 <p>自分の作業メモとして残す。</p>
-<!-- raw HTML omitted -->
+<div class=note>
+現在Wifiネットワーク設定方法がいくつかの選択肢があって、
+Window Magagerも何で使うかをまだ決めていないので、
+少々面倒になりつつあるのでとりあえず放置。
+現在デビアン＆マンジャーロを使ってます。
+</div>
 <p>インストールメディアの作成はお馴染みのEtcherを使う。</p>
 <p>Thinkpad T480sを使っているので、ネットワークケーブルをつなぎ、
 起動後F12を押しブートメニュー、USBスティックで起動。</p>
@@ -274,8 +279,65 @@ root@archiso $ umount /mnt/
 root@archiso $ reboot
 </code></pre><p>とりあえず、ベアメタル環境ができあがる。</p>
 <p>wifiとzfsはdkmsを使う。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+ 
+無線LANの設定
+wpa_supplicant
+
+## Software Installation ===
+
+
+#### Sway
+
+
+#### Snapper: Automatic Snapshots ===
+
+LOOK　FOR　MORE　INFORMATION!!!
+
+Install the packages: grub-btrfs, snapper. 
+
+Follow the instructions at snapper wiki for configuration. 
+Make sure to start and enable appropriate systemd services. 
+grub-btrfs adds the snapshots entries into grub menu, therefore allowing us to recover from system failure. 
+To enable automatic updation of grub menu, run the following:
+
+curl -o 10-update_grub.conf "https://raw.githubusercontent.com/Antynea/grub-btrfs/master/10-update_grub.conf"
+sudo cp 10-update_grub.conf /etc/systemd/system/snapper-timeline.service.d/
+sudo cp 10-update_grub.conf /etc/systemd/system/snapper-cleanup.service.d/
+rm 10-update_grub.conf
+
+This will run the grub-mkconfig -o /etc/default/grub command each time a snapshot is created or deleted. 
+Your snapshots will now appear in the grub menu under “Snapshots”.
+
+
+#### Hardening
+
+chmod 700 /boot /etc/{iptables,arptables}
+
+nano /etc/securetty
+ * Comment tty1
+
+nano /etc/iptables/iptables.rules
+ *filter
+ :INPUT DROP [0:0]
+ :FORWARD DROP [0:0]
+ :OUTPUT ACCEPT [0:0]
+ -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT 
+ -A INPUT -i lo -j ACCEPT 
+ -A INPUT -p udp --sport 53 -j ACCEPT
+ -A INPUT -p icmp -j REJECT
+ -A INPUT -p tcp -j REJECT --reject-with tcp-reset 
+ -A INPUT -p udp -j REJECT --reject-with icmp-port-unreachable 
+ -A INPUT -j REJECT --reject-with icmp-proto-unreachable 
+ COMMIT
+systemctl enable iptables.service
+
+nano /etc/sysctl.conf
+ * net.ipv4.conf.all.log_martians = 1
+ * net.ipv4.conf.all.rp_filter = 1
+ * net.ipv4.icmp_echo_ignore_broadcasts = 1
+ * net.ipv4.icmp_ignore_bogus_error_responses = 1
+-->
 
 				
 

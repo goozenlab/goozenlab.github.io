@@ -203,10 +203,18 @@ BIOS モードに入るには Thinkpad の場合ですと再起動後 <strong>[F
 </ul>
 </li>
 <li><strong>&raquo;</strong> Virtualization + Virtualization Intel Virtualization Technology [ENABLE] + Intel VT-d Feature [ENABLE]
-<!-- raw HTML omitted -->
+<div class=note>
+<b>※</b>
+仮想化：バーチャライゼーションは<b>DISABLED</b> にせよとありましたが、
+Linux 環境で kvm を使うかもしれんので<b>ENABLED</b> にしたままインストールしました。
+KVM での検証はまだしてません。問題が発生したら DISABLE に変更予定。
+（使い始めて３カ月経過しましたが今の所問題なし。）
+</div>
 </li>
 <li><strong>&raquo;</strong> I/O Port Access + Wireless WAN [DISABLED] + Memory Card Slot [DISABLED]： + Fingerprint Reader [DISABLED]
-<!-- raw HTML omitted -->
+<div class=attention>
+<b>！！ </b> SDカードスロットは使えないと聞いていましたが、今回ブログを書くためにちょっと試しにENABLEにしたら使えました<b>！！ </b> でもバッテリーを割と食うと聞いたのでオフにします。
+</div>
 </li>
 <li><strong>&raquo;</strong> Secure Boot
 <ul>
@@ -236,8 +244,16 @@ BIOS モードに入るには Thinkpad の場合ですと再起動後 <strong>[F
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
++ https://github.com/vumvo/myt480s on Apr 24
++ https://github.com/linusyang92/macOS-ThinkPad-T480s on May 4 with Tools
++ https://github.com/lisovskiy01/T480s-hackintosh on Aug 6
++ https://github.com/kk1987/T480s-hackintosh on Nov 13, 2018
++ https://github.com/tylernguyen/x1c6-hackintosh
+
++ https://github.com/xzhih/one-key-hidpi
+
+-->
 
 				
 

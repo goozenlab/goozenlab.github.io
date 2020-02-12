@@ -199,8 +199,15 @@ _internal
 telegraf
 There was an error writing history file: open /home/pi/.influx_history: permission denied
 &gt;
-</code></pre><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre><!--
+## Pythonよりアクセス。
+
+python3よりアクセスをしたい時にはライブラリーがあります。
+
+```
+pi@raspberrypi:~ $ sudo apt install python3-influxdb
+```
+-->
 <h2 id="追記">追記</h2>
 <p>Pi 3A+のメモリーは512MBで少なくはないのですが、Versiopn 17.* は結構メモリー食いで、パッケージも大きい,。
 デビアンのBusterのVersion16.*のものはそこまでではないようだったので、ダウングレードして試しに使ってみました。（にしてもかなりのメモリーを消費してますが。。）</p>

@@ -248,8 +248,9 @@ kernel=kernel8.img
 </code></pre><p>多分、起動時には、/bootとして認識されて、起動後はお役御免で、firmwareに隠居するような形になっている？。。と思ってます。</p>
 <p>ビルド後は、/bootだけではなくて、/boot/firmwareにファイルをコピーします。</p>
 <p>で、再起動後、確認します。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+![New Kernel](/images/2019-04-02-new-kernel.png)
+-->
 <hr>
 <h2 id="２回目以降">２回目以降</h2>
 <p>２回目以降のビルド時は少し楽、かつ、ビルドにかかる時間も少ないです。</p>
@@ -267,8 +268,10 @@ $ make -j4 O=../kernel-out/ ARCH=arm64
 その後は上記のように必要なファイルを移動します。</p>
 <p>※ちょっと、カーネルv5をビルドしてみました。カーネルのオプションがどんどん増えてますね、ちょっと大変な作業になりました。</p>
 <p>※で、最初はうまくいったのですが、２回目行った時は新しいカーネルでは起動せず。。しかしビルドしたカーネルをコピーした32bit環境のRaspbianでは問題なく起動する。しかもBTも有効になる。。なんかよくわからん。。BTは32bit環境でしか動いてくれないのが、、ちょっとスキル不足か。。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+参照：  
+[pre-compiled binaries of the current Raspberry Pi kernel and modules](https://github.com/raspberrypi/firmware)  
+-->
 
 				
 

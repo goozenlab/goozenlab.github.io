@@ -159,7 +159,47 @@
                 <p><img src="/images/2019-12-20-linux-windowmamager-gnome-00.png" alt="Gnome Desktop"></p>
 <p>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。
 とりあえず２つのディストリビューションを使っています。</p>
-<!-- raw HTML omitted -->
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th></th>
+            <th>安定：debian buster</th>
+            <th>試験環境：Manjaro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>firefox</td>
+            <td>68</td>
+            <td>71</td>
+        </tr>
+        <tr>
+            <td>libre office</td>
+            <td>6.1.5</td>
+            <td>6.2.8</td>
+        </tr>
+        <tr>
+            <td>gnucach</td>
+            <td>3.4-1</td>
+            <td>3.7.3</td>
+        </tr>
+        <tr>
+            <td>gimp</td>
+            <td>2.10.8</td>
+            <td>2.10.14</td>
+        </tr>
+        <tr>
+            <td>inkscape</td>
+            <td>0.92-1</td>
+            <td>0.92.4</td>
+        </tr>
+        <tr>
+            <td>darktable</td>
+            <td>2.6.0</td>
+            <td>2.6.3</td>
+        </tr>
+   </tbody>
+</table>
 <p>ついでにちょっとインストールしたアプリケーションのバージョンの違いを表にしてみました。
 まぁそこまで違わないのは、debianが比較的新しいからか、、で、関係ないけれど、デフォルトで入っている日本語のフォントはデビアンの方が綺麗です。</p>
 <p>ウィンドウマネージャーの数を上げるときりがありません。
@@ -227,8 +267,28 @@ Winodws好き、マック好きなど人それぞれですので、
 ワークフローを考え自分に合いそうなWMを
 いくつかに絞って試してみることをお勧めします。</p>
 <p>ダイバーシティーやな。（意味不透明。）</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+https://wiki.manjaro.org/index.php/Install_Desktop_Environments
+
+KDE Plasma 5
+
+sudo pacman -S plasma kio-extras  kdebase manjaro-kde-settings manjaro-settings-manager-knotifier manjaro-settings-manager-kcm
+
+
+Budgie 
+
+sudo pacman -S budgie-desktop network-manager-applet gnome-control-center gnome-screensaver manjaro-budgie-settings manjaro-settings-manager papirus-maia-icon-theme
+
+i3
+sudo pacman -S i3-wm i3lock i3status
+
+sway
+ am on Sway and its been very good. I have essentially chosen my programs around wayland native applications. I use Termite, mpv and gnome-mpv, rhythmbox, virt-manager, etc as they are all wayland native applications. And of course a number of CLI based apps (coreutils of course, vim, a number of bash scripts doing different things, etc)
+
+ou can simply update packages, install adapta-maia-theme and papirus-maia-icon-theme and if you would like the exact same config as the latest ISO just take .dmenurc and .i3/config from /etc/skel. ~/.Xresources
+
+-->
 
 				
 

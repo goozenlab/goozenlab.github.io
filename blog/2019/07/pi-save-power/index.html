@@ -193,8 +193,15 @@ dtparam=act_led_trigger=none
 dtparam=act_led_activelow=on
 </code></pre><p>起動時・シャットダウン時には点灯・消灯しますので、起動・シャットダウンの確認はできます。
 ついてると、ちょっとうざったいけれど、ずっと消えてるのも、なにか心配。。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!-- 指定のファイルが確認できず
+### USB OFF
+USB の電源をオフします．下記のコマンドを実行します．
+USB OFF     0.51W 削減
+
+```
+pi@DietPi:~# echo 0 | sudo tee /sys/devices/platform/soc/3f980000.usb/buspower
+```
+-->
 <h2 id="cpu">CPU</h2>
 <p>CPUクロックを変更、コアの数を調整、電力設定モードの変更ができます。</p>
 <h3 id="cpu速度">CPU速度</h3>

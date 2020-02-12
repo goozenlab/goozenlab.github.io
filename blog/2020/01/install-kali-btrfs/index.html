@@ -170,7 +170,7 @@ Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする
 そしてbtrfsのツールもインストール。</p>
 <pre><code>$ apt install btrfs-progs debian-installer-launcher
 </code></pre><p>端末がスリープしてしまった時には</p>
-<!-- raw HTML omitted -->
+<div class=hint>パスワード： root [ toor ] </div>
 <h2 id="2-インストールをネットワーク設定のドメイン名の登録のところまで進める">2. インストールをネットワーク設定のドメイン名の登録のところまで進める</h2>
 <p><img src="/images/2020-01-11-kali-btrfs-11-installation-05.png" alt="Kali install"></p>
 <p>ここで作業をいったん止めて、ターミナルを開く。</p>
@@ -256,8 +256,146 @@ $ apt upgrade
 <li>Btrfs Wiki, Btrfs Debian site, apt-btrfs-snapshot, Snapper: <a href="http://snapper.io/">http://snapper.io/</a></li>
 <li>kali linuxの基本設定をしてみた。: <a href="https://ameblo.jp/shinnaka54/entry-12420242361.html">https://ameblo.jp/shinnaka54/entry-12420242361.html</a></li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
++ 暗号通貨 とセキュリティ(medium.com): [WIFIアダプターをモニターモードにする](https://medium.com/ethical-hacking-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC/wifi%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC%E3%82%92%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AB%E3%81%99%E3%82%8B-%E6%9C%80%E9%87%8D%E8%A6%81%E3%82%B9%E3%82%AD%E3%83%AB-5ee7a57e5165)
+
+
+
+## 基本設定
+
+初期起動サービスについて、現在起動しているサービス
+
+```
+service --status-all
+```
+
+# Sanpshot and Recover
+
+Congratulations, you have just installed a Kali system with automatic snapshotting functionality! Next, we will cover some basic usage examples.
+Usage
+
+Then we set the default subvolume to “5” to satisfy “apt-btrfs-snapshot”:
+
+btrfs subvolume set-default 5 /
+
+Now we can download and install the “apt-btrfs-snapshot” tool from the Ubuntu repository
+
+wget https://launchpad.net/ubuntu/+archive/primary/+files/apt-btrfs-snapshot_3.5.2_all.deb
+apt install ./apt-btrfs-snapshot_3.5.2_all.deb
+
+
+
+Create snapshots
+
+Snapshots are automatically created during apt operations. There are no additional steps required, e.g.:
+
+btrfs-50-example-snapshot
+List snapshots
+
+Firstly, a snapshot is also a subvolume, thus all snapshots also show up when listing btrfs subvolumes, e.g. via btrfs subvolume list /
+
+btrfs-51-example-subvolume-list
+
+To list only the snapshots, we can use the following command: apt-btrfs-snapshot list
+
+btrfs-52-example-snapshot-list
+Delete snapshots
+
+The easiest way to delete a snapshot is by using the following command: apt-btrfs-snapshot delete
+
+btrfs-52-example-snapshot-delete
+
+Voila, it’s gone:
+
+btrfs-53-example-snapshot-list-after-delete
+
+There are more sophisticated ways to delete multiple snapshots, e.g. the following deletes all snapshots older than 2 days:
+
+apt-btrfs-snapshot delete-older-than 2d
+
+Refer to the help output for all the different features of “apt-btrfs-snapshot”
+Rollback
+
+To roll back to a previous snapshot we have to remember two things: - the root “/” of the file system has been installed in a subvolume “/@” and not the root of the btrfs partition “/” - a snapshot is treated like just another subvolume
+
+thus all we have to do is mount the btrfs partition and replace the current root subvolume “@” with the last snapshot. To be safe we’ll backup the curent root (“@”) subvolume. E.g.:
+
+mount /dev/nvme0n1p5 /mnt                                   # mount your root partition (replace "/dev/nvme0n1p5" with yours)
+mv /mnt/@ /mnt/@_badroot                                    # Move the old root away
+mv /mnt/@ /mnt/@apt-snapshot-2019-10-13_18:07:40 /mnt/@     # Roll back to a previous snapshot
+reboot
+
+Full walkthrough from apt full-upgrade to rollback
+full-upgrade
+
+After a new installation we don’t have any snapshots yet as we can see via: apt-btrfs-snapshot list
+
+btrfs-70-Rollback-01.png Let’s do a full system upgrade:
+
+apt update
+apt full-upgrade
+
+btrfs-72-Rollback-03.png
+
+We can observe that a snapshot is being created before any packages are installed:
+
+btrfs-74-Rollback-05.png
+
+Once finished we can confirm that there are no more updates available:
+
+btrfs-74-Rollback-05b.png
+
+If we list the snapshots again we can see the one that has just been created:
+
+btrfs-75-Rollback-06.png
+Rollback
+
+Remember that “/” itself is the subvolume “@”. To rollback to a snapshot, all we have to do is replace “@” with the snapshot we want.
+
+
+First we have to mount the btrfs partition via:
+
+mount /dev/<your btrfs partition> /mnt
+
+If we list the content of that partition we can see all the subvolumes, including the snapshots:
+
+btrfs-77-Rollback-08.png
+
+Before we replace the current root with our snapshot, let’s move “@” away just to be safe:
+
+mv /mnt/@ /mnt/@_badroot
+
+btrfs-78-Rollback-09.png
+
+Now we can pick the snapshot from before the last upgrade and rename it to “@”:
+
+mv /mnt/@apt-snapshot-2019-10-21_23:50:26 /mnt/@
+
+btrfs-79-Rollback-10.png
+
+And that’s all there is to it, here’s the new “@”:
+
+btrfs-80-Rollback-11.png
+
+Let’s reboot for the rollback to take effect:
+
+btrfs-81-Rollback-12.png
+
+Confirming that the rollback worked
+
+After the reboot, we can see that the snapshot is gone, because we rolled back to it:
+
+And if we issue another “apt update”, we can see that we are back to where we were before the snapshot:
+
+Once you confirmed that the system works you can delete the old “root” by mounting the btrfs partition and using the “btrfs subvolume delete” command:
+
+```
+mount /dev/<your btrfs partition> /mnt
+btrfs subvolume delete /mnt/@_badroot
+```
+
+-->
 
 				
 

@@ -212,8 +212,11 @@ Arch 系では AUR にてインストール、デビアンでは Ubuntu のパ�
 <p>を起動時のオプションに指定します。</p>
 <p><img src="/images/2020-01-31-appimage-desktop.png" alt="AppImage on Debian"></p>
 <p>で、動くようになりました。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+![AppImage on Debian](/images/2020-01-31-appimage-install-02.png)
+![AppImage on Debian](/images/2020-01-31-appimage-download.png)
+![AppImage on Debian](/images/2020-01-31-appimage-install-bitwarden.png)
+-->
 <h2 id="config-ファイル">config ファイル</h2>
 <p>他の Linux でも共有したいので、ちょっと Application フォルダーが作られるのがちと嫌なのですが、
 AppImage Launcher 自体の設定ファイルは、
@@ -245,8 +248,23 @@ ask_to_move = true
 <p>Linux を使っている時間がちょっと長くなってきてます。
 立ち上げるたびにディストリビューションを変えてるけど、今の所 Arch とデビアンが軽快で良い感じです。
 （便利さは Manjaro かな、Plasma は相性がちょっと悪いかも、カスタマイズはちょっと面倒だし。。）</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+何が問題なのかはちょっとわからないけれど、オプションを追加せずに起動する方法もあるみたいです。
+
+1. Enable unprivileged access to CLONE_NEWUSER in your kernel. Some kernels support changing this with `sysctl kernel.unprivileged_userns_clone=1`.
+2. Disable sandboxing entirely by launching with --no-sandbox. Adding this argument from JS is unfortunately insufficient, as the GPU process is launched before the main process JS is run.
+
+`/etc/sysctl.d/00-local-userns.conf`
+
+with the following contents:
+
+kernel.unprivileged_userns_clone=1
+
+でファイルをダブルクリックで実行できます。
+アイコンの登録もできんのかな。。
+
+-->
 
 				
 

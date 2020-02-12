@@ -237,8 +237,16 @@ echo &quot;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000
 [[inputs.exec]]
   commands = [ &quot;/usr/local/bin/rpi-freq&quot; ]
   name_override = &quot;cpu_frequency &quot;
-</code></pre><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre><!--
+```
+#!/bin/bash
+
+awk '{print $1/1000}' /sys/class/thermal/thermal_zone0/temp
+```
+![Grafana Main](/images/2019-07-12-grafana-main.png)
+![Grafana Login](/images/2019-07-12-grafana-login.png)
+
+-->
 
 				
 

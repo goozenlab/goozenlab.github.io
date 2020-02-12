@@ -165,20 +165,20 @@
 <h2 id="サービス">サービス</h2>
 <p>さて、動作中のサービスは以下。</p>
 <ul>
-<li><!-- raw HTML omitted -->Pihole<!-- raw HTML omitted -->：ローカルDNSとしても動いてます。おすすめ、アドブロッカー</li>
+<li><b>Pihole</b>：ローカルDNSとしても動いてます。おすすめ、アドブロッカー</li>
 <li>Squid：Polipoからアップデート、どちらでもそこまで違いがあるようには思えないし、恩恵がそこまであるようにも思えない。要らんかも、、</li>
-<li><!-- raw HTML omitted -->Syncthing<!-- raw HTML omitted -->：常時オンでスマフォから心拍数のデーターを取ってきて処理したりしてます。</li>
-<li><!-- raw HTML omitted -->Radicale<!-- raw HTML omitted -->：カレンダー・コンタクトサーバー、住所録とスケジュールの共有</li>
+<li><b>Syncthing</b>：常時オンでスマフォから心拍数のデーターを取ってきて処理したりしてます。</li>
+<li><b>Radicale</b>：カレンダー・コンタクトサーバー、住所録とスケジュールの共有</li>
 <li>LAMP (debian | nginx | mariaDB | php7.3)
 <ul>
-<li>Tiny Tiny <!-- raw HTML omitted -->RSS<!-- raw HTML omitted -->：RSSサーバー、minifluxに切り替えるかも、クライアントのマックではReederを使ってます。</li>
-<li><!-- raw HTML omitted -->Kanboard<!-- raw HTML omitted -->：ちょっと動作が緩慢、phpのキャッシュ量を増やしてギリギリストレスにならず使えるかどうかという感じ。
+<li>Tiny Tiny <b>RSS</b>：RSSサーバー、minifluxに切り替えるかも、クライアントのマックではReederを使ってます。</li>
+<li><b>Kanboard</b>：ちょっと動作が緩慢、phpのキャッシュ量を増やしてギリギリストレスにならず使えるかどうかという感じ。
 <img src="/images/2019-08-29-kanboard-main-00.png" alt="Kanboard"></li>
 <li>Walabag：ポケットのオープンソース版、同前。あまり使わず。私的にはInstapaperだけで十分かな。。
 <img src="/images/2019-09-08-wallabag.png" alt="Wallabag"></li>
 </ul>
 </li>
-<li><!-- raw HTML omitted -->Grafana<!-- raw HTML omitted -->：天気や為替情報、心拍数などちょっとしたライフログとして使ってます。
+<li><b>Grafana</b>：天気や為替情報、心拍数などちょっとしたライフログとして使ってます。
 <img src="/images/2019-09-08-grafana-health.png" alt="Gafana">
 <ul>
 <li>InfluxDB: GrafanaのデーターソースDB</li>
@@ -187,7 +187,7 @@
 </li>
 <li>Gitea：インストールはすれどもいまだ未使用、ドッカーで動かせば良いかなと思っている。</li>
 </ul>
-<p>※<!-- raw HTML omitted -->太字<!-- raw HTML omitted -->はおすすめ。</p>
+<p>※<b>太字</b>はおすすめ。</p>
 <h2 id="ネットワーク">ネットワーク</h2>
 <p>ネットワークの構成は以下、openWrtで動いている<a href="https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/">トラベルルーター</a>をリピーターとして使ってます。
 パイ・サーバーはDNSとプロキシー、その他サービスを提供してます。
@@ -214,7 +214,7 @@
 <p>Ramが足りないからなのかgrafanaやkanboardなどのサーバー側でのグラフィック処理があるものを動かすともっさりした感じになります。読み込み時など待たされることが多々。</p>
 <p>topで見てみると、データーベースのサービス・プロセスが多くRamを消費してます。</p>
 <p><img src="/images/2019-09-09-top.png" alt="top"></p>
-<!-- raw HTML omitted -->
+<!-- ![htop](/images/2019-09-08-htop.png) -->
 <p>そこまで多くのことを行っているわけでは無いので調整できないかなと、、
 ちょとリサーチします。</p>
 <hr>
@@ -222,8 +222,10 @@
 ローカルのドッカーで動かしても支障の無いものは移動してしまう。<br>
 gitteaとkanboardはローカルで作業しているときにのみ使うサービスなので
 ローカルのドッカーで動かしても問題はほとんど無いのでオフにして動かしてみたりしてます。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+ と、、RSSサーバーはMinifluxに取り替えようかなとも思ってます。
+（DBもPostgreSQLに変更になる。。やめとくかな。。）
+-->
 <p>そして、最終的にはトラベルルーター化させてプロジェクトはとりあえず完成・終了になります。
 現在手元にWifiドングルが無いので、9月末にはドングルを付けアクセスポイント化する予定。</p>
 

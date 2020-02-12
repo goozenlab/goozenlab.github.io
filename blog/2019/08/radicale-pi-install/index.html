@@ -180,11 +180,39 @@ Aug 28 12:36:38 tacos systemd[1]: Starting LSB: Radicale CalDAV and CardDAV serv
 Aug 28 12:36:41 tacos radicale[24951]: Starting Radicale CalDAV server : radicale.
 Aug 28 12:36:41 tacos systemd[1]: Started LSB: Radicale CalDAV and CardDAV server.
 pi@tacos:~ $
-</code></pre><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre><!--
+## リバースプロキシー設定
+
+```
+server {
+    listen 80;
+    server_name radicale.goozen.lab;
+    auth_basic "Not currently available";
+
+    location / {
+        proxy_pass http://localhost:5232/;
+        proxy_buffering on;
+        #proxy_set_header X-Script-Name /radicale;
+        #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        #proxy_pass_header Authorization;
+        #proxy_redirect off;
+
+
+        # Place the files somewhere nginx is allowed to access (e.g. /etc/nginx/...).
+        #proxy_ssl_certificate         /path/to/client_cert.pem;
+        #proxy_ssl_certificate_key     /path/to/client_key.pem;
+        #proxy_ssl_trusted_certificate /path/to/server_cert.pem;
+    }
+}
+```
+-->
 <h2 id="設定">設定</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+```
+pi@tacos:~ $ sudo cp /etc/radicale/config /etc/radicale/config.orig
+pi@tacos:~ $ sudo vi /etc/radicale/config
+```
+-->
 <p>設定ファイルは<code>/etc/radicale/config</code>になります。
 基本デフォルトで問題無いようです。
 ホストの設定をして、アクセスのためのパスワードファイルを作ります。</p>
@@ -211,7 +239,7 @@ htpasswd_encryption = bcrypt
 </code></pre><p>ちなみに、ストレージ先は
 <code>/var/lib/radicale/collections</code>
 になります。</p>
-<!-- raw HTML omitted -->
+<div class="attention">リバースプロキシーの設定もサイトに記載されてありましたが、ちょっとうまく動きませんでした。色気の無いIP直打ちで今のところ運用中。</div>
 <h2 id="アクセス">アクセス</h2>
 <p><code>http://&lt;&lt;HOST_OR_IP&gt;&gt;:5232/</code>にアクセス、
 設定したユーザー・パスワードでログインします。
@@ -223,7 +251,7 @@ htpasswd_encryption = bcrypt
 ここで色々とファイルを弄るという感じではありません、保存場所という感じです。
 まぁ頻繁にアクセスすることは無いので十分です。</p>
 <p><img src="/images/2019-08-28-radicale-02.png" alt="Radicale"></p>
-<!-- raw HTML omitted -->
+<div class="hint">タイプをタスクの入ったものにすると、リマインダーでの同期も可能になります。ジャーナルはちょっと分からず。。</div>
 <h2 id="macより">Macより</h2>
 <p>マックからの接続はそんなに複雑ではありません。
 住所録の設定はシステム設定の<code>インターネットアカウント</code>より行います。</p>
@@ -245,7 +273,7 @@ htpasswd_encryption = bcrypt
 <li>SSLのチェックはオフに</li>
 </ul>
 <p><img src="/images/2019-08-28-radicale-calendar-mac-02.png" alt="Radicale"></p>
-<!-- raw HTML omitted -->
+<div class="hint">マニュアル設定でサーバーアドレスを<b>http://$HOST$:5232/$USER/</b>でもよかったのかも。。</div>
 <p>アカウントに名前を付けておきます。そして！リマインダーも同期が可能でした。（確認済み）</p>
 <p><img src="/images/2019-08-28-radicale-calendar-mac-03.png" alt="Radicale"></p>
 <h2 id="androidより">Androidより</h2>
@@ -260,7 +288,7 @@ htpasswd_encryption = bcrypt
 避難かつ共有もできるようになりました。</p>
 <p>というか、断捨離でコンタクトを一掃整理しました。<br>
 連絡が長い期間途絶えてる人は、サヨ〜〜ナ〜ラ〜〜。</p>
-<!-- raw HTML omitted -->
+<div class="note">ちょっとしたらもう一度最初からサーバーの構築する予定なので、カレンダー・タスク・アドレス帳の同期についても、まとめてもう少し丁寧に書きなおします。</div>
 
 				
 

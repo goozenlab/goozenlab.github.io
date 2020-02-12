@@ -230,8 +230,18 @@ Server Addressの欄に
 Syncthingは良いスピードで動いているので、NFSの問題なのか？？。</p>
 <p>深追いせずに切り捨てます。SAMBAをためそ。</p>
 <p>解決方法ご存知方がいらっしゃったら、ご教授のほど、、。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+### オプション
+
+以下のオプションでパフォーマンスが良くなると見つけましたが、試していません。
+
+``
+$ sudo mount -t nfs -o soft,intr,rsize=8192,wsize=8192,timeo=900,retrans=3,proto=tcp nas01:/sales /private/sales
+OR
+$ sudo mount -t nfs nfs -o soft,timeo=900,retrans=3,vers=3, proto=tcp nas01:/sales /private/sales
+```
+-->
 <h3 id="参照サイト">参照サイト</h3>
 <p>How to Setup Raspberry Pi NFS Server：https://pimylifeup.com/raspberry-pi-nfs/</p>
 

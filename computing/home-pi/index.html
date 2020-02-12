@@ -162,9 +162,9 @@
 火を吹いて火事になることもないでしょう。（多分）</p>
 <p>ということでちょっとおまけを付けて、ラズベリーパイを導入する事にしました。</p>
 <ul>
-<li><!-- raw HTML omitted -->PiHole<!-- raw HTML omitted --> (Adblocker)</li>
-<li><!-- raw HTML omitted -->Syncthing<!-- raw HTML omitted --> (Sync Server)</li>
-<li><!-- raw HTML omitted -->Radicale<!-- raw HTML omitted --> (calDAV, cardDAV)</li>
+<li><b>PiHole</b> (Adblocker)</li>
+<li><b>Syncthing</b> (Sync Server)</li>
+<li><b>Radicale</b> (calDAV, cardDAV)</li>
 </ul>
 <p>ただ、導入にあたり<code>ターミナル</code>を使って作業をする必要があるので、ちょっとだけ壁があるかもしれませんが、
 ローカルネットワーク内部でのサービスなので、セキュリティー的に問題を引き起こすことはありませんし、
@@ -175,11 +175,11 @@
 <p>総費用、全て購入しても４０００円ぐらいだと思います。手元にケーブルやSDカードがあれば、
 必要なのはパイ本体とケースだけなので２５００円くらいで収まります。</p>
 <ul>
-<li><!-- raw HTML omitted -->パイ・ゼロ<!-- raw HTML omitted -->：無線LANで使っても問題ありませんので手間を考えるとこちらをオススメします。</li>
-<li><!-- raw HTML omitted -->ケース<!-- raw HTML omitted -->：むき出しで使うのはお勧めでないので、お好みのものを買いましょう。</li>
-<li><!-- raw HTML omitted -->SDカード<!-- raw HTML omitted -->：用途にもよりますが、８ギガ以上あれば十分です、バックアップ用にもう一枚用意しておくと良いです。</li>
-<li><!-- raw HTML omitted -->USB電源アダプタ<!-- raw HTML omitted -->：携帯や何やに付属してくるもので大丈夫た一家に1台はあると思います（うちには4台くらいありました。）。</li>
-<li><!-- raw HTML omitted -->MicroUSB - USB.TypeAのケーブル<!-- raw HTML omitted -->：ハードディスクについてきたりと、一本はどこかしらに隠れていると思います。（たくさんあったはずだけど、どこへ消えた？ということも多々んですよね。）</li>
+<li><b>パイ・ゼロ</b>：無線LANで使っても問題ありませんので手間を考えるとこちらをオススメします。</li>
+<li><b>ケース</b>：むき出しで使うのはお勧めでないので、お好みのものを買いましょう。</li>
+<li><b>SDカード</b>：用途にもよりますが、８ギガ以上あれば十分です、バックアップ用にもう一枚用意しておくと良いです。</li>
+<li><b>USB電源アダプタ</b>：携帯や何やに付属してくるもので大丈夫た一家に1台はあると思います（うちには4台くらいありました。）。</li>
+<li><b>MicroUSB - USB.TypeAのケーブル</b>：ハードディスクについてきたりと、一本はどこかしらに隠れていると思います。（たくさんあったはずだけど、どこへ消えた？ということも多々んですよね。）</li>
 </ul>
 <p>記事：<a href="https://goozenlab.com/blog/2019/09/shiop-pi/">ラズベリー・パイの購入</a>：ショップなどの紹介をしてます。</p>
 <h2 id="インストール">インストール</h2>
@@ -193,12 +193,13 @@
 外からはアクセスはできないようにしています。</p>
 <p>パイホールを軸にして使えるリソースがまだある様なので、その他いくつかのソフトウェアーをインストールします。</p>
 <ul>
-<li><!-- raw HTML omitted -->Pihole<!-- raw HTML omitted --> (Adblocker)</li>
-<li><!-- raw HTML omitted -->Radicale<!-- raw HTML omitted --> (CalDAV, contactDAV)</li>
-<li><!-- raw HTML omitted -->Syncthing<!-- raw HTML omitted --> (Sync Server)</li>
+<li><b>Pihole</b> (Adblocker)</li>
+<li><b>Radicale</b> (CalDAV, contactDAV)</li>
+<li><b>Syncthing</b> (Sync Server)</li>
 </ul>
 <p>もう一つぐらいサービス：Squidとか（LAMPサービス類以外）を走らせても大丈夫かなと思います。</p>
-<!-- raw HTML omitted -->
+<div class="attention"><b>注意</b> セキュリティーに関しての記事はありませんので
+情報が必要な方は他の方のサイトを検索・参考にされてください。</div>
 <h3 id="pihole">Pihole</h3>
 <p><img src="/images/2019-09-05-pihole.png" alt="Pihole"></p>
 <p>アドブロック・ソフトウェアです。</p>

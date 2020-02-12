@@ -185,8 +185,25 @@ $
 ;opcache.enable=1
 ;opcache.memory_consumption=128
 ;opcache.max_accelerated_files=10000
-</code></pre><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</code></pre><!--
+ウェブサーバーの設定をしたと思いますので、省略します。
+
+### nginx
+
+```
+$ vi /etc/nginx/sites-available/default 
+
+index **index.php** index.html index.htm index.nginx-debian.html;
+
+location /tt-rss/cache {
+    deny all;
+}
+
+location = /tt-rss/config.php {
+    deny all;
+} 
+```
+-->
 <p>参照：<a href="https://goozenlab.com/blog/2019/07/pi-lamp-install/">LAMPのインストール</a></p>
 <hr>
 <p>パッケージは提供されていないので、ギットよりダウンロード（クローン）します。</p>

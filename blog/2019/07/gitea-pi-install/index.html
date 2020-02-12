@@ -268,15 +268,80 @@ Jul 12 11:18:49 raspberrypi gitea[984]: 2019/07/12 11:18:49 Serving [::]:3000 wi
 <p><img src="/images/2019-07-12-gitea-register-00.png" alt="Gitea install on Pi">
 <img src="/images/2019-07-12-gitea-signin-00.png" alt="Gitea install on Pi"></p>
 <p>基本githubと似てますが、ちょっとすっきりしてます。個人用途では十分に思えます。</p>
-<!-- raw HTML omitted -->
+<!--![Gitea install on Pi](/images/2019-07-12-gitea-main-00.png)-->
 <p><img src="/images/2019-07-12-gitea-main-01.png" alt="Gitea install on Pi"></p>
 <p>外でフラフラと作業をので、回線に依存しないのはちょっとありがたいんですよね。
 個人のプロジェクトはこちらに放り込もうと思ってます。
 恥ずかしいコードも人に見られることもなくやりたい放題できます。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+## supervisorとは？
+
+https://github.com/go-gitea/gitea/blob/master/contrib/supervisor/gitea
+
+Using supervisor
+Install supervisor by running below command in terminal:
+
+sudo apt install supervisor
+
+Create a log dir for the supervisor logs:
+
+# assuming Gitea is installed in /home/git/gitea/
+mkdir /home/git/gitea/log/supervisor
+Open supervisor config file in a file editor:
+
+sudo vim /etc/supervisor/supervisord.conf
+Append the configuration from the sample supervisord config.
+
+Change the user (git) and home (/home/git) settings to match the deployment environment. Change the PORT or remove the -p flag if default port is used.
+
+Lastly enable and start supervisor at boot:
+
+sudo systemctl enable supervisor
+sudo systemctl start supervisor
+
+-->
+<!--
+
+Setting up Nginx
+
+I'm a big fan of Nginx as it's a rock solid piece of software and
+ as such I decided to use Nginx as a reverse proxy that performs SSL termination for the Gitea server. 
+ Gitea could just as easily be run with a different reverse proxy (such as Apache) or entirely standalone.
+
+
+Next let's go ahead and add an enabled site entry for Gitea by creating the following enabled site file:
+
+```
+pi@raspberrypi:~ $ sudo vim /etc/nginx/sites-enabled/gitea
+
+server {
+    listen 80;
+    server_name <your-domain>;
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+
+    proxy_set_header X-Real-IP $remote_addr;
+}
+```
+
+This sets up a listener that listens on port 80 and reverse proxies to the local port 3000 where Gitea will be running. 
+Additionally we're adding the proxy_set_header here 
+so that we can get accurate remote ip addresses in the Gitea logs which we'll use later for fail2ban.
+
+Also, don't panic that we've only added a listener for port 80,
+we'll soon be using let's encrypt to create an SSL certificate 
+ and rewrite this listener to enforce HTTPS for all traffic.
+
+Finally let's go ahead and remove the default enabled site and reload the configuration:
+
+pi@raspberrypi:~ $ sudo rm /etc/nginx/sites-enabled/default
+pi@raspberrypi:~ $ sudo service nginx reload
+
+Once this is done, you should be able to manually start your Gitea server 
+and visit it on port 80 to see the Gitea interface.
+-->
 
 				
 

@@ -181,11 +181,20 @@
 <p>次にバッテリーマネージャー関連では
 ACPIBatteryManagerとSMCBatteryManagerがインストールされていて衝突しているよう。
 起動の途中で止まってしまうので、一方をbackupに移動しておきます。ちょっと様子見。</p>
-<!-- raw HTML omitted -->
+<div class=hint>
+不具合が起こることを考えて、
+ブートパーティションのファイルをいじることができるので、
+Linuxを別のパーティションにインストールしておくと便利です。
+</div>
 <p><img src="/images/2019-12-13-kext-list.png" alt="kext list"></p>
 <p>ファルダーの中身はこんな感じになってます。</p>
 <p>で、今の所とりあえず問題なく動いてます。（安堵）</p>
-<!-- raw HTML omitted -->
+<div class=note>
+<b>追記(12/15)：</b>
+ACPIBatteryManagerを抜いてSMCBatteryManageに切り替えたところ安定しました。
+パッチが当てられなかったのも問題なくできましたし、スリープ中に落ちることも今の所ありません。
+BTの接続も安定しとります。ただ、期待したバッテリーの駆動時間は変わりなしネットなしで１時間で１５％消費。
+</div>
 
 				
 

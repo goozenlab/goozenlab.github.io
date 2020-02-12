@@ -150,7 +150,7 @@
 ちょっとした調整は必要ですが、面倒な設定は今の所必要はないようです。</p>
 <p>以外にも簡単で拍子抜けちょっと驚き。
 （以前試した時はもっと面倒だったような気が。。）</p>
-<!-- raw HTML omitted -->
+<!-- もし間違いを見つけた方がいらっしゃたらご連絡のほど、 -->
 <hr>
 <p>インストールメディアの作成はお馴染みのEtcherを使う。</p>
 <p>Thinkpad T480sを使っているので、ネットワークケーブルをつなぎ、
@@ -274,9 +274,34 @@ root@archiso $ reboot
 <p>日本語環境も簡単に構築できました。
 ただし、設定は/etc/enviormentに書いておく必要があります。</p>
 <p>（つづく）</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<blockquote>
+<!--
+
+
+root@archiso $ pacman -S pacman-contrib
+root@archiso $ cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+root@archiso $ /usr/bin/rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+
+
+
+yay install
+
+$ sudo pacman -S git wget yajl
+$ cd /tmp
+
+# Do not use sudo...you if you do, your download will be owned by root but 
+# you cannot make the package as root
+
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+
+$ yay -S pamac-aur
+
+It will ask for some inputs.  I selected 1.) pamac-aur
+I removed dependencies after install
+I selected None on the next prompt.
+
+--><blockquote>
 </blockquote>
 
 				

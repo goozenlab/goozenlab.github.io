@@ -225,7 +225,7 @@
   &quot;name&quot;: &quot;Waimea&quot;,
   &quot;cod&quot;: 200
 }
-</code></pre><!-- raw HTML omitted -->
+</code></pre><div class="attention">※{APIKey}は自分のAPIキーに、{CityID}は都市名を示すID（東京は”1850147″）に置き換えてください。</div>
 <p>ファイルをローカルにダウンロードします。</p>
 <pre><code>curl -o /PATH/OUT_PUT_FILE.json &quot;https://api.openweathermap.org/data/2.5/weather?id=$CityID&amp;units=metric&amp;appid=$APPID&quot;
 </code></pre><h2 id="jsonファイルをinfluxdbへ登録-by-shell">JSONファイルをInfluxdbへ登録 by shell</h2>
@@ -265,7 +265,7 @@ ${dt}&quot;
 </code></pre><p>あとは、場所によって更新間隔がまちまちですが、
 cronに登録して定期的にデータの取得＆データベースの登録を実行すればOK！</p>
 <p>しばらくしてデータが貯まってきたら、「ダッシュボードの作成」の所と同じ手順でパネルに登録すれば完了です。</p>
-<!-- raw HTML omitted -->
+<div class="attention">※ 上記のスクリプトは`city`の所でエラーが出るかもしれません、、現在スクリプトをパイソンに書き換え中。</div>
 <h2 id="おまけ不快指数の追加">おまけ：不快指数の追加</h2>
 <p>快適度は気温だけでは掴みづらいので、日本ではおなじみ？の不快指数を計算します。
 <strong>65~75</strong>くらいが数値上快適になります。Tシャツ短パン快適生活は70位からかな、、</p>
