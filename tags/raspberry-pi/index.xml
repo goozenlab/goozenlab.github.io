@@ -19,7 +19,7 @@
       <pubDate>Tue, 17 Sep 2019 12:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/pi-3b-server-comparison/</guid>
-      <description>日本への帰国を数日後に控えて、起動中のパイ・3AサーバーのSDカードをパイ・3Bに入れ替えてみました。 以下のソフトウェアーが動いとります。太字がよく使っているも</description>
+      <description>日本への帰国を数日後に控えて、起動中のパイ・3AサーバーのSDカードをパイ・3Bに入れ替えてみました。 以下のソフトウェアーが動いとります。太</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Sat, 14 Sep 2019 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/pi-zram/</guid>
-      <description>パイ・３A＋(Ram512MB)で運用中のサーバー、ちょっとRamを効率的にできないかと調べていて、 使用していないRamを圧縮して脇に退け、利用できる容量を確保</description>
+      <description>パイ・３A＋(Ram512MB)で運用中のサーバー、ちょっとRamを効率的にできないかと調べていて、 使用していないRamを圧縮して脇に退け、</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Mon, 09 Sep 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/pi-server-status/</guid>
-      <description>移動を数日後に控え、空調の効いたショッピングセンターで 進行中のパイ・サーバーの現状、使用感を少しまとめてみる。 さて、パイ・サーバーの現状は、サービスのインストー</description>
+      <description>移動を数日後に控え、空調の効いたショッピングセンターで 進行中のパイ・サーバーの現状、使用感を少しまとめてみる。 さて、パイ・サーバーの現状は、</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/speedtest-cli/</guid>
-      <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install speedtest-cl</description>
+      <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install sp</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Wed, 04 Sep 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/shiop-pi/</guid>
-      <description>パイ・サーバー構築に向けて機材の調達をします。 サービスの少ない簡単なホームサーバーであれば、パイ・ゼロで十分です。 もし、いろいろなサービス（特にLAMP関連サー</description>
+      <description>パイ・サーバー構築に向けて機材の調達をします。 サービスの少ない簡単なホームサーバーであれば、パイ・ゼロで十分です。 もし、いろいろなサービス（</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Mon, 02 Sep 2019 14:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/opensuse-on-pi3/</guid>
-      <description>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、 パイの64bitバージョンも配布されているので試してみました。 結果：wi</description>
+      <description>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、 パイの64bitバージョンも配布されているので試して</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/projects/</guid>
-      <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきました。 情報がいろんなと</description>
+      <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Fri, 30 Aug 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</guid>
-      <description>掲示板・ホワイトボード風のメモ・アプリ？！ ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、 早速パイにインストールしてみました。 昭和的なグループウェ</description>
+      <description>掲示板・ホワイトボード風のメモ・アプリ？！ ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、 早速パイにインストールしてみました。</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Wed, 28 Aug 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/radicale-pi-install/</guid>
-      <description>カレンダー・コンタクトサーバーを導入しました。 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局nextCloudをイン</description>
+      <description>カレンダー・コンタクトサーバーを導入しました。 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局ne</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Sun, 25 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pi-3a-external-disk/</guid>
-      <description>パイ・3A+に外部ディスクを刺しても認識をしてくれない。 USBメモリーをさしてもチカチカランプが点滅するも、 無反応、もしくはハングアップする。 これは初期不良では</description>
+      <description>パイ・3A+に外部ディスクを刺しても認識をしてくれない。 USBメモリーをさしてもチカチカランプが点滅するも、 無反応、もしくはハングアップする</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@
       <pubDate>Wed, 14 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</guid>
-      <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。 事前にGrafana</description>
+      <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@
       <pubDate>Tue, 13 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</guid>
-      <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどのDBとはちょっと違い</description>
+      <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどの</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@
       <pubDate>Mon, 12 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/grafana-pi-install/</guid>
-      <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありません。 心配がよぎるがイ</description>
+      <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありませ</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@
       <pubDate>Sun, 11 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pi-swap-dphys/</guid>
-      <description>さて、パイ・メモリーが弾けんばかりパツパツです。 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミングでハングアップする様</description>
+      <description>さて、パイ・メモリーが弾けんばかりパツパツです。 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミング</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@
       <pubDate>Sat, 10 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/firefly-pi-install/</guid>
-      <description>今までは、ラフにお金の流れをGNUCashを使って管理してましたが、 ちょっと細かくこずかい帳の様に使えるものを探していて PERSONAL FINANCE MANAGERのFirefly iii</description>
+      <description>今までは、ラフにお金の流れをGNUCashを使って管理してましたが、 ちょっと細かくこずかい帳の様に使えるものを探していて PERSONAL FINANCE MANAGERの</description>
     </item>
     
     <item>
@@ -154,7 +154,7 @@
       <pubDate>Fri, 09 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pia-running-test/</guid>
-      <description>パイ３Bで動かしていたSDカードをそのままパイ３A＋に差し替え、 5,000 mAhのバッテリー運用時での駆動時間をチェックしました。 現在の使用状況はRAMの使用はカツカツ</description>
+      <description>パイ３Bで動かしていたSDカードをそのままパイ３A＋に差し替え、 5,000 mAhのバッテリー運用時での駆動時間をチェックしました。 現在の使用状況はR</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@
       <pubDate>Thu, 08 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/wallabag-pi-install/</guid>
-      <description>何でもセルフホスト・パイ・サーバー計画続行中。 今回はPocketの代替ソフトのwallabagをインストールしました。 Kindle版があるのがちょっと気になる。</description>
+      <description>何でもセルフホスト・パイ・サーバー計画続行中。 今回はPocketの代替ソフトのwallabagをインストールしました。 Kindle版があるの</description>
     </item>
     
     <item>
@@ -172,7 +172,7 @@
       <pubDate>Tue, 06 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</guid>
-      <description>ちょっと機材を追加、パイ3A+を購入しました。 数品であれば個人輸入する利点はない様に思えるけれど、 品によっては数千円の違いがあったりします。 これから消費税が上が</description>
+      <description>ちょっと機材を追加、パイ3A+を購入しました。 数品であれば個人輸入する利点はない様に思えるけれど、 品によっては数千円の違いがあったりします。</description>
     </item>
     
     <item>
@@ -181,7 +181,7 @@
       <pubDate>Mon, 05 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/running-core-comparison/</guid>
-      <description>パイ・３Bにてコア数の調整ができるので、バッテリーで運用時での駆動時間の比較をしました。 コア数の変更方法は こちら にポストしてますが、簡単には/boot/cmdl</description>
+      <description>パイ・３Bにてコア数の調整ができるので、バッテリーで運用時での駆動時間の比較をしました。 コア数の変更方法は こちら にポストしてますが、簡単には</description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@
       <pubDate>Sun, 04 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pihole-install/</guid>
-      <description>アドブロックかつフィルターリングプロキシーソフトのPrivoxyが敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、 評判が高くインストールや設定</description>
+      <description>アドブロックかつフィルターリングプロキシーソフトのPrivoxyが敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、 評判が高</description>
     </item>
     
     <item>
@@ -199,7 +199,7 @@
       <pubDate>Sat, 03 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/pi-swapiness/</guid>
-      <description>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、 少しばかり躊躇します。しかしその代わりに、 カーネルによりスワップへの書き</description>
+      <description>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、 少しばかり躊躇します。しかしその代わりに、 カーネルに</description>
     </item>
     
     <item>
@@ -208,7 +208,7 @@
       <pubDate>Wed, 17 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/gitea-pi-install/</guid>
-      <description>何でもセルフホスト・パイ・サーバー計画続行中です。 今回はgitlabほど仰々しくないgolangで書かれた、 gitサーバーことgiteaをインストールしました。</description>
+      <description>何でもセルフホスト・パイ・サーバー計画続行中です。 今回はgitlabほど仰々しくないgolangで書かれた、 gitサーバーことgiteaをイ</description>
     </item>
     
     <item>
@@ -217,7 +217,7 @@
       <pubDate>Mon, 15 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/tt-rss-pi-install/</guid>
-      <description>ラズベリーパイ・Ubuntu、RaspbianサーバーにTinyTiny RSSをインストールしました。 インストールは少し違いがありますが、ほぼ同じです。現在Ra</description>
+      <description>ラズベリーパイ・Ubuntu、RaspbianサーバーにTinyTiny RSSをインストールしました。 インストールは少し違いがありますが、ほ</description>
     </item>
     
     <item>
@@ -226,7 +226,7 @@
       <pubDate>Fri, 12 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/pi-full-backup/</guid>
-      <description>今までは、様々なディストリビューションを試したり、 トライアンドエラーでクリーンインストールを何度もしてきましたが、 64bit環境を諦め、セルフホストパイサーバー</description>
+      <description>今までは、様々なディストリビューションを試したり、 トライアンドエラーでクリーンインストールを何度もしてきましたが、 64bit環境を諦め、セル</description>
     </item>
     
     <item>
@@ -235,7 +235,7 @@
       <pubDate>Wed, 10 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/pi-lamp-install/</guid>
-      <description>ラズベリーパイ・サーバーにLAMP環境をインストールしました。 Wordpressなどのサービスなどを使うのに必要です。 LAMPとは(Linux+Apache+M</description>
+      <description>ラズベリーパイ・サーバーにLAMP環境をインストールしました。 Wordpressなどのサービスなどを使うのに必要です。 LAMPとは(Linu</description>
     </item>
     
     <item>
@@ -244,7 +244,7 @@
       <pubDate>Tue, 09 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/pi-save-power/</guid>
-      <description>モバイルバッテリで動作させたりもするので、省エネ設定をします。 ちょこちょこいじれます。一番の電源食らいはHDMIとWifiのようです。/boot/config.</description>
+      <description>モバイルバッテリで動作させたりもするので、省エネ設定をします。 ちょこちょこいじれます。一番の電源食らいはHDMIとWifiのようです。/bo</description>
     </item>
     
     <item>
@@ -253,7 +253,7 @@
       <pubDate>Sun, 07 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/pi-nfs/</guid>
-      <description>パイとのファイル共有を行います。（とりあえず、マック・パイ） NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしました。 raspbian</description>
+      <description>パイとのファイル共有を行います。（とりあえず、マック・パイ） NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしまし</description>
     </item>
     
     <item>
@@ -262,7 +262,7 @@
       <pubDate>Sat, 06 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/manage-cpu-core/</guid>
-      <description>そろそデビアンXことBusterのリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったような。。おっ、Ryze</description>
+      <description>そろそデビアンXことBusterのリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったよう</description>
     </item>
     
     <item>
@@ -271,7 +271,7 @@
       <pubDate>Mon, 01 Jul 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/syncthing-settings/</guid>
-      <description>デバイスの登録と、同期設定を行います。インストールと初期設定はこちらにあります。ご参照の程。 デバイスの登録 回線がつながっている状況で行えば、 Add Remove Deviceボタ</description>
+      <description>デバイスの登録と、同期設定を行います。インストールと初期設定はこちらにあります。ご参照の程。 デバイスの登録 回線がつながっている状況で行えば、</description>
     </item>
     
     <item>
@@ -280,7 +280,7 @@
       <pubDate>Sun, 30 Jun 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/06/syncthing-install/</guid>
-      <description>Dropboxをブログの写真やスクリーンショットをマックブックに移動するために使っていました。 問題はインターネットの回線が必要なこと。 日本国内のように光通信で網</description>
+      <description>Dropboxをブログの写真やスクリーンショットをマックブックに移動するために使っていました。 問題はインターネットの回線が必要なこと。 日本国</description>
     </item>
     
     <item>
@@ -289,7 +289,7 @@
       <pubDate>Thu, 20 Jun 2019 14:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</guid>
-      <description>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。 酷暑インドから戻ってきたので、３０度とはいえ気持ち涼</description>
+      <description>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。 酷暑インドから戻ってきたので、３</description>
     </item>
     
     <item>
@@ -298,7 +298,7 @@
       <pubDate>Tue, 09 Apr 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/04/running-test-3/</guid>
-      <description>今、Pi・ゼロで動かしているマイクロSDをPi・3Bに移動してみようと、、ふと思い試してみる。 で、入れ替えてみたところ、問題なーし。あっさり動きました。こういっ</description>
+      <description>今、Pi・ゼロで動かしているマイクロSDをPi・3Bに移動してみようと、、ふと思い試してみる。 で、入れ替えてみたところ、問題なーし。あっさり</description>
     </item>
     
     <item>
@@ -307,7 +307,7 @@
       <pubDate>Thu, 04 Apr 2019 16:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/04/test-running-mobile-pie-2/</guid>
-      <description>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。 ということこで、モバイル・バッテリー稼働時間テス</description>
+      <description>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。 ということこで、モバイル・バ</description>
     </item>
     
     <item>
@@ -316,7 +316,7 @@
       <pubDate>Tue, 02 Apr 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/04/building-kernel/</guid>
-      <description>Bluetoothが使えなかったり、cpufreqが効かなかったり、iptablesで不具合がでたりしたので、カーネルを自前でビルドしました。（オプションがあり</description>
+      <description>Bluetoothが使えなかったり、cpufreqが効かなかったり、iptablesで不具合がでたりしたので、カーネルを自前でビルドしました</description>
     </item>
     
     <item>
@@ -325,7 +325,7 @@
       <pubDate>Thu, 28 Mar 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/64bit-kernel/</guid>
-      <description>頑なにこだわり続けてた64bit化。 Archを試したり、公式に64bitをサポートしているopenSuseやDebian.Buster PREVIEW版を試したり</description>
+      <description>頑なにこだわり続けてた64bit化。 Archを試したり、公式に64bitをサポートしているopenSuseやDebian.Buster PRE</description>
     </item>
     
     <item>
@@ -334,7 +334,7 @@
       <pubDate>Mon, 25 Mar 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/test-running-mobile-pie/</guid>
-      <description>数年ぶりの選挙があったこの週末は、飲み屋も閉まってたりで、街がしーーーんと、すごく静かでした。さて、さて、これからどうなることやら。。（北部タイにて） さて、手元</description>
+      <description>数年ぶりの選挙があったこの週末は、飲み屋も閉まってたりで、街がしーーーんと、すごく静かでした。さて、さて、これからどうなることやら。。（北部</description>
     </item>
     
     <item>
@@ -343,7 +343,7 @@
       <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
-      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使えるかもしれないけれど、</description>
+      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使える</description>
     </item>
     
     <item>
@@ -352,7 +352,7 @@
       <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/docker-install-buster/</guid>
-      <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;quot;/run.sh&amp;quot; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;quot;/portainer&amp;quot; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;quot;/hello&amp;quot; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに続くエラー、無駄もい</description>
+      <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;quot;/run.sh&amp;quot; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;quot;/portainer&amp;quot; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;quot;/hello&amp;quot; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに</description>
     </item>
     
     <item>
@@ -361,7 +361,7 @@
       <pubDate>Sun, 17 Mar 2019 03:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/hostapd-buster/</guid>
-      <description>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTor</description>
+      <description>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。</description>
     </item>
     
     <item>
@@ -370,7 +370,7 @@
       <pubDate>Fri, 15 Mar 2019 22:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</guid>
-      <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをちょっと弄って、今回は</description>
+      <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをち</description>
     </item>
     
     <item>
@@ -379,7 +379,7 @@
       <pubDate>Tue, 12 Mar 2019 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/install-dietpi/</guid>
-      <description>巷で人気のスリムなダイエットパイを小粋なRPi0w：ラズベリーパイ・ゼロWにインストールしました。 まずは、ファイルを落としてきてSDカードにコピーをする。 いたっ</description>
+      <description>巷で人気のスリムなダイエットパイを小粋なRPi0w：ラズベリーパイ・ゼロWにインストールしました。 まずは、ファイルを落としてきてSDカードに</description>
     </item>
     
     <item>
@@ -388,7 +388,7 @@
       <pubDate>Sat, 09 Mar 2019 13:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/micros-speed-pie/</guid>
-      <description>Raspberry Pi にてのMicroSDカードのパフォーマンス 手元にあったマイクロSDカード、あそこで買ったり、ここで買ったりと、 改めて見てみると、メーカーは違えとも、規格やサ</description>
+      <description>Raspberry Pi にてのMicroSDカードのパフォーマンス 手元にあったマイクロSDカード、あそこで買ったり、ここで買ったりと、 改めて見てみると、メーカー</description>
     </item>
     
     <item>
@@ -397,7 +397,7 @@
       <pubDate>Thu, 07 Mar 2019 20:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/install-moode-rpi0w/</guid>
-      <description>オーディオ・ラジオサーバーのmoOde audio playerをラズベリーパイ・ゼロにインストールしました。 moOde Audioホームページからダウンロードするイメージ・ファイル</description>
+      <description>オーディオ・ラジオサーバーのmoOde audio playerをラズベリーパイ・ゼロにインストールしました。 moOde Audioホームページからダウンロードす</description>
     </item>
     
     <item>
@@ -406,7 +406,7 @@
       <pubDate>Sat, 02 Mar 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</guid>
-      <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲートウェイなるものが別</description>
+      <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲー</description>
     </item>
     
   </channel>

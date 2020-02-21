@@ -19,7 +19,7 @@
       <pubDate>Wed, 18 Dec 2019 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/error-xcode/</guid>
-      <description>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。 今回は Command CodeSign failed with a nonzero exit code のエラーでビルドができません。 サイニング</description>
+      <description>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。 今回は Command CodeSign failed with a nonzero exit code のエラーでビルドがで</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2018/09/problem-uploading/</guid>
-      <description>毎回というか、Xcodeをアップグレードすると問題なっているような気がする。 プロファイルを作り直したり、書き出しのオプションを変えたりとか、Applicatio</description>
+      <description>毎回というか、Xcodeをアップグレードすると問題なっているような気がする。 プロファイルを作り直したり、書き出しのオプションを変えたりとか、</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/10/use_legacy_swift_version/</guid>
-      <description>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をすることができたのです</description>
+      <description>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をす</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/xcode8/</guid>
-      <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもりなので、今まで使って</description>
+      <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもり</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/nsregularexpression/</guid>
-      <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。） (a)でのmdファイルの</description>
+      <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。） (a</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/block-3ways/</guid>
-      <description>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。 ブロックでっせ！と、こんな感じで出てきます、 ダブルクリックで、意味がわか</description>
+      <description>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。 ブロックでっせ！と、こんな感じで出てきます、 ダブルク</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/segway-unwind/</guid>
-      <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeのストーリーボードでい</description>
+      <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeの</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/app-icon-naming/</guid>
-      <description>アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。 個人的にアイコン作りと、アプリのネー</description>
+      <description>アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。 個人的にアイコン</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/github-open-sati/</guid>
-      <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。 問題点：ギットハブに公開するプロジェクトには、バンドルアイデンティファ</description>
+      <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。 問題点：ギットハブに公開するプロジェクトには、バン</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/use-pods/</guid>
-      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。 ただ、ヘッダーをインポートするだけ！です。ブリッジがどうだ</description>
+      <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。 ただ、ヘッダーをインポートするだけ！で</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@
       <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/device-container/</guid>
-      <description>端末のアプリデータをバックアップ、復元。 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる実機へのインストール</description>
+      <description>端末のアプリデータをバックアップ、復元。 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/09/install-pods/</guid>
-      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。 $ pod install Setting up CocoaPods master repo [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`. You can try</description>
+      <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。 $ pod install Setting up CocoaPods master repo [!] Unable to add</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/install-cocoapods/</guid>
-      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。 以前インストールした時に、ちょっと須藤&amp;amp;ジェム地獄に陥ったので今回</description>
+      <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。 以前インストールした時に、ちょっと須藤&amp;amp;ジェム</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/install-homebrew/</guid>
-      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。 $ cd /usr/local/ total 24 drwxr-xr-x 14 jin admin 476B Mar 29 10:51 .git/ drwxr-xr-x 5</description>
+      <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。 $ cd /usr/local/ total 24 drwxr-xr-x</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@
       <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/modalview-over/</guid>
-      <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。 半透明のモーダルビュー</description>
+      <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。 半</description>
     </item>
     
     <item>
@@ -154,7 +154,7 @@
       <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/statusbar-memo/</guid>
-      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。 まずは全体的な設定を、info.plistにて View Controller-based status bar appearance を追加。(</description>
+      <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。 まずは全体的な設定を、info.plistにて</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/lite-admob/</guid>
-      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行います。ライト版では広</description>
+      <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行い</description>
     </item>
     
     <item>
@@ -172,7 +172,7 @@
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/if-let/</guid>
-      <description>fatal error: unexpectedly found nil while unwrapping an Optional value nil値が戻ってくる可能性のある時の処理方法。 tableCellに値を渡す時を例に、 # if let xx = yy { } else { } if let lock = event.isLocked as? Bool { cell.isLocked = lock } else { cell.isLocked = false</description>
+      <description>fatal error: unexpectedly found nil while unwrapping an Optional value nil値が戻ってくる可能性のある時の処理方法。 tableCellに値を渡す時を例に、 # if let xx = yy { } else { } if let lock = event.isLocked as? Bool</description>
     </item>
     
     <item>
@@ -181,7 +181,7 @@
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/array_filter/</guid>
-      <description>拙作dandoriのswift移行中、中々進みません。 Objective-Cで使っていた、filteredArrayUsingPredicate が Swiftでは</description>
+      <description>拙作dandoriのswift移行中、中々進みません。 Objective-Cで使っていた、filteredArrayUsingPredica</description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@
       <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/03/arc4random_uniform/</guid>
-      <description>rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。 srand(time(nil)); rand()%300; arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が不要な物に変更し以下</description>
+      <description>rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。 srand(time(nil)); rand()%300; arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が</description>
     </item>
     
     <item>
@@ -199,7 +199,7 @@
       <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/09/3dtouch/</guid>
-      <description>iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。 アップルの使い方のガイドラインではピーク＆ポップという形。 その対象に対しての関心の度合いを操作にした</description>
+      <description>iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。 アップルの使い方のガイドラインではピーク＆ポップという形。 その対象に対しての関心</description>
     </item>
     
     <item>
@@ -208,7 +208,7 @@
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/07/userdefaults-remove-keys/</guid>
-      <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。 既に設定してしまったU</description>
+      <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。 既</description>
     </item>
     
     <item>
@@ -235,7 +235,7 @@
       <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/swift-shake/</guid>
-      <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。 override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) { if(event.subtype == UIEventSubtype.MotionShake) { // // 処</description>
+      <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。 override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent</description>
     </item>
     
     <item>
@@ -244,7 +244,7 @@
       <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/performselector-timer/</guid>
-      <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。 [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval]; object-cで上記に書かれたper</description>
+      <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。 [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval]; object-cで</description>
     </item>
     
     <item>
@@ -253,7 +253,7 @@
       <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/println-swift/</guid>
-      <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ のようになります。 使え</description>
+      <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ の</description>
     </item>
     
     <item>
@@ -262,7 +262,7 @@
       <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/nsdate-swift/</guid>
-      <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは NSDate() でよろしい。 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60] を、Swiftで書いてみると、 NSDate(timeIntervalSinceNow: hoursGoodSleep * 60 * 60) エラーが出る。h</description>
+      <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは NSDate() でよろしい。 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60] を、Swiftで書いてみると、 NSDate(timeIntervalSinceNow: hoursGoodSleep * 60</description>
     </item>
     
     <item>
@@ -271,7 +271,7 @@
       <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/view-cycle/</guid>
-      <description>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。 起動時 アプリの起動時には以下の順で呼ばれる。 viewDidLoad() viewWillAppear viewDidAppear ※すべての画像の処理が終わった後に呼</description>
+      <description>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。 起動時 アプリの起動時には以下の順で呼ばれる。 viewDidLoad() viewWillAppear viewDidAppear ※すべての画像の</description>
     </item>
     
     <item>
@@ -280,7 +280,7 @@
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/notification-setting/</guid>
-      <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。 AppDelegateに処理を入れてしまいます。 application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil)) 以前コピペでU</description>
+      <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。 AppDelegateに処理を入れてしまいます。 application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert |</description>
     </item>
     
     <item>
@@ -289,7 +289,7 @@
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/load-managedobject/</guid>
-      <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、クラスが読</description>
+      <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほど</description>
     </item>
     
     <item>
@@ -298,7 +298,7 @@
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/nslocalizedstring-swift/</guid>
-      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;) Swiftではnilの扱いがちょっと掴めず、、至る所</description>
+      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;) Swiftではnilの扱いがちょ</description>
     </item>
     
     <item>
@@ -307,7 +307,7 @@
       <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/delegate-swift/</guid>
-      <description>デレゲートするクラス 以下の３つを書き加えればよい。 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) } var delegate:MainHeaderViewDelegate? = nil self.delegate!.sleepingTimerDidFinish(self) デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を書き込みます。 class MainViewController: UIViewController,</description>
+      <description>デレゲートするクラス 以下の３つを書き加えればよい。 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) } var delegate:MainHeaderViewDelegate? = nil self.delegate!.sleepingTimerDidFinish(self) デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を</description>
     </item>
     
     <item>
@@ -316,7 +316,7 @@
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/uibutton-swift/</guid>
-      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal) テキストの色を変えるに</description>
+      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal) テ</description>
     </item>
     
     <item>
@@ -325,7 +325,7 @@
       <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
-      <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このXCodeではサポート</description>
+      <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
     </item>
     
     <item>
@@ -334,7 +334,7 @@
       <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/constants-swift/</guid>
-      <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるように思えるが、まだまだ</description>
+      <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるよう</description>
     </item>
     
     <item>
@@ -343,7 +343,7 @@
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/unable-to-load-class/</guid>
-      <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。 さて、</description>
+      <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたい</description>
     </item>
     
     <item>
@@ -352,7 +352,7 @@
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/userdefault-register-defaults/</guid>
-      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気にせず書き込んでよいよ</description>
+      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
     </item>
     
     <item>
@@ -361,7 +361,7 @@
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/lightweight-migration-mapping/</guid>
-      <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうまく機能していないのが</description>
+      <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうま</description>
     </item>
     
   </channel>

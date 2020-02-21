@@ -19,7 +19,7 @@
       <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/speedtest-cli/</guid>
-      <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install speedtest-cl</description>
+      <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install sp</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Thu, 22 Aug 2019 08:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/amazfit-bip-data/</guid>
-      <description>昨日はビザ・クラアランスのため、 タイ・メーサイ、ミャンマー・タチレクへ日帰りで行ってきました。 国境を越えるときは、ちょっとドキドキするんですよね。 ミャンマーに入</description>
+      <description>昨日はビザ・クラアランスのため、 タイ・メーサイ、ミャンマー・タチレクへ日帰りで行ってきました。 国境を越えるときは、ちょっとドキドキするんです</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Tue, 20 Aug 2019 09:40:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/grafana-bitcoin/</guid>
-      <description>チェンライ二日連続晴天。 ビットコイン、どっかーーっと景気良く価格急上昇で年金確保！と行きたいところですが、、 あと10倍ぐらいに、早いことたのんませう。 ビットコイ</description>
+      <description>チェンライ二日連続晴天。 ビットコイン、どっかーーっと景気良く価格急上昇で年金確保！と行きたいところですが、、 あと10倍ぐらいに、早いことたの</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Sun, 18 Aug 2019 09:40:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/openweathermap-settings/</guid>
-      <description>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが https://openweathermap.org より提供されています。 行きたい国々の天気をチェック、旅情にあふれます。 最近の流行っ</description>
+      <description>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが https://openweathermap.org より提供されています。 行きたい国々の天気をチェック、旅情にあふ</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Wed, 14 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</guid>
-      <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。 事前にGrafana</description>
+      <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Tue, 13 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</guid>
-      <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどのDBとはちょっと違い</description>
+      <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどの</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Mon, 12 Aug 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/grafana-pi-install/</guid>
-      <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありません。 心配がよぎるがイ</description>
+      <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありませ</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Sat, 02 Mar 2019 19:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</guid>
-      <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲートウェイなるものが別</description>
+      <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲー</description>
     </item>
     
   </channel>

@@ -19,7 +19,7 @@
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/standardnotes/</guid>
-      <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあったり、 データを暗号</description>
+      <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/vscodium/</guid>
-      <description>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。 VSCodeはオープンソースで公開されていますがマイクロソフトから提供されているVSCodeはテ</description>
+      <description>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。 VSCodeはオープンソースで公開されていますがマイクロソフトから提供されて</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Wed, 22 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/linux-calender-start-monday/</guid>
-      <description>カレンダーが日曜日から始まるのはどうも嫌なんです。 Sundayということで太陽から始まるのはわからなくはないのですが、 習慣的に月曜が始めというのが染み付いてます</description>
+      <description>カレンダーが日曜日から始まるのはどうも嫌なんです。 Sundayということで太陽から始まるのはわからなくはないのですが、 習慣的に月曜が始めとい</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Tue, 21 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/apt-pinning-firefox/</guid>
-      <description>オススメ・ディストロの一つ、デビアン環境がなかな良いです。 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン68.xがインストールされます。</description>
+      <description>オススメ・ディストロの一つ、デビアン環境がなかな良いです。 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン68.xがイ</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/arco-install-btrfs/</guid>
-      <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Archベースの従兄弟 Arco Linux</description>
+      <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Arc</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Sun, 19 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/profile-sync-daemon/</guid>
-      <description>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。 パッケージがあるのでAPTでインストー</description>
+      <description>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。 パッケージがあるの</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Sat, 18 Jan 2020 17:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/kde-neon/</guid>
-      <description>Linuxのディストリビューションをかなりためした方だと思いますが、 KDE Neon: https://neon.kde.org/ がツボりました。 ちとUnuntuがあまり好きではなく、 なんでもその元になるところのディ</description>
+      <description>Linuxのディストリビューションをかなりためした方だと思いますが、 KDE Neon: https://neon.kde.org/ がツボりました。 ちとUnuntuがあまり好きではなく、 なんでもその</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Fri, 17 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/sandbox-app/</guid>
-      <description>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。 ディストリビューション毎に同じアプリをインストールしているのが少々ディ</description>
+      <description>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。 ディストリビューション毎に同じアプリをインストール</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/install-kali-btrfs/</guid>
-      <description>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、 Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。 LinuxのパーティションはBTR</description>
+      <description>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、 Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。 Linuxのパ</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/firmware-linux-nonfree/</guid>
-      <description>Thinkapd T480sでのDebain起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだったので そんなに気には</description>
+      <description>Thinkapd T480sでのDebain起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@
       <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/linux-update/</guid>
-      <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとかなりの量のアップデー</description>
+      <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@
       <pubDate>Fri, 20 Dec 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/linux-windowmamager/</guid>
-      <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：debian buster 試験環境：M</description>
+      <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：deb</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</guid>
-      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモとして残す。 現在Wif</description>
+      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモと</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@
       <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/linux-thinkpad-tlp/</guid>
-      <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％～８０％の利用にとどめて、 ３０％</description>
+      <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％～８０％の利</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@
       <pubDate>Sat, 16 Nov 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/11/linux-mail-client/</guid>
-      <description>Linuxでのメールクライアント、いくつかあるのですが 一番人気？のThunderbirdは重そうで使いたくないし、 GnomeのEvolutionもThunder</description>
+      <description>Linuxでのメールクライアント、いくつかあるのですが 一番人気？のThunderbirdは重そうで使いたくないし、 GnomeのEvoluti</description>
     </item>
     
     <item>
@@ -154,7 +154,7 @@
       <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/11/from-grub-clover/</guid>
-      <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linuxでスナップショット</description>
+      <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linu</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@
       <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/10/multios-boot-loader/</guid>
-      <description>端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、事前にインストールしてあるManjaroのブー</description>
+      <description>端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、事前にインストールしてある</description>
     </item>
     
     <item>
@@ -172,7 +172,7 @@
       <pubDate>Mon, 07 Oct 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/10/install-manjaro-btrfs/</guid>
-      <description>2018年一番人気のディストリビューションManjaro、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになってます。コミュニティー</description>
+      <description>2018年一番人気のディストリビューションManjaro、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになって</description>
     </item>
     
     <item>
@@ -181,7 +181,7 @@
       <pubDate>Sun, 06 Oct 2019 09:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/10/install-debian-btrfs/</guid>
-      <description>Thinkpad T480S マルチOS環境第２弾。 Thinkpadに自由を！。 ファイルロスト不安症ではないけれど、スナップショットを取ることのできるBtrfsにデビアンをインストールし</description>
+      <description>Thinkpad T480S マルチOS環境第２弾。 Thinkpadに自由を！。 ファイルロスト不安症ではないけれど、スナップショットを取ることのできるBtrfsにデビ</description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@
       <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</guid>
-      <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook Airにて、 Linu</description>
+      <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook</description>
     </item>
     
     <item>
@@ -199,7 +199,7 @@
       <pubDate>Fri, 06 Sep 2019 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/09/linux-distribution/</guid>
-      <description>いろいろと調べてみてこんな感じであろうと、 シンプルにまとめてみました。 非常にメジャーであるが最近は評判が傾いてきているUbuntu＋Ubuntuベースのものは除</description>
+      <description>いろいろと調べてみてこんな感じであろうと、 シンプルにまとめてみました。 非常にメジャーであるが最近は評判が傾いてきているUbuntu＋Ubun</description>
     </item>
     
   </channel>

@@ -19,7 +19,7 @@
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/standardnotes/</guid>
-      <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあったり、 データを暗号</description>
+      <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Wed, 05 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</guid>
-      <description>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。 ちょっとした穴の補修 Arch の初期状態ではブルートゥースが使えま</description>
+      <description>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。 ちょっとした穴の補修 Arch の初期状態ではブ</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif より fcitx を指定します。</description>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/02/tlp-arch/</guid>
-      <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時間もチェックもしまし</description>
+      <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/install-yay/</guid>
-      <description>Archを動かしているThinkapd T480sではManjaroも動かしているので、 シンプルな形の留めておいてAURのパッケージはなるべく使うのを避けようと思</description>
+      <description>Archを動かしているThinkapd T480sではManjaroも動かしているので、 シンプルな形の留めておいてAURのパッケージはなるべく</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/fast-mirror-list/</guid>
-      <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しないからなのか結果が安</description>
+      <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しな</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/01/arco-install-btrfs/</guid>
-      <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Archベースの従兄弟 Arco Linux</description>
+      <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Arc</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</guid>
-      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモとして残す。 現在Wif</description>
+      <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモと</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
-      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使えるかもしれないけれど、</description>
+      <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使える</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Fri, 15 Mar 2019 22:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</guid>
-      <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをちょっと弄って、今回は</description>
+      <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをち</description>
     </item>
     
   </channel>

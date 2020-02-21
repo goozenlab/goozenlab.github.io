@@ -19,7 +19,7 @@
       <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2016/08/dandori-280/</guid>
-      <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。 さて、今回のアップデート</description>
+      <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。 さて</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2015/03/dandori-263/</guid>
-      <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボタンを削ろうかと思い</description>
+      <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボ</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@
       <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/11/dandori-262/</guid>
-      <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思ってます。 次のバージ</description>
+      <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@
       <pubDate>Mon, 27 Oct 2014 17:20:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2014/10/dandori-261/</guid>
-      <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっとしたイライラが取れま</description>
+      <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっと</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <pubDate>Sat, 27 Jul 2013 17:20:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/dandori-250/</guid>
-      <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳ではありません。 iOS7</description>
+      <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳では</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
-      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右側に鍵のアイコンを置</description>
+      <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/04/colormode/</guid>
-      <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変えたい時に使ってみて</description>
+      <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
-      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。StoreKit.framew</description>
+      <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
@@ -100,7 +100,7 @@
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/11/sale-on-weekend/</guid>
-      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littlist、コスパ、タパ</description>
+      <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
-      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったなと、iOS4.3を未</description>
+      <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
@@ -118,7 +118,7 @@
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
-      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5)は5.1以上の対応</description>
+      <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
     
     <item>
@@ -127,7 +127,7 @@
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
-      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今までiPodが開発機</description>
+      <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
-      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cosper)やパーソナル</description>
+      <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
-      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見渡せる居心地の良い街</description>
+      <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
     </item>
     
   </channel>
