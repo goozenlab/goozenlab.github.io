@@ -8,10 +8,46 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Feb 2020 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>macos</title>
+      <link>https://goozenlab.com/tags/macos/</link>
+      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips&amp;tricks</title>
+      <link>https://goozenlab.com/tags/tipstricks/</link>
+      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/tipstricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zfs</title>
+      <link>https://goozenlab.com/tags/zfs/</link>
+      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/zfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://goozenlab.com/tags/debian/</link>
+      <pubDate>Sat, 22 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/debian/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>finance</title>
@@ -50,29 +86,11 @@
     </item>
     
     <item>
-      <title>debian</title>
-      <link>https://goozenlab.com/tags/debian/</link>
-      <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/debian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>https://goozenlab.com/tags/linux/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>macos</title>
-      <link>https://goozenlab.com/tags/macos/</link>
-      <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/macos/</guid>
       <description></description>
     </item>
     
@@ -235,15 +253,6 @@
       <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/oneplus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips&amp;tricks</title>
-      <link>https://goozenlab.com/tags/tipstricks/</link>
-      <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/tipstricks/</guid>
       <description></description>
     </item>
     

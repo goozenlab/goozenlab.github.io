@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 08:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>タイ語のフォントをインストール</title>
+      <link>https://goozenlab.com/blog/2020/02/thai-font/</link>
+      <pubDate>Sat, 22 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/thai-font/</guid>
+      <description>タイでネットにアクセスするとローカル言語表示されることが多々あります。 （google や Youtube など） デビアンでは必要ないものはインストールされない</description>
+    </item>
     
     <item>
       <title>Standard Notes</title>

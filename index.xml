@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Feb 2020 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ミラーディスクを追加・削除方法</title>
+      <link>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</link>
+      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</guid>
+      <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
+    </item>
+    
+    <item>
+      <title>タイ語のフォントをインストール</title>
+      <link>https://goozenlab.com/blog/2020/02/thai-font/</link>
+      <pubDate>Sat, 22 Feb 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/02/thai-font/</guid>
+      <description>タイでネットにアクセスするとローカル言語表示されることが多々あります。 （google や Youtube など） デビアンでは必要ないものはインストールされない</description>
+    </item>
     
     <item>
       <title>タイでのビットコイン取引所(Bitkub, Satan)</title>
@@ -766,7 +784,7 @@
       <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/08/openzfs-after/</guid>
-      <description>8月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
+      <description>8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
     </item>
     
     <item>
@@ -1009,7 +1027,7 @@
       <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</guid>
-      <description>ZFSを検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPa</description>
+      <description>ZFS を検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（</description>
     </item>
     
     <item>
