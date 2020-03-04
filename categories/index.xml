@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2020 15:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>travel</title>
+      <link>https://goozenlab.com/categories/travel/</link>
+      <pubDate>Tue, 03 Mar 2020 15:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/categories/travel/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>computing</title>
@@ -113,15 +122,6 @@
     </item>
     
     <item>
-      <title>travel</title>
-      <link>https://goozenlab.com/categories/travel/</link>
-      <pubDate>Sat, 27 Apr 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/travel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>security</title>
       <link>https://goozenlab.com/categories/security/</link>
       <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
@@ -149,7 +149,7 @@
     </item>
     
     <item>
-      <title>snakeFoot</title>
+      <title>snakefoot</title>
       <link>https://goozenlab.com/categories/snakefoot/</link>
       <pubDate>Fri, 21 Sep 2018 09:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>

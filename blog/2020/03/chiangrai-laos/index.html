@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ミラーディスクを追加・削除方法 | goozenlab</title>
+  <title>チェンライからラオスへ日帰りビザラン | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -137,139 +137,71 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2020-02-23</time>
+                    <time class="">2020-03-03</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.com/tags/macos">macos</a> <a href="https://goozenlab.com/tags/tipstricks">tips&amp;tricks</a> <a href="https://goozenlab.com/tags/zfs">zfs</a> 
+                    tags:<a href="https://goozenlab.com/tags/thailand">thailand</a> <a href="https://goozenlab.com/tags/laos">laos</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    categories:<a href="https://goozenlab.com/categories/travel">travel</a> 
                     
 
                     
                 </p>
-                <h1>ミラーディスクを追加・削除方法</h1>
+                <h1>チェンライからラオスへ日帰りビザラン</h1>
             </div>
 
             <div class="post-content">
-                <p>zfs を使って適当バックアップ的ミラーリング運用をしています。
-日本の実家に全てのデーターが置いてあるのですが、
-よくよく考えると、震災やなんかを考えると、現在滞在中のタイに荷物をあづかってもらっているところがあるので、
-そこに物理的的なバックアップとしておいておくのも悪くないかなと思い、
-３つ目のミラーリングを追加します。</p>
-<p>ファイルをバックアップすれば良いだけとも言えますが、
-ちょっとあたくしバカなものですからあっちでバックアップこっちでバックアップしてると、
-訳が分からなくなるし、クラウドやは今ひとつ信用できないのもあって
-繋げば勝手に同期してくれる<strong>zfs ミラーリング</strong>に落ち着いてます。
-（MacOSのタイムマシーンも嫌い。少し賢くなったらスナップショットも使うかな。）</p>
-<h2 id="zfsファイルシステムにおける長所の羅列">zfsファイルシステムにおける長所の羅列</h2>
-<ul>
-<li>MacOS、Linux、Windows で利用も可能</li>
-<li>ミラーリングでいながら一台（本体内臓 SSD）のみでも運用可能</li>
-<li>ミラーリングを構築しているディスクを起動時に繋げば自動ミラーリング</li>
-<li>接続ディスクをブチっと取り出しても OK</li>
-</ul>
-<p>※　オフィスと自宅にミラーリングディスクをおいておけは簡単な３点同期ができる。</p>
-<p>短所はライセンス上ちょっと問題があるかもしれないのと速度が多少犠牲になるらしい事かな。
-まぁ SSD で運用しているので気になることはありません。</p>
-<p>ズボラなあたくしにはちょうど良いですし、数ヶ月運用してみて今の所大きな問題もありません。</p>
-<hr>
-<h2 id="作業">作業</h2>
-<p>実際はいくつかのプールを運用してますが、
-そのうちの一つ、32GBの領域を USBスティックとミラーリングさせているプールに追加もう一つ USBメモリーを追加します。</p>
-<p>現状は以下、Hackinkpad内のSSDと USBメモリーでミラーリングしています。
-USBメモリーは接続していないので UNAVAIL になっています。</p>
-<p>※ 繋いで <code>zpool online</code> にすると同期が始まります。<br>
-※ 解除は <code>zpool offline</code> でできる、バシッと抜いてもマイペンラ〜イ。</p>
-<pre><code>guiness:~ jin$ sudo zpool status
-  pool: zthumb
- state: DEGRADED
-status: One or more devices could not be opened.  Sufficient replicas exist for
-	the pool to continue functioning in a degraded state.
-action: Attach the missing device and online it using 'zpool online'.
-   see: http://zfsonlinux.org/msg/ZFS-8000-2Q
-  scan: resilvered 612M in 0 days 00:02:01 with 0 errors on Fri Feb 21 13:12:19 2020
-config:
-
-	NAME                     STATE     READ WRITE CKSUM
-	zthumb                   DEGRADED     0     0     0
-	  mirror-0               DEGRADED     0     0     0
-	    media-642DEB3F-426C  ONLINE       0     0     0
-	    1620273082236424xxx  UNAVAIL      0     0     0  was /dev/sda3
-
-errors: No known data errors
-</code></pre><h2 id="ディスクのフォーマット追加">ディスクのフォーマット・追加</h2>
-<p>USB メモリーをフォーマットします。マック上で行ったので、コマンドは他の環境とは違います。
-そしてなぜかそのディスクそのままのフォーマットができませんでした。</p>
-<pre><code>guiness:~ jin$ sudo diskutil eraseVolume ZFS MIR01 /dev/disk2s2
-Started erase on disk2s2
-Unmounting disk
-Erasing
-Mounting disk
-Could not mount disk2s2 after erase
-Error: -69832: File system formatter failed
-guiness:~ jin$
-</code></pre><p>エラーが出ますが問題はないです。</p>
-<p>そして、作成したディスクを追加します。コマンドは
-<code>zpool attach POOL名 DISK 追加ディスク</code>
-です。</p>
-<p>ちなみの解除方法は
-<code>zpool detach POOL名 削除ディスク</code>
-になります。</p>
-<pre><code>guiness:~ jin$ sudo zpool attach zthumb media-642DEB3F /dev/disk2s2
-</code></pre><p>追加される同期が始まります。
-<code>zpool status</code>
-で進捗状況が掴めます。</p>
-<pre><code>guiness:~ jin$ sudo zpool status
-  pool: zthumb
- state: DEGRADED
-status: One or more devices is currently being resilvered.  The pool will
-	continue to function, possibly in a degraded state.
-action: Wait for the resilver to complete.
-  scan: resilver in progress since Sun Feb 23 10:34:42 2020
-	4.19G scanned at 51.7M/s, 1.20G issued at 14.7M/s, 4.19G total
-	1.22G resilvered, 28.50% done, 0 days 00:03:28 to go
-　　　   ^^^^^^^^^^^^^^^^^^
-config:
-
-	NAME                          STATE     READ WRITE CKSUM
-	zthumb                        DEGRADED     0     0     0
-	  mirror-0                    DEGRADED     0     0     0
-	    media-642DEB3F-426C-4047  ONLINE       0     0     0
-	    1620273　 - USBメモリー１   UNAVAIL      0     0     0  was /dev/sda3
-	    disk2s2   - 追加USBメモリー ONLINE       0     0     0
-
-errors: No known data errors
-guiness:~ jin$
-</code></pre><p>追加USBメモリーはタイの滞在先においておきます。</p>
-<p>これで東京壊滅でも安心だぜよ。。ほほほぉ〜（日本に来週帰国で妙なテンションが上がってきてる）。</p>
-<!--
-
-zfs のミラーリングにに 3 本目のディスクを追加しました。
-
-バックアップと同じ役割で、タイに置いていきます。
-
-色々日本のことを考えると、
-現状 -->
+                <p>コロナのせいで日本への帰国チケットがキャンセルになりました。
+ビザの有効期限が切れてしまうので、
+お土産にビアラオでも買っていこうと思いチェンライから日帰りでラオスへビザランしてきました。
+状況が状況なので、ビザの延長はイミグレーションでも行ってくれると、エアラインのかたはいってました。</p>
+<p>市内のバスターミナルから毎時出ているローカルバス（65バーツ）を使ってノンビリとボーダーまで行きます。
+6時から１時間おきに出ています、所要時間は２時間半。
+乗客は８人くらい、バックパッカーが一人乗っていました。</p>
+<p><img src="/images/2020-03-03-chaiangrai-chiangkhong.jpg" alt="VisaRun"></p>
+<p>ボーダーの有効橋手前で降ろしてもらい、待機しているトゥクトゥク（60バーツ）でボーダーまで行きます。
+私一人でした。</p>
+<p>待ち時間なくタイ出国の手続きを終え、ラオスのイミグレーションまで行く有効橋バス（20バーツ）に乗ります。
+バス待ちの人が１５人くらい、１0分ほど待ちました。</p>
+<p>ラオ入国もスムース。外に出て、トゥクトゥクが待っています。
+市内まで行こうかと思いましたが、日帰りで別にこれといってしたいことがあるわけではないので、
+イミグレーションを出て何もない一本道をてくてくと歩く。</p>
+<p>ラオス側では建築中の建物や建築終了の建物がありましたが、
+どうもうまく計画通りにはいっていないようで廃墟のようです。
+どよ〜んとしてます。</p>
+<p>20分ぐらい歩いた所に小さい村があり、
+お腹の大きい女性（妊婦）がいた商店でボールを数本買ってミッションコンプリート。
+ちなみに、ラオスのビールはアジアで一番美味しいラガーと言われています。５００ml：３０バーツ。</p>
+<p>そして、方向転換タイへとんぼ返り、結局滞在は１時間ぐらい。。</p>
+<p>ラオからタイへの有効橋バスは25バーツと少し乗っけてきます。（こういうところがラオスの嫌いな所）</p>
+<p>最近、タイではビザランに厳しくなっていると聞いているし、
+前回のタチレク、ミャンマーのビザランでは、「次にタイ入国するときはビザを取ってこい」と、わざわざパスポートにまで書き込んでくれました。更新数ヶ月前のパスポートだったので気にはしなかったのだけど、ちょっとイラっとした。。</p>
+<p>しっかりと事情を説明して、ことなくタイの入国を終える。
+チェンコン行きの乗り合い（乗車客私のみ、60バーツ）に乗り
+チェンライ行きのバス（6５バーツ）にすれ違いざまに途中乗車。</p>
+<p>これから焼畑が始まるだろう茶色い田園地帯を走りチェンライに戻る。</p>
+<p>宿に戻る前にローカル市場で果物をかって帰りました。いまの時期はイチゴ・パパイヤが旬。
+通年出ているスイカがこのチェンライでは美味しいです。カットスイカ1キロくらいで20バーツです。</p>
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2019/08/openzfs-after/">OpenZFSをMBAにて１ヶ月使ってみて</a></li>
+	<li><a href="/blog/2016/06/nongkhai-laos/">ノンカイからラオスへ日帰りビザラン</a></li>
 	
-	<li><a href="/blog/2019/07/openzfs-mirroring-small/">OpenZFS ミラーリング</a></li>
+	<li><a href="/blog/2019/12/thai-orange/">タイのオレンジジュース</a></li>
 	
-	<li><a href="/blog/2019/07/openzfs-initial-setup/">OpenZFS on Mac</a></li>
+	<li><a href="/blog/2017/07/india-visa-vientian/">インドビザ＠ビエンチャン</a></li>
 	
-	<li><a href="/blog/2018/04/rename-automator/">ブログ用画像を一括リサイズ・リネーム</a></li>
+	<li><a href="/blog/2016/12/thai-lao-border-by-bicycle/">インチキ自転車国境越え</a></li>
 	
-	<li><a href="/blog/2016/08/clean-install/">クリーンインストール</a></li>
+	<li><a href="/blog/2016/10/thai-dtac/">タイにてプリペイド：サービスページ</a></li>
 	
 </ul>
 
