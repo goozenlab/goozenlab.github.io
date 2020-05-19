@@ -4,32 +4,42 @@
   
   <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <loc>https://goozenlab.com/tags/open/</loc>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/openwrt/</loc>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</loc>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2020-05-14T10:00:00+07:00</lastmod>
+    <lastmod>2020-05-18T10:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -75,6 +85,11 @@
   <url>
     <loc>https://goozenlab.com/blog/2020/03/chiangrai-laos/</loc>
     <lastmod>2020-03-03T15:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/mac/</loc>
+    <lastmod>2020-02-23T11:40:00+07:00</lastmod>
   </url>
   
   <url>
@@ -138,6 +153,11 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/tags/a/</loc>
+    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/tags/arch/</loc>
     <lastmod>2020-02-07T08:00:00+07:00</lastmod>
   </url>
@@ -179,11 +199,6 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2020/01/gpg-verify/</loc>
-    <lastmod>2020-01-30T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/mac/</loc>
     <lastmod>2020-01-30T08:00:00+07:00</lastmod>
   </url>
   
@@ -1233,11 +1248,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/open/</loc>
-    <lastmod>2019-02-16T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2019/02/github-private-reopsitory/</loc>
     <lastmod>2019-02-16T17:30:00+07:00</lastmod>
   </url>
@@ -1673,6 +1683,11 @@
   </url>
   
   <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/about/vipassana/</loc>
     <lastmod>2017-05-29T00:00:00+00:00</lastmod>
   </url>
@@ -1745,11 +1760,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2016/11/pranatice-0100/</loc>
     <lastmod>2016-11-30T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/a/</loc>
-    <lastmod>2016-11-29T14:30:00+07:00</lastmod>
   </url>
   
   <url>
@@ -3534,12 +3544,10 @@
   
   <url>
     <loc>https://goozenlab.com/computing/nomad-goods/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://goozenlab.com/blog/1/01/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

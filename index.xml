@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 May 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 29 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenWRT on Pi A&#43; Model 3</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</link>
+      <pubDate>Mon, 18 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</guid>
+      <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーター再構築を試みる。 パイA+には有線LANの接続</description>
+    </item>
     
     <item>
       <title>Ubuntu 20.04 on Pi Zero</title>
@@ -5239,25 +5248,7 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>2020-02-18
-idea-ce-linux
-アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をインストールしてみました。
-オープンソースの IDE もいくつかあるのですが、今回は少し端折って簡単に InteliJ のものをインストールします。
-intellij install on arch ??
-で、準備完了。
-やりたい事をまとめると、
-普段使いをしているアプリのちょっとしたところを自分好みにする。
-Task レイアウトの調整、右のバーが太い、補足する、文字を大きくする。 割と簡単に行えるかも、
-TT-RSS スワイプ時の挙動を追加したい。 自分は、Wallagbag と Instapaper しか使わないので、
-スピードは Feeder が早いので、そちらのソースコードを持ってくるかな、
-自分のメイン端末は７インチのものなので、少しレイアウトに余裕を持たせて 表示量を増やす。
-バラーーっと見て一気に消去。
-K-9 バーを細くして
-両端のアイコンの大きさを調整。
-スワイプで消去機能を追加
-アイコンも変える。
-多分割と簡単にできそうかな。。
-GZ-9 GZask Tiny GZZ</description>
+      <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
     </item>
     
     <item>

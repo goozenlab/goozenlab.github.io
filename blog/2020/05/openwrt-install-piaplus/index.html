@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>OpenWRT on Pi A&#43; Model 3 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-05-18</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>OpenWRT on Pi A&#43; Model 3</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2020-05-17-openwrt-overview.png" alt="OpenWRT install on Pi A+"></p>
+<p>ラズベリーパイのA+にOpenWRTをインストールをしました。
+昨年途中で頓挫したトラベルルーター再構築を試みる。</p>
+<p>パイA+には有線LANの接続ができないので、
+途中でインチキをしてパイ３Bを使い必要なソフト・カーネルモジュール等をダウンロードしてなんとか上手くいきました。
+ちょっと手際が悪いというか、、なんというか。。</p>
+<p>流れは以下。</p>
+<ol>
+<li>A+: Wifiアクセスポイント有効化</li>
+<li>A+: Interface:LANをDHCPに割当</li>
+<li>3B: ネットに有線LAN接続</li>
+<li>3B: Wifiモジュール等インストール</li>
+<li>3B: Interface:LANを固定IPに戻す</li>
+<li>A+: USBWIFIにアクセス先を登録</li>
+</ol>
+<p>出来上がったA+OpenWRTと３世代くらい前のNEC無線ルーターで簡単にネットスピードを比較してみたけど、
+まぁだいたい同じくらいの結果が出る。</p>
+<p>果たしてこれは良いのか悪いのか。。</p>
+<hr>
+<p>さて、まずは何度したことやら、定番の起動ディスク作成。
+OpenWRTのイメージを下記よりダウンロード、そしてEtcherでMicroSDを焼きます。説明はいらんかな。</p>
+<p><a href="https://downloads.openwrt.org/releases/19.07.2/targets/brcm2708/bcm2710/">https://downloads.openwrt.org/releases/19.07.2/targets/brcm2708/bcm2710/</a></p>
+<p>MicroSDカードをパイA+に入れ、
+<strong>キーボードとモニター</strong>
+を繋いで起動します。</p>
+<h2 id="aの内臓無線lanを有効化">A+の内臓無線LANを有効化</h2>
+<p>起動後コンソールにて内蔵無線LANを有効化します。
+OpenWRTという名前のアクセスポイントが自動で作られる。</p>
+<p>以下のコマンドを実行。</p>
+<pre><code>root@OpenWrt:~$ uci set wireless.radio0.disabled=0
+root@OpenWrt:~$ uci commit
+root@OpenWrt:~$ reboot
+</code></pre><p>そして再起動。</p>
+<p>他の端末より、Wifiアクセスポイントの<strong>OpenWRT</strong>（オープンネットワークですのでご注意のほど）に接続。</p>
+<p>ブラウザーで
+<code>http://192.168.1.1</code>
+にアクセスします。
+ログイン画面にてルートのパスワードの変更を求められるでこの時点で行っておきます。</p>
+<h2 id="lan設定編集dhcpに変更">LAN設定編集（DHCPに変更）</h2>
+<p>そしてヘッダーの
+[Network &gt; Interfaces]（設定ファイルは<code>/etc/config/network</code>)
+より <code>LAN</code>を編集します。</p>
+<p><code>Protocol</code>のStatic addressの部分を<strong>DHCP</strong>に変更します。</p>
+<p><img src="/images/2020-05-17-openwrt-lan-setting.png" alt="OpenWRT install on Pi A+"></p>
+<p>そして、設定を保存するとブラウザーでのアクセスができなくなりますので、
+パイのキーボードから</p>
+<pre><code>root@OpenWrt:~$ halt
+</code></pre><p>シャットダウンします。なんか中途半端。。とりあえずA+での作業は一時終了。</p>
+<p>※　作業はコンソールでしても良かったかもと、後で思う。</p>
+<hr>
+<p>作業場を変えます。MicroSDを取り出して<strong>Pi 3B</strong>に入れ、
+有線LANをローカルネットワークネットワークのルーターに繋ぎます。</p>
+<p>ローカルネットワークがつながっているルーターよりPi 3BのIPアドレス確認して、
+ブラウザーでアクセスします。</p>
+<h2 id="必要なモジュールアプリのインストール">必要なモジュール・アプリのインストール</h2>
+<p>ウェブ管理画面上の[System &gt; Software]より
+緑文字の<code>Update lists</code>でリストを更新。</p>
+<p>USB無線LANアダプターのカーネルモジュール等をインストールします。</p>
+<p>私の持っているWifiドングルはプラネックスのもの、</p>
+<h3 id="planex-gw-usnano2-80211n-wireless-adapter-realtek-rtl8188cus">PLANEX GW-USNano2 802.11n Wireless Adapter [Realtek RTL8188CUS]</h3>
+<p>なので、フィルターに<code>RTL81</code>を入力して<code>kmod-xxx</code>をインストールします。</p>
+<p><img src="/images/2020-05-17-openwrt-install-rtl8192cu.png" alt="OpenWRT install on Pi A+"></p>
+<p>トラベルルーターで使うつもりなので、
+<code>TravelMate</code>というソフトもついでにインストール。</p>
+<h2 id="lan設定編集固定ipに戻す">LAN設定編集（固定IPに戻す）</h2>
+<p>そして、前回変更したLAN設定をdhcpより<code>Static address</code>に戻します。
+アクセスポイント・ルーターのIPになるので、
+<code>192.168.0.1/24や10.0.0.1/24</code>
+などにします。</p>
+<p>Pi 3Bでの作業は終了。Piの電源を落とし、MicroSDをA+に戻します。</p>
+<hr>
+<h2 id="openwrtに繋いで仕上げ">OpenWRTに繋いで仕上げ</h2>
+<p>USB無線LANを繋いて電源を入れます。もうこの時点ではキーボードもモニターも必要はないです。</p>
+<p>またまた、アクセポイントに繋ぎ管理画面に入ります。（アクセスポイントの暗号化もするのが良い）</p>
+<h2 id="network--wireless">[Network &gt; Wireless]</h2>
+<p><code>Generic xxx</code>がWIFI端末、２つあります。一つは内向きのネットワークで、もう一つが外に繋ぐための端末になる。</p>
+<p><code>Scan</code>より無線ルーターに接続します。同時に必要な<code>Interface</code>も作成されます。</p>
+<p><img src="/images/2020-05-17-openwrt-wireless-overview.png" alt="OpenWRT install on Pi A+"></p>
+<p>パスワードの設定など、細かに設定もできます。（割愛）
+割とすんなりとWifiルーターの構築ができました。</p>
+<p>ただ、ネットワーク名などやIP番号を変えたりするとアクセスが一時できなくなるので、
+ちょっとした変更は、SSHから<code>/etc/config/wireless</code>などを編集しるのが良いように思えます。</p>
+<h2 id="おまけ">おまけ</h2>
+<p>SSHでログインしてみました。64Bitカーネルで動いているようです。</p>
+<p><img src="/images/2020-05-18-openwrt-ssh.png" alt="OpenWRT install on Pi A+"></p>
+<p>まだ何も入れていない素の状態なので、非常にスッキリしています。
+プロセスも少ないし、メモリー消費<strong>26MB</strong>って非常に少なくてびっくり。
+まぁルーターなので当たり前か。。</p>
+<p><img src="/images/2020-05-17-openwrt-top.png" alt="OpenWRT install on Pi A+"></p>
+<p>Syncthing, Radicale, TT RSS, Wireguardなんかを入れてシンプルに使っていこうかなと、、</p>
+<p>追記：書き起こしてみると、ちょっと無駄があるなと、、自分へのメモでもあるからまぁよいか。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/05/ubuntu-20-install-pi-zero/">Ubuntu 20.04 on Pi Zero</a></li>
+	
+	<li><a href="/blog/2020/05/ubuntu-20-install-pi/">Ubuntu 20.04 on Pi A&amp;B</a></li>
+	
+	<li><a href="/blog/2020/05/mynode-install/">myNode: ビットコインフルノードサーバー</a></li>
+	
+	<li><a href="/blog/2019/09/pi-3b-server-comparison/">パイ・3AサーバーのSDカードを3Bへ</a></li>
+	
+	<li><a href="/blog/2019/09/pi-zram/">パイでZRamを試す</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

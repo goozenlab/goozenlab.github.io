@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 May 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenWRT on Pi A&#43; Model 3</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</link>
+      <pubDate>Mon, 18 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</guid>
+      <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーター再構築を試みる。 パイA+には有線LANの接続</description>
+    </item>
     
     <item>
       <title>Ubuntu 20.04 on Pi Zero</title>
