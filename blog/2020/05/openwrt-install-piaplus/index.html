@@ -158,13 +158,13 @@
             <div class="post-content">
                 <p><img src="/images/2020-05-17-openwrt-overview.png" alt="OpenWRT install on Pi A+"></p>
 <p>ラズベリーパイのA+にOpenWRTをインストールをしました。
-昨年途中で頓挫したトラベルルーター再構築を試みる。</p>
-<p>パイA+には有線LANの接続ができないので、
-途中でインチキをしてパイ３Bを使い必要なソフト・カーネルモジュール等をダウンロードしてなんとか上手くいきました。
+昨年途中で頓挫したトラベルルーターちょっとゲタを履き替え再構築を試みる。</p>
+<p>パイA+には有線LANのポートがないので、ネットへの接続がちょっとややこしい感じである。
+結局LANポートのあるパイ３Bを途中でインチキをして使い必要なソフト・カーネルモジュール等をダウンロードしてなんとか上手くいきました。
 ちょっと手際が悪いというか、、なんというか。。</p>
 <p>流れは以下。</p>
 <ol>
-<li>A+: Wifiアクセスポイント有効化</li>
+<li>A+: オンボードWIFI有効化+アクセスポイント作成</li>
 <li>A+: Interface:LANをDHCPに割当</li>
 <li>3B: ネットに有線LAN接続</li>
 <li>3B: Wifiモジュール等インストール</li>
@@ -181,8 +181,8 @@ OpenWRTのイメージを下記よりダウンロード、そしてEtcherでMicr
 <p>MicroSDカードをパイA+に入れ、
 <strong>キーボードとモニター</strong>
 を繋いで起動します。</p>
-<h2 id="aの内臓無線lanを有効化">A+の内臓無線LANを有効化</h2>
-<p>起動後コンソールにて内蔵無線LANを有効化します。
+<h2 id="aのオンボードwifiを有効化">A+のオンボードWIFIを有効化</h2>
+<p>起動後コンソールにてオンボードWIFIを有効化します。
 OpenWRTという名前のアクセスポイントが自動で作られる。</p>
 <p>以下のコマンドを実行。</p>
 <pre><code>root@OpenWrt:~$ uci set wireless.radio0.disabled=0
@@ -198,7 +198,7 @@ root@OpenWrt:~$ reboot
 <p>そしてヘッダーの
 [Network &gt; Interfaces]（設定ファイルは<code>/etc/config/network</code>)
 より <code>LAN</code>を編集します。</p>
-<p><code>Protocol</code>のStatic addressの部分を<strong>DHCP</strong>に変更します。</p>
+<p>有線LANで使うため<code>Protocol</code>のStatic addressの部分を<strong>DHCP</strong>に変更します。</p>
 <p><img src="/images/2020-05-17-openwrt-lan-setting.png" alt="OpenWRT install on Pi A+"></p>
 <p>そして、設定を保存するとブラウザーでのアクセスができなくなりますので、
 パイのキーボードから</p>
@@ -221,7 +221,9 @@ root@OpenWrt:~$ reboot
 <p>トラベルルーターで使うつもりなので、
 <code>TravelMate</code>というソフトもついでにインストール。</p>
 <h2 id="lan設定編集固定ipに戻す">LAN設定編集（固定IPに戻す）</h2>
-<p>そして、前回変更したLAN設定をdhcpより<code>Static address</code>に戻します。
+<p>そして、前回変更したLAN設定を
+今回はアクセスポイントして使うので
+dhcpより<code>Static address</code>に戻します。
 アクセスポイント・ルーターのIPになるので、
 <code>192.168.0.1/24や10.0.0.1/24</code>
 などにします。</p>

@@ -14,12 +14,21 @@
     
     
     <item>
+      <title>Disk容量の拡張</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-sdcard-expansion/</link>
+      <pubDate>Wed, 20 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-sdcard-expansion/</guid>
+      <description>OpenWrtを使っていて（Wifiルーターとしてな安定問題なく動いてます。）、 ふと気がついてみたらディスクの状況が以下の様になっています。</description>
+    </item>
+    
+    <item>
       <title>OpenWRT on Pi A&#43; Model 3</title>
       <link>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</link>
       <pubDate>Mon, 18 May 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/05/openwrt-install-piaplus/</guid>
-      <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーター再構築を試みる。 パイA+には有線LANの接続</description>
+      <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーターちょっとゲタを履き替え再構築を試みる。 パイA</description>
     </item>
     
     <item>

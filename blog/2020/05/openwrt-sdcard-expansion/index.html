@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Disk容量の拡張 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-05-20</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Disk容量の拡張</h1>
+            </div>
+
+            <div class="post-content">
+                <p>OpenWrtを使っていて（Wifiルーターとしてな安定問題なく動いてます。）、
+ふと気がついてみたらディスクの状況が以下の様になっています。
+全体で500MBくらい（RAMの大きさ？）の領域しか使われていません。</p>
+<pre><code>  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ OpenWrt 19.07.2, r10947-65030d81f3
+ -----------------------------------------------------
+root@OpenWrt:~$ df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root               258016     16996    235780   7% /
+tmpfs                   217064       652    216412   0% /tmp
+/dev/mmcblk0p1           20422     14884      5538  73% /boot
+tmpfs                      512         0       512   0% /dev
+</code></pre><p>ファイルシステム自体もルーターということで少し変わってる様です。あまり理解はしていないのだけれども、
+少量のRAMとFlashRAMで運用を考えられているのかしら、、圧縮ファイルが使われていたりします。</p>
+<p>ちょっとウェブサーチをして、<code>/overlay</code>はデータ領域と考えれば良い様なので、<code>/</code>を弄るのは気が引けたので、
+overlayを別のパーティションに割り当てる方法にする。</p>
+<p>作業に必要なソフトをインストールします。</p>
+<pre><code>root@OpenWrt:~$ opkg install fdisk block-mount mod-fs-ext4
+</code></pre><hr>
+<h2 id="新しいパーティションの作成">新しいパーティションの作成</h2>
+<p>OpenWrtではMicroSDカードはMMC扱の様で割り当ては
+<code>/dev/mmcblk0</code>
+になっています。</p>
+<pre><code>root@OpenWrt:~$ fdisk /dev/mmcblk0
+</code></pre><p>元のディスク構成はこんな感じです。</p>
+<pre><code>oot@OpenWrt:~$ fdisk /dev/mmcblk0
+
+Welcome to fdisk (util-linux 2.34).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+
+Command (m for help): p
+Disk /dev/mmcblk0: 29.83 GiB, 32010928128 bytes, 62521344 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x5452574f
+
+Device         Boot Start    End Sectors  Size Id Type
+/dev/mmcblk0p1 *     8192  49151   40960   20M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2      57344 581631  524288  256M 83 Linux
+</code></pre><p>パーティションの隙間に４MB (8193？)の空きがあるのが不思議だけど、
+まぁ、習って同じ感じで新しいパーティションを作成しました。
+こな感じ。</p>
+<pre><code>Device         Boot  Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1 *      8192    49151    40960   20M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2       57344   581631   524288  256M 83 Linux
+/dev/mmcblk0p3      589824 62521343 61931520 29.5G 83 Linux
+</code></pre><p>そして<code>mkfs.ext4</code>でフォーマットをします。</p>
+<pre><code>root@OpenWrt:~$ mkfs.ext4 /dev/mmcblk0p3
+mke2fs 1.44.5 (15-Dec-2018)
+Discarding device blocks: done
+Creating filesystem with 7741440 4k blocks and 1937712 inodes
+</code></pre><p>/overlayはデーター領域になっているはずですが空の様です。</p>
+<pre><code>root@OpenWrt:~$ ls -a /overlay/
+.   ..
+root@OpenWrt:~$
+</code></pre><p>もし色々とすでにあったらコピーしましょう。</p>
+<pre><code>root@OpenWrt:~$ mount /dev/mmcblk0p3 /mnt
+root@OpenWrt:~$ cp -a -f /overlay/. /mnt
+root@OpenWrt:~$ umount /mnt
+</code></pre><p>OpenWrtをリブートします。</p>
+<pre><code>root@OpenWrt:~$ reboot
+</code></pre><hr>
+<h2 id="管理画面でマウント処理">管理画面でマウント処理</h2>
+<p>ウェブ管理画面に新メニュー
+[System &gt; Mount Points]
+が追加されます。
+OpenWrtのドキュメントではコマンドを使った方法が記載されてますが、
+ここで作業は完結できました。（多分）</p>
+<p><img src="/images/2020-05-20-openwrt-mount.png" alt="OpenWRT: Mount Point"></p>
+<p>作成したパーティションがすでにあるものと一緒に表示されます。<code>/</code>がマウントされていなくて、
+ちょっと謎なところもあるが。動いているので放置。</p>
+<p><img src="/images/2020-05-20-openwrt-mountpoint-before.png" alt="OpenWRT: Mount Point"></p>
+<p>青いEditボタンより編集。有効化にチェックを入れ、割り当て先を<code>/overlay</code>に選択し保存します。
+（<code>/</code>を選択すると方法まで書いてあります。）</p>
+<p><img src="/images/2020-05-20-openwrt-mountpoint-entry.png" alt="OpenWRT: Mount Point"></p>
+<p>そして、再起動します。</p>
+<p>結果この様な感じになりました。<code>/rom</code>なんてのが出てきてる。。展開されるファイルはどこにあるんやろ？。</p>
+<p><img src="/images/2020-05-20-openwrt-mountpoint-after.png" alt="OpenWRT: Mount Point"></p>
+<pre><code>root@OpenWrt:~$ df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root               258016     17688    235088   7% /rom
+tmpfs                   217064      1152    215912   1% /tmp
+/dev/mmcblk0p3        30348144     45116  28738356   0% /overlay
+overlayfs:/overlay    30348144     45116  28738356   0% /
+/dev/mmcblk0p1           20422     14884      5538  73% /boot
+tmpfs                      512         0       512   0% /dev
+</code></pre><p>ソフトウェアのインストール領域も一気に増えました。</p>
+<p><img src="/images/2020-05-20-openwrt-mountpoint-software.png" alt="OpenWRT: Mount Point"></p>
+<p>弄りも最小限ですので、ファームウェアのアップデート時も問題なく動くはずだと思います。</p>
+<p>さてお次は何を入れよ。</p>
+<p>参考：https://openwrt.org/docs/guide-user/additional-software/extroot_configuration</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/05/openwrt-install-piaplus/">OpenWRT on Pi A&#43; Model 3</a></li>
+	
+	<li><a href="/blog/2020/05/ubuntu-20-install-pi-zero/">Ubuntu 20.04 on Pi Zero</a></li>
+	
+	<li><a href="/blog/2020/05/ubuntu-20-install-pi/">Ubuntu 20.04 on Pi A&amp;B</a></li>
+	
+	<li><a href="/blog/2020/05/mynode-install/">myNode: ビットコインフルノードサーバー</a></li>
+	
+	<li><a href="/blog/2019/09/pi-3b-server-comparison/">パイ・3AサーバーのSDカードを3Bへ</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
