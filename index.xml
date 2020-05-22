@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>Syncthing on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-syncthing/</link>
+      <pubDate>Thu, 21 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-syncthing/</guid>
+      <description>Dropboxの３台縛りが始まった時からSyncthingを使っています。 もう少し安ければね。。 このアプリの唯一非常に残念なのはiOSに移植</description>
+    </item>
+    
+    <item>
       <title>Disk容量の拡張</title>
       <link>https://goozenlab.com/blog/2020/05/openwrt-sdcard-expansion/</link>
       <pubDate>Wed, 20 May 2020 10:00:00 +0700</pubDate>
