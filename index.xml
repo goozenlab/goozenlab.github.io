@@ -14,6 +14,42 @@
     
     
     <item>
+      <title>Gitea on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-gitea/</link>
+      <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-gitea/</guid>
+      <description>動きたいけど動けない。。 持ち出しgithubにするために、 GiteaをOpenWRTにインストールしました。 ほぼ間違いのないインストール・マ</description>
+    </item>
+    
+    <item>
+      <title>Miniflux on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-miniflux/</link>
+      <pubDate>Wed, 27 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-miniflux/</guid>
+      <description>今まではTiny Tiny RSSをラズビアン＋パイ３で使っていました。 今回環境を変えていることもあるので、 データベースをPostgresqlに変更し</description>
+    </item>
+    
+    <item>
+      <title>TP-LINK Archer T2UをRaspbianで使う</title>
+      <link>https://goozenlab.com/blog/2020/05/raspbian-tplink-t1u/</link>
+      <pubDate>Mon, 25 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/raspbian-tplink-t1u/</guid>
+      <description>ローカルネットワークを11aに対応すべくTP-LINKのArcherT2UをPi Zeroで使えるようにしました。 Mediatek 8812auのチップを使用</description>
+    </item>
+    
+    <item>
+      <title>Install OpenWRT on Pi: Refined</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-install-refined/</link>
+      <pubDate>Sun, 24 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-install-refined/</guid>
+      <description>インストール後色々と試したりしている間に、新しいファームウェア19.07.3が出ていました。(5/22, 2020) ウェブ管理画面のメニューを見る限り</description>
+    </item>
+    
+    <item>
       <title>Syncthing on OpenWRT</title>
       <link>https://goozenlab.com/blog/2020/05/openwrt-syncthing/</link>
       <pubDate>Thu, 21 May 2020 10:00:00 +0700</pubDate>
@@ -5267,6 +5303,15 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/1/01/</guid>
       <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.com/blog/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/1/01/</guid>
+      <description>DNS over TLS dns-tlc-openwrt-check- いくつか設定が残っているが、追記 root@tortas:~# opkg install luci-app-unbound ca-bundle root@tortas:~# vi /etc/config/unbound config zone option enabled &#39;1&#39; option zone_type &#39;forward_zone&#39; option tls_upstream &#39;1&#39; option tls_index &#39;cloudflare-dns.com&#39; list zone_name &#39;.&#39; list server &#39;1.1.1.1&#39; list server &#39;1.0.0.1&#39; list server &#39;2606:4700:4700::1111&#39; list server &#39;2606:4700:4700::1001&#39; root@tortas:~# /etc/init.d/unbound restart unbound: default protocol configuration unbound: default memory configuration unbound: default</description>
     </item>
     
     <item>

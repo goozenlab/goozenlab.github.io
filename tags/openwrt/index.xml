@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 May 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gitea on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-gitea/</link>
+      <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-gitea/</guid>
+      <description>動きたいけど動けない。。 持ち出しgithubにするために、 GiteaをOpenWRTにインストールしました。 ほぼ間違いのないインストール・マ</description>
+    </item>
+    
+    <item>
+      <title>Miniflux on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-miniflux/</link>
+      <pubDate>Wed, 27 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-miniflux/</guid>
+      <description>今まではTiny Tiny RSSをラズビアン＋パイ３で使っていました。 今回環境を変えていることもあるので、 データベースをPostgresqlに変更し</description>
+    </item>
+    
+    <item>
+      <title>Install OpenWRT on Pi: Refined</title>
+      <link>https://goozenlab.com/blog/2020/05/openwrt-install-refined/</link>
+      <pubDate>Sun, 24 May 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/05/openwrt-install-refined/</guid>
+      <description>インストール後色々と試したりしている間に、新しいファームウェア19.07.3が出ていました。(5/22, 2020) ウェブ管理画面のメニューを見る限り</description>
+    </item>
     
     <item>
       <title>Syncthing on OpenWRT</title>

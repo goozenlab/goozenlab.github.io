@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Miniflux on OpenWRT | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-05-27</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Miniflux on OpenWRT</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2020-05-27-openwrt-miniflux-00.png" alt="Miniflux on OpenWRT"></p>
+<p>今まではTiny Tiny RSSをラズビアン＋パイ３で使っていました。
+今回環境を変えていることもあるので、
+データベースをPostgresqlに変更して、
+ミニマリスティックなMinufluxをインストールしてみました。</p>
+<p>たまたま見つけた、
+下記のサイトが非常に助けになりました。</p>
+<p><a href="https://www.itix.fr/blog/install-miniflux-raspberry-pi/">https://www.itix.fr/blog/install-miniflux-raspberry-pi/</a></p>
+<p>インストール方法が事細かに書いてあります、グッジョブです。
+（ちょっとだけ変更点あり。）</p>
+<p><strong>OpenWRT v19.0.3 + minuflux v2.0.21</strong>
+にて動作ちう。</p>
+<p>数日使ってみたところ、TTRssと比較したところ、こちらの方がえらく快適。
+Fever経由、マック・Reederでの読み込みも爆速。
+Androidアプリは物色中。</p>
+<p>シンプルなウェブクライアントも最初はどうかなと思っていましたが、
+ヘッダーを読み飛ばすには悪くないかも、と思い始めてます。
+満足度高し。</p>
+<h2 id="事前作業">事前作業</h2>
+<!-- ちょっとした機能を追加するにはshadow-**
+35種類あります。
+必要なものを最低限しかインストールされていないので、
+良い点でもあり、ちょっと面倒な点でもあったりします。 -->
+<p>Minifluxユーザーを作成したり、あとで使う
+<code>sudo -u postgres</code>
+のため、以下のソフトウェアをインストールします。</p>
+<pre><code>root@openwrt:~% opkg update
+root@openwrt:~% opkg install sudo shadow-su shadow-useradd
+</code></pre><p>そして、minifluxユーザーを追加しときます。</p>
+<pre><code>root@openwrt:~% useradd -d /var/run/miniflux -s /bin/false -m -r miniflux
+</code></pre><h2 id="インストール作業">インストール作業</h2>
+<p>PostgresqlとMinifluxのインストール、各種設定をします。</p>
+<h3 id="postgresql">postgresql</h3>
+<p>初期設定を含めて作業をします。
+データーファイルの保存先を変えたりします。</p>
+<pre><code>root@openwrt:~% opkg install pgsql-server
+</code></pre><p>そして、postgresユーザー設定を
+<code>/usr/false -&gt; /usr/ash</code>
+にちょこっと変更します。（/etc/passwd）</p>
+<p>初期設定とデーターベースの初期化をします。</p>
+<pre><code>root@openwrt:~% mkdir -p /srv/postgresql/data
+root@openwrt:~% uci set postgresql.config.PGDATA=/srv/postgresql/data
+root@openwrt:~% uci set postgresql.config.PGLOG=/srv/postgresql/data/postgresql.log
+root@openwrt:~% uci commit
+root@openwrt:~% chown postgres:postgres /srv/postgresql/data
+root@openwrt:~% cd /srv/postgresql/data
+root@tortas:/srv/postgresql/data$ sudo -u postgres /bin/ash -c 'LC_COLLATE=&quot;C&quot; initdb -D /srv/postgresql/data --pwprompt'
+
+Enter new superuser password:
+
+root@tortas:/srv/postgresql/data$
+</code></pre><p>サービスを有効化して開始します。</p>
+<pre><code>root@openwrt:~% service postgresql enable
+root@openwrt:~% service postgresql start
+</code></pre><p>rootユーザーを登録します。</p>
+<pre><code>root@openwrt:~% sudo -u postgres psql -c 'CREATE USER root SUPERUSER;'
+</code></pre><h4 id="minulux-db">Minulux db</h4>
+<p>MinifluxのDBを作成します、ユーザー、パスワード、DB名全てminifluxで行ってます。
+セキュリティー的にはNGですな。</p>
+<pre><code>root@openwrt:~% sudo -u postgres psql -c &quot;CREATE USER miniflux WITH PASSWORD 'miniflux';&quot;
+root@openwrt:~% sudo -u postgres psql -c &quot;CREATE DATABASE miniflux OWNER miniflux;&quot;
+</code></pre><p>データーベースにつなげるかチェックします。
+２行目の目的は分からん、、、</p>
+<pre><code>root@openwrt:~% psql -h 127.0.0.1 miniflux miniflux
+root@openwrt:~% cd /tmp &amp;&amp; sudo -u miniflux psql miniflux -c ''
+</code></pre><p>必要とされているエクステンションを追加します。</p>
+<pre><code>root@openwrt:/tmp% sudo -u postgres psql miniflux -c 'CREATE EXTENSION hstore;'
+</code></pre><p>データベースの準備完了。</p>
+<h2 id="minifluxのインストール">Minifluxのインストール</h2>
+<p>参考先サイトを見習って自分で落としてきたソフトウェアーは<code>/opt</code>に置いとくことにします。</p>
+<pre><code>root@openwrt:~% opkg install libustream-mbedtls ca-bundle ca-certificates
+
+root@openwrt:~% mkdir -p /opt/miniflux/bin
+root@openwrt:~% wget -O /opt/miniflux/bin/miniflux https://github.com/miniflux/miniflux/releases/download/2.0.21/miniflux-linux-armv8
+root@openwrt:~% chmod 755 /opt/miniflux/bin/miniflux
+</code></pre><p>設定ファイル<code>/opt/miniflux/etc/miniflux.conf</code>を作成します。</p>
+<pre><code>root@openwrt:~% mkdir -p /opt/miniflux/etc
+root@openwrt:~% cat &gt; /opt/miniflux/etc/miniflux.conf &lt;&lt;EOF
+&gt; DATABASE_URL=postgres://miniflux:miniflux@localhost/miniflux?sslmode=disable
+&gt; LISTEN_ADDR=0.0.0.0:8001
+&gt; EOF
+root@openwrt:~% chown miniflux:miniflux /opt/miniflux/etc/miniflux.conf
+root@openwrt:~% chmod 600 /opt/miniflux/etc/miniflux.conf
+</code></pre><p>データーベースをマイグレートして、管理者の登録をします。</p>
+<pre><code>root@openwrt:~% /opt/miniflux/bin/miniflux -c /opt/miniflux/etc/miniflux.conf -migrate
+root@openwrt:~% /opt/miniflux/bin/miniflux -c /opt/miniflux/etc/miniflux.conf -create-admin
+Enter Username: xxxxx
+Enter Password: xxYYxx
+root@openwrt:~% 
+</code></pre><p>サービスの登録をします。</p>
+<pre><code>root@openwrt:~% vi /etc/init.d/miniflux
+
+#!/bin/sh /etc/rc.common
+# Miniflux
+
+# Start after PostgreSQL (S50)
+START=80
+STOP=20
+
+start() {
+  start-stop-daemon -c miniflux -u miniflux -x /opt/miniflux/bin/miniflux -b -S -- -c /opt/miniflux/etc/miniflux.conf
+}
+
+stop() {
+  start-stop-daemon -c miniflux -u miniflux -x /opt/miniflux/bin/miniflux -b -K
+}
+
+root@openwrt:~% chmod 755 /etc/init.d/miniflux
+</code></pre><p>Minifluxを登録して起動します。</p>
+<pre><code>root@openwrt:~% service miniflux enable
+root@openwrt:~% service miniflux start
+</code></pre><p>ブラウザーより
+<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;:8001</code>
+にアクセスします。</p>
+<p><img src="/images/2020-05-27-openwrt-miniflux-signin.png" alt="Miniflux on OpenWRT"></p>
+<p>フィードリストをインポートして終了！</p>
+<p><img src="/images/2020-05-27-openwrt-miniflux-unread.png" alt="Miniflux on OpenWRT"></p>
+<h2 id="リバースプロキシー設定">リバースプロキシー設定</h2>
+<p>以下の設定
+<code>/etc/nginx/conf.d/miniflux</code>
+で保存しておきます。</p>
+<p>OpenWRTの管理画面より<code>HOST</code>も追加しておきます。</p>
+<pre><code># Miniflux server
+
+server {
+
+  listen 80;
+  # listen 443 ssl;
+
+  server_name rss.lan;
+
+  location / {
+    proxy_pass http://localhost:8001;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_redirect off;
+  }
+
+  # client_max_body_size 4G;
+  keepalive_timeout 10;
+
+}
+</code></pre><p>すんばらしぃ。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/05/openwrt-install-refined/">Install OpenWRT on Pi: Refined</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-syncthing/">Syncthing on OpenWRT</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-sdcard-expansion/">Disk容量の拡張</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-install-piaplus/">OpenWRT on Pi A&#43; Model 3</a></li>
+	
+	<li><a href="/blog/2020/05/raspbian-tplink-t1u/">TP-LINK Archer T2UをRaspbianで使う</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

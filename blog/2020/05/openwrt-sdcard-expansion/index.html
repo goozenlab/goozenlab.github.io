@@ -179,7 +179,8 @@ tmpfs                      512         0       512   0% /dev
 overlayを別のパーティションに割り当てる方法にする。</p>
 <p>作業に必要なソフトをインストールします。</p>
 <pre><code>root@OpenWrt:~$ opkg install fdisk block-mount kmod-fs-ext4
-</code></pre><hr>
+</code></pre><p>カーネルモジュールをインストールしたので再起動。</p>
+<hr>
 <h2 id="新しいパーティションの作成">新しいパーティションの作成</h2>
 <p>OpenWrtではMicroSDカードはMMC扱の様で割り当ては
 <code>/dev/mmcblk0</code>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Gitea on OpenWRT | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-05-30</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Gitea on OpenWRT</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2019-07-12-gitea-00.png" alt="Gitea install on Pi"></p>
+<p>動きたいけど動けない。。
+持ち出しgithubにするために、
+GiteaをOpenWRTにインストールしました。</p>
+<p>ほぼ間違いのないインストール・マニュアルは
+<a href="https://docs.gitea.io/en-us/install-from-binary/">https://docs.gitea.io/en-us/install-from-binary/</a>
+にあります。一読のほど、</p>
+<p>事前にgitとデーターベース（SQLite, MariaDB,PostreSQL)のパッケージが必要です。</p>
+<pre><code>root@OpenWrt:~$ opkg update
+root@OpenWrt:~$ opkg install git git-http openssh-keygen
+</code></pre><ul>
+<li>git-http: 今回は使わないけれど、<code>git clone</code>で必要</li>
+<li>openssh-keygen: SSH Key登録で必要</li>
+</ul>
+<!-- ![Gitea Inastall on OpenWRT](/images/2020-05-30-openwrt-gitea-background.png) -->
+<h2 id="userの作成">Userの作成</h2>
+<p>giteaを起動するユーザーアカウント(git)を設定します。
+Homeディレクトリーなどはちょっと変えてます。</p>
+<pre><code>root@OpenWrt:~$ useradd -d /srv/git/ -s /bin/ash -r git
+root@OpenWrt:~$ mkdir -p /srv/git/
+root@OpenWrt:~$ chown -R git:git /srv/git/
+</code></pre><h2 id="データー領域の作成optgitea">データー領域の作成（/opt/gitea）</h2>
+<p>マニュアルインストールのアプリは/optに設定ファイルとともに保存しておきます。
+（ちょっと未だ、OpenWRTのディレクトリー構造の仕様が掴めない。。）</p>
+<pre><code>root@OpenWrt:~$ mkdir -p /opt/gitea/custom /opt/gitea/data /opt/gitea/log
+root@OpenWrt:~$ chown -R git:git /opt/gitea/
+root@OpenWrt:~$ chmod -R 750 /opt/gitea/
+
+root@OpenWrt:~$ mkdir -p /opt/gitea/etc
+root@OpenWrt:~$ chown root:git /opt/gitea/etc/
+root@OpenWrt:~$ chmod 770 /opt/gitea/etc/
+</code></pre><p>設定ファイルはのちに作成されます。</p>
+<h2 id="postgresql-dbの作成">PostgreSql DBの作成</h2>
+<p>初期設定は済んでいるので一気にデータベースを作成します。こちらも少し変態バージョン。</p>
+<!--
+ su -c "psql" - postgres
+CREATE ROLE gitea WITH LOGIN PASSWORD 'gitea';
+CREATE DATABASE gitea WITH OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';
+ -->
+<pre><code>root@openwrt:~% sudo -u postgres psql -c &quot;CREATE USER gitea WITH PASSWORD 'gitea';&quot;
+root@openwrt:~% sudo -u postgres psql -c &quot;CREATE DATABASE gitea OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';&quot;
+</code></pre><h2 id="アプリケーションのダウンロード">アプリケーションのダウンロード</h2>
+<p>カーネルは64ビットの<code>aarch64</code>なのでarm64バージョンをダウンロードして使います。</p>
+<pre><code>root@OpenWrt:~$ mkdir -p /opt/gitea/bin
+root@OpenWrt:~$ wget -O /opt/gitea/bin/gitea https://dl.gitea.io/gitea/1.12/gitea-1.12
+-linux-arm64
+root@OpenWrt:~$ chmod +x /opt/gitea/bin/gitea
+</code></pre><p>バイナリーでの提供なので、プログラムファイルを置き換えるだけでアップデートできます。
+（データーベースの構造などに変更がなければですが、）</p>
+<h2 id="アプリケーションの起動と初期設定">アプリケーションの起動と初期設定</h2>
+<p>gitユーザーで起動します。</p>
+<p><code>sudo -u git /bin/ash -c 'GITEA_WORK_DIR=/opt/gitea/ /opt/gitea//bin/gitea web -c /opt/gitea/etc//app.ini'</code></p>
+<p>ダァーーーと文字が走ります。</p>
+<p><img src="/images/2020-05-30-openwrt-gitea-run.png" alt="Gitea Inastall on OpenWRT"></p>
+<p>ことなく起動したら、ブラウザーから
+<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;:3000</code>
+にアクセスします。そしてRegisterより初期設定を行います。</p>
+<p>データベースの登録などを書き込み終了、データーベースの初期化が背後で行われます。</p>
+<p><img src="/images/2020-05-30-openwrt-gitea-settings.png" alt="Gitea Inastall on OpenWRT"></p>
+<p>設定の後の変更は<code>/opt/gitea/etc//app.ini</code>にて行います。</p>
+<p>そしてログインをし直して同じくRegisterより、アカウントを作成します。</p>
+<p><img src="/images/2020-05-30-openwrt-gitea-main.png" alt="Gitea Inastall on OpenWRT"></p>
+<p>htopで状況を見てみると、この辺り（Syncthing, iniflux, Adblock, その他ネットワーク関連)でメモリー的には限界かな、、LAMPも入れようと思ったけどやめとこ。</p>
+<p><img src="/images/2020-05-30-openwrt-gitea-htop.png" alt="Gitea Inastall on OpenWRT"></p>
+<p>そして、環境設定の読み込み設定を変更します。（私のルーターはぬけぬけのザルです。）</p>
+<pre><code>root@OpenWrt:~$ chmod 750 /opt/gitea/etc/
+root@OpenWrt:~$ chmod 640 /opt/gitea/etc/app.ini
+</code></pre><h2 id="起動">起動</h2>
+<p>起動スクリプトも提供されていますがどうも、OpenWRTではうまく動作しません。
+上記の一発スクリプトで起動時に起動させます。なんか敗北感。。</p>
+<p><img src="/images/2020-05-30-openwrt-gitea-startup.png" alt="Gitea Inastall on OpenWRT"></p>
+<p>リバースプロキシの設定は以下、</p>
+<pre><code># Gitea server
+
+server {
+
+  listen 80;
+  # listen 443 ssl;
+
+  server_name gitea.lan;
+
+  location / {
+    proxy_pass http://localhost:3000;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_redirect off;
+  }
+
+  # client_max_body_size 4G;
+  keepalive_timeout 10;
+
+}
+</code></pre><p>でスッキリ。</p>
+<h3 id="おまけ">おまけ</h3>
+<p>init.d起動スクリプトもありましたが、
+ちょっとうまくいかないです。
+立ち上が流ようですが数秒で落ちる。</p>
+<p>from: <a href="https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea">https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea</a></p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/05/openwrt-miniflux/">Miniflux on OpenWRT</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-install-refined/">Install OpenWRT on Pi: Refined</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-syncthing/">Syncthing on OpenWRT</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-sdcard-expansion/">Disk容量の拡張</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-install-piaplus/">OpenWRT on Pi A&#43; Model 3</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
