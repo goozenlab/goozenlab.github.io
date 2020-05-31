@@ -165,10 +165,11 @@ GiteaをOpenWRTにインストールしました。</p>
 にあります。一読のほど、</p>
 <p>事前にgitとデーターベース（SQLite, MariaDB,PostreSQL)のパッケージが必要です。</p>
 <pre><code>root@OpenWrt:~$ opkg update
-root@OpenWrt:~$ opkg install git git-http openssh-keygen
+root@OpenWrt:~$ opkg install git git-http openssh-keygen bash
 </code></pre><ul>
 <li>git-http: 今回は使わないけれど、<code>git clone</code>で必要</li>
 <li>openssh-keygen: SSH Key登録で必要</li>
+<li>bash: 端末より<code>git push</code>時に必要、ashからシンボリックリンクでも可能</li>
 </ul>
 <!-- ![Gitea Inastall on OpenWRT](/images/2020-05-30-openwrt-gitea-background.png) -->
 <h2 id="userの作成">Userの作成</h2>
@@ -253,7 +254,7 @@ server {
 <h3 id="おまけ">おまけ</h3>
 <p>init.d起動スクリプトもありましたが、
 ちょっとうまくいかないです。
-立ち上が流ようですが数秒で落ちる。</p>
+立ち上がるようですが数秒で落ちる。</p>
 <p>from: <a href="https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea">https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea</a></p>
 
 				

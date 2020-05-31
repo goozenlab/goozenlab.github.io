@@ -177,31 +177,13 @@ Nvidiaの様な感じなのかな。</p>
 <li>mt7612-drivers</li>
 <li>mt7610-drivers: ちょっと古い。(TPLINK T1U)</li>
 </ul>
-<pre><code>wget http://downloads.fars-robotics.net/wifi-drivers/install-wifi
+<pre><code>pi@raspberrypi:~ $ wget http://downloads.fars-robotics.net/wifi-drivers/install-wifi
+pi@raspberrypi:~ $ chmod +x install-wifi
+pi@raspberrypi:~ $ mv install-wifi /usr/bin/
+pi@raspberrypi:~ $ sudo install-wifi 
 
-chmod +x install-wifi
-mv install-wifi /usr/bin/
-</code></pre><p>pi@raspberrypi:~ $ sudo install-wifi</p>
-<p>*** Raspberry Pi wifi driver installer by MrEngman.
-*** Performing self-update
-*** Relaunching after update</p>
-<p>*** Raspberry Pi wifi driver installer by MrEngman.</p>
-<p>Your current kernel revision = 4.14.79+
-Your current kernel build    = #1159</p>
-<p>Checking for a wifi module to determine the driver to install.</p>
-<p>Your wifi module is Bus 001 Device 002: ID 2357:0105</p>
-<p>And it uses the mt7610 driver.</p>
-<p>Your Pi revision number is 9000c1
-You have a Pi 0 W v1.1
-Checking for a mt7610 wifi driver module for your current kernel.
-There is a driver module available for this kernel revision.
-Downloading the mt7610 driver, mt7610-4.14.79-1159.tar.gz.
-Installing the mt7610 driver.</p>
-<p>Installing driver module mt7610u.ko.
-install -p -m 644 mt7610u.ko /lib/modules/4.14.79+/kernel/drivers/net/wireless
-Loading and running the mt7610 driver, mt7610u.ko.
-pi@raspberrypi:~ $ lsmod</p>
-<p>参考サイト：</p>
+pi@raspberrypi:~ $ 
+</code></pre><p>参考サイト：</p>
 <hr>
 <h2 id="おまけtp-link-archer-t1u">おまけ：TP-LINK Archer T1U</h2>
 <p><code>Mediatek 7610U</code>のチップを使用していてる11aのみの対応のT1Uは以下に情報があります。</p>
