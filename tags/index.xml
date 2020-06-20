@@ -8,24 +8,15 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 30 May 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>open</title>
-      <link>https://goozenlab.com/tags/open/</link>
-      <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/open/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>openwrt</title>
       <link>https://goozenlab.com/tags/openwrt/</link>
-      <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
+      <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/openwrt/</guid>
       <description></description>
@@ -34,7 +25,7 @@
     <item>
       <title>raspberry pi</title>
       <link>https://goozenlab.com/tags/raspberry-pi/</link>
-      <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
+      <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
       <description></description>
@@ -55,15 +46,6 @@
       <pubDate>Tue, 03 Mar 2020 15:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/thailand/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>https://goozenlab.com/tags/mac/</link>
-      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -131,15 +113,6 @@
     </item>
     
     <item>
-      <title>(a)</title>
-      <link>https://goozenlab.com/tags/a/</link>
-      <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Arch</title>
       <link>https://goozenlab.com/tags/arch/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
@@ -154,6 +127,15 @@
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://goozenlab.com/tags/mac/</link>
+      <pubDate>Thu, 30 Jan 2020 08:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/mac/</guid>
       <description></description>
     </item>
     
@@ -464,6 +446,15 @@
     </item>
     
     <item>
+      <title>open</title>
+      <link>https://goozenlab.com/tags/open/</link>
+      <pubDate>Sat, 16 Feb 2019 17:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/open/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>vegetarian</title>
       <link>https://goozenlab.com/tags/vegetarian/</link>
       <pubDate>Wed, 03 Oct 2018 09:00:00 +0700</pubDate>
@@ -586,6 +577,15 @@
       <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/pranatice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>(a)</title>
+      <link>https://goozenlab.com/tags/a/</link>
+      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/a/</guid>
       <description></description>
     </item>
     

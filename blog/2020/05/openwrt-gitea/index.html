@@ -169,13 +169,23 @@ root@OpenWrt:~$ opkg install git git-http openssh-keygen bash
 </code></pre><ul>
 <li>git-http: 今回は使わないけれど、<code>git clone</code>で必要</li>
 <li>openssh-keygen: SSH Key登録で必要</li>
-<li>bash: 端末より<code>git push</code>時に必要、ashからシンボリックリンクでも可能</li>
+<li>bash: 端末より<code>git push</code>時に必要</li>
 </ul>
-<!-- ![Gitea Inastall on OpenWRT](/images/2020-05-30-openwrt-gitea-background.png) -->
+<!-- ![Gitea Inastall on OpenWRT](/images/2020-05-30-openwrt-gitea-background.png) 
+
+$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: env: can't execute 'bash': No such file or directory
+To http://gitea.lan/jin/dotfiles.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'http://gitea.lan/jin/dotfiles.git'
+-->
 <h2 id="userの作成">Userの作成</h2>
 <p>giteaを起動するユーザーアカウント(git)を設定します。
 Homeディレクトリーなどはちょっと変えてます。</p>
-<pre><code>root@OpenWrt:~$ useradd -d /srv/git/ -s /bin/ash -r git
+<pre><code>root@OpenWrt:~# useradd -d /srv/git/ -s /bin/false -m -r git
 root@OpenWrt:~$ mkdir -p /srv/git/
 root@OpenWrt:~$ chown -R git:git /srv/git/
 </code></pre><h2 id="データー領域の作成optgitea">データー領域の作成（/opt/gitea）</h2>
@@ -216,7 +226,7 @@ root@OpenWrt:~$ chmod +x /opt/gitea/bin/gitea
 にアクセスします。そしてRegisterより初期設定を行います。</p>
 <p>データベースの登録などを書き込み終了、データーベースの初期化が背後で行われます。</p>
 <p><img src="/images/2020-05-30-openwrt-gitea-settings.png" alt="Gitea Inastall on OpenWRT"></p>
-<p>設定の後の変更は<code>/opt/gitea/etc//app.ini</code>にて行います。</p>
+<p>設定の後の変更は<code>/opt/gitea/etc/app.ini</code>にて行います。</p>
 <p>そしてログインをし直して同じくRegisterより、アカウントを作成します。</p>
 <p><img src="/images/2020-05-30-openwrt-gitea-main.png" alt="Gitea Inastall on OpenWRT"></p>
 <p>htopで状況を見てみると、この辺り（Syncthing, iniflux, Adblock, その他ネットワーク関連)でメモリー的には限界かな、、LAMPも入れようと思ったけどやめとこ。</p>
@@ -250,13 +260,36 @@ server {
   keepalive_timeout 10;
 
 }
-</code></pre><p>でスッキリ。</p>
+</code></pre><p>でここはスッキリ。</p>
 <h3 id="おまけ">おまけ</h3>
 <p>init.d起動スクリプトもありましたが、
 ちょっとうまくいかないです。
 立ち上がるようですが数秒で落ちる。</p>
 <p>from: <a href="https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea">https://github.com/go-gitea/gitea/blob/master/contrib/init/debian/gitea</a></p>
+<h3 id="追記">追記：</h3>
+<p>なんやかんやで、こげなスクリプトで動かしてます。。やっつけ感もりもりです。登録も忘れずに。</p>
+<pre><code>#!/bin/sh /etc/rc.common
+# Gitea
+#
+# To restart your gitea instance, we recommend to use SIGHUP signal.
+# If you know your gitea PID use kill -1 $GITEA_PID otherwise you can use killall -1 gitea or pkill -1 gitea
+# To gracefully stop the gitea instance, a simple kill $GITEA_PID or killall gitea
 
+# Start after PostgreSQL (S50)
+START=80
+STOP=20
+
+start() {
+        sudo -u git /bin/ash -c 'GITEA_WORK_DIR=/opt/gitea/ /opt/gitea/bin/gitea web -c /opt/gitea/etc/app.ini' &amp;
+}
+
+stop() {
+        killall gitea
+}
+
+root@OpenWrt:~# service gitea enable
+root@OpenWrt:~# service gitea start
+</code></pre>
 				
 
 <h3>See Also</h3>

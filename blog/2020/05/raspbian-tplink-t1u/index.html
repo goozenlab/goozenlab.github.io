@@ -182,9 +182,36 @@ pi@raspberrypi:~ $ chmod +x install-wifi
 pi@raspberrypi:~ $ mv install-wifi /usr/bin/
 pi@raspberrypi:~ $ sudo install-wifi 
 
+ *** Raspberry Pi wifi driver installer by MrEngman.
+ *** Performing self-update
+ *** Relaunching after update
+
+ *** Raspberry Pi wifi driver installer by MrEngman.
+
+Your current kernel revision = 4.19.66+
+Your current kernel build    = #1253
+
+Checking for a wifi module to determine the driver to install.
+
+Your wifi module is Bus 001 Device 002: ID 2357:011e TP-Link
+
+And it uses the 8812au driver.
+
+
+Your Pi revision number is 9000c1
+You have a Pi 0 W v1.1
+Checking for a 8812au wifi driver module for your current kernel.
+There is a driver module available for this kernel revision.
+Downloading the 8812au driver, 8812au-4.19.66-1253.tar.gz.
+Installing the 8812au driver.
+
+Installing driver config file 8812au.conf.
+mv 8812au.conf /etc/modprobe.d/.
+Installing driver module 8812au.ko.
+install -p -m 644 8812au.ko /lib/modules/4.19.66+/kernel/drivers/net/wireless
+Loading and running the 8812au driver, 8812au.ko.
 pi@raspberrypi:~ $ 
-</code></pre><p>参考サイト：</p>
-<hr>
+</code></pre><hr>
 <h2 id="おまけtp-link-archer-t1u">おまけ：TP-LINK Archer T1U</h2>
 <p><code>Mediatek 7610U</code>のチップを使用していてる11aのみの対応のT1Uは以下に情報があります。</p>
 <p>参考：</p>

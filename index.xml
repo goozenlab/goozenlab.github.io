@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 29 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>stubbyをつかってDNSを暗号化</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-dns-tls-stubby/</link>
+      <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-dns-tls-stubby/</guid>
+      <description>プライバシーとセキュリティの向上のため、 DNS通信を覗き見されないように暗号化を行います。 OpenWRTのWifiにはいくつかの方法が記載さ</description>
+    </item>
+    
+    <item>
+      <title>OpenWRT: adblock 日本語フィルター</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-japanese-filter-adblock/</link>
+      <pubDate>Mon, 15 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-japanese-filter-adblock/</guid>
+      <description>OpenWRTにて動かしているadblockには残念ながら日本語のフィルターがデフォルトでは付いてきません。 今回はTofuフィルターを入れて</description>
+    </item>
     
     <item>
       <title>Gitea on OpenWRT</title>
@@ -1315,7 +1333,7 @@
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/computing/travel-pi/</guid>
-      <description>旅するルーター VPNで身を守り、 ちょっとした作業を影で行い、 影武者のごとく、 を、構築中です。 現在リサーチ・作業・検証中、形がまとまったら更新</description>
+      <description>＜＜バッテリーとの画像＞＞ トラベルルーターは市販されていて数千円で買えますし、 若干微妙ではありますが、 安全・安心・便利：オープンソースな旅ル</description>
     </item>
     
     <item>
@@ -5303,15 +5321,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/1/01/</guid>
       <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.com/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/1/01/</guid>
-      <description>DNS over TLS dns-tlc-openwrt-check- いくつか設定が残っているが、追記 root@tortas:~# opkg install luci-app-unbound ca-bundle root@tortas:~# vi /etc/config/unbound config zone option enabled &#39;1&#39; option zone_type &#39;forward_zone&#39; option tls_upstream &#39;1&#39; option tls_index &#39;cloudflare-dns.com&#39; list zone_name &#39;.&#39; list server &#39;1.1.1.1&#39; list server &#39;1.0.0.1&#39; list server &#39;2606:4700:4700::1111&#39; list server &#39;2606:4700:4700::1001&#39; root@tortas:~# /etc/init.d/unbound restart unbound: default protocol configuration unbound: default memory configuration unbound: default</description>
     </item>
     
     <item>

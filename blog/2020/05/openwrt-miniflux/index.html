@@ -192,9 +192,9 @@ root@openwrt:~% opkg install sudo shadow-su shadow-useradd
 <p>初期設定を含めて作業をします。
 データーファイルの保存先を変えたりします。</p>
 <pre><code>root@openwrt:~% opkg install pgsql-server
-</code></pre><p>そして、postgresユーザー設定を
-<code>/usr/false -&gt; /usr/ash</code>
-にちょこっと変更します。（/etc/passwd）</p>
+</code></pre><!-- そして、postgresユーザー設定を
+`/usr/false -> /usr/ash`
+にちょこっと変更します。（/etc/passwd） -->
 <p>初期設定とデーターベースの初期化をします。</p>
 <pre><code>root@openwrt:~% mkdir -p /srv/postgresql/data
 root@openwrt:~% uci set postgresql.config.PGDATA=/srv/postgresql/data
@@ -235,7 +235,7 @@ root@openwrt:~% chmod 755 /opt/miniflux/bin/miniflux
 <pre><code>root@openwrt:~% mkdir -p /opt/miniflux/etc
 root@openwrt:~% cat &gt; /opt/miniflux/etc/miniflux.conf &lt;&lt;EOF
 &gt; DATABASE_URL=postgres://miniflux:miniflux@localhost/miniflux?sslmode=disable
-&gt; LISTEN_ADDR=0.0.0.0:8001
+&gt; LISTEN_ADDR=0.0.0.0:8008
 &gt; EOF
 root@openwrt:~% chown miniflux:miniflux /opt/miniflux/etc/miniflux.conf
 root@openwrt:~% chmod 600 /opt/miniflux/etc/miniflux.conf
@@ -268,7 +268,7 @@ root@openwrt:~% chmod 755 /etc/init.d/miniflux
 <pre><code>root@openwrt:~% service miniflux enable
 root@openwrt:~% service miniflux start
 </code></pre><p>ブラウザーより
-<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;:8001</code>
+<code>http://&lt;&lt;IP_ADDRESS&gt;&gt;:8008</code>
 にアクセスします。</p>
 <p><img src="/images/2020-05-27-openwrt-miniflux-signin.png" alt="Miniflux on OpenWRT"></p>
 <p>フィードリストをインポートして終了！</p>

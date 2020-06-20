@@ -151,40 +151,44 @@
             </div>
 
             <div class="post-content">
-                <p>DNS over TLS</p>
-<p>dns-tlc-openwrt-check-</p>
-<p>いくつか設定が残っているが、追記</p>
-<pre><code>root@tortas:~# opkg install luci-app-unbound ca-bundle
-root@tortas:~# vi /etc/config/unbound
-
-config zone
-	option enabled '1'
-	option zone_type 'forward_zone'
-	option tls_upstream '1'
-	option tls_index 'cloudflare-dns.com'
-	list zone_name '.'
-	list server '1.1.1.1'
-	list server '1.0.0.1'
-	list server '2606:4700:4700::1111'
-	list server '2606:4700:4700::1001'
-</code></pre><pre><code>root@tortas:~# /etc/init.d/unbound restart
-unbound: default protocol configuration
-unbound: default memory configuration
-unbound: default recursion configuration
-</code></pre><pre><code>root@tortas:~# nslookup openwrt.org localhost
-Server:		localhost
-Address:	::1#53
-
-Name:      openwrt.org
-Address 1: 139.59.209.225
-Address 2: 2a03:b0c0:3:d0::1af1:1
-root@tortas:~#
-</code></pre><hr>
-<ul>
-<li>DNS over TLS with Unbound: <a href="https://openwrt.org/docs/guide-user/services/dns/dot_unbound">https://openwrt.org/docs/guide-user/services/dns/dot_unbound</a></li>
-<li>Unbound Recursive DNS Server with UCI: <a href="https://github.com/openwrt/packages/blob/openwrt-19.07/net/unbound/files/README.md">https://github.com/openwrt/packages/blob/openwrt-19.07/net/unbound/files/README.md</a></li>
-<li>Public DNS: <a href="https://en.wikipedia.org/wiki/Public_recursive_name_server">https://en.wikipedia.org/wiki/Public_recursive_name_server</a></li>
-</ul>
+                <p>2020-02-18</p>
+<p>idea-ce-linux</p>
+<p>アンドロイドの開発はするつもりはあまりないのだけれども、
+オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、
+開発環境をインストールしてみました。</p>
+<p>オープンソースの IDE もいくつかあるのですが、今回は少し端折って簡単に
+InteliJ
+のものをインストールします。</p>
+<p>intellij install on arch ??</p>
+<p><img src="/images/2020-01-17-idea-app.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-02.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-04.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-05.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-06.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-07.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-08.png" alt="IdeaCE"></p>
+<p>で、準備完了。</p>
+<p>やりたい事をまとめると、</p>
+<p>普段使いをしているアプリのちょっとしたところを自分好みにする。</p>
+<h2 id="task">Task</h2>
+<p>レイアウトの調整、右のバーが太い、補足する、文字を大きくする。
+割と簡単に行えるかも、</p>
+<h2 id="tt-rss">TT-RSS</h2>
+<p>スワイプ時の挙動を追加したい。
+自分は、Wallagbag と Instapaper しか使わないので、</p>
+<p>スピードは Feeder が早いので、そちらのソースコードを持ってくるかな、</p>
+<p>自分のメイン端末は７インチのものなので、少しレイアウトに余裕を持たせて
+表示量を増やす。</p>
+<p>バラーーっと見て一気に消去。</p>
+<h2 id="k-9">K-9</h2>
+<p>バーを細くして</p>
+<p>両端のアイコンの大きさを調整。</p>
+<p>スワイプで消去機能を追加</p>
+<p>アイコンも変える。</p>
+<p>多分割と簡単にできそうかな。。</p>
+<p>GZ-9
+GZask
+Tiny GZZ</p>
 
             </div>
         </div>

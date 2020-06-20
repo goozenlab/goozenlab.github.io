@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 30 May 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>stubbyをつかってDNSを暗号化</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-dns-tls-stubby/</link>
+      <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-dns-tls-stubby/</guid>
+      <description>プライバシーとセキュリティの向上のため、 DNS通信を覗き見されないように暗号化を行います。 OpenWRTのWifiにはいくつかの方法が記載さ</description>
+    </item>
+    
+    <item>
+      <title>OpenWRT: adblock 日本語フィルター</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-japanese-filter-adblock/</link>
+      <pubDate>Mon, 15 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-japanese-filter-adblock/</guid>
+      <description>OpenWRTにて動かしているadblockには残念ながら日本語のフィルターがデフォルトでは付いてきません。 今回はTofuフィルターを入れて</description>
+    </item>
     
     <item>
       <title>Gitea on OpenWRT</title>
