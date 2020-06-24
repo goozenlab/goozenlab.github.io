@@ -159,9 +159,9 @@
                 <p>プライバシーとセキュリティの向上のため、
 DNS通信を覗き見されないように暗号化を行います。</p>
 <p>OpenWRTのWifiにはいくつかの方法が記載されています。
-まずは一番良さそうなUnboundを使った方法も最初に試してみるも、
+まずは一番良さそうな<strong>Unbound</strong>を使った方法も最初に試してみるも、
 Travelmateにはdnsmasqが必要、Nginxのリバースプロキシやadblockが機能しなくなりました。</p>
-<p>ということで、dnsmasqとstubbyというアプリを使った方法に切り替え、やり直し。</p>
+<p>ということで、dnsmasqと<strong>stubby</strong>というアプリを使った方法に切り替え、やり直し。</p>
 <p>まずはパッケージのインストールから、</p>
 <pre><code>root@OpenWrt:~＄ opkg update
 root@OpenWrt:~＄ opkg install dnsmasq stubby

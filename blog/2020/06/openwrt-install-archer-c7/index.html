@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>OpenWRT: Archer C7にインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-06-24</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/archer-c7">Archer C7</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>OpenWRT: Archer C7にインストール</h1>
+            </div>
+
+            <div class="post-content">
+                <p>実家にあるルーターもちょっと古くなってきているので、
+ルーターをTP-Linkの<a href="https://amzn.to/2YNYCoG">Archer C7</a>に変更しました。
+もちろんファームウェアはOpenWRTを使います。</p>
+<p>最新の機種ではないのですが、ハード的にも評判が良く（現在販売中のものは<strong>バージョン５</strong>とロングセラー？）、
+気持ちよくOpenWRTへの移植もされているようなので、
+購入を悩んでいるときに
+<a href="https://amzn.to/2YNYCoG">Amazonで10％オフセール</a>
+（￥5,670）が出たので購入。</p>
+<h2 id="デフォルトファームウェア">デフォルト・ファームウェア</h2>
+<p>デフォルトのファームウェアも、NECのそっけない感じのものに比べると思った以上に良いです。</p>
+<p><img src="/images/2020-06-20-archer-setting-00.png" alt="Install OpenWRT on Archer C7"></p>
+<p>QoS設定があったり、</p>
+<p><img src="/images/2020-06-20-archer-setting-qos.png" alt="Install OpenWRT on Archer C7"></p>
+<p>OpenVPMの設定もできます。</p>
+<p><img src="/images/2020-06-20-archer-setting-vpn.png" alt="Install OpenWRT on Archer C7"></p>
+<p>必要十分な感じです。一通り設定を眺め「ふ〜ん、こんな感じなんだ〜。」と５分ぐらいふらふらして左様なら。
+早速OpenWRTをインストール開始。（有線LANで繋いで行うことをオススメします。）</p>
+<h2 id="openwrtのインストール">OpenWRTのインストール</h2>
+<p>古めかしいデザインですがドキュメントがよく整理されています。</p>
+<p>インストール: <a href="https://openwrt.org/toh/tp-link/archer-c7-1750">https://openwrt.org/toh/tp-link/archer-c7-1750</a></p>
+<p>ドキュメントにはインストールにはTFTPサーバーが必要と書いてありますが、
+ポルトガル語で意味は一つもわかりませんが、ユーチューブにて</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/WYwIlOyDxBc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>管理画面よりインストールができるようなのをみてて、</p>
+<p>まずは簡単な方法の管理画面より試してみます。失敗したら、TFTPでインストールします。</p>
+<p>まずはファームウェアを
+<a href="http://downloads.openwrt.org/releases/19.07.3/targets/ath79/generic/openwrt-19.07.3-ath79-generic-tplink_archer-c7-v5-squashfs-factory.bin">こちら</a>
+よりダウンロード。</p>
+<pre><code>$ wget -O ArcherC7v5_tp_recovery.bin http://downloads.openwrt.org/releases/19.07.3/targets/ath79/generic/openwrt-19.07.3-ath79-generic-tplink_archer-c7-v5-squashfs-factory.bin
+</code></pre><p>そしてダウンロードしたファイルを以下のようにリネームする。</p>
+<p><strong>ArcherC7v5_tp_recovery.bin</strong></p>
+<p>そして、管理画面、<code>システムツール &gt; ファームウェア・アップデート</code>
+より手動アップグレード欄にファイルをアップロードしインストール開始します。</p>
+<p><img src="/images/2020-06-20-archer-setting-upgrade-00.png" alt="Install OpenWRT on Archer C7">
+<img src="/images/2020-06-20-archer-setting-upgrade-01.png" alt="Install OpenWRT on Archer C7">
+<img src="/images/2020-06-20-archer-setting-upgrade-02.png" alt="Install OpenWRT on Archer C7">
+<img src="/images/2020-06-20-archer-setting-upgrade-03.png" alt="Install OpenWRT on Archer C7"></p>
+<p>５分くらいで終了、再起動されます。
+<strong>無線LANは無効化</strong>されているので、有線でつなぎ管理画面へ入ります。</p>
+<p>http://192.168.1.1</p>
+<p>がデフォルトのIPアドレスになりますが、最初はキャッシュが引っかかっているのか
+デフォルト・ファームウェエアを探しに行き、エラーが出ます。</p>
+<p>その時は、</p>
+<p>http://192.168.1.1/cgi-bin/luci</p>
+<p>にアクセス。管理画面に入れれば成功。パスワードは未設定ですので設定しましょう。</p>
+<p><img src="/images/2020-06-20-archer-wrt-login.png" alt="Install OpenWRT on Archer C7"></p>
+<p>こちらステータス画面や、イーサーネット設定画面です。</p>
+<p><img src="/images/2020-06-20-archer-wrt-status.png" alt="Install OpenWRT on Archer C7"></p>
+<p><img src="/images/2020-06-21-openwrt-switch.png" alt="OpenWRT Switch"></p>
+<p>日本語に切り替えるにはパッケージをダウンロードする必要があります。</p>
+<p><img src="/images/2020-06-21-openwrt-ja.png" alt="OpenWRT 日本語化"></p>
+<h2 id="設定とアプリのインストール">設定とアプリのインストール</h2>
+<p>まずはネットへつなげるための設定と、今まで使っていたルーターのSSIDとパスワードを設定。
+（これを機会にパスワードを変更も考えてけど、面倒なので引き継ぐ。）</p>
+<p>アプリケーションをインストールして行きます。</p>
+<p>Web管理画面からも可能ですが、ときにうまくいかない時があります。
+SSHよりコマンドで行うこともできます。</p>
+<p>以下、おすすめソフトウェアです。</p>
+<ul>
+<li>luxi-adblock: 広告ブロッカー（接続端末全てに有効なのが素敵）</li>
+<li>luci-sqm: ゲームなどで回線が独占されるような家庭環境で有効（通信の調整ができる）</li>
+<li>mount: USBポートにメモリを繋げて、ファイルシステムを移動+ファイルシェア</li>
+<li>syncthing: ファイル同期サーバ、ローカルのみで利用（上記のUSBメモリーと共に）</li>
+<li>htop: ちょっとどのくらいのリソースを消費しているかチェック</li>
+</ul>
+<p>上級編</p>
+<ul>
+<li>stubby: DNSの暗号化</li>
+<li>prometheus-node-exporter: 監視用サーバーへのエクスポーター。ちょっと遊んで見たい。</li>
+<li>openvpn/wireguard: 回線自体を暗号化します。リモートワークでいずれ必要になるかも。。</li>
+<li>privoxy: プロキシサーバー、広告ブロックなどお手の物ですが、ちょっと設定等が難。</li>
+</ul>
+<h2 id="スピード比較">スピード比較</h2>
+<p>残念ですが、家通信環境は光アパートメントでベストエフォート。
+イーサーケーブルに繋いでのスピードは60Mbitsくらいが我が家の限界スピードになります。
+まぁ十分なのですが、コストパフォーマンスはあまり良くないな。</p>
+<p>USBテザリングもできるみたいだし、勝手にUQMaxに切り替えちゃうかな。。。</p>
+<!-- ![Install OpenWRT on Archer C7](/images/2020-06-20-archer-wrt-ether.png) -->
+<h3 id="デフォルトファームウェア-1">デフォルト・ファームウェア</h3>
+<p>11n : 2.4GHz Wifi</p>
+<p><img src="/images/2020-06-20-archer-24ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<p>11ac : 5GHz Wifi</p>
+<p><img src="/images/2020-06-20-archer-5ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<h3 id="openwrt">OpenWrt</h3>
+<p>11n : 2.4GHz Wifi</p>
+<p><img src="/images/2020-06-20-archer-wrt-24ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<p>11ac : 5GHz Wifi</p>
+<p><img src="/images/2020-06-20-archer-wrt-5ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<h3 id="おまけその他のルーター">おまけ：その他のルーター</h3>
+<p>今まで使っていたNECのルーターの速度チェックはしなかったのですが、割と同等のスピードが出てました。
+思ったほどの高速化にはならなかったので残念。。。
+そして他のルーターもチェック。</p>
+<p>別のルーター、11n : 2.4GHz Wifi</p>
+<p><img src="/images/2020-06-20-shadow-24ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<p><strong>パイWRTルーター</strong>、11ac : 5GHz Wifi</p>
+<p><img src="/images/2020-06-20-pi-wrt-5ghz.png" alt="Install OpenWRT on Archer C7"></p>
+<p>NECルーターはリビングのテレビなどの中継器として使うかな。</p>
+<h2 id="あとがき">あとがき</h2>
+<p>今回はTP-LINKを使いましたが、
+日本製ではBuffalo製品のいくつかはOpenWRTにてサポートされています。
+（ちょっと古い端末のようですが）</p>
+<p>これから、ルーターの購入を考えている方は、
+こちら: <a href="https://openwrt.org/toh">https://openwrt.org/toh</a>
+にリスト・インストール方法も書いてあります。
+簡単なものもあれば、ケーブルを引き出してシリアル接続だったりと難しいものもあります。</p>
+<p>デフォルトのファームウェアではちょっと刺激が足りない方にはおすすめ。</p>
+<p>自分用ならサーバー兼ルーターとして
+<strong>Pi4B/2GB</strong>
+にWifiドングルをさして作るかな。</p>
+<p>現在、NECルーターにつけていたPiHoleサーバーをつけかえて運用中。
+アンテナがでかーなったので通信が安定しました。</p>
+<!--別途、Computing/openwrt-archer-c7にまとめる。-->
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/06/openwrt-usb-tether/">OpenWRT: USBテザリング</a></li>
+	
+	<li><a href="/blog/2020/06/openwrt-dns-tls-stubby/">stubbyをつかってDNSを暗号化</a></li>
+	
+	<li><a href="/blog/2020/06/openwrt-japanese-filter-adblock/">OpenWRT: adblock 日本語フィルター</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-gitea/">Gitea on OpenWRT</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-miniflux/">Miniflux on OpenWRT</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

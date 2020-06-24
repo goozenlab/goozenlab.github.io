@@ -168,19 +168,19 @@
 <p>管理画面からのインストールではうまくいかない時がありました。
 コンソールからでもウェブ画面からでもインストール可能です。
 <code>syncthing</code>がアプリ名です。</p>
-<pre><code>root@OpenWrt:~# opkg install syncthing
+<pre><code>root@OpenWrt:~＄ opkg install syncthing
 </code></pre><p>ファイル置き場にもなるホームフォルダーを作ります。
 どこでも構わないと思います。デフォルトは<code>/etc/syncthing</code>とちょっと変なところです。
 ファイルの所有者も変更する必要があります。ユーサーはインストール時に追加されています。</p>
-<pre><code>root@OpenWrt:~# mkdir -p /home/syncthing
-root@OpenWrt:~# chown syncthing /home/syncthing/
+<pre><code>root@OpenWrt:~＄ mkdir -p /home/syncthing
+root@OpenWrt:~＄ chown syncthing /home/syncthing/
 </code></pre><h2 id="設定">設定</h2>
 <p>設定ファイルは
 <code>/etc/config/syncthing</code>
 にあります。</p>
 <p>変更点は、外部からアクセスを行うのでIPアドレス(127.0.0.1 -&gt; 10.0.0.10)の変更
 そして、ホームフォルダーの位置(/etc/syncthing -&gt; /home/syncthing)を変更しました。</p>
-<pre><code>root@OpenWrt:~# cat /etc/config/syncthing
+<pre><code>root@OpenWrt:~＄ cat /etc/config/syncthing
 
 config syncthing 'syncthing'
         option enabled '1'

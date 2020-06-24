@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 17 Jun 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenWRT: Archer C7にインストール</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-install-archer-c7/</link>
+      <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-install-archer-c7/</guid>
+      <description>実家にあるルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェアはOpe</description>
+    </item>
+    
+    <item>
+      <title>OpenWRT: USBテザリング</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-usb-tether/</link>
+      <pubDate>Tue, 23 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-usb-tether/</guid>
+      <description>OpenWRTにてアンドロイド端末をつかってテザリングを行いました。 サイトのドキュメントに書いてある通りに行って問題なく上手くいきます。 https://openwrt.org/docs/guide-user/network/wan/smartphone.usb.tethering ま</description>
+    </item>
     
     <item>
       <title>stubbyをつかってDNSを暗号化</title>
@@ -1325,15 +1343,6 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</guid>
       <description>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。 酷暑インドから戻ってきたので、３</description>
-    </item>
-    
-    <item>
-      <title>トラベル・パイ・ルーター</title>
-      <link>https://goozenlab.com/computing/travel-pi/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/computing/travel-pi/</guid>
-      <description>＜＜バッテリーとの画像＞＞ トラベルルーターは市販されていて数千円で買えますし、 若干微妙ではありますが、 安全・安心・便利：オープンソースな旅ル</description>
     </item>
     
     <item>

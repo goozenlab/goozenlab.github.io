@@ -185,7 +185,7 @@ error: failed to push some refs to 'http://gitea.lan/jin/dotfiles.git'
 <h2 id="userの作成">Userの作成</h2>
 <p>giteaを起動するユーザーアカウント(git)を設定します。
 Homeディレクトリーなどはちょっと変えてます。</p>
-<pre><code>root@OpenWrt:~# useradd -d /srv/git/ -s /bin/false -m -r git
+<pre><code>root@OpenWrt:~＄ useradd -d /srv/git/ -s /bin/false -m -r git
 root@OpenWrt:~$ mkdir -p /srv/git/
 root@OpenWrt:~$ chown -R git:git /srv/git/
 </code></pre><h2 id="データー領域の作成optgitea">データー領域の作成（/opt/gitea）</h2>
@@ -287,8 +287,8 @@ stop() {
         killall gitea
 }
 
-root@OpenWrt:~# service gitea enable
-root@OpenWrt:~# service gitea start
+root@OpenWrt:~＄ service gitea enable
+root@OpenWrt:~＄ service gitea start
 </code></pre>
 				
 
