@@ -8,10 +8,46 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prometheus on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-prometheus/</link>
+      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-prometheus/</guid>
+      <description>監視アプリのPrometheusをOpenWRTにインストールします。 GoLangで書かれシングルバイナリーで配布されています。なかなか素敵</description>
+    </item>
+    
+    <item>
+      <title>一発パッケージアップデート</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</link>
+      <pubDate>Mon, 29 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</guid>
+      <description>ウェブ管理画面からのパッケージのアップデートはまとめてする事ができず、 パッケージ、一つ一つポチッとなしなければいけないというちょっと残念な仕</description>
+    </item>
+    
+    <item>
+      <title>アップルシリコン</title>
+      <link>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</link>
+      <pubDate>Sat, 27 Jun 2020 10:17:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</guid>
+      <description>WWDC2020、破壊王のアップル、久しぶりにきたー。 アップルシリコンへのアーキテクチャ移行、完全なるアップル製品になる。 iOSはすでにAr</description>
+    </item>
+    
+    <item>
+      <title>Archer OpenWRTにパイホール</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-pi-archer/</link>
+      <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-pi-archer/</guid>
+      <description>OpenWRTで運用中の TP-Linkの Archer に広告ブロッカーのAdblockをインストールしようと思ったけれど、 管理画面の見た目も良いし、交換</description>
+    </item>
     
     <item>
       <title>OpenWRT: Archer C7にインストール</title>
@@ -19,7 +55,7 @@
       <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/06/openwrt-install-archer-c7/</guid>
-      <description>実家にあるルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェアはOpe</description>
+      <description>実家にあるNECのルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェア</description>
     </item>
     
     <item>
@@ -834,10 +870,10 @@
     
     <item>
       <title>パイ・サーバー必要機材の購入</title>
-      <link>https://goozenlab.com/blog/2019/09/shiop-pi/</link>
+      <link>https://goozenlab.com/blog/2019/09/shop-pi/</link>
       <pubDate>Wed, 04 Sep 2019 12:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/shiop-pi/</guid>
+      <guid>https://goozenlab.com/blog/2019/09/shop-pi/</guid>
       <description>パイ・サーバー構築に向けて機材の調達をします。 サービスの少ない簡単なホームサーバーであれば、パイ・ゼロで十分です。 もし、いろいろなサービス（</description>
     </item>
     
@@ -4853,6 +4889,15 @@
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/1/01/</guid>
       <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.com/blog/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/1/01/</guid>
+      <description>まとめ：wpa_supplicant モバイルルーターが、頑なに静的なIPアドレスの割り当てを拒みます。 仕方がないので設定してしまうことにしま</description>
     </item>
     
   </channel>

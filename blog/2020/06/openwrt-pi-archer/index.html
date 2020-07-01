@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Archer OpenWRTにパイホール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.com/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.com//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.com/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.com/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.com/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+				
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+					<ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s/" class="pure-menu-link">multi-os thinkpad t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/tpt480s-hackintosh/" class="pure-menu-link">make hackintosh t480s</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/nomad-stick-machine/" class="pure-menu-link">nomad stick machine</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ryzentosh/" class="pure-menu-link">ryzentosh itx</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/vaiop-reloaded/" class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/home-pi/" class="pure-menu-link">home pi server</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/optout-phone/" class="pure-menu-link">optout phone</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/travel-pi/" class="pure-menu-link">travel pi router</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/computing/ipod-here-now/" class="pure-menu-link">ipod reborn</a></li>
+					</ul>
+				</li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/littlist/" class="pure-menu-link">littlist</a></li>
+						<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/sati/" class="pure-menu-link">sati</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/dandori/" class="pure-menu-link">dandori</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/ohayo/" class="pure-menu-link">ohayo</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/cosper/" class="pure-menu-link">cosper</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/doop/" class="pure-menu-link">doop</a></li>
+                		<li class="pure-menu-item"><a href="https://goozenlab.com/iapp/tapas/" class="pure-menu-link">tapas</a></li>
+            		</ul>
+        		</li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.com/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2020-06-25</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.com/tags/archer-c7">Archer C7</a> <a href="https://goozenlab.com/tags/openwrt">openwrt</a> <a href="https://goozenlab.com/tags/raspberry-pi">raspberry pi</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.com/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Archer OpenWRTにパイホール</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2020-06-23-pihole-00.png" alt="Pihole"></p>
+<p>OpenWRTで運用中の
+TP-Linkの
+<a href="https://amzn.to/2YNYCoG">Archer</a>
+に広告ブロッカーのAdblockをインストールしようと思ったけれど、
+管理画面の見た目も良いし、交換前の無線ルーターで使っていた<code>Pihole</code>を継続使用することにする。
+（ほぼデフォルトの状態だと、フィルタリング性能はadblockよりPiholeの方が良いように思える。）</p>
+<p>USBイーサーネットドングルで接続していたパイをガジェットモード（USB接続）でOpwnWRTに接続する方法を使います。
+USB経由になるので、速度が速いという利点がある、らしい。（未確認、Wifi経由でも大差ないかも。。）
+無線LANの必要もないので省電力、かつ、今まで使っていただいてイーサーネットのドングルも不要になる。
+ケーブル一本で見た目もスッキリ。良いことずくめ。</p>
+<p>ついでに、
+パイサーバーだけではちょっと持て余しているので、
+Syncting（容量が少ないので、ちょっとだけよ同期サーバー）
+簡易なウェブサーバーとか作っても大丈夫そう。。。</p>
+<!-- ただ、Archeの以前のバージョン４ではUSBが２ポートついていたらしく、
+そうなれば、一つはパイもう一つはUSBメモリーにしたんだけどね。。
+贅沢を言えばもう少しパイ自体の速度（ディスク）とRAMが多ければ最高なのですが、 
+-->
+<p>作業手順は以下。（パイとパイホールのインストール手順は省略）</p>
+<ol>
+<li>Pi: ガジェットモード設定</li>
+<li>OpenWRT: USB機器のカーネルモジュール追加</li>
+<li>Pi: ガジェットモードでのMACアドレスの固定化</li>
+<li>OpenWRT: Piへの固定IP割り当て</li>
+<li>Pi: Piholeの設定変更</li>
+</ol>
+<h2 id="1-pi-zero-ガジェットモードの有効化">1. Pi Zero: ガジェットモードの有効化</h2>
+<p>パイ・ゼロでガジェットモードの有効化作業を行います。
+（既にガジェットモードでインストールした人はそのままで良い。）</p>
+<p>編集するファイルが２つ。</p>
+<ol>
+<li>/boot/config.txt</li>
+<li>/boot/cmd.txt</li>
+</ol>
+<pre><code>$ vi /boot/config.txt
+
+#最終行に追加
+dtoverlay=dwc2
+
+$ vi /boot/cmdline.txt
+
+#行の末尾に追加
+modules-load=dwc2,g_ether
+</code></pre><p>で完了。</p>
+<p>ちなみに
+パイゼロ・サーバー構築は
+<a href="https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/">こちら</a>
+から。</p>
+<h2 id="2-openwrt-usbネット接続設定">2. OpenWRT: USBネット接続設定</h2>
+<p><img src="/images/2020-06-24-openwrt-login.png" alt="OpenWRT login"></p>
+<p>OpenWRTはUSB接続できるように追加のカーネルモジュールをインストールします。
+ルーターより付与されたIPを探して、SSHで接続します。</p>
+<pre><code>root@OpenWrt:~$ opkg update
+root@OpenWrt:~$ opkg install kmod-usb-net kmod-usb-net-cdc-ether
+</code></pre><p><img src="/images/2020-06-21-openwrt-usb-net.png" alt="OpenWRT Net"></p>
+<!-- 
+？逆パターン？
+opkg install kmod-usb-gadget-eth
+opkg install kmod-usb-dwc2
+-->
+<p>そして、ネットワークの設定をします。インターフェイスに<code>usb0</code>を追加。そして再起動。</p>
+<pre><code>root@OpenWrt:~$ uci set network.lan.ifname=&quot;`uci get network.lan.ifname` usb0&quot;
+root@OpenWrt:~$ uci commit network
+root@OpenWrt:~$ reboot
+</code></pre><p>ルーターが起動したら、USBポートにガジェットモードを有効化しているPi Zeroを刺します。勝手に起動します。</p>
+<h2 id="3-pi-zero-ガジェットモードのip固定">3. Pi Zero: ガジェットモードのIP固定</h2>
+<p>ガジェットモードで起動をすると、MACアドレスが毎回ランダムに生成されます。
+こうなると、IP番号を割り当てることができないので不都合になります。</p>
+<p>MACアドレスを固定化します。
+まず、OpenWRTより接続されたパイのIP番号を調べてSSHでログインします。</p>
+<p>以下の設定を追加して、MACアドレスを割り当てます。</p>
+<p>２箇所設定します。適当な数値を入れてもダメです。</p>
+<ol>
+<li>/etc/modprobe.d/g_ether.conf</li>
+<li>/boot/cmdline.txt</li>
+</ol>
+<p>起動メッセージよりMAC番号を抜き出し設定ファイルに書き出します。</p>
+<pre><code>pi@raspberry:~$　echo 'options g_ether host_addr='$(dmesg | awk '/: HOST MAC/{print $NF}')' dev_addr='$(dmesg | awk '/: MAC/{print $NF}') | sudo tee /etc/modprobe.d/g_ether.conf
+</code></pre><p>上記のファイルからMACアドレスの番号を取り出し、
+<strong>g_ether.</strong> を追加して、
+<code>/boot/cmdline.txt</code>
+の最後に加えます。</p>
+<pre><code>pi@raspberry:~$ cat /etc/modprobe.d/g_ether.conf
+pi@raspberry:~$ vi /boot/cmdline.txt
+
+g_ether.host_addr=3A:A0:DF:20:00:B9 g_ether.dev_addr=3A:A0:DF:20:00:00
+</code></pre><p>host_addrとdev_addrは違いますので注意。</p>
+<p>どちらか一方の設定ファイルで動作するようですが、/boot/cmdline.txtの方が安定して動くそうです。
+私は慎重派なので両方加えておきます。</p>
+<p>これで、MACアドレスが固定されます。</p>
+<h2 id="4-openwrt-ipとdnsの設定">4. OpenWRT: IPとDNSの設定</h2>
+<h3 id="固定ipの割り当て">固定IPの割り当て</h3>
+<p>パイホールサーバーに固定IPを割り当てます。</p>
+<ul>
+<li>Network &gt; DHCP and DNS &gt; Static Leases</li>
+</ul>
+<p><img src="/images/2020-06-24-openwrt-host-static.png" alt="DNS Setting"></p>
+<p>該当のMACアドレスを選択して、IPアドレスを割り当てます。</p>
+<!-- 新しく割り当てたIPアドレスに変更されるまで少々時間がかかります。 -->
+<p>新しいIP番号に切り替わるには、既に割り当てられているIPのリースが切れるまでしばし待つ必要があります。</p>
+<h3 id="dnsの振り分け設定">DNSの振り分け設定</h3>
+<p>そして、DNSの接続先を変更します。
+Network &gt; DHCP and DNS に
+<code>DNS Forwardings</code> というそれらしき項目があり動作はしますが、
+パイホールでのクライアントが全てルーターになってしまいますので
+以下の設定を行います。こちらですと接続ユーザーごとのデーターが見て取れます。</p>
+<ul>
+<li>Network &gt; Interfaces &gt; LAN &gt; DHCP Server &gt; Advance Setting : DHCP-Options</li>
+</ul>
+<p><img src="/images/2020-06-24-openwrt-interface-lan.png" alt="DNS Setting"></p>
+<!-- ![DNS Setting](/images/2020-06-24-openwrt-interface-lan.png) -->
+<p><code>6,PiHoleIPAddress,RouterIPAddress</code></p>
+<p>最初の６の意味がわかりませんが、
+優先順位なので、パイホールが落ちているときはルーターのDNSを参照します。</p>
+<p>※ IPv6を使っている人は別途いくつかのファイルを編集する必要があります。</p>
+<h2 id="5-pi-zero-pihole設定">5. Pi Zero: Pihole設定</h2>
+<p>最後に、OpenWRTより割り当てたIP番号に切り替えます。
+自分のIPアドレスの変更のみでオッケ。</p>
+<pre><code>$ vi /etc/pihole/setupVars.conf
+</code></pre><h2 id="おまけパブリックフィルターdns">おまけ：パブリックフィルターDNS</h2>
+<p>さらに追加で、青少年に悪影響になるコンテンツをフィルターしてくれるパブリックのDNSサービスを利用します。</p>
+<p>割と沢山ありますので、お好みのところを利用されてください。</p>
+<p>パブリックフィルターDNS:
+<a href="https://en.wikipedia.org/wiki/Public_recursive_name_server">https://en.wikipedia.org/wiki/Public_recursive_name_server</a></p>
+<p>Cloudflareを使います。
+DNSのIP番号を
+1.1.1.1 -&gt; 1.1.1.3、
+1.0.0.1 -&gt; 1.0.0.3
+に変更することで、エロいものがフィルターされます。
+（私はバイパスさせます。）</p>
+<p>パイホールでは設定項目が既にありますが、
+ちょっと元のファイルをいじります、
+ファイルは最終行のCloudflare以下のIPを変更します。</p>
+<pre><code>$ vi /etc/pihole/dns-servers.conf
+
+Cloudflare;1.1.1.3;1.0.0.3;2606:4700:4700::1113;2606:4700:4700::1003
+</code></pre><p>でよろしく振り分けられます。</p>
+<p>OpenWRTのWANにこのDNSを設定しても良いかも。。</p>
+<p>参照：</p>
+<ul>
+<li><a href="https://medium.com/@matthewhuie/connecting-a-raspberry-pi-zero-to-a-network-via-usb-on-the-go-and-openwrt-8995a58ec151">https://medium.com/@matthewhuie/connecting-a-raspberry-pi-zero-to-a-network-via-usb-on-the-go-and-openwrt-8995a58ec151</a></li>
+<li><a href="https://github.com/smeathers/lede-pi0w-usb/blob/master/README.md">https://github.com/smeathers/lede-pi0w-usb/blob/master/README.md</a></li>
+</ul>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/06/openwrt-install-archer-c7/">OpenWRT: Archer C7にインストール</a></li>
+	
+	<li><a href="/blog/2020/06/openwrt-usb-tether/">OpenWRT: USBテザリング</a></li>
+	
+	<li><a href="/blog/2020/06/openwrt-dns-tls-stubby/">stubbyをつかってDNSを暗号化</a></li>
+	
+	<li><a href="/blog/2020/06/openwrt-japanese-filter-adblock/">OpenWRT: adblock 日本語フィルター</a></li>
+	
+	<li><a href="/blog/2020/05/openwrt-gitea/">Gitea on OpenWRT</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:jin@goozenlab.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

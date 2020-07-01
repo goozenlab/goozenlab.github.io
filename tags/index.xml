@@ -8,24 +8,15 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Archer C7</title>
-      <link>https://goozenlab.com/tags/archer-c7/</link>
-      <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/archer-c7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>openwrt</title>
       <link>https://goozenlab.com/tags/openwrt/</link>
-      <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
+      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/openwrt/</guid>
       <description></description>
@@ -34,9 +25,18 @@
     <item>
       <title>raspberry pi</title>
       <link>https://goozenlab.com/tags/raspberry-pi/</link>
-      <pubDate>Tue, 23 Jun 2020 10:00:00 +0700</pubDate>
+      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archer C7</title>
+      <link>https://goozenlab.com/tags/archer-c7/</link>
+      <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/archer-c7/</guid>
       <description></description>
     </item>
     

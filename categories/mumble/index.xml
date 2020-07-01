@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Apr 2020 09:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 10:17:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>アップルシリコン</title>
+      <link>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</link>
+      <pubDate>Sat, 27 Jun 2020 10:17:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</guid>
+      <description>WWDC2020、破壊王のアップル、久しぶりにきたー。 アップルシリコンへのアーキテクチャ移行、完全なるアップル製品になる。 iOSはすでにAr</description>
+    </item>
     
     <item>
       <title>iPhone 5SからSEへ</title>

@@ -8,10 +8,37 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prometheus on OpenWRT</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-prometheus/</link>
+      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-prometheus/</guid>
+      <description>監視アプリのPrometheusをOpenWRTにインストールします。 GoLangで書かれシングルバイナリーで配布されています。なかなか素敵</description>
+    </item>
+    
+    <item>
+      <title>一発パッケージアップデート</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</link>
+      <pubDate>Mon, 29 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</guid>
+      <description>ウェブ管理画面からのパッケージのアップデートはまとめてする事ができず、 パッケージ、一つ一つポチッとなしなければいけないというちょっと残念な仕</description>
+    </item>
+    
+    <item>
+      <title>Archer OpenWRTにパイホール</title>
+      <link>https://goozenlab.com/blog/2020/06/openwrt-pi-archer/</link>
+      <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/06/openwrt-pi-archer/</guid>
+      <description>OpenWRTで運用中の TP-Linkの Archer に広告ブロッカーのAdblockをインストールしようと思ったけれど、 管理画面の見た目も良いし、交換</description>
+    </item>
     
     <item>
       <title>OpenWRT: Archer C7にインストール</title>
@@ -19,7 +46,7 @@
       <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/06/openwrt-install-archer-c7/</guid>
-      <description>実家にあるルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェアはOpe</description>
+      <description>実家にあるNECのルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェア</description>
     </item>
     
     <item>

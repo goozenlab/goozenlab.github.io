@@ -3,28 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goozenlab.com/tags/archer-c7/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/tags/openwrt/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/06/openwrt-prometheus/</loc>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</loc>
+    <lastmod>2020-06-29T10:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2020-06-27T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</loc>
+    <lastmod>2020-06-27T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/archer-c7/</loc>
+    <lastmod>2020-06-25T10:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/06/openwrt-pi-archer/</loc>
+    <lastmod>2020-06-25T10:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -33,22 +73,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2020-06-24T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2020/06/openwrt-usb-tether/</loc>
-    <lastmod>2020-06-23T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/raspberry-pi/</loc>
     <lastmod>2020-06-23T10:00:00+07:00</lastmod>
   </url>
   
@@ -114,11 +139,6 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2020/04/iphonese/</loc>
-    <lastmod>2020-04-30T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
     <lastmod>2020-04-30T09:30:00+09:00</lastmod>
   </url>
   
@@ -723,7 +743,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/blog/2019/09/shiop-pi/</loc>
+    <loc>https://goozenlab.com/blog/2019/09/shop-pi/</loc>
     <lastmod>2019-09-04T12:30:00+07:00</lastmod>
   </url>
   
@@ -3594,6 +3614,10 @@
   
   <url>
     <loc>https://goozenlab.com/computing/nomad-goods/</loc>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/1/01/</loc>
   </url>
   
   <url>

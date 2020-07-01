@@ -156,7 +156,7 @@
             </div>
 
             <div class="post-content">
-                <p>実家にあるルーターもちょっと古くなってきているので、
+                <p>実家にあるNECのルーターもちょっと古くなってきているので、
 ルーターをTP-Linkの<a href="https://amzn.to/2YNYCoG">Archer C7</a>に変更しました。
 もちろんファームウェアはOpenWRTを使います。</p>
 <p>最新の機種ではないのですが、ハード的にも評判が良く（現在販売中のものは<strong>バージョン５</strong>とロングセラー？）、
@@ -164,12 +164,13 @@
 購入を悩んでいるときに
 <a href="https://amzn.to/2YNYCoG">Amazonで10％オフセール</a>
 （￥5,670）が出たので購入。</p>
+<p>※　品物リンクはアマゾンへ直行します。</p>
 <h2 id="デフォルトファームウェア">デフォルト・ファームウェア</h2>
 <p>デフォルトのファームウェアも、NECのそっけない感じのものに比べると思った以上に良いです。</p>
 <p><img src="/images/2020-06-20-archer-setting-00.png" alt="Install OpenWRT on Archer C7"></p>
 <p>QoS設定があったり、</p>
 <p><img src="/images/2020-06-20-archer-setting-qos.png" alt="Install OpenWRT on Archer C7"></p>
-<p>OpenVPMの設定もできます。</p>
+<p>リモートワークで必要になるかもしれない、OpenVPNの設定もできます。</p>
 <p><img src="/images/2020-06-20-archer-setting-vpn.png" alt="Install OpenWRT on Archer C7"></p>
 <p>必要十分な感じです。一通り設定を眺め「ふ〜ん、こんな感じなんだ〜。」と５分ぐらいふらふらして左様なら。
 早速OpenWRTをインストール開始。（有線LANで繋いで行うことをオススメします。）</p>
@@ -192,7 +193,8 @@
 </code></pre><p>そしてダウンロードしたファイルを以下のようにリネームする。</p>
 <p><strong>ArcherC7v5_tp_recovery.bin</strong></p>
 <p>そして、管理画面、<code>システムツール &gt; ファームウェア・アップデート</code>
-より手動アップグレード欄にファイルをアップロードしインストール開始します。</p>
+より手動アップグレード欄にファイルをアップロードしインストール開始します。
+（厳密にはアップグレードではないので、少し違和感。）</p>
 <p><img src="/images/2020-06-20-archer-setting-upgrade-00.png" alt="Install OpenWRT on Archer C7">
 <img src="/images/2020-06-20-archer-setting-upgrade-01.png" alt="Install OpenWRT on Archer C7">
 <img src="/images/2020-06-20-archer-setting-upgrade-02.png" alt="Install OpenWRT on Archer C7">
@@ -256,7 +258,8 @@ SSHよりコマンドで行うこともできます。</p>
 <p><img src="/images/2020-06-20-shadow-24ghz.png" alt="Install OpenWRT on Archer C7"></p>
 <p><strong>パイWRTルーター</strong>、11ac : 5GHz Wifi</p>
 <p><img src="/images/2020-06-20-pi-wrt-5ghz.png" alt="Install OpenWRT on Archer C7"></p>
-<p>NECルーターはリビングのテレビなどの中継器として使うかな。</p>
+<p>まぁ、みなさん検討してます。
+NECルーターはリビングのテレビなどの中継器として使うかな。</p>
 <h2 id="あとがき">あとがき</h2>
 <p>今回はTP-LINKを使いましたが、
 日本製ではBuffalo製品のいくつかはOpenWRTにてサポートされています。
