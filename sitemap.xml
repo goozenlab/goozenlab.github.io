@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2020/07/big-sur/</loc>
+    <lastmod>2020-07-07T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
+    <lastmod>2020-07-07T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2020-07-07T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/mumble/</loc>
+    <lastmod>2020-07-07T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2020-07-07T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/07/digital-cuffs/</loc>
+    <lastmod>2020-07-06T10:17:00+09:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +38,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/openwrt/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
     <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
@@ -45,11 +60,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</loc>
     <lastmod>2020-06-29T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/mumble/</loc>
-    <lastmod>2020-06-27T10:17:00+09:00</lastmod>
   </url>
   
   <url>

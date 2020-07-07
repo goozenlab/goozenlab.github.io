@@ -8,10 +8,28 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Jun 2020 10:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 10:17:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BigSurを試す</title>
+      <link>https://goozenlab.com/blog/2020/07/big-sur/</link>
+      <pubDate>Tue, 07 Jul 2020 10:17:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/big-sur/</guid>
+      <description>MacOS.Xのメジャーアップデート、OS11ことBigSurを落としてMacbook Air i7にて使って見ました。 ベーター版なので先々色々と変</description>
+    </item>
+    
+    <item>
+      <title>デジタル・カッフス</title>
+      <link>https://goozenlab.com/blog/2020/07/digital-cuffs/</link>
+      <pubDate>Mon, 06 Jul 2020 10:17:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/digital-cuffs/</guid>
+      <description>ひっじょーーーに重宝していた、 Newtonから始まり、PalmPDA、iOSと唯一、20年近くずー〜〜ーっと使い続けていたアプリ Pocket</description>
+    </item>
     
     <item>
       <title>Prometheus on OpenWRT</title>
@@ -28,7 +46,7 @@
       <pubDate>Mon, 29 Jun 2020 10:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/blog/2020/06/openwrt-update-packages/</guid>
-      <description>ウェブ管理画面からのパッケージのアップデートはまとめてする事ができず、 パッケージ、一つ一つポチッとなしなければいけないというちょっと残念な仕</description>
+      <description>ウェブ管理画面からのパッケージのアップデートは一気にする事ができず、 パッケージ、一つ一つポチッとな、、、しなければいけないというちょっと残念</description>
     </item>
     
     <item>
