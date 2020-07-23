@@ -8,10 +8,23 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Jul 2020 10:17:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy Policy for Sati</title>
+      <link>https://goozenlab.com/en/iapp/littlst-privacy/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/en/iapp/littlst-privacy/</guid>
+      <description>Privacy Policy   sati will ask permission to access Health.app on your device.
+  on Health.app
+ sati will write its meditation data to Health: mindfulness. sati will not read/access other data on Health.    Data in littlist is used only within application.
+  Default Setting for Export is OFF. can be switch on/off on Settings
+  ¥</description>
+    </item>
     
     <item>
       <title>BigSurを試す</title>
