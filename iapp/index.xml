@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/iapp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://goozenlab.com/iapp/app-privacy/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/iapp/app-privacy/</guid>
+      <description>Privacy Policy このアプリケーションのデータはそのアプリ内でのみ使用されます。 このアプリケーションは個人情報を収集しません。 このアプリケーションは外部の</description>
+    </item>
     
     <item>
       <title>プライバシーポリシー</title>
