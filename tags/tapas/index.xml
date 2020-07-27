@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 25 May 2017 14:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/tapas/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tapas v1.10.0</title>
+      <link>https://goozenlab.com/blog/2020/07/tapas-1100/</link>
+      <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/tapas-1100/</guid>
+      <description>じわじわとアップデートをしています。 あっちでエラーこっちでエラーがあります。こっちは修正、あっちは知らんぷり。 というあまりよくない態度ですが</description>
+    </item>
     
     <item>
       <title>tapasを公開</title>
