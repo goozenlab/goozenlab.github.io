@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Aug 2016 22:20:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/dandori/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dandori v2.10.0</title>
+      <link>https://goozenlab.com/blog/2020/07/dandori-210/</link>
+      <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/dandori-210/</guid>
+      <description>追加したいことはままあるのですが、、、 アプストアーから締め出しを食らっていたので復帰更新。 結局微妙な調整のみのマイナーアップデートです。 Changed レ</description>
+    </item>
     
     <item>
       <title>dandori v2.8.0</title>
