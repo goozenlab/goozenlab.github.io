@@ -3,8 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.com/blog/2020/07/lite-2020/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.com/categories/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/iapp/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/post/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/update/</loc>
+    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/categories/computing/</loc>
+    <lastmod>2020-07-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/freenas/</loc>
+    <lastmod>2020-07-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/07/freenas-laptop/</loc>
+    <lastmod>2020-07-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/thinkpad/</loc>
+    <lastmod>2020-07-30T10:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/doop/</loc>
+    <lastmod>2020-07-30T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/07/doop-1110/</loc>
+    <lastmod>2020-07-30T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/cosper/</loc>
+    <lastmod>2020-07-29T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/07/cosper-110/</loc>
+    <lastmod>2020-07-29T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/tags/pranatice/</loc>
+    <lastmod>2020-07-29T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.com/blog/2020/07/pranatice-0101/</loc>
+    <lastmod>2020-07-29T06:30:00+09:00</lastmod>
   </url>
   
   <url>
@@ -18,37 +98,12 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/iapp/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/post/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/tags/tapas/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.com/blog/2020/07/tapas-1100/</loc>
-    <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/update/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
   </url>
   
@@ -68,7 +123,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/blog/2020/07/ippuku-1120/</loc>
+    <loc>https://goozenlab.com/blog/2020/07/ippuku-1121/</loc>
     <lastmod>2020-07-26T06:30:00+09:00</lastmod>
   </url>
   
@@ -140,11 +195,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2020/07/digital-cuffs/</loc>
     <lastmod>2020-07-06T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/categories/computing/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -499,11 +549,6 @@
   
   <url>
     <loc>https://goozenlab.com/blog/2020/01/install-hackintosh-t480s/</loc>
-    <lastmod>2020-01-10T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/thinkpad/</loc>
     <lastmod>2020-01-10T08:00:00+07:00</lastmod>
   </url>
   
@@ -1888,11 +1933,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.com/tags/pranatice/</loc>
-    <lastmod>2016-11-30T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.com/blog/2016/11/pranatice-0100/</loc>
     <lastmod>2016-11-30T06:30:00+07:00</lastmod>
   </url>
@@ -2000,11 +2040,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2016/09/segway-unwind/</loc>
     <lastmod>2016-09-09T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/cosper/</loc>
-    <lastmod>2016-09-08T08:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -2155,11 +2190,6 @@
   <url>
     <loc>https://goozenlab.com/blog/2016/08/array_filter/</loc>
     <lastmod>2016-08-04T18:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.com/tags/doop/</loc>
-    <lastmod>2016-07-31T21:00:00+07:00</lastmod>
   </url>
   
   <url>

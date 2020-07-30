@@ -8,10 +8,19 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 10 Jan 2020 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FreeNASをThinkpad X230で使う</title>
+      <link>https://goozenlab.com/blog/2020/07/freenas-laptop/</link>
+      <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/freenas-laptop/</guid>
+      <description>FreeNASをThinkpadX230にインストールする。 NASのオープンソースプロジェクトです。こちらは、FreeBSDがベースになって</description>
+    </item>
     
     <item>
       <title>BIOS設定：ハッキントッシュT480s</title>

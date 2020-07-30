@@ -8,10 +8,46 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/categories/iapp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>App Lite Version</title>
+      <link>https://goozenlab.com/blog/2020/07/lite-2020/</link>
+      <pubDate>Fri, 31 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/lite-2020/</guid>
+      <description>グーグル・アドモブをアップデートしてして一気にライトバージョンを登録しました。 バイナリーをアップロード時にエラーが上がってきましたが、 解決法</description>
+    </item>
+    
+    <item>
+      <title>doop v1.11.0</title>
+      <link>https://goozenlab.com/blog/2020/07/doop-1110/</link>
+      <pubDate>Thu, 30 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/doop-1110/</guid>
+      <description>Swiftに移行したともったらあっという間にVersion５になっているし、SwiftUIもだんだんこなれてきました。 オリンピックイヤー・ア</description>
+    </item>
+    
+    <item>
+      <title>cosper v1.10.0</title>
+      <link>https://goozenlab.com/blog/2020/07/cosper-110/</link>
+      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/cosper-110/</guid>
+      <description>固定だったcosperのコスパ総額表示: 記事 が気がつくと機能していませんでした。 アプリが落ちないのが朗報か。。 表示方法を変えてフッターに表示</description>
+    </item>
+    
+    <item>
+      <title>Pranatice v0.10.1</title>
+      <link>https://goozenlab.com/blog/2020/07/pranatice-0101/</link>
+      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/blog/2020/07/pranatice-0101/</guid>
+      <description>ダークモード対応のみのアップデート。 ただし、「ヘルスキットをどのように取り込んでるか説明せい」と アプストアーに登録時に難癖をつけられる。 以前</description>
+    </item>
     
     <item>
       <title>dandori v2.10.0</title>
@@ -41,11 +77,11 @@
     </item>
     
     <item>
-      <title>ippuku v1.12.0</title>
-      <link>https://goozenlab.com/blog/2020/07/ippuku-1120/</link>
+      <title>ippuku v1.12.1</title>
+      <link>https://goozenlab.com/blog/2020/07/ippuku-1121/</link>
       <pubDate>Sun, 26 Jul 2020 06:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/ippuku-1120/</guid>
+      <guid>https://goozenlab.com/blog/2020/07/ippuku-1121/</guid>
       <description>カレンダー書き出し機能を入れるつもりでしたが、結局シンプルなマイナーアップデートです。 レイアウトもところどころに微調整。システムのダークモー</description>
     </item>
     

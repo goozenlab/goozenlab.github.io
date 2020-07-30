@@ -8,10 +8,64 @@
     <managingEditor>jin@goozenlab.com (jin)</managingEditor>
     <webMaster>jin@goozenlab.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://goozenlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>update</title>
+      <link>https://goozenlab.com/tags/update/</link>
+      <pubDate>Fri, 31 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freenas</title>
+      <link>https://goozenlab.com/tags/freenas/</link>
+      <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/freenas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinkpad</title>
+      <link>https://goozenlab.com/tags/thinkpad/</link>
+      <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>doop</title>
+      <link>https://goozenlab.com/tags/doop/</link>
+      <pubDate>Thu, 30 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/doop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cosper</title>
+      <link>https://goozenlab.com/tags/cosper/</link>
+      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/cosper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pranatice</title>
+      <link>https://goozenlab.com/tags/pranatice/</link>
+      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
+      <author>jin@goozenlab.com (jin)</author>
+      <guid>https://goozenlab.com/tags/pranatice/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dandori</title>
@@ -28,15 +82,6 @@
       <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/tapas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>update</title>
-      <link>https://goozenlab.com/tags/update/</link>
-      <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/update/</guid>
       <description></description>
     </item>
     
@@ -271,15 +316,6 @@
       <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/kali/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>thinkpad</title>
-      <link>https://goozenlab.com/tags/thinkpad/</link>
-      <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/thinkpad/</guid>
       <description></description>
     </item>
     
@@ -590,15 +626,6 @@
     </item>
     
     <item>
-      <title>pranatice</title>
-      <link>https://goozenlab.com/tags/pranatice/</link>
-      <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/pranatice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>(a)</title>
       <link>https://goozenlab.com/tags/a/</link>
       <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
@@ -626,15 +653,6 @@
     </item>
     
     <item>
-      <title>cosper</title>
-      <link>https://goozenlab.com/tags/cosper/</link>
-      <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/cosper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>design</title>
       <link>https://goozenlab.com/tags/design/</link>
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
@@ -649,15 +667,6 @@
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
       <author>jin@goozenlab.com (jin)</author>
       <guid>https://goozenlab.com/tags/icon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>doop</title>
-      <link>https://goozenlab.com/tags/doop/</link>
-      <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/tags/doop/</guid>
       <description></description>
     </item>
     
