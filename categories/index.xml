@@ -2,212 +2,208 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on goozenlab</title>
-    <link>https://goozenlab.com/categories/</link>
+    <link>https://goozenlab.github.io/categories/</link>
     <description>Recent content in Categories on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iApp</title>
-      <link>https://goozenlab.com/categories/iapp/</link>
+      <link>https://goozenlab.github.io/categories/iapp/</link>
       <pubDate>Fri, 31 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/iapp/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/iapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computing</title>
-      <link>https://goozenlab.com/categories/computing/</link>
+      <link>https://goozenlab.github.io/categories/computing/</link>
       <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/computing/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mumble</title>
-      <link>https://goozenlab.com/categories/mumble/</link>
+      <link>https://goozenlab.github.io/categories/mumble/</link>
       <pubDate>Tue, 07 Jul 2020 10:17:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/mumble/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/mumble/</guid>
       <description></description>
     </item>
     
     <item>
       <title>travel</title>
-      <link>https://goozenlab.com/categories/travel/</link>
+      <link>https://goozenlab.github.io/categories/travel/</link>
       <pubDate>Tue, 03 Mar 2020 15:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/travel/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/travel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>https://goozenlab.com/categories/life/</link>
+      <link>https://goozenlab.github.io/categories/life/</link>
       <pubDate>Fri, 21 Feb 2020 14:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/life/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>android</title>
-      <link>https://goozenlab.com/categories/android/</link>
+      <link>https://goozenlab.github.io/categories/android/</link>
       <pubDate>Sun, 12 Jan 2020 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/android/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>develop</title>
-      <link>https://goozenlab.com/categories/develop/</link>
+      <link>https://goozenlab.github.io/categories/develop/</link>
       <pubDate>Wed, 18 Dec 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/develop/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/develop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>smart phone</title>
-      <link>https://goozenlab.com/categories/smart-phone/</link>
+      <link>https://goozenlab.github.io/categories/smart-phone/</link>
       <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/smart-phone/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/smart-phone/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>https://goozenlab.com/categories/server/</link>
+      <link>https://goozenlab.github.io/categories/server/</link>
       <pubDate>Mon, 09 Sep 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/server/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nomad</title>
-      <link>https://goozenlab.com/categories/nomad/</link>
+      <link>https://goozenlab.github.io/categories/nomad/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/nomad/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/nomad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>smart watch</title>
-      <link>https://goozenlab.com/categories/smart-watch/</link>
+      <link>https://goozenlab.github.io/categories/smart-watch/</link>
       <pubDate>Thu, 29 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/smart-watch/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/smart-watch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>youtube</title>
-      <link>https://goozenlab.com/categories/youtube/</link>
+      <link>https://goozenlab.github.io/categories/youtube/</link>
       <pubDate>Mon, 29 Apr 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/youtube/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/youtube/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>https://goozenlab.com/categories/security/</link>
+      <link>https://goozenlab.github.io/categories/security/</link>
       <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/security/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>router</title>
-      <link>https://goozenlab.com/categories/router/</link>
+      <link>https://goozenlab.github.io/categories/router/</link>
       <pubDate>Wed, 03 Apr 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/router/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/router/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bicycle</title>
-      <link>https://goozenlab.com/categories/bicycle/</link>
+      <link>https://goozenlab.github.io/categories/bicycle/</link>
       <pubDate>Thu, 27 Dec 2018 17:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/bicycle/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/bicycle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>snakeFoot</title>
-      <link>https://goozenlab.com/categories/snakefoot/</link>
+      <link>https://goozenlab.github.io/categories/snakefoot/</link>
       <pubDate>Fri, 21 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/snakefoot/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/snakefoot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>https://goozenlab.com/categories/development/</link>
+      <link>https://goozenlab.github.io/categories/development/</link>
       <pubDate>Thu, 20 Sep 2018 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/development/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>https://goozenlab.com/categories/web/</link>
+      <link>https://goozenlab.github.io/categories/web/</link>
       <pubDate>Wed, 05 Sep 2018 08:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/web/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>goods</title>
-      <link>https://goozenlab.com/categories/goods/</link>
+      <link>https://goozenlab.github.io/categories/goods/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/goods/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/goods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>backpack</title>
-      <link>https://goozenlab.com/categories/backpack/</link>
+      <link>https://goozenlab.github.io/categories/backpack/</link>
       <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/backpack/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/backpack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mac</title>
-      <link>https://goozenlab.com/categories/mac/</link>
+      <link>https://goozenlab.github.io/categories/mac/</link>
       <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/mac/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>macos</title>
-      <link>https://goozenlab.com/categories/macos/</link>
+      <link>https://goozenlab.github.io/categories/macos/</link>
       <pubDate>Mon, 20 Oct 2014 14:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/categories/macos/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/macos/</guid>
       <description></description>
     </item>
     

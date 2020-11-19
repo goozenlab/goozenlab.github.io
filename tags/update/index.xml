@@ -2,950 +2,946 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>update on goozenlab</title>
-    <link>https://goozenlab.com/tags/update/</link>
+    <link>https://goozenlab.github.io/tags/update/</link>
     <description>Recent content in update on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/update/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/update/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App Lite Version</title>
-      <link>https://goozenlab.com/blog/2020/07/lite-2020/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/lite-2020/</link>
       <pubDate>Fri, 31 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/lite-2020/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/lite-2020/</guid>
       <description>グーグル・アドモブをアップデートしてして一気にライトバージョンを登録しました。 バイナリーをアップロード時にエラーが上がってきましたが、 解決法</description>
     </item>
     
     <item>
       <title>doop v1.11.0</title>
-      <link>https://goozenlab.com/blog/2020/07/doop-1110/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/doop-1110/</link>
       <pubDate>Thu, 30 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/doop-1110/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/doop-1110/</guid>
       <description>Swiftに移行したともったらあっという間にVersion５になっているし、SwiftUIもだんだんこなれてきました。 オリンピックイヤー・ア</description>
     </item>
     
     <item>
       <title>cosper v1.10.0</title>
-      <link>https://goozenlab.com/blog/2020/07/cosper-110/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/cosper-110/</link>
       <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/cosper-110/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/cosper-110/</guid>
       <description>固定だったcosperのコスパ総額表示: 記事 が気がつくと機能していませんでした。 アプリが落ちないのが朗報か。。 表示方法を変えてフッターに表示</description>
     </item>
     
     <item>
       <title>Pranatice v0.10.1</title>
-      <link>https://goozenlab.com/blog/2020/07/pranatice-0101/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/pranatice-0101/</link>
       <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/pranatice-0101/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/pranatice-0101/</guid>
       <description>ダークモード対応のみのアップデート。 ただし、「ヘルスキットをどのように取り込んでるか説明せい」と アプストアーに登録時に難癖をつけられる。 以前</description>
     </item>
     
     <item>
       <title>dandori v2.10.0</title>
-      <link>https://goozenlab.com/blog/2020/07/dandori-210/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/dandori-210/</link>
       <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/dandori-210/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/dandori-210/</guid>
       <description>追加したいことはままあるのですが、、、 アプストアーから締め出しを食らっていたので復帰更新。 結局微妙な調整のみのマイナーアップデートです。 Changed レ</description>
     </item>
     
     <item>
       <title>tapas v1.10.0</title>
-      <link>https://goozenlab.com/blog/2020/07/tapas-1100/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/tapas-1100/</link>
       <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/tapas-1100/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/tapas-1100/</guid>
       <description>じわじわとアップデートをしています。 あっちでエラーこっちでエラーがあります。こっちは修正、あっちは知らんぷり。 というあまりよくない態度ですが</description>
     </item>
     
     <item>
       <title>ohayo v2.10.1</title>
-      <link>https://goozenlab.com/blog/2020/07/ohayo-2101/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/ohayo-2101/</link>
       <pubDate>Sun, 26 Jul 2020 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/ohayo-2101/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/ohayo-2101/</guid>
       <description>SwiftUIに対応しようかとも思いましたが断念、 追加の機能はありません、内部的なちょっとした変更と装飾部のアップデートです。 秋のメジャーア</description>
     </item>
     
     <item>
       <title>ippuku v1.12.1</title>
-      <link>https://goozenlab.com/blog/2020/07/ippuku-1121/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/ippuku-1121/</link>
       <pubDate>Sun, 26 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/ippuku-1121/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/ippuku-1121/</guid>
       <description>カレンダー書き出し機能を入れるつもりでしたが、結局シンプルなマイナーアップデートです。 レイアウトもところどころに微調整。システムのダークモー</description>
     </item>
     
     <item>
       <title>Sati v1.10.1</title>
-      <link>https://goozenlab.com/blog/2020/07/sati-1101/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/sati-1101/</link>
       <pubDate>Sat, 25 Jul 2020 06:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/sati-1101/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/sati-1101/</guid>
       <description>ストレスの溜まるこの昨今ですが、マインドフルネスで乗り切りましょう。 マイナーアップデートです。システムダークモードに対応しました。 CoreD</description>
     </item>
     
     <item>
       <title>littlist v2.10.1</title>
-      <link>https://goozenlab.com/blog/2020/07/littlist-2101/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/littlist-2101/</link>
       <pubDate>Fri, 24 Jul 2020 10:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/littlist-2101/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/littlist-2101/</guid>
       <description>皆さま、いかがお過ごしでしょうか？ こちらコロナプチ軟禁状態でビールの酒量が増えています。 なんかどうでも良くなりつつあります。 おも〜い腰を上げ</description>
     </item>
     
     <item>
       <title>ippuku 1.12.0</title>
-      <link>https://goozenlab.com/blog/2019/11/ippuku-1120/</link>
+      <link>https://goozenlab.github.io/blog/2019/11/ippuku-1120/</link>
       <pubDate>Sun, 24 Nov 2019 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/11/ippuku-1120/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/11/ippuku-1120/</guid>
       <description>気がつけば三年振りのマナーアップデート、その間にiPhonexなんかが発売されていました。 一体その間何をしてたんやろか。。。 さてさて、、 開発</description>
     </item>
     
     <item>
       <title>iApplications status</title>
-      <link>https://goozenlab.com/blog/2019/11/iapplication-status/</link>
+      <link>https://goozenlab.github.io/blog/2019/11/iapplication-status/</link>
       <pubDate>Fri, 15 Nov 2019 20:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/11/iapplication-status/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/11/iapplication-status/</guid>
       <description>ようやく新しいハッキントッシュ端末の設定がひと段落（時に落ちたりしてますが、）したので、 やっとこさアプリの更新に着手。 気がつけばいくつかのソ</description>
     </item>
     
     <item>
       <title>VaioP Reloaded 追記情報</title>
-      <link>https://goozenlab.com/blog/2019/09/update-vaiop-reloaded/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</link>
       <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/update-vaiop-reloaded/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</guid>
       <description>お古のVaio Pにインストールする予定のSwayのリサーチ中です。 思いの外あまり有益な情報は見つからず、、インストールベースが少ないのか知ら</description>
     </item>
     
     <item>
       <title>littlist v2.10.0</title>
-      <link>https://goozenlab.com/blog/2018/09/littlist-2100/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/littlist-2100/</link>
       <pubDate>Sat, 29 Sep 2018 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/littlist-2100/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/littlist-2100/</guid>
       <description>本来は雨季のチェンマイではあるのですが、えらく晴天の日が続きます。（今日は曇り） あまりにも天気が良いので、日焼けが怖くてプールにも泳ぎに行け</description>
     </item>
     
     <item>
       <title>ohayo v2.10.0</title>
-      <link>https://goozenlab.com/blog/2018/09/ohayo-2100/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/ohayo-2100/</link>
       <pubDate>Sat, 29 Sep 2018 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/ohayo-2100/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/ohayo-2100/</guid>
       <description>こっちでエラー、あっちでエラー、さらにエラーと、えらく慌ただしく更新作業をしてます。Xcodeは一気に２つバージョンアップ。。Xcode10</description>
     </item>
     
     <item>
       <title>Sati v1.10.0</title>
-      <link>https://goozenlab.com/blog/2018/09/sati-1100/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/sati-1100/</link>
       <pubDate>Thu, 27 Sep 2018 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/sati-1100/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/sati-1100/</guid>
       <description>Xcode10の速度に苛立ちを覚えながら、作業に勤しんでます。。。申請後、数日でレビュー終了、アップされてます。（以前よりプロセスが早くなっ</description>
     </item>
     
     <item>
       <title>Sati v1.9.5</title>
-      <link>https://goozenlab.com/blog/2018/03/sati-195/</link>
+      <link>https://goozenlab.github.io/blog/2018/03/sati-195/</link>
       <pubDate>Tue, 06 Mar 2018 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/03/sati-195/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/03/sati-195/</guid>
       <description>iOS10よりヘルスケアにマインドフルネスの項目ができてました。アップルの審査でちょっと手間取りましたが、瞑想ソフトということもあるので対応</description>
     </item>
     
     <item>
       <title>Sati v1.9.4</title>
-      <link>https://goozenlab.com/blog/2017/05/sati-194/</link>
+      <link>https://goozenlab.github.io/blog/2017/05/sati-194/</link>
       <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/05/sati-194/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2017/05/sati-194/</guid>
       <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 つい</description>
     </item>
     
     <item>
       <title>Sati v1.9.3</title>
-      <link>https://goozenlab.com/blog/2017/05/sati-193/</link>
+      <link>https://goozenlab.github.io/blog/2017/05/sati-193/</link>
       <pubDate>Mon, 15 May 2017 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/05/sati-193/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2017/05/sati-193/</guid>
       <description>久しぶりのマイナーアップデート。 ポージャーボタンがうまく機能していないところと、英語のスペルミス。。。 開発環境をXCode8.3に移行のため</description>
     </item>
     
     <item>
       <title>Pranatice v0.10.0</title>
-      <link>https://goozenlab.com/blog/2016/11/pranatice-0100/</link>
+      <link>https://goozenlab.github.io/blog/2016/11/pranatice-0100/</link>
       <pubDate>Wed, 30 Nov 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/11/pranatice-0100/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/11/pranatice-0100/</guid>
       <description>カルマヨガシリーズ第二弾のプラナティスをアップデートしました。（第一弾は、横に並んでいる瞑想タイマー）Swift3で書き上げました。 変更点 i</description>
     </item>
     
     <item>
       <title>(a) v0.9.0</title>
-      <link>https://goozenlab.com/blog/2016/10/a-090/</link>
+      <link>https://goozenlab.github.io/blog/2016/10/a-090/</link>
       <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/10/a-090/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/10/a-090/</guid>
       <description>アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったの</description>
     </item>
     
     <item>
       <title>listaria v1.8.0</title>
-      <link>https://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/listaria-180/</link>
       <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/listaria-180/</guid>
       <description>使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、 ひさーーーしぶりにアップデート、Swiftならん</description>
     </item>
     
     <item>
       <title>ohayo v2.9.2</title>
-      <link>https://goozenlab.com/blog/2016/09/ohayo-292/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/ohayo-292/</link>
       <pubDate>Sat, 10 Sep 2016 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/ohayo-292/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/ohayo-292/</guid>
       <description>気になっていた、ステータスバーを非表示に、メッセージの修正。快眠時間前の起床時に快眠ノーティス音の解除。（快眠音のノーティスは動いているはず</description>
     </item>
     
     <item>
       <title>cosper v1.9.3</title>
-      <link>https://goozenlab.com/blog/2016/09/cosper-193/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/cosper-193/</link>
       <pubDate>Thu, 08 Sep 2016 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/cosper-193/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/cosper-193/</guid>
       <description>固定だったcosperのコスパ総額表示: 記事 を選択可能にしました。きつきつの表示を嫌う方はオフにできます。 Change Log [1.9.3] - 2016-09-08 @ ChiangMai Fix セルの消去時など、</description>
     </item>
     
     <item>
       <title>littlist v2.8.0</title>
-      <link>https://goozenlab.com/blog/2016/09/littlist-280/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/littlist-280/</link>
       <pubDate>Mon, 05 Sep 2016 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/littlist-280/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/littlist-280/</guid>
       <description>Swift移植シリーズ第八弾、終盤突入。９月になってしまったので、最後の方は強引に合わせ技で作業を終えました。処理にばたつきが見られる。。 追</description>
     </item>
     
     <item>
       <title>dandori v2.8.0</title>
-      <link>https://goozenlab.com/blog/2016/08/dandori-280/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/dandori-280/</link>
       <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/dandori-280/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/dandori-280/</guid>
       <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。 さて</description>
     </item>
     
     <item>
       <title>cosper v1.9.2</title>
-      <link>https://goozenlab.com/blog/2016/08/cosper-192/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/cosper-192/</link>
       <pubDate>Mon, 22 Aug 2016 05:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/cosper-192/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/cosper-192/</guid>
       <description>気になっていた部分の調整と、ちょっとした機能を追加しました。 Change Log [1.9.2] - 2016-08-22 @ ChiangMai Change 左色バーの切り目を、今まではメモがあるものに自動で付いていたので</description>
     </item>
     
     <item>
       <title>Sati v1.9.2</title>
-      <link>https://goozenlab.com/blog/2016/08/sati-192/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/sati-192/</link>
       <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/sati-192/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/sati-192/</guid>
       <description>またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。） ついでと言ってはなんですが、履</description>
     </item>
     
     <item>
       <title>Sati v1.9.1</title>
-      <link>https://goozenlab.com/blog/2016/08/sati-191/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/sati-191/</link>
       <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/sati-191/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/sati-191/</guid>
       <description>ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋</description>
     </item>
     
     <item>
       <title>doop v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/07/doop-190/</link>
+      <link>https://goozenlab.github.io/blog/2016/07/doop-190/</link>
       <pubDate>Sun, 31 Jul 2016 21:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/doop-190/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/07/doop-190/</guid>
       <description>Swift移植シリーズ第六弾です。疲れました。。もう少し引っ張ってSwift3に対応した方が良いかな？ちょっとバリにでも行っちゃおうかな？な</description>
     </item>
     
     <item>
       <title>cosper v1.9.1</title>
-      <link>https://goozenlab.com/blog/2016/07/cosper-191/</link>
+      <link>https://goozenlab.github.io/blog/2016/07/cosper-191/</link>
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/cosper-191/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/07/cosper-191/</guid>
       <description>あちゃちゃ、Swift移行時にいろいろと新しく書き換えた所の修正ミスです。ご迷惑をおかけします。 Change Log [1.9.1] - 2016-07-30 @ ChiangMai Fix 設定にて変更したタイトルが反</description>
     </item>
     
     <item>
       <title>ohayo v2.9.1</title>
-      <link>https://goozenlab.com/blog/2016/07/ohayo-291/</link>
+      <link>https://goozenlab.github.io/blog/2016/07/ohayo-291/</link>
       <pubDate>Sat, 30 Jul 2016 05:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/ohayo-291/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/07/ohayo-291/</guid>
       <description>快眠ノーティス音が鳴りませんでした。爆睡野郎の私は、鳴ってはいるが気付いていないと思ってまし た。ちょっとソースコードをきれいにしていた時に発</description>
     </item>
     
     <item>
       <title>cosper v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/07/cosper-190/</link>
+      <link>https://goozenlab.github.io/blog/2016/07/cosper-190/</link>
       <pubDate>Thu, 07 Jul 2016 05:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/07/cosper-190/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/07/cosper-190/</guid>
       <description>Swift移植シリーズ第五弾。ドタバタ、七夕アップデート、申請しました。 ネットの繋がりが非常ーーに悪いアパートに逗留中。朝から近くもない大学</description>
     </item>
     
     <item>
       <title>ippuku v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/06/ippuku-190/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/ippuku-190/</link>
       <pubDate>Mon, 27 Jun 2016 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/ippuku-190/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/ippuku-190/</guid>
       <description>Swift移植シリーズ第四弾、ガリガリ行ってます。処を変えチェンマイより、自分ではあまり使っていないので、放ったらかし、、3年ぶりのアップデ</description>
     </item>
     
     <item>
       <title>tapas v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/06/tapas-190/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/tapas-190/</link>
       <pubDate>Mon, 20 Jun 2016 03:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/tapas-190/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/tapas-190/</guid>
       <description>Swift移植シリーズ第三弾。マルチなキッチンタイマー、タパスを申請しました。追加の機能はありません。ちょっとしたレイアウトの調整のみのアッ</description>
     </item>
     
     <item>
       <title>ohayo v2.9.0</title>
-      <link>https://goozenlab.com/blog/2016/06/ohayo-290/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/ohayo-290/</link>
       <pubDate>Tue, 14 Jun 2016 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/ohayo-290/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/ohayo-290/</guid>
       <description>Swift移植シリーズ第二弾です。ようやくながらリリースにたどり着きました。割と多くの問題がありました。 アプリ機能の変更や追加は無いのですが</description>
     </item>
     
     <item>
       <title>Sati v1.9.0</title>
-      <link>https://goozenlab.com/blog/2016/06/sati-190/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/sati-190/</link>
       <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/sati-190/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/sati-190/</guid>
       <description>2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。i</description>
     </item>
     
     <item>
       <title>Iconを作り替え中</title>
-      <link>https://goozenlab.com/blog/2016/05/icons-renew/</link>
+      <link>https://goozenlab.github.io/blog/2016/05/icons-renew/</link>
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/05/icons-renew/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/05/icons-renew/</guid>
       <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化</description>
     </item>
     
     <item>
       <title>doop v1.8.1</title>
-      <link>https://goozenlab.com/blog/2015/08/doop-181/</link>
+      <link>https://goozenlab.github.io/blog/2015/08/doop-181/</link>
       <pubDate>Sun, 16 Aug 2015 16:00:00 +0600</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/08/doop-181/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/08/doop-181/</guid>
       <description>項目が削除できないケアレスミスのバグフィックスです。 連絡いただいた、そらのはサン、ありがとうございました。 対応が遅れましたが、アプストアに申</description>
     </item>
     
     <item>
       <title>doop v1.8.0</title>
-      <link>https://goozenlab.com/blog/2015/06/doop-180/</link>
+      <link>https://goozenlab.github.io/blog/2015/06/doop-180/</link>
       <pubDate>Thu, 25 Jun 2015 07:00:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/doop-180/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/06/doop-180/</guid>
       <description>中央アジアに向かう前に少し時間があったのでプチアップデート。操作で気になる所を変更しました。 追加機能 履歴ページへひとっ飛び 今までは、項目をダ</description>
     </item>
     
     <item>
       <title>littlist lite 復活</title>
-      <link>https://goozenlab.com/blog/2015/06/littlist-lite-265/</link>
+      <link>https://goozenlab.github.io/blog/2015/06/littlist-lite-265/</link>
       <pubDate>Thu, 18 Jun 2015 10:00:47 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/littlist-lite-265/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/06/littlist-lite-265/</guid>
       <description>リトリストのライト判を復活させました。 かなりの時間の開いたアップデートになります。機能も色々と追加になり、安定性も増してます。ライトバージョ</description>
     </item>
     
     <item>
       <title>dandori v2.6.4</title>
-      <link>https://goozenlab.com/blog/2015/04/dandori-264/</link>
+      <link>https://goozenlab.github.io/blog/2015/04/dandori-264/</link>
       <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/04/dandori-264/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/04/dandori-264/</guid>
       <description>またまた、ケアレスミスのホットフィックスです。 タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。</description>
     </item>
     
     <item>
       <title>littlist v2.6.6</title>
-      <link>https://goozenlab.com/blog/2015/03/littlist-266/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/littlist-266/</link>
       <pubDate>Fri, 27 Mar 2015 10:00:47 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/littlist-266/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/littlist-266/</guid>
       <description>データーベースの更新により起きた、幾つかのバグを修正しました。 どちらもあまり気分の良くない、溜息まじりなケアレスミスなバグです。 &amp;ldquo;RedHot List&amp;rdquo; と &amp;ld</description>
     </item>
     
     <item>
       <title>dandori v2.6.3</title>
-      <link>https://goozenlab.com/blog/2015/03/dandori-263/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/dandori-263/</link>
       <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/dandori-263/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/dandori-263/</guid>
       <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボ</description>
     </item>
     
     <item>
       <title>littlist v2.6.5</title>
-      <link>https://goozenlab.com/blog/2015/03/littlist-265/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/littlist-265/</link>
       <pubDate>Wed, 11 Mar 2015 07:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/littlist-265/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/littlist-265/</guid>
       <description>ちょっとリマインダーをお借りした、ヤドカリ機能を追加しました。 追加 バックアップを兼ねた、エクスポート リマインダーのリスト（※ デフォルトは &amp;l</description>
     </item>
     
     <item>
       <title>tapas v1.6.5</title>
-      <link>https://goozenlab.com/blog/2015/03/tapas-165/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/tapas-165/</link>
       <pubDate>Wed, 11 Mar 2015 03:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/tapas-165/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/tapas-165/</guid>
       <description>iOS6/7 ユーザーには最後のアップデートになります。 次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザーの方には</description>
     </item>
     
     <item>
       <title>doop v1.6.5</title>
-      <link>https://goozenlab.com/blog/2015/03/doop-165/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/doop-165/</link>
       <pubDate>Sun, 08 Mar 2015 07:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/doop-165/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/doop-165/</guid>
       <description>iOS6/7 ユーザーには最後のアップデートになります。 そして、次期メジャーアップデート向けての準備も兼ねた、マイナーアップデートです。 iOS8ユーザー</description>
     </item>
     
     <item>
       <title>ohayo v2.8.2</title>
-      <link>https://goozenlab.com/blog/2015/03/ohayo-282/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/ohayo-282/</link>
       <pubDate>Sat, 07 Mar 2015 21:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/ohayo-282/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/ohayo-282/</guid>
       <description>うーーーん、ホットフィックスです。 バグ 朝のメッセージがずれてました。。 以上です。どこかのアップデート時に直したような気がするのだが、、、。本</description>
     </item>
     
     <item>
       <title>Pranatice v0.7.1</title>
-      <link>https://goozenlab.com/blog/2015/02/pranatice-071/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/pranatice-071/</link>
       <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/pranatice-071/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/pranatice-071/</guid>
       <description>他のソフトとの操作性、デザインの統合。ちょっとしたお遊び機能等、少し手を入れました。 メインページのデザインの微調整 下に並んでいた最近の状況ア</description>
     </item>
     
     <item>
       <title>Sati v1.6.5</title>
-      <link>https://goozenlab.com/blog/2015/02/sati-165/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/sati-165/</link>
       <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/sati-165/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/sati-165/</guid>
       <description>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には__最後のアップデー</description>
     </item>
     
     <item>
       <title>doop v1.6.4</title>
-      <link>https://goozenlab.com/blog/2015/02/doop-164/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/doop-164/</link>
       <pubDate>Fri, 20 Feb 2015 07:36:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/doop-164/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/doop-164/</guid>
       <description>iOS8にて詳細の表示がされない不具合がありました。なぜかされるべき計算がされないのが問題なのですが、それがなぜそのアイテムに起こるのかが特</description>
     </item>
     
     <item>
       <title>Tapas v1.6.3</title>
-      <link>https://goozenlab.com/blog/2015/02/tapas-163/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/tapas-163/</link>
       <pubDate>Thu, 12 Feb 2015 16:33:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/tapas-163/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/tapas-163/</guid>
       <description>ゾンビ化している tapas が一日 (2/10/2015) に400ぐらいダウンロードされていました。紹介していただいた方がいたのだろうと思います。どなたか分かりませんが、あ</description>
     </item>
     
     <item>
       <title>次のアップデート進行状況</title>
-      <link>https://goozenlab.com/blog/2015/02/sati-upcomming/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/sati-upcomming/</link>
       <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/sati-upcomming/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/sati-upcomming/</guid>
       <description>1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰</description>
     </item>
     
     <item>
       <title>Sati v1.6.4</title>
-      <link>https://goozenlab.com/blog/2015/02/sati-164/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/sati-164/</link>
       <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/sati-164/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/sati-164/</guid>
       <description>iOS8上での音が鳴らない不具合は ホーム＞設定＞サティ＞通知より、 サウンドのスウィッチをオンにしてください。 これで、問題は解消するはずです。</description>
     </item>
     
     <item>
       <title>ohayo v2.8.1</title>
-      <link>https://goozenlab.com/blog/2015/02/ohayo-281/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/ohayo-281/</link>
       <pubDate>Tue, 10 Feb 2015 13:06:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/ohayo-281/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/ohayo-281/</guid>
       <description>ロングタップで記録の開始、音が出ないバグ の変更といくつかのバグ、修正と追加があります。 バグ アクションシートにて睡眠時間のタイトル表示がタイム</description>
     </item>
     
     <item>
       <title>littlist 2.6.3</title>
-      <link>https://goozenlab.com/blog/2015/02/littlist-263/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/littlist-263/</link>
       <pubDate>Fri, 06 Feb 2015 06:55:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/littlist-263/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/littlist-263/</guid>
       <description>いつのバージョンからだか不明（というか調べるつもり無し）である設定での各国語のローカライズが無視されていた不注意を直してこっそりアップしまし</description>
     </item>
     
     <item>
       <title>pinocul v1.7.1</title>
-      <link>https://goozenlab.com/blog/2015/02/pinocul-171/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/pinocul-171/</link>
       <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/pinocul-171/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/pinocul-171/</guid>
       <description>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。 最初に躊躇しつつもアプストアーに申請したアプ</description>
     </item>
     
     <item>
       <title>Satiにて音が出ない件</title>
-      <link>https://goozenlab.com/blog/2015/01/sati-nosound-erro/</link>
+      <link>https://goozenlab.github.io/blog/2015/01/sati-nosound-erro/</link>
       <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/01/sati-nosound-erro/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/01/sati-nosound-erro/</guid>
       <description>以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。 勘違いとケアレスミスのダブルパンチです。 アプ</description>
     </item>
     
     <item>
       <title>Sati v1.6.3</title>
-      <link>https://goozenlab.com/blog/2015/01/sati-163/</link>
+      <link>https://goozenlab.github.io/blog/2015/01/sati-163/</link>
       <pubDate>Wed, 28 Jan 2015 08:54:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/01/sati-163/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/01/sati-163/</guid>
       <description>長押しスタート マイナーアップデートですが、使用方法に変更があります。 瞑想の始まりを**長押し（ロングタップ）**に変更しました。 誤動作をさけ</description>
     </item>
     
     <item>
       <title>cosper v1.6.2</title>
-      <link>https://goozenlab.com/blog/2014/11/cosper-162/</link>
+      <link>https://goozenlab.github.io/blog/2014/11/cosper-162/</link>
       <pubDate>Sat, 22 Nov 2014 08:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/cosper-162/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/11/cosper-162/</guid>
       <description>cosper をアップデートしました。新しいOSでおきる不具合を修正しました。ついでにタップ時のアニメーションもiOS8での新機能を追加。と、機能の変化</description>
     </item>
     
     <item>
       <title>doop v1.6.2</title>
-      <link>https://goozenlab.com/blog/2014/11/doop-162/</link>
+      <link>https://goozenlab.github.io/blog/2014/11/doop-162/</link>
       <pubDate>Thu, 20 Nov 2014 17:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/doop-162/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/11/doop-162/</guid>
       <description>iOS8にてアイテム削除時に落ちるバグと履歴のグラフがあるケースで表示されない・落ちるバグを修正しました。同時に少しだけiOS8の機能を追加</description>
     </item>
     
     <item>
       <title>dandori v2.6.2</title>
-      <link>https://goozenlab.com/blog/2014/11/dandori-262/</link>
+      <link>https://goozenlab.github.io/blog/2014/11/dandori-262/</link>
       <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/dandori-262/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/11/dandori-262/</guid>
       <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思</description>
     </item>
     
     <item>
       <title>ohayo v2.8.0</title>
-      <link>https://goozenlab.com/blog/2014/11/ohayo-280/</link>
+      <link>https://goozenlab.github.io/blog/2014/11/ohayo-280/</link>
       <pubDate>Wed, 05 Nov 2014 05:04:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/ohayo-280/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/11/ohayo-280/</guid>
       <description>ヘルスケアへの書き出し機能を追加しました。対応はiOS8からになります。バージョンも飛んで2.8.0です。 ※最初のデータ書き込み時に認証の確</description>
     </item>
     
     <item>
       <title>littlist v2.6.0</title>
-      <link>https://goozenlab.com/blog/2014/10/littlist-260/</link>
+      <link>https://goozenlab.github.io/blog/2014/10/littlist-260/</link>
       <pubDate>Thu, 30 Oct 2014 20:04:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/10/littlist-260/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/10/littlist-260/</guid>
       <description>タップで勝手に赤いドットが入ってしまったり、タスクが上に動いてしまったり、ちょっとイラっとするバグをやっつけました。（いまだたまに落ちますが</description>
     </item>
     
     <item>
       <title>dandori v2.6.1</title>
-      <link>https://goozenlab.com/blog/2014/10/dandori-261/</link>
+      <link>https://goozenlab.github.io/blog/2014/10/dandori-261/</link>
       <pubDate>Mon, 27 Oct 2014 17:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/10/dandori-261/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/10/dandori-261/</guid>
       <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっと</description>
     </item>
     
     <item>
       <title>x.6.0にアップデート中</title>
-      <link>https://goozenlab.com/blog/2014/10/update-x60/</link>
+      <link>https://goozenlab.github.io/blog/2014/10/update-x60/</link>
       <pubDate>Fri, 10 Oct 2014 13:08:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/10/update-x60/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/10/update-x60/</guid>
       <description>一年ぶりのプチアップデート。少し安定したかもしれませんが、これといった追加機能はありません。（iOS8も出ているのに。。）6系に移りますので</description>
     </item>
     
     <item>
       <title>Sati v1.5.7</title>
-      <link>https://goozenlab.com/blog/2014/09/sati-v1.5.7/</link>
+      <link>https://goozenlab.github.io/blog/2014/09/sati-v1.5.7/</link>
       <pubDate>Sat, 20 Sep 2014 13:08:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/09/sati-v1.5.7/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/09/sati-v1.5.7/</guid>
       <description>一年近くコンピューターを持たずにふらふらしてました。 久しぶりに以下の調整および修正を行いました。 メイン 瞑想のはじめと終わりに流れる長い鐘の音</description>
     </item>
     
     <item>
       <title>Sati v1.5.5</title>
-      <link>https://goozenlab.com/blog/2013/08/sati-155/</link>
+      <link>https://goozenlab.github.io/blog/2013/08/sati-155/</link>
       <pubDate>Thu, 08 Aug 2013 13:08:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/08/sati-155/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/08/sati-155/</guid>
       <description>30分以内のキャンセルが効かないバグがある事に気がつきました。 （キャンセルしますか -&amp;gt; はい -&amp;gt; 変化無し。。。） 瞑想時間が切れるまでほっておく ３０</description>
     </item>
     
     <item>
       <title>sati v1.5.4</title>
-      <link>https://goozenlab.com/blog/2013/08/sati-154/</link>
+      <link>https://goozenlab.github.io/blog/2013/08/sati-154/</link>
       <pubDate>Tue, 06 Aug 2013 18:29:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/08/sati-154/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/08/sati-154/</guid>
       <description>見た目が質素だった設定ページを更新しました。 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。 そして、割と厳しかった</description>
     </item>
     
     <item>
       <title>listaria v1.5.4</title>
-      <link>https://goozenlab.com/blog/2013/07/listaria-154/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/listaria-154/</link>
       <pubDate>Tue, 30 Jul 2013 16:33:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/listaria-154/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/listaria-154/</guid>
       <description>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。） パパイヤリリースです。 使い方 メモ欄下の数字の入った</description>
     </item>
     
     <item>
       <title>viriya v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/viriya-150/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/viriya-150/</link>
       <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/viriya-150/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/viriya-150/</guid>
       <description>ほとんどダウンロードされないソフトに手を入れるのは気が重く手つかず状態でしたが、 拙作の他のソフトに合わしてマイナーアップデートしました。 編集</description>
     </item>
     
     <item>
       <title>doop v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/doop-150/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/doop-150/</link>
       <pubDate>Mon, 29 Jul 2013 10:41:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/doop-150/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/doop-150/</guid>
       <description>機能的な追加はほとんどなく、デザインのリニューアルアップデートです。 アイコンを変更。髪の毛とひげを濃くしました。おでこにカラータイマーを付け</description>
     </item>
     
     <item>
       <title>dandori v2.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/dandori-250/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/dandori-250/</link>
       <pubDate>Sat, 27 Jul 2013 17:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/dandori-250/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/dandori-250/</guid>
       <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳では</description>
     </item>
     
     <item>
       <title>tapas v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/tapas-150/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/tapas-150/</link>
       <pubDate>Wed, 24 Jul 2013 14:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/tapas-150/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/tapas-150/</guid>
       <description>最近、旅先のため料理をする機会が激減しているのでちょっと更新が滞ってました。 大幅なアップデートではありませんが、少し手をいれました。 ちょっと</description>
     </item>
     
     <item>
       <title>littlis v2.5.6</title>
-      <link>https://goozenlab.com/blog/2013/07/littlist/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/littlist/</link>
       <pubDate>Sat, 20 Jul 2013 08:07:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/littlist/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/littlist/</guid>
       <description>編集画面の作り直しアップデートです。使い方は変わりありませんが、ボタンやデザインが変わります。 タイトルのフォントを大きくしメモの表示を拡大、</description>
     </item>
     
     <item>
       <title>ohayo v2.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/ohayo-250/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/ohayo-250/</link>
       <pubDate>Thu, 18 Jul 2013 14:13:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/ohayo-250/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/ohayo-250/</guid>
       <description>ずいぶん長い事放置していたのを、iOSがメジャーアップグレードを迎えるのにあたり、久しぶりにアップデートしました。 アイコンをさっぱりかつアッ</description>
     </item>
     
     <item>
       <title>cosper v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/cosper-150/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/cosper-150/</link>
       <pubDate>Wed, 17 Jul 2013 08:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/cosper-150/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/cosper-150/</guid>
       <description>入力画面のリニューがメインのアップデートです。 アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更 フォントを太字、ノーマル、細字</description>
     </item>
     
     <item>
       <title>sati v1.5.3</title>
-      <link>https://goozenlab.com/blog/2013/07/sati-153/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/sati-153/</link>
       <pubDate>Sat, 13 Jul 2013 00:59:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/sati-153/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/sati-153/</guid>
       <description>これといった新機能は追加してません。変更点は以下、 アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更 背景イメージを選択できるよ</description>
     </item>
     
     <item>
       <title>カラーロック</title>
-      <link>https://goozenlab.com/blog/2013/07/color-lock/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/color-lock/</link>
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/color-lock/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/color-lock/</guid>
       <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
     
     <item>
       <title>ippuku v1.5.0</title>
-      <link>https://goozenlab.com/blog/2013/07/ippuku-150/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/ippuku-150/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/ippuku-150/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/ippuku-150/</guid>
       <description>iOS7が発表され、それにそったデザインに少し変更した物をアップします。 機能の追加はありませんが、ちょっとした所に手を入れました。 日付けを挟</description>
     </item>
     
     <item>
       <title>Listaria v1.5.3</title>
-      <link>https://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/listaria-153/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/listaria-153/</guid>
       <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更</description>
     </item>
     
     <item>
       <title>doop v1.4.4</title>
-      <link>https://goozenlab.com/blog/2013/06/doop-144/</link>
+      <link>https://goozenlab.github.io/blog/2013/06/doop-144/</link>
       <pubDate>Thu, 27 Jun 2013 18:47:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/06/doop-144/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/06/doop-144/</guid>
       <description>ナビゲーションバーの長押しでソートを切り替える機能を追加しました。 今まで通りのソート（メインでは平均時間順、他のページでは色毎）と平均時間を</description>
     </item>
     
     <item>
       <title>doop v1.4.3</title>
-      <link>https://goozenlab.com/blog/2013/05/doop-143/</link>
+      <link>https://goozenlab.github.io/blog/2013/05/doop-143/</link>
       <pubDate>Wed, 29 May 2013 09:32:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/doop-143/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/05/doop-143/</guid>
       <description>久しくアップデートしていないdoopに少し手を入れました。 カラーモードの追加と右のバーを単色とグラフ表示の切り替え可能にしました。 少しだけ見</description>
     </item>
     
     <item>
       <title>DatePickerでの表示バグの修正</title>
-      <link>https://goozenlab.com/blog/2013/05/bug-datepicker/</link>
+      <link>https://goozenlab.github.io/blog/2013/05/bug-datepicker/</link>
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/bug-datepicker/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/05/bug-datepicker/</guid>
       <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
     </item>
     
     <item>
       <title>Icon Renew and minor update</title>
-      <link>https://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <link>https://goozenlab.github.io/blog/2013/05/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/05/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名</description>
     </item>
     
     <item>
       <title>Update AdMob 6.4.1 for lite version</title>
-      <link>https://goozenlab.com/blog/2013/05/admob-update/</link>
+      <link>https://goozenlab.github.io/blog/2013/05/admob-update/</link>
       <pubDate>Thu, 23 May 2013 16:13:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/admob-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/05/admob-update/</guid>
       <description>ちょっとしたアップデートともに、アドモブのアップデートです。6.2.1からのアップデートですが以前のファイルを入れ替るだけで問題なく動いてい</description>
     </item>
     
     <item>
       <title>Kawaii ColorMode x.4.2</title>
-      <link>https://goozenlab.com/blog/2013/04/colormode/</link>
+      <link>https://goozenlab.github.io/blog/2013/04/colormode/</link>
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/04/colormode/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/04/colormode/</guid>
       <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変</description>
     </item>
     
     <item>
       <title>littlist v2.5.4</title>
-      <link>https://goozenlab.com/blog/2013/04/littlist-254/</link>
+      <link>https://goozenlab.github.io/blog/2013/04/littlist-254/</link>
       <pubDate>Thu, 25 Apr 2013 20:04:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/04/littlist-254/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/04/littlist-254/</guid>
       <description>アイテムを削除時にたまに落ちる、ちょっとイラっとするバグをやっつけました。自分で使っている時はあまり落ちないし、そんなに気にならなかったので</description>
     </item>
     
     <item>
       <title>littlist v2.5.3</title>
-      <link>https://goozenlab.com/blog/2013/03/littlist-253/</link>
+      <link>https://goozenlab.github.io/blog/2013/03/littlist-253/</link>
       <pubDate>Sun, 03 Mar 2013 11:03:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/03/littlist-253/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/03/littlist-253/</guid>
       <description>littlistにカワイイカラーモードを付けました。色の具合とかかなり悩みました。女性は男性より色の識別能力が優れているとの事なので、色の近</description>
     </item>
     
     <item>
       <title>ippuku v1.4.3</title>
-      <link>https://goozenlab.com/blog/2013/02/ippuku143/</link>
+      <link>https://goozenlab.github.io/blog/2013/02/ippuku143/</link>
       <pubDate>Fri, 22 Feb 2013 15:35:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/02/ippuku143/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/02/ippuku143/</guid>
       <description>ippukuを久しぶりにアップデート。アプストアに申請中です。 29時間の流れを一気に見れるのが売りでしたが、少ない時間のログをとるには少しグ</description>
     </item>
     
     <item>
       <title>littlist v2.5.2</title>
-      <link>https://goozenlab.com/blog/2013/02/littlist-252/</link>
+      <link>https://goozenlab.github.io/blog/2013/02/littlist-252/</link>
       <pubDate>Wed, 06 Feb 2013 20:35:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/02/littlist-252/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/02/littlist-252/</guid>
       <description>カラースキームを変更できるようにしました。ダークモードを追加、背景を黒くしグレーの階調も逆順にしました。黒iPhoneで使ったら結構格好いい</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.1 for lite version</title>
-      <link>https://goozenlab.com/blog/2013/01/admob-update/</link>
+      <link>https://goozenlab.github.io/blog/2013/01/admob-update/</link>
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/01/admob-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/01/admob-update/</guid>
       <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
     
     <item>
       <title>Sati v1.5.1</title>
-      <link>https://goozenlab.com/blog/2012/12/sati-151/</link>
+      <link>https://goozenlab.github.io/blog/2012/12/sati-151/</link>
       <pubDate>Fri, 21 Dec 2012 12:47:00 +0600</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/12/sati-151/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/12/sati-151/</guid>
       <description>サティ（旧名：サティマ）のプチアップデート。 ちょっとパーリー語を勘違いしてたかもしれないのでアプリの名前を変更（サティマからサティに） メイン</description>
     </item>
     
     <item>
       <title>littlist v2.5.1</title>
-      <link>https://goozenlab.com/blog/2012/10/littlist-251/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/littlist-251/</link>
       <pubDate>Sat, 20 Oct 2012 12:47:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/littlist-251/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/littlist-251/</guid>
       <description>インターフェイスをまた弄りました。（ご迷惑おかけします）変更点は、 右ロングタップ：項目をリストの一番上に移動。 今までは、右のバーを一番黒くす</description>
     </item>
     
     <item>
       <title>Listaria v1.5.1</title>
-      <link>https://goozenlab.com/blog/2012/10/listaria-151/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/listaria-151/</link>
       <pubDate>Sat, 20 Oct 2012 07:59:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/listaria-151/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/listaria-151/</guid>
       <description>リスタリア、マイナーバクフィクスのアップデートを申請しました。 ロングタップ時の挙動が不安定なのを改善。（未だたまーーに落ちます） リスト表示時</description>
     </item>
     
     <item>
       <title>Update AdMob 6.2.0 for lite version</title>
-      <link>https://goozenlab.com/blog/2012/10/admob-update/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/admob-update/</link>
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/admob-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/admob-update/</guid>
       <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
     
     <item>
       <title>Viriya Release</title>
-      <link>https://goozenlab.com/blog/2012/10/viriya-release/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/viriya-release/</link>
       <pubDate>Mon, 01 Oct 2012 13:43:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/viriya-release/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/viriya-release/</guid>
       <description>パーリ語シリーズ第二弾のビリヤ（努力/精進という意味）をアップしました。今週中にはストアーにアップされると思います。（第一弾はサティマという</description>
     </item>
     
     <item>
       <title>4系と5系</title>
-      <link>https://goozenlab.com/blog/2012/09/version4-5/</link>
+      <link>https://goozenlab.github.io/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
     
     <item>
       <title>Update for Retina4</title>
-      <link>https://goozenlab.com/blog/2012/09/update-retina/</link>
+      <link>https://goozenlab.github.io/blog/2012/09/update-retina/</link>
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/09/update-retina/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/09/update-retina/</guid>
       <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
     </item>
     
     <item>
       <title>Update for Navbar</title>
-      <link>https://goozenlab.com/blog/2012/07/navbar-update/</link>
+      <link>https://goozenlab.github.io/blog/2012/07/navbar-update/</link>
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/07/navbar-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/07/navbar-update/</guid>
       <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
     </item>
     
     <item>
       <title>Littlist v2.0.2</title>
-      <link>https://goozenlab.com/blog/2012/07/littlist-202/</link>
+      <link>https://goozenlab.github.io/blog/2012/07/littlist-202/</link>
       <pubDate>Sun, 01 Jul 2012 05:16:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/07/littlist-202/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/07/littlist-202/</guid>
       <description>項目にちょっとしたメモを追加することを可能にしました。 ただ、このソフトの売りの一部「大きな文字で」というを削りたくない。使い勝手も複雑にした</description>
     </item>
     
     <item>
       <title>Tapas v1.0.4</title>
-      <link>https://goozenlab.com/blog/2012/06/tapas-104/</link>
+      <link>https://goozenlab.github.io/blog/2012/06/tapas-104/</link>
       <pubDate>Sun, 10 Jun 2012 11:16:00 +0600</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/06/tapas-104/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/06/tapas-104/</guid>
       <description>Tapasのマイナーアップデートです。 老眼が進んでいるわけではありませんが、文字サイズを少し大きくしました。 セルの幅も広げて少しゆったり目に</description>
     </item>
     
     <item>
       <title>XCode4.2と怒濤のアップデート</title>
-      <link>https://goozenlab.com/blog/2012/02/xcode42-update/</link>
+      <link>https://goozenlab.github.io/blog/2012/02/xcode42-update/</link>
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/02/xcode42-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/02/xcode42-update/</guid>
       <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
     </item>
     
     <item>
       <title>ippuku v1.0.6</title>
-      <link>https://goozenlab.com/blog/2012/01/ippuku-106/</link>
+      <link>https://goozenlab.github.io/blog/2012/01/ippuku-106/</link>
       <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/01/ippuku-106/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/01/ippuku-106/</guid>
       <description>iTuneConnectで問題があったんよね。。最近ようやく解決。久しぶりにアップデートを上げてます。 今までのが少々幼稚すぎたボタンのデザイ</description>
     </item>
     

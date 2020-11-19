@@ -2,149 +2,145 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macos on goozenlab</title>
-    <link>https://goozenlab.com/tags/macos/</link>
+    <link>https://goozenlab.github.io/tags/macos/</link>
     <description>Recent content in macos on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ミラーディスクを追加・削除方法</title>
-      <link>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
       <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</guid>
       <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
     </item>
     
     <item>
       <title>Standard Notes</title>
-      <link>https://goozenlab.com/blog/2020/02/standardnotes/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/standardnotes/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/standardnotes/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/standardnotes/</guid>
       <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
     
     <item>
       <title>Live Linux on Macbook Air </title>
-      <link>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</link>
       <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/live-linux-macbook-air/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</guid>
       <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook</description>
     </item>
     
     <item>
       <title>Syncthingのリソース消費状況</title>
-      <link>https://goozenlab.com/blog/2019/09/more-on-syncthing/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</link>
       <pubDate>Sat, 07 Sep 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/more-on-syncthing/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</guid>
       <description>安宿にて、宿の猫が部屋に入り込み、ベッドを占領される。 扇風機の風が心地よいのかぐっすりと寝ている。 おかげで外には出れず、、部屋でちまちまと文</description>
     </item>
     
     <item>
       <title>Projects ページ</title>
-      <link>https://goozenlab.com/blog/2019/09/projects/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/projects/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/projects/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/projects/</guid>
       <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
     
     <item>
       <title>OpenZFSをMBAにて１ヶ月使ってみて</title>
-      <link>https://goozenlab.com/blog/2019/08/openzfs-after/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/openzfs-after/</link>
       <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/openzfs-after/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/openzfs-after/</guid>
       <description>8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
     </item>
     
     <item>
       <title>OpenZFS ミラーリング</title>
-      <link>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</link>
       <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/openzfs-mirroring-small/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</guid>
       <description>ZFS を検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（</description>
     </item>
     
     <item>
       <title>OpenZFS on Mac</title>
-      <link>https://goozenlab.com/blog/2019/07/openzfs-initial-setup/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</link>
       <pubDate>Sun, 28 Jul 2019 09:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/openzfs-initial-setup/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</guid>
       <description>これから端末をトリプル・ブート化するにあたって、 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは あまり多く</description>
     </item>
     
     <item>
       <title>ブログ用画像を一括リサイズ・リネーム</title>
-      <link>https://goozenlab.com/blog/2018/04/rename-automator/</link>
+      <link>https://goozenlab.github.io/blog/2018/04/rename-automator/</link>
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/rename-automator/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/04/rename-automator/</guid>
       <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
     
     <item>
       <title>クリーンインストール</title>
-      <link>https://goozenlab.com/blog/2016/08/clean-install/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/clean-install/</link>
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/clean-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/clean-install/</guid>
       <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
     </item>
     
     <item>
       <title>ヒラギノ角ゴシック</title>
-      <link>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</link>
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/hiragino-sans-w0/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</guid>
       <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
     </item>
     
     <item>
       <title>句読点で変換</title>
-      <link>https://goozenlab.com/blog/2016/08/convert-punctuation/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</link>
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/convert-punctuation/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</guid>
       <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
     
     <item>
       <title>推測候補表示</title>
-      <link>https://goozenlab.com/blog/2016/08/predictice-candidates/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</link>
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/predictice-candidates/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</guid>
       <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
     
     <item>
       <title>エル・キャピタンを入れる</title>
-      <link>https://goozenlab.com/blog/2015/06/elcapitan-beta/</link>
+      <link>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</link>
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/06/elcapitan-beta/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</guid>
       <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
     </item>
     
     <item>
       <title>画面のグレー/カラーのスイッチ</title>
-      <link>https://goozenlab.com/blog/2013/02/grayscale-switch/</link>
+      <link>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</link>
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/02/grayscale-switch/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</guid>
       <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
     

@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on goozenlab</title>
-    <link>https://goozenlab.com/categories/development/</link>
+    <link>https://goozenlab.github.io/categories/development/</link>
     <description>Recent content in development on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Sep 2018 17:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 20 Sep 2018 17:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新しい端末の解像度</title>
-      <link>https://goozenlab.com/blog/2018/09/resolution-iphone-2018/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/resolution-iphone-2018/</link>
       <pubDate>Thu, 20 Sep 2018 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/resolution-iphone-2018/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/resolution-iphone-2018/</guid>
       <description>さて、新しい端末が出ましたね。開発者大忙し？？ 拙作のアプリでは、端末の横幅でそれに合わせた背景画像を使っていたり、セルの高さを表示画面のサイ</description>
     </item>
     

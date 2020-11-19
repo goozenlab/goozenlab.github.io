@@ -2,32 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>optout on goozenlab</title>
-    <link>https://goozenlab.com/tags/optout/</link>
+    <link>https://goozenlab.github.io/tags/optout/</link>
     <description>Recent content in optout on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Dec 2019 08:00:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/optout/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Dec 2019 08:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/optout/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>脱アマゾン</title>
-      <link>https://goozenlab.com/blog/2019/12/optout-amazon/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/optout-amazon/</link>
       <pubDate>Wed, 25 Dec 2019 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/optout-amazon/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/optout-amazon/</guid>
       <description>アマゾンの今年秋にあった情報漏洩。事の重大さの割には対応があまりにもいい加減。 しかもマスコミも忖度しているのか、控え目な報道であっという間に</description>
     </item>
     
     <item>
       <title>Max3でmicro-G</title>
-      <link>https://goozenlab.com/blog/2019/07/max3-microg/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/max3-microg/</link>
       <pubDate>Wed, 03 Jul 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/max3-microg/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/max3-microg/</guid>
       <description>７月ですね、2019年後半戦スタートです。 さて、現在使っている、Xiaomi Mi Max3、ここ数年は毎年７月にアップグレードされていましたが、</description>
     </item>
     

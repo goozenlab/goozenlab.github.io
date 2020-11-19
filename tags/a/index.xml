@@ -2,41 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>(a) on goozenlab</title>
-    <link>https://goozenlab.com/tags/a/</link>
+    <link>https://goozenlab.github.io/tags/a/</link>
     <description>Recent content in (a) on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/a/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Nov 2016 14:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/a/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(a)を公開</title>
-      <link>https://goozenlab.com/blog/2016/11/open-a/</link>
+      <link>https://goozenlab.github.io/blog/2016/11/open-a/</link>
       <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/11/open-a/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/11/open-a/</guid>
       <description>手を入れたいところは多々あるのですが、(a)をギットハブに公開しました。 ビルドをするには、CocoaPodのインストールと、ドロップボックス</description>
     </item>
     
     <item>
       <title>(a) v0.9.0</title>
-      <link>https://goozenlab.com/blog/2016/10/a-090/</link>
+      <link>https://goozenlab.github.io/blog/2016/10/a-090/</link>
       <pubDate>Mon, 31 Oct 2016 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/10/a-090/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/10/a-090/</guid>
       <description>アクセスはかなりあるのだけれど、有料だと全くダウンロードされない「かっこえー」タスク管理アプリの (a) 。（僕の中では３％ルールみたいのがあったの</description>
     </item>
     
     <item>
       <title>(a)をようやくリリース</title>
-      <link>https://goozenlab.com/blog/2015/02/release-a/</link>
+      <link>https://goozenlab.github.io/blog/2015/02/release-a/</link>
       <pubDate>Mon, 16 Feb 2015 15:18:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/02/release-a/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/02/release-a/</guid>
       <description>littlistの強化版。タスクの量が多く入替えが激しい、働き者の皆様。テキスト形式でタスクの管理をしたいシンプルで素朴な方、ちょっとデザイ</description>
     </item>
     

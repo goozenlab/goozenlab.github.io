@@ -2,68 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xcode on goozenlab</title>
-    <link>https://goozenlab.com/tags/xcode/</link>
+    <link>https://goozenlab.github.io/tags/xcode/</link>
     <description>Recent content in xcode on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xcode11でビルドエラー</title>
-      <link>https://goozenlab.com/blog/2019/12/error-xcode/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/error-xcode/</link>
       <pubDate>Wed, 18 Dec 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/error-xcode/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/error-xcode/</guid>
       <description>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。 今回は Command CodeSign failed with a nonzero exit code のエラーでビルドがで</description>
     </item>
     
     <item>
       <title>アプリのアップロード</title>
-      <link>https://goozenlab.com/blog/2018/09/problem-uploading/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/problem-uploading/</link>
       <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/problem-uploading/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/problem-uploading/</guid>
       <description>毎回というか、Xcodeをアップグレードすると問題なっているような気がする。 プロファイルを作り直したり、書き出しのオプションを変えたりとか、</description>
     </item>
     
     <item>
       <title>XCode8</title>
-      <link>https://goozenlab.com/blog/2016/09/xcode8/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/xcode8/</link>
       <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/xcode8/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/xcode8/</guid>
       <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもり</description>
     </item>
     
     <item>
       <title>XCodeにてアプリデーターの管理</title>
-      <link>https://goozenlab.com/blog/2016/09/device-container/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/device-container/</link>
       <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/device-container/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/device-container/</guid>
       <description>端末のアプリデータをバックアップ、復元。 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる</description>
     </item>
     
     <item>
       <title>XCode7とElCapitan</title>
-      <link>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
+      <link>https://goozenlab.github.io/blog/2015/09/xcode7-elcapitan/</link>
       <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/09/xcode7-elcapitan/</guid>
       <description>アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。 まず、取り急ぎ実機での検証は先回しにして、シミュレータでの</description>
     </item>
     
     <item>
       <title>Xcode 6.1とiOS8.2</title>
-      <link>https://goozenlab.com/blog/2015/03/xcode611-ios82/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</link>
       <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/xcode611-ios82/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</guid>
       <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
     </item>
     

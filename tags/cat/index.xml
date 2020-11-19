@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cat on goozenlab</title>
-    <link>https://goozenlab.com/tags/cat/</link>
+    <link>https://goozenlab.github.io/tags/cat/</link>
     <description>Recent content in cat on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 29 Apr 2019 06:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/cat/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 29 Apr 2019 06:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/cat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>猫動画をユーチューブに上げる</title>
-      <link>https://goozenlab.com/blog/2019/04/first-youtube/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/first-youtube/</link>
       <pubDate>Mon, 29 Apr 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/first-youtube/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/first-youtube/</guid>
       <description>まず、決して、ユーチューバーになろうとは思っていませんので、あしからず。 メールに添付しようとしたら、重くて送れないとエラーが出たので、 ユーチ</description>
     </item>
     

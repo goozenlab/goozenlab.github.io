@@ -2,689 +2,685 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mumble on goozenlab</title>
-    <link>https://goozenlab.com/categories/mumble/</link>
+    <link>https://goozenlab.github.io/categories/mumble/</link>
     <description>Recent content in mumble on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Jul 2020 10:17:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 07 Jul 2020 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/mumble/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigSurを試す</title>
-      <link>https://goozenlab.com/blog/2020/07/big-sur/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/big-sur/</link>
       <pubDate>Tue, 07 Jul 2020 10:17:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/big-sur/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/big-sur/</guid>
       <description>MacOS.Xのメジャーアップデート、OS11ことBigSurを落としてMacbook Air i7にて使って見ました。 ベーター版なので先々色々と変</description>
     </item>
     
     <item>
       <title>デジタル・カッフス</title>
-      <link>https://goozenlab.com/blog/2020/07/digital-cuffs/</link>
+      <link>https://goozenlab.github.io/blog/2020/07/digital-cuffs/</link>
       <pubDate>Mon, 06 Jul 2020 10:17:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/07/digital-cuffs/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/07/digital-cuffs/</guid>
       <description>ひっじょーーーに重宝していた、 Newtonから始まり、PalmPDA、iOSと唯一、20年近くずー〜〜ーっと使い続けていたアプリ Pocket</description>
     </item>
     
     <item>
       <title>アップルシリコン</title>
-      <link>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</link>
+      <link>https://goozenlab.github.io/blog/2020/06/wwdc-apple-silicon/</link>
       <pubDate>Sat, 27 Jun 2020 10:17:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/06/wwdc-apple-silicon/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/06/wwdc-apple-silicon/</guid>
       <description>WWDC2020、破壊王のアップル、久しぶりにきたー。 アップルシリコンへのアーキテクチャ移行、完全なるアップル製品になる。 iOSはすでにAr</description>
     </item>
     
     <item>
       <title>iPhone 5SからSEへ</title>
-      <link>https://goozenlab.com/blog/2020/04/iphonese/</link>
+      <link>https://goozenlab.github.io/blog/2020/04/iphonese/</link>
       <pubDate>Thu, 30 Apr 2020 09:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/04/iphonese/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/04/iphonese/</guid>
       <description>2016年9月から使っていたiPhone 5SをSEにアップグレードしました。 とはいっても最初のSE。最近発売されたSE２は残念ながらiPho</description>
     </item>
     
     <item>
       <title>ファームウェアをアップデート</title>
-      <link>https://goozenlab.com/blog/2020/01/firmware-linux-nonfree/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</link>
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/firmware-linux-nonfree/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
       <description>Thinkapd T480sでのDebain起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
     
     <item>
       <title>USBStick Linux</title>
-      <link>https://goozenlab.com/blog/2020/01/stick-linux/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/stick-linux/</link>
       <pubDate>Fri, 03 Jan 2020 03:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/stick-linux/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/stick-linux/</guid>
       <description>64GBのメモリーステイックで緊急用のLinuxマシーンを作ります。 馴染み深いデビアンにしようかと思ったけど、同じものを使うのはちょっとなと</description>
     </item>
     
     <item>
       <title>2020年の年明け</title>
-      <link>https://goozenlab.com/blog/2020/01/new-year/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/new-year/</link>
       <pubDate>Wed, 01 Jan 2020 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/new-year/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/new-year/</guid>
       <description>あけましておめでとうございます。 いやぁー、おいらも楽器箱にでも入れてもらってどっか景色・景気の良い所に連れて行ってもらえんかしら。。ほんま。</description>
     </item>
     
     <item>
       <title>Linuxをアップデート</title>
-      <link>https://goozenlab.com/blog/2019/12/linux-update/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/linux-update/</link>
       <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/linux-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/linux-update/</guid>
       <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
     </item>
     
     <item>
       <title>タイのオレンジジュース</title>
-      <link>https://goozenlab.com/blog/2019/12/thai-orange/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/thai-orange/</link>
       <pubDate>Mon, 30 Dec 2019 18:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/thai-orange/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/thai-orange/</guid>
       <description>元日までやろうと思っていた断食を昨日途中離脱しました。 断食リカバリーに薄めたオレンジジュースを飲んでます。 今の所オレンジジュースだけでお腹い</description>
     </item>
     
     <item>
       <title>Clover easter egg</title>
-      <link>https://goozenlab.com/blog/2019/12/clover-extra/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/clover-extra/</link>
       <pubDate>Sun, 29 Dec 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/clover-extra/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/clover-extra/</guid>
       <description>久しぶりに端末を再起動をしたところ、クローバーことブートローダーが真っ赤に！ メガネを外したままの状態だったのでチラチラを流れる雪のようなもの</description>
     </item>
     
     <item>
       <title>脱アマゾン</title>
-      <link>https://goozenlab.com/blog/2019/12/optout-amazon/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/optout-amazon/</link>
       <pubDate>Wed, 25 Dec 2019 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/optout-amazon/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/optout-amazon/</guid>
       <description>アマゾンの今年秋にあった情報漏洩。事の重大さの割には対応があまりにもいい加減。 しかもマスコミも忖度しているのか、控え目な報道であっという間に</description>
     </item>
     
     <item>
       <title>Windowsをアップデート</title>
-      <link>https://goozenlab.com/blog/2019/12/windows-update/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/windows-update/</link>
       <pubDate>Mon, 23 Dec 2019 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/windows-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/windows-update/</guid>
       <description>以前、長い間放置していた端末を再起動したら、勝手にアップデートが行われ再起動。 そして、エラーが発生。起動しなくなる（結局東京メダルプロジェク</description>
     </item>
     
     <item>
       <title>Thinkvision M14をタイで通販</title>
-      <link>https://goozenlab.com/blog/2019/12/thinkvision-m14/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/thinkvision-m14/</link>
       <pubDate>Sun, 22 Dec 2019 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/thinkvision-m14/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/thinkvision-m14/</guid>
       <description>サブディスプレイのThinkvison M14が気になっていて、 アメリカでは$249で売っているので、日本では少し割高なような感じがしてて、 セ</description>
     </item>
     
     <item>
       <title>SIMフリー端末について</title>
-      <link>https://goozenlab.com/blog/2019/12/abot-sim-free/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/abot-sim-free/</link>
       <pubDate>Sat, 21 Dec 2019 16:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/abot-sim-free/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/abot-sim-free/</guid>
       <description>シャオミが日本に上陸し、SIMフリー端末も賑やかになってきました。 中国製品の質もどんどんよくなりました。 端末のチョイスが増えることは非常に良</description>
     </item>
     
     <item>
       <title>manjaro、国境を越えて調子を崩す</title>
-      <link>https://goozenlab.com/blog/2019/12/conflict-manjaro/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/conflict-manjaro/</link>
       <pubDate>Mon, 16 Dec 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/conflict-manjaro/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/conflict-manjaro/</guid>
       <description>manjaroで少々ほころびが出だす。 久しぶりにアップデートをするとコンフリクトが起こる。 しかもファイルが見つからんなど色々と不具合が広まり</description>
     </item>
     
     <item>
       <title>シャオミ日本上陸</title>
-      <link>https://goozenlab.com/blog/2019/12/ecommend-xiaomi/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/ecommend-xiaomi/</link>
       <pubDate>Thu, 12 Dec 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/ecommend-xiaomi/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/ecommend-xiaomi/</guid>
       <description>とうとうXiaomiが日本に進出したらしいですね。 Mujiに似た（真似た）デザインを使ったハイテク企業という感じでしょうか。 日本で販売される</description>
     </item>
     
     <item>
       <title>豚コレラ</title>
-      <link>https://goozenlab.com/blog/2019/10/cholera/</link>
+      <link>https://goozenlab.github.io/blog/2019/10/cholera/</link>
       <pubDate>Thu, 10 Oct 2019 18:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/10/cholera/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/10/cholera/</guid>
       <description>豚コレラ、 ぶたコレラと呼ばれていると思ったら、 トン・コレラ なんですねぇ。 なぜか、非常に違和感があります。 牛コレラの場合はギューコレラ、鳥コレ</description>
     </item>
     
     <item>
       <title>T480sでハッキントッシュ</title>
-      <link>https://goozenlab.com/blog/2019/10/hackintosh-t480s/</link>
+      <link>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/</link>
       <pubDate>Sat, 05 Oct 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/10/hackintosh-t480s/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/</guid>
       <description>日本に戻ってきて、ちまちまThinkpad T480sを魔改造中。 取り敢えず、Hackintosh、Windows、Debian、Manjar</description>
     </item>
     
     <item>
       <title>B&amp;O P2 BT スピーカー</title>
-      <link>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</link>
+      <link>https://goozenlab.github.io/blog/2019/10/bo-p2-speaker/</link>
       <pubDate>Fri, 04 Oct 2019 14:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/10/bo-p2-speaker/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/10/bo-p2-speaker/</guid>
       <description>消費税導入前に煽られて購入したグッズの一つ、BTスピーカ。 以前も小さいBTスピーカーを一台持っていたのですが、 大きさ故の限界と言うか、携帯性</description>
     </item>
     
     <item>
       <title>知られざるショートカット</title>
-      <link>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/mac-hidden-shortcut/</link>
       <pubDate>Fri, 13 Sep 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/mac-hidden-shortcut/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/mac-hidden-shortcut/</guid>
       <description>あまり知られていない、知る人ぞ知るショートカットだと思いますが、 割と使い勝手が良いので紹介。 テキストファイルなどで編集して閉じるときなどにで</description>
     </item>
     
     <item>
       <title>悲しい葉っぱ</title>
-      <link>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/amazon-piu-caprim/</link>
       <pubDate>Thu, 12 Sep 2019 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/amazon-piu-caprim/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/amazon-piu-caprim/</guid>
       <description>木を切り倒すことは、われわれの祖先の魂への攻撃だ。鉱物を求め地面を掘ることは、地球の心臓を突き刺しているということだ。 われわれは皆、同じ空気</description>
     </item>
     
     <item>
       <title>音楽サービス</title>
-      <link>https://goozenlab.com/blog/2019/09/last-fm/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/last-fm/</link>
       <pubDate>Sun, 08 Sep 2019 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/last-fm/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/last-fm/</guid>
       <description>聞いた音楽のリストを提供して、オススメを紹介してくれたり、自分の嗜好を分析してくれる、 https://www.last.fm というサービスがあります。 スポティファイを使うにあた</description>
     </item>
     
     <item>
       <title>Projects ページ</title>
-      <link>https://goozenlab.com/blog/2019/09/projects/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/projects/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/projects/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/projects/</guid>
       <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
     
     <item>
       <title>エクストラ・パイを購入 @ Pimoroni</title>
-      <link>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pimoroni-extra-pi/</link>
       <pubDate>Tue, 06 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pimoroni-extra-pi/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pimoroni-extra-pi/</guid>
       <description>ちょっと機材を追加、パイ3A+を購入しました。 数品であれば個人輸入する利点はない様に思えるけれど、 品によっては数千円の違いがあったりします。</description>
     </item>
     
     <item>
       <title>移動と近況</title>
-      <link>https://goozenlab.com/blog/2019/07/recent/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/recent/</link>
       <pubDate>Wed, 31 Jul 2019 10:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/recent/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/recent/</guid>
       <description>7月も終わりますね。相変わらずあっという間の１ヶ月でした。 日本では選挙もあったし、 ジャパンは大丈夫んなんだろうかと心配と不安が駆け巡ってます</description>
     </item>
     
     <item>
       <title>新しい端末をポチッとな</title>
-      <link>https://goozenlab.com/blog/2019/07/renew-main-laptop/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/renew-main-laptop/</link>
       <pubDate>Sat, 27 Jul 2019 23:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/renew-main-laptop/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/renew-main-laptop/</guid>
       <description>2011年から8年ぶりにメインマシーンMacbook Pro15, 2011を更新しまーす。 スペックを変えつつ行ったり来たり、 ちょっとウキウキ・ドキドキし</description>
     </item>
     
     <item>
       <title>イメージの最適化</title>
-      <link>https://goozenlab.com/blog/2019/07/image-optim/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/image-optim/</link>
       <pubDate>Fri, 05 Jul 2019 10:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/image-optim/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/image-optim/</guid>
       <description>皆さんはもちろん、きっちりとやられていると思います、ウェブに上げるイメージの最適化。 以前はきっちりとサイズを調整してアップしてましたが、 自分</description>
     </item>
     
     <item>
       <title>水かけ祭り：ソンクラーン</title>
-      <link>https://goozenlab.com/blog/2019/04/songkran-thailand/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/songkran-thailand/</link>
       <pubDate>Sun, 14 Apr 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/songkran-thailand/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/songkran-thailand/</guid>
       <description>タイです。巷ではソンクラーンというお祭りの最中です。タイの新年でもあったと、今年はこちらも大型連休のようで、にぎやかです。水かけ祭りと呼ばれ</description>
     </item>
     
     <item>
       <title>INBOXを使い続ける</title>
-      <link>https://goozenlab.com/blog/2019/04/inbox-gmail/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/inbox-gmail/</link>
       <pubDate>Fri, 05 Apr 2019 08:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/inbox-gmail/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/inbox-gmail/</guid>
       <description>さて、日々常用している、携帯ソフトの中で多分一番使っている頻度の高いアプリ、INBOXが利用停止になりました。GMAILへの移行を強制されま</description>
     </item>
     
     <item>
       <title>パイ・マックス3</title>
-      <link>https://goozenlab.com/blog/2019/03/max3-pie-kernel-source-code/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/max3-pie-kernel-source-code/</link>
       <pubDate>Sat, 30 Mar 2019 08:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/max3-pie-kernel-source-code/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/max3-pie-kernel-source-code/</guid>
       <description>最近パイ尽くしな私ですが、別パイの件。今回はアンドロイド・パイ。アンドロイドのカーネルはLinuxを使っていますので、ソースコードはオープン</description>
     </item>
     
     <item>
       <title>ArchLinux: RPi B3 玉砕</title>
-      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-withdrawal/</link>
       <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-withdrawal/</guid>
       <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使える</description>
     </item>
     
     <item>
       <title>さりげなく、再登場。</title>
-      <link>https://goozenlab.com/blog/2019/03/macbook-air-2018/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/macbook-air-2018/</link>
       <pubDate>Tue, 19 Mar 2019 06:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/macbook-air-2018/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/macbook-air-2018/</guid>
       <description>控えめに、いきなり来ましたね、iPad mini5。わかりますよ、気分的には、お～ぴらに、紹介されてもね、ほとんどデザインの変更も無いし。謙虚</description>
     </item>
     
     <item>
       <title>端末識別プロンプト</title>
-      <link>https://goozenlab.com/blog/2019/03/color-simple-prompt/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/color-simple-prompt/</link>
       <pubDate>Mon, 18 Mar 2019 16:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/color-simple-prompt/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/color-simple-prompt/</guid>
       <description>最近sshであっちに入ったり、こっちに入ったりしてます。 そんなんで、たまに、勘違いしていて、 「どうも、うまくいかんな、、こりゃ。。」 と思った</description>
     </item>
     
     <item>
       <title>タイにてネットショッピング・無事到着</title>
-      <link>https://goozenlab.com/blog/2019/03/shop-thailand/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/shop-thailand/</link>
       <pubDate>Wed, 13 Mar 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/shop-thailand/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/shop-thailand/</guid>
       <description>思いの外早く到着、しかもありがたいことに２品一気に届きました。 一つはRSComponentsより、ラズパイの3B。タイ国内発送で、日本でも見</description>
     </item>
     
     <item>
       <title>タイにてネットショッピング</title>
-      <link>https://goozenlab.com/blog/2019/03/ordered-thailand/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/ordered-thailand/</link>
       <pubDate>Sun, 10 Mar 2019 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/ordered-thailand/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/ordered-thailand/</guid>
       <description>タイにてふと思い立った、旅用ルータキットを作るにあたってのブツを２つオーダーしました。 明日明後日には届くかな。一つ目は、OpenWrtを使っ</description>
     </item>
     
     <item>
       <title>Skype talk</title>
-      <link>https://goozenlab.com/blog/2019/03/skype/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/skype/</link>
       <pubDate>Mon, 04 Mar 2019 13:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/skype/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/skype/</guid>
       <description>最初知ったときに、スカイペとずっと呼んでてて、恥ずかしい思いをしたのも遠い昔。、、 アカウントを作ったのも相当前だけれども、今更ながら、初めて</description>
     </item>
     
     <item>
       <title>プロジェクトをプライベートに変更</title>
-      <link>https://goozenlab.com/blog/2019/02/github-private-reopsitory/</link>
+      <link>https://goozenlab.github.io/blog/2019/02/github-private-reopsitory/</link>
       <pubDate>Sat, 16 Feb 2019 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/02/github-private-reopsitory/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/02/github-private-reopsitory/</guid>
       <description>プロジェクトをギットラボに移そうかなと思ってましたが、ギットハブでもレポジトリーのプライベート設定が無料になっていました。Microsoft</description>
     </item>
     
     <item>
       <title>2019年の年明け</title>
-      <link>https://goozenlab.com/blog/2019/01/new-year/</link>
+      <link>https://goozenlab.github.io/blog/2019/01/new-year/</link>
       <pubDate>Tue, 01 Jan 2019 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/01/new-year/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/01/new-year/</guid>
       <description>あけましておめでとうございます。 15年ぶり！の日本での年明け。。。でっかっっ〜なった姪っ子は大学受験を控えてる！！ 嬉しいというよりは、ちょっ</description>
     </item>
     
     <item>
       <title>Appleからの離脱</title>
-      <link>https://goozenlab.com/blog/2018/11/applexit/</link>
+      <link>https://goozenlab.github.io/blog/2018/11/applexit/</link>
       <pubDate>Sun, 18 Nov 2018 11:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/11/applexit/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/11/applexit/</guid>
       <description>Appleからの離脱、勝手に名付けた、ApplExit。 機材を色々と弄ったこの10・11月。ちまちまと出費したわりには更新されていないのがな</description>
     </item>
     
     <item>
       <title>MBA11のロジックボード換装</title>
-      <link>https://goozenlab.com/blog/2018/11/replace-mba-logicboard/</link>
+      <link>https://goozenlab.github.io/blog/2018/11/replace-mba-logicboard/</link>
       <pubDate>Thu, 15 Nov 2018 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/11/replace-mba-logicboard/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/11/replace-mba-logicboard/</guid>
       <description>知人のMBA11/2014が故障したらしく、我が家の使っていなかったMBP15/2010と物々交換をする。 素直に直すのも面白みが無いので、新</description>
     </item>
     
     <item>
       <title>HackPad X230</title>
-      <link>https://goozenlab.com/blog/2018/11/hackintosh-x230/</link>
+      <link>https://goozenlab.github.io/blog/2018/11/hackintosh-x230/</link>
       <pubDate>Wed, 14 Nov 2018 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/11/hackintosh-x230/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/11/hackintosh-x230/</guid>
       <description>なぜか、手元にある端末が矢継に倒れ。ロジックボードをオーブンで焼いたりもコンガリ焼き上がり死亡、直そうと思って海外通販で頼んだ品は初期不良で</description>
     </item>
     
     <item>
       <title>新しいMacBook Air</title>
-      <link>https://goozenlab.com/blog/2018/11/macbook-air-2018/</link>
+      <link>https://goozenlab.github.io/blog/2018/11/macbook-air-2018/</link>
       <pubDate>Tue, 13 Nov 2018 19:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/11/macbook-air-2018/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/11/macbook-air-2018/</guid>
       <description>日本に帰国後、ちょっと山へ断食キャンプ（遭難キャンプとも）に行ったり、マックブックを分解、基盤をオーブンで焼いたり（失敗）、ミシンでズボンを</description>
     </item>
     
     <item>
       <title>MacBook Pro15逝く</title>
-      <link>https://goozenlab.com/blog/2018/10/dead-mbp15-2011/</link>
+      <link>https://goozenlab.github.io/blog/2018/10/dead-mbp15-2011/</link>
       <pubDate>Mon, 01 Oct 2018 11:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/10/dead-mbp15-2011/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/10/dead-mbp15-2011/</guid>
       <description>あぁっ〜〜〜ーー。 アプリ更新作業の真只中、作業端末のMacbook Pro15/2011が逝ってまいましたーー。 なぜこのタイミグでくるんよ？？</description>
     </item>
     
     <item>
       <title>MacBook Pro15のキーボードを交換する</title>
-      <link>https://goozenlab.com/blog/2018/10/replace-keyboard/</link>
+      <link>https://goozenlab.github.io/blog/2018/10/replace-keyboard/</link>
       <pubDate>Mon, 01 Oct 2018 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/10/replace-keyboard/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/10/replace-keyboard/</guid>
       <description>手元に両親に奪われ、挙句放置されていたMacBook Pro15/2010があります。 キーボードの不具合があって、アップルストアーに持ち込むも</description>
     </item>
     
     <item>
       <title>Xcode10とiOS12</title>
-      <link>https://goozenlab.com/blog/2018/09/xcode10-ios12/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/xcode10-ios12/</link>
       <pubDate>Mon, 17 Sep 2018 07:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/xcode10-ios12/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/xcode10-ios12/</guid>
       <description>さて、iOS12への対応のために、Xcode10とiOS12でも早くなるとのアップルの言葉を信じて、 iPhone5Sにインストールしました。</description>
     </item>
     
     <item>
       <title>アップルの新しい商品</title>
-      <link>https://goozenlab.com/blog/2018/09/apple-event/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/apple-event/</link>
       <pubDate>Fri, 14 Sep 2018 07:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/apple-event/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/apple-event/</guid>
       <description>毎年恒例のイベントにて新しい商品が発表されました。見るつもりはなかったのだけれども、眠れず、結局ライブで見てしまいました。 さて、内容のほどは</description>
     </item>
     
     <item>
       <title>ニサルガダッタ・マハラジのアシュラム</title>
-      <link>https://goozenlab.com/blog/2018/09/nisargadatta-maharaj-ashram/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/nisargadatta-maharaj-ashram/</link>
       <pubDate>Thu, 13 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/nisargadatta-maharaj-ashram/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/nisargadatta-maharaj-ashram/</guid>
       <description>以前のインド滞在時に、行きたかったムンバイにある、ニサルガダッタ・マハラジ1のアシュラムだったところに行ってきた時のことを今更ながら投稿。 大</description>
     </item>
     
     <item>
       <title>iPhoneのネーミング</title>
-      <link>https://goozenlab.com/blog/2018/09/iphone-naming/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/iphone-naming/</link>
       <pubDate>Mon, 10 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/iphone-naming/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/iphone-naming/</guid>
       <description>そろそろ新しいアップルの製品が発表されますね。 私が非常に期待しているものは、Macbook AirとAppleWatch S.4です。出たら両方</description>
     </item>
     
     <item>
       <title>Webサイト構築</title>
-      <link>https://goozenlab.com/blog/2018/05/wp-pure-site/</link>
+      <link>https://goozenlab.github.io/blog/2018/05/wp-pure-site/</link>
       <pubDate>Wed, 02 May 2018 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/wp-pure-site/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/05/wp-pure-site/</guid>
       <description>最近はちょっとした縁があって、Webサイト構築・更新に勤しんでます。 久しぶりのウェブ開発なので、ちょっとした浦島太郎状態。時代の流れをすごく</description>
     </item>
     
     <item>
       <title>ノキア、お前もか（噂）</title>
-      <link>https://goozenlab.com/blog/2018/04/nokiax6/</link>
+      <link>https://goozenlab.github.io/blog/2018/04/nokiax6/</link>
       <pubDate>Fri, 27 Apr 2018 14:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/nokiax6/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/04/nokiax6/</guid>
       <description>ノキアよ、お前もか！。。嘘だと言っておくれー。 ノッチを恥じらいなく真似てくるような会社のものは買うまいと、、思っていたのに。。 アップルがノッ</description>
     </item>
     
     <item>
       <title>2018年の海外年明け</title>
-      <link>https://goozenlab.com/blog/2018/01/new-year/</link>
+      <link>https://goozenlab.github.io/blog/2018/01/new-year/</link>
       <pubDate>Mon, 01 Jan 2018 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/01/new-year/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/01/new-year/</guid>
       <description>インドのリシケシュにて、シャワーを浴びている最中に花火の音が聞こえ、年が明けたことを知る。 ここ数年一年一年が恐ろしいほど早く過ぎ去っていく。</description>
     </item>
     
     <item>
       <title>2017年の海外年明け</title>
-      <link>https://goozenlab.com/blog/2017/01/new-year/</link>
+      <link>https://goozenlab.github.io/blog/2017/01/new-year/</link>
       <pubDate>Sun, 01 Jan 2017 12:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2017/01/new-year/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2017/01/new-year/</guid>
       <description>メコン川沿いの国境の街、チェンコーンにて年末年始を過ごす。大晦日の午後11時すぎ、一旦静かになるが、年明けとともにコムロイと花火がラオス側と</description>
     </item>
     
     <item>
       <title>MacBook Pro 2016</title>
-      <link>https://goozenlab.com/blog/2016/11/mbp2016/</link>
+      <link>https://goozenlab.github.io/blog/2016/11/mbp2016/</link>
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/11/mbp2016/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/11/mbp2016/</guid>
       <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
     </item>
     
     <item>
       <title>iPhone 5S始めました</title>
-      <link>https://goozenlab.com/blog/2016/09/iphone5s/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/iphone5s/</link>
       <pubDate>Wed, 21 Sep 2016 09:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/iphone5s/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/iphone5s/</guid>
       <description>母からのお下がり、iphone5Sを頂きました！ 全然ヘビーユーザーで無い母ですから状態もすごく良いです。指紋認証すごいですね。これでAppl</description>
     </item>
     
     <item>
       <title>unwindからアンワインド</title>
-      <link>https://goozenlab.com/blog/2016/09/unwind-unwind/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/unwind-unwind/</link>
       <pubDate>Mon, 12 Sep 2016 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/unwind-unwind/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/unwind-unwind/</guid>
       <description>早くも、unwindからアンワインドします。 何が問題だったかというと、メインテーブルビューからプッシュして他のテーブルビューへ、そしてモーダ</description>
     </item>
     
     <item>
       <title>iPhone7</title>
-      <link>https://goozenlab.com/blog/2016/09/iphone7/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/iphone7/</link>
       <pubDate>Fri, 09 Sep 2016 13:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/iphone7/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/iphone7/</guid>
       <description>斬新さの無い発表会でした。ちょっと夜半に目が覚めて、ネットをチェックしたら、終盤の一部、気持ちの悪いパフォーマンスが流れてて、、、一気に眠気</description>
     </item>
     
     <item>
       <title>cosperの金額表示</title>
-      <link>https://goozenlab.com/blog/2016/09/cosper-display/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/cosper-display/</link>
       <pubDate>Thu, 01 Sep 2016 19:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/cosper-display/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/cosper-display/</guid>
       <description>うぎゃ〜〜、９月だぁ〜、はえぇーーー。。。 機能追加に関しての考察（ぼやき）：コスパにさらなる金額表示を、、 拙作アプリ、コスパ.1.9.2より</description>
     </item>
     
     <item>
       <title>Twitterを復活</title>
-      <link>https://goozenlab.com/blog/2016/08/tweet/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/tweet/</link>
       <pubDate>Tue, 16 Aug 2016 13:15:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/tweet/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/tweet/</guid>
       <description>つぶやきたい事がある訳では無いけれど、twitterを復活させました。( アカウント：goozenlab) まぁ、広報活動の一つとして考えてます</description>
     </item>
     
     <item>
       <title>iTuneConnect レポート</title>
-      <link>https://goozenlab.com/blog/2016/08/report-a/</link>
+      <link>https://goozenlab.github.io/blog/2016/08/report-a/</link>
       <pubDate>Thu, 11 Aug 2016 08:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/08/report-a/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/08/report-a/</guid>
       <description>最近毎週 iTuneConnect からレポートが送られてくる。 (a)への関心が高く、ストアにアクセスされることは他のアプリと比べて圧倒的に多い。しかし、全くダウンロ</description>
     </item>
     
     <item>
       <title>chroniumosをインストール</title>
-      <link>https://goozenlab.com/blog/2016/06/chroniumos/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/chroniumos/</link>
       <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/chroniumos/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/chroniumos/</guid>
       <description>暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファ</description>
     </item>
     
     <item>
       <title>iPhone4SをiOS9にアップデート</title>
-      <link>https://goozenlab.com/blog/2016/06/ios9-iphone4s/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/ios9-iphone4s/</link>
       <pubDate>Sat, 04 Jun 2016 12:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/ios9-iphone4s/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/ios9-iphone4s/</guid>
       <description>ようやく7割近くSwiftへの移行作業が終り、実機へのテストへと移ったところ、見事に落ちる。 複数のソフトで共有しているデートピッカーが問題の</description>
     </item>
     
     <item>
       <title>MBP15/2016の勝手な推測</title>
-      <link>https://goozenlab.com/blog/2016/06/mbp2016/</link>
+      <link>https://goozenlab.github.io/blog/2016/06/mbp2016/</link>
       <pubDate>Wed, 01 Jun 2016 22:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/06/mbp2016/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/06/mbp2016/</guid>
       <description>フルリニューアルのMBP15の勝手な推測、希望を書いてみる そろそろWWDCが近づいてきて、ちらほらと新しいMBPについての情報が上がってきて</description>
     </item>
     
     <item>
       <title>2016年の海外年明け</title>
-      <link>https://goozenlab.com/blog/2016/01/new-year/</link>
+      <link>https://goozenlab.github.io/blog/2016/01/new-year/</link>
       <pubDate>Sat, 09 Jan 2016 20:00:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/01/new-year/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/01/new-year/</guid>
       <description>去年は叔父、叔母、父、と立て続けに無くなり、今年の初めにまた一人叔父が逝ってしまう。 そんな中、未だ続く放浪。。 今年は清めの年という事で、年末</description>
     </item>
     
     <item>
       <title>GV-1についたゴミのクリーンアップ</title>
-      <link>https://goozenlab.com/blog/2015/10/dust-gv1/</link>
+      <link>https://goozenlab.github.io/blog/2015/10/dust-gv1/</link>
       <pubDate>Sun, 18 Oct 2015 13:15:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/10/dust-gv1/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/10/dust-gv1/</guid>
       <description>GRに付けている外付けファインダーGV-1にゴミが見えるようになる。ホコリというよりも、ゴミ。 黒いゴミが中心部に張り付いている。ケースに入れ</description>
     </item>
     
     <item>
       <title>iOS 9.0.1</title>
-      <link>https://goozenlab.com/blog/2015/09/ios901/</link>
+      <link>https://goozenlab.github.io/blog/2015/09/ios901/</link>
       <pubDate>Fri, 25 Sep 2015 06:30:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/09/ios901/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/09/ios901/</guid>
       <description>未だ実機にはiOS9を入れる事にためらいを感じているさなか、早くも9.0.1がリリースされる。 修正点の中でも気になるのは、 アラームやタイマー</description>
     </item>
     
     <item>
       <title>XCode7とElCapitan</title>
-      <link>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</link>
+      <link>https://goozenlab.github.io/blog/2015/09/xcode7-elcapitan/</link>
       <pubDate>Thu, 24 Sep 2015 13:30:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/09/xcode7-elcapitan/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/09/xcode7-elcapitan/</guid>
       <description>アプリの不具合がレポートされ、今更ながら、iOS9向けの開発環境を整える事にする。 まず、取り急ぎ実機での検証は先回しにして、シミュレータでの</description>
     </item>
     
     <item>
       <title>メインマシーンの悩み</title>
-      <link>https://goozenlab.com/blog/2015/05/main-notebook/</link>
+      <link>https://goozenlab.github.io/blog/2015/05/main-notebook/</link>
       <pubDate>Sat, 16 May 2015 14:41:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/main-notebook/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/05/main-notebook/</guid>
       <description>日本に一時帰国する。物欲爆発中！さて、メインマシーンをどうするか再考する。 昨年秋にタイで逝ってしまったMBP15の代替で買ったMBA11が思</description>
     </item>
     
     <item>
       <title>elementaryOSをインストール</title>
-      <link>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</link>
+      <link>https://goozenlab.github.io/blog/2015/05/install-elementary-vaio-type-p/</link>
       <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/05/install-elementary-vaio-type-p/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/05/install-elementary-vaio-type-p/</guid>
       <description>デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのv</description>
     </item>
     
     <item>
       <title>iTunes Account Supervisorからの便り</title>
-      <link>https://goozenlab.com/blog/2015/04/pla-violation/</link>
+      <link>https://goozenlab.github.io/blog/2015/04/pla-violation/</link>
       <pubDate>Wed, 15 Apr 2015 10:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/04/pla-violation/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/04/pla-violation/</guid>
       <description>３月の下旬に iTunes Account Supervisor から不審なメールが届く。 Notification of iOS Developer Program License Agreement (PLA) violation: XXXXX We are writing to inform you that your company is not in compliance with the iOS Developer Program License Agreement (PLA) due to documented evidence of manipulation of the user reviews and/or chart rankings associated with your apps on</description>
     </item>
     
     <item>
       <title>！Thanks alot for download Sati！</title>
-      <link>https://goozenlab.com/blog/2015/03/thanx-dowload-sati/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/thanx-dowload-sati/</link>
       <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/thanx-dowload-sati/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/thanx-dowload-sati/</guid>
       <description>!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと</description>
     </item>
     
     <item>
       <title>Ricoh GR用てるてる坊主カメララップ</title>
-      <link>https://goozenlab.com/blog/2015/03/wrapcase-gr/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/wrapcase-gr/</link>
       <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/wrapcase-gr/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/wrapcase-gr/</guid>
       <description>電動歯ブラシでもついゴシゴシと歯ブラシを動かしてしまう古いタイプの人間ですので、 デジカメも光学のビューファインダーが無いとどうもだめ。 GRの</description>
     </item>
     
     <item>
       <title>マラッカに戻る</title>
-      <link>https://goozenlab.com/blog/2015/01/goingback-melaka/</link>
+      <link>https://goozenlab.github.io/blog/2015/01/goingback-melaka/</link>
       <pubDate>Sun, 25 Jan 2015 10:17:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/01/goingback-melaka/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/01/goingback-melaka/</guid>
       <description>コタバルでネパール出発日まで滞在する積もりでいたのだが、KLまでの飛行機チケットが思ったより高かったのと（まぁ、実際高くはないのだが、前後で</description>
     </item>
     
     <item>
       <title>新年早々南京虫</title>
-      <link>https://goozenlab.com/blog/2013/01/medicine-bedbug/</link>
+      <link>https://goozenlab.github.io/blog/2013/01/medicine-bedbug/</link>
       <pubDate>Sat, 05 Jan 2013 14:41:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/01/medicine-bedbug/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/01/medicine-bedbug/</guid>
       <description>新年早々、久しぶりにやられてしまいました。全く無礼な奴らです、ナンキン虫。 人いったい何だと思うくらい狂喜乱舞、噛み付いてきます。余裕で100</description>
     </item>
     
     <item>
       <title>Dashのアイコン</title>
-      <link>https://goozenlab.com/blog/2012/11/dash-icon/</link>
+      <link>https://goozenlab.github.io/blog/2012/11/dash-icon/</link>
       <pubDate>Mon, 19 Nov 2012 16:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/11/dash-icon/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/11/dash-icon/</guid>
       <description>Dashのアイコン（画面中央の猫）が変わりました。がっ、こりゃまた微妙な。。。 （以前の物はちょっと怖い感じだったので猫派の私としては受け入れ</description>
     </item>
     
     <item>
       <title>祝？25,000ダウンロード</title>
-      <link>https://goozenlab.com/blog/2011/05/25000-download/</link>
+      <link>https://goozenlab.github.io/blog/2011/05/25000-download/</link>
       <pubDate>Mon, 16 May 2011 19:41:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/05/25000-download/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2011/05/25000-download/</guid>
       <description>細かい数字はとってませんが、ソフトのダウンロードが昨年の11月頃から本格的にスタートし25,000件到達しました。有料のものは350件。しか</description>
     </item>
     

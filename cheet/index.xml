@@ -2,50 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>個人的なチートシート on goozenlab</title>
-    <link>https://goozenlab.com/cheet/</link>
+    <link>https://goozenlab.github.io/cheet/</link>
     <description>Recent content in 個人的なチートシート on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 26 Sep 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/cheet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Sep 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://goozenlab.github.io/cheet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>チートシート: ZFS</title>
-      <link>https://goozenlab.com/cheet/zfs/</link>
+      <link>https://goozenlab.github.io/cheet/zfs/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet/zfs/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/cheet/zfs/</guid>
       <description>OpenZFSの使い方。 Format VolumeName: ZFS. ディスク・パーティション番号**！要注意！** $ sudo diskutil partitiondisk /dev/disk1 GPTFormat ZFS %noformat% 100% $ sudo diskutil eraseVolume ZFS ZDATA01 /dev/disk0s7 Poolの作成 Macで使用時には</description>
     </item>
     
     <item>
       <title>チートシート: terminal</title>
-      <link>https://goozenlab.com/cheet/terminal/</link>
+      <link>https://goozenlab.github.io/cheet/terminal/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet/terminal/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/cheet/terminal/</guid>
       <description>[command：⌘ ]・[control：⌃ ]・[shift：⇧ ]・[opttion：⌥ ] 移動 ⌃ +b (back)：&amp;lt;- 左方向へ移動：：右</description>
     </item>
     
     <item>
       <title>チートシート: brew</title>
-      <link>https://goozenlab.com/cheet/brew/</link>
+      <link>https://goozenlab.github.io/cheet/brew/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet/brew/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/cheet/brew/</guid>
       <description>visit website Installと設定 $ ruby &amp;lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go) Homebrewの利用状況の統計（？）機能の無効化するために、.profileに下記の一行を追加。 export HOMEBREW_NO_ANALYTICS=1 アッ</description>
     </item>
     
     <item>
       <title>チートシート: vi</title>
-      <link>https://goozenlab.com/cheet/vi/</link>
+      <link>https://goozenlab.github.io/cheet/vi/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/cheet/vi/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/cheet/vi/</guid>
       <description>[command：⌘ ]・[control：⌃ ]・[shift：⇧ ]・[opttion：⌥ ] 移動 ← : h &amp;ndash; j : ↓ / ↑: k &amp;ndash; l : → 3jと打つと3行</description>
     </item>
     

@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zfs on goozenlab</title>
-    <link>https://goozenlab.com/tags/zfs/</link>
+    <link>https://goozenlab.github.io/tags/zfs/</link>
     <description>Recent content in zfs on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ミラーディスクを追加・削除方法</title>
-      <link>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
       <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/add-mirroring-disk/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</guid>
       <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
     </item>
     

@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>finance on goozenlab</title>
-    <link>https://goozenlab.com/tags/finance/</link>
+    <link>https://goozenlab.github.io/tags/finance/</link>
     <description>Recent content in finance on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Feb 2020 14:00:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/finance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 21 Feb 2020 14:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/finance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>タイでのビットコイン取引所(Bitkub, Satan)</title>
-      <link>https://goozenlab.com/blog/2020/02/bitcoin-thailand/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</link>
       <pubDate>Fri, 21 Feb 2020 14:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/bitcoin-thailand/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</guid>
       <description>東京への帰国を３月初めに控えコロナが気になるここ数週間です。 タイでの感染者は中国の観光客が多い割には３５人と少なく、 これはちょっと適当なお国</description>
     </item>
     

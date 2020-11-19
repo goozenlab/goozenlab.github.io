@@ -2,86 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>review on goozenlab</title>
-    <link>https://goozenlab.com/tags/review/</link>
+    <link>https://goozenlab.github.io/tags/review/</link>
     <description>Recent content in review on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 12 Jan 2020 19:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jan 2020 19:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android 10 on Nokia 7 Plus</title>
-      <link>https://goozenlab.com/blog/2020/01/nokia7-android10-update/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/nokia7-android10-update/</link>
       <pubDate>Sun, 12 Jan 2020 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/nokia7-android10-update/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/nokia7-android10-update/</guid>
       <description>2020年の初めにアップデートの予定との発表があったので、 まぁちょっとずれ込んで2月頃かなぁなんて思ってましたが、 数日前に公開されたようです</description>
     </item>
     
     <item>
       <title>Amazfit Bip 購入</title>
-      <link>https://goozenlab.com/blog/2019/08/amazfit-bip-review/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/amazfit-bip-review/</link>
       <pubDate>Thu, 01 Aug 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/amazfit-bip-review/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/amazfit-bip-review/</guid>
       <description>セールにつられて今更ながらスマートウォッチのAmazfit Bipを タイ・チェンマイのショッピングセンターにて購入しました。 値段はブラック、T</description>
     </item>
     
     <item>
       <title>GL.iNet Shadow</title>
-      <link>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/review-initial-setup-shadow/</link>
       <pubDate>Thu, 14 Mar 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/review-initial-setup-shadow/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/review-initial-setup-shadow/</guid>
       <description>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている Shadow AR-300M のレビューをしたいと思います。 このルーターに辿り</description>
     </item>
     
     <item>
       <title>Xiaomiデバイスのブートローダーロック解除</title>
-      <link>https://goozenlab.com/blog/2018/12/max3-unlock-bootloader/</link>
+      <link>https://goozenlab.github.io/blog/2018/12/max3-unlock-bootloader/</link>
       <pubDate>Sat, 22 Dec 2018 11:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/12/max3-unlock-bootloader/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/12/max3-unlock-bootloader/</guid>
       <description>まだ、Max3ではカスタムロムは出てきてはいないのだけれども、 もうブートローダーはロック解除できなくなるなどとの噂が流れていたりもしているの</description>
     </item>
     
     <item>
       <title>Xiaomi Max3 レビュー</title>
-      <link>https://goozenlab.com/blog/2018/11/max3-review/</link>
+      <link>https://goozenlab.github.io/blog/2018/11/max3-review/</link>
       <pubDate>Tue, 27 Nov 2018 10:30:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/11/max3-review/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/11/max3-review/</guid>
       <description>ちょっと色々と忙しくて使う機会がなかった、Mi Max3をレビューします。 使い方は限定的で、地図や、ユーチューブを見たり、ウェブのブラウジング</description>
     </item>
     
     <item>
       <title>Nokia 7 Plus レビュー その２</title>
-      <link>https://goozenlab.com/blog/2018/05/nokia7-plus-review2/</link>
+      <link>https://goozenlab.github.io/blog/2018/05/nokia7-plus-review2/</link>
       <pubDate>Wed, 16 May 2018 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/nokia7-plus-review2/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/05/nokia7-plus-review2/</guid>
       <description>酷暑タイ、暑さが内側からこみ上げてきます。観光は終了、ローシーズン突入なはずですが、わりと観光客が多い感じがします。チェンマイ滞在中です。（</description>
     </item>
     
     <item>
       <title>Nokia 7 Plus レビュー</title>
-      <link>https://goozenlab.com/blog/2018/05/nokia7plus-review/</link>
+      <link>https://goozenlab.github.io/blog/2018/05/nokia7plus-review/</link>
       <pubDate>Fri, 04 May 2018 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/05/nokia7plus-review/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/05/nokia7plus-review/</guid>
       <description>Nokia 7 Plus がようやく手元に入りました。、酷暑のタイ、北部チェンマイ、空調の効いたショッピングモールよりレビューをお届けします。 （ビール飲みてーー</description>
     </item>
     
     <item>
       <title>MBA11を10日間使ってみて</title>
-      <link>https://goozenlab.com/blog/2014/11/mba-review/</link>
+      <link>https://goozenlab.github.io/blog/2014/11/mba-review/</link>
       <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2014/11/mba-review/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2014/11/mba-review/</guid>
       <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
     </item>
     

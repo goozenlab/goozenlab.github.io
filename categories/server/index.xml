@@ -2,464 +2,460 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>server on goozenlab</title>
-    <link>https://goozenlab.com/categories/server/</link>
+    <link>https://goozenlab.github.io/categories/server/</link>
     <description>Recent content in server on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 09 Sep 2019 09:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 Sep 2019 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>パイ・サーバーの現状</title>
-      <link>https://goozenlab.com/blog/2019/09/pi-server-status/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/pi-server-status/</link>
       <pubDate>Mon, 09 Sep 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/pi-server-status/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/pi-server-status/</guid>
       <description>移動を数日後に控え、空調の効いたショッピングセンターで 進行中のパイ・サーバーの現状、使用感を少しまとめてみる。 さて、パイ・サーバーの現状は、</description>
     </item>
     
     <item>
       <title>ネットスピードを計測</title>
-      <link>https://goozenlab.com/blog/2019/09/speedtest-cli/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/speedtest-cli/</link>
       <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/speedtest-cli/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/speedtest-cli/</guid>
       <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install sp</description>
     </item>
     
     <item>
       <title>パイ・サーバー必要機材の購入</title>
-      <link>https://goozenlab.com/blog/2019/09/shop-pi/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/shop-pi/</link>
       <pubDate>Wed, 04 Sep 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/shop-pi/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/shop-pi/</guid>
       <description>パイ・サーバー構築に向けて機材の調達をします。 サービスの少ない簡単なホームサーバーであれば、パイ・ゼロで十分です。 もし、いろいろなサービス（</description>
     </item>
     
     <item>
       <title>OpenSuse on Pi 3B</title>
-      <link>https://goozenlab.com/blog/2019/09/opensuse-on-pi3/</link>
+      <link>https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/</link>
       <pubDate>Mon, 02 Sep 2019 14:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/09/opensuse-on-pi3/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/</guid>
       <description>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、 パイの64bitバージョンも配布されているので試して</description>
     </item>
     
     <item>
       <title>Kanboardのインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/kanboard-pi-install/</link>
       <pubDate>Fri, 30 Aug 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/kanboard-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/kanboard-pi-install/</guid>
       <description>掲示板・ホワイトボード風のメモ・アプリ？！ ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、 早速パイにインストールしてみました。</description>
     </item>
     
     <item>
       <title>Radicaleのインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/radicale-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/radicale-pi-install/</link>
       <pubDate>Wed, 28 Aug 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/radicale-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/radicale-pi-install/</guid>
       <description>カレンダー・コンタクトサーバーを導入しました。 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局ne</description>
     </item>
     
     <item>
       <title>パイ・3A&#43;にて外部ディスクの不具合</title>
-      <link>https://goozenlab.com/blog/2019/08/pi-3a-external-disk/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pi-3a-external-disk/</link>
       <pubDate>Sun, 25 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pi-3a-external-disk/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pi-3a-external-disk/</guid>
       <description>パイ・3A+に外部ディスクを刺しても認識をしてくれない。 USBメモリーをさしてもチカチカランプが点滅するも、 無反応、もしくはハングアップする</description>
     </item>
     
     <item>
       <title>Unisonの設定</title>
-      <link>https://goozenlab.com/blog/2019/08/setting-unison/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/setting-unison/</link>
       <pubDate>Wed, 21 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/setting-unison/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/setting-unison/</guid>
       <description>滞在先、タイ・チェンライで折りたたみ自転車のタイヤチューブ交換をしました。工賃込みで150バーツでした。 チューブの質がどうだかわかりませんが</description>
     </item>
     
     <item>
       <title>ビットコイン価格をGrafanaでグラフ化</title>
-      <link>https://goozenlab.com/blog/2019/08/grafana-bitcoin/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/grafana-bitcoin/</link>
       <pubDate>Tue, 20 Aug 2019 09:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/grafana-bitcoin/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/grafana-bitcoin/</guid>
       <description>チェンライ二日連続晴天。 ビットコイン、どっかーーっと景気良く価格急上昇で年金確保！と行きたいところですが、、 あと10倍ぐらいに、早いことたの</description>
     </item>
     
     <item>
       <title>Unisonをビルドする</title>
-      <link>https://goozenlab.com/blog/2019/08/build-unison/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/build-unison/</link>
       <pubDate>Mon, 19 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/build-unison/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/build-unison/</guid>
       <description>雨季の中、珍しく天気の良い日（！暑い！）です。 滞在先、自転車がパンクしました。近所の自転車屋さんが割としっかりしていて、 なかなかの対応をして</description>
     </item>
     
     <item>
       <title>天候情報を取得</title>
-      <link>https://goozenlab.com/blog/2019/08/openweathermap-settings/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/openweathermap-settings/</link>
       <pubDate>Sun, 18 Aug 2019 09:40:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/openweathermap-settings/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/openweathermap-settings/</guid>
       <description>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが https://openweathermap.org より提供されています。 行きたい国々の天気をチェック、旅情にあふ</description>
     </item>
     
     <item>
       <title>設定ファイルいじる時に有効なショートカット</title>
-      <link>https://goozenlab.com/blog/2019/08/useful-terminal-shortcut-01/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/useful-terminal-shortcut-01/</link>
       <pubDate>Sat, 17 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/useful-terminal-shortcut-01/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/useful-terminal-shortcut-01/</guid>
       <description>最近、ガリガリとアップルのアプストアーから抹殺されている拙作のiApp、 新しいiOSへのアプリの更新をそっちのけで、 ラズベリー・パイをいじっ</description>
     </item>
     
     <item>
       <title>Telegrafのインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/telegraf-pi-install/</link>
       <pubDate>Wed, 14 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/telegraf-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/telegraf-pi-install/</guid>
       <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。</description>
     </item>
     
     <item>
       <title>influxDBのインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/</link>
       <pubDate>Tue, 13 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/influxdb-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/</guid>
       <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどの</description>
     </item>
     
     <item>
       <title>Grafanaのインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/grafana-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/grafana-pi-install/</link>
       <pubDate>Mon, 12 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/grafana-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/grafana-pi-install/</guid>
       <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありませ</description>
     </item>
     
     <item>
       <title>パイ・スワップの増量</title>
-      <link>https://goozenlab.com/blog/2019/08/pi-swap-dphys/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pi-swap-dphys/</link>
       <pubDate>Sun, 11 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pi-swap-dphys/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pi-swap-dphys/</guid>
       <description>さて、パイ・メモリーが弾けんばかりパツパツです。 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミング</description>
     </item>
     
     <item>
       <title>Firefly iiiをインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/firefly-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/firefly-pi-install/</link>
       <pubDate>Sat, 10 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/firefly-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/firefly-pi-install/</guid>
       <description>今までは、ラフにお金の流れをGNUCashを使って管理してましたが、 ちょっと細かくこずかい帳の様に使えるものを探していて PERSONAL FINANCE MANAGERの</description>
     </item>
     
     <item>
       <title>パイ力がつきるまで・4</title>
-      <link>https://goozenlab.com/blog/2019/08/pia-running-test/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pia-running-test/</link>
       <pubDate>Fri, 09 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pia-running-test/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pia-running-test/</guid>
       <description>パイ３Bで動かしていたSDカードをそのままパイ３A＋に差し替え、 5,000 mAhのバッテリー運用時での駆動時間をチェックしました。 現在の使用状況はR</description>
     </item>
     
     <item>
       <title>Wallabagをインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/wallabag-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/wallabag-pi-install/</link>
       <pubDate>Thu, 08 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/wallabag-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/wallabag-pi-install/</guid>
       <description>何でもセルフホスト・パイ・サーバー計画続行中。 今回はPocketの代替ソフトのwallabagをインストールしました。 Kindle版があるの</description>
     </item>
     
     <item>
       <title>パイ・コア数での駆動時間比較</title>
-      <link>https://goozenlab.com/blog/2019/08/running-core-comparison/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/running-core-comparison/</link>
       <pubDate>Mon, 05 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/running-core-comparison/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/running-core-comparison/</guid>
       <description>パイ・３Bにてコア数の調整ができるので、バッテリーで運用時での駆動時間の比較をしました。 コア数の変更方法は こちら にポストしてますが、簡単には</description>
     </item>
     
     <item>
       <title>Piholeをインストール</title>
-      <link>https://goozenlab.com/blog/2019/08/pihole-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pihole-install/</link>
       <pubDate>Sun, 04 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pihole-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pihole-install/</guid>
       <description>アドブロックかつフィルターリングプロキシーソフトのPrivoxyが敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、 評判が高</description>
     </item>
     
     <item>
       <title>パイ・スワップファイル</title>
-      <link>https://goozenlab.com/blog/2019/08/pi-swapiness/</link>
+      <link>https://goozenlab.github.io/blog/2019/08/pi-swapiness/</link>
       <pubDate>Sat, 03 Aug 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/08/pi-swapiness/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/08/pi-swapiness/</guid>
       <description>SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、 少しばかり躊躇します。しかしその代わりに、 カーネルに</description>
     </item>
     
     <item>
       <title>Giteaをインストール</title>
-      <link>https://goozenlab.com/blog/2019/07/gitea-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/gitea-pi-install/</link>
       <pubDate>Wed, 17 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/gitea-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/gitea-pi-install/</guid>
       <description>何でもセルフホスト・パイ・サーバー計画続行中です。 今回はgitlabほど仰々しくないgolangで書かれた、 gitサーバーことgiteaをイ</description>
     </item>
     
     <item>
       <title>TinyTiny RSSをインストール</title>
-      <link>https://goozenlab.com/blog/2019/07/tt-rss-pi-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/tt-rss-pi-install/</link>
       <pubDate>Mon, 15 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/tt-rss-pi-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/tt-rss-pi-install/</guid>
       <description>ラズベリーパイ・Ubuntu、RaspbianサーバーにTinyTiny RSSをインストールしました。 インストールは少し違いがありますが、ほ</description>
     </item>
     
     <item>
       <title>パイ・フルバックアップ</title>
-      <link>https://goozenlab.com/blog/2019/07/pi-full-backup/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/pi-full-backup/</link>
       <pubDate>Fri, 12 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/pi-full-backup/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/pi-full-backup/</guid>
       <description>今までは、様々なディストリビューションを試したり、 トライアンドエラーでクリーンインストールを何度もしてきましたが、 64bit環境を諦め、セル</description>
     </item>
     
     <item>
       <title>LMAPをインストール</title>
-      <link>https://goozenlab.com/blog/2019/07/pi-lamp-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/pi-lamp-install/</link>
       <pubDate>Wed, 10 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/pi-lamp-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/pi-lamp-install/</guid>
       <description>ラズベリーパイ・サーバーにLAMP環境をインストールしました。 Wordpressなどのサービスなどを使うのに必要です。 LAMPとは(Linu</description>
     </item>
     
     <item>
       <title>パイ省エネ設定</title>
-      <link>https://goozenlab.com/blog/2019/07/pi-save-power/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/pi-save-power/</link>
       <pubDate>Tue, 09 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/pi-save-power/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/pi-save-power/</guid>
       <description>モバイルバッテリで動作させたりもするので、省エネ設定をします。 ちょこちょこいじれます。一番の電源食らいはHDMIとWifiのようです。/bo</description>
     </item>
     
     <item>
       <title>NFS on Pi</title>
-      <link>https://goozenlab.com/blog/2019/07/pi-nfs/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/pi-nfs/</link>
       <pubDate>Sun, 07 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/pi-nfs/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/pi-nfs/</guid>
       <description>パイとのファイル共有を行います。（とりあえず、マック・パイ） NFSの方がSAMBAより早いとの情報なので、NFSをインストール＋設定をしまし</description>
     </item>
     
     <item>
       <title>CPUコア数を調整</title>
-      <link>https://goozenlab.com/blog/2019/07/manage-cpu-core/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/manage-cpu-core/</link>
       <pubDate>Sat, 06 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/manage-cpu-core/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/manage-cpu-core/</guid>
       <description>そろそデビアンXことBusterのリリースが近づいてきましたね。SBCへの対応もされるということで楽しみです。でも、何か他の発表もあったよう</description>
     </item>
     
     <item>
       <title>Syncthingの詳細設定</title>
-      <link>https://goozenlab.com/blog/2019/07/syncthing-settings/</link>
+      <link>https://goozenlab.github.io/blog/2019/07/syncthing-settings/</link>
       <pubDate>Mon, 01 Jul 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/07/syncthing-settings/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/07/syncthing-settings/</guid>
       <description>デバイスの登録と、同期設定を行います。インストールと初期設定はこちらにあります。ご参照の程。 デバイスの登録 回線がつながっている状況で行えば、</description>
     </item>
     
     <item>
       <title>Syncthingのインストールと設定</title>
-      <link>https://goozenlab.com/blog/2019/06/syncthing-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/06/syncthing-install/</link>
       <pubDate>Sun, 30 Jun 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/06/syncthing-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/06/syncthing-install/</guid>
       <description>Dropboxをブログの写真やスクリーンショットをマックブックに移動するために使っていました。 問題はインターネットの回線が必要なこと。 日本国</description>
     </item>
     
     <item>
       <title>SSH簡単ログイン</title>
-      <link>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</link>
+      <link>https://goozenlab.github.io/blog/2019/06/rsa-ssh-login/</link>
       <pubDate>Sat, 29 Jun 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/06/rsa-ssh-login/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/06/rsa-ssh-login/</guid>
       <description>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワード</description>
     </item>
     
     <item>
       <title>ラズベリー・パイにラズビアンをお頭無しインストール</title>
-      <link>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/06/raspbian-pi-zero-install/</link>
       <pubDate>Thu, 20 Jun 2019 14:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/06/raspbian-pi-zero-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/06/raspbian-pi-zero-install/</guid>
       <description>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。 酷暑インドから戻ってきたので、３</description>
     </item>
     
     <item>
       <title>パイ力がつきるまで・3</title>
-      <link>https://goozenlab.com/blog/2019/04/running-test-3/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/running-test-3/</link>
       <pubDate>Tue, 09 Apr 2019 12:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/running-test-3/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/running-test-3/</guid>
       <description>今、Pi・ゼロで動かしているマイクロSDをPi・3Bに移動してみようと、、ふと思い試してみる。 で、入れ替えてみたところ、問題なーし。あっさり</description>
     </item>
     
     <item>
       <title>パイ力がつきるまで・２</title>
-      <link>https://goozenlab.com/blog/2019/04/test-running-mobile-pie-2/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/test-running-mobile-pie-2/</link>
       <pubDate>Thu, 04 Apr 2019 16:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/test-running-mobile-pie-2/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/test-running-mobile-pie-2/</guid>
       <description>滞在先のチェンマイで入手を諦めていた、マイクロUSBのY字ケーブル（88バーツ）をひょんなところで見つけました。 ということこで、モバイル・バ</description>
     </item>
     
     <item>
       <title>パイで64bitカーネルビルド</title>
-      <link>https://goozenlab.com/blog/2019/04/building-kernel/</link>
+      <link>https://goozenlab.github.io/blog/2019/04/building-kernel/</link>
       <pubDate>Tue, 02 Apr 2019 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/04/building-kernel/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/04/building-kernel/</guid>
       <description>Bluetoothが使えなかったり、cpufreqが効かなかったり、iptablesで不具合がでたりしたので、カーネルを自前でビルドしました</description>
     </item>
     
     <item>
       <title>パイ・カーネル64</title>
-      <link>https://goozenlab.com/blog/2019/03/64bit-kernel/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/64bit-kernel/</link>
       <pubDate>Thu, 28 Mar 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/64bit-kernel/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/64bit-kernel/</guid>
       <description>頑なにこだわり続けてた64bit化。 Archを試したり、公式に64bitをサポートしているopenSuseやDebian.Buster PRE</description>
     </item>
     
     <item>
       <title>パイ力がつきるまで</title>
-      <link>https://goozenlab.com/blog/2019/03/test-running-mobile-pie/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/test-running-mobile-pie/</link>
       <pubDate>Mon, 25 Mar 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/test-running-mobile-pie/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/test-running-mobile-pie/</guid>
       <description>数年ぶりの選挙があったこの週末は、飲み屋も閉まってたりで、街がしーーーんと、すごく静かでした。さて、さて、これからどうなることやら。。（北部</description>
     </item>
     
     <item>
       <title>Docker on RPi3B.arm64.buster</title>
-      <link>https://goozenlab.com/blog/2019/03/docker-install-buster/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</link>
       <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/docker-install-buster/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</guid>
       <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;quot;/run.sh&amp;quot; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;quot;/portainer&amp;quot; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;quot;/hello&amp;quot; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに</description>
     </item>
     
     <item>
       <title>アクセスポイント</title>
-      <link>https://goozenlab.com/blog/2019/03/hostapd-buster/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/hostapd-buster/</link>
       <pubDate>Sun, 17 Mar 2019 03:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/hostapd-buster/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/hostapd-buster/</guid>
       <description>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。</description>
     </item>
     
     <item>
       <title>ArchLinuxをRaspberry Pi B3にインストール</title>
-      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-install/</link>
       <pubDate>Fri, 15 Mar 2019 22:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-install/</guid>
       <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをち</description>
     </item>
     
     <item>
       <title>DietPiのインストール</title>
-      <link>https://goozenlab.com/blog/2019/03/install-dietpi/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/install-dietpi/</link>
       <pubDate>Tue, 12 Mar 2019 11:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/install-dietpi/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/install-dietpi/</guid>
       <description>巷で人気のスリムなダイエットパイを小粋なRPi0w：ラズベリーパイ・ゼロWにインストールしました。 まずは、ファイルを落としてきてSDカードに</description>
     </item>
     
     <item>
       <title>MicroSDカードの速度比較</title>
-      <link>https://goozenlab.com/blog/2019/03/micros-speed-pie/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/micros-speed-pie/</link>
       <pubDate>Sat, 09 Mar 2019 13:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/micros-speed-pie/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/micros-speed-pie/</guid>
       <description>Raspberry Pi にてのMicroSDカードのパフォーマンス 手元にあったマイクロSDカード、あそこで買ったり、ここで買ったりと、 改めて見てみると、メーカー</description>
     </item>
     
     <item>
       <title>moOdeをrPi0wにインストール</title>
-      <link>https://goozenlab.com/blog/2019/03/install-moode-rpi0w/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/install-moode-rpi0w/</link>
       <pubDate>Thu, 07 Mar 2019 20:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/install-moode-rpi0w/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/install-moode-rpi0w/</guid>
       <description>オーディオ・ラジオサーバーのmoOde audio playerをラズベリーパイ・ゼロにインストールしました。 moOde Audioホームページからダウンロードす</description>
     </item>
     
     <item>
       <title>Xiaomi 気温湿度計</title>
-      <link>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/mi-temperature-monitor/</link>
       <pubDate>Sat, 02 Mar 2019 19:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/mi-temperature-monitor/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/mi-temperature-monitor/</guid>
       <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲー</description>
     </item>
     
     <item>
       <title>Debian on VAIO type P</title>
-      <link>https://goozenlab.com/blog/2018/04/debian-vaio-p/</link>
+      <link>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</link>
       <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/04/debian-vaio-p/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</guid>
       <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
     </item>
     
     <item>
       <title>家鯖をownCloudでクラウド化</title>
-      <link>https://goozenlab.com/blog/2012/12/owncloud/</link>
+      <link>https://goozenlab.github.io/blog/2012/12/owncloud/</link>
       <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/12/owncloud/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/12/owncloud/</guid>
       <description>ブログの画像はファイルのアップという作業が面倒ということで、クラウドサービス内に置くことにしてます。 現在Dropboxに画像は保管していて別</description>
     </item>
     
     <item>
       <title>ドメインをゲット</title>
-      <link>https://goozenlab.com/blog/2012/10/domein-goozenlab/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/domein-goozenlab/</link>
       <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/domein-goozenlab/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/domein-goozenlab/</guid>
       <description>iアプリでうはうは、ぼろ儲け。オフショアの国で法人化し、ドメインをとり、悠々自適な生活。スペインのバルセロナあたりでのんびりして、ローカルな</description>
     </item>
     
     <item>
       <title>家鯖</title>
-      <link>https://goozenlab.com/blog/2011/05/home-server/</link>
+      <link>https://goozenlab.github.io/blog/2011/05/home-server/</link>
       <pubDate>Wed, 18 May 2011 19:41:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/05/home-server/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2011/05/home-server/</guid>
       <description>友人宅で運用していたサーバー機は、現在実家の電話台の下に置かせてもらっています。 熱を持つキーボード部をなるべく大気に触れられるようにノートブ</description>
     </item>
     
     <item>
       <title>Google Appでメールサーバーの運用</title>
-      <link>https://goozenlab.com/blog/2011/02/googleapp-mail/</link>
+      <link>https://goozenlab.github.io/blog/2011/02/googleapp-mail/</link>
       <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2011/02/googleapp-mail/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2011/02/googleapp-mail/</guid>
       <description>友人宅で運用中のノートブックサーバーだいたい２ヶ月に一回は落ちます。 気がつかないとかなりの時間アクセスできない事があります。 Webサーバーは</description>
     </item>
     

@@ -2,104 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch on goozenlab</title>
-    <link>https://goozenlab.com/tags/arch/</link>
+    <link>https://goozenlab.github.io/tags/arch/</link>
     <description>Recent content in Arch on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 08:00:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/arch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 07 Feb 2020 08:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/arch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standard Notes</title>
-      <link>https://goozenlab.com/blog/2020/02/standardnotes/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/standardnotes/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/standardnotes/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/standardnotes/</guid>
       <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
     
     <item>
       <title>ArchでMagicTrackpad2</title>
-      <link>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/magictrackpad-arch/</link>
       <pubDate>Wed, 05 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/magictrackpad-arch/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/magictrackpad-arch/</guid>
       <description>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。 ちょっとした穴の補修 Arch の初期状態ではブ</description>
     </item>
     
     <item>
       <title>Mozcの環境構築まとめ</title>
-      <link>https://goozenlab.com/blog/2020/02/mozc-fcitx-linux/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/mozc-fcitx-linux/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
       <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
     </item>
     
     <item>
       <title>TLP on Arch</title>
-      <link>https://goozenlab.com/blog/2020/02/tlp-arch/</link>
+      <link>https://goozenlab.github.io/blog/2020/02/tlp-arch/</link>
       <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/02/tlp-arch/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/tlp-arch/</guid>
       <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時</description>
     </item>
     
     <item>
       <title>YAYのインストール</title>
-      <link>https://goozenlab.com/blog/2020/01/install-yay/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/install-yay/</link>
       <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/install-yay/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/install-yay/</guid>
       <description>Archを動かしているThinkapd T480sではManjaroも動かしているので、 シンプルな形の留めておいてAURのパッケージはなるべく</description>
     </item>
     
     <item>
       <title>最適なミラーサイト</title>
-      <link>https://goozenlab.com/blog/2020/01/fast-mirror-list/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</link>
       <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/fast-mirror-list/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</guid>
       <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しな</description>
     </item>
     
     <item>
       <title>ベルギー産のArcoをインストール</title>
-      <link>https://goozenlab.com/blog/2020/01/arco-install-btrfs/</link>
+      <link>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</link>
       <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2020/01/arco-install-btrfs/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</guid>
       <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Arc</description>
     </item>
     
     <item>
       <title>BtrfsにArchをインストール</title>
-      <link>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</link>
+      <link>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</link>
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/12/install-arch-btrfs/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</guid>
       <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモと</description>
     </item>
     
     <item>
       <title>ArchLinux: RPi B3 玉砕</title>
-      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-withdrawal/</link>
       <pubDate>Wed, 20 Mar 2019 15:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-withdrawal/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-withdrawal/</guid>
       <description>インストールは問題なく終了。戻ってきて、追加作業を継続する。 さて、簡単にはいかず。問題発生。ドッカーは動かず（多分バージョンを下げれば使える</description>
     </item>
     
     <item>
       <title>ArchLinuxをRaspberry Pi B3にインストール</title>
-      <link>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</link>
+      <link>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-install/</link>
       <pubDate>Fri, 15 Mar 2019 22:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/03/pi-archlinux64-install/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-install/</guid>
       <description>そこはかとなく、うまくいく。。。と言っていいのか。。（もう一枚、マイクロSDカードを買いに行かなくては。） ラズベリアンにダイエット・パイをち</description>
     </item>
     

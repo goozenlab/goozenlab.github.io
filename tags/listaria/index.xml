@@ -2,77 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>listaria on goozenlab</title>
-    <link>https://goozenlab.com/tags/listaria/</link>
+    <link>https://goozenlab.github.io/tags/listaria/</link>
     <description>Recent content in listaria on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/listaria/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 15 Sep 2016 07:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/listaria/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>リスタリアを公開</title>
-      <link>https://goozenlab.com/blog/2016/09/open-listaria/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/open-listaria/</link>
       <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/open-listaria/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/open-listaria/</guid>
       <description>買物リストアプリのリトリストを、久しぶりのアップデートと共に、ギットハブに公開しました。 アプリは最近はほとんどが外食の毎日のため、使用機会が</description>
     </item>
     
     <item>
       <title>listaria v1.8.0</title>
-      <link>https://goozenlab.com/blog/2016/09/listaria-180/</link>
+      <link>https://goozenlab.github.io/blog/2016/09/listaria-180/</link>
       <pubDate>Wed, 14 Sep 2016 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2016/09/listaria-180/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2016/09/listaria-180/</guid>
       <description>使い込むほど馴染んでくる（多分）経年変化が楽しめる、育てるショッピングリスト、リスタリアを、 ひさーーーしぶりにアップデート、Swiftならん</description>
     </item>
     
     <item>
       <title>listaria v1.5.4</title>
-      <link>https://goozenlab.com/blog/2013/07/listaria-154/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/listaria-154/</link>
       <pubDate>Tue, 30 Jul 2013 16:33:00 +0900</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/listaria-154/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/listaria-154/</guid>
       <description>旬機能を追加しました。ちょっと賢くなりました。（設定はご自分で、、よろしくお願いします。） パパイヤリリースです。 使い方 メモ欄下の数字の入った</description>
     </item>
     
     <item>
       <title>Listaria v1.5.3</title>
-      <link>https://goozenlab.com/blog/2013/07/listaria-153/</link>
+      <link>https://goozenlab.github.io/blog/2013/07/listaria-153/</link>
       <pubDate>Mon, 08 Jul 2013 22:57:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/07/listaria-153/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/07/listaria-153/</guid>
       <description>ちょっと弄っていたらちょっとしたアイディアが湧いたので、割と思ったより手を入れました。 プロジェクト名もランブータン(Ranbutan)に変更</description>
     </item>
     
     <item>
       <title>Icon Renew and minor update</title>
-      <link>https://goozenlab.com/blog/2013/05/icons-renew/</link>
+      <link>https://goozenlab.github.io/blog/2013/05/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2013/05/icons-renew/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2013/05/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名</description>
     </item>
     
     <item>
       <title>Listaria v1.5.1</title>
-      <link>https://goozenlab.com/blog/2012/10/listaria-151/</link>
+      <link>https://goozenlab.github.io/blog/2012/10/listaria-151/</link>
       <pubDate>Sat, 20 Oct 2012 07:59:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/10/listaria-151/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/10/listaria-151/</guid>
       <description>リスタリア、マイナーバクフィクスのアップデートを申請しました。 ロングタップ時の挙動が不安定なのを改善。（未だたまーーに落ちます） リスト表示時</description>
     </item>
     
     <item>
       <title>4系と5系</title>
-      <link>https://goozenlab.com/blog/2012/09/version4-5/</link>
+      <link>https://goozenlab.github.io/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2012/09/version4-5/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
     

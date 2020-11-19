@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kotlin on goozenlab</title>
-    <link>https://goozenlab.com/tags/kotlin/</link>
+    <link>https://goozenlab.github.io/tags/kotlin/</link>
     <description>Recent content in kotlin on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
-      <link>https://goozenlab.com/blog/2015/03/intellij-setup/</link>
+      <link>https://goozenlab.github.io/blog/2015/03/intellij-setup/</link>
       <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2015/03/intellij-setup/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2015/03/intellij-setup/</guid>
       <description>Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませ</description>
     </item>
     

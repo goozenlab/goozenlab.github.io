@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oneplus on goozenlab</title>
-    <link>https://goozenlab.com/tags/oneplus/</link>
+    <link>https://goozenlab.github.io/tags/oneplus/</link>
     <description>Recent content in oneplus on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 23 Nov 2019 13:00:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/oneplus/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 23 Nov 2019 13:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/oneplus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oneplus 3tを分解修理</title>
-      <link>https://goozenlab.com/blog/2019/11/fix-oneplus/</link>
+      <link>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</link>
       <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2019/11/fix-oneplus/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</guid>
       <description>OnePlusをちまちま分解・修理。 今年の夏にNokia7Plusの代わりにしようと思って購入したOnePlus3Tのカメラが逝かれました。</description>
     </item>
     

@@ -2,68 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>komoot on goozenlab</title>
-    <link>https://goozenlab.com/tags/komoot/</link>
+    <link>https://goozenlab.github.io/tags/komoot/</link>
     <description>Recent content in komoot on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>jin@goozenlab.com (jin)</managingEditor>
-    <webMaster>jin@goozenlab.com (jin)</webMaster>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Sep 2018 09:30:00 +0700</lastBuildDate>
-    
-	<atom:link href="https://goozenlab.com/tags/komoot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Sep 2018 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/komoot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Komoot 使い方・設定編</title>
-      <link>https://goozenlab.com/blog/2018/09/komoot-settings/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/komoot-settings/</link>
       <pubDate>Sun, 23 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/komoot-settings/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/komoot-settings/</guid>
       <description>なが〜〜い、画面です。設定画面です。設定する項目はそんなに多くはないのですが、 日本語にローカライズしていないので、全て英語です。目がショボシ</description>
     </item>
     
     <item>
       <title>Komoot 使い方・ルートの変更・調整編</title>
-      <link>https://goozenlab.com/blog/2018/09/komoot-route-modificationt/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/komoot-route-modificationt/</link>
       <pubDate>Tue, 11 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/komoot-route-modificationt/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/komoot-route-modificationt/</guid>
       <description>Komoot 使い方第３弾：ルートの変更・調整編です。 今回は代々木八幡から吉祥寺の井の頭公園までの往復ルートを作成し、寄りたいところ追加したり、ルートを</description>
     </item>
     
     <item>
       <title>Komoot 使い方・ルート作り編</title>
-      <link>https://goozenlab.com/blog/2018/09/komoot-route-making-chiangmai/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/komoot-route-making-chiangmai/</link>
       <pubDate>Sun, 09 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/komoot-route-making-chiangmai/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/komoot-route-making-chiangmai/</guid>
       <description>Komootでタイ・チェンマイの滞在先から、山の上にあるお寺、ドイステープまでのルートを作りたいと思います。 ログイン後は上のような画面が表示</description>
     </item>
     
     <item>
       <title>Komoot 支払い編</title>
-      <link>https://goozenlab.com/blog/2018/09/komoot-pay-service/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/komoot-pay-service/</link>
       <pubDate>Thu, 06 Sep 2018 09:00:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/komoot-pay-service/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/komoot-pay-service/</guid>
       <description>Komootで、夢の中のルート作りをして遊んでます。なかなか使い勝っても良ろしいです。ただ、旅情が、抑えられなくなってくる。。 さて、Komo</description>
     </item>
     
     <item>
       <title>Komoot 使い方・インポート編</title>
-      <link>https://goozenlab.com/blog/2018/09/komoot-gpx-import/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/komoot-gpx-import/</link>
       <pubDate>Tue, 04 Sep 2018 09:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/komoot-gpx-import/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/komoot-gpx-import/</guid>
       <description>四国ツアーを計画中、お遍路ルートも追加しようかなと画策中です。Wahoo Boltを今使うことができないので、まだ支払いはしてないのですが、K</description>
     </item>
     
     <item>
       <title>KomootとRidewithGPS</title>
-      <link>https://goozenlab.com/blog/2018/09/price-komoot-ridewithgps/</link>
+      <link>https://goozenlab.github.io/blog/2018/09/price-komoot-ridewithgps/</link>
       <pubDate>Sun, 02 Sep 2018 17:30:00 +0700</pubDate>
-      <author>jin@goozenlab.com (jin)</author>
-      <guid>https://goozenlab.com/blog/2018/09/price-komoot-ridewithgps/</guid>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2018/09/price-komoot-ridewithgps/</guid>
       <description>今年の秋に四国を自転車で回ってみようと思い色々とリサーチをしてます。ルート作り、ウェブサービス、所有しているWahoo Boltの有効な活用方</description>
     </item>
     
