@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://goozenlab.github.io/computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://goozenlab.github.io/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>オープンソースで作るネットワーク環境</title>
+      <link>https://goozenlab.github.io/computing/opensource-network-environment/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/opensource-network-environment/</guid>
+      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 なるべく経済的かつ省電力。 面白さも大事。 お金があればス</description>
+    </item>
+    
     <item>
       <title>Arch T480s</title>
       <link>https://goozenlab.github.io/computing/tpt480s-linux-arch/</link>
