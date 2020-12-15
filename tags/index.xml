@@ -8,7 +8,25 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 15:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openwrt</title>
+      <link>https://goozenlab.github.io/tags/openwrt/</link>
+      <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/tags/openwrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>https://goozenlab.github.io/tags/raspberry-pi/</link>
+      <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>update</title>
       <link>https://goozenlab.github.io/tags/update/</link>
@@ -114,24 +132,6 @@
       <pubDate>Fri, 24 Jul 2020 10:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/tags/littlist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>openwrt</title>
-      <link>https://goozenlab.github.io/tags/openwrt/</link>
-      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/openwrt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry pi</title>
-      <link>https://goozenlab.github.io/tags/raspberry-pi/</link>
-      <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     

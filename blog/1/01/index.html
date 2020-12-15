@@ -200,19 +200,19 @@ update_config=1
 country=US
 
 network={
-	ssid=&quot;watagumo&quot;
-	psk=&quot;******&quot;
-	key_mgmt=WPA-PSK
-	# id_str=&quot;CHIANGMAI&quot;
-	priority=100
+    ssid=&quot;watagumo&quot;
+    psk=&quot;******&quot;
+    key_mgmt=WPA-PSK
+    # id_str=&quot;CHIANGMAI&quot;
+    priority=100
 }
 
 network={
-	ssid=&quot;gardern&quot;
-	psk=&quot;******&quot;
-	key_mgmt=WPA-PSK
-	# id_str=&quot;TOKYO&quot;
-	priority=90
+    ssid=&quot;gardern&quot;
+    psk=&quot;******&quot;
+    key_mgmt=WPA-PSK
+    # id_str=&quot;TOKYO&quot;
+    priority=90
 }
 </code></pre><p>確かid_strでも設定ができたような。。</p>
 <p>priorityが大きい方が優先されます。実家にルーターを持っていていった時は、
@@ -251,9 +251,9 @@ static domain_name_servers=192.168.0.1
 <p>wpa_passphrase ESSID パスフレーズ</p>
 <pre><code>root@tacos:~ # wpa_passphrase SSID passwd
 network={
-	ssid=&quot;SSID&quot;
-	#psk=&quot;passwd&quot;
-	psk=5f02de9127f87aca75f1b87d81165dc30ae08dd7dc53afb77f4f62
+    ssid=&quot;SSID&quot;
+    #psk=&quot;passwd&quot;
+    psk=5f02de9127f87aca75f1b87d81165dc30ae08dd7dc53afb77f4f62
 }
 </code></pre><ul>
 <li><a href="http://kouki-hoshi.hatenablog.com/entry/2016/07/16/153836">RaspberryPi で複数 Wifi 環境に個別設定を行う方法</a></li>

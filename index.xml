@@ -15,7 +15,25 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/opensource-network-environment/</guid>
-      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 なるべく経済的かつ省電力。 面白さも大事。 お金があればス</description>
+      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 目次 Wifiルーター: OpenWRT Archer C7 v5 Pi 3B Pi 4B 速度比較 おすすめ</description>
+    </item>
+    
+    <item>
+      <title>OpenWRT: Minifluxのアップデート</title>
+      <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
+      <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
+      <description>ラズベリーパイで動かしているOpenWRTトラベルルーター で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました</description>
+    </item>
+    
+    <item>
+      <title>プチパニック</title>
+      <link>https://goozenlab.github.io/blog/2020/12/panic-efi/</link>
+      <pubDate>Sat, 05 Dec 2020 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/panic-efi/</guid>
+      <description>ハッキントッシュの再起動を行ったら、アップルマークが表示された状態から進まず、、 数日前から急にメールが繋がらなくなったりしてなんか嫌な感じが</description>
     </item>
     
     <item>

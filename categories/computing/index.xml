@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jul 2020 10:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 15:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWRT: Minifluxのアップデート</title>
+      <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
+      <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
+      <description>ラズベリーパイで動かしているOpenWRTトラベルルーター で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました</description>
+    </item>
+    
     <item>
       <title>FreeNASをThinkpad X230で使う</title>
       <link>https://goozenlab.github.io/blog/2020/07/freenas-laptop/</link>

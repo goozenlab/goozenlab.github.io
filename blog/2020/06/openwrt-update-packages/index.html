@@ -179,9 +179,15 @@
 <p>SSHでコンソールからのアップデートでも、
 <code>apt upgrade</code>
 のように一発でアップデートのパッケージをインストールするコマンドは存在しません。</p>
-<pre><code>root@OpenWrt:~$ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade 
+<pre><code>root@OpenWrt:~$ opkg upgrade 
+root@OpenWrt:~$ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg install
 </code></pre><p>上記のワンライナーで一発処理ができます。メモとして。</p>
 <!-- ashのプロファイルをいじれば良いのか？ -->
+<p>追記：
+最近行ったらエラーが出ました。<code>opkg install</code>にて動きましたので修正しました。</p>
+<pre><code>root@OpenWrt:~$ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade
+root@OpenWrt:~$ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg install
+</code></pre>
 				
 
 <h3>See Also</h3>

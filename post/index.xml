@@ -8,7 +8,25 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Nov 2020 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 15:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWRT: Minifluxのアップデート</title>
+      <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
+      <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
+      <description>ラズベリーパイで動かしているOpenWRTトラベルルーター で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました</description>
+    </item>
+    
+    <item>
+      <title>プチパニック</title>
+      <link>https://goozenlab.github.io/blog/2020/12/panic-efi/</link>
+      <pubDate>Sat, 05 Dec 2020 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/panic-efi/</guid>
+      <description>ハッキントッシュの再起動を行ったら、アップルマークが表示された状態から進まず、、 数日前から急にメールが繋がらなくなったりしてなんか嫌な感じが</description>
+    </item>
+    
     <item>
       <title>アップルシリコン</title>
       <link>https://goozenlab.github.io/blog/2020/11/apple-silicon/</link>

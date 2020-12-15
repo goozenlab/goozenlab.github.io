@@ -19,17 +19,47 @@
   
   <url>
     <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2020-11-22T10:17:00+09:00</lastmod>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/categories/mumble/</loc>
-    <lastmod>2020-11-22T10:17:00+09:00</lastmod>
+    <loc>https://goozenlab.github.io/categories/computing/</loc>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/openwrt/</loc>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</loc>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2020-11-22T10:17:00+09:00</lastmod>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/raspberry-pi/</loc>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/categories/mumble/</loc>
+    <lastmod>2020-12-05T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2020/12/panic-efi/</loc>
+    <lastmod>2020-12-05T10:17:00+09:00</lastmod>
   </url>
   
   <url>
@@ -63,18 +93,8 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2020-07-31T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/tags/update/</loc>
     <lastmod>2020-07-31T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/computing/</loc>
-    <lastmod>2020-07-30T10:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -228,17 +248,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/openwrt/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</loc>
-    <lastmod>2020-06-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/raspberry-pi/</loc>
     <lastmod>2020-06-30T10:00:00+09:00</lastmod>
   </url>
   
