@@ -157,7 +157,7 @@
                 <h1>トラベル・パイ・ルーター</h1>
                 <p class="footnote">
                     updated at 
-                    <time class="">2020-06-25</time>
+                    <time class="">2020-12-15</time>
 				</p>
             </div>
             <div class="post-content">
@@ -194,8 +194,8 @@ Linuxカーネルベースになっています。</p>
 <li>Syncthing: ファイル同期（iOSアプリがないのが残念）</li>
 <li>Gitea: パーソナル Github（自分の手元に置いておきたんよね。）</li>
 <li>Postgresql: gitea/minifluxにて利用するデーターベースサーバー</li>
-<li>Stubby: DNS通信の暗号化</li>
-<li>Prometheus: 本体の監視サーバー</li>
+<li>Stubby: DNS通信の暗号化 <a href="https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/">インストール</a></li>
+<li>Prometheus: 本体の監視サーバー <a href="https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/">インストール</a></li>
 <li>Wireguard: インストール済み（未設定）</li>
 </ul>
 <!-- + Downloader: torrent, youtube-dl。落としたファイルはSyncthingで端末へ同期。 -->
@@ -205,13 +205,15 @@ Linuxカーネルベースになっています。</p>
 <li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-gitea/">Gieta</a>：持ち出しGithub</li>
 <li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/">Miniflux</a>：ブラウザーで閲覧、快適RSS</li>
 <li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/">Syncthng</a>：DropBoxの代替同期アプリ</li>
+<li><a href="https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/">Prometheus</a>：監視サーバー</li>
+<li><a href="https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/">Stubby</a>：DNSのtls化</li>
 </ul>
 <p>詰め込みすぎると動作が緩慢になると思いインストールしなかったソフトウェアは以下、</p>
 <ul>
 <li>influxDB: パイゼロで運用する</li>
 <li>Grafana: MacOSで動かす（データーをパイより所得）</li>
 </ul>
-<p>その他入れないけれちょっと考えたアプリ（裏でこそこそと作業をさせる）</p>
+<p>その他入れないけど、ちょっと考えたアプリ（裏でこそこそと作業をさせる）</p>
 <ul>
 <li>youtube-dl: ユーチューブの動画ダウンローダー</li>
 <li>torrent: トレントダウンローダー</li>
@@ -255,6 +257,8 @@ RAMがカツカツ、CPUはスカッスカッ、余裕で動いています。
 <li>USB機器の抜き差しでシステムが落ちる</li>
 </ul>
 <div class="attention"><b>※　</b>手元にあったUSBネットワークドングル(TP Link T1/T2)はカーネルモジュールをインストールして見るも動作せず。</div>
+<h2 id="ぼやき">ぼやき</h2>
+<p>Bitwardenのローカルサーバも作りたかったんだけどね、ドッカーはPiA+ではちょっと荷が重いようです。</p>
 <hr>
 <ul>
 <li>2020-12-15：RSSサーバーの<a href="https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/">Minifluxをアップグレード</a></li>

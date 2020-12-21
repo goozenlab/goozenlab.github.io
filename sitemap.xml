@@ -3,12 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goozenlab.github.io/computing/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <loc>https://goozenlab.github.io/categories/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.github.io/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/categories/mumble/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/openwrt/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/raspberry/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2020/12/travel-router-update/</loc>
+    <lastmod>2020-12-21T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/computing/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,17 +53,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/categories/computing/</loc>
-    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/openwrt/</loc>
     <lastmod>2020-12-15T15:00:00+09:00</lastmod>
   </url>
   
@@ -38,23 +63,8 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/tags/raspberry-pi/</loc>
     <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/mumble/</loc>
-    <lastmod>2020-12-05T10:17:00+09:00</lastmod>
   </url>
   
   <url>
@@ -3744,10 +3754,6 @@
   
   <url>
     <loc>https://goozenlab.github.io/computing/nomad-goods/</loc>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/blog/1/01/</loc>
   </url>
   
   <url>

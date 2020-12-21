@@ -8,14 +8,23 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 15 Dec 2020 15:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>パイ・トラベルルーターの使用感</title>
+      <link>https://goozenlab.github.io/blog/2020/12/travel-router-update/</link>
+      <pubDate>Mon, 21 Dec 2020 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/travel-router-update/</guid>
+      <description>夏頃からふらっと自転車で旅行しています。現在沖縄。 キャンプサイトがメインで動いてましたが、Gotoトラベルも大都市では活用させていただきまし</description>
+    </item>
+    
     <item>
       <title>OpenWRT: Minifluxのアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
       <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
-      <description>ラズベリーパイで動かしているOpenWRTトラベルルーター で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました</description>
+      <description>OpenWRTトラベルルーター(Raspberry Pi.3A+) で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました。 アッ</description>
     </item>
     
     <item>

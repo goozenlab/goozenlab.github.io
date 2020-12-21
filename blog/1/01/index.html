@@ -169,95 +169,44 @@
             </div>
 
             <div class="post-content">
-                <p>まとめ：wpa_supplicant</p>
-<p>モバイルルーターが、頑なに静的なIPアドレスの割り当てを拒みます。
-仕方がないので設定してしまうことにしました。</p>
-<p>ただ、接続先が変わることがあるので、
-複数の接続先を違うIPアドレスを使う設定</p>
-<p>本来なら、ルーターに仕事をお願いしたかったんですけどね。</p>
-<h2 id="etcnetworkinterfaces">/etc/network/interfaces</h2>
-<p>wpa_roamにて自動で接続先が切り替わる。</p>
-<pre><code>pi@raspberry:~ $ sudo vi /etc/network/interfaces:
-
-# Wifi Access
-
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-
-iface SIRI inet dhcp   # Station ID
-
-# iface HOME inet static   # Station ID
-#    address 192.168.10.1/24
-</code></pre><p>wpa-roamだと切り替えが動的になるらしい。</p>
-<h2 id="接続先リスト-etcwpa_supplicantwpa_supplicantconf">接続先リスト: /etc/wpa_supplicant/wpa_supplicant.conf</h2>
-<p>（優先順位をつける）</p>
-<pre><code>pi@raspberry:~ $ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
-
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=US
-
-network={
-    ssid=&quot;watagumo&quot;
-    psk=&quot;******&quot;
-    key_mgmt=WPA-PSK
-    # id_str=&quot;CHIANGMAI&quot;
-    priority=100
-}
-
-network={
-    ssid=&quot;gardern&quot;
-    psk=&quot;******&quot;
-    key_mgmt=WPA-PSK
-    # id_str=&quot;TOKYO&quot;
-    priority=90
-}
-</code></pre><p>確かid_strでも設定ができたような。。</p>
-<p>priorityが大きい方が優先されます。実家にルーターを持っていていった時は、
-自分のルーター経由で接続します。</p>
-<h2 id="接続先詳細設定">接続先詳細設定</h2>
-<p>固定のIP割り振りなど。</p>
-<pre><code>pi@raspberry:~ $ sudo vi /etc/network/interfaces:
-
-# Wifi Access
-
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-
-iface SIRI inet dhcp    # Station ID
-iface HOME inet static  # Station ID
-    address 192.168.10.1/24
-</code></pre><pre><code>pi@raspberry:~ $ sudo vi /etc/dhcpcd.conf
-
-interface wlan0
-
-ssid watagumo
-static ip_address=10.0.0.10/24
-static routers=10.0.0.20
-static domain_name_servers=10.0.0.10
-
-ssid gardern
-static ip_address=192.168.0.10/24
-static routers=192.168.0.1
-static domain_name_servers=192.168.0.1
-
-</code></pre><h2 id="おまけ">おまけ</h2>
-<p>パスワードをプレーンなテキストで置いておくのもちょっと気がひけるので、
-接続先のパスワードを暗号化します。</p>
-<p>wpa_passphrase ESSID パスフレーズ</p>
-<pre><code>root@tacos:~ # wpa_passphrase SSID passwd
-network={
-    ssid=&quot;SSID&quot;
-    #psk=&quot;passwd&quot;
-    psk=5f02de9127f87aca75f1b87d81165dc30ae08dd7dc53afb77f4f62
-}
-</code></pre><ul>
-<li><a href="http://kouki-hoshi.hatenablog.com/entry/2016/07/16/153836">RaspberryPi で複数 Wifi 環境に個別設定を行う方法</a></li>
-</ul>
+                <p>2020-02-18</p>
+<p>idea-ce-linux</p>
+<p>アンドロイドの開発はするつもりはあまりないのだけれども、
+オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、
+開発環境をインストールしてみました。</p>
+<p>オープンソースの IDE もいくつかあるのですが、今回は少し端折って簡単に
+InteliJ
+のものをインストールします。</p>
+<p>intellij install on arch ??</p>
+<p><img src="/images/2020-01-17-idea-app.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-02.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-04.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-05.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-06.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-07.png" alt="IdeaCE">
+<img src="/images/2020-01-17-idea-08.png" alt="IdeaCE"></p>
+<p>で、準備完了。</p>
+<p>やりたい事をまとめると、</p>
+<p>普段使いをしているアプリのちょっとしたところを自分好みにする。</p>
+<h2 id="task">Task</h2>
+<p>レイアウトの調整、右のバーが太い、補足する、文字を大きくする。
+割と簡単に行えるかも、</p>
+<h2 id="tt-rss">TT-RSS</h2>
+<p>スワイプ時の挙動を追加したい。
+自分は、Wallagbag と Instapaper しか使わないので、</p>
+<p>スピードは Feeder が早いので、そちらのソースコードを持ってくるかな、</p>
+<p>自分のメイン端末は７インチのものなので、少しレイアウトに余裕を持たせて
+表示量を増やす。</p>
+<p>バラーーっと見て一気に消去。</p>
+<h2 id="k-9">K-9</h2>
+<p>バーを細くして</p>
+<p>両端のアイコンの大きさを調整。</p>
+<p>スワイプで消去機能を追加</p>
+<p>アイコンも変える。</p>
+<p>多分割と簡単にできそうかな。。</p>
+<p>GZ-9
+GZask
+Tiny GZZ</p>
 
             </div>
         </div>

@@ -8,14 +8,23 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>パイ・トラベルルーターの使用感</title>
+      <link>https://goozenlab.github.io/blog/2020/12/travel-router-update/</link>
+      <pubDate>Mon, 21 Dec 2020 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/travel-router-update/</guid>
+      <description>夏頃からふらっと自転車で旅行しています。現在沖縄。 キャンプサイトがメインで動いてましたが、Gotoトラベルも大都市では活用させていただきまし</description>
+    </item>
+    
     <item>
       <title>オープンソースで作るネットワーク環境</title>
       <link>https://goozenlab.github.io/computing/opensource-network-environment/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/opensource-network-environment/</guid>
-      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 目次 Wifiルーター: OpenWRT Archer C7 v5 Pi 3B Pi 4B 速度比較 おすすめ</description>
+      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 同じファームウェアを使うことで管理も楽ですし、異なった</description>
     </item>
     
     <item>
@@ -24,7 +33,7 @@
       <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
-      <description>ラズベリーパイで動かしているOpenWRTトラベルルーター で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました</description>
+      <description>OpenWRTトラベルルーター(Raspberry Pi.3A+) で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました。 アッ</description>
     </item>
     
     <item>
@@ -785,7 +794,7 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
     </item>
     
     <item>
-      <title>MicroG &#43; F-Droid</title>
+      <title>De-Google Phone</title>
       <link>https://goozenlab.github.io/computing/optout-phone/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
@@ -5588,15 +5597,6 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/1/01/</guid>
       <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://goozenlab.github.io/blog/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/1/01/</guid>
-      <description>まとめ：wpa_supplicant モバイルルーターが、頑なに静的なIPアドレスの割り当てを拒みます。 仕方がないので設定してしまうことにしま</description>
     </item>
     
     <item>

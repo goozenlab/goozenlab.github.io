@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>MicroG &#43; F-Droid | goozenlab</title>
+  <title>De-Google Phone | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -154,14 +154,15 @@
 	<div class="pure-u-11-12 pure-u-md-14-24">
         <div class="post">			
             <div class="post-title">
-                <h1>MicroG &#43; F-Droid</h1>
+                <h1>De-Google Phone</h1>
                 <p class="footnote">
                     updated at 
-                    <time class="">2019-12-20</time>
+                    <time class="">2020-12-21</time>
 				</p>
             </div>
             <div class="post-content">
-                <p>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、
+                <p><img src="/images/2019-07-03-google-services.png" alt="Google Services"></p>
+<p>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、
 できる範囲のことはしたいと思い。
 自由へむけカスタムロムを使いグーグル・アンドロイドからのオプトアウト。</p>
 <p><strong>De-Google Phone</strong>
@@ -185,56 +186,68 @@
 基本OSの部分は
 <strong>Android Open Source Project</strong>
 という名前で公開解されています。</p>
+<p>セキュリティー上問題を抱えている部分は、グーグルプレイサービスところです。
+そのサービスを使うことによって位置情報などの個人情報がグーグルに提供されます。</p>
+<h3 id="android">Android</h3>
 <ul>
 <li>GrapheneOS: <a href="https://grapheneos.org/">https://grapheneos.org/</a></li>
-<li>Custom ROM: lineageOS / AOSiP
+<li>CalyxOS (Micro-G): <a href="https://gitlab.com/CalyxOS/calyxos">https://gitlab.com/CalyxOS/calyxos</a></li>
+<li>e foundation (Micro-G): https://e.foundation/</li>
+<li>Custom ROM: lineageOS / AOSiPなど</li>
+</ul>
+<p>※　microG: Google APIの代替</p>
+<h3 id="linux-phone">Linux Phone</h3>
 <ul>
-<li>CalyxOS: <a href="https://gitlab.com/CalyxOS/calyxos">https://gitlab.com/CalyxOS/calyxos</a></li>
+<li>Unbuntu Touch: 最近プロジェクトが独立 <a href="https://ubuntu-touch.io/">https://ubuntu-touch.io/</a></li>
+<li>Kali hunter</li>
 </ul>
-</li>
-<li>microG</li>
-<li>magisk</li>
-</ul>
-<h2 id="オープンソースアプリケーション">オープンソース・アプリケーション</h2>
+<h2 id="アプリケーション">アプリケーション</h2>
+<h3 id="オープンソース">オープンソース</h3>
 <p>優秀な方々の奉仕により成り立っています。
-愛と希望に満ち溢れた！？端末に仕上がります。感動は伝わらんだろうなぁ〜。</p>
+愛と希望に満ち溢れた！？端末に仕上がります。
+自分自身の景気が良くなったら、必ず貢献させていただきます！</p>
 <ul>
 <li>F-Droid：オープンソース・アプリケーション・ストア</li>
 <li>Aurora：Google Store（匿名でアプリがダウンロードできますし、購入したアプリもこちらからインストールできます。）</li>
-<li>oandBAckup：バックアップソフト</li>
-<li>amaze：ファイルマネージャー</li>
-<li>Fennec (Firefox)：ウェブブラウザー</li>
 <li>K-9 Mail：Emailクライアント</li>
-<li>Simplenote：テキストファイル共有</li>
-<li>twidere：ツイッター・マストドンのクライアント</li>
-<li>signal：メッセージングソフト</li>
-<li>Gadgetbridge：Amazfit青春版（心拍数のデーター等は自分の所でキープ）</li>
-<li>orbit：</li>
-<li>tor：</li>
+<li>Fennec (Firefox)：ウェブブラウザー</li>
+<li>Signal：メッセージングソフト</li>
+<li>Amaze：ファイルマネージャー</li>
+<li>Simplenote / S. Note：テキスト共有</li>
+<li>Twidere：ツイッター・クライアント</li>
+<li>Syncthing：ピアツーピアのファイル・シンクサーバー</li>
+<li>OandBAckup：バックアップソフト</li>
 <li>DNS66：DNSを使った広告ブロッカーとローカルDNSサーバーへ接続する</li>
-</ul>
-<p>自前のサーバーと繋げて使っているアプリ。コンタクトリストもサーバーに置いてあります。グーグルアカウントは空にしておく。</p>
-<ul>
-<li>syncthing：ピアツーピアのファイル・シンクサーバー</li>
-<li>miniflux：RSSリーダー</li>
+<li>Gadgetbridge：Amazfit青春版（心拍数のデーター等は自分の所でキープ）</li>
 </ul>
 <!--
+自前のサーバーと繋げて使っているアプリ。コンタクトリストもサーバーに置いてあります。グーグルアカウントは空にしておく。
++ Orbit：
++ Tor：
++ miniflux：RSSリーダー
 + wallabag：ポケットの代替
 + etar：カレンダーソフト
 -->
-<p>自分自身の景気が良くなったら、必ず貢献させていただきます！</p>
-<h2 id="クローズドソースアプリケーション">クローズドソース・アプリケーション</h2>
+<h3 id="クローズドソースアプリケーション">クローズドソース・アプリケーション</h3>
 <p>その他オープンソースで代わりが見つからないソフトもいくつか使っています。</p>
 <ul>
 <li>Instapaper</li>
 <li>mapsMe：旅人マストな地図ソフト（代替ソフトがないというわけではないのですが、、）</li>
-<li>Element：自転車のガジェット管理</li>
+<li><del>Element：自転車のガジェット管理</del></li>
 <li>Komoot：自転車データー作成共有アプリ</li>
+</ul>
+<p>動かない幾つかのアプリはiOSで動かします。</p>
+<h2 id="helpful-site">Helpful Site</h2>
+<ul>
+<li>Android app compatibility
+on de-Googled devices: <a href="https://plexus.techlore.tech/">https://plexus.techlore.tech/</a>
+<img src="/images/2020-12-20-plexus-app-checker.png" alt="Plexus Application Checker"></li>
 </ul>
 <hr>
 <ul>
-<li>2019-12-20：アプリをリストアップする。</li>
-<li>2019-07-03：Max3でmicro-Gをインストール。<a href="https://goozenlab.github.io/blog/2019/07/max3-microg/">記事へ</a></li>
+<li>2020-12-21：Pixel3を購入、少し追記</li>
+<li>2019-12-20：アプリをリストアップ</li>
+<li>2019-07-03：Max3でmicro-Gをインストール<a href="https://goozenlab.github.io/blog/2019/07/max3-microg/">記事へ</a></li>
 </ul>
 
 				
