@@ -3,13 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://goozenlab.github.io/tags/arch/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2020-12-22T10:19:00+09:00</lastmod>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/categories/computing/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/debian/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.github.io/</loc>
-    <lastmod>2020-12-22T10:19:00+09:00</lastmod>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/manjaro/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/neon/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2020/12/distro-hopping/</loc>
+    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +64,6 @@
   
   <url>
     <loc>https://goozenlab.github.io/blog/2020/12/order-pixel3/</loc>
-    <lastmod>2020-12-22T10:19:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2020-12-22T10:19:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/</loc>
     <lastmod>2020-12-22T10:19:00+09:00</lastmod>
   </url>
   
@@ -60,11 +90,6 @@
   <url>
     <loc>https://goozenlab.github.io/computing/opensource-network-environment/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/computing/</loc>
-    <lastmod>2020-12-15T15:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -408,11 +433,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/debian/</loc>
-    <lastmod>2020-02-22T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/blog/2020/02/thai-font/</loc>
     <lastmod>2020-02-22T08:00:00+07:00</lastmod>
   </url>
@@ -428,11 +448,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/manjaro/</loc>
-    <lastmod>2020-02-12T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/tags/obs/</loc>
     <lastmod>2020-02-12T18:00:00+07:00</lastmod>
   </url>
@@ -440,11 +455,6 @@
   <url>
     <loc>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</loc>
     <lastmod>2020-02-12T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/arch/</loc>
-    <lastmod>2020-02-07T08:00:00+07:00</lastmod>
   </url>
   
   <url>

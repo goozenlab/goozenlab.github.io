@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 Dec 2020 10:19:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 19:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>日替わりディストロ</title>
+      <link>https://goozenlab.github.io/blog/2020/12/distro-hopping/</link>
+      <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/distro-hopping/</guid>
+      <description>いくつかのLinuxをBtrfsで併用してます。 日替わりランチが如く、 日々違ったディストロを切り替えて使ってます。 同じ作業をするので、ちょっ</description>
+    </item>
+    
     <item>
       <title>Pixel3を購入</title>
       <link>https://goozenlab.github.io/blog/2020/12/order-pixel3/</link>

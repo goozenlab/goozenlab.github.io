@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>neon on goozenlab</title>
+    <link>https://goozenlab.github.io/tags/neon/</link>
+    <description>Recent content in neon on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 19:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/neon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>日替わりディストロ</title>
+      <link>https://goozenlab.github.io/blog/2020/12/distro-hopping/</link>
+      <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/12/distro-hopping/</guid>
+      <description>いくつかのLinuxをBtrfsで併用してます。 日替わりランチが如く、 日々違ったディストロを切り替えて使ってます。 同じ作業をするので、ちょっ</description>
+    </item>
+    
+  </channel>
+</rss>
