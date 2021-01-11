@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>GrapheneOS：Pixel3にインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-01-12</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/pixel">pixel</a> <a href="https://goozenlab.github.io/tags/gafa">GAFA</a> <a href="https://goozenlab.github.io/tags/custom-rom">custom rom</a> <a href="https://goozenlab.github.io/tags/de-googled">de-googled</a> <a href="https://goozenlab.github.io/tags/grapheneos">grapheneOS</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>GrapheneOS：Pixel3にインストール</h1>
+            </div>
+
+            <div class="post-content">
+                <p>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。</p>
+<p>プライバシー配慮モバイルOSのGrapheneOSとは: <a href="https://www.axion.zone/grapheneos/">https://www.axion.zone/grapheneos/</a></p>
+<p>インストール・マニュアルはウェブサイト: <a href="https://grapheneos.org/install">https://grapheneos.org/install</a><br>
+に載っていますのでそれに基づいて行いました。英語ですが、しっかりまとめられています。
+TWRPとかも入れようかなとも思いましたが、セキュリティー上はあまり良くないということで、
+GrapheneOSオンリーで行きます。</p>
+<h2 id="事前作業">事前作業</h2>
+<p>MacOSのMojaveにて作業を行こないます。
+Pixelを接続する端末に必要なソフトをインストール。</p>
+<p>HomeBrew: https://</p>
+<p>をインストールしておきましょう。
+そして<code>fastboot</code>コマンドを使うためにAndroid-platform-toolsをインストールします。</p>
+<!--
+Arch: android-tools 
+Debian: android-sdk-platform-tools-common 
+-->
+<pre><code>guiness:~ $ brew cask install android-platform-tools
+guiness:~ $ fastboot --version
+fastboot version 30.0.0-6374843
+Installed as /usr/local/bin/fastboot
+guiness:~ $ 
+</code></pre><p>そして必要なツールとファイルをインストールします。
+ダウンロードしたファイルも検証します。<code>verified</code>が戻ってくれば問題なしです。</p>
+<pre><code>guiness:~ $ brew install signify-osx
+guiness:~ $ curl -O https://releases.grapheneos.org/factory.pub
+guiness:~ $ curl -O https://releases.grapheneos.org/blueline-factory-2020.12.12.03.zip
+guiness:~ $ curl -O https://releases.grapheneos.org/blueline-factory-2020.12.12.03.zip.sig
+guiness:~ $ signify -Cqp factory.pub -x blueline-factory-2020.12.12.03.zip.sig &amp;&amp; echo verified
+verified
+</code></pre><hr>
+<h2 id="ブートローダーの解除">ブートローダーの解除</h2>
+<p>OEM unlockingを端末にて設定します。</p>
+<ol>
+<li>デベロッパーモードを有効化: About Phone内のBuild Numberを連打して有効かします。</li>
+<li>OEMアンロックの有効化
+<code>Settings ➔ System ➔ Advanced ➔ Developer options </code>
+にて<code>Enable OEM unlocking</code>をチェックします。</li>
+</ol>
+<p>ブートローダーで起動します：ボリュームアップボタンと電源ボタンを同時に押し続けて再起動。
+そして端末をMacにつなぎ、コマンドを実行します。</p>
+<pre><code>guiness:~ $ fastboot flashing unlock
+</code></pre><p>端末上で確認の画面が表示されます、Vol bottonで<code>Un Lock the Bootloader</code>を洗濯して、
+パワーボタンで実行します。
+リスタートされブートローダーが起動します。</p>
+<p>※　盗難防止のためのFactory Reset Protection (FRP)サービスのため、インターネットに接続している必要があります。</p>
+<h2 id="grapheneosのインストール">GrapheneOSのインストール</h2>
+<p>Mac上にて、解凍したディレクトリーに移動し<code>./flash-all.sh</code>を実行します。</p>
+<pre><code>guiness:~ $ tar xvf blueline-factory-2020.12.12.03.zip
+guiness:~ $ ./flash-all.sh
+</code></pre><p>数回画面が点滅し再起動します。
+Google画面が表示後、GrapheneOSのfastbootdが表示されますが、
+そのまま放っておきます。</p>
+<p>そして作業が続き（全部で5分ぐらいで終了）、
+オリジナルのBootloaderに戻ってきます。
+パワーボタンを押してスタートします。</p>
+<p>以下は<code>./flash-all.sh</code>実行時の状況です。</p>
+<pre><code>guiness:~ $ ./flash-all.sh
+Sending 'bootloader_a' (8517 KB)                   OKAY [  0.300s]
+Writing 'bootloader_a'                             (bootloader) Flashing Pack version b1c1-0.3-6863019
+(bootloader) Flashing partition table for Lun = 0
+(bootloader) Flashing partition table for Lun = 1
+
+....
+
+Erasing 'metadata'                                 OKAY [  0.106s]
+Erase successful, but not automatically formatting.
+File system type raw not supported.
+Finished. Total time: 110.772s
+Rebooting into bootloader                          OKAY [  0.000s]
+Finished. Total time: 0.000s
+guiness:blueline-factory-2020.12.12.03 $ 
+</code></pre><p>設定画面が表示されインストールは終了です。
+シンプルなAOSPの初期画面、
+インストールされているソフトも最低限ものしかありません。</p>
+<h2 id="ブートローダーのロック">ブートローダーのロック</h2>
+<p>最後に、セキュリティー上ブートローダーを再度ロックします。ブートローダーで端末を起動しコマンドをうちます。</p>
+<pre><code>guiness:~ $ fastboot flashing lock
+</code></pre><p>そして、端末のデべロッパー設定より
+<code>OEM Locking -&gt; disable</code>
+に変更します、再起動されます。</p>
+<p>以上で、インストール作業終了です。</p>
+<hr>
+<h2 id="ショートレビュー">ショート・レビュー</h2>
+<p><img src="/images/2021-01-10-graphene-initial-00.png" alt="Screenshots GrapheneOS"></p>
+<p>GrapheOSを数日使ってみました。
+セキュリティー的にガチガチなのでちょっと窮屈な感じがあります。</p>
+<!-- 政府高官というわけではないので、。 -->
+<p>とりあえず自分の使っているソフトは問題なく動くようで思いの外拍子抜けな感じですが、
+<strong>Google Camera</strong>が使えないことがかなり痛い。
+評判も良いカメラのようですし、他に持っている携帯のカメラが、MiMax3で良くない、OnePlus3は不具合があってなぜかマクロレンズ状態、iPhoneSE 1stGは古すぎなので、手元にまともなカメラ機能がついているスマホがない。。</p>
+<p>オープンソースのOpenCameraの出来も悪くないとのレビューを見ましたが、
+ナイトモードには対応していない。
+せっかく唯一のカメラの良いスマホなので、もう一つのディストリビューション：
+GrapheneOSの対抗馬こと、<strong>CalyxOS</strong>に白羽の矢が立つ。</p>
+<p>Gcamも使えるようですし、
+GrapheneOSと比べスピードも少し早いらしいです。
+セキュリテxーと使い勝手のバランスが取れているということで、鞍替え決行。
+（この年越しはミスもあったりして、えらくRom焼きしてます。。）</p>
+<p>GrapheneOSはセキュリティー的に厳しい環境教が必要な、政治家さんやジャーナリストさんとかにはかなりオススメです。
+Pixel Phoneを持っている人は一回試しにインストールしてみるものいいかもです。</p>
+<hr>
+<h2 id="おまけストックロムに戻したい時の作業">おまけ：ストックロムに戻したい時の作業</h2>
+<p>ストックアンドロイドに戻す時の作業は上記のGrapheneOSインストールとほとんど同じですが、
+<strong>Android Verified Boot key</strong> を消去する必要があります。</p>
+<ol>
+<li>
+<p>Unlock the bootloader.</p>
+</li>
+<li>
+<p>Install Stock Rom</p>
+</li>
+<li>
+<p>ブートローダーで起動後、カスタムブートキーを削除します。</p>
+</li>
+</ol>
+<pre><code>guiness:~ $ fastboot erase avb_custom_key
+</code></pre><ol start="3">
+<li>Lock the bootloader.</li>
+</ol>
+<p>という作業になります。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/07/max3-microg/">Max3でmicro-G</a></li>
+	
+	<li><a href="/blog/2020/12/order-pixel3/">Pixel3を購入</a></li>
+	
+	<li><a href="/blog/2019/08/customrom_dirty_flash/">Dirty Flash</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

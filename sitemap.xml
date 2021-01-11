@@ -3,17 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://goozenlab.github.io/blog/2021/01/new-year/</loc>
-    <lastmod>2021-01-01T12:00:00+07:00</lastmod>
+    <loc>https://goozenlab.github.io/tags/custom-rom/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2021-01-01T12:00:00+07:00</lastmod>
+    <loc>https://goozenlab.github.io/tags/de-googled/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://goozenlab.github.io/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/gsi/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/xiaomi/</loc>
+    <lastmod>2021-01-13T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/categories/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/categories/computing/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/gafa/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/grapheneos/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/tags/pixel/</loc>
+    <lastmod>2021-01-12T10:17:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goozenlab.github.io/blog/2021/01/new-year/</loc>
     <lastmod>2021-01-01T12:00:00+07:00</lastmod>
   </url>
   
@@ -23,17 +83,7 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2021-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/tags/arch/</loc>
-    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/computing/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
   </url>
   
@@ -53,18 +103,8 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/blog/2020/12/distro-hopping/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/pixel/</loc>
-    <lastmod>2020-12-22T10:19:00+09:00</lastmod>
   </url>
   
   <url>
@@ -768,11 +808,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/xiaomi/</loc>
-    <lastmod>2019-12-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/blog/2019/12/ecommend-xiaomi/</loc>
     <lastmod>2019-12-12T19:30:00+07:00</lastmod>
   </url>
@@ -983,11 +1018,6 @@
   </url>
   
   <url>
-    <loc>https://goozenlab.github.io/tags/gafa/</loc>
-    <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://goozenlab.github.io/tags/ipod/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
   </url>
@@ -1035,11 +1065,6 @@
   <url>
     <loc>https://goozenlab.github.io/blog/2019/08/pi-3a-external-disk/</loc>
     <lastmod>2019-08-25T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/custom-rom/</loc>
-    <lastmod>2019-08-24T07:30:00+07:00</lastmod>
   </url>
   
   <url>

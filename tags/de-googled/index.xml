@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>de-googled on goozenlab</title>
+    <link>https://goozenlab.github.io/tags/de-googled/</link>
+    <description>Recent content in de-googled on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 13 Jan 2021 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/de-googled/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Max3 GSI Romをインストール</title>
+      <link>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</link>
+      <pubDate>Wed, 13 Jan 2021 06:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</guid>
+      <description>不具合 : ヘッドフォンジャックが使用不可 モバイル通信機能が使用不可：SIMの認識はしているようなので、もしかしたらSIMの設定上（APN設定）</description>
+    </item>
+    
+    <item>
+      <title>GrapheneOS：Pixel3にインストール</title>
+      <link>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</link>
+      <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</guid>
+      <description>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。 プライバシー配慮モバイルOSのGrapheneOSとは: https://www.axion.zone/grapheneos/ インスト</description>
+    </item>
+    
+  </channel>
+</rss>

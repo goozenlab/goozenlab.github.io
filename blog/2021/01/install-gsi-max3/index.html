@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Mi Max3 GSI Romをインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-01-13</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/xiaomi">xiaomi</a> <a href="https://goozenlab.github.io/tags/custom-rom">custom rom</a> <a href="https://goozenlab.github.io/tags/de-googled">de-googled</a> <a href="https://goozenlab.github.io/tags/gsi">gsi</a> 
+                    
+
+                    
+
+                    
+                </p>
+                <h1>Mi Max3 GSI Romをインストール</h1>
+            </div>
+
+            <div class="post-content">
+                <div class="note">
+<b>不具合</b> : 
+<ol>
+<li>ヘッドフォンジャックが使用不可<br></li>
+<li>モバイル通信機能が使用不可：SIMの認識はしているようなので、もしかしたらSIMの設定上（APN設定）の問題なのかもしれません。
+Biglobeのドコモ版では使えませんでした。</li>
+</ol>
+<p>結局、MIUI.Eu版にNandoroidをつかってDe-Google化しました。。</p>
+</div>
+<p>このMi Max3はXiaomiでは珍しく長期販売中であるにも関わらず、
+開発のフォーラムは全然活発ではありません。
+しかも
+使っていたLineageOSを移植してくれていた開発者のかたも去年の1月よりサポートが終了。
+セキュリティーパッチが当たっていません。</p>
+<p>そんな中、GSI形式でインストールが可能になっていると、ロシア語やらなんやら情報が出てましたので、
+MIUIのできも悪くはないのですが、ちょっと試して見ました。</p>
+<p>de-Google化の一環として<code>CustomROM＋Micro-G</code>をインストールします。</p>
+<hr>
+<p>上手く入っていないのですが作業手順は以下の通り、多分他のXiaomi端末なら同様の作業でインストール可能だと思います。</p>
+<h2 id="インストール作業">インストール作業</h2>
+<p>事前にブートローダーの解除とOrangefoxのインストールが必要です。（割愛）
+TWRPは動かないと言うことで、代替アプリのOrangeFoxを使います。</p>
+<ul>
+<li>Orangefox: <a href="https://orangefox.download/device/nitrogen">https://orangefox.download/device/nitrogen</a></li>
+</ul>
+<h3 id="必要なファイル">必要なファイル</h3>
+<ol>
+<li>最新中国ベーターロム。（MIUI.EUでは動作しません）</li>
+<li>GSI Rom: ASOPもしくはLineageOSのシステムイメージをダウンロードします。
+<ul>
+<li>China Beta: <a href="https://forum.xda-developers.com/t/rom-nitrogen-recovery-fastboot-official-recovery-fastboot-roms-for-mi-max-3.3827503/">https://forum.xda-developers.com/t/rom-nitrogen-recovery-fastboot-official-recovery-fastboot-roms-for-mi-max-3.3827503/</a></li>
+<li>ASOP: <a href="https://github.com/phhusson/treble_experimentations/releases">https://github.com/phhusson/treble_experimentations/releases</a></li>
+<li>LineageOS: <a href="https://sourceforge.net/projects/andyyan-gsi/files/">https://sourceforge.net/projects/andyyan-gsi/files/</a></li>
+<li>GSI Romのリスト: <a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-(GSI)-list">https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-(GSI)-list</a></li>
+</ul>
+</li>
+</ol>
+<!--
++ Haystack: https://github.com/Lanchon/haystack
++ Tingle: https://github.com/ale5000-git/tingle
++ NanoDroid Patcher: https://downloads.nanolx.org/NanoDroid/Stable/
+-->
+<h3 id="作業手順">作業手順</h3>
+<ul>
+<li><strong>リカバリー・モード</strong>（Orangefox)で起動</li>
+<li>data, sytem, art/davlik, cacheをワイプ</li>
+<li>チャイナ・ベーターロムを焼きます。</li>
+<li>cache, dalvikをワイプ</li>
+<li><strong>ファーストブート・モード</strong>で再起動</li>
+</ul>
+<p><code>fastboot</code>コマンドでシステム領域にダウンロードしたイメージファイルを焼きます。
+（Orangefoxを使ってインストールもできるとも書いてありましたが、起動の途中で止まりました。）</p>
+<pre><code>$ fastboot erase system
+$ fastboot reflesh system &lt;-- 他のサイトではこちらを使うとも。。
+$ fastboot flash system lineage-17.1-20201215-UNOFFICIAL-treble_arm64_bvS.img
+Sending sparse 'system' 1/3 (720896 KB)            OKAY [ 17.801s]
+Writing 'system'                                   OKAY [  0.000s]
+Sending sparse 'system' 2/3 (720996 KB)            OKAY [ 17.949s]
+Writing 'system'                                   OKAY [  0.001s]
+Sending sparse 'system' 3/3 (90996 KB)             OKAY [  5.219s]
+Writing 'system'                                   OKAY [  0.001s]
+Finished. Total time: 40.984s
+$ fastboot rebooot 
+</code></pre><ul>
+<li>再起動で終了</li>
+</ul>
+<h3 id="micro-g">Micro-G</h3>
+<p>Micro-GはF-Droidよりインストールします。レポジトリーの登録も必要です。</p>
+<ul>
+<li>F-Droid: <a href="http://fdroid.org">http://fdroid.org</a></li>
+<li>Micro-Gのレポジトリ: <a href="https://microg.org/fdroid/repo">https://microg.org/fdroid/repo</a></li>
+</ul>
+<p>必要なアプリは4つあります。</p>
+<ul>
+<li>Service Core (GmsCore)</li>
+<li>Services Framework Proxy (GsfProxy)</li>
+<li>Unified Network Location Provider (UnifiedNlp)</li>
+<li>Store (Phonesky)</li>
+</ul>
+<p>※　ASOPとLineageOSのカーネルはパッチを当てないでもMicro-G（<strong>signature spoofing</strong>）に中途半端に対応しています。</p>
+<h3 id="google-camera">Google Camera</h3>
+<p>GoogleCameraも使えるようですが、画像の処理に少し時間がかかりますのでオープンソースのOpen Cameraがおすすめです。</p>
+<ul>
+<li>Gcam（MGC_6.1.021_BSG_Arnova-TlnNeun_Urnyx05-v4.5.apk）: <a href="https://www.celsoazevedo.com/files/android/google-camera/f/MGC_6.1.021_BSG_Arnova-TlnNeun_Urnyx05-v4.5.apk">https://www.celsoazevedo.com/files/android/google-camera/f/MGC_6.1.021_BSG_Arnova-TlnNeun_Urnyx05-v4.5.apk</a></li>
+<li>Camera2API : <a href="https://forum.xda-developers.com/t/camera-2-api-for-mi-max3-eu-rom-miui11-android-10-how-to-enable.4016661/#post-81149057">https://forum.xda-developers.com/t/camera-2-api-for-mi-max3-eu-rom-miui11-android-10-how-to-enable.4016661/#post-81149057</a></li>
+</ul>
+<!--
+
+https://forum.xda-developers.com/t/guide-nitrogen-10-10-phh-quack-los-17-gsi-with-android-10-vendor.4029411/
+
+結局；
+MIUI.eu
+バージョンにNondroid Micro-Gを焼きました。
+NandroidバージョンではGoogleStoreなどをUnInstallされるので、ありがたい。
+余計なものはXiaomiのデフォルトでついてくるアプリ。
+これらはNetguard/TCを使って通信を遮断すればまぁ、良いのかなと、、
+
+-->
+<h2 id="使用感">使用感</h2>
+<p><img src="/images/2020-12-27-home-trebuchet.png" alt="GSI LineageOS"></p>
+<p>一通り試してみました。
+LineageOS17（android10）と18、ASOP（Android11）、LeOS（Android11）全て起動・動作します。
+しかし、すべてのRomで上記の不具合があります。ASOPでは時に画面がフラッシュし、LeOSは動作が少し緩慢です。</p>
+<p>そしてMicroGの対応具合もLeOSを除いては中途半端な感じです。
+必要なパッチは滝用済みと出ているので、大丈夫なように見えますし、動作もしているのですが。。</p>
+<p>LineageOSでは動作も軽快で、Wifi端末なら問題ないのだが、、。</p>
+<hr>
+<h2 id="おまけ">おまけ</h2>
+<p>文頭で書いた通り現在はMiui.eu+Nanodroidで
+NanodroidはMiuiで付属していたGoogleStoreなどのファイルを消去しMicro-Gに入れ替えてくれます。</p>
+<p><a href="https://downloads.nanolx.org/NanoDroid/Stable/">https://downloads.nanolx.org/NanoDroid/Stable/</a></p>
+<p>カーネルパッチ、Micro-G、Blomite WebViewをリカバリーモードより焼きます。</p>
+<p>使用感はちょっとだけも引っ掛かりがあったりもするし、
+Mi関連のソフトが少し怪しげなのが気になるのですが。仕方なし。。</p>
+<p>旅の途中のナビ、メールチェック、情報収集端末なので</p>
+<p>Miuiのランチャーが好きではないので、de-google化に少々矛盾を感じつつ、MSのランチャーを使ってます。。
+こんな感じで仕上がってます。割と格好良く仕上がりました。</p>
+<p><img src="/images/2021-01-11-home-mslauncher.jpg" alt="Miui with MS Launcher"></p>
+<p>今になって、もしかしたらチャイナ・ベーターバージョンに問題があったのかもと、
+グローバル・安定バージョンで使えるとほかのページで今更見る、、、<br>
+検証する気力がないので当分保留です。</p>
+<p>De-Googled Phoneを目指すなら、Pixelシリーズを買いましょう。
+CalyxOS/GrapheneOSがおすすめです。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/01/graphene-pixel3-install/">GrapheneOS：Pixel3にインストール</a></li>
+	
+	<li><a href="/blog/2019/07/max3-microg/">Max3でmicro-G</a></li>
+	
+	<li><a href="/blog/2019/12/ecommend-xiaomi/">シャオミ日本上陸</a></li>
+	
+	<li><a href="/blog/2019/08/amazfit-bip-one-month/">Amazfit Bipと１ヶ月</a></li>
+	
+	<li><a href="/blog/2019/08/customrom_dirty_flash/">Dirty Flash</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
