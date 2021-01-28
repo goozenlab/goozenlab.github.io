@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2019, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 23 Nov 2019 13:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/oneplus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/oneplus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu Touchのインストールと使用感</title>
+      <link>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</link>
+      <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</guid>
+      <description>Harden-Gのカスタムロムで使っていたOnePlus3tはPixel3を買ったことでちょっとおもちゃにする。 インストールはインストーラー</description>
+    </item>
+    
     <item>
       <title>Oneplus 3tを分解修理</title>
       <link>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</link>
