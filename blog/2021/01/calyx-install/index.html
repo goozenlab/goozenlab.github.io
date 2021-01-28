@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>MacOSよりCalyxOSをインストールする | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-01-20</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/pixel">pixel</a> <a href="https://goozenlab.github.io/tags/custom-rom">custom rom</a> <a href="https://goozenlab.github.io/tags/de-googled">de-googled</a> <a href="https://goozenlab.github.io/tags/calyxos">calyxOS</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>MacOSよりCalyxOSをインストールする</h1>
+            </div>
+
+            <div class="post-content">
+                <h2 id="事前作業">事前作業</h2>
+<p>まず最初に、<strong>SIMカードは抜きましょう</strong>。入ったままインストールをすると何か不具合が起こるそうです。。</p>
+<p>Macを使ってインストールするので、
+CalyxOSイメージファイルとフラッシャーをダウンロードしておきます。
+<strong>同じフォルダー</strong>に保存しておきます。（そのままダウンロードフォルダーで問題ないです。）</p>
+<ul>
+<li>Rom for Pixel 3:</li>
+<li>macOS: device-flasher.darwin (<a href="https://github.com/AOSPAlliance/device-flasher/releases/download/1.0.2/device-flasher.darwin">https://github.com/AOSPAlliance/device-flasher/releases/download/1.0.2/device-flasher.darwin</a>)</li>
+<li>SHA256: 0e63cbeb2fa281a78b29e666074d4a76d998f05ba4614e55789f993483335893</li>
+</ul>
+<p>ファイルをチェックします。表示された番号が同じならば問題なし。</p>
+<pre><code>guiness:~ $ shasum -a 256 device-flasher.darwin
+0e63cbeb2fa281a78b29e666074d4a76d998f05ba4614e55789f993483335893  device-flasher.darwin
+</code></pre><h2 id="インストール作業">インストール作業</h2>
+<p>ウェブ上のインストール・マニュアルでは、フラッシャーのファイルをダブルクリックで実行とありますが、
+マックでは多分動かないと思います。</p>
+<p>ターミナルを開き、ファイルの置いてあるフォルダーに行き、実行権を与えコマンドで起動します。</p>
+<pre><code>guiness:~ $ cd Downloads/
+guiness:Downloads $ chmod +x ./device-flasher.darwin
+guiness:Downloads $ ./device-flasher.darwin
+</code></pre><p><img src="/images/2021-01-09-install-calyxos-00.png" alt="CalyxOS install"></p>
+<ol>
+<li><strong>SIMカードは抜いておく</strong>必要があります。</li>
+<li>ダウンロードするファイルがあるので、Macはネットに接続しておきます。</li>
+</ol>
+<p>まずは、ロックしてあるブートローダーのアンロック。</p>
+<ol>
+<li>開発者モードにして</li>
+<li>開発者オプションよりOEMアンロックをチェック</li>
+<li>Macと端末をケーブルでつなぎます。</li>
+<li>ダイヤログが出てきます、&ldquo;OK&quot;しておきます。</li>
+</ol>
+<p>リターンキーを押して続行します。</p>
+<p>Pixelに接続するために必要なツールのインストールや、ダウンロードしたファイルの解凍が行われます。
+黄色のタグがついているものがダウンロードされたり、解凍されたファイル。</p>
+<p><img src="/images/2021-01-09-install-calyxos-files.png" alt="CalyxOS install"></p>
+<p>終了後、もう一度リターンキーを押して続行します。</p>
+<p><img src="/images/2021-01-09-install-calyxos-01.png" alt="CalyxOS install"></p>
+<p>端末のチェックが行われて、Pixelは再起動されます。</p>
+<p>Pixelの画面上にブートローダー解除の確認画面が出るので、
+ボリュームボタン<strong>Unlock Bootloader</strong>を選択し、パワーボタンで実行します。</p>
+<p>再起動し、焼き込みの作業が行われます。</p>
+<p><img src="/images/2021-01-09-install-calyxos-02.png" alt="CalyxOS install"></p>
+<p>途中に再起動が行われますが、そのまま放っておきます。</p>
+<p><img src="/images/2021-01-09-install-calyxos-03.png" alt="CalyxOS install"></p>
+<p>5分ぐらいの作業が続きます。</p>
+<p>最後に、ブートローダー・ロックの確認画面が出るので、
+解除時と同じようにボリュームボタンで選択し、パワーボタンで実行します。</p>
+<p><img src="/images/2021-01-09-install-calyxos-04.png" alt="CalyxOS install"></p>
+<p><strong>Flashing Complete</strong>がてて、終了です。
+思った以上に簡単にインストールできました。</p>
+<p>が、、、起動してびっくり。。</p>
+<h2 id="壁紙がださ">！！！壁紙がださ！！！</h2>
+<p><img src="/images/2021-01-10-calyx-initial-00n.png" alt="Screenshots CalyxOS"></p>
+<p>しかも他のチョイスが無い！、
+GrapheneOSに戻ろうかと思いましたよ、、</p>
+<hr>
+<p>CalyxOSはPixelとXiamiの１端末しか対応してませんので、
+端末を買い替えるならばPixelをおすすめ、Pixel４aの評判はすごく良いようですしね。
+Googleカメラも動きますが、ネットから取ってくる必要があります。
+（もしくは使っている端末から抜き出しておく。参照： <a href="https://redandblack.io/blog/2020/using-google-camera-on-grapheneos/">https://redandblack.io/blog/2020/using-google-camera-on-grapheneos/</a>）</p>
+<p>日本語環境は仕方なくGboardをインストールしました。
+Mozcはちょっと古すぎるので、ちょっとネットワークを監視しつつ様子見。。</p>
+<p>で、現在こんな感じになってます。</p>
+<p><img src="/images/2021-01-28-calyx-home-00.png" alt="Screenshots CalyxOS"></p>
+<p>使用上問題にあることは今のところありません、
+評価の悪いバッテリーも私の利用状況では２日半は持ちます。</p>
+<p><img src="/images/2021-01-28-calyx-accbattery.png" alt="CalyxOS Battery"></p>
+<p>インストールも他のカスタムロムに比べると難易度が低いですし、
+ちょっとセキュリティー的に関心のある方は試しに入れてみても面白いですよ。。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/01/graphene-pixel3-install/">GrapheneOS：Pixel3にインストール</a></li>
+	
+	<li><a href="/blog/2021/01/degoogled-application/">De-googled環境でのおすすめアプリ</a></li>
+	
+	<li><a href="/blog/2021/01/install-gsi-max3/">Mi Max3 GSI Romをインストール</a></li>
+	
+	<li><a href="/blog/2020/12/order-pixel3/">Pixel3を購入</a></li>
+	
+	<li><a href="/blog/2019/08/customrom_dirty_flash/">Dirty Flash</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
