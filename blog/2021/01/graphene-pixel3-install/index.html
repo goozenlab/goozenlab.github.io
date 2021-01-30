@@ -183,7 +183,7 @@ GrapheneOSオンリーで行きます。</p>
 <h2 id="事前作業">事前作業</h2>
 <p>MacOSのMojaveにて作業を行こないます。
 Pixelを接続する端末に必要なソフトをインストール。</p>
-<p>HomeBrew: https://</p>
+<p>HomeBrew: <a href="https://brew.sh/">https://brew.sh/</a></p>
 <p>をインストールしておきましょう。
 そして<code>fastboot</code>コマンドを使うためにAndroid-platform-toolsをインストールします。</p>
 <!--
@@ -215,7 +215,7 @@ verified
 <p>ブートローダーで起動します：ボリュームアップダウンと電源ボタンを同時に押し続けて再起動。
 そして端末をMacにつなぎ、コマンドを実行します。</p>
 <pre><code>guiness:~ $ fastboot flashing unlock
-</code></pre><p>端末上で確認の画面が表示されます、Vol bottonで<code>Un Lock the Bootloader</code>を洗濯して、
+</code></pre><p>端末上で確認の画面が表示されます、Vol bottonで<code>UnLock the Bootloader</code>を洗濯して、
 パワーボタンで実行します。
 リスタートされブートローダーが起動します。</p>
 <p>※　盗難防止のためのFactory Reset Protection (FRP)サービスのため、インターネットに接続している必要があります。</p>
@@ -263,14 +263,16 @@ guiness:blueline-factory-2020.12.12.03 $
 <!-- 政府高官というわけではないので、。 -->
 <p>とりあえず自分の使っているソフトは問題なく動くようで思いの外拍子抜けな感じですが、
 <strong>Google Camera</strong>が使えないことがかなり痛い。
-評判も良いカメラのようですし、他に持っている携帯のカメラが、MiMax3で良くない、OnePlus3は不具合があってなぜかマクロレンズ状態、iPhoneSE 1stGは古すぎなので、手元にまともなカメラ機能がついているスマホがない。。</p>
+評判も良いカメラのようですし、他に持っている携帯のカメラが、MiMax3で良くない、
+OnePlus3は不具合があってなぜかマクロレンズ状態、iPhoneSE 1stGは古すぎなので、
+手元にまともなカメラ機能がついているスマホがない。。</p>
 <p>オープンソースのOpenCameraの出来も悪くないとのレビューを見ましたが、
 ナイトモードには対応していない。
 せっかく唯一のカメラの良いスマホなので、もう一つのディストリビューション：
 GrapheneOSの対抗馬こと、<strong>CalyxOS</strong>に白羽の矢が立つ。</p>
 <p>Gcamも使えるようですし、
 GrapheneOSと比べスピードも少し早いらしいです。
-セキュリテxーと使い勝手のバランスが取れているということで、鞍替え決行。
+セキュリティーと使い勝手のバランスが取れているということで、鞍替え決行。
 （この年越しはミスもあったりして、えらくRom焼きしてます。。）</p>
 <p>GrapheneOSはセキュリティー的に厳しい環境教が必要な、政治家さんやジャーナリストさんとかにはかなりオススメです。
 Pixel Phoneを持っている人は一回試しにインストールしてみるものいいかもです。</p>
@@ -279,18 +281,12 @@ Pixel Phoneを持っている人は一回試しにインストールしてみる
 <p>ストックアンドロイドに戻す時の作業は上記のGrapheneOSインストールとほとんど同じですが、
 <strong>Android Verified Boot key</strong> を消去する必要があります。</p>
 <ol>
-<li>
-<p>Unlock the bootloader.</p>
-</li>
-<li>
-<p>Install Stock Rom: <a href="https://developers.google.com/android/images">https://developers.google.com/android/images</a></p>
-</li>
-<li>
-<p>ブートローダーで起動後、カスタムブートキーを削除します。</p>
-</li>
+<li>Unlock the bootloader.</li>
+<li>Install Stock Rom: <a href="https://developers.google.com/android/images">https://developers.google.com/android/images</a></li>
+<li>ブートローダーで起動後、カスタムブートキーを削除します。</li>
 </ol>
 <pre><code>guiness:~ $ fastboot erase avb_custom_key
-</code></pre><ol start="3">
+</code></pre><ol start="4">
 <li>Lock the bootloader.</li>
 </ol>
 <p>という作業になります。</p>
@@ -360,7 +356,7 @@ Pixel Phoneを持っている人は一回試しにインストールしてみる
               <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
           </div>
 		  
-		  <p id="foot-copyright">Copyright 2019, goozenlab; all rights reserved.</p>
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
 		  
 		</div>
       <div class="pure-u-1-24 pure-u-md-1-24"></div>

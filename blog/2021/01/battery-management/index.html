@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>スマホのバッテリー管理 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-01-30</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/custom-rom">custom rom</a> 
+                    
+
+                    
+
+                    
+                </p>
+                <h1>スマホのバッテリー管理</h1>
+            </div>
+
+            <div class="post-content">
+                <p>バッテリーは充電するたびに劣化します。
+理想的なのは過充電をしないこと、
+４０％〜５０％くらいで使い回せれば一番ということですが、
+実際の使用を考えたらあまり現実的ではありません。</p>
+<p>LinuxマシーンではバッテリーをコントロールするのにTLPというソフトウェアがあります。
+電源アダプターをつないでも充電は８０％までで止めたままにしておき、
+外で使うなどをしてバッテリーが４０％を切ったら充電を始めるというようなサイクルを設定、
+管理することができます。</p>
+<p>Android端末でも<strong>Root化</strong>する必要がありますが、同じようなこと（完全に同じでは無い）を行うことができます。</p>
+<p>多分、グーグルストアにも近いものは出ていると思いますが、
+F-Droidにて２つのオープンソース・アプリがダウンロードできます。</p>
+<p>シンプルなアプリで設定も一つ。ちょっと古いけど、<strong>Battery Charger Limit</strong>と</p>
+<p><img src="/images/2021-01-30-battery-management-batterycl.png" alt="Bettery apps"></p>
+<p>機能が豊富な<strong>ACCA</strong>、温度の設定や、車載時や出張時などいくつか設定を作っておけます。</p>
+<p><img src="/images/2021-01-30-battery-management-acca.png" alt="Bettery apps"></p>
+<p>そして、オープンソースのアプリではありませんが、
+グーグルストアにある<strong>AccuBattery</strong>（定番）も優秀なソフトでバッテリーの現状を把握するのに良いソフトです。</p>
+<p><img src="/images/2021-01-30-battery-management-accubattery.png" alt="Bettery apps"></p>
+<p>一緒にインストールしておきましょう。
+これで理想のバッテリー環境？を作り出すことができます。</p>
+<hr>
+<p>夜に充電し朝に１００％、帰宅時に３５％残りとかが通常ならば、
+充電のMAXを７５％（低ければ低いほど良い）にしておけば
+バッテリー的にはかなり優し環境を作ることができます</p>
+<p>使い方は個人差があるので一概にこれが良いとはいえませんが、
+端末の使用状況を見て設定してください。</p>
+<p>ただし、両アプリとも上限設定に達したら充電は終了しますが、
+チャージャーにつながっていても放電が開始されます。
+ちょっとトリッキーで、もし<strong>夜中に充電完了</strong>したら、
+<strong>朝にはバッテリーが消費</strong>された状態になりますので注意しましょう。</p>
+<p>そしてチャージャーにつなぐと上限設定以下であったら充電がスタートされます。
+チャージャーを繋いだままにした状態で開始％まで落ちたら再び充電を開始します。
+（この辺りがTLPと違うところで戸惑いました。）</p>
+<h2 id="battery-chager-limit">Battery Chager Limit</h2>
+<p><img src="/images/2021-01-30-battery-management-batterychargelimit-main.jpg" alt="Manage Battery for Android"></p>
+<p>私の携帯利用はそこまでヘビーでは無いし、
+数時間で充電されるようなので上限設定を８０％、
+再チャージを６０％（何もしなければ２０％消費するには数日はかかる）
+に設定しています。</p>
+<p>Battery Chager Limitはアラーム通知機能はないので、
+AccuBatteryで８０％（デフォルトだったような気も、、）に設定しておけばアラームが鳴ります。</p>
+<h2 id="acca">ACCA</h2>
+<p>ACCAではバッテリーの温度など事細かな設定をいくつか作っておくことができます。
+車載時や、仕事時など環境に合わせて切り替え可能です。
+（下記のフルサイクル設定も可能）</p>
+<p><img src="/images/2021-01-30-battery-management-accapp-main.jpg" alt="Manage Battery for Android"></p>
+<h3 id="使用例">使用例：</h3>
+<p>車に端末をつないでナビとして使う時など、ず〜〜と１００％にしておくとバッテリーには良く無いです。</p>
+<ul>
+<li>Stop（上限）: ８０％、 Resume（再充電）: ７０％</li>
+</ul>
+<p>にしておけばバッテリーには優しいですし、温度調整もできます。</p>
+<p>会社で繋ぎっぱなしのときは：充電上限７５％、再充電６０％というような設定を保存しておくこともできます。</p>
+<p><img src="/images/2021-01-30-battery-management-accapp-profile.jpg" alt="Manage Battery for Android"></p>
+<p>と、いう感じで使いたっかのですが、わがシャオミのマックスではうまく動作しませんでしたので、
+上記のBatteryChargerLimitを渋々使っています。</p>
+<p>見つけた時は「やった」と思ったんですけどね、、残念。</p>
+<h2 id="おまけ月に一度のフルリサイクル">おまけ：月に一度のフルリサイクル</h2>
+<p>1ヶ月に一回、フルリサイクル（０％まで使って１００％まで充電）をするのが良いとされます。</p>
+<p>面倒＋不必要だということも聞きます。
+ただ経験上、バッテリーの容量があるのに突然終了したりするようなことがあったりもするので、
+まぁ、数ヶ月に１回は行った方が良いかなと。。</p>
+<p>ただし使い切って長時間放っておくとバッテリーが死んでしまうかもしれないので要注意です。</p>
+<p>最近の端末はもう十分すぎるほどの機能があって、格安SIMも市場に溢れてきました。
+デジタル・ウェイストなんて言葉も出始めてますので、
+大事に端末を使っていきましょう。</p>
+<p>※ちなみにRoot化をする作業は端末によって面倒であったり簡単であったりしますので
+調べてみてくださいね。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/01/calyxos-review/">CalyxOS: 雑感</a></li>
+	
+	<li><a href="/blog/2021/01/ubuntutouch-oneplus/">Ubuntu Touchのインストールと雑感</a></li>
+	
+	<li><a href="/blog/2021/01/calyx-install/">MacOSよりCalyxOSをインストールする</a></li>
+	
+	<li><a href="/blog/2021/01/degoogled-application/">De-googled環境でのおすすめアプリ</a></li>
+	
+	<li><a href="/blog/2021/01/install-gsi-max3/">Mi Max3 GSI Romをインストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

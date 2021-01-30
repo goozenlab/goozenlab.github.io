@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>de-google on goozenlab</title>
+    <link>https://goozenlab.github.io/tags/de-google/</link>
+    <description>Recent content in de-google on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
+    <webMaster>goozenlab@gmail.com (jin)</webMaster>
+    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 29 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/de-google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CalyxOS: 雑感</title>
+      <link>https://goozenlab.github.io/blog/2021/01/calyxos-review/</link>
+      <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/01/calyxos-review/</guid>
+      <description>ここ２週間くらい、De-Googled PhoneのCalyxOS: https://calyxos.org/ を使ってます。 ストックロムから抜き出したGoogleCamera（Gra</description>
+    </item>
+    
+  </channel>
+</rss>
