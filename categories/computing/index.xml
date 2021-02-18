@@ -8,7 +8,25 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 31 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>おすすめVPN：Mullvad</title>
+      <link>https://goozenlab.github.io/blog/2021/02/mullvad/</link>
+      <pubDate>Thu, 18 Feb 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/mullvad/</guid>
+      <description>MullvadのVPNサービスを利用し始めました。 iVPNという会社との２択だったのですが、 MullvadはOpenWRTの設定マニュアルが</description>
+    </item>
+    
+    <item>
+      <title>USBが使えない</title>
+      <link>https://goozenlab.github.io/blog/2021/02/usbguard/</link>
+      <pubDate>Mon, 08 Feb 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/usbguard/</guid>
+      <description>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。 同居しているArchなどで繋いでみると問題なく動いているので、ディスク自体に問</description>
+    </item>
+    
     <item>
       <title>アノニマス・アマゾン</title>
       <link>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</link>

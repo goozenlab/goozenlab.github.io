@@ -8,7 +8,25 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 14:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>おすすめVPN：Mullvad</title>
+      <link>https://goozenlab.github.io/blog/2021/02/mullvad/</link>
+      <pubDate>Thu, 18 Feb 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/mullvad/</guid>
+      <description>MullvadのVPNサービスを利用し始めました。 iVPNという会社との２択だったのですが、 MullvadはOpenWRTの設定マニュアルが</description>
+    </item>
+    
+    <item>
+      <title>USBが使えない</title>
+      <link>https://goozenlab.github.io/blog/2021/02/usbguard/</link>
+      <pubDate>Mon, 08 Feb 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/usbguard/</guid>
+      <description>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。 同居しているArchなどで繋いでみると問題なく動いているので、ディスク自体に問</description>
+    </item>
+    
     <item>
       <title>ブロックストリーム：グリーン</title>
       <link>https://goozenlab.github.io/blog/2021/02/blockstream-green/</link>
@@ -16,6 +34,15 @@
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/blockstream-green/</guid>
       <description>都の緑のおばさんにはイライラさせられますが、BTC用のシックな緑の財布をご紹介。 クリプト・カレンシーの管理を複数でのマルチセグ・ウォレットや</description>
+    </item>
+    
+    <item>
+      <title>クリプトライフ</title>
+      <link>https://goozenlab.github.io/computing/living-with-cryptos/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/living-with-cryptos/</guid>
+      <description>国々によって温度差がありますが、じわじわとサービスが広がってきています。 日本は一時、暗号通貨に関しては規制を先んじて緩和し、先を行っているな</description>
     </item>
     
     <item>
@@ -911,6 +938,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
     </item>
     
     <item>
+      <title>Raspbeery Pi References</title>
+      <link>https://goozenlab.github.io/computing/raspbeery-pi-references/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/raspbeery-pi-references/</guid>
+      <description>ラズベリー・パイのリファレンス ラズビアンのイメージファイル・アーカイブ ちょっと古いUSB-Wifiドライバーを動かすのに特定のカーネルが必要</description>
+    </item>
+    
+    <item>
       <title>Ryzentosh</title>
       <link>https://goozenlab.github.io/computing/ryzentosh/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
@@ -1726,7 +1762,7 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/nomad-stick-machine/</guid>
-      <description>旅先で端末が立ち上がらなくなる、最悪端末が盗難にあう。などの緊急事態発生時に使えるスティック端末を構築。 現在リサーチ・作業・検証中、形がまと</description>
+      <description>旅先で端末が立ち上がらなくなる、最悪端末が盗難にあう。などの緊急事態発生時に使えるスティック端末を構築。 ラップトップで様々なディストリビュー</description>
     </item>
     
     <item>

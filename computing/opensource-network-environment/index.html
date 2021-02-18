@@ -163,41 +163,46 @@
             <div class="post-content">
                 <p>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。
 同じファームウェアを使うことで管理も楽ですし、異なった端末間でのメッシュWifiを構成できたりして柔軟性も高い。</p>
+<p>とセキュアな環境構築のためのサービスもリストアップしときました。</p>
 <!-- 
 なるべく経済的かつ省電力。
 面白さも大事。
 
-お金があればスキッと解決できることもありますが、
-自分で構築することが
-自分でコントロールできる。
-
 https://check.torproject.org
-
 -->
 <h2 id="目次">目次</h2>
 <ol>
-<li>Wifiルーター: OpenWRT
-3. 端末
-1. Archer C7 v5
-3. Pi 3B
-4. Pi 4B
+<li>ルーター：OpenWRT
 2. アプリケーション
 1. リバースプロキシ
-2. VPN / Wireguard
+2. OpenVpn / Wireguard
 5. 速度比較
 2. おすすめの構成</li>
 <li>サーバー
 <ol>
 <li>Raspbian (Debian)
-｀    1. Pihole
-2. Syncthing</li>
+<ol>
+<li>Pihole</li>
+<li>Syncthing</li>
+</ol>
+</li>
 <li>FreeNAS (FreeBSD)
 <ol>
 <li>Syncthing</li>
 <li>Media Server</li>
 </ol>
 </li>
-<li>MyNode</li>
+<li>MyNode / Umbrel (BTC Full Node Server)</li>
+</ol>
+</li>
+<li>サービス
+2. vpn : セキュア環境での必須サービス
++ Mullvad : 5台まで、一年 €60.0 カタギな感じの会社なのでこちらを利用。
++ iVPN : 7台まで、一年 US$60.0　こちらもおすすめ。
++ 速度比較：MullvadにてWireguardとOpenVpn。
+<ol>
+<li>nextDNS : 広告をブロックするDNSサービス</li>
+<li>mail : Tutanota | ProtonMail</li>
 </ol>
 </li>
 </ol>

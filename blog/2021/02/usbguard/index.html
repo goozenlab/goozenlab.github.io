@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>USBが使えない | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-02-08</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/debian">debian</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>USBが使えない</h1>
+            </div>
+
+            <div class="post-content">
+                <p>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。</p>
+<!-- カーネルのアップグレーなどをしているので、 -->
+<p>同居しているArchなどで繋いでみると問題なく動いているので、ディスク自体に問題があるようにも思えず。</p>
+<p>デビアンのTesting環境で動かしているのでバグなのかなと思ったりしたけど、
+USBメモリーを差し込むと一瞬光がつく。
+ということは認識はしているようなので、ちと怪しい。</p>
+<p>調べてみると、Bullseye?から<code>usbguard</code>というものがインストールされている（されていた？）らしい、
+セキュリティー的にはまぁ頷ける感じもするが、アンテナに引っかかってこなかった。</p>
+<p>そこで、DebianのWikiをチェックをしてみるも、簡易な説明のみで解決法は書いていない。。</p>
+<p>で、質と量に定評のあるArchのWikiにてチェック、設定方法を見つける。いつもありがとさんです。</p>
+<p>設定ファイルは
+<code>/etc/usbguard/usbguard-daemon.conf</code>
+にあり、こちらに使う機器を登録すれば使えるようになるとのこと。</p>
+<p>やっつけ方法ですが、USB機器をつないで、コマンドを実行する。</p>
+<pre><code>$ sudo usbguard generate-policy | sudo tee /etc/usbguard/rules.conf`
+$ sudo systemctl restart usbguard
+</code></pre><p>で使えるようになります。ただし、違うUSBを入れるたびにコマンドを打つ（前回利用したのUSB機器設定ははクリアーされてしまう）のも面倒なので、
+設定ファイルによく使うUBS機器を登録しておきました。</p>
+<p><code>/etc/usbguard/rules.conf</code></p>
+<pre><code># Sony 8GB Memory Stick
+allow id 054c:0243 serial &quot;112143&quot; name &quot;Storage Media&quot; hash &quot;FpXLUEz/GKAqRnhF2mUertk=&quot; parent-hash &quot;jEP/6WzviqdJ5VSeTUY8PqdplND/o=&quot; with-interface 08:06:50 with-connect-type &quot;hotplug&quot;
+</code></pre><p>ワン・ライナーで一発登録もできそうだけど、、
+まぁ、数ヶ月したら忘れてしまうかもしれないのでメモとして残しておく。</p>
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2020/12/distro-hopping/">日替わりディストロ</a></li>
+	
+	<li><a href="/blog/2020/02/thai-font/">タイ語のフォントをインストール</a></li>
+	
+	<li><a href="/blog/2020/02/standardnotes/">Standard Notes</a></li>
+	
+	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
+	
+	<li><a href="/blog/2020/02/appimage-debian/">AppImageをデビアンで：AppImage Launcher</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
