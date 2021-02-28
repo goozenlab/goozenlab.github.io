@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Tails OS：インストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125185379-1');
+</script>
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-02-19</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/tails">tails</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Tails OS：インストール</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2021-02-19-tails-00.jpg" alt="Tails OS"></p>
+<p>セキュリティーを念頭に置いたOS、QubeOSやらなんやらちょっと気になっていました。
+しかしながら普段使いでは勝手が悪そうにみえたので、
+インストールするまでには至りませんでした。</p>
+<p>ただ最近ネット上で<strong>TailsOSをコールド・ウォレットとして使う</strong>というのを見て、
+これは悪くないアイディアではと思い試してみることにしました。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/yzJ9bRFkwmo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="インストール">インストール</h2>
+<p>インストール自体は至って簡単でした。
+TailsOSは基本的に外付けメディアで使うことが前提になっているようなので
+インストールではなくて、ライブ・イメージで使います。</p>
+<p>イメージファイルを焼いたメディアですぐに使うことができます。</p>
+<p>マニュアルもありますが、なんとなく無駄の多いマニュアルに見えました（一読のほど）。
+簡単に書くと、落として焼くだけです。
+ただ、ダウンロードしたファイルはウェブ上で認証確認をしましょう。
+おなじみのEtcherを使いました。</p>
+<p>Download : <a href="https://tails.boum.org/install/download/index.en.html">https://tails.boum.org/install/download/index.en.html</a></p>
+<p>ThinkpadだけではなくMacbookAirでも起動しました。
+ただブロードコム製の無線LAN（Non-Free）は認識されませんでした。
+ドライバーがオープンソース化されているものであれば認識するようです、、未確認です。</p>
+<p>※システムは全体でだいたい1.5GBですが、８GB以上の領域が必要。</p>
+<h2 id="デフォルトアプリ">デフォルト・アプリ</h2>
+<p><img src="/images/2021-02-21-tails-apps-01.png" alt="Tails">
+<img src="/images/2021-02-21-tails-apps-02.png" alt="Tails"></p>
+<p>デフォルトでインストールされているアプリは</p>
+<ul>
+<li>Mozc : 日本語入力</li>
+<li>Firefox : ウェブブラウザー</li>
+<li>Thunderbird : メールクライアント</li>
+<li>LibreOffice : オフィス・アプリ</li>
+<li>Gimp : 画像編集</li>
+<li>Keypass : パスワードマネージャ</li>
+<li>Electrum : ビットコイン・ウォレット</li>
+</ul>
+<p>と、こな感じです。日本語環境も完備されていますし一通り必要なアプリはインストールされています。
+セキュリティー的にはいじらん方がいいので基本的にこれを使ってね、ということでしょう。
+利便性より安全性を優先。</p>
+<p><img src="/images/2021-02-21-tails-japanese.png" alt="Tails"></p>
+<p>まぁ、不憫はあるかもしれませんが、そのまま使いましょう。（推奨）</p>
+<h2 id="boot-time">Boot Time</h2>
+<p>いくつか手元に使っていないメディアがあったので、パパッッーーと焼いて、
+ちょっとブートタイムを比較してみました。</p>
+<ol start="2">
+<li>40sec : Sony USB3.1 <a href="https://amzn.to/2LWUjFe">8GB Memory Stick</a></li>
+<li>40sec : Speedy USB3.1 <a href="">64GB Memory Stick</a></li>
+<li>50sec : Transcend <a href="https://amzn.to/3tH5ymg">JetFlash 780</a> ８GB Memory Stick read:400MB</li>
+<li>54sec : Lexer USB3.0 microSD Reader + Samsung Evo 32GB microSD</li>
+<li>55sec : Sony USB2.0 Memory Stick</li>
+</ol>
+<p>と、高速・高耐久を歌っているJetFlash 780にはもうしこしスピードを期待をしていたのですが、残念な感じでした。
+高耐久というところに期待。USB3もUSB2もそこまで変わりがあるわけではないようです。。
+Sonyの小さいものが思い他健闘してます。Amazonレコメンドの物も早いです。無駄に容量が多いのが贅沢な悩み。</p>
+<h2 id="データー保存">データー保存</h2>
+<p><img src="/images/2021-02-21-tails-memu.png" alt="Tails"></p>
+<p>初期状態ではにデーターは保持されません。
+リスタートすると真っ新からのスタートになります。</p>
+<p>そのため、データーを永続化するために設定（書き込める領域を作る）が必要です。
+領域は暗号化しますのでパスワードは忘れないようにしましょう。</p>
+<p><img src="/images/2021-02-21-tails-persistence-config-00.png" alt="Tails"></p>
+<p>デフォルトで入っているアプリのデーターを保存するための領域を確保することができます。
+同時にアプリ追加時に必要になるアドミンのパスワードを設定しておくと良いです。</p>
+<h3 id="勝手と調整">勝手と調整</h3>
+<p>ネックになるのは使い勝手。LinuxのGnomeを使ったことがあるのならば大丈夫だと思うけど、
+この辺りがちょっと壁になるかもしれません。
+私個人的にはDebianユーザーでもあるので違和感なく使うことができましたが、
+初めて使う人にとっては慣れが必要になると思います。</p>
+<p>しかし、以前比べ使い勝手も向上されているので一日弄れば使い方は理解できると思います。</p>
+<p>ランチャーはウィンドウズ・キーになります。ショートカットキーもウィンドウズと同じレイアウトになっています。</p>
+<!-- ![Tails](/images/2021-02-21-tails-persistence-orig.png)
+![Tails](/images/2021-02-21-tails-keypass.png) -->
+<h3 id="インターネット">インターネット</h3>
+<p>セキュリティーに重点を置いたOSだけあってインターネットへの接続はオニオンルーター経由になります。（IPアドレスの隠匿化）
+これも利点の一つ。</p>
+<p>う〜〜ん、細かい説明は割愛、ちと遅いけど安全っちゅーことです。</p>
+<h3 id="アプリのインストール">アプリのインストール</h3>
+<p>追加でアプリケーションをインストールすることができます。
+ただし、起動するたびにインストールされるようなので勝手が違います。
+色々、あれもこれもというわけにはいきませんで、厳選したものいくつかにしましょう。</p>
+<p>とりあえず、わさび入にしてみました。</p>
+<h2 id="コールドウォレット">コールド・ウォレット</h2>
+<p>で、こちらは長くなりそうで別の記事にまとめます。
+ただし、これでペーパー・ウォレットの管理が不要になるわけではないので、
+厳重な管理はわすれずに。</p>
+<p><img src="/images/2021-02-21-tails-persistence-config-01.png" alt="Tails"></p>
+<h2 id="まとめ">まとめ</h2>
+<p>USBメモリーも容量が多くなってきているし、
+スティックSSDも販売もされているので、大容量・高速化も可能です。</p>
+<p>MailClientのThunderBirdも付いているので、
+ラップトップなどの端末を持たない・持ちたくない・持っていけない
+ジャーナリストさんとかにはおすすめかな。</p>
+<p>クリプトのオフグリッド・コールドウォレット、
+そして、クリプトの入出金をするための環境、の二つをこしらえておくのもセキュリティー上いいかもしれません。
+（普段使っている端末と切り離して作業すれば安全性が高まる。）</p>
+<p>使い道を広げようとすると利便性が低くなるといるう、不思議な反比例になります。
+ただし用途を限定すれば使い道はありそうな感じがしました。</p>
+<!-- とりあえず、いくつかコピーを作ってクリプトをクリプトを分散管理するかな。 -->
+
+				
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

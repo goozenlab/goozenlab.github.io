@@ -8,14 +8,23 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 18 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GLiNet with Mullvad</title>
+      <link>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</link>
+      <pubDate>Mon, 22 Feb 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</guid>
+      <description>手元にあるちっちゃいトラベル・ルーター： GLiNet Shadow にMulvadのWireguardを導入してみました。 GL.iNet GL-AR300M(shadow) https://mullvad.net 管理画面にて作業を行います。 Wire</description>
+    </item>
+    
     <item>
       <title>おすすめVPN：Mullvad</title>
       <link>https://goozenlab.github.io/blog/2021/02/mullvad/</link>
       <pubDate>Thu, 18 Feb 2021 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/mullvad/</guid>
-      <description>MullvadのVPNサービスを利用し始めました。 iVPNという会社との２択だったのですが、 MullvadはOpenWRTの設定マニュアルが</description>
+      <description>MullvadのVPNサービスを利用し始めました。 Wireguardを使いたいということで、iVPNという会社との２択だったのですが、 Mul</description>
     </item>
     
   </channel>

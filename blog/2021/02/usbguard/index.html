@@ -197,7 +197,9 @@ $ sudo systemctl restart usbguard
 allow id 054c:0243 serial &quot;112143&quot; name &quot;Storage Media&quot; hash &quot;FpXLUEz/GKAqRnhF2mUertk=&quot; parent-hash &quot;jEP/6WzviqdJ5VSeTUY8PqdplND/o=&quot; with-interface 08:06:50 with-connect-type &quot;hotplug&quot;
 </code></pre><p>ワン・ライナーで一発登録もできそうだけど、、
 まぁ、数ヶ月したら忘れてしまうかもしれないのでメモとして残しておく。</p>
-
+<p>追記：こんな感じのスクリプトでいけるのかな。。</p>
+<pre><code>$ sudo usbguard generate-policy | tail -n 1 | sudo tee -a /etc/usbguard/rules.conf
+</code></pre>
 				
 
 <h3>See Also</h3>

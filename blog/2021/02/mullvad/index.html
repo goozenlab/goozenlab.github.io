@@ -175,8 +175,8 @@
 
             <div class="post-content">
                 <p><strong>Mullvad</strong>のVPNサービスを利用し始めました。
-iVPNという会社との２択だったのですが、
-MullvadはOpenWRTの設定マニュアルがあったのでのでこちらにしました。</p>
+Wireguardを使いたいということで、iVPNという会社との２択だったのですが、
+MullvadはOpenWRTの設定マニュアルがあったのでのでこちらにしてみました。</p>
 <p><img src="/images/2021-02-14-mullvad-00.jpg" alt="Mullvad VPN">
 <a href="https://mullvad.net">https://mullvad.net</a></p>
 <p>各プラットフォームでのアプリが提供されています。
@@ -197,11 +197,15 @@ MacOSはメインマシーンなのでなんとかならんかなと、
 <p>とりあえず、Mullvad-Daemonが起動していないのが問題のようで、
 ターミナルよりコマンドでDaemonを起動してあげれば動くようになります。</p>
 <pre><code>$ sudo /Applications/Mullvad\ VPN.app/Contents/Resources/mullvad-daemon
-</code></pre><p>OenVPNと比べ早いと言われる<strong>Wireguard</strong>。
-評判通り、というか思いの外スピードが出ます。</p>
+</code></pre><p>ただ、ちょっとバッテリー喰いな感じあります。。</p>
+<hr>
+<h2 id="wireguard">Wireguard</h2>
 <p><img src="/images/2021-02-18-wireguard-00.jpg" alt="Wireguard"></p>
-<p>利用者が少ないのかもしれませんが、ほとんどロスなし、爆速です。
-ほんとに動いているか逆に心配になるくらい、びっくりです。</p>
+<p><strong>Wireguard</strong>はOenVPNと比べ早いと言われています。
+評判通り、というか思いの外スピードが出ます。</p>
+<p>利用者が少ないのかもしれませんが、ほとんどロスなし、MacOSで無線経由ですが爆速です。
+ほんとに動いているか逆に心配になるくらい、びっくりです。
+アンドロイドからは240Mbs。</p>
 <p><img src="/images/2021-02-14-mullvad-speed.jpg" alt="Mullvad Speedtest"></p>
 <p>おまけ：OpenWRT (<strong>PiA+</strong>: Modem &lt;- USB Ether &lt;- Internal Wifi)では<strong>87Mbs</strong>くらいのスピードがでました。</p>
 <p>Mullvadは</p>
@@ -214,12 +218,12 @@ MacOSはメインマシーンなのでなんとかならんかなと、
 </ul>
 <p>「うちのサービスには自信があんねん」と堅気な雰囲気を醸し出す珍しい会社です。
 ネット上での評判も良いですし、FirefoxVPNのバックエンドを提供しているので信頼性も高いです。
-シンプルなウェブサイトだし、ロゴもちょっと可愛らしいしね。</p>
+シンプルなウェブサイトだし、ロゴもちょっと可愛らしいし。</p>
 <p>個人的には、タイトとインドにもサーバがあればパーフェクトなんですけどね、、
 一月５ユーロが少々高い感じもしますが、VPNに関心のある人にはお勧めします。
 （ただし、<strong>ストリーミング系サービスは非対応</strong>なのでそのところは注意です。）</p>
 <p>と、もう一つ。</p>
-<p><strong>同時接続最大５台</strong>までですが、Wireguard接続には端末に鍵が必要で、その<strong>鍵は最大５つ</strong>までしか登録できません。
+<p><strong>同時接続最大５台</strong>まで可能のようですが、Wireguard接続には端末に鍵が必要で、その<strong>鍵は最大５つ</strong>までしか登録できません。
 もちろん鍵の削除・変更・追加発行は可能。もう一声欲しい。。</p>
 <ul>
 <li>iPhone</li>
@@ -233,7 +237,24 @@ MacOSはメインマシーンなのでなんとかならんかなと、
 ちょっとあっちを抜いてこっちを登録、でこっちの鍵を消して、あっちに追加みたいな作業が必要なるのでちと面倒になるかな。。
 （まぁWireguardのルーターを経由すればいいのだけど、通信速度がね。）</p>
 <p>手元にもう行かない・行けないだろう、NZ$やAU$（計３０ユーロくらい）があるので現金払いを試してみるかな。
-でも封書で現金を送るのはいけなったよ〜〜な。。</p>
+でも封書で現金を送るのはいけなっかたよ〜〜な。。</p>
+<h2 id="おまけ">おまけ</h2>
+<p>VPNサービスを使うべき１０の理由：<a href="https://fossbytes.com/reasons-why-use-vpn-service/">「10 Reasons Why You Must Use A VPN Service」</a>
+FossBytesより（FOSS： Free ＋ Open Source Software)</p>
+<p>まとめると理由は次のとおり。</p>
+<ol>
+<li>RadicoやNetflixなどのストリーミングサービスを海外にいる時にも利用ができる</li>
+<li>プライバシーを守ることができる
+<ol>
+<li>公衆無線LANを利用する時のリスクを低減</li>
+<li>インターネット・サービス・プロバイダーのモニタリングを回避</li>
+<li>会社や大学、教育機関などにおける規制を回避</li>
+<li>政府によるインターネット検閲を回避</li>
+</ol>
+</li>
+<li>VoIPをより安全に利用できる</li>
+<li>インターネットにおける活動を隠匿しやすくなる</li>
+</ol>
 
 				
 
