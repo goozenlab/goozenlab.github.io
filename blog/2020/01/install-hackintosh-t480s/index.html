@@ -16,26 +16,18 @@
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 
 <link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
 
 
-<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185379-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-125185379-1');
-</script>
 
   
 
@@ -175,44 +167,44 @@
 
             <div class="post-content">
                 <p><img src="/images/2020-01-08-hackintosh-t480s.jpg" alt="about this"></p>
-<p>Thinkpad T480s に macOS モハァ〜ベェ～をインストールして使っています。
-11 月ごろに一回あったシステムアップデートもでき、MagicTrackpad やマルチディスプレイにも対応。
-不具合はトラックパッドが使えないことと２つ同時に USB の使用ができないことくらい。
+<p>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。
+11月ごろに一回あったシステムアップデートもでき、MagicTrackpadやマルチディスプレイにも対応。
+不具合はトラックパッドが使えないことと２つ同時にUSBの使用ができないことくらい。
 ちょっともう少しバッテリーが持ってくれれば申し分はないのですが、
 思った以上に快適です。
 ただ動かなくなるのが怖いので、カタリーナへのアップデートは保留。。
-Mojave と Xcode11 で FIX。</p>
+MojaveとXcode11でFIX。</p>
 <p>レビュー記事：</p>
 <ul>
 <li><a href="https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/">数ヶ月使ってのレビュー</a>：どんどん良くなってきてます。</li>
-<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifi に交換</a>：内蔵カードは使えないので対応している Wifi カードを無理くり使えるようにする。</li>
-<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/">T480s でハッキントッシュ</a>：インストール後の雑感</li>
+<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifiに交換</a>：内蔵カードは使えないので対応しているWifiカードを無理くり使えるようにする。</li>
+<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/">T480sでハッキントッシュ</a>：インストール後の雑感</li>
 </ul>
 <p>もう一度やり直すかもしれないので、インストール方法を少し細かくまとめます。
 記憶を辿りつつというのもあるので、ちょっと自信はないのですが、
 多分大丈夫（無保証かつ無責任、自己責任でよろしくです）。
 クローバーのコンフィグファイルも公開します。</p>
 <p>作業はマックで行いました。
-（インストールディスクの制作作業は Windows でもできるようです。余裕があったら調べます。）</p>
+（インストールディスクの制作作業はWindowsでもできるようです。余裕があったら調べます。）</p>
 <h2 id="インストール作業">インストール作業</h2>
 <p>作業手順は以下になります。長くなりそうなので愚痴などを入れつつ３部に分けます。</p>
 <ol>
-<li><a href="https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/">T480s の BIOS 設定</a></li>
-<li>Mojave インストールメディア（Mac にて）作成：一番面倒かつ大事な作業
+<li><a href="https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/">T480sのBIOS設定</a></li>
+<li>Mojaveインストールメディア（Macにて）作成：一番面倒かつ大事な作業
 3. インストール（カタリーナでも大丈夫だと思う、誰か試してくれませんかね。）</li>
 <li>インストール後の設定：メンテナンス等</li>
 </ol>
-<h2 id="bios-設定">BIOS 設定</h2>
+<h2 id="bios設定">BIOS設定</h2>
 <p><img src="/images/2020-01-08-tp480s-bios-main-00.jpg" alt="BIOS MAIN"></p>
 <p>会社によって違うのかもしれませんが、
-BIOS モードに入るには Thinkpad の場合ですと再起動後 <strong>[F1]</strong> 押したままにしておきます。</p>
+BIOSモードに入るにはThinkpadの場合ですと再起動後 <strong>[F1]</strong> 押したままにしておきます。</p>
 <h3 id="security">Security</h3>
-<p>上部のバーより Security を選択、そしてセキュリティとスタートアップ関連を調整します。</p>
+<p>上部のバーよりSecurityを選択、そしてセキュリティとスタートアップ関連を調整します。</p>
 <p><img src="/images/2020-01-08-tp480s-bios-security-00.jpg" alt="BIOS Security"></p>
 <ul>
 <li><strong>&raquo;</strong> Fingerprint
 <ul>
-<li>Fingerprint Predesktop Authentication [DISABLED]：指紋認証は使えません（Linux でも同様）</li>
+<li>Fingerprint  Predesktop Authentication [DISABLED]：指紋認証は使えません（Linuxでも同様）</li>
 </ul>
 </li>
 <li><strong>&raquo;</strong> Security Chip
@@ -220,31 +212,31 @@ BIOS モードに入るには Thinkpad の場合ですと再起動後 <strong>[F
 <li>Security Chip [DISABLED]</li>
 </ul>
 </li>
-<li><strong>&raquo;</strong> Virtualization + Virtualization Intel Virtualization Technology [ENABLE] + Intel VT-d Feature [ENABLE]
-<div class=note>
-<b>※</b>
-仮想化：バーチャライゼーションは<b>DISABLED</b> にせよとありましたが、
-Linux 環境で kvm を使うかもしれんので<b>ENABLED</b> にしたままインストールしました。
-KVM での検証はまだしてません。問題が発生したら DISABLE に変更予定。
-（使い始めて３カ月経過しましたが今の所問題なし。）
-</div>
+<li><strong>&raquo;</strong> Virtualization
+<ul>
+<li>Virtualization  Intel Virtualization Technology [ENABLE]</li>
+<li>Intel VT-d Feature [ENABLE]</li>
+</ul>
+  <div class=note>
 </li>
-<li><strong>&raquo;</strong> I/O Port Access + Wireless WAN [DISABLED] + Memory Card Slot [DISABLED]： + Fingerprint Reader [DISABLED]
+</ul>
+<p><b>※</b>
+仮想化：バーチャライゼーションは<b>DISABLED</b> にせよとありましたが、
+Linux環境でkvmを使うかもしれんので<b>ENABLED</b> にしたままインストールしました。
+KVMでの検証はまだしてません。問題が発生したらDISABLEに変更予定。
+（使い始めて３カ月経過しましたが今の所問題なし。）</p>
+</div>
++ **>>** I/O Port Access
+    + Wireless WAN [DISABLED]
+    + Memory Card Slot [DISABLED]：
+    + Fingerprint Reader [DISABLED]
 <div class=attention>
 <b>！！ </b> SDカードスロットは使えないと聞いていましたが、今回ブログを書くためにちょっと試しにENABLEにしたら使えました<b>！！ </b> でもバッテリーを割と食うと聞いたのでオフにします。
 </div>
-</li>
-<li><strong>&raquo;</strong> Secure Boot
-<ul>
-<li>Secure Boot [DISABLED]</li>
-</ul>
-</li>
-<li><strong>&raquo;</strong> Intel SGX
-<ul>
-<li>Intel SGX Control [DISABLED]</li>
-</ul>
-</li>
-</ul>
++ **>>**  Secure Boot    
+    + Secure Boot [DISABLED]
++ **>>** Intel SGX
+    + Intel SGX Control [DISABLED]
 <h3 id="startup">Startup</h3>
 <p><img src="/images/2020-01-08-tp480s-bios-setup-efi.jpg" alt="BIOS Startup"></p>
 <ul>
@@ -365,6 +357,19 @@ KVM での検証はまだしてません。問題が発生したら DISABLE に�
   });
   $(window).resize(function(){
     if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
+) {
       $(".desktop").removeAttr("style");
     }
   });
