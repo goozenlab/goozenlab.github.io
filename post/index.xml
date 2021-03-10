@@ -8,14 +8,41 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 26 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Max3をマックス</title>
+      <link>https://goozenlab.github.io/blog/2021/03/mi-max-out/</link>
+      <pubDate>Wed, 10 Mar 2021 06:30:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/03/mi-max-out/</guid>
+      <description>年末にGSIRom（ちょっと動作が緩慢かつヘッドフォンジャックが使えない）を入れてみたりして、 購入して２年半近く経ちますが、現役バリバリ。 ノ</description>
+    </item>
+    
+    <item>
+      <title>Tails OS：コールド・ウォレットとして使う</title>
+      <link>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</link>
+      <pubDate>Fri, 05 Mar 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</guid>
+      <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用します。 （オフグリッドというのかオフラインというのか、どれが正しい</description>
+    </item>
+    
+    <item>
+      <title>Mullvad：現金払</title>
+      <link>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</link>
+      <pubDate>Thu, 04 Mar 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</guid>
+      <description>取り立てて不具合もないのでMullvadの契約延長を決定。 現金払いも可能という昭和な感じのVPNサービスカンパニー。 セキュリティーを考えたら</description>
+    </item>
+    
     <item>
       <title>NextDNS</title>
       <link>https://goozenlab.github.io/blog/2021/02/nextdns/</link>
       <pubDate>Fri, 26 Feb 2021 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/nextdns/</guid>
-      <description>実家ではラズベリーパイのPiholeをルーターに繋いで利用していました。 しかし最近実家の環境が変わり、 レンタルしているルーターが結構ご機嫌な</description>
+      <description>実家ではラズベリーパイのPiholeをルーターに繋いで利用していました。 しかし最近実家のネット環境が変わり、 レンタルしている無線LANルータ</description>
     </item>
     
     <item>

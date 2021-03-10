@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 19 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tails/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tails OS：コールド・ウォレットとして使う</title>
+      <link>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</link>
+      <pubDate>Fri, 05 Mar 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</guid>
+      <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用します。 （オフグリッドというのかオフラインというのか、どれが正しい</description>
+    </item>
+    
     <item>
       <title>Tails OS：インストール</title>
       <link>https://goozenlab.github.io/blog/2021/02/tails-install/</link>

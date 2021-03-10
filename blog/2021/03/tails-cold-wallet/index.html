@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Tails OS：コールド・ウォレットとして使う | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-03-05</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/tails">tails</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Tails OS：コールド・ウォレットとして使う</h1>
+            </div>
+
+            <div class="post-content">
+                <p><img src="/images/2021-03-05-tails-cold-wallet-00.jpg" alt="USB Sticks"></p>
+<p>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用します。
+（オフグリッドというのかオフラインというのか、どれが正しいのかな。）</p>
+<p>安物USBメモリーだと久しぶりに立ち上げるとハードが認識されないとか、
+数回使って壊れるとかもままありますので、
+なるべく信頼性のあるメーカーのUSBメモリーを使いましょう。
+（今までに突然読込不能など不具合があったのは、KingstoneとBuffalo）</p>
+<p>Amazonではそろそろ在庫が切れまそうですが、
+思ったより高速ですし、大きさが魅力の<a href="https://amzn.to/2LWUjFe">ソニーの８GB</a>（写真の黒いやつ）が良いかもです。</p>
+<!-- 容量は８ギガもあれば十分。ウォレットしては十分に使い道がありそうです。 -->
+<p>ハードウェア・ウォレット（ウェブ経由で繋ぐのがちょっと嫌）を買うならこっちの方が安上がりでよかったかなと、、
+試してませんが複数用意してマルチ・シグにしたりもできますし、結構使えそうな感じがします。</p>
+<p>TailsOS側もそういった用途も念頭にあるようで、
+デフォルト状態でビットコイン管理の定番アプリ、Electrumがインストールされています。</p>
+<p>ただし：シードの管理が不要になるわけではないので厳重に管理のほど。。</p>
+<!--
+コールドウォレットの問題は端末が壊れてしまったり、
+自分のように中古の端末をいくつか持っていれば問題はないのなけど、
+割り当てる端末を持っていないとか、
+-->
+<h2 id="設定作業">設定作業</h2>
+<p>インストール作業は割愛します。
+インストール終了、起動後に以下の設定作業を行います。</p>
+<ol>
+<li>ウェルカムスクリーン設定</li>
+<li>共有領域の作成（２５６MBくらいで十分)</li>
+<li>永続化領域の作成</li>
+<li>Electrumにてウォレットの復元</li>
+</ol>
+<p>最初にブートした時にファイルが展開されます。
+８GBのメモリーだと４GBが割り当てられます。
+（３２GBのメモリーだと８G近く割り当てられていました。）
+残りは空きスペースになります。</p>
+<h3 id="ウェルカムスクリーン設定">ウェルカムスクリーン設定</h3>
+<p>起動後に表示されるウェルカム・スクリーンの追加設定をします。</p>
+<ol>
+<li>管理者のパスワード設定</li>
+<li>ネット接続：オフライン</li>
+</ol>
+<p><img src="/images/2021-02-25-tails-openning-00.jpg" alt="Welcome Screen"></p>
+<p>共有領域を作成時に必要になりますので、管理者のパスワードを設定し、ログインします。</p>
+<h3 id="共有領域の作成">共有領域の作成</h3>
+<p>オフグリッドで使うにしても外部とトランザクション・ファイルのやりとりが必要になるので共有領域を作ります。
+（セキュリティー的に心配な方は、ちょっとだけ利便性が低くな理ますが、別のメディアを使ってのもありです。）</p>
+<p><code>Win/Mac Key -&gt; Disk</code>でDiskアプリケーションを起動します。</p>
+<p>トランザクションのファイルのやり取りするためなので、
+容量は少なくても構いません。２５６MBにもあれば十分かな、FATでシェアーボリュームを作ります。
+＋のマークより容量を指定して作成します。</p>
+<p><img src="/images/22021-02-25-tails-disk-02.png" alt="Tails Share Disk"></p>
+<p><img src="/images/2021-02-25-tails-disk-05.png" alt="Tails Share Disk"></p>
+<h3 id="永続化領域の作成">永続化領域の作成</h3>
+<p>アプリはデフォルトで付いてきているのですが、
+初期状態でのTailsOSではデーターは保持されません。
+ファイルを保存するために暗号化されたファイルシステムを作る必要がありあます。</p>
+<p><img src="/images/2021-02-25-tails-persistent-00.png" alt="Tails Persistent Disk"></p>
+<p>ファイル永続化のための領域を作ります。
+残りのディスクの残り全てが割り当てられます。
+パスワードも確りしたものにしましょう。</p>
+<p>Bitcoin Client（ビットコイン管理アプリ）のところにチェックマークを入れておきます。</p>
+<p><img src="/images/2021-02-25-tails-persistent-02.png" alt="Tails Cold Wallet"></p>
+<p><img src="/images/2021-02-21-tails-persistence-config-00.png" alt="Tails"></p>
+<!-- ![Tails](/images/2021-02-21-tails-persistence-config-01.png) -->
+<p>他にも</p>
+<ul>
+<li>WelcomeScreen（管理者パスワードとネット設定の保存）</li>
+<li>Dotfiles (各種設定の保存)</li>
+</ul>
+<p>にチェックを入れ、Save。
+再起動時に有効化されます。</p>
+<p><img src="/images/2021-02-21-tails-disk.png" alt="Tails"></p>
+<!-- 他にもパーソナルデーターもチェックしておくのも良いかもしれません。 -->
+<hr>
+<p>オフライン・ウォレットを運用するためには
+<strong>コールド・ウォレット</strong>（オフライン）と作業用の<strong>Watching-Onlyウォレット</strong>の最低２つが必要です。</p>
+<h2 id="ウォレットの復元">ウォレットの復元</h2>
+<p>コールド・ウォレットなので、基本オフラインで使います。</p>
+<p>Electrumを起動し、ウォレットを新規作成・復元します。</p>
+<p>コールド・ウォレットは<strong>サインをするためのウォレット</strong>になります。
+ネットに繋がっていないので、残金等の表示はされません。（なんか心配ですが、、）</p>
+<p>作業用の端末に、Watching-Onlyのウォレットを作っておきます。
+必要な<strong>Mater Public Key</strong>をElectrumよりコピーしおきます。</p>
+<p><code>Electrum &gt; Menu: Wallet &gt; Information</code></p>
+<p><img src="/images/2021-03-06-electrum-master-public.jpg" alt="Electrum MasterPublic key"></p>
+<p>※
+ペーパーウォレットが外部に漏れてしまったとかの緊急時にはオンラインにつないで作業を行うことができます。</p>
+<h2 id="watching-only-wallet">Watching-Only Wallet</h2>
+<p>コールド・ウォレットはネットには接続しないことでセキュリティーを高めています。
+利用するには、Watching-Onlyウォレットが必要です。</p>
+<p>Electrumを起動し、ウォレットを新規・マスターキーを使う｜キーを入力で作成します。</p>
+<p><img src="/images/2021-03-06-electrum-new-key.jpg" alt="Electrum New with Public Key">
+<img src="/images/2021-03-06-electrum-new-pubkey.jpg" alt="Electrum New with Public Key"></p>
+<p>こちらのウォレットにて資金の入出金作業を行います。</p>
+<!-- 出金するには、こちらで出金先とアドレス金額を設定しトランザクション・ファイルを作成。
+コールドウォレットにてファイルにサインを行い。
+こちらに戻って送信の手続きをする、というながれになります。 -->
+<hr>
+<h2 id="運用">運用：</h2>
+<p>Watching-Onlyウォレットにてウォレットの残高などの確認ができます。
+入金作業もこちらで手続きできます。
+送金時にのみコールド・ウォレットにてサインを得る必要があります。</p>
+<p>手順は以下、</p>
+<ol>
+<li>端末にての作業
+2. Stick.TailsOSを端末に接続、共有領域がマウントされる
+<ol>
+<li>端末のWatching-OnlyWalletで送金手続き（サインが必要）</li>
+<li>送金トランザクション・ファイルを共有領域にコピー</li>
+</ol>
+</li>
+<li>TailsOSにての作業
+4. Stick.TailsOSを起動
+5. Electrumを使って送金トランザクション・ファイルに署名をする
+5. 署名済み送金トランザクション・ファイルを共有領域に書き出し</li>
+<li>端末にての作業
+5. Watching-OnlyWalletより共有領域の署名済み送金トランザクション・ファイルを処理</li>
+<li>送金完了</li>
+</ol>
+<p>という手続きになります。</p>
+<hr>
+<h2 id="リスク分散">リスク分散</h2>
+<p>リスクを考えると、
+この形ならタイのアパートに置かせてもらっている荷物の中に入れておいてもいいかなと。。
+まぁ中を見られても、取られても、間違って捨てられても、
+気持ちはよくはないけど、だいじょ〜ぶ。
+ペーパー・ウォレットが置いてあるところが火事で炎上しても安心。</p>
+<!--
+オフラインで使うことを限定としているので、少々安全なので、
+Trezorハードウェア・オォレットのバックアップとしても使います。
+（BTC限定）
+
+Trezorのサイトに方法が書いてあります。
+
+もし、Trezorが故障したり・紛失したときなどの
+救済することができます。
+
+中に入っているビットコインを移動することができます。
+Tailsをオンラインにする必要がある。
+
+まぁ、関東大震災で実家が崩壊かつ炎上しないかぎりは、
+大丈夫だとは思うのですが、、
+
+ソニー USBメモリ USB3.1 8GB ブラック コンパクトメタルボディ USM8W3B
+https://amzn.to/2LWUjFe
+https://www.amazon.co.jp/gp/product/B01B5BVT5W/
+
+-->
+<!--
+旅先でのリスク
+
+1. 機器の故障
+2. 機器の紛失・盗難
+
+があるわけですが、基本的に人にTrezorを持っているのを見られるのは気分が良くないです。
+大金が入っているわけではありませんが、
+
+旅先にTrezorを持っていくのはちょっと憚れる。気分的には良い感じがしない。
+心配事が頭にあると、旅も楽しめない。
+小さいし紛失しそうだし、人に見られるとな〜〜んか嫌な感じに思えてしまう。
+紛失の後作業も新しい端末が手元にあるのならば比較的楽なのだけれども
+シードは必要。資金移動をしなくては行けないし。
+
+諸々の危険性を考えてみてTailsOSをベースにして
+Electrum/Wasabiを使えるようにしておくのがよい、
+紛失してもこちらは、普通のメモリースティックですし、
+暗号化されているのでまま安心。
+
+DDをつかえば、同じものを復元も楽です。
+
+旅の途中に、Laptopを盗まれた時にも安心。
+
+今まで、Laptopは盗まれたことはありませんが、
+USBメモリーは、盗まれたことがあり、Laptopは壊れたことが２回あります。。
+
+Trezorはもし盗まれたら幸運を祈る。分解してROMを吸い出せば鍵を向き取ることができるそうなので、
+パスフレーズで暗号化しておくことを推奨します。
+持ち歩くつもりであれば。
+
+これで、様々な状況下において対応できるようになるはず。。何か抜けていたら教えてください。
+
+
+ぺーパーウォレットを複数箇所で管理というもの、、
+
+姉：今まであげたもの等全て行方がわからなくなっているので、信頼できず
+弟：ペーパーウォレットを渡したら、かってに持っていきそう、信用できす
+母：数年後に引っ越す予定があるらしい、ボケも回りつつある、捨てられそう、
+
+と、セキュリティー・ホールがいっぱいあるので、
+
+に比べれば、変な心配もしなくて良いし、
+と、田舎のおじさんところとか？
+個人的にはいくつか用意して兄弟のところに置いておいてもらうのも気兼ねが少なくて良いかなと。
+
+これで、東京直下地震がおきても安心だぜよ。 
+-->
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/02/tails-install/">Tails OS：インストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
