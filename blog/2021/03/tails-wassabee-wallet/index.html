@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Tails OS: Wasabiを使う | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4562670868665621",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a
+                                href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                                class="pure-menu-link">openSource network environment</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/living-with-cryptos/"
+                                class="pure-menu-link">living with cryptos</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/home-pi/"
+                                class="pure-menu-link">home pi server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/travel-pi/"
+                                class="pure-menu-link">travel pi router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                                class="pure-menu-link">nomad stick machine</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/music-pi/"
+                                class="pure-menu-link">music pi</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-03-22</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/tails">tails</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Tails OS: Wasabiを使う</h1>
+            </div>
+
+            <div class="post-content">
+                <p>TailsOSをクリプトに利用してもおもしろいかなと思い、
+カチカチでお固いやつですが、ちょっと試しにスパイシーにワサビ入りにしてみます。</p>
+<p>ちと変わったOSなのでちょっと追加作業が必要です。
+多分もっとスマートな方法があるかもしれませんが、ご参考まで。</p>
+<p>一番の違いは、データーを保持するために設定が必要というところで、
+そのまま使って再起動したらデーターは全て消えてしまいます。</p>
+<ul>
+<li>アプリのデーターの永続化</li>
+<li>アプリのインストール</li>
+</ul>
+<p>の２点の作業が必要になります。</p>
+<h2 id="データーの永続化">データーの永続化</h2>
+<p>事前に永続化領域を作成しておきましょう。（説明は割愛）
+さて、Wasabiデーター保持はデフォルトの設定を少しいじって割り当てることにします。</p>
+<p><code>/live/persistence/TailsData_unlocked/persistence.conf</code></p>
+<p>が永続化の設定ファイルになっています。中身はこんな感じで、ファイルの位置とソース名のリストです。</p>
+<pre><code>/home/amnesia/Persistent	source=Persistent
+/var/lib/gdm3/settings/persistent	source=greeter-settings
+/home/amnesia/.mozilla/firefox/bookmarks	source=bookmarks
+/etc/NetworkManager/system-connections	source=nm-system-connections
+/var/cache/apt/archives	source=apt/cache
+/var/lib/apt/lists	source=apt/lists
+/home/amnesia/.thunderbird	source=thunderbird
+/home/amnesia/.gnupg	source=gnupg
+/home/amnesia/.electrum	source=electrum
+/home/amnesia/.ssh	source=openssh-client
+/home/amnesia	source=dotfiles,link
+</code></pre><p>そして、デフォルトのフォルダーは以下のようになっていました。
+作業は<strong>RootTerminal</strong>で行います。通常のターミナルだとsudoのたびにパスワードを入力する必要になります。</p>
+<pre><code>amnesia@amnesia:/live/persistence/TailsData_unlocked$ ls -la
+[sudo] password for amnesia: 
+total 72
+drwxrwx---+ 14 root                    root                     4096 Feb 22 01:11 .
+drwxr-xr-x   3 root                    root                       60 Feb 22 01:10 ..
+drwxr-xr-x   4 root                    root                     4096 Feb 15 06:36 apt
+-rw-r--r--   1 root                    root                        0 Feb 15 06:36 apt_sync_completed
+-rw-r--r--   1 root                    root                        0 Feb 15 06:36 apt_sync_started
+drwx------   2 amnesia                 amnesia                  4096 Feb 15 07:15 bookmarks
+drwx------   2 amnesia                 amnesia                  4096 Feb 15 06:39 dont-ask-again
+drwx------   2 amnesia                 amnesia                  4096 Feb 22 01:23 dotfiles
+drwx------   6 amnesia                 amnesia                  4096 Feb 21 04:59 electrum
+drwx------   3 amnesia                 amnesia                  4096 Feb 15 06:38 gnupg
+drwx------   2 Debian-gdm              Debian-gdm               4096 Feb 15 06:39 greeter-settings
+-rw-r--r--   1 tails-persistence-setup tails-persistence-setup     0 Feb 15 06:36 live-additional-software.conf
+drwx------   2 root                    root                    16384 Feb 15 06:36 lost+found
+drwxr-xr-x   2 root                    root                     4096 Jan 27 18:33 nm-system-connections
+drwx------   2 amnesia                 amnesia                  4096 Feb 15 06:39 openssh-client
+-rw-------   1 tails-persistence-setup tails-persistence-setup   500 Feb 22 01:11 persistence.conf
+-rw-------   1 tails-persistence-setup tails-persistence-setup   500 Feb 22 01:11 persistence.conf.bak
+drwx------   4 amnesia                 amnesia                  4096 Feb 22 01:05 Persistent
+drwx------   2 amnesia                 amnesia                  4096 Feb 15 06:39 thunderbird
+</code></pre><p>Wasabiは起動時に<code>.walletwasabi</code>フォルダーを作ります。
+必要になるものはその中にある、<code>Wallets</code>だけなのですが、
+起動するたびにちょっとしたファイル（ブロックチェーンの一部？）のダウンロードに時間がかかったりもするので、
+シンプルに全てを永続化しておきます。</p>
+<p>永続化設定ファイルに以下</p>
+<p><code>/home/amnesia/.walletwasabi	source=wasabi</code></p>
+<p>を追加し、&ldquo;wasabi&rdquo;(ソース名と同じ名前）フォルダーを<code>/live/persistence/TailsData_unlocked</code>以下に作ります。
+他のフォルダーと合わせて所有者と権限を設定しました。</p>
+<pre><code>$ mkdir wasabi
+$ chown amnesia.amnesia wasabi
+$ chmod 700 wasabi
+</code></pre><p>再起動すると、フォルダーが作られます。
+設定アプリをのぞいてみると、新しく追加されているので問題なく動くと思います。
+（問題があったら追記します）</p>
+<!-- ![Persistence Config](/images/2021-02-22-wasabi-persistance.png) -->
+<h2 id="アプリのインストール">アプリのインストール</h2>
+<p><strong>apt</strong>コマンドでインストールできる場合はそのままTailsが自動で次回再起動時にインストールするように設定を行ってくれるようですが、
+<strong>dpkg</strong>によるインストールの場合は毎回手動で行う必要があります。</p>
+<p>ダウンロードしたファイルはPersistence内であればどこでも構いませんが、とりあえず
+<code>/home/amnesia/Persistence/Applications/</code>
+に保存しておきました。
+Downloadsフォルダー内に置いたままだと再起動時にファイルが消去されてしまいます。</p>
+<p>インストールは以下のコマンドで行います。</p>
+<pre><code>amnesia@amnesia:~$ sudo dpkg -i /home/amnesia/Persistence/Applications/Wasabi-1.1.12.4.deb
+</code></pre><h2 id="運用">運用</h2>
+<p>運用も独特です。
+データーに関しては上記の設定で保存が可能になりましたが、
+アプリは起動するたびにインストールする必要があります。</p>
+<p>ちょっと面倒ですが、
+Terminalを立ち上げて、
+コマンドでわさびをインストールします。インストール後はアプリアイコンも登録され、Winキーからwasabiと入力すれば起動できます。</p>
+<pre><code>amnesia@amnesia:~$ sudo dpkg -i /home/amnesia/Persistence/Applications/Wasabi-1.1.12.4.deb
+</code></pre><p>起動スクリプトでインストール作業をできないかと調べて見ましたが、
+、須藤さんにちょっと邪魔されたりで、
+途中で面倒になってしまって放置。
+まぁ、毎日使うわけでは無ければこちらの方法で我慢のほど。。</p>
+<p>これで暗号通貨を扱う端末を切り分けられるますし、まぁちょっとだけ安心なのかなと。
+インターネットへの接続もオニオンルーター経由なので、Electrumのウォレットをこちらで動かすのもお勧めできます。</p>
+<p>※　試しにTrezorSuitesというソフトも試して見ましたが、TrezorBridgeのインストールが必要とのことで断念。</p>
+<!--
+
+今年に入ってビットコインの値が怖いくらい爆上げしてもう飛びつけませんね。。
+（結果的に非常にお買い得だった、去年のコロナ後＋半減期前に買ってた人が羨ましい。。）
+コロナ禍で個人資金が流れ込んできていると聞きましたがどうなんでしょうか、
+投資家はがっぽり、個人はすっからかんってことにならなければ良いのですが。。。
+
+sudo apt install gnome-tweak-tool
+Auto Start
+
+vi ~/.config/autostart 
+
+[Desktop Entry]
+Name=Wasabe
+GenericName=Wasabi Auto Start
+Comment=Install Wasabi
+Exec=/home/amnesia/Persistant/startup.sh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
+
+in GNOME 3, press Alt+R and look 
+for Startup Applications Preferences (typing the first letters of the name will filter it quickly) 
+or run gnome-session-properties from there or a terminal.
+
+In gnome3, if you prefer a GUI based approach you could run the command: ALT + F2, then type in the window that pop ups:
+
+gnome-session-properties 
+-->
+
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/03/tails-cold-wallet/">Tails OS: コールド・ウォレットとして使う</a></li>
+	
+	<li><a href="/blog/2021/02/tails-install/">Tails OS: インストール</a></li>
+	
+</ul>
+
+
+            </div>
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@gmail.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2021, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

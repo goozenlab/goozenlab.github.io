@@ -8,14 +8,23 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 05 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tails OS：コールド・ウォレットとして使う</title>
+      <title>Tails OS: Wasabiを使う</title>
+      <link>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</link>
+      <pubDate>Mon, 22 Mar 2021 09:30:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</guid>
+      <description>TailsOSをクリプトに利用してもおもしろいかなと思い、 カチカチでお固いやつですが、ちょっと試しにスパイシーにワサビ入りにしてみます。 ちと</description>
+    </item>
+    
+    <item>
+      <title>Tails OS: コールド・ウォレットとして使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</link>
       <pubDate>Fri, 05 Mar 2021 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</guid>
-      <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用します。 （オフグリッドというのかオフラインというのか、どれが正しい</description>
+      <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用してみます。 （オフグリッドというのかオフラインというのか、どれが正</description>
     </item>
     
     <item>
@@ -46,7 +55,7 @@
     </item>
     
     <item>
-      <title>Tails OS：インストール</title>
+      <title>Tails OS: インストール</title>
       <link>https://goozenlab.github.io/blog/2021/02/tails-install/</link>
       <pubDate>Fri, 19 Feb 2021 09:30:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
