@@ -160,7 +160,7 @@
                 <p>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。
 同じファームウェアを使うことで管理も楽ですし、異なった端末間でのメッシュWifiを構成できたりして柔軟性も高い。</p>
 <p>とセキュアな環境構築のためのサービスもリストアップしときました。</p>
-<!-- 
+<!--     
 なるべく経済的かつ省電力。
 面白さも大事。
 
@@ -169,11 +169,17 @@ https://check.torproject.org
 <h2 id="目次">目次</h2>
 <ol>
 <li>ルーター：OpenWRT
-2. アプリケーション
-1. リバースプロキシ
-2. OpenVpn / Wireguard
-5. 速度比較
-2. おすすめの構成</li>
+<ol>
+<li>アプリケーション
+<ol>
+<li>リバースプロキシ</li>
+<li>OpenVpn / Wireguard</li>
+</ol>
+</li>
+<li>速度比較</li>
+<li>おすすめの構成</li>
+</ol>
+</li>
 <li>サーバー
 <ol>
 <li>Raspbian (Debian)
@@ -192,12 +198,20 @@ https://check.torproject.org
 </ol>
 </li>
 <li>サービス
-2. vpn : セキュア環境での必須サービス
-+ Mullvad : 5台まで、一年 €60.0 カタギな感じの会社なのでこちらを利用。
-+ iVPN : 7台まで、一年 US$60.0　こちらもおすすめ。
-+ 速度比較：MullvadにてWireguardとOpenVpn。
 <ol>
+<li>vpn : セキュア環境での必須サービス
+<ul>
+<li>Mullvad : 5台まで、一年 €60.0 カタギな感じの会社なのでこちらを利用。</li>
+<li>iVPN : 7台まで、一年 US$60.0　こちらもおすすめ。</li>
+<li>速度比較：MullvadにてWireguardとOpenVpn。</li>
+</ul>
+</li>
+<li>Private DNS : DNSサービス
+<ol>
+<li>Cloudflare</li>
 <li>nextDNS : 広告をブロックするDNSサービス</li>
+</ol>
+</li>
 <li>mail : Tutanota | ProtonMail</li>
 </ol>
 </li>

@@ -8,7 +8,34 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 May 2021 14:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transaction Fee</title>
+      <link>https://goozenlab.github.io/blog/2021/05/transaction-fee/</link>
+      <pubDate>Tue, 04 May 2021 14:00:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/05/transaction-fee/</guid>
+      <description>ビットコインの送金手数料の下限を適当に調査？まとめ？て見ました。 まずは、ほぼ最低手数料の 2sat/b で送金。 ビットコインでは送金の手続きをすると、その</description>
+    </item>
+    
+    <item>
+      <title>離島・キャンプサイト</title>
+      <link>https://goozenlab.github.io/blog/2021/05/okinawa-camp-site/</link>
+      <pubDate>Sat, 01 May 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/05/okinawa-camp-site/</guid>
+      <description>沖縄（思った以上に米軍の基地・演習場などが多くてちょっとびっくりしました。 こりゃジャパンなんとかせなあんやろと。。） にて、ちょっとキャンプ場</description>
+    </item>
+    
+    <item>
+      <title>キャンプ調味料</title>
+      <link>https://goozenlab.github.io/blog/2021/04/camp-herb-case/</link>
+      <pubDate>Fri, 30 Apr 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/04/camp-herb-case/</guid>
+      <description>中長期のキャンプに持っていく調味料などの整理して見ました。 バックパッカー時にはジップロッカーでしたが、 サイトや百均巡りをして良い組み合わせを</description>
+    </item>
+    
     <item>
       <title>Tails OS: Wasabiを使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</link>
