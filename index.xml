@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Jun 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MapsMeの代替アプリ：OrganicMaps</title>
+      <link>https://goozenlab.github.io/blog/2021/06/organicmaps/</link>
+      <pubDate>Sun, 13 Jun 2021 10:17:00 +0900</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/06/organicmaps/</guid>
+      <description>オフラインでも使えトレッキングルートも網羅する旅人御用達のMaps.Me 非常にお世話になっている（た）アプリで、Version10まではお気</description>
+    </item>
+    
     <item>
       <title>那覇の安宿</title>
       <link>https://goozenlab.github.io/blog/2021/06/naha-backpackers/</link>
@@ -943,7 +952,7 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
       <author>goozenlab@gmail.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
-      <description>Thinkapd T480sでのDebain起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
+      <description>Thinkapd T480sでのdebian起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
     
     <item>

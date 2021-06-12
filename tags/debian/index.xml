@@ -91,6 +91,24 @@
     </item>
     
     <item>
+      <title>ファームウェアをアップデート</title>
+      <link>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</link>
+      <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
+      <description>Thinkapd T480sでのdebian起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
+    </item>
+    
+    <item>
+      <title>Linuxをアップデート</title>
+      <link>https://goozenlab.github.io/blog/2019/12/linux-update/</link>
+      <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2019/12/linux-update/</guid>
+      <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
+    </item>
+    
+    <item>
       <title>Debian on VAIO type P</title>
       <link>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</link>
       <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
