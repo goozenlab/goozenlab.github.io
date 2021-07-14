@@ -1,3991 +1,2404 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/categories/life/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/vegetarian/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/blog/2021/07/vitamin-b12/</loc>
+    <lastmod>2021-07-06T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/categories/mumble/</loc>
+    <lastmod>2021-07-04T12:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/blog/2021/07/nikosuma/</loc>
+    <lastmod>2021-07-04T12:30:00+09:00</lastmod>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/computing/</loc>
     <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/de-googled/</loc>
     <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/</loc>
-    <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/06/organicmaps/</loc>
     <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/open-source/</loc>
     <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2021-06-13T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/mumble/</loc>
-    <lastmod>2021-06-06T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://goozenlab.github.io/categories/bicycle/</loc>
+    <lastmod>2021-06-10T20:30:00+10:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/blog/2021/06/jetstar-rinkou/</loc>
+    <lastmod>2021-06-10T20:30:00+10:00</lastmod>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/okinawa/</loc>
     <lastmod>2021-06-06T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/06/naha-backpackers/</loc>
     <lastmod>2021-06-06T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/06/max-lineage/</loc>
     <lastmod>2021-06-05T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/xiaomi/</loc>
     <lastmod>2021-06-05T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/cript-currency/</loc>
     <lastmod>2021-05-04T14:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/life/</loc>
-    <lastmod>2021-05-04T14:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/05/transaction-fee/</loc>
     <lastmod>2021-05-04T14:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/camp/</loc>
     <lastmod>2021-05-01T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/05/okinawa-camp-site/</loc>
     <lastmod>2021-05-01T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/04/camp-herb-case/</loc>
     <lastmod>2021-04-30T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/tails/</loc>
     <lastmod>2021-03-22T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</loc>
     <lastmod>2021-03-22T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/03/naturehike-mongar-review/</loc>
     <lastmod>2021-03-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/review/</loc>
     <lastmod>2021-03-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/android-securities/</loc>
     <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/</loc>
     <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/03/mi-max-out/</loc>
     <lastmod>2021-03-10T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</loc>
     <lastmod>2021-03-05T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</loc>
     <lastmod>2021-03-04T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/vpn/</loc>
     <lastmod>2021-03-04T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/network/</loc>
     <lastmod>2021-02-26T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/nextdns/</loc>
     <lastmod>2021-02-26T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/gl.inet/</loc>
     <lastmod>2021-02-22T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</loc>
     <lastmod>2021-02-22T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/tails-install/</loc>
     <lastmod>2021-02-19T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/mullvad/</loc>
     <lastmod>2021-02-18T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/debian/</loc>
     <lastmod>2021-02-08T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/usbguard/</loc>
     <lastmod>2021-02-08T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/finance/</loc>
     <lastmod>2021-02-01T14:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/blockstream-green/</loc>
     <lastmod>2021-02-01T14:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/living-with-cryptos/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/gafa/</loc>
     <lastmod>2021-01-31T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</loc>
     <lastmod>2021-01-31T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/custom-rom/</loc>
     <lastmod>2021-01-30T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/battery-management/</loc>
     <lastmod>2021-01-30T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/calyxos/</loc>
     <lastmod>2021-01-29T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/calyxos-review/</loc>
     <lastmod>2021-01-29T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/pixel/</loc>
     <lastmod>2021-01-29T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/oneplus/</loc>
     <lastmod>2021-01-22T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/ubuntu-touch/</loc>
     <lastmod>2021-01-22T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</loc>
     <lastmod>2021-01-22T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/calyx-install/</loc>
     <lastmod>2021-01-20T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/degoogled-application/</loc>
     <lastmod>2021-01-14T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/optout/</loc>
     <lastmod>2021-01-14T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/gsi/</loc>
     <lastmod>2021-01-13T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</loc>
     <lastmod>2021-01-13T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/grapheneos/</loc>
     <lastmod>2021-01-12T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</loc>
     <lastmod>2021-01-12T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2021/01/new-year/</loc>
     <lastmod>2021-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/arch/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/manjaro/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/neon/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/12/distro-hopping/</loc>
     <lastmod>2020-12-22T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/12/order-pixel3/</loc>
     <lastmod>2020-12-22T10:19:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/openwrt/</loc>
     <lastmod>2020-12-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/raspberry/</loc>
     <lastmod>2020-12-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/12/travel-router-update/</loc>
     <lastmod>2020-12-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/opensource-network-environment/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</loc>
     <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/raspberry-pi/</loc>
     <lastmod>2020-12-15T15:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/12/panic-efi/</loc>
     <lastmod>2020-12-05T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/11/apple-silicon/</loc>
     <lastmod>2020-11-22T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/11/domain-lost/</loc>
     <lastmod>2020-11-21T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/11/apricot-soda/</loc>
     <lastmod>2020-11-20T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/lite-2020/</loc>
     <lastmod>2020-07-31T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/iapp/</loc>
     <lastmod>2020-07-31T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/update/</loc>
     <lastmod>2020-07-31T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/freenas/</loc>
     <lastmod>2020-07-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/freenas-laptop/</loc>
     <lastmod>2020-07-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/thinkpad/</loc>
     <lastmod>2020-07-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/doop/</loc>
     <lastmod>2020-07-30T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/doop-1110/</loc>
     <lastmod>2020-07-30T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/cosper/</loc>
     <lastmod>2020-07-29T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/cosper-110/</loc>
     <lastmod>2020-07-29T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/pranatice/</loc>
     <lastmod>2020-07-29T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/pranatice-0101/</loc>
     <lastmod>2020-07-29T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/dandori/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/dandori-210/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/tapas/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/tapas-1100/</loc>
     <lastmod>2020-07-28T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/ohayo/</loc>
     <lastmod>2020-07-26T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/ohayo-2101/</loc>
     <lastmod>2020-07-26T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/ippuku/</loc>
     <lastmod>2020-07-26T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/ippuku-1121/</loc>
     <lastmod>2020-07-26T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/sati/</loc>
     <lastmod>2020-07-25T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/sati-1101/</loc>
     <lastmod>2020-07-25T06:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/littlist/</loc>
     <lastmod>2020-07-24T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/littlist-2101/</loc>
     <lastmod>2020-07-24T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/app-privacy/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/lite-app-privacy/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/app-privacy/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/lite-app-privacy/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/littlist-privacy/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/big-sur/</loc>
     <lastmod>2020-07-07T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/digital-cuffs/</loc>
     <lastmod>2020-07-06T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</loc>
     <lastmod>2020-06-30T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-update-packages/</loc>
     <lastmod>2020-06-29T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/wwdc-apple-silicon/</loc>
     <lastmod>2020-06-27T10:17:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/archer-c7/</loc>
     <lastmod>2020-06-25T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-pi-archer/</loc>
     <lastmod>2020-06-25T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-install-archer-c7/</loc>
     <lastmod>2020-06-24T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/</loc>
     <lastmod>2020-06-23T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/</loc>
     <lastmod>2020-06-17T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/06/openwrt-japanese-filter-adblock/</loc>
     <lastmod>2020-06-15T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-gitea/</loc>
     <lastmod>2020-05-30T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/</loc>
     <lastmod>2020-05-27T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/raspbian-tplink-t1u/</loc>
     <lastmod>2020-05-25T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/</loc>
     <lastmod>2020-05-24T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/</loc>
     <lastmod>2020-05-21T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-sdcard-expansion/</loc>
     <lastmod>2020-05-20T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/openwrt-install-piaplus/</loc>
     <lastmod>2020-05-18T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi-zero/</loc>
     <lastmod>2020-05-14T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi/</loc>
     <lastmod>2020-05-13T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/05/mynode-install/</loc>
     <lastmod>2020-05-12T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/04/iphonese/</loc>
     <lastmod>2020-04-30T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/laos/</loc>
     <lastmod>2020-03-03T15:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/thailand/</loc>
     <lastmod>2020-03-03T15:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/travel/</loc>
     <lastmod>2020-03-03T15:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/03/chiangrai-laos/</loc>
     <lastmod>2020-03-03T15:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/macos/</loc>
     <lastmod>2020-02-23T11:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/tipstricks/</loc>
     <lastmod>2020-02-23T11:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/zfs/</loc>
     <lastmod>2020-02-23T11:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</loc>
     <lastmod>2020-02-23T11:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/thai-font/</loc>
     <lastmod>2020-02-22T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</loc>
     <lastmod>2020-02-21T14:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/obs/</loc>
     <lastmod>2020-02-12T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</loc>
     <lastmod>2020-02-12T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/linux/</loc>
     <lastmod>2020-02-07T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/standardnotes/</loc>
     <lastmod>2020-02-07T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/magictrackpad-arch/</loc>
     <lastmod>2020-02-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</loc>
     <lastmod>2020-02-04T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/appimage-debian/</loc>
     <lastmod>2020-02-02T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/02/tlp-arch/</loc>
     <lastmod>2020-02-01T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/install-yay/</loc>
     <lastmod>2020-01-31T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/gpg-verify/</loc>
     <lastmod>2020-01-30T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/mac/</loc>
     <lastmod>2020-01-30T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</loc>
     <lastmod>2020-01-29T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/tpt480s-linux-arch/</loc>
     <lastmod>2020-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/vscodium/</loc>
     <lastmod>2020-01-23T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/linux-calender-start-monday/</loc>
     <lastmod>2020-01-22T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</loc>
     <lastmod>2020-01-21T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/arco/</loc>
     <lastmod>2020-01-20T17:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</loc>
     <lastmod>2020-01-20T17:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/profile-sync-daemon/</loc>
     <lastmod>2020-01-19T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/kde/</loc>
     <lastmod>2020-01-18T17:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/kde-neon/</loc>
     <lastmod>2020-01-18T17:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/sandbox-app/</loc>
     <lastmod>2020-01-17T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/hackintosh/</loc>
     <lastmod>2020-01-14T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/preorder-ncase-m1/</loc>
     <lastmod>2020-01-14T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/rayzen/</loc>
     <lastmod>2020-01-14T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/android/</loc>
     <lastmod>2020-01-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/nokia7-android10-update/</loc>
     <lastmod>2020-01-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/nokia7&#43;/</loc>
     <lastmod>2020-01-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/kali/</loc>
     <lastmod>2020-01-11T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/install-kali-btrfs/</loc>
     <lastmod>2020-01-11T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</loc>
     <lastmod>2020-01-10T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</loc>
     <lastmod>2020-01-10T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/tpt480s-hackintosh/</loc>
     <lastmod>2020-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/vscode-plugins/</loc>
     <lastmod>2020-01-09T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/latest-firefox/</loc>
     <lastmod>2020-01-08T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/hackintosh-t480s-batery/</loc>
     <lastmod>2020-01-06T21:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</loc>
     <lastmod>2020-01-04T11:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/stick-linux/</loc>
     <lastmod>2020-01-03T03:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/new-year/</loc>
     <lastmod>2020-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/linux-update/</loc>
     <lastmod>2019-12-31T11:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/thai-orange/</loc>
     <lastmod>2019-12-30T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/ceasefires-shell/</loc>
     <lastmod>2019-12-30T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/clover-extra/</loc>
     <lastmod>2019-12-29T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/optout-amazon/</loc>
     <lastmod>2019-12-25T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/</loc>
     <lastmod>2019-12-24T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/windows-update/</loc>
     <lastmod>2019-12-23T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/thinkvision-m14/</loc>
     <lastmod>2019-12-22T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/abot-sim-free/</loc>
     <lastmod>2019-12-21T16:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</loc>
     <lastmod>2019-12-20T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/optout-phone/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/raspbeery-pi-references/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/ryzentosh/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/develop/</loc>
     <lastmod>2019-12-18T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/xcode/</loc>
     <lastmod>2019-12-18T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/error-xcode/</loc>
     <lastmod>2019-12-18T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/health/</loc>
     <lastmod>2019-12-17T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/calories/</loc>
     <lastmod>2019-12-17T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/conflict-manjaro/</loc>
     <lastmod>2019-12-16T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</loc>
     <lastmod>2019-12-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/linux-thinkpad-tlp/</loc>
     <lastmod>2019-12-14T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/update-clover/</loc>
     <lastmod>2019-12-13T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/ecommend-xiaomi/</loc>
     <lastmod>2019-12-12T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/12/download-youtube/</loc>
     <lastmod>2019-12-03T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/ippuku-1120/</loc>
     <lastmod>2019-11-24T22:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</loc>
     <lastmod>2019-11-23T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/smart-phone/</loc>
     <lastmod>2019-11-23T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</loc>
     <lastmod>2019-11-16T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/iapplication-status/</loc>
     <lastmod>2019-11-15T20:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</loc>
     <lastmod>2019-11-14T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</loc>
     <lastmod>2019-10-17T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</loc>
     <lastmod>2019-10-11T15:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/cholera/</loc>
     <lastmod>2019-10-10T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/</loc>
     <lastmod>2019-10-09T20:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/multios-boot-loader/</loc>
     <lastmod>2019-10-08T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</loc>
     <lastmod>2019-10-07T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/install-debian-btrfs/</loc>
     <lastmod>2019-10-06T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/</loc>
     <lastmod>2019-10-05T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/bo-p2-speaker/</loc>
     <lastmod>2019-10-04T14:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/ipod-here-now/</loc>
     <lastmod>2019-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/pi-3b-server-comparison/</loc>
     <lastmod>2019-09-17T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</loc>
     <lastmod>2019-09-15T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/pi-zram/</loc>
     <lastmod>2019-09-14T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/mac-hidden-shortcut/</loc>
     <lastmod>2019-09-13T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/amazon-piu-caprim/</loc>
     <lastmod>2019-09-12T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/end-of-editor-war/</loc>
     <lastmod>2019-09-11T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/password/</loc>
     <lastmod>2019-09-10T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/k9-password/</loc>
     <lastmod>2019-09-10T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/server/</loc>
     <lastmod>2019-09-09T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/pi-server-status/</loc>
     <lastmod>2019-09-09T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/last-fm/</loc>
     <lastmod>2019-09-08T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/sync/</loc>
     <lastmod>2019-09-07T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</loc>
     <lastmod>2019-09-07T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/linux-distribution/</loc>
     <lastmod>2019-09-06T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/logging/</loc>
     <lastmod>2019-09-05T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/speedtest-cli/</loc>
     <lastmod>2019-09-05T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/baking-soda-gargle/</loc>
     <lastmod>2019-09-05T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/shop-pi/</loc>
     <lastmod>2019-09-04T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/sway/</loc>
     <lastmod>2019-09-03T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</loc>
     <lastmod>2019-09-03T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/boostnote/</loc>
     <lastmod>2019-09-03T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/opensuse/</loc>
     <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/</loc>
     <lastmod>2019-09-02T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/ipod/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/nomad/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/projects/</loc>
     <lastmod>2019-09-01T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/openzfs-after/</loc>
     <lastmod>2019-08-31T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/kanboard-pi-install/</loc>
     <lastmod>2019-08-30T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/amazfit-bip-one-month/</loc>
     <lastmod>2019-08-29T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/smart-watch/</loc>
     <lastmod>2019-08-29T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/vaiop-reloaded/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/radicale-pi-install/</loc>
     <lastmod>2019-08-28T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pi-3a-external-disk/</loc>
     <lastmod>2019-08-25T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/customrom_dirty_flash/</loc>
     <lastmod>2019-08-24T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/amazfit-bip-data/</loc>
     <lastmod>2019-08-22T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/setting-unison/</loc>
     <lastmod>2019-08-21T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/grafana-bitcoin/</loc>
     <lastmod>2019-08-20T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/build-unison/</loc>
     <lastmod>2019-08-19T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/openweathermap-settings/</loc>
     <lastmod>2019-08-18T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/mumble/</loc>
     <lastmod>2019-08-17T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/useful-terminal-shortcut-01/</loc>
     <lastmod>2019-08-17T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/telegraf-pi-install/</loc>
     <lastmod>2019-08-14T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/</loc>
     <lastmod>2019-08-13T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/grafana-pi-install/</loc>
     <lastmod>2019-08-12T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pi-swap-dphys/</loc>
     <lastmod>2019-08-11T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/firefly-pi-install/</loc>
     <lastmod>2019-08-10T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pia-running-test/</loc>
     <lastmod>2019-08-09T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/wallabag-pi-install/</loc>
     <lastmod>2019-08-08T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pimoroni-extra-pi/</loc>
     <lastmod>2019-08-06T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/running-core-comparison/</loc>
     <lastmod>2019-08-05T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pihole-install/</loc>
     <lastmod>2019-08-04T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/pi-swapiness/</loc>
     <lastmod>2019-08-03T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/08/amazfit-bip-review/</loc>
     <lastmod>2019-08-01T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/cheet/zfs/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/recent/</loc>
     <lastmod>2019-07-31T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</loc>
     <lastmod>2019-07-30T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</loc>
     <lastmod>2019-07-28T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/renew-main-laptop/</loc>
     <lastmod>2019-07-27T23:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/tpt480s/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/local-dns-android/</loc>
     <lastmod>2019-07-18T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/gitea-pi-install/</loc>
     <lastmod>2019-07-17T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/tt-rss-pi-install/</loc>
     <lastmod>2019-07-15T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/max3-microg-sot/</loc>
     <lastmod>2019-07-13T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/pi-full-backup/</loc>
     <lastmod>2019-07-12T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/pi-lamp-install/</loc>
     <lastmod>2019-07-10T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/pi-save-power/</loc>
     <lastmod>2019-07-09T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/pi-nfs/</loc>
     <lastmod>2019-07-07T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/manage-cpu-core/</loc>
     <lastmod>2019-07-06T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/image-optim/</loc>
     <lastmod>2019-07-05T10:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/max3-microg/</loc>
     <lastmod>2019-07-03T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/twrp-restorelogin-error/</loc>
     <lastmod>2019-07-02T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/07/syncthing-settings/</loc>
     <lastmod>2019-07-01T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/06/syncthing-install/</loc>
     <lastmod>2019-06-30T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/06/rsa-ssh-login/</loc>
     <lastmod>2019-06-29T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/06/raspbian-pi-zero-install/</loc>
     <lastmod>2019-06-20T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/travel-pi/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/nomad-stick-machine/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/home-pi/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/music/</loc>
     <lastmod>2019-05-01T07:30:00+06:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/05/spotify-premium/</loc>
     <lastmod>2019-05-01T07:30:00+06:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/cat/</loc>
     <lastmod>2019-04-29T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/youtube/</loc>
     <lastmod>2019-04-29T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/first-youtube/</loc>
     <lastmod>2019-04-29T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/india/</loc>
     <lastmod>2019-04-28T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/paytm-india/</loc>
     <lastmod>2019-04-28T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/auroville-guesthouse/</loc>
     <lastmod>2019-04-27T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/chennai-airport-metro/</loc>
     <lastmod>2019-04-21T05:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/openvpn/</loc>
     <lastmod>2019-04-17T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/security/</loc>
     <lastmod>2019-04-17T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/openvpn-shadow/</loc>
     <lastmod>2019-04-17T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/vpngate/</loc>
     <lastmod>2019-04-17T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/songkran-thailand/</loc>
     <lastmod>2019-04-14T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/running-test-3/</loc>
     <lastmod>2019-04-09T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/inbox-gmail/</loc>
     <lastmod>2019-04-05T08:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/test-running-mobile-pie-2/</loc>
     <lastmod>2019-04-04T16:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/router/</loc>
     <lastmod>2019-04-03T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/usb-tethering/</loc>
     <lastmod>2019-04-03T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/building-kernel/</loc>
     <lastmod>2019-04-02T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/fasting/</loc>
     <lastmod>2019-04-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/04/2month-after-fasting/</loc>
     <lastmod>2019-04-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/max3-pie-kernel-source-code/</loc>
     <lastmod>2019-03-30T08:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/64bit-kernel/</loc>
     <lastmod>2019-03-28T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/test-running-mobile-pie/</loc>
     <lastmod>2019-03-25T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/netdata-mac/</loc>
     <lastmod>2019-03-23T16:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/ar300m-firmware-update/</loc>
     <lastmod>2019-03-21T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-withdrawal/</loc>
     <lastmod>2019-03-20T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/macbook-air-2018/</loc>
     <lastmod>2019-03-19T06:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/color-simple-prompt/</loc>
     <lastmod>2019-03-18T16:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/buster/</loc>
     <lastmod>2019-03-18T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</loc>
     <lastmod>2019-03-18T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/hostapd-buster/</loc>
     <lastmod>2019-03-17T03:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/pi-archlinux64-install/</loc>
     <lastmod>2019-03-15T22:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/review-initial-setup-shadow/</loc>
     <lastmod>2019-03-14T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/shop-thailand/</loc>
     <lastmod>2019-03-13T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/install-dietpi/</loc>
     <lastmod>2019-03-12T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/ordered-thailand/</loc>
     <lastmod>2019-03-10T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/micros-speed-pie/</loc>
     <lastmod>2019-03-09T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/install-moode-rpi0w/</loc>
     <lastmod>2019-03-07T20:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/skype/</loc>
     <lastmod>2019-03-04T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/03/mi-temperature-monitor/</loc>
     <lastmod>2019-03-02T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/twrp-backup-restore/</loc>
     <lastmod>2019-02-27T10:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/21fasting-wrapup/</loc>
     <lastmod>2019-02-26T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/21fasting-3w/</loc>
     <lastmod>2019-02-25T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/21fasting-2w/</loc>
     <lastmod>2019-02-24T16:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/max3-custom-rom/</loc>
     <lastmod>2019-02-23T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/21fasting-1w/</loc>
     <lastmod>2019-02-22T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/india-airtel-plans/</loc>
     <lastmod>2019-02-21T05:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/prepaid-phone/</loc>
     <lastmod>2019-02-21T05:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/21days-fasting-program/</loc>
     <lastmod>2019-02-20T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/open/</loc>
     <lastmod>2019-02-16T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/02/github-private-reopsitory/</loc>
     <lastmod>2019-02-16T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/cheet/terminal/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/01/new-year/</loc>
     <lastmod>2019-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/cheet/brew/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/cheet/vi/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/categories/bicycle/</loc>
-    <lastmod>2018-12-27T17:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/12/kona-tonk-review/</loc>
     <lastmod>2018-12-27T17:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/12/max3-unlock-bootloader/</loc>
     <lastmod>2018-12-22T11:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/max3-review/</loc>
     <lastmod>2018-11-27T10:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/applexit/</loc>
     <lastmod>2018-11-18T11:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/home-bakery/</loc>
     <lastmod>2018-11-17T06:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/xiaomi-max3/</loc>
     <lastmod>2018-11-16T15:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/replace-mba-logicboard/</loc>
     <lastmod>2018-11-15T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/hackintosh-x230/</loc>
     <lastmod>2018-11-14T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/11/macbook-air-2018/</loc>
     <lastmod>2018-11-13T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://goozenlab.github.io/tags/vegetarian/</loc>
-    <lastmod>2018-10-03T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/10/suspend-frutarian/</loc>
     <lastmod>2018-10-03T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/10/dead-mbp15-2011/</loc>
     <lastmod>2018-10-01T11:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/10/replace-keyboard/</loc>
     <lastmod>2018-10-01T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/android-pie-nokia/</loc>
     <lastmod>2018-09-30T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/littlist-2100/</loc>
     <lastmod>2018-09-29T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/ohayo-2100/</loc>
     <lastmod>2018-09-29T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/swift/</loc>
     <lastmod>2018-09-28T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/problem-uploading/</loc>
     <lastmod>2018-09-28T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/sati-1100/</loc>
     <lastmod>2018-09-27T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/dry-fasting/</loc>
     <lastmod>2018-09-26T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/travel-wallets/</loc>
     <lastmod>2018-09-24T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/komoot/</loc>
     <lastmod>2018-09-23T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/komoot-settings/</loc>
     <lastmod>2018-09-23T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/shivambu/</loc>
     <lastmod>2018-09-22T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/shivambu/</loc>
     <lastmod>2018-09-22T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/snakefoot/</loc>
     <lastmod>2018-09-21T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/recent-youtube/</loc>
     <lastmod>2018-09-21T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/development/</loc>
     <lastmod>2018-09-20T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/resolution-iphone-2018/</loc>
     <lastmod>2018-09-20T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/kddi-collect-call/</loc>
     <lastmod>2018-09-20T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/fruitarianism-30/</loc>
     <lastmod>2018-09-19T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/urine-therapy-practice/</loc>
     <lastmod>2018-09-18T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/xcode10-ios12/</loc>
     <lastmod>2018-09-17T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/wahoo-bolt-limited-edition/</loc>
     <lastmod>2018-09-16T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/fruitarianism-coconutsmilk/</loc>
     <lastmod>2018-09-15T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/apple-event/</loc>
     <lastmod>2018-09-14T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/nisargadatta-maharaj-ashram/</loc>
     <lastmod>2018-09-13T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/fruitarianism-21/</loc>
     <lastmod>2018-09-12T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/komoot-route-modificationt/</loc>
     <lastmod>2018-09-11T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/iphone-naming/</loc>
     <lastmod>2018-09-10T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/komoot-route-making-chiangmai/</loc>
     <lastmod>2018-09-09T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/lpd-candidate/</loc>
     <lastmod>2018-09-08T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/nuts-nutrition/</loc>
     <lastmod>2018-09-07T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/komoot-pay-service/</loc>
     <lastmod>2018-09-06T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/hugo-mmark/</loc>
     <lastmod>2018-09-05T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/web/</loc>
     <lastmod>2018-09-05T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/komoot-gpx-import/</loc>
     <lastmod>2018-09-04T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/09/price-komoot-ridewithgps/</loc>
     <lastmod>2018-09-02T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/08/thermos-can-holder/</loc>
     <lastmod>2018-08-31T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/08/fruitarianism-10/</loc>
     <lastmod>2018-08-30T06:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/08/hugo-shortcodes/</loc>
     <lastmod>2018-08-29T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/nokia7-plus-review2/</loc>
     <lastmod>2018-05-16T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/android-p-dp2/</loc>
     <lastmod>2018-05-09T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/nokia7plus-review/</loc>
     <lastmod>2018-05-04T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/ichiro-forever/</loc>
     <lastmod>2018-05-04T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/error-gnucash3/</loc>
     <lastmod>2018-05-03T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/wp-pure-site/</loc>
     <lastmod>2018-05-02T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/bt-keyboard/</loc>
     <lastmod>2018-05-01T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/05/fully-ripened-banana/</loc>
     <lastmod>2018-05-01T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/04/nokiax6/</loc>
     <lastmod>2018-04-27T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/04/custom-mi-max/</loc>
     <lastmod>2018-04-24T10:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/04/nokia7plus/</loc>
     <lastmod>2018-04-20T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/04/rename-automator/</loc>
     <lastmod>2018-04-17T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</loc>
     <lastmod>2018-04-01T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/vaio-p/</loc>
     <lastmod>2018-04-01T13:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/03/sati-195/</loc>
     <lastmod>2018-03-06T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2018/01/new-year/</loc>
     <lastmod>2018-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/mono/acam-3000/</loc>
     <lastmod>2017-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/goods/</loc>
     <lastmod>2017-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/08/travel-inside-india/</loc>
     <lastmod>2017-08-13T18:15:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/internet/</loc>
     <lastmod>2017-08-03T18:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/08/internet-leh/</loc>
     <lastmod>2017-08-03T18:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/visa/</loc>
     <lastmod>2017-07-21T18:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/07/india-visa-vientian/</loc>
     <lastmod>2017-07-21T18:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/sati-privacy/</loc>
     <lastmod>2017-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/sati-privacy/</loc>
     <lastmod>2017-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/about/vipassana/</loc>
     <lastmod>2017-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/05/open-tapas/</loc>
     <lastmod>2017-05-25T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/05/brooks-b17/</loc>
     <lastmod>2017-05-20T20:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/05/sati-194/</loc>
     <lastmod>2017-05-19T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/dahon/</loc>
     <lastmod>2017-05-16T20:30:00+10:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/05/air-dahon/</loc>
     <lastmod>2017-05-16T20:30:00+10:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/05/sati-193/</loc>
     <lastmod>2017-05-15T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/srilanka/</loc>
     <lastmod>2017-03-25T08:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/03/internet-anuradhapura/</loc>
     <lastmod>2017-03-25T08:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2017/01/new-year/</loc>
     <lastmod>2017-01-01T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/12/thai-lao-border-by-bicycle/</loc>
     <lastmod>2016-12-30T20:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/12/vegi-swim/</loc>
     <lastmod>2016-12-30T06:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/11/pranatice-0100/</loc>
     <lastmod>2016-11-30T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/a/</loc>
     <lastmod>2016-11-29T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/11/open-a/</loc>
     <lastmod>2016-11-29T14:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/11/open-pranatice/</loc>
     <lastmod>2016-11-27T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/pranatice/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/11/mbp2016/</loc>
     <lastmod>2016-11-26T22:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/10/a-090/</loc>
     <lastmod>2016-10-31T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/10/thai-dtac/</loc>
     <lastmod>2016-10-23T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/bug/</loc>
     <lastmod>2016-10-10T10:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/10/notification_sound/</loc>
     <lastmod>2016-10-10T10:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/10/use_legacy_swift_version/</loc>
     <lastmod>2016-10-07T16:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/iphone5s/</loc>
     <lastmod>2016-09-21T09:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/xcode8/</loc>
     <lastmod>2016-09-19T14:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/nsregularexpression/</loc>
     <lastmod>2016-09-15T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/listaria/</loc>
     <lastmod>2016-09-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/open-listaria/</loc>
     <lastmod>2016-09-15T07:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/listaria-180/</loc>
     <lastmod>2016-09-14T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/block-3ways/</loc>
     <lastmod>2016-09-12T09:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/unwind-unwind/</loc>
     <lastmod>2016-09-12T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/ohayo-292/</loc>
     <lastmod>2016-09-10T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/iphone7/</loc>
     <lastmod>2016-09-09T13:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/segway-unwind/</loc>
     <lastmod>2016-09-09T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/cosper-193/</loc>
     <lastmod>2016-09-08T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/design/</loc>
     <lastmod>2016-09-07T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/icon/</loc>
     <lastmod>2016-09-07T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/app-icon-naming/</loc>
     <lastmod>2016-09-07T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/open-sati/</loc>
     <lastmod>2016-09-06T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/github-open-sati/</loc>
     <lastmod>2016-09-06T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/littlist-280/</loc>
     <lastmod>2016-09-05T10:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/use-pods/</loc>
     <lastmod>2016-09-03T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/device-container/</loc>
     <lastmod>2016-09-02T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/cosper-display/</loc>
     <lastmod>2016-09-01T19:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/09/install-pods/</loc>
     <lastmod>2016-09-01T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/install-cocoapods/</loc>
     <lastmod>2016-08-31T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/install-homebrew/</loc>
     <lastmod>2016-08-31T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/clean-install/</loc>
     <lastmod>2016-08-30T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</loc>
     <lastmod>2016-08-28T13:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/modalview-over/</loc>
     <lastmod>2016-08-28T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/statusbar-memo/</loc>
     <lastmod>2016-08-26T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/lite-admob/</loc>
     <lastmod>2016-08-25T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</loc>
     <lastmod>2016-08-23T19:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/dandori-280/</loc>
     <lastmod>2016-08-22T22:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/cosper-192/</loc>
     <lastmod>2016-08-22T05:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/if-let/</loc>
     <lastmod>2016-08-18T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/tweet/</loc>
     <lastmod>2016-08-16T13:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/sati-192/</loc>
     <lastmod>2016-08-15T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</loc>
     <lastmod>2016-08-14T09:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/airticket-chinagmai/</loc>
     <lastmod>2016-08-13T13:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/report-a/</loc>
     <lastmod>2016-08-11T08:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/sati-191/</loc>
     <lastmod>2016-08-10T06:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/search-option/</loc>
     <lastmod>2016-08-09T13:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/08/array_filter/</loc>
     <lastmod>2016-08-04T18:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/07/doop-190/</loc>
     <lastmod>2016-07-31T21:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/07/cosper-191/</loc>
     <lastmod>2016-07-30T05:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/07/ohayo-291/</loc>
     <lastmod>2016-07-30T05:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/07/dahon-speed8/</loc>
     <lastmod>2016-07-20T20:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/07/cosper-190/</loc>
     <lastmod>2016-07-07T05:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/chroniumos/</loc>
     <lastmod>2016-06-28T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/ippuku-190/</loc>
     <lastmod>2016-06-27T22:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/tapas-190/</loc>
     <lastmod>2016-06-20T03:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/nongkhai-laos/</loc>
     <lastmod>2016-06-19T15:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/ohayo-290/</loc>
     <lastmod>2016-06-14T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/sati-190/</loc>
     <lastmod>2016-06-08T19:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/internet-nongkhai/</loc>
     <lastmod>2016-06-08T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/ios9-iphone4s/</loc>
     <lastmod>2016-06-04T12:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/internet-nakhonphanom/</loc>
     <lastmod>2016-06-03T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/internet-mukdahan/</loc>
     <lastmod>2016-06-03T08:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/mbp2016/</loc>
     <lastmod>2016-06-01T22:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/06/internet-savannakhet/</loc>
     <lastmod>2016-06-01T17:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/05/icons-renew/</loc>
     <lastmod>2016-05-31T16:13:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/05/internet-pakse/</loc>
     <lastmod>2016-05-28T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/05/internet-ubon/</loc>
     <lastmod>2016-05-26T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/05/internet-surin/</loc>
     <lastmod>2016-05-23T12:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/03/arc4random_uniform/</loc>
     <lastmod>2016-03-18T11:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</loc>
     <lastmod>2016-03-03T12:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/01/cashing-hongkong/</loc>
     <lastmod>2016-01-17T12:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/01/internet-skhotai/</loc>
     <lastmod>2016-01-15T12:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/01/internet-chiangkhan/</loc>
     <lastmod>2016-01-10T12:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/01/new-year/</loc>
     <lastmod>2016-01-09T20:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/cambodia/</loc>
     <lastmod>2015-12-25T17:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/12/internet-battambang/</loc>
     <lastmod>2015-12-25T17:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/10/thai-dtac/</loc>
     <lastmod>2015-10-30T09:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/10/dust-gv1/</loc>
     <lastmod>2015-10-18T13:15:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/ios901/</loc>
     <lastmod>2015-09-25T06:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/xcode7-elcapitan/</loc>
     <lastmod>2015-09-24T13:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/ios9-bug-notifications/</loc>
     <lastmod>2015-09-23T15:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/3dtouch/</loc>
     <lastmod>2015-09-20T09:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/russia/</loc>
     <lastmod>2015-09-19T17:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/internet-irkutsk/</loc>
     <lastmod>2015-09-19T17:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/internet-novosibirsk/</loc>
     <lastmod>2015-09-13T17:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/internet-barnaul/</loc>
     <lastmod>2015-09-11T17:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/kazakhstan/</loc>
     <lastmod>2015-09-06T10:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/09/internet-astana/</loc>
     <lastmod>2015-09-06T10:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/kyrgyz/</loc>
     <lastmod>2015-08-26T07:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/08/internet-cholpon/</loc>
     <lastmod>2015-08-26T07:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/08/doop-181/</loc>
     <lastmod>2015-08-16T16:00:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/tajikistan/</loc>
     <lastmod>2015-08-04T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/08/wakhan-valley/</loc>
     <lastmod>2015-08-04T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/at-khorog/</loc>
     <lastmod>2015-07-30T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/taxi/</loc>
     <lastmod>2015-07-28T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/dushanbe-khorog/</loc>
     <lastmod>2015-07-28T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/userdefaults-remove-keys/</loc>
     <lastmod>2015-07-27T18:30:00+05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/objective-c/</loc>
     <lastmod>2015-07-27T18:30:00+05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/internet-dushanbe/</loc>
     <lastmod>2015-07-26T20:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/oshu-khojand/</loc>
     <lastmod>2015-07-22T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/toktogul-oshu/</loc>
     <lastmod>2015-07-21T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/peace-miyazaki/</loc>
     <lastmod>2015-07-15T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/peace-manifest/</loc>
     <lastmod>2015-07-15T16:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/pakistan/</loc>
     <lastmod>2015-07-13T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/visa-pakistan/</loc>
     <lastmod>2015-07-13T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/midx-swift/</loc>
     <lastmod>2015-07-11T09:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/visa-tajikistan/</loc>
     <lastmod>2015-07-08T12:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/uzbekistan/</loc>
     <lastmod>2015-07-06T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/visa-uzbek-loi/</loc>
     <lastmod>2015-07-06T19:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/internet-bishkek/</loc>
     <lastmod>2015-07-05T07:30:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/07/registration-kazakhstan/</loc>
     <lastmod>2015-07-01T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/internet-almaty/</loc>
     <lastmod>2015-06-30T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/china/</loc>
     <lastmod>2015-06-29T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/train/</loc>
     <lastmod>2015-06-29T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/train-urumuqi-almaty/</loc>
     <lastmod>2015-06-29T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/internet-urumuqi/</loc>
     <lastmod>2015-06-27T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/doop-180/</loc>
     <lastmod>2015-06-25T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/backpack/</loc>
     <lastmod>2015-06-20T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/centralasia-packlist/</loc>
     <lastmod>2015-06-20T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/%E6%8C%81%E3%81%A1%E7%89%A9/</loc>
     <lastmod>2015-06-20T15:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/littlist-lite-265/</loc>
     <lastmod>2015-06-18T10:00:47+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/denon-da10/</loc>
     <lastmod>2015-06-15T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/sandal/</loc>
     <lastmod>2015-06-13T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/chinese-visa-chiangmai/</loc>
     <lastmod>2015-06-12T10:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</loc>
     <lastmod>2015-06-10T17:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/06/luggage-tag/</loc>
     <lastmod>2015-06-01T12:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/donation/</loc>
     <lastmod>2015-05-28T15:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/new-backpack-gr0/</loc>
     <lastmod>2015-05-22T12:30:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/mono/backpack-gr-0/</loc>
     <lastmod>2015-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/surfacepad/</loc>
     <lastmod>2015-05-20T19:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/main-notebook/</loc>
     <lastmod>2015-05-16T14:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/wrapup-chiangmai/</loc>
     <lastmod>2015-05-14T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/install-elementary-vaio-type-p/</loc>
     <lastmod>2015-05-01T14:50:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/05/new-backpack/</loc>
     <lastmod>2015-05-01T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/internet-maehongson/</loc>
     <lastmod>2015-04-17T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/pla-violation/</loc>
     <lastmod>2015-04-15T10:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/internet-maesariang/</loc>
     <lastmod>2015-04-14T20:12:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/dandori-264/</loc>
     <lastmod>2015-04-13T22:20:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/internet-maesot/</loc>
     <lastmod>2015-04-10T20:12:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/nepal/</loc>
     <lastmod>2015-04-08T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/wrapup-nepal/</loc>
     <lastmod>2015-04-08T18:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/tableview-separator/</loc>
     <lastmod>2015-04-06T19:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/backpack/</loc>
     <lastmod>2015-04-04T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/04/inside-backpack/</loc>
     <lastmod>2015-04-04T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/swift-shake/</loc>
     <lastmod>2015-03-27T11:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/littlist-266/</loc>
     <lastmod>2015-03-27T10:00:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/performselector-timer/</loc>
     <lastmod>2015-03-26T10:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/println-swift/</loc>
     <lastmod>2015-03-25T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/nsdate-swift/</loc>
     <lastmod>2015-03-24T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/xcode62-downloaded/</loc>
     <lastmod>2015-03-22T17:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/dandori-263/</loc>
     <lastmod>2015-03-21T18:20:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/view-cycle/</loc>
     <lastmod>2015-03-21T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/notification-setting/</loc>
     <lastmod>2015-03-21T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/load-managedobject/</loc>
     <lastmod>2015-03-20T10:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/nslocalizedstring-swift/</loc>
     <lastmod>2015-03-19T11:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/delegate-swift/</loc>
     <lastmod>2015-03-18T11:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/uibutton-swift/</loc>
     <lastmod>2015-03-17T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/ohayo-pop/</loc>
     <lastmod>2015-03-16T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/thanx-dowload-sati/</loc>
     <lastmod>2015-03-15T23:50:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/ios/</loc>
     <lastmod>2015-03-15T17:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</loc>
     <lastmod>2015-03-15T17:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/intellij-setup/</loc>
     <lastmod>2015-03-14T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/kotlin/</loc>
     <lastmod>2015-03-14T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/constants-swift/</loc>
     <lastmod>2015-03-14T09:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/littlist-265-bug/</loc>
     <lastmod>2015-03-13T20:00:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/hugo-simplenote/</loc>
     <lastmod>2015-03-13T13:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/unable-to-load-class/</loc>
     <lastmod>2015-03-12T16:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/littlist-265/</loc>
     <lastmod>2015-03-11T07:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/tapas-165/</loc>
     <lastmod>2015-03-11T03:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/new-macbook/</loc>
     <lastmod>2015-03-10T05:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/diy/</loc>
     <lastmod>2015-03-09T14:50:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/wrapcase-gr/</loc>
     <lastmod>2015-03-09T14:50:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/userdefault-register-defaults/</loc>
     <lastmod>2015-03-08T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/doop-165/</loc>
     <lastmod>2015-03-08T07:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/ohayo-282/</loc>
     <lastmod>2015-03-07T21:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</loc>
     <lastmod>2015-03-07T17:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/hugo-template/</loc>
     <lastmod>2015-03-07T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/about/</loc>
     <lastmod>2015-03-05T22:48:01+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/moving-hugo/</loc>
     <lastmod>2015-03-05T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/coredb/</loc>
     <lastmod>2015-03-02T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</loc>
     <lastmod>2015-03-02T08:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/travel-home/</loc>
     <lastmod>2015-02-28T20:32:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/malaysia/</loc>
     <lastmod>2015-02-27T18:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/wrapup-malaysia/</loc>
     <lastmod>2015-02-27T18:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/develop/</loc>
     <lastmod>2015-02-26T07:25:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/xibless-project/</loc>
     <lastmod>2015-02-26T07:25:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/pranatice-071/</loc>
     <lastmod>2015-02-26T06:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/sati-165/</loc>
     <lastmod>2015-02-26T06:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/internet-pokhara/</loc>
     <lastmod>2015-02-25T20:12:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/reminder-duedatecomponents/</loc>
     <lastmod>2015-02-23T06:50:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/reminder-completion/</loc>
     <lastmod>2015-02-22T23:47:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/doop-164/</loc>
     <lastmod>2015-02-20T07:36:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/sleep-on-travel/</loc>
     <lastmod>2015-02-17T19:41:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/internet-bhaktapur/</loc>
     <lastmod>2015-02-16T15:23:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/release-a/</loc>
     <lastmod>2015-02-16T15:18:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/tapas-163/</loc>
     <lastmod>2015-02-12T16:33:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/sati-upcomming/</loc>
     <lastmod>2015-02-11T08:54:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/sati-164/</loc>
     <lastmod>2015-02-10T19:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/ohayo-281/</loc>
     <lastmod>2015-02-10T13:06:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/internet-dhulikhel/</loc>
     <lastmod>2015-02-07T10:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/littlist-263/</loc>
     <lastmod>2015-02-06T06:55:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/pinocle/</loc>
     <lastmod>2015-02-05T07:35:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/pinocul-171/</loc>
     <lastmod>2015-02-05T07:35:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/internet-kathmandu/</loc>
     <lastmod>2015-02-03T08:41:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</loc>
     <lastmod>2015-02-02T15:35:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/sati-nosound-erro/</loc>
     <lastmod>2015-01-30T17:02:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/sati-163/</loc>
     <lastmod>2015-01-28T08:54:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/goingback-melaka/</loc>
     <lastmod>2015-01-25T10:17:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/a/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/pinocul/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/pinocul/</loc>
     <lastmod>2015-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/a/</loc>
     <lastmod>2015-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/inside-briefcase/</loc>
     <lastmod>2015-01-17T12:47:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/internet-kotabaru/</loc>
     <lastmod>2015-01-17T10:58:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/internet-cameron-highlands/</loc>
     <lastmod>2015-01-06T19:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/01/new-year/</loc>
     <lastmod>2015-01-01T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/12/internet-ipoh/</loc>
     <lastmod>2014-12-31T19:04:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/12/internet-melaka/</loc>
     <lastmod>2014-12-24T18:04:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/12/androidstudio-install/</loc>
     <lastmod>2014-12-09T20:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/12/sati-nosound/</loc>
     <lastmod>2014-12-04T13:55:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/12/release-pranatice/</loc>
     <lastmod>2014-12-01T14:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/pranatice/</loc>
     <lastmod>2014-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/cosper-162/</loc>
     <lastmod>2014-11-22T08:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/mba-review/</loc>
     <lastmod>2014-11-21T20:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/doop-162/</loc>
     <lastmod>2014-11-20T17:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/dandori-262/</loc>
     <lastmod>2014-11-18T17:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/mac/</loc>
     <lastmod>2014-11-10T14:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/macbookair11/</loc>
     <lastmod>2014-11-10T14:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/11/ohayo-280/</loc>
     <lastmod>2014-11-05T05:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/10/littlist-260/</loc>
     <lastmod>2014-10-30T20:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/10/dandori-261/</loc>
     <lastmod>2014-10-27T17:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/categories/macos/</loc>
     <lastmod>2014-10-20T14:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/10/yosemite/</loc>
     <lastmod>2014-10-20T14:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/10/update-x60/</loc>
     <lastmod>2014-10-10T13:08:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/09/sati-v1.5.7/</loc>
     <lastmod>2014-09-20T13:08:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2014/08/iphone4s/</loc>
     <lastmod>2014-08-20T19:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/08/sati-155/</loc>
     <lastmod>2013-08-08T13:08:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/08/sati-154/</loc>
     <lastmod>2013-08-06T18:29:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/listaria-154/</loc>
     <lastmod>2013-07-30T16:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/viriya/</loc>
     <lastmod>2013-07-30T11:14:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/viriya-150/</loc>
     <lastmod>2013-07-30T11:14:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/doop-150/</loc>
     <lastmod>2013-07-29T10:41:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/dandori-250/</loc>
     <lastmod>2013-07-27T17:20:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</loc>
     <lastmod>2013-07-27T10:07:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/tapas-150/</loc>
     <lastmod>2013-07-24T14:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/littlist/</loc>
     <lastmod>2013-07-20T08:07:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/ohayo-250/</loc>
     <lastmod>2013-07-18T14:13:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/cosper-150/</loc>
     <lastmod>2013-07-17T08:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/sati-153/</loc>
     <lastmod>2013-07-13T00:59:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/color-lock/</loc>
     <lastmod>2013-07-10T17:07:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/ippuku-150/</loc>
     <lastmod>2013-07-08T22:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/07/listaria-153/</loc>
     <lastmod>2013-07-08T22:57:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/06/doop-144/</loc>
     <lastmod>2013-06-27T18:47:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/06/octopress-theme/</loc>
     <lastmod>2013-06-18T22:06:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/doop-143/</loc>
     <lastmod>2013-05-29T09:32:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/bug-datepicker/</loc>
     <lastmod>2013-05-25T13:39:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/icons-renew/</loc>
     <lastmod>2013-05-24T16:13:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/admob-update/</loc>
     <lastmod>2013-05-23T16:13:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/internet-muangsing/</loc>
     <lastmod>2013-05-15T20:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/05/internet-luangnamtha/</loc>
     <lastmod>2013-05-13T19:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/04/colormode/</loc>
     <lastmod>2013-04-27T12:27:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/04/littlist-254/</loc>
     <lastmod>2013-04-25T20:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/04/internet-chiangrai/</loc>
     <lastmod>2013-04-23T20:04:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/03/textmate2/</loc>
     <lastmod>2013-03-04T07:03:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/03/littlist-253/</loc>
     <lastmod>2013-03-03T11:03:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</loc>
     <lastmod>2013-02-25T10:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/02/generate-error/</loc>
     <lastmod>2013-02-24T14:23:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/02/ippuku143/</loc>
     <lastmod>2013-02-22T15:35:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/02/littlist-252/</loc>
     <lastmod>2013-02-06T20:35:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/01/seiko-alarmclock/</loc>
     <lastmod>2013-01-16T20:35:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/01/admob-update/</loc>
     <lastmod>2013-01-14T14:53:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/01/medicine-bedbug/</loc>
     <lastmod>2013-01-05T14:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2013/01/new-year/</loc>
     <lastmod>2013-01-01T14:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/12/inside-briefcase/</loc>
     <lastmod>2012-12-27T12:47:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/12/sati-151/</loc>
     <lastmod>2012-12-21T12:47:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/12/internet-penang/</loc>
     <lastmod>2012-12-19T11:43:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/12/internet-kl/</loc>
     <lastmod>2012-12-16T11:43:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/cloud/</loc>
     <lastmod>2012-12-05T12:47:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/12/owncloud/</loc>
     <lastmod>2012-12-05T12:47:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/meditation/</loc>
     <lastmod>2012-11-21T10:29:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/10days-retreat/</loc>
     <lastmod>2012-11-21T10:29:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/gray-mode/</loc>
     <lastmod>2012-11-20T16:43:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/dash-icon/</loc>
     <lastmod>2012-11-19T16:30:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/sale-on-weekend/</loc>
     <lastmod>2012-11-19T00:10:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/internet-pushkar/</loc>
     <lastmod>2012-11-11T16:43:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/11/known-bugs/</loc>
     <lastmod>2012-11-11T16:43:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/20days-retreat/</loc>
     <lastmod>2012-10-21T12:47:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/littlist-251/</loc>
     <lastmod>2012-10-20T12:47:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/listaria-151/</loc>
     <lastmod>2012-10-20T07:59:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/admob-update/</loc>
     <lastmod>2012-10-19T21:53:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/internet-jaipur/</loc>
     <lastmod>2012-10-17T11:43:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/dns/</loc>
     <lastmod>2012-10-17T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/domein-goozenlab/</loc>
     <lastmod>2012-10-17T07:00:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/internet-jodhpur/</loc>
     <lastmod>2012-10-03T19:37:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/10/viriya-release/</loc>
     <lastmod>2012-10-01T13:43:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/viriya/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/viriya/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/site-heroku/</loc>
     <lastmod>2012-09-30T16:10:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/smart-appbanner/</loc>
     <lastmod>2012-09-29T08:37:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/font-change/</loc>
     <lastmod>2012-09-28T10:02:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/octopress-simplenote/</loc>
     <lastmod>2012-09-27T15:41:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/version4-5/</loc>
     <lastmod>2012-09-27T05:16:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/mono/</loc>
     <lastmod>2012-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/cheet/</loc>
     <lastmod>2012-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/09/update-retina/</loc>
     <lastmod>2012-09-22T12:06:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/ohayo/</loc>
     <lastmod>2012-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/ohayo/</loc>
     <lastmod>2012-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/sati/</loc>
     <lastmod>2012-07-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/sati/</loc>
     <lastmod>2012-07-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/07/navbar-update/</loc>
     <lastmod>2012-07-05T15:15:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/07/littlist-202/</loc>
     <lastmod>2012-07-01T05:16:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/06/tapas-104/</loc>
     <lastmod>2012-06-10T11:16:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/austraria/</loc>
     <lastmod>2012-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/06/internet-melbourne/</loc>
     <lastmod>2012-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/03/internet-kandy/</loc>
     <lastmod>2012-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/02/xcode42-update/</loc>
     <lastmod>2012-02-09T12:30:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/01/ippuku-106/</loc>
     <lastmod>2012-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2012/01/internet-pokhara/</loc>
     <lastmod>2012-01-09T19:41:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/12/computer-naming/</loc>
     <lastmod>2011-12-13T19:41:00+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/11/internet-delhi/</loc>
     <lastmod>2011-11-13T13:41:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/10/internet-daramshara/</loc>
     <lastmod>2011-10-13T13:41:00+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/listaria/</loc>
     <lastmod>2011-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/listaria/</loc>
     <lastmod>2011-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/mexico/</loc>
     <lastmod>2011-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/07/internet-mexico/</loc>
     <lastmod>2011-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/doop/</loc>
     <lastmod>2011-06-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/doop/</loc>
     <lastmod>2011-06-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/canada/</loc>
     <lastmod>2011-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/06/internet-vancouver/</loc>
     <lastmod>2011-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/05/home-server/</loc>
     <lastmod>2011-05-18T19:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/05/25000-download/</loc>
     <lastmod>2011-05-16T19:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/nz/</loc>
     <lastmod>2011-03-03T14:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/03/internet-nelson/</loc>
     <lastmod>2011-03-03T14:41:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/ippuku/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/ippuku/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/meagen/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/meagen/</loc>
     <lastmod>2011-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/google-app/</loc>
     <lastmod>2011-02-10T19:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/02/googleapp-mail/</loc>
     <lastmod>2011-02-10T19:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/tags/mail-server/</loc>
     <lastmod>2011-02-10T19:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/tapas/</loc>
     <lastmod>2011-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/tapas/</loc>
     <lastmod>2011-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/cosper/</loc>
     <lastmod>2011-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/cosper/</loc>
     <lastmod>2011-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2011/01/internet-chiangmai/</loc>
     <lastmod>2011-01-01T19:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/dandori/</loc>
     <lastmod>2010-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/dandori/</loc>
     <lastmod>2010-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2010/11/littlist-naming/</loc>
     <lastmod>2010-11-10T13:41:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/en/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/iapp/littlist/</loc>
     <lastmod>2010-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/computing/nomad-goods/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/1/01/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/bookmarks/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://goozenlab.github.io/bookmarks/shop/</loc>
   </url>
-  
 </urlset>
