@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>ノンカイ、タイのインターネット事情 | goozenlab</title>
+  <title>今更ながらQEMUを使ってみる | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -151,50 +151,96 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2016-06-08</time>
+                    <time class="">2021-07-16</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.github.io/tags/thailand">thailand</a> <a href="https://goozenlab.github.io/tags/internet">internet</a> 
+                    tags:<a href="https://goozenlab.github.io/tags/linux">linux</a> <a href="https://goozenlab.github.io/tags/tipstricks">tips&amp;tricks</a> 
                     
 
                     
-                    categories:<a href="https://goozenlab.github.io/categories/nomad">nomad</a> 
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
                     
 
                     
                 </p>
-                <h1>ノンカイ、タイのインターネット事情</h1>
+                <h1>今更ながらQEMUを使ってみる</h1>
             </div>
 
             <div class="post-content">
-                <p>ナコンパノムからのんびり、ラオスとの国境に沿ってぐるっとまわり６時間半くらいかかり、これまたラオスとの国境の街ノンカイに着く。ちょっと天気が荒れ模様。ベジ屋も発見できず、夜は豆乳とパイナップル。</p>
-<p>一夜明け街をぶらぶらする。観光客は少ない、遠くに国境の橋があるので宿のあるバスターミナル近くはいたって穏やか。ベジ屋も街はずれに２件発見し安堵。そして、徒歩圏内に大き目のテスコ（スーパーマーケット）があったので行ってみると、割と賑わっている。</p>
-<p>うーーん、ビザと帰国の関連でここでしばし滞在の予定。ちょっと作業を集中してやらなければ。。。ネットは下記の通り早い。宿泊客がいないので家を独占。多分ウドンタニより数段快適だと思う。</p>
-<p>下り：20.72Mps<br>
-上り：1.87Mps<br>
-(<a href="http://speedtest.net/">Speedtest.net</a>を使用）</p>
-<p><img src="/images/2016-06-08-nongkhai.jpg" alt="NongKhai Mecon River"></p>
-<p>被るが追記(6/21/2016)：ノンカイからチェンマイまで夜行VIPバスが走ってました。ウドンタニの街は好きになれそうにもないのでちょっとありがたい。ウドンから乗りましたが、チェンマイには10時間ほどで到着（20:30発、6:15着、多分ノンカイからは19時半発だと思います。前日にチケットを手配しておいたほうが吉）。夜半に結構な横揺れがありましたが、座席もほぼフルフラットになり、快適な夜行バスでした。バス料金はTHB767。</p>
-<p>ただし、ビザランの予定が半月前とかに決まっているならノックエアーで金額を確認するのが良いです。バスと変わらない値段で飛べます。</p>
-<p>そして、チェンライからはなんと、ノンカイよりもう少し先の、ナコンパノムまでのバスが、バス会社ソンバットより運行されています。ちょっとびっくりしました。</p>
+                <p>実機でちょっと問題があってインストールしていないFedoraを使ってみたかったというのもありますが、
+ちょっと魔が差して？我ハッキントッシュマシーンでQEMUをちょっと試してみました。</p>
+<p><img src="/images/2021-07-14-qemu-fedora-00.jpg" alt="QEMU on MacOS"></p>
+<p>仮想化アプリはいくつかありますが、Winodowsは入れないし大したことはやらないので簡易なアプリで試しました。
+（以前はたしかグラフィック関係に問題があったような気が。。）</p>
+<p>まぁよろし、でまずは元となるソフトウェア<code>QEMU</code>をBrewでチャチャっと入れます。</p>
+<pre><code>$ brew install qemu
+</code></pre><h2 id="仮想ディスク">仮想ディスク</h2>
+<p>仮想ディスク（イメージ・ファイル）の作成する
+余裕をもって大きめにとって、名前もシンプルにわかりやすくしておく。</p>
+<pre><code>$ qemu-img create -f qcow2 /Volumes/Shared/Qemu-Images/Fedora-Workstation-34.qcow2 20G
+</code></pre><h2 id="システムインストール">システム・インストール</h2>
+<p>まずは、インストールするシステムのインストールディスク
+<code>Fedora-Workstation-Live-x86_64-34-1.2.iso</code>
+をダウンロード。
+適当なことろにおいておき、以下のコマンドで起動。</p>
+<pre><code>$ qemu-system-x86_64 \
+    -machine type=q35,accel=hvf \
+    -smp 2 \
+    -hda /Volumes/Shared/Qemu-Images/Fedora-Workstation-34.qcow2 \
+    -cdrom /Volumes/Archive/OS-Images/Fedora-Workstation-Live-x86_64-34-1.2.iso \
+    -m 4G \
+    -vga virtio \
+    -usb \
+    -device usb-tablet \
+    -display default,show-cursor=on
+</code></pre><p>Liveイメージで起動するので、システムをインストールします。
+ISOファイルは用無しなので、以後の起動は一行を抜いて起動します。</p>
+<pre><code>$ qemu-system-x86_64 \
+    -machine type=q35,accel=hvf \
+    -smp 2 \
+    -hda /Volumes/Shared/Qemu-Images/Fedora-Workstation-34.qcow2 \
+    -m 4G \
+    -vga virtio \
+    -usb \
+    -device usb-tablet \
+    -display default,show-cursor=on
+</code></pre><p><img src="/images/2021-07-14-qemu-fedora-01.jpg" alt="QEMU on MacOS"></p>
+<p><code>-smp 2</code>でプロセッサを２つ割り当ててます。そこまで負荷がかかっているように思えません。軽快に動いています。
+ちょっと、ゲストとホスト間でコピペができないのが商用のアプリと違ってちょっと手間がかかるよう。
+（ソフトをインストールすれば可能）</p>
+<p>Tailsもこちらで動かすかな。。</p>
+<h2 id="ネットワーク設定">ネットワーク設定</h2>
+<p>ネットはホスト環境を経由してアクセスします。
+<code>Syncthing</code>を使ってホストや他の環境と同期をしたいのですが
+ネットワークの環境設定が今ひとつわからず。。</p>
+<p>ブリッジ経由にアクセスということも可能らしいのだが、
+追加でインストールするものがあったりと、、
+ちとまたリサーチします。</p>
+<!--
+ファイルの共有を行いたい場合は、SMBサーバーを起動してアクセスをすることができるようです。
+Winodows使いではないので利用せず。
++++USE newer netdev+++
+-device e1000,netdev=net0 \
+-netdev user,id=net0,hostfwd=tcp::8338-:8384 \
+-->
 
 				
 
 <h3>See Also</h3>
 <ul>
 	
-	<li><a href="/blog/2016/06/internet-nakhonphanom/">ナコンパノム、タイのインターネット事情</a></li>
+	<li><a href="/blog/2020/02/add-mirroring-disk/">ミラーディスクを追加・削除方法</a></li>
 	
-	<li><a href="/blog/2016/06/internet-mukdahan/">ムクダハン、タイのインターネット事情</a></li>
+	<li><a href="/blog/2020/02/standardnotes/">Standard Notes</a></li>
 	
-	<li><a href="/blog/2016/05/internet-ubon/">ウボンラチャタニ、タイのインターネット事情</a></li>
+	<li><a href="/blog/2020/01/vscodium/">VSCodium</a></li>
 	
-	<li><a href="/blog/2016/05/internet-surin/">スリン、タイのインターネット事情</a></li>
+	<li><a href="/blog/2020/01/linux-calender-start-monday/">月曜始まりカレンダー</a></li>
 	
-	<li><a href="/blog/2016/01/internet-skhotai/">スコータイ、タイのインターネット事情</a></li>
+	<li><a href="/blog/2020/01/apt-pinning-firefox/">最新版のFirefoxをデビアンでつかう</a></li>
 	
 </ul>
 

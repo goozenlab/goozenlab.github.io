@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
     <webMaster>goozenlab@gmail.com (jin)</webMaster>
     <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>今更ながらQEMUを使ってみる</title>
+      <link>https://goozenlab.github.io/blog/2021/07/qemu/</link>
+      <pubDate>Fri, 16 Jul 2021 16:00:00 +0700</pubDate>
+      <author>goozenlab@gmail.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/07/qemu/</guid>
+      <description>実機でちょっと問題があってインストールしていないFedoraを使ってみたかったというのもありますが、 ちょっと魔が差して？我ハッキントッシュマ</description>
+    </item>
+    
     <item>
       <title>ミラーディスクを追加・削除方法</title>
       <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
