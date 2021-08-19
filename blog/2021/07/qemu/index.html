@@ -218,13 +218,29 @@ ISOファイルは用無しなので、以後の起動は一行を抜いて起�
 ネットワークの環境設定が今ひとつわからず。。</p>
 <p>ブリッジ経由にアクセスということも可能らしいのだが、
 追加でインストールするものがあったりと、、
-ちとまたリサーチします。</p>
+まぁ、今の所オケ、また後々リサーチします。</p>
 <!--
 ファイルの共有を行いたい場合は、SMBサーバーを起動してアクセスをすることができるようです。
 Winodows使いではないので利用せず。
 +++USE newer netdev+++
 -device e1000,netdev=net0 \
 -netdev user,id=net0,hostfwd=tcp::8338-:8384 \
+
+
+
+qemu-system-x86_64 \
+    -machine type=q35,accel=hvf \
+    -smp 2 \
+    -hda /Volumes/Shared/Qemu-Images/Fedora-Workstation-34.qcow2 \
+    -m 4G \
+    -vga virtio \
+    -usb \
+    -device usb-tablet \
+    -device e1000,netdev=net0 \
+    -netdev user,id=net0,hostfwd=tcp::8338-:8384 \
+    -display default,show-cursor=on
+
+
 -->
 
 				
