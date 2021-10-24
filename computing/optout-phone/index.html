@@ -157,7 +157,7 @@
 				</p>
             </div>
             <div class="post-content">
-                <p><img src="/images/2019-07-03-google-services.png" alt="Google Services"></p>
+                <!-- ![Google Services](/images/2019-07-03-google-services.png)   -->
 <p>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、
 できる範囲のことはしたいと思い。
 自由へむけカスタムロムを使いグーグル・アンドロイドからのオプトアウト。</p>
@@ -179,12 +179,12 @@
 -->
 <h2 id="システム">システム</h2>
 <p>アンドロイドはカーネルにオープンソースのLinuxを使っています。
-基本OSの部分は
+そして基本OSの部分は
 <strong>Android Open Source Project</strong>
 という名前で公開解されています。</p>
 <p>セキュリティー上問題を抱えている部分は、グーグルプレイサービスところです。
 そのサービスを使うことによって位置情報などの個人情報がグーグルに提供されます。</p>
-<h3 id="android">Android</h3>
+<h3 id="de-googled-android-os">De-googled Android OS</h3>
 <ul>
 <li>GrapheneOS: <a href="https://grapheneos.org/">https://grapheneos.org/</a></li>
 <li>CalyxOS (microG): <a href="https://gitlab.com/CalyxOS/calyxos">https://gitlab.com/CalyxOS/calyxos</a></li>
@@ -202,16 +202,18 @@
 <h3 id="オープンソース">オープンソース</h3>
 <p>優秀な方々の奉仕により成り立っています。
 愛と希望に満ち溢れた！？端末に仕上がります。
-自分自身の景気が良くなったら、必ず貢献させていただきます！</p>
+自分自身の景気が良くなったら、必ず貢献させていただきます！
+アプリの質やデザインもどんどん良くなってきてます！全てお勧めのソフトです。</p>
 <ul>
 <li>F-Droid：オープンソース・アプストア</li>
 <li>Aurora：Google Store（匿名でアプリがダウンロードできますし、購入したアプリもこちらからインストールできます。）</li>
 <li>Amaze：ファイルマネージャー</li>
 <li>Agis：OTPアプリ、GoogleAuthentificatorの代替</li>
-<li>Syncthing：ピアツーピアのファイル・シンクサーバー</li>
-<li>TC (TrackerControll)：ファイヤーウォール＋広告ブロッカー</li>
+<li>Bitwarden：パスワード管理アプリ</li>
+<li>Syncthing：ピアツーピアのファイル同期アプリ</li>
+<li><del>TC (TrackerControll)：ファイヤーウォール＋広告ブロッカー</del></li>
 <li><del>DNS66：DNSを使った広告ブロッカーとローカルDNSサーバーへ接続する</del></li>
-<li>OandBAckup：バックアップソフト</li>
+<li><del>OandBAckup：バックアップソフト</del></li>
 </ul>
 <h4 id="internet">Internet</h4>
 <ul>
@@ -219,15 +221,17 @@
 <li>K-9 Mail：Emailクライアント</li>
 <li>Tutanota：Emailクライアント</li>
 <li>Fennec (Firefox)：ウェブブラウザー</li>
-<li>Bromite：ウェブブラウザー</li>
+<li>Bromite：ウェブブラウザー（要レポジトリー追加）</li>
 <li>DuckDuckGO：ウェブブラウザー</li>
 <li>Simplenote / S. Note：テキスト共有</li>
 </ul>
 <h4 id="communication">Communication</h4>
 <ul>
 <li>QKSMS：SMSクライアント</li>
-<li>Signal：メッセージングソフト</li>
+<li>~Signal：メッセージングソフト~</li>
+<li>Session：Signalのフォークアプリ、電話番号登録なしで使えます（要レポジトリー追加）</li>
 <li>Twidere：ツイッター・クライアント</li>
+<li>Tusky：マストドン・クライアント</li>
 </ul>
 <h4 id="calender-and-tasks">Calender and Tasks</h4>
 <ul>
@@ -238,13 +242,29 @@
 </ul>
 <h4 id="criptos">Criptos</h4>
 <ul>
-<li>Green：BTCウォレット</li>
+<li>Green：BTCウォレット、最近Trezorハードウェアウォレットに対応</li>
 <li>Zeus：Lightningウォレット</li>
+</ul>
+<h4 id="media">Media</h4>
+<ul>
+<li>NewPipe：広告なユーチューブ・プレーヤー</li>
+<li>AntennaPod：ポッドキャスト</li>
+<li>Slide：Redditビューワー</li>
+<li>Glider：HackerNewsビューワー</li>
+<li>VLC：動画プレーヤー</li>
 </ul>
 <h4 id="etc">etc</h4>
 <ul>
 <li>Gadgetbridge：Amazfit青春版（心拍数のデーター等は自分の所でキープ）</li>
 <li>Suntime：日の出、日没トラッカー</li>
+<li>OrganicMap：MapsMeの代替アプリ、完璧っす</li>
+<li>Habits：習慣化トラッカー、デザイン使い勝手共に良いです</li>
+</ul>
+<h4 id="cycling--trecking">Cycling / Trecking</h4>
+<ul>
+<li>AAT：</li>
+<li>OpenTracker：</li>
+<li>BoltOn：サイクルコンピューターの<strong>Wahoo Bolt</strong>への接続アプリ</li>
 </ul>
 <!--
 自前のサーバーと繋げて使っているアプリ。コンタクトリストもサーバーに置いてあります。グーグルアカウントは空にしておく。
@@ -257,11 +277,10 @@
 <p>その他オープンソースで代わりが見つからないソフトもいくつか使っています。</p>
 <ul>
 <li>Instapaper</li>
-<li>mapsMe：旅人マストな地図ソフト（代替ソフトがないというわけではないのですが、おしゃべりなアプリです）</li>
-<li><del>Element：自転車のガジェット管理</del></li>
 <li>Komoot：自転車データー作成共有アプリ</li>
+<li><del>mapsMe：旅人マストな地図ソフト（代替ソフトがないというわけではないのですが、おしゃべりなアプリです）</del></li>
+<li><del>Element：自転車のガジェット管理</del></li>
 </ul>
-<p>動かない幾つかのアプリはiOSで動かします。</p>
 <h2 id="helpful-site">Helpful Site</h2>
 <ul>
 <li>Android app compatibility
@@ -274,6 +293,7 @@ on de-Googled devices: <a href="https://plexus.techlore.tech/">https://plexus.te
 </ul>
 <hr>
 <ul>
+<li>2021-09-11：アプリを編集・追加、アンドロイドがどんどん使いやすくなってきている。</li>
 <li>2020-12-21：Pixel3を購入、少し追記</li>
 <li>2019-12-20：アプリをリストアップ</li>
 <li>2019-07-03：Max3でmicro-Gをインストール<a href="https://goozenlab.github.io/blog/2019/07/max3-microg/">記事へ</a></li>
