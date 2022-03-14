@@ -28,21 +28,30 @@
     </item>
     
     <item>
+      <title>BTC Core : macOS</title>
+      <link>https://goozenlab.github.io/computing/crypto/macos-btccore/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/crypto/macos-btccore/</guid>
+      <description>Spectorというウォレット・アプリを使うにはフルノードへの接続が必要ということで、 勉強の一環として、BTCのフルノードをMacOSにイン</description>
+    </item>
+    
+    <item>
+      <title>Tor : macOS</title>
+      <link>https://goozenlab.github.io/computing/crypto/macos-tor/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/crypto/macos-tor/</guid>
+      <description>BTCのフルノードを走らせてみたいのもあって、 接続回線の隠匿化に使うオニオンルーターことTorをインストールしてみました。 思ったより割とあっ</description>
+    </item>
+    
+    <item>
       <title>Android Securities</title>
       <link>https://goozenlab.github.io/computing/android-securities/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/android-securities/</guid>
       <description>まとめ中にも関わらず、ひっそり公開。厄介ですね、このプライバシーってやつは。。 携帯を持っている限り、少なからずプライバシーは侵害されてしまう</description>
-    </item>
-    
-    <item>
-      <title>Tor : macOS</title>
-      <link>https://goozenlab.github.io/computing/crypto/macos-tor/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/macos-tor/</guid>
-      <description>BTCのフルノードを走らせてみたいのもあって、 接続回線の隠匿化に使うオニオンルーターことTorをインストールしてみました。 思ったより割とあっ</description>
     </item>
     
     <item>

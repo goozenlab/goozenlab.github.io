@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Mozcの環境構築まとめ | goozenlab</title>
+  <title>BTC Core : macOS | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -186,99 +186,93 @@
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
 	<div class="pure-u-11-12 pure-u-md-14-24">
-        <div class="post">
+        <div class="post">			
             <div class="post-title">
+                <h1>BTC Core : macOS</h1>
                 <p class="footnote">
-                    <time class="">2020-02-04</time>
-		            
-                    
-                    |
-                    
-                    
-                    tags:<a href="https://goozenlab.github.io/tags/debian">debian</a> <a href="https://goozenlab.github.io/tags/arch">arch</a> <a href="https://goozenlab.github.io/tags/manjaro">manjaro</a> 
-                    
-
-                    
-                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
-                    
-
-                    
-                </p>
-                <h1>Mozcの環境構築まとめ</h1>
+                    updated at 
+                    <time class="">2022-03-06</time>
+				</p>
             </div>
-
             <div class="post-content">
-                <p>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。
-インストール、設定方法をまとめる。</p>
-<h2 id="debian--ubuntu">Debian / Ubuntu</h2>
-<p>Debian と Ubuntu では</p>
-<pre tabindex="0"><code>$ sudo apt-get install im-congig fcitx-mozc
-</code></pre><p>をインストール、im-congif より fcitx を指定します。</p>
-<p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install"></p>
-<p>次にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
-mozc を追加して、キーバインドや候補表示のフォント設定などが行なえます。</p>
-<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
-<p>そして、再起動でつかえるようになります。</p>
-<p>ただし、Mozc ツールはバグがあるらしく backport よりインストールする必要があります。コマンドで詳細設定のツールを起動する必要があります。</p>
-<p>コマンドからの辞書ツール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
-<pre tabindex="0"><code>$ /usr/lib/mozc/mozc_tool --mode=config_dialog
-$ /usr/lib/mozc/mozc_tool --mode=dictionary_tool
-$ /usr/lib/mozc/mozc_tool --mode=word_register_dialog
-</code></pre><p>です。頻繁にアクセスするものでないのでそのままにしてます。</p>
-<p><img src="/images/2020-02-04-mozc-setting-00.png" alt="Mozc Install"></p>
-<h2 id="arch--manjaro">Arch / Manjaro</h2>
-<pre tabindex="0"><code>$ sudo pacman -S fcitx-mozc fcitx-gtk3 fcitx-qt5
-</code></pre><p>こちらもいたって簡単、上記のソフトをインストールして、
-同様にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
-そして mozc を追加します。</p>
-<p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
-<p>こちらはこのままでは再起動しても使えないので、
-Mnajaro では、<code>.xprofile</code>
-Arch (wayland)では<code>/etc/enviourment</code>
-に設定を書き入れます。</p>
-<pre tabindex="0"><code>.xprofile (manjaro) /etc/enviorment (arch)
+                <p>Spectorというウォレット・アプリを使うにはフルノードへの接続が必要ということで、
+勉強の一環として、BTCのフルノードをMacOSにインストール、試してみました。</p>
+<h2 id="インストール">インストール</h2>
+<p>ついでと言ってはなんですが、Bitcoin Coreと一緒にTorもインストールします。
+Torでネットワークに参加することで匿名性を確保することができます。</p>
+<pre tabindex="0"><code>$ brew install bitcoin-core tor
+</code></pre><p>Torのインストールについては
+<a href="https://goozenlab.github.io/computing/crypto/macos-tor/">こちら</a>
+を参照のほど。</p>
+<p>アプリを起動すると同期を初めます。</p>
+<p><img src="/images/2022-02-10-bitcoin-core-startup.png" alt="bitcoincore start"></p>
+<p>Peerは後々Tor経由に変更しますが、通常時にはこのように同期先のIPアドレスが見れます。
+（見られているということでもあります）</p>
+<p><img src="/images/2022-02-10-btccore-peer-01.png" alt="bitcoincore peer"></p>
+<p>設定はいくつか、設定画面からも行えますが、設定ファイルをいじってしまうのが楽だと思います。
+（プルーンはオフにして、Torの設定をする）</p>
+<p><img src="/images/2022-02-10-bitcoincore-option.png" alt="bitcoin Core Option"></p>
+<p>設定ファイルは
+<code>$HOME/Library/Application Support/Bitcoin/bitcoin.conf</code>
+にあります。設定画面より呼び出すこともできます。</p>
+<p>以下のように編集します。</p>
+<pre tabindex="0"><code># run server - Accept command line and JSON-RPC commands. This allows other wallets to interact with Full Node.
+server=1
 
-export XMODIFIERS=&#34;@im=fcitx&#34;
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-</code></pre><p>で、問題なく動きます。（最近<strong>mozc-ut2</strong>にアップグレードしました。）</p>
-<!-- ![Mozc Install](/images/2020-02-04-setting-input-02.png) -->
-<p>キーバインディングをハッキントッシュと合わせたいんだけどね、、
-ctl か alt のどっちのキーをメインにするか悩む。。</p>
+# No incoming connections allowed.
+listen=0
+
+# Node will only route through Tor network. Important for Privacy.
+onion=127.0.0.1:9050
+listenonion=1
+onlynet=onion
+proxy=127.0.0.1:9050
+proxyrandomize=1
+</code></pre><!-- # RPC access
+rpcport=8332
+# just run ./rpcauth.py USERNAME ALPHA-NUMERIC-PASSWORD
+# https://raw.githubusercontent.com/bit...
+rpcauth=XXX  -->
+<p>BTCCoreを終了して、まずはTorサービスを起動します。</p>
+<pre tabindex="0"><code>% /opt/homebrew/opt/tor/bin/tor
+</code></pre><p>セッションが確立するまで少し待って、
+BTCCoreを立ち上げます。
+以下のようにTor経由でノードと接続・同期されます。</p>
+<p><img src="/images/2022-02-10-btccore-peer-02.png" alt="bitcoincore peer"></p>
+<p>同期時間はネットワークの太さによって変わってきますが、数日から１週間弱かかります。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ただよくよく考えると、MacBookの内蔵ストレージは高価だし、容量を消費する割には利便性は低いかも。
+ノマド・ノードとして外付けのSSDを買ってそちらにファイルを置いておくのも手ですが、、
+海外へ移住するとかになったら持って行くかな。。</p>
+<p>あまったMacMiniなんかがあったら動かしても良いかもしれませんが、
+疑問符はいっぱいつきます。
+ここまでやる人ならば、追加費用がかかってしまいますがRaspberryPiを使ってUmbrelなりRaspiBlitzを運用した方がお手軽な感じもします。</p>
+<p>でもまぁ〜〜、思ったより簡単に構築できるものでちょっと驚きでした。ご参考まで。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xc_TxlByxeY">https://www.youtube.com/watch?v=xc_TxlByxeY</a></li>
+</ul>
+<hr>
+<h2 id="更新履歴">更新履歴</h2>
+<ul>
+<li>2022-03-06：インストールしてまとめてみる。運用に関してはちょっと保有。</li>
+</ul>
+<div class="note">不定期更新です。書き込んだり消したりしてます。</div>
 
 				
 
-<h3>See Also</h3>
-<ul>
-	
-	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
-	
-	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
-	
-	<li><a href="/blog/2020/01/fast-mirror-list/">最適なミラーサイト</a></li>
-	
-	<li><a href="/blog/2020/02/tlp-arch/">TLP on Arch</a></li>
-	
-	<li><a href="/blog/2020/01/firmware-linux-nonfree/">ファームウェアをアップデート</a></li>
-	
-</ul>
-
 
             </div>
-            
-            <div>
-                <h2>Donation 🏝</h2>
-                <p>
-                    
-                    🌻 <a href="/images/bc1q0xqvzuaa6j9289jw8477hy872p0wdtrgzz9c3w.png">bitcoin</a> : bc1q0xqvzuaa6j9289jw8477hy872p0wdtrgzz9c3w<br />
-                    🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
-                </p>
-                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
-            </div>
-            
-            
-
-
+        
+        <div>
+            <h2>tip 🏝</h2>
+            <p>
+            🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+            🌻 <a href="/images/bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg.png">bitcoin</a> : bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg<br />
+            🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png" target="blank">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
+            </p>
+            <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+        </div>
 
        		
 			<div class="post-content">
@@ -286,6 +280,7 @@ ctl か alt のどっちのキーをメインにするか悩む。。</p>
        		</div>
             
         </div>
+      
 	</div>
     <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
