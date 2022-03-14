@@ -5,15 +5,15 @@
     <link>https://goozenlab.github.io/tags/custom-rom/</link>
     <description>Recent content in custom rom on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sat, 30 Jan 2021 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/custom-rom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>スマホのバッテリー管理</title>
       <link>https://goozenlab.github.io/blog/2021/01/battery-management/</link>
       <pubDate>Sat, 30 Jan 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/battery-management/</guid>
       <description>バッテリーは充電するたびに劣化します。 理想的なのは過充電をしないこと、 ４０％〜５０％くらいで使い回せれば一番ということですが、 実際の使用を考</description>
     </item>
@@ -22,7 +22,7 @@
       <title>CalyxOS: 雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyxos-review/</link>
       <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyxos-review/</guid>
       <description>ここ２週間くらい、De-Googled PhoneのCalyxOS: https://calyxos.org/ を使ってます。 ストックロムから抜き出したGoogleCamera（Gra</description>
     </item>
@@ -31,7 +31,7 @@
       <title>Ubuntu Touchのインストールと雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</link>
       <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</guid>
       <description>Harden-Gのカスタムロムで使っていたOnePlus3tはPixel3を買ったことでちょっとおもちゃにする。 インストールはインストーラー</description>
     </item>
@@ -40,7 +40,7 @@
       <title>MacOSよりCalyxOSをインストールする</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyx-install/</link>
       <pubDate>Wed, 20 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyx-install/</guid>
       <description>事前作業 まず最初に、SIMカードは抜きましょう。入ったままインストールをすると何か不具合が起こるそうです。。 Macを使ってインストールするの</description>
     </item>
@@ -49,7 +49,7 @@
       <title>De-googled環境でのおすすめアプリ</title>
       <link>https://goozenlab.github.io/blog/2021/01/degoogled-application/</link>
       <pubDate>Thu, 14 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/degoogled-application/</guid>
       <description>なんかわざわざ今の時期に帰らんでもと思いつつも、 沖縄からコロナ大炎上中？の東京に戻ってきました。 De-googled環境でのおすすめアプリを</description>
     </item>
@@ -58,7 +58,7 @@
       <title>Mi Max3 GSI Romをインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</link>
       <pubDate>Wed, 13 Jan 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</guid>
       <description>不具合 : ヘッドフォンジャックが使用不可 モバイル通信機能が使用不可：SIMの認識はしているようなので、もしかしたらSIMの設定上（APN設定）</description>
     </item>
@@ -67,7 +67,7 @@
       <title>GrapheneOS：Pixel3にインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</link>
       <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</guid>
       <description>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。 プライバシー配慮モバイルOSのGrapheneOSとは: https://www.axion.zone/grapheneos/ インスト</description>
     </item>
@@ -76,7 +76,7 @@
       <title>Dirty Flash</title>
       <link>https://goozenlab.github.io/blog/2019/08/customrom_dirty_flash/</link>
       <pubDate>Sat, 24 Aug 2019 07:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/customrom_dirty_flash/</guid>
       <description>ちょっと、混乱したり、 久しぶりの行うと忘れてしまうので、メモとして残す。 同じカスタムロムをバージョンアップする時にはDirty Flash。 リ</description>
     </item>
@@ -85,7 +85,7 @@
       <title>Max3でmicro-G</title>
       <link>https://goozenlab.github.io/blog/2019/07/max3-microg/</link>
       <pubDate>Wed, 03 Jul 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/max3-microg/</guid>
       <description>７月ですね、2019年後半戦スタートです。 さて、現在使っている、Xiaomi Mi Max3、ここ数年は毎年７月にアップグレードされていましたが、</description>
     </item>

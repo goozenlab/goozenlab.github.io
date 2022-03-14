@@ -5,15 +5,15 @@
     <link>https://goozenlab.github.io/tags/zfs/</link>
     <description>Recent content in zfs on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Sun, 23 Feb 2020 11:40:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/zfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ミラーディスクを追加・削除方法</title>
       <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
       <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</guid>
       <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
     </item>
@@ -22,7 +22,7 @@
       <title>OpenZFSをMBAにて１ヶ月使ってみて</title>
       <link>https://goozenlab.github.io/blog/2019/08/openzfs-after/</link>
       <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/openzfs-after/</guid>
       <description>8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
     </item>
@@ -31,7 +31,7 @@
       <title>OpenZFS ミラーリング</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</link>
       <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</guid>
       <description>ZFS を検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（</description>
     </item>
@@ -40,7 +40,7 @@
       <title>OpenZFS on Mac</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</link>
       <pubDate>Sun, 28 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</guid>
       <description>これから端末をトリプル・ブート化するにあたって、 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは あまり多く</description>
     </item>

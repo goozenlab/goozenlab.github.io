@@ -5,15 +5,15 @@
     <link>https://goozenlab.github.io/tags/openwrt/</link>
     <description>Recent content in openwrt on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 21 Dec 2020 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>パイ・トラベルルーターの使用感</title>
       <link>https://goozenlab.github.io/blog/2020/12/travel-router-update/</link>
       <pubDate>Mon, 21 Dec 2020 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/travel-router-update/</guid>
       <description>夏頃からふらっと自転車で旅行しています。現在沖縄。 キャンプサイトがメインで動いてましたが、Gotoトラベルも大都市では活用させていただきまし</description>
     </item>
@@ -22,7 +22,7 @@
       <title>OpenWRT: Minifluxのアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
       <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
       <description>OpenWRTトラベルルーター(Raspberry Pi.3A+) で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました。 アッ</description>
     </item>
@@ -31,7 +31,7 @@
       <title>Prometheus on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</link>
       <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</guid>
       <description>監視アプリのPrometheusをOpenWRTにインストールします。 GoLangで書かれシングルバイナリーで配布されています。なかなか素敵</description>
     </item>
@@ -40,7 +40,7 @@
       <title>一発パッケージアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-update-packages/</link>
       <pubDate>Mon, 29 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-update-packages/</guid>
       <description>ウェブ管理画面からのパッケージのアップデートは一気にする事ができず、 パッケージ、一つ一つポチッとな、、、しなければいけないというちょっと残念</description>
     </item>
@@ -49,7 +49,7 @@
       <title>Archer OpenWRTにパイホール</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-pi-archer/</link>
       <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-pi-archer/</guid>
       <description>OpenWRTで運用中の TP-Linkの Archer に広告ブロッカーのAdblockをインストールしようと思ったけれど、 管理画面の見た目も良いし、交換</description>
     </item>
@@ -58,7 +58,7 @@
       <title>OpenWRT: Archer C7にインストール</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-install-archer-c7/</link>
       <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-install-archer-c7/</guid>
       <description>実家にあるNECのルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェア</description>
     </item>
@@ -67,7 +67,7 @@
       <title>OpenWRT: USBテザリング</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/</link>
       <pubDate>Tue, 23 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/</guid>
       <description>OpenWRTにてアンドロイド端末をつかってテザリングを行いました。 サイトのドキュメントに書いてある通りに行って問題なく上手くいきます。 https://openwrt.org/docs/guide-user/network/wan/smartphone.usb.tethering ま</description>
     </item>
@@ -76,7 +76,7 @@
       <title>stubbyをつかってDNSを暗号化</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/</link>
       <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/</guid>
       <description>プライバシーとセキュリティの向上のため、 DNS通信を覗き見されないように暗号化を行います。 OpenWRTのWifiにはいくつかの方法が記載さ</description>
     </item>
@@ -85,7 +85,7 @@
       <title>OpenWRT: adblock 日本語フィルター</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-japanese-filter-adblock/</link>
       <pubDate>Mon, 15 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-japanese-filter-adblock/</guid>
       <description>OpenWRTにて動かしているadblockには残念ながら日本語のフィルターがデフォルトでは付いてきません。 今回はTofuフィルターを入れて</description>
     </item>
@@ -94,7 +94,7 @@
       <title>Gitea on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-gitea/</link>
       <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-gitea/</guid>
       <description>動きたいけど動けない。。 持ち出しgithubにするために、 GiteaをOpenWRTにインストールしました。 ほぼ間違いのないインストール・マ</description>
     </item>
@@ -103,7 +103,7 @@
       <title>Miniflux on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/</link>
       <pubDate>Wed, 27 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/</guid>
       <description>今まではTiny Tiny RSSをラズビアン＋パイ３で使っていました。 今回環境を変えていることもあるので、 データベースをPostgresqlに変更し</description>
     </item>
@@ -112,7 +112,7 @@
       <title>Install OpenWRT on Pi: Refined</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/</link>
       <pubDate>Sun, 24 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/</guid>
       <description>インストール後色々と試したりしている間に、新しいファームウェア19.07.3が出ていました。(5/22, 2020) ウェブ管理画面のメニューを見る限り</description>
     </item>
@@ -121,7 +121,7 @@
       <title>Syncthing on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/</link>
       <pubDate>Thu, 21 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/</guid>
       <description>Dropboxの３台縛りが始まった時からSyncthingを使っています。 もう少し安ければね。。 このアプリの唯一非常に残念なのはiOSに移植</description>
     </item>
@@ -130,7 +130,7 @@
       <title>Disk容量の拡張</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-sdcard-expansion/</link>
       <pubDate>Wed, 20 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-sdcard-expansion/</guid>
       <description>OpenWrtを使っていて（Wifiルーターとしてな安定問題なく動いてます。）、 ふと気がついてみたらディスクの状況が以下の様になっています。</description>
     </item>
@@ -139,7 +139,7 @@
       <title>OpenWRT on Pi A&#43; Model 3</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-install-piaplus/</link>
       <pubDate>Mon, 18 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-install-piaplus/</guid>
       <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーターちょっとゲタを履き替え再構築を試みる。 パイA</description>
     </item>

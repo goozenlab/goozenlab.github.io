@@ -5,15 +5,24 @@
     <link>https://goozenlab.github.io/categories/computing/</link>
     <description>Recent content in computing on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 16 Jul 2021 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Mar 2022 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ダウンロードの再開</title>
+      <link>https://goozenlab.github.io/blog/2022/03/curl/</link>
+      <pubDate>Tue, 15 Mar 2022 16:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/03/curl/</guid>
+      <description>実家回線は光なので、データーをダウンロードが途中で切れても、 もう一度やり直してもそこまで気にはなりません。 ただし回線状況のあまり良くないとこ</description>
+    </item>
+    
     <item>
       <title>今更ながらQEMUを使ってみる</title>
       <link>https://goozenlab.github.io/blog/2021/07/qemu/</link>
       <pubDate>Fri, 16 Jul 2021 16:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/07/qemu/</guid>
       <description>実機でちょっと問題があってインストールしていないFedoraを使ってみたかったというのもありますが、 ちょっと魔が差して？我ハッキントッシュマ</description>
     </item>
@@ -22,7 +31,7 @@
       <title>MapsMeの代替アプリ：OrganicMaps</title>
       <link>https://goozenlab.github.io/blog/2021/06/organicmaps/</link>
       <pubDate>Sun, 13 Jun 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/06/organicmaps/</guid>
       <description>オフラインでも使えトレッキングルートも網羅する旅人御用達のMaps.Me 非常にお世話になっている（た）アプリで、Version10まではお気</description>
     </item>
@@ -31,7 +40,7 @@
       <title>Tails OS: Wasabiを使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</link>
       <pubDate>Mon, 22 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</guid>
       <description>TailsOSをクリプトに利用してもおもしろいかなと思い、 カチカチでお固いやつですが、ちょっと試しにスパイシーにワサビ入りにしてみます。 ちと</description>
     </item>
@@ -40,7 +49,7 @@
       <title>Tails OS: コールド・ウォレットとして使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</link>
       <pubDate>Fri, 05 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</guid>
       <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用してみます。 （オフグリッドというのかオフラインというのか、どれが正</description>
     </item>
@@ -49,7 +58,7 @@
       <title>Mullvad：現金払</title>
       <link>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</link>
       <pubDate>Thu, 04 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</guid>
       <description>取り立てて不具合もないのでMullvadの契約延長を決定。 現金払いも可能という昭和な感じのVPNサービスカンパニー。 セキュリティーを考えたら</description>
     </item>
@@ -58,7 +67,7 @@
       <title>NextDNS</title>
       <link>https://goozenlab.github.io/blog/2021/02/nextdns/</link>
       <pubDate>Fri, 26 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/nextdns/</guid>
       <description>実家ではラズベリーパイのPiholeをルーターに繋いで利用していました。 しかし最近実家のネット環境が変わり、 レンタルしている無線LANルータ</description>
     </item>
@@ -67,7 +76,7 @@
       <title>GLiNet with Mullvad</title>
       <link>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</link>
       <pubDate>Mon, 22 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</guid>
       <description>手元にあるちっちゃいトラベル・ルーター： GLiNet Shadow にMulvadのWireguardを導入してみました。 GL.iNet GL-AR300M(shadow) https://mullvad.net 管理画面にて作業を行います。 Wire</description>
     </item>
@@ -76,7 +85,7 @@
       <title>Tails OS: インストール</title>
       <link>https://goozenlab.github.io/blog/2021/02/tails-install/</link>
       <pubDate>Fri, 19 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/tails-install/</guid>
       <description>セキュリティーを念頭に置いたOS、QubeOSやらなんやらちょっと気になっていました。 しかしながら普段使いでは勝手が悪そうにみえたので、 イン</description>
     </item>
@@ -85,7 +94,7 @@
       <title>おすすめVPN：Mullvad</title>
       <link>https://goozenlab.github.io/blog/2021/02/mullvad/</link>
       <pubDate>Thu, 18 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/mullvad/</guid>
       <description>MullvadのVPNサービスを利用し始めました。 Wireguardを使いたいということで、iVPNという会社との２択だったのですが、 Mul</description>
     </item>
@@ -94,7 +103,7 @@
       <title>USBが使えない</title>
       <link>https://goozenlab.github.io/blog/2021/02/usbguard/</link>
       <pubDate>Mon, 08 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/usbguard/</guid>
       <description>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。 同居しているArchなどで繋いでみると問題なく動いているので、ディスク自体に問</description>
     </item>
@@ -103,7 +112,7 @@
       <title>アノニマス・アマゾン</title>
       <link>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</link>
       <pubDate>Sun, 31 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</guid>
       <description>アマゾンのアカウントをグーグルと紐づいけているのは、 グーグルさんに購入履歴を無条件で渡している感じがして嫌だなとずっと思ってました。 アマゾン</description>
     </item>
@@ -112,7 +121,7 @@
       <title>CalyxOS: 雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyxos-review/</link>
       <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyxos-review/</guid>
       <description>ここ２週間くらい、De-Googled PhoneのCalyxOS: https://calyxos.org/ を使ってます。 ストックロムから抜き出したGoogleCamera（Gra</description>
     </item>
@@ -121,7 +130,7 @@
       <title>Ubuntu Touchのインストールと雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</link>
       <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</guid>
       <description>Harden-Gのカスタムロムで使っていたOnePlus3tはPixel3を買ったことでちょっとおもちゃにする。 インストールはインストーラー</description>
     </item>
@@ -130,7 +139,7 @@
       <title>MacOSよりCalyxOSをインストールする</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyx-install/</link>
       <pubDate>Wed, 20 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyx-install/</guid>
       <description>事前作業 まず最初に、SIMカードは抜きましょう。入ったままインストールをすると何か不具合が起こるそうです。。 Macを使ってインストールするの</description>
     </item>
@@ -139,7 +148,7 @@
       <title>GrapheneOS：Pixel3にインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</link>
       <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</guid>
       <description>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。 プライバシー配慮モバイルOSのGrapheneOSとは: https://www.axion.zone/grapheneos/ インスト</description>
     </item>
@@ -148,7 +157,7 @@
       <title>日替わりディストロ</title>
       <link>https://goozenlab.github.io/blog/2020/12/distro-hopping/</link>
       <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/distro-hopping/</guid>
       <description>いくつかのLinuxをBtrfsで併用してます。 日替わりランチが如く、 日々違ったディストロを切り替えて使ってます。 同じ作業をするので、ちょっ</description>
     </item>
@@ -157,7 +166,7 @@
       <title>OpenWRT: Minifluxのアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</link>
       <pubDate>Tue, 15 Dec 2020 15:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/</guid>
       <description>OpenWRTトラベルルーター(Raspberry Pi.3A+) で運用している、Miniflux RSSサーバーを6ヶ月ぶりにアップグレードしました。 アッ</description>
     </item>
@@ -166,7 +175,7 @@
       <title>FreeNASをThinkpad X230で使う</title>
       <link>https://goozenlab.github.io/blog/2020/07/freenas-laptop/</link>
       <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/07/freenas-laptop/</guid>
       <description>FreeNASをThinkpadX230にインストールする。 NASのオープンソースプロジェクトです。こちらは、FreeBSDがベースになって</description>
     </item>
@@ -175,7 +184,7 @@
       <title>Prometheus on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</link>
       <pubDate>Tue, 30 Jun 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/</guid>
       <description>監視アプリのPrometheusをOpenWRTにインストールします。 GoLangで書かれシングルバイナリーで配布されています。なかなか素敵</description>
     </item>
@@ -184,7 +193,7 @@
       <title>一発パッケージアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-update-packages/</link>
       <pubDate>Mon, 29 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-update-packages/</guid>
       <description>ウェブ管理画面からのパッケージのアップデートは一気にする事ができず、 パッケージ、一つ一つポチッとな、、、しなければいけないというちょっと残念</description>
     </item>
@@ -193,7 +202,7 @@
       <title>Archer OpenWRTにパイホール</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-pi-archer/</link>
       <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-pi-archer/</guid>
       <description>OpenWRTで運用中の TP-Linkの Archer に広告ブロッカーのAdblockをインストールしようと思ったけれど、 管理画面の見た目も良いし、交換</description>
     </item>
@@ -202,7 +211,7 @@
       <title>OpenWRT: Archer C7にインストール</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-install-archer-c7/</link>
       <pubDate>Wed, 24 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-install-archer-c7/</guid>
       <description>実家にあるNECのルーターもちょっと古くなってきているので、 ルーターをTP-LinkのArcher C7に変更しました。 もちろんファームウェア</description>
     </item>
@@ -211,7 +220,7 @@
       <title>OpenWRT: USBテザリング</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/</link>
       <pubDate>Tue, 23 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/</guid>
       <description>OpenWRTにてアンドロイド端末をつかってテザリングを行いました。 サイトのドキュメントに書いてある通りに行って問題なく上手くいきます。 https://openwrt.org/docs/guide-user/network/wan/smartphone.usb.tethering ま</description>
     </item>
@@ -220,7 +229,7 @@
       <title>stubbyをつかってDNSを暗号化</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/</link>
       <pubDate>Wed, 17 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/</guid>
       <description>プライバシーとセキュリティの向上のため、 DNS通信を覗き見されないように暗号化を行います。 OpenWRTのWifiにはいくつかの方法が記載さ</description>
     </item>
@@ -229,7 +238,7 @@
       <title>OpenWRT: adblock 日本語フィルター</title>
       <link>https://goozenlab.github.io/blog/2020/06/openwrt-japanese-filter-adblock/</link>
       <pubDate>Mon, 15 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/06/openwrt-japanese-filter-adblock/</guid>
       <description>OpenWRTにて動かしているadblockには残念ながら日本語のフィルターがデフォルトでは付いてきません。 今回はTofuフィルターを入れて</description>
     </item>
@@ -238,7 +247,7 @@
       <title>Gitea on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-gitea/</link>
       <pubDate>Sat, 30 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-gitea/</guid>
       <description>動きたいけど動けない。。 持ち出しgithubにするために、 GiteaをOpenWRTにインストールしました。 ほぼ間違いのないインストール・マ</description>
     </item>
@@ -247,7 +256,7 @@
       <title>Miniflux on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/</link>
       <pubDate>Wed, 27 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/</guid>
       <description>今まではTiny Tiny RSSをラズビアン＋パイ３で使っていました。 今回環境を変えていることもあるので、 データベースをPostgresqlに変更し</description>
     </item>
@@ -256,7 +265,7 @@
       <title>TP-LINK Archer T2UをRaspbianで使う</title>
       <link>https://goozenlab.github.io/blog/2020/05/raspbian-tplink-t1u/</link>
       <pubDate>Mon, 25 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/raspbian-tplink-t1u/</guid>
       <description>ローカルネットワークを11aに対応すべくTP-LINKのArcherT2UをPi Zeroで使えるようにしました。 Mediatek 8812auのチップを使用</description>
     </item>
@@ -265,7 +274,7 @@
       <title>Install OpenWRT on Pi: Refined</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/</link>
       <pubDate>Sun, 24 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/</guid>
       <description>インストール後色々と試したりしている間に、新しいファームウェア19.07.3が出ていました。(5/22, 2020) ウェブ管理画面のメニューを見る限り</description>
     </item>
@@ -274,7 +283,7 @@
       <title>Syncthing on OpenWRT</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/</link>
       <pubDate>Thu, 21 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/</guid>
       <description>Dropboxの３台縛りが始まった時からSyncthingを使っています。 もう少し安ければね。。 このアプリの唯一非常に残念なのはiOSに移植</description>
     </item>
@@ -283,7 +292,7 @@
       <title>Disk容量の拡張</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-sdcard-expansion/</link>
       <pubDate>Wed, 20 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-sdcard-expansion/</guid>
       <description>OpenWrtを使っていて（Wifiルーターとしてな安定問題なく動いてます。）、 ふと気がついてみたらディスクの状況が以下の様になっています。</description>
     </item>
@@ -292,7 +301,7 @@
       <title>OpenWRT on Pi A&#43; Model 3</title>
       <link>https://goozenlab.github.io/blog/2020/05/openwrt-install-piaplus/</link>
       <pubDate>Mon, 18 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/openwrt-install-piaplus/</guid>
       <description>ラズベリーパイのA+にOpenWRTをインストールをしました。 昨年途中で頓挫したトラベルルーターちょっとゲタを履き替え再構築を試みる。 パイA</description>
     </item>
@@ -301,7 +310,7 @@
       <title>Ubuntu 20.04 on Pi Zero</title>
       <link>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi-zero/</link>
       <pubDate>Thu, 14 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi-zero/</guid>
       <description>先日の続きで、今度はパイゼロにUbuntuをインストールを試みました。 緑のランプが点滅している動いているのではと思っていました。 が、、どうも</description>
     </item>
@@ -310,7 +319,7 @@
       <title>Ubuntu 20.04 on Pi A&amp;B</title>
       <link>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi/</link>
       <pubDate>Wed, 13 May 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/ubuntu-20-install-pi/</guid>
       <description>４月の下旬にリリースされたUbuntu 20.04 LTSをラズベリーパイ3Bと3A+にインストールしてみました。 その奮闘記を、 まずはダウンロードはこち</description>
     </item>
@@ -319,7 +328,7 @@
       <title>myNode: ビットコインフルノードサーバー</title>
       <link>https://goozenlab.github.io/blog/2020/05/mynode-install/</link>
       <pubDate>Tue, 12 May 2020 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/05/mynode-install/</guid>
       <description>手元にあるラズベリーパイや余っているHDを有効活用すべく、ブロックチェーンに参加してみようと思いフルノードをインストールして見ました。マイニ</description>
     </item>
@@ -328,7 +337,7 @@
       <title>ミラーディスクを追加・削除方法</title>
       <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
       <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</guid>
       <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
     </item>
@@ -337,7 +346,7 @@
       <title>タイ語のフォントをインストール</title>
       <link>https://goozenlab.github.io/blog/2020/02/thai-font/</link>
       <pubDate>Sat, 22 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/thai-font/</guid>
       <description>タイでネットにアクセスするとローカル言語表示されることが多々あります。 （google や Youtube など） デビアンでは必要ないものはインストールされない</description>
     </item>
@@ -346,7 +355,7 @@
       <title>動画を撮って出し</title>
       <link>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</link>
       <pubDate>Wed, 12 Feb 2020 18:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</guid>
       <description>ほとんど撮って出しのシンプルな Gnome デスクトップ動画をアップしました。お初でございます。 ショートカットやウィンドウ配置の動きなどを追ってます。 ラ</description>
     </item>
@@ -355,7 +364,7 @@
       <title>Standard Notes</title>
       <link>https://goozenlab.github.io/blog/2020/02/standardnotes/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/standardnotes/</guid>
       <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
@@ -364,7 +373,7 @@
       <title>ArchでMagicTrackpad2</title>
       <link>https://goozenlab.github.io/blog/2020/02/magictrackpad-arch/</link>
       <pubDate>Wed, 05 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/magictrackpad-arch/</guid>
       <description>結果から書くとブルートゥースを有効化したらタナボタでマジックトラックパッド２が使えるようになりました。 ちょっとした穴の補修 Arch の初期状態ではブ</description>
     </item>
@@ -373,7 +382,25 @@
       <title>Mozcの環境構築まとめ</title>
       <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-config fcitx-mozc をインストール、im-config</description>
+    </item>
+    
+    <item>
+      <title>Mozcの環境構築まとめ</title>
+      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
+    </item>
+    
+    <item>
+      <title>Mozcの環境構築まとめ</title>
+      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
       <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
     </item>
@@ -382,7 +409,7 @@
       <title>AppImageをデビアンで：AppImage Launcher</title>
       <link>https://goozenlab.github.io/blog/2020/02/appimage-debian/</link>
       <pubDate>Sun, 02 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/appimage-debian/</guid>
       <description>ダウンロードして、実行権を与え、ダブルクリックで起動という利便性の高いアプリ配信方式の AppImage ですが、 中には上手く動かないアプリもありました。 Simplenote は</description>
     </item>
@@ -391,7 +418,7 @@
       <title>TLP on Arch</title>
       <link>https://goozenlab.github.io/blog/2020/02/tlp-arch/</link>
       <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/tlp-arch/</guid>
       <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時</description>
     </item>
@@ -400,7 +427,7 @@
       <title>YAYのインストール</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-yay/</link>
       <pubDate>Fri, 31 Jan 2020 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-yay/</guid>
       <description>Archを動かしているThinkapd T480sではManjaroも動かしているので、 シンプルな形の留めておいてAURのパッケージはなるべく</description>
     </item>
@@ -409,7 +436,7 @@
       <title>gpgでファイルを検証</title>
       <link>https://goozenlab.github.io/blog/2020/01/gpg-verify/</link>
       <pubDate>Thu, 30 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/gpg-verify/</guid>
       <description>Kde NeonのISOファイルを回線が不安定なので配布元でないところから配布されているトレントを使ってダウンロードしました。 まぁ大丈夫でしょうが</description>
     </item>
@@ -418,7 +445,7 @@
       <title>最適なミラーサイト</title>
       <link>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</link>
       <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</guid>
       <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しな</description>
     </item>
@@ -427,7 +454,7 @@
       <title>VSCodium</title>
       <link>https://goozenlab.github.io/blog/2020/01/vscodium/</link>
       <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/vscodium/</guid>
       <description>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。 VSCodeはオープンソースで公開されていますがマイクロソフトから提供されて</description>
     </item>
@@ -436,7 +463,7 @@
       <title>月曜始まりカレンダー</title>
       <link>https://goozenlab.github.io/blog/2020/01/linux-calender-start-monday/</link>
       <pubDate>Wed, 22 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/linux-calender-start-monday/</guid>
       <description>カレンダーが日曜日から始まるのはどうも嫌なんです。 Sundayということで太陽から始まるのはわからなくはないのですが、 習慣的に月曜が始めとい</description>
     </item>
@@ -445,7 +472,7 @@
       <title>最新版のFirefoxをデビアンでつかう</title>
       <link>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</link>
       <pubDate>Tue, 21 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</guid>
       <description>オススメ・ディストロの一つ、デビアン環境がなかな良いです。 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン68.xがイ</description>
     </item>
@@ -454,7 +481,7 @@
       <title>ベルギー産のArcoをインストール</title>
       <link>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</link>
       <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</guid>
       <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Arc</description>
     </item>
@@ -463,7 +490,7 @@
       <title>ブラウザーのプロファイルをRAMディスクへ</title>
       <link>https://goozenlab.github.io/blog/2020/01/profile-sync-daemon/</link>
       <pubDate>Sun, 19 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/profile-sync-daemon/</guid>
       <description>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。 パッケージがあるの</description>
     </item>
@@ -472,7 +499,7 @@
       <title>Neonを推す</title>
       <link>https://goozenlab.github.io/blog/2020/01/kde-neon/</link>
       <pubDate>Sat, 18 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/kde-neon/</guid>
       <description>Linuxのディストリビューションをかなりためした方だと思いますが、 KDE Neon: https://neon.kde.org/ がツボりました。 ちとUnuntuがあまり好きではなく、 なんでもその</description>
     </item>
@@ -481,7 +508,7 @@
       <title>Linuxでのサンドボックス・アプリ</title>
       <link>https://goozenlab.github.io/blog/2020/01/sandbox-app/</link>
       <pubDate>Fri, 17 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/sandbox-app/</guid>
       <description>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。 ディストリビューション毎に同じアプリをインストール</description>
     </item>
@@ -490,7 +517,7 @@
       <title>NCase M1</title>
       <link>https://goozenlab.github.io/blog/2020/01/preorder-ncase-m1/</link>
       <pubDate>Tue, 14 Jan 2020 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/preorder-ncase-m1/</guid>
       <description>台湾の総統選挙も無事に終わり、蔡英文氏が勝利。投票率は74.9%。 昨年行われた香港特別行政区議会選挙での投票率は71.2％、 と、羨ましいほど</description>
     </item>
@@ -499,7 +526,7 @@
       <title>Kali Linux on BTRFS</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-kali-btrfs/</link>
       <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-kali-btrfs/</guid>
       <description>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、 Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。 Linuxのパ</description>
     </item>
@@ -508,7 +535,7 @@
       <title>BIOS設定：ハッキントッシュT480s</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</link>
       <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</guid>
       <description>Thinkpad T480s に macOS モハァ〜ベェ～をインストールして使っています。 11 月ごろに一回あったシステムアップデートもでき、MagicTrackpad やマルチディ</description>
     </item>
@@ -517,7 +544,7 @@
       <title>BIOS設定：ハッキントッシュT480s</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</link>
       <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</guid>
       <description>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。 11月ごろに一回あったシステムアップデートもでき、MagicTrack</description>
     </item>
@@ -526,7 +553,7 @@
       <title>VSCode プラグイン</title>
       <link>https://goozenlab.github.io/blog/2020/01/vscode-plugins/</link>
       <pubDate>Thu, 09 Jan 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/vscode-plugins/</guid>
       <description>ちょっとした自分のメモとして残します。 導入したプラグインと ちょっとしたショートカットをまとめる。 General Icon表示が見た目が少し華やかになります</description>
     </item>
@@ -535,7 +562,7 @@
       <title>Firefox 70 on Buster</title>
       <link>https://goozenlab.github.io/blog/2020/01/latest-firefox/</link>
       <pubDate>Wed, 08 Jan 2020 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/latest-firefox/</guid>
       <description>快適に動作しているデビアンですが、インストールされているファイヤーフォックのバージョンが68.*と少し古いです。 最新のものを使ってもシステム</description>
     </item>
@@ -544,7 +571,7 @@
       <title>ハッキントッシュのバッテリー</title>
       <link>https://goozenlab.github.io/blog/2020/01/hackintosh-t480s-batery/</link>
       <pubDate>Mon, 06 Jan 2020 21:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/hackintosh-t480s-batery/</guid>
       <description>時々Redditに気になるハッキントッシュ情報が流れます。 今回はこのT480sの唯一の弱点とも言えるバッテリー関連情報。 なんとハッキントッシ</description>
     </item>
@@ -553,7 +580,7 @@
       <title>シェル紛争</title>
       <link>https://goozenlab.github.io/blog/2019/12/ceasefires-shell/</link>
       <pubDate>Mon, 30 Dec 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/ceasefires-shell/</guid>
       <description>平和な一年にするため、エディター紛争の終結に続きシェル戦争も終りにする。 もともとそんなに使ってはいなかったんだけれども、 ラズベリーパイの設定</description>
     </item>
@@ -562,7 +589,7 @@
       <title>ハッキントッシュで数ヶ月</title>
       <link>https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/</link>
       <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/</guid>
       <description>Thinkpad T480s ハッキントッシュをこんな感じで使ってます。最近タイで買ったThinkVision付き。 （手作りスタンディング・テーブルについてのツッコミ</description>
     </item>
@@ -571,7 +598,7 @@
       <title>リナックスのウィンドウマネージャーについて</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</link>
       <pubDate>Fri, 20 Dec 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</guid>
       <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：deb</description>
     </item>
@@ -580,7 +607,7 @@
       <title>BtrfsにArchをインストール</title>
       <link>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</link>
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</guid>
       <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモと</description>
     </item>
@@ -589,7 +616,7 @@
       <title>TLPの設定</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-thinkpad-tlp/</link>
       <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-thinkpad-tlp/</guid>
       <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％～８０％の利</description>
     </item>
@@ -598,7 +625,7 @@
       <title>Clover Update</title>
       <link>https://goozenlab.github.io/blog/2019/12/update-clover/</link>
       <pubDate>Fri, 13 Dec 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/update-clover/</guid>
       <description>ハッキントッシュ用ブートローダーのクローバー。 怖くてあまりいじりたくないのだけれども、 あまり放っておくのも怖いので、 ブートローダーとカーネル</description>
     </item>
@@ -607,7 +634,7 @@
       <title>youtube動画をダウンロード</title>
       <link>https://goozenlab.github.io/blog/2019/12/download-youtube/</link>
       <pubDate>Tue, 03 Dec 2019 18:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/download-youtube/</guid>
       <description>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。 割とあっさり見つかり、割と簡単。。 インストール さて、インストー</description>
     </item>
@@ -616,7 +643,7 @@
       <title>Linuxのメールクライアント：Geary</title>
       <link>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</link>
       <pubDate>Sat, 16 Nov 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</guid>
       <description>Linuxでのメールクライアント、いくつかあるのですが 一番人気？のThunderbirdは重そうで使いたくないし、 GnomeのEvoluti</description>
     </item>
@@ -625,7 +652,7 @@
       <title>ブートローダー</title>
       <link>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</link>
       <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</guid>
       <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linu</description>
     </item>
@@ -634,7 +661,7 @@
       <title>ディスクユーティリティでソフトウェアRaidを構築：MacOS編</title>
       <link>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</link>
       <pubDate>Thu, 17 Oct 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</guid>
       <description>持っていたファイルサーバーのハードが壊れていくつかのハードディスクが行き場なく手元に残ってました。 信頼失墜なので同じファイルサーバーを買って</description>
     </item>
@@ -643,7 +670,7 @@
       <title>白金化のプライス</title>
       <link>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</link>
       <pubDate>Fri, 11 Oct 2019 15:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</guid>
       <description>嵐の前のしづけさ、久しぶりに大型の台風が近づいてきているようです。 猛烈な台風とか記録的な暴風・大雨とか表現をされるのですが、 （「狩野川台風」</description>
     </item>
@@ -652,7 +679,7 @@
       <title>ハッキントッシュ Wifiカード</title>
       <link>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/</link>
       <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/</guid>
       <description>ハッキントッシュ化したThinkpadですが、 作業がひと段落し安定して動作しています。 ただ残念なことに付属のインテルWifiカードは使えませ</description>
     </item>
@@ -661,7 +688,7 @@
       <title>ブートマネージャーの設定</title>
       <link>https://goozenlab.github.io/blog/2019/10/multios-boot-loader/</link>
       <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/multios-boot-loader/</guid>
       <description>端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、事前にインストールしてある</description>
     </item>
@@ -670,7 +697,7 @@
       <title>Btrfsにマンジャーロ</title>
       <link>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</link>
       <pubDate>Mon, 07 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</guid>
       <description>2018年一番人気のディストリビューションManjaro、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになって</description>
     </item>
@@ -679,7 +706,7 @@
       <title>デビアンをBtrfsにインストール</title>
       <link>https://goozenlab.github.io/blog/2019/10/install-debian-btrfs/</link>
       <pubDate>Sun, 06 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/install-debian-btrfs/</guid>
       <description>Thinkpad T480S マルチOS環境第２弾。 Thinkpadに自由を！。 ファイルロスト不安症ではないけれど、スナップショットを取ることのできるBtrfsにデビ</description>
     </item>
@@ -688,7 +715,7 @@
       <title>パイ・3AサーバーのSDカードを3Bへ</title>
       <link>https://goozenlab.github.io/blog/2019/09/pi-3b-server-comparison/</link>
       <pubDate>Tue, 17 Sep 2019 12:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/pi-3b-server-comparison/</guid>
       <description>日本への帰国を数日後に控えて、起動中のパイ・3AサーバーのSDカードをパイ・3Bに入れ替えてみました。 以下のソフトウェアーが動いとります。太</description>
     </item>
@@ -697,7 +724,7 @@
       <title>Live Linux on Macbook Air </title>
       <link>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</link>
       <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</guid>
       <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook</description>
     </item>
@@ -706,7 +733,7 @@
       <title>パイでZRamを試す</title>
       <link>https://goozenlab.github.io/blog/2019/09/pi-zram/</link>
       <pubDate>Sat, 14 Sep 2019 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/pi-zram/</guid>
       <description>パイ・３A＋(Ram512MB)で運用中のサーバー、ちょっとRamを効率的にできないかと調べていて、 使用していないRamを圧縮して脇に退け、</description>
     </item>
@@ -715,7 +742,7 @@
       <title>エディター紛争</title>
       <link>https://goozenlab.github.io/blog/2019/09/end-of-editor-war/</link>
       <pubDate>Wed, 11 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/end-of-editor-war/</guid>
       <description>彼ノ地タイ国ニテ終止符ヲ打ツ。 端末の設定やら整理やら、ちょっと環境を再構築中です。 ここ最近の傾向でなるべく・オープンソースかつマルチプラット</description>
     </item>
@@ -724,7 +751,7 @@
       <title>パスワードをK-9からリカバリー</title>
       <link>https://goozenlab.github.io/blog/2019/09/k9-password/</link>
       <pubDate>Tue, 10 Sep 2019 10:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/k9-password/</guid>
       <description>パスワードを忘れる。。 というか、enpassのものが使えない、、おかしい。 いろいろリセット・リカバリーを試すが、ちょっと面倒・無理だったので</description>
     </item>
@@ -733,7 +760,7 @@
       <title>Syncthingのリソース消費状況</title>
       <link>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</link>
       <pubDate>Sat, 07 Sep 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</guid>
       <description>安宿にて、宿の猫が部屋に入り込み、ベッドを占領される。 扇風機の風が心地よいのかぐっすりと寝ている。 おかげで外には出れず、、部屋でちまちまと文</description>
     </item>
@@ -742,7 +769,7 @@
       <title>おすすめLinuxディストリビューション</title>
       <link>https://goozenlab.github.io/blog/2019/09/linux-distribution/</link>
       <pubDate>Fri, 06 Sep 2019 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/linux-distribution/</guid>
       <description>いろいろと調べてみてこんな感じであろうと、 シンプルにまとめてみました。 非常にメジャーであるが最近は評判が傾いてきているUbuntu＋Ubun</description>
     </item>
@@ -751,7 +778,7 @@
       <title>VaioP Reloaded 追記情報</title>
       <link>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</link>
       <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</guid>
       <description>お古のVaio Pにインストールする予定のSwayのリサーチ中です。 思いの外あまり有益な情報は見つからず、、インストールベースが少ないのか知ら</description>
     </item>
@@ -760,7 +787,7 @@
       <title>boostnote</title>
       <link>https://goozenlab.github.io/blog/2019/09/boostnote/</link>
       <pubDate>Tue, 03 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/boostnote/</guid>
       <description>情報やメモの流れを考えています。 だらしないだけなのかもしてないけど、分散させると所在が掴めなって訳が分からなくなるし、 一箇所にまとめるとグジ</description>
     </item>
@@ -769,7 +796,7 @@
       <title>Projects ページ</title>
       <link>https://goozenlab.github.io/blog/2019/09/projects/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/projects/</guid>
       <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
@@ -778,7 +805,7 @@
       <title>OpenZFSをMBAにて１ヶ月使ってみて</title>
       <link>https://goozenlab.github.io/blog/2019/08/openzfs-after/</link>
       <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/openzfs-after/</guid>
       <description>8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
     </item>
@@ -787,7 +814,7 @@
       <title>OpenZFS ミラーリング</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</link>
       <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</guid>
       <description>ZFS を検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（</description>
     </item>
@@ -796,7 +823,7 @@
       <title>OpenZFS on Mac</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</link>
       <pubDate>Sun, 28 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</guid>
       <description>これから端末をトリプル・ブート化するにあたって、 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは あまり多く</description>
     </item>
@@ -805,7 +832,7 @@
       <title>Netdata ダークモード・モニタリングソフト</title>
       <link>https://goozenlab.github.io/blog/2019/03/netdata-mac/</link>
       <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/netdata-mac/</guid>
       <description>滞在中のタイ、チェンマイ。酷暑に向かい、日に日に熱くなってきてます。しかも、ここ数日はかーーなりガスってます。PMが飛びまくっているようです</description>
     </item>
@@ -814,7 +841,7 @@
       <title>Gnucash 3 へ移行時のエラー</title>
       <link>https://goozenlab.github.io/blog/2018/05/error-gnucash3/</link>
       <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/05/error-gnucash3/</guid>
       <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、 No suitable backend was found. というエラーが上</description>
     </item>
@@ -823,7 +850,7 @@
       <title>ブログ用画像を一括リサイズ・リネーム</title>
       <link>https://goozenlab.github.io/blog/2018/04/rename-automator/</link>
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/04/rename-automator/</guid>
       <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
@@ -832,7 +859,7 @@
       <title>クリーンインストール</title>
       <link>https://goozenlab.github.io/blog/2016/08/clean-install/</link>
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/clean-install/</guid>
       <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
     </item>
@@ -841,7 +868,7 @@
       <title>ヒラギノ角ゴシック</title>
       <link>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</link>
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</guid>
       <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
     </item>
@@ -850,7 +877,7 @@
       <title>句読点で変換</title>
       <link>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</link>
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</guid>
       <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
@@ -859,7 +886,7 @@
       <title>推測候補表示</title>
       <link>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</link>
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</guid>
       <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
@@ -868,7 +895,7 @@
       <title>検索オプション</title>
       <link>https://goozenlab.github.io/blog/2016/08/search-option/</link>
       <pubDate>Tue, 09 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/search-option/</guid>
       <description>日本帰国時の爆買いモードでちょっと気になるブツの使い勝手やレビューなど、調べまくってます。しかしながら、検索に何かしらの商品名が入るなり、楽</description>
     </item>
@@ -877,7 +904,7 @@
       <title>Fusion drive を作る</title>
       <link>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</link>
       <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</guid>
       <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
     </item>
@@ -886,7 +913,7 @@
       <title>デノンのDA-10</title>
       <link>https://goozenlab.github.io/blog/2015/06/denon-da10/</link>
       <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/06/denon-da10/</guid>
       <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
     </item>
@@ -895,7 +922,7 @@
       <title>エル・キャピタンを入れる</title>
       <link>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</link>
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</guid>
       <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
     </item>
@@ -904,7 +931,7 @@
       <title>SurfacePad</title>
       <link>https://goozenlab.github.io/blog/2015/05/surfacepad/</link>
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/05/surfacepad/</guid>
       <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
     </item>
@@ -913,7 +940,7 @@
       <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
       <link>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</link>
       <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</guid>
       <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
     </item>
@@ -922,7 +949,7 @@
       <title>MBA11を10日間使ってみて</title>
       <link>https://goozenlab.github.io/blog/2014/11/mba-review/</link>
       <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/11/mba-review/</guid>
       <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
     </item>
@@ -931,7 +958,7 @@
       <title>Chromiumの半自動更新</title>
       <link>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</link>
       <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</guid>
       <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
     </item>
@@ -940,7 +967,7 @@
       <title>Textmate v2</title>
       <link>https://goozenlab.github.io/blog/2013/03/textmate2/</link>
       <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/03/textmate2/</guid>
       <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オー</description>
     </item>
@@ -949,7 +976,7 @@
       <title>画面のグレー/カラーのスイッチ</title>
       <link>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</link>
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</guid>
       <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
@@ -958,7 +985,7 @@
       <title>眼精疲労と白黒モニター</title>
       <link>https://goozenlab.github.io/blog/2012/11/gray-mode/</link>
       <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/11/gray-mode/</guid>
       <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
     </item>
@@ -967,7 +994,7 @@
       <title>コンピューターの名前</title>
       <link>https://goozenlab.github.io/blog/2011/12/computer-naming/</link>
       <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2011/12/computer-naming/</guid>
       <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。 マックでは勝手に○○さんのコンピューターなんて味気のない名前が付</description>
     </item>

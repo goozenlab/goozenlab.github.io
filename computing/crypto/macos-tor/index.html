@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Tor : macOS | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">			
+            <div class="post-title">
+                <h1>Tor : macOS</h1>
+                <p class="footnote">
+                    updated at 
+                    <time class="">2021-03-06</time>
+				</p>
+            </div>
+            <div class="post-content">
+                <p>BTCのフルノードを走らせてみたいのもあって、
+接続回線の隠匿化に使うオニオンルーターことTorをインストールしてみました。</p>
+<p>思ったより割とあっさりとできました。
+セキュリティが気になる方は試しても良いかもしれません。
+（セキュリティーが気になる方はVPNもお勧め。）</p>
+<h2 id="インストール">インストール</h2>
+<p>マックユーザー御用達のパッケージマネージャー、Brew:
+<a href="https://brew.sh">https://brew.sh</a>
+で一発です。</p>
+<p>自動で起動時にTorを動作させたい時には
+<code>brew services start tor</code>
+にて、都度動作させたい時にはターミナルより
+<code>/opt/homebrew/opt/tor/bin/tor</code>
+で起動させます。</p>
+<pre tabindex="0"><code>% brew install tor 
+
+🍺  /opt/homebrew/Cellar/tor/0.4.6.10: 25 files, 15.2MB
+==&gt; Running `brew cleanup tor`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==&gt; Caveats
+==&gt; tor
+To restart tor after an upgrade:
+  brew services restart tor
+Or, if you don&#39;t want/need a background service you can just run:
+  /opt/homebrew/opt/tor/bin/tor
+</code></pre><p>セッションを確立するのにしばしかかります。</p>
+<p><img src="/images/2022-02-10-start-tor.png" alt="Starting tor"></p>
+<p><code>Done</code>
+と表示されれば接続完了です。</p>
+<h2 id="動作のチェック">動作のチェック</h2>
+<p>Torでのアクセスは
+<strong>socks5、127.0.0.1:9050</strong>
+を通して通信をすることになります。</p>
+<p>以下のコマンドを打って<code>true</code>が戻って来れば接続が問題なく行われています。</p>
+<pre tabindex="0"><code>% /opt/homebrew/opt/tor/bin/tor
+% curl --socks5 localhost:9050 --socks5-hostname localhost:9050 -s https://check.torproject.org/api/ip
+
+{&#34;IsTor&#34;:true,&#34;IP&#34;:&#34;185.100.85.25&#34;}%
+</code></pre><p>ただしこのまま普通に使ってもTor経由でのアクセスにはなりませんので
+アプリ毎、もしくはシステム設定が必要になります。</p>
+<h2 id="firefoxをtor経由にてアクセスする方法">FirefoxをTOR経由にてアクセスする方法</h2>
+<p>FirefoxをTorで使うにはアプリ設定内のネットワーク設定が必要。
+設定画面の一番下に位置したネットワーク設定より行います。</p>
+<p><img src="/images/2022-02-10-firefox-network-settings.png" alt="Firefox with tor"></p>
+<p>接続チェックのために上記のサイト
+<a href="https://check.torproject.org/api/ip">https://check.torproject.org/api/ip</a>
+にアクセスします。</p>
+<p><img src="/images/2022-02-10-firefox-check.png" alt="Firefox with tor"></p>
+<p>とりあえず他のところでも確認、まずはTOR設定なし＋VPN経由でアクセスした時は</p>
+<p><img src="/images/2022-02-10-access-vpn.png" alt="Firefox with tor"></p>
+<p>そしてネットワーク設定後にTOR経由で接続し確認。</p>
+<p><img src="/images/2022-02-10-access-tor.png" alt="Firefox with tor"></p>
+<p>スピードが遅くなりますし、NHKのサイトが見れなかったりとちょっと不便になります。
+頻繁にいくサイトをチェックするのが良いと思います。
+この辺りがトレードオフになります。</p>
+<h2 id="その他のブラウザー">その他のブラウザー</h2>
+<p>サファリやクロム、他のブラウザーではアプリ内でのネットワーク設定はないので、
+システム設定より設定します。</p>
+<p>※ ブレイブ・ブラウザーはTorサイトに対応していて、オニオンアドレスのサイト
+（アドレス例：）
+にアクセスすることもできます。</p>
+<p>ブラウザーのみの通信に適用したい時には
+<code>ネットワーク＞アドバンス＞プロキシー＞WEBプロキシー</code>
+にて</p>
+<p><strong>IP: 127.0.0.1 , Port: 9050</strong></p>
+<p>設定を行います。</p>
+<p><img src="/images/2022-03-01-mac-tor-settings-01.png" alt="tor setting"></p>
+<p>未確認、非推奨ですが、
+システム全体にてTor経由でアクセスしたい時は</p>
+<p>システム設定の
+<code>ネットワーク＞アドバンス＞プロキシー＞SOKSプロキシー</code>
+にて同様の設定することにより全ての通信がTOR経由になるはずです。</p>
+<p><img src="/images/2022-03-01-mac-tor-settings-02.png" alt="tor setting"></p>
+<p>※ Firefoxをセキュリティーが必要なサイト向けにTorブラウザーとして分けて使うというのも有益かもしれません。
+システム全体に対してセキュリティーを高めたい時はVPSサービスを利用することをお勧めします。</p>
+<h2 id="おまけelectrum">おまけ：Electrum</h2>
+<p>BTCウオレットアプリのElectrumにて利用します。</p>
+<p>ウォレットは理想的には自分でノードを運用するのが一番良いのですが、
+セカンドベストしてTorを経由してパブリック・サーバーに接続します。
+これにより接続するパブリック・サーバーにこちらの情報（プロバイダーから付与されたIPアドレス）を与えることがなくなります。</p>
+<!--
+（自分のノードがない方や、VPNサービスを登録していない方） 
+都度立ち上げて使うのをおすすめします。
+-->
+<p>設定はメニューの
+<code>Tools&gt;Network</code>
+よりSock５の設定をします。</p>
+<p><img src="/images/2022-03-01-electrum-tor-setting.png" alt="electrum with tor"></p>
+<p>もしくはターミナルより、プロキシーの設定を指定して起動させることもできます。</p>
+<pre tabindex="0"><code>% /Applications/Electrum.app/Contents/MacOS/run_electrum --proxy socks5:127.0.0.1:9050
+</code></pre><h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Jcowrjh21Qg">https://www.youtube.com/watch?v=Jcowrjh21Qg</a> : Windowsユーザーの方への説明もあります。</li>
+</ul>
+<hr>
+<h2 id="更新履歴">更新履歴</h2>
+<ul>
+<li>2022-03-06：ザックリとまとめる。</li>
+</ul>
+<div class="note">不定期更新です。書き込んだり消したりしてます。</div>
+
+				
+
+
+            </div>
+        
+        <div>
+            <h2>tip 🏝</h2>
+            <p>
+            🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+            🌻 <a href="/images/bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg.png">bitcoin</a> : bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg<br />
+            🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png" target="blank">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
+            </p>
+            <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+        </div>
+
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+      
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

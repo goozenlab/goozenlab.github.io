@@ -5,15 +5,24 @@
     <link>https://goozenlab.github.io/tags/tipstricks/</link>
     <description>Recent content in tips&amp;tricks on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 16 Jul 2021 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Mar 2022 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tipstricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ダウンロードの再開</title>
+      <link>https://goozenlab.github.io/blog/2022/03/curl/</link>
+      <pubDate>Tue, 15 Mar 2022 16:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/03/curl/</guid>
+      <description>実家回線は光なので、データーをダウンロードが途中で切れても、 もう一度やり直してもそこまで気にはなりません。 ただし回線状況のあまり良くないとこ</description>
+    </item>
+    
     <item>
       <title>今更ながらQEMUを使ってみる</title>
       <link>https://goozenlab.github.io/blog/2021/07/qemu/</link>
       <pubDate>Fri, 16 Jul 2021 16:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/07/qemu/</guid>
       <description>実機でちょっと問題があってインストールしていないFedoraを使ってみたかったというのもありますが、 ちょっと魔が差して？我ハッキントッシュマ</description>
     </item>
@@ -22,7 +31,7 @@
       <title>ミラーディスクを追加・削除方法</title>
       <link>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</link>
       <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/add-mirroring-disk/</guid>
       <description>zfs を使って適当バックアップ的ミラーリング運用をしています。 日本の実家に全てのデーターが置いてあるのですが、 よくよく考えると、震災やなんかを考</description>
     </item>
@@ -31,7 +40,7 @@
       <title>Oneplus 3tを分解修理</title>
       <link>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</link>
       <pubDate>Sat, 23 Nov 2019 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/fix-oneplus/</guid>
       <description>OnePlusをちまちま分解・修理。 今年の夏にNokia7Plusの代わりにしようと思って購入したOnePlus3Tのカメラが逝かれました。</description>
     </item>
@@ -40,7 +49,7 @@
       <title>OpenZFSをMBAにて１ヶ月使ってみて</title>
       <link>https://goozenlab.github.io/blog/2019/08/openzfs-after/</link>
       <pubDate>Sat, 31 Aug 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/openzfs-after/</guid>
       <description>8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを</description>
     </item>
@@ -49,7 +58,7 @@
       <title>OpenZFS ミラーリング</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</link>
       <pubDate>Tue, 30 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-mirroring-small/</guid>
       <description>ZFS を検証中、第２弾です。 今回は複数端末間でのファイル同期を念頭に、 持ち出し用を想定して小規模なミラーリンングを構築します。 ThinkPad（</description>
     </item>
@@ -58,7 +67,7 @@
       <title>OpenZFS on Mac</title>
       <link>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</link>
       <pubDate>Sun, 28 Jul 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/openzfs-initial-setup/</guid>
       <description>これから端末をトリプル・ブート化するにあたって、 macOS、Windows、Linux全ての環境で読み書きできるファイルシステムは あまり多く</description>
     </item>
@@ -67,7 +76,7 @@
       <title>DNSとアンドロイド</title>
       <link>https://goozenlab.github.io/blog/2019/07/local-dns-android/</link>
       <pubDate>Thu, 18 Jul 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/local-dns-android/</guid>
       <description>タイ北部、日本の梅雨のようなぐずぐずした天気が続いてましたが、 一転ここ数日は晴天の熱い日が続いてます。 さて、 今までは、アンドロイド端末からロ</description>
     </item>
@@ -76,7 +85,7 @@
       <title>Netdata ダークモード・モニタリングソフト</title>
       <link>https://goozenlab.github.io/blog/2019/03/netdata-mac/</link>
       <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/netdata-mac/</guid>
       <description>滞在中のタイ、チェンマイ。酷暑に向かい、日に日に熱くなってきてます。しかも、ここ数日はかーーなりガスってます。PMが飛びまくっているようです</description>
     </item>
@@ -85,7 +94,7 @@
       <title>Gnucash 3 へ移行時のエラー</title>
       <link>https://goozenlab.github.io/blog/2018/05/error-gnucash3/</link>
       <pubDate>Thu, 03 May 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/05/error-gnucash3/</guid>
       <description>4月1日にGnucashがメジャーアップグレードしました。2.6.21よりアプリをアップデートし起動させたところ、 No suitable backend was found. というエラーが上</description>
     </item>
@@ -94,7 +103,7 @@
       <title>ブログ用画像を一括リサイズ・リネーム</title>
       <link>https://goozenlab.github.io/blog/2018/04/rename-automator/</link>
       <pubDate>Tue, 17 Apr 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/04/rename-automator/</guid>
       <description>ブログに掲載する画像をなんとか、一括で簡単にリネーム・リサイズする方法を探してました。コンピューター初心者の知人のためなので、なるべく簡単な</description>
     </item>
@@ -103,7 +112,7 @@
       <title>クリーンインストール</title>
       <link>https://goozenlab.github.io/blog/2016/08/clean-install/</link>
       <pubDate>Tue, 30 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/clean-install/</guid>
       <description>新しいOSに変更するたびに、クリーンインストールをしてきました。引越し気分で要らないものを捨てたりするのに良いタイミング。（実はただ色々いじ</description>
     </item>
@@ -112,7 +121,7 @@
       <title>ヒラギノ角ゴシック</title>
       <link>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</link>
       <pubDate>Sun, 28 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/hiragino-sans-w0/</guid>
       <description>ちょっと面倒な不具合があり、開発機をクリーンインストールしました。折角なので、シエラも入れてみましたが Brew がまた対応していなくhugoが動かな</description>
     </item>
@@ -121,7 +130,7 @@
       <title>句読点で変換</title>
       <link>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</link>
       <pubDate>Tue, 23 Aug 2016 19:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/convert-punctuation/</guid>
       <description>しばし句読点で変換のオプションをオンして使っています。 今までは、スペースキーを使って自分の思ったタイミングで変換していました。まずは、今まで</description>
     </item>
@@ -130,7 +139,7 @@
       <title>推測候補表示</title>
       <link>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</link>
       <pubDate>Sun, 14 Aug 2016 09:40:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/predictice-candidates/</guid>
       <description>日本語変換時の推測候補がちょっとイラッとする時があります。そこまで気にするには至らなかったのですが、 最近、句読点を打つたびに出てくる、コレが</description>
     </item>
@@ -139,7 +148,7 @@
       <title>羽田発香港経由チェンマイ行き</title>
       <link>https://goozenlab.github.io/blog/2016/08/airticket-chinagmai/</link>
       <pubDate>Sat, 13 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/airticket-chinagmai/</guid>
       <description>LCCを利用するようになってしばし、チケットの金額も落ち着いてきた感じがあったのですが、東京からチェンマイまでのチケットが驚きの価格でとれる</description>
     </item>
@@ -148,7 +157,7 @@
       <title>検索オプション</title>
       <link>https://goozenlab.github.io/blog/2016/08/search-option/</link>
       <pubDate>Tue, 09 Aug 2016 13:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/search-option/</guid>
       <description>日本帰国時の爆買いモードでちょっと気になるブツの使い勝手やレビューなど、調べまくってます。しかしながら、検索に何かしらの商品名が入るなり、楽</description>
     </item>
@@ -157,7 +166,7 @@
       <title>Fusion drive を作る</title>
       <link>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</link>
       <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</guid>
       <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
     </item>
@@ -166,7 +175,7 @@
       <title>海外キャッシングの比較</title>
       <link>https://goozenlab.github.io/blog/2016/01/cashing-hongkong/</link>
       <pubDate>Sun, 17 Jan 2016 12:00:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/01/cashing-hongkong/</guid>
       <description>ちょっと寄った、香港にてキャッシングの比較をしてみる。 手元にある、新生銀行と東京三菱UFJで立て続けに、HK$1,500を引き落す。後日引き</description>
     </item>
@@ -175,7 +184,7 @@
       <title>デノンのDA-10</title>
       <link>https://goozenlab.github.io/blog/2015/06/denon-da10/</link>
       <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/06/denon-da10/</guid>
       <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
     </item>
@@ -184,7 +193,7 @@
       <title>エル・キャピタンを入れる</title>
       <link>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</link>
       <pubDate>Wed, 10 Jun 2015 17:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/06/elcapitan-beta/</guid>
       <description>開発者ライセンスが変更されiOSとMacOSのライセンスが統一された。今まではiOS開発者はダウンロードできなかったMacOSXベーターを落</description>
     </item>
@@ -193,7 +202,7 @@
       <title>SurfacePad</title>
       <link>https://goozenlab.github.io/blog/2015/05/surfacepad/</link>
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/05/surfacepad/</guid>
       <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
     </item>
@@ -202,7 +211,7 @@
       <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
       <link>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</link>
       <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</guid>
       <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
     </item>
@@ -211,7 +220,7 @@
       <title>Chromiumの半自動更新</title>
       <link>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</link>
       <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</guid>
       <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
     </item>
@@ -220,7 +229,7 @@
       <title>画面のグレー/カラーのスイッチ</title>
       <link>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</link>
       <pubDate>Mon, 25 Feb 2013 10:15:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/02/grayscale-switch/</guid>
       <description>最近、ディスプレイを白黒（グレースケール）の表示にしています。そのためグラフィックの作業をする時や、ウェブサイトをカラーで見たい時等はカラー</description>
     </item>
@@ -229,7 +238,7 @@
       <title>眼精疲労と白黒モニター</title>
       <link>https://goozenlab.github.io/blog/2012/11/gray-mode/</link>
       <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/11/gray-mode/</guid>
       <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
     </item>
@@ -238,7 +247,7 @@
       <title>コンピューターの名前</title>
       <link>https://goozenlab.github.io/blog/2011/12/computer-naming/</link>
       <pubDate>Tue, 13 Dec 2011 19:41:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2011/12/computer-naming/</guid>
       <description>外出先でのWifi環境、自分や他人のコンピューターの名前が見えてしまいます。 マックでは勝手に○○さんのコンピューターなんて味気のない名前が付</description>
     </item>

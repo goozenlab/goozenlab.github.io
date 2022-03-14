@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>トラベル・パイ・ルーター | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">			
+            <div class="post-title">
+                <h1>トラベル・パイ・ルーター</h1>
+                <p class="footnote">
+                    updated at 
+                    <time class="">2020-12-15</time>
+				</p>
+            </div>
+            <div class="post-content">
+                <p><img src="/images/2020-06-12-openwrt-pi-3a-00.jpg" alt="Pi Travel OpenWRT Router"></p>
+<p>トラベルルーターはTP-LinkやBuffaloから市販されていて数千円で買えますし、
+あえて自分で構築するのは若干微妙ではありますが、
+安全・安心・便利：<strong>オープンソース</strong>な旅ルーターを
+ラズベリーパイ・3A+で作りました。</p>
+<p>最初はラズビアンで構築を試みましたのですが、
+設定がうまくいかなかったのかわからないけど、
+hostapdの通信速度が遅くて使い物にならず断念。</p>
+<p>OpenWRTというLinuxベースのルーターOSで仕上げました。
+ルーターOSなのでRaspbianと比べると制約がありますがシンプルなところが良い。
+（RaicaleがMacOSと接続ができなかったので、80点かな。総じて（自己）満足。）</p>
+<h2 id="openwrt">OpenWRT</h2>
+<p><img src="/images/2020-05-17-openwrt-overview.png" alt="OpenWRT install on Pi A+"></p>
+<p>ルーターのオープンソースなファームウェアプロジェクトです。
+Linuxカーネルベースになっています。</p>
+<p>リソースの少ないハードでの運用を考えられているので、
+インストールされるソフトウェアも非常にシンプル・コンパクトになります。</p>
+<p><a href="https://openwrt.org/start?id=ja/start">https://openwrt.org/start?id=ja/start</a></p>
+<p>Pi A+にはネットワーク接続ができないので、インストール作業は少しトリッキーになります。
+<a href="https://goozenlab.github.io/blog/2020/05/openwrt-install-refined/">こちらの</a>
+インストール奮闘記をご参照のほど。有線LANのついたPiであればインストールも楽チンです。</p>
+<div class="attention"><b>注意：</b></br>接続できるUSBネットワーク機器は少し選択肢が幅が狭いかもしれません。事前に確認が必要です。</div>
+<h2 id="アプリケーション">アプリケーション</h2>
+<p>レポジトリーには多くのアプリケーションが登録されています。
+ルーター用途のアプリは網羅されていると思います。</p>
+<p>以下のアプリケーション（全ておすすめ）を運用しています。</p>
+<ul>
+<li>TravelMate: ホットスポット管理アプリ</li>
+<li>Adblock: 広告ブロッカー</li>
+<li>Miniflux: RSSサーバー（TinyRSSよりかなり快適）</li>
+<li>Syncthing: ファイル同期（iOSアプリがないのが残念）</li>
+<li>Gitea: パーソナル Github（自分の手元に置いておきたんよね。）</li>
+<li>Postgresql: gitea/minifluxにて利用するデーターベースサーバー</li>
+<li>Stubby: DNS通信の暗号化 <a href="https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/">インストール</a></li>
+<li>Prometheus: 本体の監視サーバー <a href="https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/">インストール</a></li>
+<li>Wireguard: インストール済み（未設定）</li>
+</ul>
+<!-- + Downloader: torrent, youtube-dl。落としたファイルはSyncthingで端末へ同期。 -->
+<p>※ MinifluxとGiteaはバイナリーでインストールしてます。<strong>GoLang</strong>で書かれたアプリ（Miniflux、Gitea、Syncthing、Prometheus）は良い印象。</p>
+<p>インストール記事：</p>
+<ul>
+<li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-gitea/">Gieta</a>：持ち出しGithub</li>
+<li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-miniflux/">Miniflux</a>：ブラウザーで閲覧、快適RSS</li>
+<li><a href="https://goozenlab.github.io/blog/2020/05/openwrt-syncthing/">Syncthng</a>：DropBoxの代替同期アプリ</li>
+<li><a href="https://goozenlab.github.io/blog/2020/06/openwrt-prometheus/">Prometheus</a>：監視サーバー</li>
+<li><a href="https://goozenlab.github.io/blog/2020/06/openwrt-dns-tls-stubby/">Stubby</a>：DNSのtls化</li>
+</ul>
+<p>詰め込みすぎると動作が緩慢になると思いインストールしなかったソフトウェアは以下、</p>
+<ul>
+<li>influxDB: パイゼロで運用する</li>
+<li>Grafana: MacOSで動かす（データーをパイより所得）</li>
+</ul>
+<p>その他入れないけど、ちょっと考えたアプリ（裏でこそこそと作業をさせる）</p>
+<ul>
+<li>youtube-dl: ユーチューブの動画ダウンローダー</li>
+<li>torrent: トレントダウンローダー</li>
+</ul>
+<h2 id="運用状況">運用状況</h2>
+<p><img src="/images/2020-06-02-openwrt-htop.png" alt="Pi OpenWRT"></p>
+<p>htopではこんな感じです。
+RAMがカツカツ、CPUはスカッスカッ、余裕で動いています。
+消費電力が抑えられるならCPUクロックを落とすかな。</p>
+<p>上記の合体写真の5,000mAhのバッテリー運用で<strong>約10時間</strong>持ちました。
+（旅の移動時にも使うなら18時間くらいあると嬉しい。）</p>
+<p>監視用アプリのPrometheus + Grafanaでカッコよくデーターが表示されます。
+だいたい動きとかリソースの消費具合が摘めたので、暫ししたら動作を止めます。</p>
+<p><img src="/images/2020-06-02-prometheus-04.png" alt="Pi OpenWRT"></p>
+<h2 id="接続オプション">接続オプション</h2>
+<p>通常時は写真にあるように2.4GHzのWifiが外部インターネットへの窓口になってます。
+その他、USBテザリング、USBイーサーネット経由で外部との接続が可能です。</p>
+<h3 id="usbテザリング">USBテザリング</h3>
+<p>アンドロイド端末とテザリングが可能です。（iPhoneでも可能（未確認））
+え〜なと思いましたが、バッテリーで運用すると携帯に充電が開始されてしまう。。
+これはいかんなと、、</p>
+<ul>
+<li>記事：とりあえず試した<a href="https://goozenlab.github.io/blog/2020/06/openwrt-usb-tether/">USBテザリング</a></li>
+</ul>
+<p>ということであまり使う機会はなさそう。。</p>
+<h3 id="usb有線lantp-link-ue3000">USB有線LAN：TP-Link UE3000</h3>
+<p><img src="/images/2020-06-24tplink-ue300.png" alt="TP-Link UE300"></p>
+<p>タイでMacBook Airのために購入したUSB3 Ethernetドングルの
+<a href="https://amzn.to/2BwxVNp">TP-Link UE-300</a>
+はカーネルモジュールの<br>
+<code>kmod-usb-net-rtl8152</code> : USB-to-Ethernet Realtek 8152 USB2.0/3.0 convertors<br>
+を追加し、InterfaceのWANを編集することであっさり使えました。
+無線LANを使うよりはよりかは通信が安定するか。</p>
+<p>消費電力はUSB無線LANと同じくらい。
+ホテルなどの有線LAN環境下でもこれで使えます。</p>
+<h2 id="おまけ動かなかったものなど不具合">おまけ：動かなかったものなど、不具合</h2>
+<ul>
+<li>オンボードの2.4Ghz帯のWifiは開発版にて対応</li>
+<li>11a対応USBはものが少ないかつ不安定</li>
+<li>USB Wifi (Planex) が回復も自動でしてくれますが、ときに断線する</li>
+<li>USB機器の抜き差しでシステムが落ちる</li>
+</ul>
+<div class="attention"><b>※　</b>手元にあったUSBネットワークドングル(TP Link T1/T2)はカーネルモジュールをインストールして見るも動作せず。</div>
+<h2 id="ぼやき">ぼやき</h2>
+<p>Bitwardenのローカルサーバも作りたかったんだけどね、ドッカーはPiA+ではちょっと荷が重いようです。</p>
+<hr>
+<h2 id="更新履歴">更新履歴</h2>
+<ul>
+<li>2020-12-15：RSSサーバーの<a href="https://goozenlab.github.io/blog/2020/12/upgrade-miniflux/">Minifluxをアップグレード</a></li>
+<li>2020-06-25：OpwnWRTに鞍替えしほぼ完了、ちょっと時にサービスが止まっていたりしますが順調。</li>
+<li>2020-01-05：ラズビアンにてアクセスポイントを構築するも非常に遅い。回線が途切れ途切れになる。ちと保留。</li>
+<li>2019-08-29：ルーター部を除いて検証ほぼ終了、ページをアップ。（9月半ばに再スタート）</li>
+</ul>
+<div class="note">不定期更新です。書き込んだり消したりしてます。</div>
+				
+
+
+            </div>
+        
+        <div>
+            <h2>tip 🏝</h2>
+            <p>
+            🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+            🌻 <a href="/images/bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg.png">bitcoin</a> : bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg<br />
+            🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png" target="blank">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
+            </p>
+            <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+        </div>
+
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+      
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+

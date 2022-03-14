@@ -5,15 +5,24 @@
     <link>https://goozenlab.github.io/tags/linux/</link>
     <description>Recent content in linux on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 16 Jul 2021 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Mar 2022 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ダウンロードの再開</title>
+      <link>https://goozenlab.github.io/blog/2022/03/curl/</link>
+      <pubDate>Tue, 15 Mar 2022 16:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/03/curl/</guid>
+      <description>実家回線は光なので、データーをダウンロードが途中で切れても、 もう一度やり直してもそこまで気にはなりません。 ただし回線状況のあまり良くないとこ</description>
+    </item>
+    
     <item>
       <title>今更ながらQEMUを使ってみる</title>
       <link>https://goozenlab.github.io/blog/2021/07/qemu/</link>
       <pubDate>Fri, 16 Jul 2021 16:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/07/qemu/</guid>
       <description>実機でちょっと問題があってインストールしていないFedoraを使ってみたかったというのもありますが、 ちょっと魔が差して？我ハッキントッシュマ</description>
     </item>
@@ -22,7 +31,7 @@
       <title>Standard Notes</title>
       <link>https://goozenlab.github.io/blog/2020/02/standardnotes/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/standardnotes/</guid>
       <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
@@ -31,7 +40,7 @@
       <title>VSCodium</title>
       <link>https://goozenlab.github.io/blog/2020/01/vscodium/</link>
       <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/vscodium/</guid>
       <description>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。 VSCodeはオープンソースで公開されていますがマイクロソフトから提供されて</description>
     </item>
@@ -40,7 +49,7 @@
       <title>月曜始まりカレンダー</title>
       <link>https://goozenlab.github.io/blog/2020/01/linux-calender-start-monday/</link>
       <pubDate>Wed, 22 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/linux-calender-start-monday/</guid>
       <description>カレンダーが日曜日から始まるのはどうも嫌なんです。 Sundayということで太陽から始まるのはわからなくはないのですが、 習慣的に月曜が始めとい</description>
     </item>
@@ -49,7 +58,7 @@
       <title>最新版のFirefoxをデビアンでつかう</title>
       <link>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</link>
       <pubDate>Tue, 21 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</guid>
       <description>オススメ・ディストロの一つ、デビアン環境がなかな良いです。 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン68.xがイ</description>
     </item>
@@ -58,7 +67,7 @@
       <title>ベルギー産のArcoをインストール</title>
       <link>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</link>
       <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/arco-install-btrfs/</guid>
       <description>さて、ちょっとバジーをインストールしたくなって、 やはりUbuntu系はあまり好きになれないし、 また同じManjaroではつまらないので Arc</description>
     </item>
@@ -67,7 +76,7 @@
       <title>ブラウザーのプロファイルをRAMディスクへ</title>
       <link>https://goozenlab.github.io/blog/2020/01/profile-sync-daemon/</link>
       <pubDate>Sun, 19 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/profile-sync-daemon/</guid>
       <description>ブラウザーのプロファイルをRAMディスクに移しアクセスを高速化、かつSSDを延命化すると一石二鳥なスクリプトを導入します。 パッケージがあるの</description>
     </item>
@@ -76,7 +85,7 @@
       <title>Neonを推す</title>
       <link>https://goozenlab.github.io/blog/2020/01/kde-neon/</link>
       <pubDate>Sat, 18 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/kde-neon/</guid>
       <description>Linuxのディストリビューションをかなりためした方だと思いますが、 KDE Neon: https://neon.kde.org/ がツボりました。 ちとUnuntuがあまり好きではなく、 なんでもその</description>
     </item>
@@ -85,7 +94,7 @@
       <title>Linuxでのサンドボックス・アプリ</title>
       <link>https://goozenlab.github.io/blog/2020/01/sandbox-app/</link>
       <pubDate>Fri, 17 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/sandbox-app/</guid>
       <description>３つくらいのディストリビューションを試していて、こっちを使ったりあっちを使ったりしてます。 ディストリビューション毎に同じアプリをインストール</description>
     </item>
@@ -94,7 +103,7 @@
       <title>Kali Linux on BTRFS</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-kali-btrfs/</link>
       <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-kali-btrfs/</guid>
       <description>ちょっと変わり種のディストリビューションも入れておきたいなと思ったので、 Kali Linuxをマルチブート端末 Thinkpad T480s にインストールする。 Linuxのパ</description>
     </item>
@@ -103,7 +112,7 @@
       <title>ファームウェアをアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</link>
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
       <description>Thinkapd T480sでのdebian起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
@@ -112,7 +121,7 @@
       <title>Linuxをアップデート</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-update/</link>
       <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-update/</guid>
       <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
     </item>
@@ -121,7 +130,7 @@
       <title>リナックスのウィンドウマネージャーについて</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</link>
       <pubDate>Fri, 20 Dec 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</guid>
       <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：deb</description>
     </item>
@@ -130,7 +139,7 @@
       <title>BtrfsにArchをインストール</title>
       <link>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</link>
       <pubDate>Sun, 15 Dec 2019 07:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/install-arch-btrfs/</guid>
       <description>すでにDebianとManjaroで利用中のBTRFSパーティションに あらたにArchを追加・新規インストールした際のメモ。 自分の作業メモと</description>
     </item>
@@ -139,7 +148,7 @@
       <title>TLPの設定</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-thinkpad-tlp/</link>
       <pubDate>Sat, 14 Dec 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-thinkpad-tlp/</guid>
       <description>Thinkpad T480sにてバッテリーを長持ちさせるために、 Linux Advanced Power Management: https://linrunner.de/en/tlp/tlp.html というソフトを使います。 理想的なノートブックでのバッテリー利用は２０％～８０％の利</description>
     </item>
@@ -148,7 +157,7 @@
       <title>Linuxのメールクライアント：Geary</title>
       <link>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</link>
       <pubDate>Sat, 16 Nov 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</guid>
       <description>Linuxでのメールクライアント、いくつかあるのですが 一番人気？のThunderbirdは重そうで使いたくないし、 GnomeのEvoluti</description>
     </item>
@@ -157,7 +166,7 @@
       <title>ブートローダー</title>
       <link>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</link>
       <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</guid>
       <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linu</description>
     </item>
@@ -166,7 +175,7 @@
       <title>ブートマネージャーの設定</title>
       <link>https://goozenlab.github.io/blog/2019/10/multios-boot-loader/</link>
       <pubDate>Tue, 08 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/multios-boot-loader/</guid>
       <description>端末に様々なシステムをインストールするとその度にブートローダーが上書きされます。 基本どれでも同じようなものですが、事前にインストールしてある</description>
     </item>
@@ -175,7 +184,7 @@
       <title>Btrfsにマンジャーロ</title>
       <link>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</link>
       <pubDate>Mon, 07 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</guid>
       <description>2018年一番人気のディストリビューションManjaro、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになって</description>
     </item>
@@ -184,7 +193,7 @@
       <title>デビアンをBtrfsにインストール</title>
       <link>https://goozenlab.github.io/blog/2019/10/install-debian-btrfs/</link>
       <pubDate>Sun, 06 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/install-debian-btrfs/</guid>
       <description>Thinkpad T480S マルチOS環境第２弾。 Thinkpadに自由を！。 ファイルロスト不安症ではないけれど、スナップショットを取ることのできるBtrfsにデビ</description>
     </item>
@@ -193,7 +202,7 @@
       <title>Live Linux on Macbook Air </title>
       <link>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</link>
       <pubDate>Sun, 15 Sep 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/live-linux-macbook-air/</guid>
       <description>利用する必要な無いことを祈りますが、緊急用のステック端末をリナックスで作ろうと思ってます。 そこで動くかどうか今ひとつ分からないMacbook</description>
     </item>
@@ -202,7 +211,7 @@
       <title>おすすめLinuxディストリビューション</title>
       <link>https://goozenlab.github.io/blog/2019/09/linux-distribution/</link>
       <pubDate>Fri, 06 Sep 2019 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/linux-distribution/</guid>
       <description>いろいろと調べてみてこんな感じであろうと、 シンプルにまとめてみました。 非常にメジャーであるが最近は評判が傾いてきているUbuntu＋Ubun</description>
     </item>

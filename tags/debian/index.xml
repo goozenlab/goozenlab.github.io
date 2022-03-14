@@ -5,15 +5,15 @@
     <link>https://goozenlab.github.io/tags/debian/</link>
     <description>Recent content in debian on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 08 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>USBが使えない</title>
       <link>https://goozenlab.github.io/blog/2021/02/usbguard/</link>
       <pubDate>Mon, 08 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/usbguard/</guid>
       <description>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。 同居しているArchなどで繋いでみると問題なく動いているので、ディスク自体に問</description>
     </item>
@@ -22,7 +22,7 @@
       <title>日替わりディストロ</title>
       <link>https://goozenlab.github.io/blog/2020/12/distro-hopping/</link>
       <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/distro-hopping/</guid>
       <description>いくつかのLinuxをBtrfsで併用してます。 日替わりランチが如く、 日々違ったディストロを切り替えて使ってます。 同じ作業をするので、ちょっ</description>
     </item>
@@ -31,7 +31,7 @@
       <title>タイ語のフォントをインストール</title>
       <link>https://goozenlab.github.io/blog/2020/02/thai-font/</link>
       <pubDate>Sat, 22 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/thai-font/</guid>
       <description>タイでネットにアクセスするとローカル言語表示されることが多々あります。 （google や Youtube など） デビアンでは必要ないものはインストールされない</description>
     </item>
@@ -40,7 +40,7 @@
       <title>Standard Notes</title>
       <link>https://goozenlab.github.io/blog/2020/02/standardnotes/</link>
       <pubDate>Fri, 07 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/standardnotes/</guid>
       <description>オープンソースかつ脱 GAFA 向けアプリのご紹介です。 テキストファイル共有アプリの Standard Notes です。 Simplenote というアプリもありますが、 こちらはエクステンションがあ</description>
     </item>
@@ -49,7 +49,25 @@
       <title>Mozcの環境構築まとめ</title>
       <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-config fcitx-mozc をインストール、im-config</description>
+    </item>
+    
+    <item>
+      <title>Mozcの環境構築まとめ</title>
+      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
+      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
+    </item>
+    
+    <item>
+      <title>Mozcの環境構築まとめ</title>
+      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
+      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
       <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
     </item>
@@ -58,7 +76,7 @@
       <title>AppImageをデビアンで：AppImage Launcher</title>
       <link>https://goozenlab.github.io/blog/2020/02/appimage-debian/</link>
       <pubDate>Sun, 02 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/appimage-debian/</guid>
       <description>ダウンロードして、実行権を与え、ダブルクリックで起動という利便性の高いアプリ配信方式の AppImage ですが、 中には上手く動かないアプリもありました。 Simplenote は</description>
     </item>
@@ -67,7 +85,7 @@
       <title>最適なミラーサイト</title>
       <link>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</link>
       <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</guid>
       <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しな</description>
     </item>
@@ -76,7 +94,7 @@
       <title>最新版のFirefoxをデビアンでつかう</title>
       <link>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</link>
       <pubDate>Tue, 21 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/apt-pinning-firefox/</guid>
       <description>オススメ・ディストロの一つ、デビアン環境がなかな良いです。 ただ安定志向のためなのかFirefoxのバージョンが一昔前のバージョン68.xがイ</description>
     </item>
@@ -85,7 +103,7 @@
       <title>Firefox 70 on Buster</title>
       <link>https://goozenlab.github.io/blog/2020/01/latest-firefox/</link>
       <pubDate>Wed, 08 Jan 2020 09:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/latest-firefox/</guid>
       <description>快適に動作しているデビアンですが、インストールされているファイヤーフォックのバージョンが68.*と少し古いです。 最新のものを使ってもシステム</description>
     </item>
@@ -94,7 +112,7 @@
       <title>ファームウェアをアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</link>
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
       <description>Thinkapd T480sでのdebian起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
@@ -103,7 +121,7 @@
       <title>Linuxをアップデート</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-update/</link>
       <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-update/</guid>
       <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
     </item>
@@ -112,7 +130,7 @@
       <title>Debian on VAIO type P</title>
       <link>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</link>
       <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</guid>
       <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
     </item>

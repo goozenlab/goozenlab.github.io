@@ -5,15 +5,15 @@
     <link>https://goozenlab.github.io/tags/hackintosh/</link>
     <description>Recent content in hackintosh on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>goozenlab@gmail.com (jin)</managingEditor>
-    <webMaster>goozenlab@gmail.com (jin)</webMaster>
-    <copyright>Copyright 2021, goozenlab; all rights reserved.</copyright>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Tue, 14 Jan 2020 08:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/hackintosh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NCase M1</title>
       <link>https://goozenlab.github.io/blog/2020/01/preorder-ncase-m1/</link>
       <pubDate>Tue, 14 Jan 2020 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/preorder-ncase-m1/</guid>
       <description>台湾の総統選挙も無事に終わり、蔡英文氏が勝利。投票率は74.9%。 昨年行われた香港特別行政区議会選挙での投票率は71.2％、 と、羨ましいほど</description>
     </item>
@@ -22,7 +22,7 @@
       <title>BIOS設定：ハッキントッシュT480s</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</link>
       <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</guid>
       <description>Thinkpad T480s に macOS モハァ〜ベェ～をインストールして使っています。 11 月ごろに一回あったシステムアップデートもでき、MagicTrackpad やマルチディ</description>
     </item>
@@ -31,7 +31,7 @@
       <title>BIOS設定：ハッキントッシュT480s</title>
       <link>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</link>
       <pubDate>Fri, 10 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</guid>
       <description>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。 11月ごろに一回あったシステムアップデートもでき、MagicTrack</description>
     </item>
@@ -40,7 +40,7 @@
       <title>ハッキントッシュのバッテリー</title>
       <link>https://goozenlab.github.io/blog/2020/01/hackintosh-t480s-batery/</link>
       <pubDate>Mon, 06 Jan 2020 21:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/hackintosh-t480s-batery/</guid>
       <description>時々Redditに気になるハッキントッシュ情報が流れます。 今回はこのT480sの唯一の弱点とも言えるバッテリー関連情報。 なんとハッキントッシ</description>
     </item>
@@ -49,7 +49,7 @@
       <title>Clover easter egg</title>
       <link>https://goozenlab.github.io/blog/2019/12/clover-extra/</link>
       <pubDate>Sun, 29 Dec 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/clover-extra/</guid>
       <description>久しぶりに端末を再起動をしたところ、クローバーことブートローダーが真っ赤に！ メガネを外したままの状態だったのでチラチラを流れる雪のようなもの</description>
     </item>
@@ -58,7 +58,7 @@
       <title>ハッキントッシュで数ヶ月</title>
       <link>https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/</link>
       <pubDate>Tue, 24 Dec 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/</guid>
       <description>Thinkpad T480s ハッキントッシュをこんな感じで使ってます。最近タイで買ったThinkVision付き。 （手作りスタンディング・テーブルについてのツッコミ</description>
     </item>
@@ -67,7 +67,7 @@
       <title>Clover Update</title>
       <link>https://goozenlab.github.io/blog/2019/12/update-clover/</link>
       <pubDate>Fri, 13 Dec 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/update-clover/</guid>
       <description>ハッキントッシュ用ブートローダーのクローバー。 怖くてあまりいじりたくないのだけれども、 あまり放っておくのも怖いので、 ブートローダーとカーネル</description>
     </item>
@@ -76,7 +76,7 @@
       <title>ブートローダー</title>
       <link>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</link>
       <pubDate>Thu, 14 Nov 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/11/from-grub-clover/</guid>
       <description>ハッキントッシュのためのブートローダーはCloverというものを使います。 CloverよりLinuxを起動することもできるのですが、 Linu</description>
     </item>
@@ -85,7 +85,7 @@
       <title>白金化のプライス</title>
       <link>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</link>
       <pubDate>Fri, 11 Oct 2019 15:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</guid>
       <description>嵐の前のしづけさ、久しぶりに大型の台風が近づいてきているようです。 猛烈な台風とか記録的な暴風・大雨とか表現をされるのですが、 （「狩野川台風」</description>
     </item>
@@ -94,7 +94,7 @@
       <title>ハッキントッシュ Wifiカード</title>
       <link>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/</link>
       <pubDate>Wed, 09 Oct 2019 20:30:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/</guid>
       <description>ハッキントッシュ化したThinkpadですが、 作業がひと段落し安定して動作しています。 ただ残念なことに付属のインテルWifiカードは使えませ</description>
     </item>
@@ -103,7 +103,7 @@
       <title>T480sでハッキントッシュ</title>
       <link>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/</link>
       <pubDate>Sat, 05 Oct 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/</guid>
       <description>日本に戻ってきて、ちまちまThinkpad T480sを魔改造中。 取り敢えず、Hackintosh、Windows、Debian、Manjar</description>
     </item>
@@ -112,7 +112,7 @@
       <title>Projects ページ</title>
       <link>https://goozenlab.github.io/blog/2019/09/projects/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/projects/</guid>
       <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
@@ -121,7 +121,7 @@
       <title>Appleからの離脱</title>
       <link>https://goozenlab.github.io/blog/2018/11/applexit/</link>
       <pubDate>Sun, 18 Nov 2018 11:00:00 +0900</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/11/applexit/</guid>
       <description>Appleからの離脱、勝手に名付けた、ApplExit。 機材を色々と弄ったこの10・11月。ちまちまと出費したわりには更新されていないのがな</description>
     </item>
@@ -130,7 +130,7 @@
       <title>HackPad X230</title>
       <link>https://goozenlab.github.io/blog/2018/11/hackintosh-x230/</link>
       <pubDate>Wed, 14 Nov 2018 08:00:00 +0700</pubDate>
-      <author>goozenlab@gmail.com (jin)</author>
+      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/11/hackintosh-x230/</guid>
       <description>なぜか、手元にある端末が矢継に倒れ。ロジックボードをオーブンで焼いたりもコンガリ焼き上がり死亡、直そうと思って海外通販で頼んだ品は初期不良で</description>
     </item>
