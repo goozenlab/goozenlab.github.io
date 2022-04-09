@@ -16,16 +16,15 @@
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
 
 <link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
 
 
 <link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
 
 
 
@@ -116,7 +115,9 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
-
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
                         <li class="pure-menu-item">
                             <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
@@ -212,15 +213,15 @@
 インストール、設定方法をまとめる。</p>
 <h2 id="debian--ubuntu">Debian / Ubuntu</h2>
 <p>Debian と Ubuntu では</p>
-<pre tabindex="0"><code>$ sudo apt-get install im-config fcitx-mozc
-</code></pre><p>をインストール、im-config より fcitx を指定します。</p>
+<pre tabindex="0"><code>$ sudo apt-get install im-congig fcitx-mozc
+</code></pre><p>をインストール、im-congif より fcitx を指定します。</p>
 <p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install"></p>
 <p>次にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
 mozc を追加して、キーバインドや候補表示のフォント設定などが行なえます。</p>
 <p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
 <p>そして、再起動でつかえるようになります。</p>
 <p>ただし、Mozc ツールはバグがあるらしく backport よりインストールする必要があります。コマンドで詳細設定のツールを起動する必要があります。</p>
-<p>コマンドからの辞書ツfiール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
+<p>コマンドからの辞書ツール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
 <pre tabindex="0"><code>$ /usr/lib/mozc/mozc_tool --mode=config_dialog
 $ /usr/lib/mozc/mozc_tool --mode=dictionary_tool
 $ /usr/lib/mozc/mozc_tool --mode=word_register_dialog

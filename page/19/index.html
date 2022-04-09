@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.94.2" />
+	<meta name="generator" content="Hugo 0.96.0" />
 
     
     <meta charset="utf-8">
@@ -19,16 +19,15 @@
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
-
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
 
 <link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
 
 
 <link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
 
 
 
@@ -109,7 +108,9 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
-
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
                         <li class="pure-menu-item">
                             <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
@@ -193,21 +194,21 @@
                     
                     <li>
                         
-                        <a href="https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/">OpenSuse on Pi 3B</a>
+                        <a href="https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/">influxDBのインストール</a>
                         <p class="summary">
-                            ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、 パイの64bitバージョンも配布されているので試して ...
+                            Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどの ...
                         </p>
                         <p class="footnote">
-                            submitted <time datetime="2019-09-02T14:30:00&#43;07:00"
-                                class="post-list timeago">2019-09-02T14:30:00&#43;07:00</time>
+                            submitted <time datetime="2019-08-13T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-13T12:30:00&#43;07:00</time>
 
                             
                             to
                             
 
                             
-                            tags:[ <a href="https://goozenlab.github.io/tags/opensuse">opensuse</a>
-                            <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            <a href="https://goozenlab.github.io/tags/logging">logging</a>
                             ]
                             
 
@@ -225,31 +226,181 @@
                     
                     <li>
                         
-                        <a href="https://goozenlab.github.io/blog/2019/09/projects/">Projects ページ</a>
+                        <a href="https://goozenlab.github.io/blog/2019/08/grafana-pi-install/">Grafanaのインストール</a>
                         <p class="summary">
-                            9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし ...
+                            インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありませ ...
                         </p>
                         <p class="footnote">
-                            submitted <time datetime="2019-09-01T09:00:00&#43;07:00"
-                                class="post-list timeago">2019-09-01T09:00:00&#43;07:00</time>
+                            submitted <time datetime="2019-08-12T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-12T12:30:00&#43;07:00</time>
 
                             
                             to
                             
 
                             
-                            tags:[ <a href="https://goozenlab.github.io/tags/macos">macos</a>
-                            <a href="https://goozenlab.github.io/tags/hackintosh">hackintosh</a>
-                            <a href="https://goozenlab.github.io/tags/ipod">ipod</a>
-                            <a href="https://goozenlab.github.io/tags/gafa">gafa</a>
-                            <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry-pi</a>
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            <a href="https://goozenlab.github.io/tags/logging">logging</a>
                             ]
                             
 
                             
                             categories:[ <a
-                                href="https://goozenlab.github.io/categories/computing">computing</a> <a
-                                href="https://goozenlab.github.io/categories/nomad">nomad</a> <a
+                                href="https://goozenlab.github.io/categories/server">server</a> ]
+                            
+
+                            
+
+                        </p>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        
+                        <a href="https://goozenlab.github.io/blog/2019/08/pi-swap-dphys/">パイ・スワップの増量</a>
+                        <p class="summary">
+                            さて、パイ・メモリーが弾けんばかりパツパツです。 インストール時に「メモリーを割り当てることができません」とのエラーや、ちょっとしたタイミング ...
+                        </p>
+                        <p class="footnote">
+                            submitted <time datetime="2019-08-11T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-11T12:30:00&#43;07:00</time>
+
+                            
+                            to
+                            
+
+                            
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            ]
+                            
+
+                            
+                            categories:[ <a
+                                href="https://goozenlab.github.io/categories/server">server</a> ]
+                            
+
+                            
+
+                        </p>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        
+                        <a href="https://goozenlab.github.io/blog/2019/08/firefly-pi-install/">Firefly iiiをインストール</a>
+                        <p class="summary">
+                            今までは、ラフにお金の流れをGNUCashを使って管理してましたが、 ちょっと細かくこずかい帳の様に使えるものを探していて PERSONAL FINANCE MANAGERの ...
+                        </p>
+                        <p class="footnote">
+                            submitted <time datetime="2019-08-10T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-10T12:30:00&#43;07:00</time>
+
+                            
+                            to
+                            
+
+                            
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            ]
+                            
+
+                            
+                            categories:[ <a
+                                href="https://goozenlab.github.io/categories/server">server</a> ]
+                            
+
+                            
+
+                        </p>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        
+                        <a href="https://goozenlab.github.io/blog/2019/08/pia-running-test/">パイ力がつきるまで・4</a>
+                        <p class="summary">
+                            パイ３Bで動かしていたSDカードをそのままパイ３A＋に差し替え、 5,000 mAhのバッテリー運用時での駆動時間をチェックしました。 現在の使用状況はR ...
+                        </p>
+                        <p class="footnote">
+                            submitted <time datetime="2019-08-09T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-09T12:30:00&#43;07:00</time>
+
+                            
+                            to
+                            
+
+                            
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            ]
+                            
+
+                            
+                            categories:[ <a
+                                href="https://goozenlab.github.io/categories/server">server</a> ]
+                            
+
+                            
+
+                        </p>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        
+                        <a href="https://goozenlab.github.io/blog/2019/08/wallabag-pi-install/">Wallabagをインストール</a>
+                        <p class="summary">
+                            何でもセルフホスト・パイ・サーバー計画続行中。 今回はPocketの代替ソフトのwallabagをインストールしました。 Kindle版があるの ...
+                        </p>
+                        <p class="footnote">
+                            submitted <time datetime="2019-08-08T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-08T12:30:00&#43;07:00</time>
+
+                            
+                            to
+                            
+
+                            
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            ]
+                            
+
+                            
+                            categories:[ <a
+                                href="https://goozenlab.github.io/categories/server">server</a> ]
+                            
+
+                            
+
+                        </p>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        
+                        <a href="https://goozenlab.github.io/blog/2019/08/pimoroni-extra-pi/">エクストラ・パイを購入 @ Pimoroni</a>
+                        <p class="summary">
+                            ちょっと機材を追加、パイ3A+を購入しました。 数品であれば個人輸入する利点はない様に思えるけれど、 品によっては数千円の違いがあったりします。 ...
+                        </p>
+                        <p class="footnote">
+                            submitted <time datetime="2019-08-06T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-06T12:30:00&#43;07:00</time>
+
+                            
+                            to
+                            
+
+                            
+                            tags:[ <a href="https://goozenlab.github.io/tags/raspberry-pi">raspberry pi</a>
+                            ]
+                            
+
+                            
+                            categories:[ <a
                                 href="https://goozenlab.github.io/categories/mumble">mumble</a> ]
                             
 
@@ -262,46 +413,13 @@
                     
                     <li>
                         
-                        <a href="https://goozenlab.github.io/blog/2019/08/openzfs-after/">OpenZFSをMBAにて１ヶ月使ってみて</a>
+                        <a href="https://goozenlab.github.io/blog/2019/08/running-core-comparison/">パイ・コア数での駆動時間比較</a>
                         <p class="summary">
-                            8 月が終わります。消費税アップまであと１ヶ月。買っておきたいものをリストアップしてます。 消費税が上がったら余計なものはもう買いません！ これを ...
+                            パイ・３Bにてコア数の調整ができるので、バッテリーで運用時での駆動時間の比較をしました。 コア数の変更方法は こちら にポストしてますが、簡単には ...
                         </p>
                         <p class="footnote">
-                            submitted <time datetime="2019-08-31T09:00:00&#43;07:00"
-                                class="post-list timeago">2019-08-31T09:00:00&#43;07:00</time>
-
-                            
-                            to
-                            
-
-                            
-                            tags:[ <a href="https://goozenlab.github.io/tags/macos">macos</a>
-                            <a href="https://goozenlab.github.io/tags/tipstricks">tips&amp;tricks</a>
-                            <a href="https://goozenlab.github.io/tags/zfs">zfs</a>
-                            ]
-                            
-
-                            
-                            categories:[ <a
-                                href="https://goozenlab.github.io/categories/computing">computing</a> ]
-                            
-
-                            
-
-                        </p>
-                    </li>
-                    
-                    
-                    
-                    <li>
-                        
-                        <a href="https://goozenlab.github.io/blog/2019/08/kanboard-pi-install/">Kanboardのインストール</a>
-                        <p class="summary">
-                            掲示板・ホワイトボード風のメモ・アプリ？！ ポストイット好きの私なので、こんな素敵なアプリがあるなんて、、 早速パイにインストールしてみました。 ...
-                        </p>
-                        <p class="footnote">
-                            submitted <time datetime="2019-08-30T19:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-30T19:30:00&#43;07:00</time>
+                            submitted <time datetime="2019-08-05T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-05T12:30:00&#43;07:00</time>
 
                             
                             to
@@ -326,46 +444,13 @@
                     
                     <li>
                         
-                        <a href="https://goozenlab.github.io/blog/2019/08/amazfit-bip-one-month/">Amazfit Bipと１ヶ月</a>
+                        <a href="https://goozenlab.github.io/blog/2019/08/pihole-install/">Piholeをインストール</a>
                         <p class="summary">
-                            タイから日本へ、あと数週間。今年はインドに行った２か月を除き、 ほぼ6ヶ月間フルータリアン生活でした。（牛乳は飲みますので、ビーガンでは無い） ...
+                            アドブロックかつフィルターリングプロキシーソフトのPrivoxyが敷居が高くて、高機能なのだろうけれども使いこなせそうにもないので、 評判が高 ...
                         </p>
                         <p class="footnote">
-                            submitted <time datetime="2019-08-29T12:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-29T12:30:00&#43;07:00</time>
-
-                            
-                            to
-                            
-
-                            
-                            tags:[ <a href="https://goozenlab.github.io/tags/xiaomi">xiaomi</a>
-                            ]
-                            
-
-                            
-                            categories:[ <a
-                                href="https://goozenlab.github.io/categories/smart-watch">smart watch</a> ]
-                            
-
-                            
-
-                        </p>
-                    </li>
-                    
-                    
-                    
-                    
-                    
-                    <li>
-                        
-                        <a href="https://goozenlab.github.io/blog/2019/08/radicale-pi-install/">Radicaleのインストール</a>
-                        <p class="summary">
-                            カレンダー・コンタクトサーバーを導入しました。 あっさりとインストールと設定完了（以前行った時にはアンドロイドとの接続がうまくいかず。結局ne ...
-                        </p>
-                        <p class="footnote">
-                            submitted <time datetime="2019-08-28T19:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-28T19:30:00&#43;07:00</time>
+                            submitted <time datetime="2019-08-04T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-04T12:30:00&#43;07:00</time>
 
                             
                             to
@@ -390,13 +475,13 @@
                     
                     <li>
                         
-                        <a href="https://goozenlab.github.io/blog/2019/08/pi-3a-external-disk/">パイ・3A&#43;にて外部ディスクの不具合</a>
+                        <a href="https://goozenlab.github.io/blog/2019/08/pi-swapiness/">パイ・スワップファイル</a>
                         <p class="summary">
-                            パイ・3A+に外部ディスクを刺しても認識をしてくれない。 USBメモリーをさしてもチカチカランプが点滅するも、 無反応、もしくはハングアップする ...
+                            SDカードの延命化のためにスワップファイルを無効にするには、メモリの多くないパイなので、 少しばかり躊躇します。しかしその代わりに、 カーネルに ...
                         </p>
                         <p class="footnote">
-                            submitted <time datetime="2019-08-25T12:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-25T12:30:00&#43;07:00</time>
+                            submitted <time datetime="2019-08-03T12:30:00&#43;07:00"
+                                class="post-list timeago">2019-08-03T12:30:00&#43;07:00</time>
 
                             
                             to
@@ -410,69 +495,6 @@
                             
                             categories:[ <a
                                 href="https://goozenlab.github.io/categories/server">server</a> ]
-                            
-
-                            
-
-                        </p>
-                    </li>
-                    
-                    
-                    
-                    <li>
-                        
-                        <a href="https://goozenlab.github.io/blog/2019/08/customrom_dirty_flash/">Dirty Flash</a>
-                        <p class="summary">
-                            ちょっと、混乱したり、 久しぶりの行うと忘れてしまうので、メモとして残す。 同じカスタムロムをバージョンアップする時にはDirty Flash。 リ ...
-                        </p>
-                        <p class="footnote">
-                            submitted <time datetime="2019-08-24T07:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-24T07:30:00&#43;07:00</time>
-
-                            
-                            to
-                            
-
-                            
-                            tags:[ <a href="https://goozenlab.github.io/tags/custom-rom">custom rom</a>
-                            ]
-                            
-
-                            
-                            categories:[ <a
-                                href="https://goozenlab.github.io/categories/android">android</a> ]
-                            
-
-                            
-
-                        </p>
-                    </li>
-                    
-                    
-                    
-                    <li>
-                        
-                        <a href="https://goozenlab.github.io/blog/2019/08/amazfit-bip-data/">AmazfitBipのデータを可視化</a>
-                        <p class="summary">
-                            昨日はビザ・クラアランスのため、 タイ・メーサイ、ミャンマー・タチレクへ日帰りで行ってきました。 国境を越えるときは、ちょっとドキドキするんです ...
-                        </p>
-                        <p class="footnote">
-                            submitted <time datetime="2019-08-22T08:30:00&#43;07:00"
-                                class="post-list timeago">2019-08-22T08:30:00&#43;07:00</time>
-
-                            
-                            to
-                            
-
-                            
-                            tags:[ <a href="https://goozenlab.github.io/tags/logging">logging</a>
-                            <a href="https://goozenlab.github.io/tags/xiaomi">xiaomi</a>
-                            ]
-                            
-
-                            
-                            categories:[ <a
-                                href="https://goozenlab.github.io/categories/smart-watch">smart watch</a> ]
                             
 
                             
@@ -509,7 +531,7 @@
         <a href="/page/20/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/page/68/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/66/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
             </div>
