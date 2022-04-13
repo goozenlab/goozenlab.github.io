@@ -2,34 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2022-03-17T12:00:00+07:00</lastmod>
+    <loc>https://goozenlab.github.io/blog/2022/04/install-asahi-debian/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
   </url><url>
-    <loc>https://goozenlab.github.io/tags/crypto/</loc>
-    <lastmod>2022-03-17T12:00:00+07:00</lastmod>
+    <loc>https://goozenlab.github.io/categories/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/categories/computing/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/debian/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/mac/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/tipstricks/</loc>
+    <lastmod>2022-04-12T16:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/crypto/</loc>
     <lastmod>2022-03-17T12:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/categories/life/</loc>
     <lastmod>2022-03-17T12:00:00+07:00</lastmod>
   </url><url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2022-03-17T12:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2022-03-17T12:00:00+07:00</lastmod>
-  </url><url>
     <loc>https://goozenlab.github.io/blog/2022/03/add-tipping/</loc>
     <lastmod>2022-03-17T12:00:00+07:00</lastmod>
   </url><url>
-    <loc>https://goozenlab.github.io/categories/computing/</loc>
-    <lastmod>2022-03-15T16:00:00+07:00</lastmod>
-  </url><url>
     <loc>https://goozenlab.github.io/tags/linux/</loc>
-    <lastmod>2022-03-15T16:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/tipstricks/</loc>
     <lastmod>2022-03-15T16:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2022/03/curl/</loc>
@@ -160,9 +169,6 @@
   </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/mullvad/</loc>
     <lastmod>2021-02-18T09:30:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/debian/</loc>
-    <lastmod>2021-02-08T09:30:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2021/02/usbguard/</loc>
     <lastmod>2021-02-08T09:30:00+07:00</lastmod>
@@ -480,9 +486,6 @@
     <lastmod>2020-01-31T13:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/gpg-verify/</loc>
-    <lastmod>2020-01-30T08:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/mac/</loc>
     <lastmod>2020-01-30T08:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</loc>

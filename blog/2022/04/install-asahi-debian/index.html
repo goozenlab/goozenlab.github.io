@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Asahi Linux (Debian) のインストール | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-04-12</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/mac">mac</a> <a href="https://goozenlab.github.io/tags/tipstricks">tips&amp;tricks</a> <a href="https://goozenlab.github.io/tags/debian">debian</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Asahi Linux (Debian) のインストール</h1>
+            </div>
+
+            <div class="post-content">
+                <p>なんか最近はごにょごにょと色々と検証中だったりしてます。無為な時間が過ぎていく。。。</p>
+<p>さて、気になっていたAsahi Linuxがアルファ・リリースされて
+勝手知ったるDebianのインストールも可能になったようなので試してみました。</p>
+<p>Asahi Linux:
+<a href="https://github.com/AsahiLinux/docs/wiki/">https://github.com/AsahiLinux/docs/wiki/</a></p>
+<p>Install Debian:
+<a href="https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/">https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/</a></p>
+<h1 id="事前作業freespaceの確保">事前作業：FreeSpaceの確保</h1>
+<p>ZFSの設定をするついでに領域を作っていたので、そのパーティションをFreeSpaceに変更する。
+パーティションをいじるには<code>diskutil</code>を使うのが好ましいとのことです。
+（DiskUtilityは酷評されてます）</p>
+<pre tabindex="0"><code>/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         1.0 TB     disk0
+   1:             Apple_APFS_ISC                         524.3 MB   disk0s1
+   2:                 Apple_APFS Container disk3         794.5 GB   disk0s2
+   3: FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF               30.4 GB    disk0s3
+   4:                 Apple_Boot Boot OS X               134.2 MB   disk0s4
+   5: FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF               61.7 GB    disk0s5
+   6:                 Apple_Boot Boot OS X               134.2 MB   disk0s6
+                    (free space)                         268.4 MB   -
+   7:                  Apple_HFS Untitled 3              107.3 GB   disk0s7
+   8:        Apple_APFS_Recovery                         5.4 GB     disk0s8
+</code></pre><p>なんてことはなく、フォーマットは<code>free</code>にしてボリューム名は<code>nono</code>にすれば良いだけのことでした。</p>
+<pre tabindex="0"><code>% diskutil erasevolume free none disk0s7
+Started erase on disk0s7 (Untitled 3)
+Unmounting disk
+Finished erase on disk0
+%
+</code></pre><p>で、確認、そしてデーターも万一に備えバックアップし準備完了。</p>
+<pre tabindex="0"><code>/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         1.0 TB     disk0
+   1:             Apple_APFS_ISC                         524.3 MB   disk0s1
+
+   6:                 Apple_Boot Boot OS X               134.2 MB   disk0s6
+                    (free space)                         107.7 GB   -
+
+   7:        Apple_APFS_Recovery                         5.4 GB     disk0s8
+</code></pre><h2 id="インストール">インストール</h2>
+<p>電源を落として、パワーボタンを長押ししつつ起動します。
+長押しは電源強制オフに使ったりするので違和感が、
+以前はオプション・キーと同時だったんよね。</p>
+<p><strong>Options</strong>を選択して、ロードが終了後、メニュー＞ユーティリティより<strong>ターミナル</strong>を起動します。</p>
+<p>ターミナルより以下のAsahiLinuxのインストーラーを起動します。</p>
+<pre tabindex="0"><code>% curl -sL https://tg.st/d | sh
+</code></pre><p>流れをちょっと汚いスクリーン・ショットで追ってみます。
+ネットで見たものと少し違っていましたが、指示通りで問題はありませんでした。
+<strong>Fedora</strong>もインストールができるようですので、レッドハットの方はお試しのほど。</p>
+<p>2022-04-12ーinstall-asahi-debian−</p>
+<h2 id="初期設定">初期設定</h2>
+<p>ちょっとした設定も必要で、
+Wifiの設定とROOTパスワード、Userの追加を行います。</p>
+<pre tabindex="0"><code>passwd
+pwconv
+</code></pre><p>Configure wifi by editing the wpa_supplicant.conf, enabling the interface and remove the # before allow-hotplug to enable it during boot.</p>
+<pre tabindex="0"><code>vi /etc/wpa_supplicant/wpa_supplicant.conf
+ifup wlp1s0f0
+vi /etc/network/interfaces
+</code></pre><p>の行のハッシュタグを抜きます。</p>
+<p>リブートして
+grub
+が正しくインストールされているかチェックします。</p>
+<pre tabindex="0"><code>reboot
+</code></pre><h2 id="設定">設定</h2>
+<p>これからはDebianでの設定になります。</p>
+<p>デスクトップ環境はインストールされていないのでお好みのものをインストールします。
+あたくしは無難なGnome（割と好き）</p>
+<p>Install a desktop environment</p>
+<pre tabindex="0"><code>apt-get install -y gnome
+
+Install gnome
+=============
+apt-get install gnome
+/etc/init.d/gdm3 start
+</code></pre><p>Create yourself an unprivileged user</p>
+<pre tabindex="0"><code>useradd -m -c &#39;Firstname Lastname&#39; -s /bin/bash &lt;username&gt;
+passwd &lt;username&gt;
+</code></pre><h1 id="disable-sleep-hibernate-and-suspend-targets">Disable sleep, hibernate and suspend targets</h1>
+<h1 id="asahi-does-not-handle-sleep-well-at-the-moment">asahi does not handle sleep well at the moment</h1>
+<p>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</p>
+<h1 id="xorg">Xorg</h1>
+<h1 id="keyboard-use-capslock-as-additional-ctrl">Keyboard use capslock as additional ctrl</h1>
+<p>cat &gt; /etc/X11/xorg.conf.d/00-keyboard.conf &laquo;&lsquo;EOF&rsquo;
+Section &ldquo;InputClass&rdquo;
+Identifier &ldquo;system-keyboard&rdquo;
+MatchIsKeyboard &ldquo;on&rdquo;
+Option &ldquo;XkbLayout&rdquo; &ldquo;us&rdquo;
+Option &ldquo;XkbModel&rdquo; &ldquo;pc105&rdquo;
+Option &ldquo;XkbVariant&rdquo; &ldquo;de_se_fi&rdquo;
+Option &ldquo;XkbOptions&rdquo; &ldquo;ctrl:nocaps&rdquo;
+EndSection
+EOF</p>
+<h1 id="swap-command-and-option-windows-and-alt-like-on-a-pc-keyboard">Swap command and option (windows and alt like on a pc keyboard)</h1>
+<p>echo 1 &gt; /sys/module/hid_apple/parameters/swap_opt_cmd</p>
+<h1 id="configure-the-touchpad">Configure the touchpad</h1>
+<p>cat &gt; /etc/X11/xorg.conf.d/30-input.conf &laquo;&lsquo;EOF&rsquo;
+Section &ldquo;InputClass&rdquo;
+Identifier &ldquo;libinput touchpad catchall&rdquo;
+MatchIsTouchpad &ldquo;on&rdquo;
+MatchDevicePath &ldquo;/dev/input/event*&rdquo;
+Option &ldquo;Tapping&rdquo; &ldquo;False&rdquo;
+Option &ldquo;TappingDrag&rdquo; &ldquo;False&rdquo;
+Option &ldquo;DisableWhileTyping&rdquo; &ldquo;True&rdquo;
+Option &ldquo;AccelProfile&rdquo; &ldquo;adaptive&rdquo;
+Option &ldquo;AccelSpeed&rdquo; &ldquo;0.3&rdquo;
+Option &ldquo;AccelerationNumerator&rdquo; &ldquo;2&rdquo;
+Option &ldquo;AccelerationDenominator&rdquo; &ldquo;1&rdquo;
+Option &ldquo;AccelerationThreshold&rdquo; &ldquo;4&rdquo;
+Option &ldquo;AdaptiveDeceleration&rdquo; &ldquo;2&rdquo;
+Option &ldquo;NaturalScrolling&rdquo; &ldquo;0&rdquo;
+Option &ldquo;TappingButtonMap&rdquo; &ldquo;lmr&rdquo;
+Option &ldquo;ClickMethod&rdquo; &ldquo;clickfinger&rdquo;
+Driver &ldquo;libinput&rdquo;
+EndSection
+EOF</p>
+<h2 id="boot">Boot</h2>
+<p>Asahiをインストールした後はデフォルトの軌道がAsahiになっています。
+変更を行うにはMacOS上にて行います。</p>
+<p>MacOSをデフォルトに設定して、Asahiを使いたい時はブート・オプションから起動することにします。</p>
+<p><img src="/images/2022-04-12-install-asahi-boot.png" alt="Systemboot"></p>
+<p>ディスクの構成は以下のようになります。
+リカバリーが後ろに移され、新しく３つのパーティションがつくられます。</p>
+<pre tabindex="0"><code>/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         1.0 TB     disk0
+   1:             Apple_APFS_ISC                         524.3 MB   disk0s1
+   2:                 Apple_APFS Container disk4         794.5 GB   disk0s2
+   3: FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF               30.4 GB    disk0s3
+   4:                 Apple_Boot Boot OS X               134.2 MB   disk0s4
+   5: FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF               61.7 GB    disk0s5
+   6:                 Apple_Boot Boot OS X               134.2 MB   disk0s6
+   7:                 Apple_APFS Container disk2         2.5 GB     disk0s7
+   8:                        EFI EFI - DEBIA             512.8 MB   disk0s8
+   9:           Linux Filesystem                         104.7 GB   disk0s9
+  10:        Apple_APFS_Recovery                         5.4 GB     disk0s10
+</code></pre><h2 id="maintenance">Maintenance</h2>
+<p>Debianベースですが、APTでのアップデートには対応していないようなので、
+以下のコマンドラインでアップデートを行います。
+(kernel, m1n1, dtbs, u-boot)</p>
+<pre tabindex="0"><code>curl -sL tg.st/u/ksh | sudo bash
+</code></pre><h2 id="使用感感覚に基づいてます">使用感：感覚に基づいてます。</h2>
+<p>UTM環境でもDebianを動かしていて
+ちょっと比較をしてみる
+かなりさくさく動いてます。</p>
+<p>アルファ・リリースであるので使えない機能がいくつかあります。</p>
+<p>Redditでは Thinkpad X1 Gen9
+と動作感は同じようだとも書いてありました。</p>
+<p>持っているThinkpad T480sと比べても遜色はない感じがします。
+通常の利用に関しては、</p>
+<p>バッテリーの持ちも悪くはないです。
+LEDの明るさの設定ができない割には</p>
+<p>様々な調整が行われたら、駆動時間も伸びそうですし、</p>
+<p>VSCodeが使えないなど、まだいくつか大きい問題もあるみたいですが、</p>
+<h2 id="アンインストール">アンインストール</h2>
+<p>作成された３つのパーティションをターミナルより削除。
+その後FreeSpaceの領域をマージ（こちらはアプリでも可能）すれば元通りになります。</p>
+<pre tabindex="0"><code>/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         1.0 TB     disk0
+   1:             Apple_APFS_ISC                         524.3 MB   disk0s1
+   2:                 Apple_APFS Container disk4         794.5 GB   disk0s2
+   3: FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF               30.4 GB    disk0s3
+   6:                 Apple_Boot Boot OS X               134.2 MB   disk0s6
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   7:                 Apple_APFS Container disk2         2.5 GB     disk0s7
+   8:                        EFI EFI - DEBIA             512.8 MB   disk0s8
+   9:           Linux Filesystem                         104.7 GB   disk0s9
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  10:        Apple_APFS_Recovery                         5.4 GB     disk0s10
+
+% diskutil apfs deleteContainer disk0s7
+% diskutil erasevolume free none disk0s8
+% diskutil erasevolume free none disk0s9
+</code></pre>
+				
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2019/03/netdata-mac/">Netdata ダークモード・モニタリングソフト</a></li>
+	
+	<li><a href="/blog/2016/03/create-fusiondrive/">Fusion drive を作る</a></li>
+	
+	<li><a href="/blog/2015/05/surfacepad/">SurfacePad</a></li>
+	
+	<li><a href="/blog/2015/02/play-ipod-library/">iTuneで他母艦接続のiPod音楽ファイルを再生</a></li>
+	
+	<li><a href="/blog/2013/07/chromium-autoupdate/">Chromiumの半自動更新</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            <div>
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+                    🌻 <a href="/images/bc1q0xqvzuaa6j9289jw8477hy872p0wdtrgzz9c3w.png">bitcoin</a> : bc1q0xqvzuaa6j9289jw8477hy872p0wdtrgzz9c3w<br />
+                    🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
