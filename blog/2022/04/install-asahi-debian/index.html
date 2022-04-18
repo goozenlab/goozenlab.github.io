@@ -211,11 +211,11 @@
             <div class="post-content">
                 <p>なんか最近はごにょごにょと色々と検証中だったりしてます。無為な時間が過ぎていく。。。</p>
 <p>さて、気になっていたAsahi Linuxがアルファ・リリースされて
-勝手知ったるDebianのインストールも可能になったようなので試してみました。</p>
-<p>Asahi Linux:
-<a href="https://github.com/AsahiLinux/docs/wiki/">https://github.com/AsahiLinux/docs/wiki/</a></p>
-<p>Install Debian:
-<a href="https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/">https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/</a></p>
+勝手知ったるDebianのインストールも可能なようなので試してみました。</p>
+<ul>
+<li>Asahi Linux: <a href="https://github.com/AsahiLinux/docs/wiki/">https://github.com/AsahiLinux/docs/wiki/</a></li>
+<li>Install Debian: <a href="https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/">https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian/</a></li>
+</ul>
 <h1 id="事前作業freespaceの確保">事前作業：FreeSpaceの確保</h1>
 <p>ZFSの設定をするついでに領域を作っていたので、そのパーティションをFreeSpaceに変更する。
 パーティションをいじるには<code>diskutil</code>を使うのが好ましいとのことです。
@@ -250,85 +250,91 @@ Finished erase on disk0
    7:        Apple_APFS_Recovery                         5.4 GB     disk0s8
 </code></pre><h2 id="インストール">インストール</h2>
 <p>電源を落として、パワーボタンを長押ししつつ起動します。
-長押しは電源強制オフに使ったりするので違和感が、
-以前はオプション・キーと同時だったんよね。</p>
+長押しは電源強制オフに使っていたで違和感（要らんと思っていたPowerLEDがないのもちと不便）が、、
+以前はオプション・キーと同時で起動ディスクの選択ができたんよね。。</p>
 <p><strong>Options</strong>を選択して、ロードが終了後、メニュー＞ユーティリティより<strong>ターミナル</strong>を起動します。</p>
-<p>ターミナルより以下のAsahiLinuxのインストーラーを起動します。</p>
+<p>ターミナルより以下のAsahiLinuxのインストーラーを起動します。
+Wifiが繋がっているのもなんか不思議ですが不問。</p>
 <pre tabindex="0"><code>% curl -sL https://tg.st/d | sh
 </code></pre><p>流れをちょっと汚いスクリーン・ショットで追ってみます。
-ネットで見たものと少し違っていましたが、指示通りで問題はありませんでした。
+ネットで見たものと少し違っていましたが、指示通りで問題はありませんでした。しっかり読みましょう。
 <strong>Fedora</strong>もインストールができるようですので、レッドハットの方はお試しのほど。</p>
-<p>2022-04-12ーinstall-asahi-debian−</p>
-<h2 id="初期設定">初期設定</h2>
-<p>ちょっとした設定も必要で、
-Wifiの設定とROOTパスワード、Userの追加を行います。</p>
-<pre tabindex="0"><code>passwd
-pwconv
-</code></pre><p>Configure wifi by editing the wpa_supplicant.conf, enabling the interface and remove the # before allow-hotplug to enable it during boot.</p>
-<pre tabindex="0"><code>vi /etc/wpa_supplicant/wpa_supplicant.conf
-ifup wlp1s0f0
-vi /etc/network/interfaces
-</code></pre><p>の行のハッシュタグを抜きます。</p>
-<p>リブートして
-grub
-が正しくインストールされているかチェックします。</p>
-<pre tabindex="0"><code>reboot
-</code></pre><h2 id="設定">設定</h2>
-<p>これからはDebianでの設定になります。</p>
-<p>デスクトップ環境はインストールされていないのでお好みのものをインストールします。
-あたくしは無難なGnome（割と好き）</p>
-<p>Install a desktop environment</p>
-<pre tabindex="0"><code>apt-get install -y gnome
+<p><img src="/images/2022-04-12%E3%83%BCinstall-asahi-debian%E2%88%9200.JPG" alt="Install Asahi Debian">
+<img src="/images/2022-04-12%E3%83%BCinstall-asahi-debian%E2%88%9201.JPG" alt="Install Asahi Debian">
+<img src="/images/2022-04-12%E3%83%BCinstall-asahi-debian%E2%88%9209.JPG" alt="Install Asahi Debian"></p>
+<p>リブート後に追加作業があります。（リブートして、Asahiを選択するともう一度再起動します。（２回の起動音：こちらも違和感。））</p>
+<p><img src="/images/2022-04-12%E3%83%BCinstall-asahi-debian%E2%88%9210.JPG" alt="Install Asahi Debian">
+<img src="/images/2022-04-12%E3%83%BCinstall-asahi-debian%E2%88%9211.JPG" alt="Install Asahi Debian"></p>
+<p>管理者のユーザー名とパスワードを入れて、ベース・システムのインストール作業終了、再起動。</p>
+<h2 id="デビアン初期設定">デビアン初期設定</h2>
+<p>デスクトップ環境の設定されていなので、テキストベースのDebianになってます。
+<code>root</code>（パスワードなし）でログインして設定や必要なアプリケーションをインストールする必要があります。</p>
+<p>まずは、Wifi設定とROOTパスワード、User追加等が必要です。</p>
+<pre tabindex="0"><code>$ passwd
+$ pwconv
+</code></pre><p>Wifi設定はアクセスポイントの設定をし、
+<code>allow-hotplug</code>の行のハッシュタグを抜きます。</p>
+<pre tabindex="0"><code>$ vi /etc/wpa_supplicant/wpa_supplicant.conf
+$ ifup wlp1s0f0
+$ vi /etc/network/interfaces
+</code></pre><p>ユーザーを追加します。</p>
+<pre tabindex="0"><code>$ useradd -m -c &#39;Firstname Lastname&#39; -s /bin/bash &lt;username&gt;
+$ passwd &lt;username&gt;
+</code></pre><p>デスクトップ環境はインストールされていないのでお好みのものをインストールします。
+あたくしは無難なGnome（割と好き）。taskcelも使えました。</p>
+<pre tabindex="0"><code>$ apt-get install gnome
+</code></pre><p>リブートしてgrubが起動するか確認します。</p>
+<pre tabindex="0"><code>$ reboot
+</code></pre><!-- 
+Disable sleep, hibernate and suspend targets
+============================================
+# asahi does not handle sleep well at the moment
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
-Install gnome
-=============
-apt-get install gnome
-/etc/init.d/gdm3 start
-</code></pre><p>Create yourself an unprivileged user</p>
-<pre tabindex="0"><code>useradd -m -c &#39;Firstname Lastname&#39; -s /bin/bash &lt;username&gt;
-passwd &lt;username&gt;
-</code></pre><h1 id="disable-sleep-hibernate-and-suspend-targets">Disable sleep, hibernate and suspend targets</h1>
-<h1 id="asahi-does-not-handle-sleep-well-at-the-moment">asahi does not handle sleep well at the moment</h1>
-<p>sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</p>
-<h1 id="xorg">Xorg</h1>
-<h1 id="keyboard-use-capslock-as-additional-ctrl">Keyboard use capslock as additional ctrl</h1>
-<p>cat &gt; /etc/X11/xorg.conf.d/00-keyboard.conf &laquo;&lsquo;EOF&rsquo;
-Section &ldquo;InputClass&rdquo;
-Identifier &ldquo;system-keyboard&rdquo;
-MatchIsKeyboard &ldquo;on&rdquo;
-Option &ldquo;XkbLayout&rdquo; &ldquo;us&rdquo;
-Option &ldquo;XkbModel&rdquo; &ldquo;pc105&rdquo;
-Option &ldquo;XkbVariant&rdquo; &ldquo;de_se_fi&rdquo;
-Option &ldquo;XkbOptions&rdquo; &ldquo;ctrl:nocaps&rdquo;
+Xorg
+====
+
+# Keyboard use capslock as additional ctrl
+cat > /etc/X11/xorg.conf.d/00-keyboard.conf <<'EOF'
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "us"
+        Option "XkbModel" "pc105"
+        Option "XkbVariant" "de_se_fi"
+        Option "XkbOptions" "ctrl:nocaps"
 EndSection
-EOF</p>
-<h1 id="swap-command-and-option-windows-and-alt-like-on-a-pc-keyboard">Swap command and option (windows and alt like on a pc keyboard)</h1>
-<p>echo 1 &gt; /sys/module/hid_apple/parameters/swap_opt_cmd</p>
-<h1 id="configure-the-touchpad">Configure the touchpad</h1>
-<p>cat &gt; /etc/X11/xorg.conf.d/30-input.conf &laquo;&lsquo;EOF&rsquo;
-Section &ldquo;InputClass&rdquo;
-Identifier &ldquo;libinput touchpad catchall&rdquo;
-MatchIsTouchpad &ldquo;on&rdquo;
-MatchDevicePath &ldquo;/dev/input/event*&rdquo;
-Option &ldquo;Tapping&rdquo; &ldquo;False&rdquo;
-Option &ldquo;TappingDrag&rdquo; &ldquo;False&rdquo;
-Option &ldquo;DisableWhileTyping&rdquo; &ldquo;True&rdquo;
-Option &ldquo;AccelProfile&rdquo; &ldquo;adaptive&rdquo;
-Option &ldquo;AccelSpeed&rdquo; &ldquo;0.3&rdquo;
-Option &ldquo;AccelerationNumerator&rdquo; &ldquo;2&rdquo;
-Option &ldquo;AccelerationDenominator&rdquo; &ldquo;1&rdquo;
-Option &ldquo;AccelerationThreshold&rdquo; &ldquo;4&rdquo;
-Option &ldquo;AdaptiveDeceleration&rdquo; &ldquo;2&rdquo;
-Option &ldquo;NaturalScrolling&rdquo; &ldquo;0&rdquo;
-Option &ldquo;TappingButtonMap&rdquo; &ldquo;lmr&rdquo;
-Option &ldquo;ClickMethod&rdquo; &ldquo;clickfinger&rdquo;
-Driver &ldquo;libinput&rdquo;
+EOF
+
+# Swap command and option (windows and alt like on a pc keyboard)
+echo 1 > /sys/module/hid_apple/parameters/swap_opt_cmd
+
+# Configure the touchpad
+cat > /etc/X11/xorg.conf.d/30-input.conf <<'EOF'
+Section "InputClass"
+  Identifier "libinput touchpad catchall"
+  MatchIsTouchpad "on"
+  MatchDevicePath "/dev/input/event*"
+  Option "Tapping" "False"
+  Option "TappingDrag" "False"
+  Option "DisableWhileTyping" "True"
+  Option "AccelProfile" "adaptive"
+  Option "AccelSpeed" "0.3"
+  Option "AccelerationNumerator" "2"
+  Option "AccelerationDenominator" "1"
+  Option "AccelerationThreshold" "4"
+  Option "AdaptiveDeceleration" "2"
+  Option "NaturalScrolling" "0"
+        Option "TappingButtonMap" "lmr"
+        Option "ClickMethod" "clickfinger"
+  Driver "libinput"
 EndSection
-EOF</p>
+EOF 
+-->
 <h2 id="boot">Boot</h2>
-<p>Asahiをインストールした後はデフォルトの軌道がAsahiになっています。
-変更を行うにはMacOS上にて行います。</p>
-<p>MacOSをデフォルトに設定して、Asahiを使いたい時はブート・オプションから起動することにします。</p>
+<p>Asahiをインストールした後はデフォルトの起動がAsahiになっています。
+変更を行うにはMacOS上にて行います。
+MacOSをデフォルトに設定して、Asahiを使いたい時はブート・オプションから起動することにします。</p>
 <p><img src="/images/2022-04-12-install-asahi-boot.png" alt="Systemboot"></p>
 <p>ディスクの構成は以下のようになります。
 リカバリーが後ろに移され、新しく３つのパーティションがつくられます。</p>
@@ -345,27 +351,24 @@ EOF</p>
    8:                        EFI EFI - DEBIA             512.8 MB   disk0s8
    9:           Linux Filesystem                         104.7 GB   disk0s9
   10:        Apple_APFS_Recovery                         5.4 GB     disk0s10
-</code></pre><h2 id="maintenance">Maintenance</h2>
-<p>Debianベースですが、APTでのアップデートには対応していないようなので、
-以下のコマンドラインでアップデートを行います。
+</code></pre><h2 id="使用感感覚に基づいてます">使用感：感覚に基づいてます。</h2>
+<p>アルファ・リリースなので、スピーカーから音が出ない、液晶の明るさが調整できない等、
+まだ使えない機能がいくつかあります。
+すこしWindowの移動や、ポインターがすこし引っかかる感じありすが、
+アプリの起動などははやいです。日本語環境（Mozc）も問題なし。
+液晶の調整ができずとも、バッテリーは６時間ぐらいは持ちそうです。</p>
+<!-- 様々な調整が行われたら、駆動時間も伸びそうですし、 -->
+<p>VSCodeが使えないとありましたが、VSCodiumはすんなり動いてます。
+MacOS版ではARM対応はしていないのですが、Linuxでは対応していて非常に軽快に動いてます。</p>
+<p>利用している、Mullvadのクライアントが使えないのが問題（コマンドラインツールは自分でビルドすれば使えるとのこと）。
+ちょっとしたトラブルシューティングができる人ならいインストールしてみても良いかもしれませんね。</p>
+<h2 id="maintenance">Maintenance</h2>
+<p>APTでのカーネル・アップデートは対応していないのがちょっと残念なところ、
+Asahik関連のアップデートは以下のコマンドラインで行います。
 (kernel, m1n1, dtbs, u-boot)</p>
 <pre tabindex="0"><code>curl -sL tg.st/u/ksh | sudo bash
-</code></pre><h2 id="使用感感覚に基づいてます">使用感：感覚に基づいてます。</h2>
-<p>UTM環境でもDebianを動かしていて
-ちょっと比較をしてみる
-かなりさくさく動いてます。</p>
-<p>アルファ・リリースであるので使えない機能がいくつかあります。</p>
-<p>Redditでは Thinkpad X1 Gen9
-と動作感は同じようだとも書いてありました。</p>
-<p>持っているThinkpad T480sと比べても遜色はない感じがします。
-通常の利用に関しては、</p>
-<p>バッテリーの持ちも悪くはないです。
-LEDの明るさの設定ができない割には</p>
-<p>様々な調整が行われたら、駆動時間も伸びそうですし、</p>
-<p>VSCodeが使えないなど、まだいくつか大きい問題もあるみたいですが、</p>
+</code></pre><p>Archですと<code>pacman</code>で更新可能のようです。。楽だし、上記のMullvadもyayでビルドしてインストールできるので変えよかな。。</p>
 <h2 id="アンインストール">アンインストール</h2>
-<p>作成された３つのパーティションをターミナルより削除。
-その後FreeSpaceの領域をマージ（こちらはアプリでも可能）すれば元通りになります。</p>
 <pre tabindex="0"><code>/dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                         1.0 TB     disk0
@@ -379,10 +382,11 @@ LEDの明るさの設定ができない割には</p>
    9:           Linux Filesystem                         104.7 GB   disk0s9
    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   10:        Apple_APFS_Recovery                         5.4 GB     disk0s10
-
-% diskutil apfs deleteContainer disk0s7
-% diskutil erasevolume free none disk0s8
-% diskutil erasevolume free none disk0s9
+</code></pre><p>作成された３つのパーティションをターミナルより<code>diskutil</code>で削除します。
+その後FreeSpaceの領域をマージ（こちらはアプリでも可能）すれば元通りになります。</p>
+<pre tabindex="0"><code>diskutil apfs deleteContainer disk0s7
+diskutil erasevolume free none disk0s8
+diskutil erasevolume free none disk0s9
 </code></pre>
 				
 
