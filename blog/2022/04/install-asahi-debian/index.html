@@ -209,7 +209,8 @@
             </div>
 
             <div class="post-content">
-                <p>なんか最近はごにょごにょと色々と検証中だったりしてます。無為な時間が過ぎていく。。。</p>
+                <p><img src="/images/2022-04-19-asahi-debian-syncthing.png" alt="Asahi Debian"></p>
+<p>なんか最近はごにょごにょと色々と検証中だったりしてます。無為な時間が過ぎていく。。。</p>
 <p>さて、気になっていたAsahi Linuxがアルファ・リリースされて
 勝手知ったるDebianのインストールも可能なようなので試してみました。</p>
 <ul>
@@ -354,12 +355,13 @@ MacOSをデフォルトに設定して、Asahiを使いたい時はブート・�
 </code></pre><h2 id="使用感感覚に基づいてます">使用感：感覚に基づいてます。</h2>
 <p>アルファ・リリースなので、スピーカーから音が出ない、液晶の明るさが調整できない等、
 まだ使えない機能がいくつかあります。
-すこしWindowの移動や、ポインターがすこし引っかかる感じありすが、
+すこしWindowの移動や、ポインターがすこし引っかかる感じがありますが、
 アプリの起動などははやいです。日本語環境（Mozc）も問題なし。
 液晶の調整ができずとも、バッテリーは６時間ぐらいは持ちそうです。</p>
 <!-- 様々な調整が行われたら、駆動時間も伸びそうですし、 -->
 <p>VSCodeが使えないとありましたが、VSCodiumはすんなり動いてます。
 MacOS版ではARM対応はしていないのですが、Linuxでは対応していて非常に軽快に動いてます。</p>
+<p><img src="/images/2022-04-19-asahi-debian-vscodium.png" alt="Asahi Debian"></p>
 <p>利用している、Mullvadのクライアントが使えないのが問題（コマンドラインツールは自分でビルドすれば使えるとのこと）。
 ちょっとしたトラブルシューティングができる人ならいインストールしてみても良いかもしれませんね。</p>
 <h2 id="maintenance">Maintenance</h2>
@@ -387,7 +389,28 @@ Asahik関連のアップデートは以下のコマンドラインで行いま�
 <pre tabindex="0"><code>diskutil apfs deleteContainer disk0s7
 diskutil erasevolume free none disk0s8
 diskutil erasevolume free none disk0s9
-</code></pre>
+</code></pre><h2 id="追記">追記</h2>
+<p>インストール時に設定したWifiの変更がデスクトップのネットワークマネージャーではできなかったのですが、
+Redditにて解決方法が載ってました。</p>
+<p><img src="/images/2022-04-19-asahi-debian-wifi-00.png" alt="Asahi Debian"></p>
+<!-- ![Asahi Debian](/images/2022-04-19-asahi-debian-wifi-01.png) -->
+<p>インストール時に設定した
+<code>/etc/network/interfaces</code>
+にて<code>allow-hotplug</code>を今回はハッシュタグを付けて無効化します。</p>
+<p>そして、
+<code>/etc/NetworkManager/NetworkManager.conf</code>
+にてWifi管理をネットワークマネージャーで行う設定にします。（falseをtrueに変更）</p>
+<pre tabindex="0"><code>[ifupdown]
+managed=true
+</code></pre><p>再起動すれば、Wifiの設定をメニューバーより変更が可能になります。</p>
+<!-- そして、Mullvadは
+Wireguardは利用台数が限定されるので割り当てず、
+OpenVPNを使ってアクセスすることにします。
+クライアントは使わずにプロファイルを落として利用します。
+こちらのページを参照にして行いました。
+
+画像日本語を使って -->
+
 				
 
 <h3>See Also</h3>
