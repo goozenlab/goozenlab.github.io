@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -226,7 +224,7 @@ Downloading and unpacking...
                                  Dload  Upload   Total   Spent    Left  Speed
 100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
 Installing...
-Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
 gallo% 
 </code></pre><p>ローカルのアプリが最新であれば、</p>
 <pre tabindex="0"><code>gallo% sh ./chromium_update.sh
@@ -245,20 +243,20 @@ gallo%
 # http://hints.macworld.com/article.php?story=20090604081030791
 
 # setup ------------------------------------------------------------------------
-tempDir=&quot;/tmp/`whoami`/chrome-nightly/&quot;;
-baseURL=&quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&quot;;
-baseName=&quot;chrome-mac&quot;;
-baseExt=&quot;zip&quot;;
-appName=&quot;Chromium.app&quot;;
-appDir=&quot;/Applications&quot;;
+tempDir=&#34;/tmp/`whoami`/chrome-nightly/&#34;;
+baseURL=&#34;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&#34;;
+baseName=&#34;chrome-mac&#34;;
+baseExt=&#34;zip&#34;;
+appName=&#34;Chromium.app&#34;;
+appDir=&#34;/Applications&#34;;
 version=~/.CURRENT_CHROME;
 # ------------------------------------------------------------------------------
 
 
 # ------------------------------------------------------------------------------
 function checkForErrors {
-    if [ &quot;$?&quot; != &quot;0&quot; ]; then
-        echo &quot;Unkown error (see above for help)!&quot;;
+    if [ &#34;$?&#34; != &#34;0&#34; ]; then
+        echo &#34;Unkown error (see above for help)!&#34;;
         exit 3;
     fi
 }
@@ -266,34 +264,34 @@ function checkForErrors {
 
 
 # ------------------------------------------------------------------------------
-echo &quot;Setup...&quot;;
-mkdir -p &quot;$tempDir&quot;;
-cd &quot;$tempDir&quot;;
+echo &#34;Setup...&#34;;
+mkdir -p &#34;$tempDir&#34;;
+cd &#34;$tempDir&#34;;
 checkForErrors;
 # ------------------------------------------------------------------------------
 
 
 # ------------------------------------------------------------------------------
-echo &quot;Checking current version...&quot;;
+echo &#34;Checking current version...&#34;;
 touch $version
 currentVersion=`cat $version`;
 latestVersion=`curl -s $baseURL/LAST_CHANGE`;
 checkForErrors;
-echo &quot; * your/latest build: $currentVersion / $latestVersion&quot;;
-if [ &quot;$currentVersion&quot; == &quot;$latestVersion&quot; ]; then
-    echo &quot; * build $currentVersion is the latest one.&quot;;
+echo &#34; * your/latest build: $currentVersion / $latestVersion&#34;;
+if [ &#34;$currentVersion&#34; == &#34;$latestVersion&#34; ]; then
+    echo &#34; * build $currentVersion is the latest one.&#34;;
     exit 1;
 fi
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-echo &quot;Downloading and unpacking...&quot;;
-chromePID=`ps wwaux|grep -v grep|grep &quot;$appName&quot;|awk '{print $2}'`;
-if [ &quot;$chromePID&quot; != &quot;&quot; ];then
-    echo &quot; * chromium is running. Please stop it first.&quot;;
+echo &#34;Downloading and unpacking...&#34;;
+chromePID=`ps wwaux|grep -v grep|grep &#34;$appName&#34;|awk &#39;{print $2}&#39;`;
+if [ &#34;$chromePID&#34; != &#34;&#34; ];then
+    echo &#34; * chromium is running. Please stop it first.&#34;;
     exit 2;
 fi
-curl -o $baseName.$baseExt &quot;$baseURL/$latestVersion/$baseName.$baseExt&quot;;
+curl -o $baseName.$baseExt &#34;$baseURL/$latestVersion/$baseName.$baseExt&#34;;
 
 unzip -qo $baseName.$baseExt;
 checkForErrors;
@@ -301,7 +299,7 @@ checkForErrors;
 
 
 # ------------------------------------------------------------------------------
-echo &quot;Installing...&quot;;
+echo &#34;Installing...&#34;;
 cp -r $baseName/$appName $appDir
 checkForErrors;
 echo $latestVersion &gt; $version;
@@ -309,9 +307,8 @@ echo $latestVersion &gt; $version;
 
 
 # ------------------------------------------------------------------------------
-echo &quot;Done. You're now running build $latestVersion&quot;;
+echo &#34;Done. You&#39;re now running build $latestVersion&#34;;
 # ------------------------------------------------------------------------------
-
 </code></pre>
 				
 

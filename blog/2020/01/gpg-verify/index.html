@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -228,26 +226,26 @@
 <code>gpg --verify file.sig file</code>
 で行います。署名されたfileがfile.sigと同じディレクトリにある場合,はfileの指定を省略できます.</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
-gpg: assuming signed data in 'neon-user-20200102-1116.iso'
+gpg: assuming signed data in &#39;neon-user-20200102-1116.iso&#39;
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
 gpg:                using RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76
 gpg: key DEACEA00075E1D76: new key but contains no user ID - skipped
 gpg: Total number processed: 1
 gpg:           w/o user IDs: 1
-gpg: Can't check signature: No public key
+gpg: Can&#39;t check signature: No public key
 </code></pre><p>相手の公開鍵が見当たらないのでダウンロードします。<br>
 <code>RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76</code>
 の鍵アドレスを使ってキーサーバーに問い合わせをします。</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --keyserver keys.gnupg.net --recv-key 348C8651206633FD983A8FC4DEACEA00075E1D76
-gpg: key DEACEA00075E1D76: public key &quot;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&quot; imported
+gpg: key DEACEA00075E1D76: public key &#34;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&#34; imported
 gpg: Total number processed: 1
 gpg:               imported: 1
 </code></pre><p>そしてもう一度実行します。今回はエラーなく終了。</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
-gpg: assuming signed data in 'neon-user-20200102-1116.iso'
+gpg: assuming signed data in &#39;neon-user-20200102-1116.iso&#39;
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
 gpg:                using RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76
-gpg: Good signature from &quot;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&quot; [unknown]
+gpg: Good signature from &#34;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&#34; [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 348C 8651 2066 33FD 983A  8FC4 DEAC EA00 075E 1D76

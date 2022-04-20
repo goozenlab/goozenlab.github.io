@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -229,7 +227,7 @@ viewDidLoadに通知の設定する事で可能になる。<code>Setting.bundle<
 <pre tabindex="0"><code>// Notification Center
 let app: UIApplication = UIApplication.sharedApplication()
 NSNotificationCenter.defaultCenter().addObserver(self, 
-        selector: &quot;applicationWillEnterForeground:&quot;, name: UIApplicationWillEnterForegroundNotification, 
+        selector: &#34;applicationWillEnterForeground:&#34;, name: UIApplicationWillEnterForegroundNotification, 
         object: app)
 </code></pre><p>と処理を追加する。</p>
 <pre tabindex="0"><code>func applicationWillEnterForeground(notification: NSNotification) {
@@ -238,7 +236,7 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 }
 </code></pre><h2 id="スリープに移行時">スリープに移行時</h2>
 <p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。</p>
-<pre tabindex="0"><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &quot;applicationDidEnterBackground:&quot;, name: UIApplicationDidEnterBackgroundNotification, object: app)
+<pre tabindex="0"><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &#34;applicationDidEnterBackground:&#34;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 </code></pre>
 				
 

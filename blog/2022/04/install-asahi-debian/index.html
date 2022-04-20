@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -252,7 +250,7 @@ Finished erase on disk0
 </code></pre><h2 id="インストール">インストール</h2>
 <p>電源を落として、パワーボタンを長押ししつつ起動します。
 長押しは電源強制オフに使っていたで違和感（要らんと思っていたPowerLEDがないのもちと不便）が、、
-以前はオプション・キーと同時で起動ディスクの選択ができたんよね。。</p>
+以前は起動音を聞いた後にオプション・キーで起動ディスクの選択ができたんよね。なんで変えたんだろか？？。</p>
 <p><strong>Options</strong>を選択して、ロードが終了後、メニュー＞ユーティリティより<strong>ターミナル</strong>を起動します。</p>
 <p>ターミナルより以下のAsahiLinuxのインストーラーを起動します。
 Wifiが繋がっているのもなんか不思議ですが不問。</p>
@@ -279,7 +277,7 @@ $ pwconv
 $ ifup wlp1s0f0
 $ vi /etc/network/interfaces
 </code></pre><p>ユーザーを追加します。</p>
-<pre tabindex="0"><code>$ useradd -m -c 'Firstname Lastname' -s /bin/bash &lt;username&gt;
+<pre tabindex="0"><code>$ useradd -m -c &#39;Firstname Lastname&#39; -s /bin/bash &lt;username&gt;
 $ passwd &lt;username&gt;
 </code></pre><p>デスクトップ環境はインストールされていないのでお好みのものをインストールします。
 あたくしは無難なGnome（割と好き）。taskcelも使えました。</p>

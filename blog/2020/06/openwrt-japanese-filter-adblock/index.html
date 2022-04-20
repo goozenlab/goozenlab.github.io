@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -222,12 +220,12 @@ adblock.blacklist-opkg  adblock.monitor         adblock.whitelist
 root@OpenWrt:~＄ vi /etc/adblock/adblock.sources
 </code></pre><p>エントリーを追加します。
 ルールのところはちょっとわからないのですが、とりあえずいくつかある選択肢から以下のルールを追加しました。</p>
-<pre tabindex="0"><code>        &quot;tofu&quot;: {
-                &quot;url&quot;: &quot;https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt&quot;,
-                &quot;rule&quot;: &quot;BEGIN{FS=\&quot;[|^]\&quot;}/^\\|\\|([[:alnum:]_-]{1,63}\\.)+[[:alpha:]]+\\^(\\$third-party)?$/{print tolower($3)}&quot;,
-                &quot;size&quot;: &quot;L&quot;,
-                &quot;focus&quot;: &quot;Japanese ads&quot;,
-                &quot;descurl&quot;: &quot;https://tofukko.r.ribbon.to&quot;
+<pre tabindex="0"><code>        &#34;tofu&#34;: {
+                &#34;url&#34;: &#34;https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt&#34;,
+                &#34;rule&#34;: &#34;BEGIN{FS=\&#34;[|^]\&#34;}/^\\|\\|([[:alnum:]_-]{1,63}\\.)+[[:alpha:]]+\\^(\\$third-party)?$/{print tolower($3)}&#34;,
+                &#34;size&#34;: &#34;L&#34;,
+                &#34;focus&#34;: &#34;Japanese ads&#34;,
+                &#34;descurl&#34;: &#34;https://tofukko.r.ribbon.to&#34;
         },
 </code></pre><p>圧縮して元に戻します。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ gzip /etc/adblock/adblock.sources
@@ -312,9 +310,7 @@ config source 'easyPrivacy'
 	option enabled '1'
 
 
---><blockquote>
-</blockquote>
-
+-->
 				
 
 <h3>See Also</h3>

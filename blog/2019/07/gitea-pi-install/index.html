@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -216,10 +214,10 @@ gitサーバーことgiteaをインストールしました。</p>
 <p>サービスを動かすためのユーザーを作ります。<code>--disabled-password</code>のオプションをつけることでログインはできません。giteaを動かすためだけのユーザーになります。</p>
 <pre tabindex="0"><code>pi@raspberrypi:~ $ sudo -Es
 root@raspberrypi:~ # sudo adduser --system --shell /bin/bash --group --disabled-password --home /home/git git
-Adding system user `git' (UID 111) ...
-Adding new group `git' (GID 116) ...
-Adding new user `git' (UID 111) with group `git' ...
-Creating home directory `/home/git' ...
+Adding system user `git&#39; (UID 111) ...
+Adding new group `git&#39; (GID 116) ...
+Adding new user `git&#39; (UID 111) with group `git&#39; ...
+Creating home directory `/home/git&#39; ...
 </code></pre><p>そして必要なフォルダーを作成し運用環境を整えます。</p>
 <pre tabindex="0"><code>root@raspberrypi:~ # mkdir -p /var/lib/gitea/{custom,data,indexers,public,log}
 root@raspberrypi:~ # chown git:git /var/lib/gitea/{data,indexers,log}
@@ -236,7 +234,7 @@ root@raspberrypi:~ # chmod 770 /etc/gitea
 <p>作業は以下’の通り、</p>
 <pre tabindex="0"><code>root@raspberrypi:~ # mysql -u root
 MariaDB [(none)]&gt; CREATE DATABASE gitea_db;
-MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON gitea_db.* TO 'gitea-user'@'localhost' IDENTIFIED BY &quot;git-tea-user&quot;;
+MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON gitea_db.* TO &#39;gitea-user&#39;@&#39;localhost&#39; IDENTIFIED BY &#34;git-tea-user&#34;;
 MariaDB [(none)]&gt; exit
 </code></pre><h2 id="バイナリーのダウンロード">バイナリーのダウンロード</h2>
 <p>デビアンではパッケージに登録されているも、メンテナンスはされていないようなのです。

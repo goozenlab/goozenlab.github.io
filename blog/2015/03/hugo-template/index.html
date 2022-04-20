@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -212,16 +210,15 @@
 <p>このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。</p>
 <pre tabindex="0"><code>---
 layout: app_page
-title: &quot;(a)のちょっと詳しい使い方&quot;
-subtitle: &quot;タスク管理をマークダウンで&quot;
-appid: &quot;929324285&quot;
-date: &quot;2015-01-25&quot;
-updated: &quot;2015-01-25&quot;
+title: &#34;(a)のちょっと詳しい使い方&#34;
+subtitle: &#34;タスク管理をマークダウンで&#34;
+appid: &#34;929324285&#34;
+date: &#34;2015-01-25&#34;
+updated: &#34;2015-01-25&#34;
 footer: true
 ---
 
 # アプリページのオクトプレスより移行のyaml
-
 </code></pre><p><code>layout: app_page</code> がある事で <code>layout/_default/app_page.html</code> を探しにいき、もしくはコンテンツファイルを別のフォルダー<code>iapp</code>に入れておくと、<code>layout: app_page</code>が無くても<code>layout/iapp/single.html</code>があれば優先して使われるよう。</p>
 <p><img src="/images/2015-03-07_hugo-template.png" alt="Hugo Template">
 <img src="/images/2015-03-07_hugo-template2.png" alt="Hugo Template"></p>
@@ -229,7 +226,7 @@ footer: true
 <p>yaml内にあるスマートバナー広告で使う<code>appid: &quot;929324285&quot;</code>は
 以下のようにして <code>partials/header.html</code> に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、<code>.Params</code>を使うのが正解のようです。</p>
 <pre tabindex="0"><code>{{ if .Params.appid }}
-  &lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id={{ .Params.appid }}&quot;&gt;
+  &lt;meta name=&#34;apple-itunes-app&#34; content=&#34;app-id={{ .Params.appid }}&#34;&gt;
 {{ end }}
 </code></pre><p>しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</p>
 

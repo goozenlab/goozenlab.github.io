@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -259,8 +257,8 @@ root@OpenWrt:~$ chmod 770 /opt/gitea/etc/
 CREATE ROLE gitea WITH LOGIN PASSWORD 'gitea';
 CREATE DATABASE gitea WITH OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';
  -->
-<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &quot;CREATE USER gitea WITH PASSWORD 'gitea';&quot;
-root@openwrt:~% sudo -u postgres psql -c &quot;CREATE DATABASE gitea OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';&quot;
+<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &#34;CREATE USER gitea WITH PASSWORD &#39;gitea&#39;;&#34;
+root@openwrt:~% sudo -u postgres psql -c &#34;CREATE DATABASE gitea OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE &#39;en_US.UTF-8&#39; LC_CTYPE &#39;en_US.UTF-8&#39;;&#34;
 </code></pre><h2 id="アプリケーションのダウンロード">アプリケーションのダウンロード</h2>
 <p>カーネルは64ビットの<code>aarch64</code>なのでarm64バージョンをダウンロードして使います。</p>
 <pre tabindex="0"><code>root@OpenWrt:~$ mkdir -p /opt/gitea/bin
@@ -333,7 +331,7 @@ START=80
 STOP=20
 
 start() {
-        sudo -u git /bin/ash -c 'GITEA_WORK_DIR=/opt/gitea/ /opt/gitea/bin/gitea web -c /opt/gitea/etc/app.ini' &amp;
+        sudo -u git /bin/ash -c &#39;GITEA_WORK_DIR=/opt/gitea/ /opt/gitea/bin/gitea web -c /opt/gitea/etc/app.ini&#39; &amp;
 }
 
 stop() {

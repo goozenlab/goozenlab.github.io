@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -217,8 +215,8 @@
 <h2 id="使用例ユーチューブタグ">使用例（ユーチューブタグ）</h2>
 <p>youtubeの動画を埋め込むタグを作ります。フィル名は <code>youtube.html</code>になります。そのファイルを<code>/layouts/shortcodes/</code>に保存します。</p>
 <p><code>youtube.html</code>の中身は以下、<code>{{ index .Params 0 }}</code>でパラメータを読み込みます。</p>
-<pre tabindex="0"><code>&lt;div class=&quot;embed video-player&quot;&gt;
-&lt;iframe class=&quot;youtube-player&quot; type=&quot;text/html&quot; width=&quot;640&quot; height=&quot;385&quot; src=&quot;http://www.youtube.com/embed/{{ index .Params 0 }}&quot; allowfullscreen frameborder=&quot;0&quot;&gt;
+<pre tabindex="0"><code>&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/{{ index .Params 0 }}&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 </code></pre><p>投稿記事へショートコードの埋め込みはシンプルで、**{{ &lt; youtube _WEMtYj2pJc &gt; }}**を挿入するだけです。
@@ -230,11 +228,11 @@
 </div>
 
 <p>書き出されるコードは以下。</p>
-<pre tabindex="0"><code>&lt;div class=&quot;embed video-player&quot;&gt;
-    &lt;iframe class=&quot;youtube-player&quot; type=&quot;text/html&quot;
-        width=&quot;640&quot; height=&quot;385&quot;
-        src=&quot;http://www.youtube.com/embed/_WEMtYj2pJc&quot;
-        allowfullscreen frameborder=&quot;0&quot;&gt;
+<pre tabindex="0"><code>&lt;div class=&#34;embed video-player&#34;&gt;
+    &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34;
+        width=&#34;640&#34; height=&#34;385&#34;
+        src=&#34;http://www.youtube.com/embed/_WEMtYj2pJc&#34;
+        allowfullscreen frameborder=&#34;0&#34;&gt;
     &lt;/iframe&gt;
 &lt;/div&gt;
 </code></pre><p>複数のパラメーターをとってきたりもできるらしいので、もう少し細かいことを知りたい方は本家の<a href="https://gohugo.io/content-management/shortcodes/">ドキュメント</a> を参照してください。</p>

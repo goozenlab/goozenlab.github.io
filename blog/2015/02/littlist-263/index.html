@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -216,29 +214,28 @@
 <pre tabindex="0"><code>agvtool bump
 # agvtool bump -all #Info.plistも更新したいとき
 
-infoPlistFileSource=&quot;${SRCROOT}/${INFOPLIST_FILE}&quot;
-#infoPlistFileDestination=&quot;${TEMP_DIR}/Preprocessed-Info.plist&quot;
-rootPlistFileDestination=&quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&quot;
+infoPlistFileSource=&#34;${SRCROOT}/${INFOPLIST_FILE}&#34;
+#infoPlistFileDestination=&#34;${TEMP_DIR}/Preprocessed-Info.plist&#34;
+rootPlistFileDestination=&#34;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist&#34;
 
-if [ ${CONFIGURATION} = &quot;Debug&quot; ]; then
+if [ ${CONFIGURATION} = &#34;Debug&#34; ]; then
     # Version 2.6.3
     # Build @ 2014-01-16 12:16 (dev.298)
-    versionPrefix=&quot; (dev.&quot;
-    date=$(date &quot;+@ %Y-%m-%d %H:%M&quot;)
-    APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)
-    BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&quot;)&quot;
+    versionPrefix=&#34; (dev.&#34;
+    date=$(date &#34;+@ %Y-%m-%d %H:%M&#34;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &#34;Print CFBundleShortVersionString&#34; $infoPlistFileSource)
+    BUILD_NUMBER=$date$versionPrefix${CURRENT_PROJECT_VERSION}&#34;)&#34;
 else
     # Version 2.6.3 @ 2014.01.16
     # Build  276
-    date=$(date &quot;+ @ %Y.%m.%d&quot;)
-    APP_VERSION=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleShortVersionString&quot; $infoPlistFileSource)$date
-    BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; $infoPlistFileSource)
+    date=$(date &#34;+ @ %Y.%m.%d&#34;)
+    APP_VERSION=$(/usr/libexec/PlistBuddy -c &#34;Print CFBundleShortVersionString&#34; $infoPlistFileSource)$date
+    BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c &#34;Print CFBundleVersion&#34; $infoPlistFileSource)
 fi
 
 # ここのPreferenceSpecifiers:16, 17は各アプリによって変更
-/usr/libexec/PlistBuddy -c &quot;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&quot; $rootPlistFileDestination
-/usr/libexec/PlistBuddy -c &quot;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&quot; $rootPlistFileDestination
-
+/usr/libexec/PlistBuddy -c &#34;Set :PreferenceSpecifiers:16:DefaultValue $APP_VERSION&#34; $rootPlistFileDestination
+/usr/libexec/PlistBuddy -c &#34;Set :PreferenceSpecifiers:17:DefaultValue $BUILD_NUMBER&#34; $rootPlistFileDestination
 </code></pre><p>検証機で開発中には、こんな感じで、いつビルドしたかを把握でるようにして、アプストアーにあげる際には、ビルド番号はあまり利用者には関係ないので、シンプルに。逆にバージョンはいくつで何時作られたかが分かるようにビルドした日付を追加してます。</p>
 <p><img src="/images/2015-01-26_versionning_dev.png" alt="Dev">
 <img src="/images/2015-01-26_versionning_app.png" alt="App"></p>

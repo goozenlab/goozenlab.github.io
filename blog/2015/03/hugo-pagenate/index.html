@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -209,19 +207,18 @@
             <div class="post-content">
                 <p>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。</p>
 <p><code>index.html</code>の<code>{{ range $name, $page := .Site.Recent }}</code> の所を <code>{{ range $name, $page := .Paginator.Pages }}</code> に変更。</p>
-<pre tabindex="0"><code>&lt;div class=&quot;five columns offset-by-two&quot;&gt;
-  &lt;p style=&quot;margin-bottom:1em;font-weight:bold;color:#333&quot;&gt;posts:&lt;/p&gt;
+<pre tabindex="0"><code>&lt;div class=&#34;five columns offset-by-two&#34;&gt;
+  &lt;p style=&#34;margin-bottom:1em;font-weight:bold;color:#333&#34;&gt;posts:&lt;/p&gt;
 
-  &lt;ul class=&quot;posts&quot;&gt;
+  &lt;ul class=&#34;posts&#34;&gt;
     {{ $baseurl := .Site.BaseUrl }}
     {{ range $name, $page := .Site.Recent }} 
-    {{ if eq .Type &quot;post&quot; }}        
+    {{ if eq .Type &#34;post&#34; }}        
     &lt;li&gt;
-      &lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ $page.Title }}&lt;/a&gt;
+      &lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ $page.Title }}&lt;/a&gt;
 </code></pre><p>そして、<code>config.toml</code> に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。</p>
 <pre tabindex="0"><code># number of posts shows on MainPage
 paginate = 28
-
 </code></pre><p>yamlだtomlだと、一体yamlの何が問題なんだろうか。。</p>
 <p>で、とりあえずですが最低限の形が整った。えらく軽いページになりました。移行の作業は苦痛以外何者でもないので、このシンプル路線で当分行きます。あとはブログ更新時にちょっとずつ調整していこうかなと思ってます。でも、nvALTとの連携が切れてしまったのがなにげに痛い。。が、<code>rsync</code> と <code>hugo server --buildDrafts --theme=default</code> をまとめてスクリプトで動かせば良いだけのことか。。</p>
 <p><img src="/images/2015-03-05-pokhara-damside2.jpg" alt="Pokhara"></p>

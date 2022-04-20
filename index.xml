@@ -8,7 +8,25 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Apr 2022 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Apr 2022 22:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacBook Pro14: レビュー</title>
+      <link>https://goozenlab.github.io/blog/2022/04/review-mbp14-2021/</link>
+      <pubDate>Sat, 23 Apr 2022 22:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/04/review-mbp14-2021/</guid>
+      <description>今更ながらちょっとした感想や使用感を書いてみる。 全体の印象は、ちょっとがっしりして重いかな。 アップル製品全部に言えますが、作りは良いです。 重</description>
+    </item>
+    
+    <item>
+      <title>Brew：アプリのダウングレード方法</title>
+      <link>https://goozenlab.github.io/blog/2022/04/brew-downgrade/</link>
+      <pubDate>Thu, 21 Apr 2022 13:00:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/04/brew-downgrade/</guid>
+      <description>結局自分の勘違いで解決はしてしまったのですが、BrewでインストールしたHugoをダウングレードしました。 多分また使いそうな感じがするので、</description>
+    </item>
+    
     <item>
       <title>Asahi Linux (Debian) のインストール</title>
       <link>https://goozenlab.github.io/blog/2022/04/install-asahi-debian/</link>
@@ -160,15 +178,6 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/05/transaction-fee/</guid>
       <description>ビットコインの送金手数料の下限を適当に調査？まとめ？て見ました。 まずは、ほぼ最低手数料の 2sat/b で送金。 ビットコインでは送金の手続きをすると、その</description>
-    </item>
-    
-    <item>
-      <title>「審判」 カフカ</title>
-      <link>https://goozenlab.github.io/books/400324382x/</link>
-      <pubDate>Sat, 01 May 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/books/400324382x/</guid>
-      <description>400324382X 「審判」 カフカ 2005&amp;#24180;5&amp;#26376;29&amp;#26085;</description>
     </item>
     
     <item>
@@ -2122,7 +2131,7 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</guid>
-      <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;quot;/run.sh&amp;quot; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;quot;/portainer&amp;quot; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;quot;/hello&amp;quot; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに</description>
+      <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;#34;/run.sh&amp;#34; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;#34;/portainer&amp;#34; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;#34;/hello&amp;#34; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに</description>
     </item>
     
     <item>
@@ -2303,6 +2312,1212 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/cheet/terminal/</guid>
       <description>[command：⌘ ]・[control：⌃ ]・[shift：⇧ ]・[opttion：⌥ ] 移動 ⌃ +b (back)：&amp;lt;- 左方向へ移動：：右</description>
+    </item>
+    
+    <item>
+      <title>「いき」の構造</title>
+      <link>https://goozenlab.github.io/books/4003314611/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003314611/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>アブサロム アブサロム！</title>
+      <link>https://goozenlab.github.io/books/4061976214/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061976214/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>あらくれ</title>
+      <link>https://goozenlab.github.io/books/4003102215/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003102215/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>アンチ・オイディプス</title>
+      <link>https://goozenlab.github.io/books/4309240828/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4309240828/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>エチカ</title>
+      <link>https://goozenlab.github.io/books/4003361547/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003361547/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>エロ事師たち</title>
+      <link>https://goozenlab.github.io/books/4101112010/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101112010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>オイディプス王</title>
+      <link>https://goozenlab.github.io/books/4003210522/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003210522/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>オデュッセイア</title>
+      <link>https://goozenlab.github.io/books/4003210247/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003210247/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>オリエンタリズム</title>
+      <link>https://goozenlab.github.io/books/4582760112/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4582760112/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ガリバー旅行記</title>
+      <link>https://goozenlab.github.io/books/4061963279/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061963279/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ガルガンチュアとパンタグリュエルの物語</title>
+      <link>https://goozenlab.github.io/books/4003250214/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003250214/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ガンジー自伝</title>
+      <link>https://goozenlab.github.io/books/4122043301/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122043301/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>グラマトロジーについて</title>
+      <link>https://goozenlab.github.io/books/4329000296/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4329000296/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ゴドーを待ちながら</title>
+      <link>https://goozenlab.github.io/books/4560034966/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4560034966/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>シュルレアリスム宣言</title>
+      <link>https://goozenlab.github.io/books/4003259017/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003259017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ジョンケージ小鳥たちのために</title>
+      <link>https://goozenlab.github.io/books/4791750829/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4791750829/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ソラリスの陽のもとに</title>
+      <link>https://goozenlab.github.io/books/4150102376/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4150102376/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ツェラン詩集</title>
+      <link>https://goozenlab.github.io/books/4783728194/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4783728194/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ドグラ・マグラ</title>
+      <link>https://goozenlab.github.io/books/4041366038/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4041366038/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ドストエフスキーの詩学</title>
+      <link>https://goozenlab.github.io/books/4480081909/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4480081909/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ドン・キホーテ</title>
+      <link>https://goozenlab.github.io/books/4003272110/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003272110/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ハムレット</title>
+      <link>https://goozenlab.github.io/books/4003220498/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003220498/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>パルムの僧院</title>
+      <link>https://goozenlab.github.io/books/4003252659/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003252659/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>パンセ</title>
+      <link>https://goozenlab.github.io/books/4122000602/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122000602/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ひかりごけ</title>
+      <link>https://goozenlab.github.io/books/410109103x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/410109103x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ファウスト</title>
+      <link>https://goozenlab.github.io/books/4003240626/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003240626/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>フェルディドゥルケ</title>
+      <link>https://goozenlab.github.io/books/458276522x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/458276522x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ブラウン神父の童心</title>
+      <link>https://goozenlab.github.io/books/4488110010/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4488110010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ブレイク詩集</title>
+      <link>https://goozenlab.github.io/books/4003221729/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003221729/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>プロテスタンチィスムの倫理と資本主義の精神</title>
+      <link>https://goozenlab.github.io/books/4003420934/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003420934/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ヘルダーリン詩集</title>
+      <link>https://goozenlab.github.io/books/4003241134/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003241134/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ボヴァリー夫人</title>
+      <link>https://goozenlab.github.io/books/4102085017/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4102085017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>モデラート・カンタービレ</title>
+      <link>https://goozenlab.github.io/books/4309460135/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4309460135/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ユートピア</title>
+      <link>https://goozenlab.github.io/books/4003220218/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003220218/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ユリシーズ</title>
+      <link>https://goozenlab.github.io/books/4087610047/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4087610047/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ランボー詩集</title>
+      <link>https://goozenlab.github.io/books/4480031642/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4480031642/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>リバァイアサン</title>
+      <link>https://goozenlab.github.io/books/4003400410/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003400410/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ルバイヤート</title>
+      <link>https://goozenlab.github.io/books/4003278313/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003278313/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>レオナルド・ダ・ヴィンチの手記</title>
+      <link>https://goozenlab.github.io/books/4003355016/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003355016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>われら</title>
+      <link>https://goozenlab.github.io/books/4003264517/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003264517/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>一般言語学講義</title>
+      <link>https://goozenlab.github.io/books/4000000896/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4000000896/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>万延元年のフットボール</title>
+      <link>https://goozenlab.github.io/books/4061960148/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061960148/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>不思議の国のアリス</title>
+      <link>https://goozenlab.github.io/books/4102401016/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4102401016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>世は如何にして基督信徒になり乎</title>
+      <link>https://goozenlab.github.io/books/4003311922/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003311922/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>人生に相渉るとは何の謂ぞ</title>
+      <link>https://goozenlab.github.io/books/401061269x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/401061269x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>仮面の告白</title>
+      <link>https://goozenlab.github.io/books/4101050015/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101050015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>俘虜記</title>
+      <link>https://goozenlab.github.io/books/4101065012/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101065012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>全体主義の起源</title>
+      <link>https://goozenlab.github.io/books/4622020181/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4622020181/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>円陣を組む女たち</title>
+      <link>https://goozenlab.github.io/books/4122000831/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122000831/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>冥土・旅順入城式</title>
+      <link>https://goozenlab.github.io/books/4003112717/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003112717/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>吉岡実詩集</title>
+      <link>https://goozenlab.github.io/books/4783707138/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4783707138/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>君主論</title>
+      <link>https://goozenlab.github.io/books/4122040124/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122040124/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>告白</title>
+      <link>https://goozenlab.github.io/books/4003380517/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003380517/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>唐詩選</title>
+      <link>https://goozenlab.github.io/books/4003200918/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003200918/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>啓蒙の弁証法</title>
+      <link>https://goozenlab.github.io/books/4000040545/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4000040545/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>嘔吐</title>
+      <link>https://goozenlab.github.io/books/4409130196/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4409130196/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>堕落論</title>
+      <link>https://goozenlab.github.io/books/4101024022/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101024022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>外套</title>
+      <link>https://goozenlab.github.io/books/4003260538/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003260538/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>夜の果ての旅</title>
+      <link>https://goozenlab.github.io/books/4122043042/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122043042/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>大転換</title>
+      <link>https://goozenlab.github.io/books/4492370293/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4492370293/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>失われた時を求めて</title>
+      <link>https://goozenlab.github.io/books/4480027211/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4480027211/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>存在と時間</title>
+      <link>https://goozenlab.github.io/books/4480081372/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4480081372/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>審判</title>
+      <link>https://goozenlab.github.io/books/400324382x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/400324382x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小僧の神様</title>
+      <link>https://goozenlab.github.io/books/4003104625/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003104625/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小説神髄</title>
+      <link>https://goozenlab.github.io/books/4003100417/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003100417/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>嵐が丘</title>
+      <link>https://goozenlab.github.io/books/410209704x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/410209704x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>復興期の精神</title>
+      <link>https://goozenlab.github.io/books/4061587501/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061587501/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>悪の華</title>
+      <link>https://goozenlab.github.io/books/4087601978/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4087601978/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>悪徳の栄え</title>
+      <link>https://goozenlab.github.io/books/4309460771/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4309460771/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>悪霊</title>
+      <link>https://goozenlab.github.io/books/4102010173/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4102010173/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>想像の共同体</title>
+      <link>https://goozenlab.github.io/books/487188516x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/487188516x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>成熟と喪失</title>
+      <link>https://goozenlab.github.io/books/4061962434/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061962434/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我が輩は猫である</title>
+      <link>https://goozenlab.github.io/books/4101010013/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101010013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>或る女</title>
+      <link>https://goozenlab.github.io/books/4101042055/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101042055/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>押絵と旅をする男</title>
+      <link>https://goozenlab.github.io/books/4334738206/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4334738206/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>挟み撃ち</title>
+      <link>https://goozenlab.github.io/books/4061976125/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061976125/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>政治神学</title>
+      <link>https://goozenlab.github.io/books/4624300130/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4624300130/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文学空間</title>
+      <link>https://goozenlab.github.io/books/4329000989/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4329000989/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>斜陽</title>
+      <link>https://goozenlab.github.io/books/4167151111/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4167151111/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>方法序論</title>
+      <link>https://goozenlab.github.io/books/4003361318/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003361318/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>春琴抄</title>
+      <link>https://goozenlab.github.io/books/4101005044/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101005044/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>時代閉塞の現状</title>
+      <link>https://goozenlab.github.io/books/4003105451/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003105451/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>月に吠える</title>
+      <link>https://goozenlab.github.io/books/404112106x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/404112106x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>木綿以前の事</title>
+      <link>https://goozenlab.github.io/books/4003313836/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003313836/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>村の家</title>
+      <link>https://goozenlab.github.io/books/4061962655/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061962655/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>東洋の思想</title>
+      <link>https://goozenlab.github.io/books/406158720x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/406158720x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>枯木灘</title>
+      <link>https://goozenlab.github.io/books/4309400027/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4309400027/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>桜の園</title>
+      <link>https://goozenlab.github.io/books/4003262255/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003262255/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>楢山節考</title>
+      <link>https://goozenlab.github.io/books/4101136017/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101136017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>様々なる意匠</title>
+      <link>https://goozenlab.github.io/books/4106435411/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4106435411/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>歌よみに与ふる書</title>
+      <link>https://goozenlab.github.io/books/4003101367/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003101367/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>武蔵野</title>
+      <link>https://goozenlab.github.io/books/4101035016/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101035016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>死に至る病</title>
+      <link>https://goozenlab.github.io/books/4121600541/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4121600541/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>死の棘</title>
+      <link>https://goozenlab.github.io/books/4101164037/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101164037/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>死者の書</title>
+      <link>https://goozenlab.github.io/books/4122034426/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4122034426/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>死霊</title>
+      <link>https://goozenlab.github.io/books/4061983210/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061983210/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>泥棒日記</title>
+      <link>https://goozenlab.github.io/books/4102119019/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4102119019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>浮雲</title>
+      <link>https://goozenlab.github.io/books/4101014035/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101014035/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>濁り得</title>
+      <link>https://goozenlab.github.io/books/4101016011/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101016011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>特性の無い男</title>
+      <link>https://goozenlab.github.io/books/4879841242/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4879841242/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>玉勝間</title>
+      <link>https://goozenlab.github.io/books/4003021924/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003021924/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>田村隆一詩集</title>
+      <link>https://goozenlab.github.io/books/4783707006/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4783707006/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>白鯨</title>
+      <link>https://goozenlab.github.io/books/4003230817/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003230817/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>百年の孤独</title>
+      <link>https://goozenlab.github.io/books/4105090089/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4105090089/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>盗まれた手紙</title>
+      <link>https://goozenlab.github.io/books/4808624915/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4808624915/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>真夜中の子供たち</title>
+      <link>https://goozenlab.github.io/books/415207650x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/415207650x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>破戒</title>
+      <link>https://goozenlab.github.io/books/4101055076/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101055076/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社会契約論</title>
+      <link>https://goozenlab.github.io/books/4003362330/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003362330/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>神曲</title>
+      <link>https://goozenlab.github.io/books/4087610012/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4087610012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>神聖喜劇</title>
+      <link>https://goozenlab.github.io/books/4334733433/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4334733433/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>福翁自伝</title>
+      <link>https://goozenlab.github.io/books/4003310225/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003310225/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>精神と自然</title>
+      <link>https://goozenlab.github.io/books/4783510741/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4783510741/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>精神分析の四つの基本概念</title>
+      <link>https://goozenlab.github.io/books/4000236210/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4000236210/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>純粋理性批判</title>
+      <link>https://goozenlab.github.io/books/4003362535/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003362535/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>胆大小心録</title>
+      <link>https://goozenlab.github.io/books/4003022025/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003022025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>舞姫</title>
+      <link>https://goozenlab.github.io/books/4003100603/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003100603/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>荒地</title>
+      <link>https://goozenlab.github.io/books/4469240648/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4469240648/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>蒲団</title>
+      <link>https://goozenlab.github.io/books/4101079013/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101079013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>西田幾多郎哲学論集</title>
+      <link>https://goozenlab.github.io/books/4003312449/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003312449/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>言葉と物</title>
+      <link>https://goozenlab.github.io/books/410506701x/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/410506701x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>詩学</title>
+      <link>https://goozenlab.github.io/books/4003360494/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003360494/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>資本論</title>
+      <link>https://goozenlab.github.io/books/4003412516/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003412516/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>赤光</title>
+      <link>https://goozenlab.github.io/books/4003104412/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003104412/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>転向論</title>
+      <link>https://goozenlab.github.io/books/4061961012/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061961012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>近代世界システム</title>
+      <link>https://goozenlab.github.io/books/4000047329/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4000047329/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>野生の思考</title>
+      <link>https://goozenlab.github.io/books/4622019728/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4622019728/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>銀河鉄道の夜</title>
+      <link>https://goozenlab.github.io/books/4101092052/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101092052/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阿Q正伝</title>
+      <link>https://goozenlab.github.io/books/4061976168/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4061976168/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>雪国</title>
+      <link>https://goozenlab.github.io/books/4101001014/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101001014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>風土</title>
+      <link>https://goozenlab.github.io/books/4003314425/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003314425/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>食卓のない家</title>
+      <link>https://goozenlab.github.io/books/4101127131/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4101127131/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>饗宴</title>
+      <link>https://goozenlab.github.io/books/4003360133/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003360133/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高野聖</title>
+      <link>https://goozenlab.github.io/books/4003102711/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003102711/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>魔の山</title>
+      <link>https://goozenlab.github.io/books/4003243366/</link>
+      <pubDate>Tue, 01 Jan 2019 17:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/books/4003243366/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -4271,7 +5486,7 @@ In between work, when you feel stressed,, when you wan to concentrate, when you 
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/nslocalizedstring-swift/</guid>
-      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;) Swiftではnilの扱いがちょ</description>
+      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;#34;Timer&amp;#34;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;#34;NavigationBar.Button.Timer&amp;#34;, comment: &amp;#34;&amp;#34;) Swiftではnilの扱いがちょ</description>
     </item>
     
     <item>
@@ -4289,7 +5504,7 @@ In between work, when you feel stressed,, when you wan to concentrate, when you 
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/uibutton-swift/</guid>
-      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal) テ</description>
+      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;#34;selectedMood:&amp;#34;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;#34;MoodExecelent&amp;#34;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;#34;cancel&amp;#34;, forState: UIControlState.Normal) テ</description>
     </item>
     
     <item>
@@ -4406,7 +5621,7 @@ In between work, when you feel stressed,, when you wan to concentrate, when you 
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/userdefault-register-defaults/</guid>
-      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
+      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;#34;String&amp;#34;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
     </item>
     
     <item>

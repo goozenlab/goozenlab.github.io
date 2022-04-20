@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -214,52 +212,51 @@
 <p>まずはアップルスクリプトエディタでスクリプトを書きます。色々と調べて割と大変だったのですが仕上がってみるとすごくシンプルです。</p>
 <p><strong>※</strong> MountainLionにて動かしてます。SnowLeopardではシステム環境のレイアウトが違ったはずなのでちょっと修正が必要だと思います。</p>
 <pre tabindex="0"><code>
-tell application &quot;System Preferences&quot;
+tell application &#34;System Preferences&#34;
     activate
-    set current pane to pane &quot;com.apple.preference.universalaccess&quot;
+    set current pane to pane &#34;com.apple.preference.universalaccess&#34;
 end tell
 
-tell application &quot;System Events&quot;
-    tell first window of process &quot;System Preferences&quot;
+tell application &#34;System Events&#34;
+    tell first window of process &#34;System Preferences&#34;
         
         tell table 1 of scroll area 1
             set selected of row 2 to true
         end tell
         tell group 1
-            click checkbox &quot;Use grayscale&quot;
+            click checkbox &#34;Use grayscale&#34;
         end tell
         
     end tell
 end tell
 
-do shell script &quot;terminal-notifier -message \&quot;Color mode has been changed.\&quot; -title \&quot;Diplay\&quot;&quot;
+do shell script &#34;terminal-notifier -message \&#34;Color mode has been changed.\&#34; -title \&#34;Diplay\&#34;&#34;
 
-tell application &quot;System Preferences&quot; to quit
-
+tell application &#34;System Preferences&#34; to quit
 </code></pre><p>画面上のパーツをどういう風に書いてよいのか分からず四苦八苦しましたが（９行〜１４行目）、下記のコードを走らせる事でGUIのパーツをリスト化してくれます。</p>
-<pre tabindex="0"><code>tell application &quot;System Preferences&quot;
+<pre tabindex="0"><code>tell application &#34;System Preferences&#34;
     activate
-    set current pane to pane &quot;com.apple.preference.universalaccess&quot;
-    --  set current pane to pane &quot;com.apple.preference.sound&quot;
+    set current pane to pane &#34;com.apple.preference.universalaccess&#34;
+    --  set current pane to pane &#34;com.apple.preference.sound&#34;
 end tell
 
 
-tell application &quot;System Events&quot;
+tell application &#34;System Events&#34;
     if UI elements enabled then
-        tell process &quot;System Preferences&quot;
+        tell process &#34;System Preferences&#34;
             get every UI element
-            --tell tab group 1 of window &quot;Sound&quot; of application process &quot;System Preferences&quot; of application &quot;System Events&quot;
-            tell window 1 of application process &quot;System Preferences&quot; of application &quot;System Events&quot;
-                --  tell table 1 of scroll area 1 of window 1 of application process &quot;System Preferences&quot; of application &quot;System Events&quot; これで左にあるテーブルの情報が見れます
+            --tell tab group 1 of window &#34;Sound&#34; of application process &#34;System Preferences&#34; of application &#34;System Events&#34;
+            tell window 1 of application process &#34;System Preferences&#34; of application &#34;System Events&#34;
+                --  tell table 1 of scroll area 1 of window 1 of application process &#34;System Preferences&#34; of application &#34;System Events&#34; これで左にあるテーブルの情報が見れます
                 get every UI element
                 get every UI element of every UI element
             end tell
         end tell
     else
-        tell application &quot;System Preferences&quot;
+        tell application &#34;System Preferences&#34;
             activate
-            set current pane to pane &quot;com.apple.preference.universalaccess&quot;
-            display dialog &quot;UI element scripting is not enabled.&quot;
+            set current pane to pane &#34;com.apple.preference.universalaccess&#34;
+            display dialog &#34;UI element scripting is not enabled.&#34;
         end tell
     end if
 end tell
@@ -274,11 +271,11 @@ end tell
 <p>と変わります。この間は一体？？動きの遅いおじいちゃんのようです。しかもアプリケーションで保存したもののほうがなぜか遅いです。ちょっと気が抜けます。</p>
 <h2 id="おまけ">おまけ</h2>
 <p>ドックにアップルスクリプトのアイコンが出てくるのがちょっと、と思う方は、アプリケーションのパッケージ内にある<code>Info.plist</code>に</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">    &lt;key&gt;LSUIElement&lt;/key&gt;
-    &lt;true/&gt;
-</code></pre></div><p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>    &lt;key&gt;LSUIElement&lt;/key&gt;
+</span></span><span style="display:flex;"><span>    &lt;true/&gt;
+</span></span></code></pre></div><p>を追加すると、ドックにアプリケーションのアイコンは表示されません。</p>
 <p>そしてついでにノーティフィケーションセンターに登録。terminal-notifierというソフトをつかいます。アップルスクリプトに</p>
-<pre tabindex="0"><code>do shell script &quot;terminal-notifier -message \&quot;Color mode has been changed.\&quot; -title \&quot;Diplay\&quot;&quot;
+<pre tabindex="0"><code>do shell script &#34;terminal-notifier -message \&#34;Color mode has been changed.\&#34; -title \&#34;Diplay\&#34;&#34;
 </code></pre><p>を追加して、ノーティフィケーションセンターに告知します。インストールと簡単な使い方の説明はマイナビニュースの<a href="http://news.mynavi.jp/column/osxhack/060/index.html">こちらの記事</a>を参照してください。</p>
 <p>お次ぎはUSBオーディオの選択/解除かな。。</p>
 

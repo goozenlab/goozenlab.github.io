@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -217,25 +215,23 @@
 <p>オクトプレスでは表示するページのヘッダーに <code>appid:####</code> を追加します。（こうやってカスタムフィールドぽいものを簡単に作れる所はすごい。）</p>
 <pre tabindex="0"><code>---
 layout: page
-title: &quot;littlist&quot;
-subtitle: &quot;v2.5.0 プライベートなtodoアプリの完成形ここに？！たまに無料で提供しています。&quot;
-appid: &quot;399733845&quot; // 追加する。
+title: &#34;littlist&#34;
+subtitle: &#34;v2.5.0 プライベートなtodoアプリの完成形ここに？！たまに無料で提供しています。&#34;
+appid: &#34;399733845&#34; // 追加する。
 date: 2012-09-26 14:39
 comments: true
 sharing: true
 footer: true
 ---
-
 </code></pre><p>そして、ヘッダーのカスタムテンプレートファイル、<code>source/_includes/custom/head.html</code> に1行目を追加します。</p>
 <pre tabindex="0"><code>//追加
 {% if page.appid }
-&lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id={{ page.appid }}&quot;&gt;
+&lt;meta name=&#34;apple-itunes-app&#34; content=&#34;app-id={{ page.appid }}&#34;&gt;
 {% endif %}; 
 
-&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;
-&lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-&lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-
+&lt;!--Fonts from Google&#34;s Web font directory at http://google.com/webfonts --&gt;
+&lt;link href=&#34;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;link href=&#34;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
 </code></pre><p>で、終了。いやはや、簡単過ぎてポストしても良いんのだろうか。。</p>
 
 				

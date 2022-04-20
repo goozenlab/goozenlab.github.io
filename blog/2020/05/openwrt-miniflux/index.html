@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -255,7 +253,7 @@ root@openwrt:~% uci set postgresql.config.PGLOG=/srv/postgresql/data/postgresql.
 root@openwrt:~% uci commit
 root@openwrt:~% chown postgres:postgres /srv/postgresql/data
 root@openwrt:~% cd /srv/postgresql/data
-root@tortas:/srv/postgresql/data$ sudo -u postgres /bin/ash -c 'LC_COLLATE=&quot;C&quot; initdb -D /srv/postgresql/data --pwprompt'
+root@tortas:/srv/postgresql/data$ sudo -u postgres /bin/ash -c &#39;LC_COLLATE=&#34;C&#34; initdb -D /srv/postgresql/data --pwprompt&#39;
 
 Enter new superuser password:
 
@@ -264,18 +262,18 @@ root@tortas:/srv/postgresql/data$
 <pre tabindex="0"><code>root@openwrt:~% service postgresql enable
 root@openwrt:~% service postgresql start
 </code></pre><p>rootユーザーを登録します。</p>
-<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c 'CREATE USER root SUPERUSER;'
+<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &#39;CREATE USER root SUPERUSER;&#39;
 </code></pre><h4 id="minulux-db">Minulux db</h4>
 <p>MinifluxのDBを作成します、ユーザー、パスワード、DB名全てminifluxで行ってます。
 セキュリティー的にはNGですな。</p>
-<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &quot;CREATE USER miniflux WITH PASSWORD 'miniflux';&quot;
-root@openwrt:~% sudo -u postgres psql -c &quot;CREATE DATABASE miniflux OWNER miniflux;&quot;
+<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &#34;CREATE USER miniflux WITH PASSWORD &#39;miniflux&#39;;&#34;
+root@openwrt:~% sudo -u postgres psql -c &#34;CREATE DATABASE miniflux OWNER miniflux;&#34;
 </code></pre><p>データーベースにつなげるかチェックします。
 ２行目の目的は分からん、、、</p>
 <pre tabindex="0"><code>root@openwrt:~% psql -h 127.0.0.1 miniflux miniflux
-root@openwrt:~% cd /tmp &amp;&amp; sudo -u miniflux psql miniflux -c ''
+root@openwrt:~% cd /tmp &amp;&amp; sudo -u miniflux psql miniflux -c &#39;&#39;
 </code></pre><p>必要とされているエクステンションを追加します。</p>
-<pre tabindex="0"><code>root@openwrt:/tmp% sudo -u postgres psql miniflux -c 'CREATE EXTENSION hstore;'
+<pre tabindex="0"><code>root@openwrt:/tmp% sudo -u postgres psql miniflux -c &#39;CREATE EXTENSION hstore;&#39;
 </code></pre><p>データベースの準備完了。</p>
 <h2 id="minifluxのインストール">Minifluxのインストール</h2>
 <p>参考先サイトを見習って自分で落としてきたソフトウェアーは<code>/opt</code>に置いとくことにします。</p>

@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -282,7 +280,7 @@ import pybitflyer
 import json
 
 api = pybitflyer.API()
-print(json.dumps(api.ticker(product_code = &quot;BTC_JPY&quot;),sort_keys=True, indent=4))
+print(json.dumps(api.ticker(product_code = &#34;BTC_JPY&#34;),sort_keys=True, indent=4))
 
 
 pi@raspberry:~ $ sudo chmod +x /usr/local/bin/get_btc_jpy.py
@@ -292,7 +290,7 @@ pi@raspberry:~ $ sudo chmod +x /usr/local/bin/get_btc_jpy.py
 <code>update_btc_jpy.sh</code>というファイルを作ります</p>
 <p><strong>ltp</strong>は最終取引価格（Last Time Price)。お好みのようにご変更のほど、</p>
 <p>InfluxDBへの登録は<code>curl</code>を使って放り込みます。</p>
-<pre tabindex="0"><code>curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;currency,code=BTC_JPY exchage_rate=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&quot;
+<pre tabindex="0"><code>curl -XPOST &#34;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&#34; -d &#34;currency,code=BTC_JPY exchage_rate=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&#34;
 </code></pre><p>最初の部分は登録するデーターベース設定、後半は登録する内容になります。</p>
 <p>ちょっと分解して、前半は以下のようにホスト・ポート・データーベース名。</p>
 <pre tabindex="0"><code>http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE
@@ -316,18 +314,18 @@ finance(DB) &gt; currency (他：銀行口座 [savings]など） &gt; code: BTC_
 #
 # OUTPUT
 # {
-#     &quot;best_ask&quot;: 583895.0,
-#     &quot;best_ask_size&quot;: 0.50000013,
-#     &quot;best_bid&quot;: 582811.0,
-#     &quot;best_bid_size&quot;: 0.385,
-#     &quot;ltp&quot;: 583651.0,
-#     &quot;product_code&quot;: &quot;BTC_JPY&quot;,
-#     &quot;tick_id&quot;: 21304010,
-#     &quot;timestamp&quot;: &quot;2019-04-08T00:44:56.163&quot;,
-#     &quot;total_ask_depth&quot;: 1247.87214404,
-#     &quot;total_bid_depth&quot;: 1694.48375804,
-#     &quot;volume&quot;: 690365.02082555,
-#     &quot;volume_by_product&quot;: 5587.33741726
+#     &#34;best_ask&#34;: 583895.0,
+#     &#34;best_ask_size&#34;: 0.50000013,
+#     &#34;best_bid&#34;: 582811.0,
+#     &#34;best_bid_size&#34;: 0.385,
+#     &#34;ltp&#34;: 583651.0,
+#     &#34;product_code&#34;: &#34;BTC_JPY&#34;,
+#     &#34;tick_id&#34;: 21304010,
+#     &#34;timestamp&#34;: &#34;2019-04-08T00:44:56.163&#34;,
+#     &#34;total_ask_depth&#34;: 1247.87214404,
+#     &#34;total_bid_depth&#34;: 1694.48375804,
+#     &#34;volume&#34;: 690365.02082555,
+#     &#34;volume_by_product&#34;: 5587.33741726
 # }
 #
 
@@ -341,14 +339,14 @@ JSON=`cat /home/pi/.finance/btc_jpy.json`
 
 # parse json 
 timestamp=$(date +%s%N)
-product_code=$(echo ${JSON} | jq &quot;.product_code&quot;)
-ltp=$(echo ${JSON} | jq &quot;.ltp&quot;)
-best_ask=$(echo ${JSON} | jq &quot;.best_ask&quot;)
-best_bid=$(echo ${JSON} | jq &quot;.best_bid&quot;)
-volume=$(echo ${JSON} | jq &quot;.volume_by_product&quot;)
+product_code=$(echo ${JSON} | jq &#34;.product_code&#34;)
+ltp=$(echo ${JSON} | jq &#34;.ltp&#34;)
+best_ask=$(echo ${JSON} | jq &#34;.best_ask&#34;)
+best_bid=$(echo ${JSON} | jq &#34;.best_bid&#34;)
+volume=$(echo ${JSON} | jq &#34;.volume_by_product&#34;)
 
 ## Write to InfluxDB
-curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;currency,code=BTC_JPY price=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&quot;
+curl -XPOST &#34;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&#34; -d &#34;currency,code=BTC_JPY price=$ltp,ask=$best_ask,bid=$best_bid,volume=$volume $timestamp&#34;
 </code></pre><p>そして、このスクリプトをバックグラウンドで自動的に走らせます。毎分更新での設定になってます。</p>
 <pre tabindex="0"><code>pi@raspberry:~ $ crontab -e
 
@@ -363,7 +361,6 @@ curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABA
 # m h  dom mon dow   command
 
 * * * * * /home/pi/scripts/update_btc_jpy.sh
-
 </code></pre><p>5分おきに更新したいのでであれば、</p>
 <pre tabindex="0"><code>*/5 * * * * /home/pi/scripts/update_btc_jpy.sh
 </code></pre><p>私は売り買いが激しい人でないので、15分おきにしました。

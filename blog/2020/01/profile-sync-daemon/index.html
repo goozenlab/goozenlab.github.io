@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -219,8 +217,8 @@ jin@debian:~$ psd
  First time running psd so please edit /home/jin/.config/psd/psd.conf to your liking and run again.
 jin@debian:~$ vi .config/psd/psd.conf
 
-USE_OVERLAYFS=&quot;yes&quot;
-BROWSERS=&quot;firefox”
+USE_OVERLAYFS=&#34;yes&#34;
+BROWSERS=&#34;firefox”
 </code></pre><p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
 <pre tabindex="0"><code>jin@debian:~$ sudo modprobe overlay
 jin@debian:~$ sudo visudo
@@ -228,11 +226,11 @@ jin@debian:~$ sudo visudo
 jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
 </code></pre><p>しかしながら、modinfoにアクセスできないとエラーが出る。。インストールはされているのだけど、、</p>
 <pre tabindex="0"><code>jin@debian:~$ psd p
- I require modinfo but it's not installed. Aborting!
+ I require modinfo but it&#39;s not installed. Aborting!
 </code></pre><p><code>/sbin</code>へパスが通ってないのが問題の様だったので、とりあえず.profile にPATHを追加します。</p>
 <pre tabindex="0"><code>jin@debian:~$ vi .profile
 
-PATH=&quot;/usr/sbin:/sbin&quot;
+PATH=&#34;/usr/sbin:/sbin&#34;
 </code></pre><p>でもう一度。</p>
 <pre tabindex="0"><code>jin@debian:~$ psd p
 Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)

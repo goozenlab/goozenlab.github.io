@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -235,30 +233,30 @@ root@OpenWrt:~＄ chown syncthing /home/syncthing/
 そして、ホームフォルダーの位置(/etc/syncthing -&gt; /home/syncthing)を変更しました。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ cat /etc/config/syncthing
 
-config syncthing 'syncthing'
-        option enabled '1'
+config syncthing &#39;syncthing&#39;
+        option enabled &#39;1&#39;
 
-        option gui_address 'http://10.0.0.10:8384'
+        option gui_address &#39;http://10.0.0.10:8384&#39;
 
         # Use internal flash for evaluation purpouses. Use external storage
         #   for production.
         # This filesystem must either support ownership/attributes or
         #   be readable/writable by the user specified in
-        #   'option user'.
+        #   &#39;option user&#39;.
         # Consult syslog if things go wrong.
-        option home '/home/syncthing'
+        option home &#39;/home/syncthing&#39;
 
-        # Changes to &quot;niceness&quot;/macprocs are not picked up by &quot;reload_config&quot;
-        #   nor by &quot;restart&quot;: the service has to be stopped/started
+        # Changes to &#34;niceness&#34;/macprocs are not picked up by &#34;reload_config&#34;
+        #   nor by &#34;restart&#34;: the service has to be stopped/started
         #   for those to take effect
-        option nice '19'
+        option nice &#39;19&#39;
 
         # 0 to match the number of CPUs (default)
         # &gt;0 to explicitly specify concurrency
-        option macprocs '0'
+        option macprocs &#39;0&#39;
 
-        # Running as 'root' is possible, but not recommended
-        option user 'syncthing'
+        # Running as &#39;root&#39; is possible, but not recommended
+        option user &#39;syncthing&#39;
 </code></pre><p>サービスはすでに登録されているので、再起動をします。
 （もしくは [System &gt; Startup]よりサービスを起動をポチッとな。）</p>
 <hr>

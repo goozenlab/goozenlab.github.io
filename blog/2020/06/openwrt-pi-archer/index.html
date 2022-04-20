@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -271,7 +269,7 @@ opkg install kmod-usb-gadget-eth
 opkg install kmod-usb-dwc2
 -->
 <p>そして、ネットワークの設定をします。インターフェイスに<code>usb0</code>を追加。そして再起動。</p>
-<pre tabindex="0"><code>root@OpenWrt:~$ uci set network.lan.ifname=&quot;`uci get network.lan.ifname` usb0&quot;
+<pre tabindex="0"><code>root@OpenWrt:~$ uci set network.lan.ifname=&#34;`uci get network.lan.ifname` usb0&#34;
 root@OpenWrt:~$ uci commit network
 root@OpenWrt:~$ reboot
 </code></pre><p>ルーターが起動したら、USBポートにガジェットモードを有効化しているPi Zeroを刺します。勝手に起動します。</p>
@@ -287,7 +285,7 @@ root@OpenWrt:~$ reboot
 <li>/boot/cmdline.txt</li>
 </ol>
 <p>起動メッセージよりMAC番号を抜き出し設定ファイルに書き出します。</p>
-<pre tabindex="0"><code>pi@raspberry:~$　echo 'options g_ether host_addr='$(dmesg | awk '/: HOST MAC/{print $NF}')' dev_addr='$(dmesg | awk '/: MAC/{print $NF}') | sudo tee /etc/modprobe.d/g_ether.conf
+<pre tabindex="0"><code>pi@raspberry:~$　echo &#39;options g_ether host_addr=&#39;$(dmesg | awk &#39;/: HOST MAC/{print $NF}&#39;)&#39; dev_addr=&#39;$(dmesg | awk &#39;/: MAC/{print $NF}&#39;) | sudo tee /etc/modprobe.d/g_ether.conf
 </code></pre><p>上記のファイルからMACアドレスの番号を取り出し、
 <strong>g_ether.</strong> を追加して、
 <code>/boot/cmdline.txt</code>

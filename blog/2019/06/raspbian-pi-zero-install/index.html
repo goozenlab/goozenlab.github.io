@@ -116,39 +116,37 @@
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/seed" class="pure-menu-link">seed</a>
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
                         </li>               
 
+                        
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/" class="pure-menu-link">coin securities</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
                         </li>
                         
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="https://goozenlab.github.io/computing/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
                         </li>
                     </ul>
                 </li>
@@ -251,11 +249,11 @@ bootパーティションの中にある<code>cmdline.txt</code>と<code>config.
 <p>端末の無線LANの接続はオフにして、ターミナルから<code>ssh pi@raspberrypi.local</code>でアクセスします。
 パスワードは<strong>raspberry</strong>です。</p>
 <pre tabindex="0"><code>$ ssh pi@raspberrypi.local
-The authenticity of host 'raspberrypi.local (fe80::e5a5:6205:ef11:6bb3%en5)' can't be established.
+The authenticity of host &#39;raspberrypi.local (fe80::e5a5:6205:ef11:6bb3%en5)&#39; can&#39;t be established.
 ECDSA key fingerprint is SHA256:ZVyo2zpzsGmLJBje8VXsS6CmcRnXhDWwaQGQ4PebjWM.
 Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'raspberrypi.local,fe80::e5a5:6205:ef11:6bb3%en5' (ECDSA) to the list of known hosts.
-pi@raspberrypi.local's password:
+Warning: Permanently added &#39;raspberrypi.local,fe80::e5a5:6205:ef11:6bb3%en5&#39; (ECDSA) to the list of known hosts.
+pi@raspberrypi.local&#39;s password:
 Linux raspberrypi 4.14.79+ #1159 Sun Nov 4 17:28:08 GMT 2018 armv6l
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -265,8 +263,8 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 
-SSH is enabled and the default password for the 'pi' user has not been changed.
-This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+SSH is enabled and the default password for the &#39;pi&#39; user has not been changed.
+This is a security risk - please login as the &#39;pi&#39; user and type &#39;passwd&#39; to set a new password.
 
 $
 </code></pre><p>ログイン後、基本的な設定を行います。<code>raspi-config</code>というコマンドがあります。</p>
@@ -293,8 +291,8 @@ aptのファイル変更でアップデートを行いました。</p>
 <pre tabindex="0"><code>$ sudo sync
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list
-$ sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list.d/raspi.list
+$ sudo sed -i &#39;s/stretch/buster/g&#39; /etc/apt/sources.list
+$ sudo sed -i &#39;s/stretch/buster/g&#39; /etc/apt/sources.list.d/raspi.list
 $ sudo apt-get update
 $ sudo apt-get -y dist-upgrade
 $ sudo apt autoremove

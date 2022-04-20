@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>暗号通貨ハードウェア・ウォレット | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">			
+            <div class="post-title">
+                <h1>暗号通貨ハードウェア・ウォレット</h1>
+                <p class="footnote">
+                    updated at 
+                    <time class="">2021-03-18</time>
+				</p>
+            </div>
+            <div class="post-content">
+                <p>暗号通貨を勉強していくと、
+取引所にビットコインなどを置いていることに対する不安が大きくなってきます。
+取引所がハックされて問題が起きたら、手続きやらが面倒・かつ時間もかかるでしょうし、
+戻ってくるのはその時の現金評価額（マウントゴックスの件）と聞いた事もあります。</p>
+<p>秘密鍵の管理が全てなのですが、どこにどうやってという疑問・懸念があり、
+コンピューターに入れておくのは得策とは思えないので、
+無難な着地点の
+<strong>ハードウェア・ウォレット</strong>
+にたどり着きます。</p>
+<p>市場にはいくつか（６つくらいかな）のハードウェア・ウォレットが出回ってますが、
+その中でメジャーな幾つかを比較してみました。</p>
+<ul>
+<li>Ledger: <a href="https://www.ledger.com/">https://www.ledger.com/</a></li>
+<li>Trezor: <a href="https://trezor.io/">https://trezor.io/</a></li>
+<li>Coldcard: <a href="https://www.coinkite.com/">https://www.coinkite.com/</a></li>
+<li>SeedSigner: <a href="https://seedsigner.com/">https://seedsigner.com/</a></li>
+<li>Jade: <a href="https://blockstream.com/jade/">https://blockstream.com/jade/</a></li>
+</ul>
+<p>簡単な比較はこんな感じです。BTCオンリーかつBTCマキシミストであれば、Coldcardの一択。
+色々な通貨を取引しているのであれば、LedgerやTrezor。
+自作派はSeedSigner、なるべく安くかつBTCオンリーならばJadeというチョイスもあります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">種類：</th>
+<th>特徴（記号：取扱、セキュリティ） 　</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">ColdCard：</td>
+<td>BTC専用、セキュリティ重視かつ多機能。</td>
+<td>✖️</td>
+<td>◎</td>
+</tr>
+<tr>
+<td style="text-align:right">Trezor：</td>
+<td>シンプルでバランスが取れている、取り扱い通貨が多くない。</td>
+<td>◯</td>
+<td>△</td>
+</tr>
+<tr>
+<td style="text-align:right">Ledger：</td>
+<td>取り扱い通貨が多い、ボタンが小さいので扱いが少し面倒。</td>
+<td>◎</td>
+<td>◯</td>
+</tr>
+<tr>
+<td style="text-align:right">Jade：</td>
+<td>安価、対応アプリがGreenのみ。</td>
+<td>○</td>
+<td>○</td>
+</tr>
+<tr>
+<td style="text-align:right">SeedSigner：</td>
+<td>PiZero＋LCD＋カメラモジュールで自作。</td>
+<td>○</td>
+<td>◎</td>
+</tr>
+</tbody>
+</table>
+<p>購入はAmazonではなくその会社より直接購入するのが良いです。
+Coldcardの会社以外はメールアドレスなどの情報は管理しています。
+Ledger社は顧客データーが漏洩したこともありましたが、
+そこまで神経質にならなくてもいい感じもします。</p>
+<h2 id="trezor-or-ledger">Trezor or Ledger</h2>
+<p>Trezorに比べてLedgerは様々な仮想通貨に対応（Ledgerの方が断然に多い）しているので、
+まずは大きな判断基準になります。</p>
+<p>セキュリティ的にはLedgerにはセキュリティー・チップが入っていてますが、
+Trezorにはセキュリティー・チップは組み込まれていないので脆弱性があります。
+Trezorは紛失時に秘密鍵を抜き取ることも可能との情報もありましたが、
+パスフレーズ（シード・エクステンション）の追加で回避はできます。
+Ledgerのソースコードは公開されていませんので、信用度が若干低下します。
+Trezorはオープンソースで開発されています。</p>
+<p>操作方法はLedgerでのPinコード入力がボタンが小さくてちょっと面倒かなと、
+ボタンが２つしかないシンプルなTrezorはシンプルでよいのですが、
+PINコードやパスフレーズの入力はコンピューター上にて行うがゆえに、
+キーロガーなどによるセキュリティー・ホールにもなります。</p>
+<!-- 個人的にDOTもすこし所有しているので、対応しているLedgerにしておけば良かったかもと少し後悔してますが、 -->
+<p>両者とも、メタマスクのようなブラウザーのエクステンション・ウォレット（Web3.0を感じます）や、
+モバイルアプリのBlue WalletやGreenにも接続ができます。</p>
+<p>二台購入し同じものとして利用、一台は突然の故障時などのバックアップとして保管しておくのも良いかなと思ったりもしました。</p>
+<h2 id="coldcard">Coldcard</h2>
+<p>BTCにおいては何でもござれ、様々なソフトウェア・ウォレットとの連携やセキュリティーを考慮され設計されたハードウェア・ウォレットです。
+無骨なまでの使い辛さ、、一元さんお断りのハードコア。
+ColdCardは上記の両端末の欠点を補い、セキュリティー・チップを入れつつもオープンソースです。
+BTCグル（海外ではBTCMaximalistと呼ばれている）になりたい方にお勧め。</p>
+<p>４代目の端末を注文して発送待ちです。届いたらレビューします。（２０２２年３月現在）</p>
+<hr>
+<h2 id="更新履歴">更新履歴</h2>
+<ul>
+<li>2022-03-17：ザックリと書いてみる。</li>
+</ul>
+
+				
+
+
+            </div>
+            
+            <div>
+                <h2>tip 🏝</h2>
+                <p>
+                🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+                🌻 <a href="/images/bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg.png">bitcoin</a> : bc1qq688d3ett88fd837wx86pvzsl7tw9c9z5fyucg<br />
+                🌺 <a href="/images/0x4496E264A0B0dd9253aABBCEB1439758014ACDC5.png" target="blank">eth</a> : 0x4496E264A0B0dd9253aABBCEB1439758014ACDC5
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+
+       		
+			<div class="post-content">
+       	 		
+       		</div>
+            
+        </div>
+      
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
