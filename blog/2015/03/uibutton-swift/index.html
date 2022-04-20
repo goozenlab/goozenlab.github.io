@@ -213,12 +213,12 @@
 <pre tabindex="0"><code>buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
 buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
 buttonMoodExecelent.tag = TagButtonMood.Execelent
-buttonMoodExecelent.addTarget(self, action: &#34;selectedMood:&#34;, forControlEvents: .TouchUpInside)
-buttonMoodExecelent.setBackgroundImage(UIImage(named: &#34;MoodExecelent&#34;), forState: UIControlState.Normal)
+buttonMoodExecelent.addTarget(self, action: &quot;selectedMood:&quot;, forControlEvents: .TouchUpInside)
+buttonMoodExecelent.setBackgroundImage(UIImage(named: &quot;MoodExecelent&quot;), forState: UIControlState.Normal)
 
 self.vew.addSubview(buttonMoodExecelent)
 </code></pre><p>テキストタイトルの時には</p>
-<pre tabindex="0"><code>buttonCancel.setTitle(&#34;cancel&#34;, forState: UIControlState.Normal)
+<pre tabindex="0"><code>buttonCancel.setTitle(&quot;cancel&quot;, forState: UIControlState.Normal)
 </code></pre><p>テキストの色を変えるには、</p>
 <pre tabindex="0"><code>buttonCancel.setTitleColor(UIColor.redColor(), forState: .Normal)
 </code></pre><p>もっと細かく、フォント等も弄りたい時には、</p>

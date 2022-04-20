@@ -276,7 +276,7 @@ rsn_pairwise=CCMP
 </code></pre><p>保存して閉じます。SSIDやwpa_passphrase（パスワード）は環境に合わせて編集してください。そして、プロセスの設定を行います。</p>
 <pre tabindex="0"><code>pi@cashu:~ $ sudo vi /etc/default/hostapd
 </code></pre><p>読み込む設定ファイルを指定します。コメントを外して読み取り先を書き込みます。</p>
-<pre tabindex="0"><code>DAEMON_CONF=&#34;/etc/hostapd/hostapd.conf&#34;
+<pre tabindex="0"><code>DAEMON_CONF=&quot;/etc/hostapd/hostapd.conf&quot;
 </code></pre><p>で、動作確認をします。エラーがあればその内容が表示されると思います。問題なく起動したので、Ctl+cでシェルに戻ります。</p>
 <pre tabindex="0"><code>pi@cashu:~ $ sudo hostapd -d /etc/hostapd/hostapd.conf
 </code></pre><p>起動時に動くようにします。</p>
@@ -296,14 +296,14 @@ interface=wlan0
 # Explicitly specify the address to listen on
 listen-address=10.0.0.10
 
-# Bind to the interface to make sure we aren&#39;t sending things elsewhere.
+# Bind to the interface to make sure we aren't sending things elsewhere.
 bind-interfaces
 
 # Forward DNS 
 server=10.10.10.60
 server=1.1.1.1
 
-# Don&#39;t forward short names
+# Don't forward short names
 domain-needed
 
 # Never forward addresses in the non-routed address spaces.

@@ -213,14 +213,14 @@
 Docker version 18.06.3-ce, build d7080c1
 root@iska:~$ docker ps -a
 CONTAINER ID     IMAGE               COMMAND      CREATED        STATUS       NAMES
-0bd0dc6374b5     grafana/grafana     &#34;/run.sh&#34;    19 hours ago   Exited (0)    pensive_elbakyan
-eb83f6879feb     portainer/portainer &#34;/portainer&#34; 20 hours ago   Exited (2)    heuristic_lalande
-9aa94e1c81af     hello-world         &#34;/hello&#34;     21 hours ago   Exited (0)    awesome_mirzakhani
+0bd0dc6374b5     grafana/grafana     &quot;/run.sh&quot;    19 hours ago   Exited (0)    pensive_elbakyan
+eb83f6879feb     portainer/portainer &quot;/portainer&quot; 20 hours ago   Exited (2)    heuristic_lalande
+9aa94e1c81af     hello-world         &quot;/hello&quot;     21 hours ago   Exited (0)    awesome_mirzakhani
 root@iska:~$
 </code></pre><p>で、あっちに行って、こっちに行ってと、エラーに続くエラー、無駄もいろいろあったかもしれないけれど、よーーーーーやく、動きました。</p>
 <pre tabindex="0"><code>Job for docker.service failed because a fatal signal was delivered causing the control process to dump core.
-See &#34;systemctl status docker.service&#34; and &#34;journalctl -xe&#34; for details.
-invoke-rc.d: initscript docker, action &#34;start&#34; failed.
+See &quot;systemctl status docker.service&quot; and &quot;journalctl -xe&quot; for details.
+invoke-rc.d: initscript docker, action &quot;start&quot; failed.
 ● docker.service - Docker Application Container Engine
    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
    Active: activating (start) since Sat 2019-03-02 11:48:14 GMT; 355ms ago
@@ -252,7 +252,7 @@ dpkg: error processing package docker-ce (--configure):
 $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 $ sudo apt-key fingerprint 0EBFCD88
 
-$ sudo add-apt-repository &#34;deb [arch=arm64] https://download.docker.com/linux/debian buster stable&#34;
+$ sudo add-apt-repository &quot;deb [arch=arm64] https://download.docker.com/linux/debian buster stable&quot;
 </code></pre><h3 id="to-install-a-specific-version-of-docker-ce">To install a specific version of Docker CE</h3>
 <p>特定のバージョンをインストールする方法。こういった情報が、公式サイトに載っているということは、向こうさんも<strong>いろいろ</strong>と御存知ということなのかもしれん、、とかって思ったりする。まぁ、でも確り、busterのarm64パッケージもビルドしてくれるのはありがたいことです。</p>
 <pre tabindex="0"><code>$ sudo apt-get update

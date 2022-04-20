@@ -224,6 +224,7 @@ Archを試したり、公式に64bitをサポートしているopenSuseやDebian
 <h2 id="download">Download</h2>
 <p>ここでは<code>4.19.30.20190326/bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz</code>をダウンロードしてますが、ていき的にアップデートされているようです。https://github.com/sakaki-/bcmrpi3-kernel-bis#installation</p>
 <pre tabindex="0"><code>pi@raspberrypi:~ $ wget -c https://github.com/sakaki-/bcmrpi3-kernel-bis/releases/download/4.19.30.20190326/bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz
+
 </code></pre><h2 id="作業">作業</h2>
 <p>まず、レポジトリーにあるカーネルをaptでアップデートされないように、保留にします。</p>
 <pre tabindex="0"><code>pi@raspberrypi:~ $ sudo apt-mark hold raspberrypi-kernel
@@ -232,7 +233,7 @@ Archを試したり、公式に64bitをサポートしているopenSuseやDebian
 pi@raspberrypi:~ $ sudo mv -v /boot/*.dtb /boot/r32-dtbs/
 </code></pre><h2 id="インストール作業">インストール作業</h2>
 <p>落としたカーネルファイル一気に展開します。</p>
-<pre tabindex="0"><code>pi@raspberrypi:~ $ sudo tar --exclude=&#39;COPYING.linux&#39; -xJf bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz -C /
+<pre tabindex="0"><code>pi@raspberrypi:~ $ sudo tar --exclude='COPYING.linux' -xJf bcmrpi3-kernel-bis-4.19.30.20190326.tar.xz -C /
 pi@raspberrypi:~ $ sync
 </code></pre><p>新しい、デバイストリーなどを整理します。プートパーティションの中は以下のようになります。</p>
 <pre tabindex="0"><code>pi@raspberrypi:~ $ sudo mkdir -pv /boot/r64-dtbs

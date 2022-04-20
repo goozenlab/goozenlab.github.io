@@ -221,7 +221,7 @@ $ ssh-keygen -t rsa -f &lt;&lt;鍵の名前&gt;&gt;
 <h3 id="公開鍵をパイサーバーに転送する">公開鍵をパイ・サーバーに転送する</h3>
 <p>公開鍵をサーバーへ持って行きます。ssh+cpなのか<code>scp ~/.ssh/id_rsa.pub &lt;&lt;USER&gt;&gt;@&lt;&lt;SERVER&gt;&gt;:&lt;&lt;保存先&gt;&gt;</code>で取り敢えず完了。</p>
 <pre tabindex="0"><code>$ scp ~/.ssh/id_rsa.pub pi@10.0.0.65:~/
-pi@10.0.0.65&#39;s password:
+pi@10.0.0.65's password:
 id_rsa.pub
 $
 </code></pre><p>クライアント側での最初の設定は以上です。</p>

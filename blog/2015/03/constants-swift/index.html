@@ -223,12 +223,13 @@ import UIKit
     let ONE_DAY = 86400
 
 struct UDKey {
-    static let DisplayColorMode = &#34;color_mode&#34;
+    static let DisplayColorMode = &quot;color_mode&quot;
 }
 
 struct Default {
-    static let ColorMode = &#34;kawaii&#34;
+    static let ColorMode = &quot;kawaii&quot;
 }
+
 </code></pre><p>で、他からのアクセスは</p>
 <pre tabindex="0"><code>defaults.setValue(Default.ColorMode, forKey: UDKey.DisplayColorMode)
 </code></pre><p>のようにしています。</p>

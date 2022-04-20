@@ -221,7 +221,7 @@
 <p>まず、サウンドファイルをSoundと言う名前のフォルダーに入れていたのがよくなかった。<br>
 そして、今更ながら、iOS10からは通知の仕様が変更されていたのを知らなかった。</p>
 <pre tabindex="0"><code>func registerAlarm(_ atDate: Date, soundName: String, identifier: String) {
-    //print(&#34;fire: &#34; + atDate.description + &#34; with sound:&#34; + soundName + &#34; with identifier:&#34; + identifier)
+    //print(&quot;fire: &quot; + atDate.description + &quot; with sound:&quot; + soundName + &quot; with identifier:&quot; + identifier)
     if #available(iOS 10.0, *) {
         let content = UNMutableNotificationContent()
         // Configure Notification Content
@@ -242,7 +242,7 @@
         UNUserNotificationCenter.current().add(request) {
             (error) in
             if let error = error {
-                print(&#34;Unable to Add Notification Request (\(error), \(error.localizedDescription))&#34;)
+                print(&quot;Unable to Add Notification Request (\(error), \(error.localizedDescription))&quot;)
             }
         }
     } else {

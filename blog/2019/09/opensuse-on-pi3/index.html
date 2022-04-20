@@ -234,29 +234,29 @@ localhost:~ #
 <p>Wifiを有効化するプロセスは以下のようになります。</p>
 <pre tabindex="0"><code>localhost:~ # vi nano/etc/dracut.conf.d/raspberrypi_modules.conf
 
-add_drivers+=&#34; sdhci-iproc bcm2835-sdhost bcm2835_dma mmc_block dwc2 &#34;
+add_drivers+=&quot; sdhci-iproc bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
 # Workaround for Wifi
-#omit_drivers+=&#34; sdhci-iproc&#34;
+#omit_drivers+=&quot; sdhci-iproc&quot;
 </code></pre><p>一行目の<code>sdhci-iproc</code>を削除して、最後の行のコメントを取り、以下のように書き換えます。</p>
-<pre tabindex="0"><code>add_drivers+=&#34; bcm2835-sdhost bcm2835_dma mmc_block dwc2 &#34;
+<pre tabindex="0"><code>add_drivers+=&quot; bcm2835-sdhost bcm2835_dma mmc_block dwc2 &quot;
 # Workaround for Wifi
-omit_drivers+=&#34; sdhci-iproc&#34;
+omit_drivers+=&quot; sdhci-iproc&quot;
 </code></pre><p>そして、<code>mkinitrd -f</code>のコマンドを走らせます。</p>
 <pre tabindex="0"><code>localhost:~ # mkinitrd -f
 Creating initrd: /boot/initrd-4.20.13-1-default
 dracut: Executing: /usr/bin/dracut --logfile /var/log/YaST2/mkinitrd.log --force /boot/initrd-4.20.13-1-default 4.20.13-1-default
-dracut: dracut module &#39;modsign&#39; will not be installed, because command &#39;keyctl&#39; could not be found!
-dracut: dracut module &#39;dmraid&#39; will not be installed, because command &#39;dmraid&#39; could not be found!
-dracut: dracut module &#39;kiwi-repart&#39; will not be installed, because it&#39;s in the list to be omitted!
-dracut: dracut module &#39;cifs&#39; will not be installed, because command &#39;mount.cifs&#39; could not be found!
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'kiwi-repart' will not be installed, because it's in the list to be omitted!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
 dracut: *** Including module: kernel-modules ***
 　
 dracut: *** Stripping files done ***
 dracut: *** Store current command line parameters ***
 dracut: Stored kernel commandline:
 dracut:  root=UUID=13eb3e13-0653-4c8d-b182-ea8b6487471b rootfstype=ext4 rootflags=rw,noatime,nobarrier
-dracut: *** Creating image file &#39;/boot/initrd-4.20.13-1-default&#39; ***
-dracut: *** Creating initramfs image file &#39;/boot/initrd-4.20.13-1-default&#39; done ***
+dracut: *** Creating image file '/boot/initrd-4.20.13-1-default' ***
+dracut: *** Creating initramfs image file '/boot/initrd-4.20.13-1-default' done ***
 
 localhost:~ # reboot
 </code></pre><p>再起動します。

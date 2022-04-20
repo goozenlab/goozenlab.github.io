@@ -216,7 +216,7 @@
             		<p>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほどでしたが、<a href="/blog/2015/03/unable-to-load-class/">クラスが読み込めず</a>で書いた問題が解決しました。</p>
 <p>問題のエラーログ</p>
 <pre tabindex="0"><code>CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Unable to load class named 'Item' for entity 'Item'.  
 Class not found, using default NSManagedObject instead.
 </code></pre><p>もしかしたらXcode6.2では問題でなくなっているかもしれませんが、とりあえず解決方法は以下。</p>
 <p><img src="/images/2015-03-20-class-unload1.png" alt="Class unload1"></p>

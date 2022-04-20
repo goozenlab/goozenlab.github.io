@@ -235,30 +235,30 @@ root@OpenWrt:~＄ chown syncthing /home/syncthing/
 そして、ホームフォルダーの位置(/etc/syncthing -&gt; /home/syncthing)を変更しました。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ cat /etc/config/syncthing
 
-config syncthing &#39;syncthing&#39;
-        option enabled &#39;1&#39;
+config syncthing 'syncthing'
+        option enabled '1'
 
-        option gui_address &#39;http://10.0.0.10:8384&#39;
+        option gui_address 'http://10.0.0.10:8384'
 
         # Use internal flash for evaluation purpouses. Use external storage
         #   for production.
         # This filesystem must either support ownership/attributes or
         #   be readable/writable by the user specified in
-        #   &#39;option user&#39;.
+        #   'option user'.
         # Consult syslog if things go wrong.
-        option home &#39;/home/syncthing&#39;
+        option home '/home/syncthing'
 
-        # Changes to &#34;niceness&#34;/macprocs are not picked up by &#34;reload_config&#34;
-        #   nor by &#34;restart&#34;: the service has to be stopped/started
+        # Changes to &quot;niceness&quot;/macprocs are not picked up by &quot;reload_config&quot;
+        #   nor by &quot;restart&quot;: the service has to be stopped/started
         #   for those to take effect
-        option nice &#39;19&#39;
+        option nice '19'
 
         # 0 to match the number of CPUs (default)
         # &gt;0 to explicitly specify concurrency
-        option macprocs &#39;0&#39;
+        option macprocs '0'
 
-        # Running as &#39;root&#39; is possible, but not recommended
-        option user &#39;syncthing&#39;
+        # Running as 'root' is possible, but not recommended
+        option user 'syncthing'
 </code></pre><p>サービスはすでに登録されているので、再起動をします。
 （もしくは [System &gt; Startup]よりサービスを起動をポチッとな。）</p>
 <hr>

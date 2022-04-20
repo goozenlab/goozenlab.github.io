@@ -259,8 +259,8 @@ root@OpenWrt:~$ chmod 770 /opt/gitea/etc/
 CREATE ROLE gitea WITH LOGIN PASSWORD 'gitea';
 CREATE DATABASE gitea WITH OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';
  -->
-<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &#34;CREATE USER gitea WITH PASSWORD &#39;gitea&#39;;&#34;
-root@openwrt:~% sudo -u postgres psql -c &#34;CREATE DATABASE gitea OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE &#39;en_US.UTF-8&#39; LC_CTYPE &#39;en_US.UTF-8&#39;;&#34;
+<pre tabindex="0"><code>root@openwrt:~% sudo -u postgres psql -c &quot;CREATE USER gitea WITH PASSWORD 'gitea';&quot;
+root@openwrt:~% sudo -u postgres psql -c &quot;CREATE DATABASE gitea OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';&quot;
 </code></pre><h2 id="アプリケーションのダウンロード">アプリケーションのダウンロード</h2>
 <p>カーネルは64ビットの<code>aarch64</code>なのでarm64バージョンをダウンロードして使います。</p>
 <pre tabindex="0"><code>root@OpenWrt:~$ mkdir -p /opt/gitea/bin
@@ -333,7 +333,7 @@ START=80
 STOP=20
 
 start() {
-        sudo -u git /bin/ash -c &#39;GITEA_WORK_DIR=/opt/gitea/ /opt/gitea/bin/gitea web -c /opt/gitea/etc/app.ini&#39; &amp;
+        sudo -u git /bin/ash -c 'GITEA_WORK_DIR=/opt/gitea/ /opt/gitea/bin/gitea web -c /opt/gitea/etc/app.ini' &amp;
 }
 
 stop() {

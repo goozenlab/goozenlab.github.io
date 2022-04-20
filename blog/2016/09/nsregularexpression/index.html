@@ -217,7 +217,7 @@
             	<div class="post-content">
             		<p>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。）</p>
 <p>(a)でのmdファイルのパースでちょっとはまりました。強調部分の抜き出しのとこで、nilが戻ってくる。小一時間ぐらいネットをふらつくも手がかりなし。</p>
-<pre tabindex="0"><code>let pattern = &#34;^(\\*\\*|__)(.*)(\\*\\*|__)$&#34;
+<pre tabindex="0"><code>let pattern = &quot;^(\\*\\*|__)(.*)(\\*\\*|__)$&quot;
 
 let regex = try? NSRegularExpression(pattern: pattern,
                                      options: NSRegularExpressionOptions.CaseInsensitive)
@@ -229,7 +229,7 @@ if let match = matches {
         ...
 }
 </code></pre><p>で、しらみ潰しで削ったり変更したりして、どうにか、たどり着いたのが、&quot;^&quot;（行頭）を削除。で、動くようになりました。&quot;^&ldquo;の必要は無いのだけれども、動かなかった理由はわからず。。</p>
-<pre tabindex="0"><code>let pattern = &#34;(\\*\\*|__)(.*)(\\*\\*|__)$&#34;
+<pre tabindex="0"><code>let pattern = &quot;(\\*\\*|__)(.*)(\\*\\*|__)$&quot;
 </code></pre>
             	</div>
            		

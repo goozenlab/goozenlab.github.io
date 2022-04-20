@@ -271,7 +271,7 @@ opkg install kmod-usb-gadget-eth
 opkg install kmod-usb-dwc2
 -->
 <p>そして、ネットワークの設定をします。インターフェイスに<code>usb0</code>を追加。そして再起動。</p>
-<pre tabindex="0"><code>root@OpenWrt:~$ uci set network.lan.ifname=&#34;`uci get network.lan.ifname` usb0&#34;
+<pre tabindex="0"><code>root@OpenWrt:~$ uci set network.lan.ifname=&quot;`uci get network.lan.ifname` usb0&quot;
 root@OpenWrt:~$ uci commit network
 root@OpenWrt:~$ reboot
 </code></pre><p>ルーターが起動したら、USBポートにガジェットモードを有効化しているPi Zeroを刺します。勝手に起動します。</p>
@@ -287,7 +287,7 @@ root@OpenWrt:~$ reboot
 <li>/boot/cmdline.txt</li>
 </ol>
 <p>起動メッセージよりMAC番号を抜き出し設定ファイルに書き出します。</p>
-<pre tabindex="0"><code>pi@raspberry:~$　echo &#39;options g_ether host_addr=&#39;$(dmesg | awk &#39;/: HOST MAC/{print $NF}&#39;)&#39; dev_addr=&#39;$(dmesg | awk &#39;/: MAC/{print $NF}&#39;) | sudo tee /etc/modprobe.d/g_ether.conf
+<pre tabindex="0"><code>pi@raspberry:~$　echo 'options g_ether host_addr='$(dmesg | awk '/: HOST MAC/{print $NF}')' dev_addr='$(dmesg | awk '/: MAC/{print $NF}') | sudo tee /etc/modprobe.d/g_ether.conf
 </code></pre><p>上記のファイルからMACアドレスの番号を取り出し、
 <strong>g_ether.</strong> を追加して、
 <code>/boot/cmdline.txt</code>

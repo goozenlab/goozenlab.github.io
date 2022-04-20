@@ -247,37 +247,37 @@ pi@tacos:~ $ speedtest --csv
 pi@tacos:~ $ speedtest --json | jq .
 
 {
-  &#34;download&#34;: 9435120.481740829,
-  &#34;upload&#34;: 4211070.094284847,
-  &#34;ping&#34;: 6.735,
-  &#34;server&#34;: {
-    &#34;url&#34;: &#34;http://speedtest-cri1.3bb.co.th/speedtest/upload.php&#34;,
-    &#34;lat&#34;: &#34;19.9105&#34;,
-    &#34;lon&#34;: &#34;99.8406&#34;,
-    &#34;name&#34;: &#34;Chiang Rai&#34;,
-    &#34;country&#34;: &#34;Thailand&#34;,
-    &#34;cc&#34;: &#34;TH&#34;,
-    &#34;sponsor&#34;: &#34;3BB&#34;,
-    &#34;id&#34;: &#34;25116&#34;,
-    &#34;host&#34;: &#34;speedtest-cri1.3bb.co.th:8080&#34;,
-    &#34;d&#34;: 1.3948772586368514,
-    &#34;latency&#34;: 6.735
+  &quot;download&quot;: 9435120.481740829,
+  &quot;upload&quot;: 4211070.094284847,
+  &quot;ping&quot;: 6.735,
+  &quot;server&quot;: {
+    &quot;url&quot;: &quot;http://speedtest-cri1.3bb.co.th/speedtest/upload.php&quot;,
+    &quot;lat&quot;: &quot;19.9105&quot;,
+    &quot;lon&quot;: &quot;99.8406&quot;,
+    &quot;name&quot;: &quot;Chiang Rai&quot;,
+    &quot;country&quot;: &quot;Thailand&quot;,
+    &quot;cc&quot;: &quot;TH&quot;,
+    &quot;sponsor&quot;: &quot;3BB&quot;,
+    &quot;id&quot;: &quot;25116&quot;,
+    &quot;host&quot;: &quot;speedtest-cri1.3bb.co.th:8080&quot;,
+    &quot;d&quot;: 1.3948772586368514,
+    &quot;latency&quot;: 6.735
   },
-  &#34;timestamp&#34;: &#34;2019-09-01T12:55:13.449757Z&#34;,
-  &#34;bytes_sent&#34;: 5472256,
-  &#34;bytes_received&#34;: 11827776,
-  &#34;share&#34;: null,
-  &#34;client&#34;: {
-    &#34;ip&#34;: &#34;171.4.241.127&#34;,
-    &#34;lat&#34;: &#34;19.9&#34;,
-    &#34;lon&#34;: &#34;99.8333&#34;,
-    &#34;isp&#34;: &#34;3BB Broadband&#34;,
-    &#34;isprating&#34;: &#34;3.7&#34;,
-    &#34;rating&#34;: &#34;0&#34;,
-    &#34;ispdlavg&#34;: &#34;0&#34;,
-    &#34;ispulavg&#34;: &#34;0&#34;,
-    &#34;loggedin&#34;: &#34;0&#34;,
-    &#34;country&#34;: &#34;TH&#34;
+  &quot;timestamp&quot;: &quot;2019-09-01T12:55:13.449757Z&quot;,
+  &quot;bytes_sent&quot;: 5472256,
+  &quot;bytes_received&quot;: 11827776,
+  &quot;share&quot;: null,
+  &quot;client&quot;: {
+    &quot;ip&quot;: &quot;171.4.241.127&quot;,
+    &quot;lat&quot;: &quot;19.9&quot;,
+    &quot;lon&quot;: &quot;99.8333&quot;,
+    &quot;isp&quot;: &quot;3BB Broadband&quot;,
+    &quot;isprating&quot;: &quot;3.7&quot;,
+    &quot;rating&quot;: &quot;0&quot;,
+    &quot;ispdlavg&quot;: &quot;0&quot;,
+    &quot;ispulavg&quot;: &quot;0&quot;,
+    &quot;loggedin&quot;: &quot;0&quot;,
+    &quot;country&quot;: &quot;TH&quot;
   }
 }
 </code></pre><h2 id="influxdbへ書出">InfluxDBへ書出</h2>
@@ -296,10 +296,10 @@ INFLUXDB_DATABASE=telegraf
 
 output=$(/usr/local/bin/speedtest --simple --bytes)
 
-#echo &#34;Output: $output&#34;
-line=$(echo -n &#34;$output&#34; | awk &#39;/Ping/ {print &#34;ping=&#34; $2} /Download/ {print &#34;downstream=&#34; $2} /Upload/ {print &#34;upstream=&#34; $2}&#39; | tr &#39;\n&#39; &#39;,&#39; | head -c -1)
-curl -XPOST &#34;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&#34; -d &#34;speedtest,host=$hostname $line $timestamp&#34;
-#echo &#34;New speedtest sent&#34;
+#echo &quot;Output: $output&quot;
+line=$(echo -n &quot;$output&quot; | awk '/Ping/ {print &quot;ping=&quot; $2} /Download/ {print &quot;downstream=&quot; $2} /Upload/ {print &quot;upstream=&quot; $2}' | tr '\n' ',' | head -c -1)
+curl -XPOST &quot;http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$INFLUXDB_DATABASE&quot; -d &quot;speedtest,host=$hostname $line $timestamp&quot;
+#echo &quot;New speedtest sent&quot;
 </code></pre><p>Pythonに書き換えねば、</p>
 
 				

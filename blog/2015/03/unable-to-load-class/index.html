@@ -216,14 +216,14 @@
             		<p>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたいと思ってます。</p>
 <p>さて、さて、まずは、</p>
 <pre tabindex="0"><code>2015-03-11 16:23:14.627 tapas[9910:539155] CoreData: warning: 
-Unable to load class named &#39;Item&#39; for entity &#39;Item&#39;.  
+Unable to load class named 'Item' for entity 'Item'.  
 Class not found, using default NSManagedObject instead.
 </code></pre><p>というエラーがでる。ファイルはあるのだが、、</p>
 <p>これは、動く。</p>
 <pre tabindex="0"><code>func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
     let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
     var cell = cell as ListViewCell
-    cell.textLabel?.text = item.valueForKey(&#34;name&#34;)!.description
+    cell.textLabel?.text = item.valueForKey(&quot;name&quot;)!.description
 }
 </code></pre><p>で、動かなーーーーい。。。</p>
 <pre tabindex="0"><code>func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {

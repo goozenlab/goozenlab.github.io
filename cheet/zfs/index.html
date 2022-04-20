@@ -215,6 +215,7 @@ SSD: ashift=13, HD: ashift=12</p>
 <p>パーミションの変更が必要。</p>
 <pre tabindex="0"><code>$ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME mirror DISK#PARTION
 $ sudo zpool create -f -o ashift=13 -O compression=lz4 -O casesensitivity=insensitive -O normalization=formD POOL_NAME raidz DISK#PARTION
+
 </code></pre><h2 id="ファイルシステムの追加">ファイルシステムの追加</h2>
 <p>同様にパーミションの変更が必要。</p>
 <pre tabindex="0"><code>$ sudo zfs create POOL_NAME/Shared

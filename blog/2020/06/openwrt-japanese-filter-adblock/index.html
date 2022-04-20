@@ -222,12 +222,12 @@ adblock.blacklist-opkg  adblock.monitor         adblock.whitelist
 root@OpenWrt:~＄ vi /etc/adblock/adblock.sources
 </code></pre><p>エントリーを追加します。
 ルールのところはちょっとわからないのですが、とりあえずいくつかある選択肢から以下のルールを追加しました。</p>
-<pre tabindex="0"><code>        &#34;tofu&#34;: {
-                &#34;url&#34;: &#34;https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt&#34;,
-                &#34;rule&#34;: &#34;BEGIN{FS=\&#34;[|^]\&#34;}/^\\|\\|([[:alnum:]_-]{1,63}\\.)+[[:alpha:]]+\\^(\\$third-party)?$/{print tolower($3)}&#34;,
-                &#34;size&#34;: &#34;L&#34;,
-                &#34;focus&#34;: &#34;Japanese ads&#34;,
-                &#34;descurl&#34;: &#34;https://tofukko.r.ribbon.to&#34;
+<pre tabindex="0"><code>        &quot;tofu&quot;: {
+                &quot;url&quot;: &quot;https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt&quot;,
+                &quot;rule&quot;: &quot;BEGIN{FS=\&quot;[|^]\&quot;}/^\\|\\|([[:alnum:]_-]{1,63}\\.)+[[:alpha:]]+\\^(\\$third-party)?$/{print tolower($3)}&quot;,
+                &quot;size&quot;: &quot;L&quot;,
+                &quot;focus&quot;: &quot;Japanese ads&quot;,
+                &quot;descurl&quot;: &quot;https://tofukko.r.ribbon.to&quot;
         },
 </code></pre><p>圧縮して元に戻します。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ gzip /etc/adblock/adblock.sources
@@ -312,7 +312,9 @@ config source 'easyPrivacy'
 	option enabled '1'
 
 
--->
+--><blockquote>
+</blockquote>
+
 				
 
 <h3>See Also</h3>

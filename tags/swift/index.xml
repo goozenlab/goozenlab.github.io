@@ -186,7 +186,7 @@
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/nslocalizedstring-swift/</guid>
-      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;#34;Timer&amp;#34;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;#34;NavigationBar.Button.Timer&amp;#34;, comment: &amp;#34;&amp;#34;) Swiftではnilの扱いがちょ</description>
+      <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;quot;Timer&amp;quot;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;quot;NavigationBar.Button.Timer&amp;quot;, comment: &amp;quot;&amp;quot;) Swiftではnilの扱いがちょ</description>
     </item>
     
     <item>
@@ -204,7 +204,7 @@
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/uibutton-swift/</guid>
-      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;#34;selectedMood:&amp;#34;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;#34;MoodExecelent&amp;#34;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;#34;cancel&amp;#34;, forState: UIControlState.Normal) テ</description>
+      <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;quot;selectedMood:&amp;quot;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;quot;MoodExecelent&amp;quot;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;quot;cancel&amp;quot;, forState: UIControlState.Normal) テ</description>
     </item>
     
     <item>
@@ -231,7 +231,7 @@
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/userdefault-register-defaults/</guid>
-      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;#34;String&amp;#34;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
+      <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;quot;String&amp;quot;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
     </item>
     
     <item>

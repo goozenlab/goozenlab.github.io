@@ -257,7 +257,7 @@ Kindle版があるのがちょっと気になる。</p>
         # current version of your application, you should pass the real
         # application path instead of the path to the symlink to PHP
         # FPM.
-        # Otherwise, PHP&#39;s OPcache may not properly detect changes to
+        # Otherwise, PHP's OPcache may not properly detect changes to
         # your PHP files (see https://github.com/zendtech/ZendOptimizerPlus/issues/126
         # for more information).
         
@@ -271,7 +271,7 @@ Kindle版があるのがちょっと気になる。</p>
     }
 
     # return 404 for all other php files not matching the front controller
-    # this prevents access to other php files you don&#39;t want to be accessible.
+    # this prevents access to other php files you don't want to be accessible.
     location ~ \.php$ {
         return 404;
     }
@@ -288,8 +288,8 @@ Kindle版があるのがちょっと気になる。</p>
 データーベース名・ユーザー名・パスワードは変更してください。</p>
 <pre tabindex="0"><code>pi@tacos:~ $ sudo mysql -u root
 MariaDB [(none)]&gt; CREATE DATABASE wallabag; 
-MariaDB [(none)]&gt; CREATE USER &#39;wallabag-user&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;wallabag-pa$$word&#39;;
-MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON wallabag.* TO &#39;wallabag-user&#39;@&#39;localhost&#39;;
+MariaDB [(none)]&gt; CREATE USER 'wallabag-user'@'localhost' IDENTIFIED BY 'wallabag-pa$$word';
+MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON wallabag.* TO 'wallabag-user'@'localhost';
 MariaDB [(none)]&gt; exit;
 </code></pre><hr>
 <h2 id="インストール">インストール</h2>

@@ -219,8 +219,8 @@ jin@debian:~$ psd
  First time running psd so please edit /home/jin/.config/psd/psd.conf to your liking and run again.
 jin@debian:~$ vi .config/psd/psd.conf
 
-USE_OVERLAYFS=&#34;yes&#34;
-BROWSERS=&#34;firefox”
+USE_OVERLAYFS=&quot;yes&quot;
+BROWSERS=&quot;firefox”
 </code></pre><p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
 <pre tabindex="0"><code>jin@debian:~$ sudo modprobe overlay
 jin@debian:~$ sudo visudo
@@ -228,11 +228,11 @@ jin@debian:~$ sudo visudo
 jin ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
 </code></pre><p>しかしながら、modinfoにアクセスできないとエラーが出る。。インストールはされているのだけど、、</p>
 <pre tabindex="0"><code>jin@debian:~$ psd p
- I require modinfo but it&#39;s not installed. Aborting!
+ I require modinfo but it's not installed. Aborting!
 </code></pre><p><code>/sbin</code>へパスが通ってないのが問題の様だったので、とりあえず.profile にPATHを追加します。</p>
 <pre tabindex="0"><code>jin@debian:~$ vi .profile
 
-PATH=&#34;/usr/sbin:/sbin&#34;
+PATH=&quot;/usr/sbin:/sbin&quot;
 </code></pre><p>でもう一度。</p>
 <pre tabindex="0"><code>jin@debian:~$ psd p
 Profile-sync-daemon v6.31 on Debian GNU/Linux 10 (buster)

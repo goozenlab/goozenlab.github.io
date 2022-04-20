@@ -214,12 +214,12 @@
 <p>ブロック表記が出てくると目が点になってしまう私。。。</p>
 <p>以下 Objective-C での表記</p>
 <pre tabindex="0"><code>NSArray *myTasks = [[NSArray alloc] initWithArray:[event.tasks allObjects]];
-NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&#34;isRedHot == YES&#34;];
+NSPredicate *hotPredicate = [NSPredicate predicateWithFormat:@&quot;isRedHot == YES&quot;];
 NSArray *filteredArray = [myTasks filteredArrayUsingPredicate:hotPredicate];
 return [filteredArray count] &gt; 0;
 </code></pre><p>Swiftで書き上げにはブロック内に<code>(user: UserDetails) -&gt; Bool in</code> で書き込む方法もあり試すもエラーがでる。。あーーー、ブロック、、意味わからん。。。しかし、救いの神のNSPredicateを使った場合は以下、随分スッキリします。（こっちの方が全然良いわ。。<code> $0.isRedHot = &quot;YES&quot;</code> 何じゃかんじゃより。。）書き上げるとこんな感じ。</p>
 <pre tabindex="0"><code>let myTasks = tasks?.allObjects
-let predicate = NSPredicate(format: &#34;isRedHot == YES&#34;)
+let predicate = NSPredicate(format: &quot;isRedHot == YES&quot;)
 let filteredArray = myTasks?.filter( {
     predicate.evaluateWithObject($0)
     } )

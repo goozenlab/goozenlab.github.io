@@ -241,15 +241,15 @@ root@raspberrypi:~ # apt install telegraph
 <pre tabindex="0"><code>pi@tacos:~ $ sudo vi /etc/telegraf/telegraf.conf
 
 [agent]
-interval = &#34;1s&#34;
-precision = &#34;&#34;
+interval = &quot;1s&quot;
+precision = &quot;&quot;
 
 [[outputs.influxdb]]
-urls = [&#34;http://&lt;the IP of your InfluxDB server&gt;:8086&#34;]
-database = &#34;telegraf&#34;
-retention_policy = &#34;&#34;
-write_consistency = &#34;any&#34;
-timeout = &#34;5s&#34;
+urls = [&quot;http://&lt;the IP of your InfluxDB server&gt;:8086&quot;]
+database = &quot;telegraf&quot;
+retention_policy = &quot;&quot;
+write_consistency = &quot;any&quot;
+timeout = &quot;5s&quot;
 </code></pre><p>設定を有効化するために、サービスを再起動します。</p>
 <pre tabindex="0"><code>pi@tacos:~ $ sudo systemctl restart telegraf.service
 </code></pre><h2 id="grafanaでの設定">Grafanaでの設定</h2>
@@ -278,18 +278,18 @@ telegrafをスタートした時点から、データーの収集がされてい
 # CPU Frequency: rpi-freq
 #
 
-echo &#34;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000 ))&#34;
+echo &quot;$(( $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)/1000 ))&quot;
 </code></pre><p>スクリプトは、<code>/usr/local/bin/</code>に保存して、<code>chmod +x</code>で実行権を与えておきます。</p>
 <p>telegrafでの設定は、以下を追加します。</p>
 <pre tabindex="0"><code>[[inputs.file]] 
-  files = [&#34;/sys/class/thermal/thermal_zone0/temp&#34;]
-  name_override = &#34;cpu_temperature&#34;
-  data_format = &#34;value&#34;
-  data_type = &#34;integer&#34;
+  files = [&quot;/sys/class/thermal/thermal_zone0/temp&quot;]
+  name_override = &quot;cpu_temperature&quot;
+  data_format = &quot;value&quot;
+  data_type = &quot;integer&quot;
   
 [[inputs.exec]]
-  commands = [ &#34;/usr/local/bin/rpi-freq&#34; ]
-  name_override = &#34;cpu_frequency &#34;
+  commands = [ &quot;/usr/local/bin/rpi-freq&quot; ]
+  name_override = &quot;cpu_frequency &quot;
 </code></pre><!--
 ```
 #!/bin/bash

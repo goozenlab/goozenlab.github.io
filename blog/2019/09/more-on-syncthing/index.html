@@ -237,12 +237,12 @@ CPUへの負担やメモリー使用状況などまずはチェックするこ�
 ==&gt; syncthing
 To have launchd start syncthing now and restart at login:
   brew services start syncthing
-Or, if you don&#39;t want/need a background service you can just run:
+Or, if you don't want/need a background service you can just run:
   syncthing
 jin@gallo:~ $
 jin@gallo:~ $ brew services start syncthing
 ==&gt; Tapping homebrew/services
-Cloning into &#39;/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services&#39;...
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'...
 remote: Enumerating objects: 14, done.
 remote: Counting objects: 100% (14/14), done.
 remote: Compressing objects: 100% (9/9), done.
@@ -255,9 +255,9 @@ jin@gallo:~ $
 <code>~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist</code>
 のファイルが作られサービスに登録されます。
 ファイルの中身はこんな感じです。</p>
-<pre tabindex="0"><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
-&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;
-&lt;plist version=&#34;1.0&#34;&gt;
+<pre tabindex="0"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
   &lt;dict&gt;
     &lt;key&gt;Label&lt;/key&gt;
     &lt;string&gt;homebrew.mxcl.syncthing&lt;/string&gt;

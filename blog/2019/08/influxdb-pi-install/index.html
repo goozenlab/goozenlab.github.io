@@ -228,6 +228,7 @@ deb https://repos.influxdata.com/debian buster stable
 
 root@raspberrypi:~ # apt update
 root@raspberrypi:~ # apt install influxdb
+
 </code></pre><p>インストールの確認</p>
 <pre tabindex="0"><code>$ curl -sl -I http://localhost:8086/ping
 HTTP/1.1 204 No Content
@@ -236,8 +237,8 @@ Request-Id: aea43b2a-1c5b-11e9-8003-000000000000
 X-Influxdb-Version: 1.0.2
 Date: Sun, 20 Jan 2019 02:32:50 GMT
 </code></pre><p>アクセスとクエリーは<strong>curl</strong>を使って出来ます。</p>
-<pre tabindex="0"><code>$ curl http://localhost:8086/query --data-urlencode &#34;q=SHOW DATABASES&#34;
-{&#34;results&#34;:[{&#34;series&#34;:[{&#34;name&#34;:&#34;databases&#34;,&#34;columns&#34;:[&#34;name&#34;],&#34;values&#34;:[[&#34;_internal&#34;]]}]}]}
+<pre tabindex="0"><code>$ curl http://localhost:8086/query --data-urlencode &quot;q=SHOW DATABASES&quot;
+{&quot;results&quot;:[{&quot;series&quot;:[{&quot;name&quot;:&quot;databases&quot;,&quot;columns&quot;:[&quot;name&quot;],&quot;values&quot;:[[&quot;_internal&quot;]]}]}]}
 </code></pre><p>シェルは<strong>8086</strong>・Webからは<strong>8083</strong>にアクセス。とちょっと間違えやすいというか、忘れやすい。
 デビアンバージョンでは付属していないコマンド<code>influx</code>でアクセスすることもできます。</p>
 <pre tabindex="0"><code>pi@raspberrypi:~ $ influx

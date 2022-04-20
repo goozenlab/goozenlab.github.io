@@ -227,12 +227,13 @@ DBはmariaDBを使っています。Postgresqlにも対応、Sqliteはオスス�
 
 ;cgi.fix_pathinfo=1
 cgi.fix_pathinfo=0
+
 </code></pre><hr>
 <h2 id="データーベース作成">データーベース作成</h2>
 <p>あらかじめデーターベースを作成しておきます。</p>
 <pre tabindex="0"><code>pi@tacos:~ $ sudo mysql -u root
 MariaDB [(none)]&gt; CREATE DATABASE firefly;
-MariaDB [(none)]&gt; GRANT ALL ON firefly.* TO &#39;firefly-user&#39;@localhost IDENTIFIED BY &#39;firefly-pa$$wd&#39;;
+MariaDB [(none)]&gt; GRANT ALL ON firefly.* TO 'firefly-user'@localhost IDENTIFIED BY 'firefly-pa$$wd';
 MariaDB [(none)]&gt; exit
 Bye
 </code></pre><h2 id="ウェブサイトの設定">ウェブサイトの設定</h2>

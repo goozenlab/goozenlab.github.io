@@ -293,7 +293,7 @@ class ListTableViewController: UITableViewController,NSFetchedResultsControllerD
 
     #if LITE
     /// The banner view.
-    let GADApplicationID = &#34;ca-app-pub-xxxxxxx/xxxxxxx&#34;
+    let GADApplicationID = &quot;ca-app-pub-xxxxxxx/xxxxxxx&quot;
     var bannerView: GADBannerView!
     #endif
     
@@ -327,7 +327,7 @@ import GoogleMobileAds
 extension ListTableViewController: GADBannerViewDelegate {
     
     func loadAdmob() {
-        print(&#34;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&#34;)
+        print(&quot;Google Mobile Ads SDK version: \(GADRequest.sdkVersion())&quot;)
         
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView.adUnitID = GADApplicationID
@@ -341,10 +341,10 @@ extension ListTableViewController: GADBannerViewDelegate {
     }
         
     func adViewDidReceiveAd(bannerView: GADBannerView!) {
-        print(&#34;Admob:adViewDidReceiveAd&#34;)
+        print(&quot;Admob:adViewDidReceiveAd&quot;)
         let adMobView = bannerView
         
-        UIView.beginAnimations(&#34;AdBannerMoveOnScreen&#34;, context: nil)
+        UIView.beginAnimations(&quot;AdBannerMoveOnScreen&quot;, context: nil)
         self.bannerView.frame = CGRectMake(0.0, 0.0,
                                            adMobView.frame.size.width, adMobView.frame.size.height)
         self.tableView.tableHeaderView = self.bannerView
@@ -352,7 +352,7 @@ extension ListTableViewController: GADBannerViewDelegate {
     }
     
     func adView(bannerView: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        UIView.beginAnimations(&#34;ClearBannerView&#34;, context: nil)
+        UIView.beginAnimations(&quot;ClearBannerView&quot;, context: nil)
         bannerView.frame = CGRectMake(0.0, 0.0, bannerView.frame.size.width, 0.0)
         tableView.tableHeaderView = bannerView        
         UIView.commitAnimations()

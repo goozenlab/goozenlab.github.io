@@ -226,7 +226,7 @@ Downloading and unpacking...
                                  Dload  Upload   Total   Spent    Left  Speed
 100 53.0M  100 53.0M    0     0  1453k      0  0:00:37  0:00:37 --:--:-- 1282k
 Installing...
-Done. You&#39;re now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
+Done. You're now running build 10a20c605130a26efce0e5640c4a7d56a706f5bf
 gallo% 
 </code></pre><p>ローカルのアプリが最新であれば、</p>
 <pre tabindex="0"><code>gallo% sh ./chromium_update.sh
@@ -245,20 +245,20 @@ gallo%
 # http://hints.macworld.com/article.php?story=20090604081030791
 
 # setup ------------------------------------------------------------------------
-tempDir=&#34;/tmp/`whoami`/chrome-nightly/&#34;;
-baseURL=&#34;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&#34;;
-baseName=&#34;chrome-mac&#34;;
-baseExt=&#34;zip&#34;;
-appName=&#34;Chromium.app&#34;;
-appDir=&#34;/Applications&#34;;
+tempDir=&quot;/tmp/`whoami`/chrome-nightly/&quot;;
+baseURL=&quot;http://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac&quot;;
+baseName=&quot;chrome-mac&quot;;
+baseExt=&quot;zip&quot;;
+appName=&quot;Chromium.app&quot;;
+appDir=&quot;/Applications&quot;;
 version=~/.CURRENT_CHROME;
 # ------------------------------------------------------------------------------
 
 
 # ------------------------------------------------------------------------------
 function checkForErrors {
-    if [ &#34;$?&#34; != &#34;0&#34; ]; then
-        echo &#34;Unkown error (see above for help)!&#34;;
+    if [ &quot;$?&quot; != &quot;0&quot; ]; then
+        echo &quot;Unkown error (see above for help)!&quot;;
         exit 3;
     fi
 }
@@ -266,34 +266,34 @@ function checkForErrors {
 
 
 # ------------------------------------------------------------------------------
-echo &#34;Setup...&#34;;
-mkdir -p &#34;$tempDir&#34;;
-cd &#34;$tempDir&#34;;
+echo &quot;Setup...&quot;;
+mkdir -p &quot;$tempDir&quot;;
+cd &quot;$tempDir&quot;;
 checkForErrors;
 # ------------------------------------------------------------------------------
 
 
 # ------------------------------------------------------------------------------
-echo &#34;Checking current version...&#34;;
+echo &quot;Checking current version...&quot;;
 touch $version
 currentVersion=`cat $version`;
 latestVersion=`curl -s $baseURL/LAST_CHANGE`;
 checkForErrors;
-echo &#34; * your/latest build: $currentVersion / $latestVersion&#34;;
-if [ &#34;$currentVersion&#34; == &#34;$latestVersion&#34; ]; then
-    echo &#34; * build $currentVersion is the latest one.&#34;;
+echo &quot; * your/latest build: $currentVersion / $latestVersion&quot;;
+if [ &quot;$currentVersion&quot; == &quot;$latestVersion&quot; ]; then
+    echo &quot; * build $currentVersion is the latest one.&quot;;
     exit 1;
 fi
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-echo &#34;Downloading and unpacking...&#34;;
-chromePID=`ps wwaux|grep -v grep|grep &#34;$appName&#34;|awk &#39;{print $2}&#39;`;
-if [ &#34;$chromePID&#34; != &#34;&#34; ];then
-    echo &#34; * chromium is running. Please stop it first.&#34;;
+echo &quot;Downloading and unpacking...&quot;;
+chromePID=`ps wwaux|grep -v grep|grep &quot;$appName&quot;|awk '{print $2}'`;
+if [ &quot;$chromePID&quot; != &quot;&quot; ];then
+    echo &quot; * chromium is running. Please stop it first.&quot;;
     exit 2;
 fi
-curl -o $baseName.$baseExt &#34;$baseURL/$latestVersion/$baseName.$baseExt&#34;;
+curl -o $baseName.$baseExt &quot;$baseURL/$latestVersion/$baseName.$baseExt&quot;;
 
 unzip -qo $baseName.$baseExt;
 checkForErrors;
@@ -301,7 +301,7 @@ checkForErrors;
 
 
 # ------------------------------------------------------------------------------
-echo &#34;Installing...&#34;;
+echo &quot;Installing...&quot;;
 cp -r $baseName/$appName $appDir
 checkForErrors;
 echo $latestVersion &gt; $version;
@@ -309,8 +309,9 @@ echo $latestVersion &gt; $version;
 
 
 # ------------------------------------------------------------------------------
-echo &#34;Done. You&#39;re now running build $latestVersion&#34;;
+echo &quot;Done. You're now running build $latestVersion&quot;;
 # ------------------------------------------------------------------------------
+
 </code></pre>
 				
 

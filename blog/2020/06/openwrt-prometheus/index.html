@@ -237,34 +237,37 @@ web_listen_addressを
 に変更します。</p>
 <pre tabindex="0"><code>root@OpenWrt:~$ vi /etc/config/prometheus
 
-config prometheus &#39;prometheus&#39;
-        option config_file &#39;/etc/prometheus.yml&#39;
-        option storage_tsdb_path &#39;/srv/prometheus/data&#39;
-        option web_listen_address &#39;0.0.0.0:9090&#39;
+config prometheus 'prometheus'
+        option config_file '/etc/prometheus.yml'
+        option storage_tsdb_path '/srv/prometheus/data'
+        option web_listen_address '0.0.0.0:9090'
+
 </code></pre><h3 id="etcprometheusyml">/etc/prometheus.yml</h3>
 <p>プロメテウスの設定ファイル、新しい<code>job</code>を追加します。
 とりあえずローカルのみの監視になるので、以下のノード設定を追記します。</p>
-<pre tabindex="0"><code>  - job_name: &#39;localnetwork&#39;
+<pre tabindex="0"><code>  - job_name: 'localnetwork'
     static_configs:
-    - targets: [&#39;localhost:9100&#39;]
+    - targets: ['localhost:9100']
+
 </code></pre><p>で、以下のようになります。</p>
 <pre tabindex="0"><code>root@OpenWrt:~$ vi /etc/prometheus.yml
 
 # A scrape configuration containing exactly one endpoint to scrape:
-# Here it&#39;s Prometheus itself.
+# Here it's Prometheus itself.
 scrape_configs:
   # The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.
-  - job_name: &#39;prometheus&#39;
+  - job_name: 'prometheus'
 
-    # metrics_path defaults to &#39;/metrics&#39;
-    # scheme defaults to &#39;http&#39;.
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
 
     static_configs:
-    - targets: [&#39;localhost:9090&#39;]
+    - targets: ['localhost:9090']
 
-  - job_name: &#39;localnetwork&#39;
+  - job_name: 'localnetwork'
     static_configs:
-    - targets: [&#39;localhost:9100&#39;]
+    - targets: ['localhost:9100']
+
 </code></pre><h3 id="exporterの設定etcconfigprometheus-node-exporter-lua">Exporterの設定：/etc/config/prometheus-node-exporter-lua</h3>
 <p>エクスポーターの設定ファイル、
 listen_interface部分のIPを変更する必要があるとみて
@@ -273,10 +276,10 @@ listen_interface部分のIPを変更する必要があるとみて
 結局いじる必要なくそのままでよいようです。</p>
 <pre tabindex="0"><code>$ cat /etc/config/prometheus-node-exporter-lua 
 
-config prometheus-node-exporter-lua &#39;main&#39;
-        option listen_interface &#39;loopback&#39;
-        option listen_ipv6 &#39;0&#39;
-        option listen_port &#39;9100&#39;
+config prometheus-node-exporter-lua 'main'
+        option listen_interface 'loopback'
+        option listen_ipv6 '0'
+        option listen_port '9100'
 </code></pre><h2 id="サービスの起動">サービスの起動</h2>
 <p>プロメテウスとエクスポーターのサービスをスタートします。</p>
 <pre tabindex="0"><code>root@OpenWrt:~$ service prometheus start

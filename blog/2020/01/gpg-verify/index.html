@@ -228,26 +228,26 @@
 <code>gpg --verify file.sig file</code>
 で行います。署名されたfileがfile.sigと同じディレクトリにある場合,はfileの指定を省略できます.</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
-gpg: assuming signed data in &#39;neon-user-20200102-1116.iso&#39;
+gpg: assuming signed data in 'neon-user-20200102-1116.iso'
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
 gpg:                using RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76
 gpg: key DEACEA00075E1D76: new key but contains no user ID - skipped
 gpg: Total number processed: 1
 gpg:           w/o user IDs: 1
-gpg: Can&#39;t check signature: No public key
+gpg: Can't check signature: No public key
 </code></pre><p>相手の公開鍵が見当たらないのでダウンロードします。<br>
 <code>RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76</code>
 の鍵アドレスを使ってキーサーバーに問い合わせをします。</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --keyserver keys.gnupg.net --recv-key 348C8651206633FD983A8FC4DEACEA00075E1D76
-gpg: key DEACEA00075E1D76: public key &#34;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&#34; imported
+gpg: key DEACEA00075E1D76: public key &quot;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&quot; imported
 gpg: Total number processed: 1
 gpg:               imported: 1
 </code></pre><p>そしてもう一度実行します。今回はエラーなく終了。</p>
 <pre tabindex="0"><code>jin@guiness: $ gpg --verify neon-user-20200102-1116.iso.sig
-gpg: assuming signed data in &#39;neon-user-20200102-1116.iso&#39;
+gpg: assuming signed data in 'neon-user-20200102-1116.iso'
 gpg: Signature made Thu Jan  2 18:32:07 2020 +07
 gpg:                using RSA key 348C8651206633FD983A8FC4DEACEA00075E1D76
-gpg: Good signature from &#34;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&#34; [unknown]
+gpg: Good signature from &quot;KDE neon ISO Signing Key &lt;neon@kde.org&gt;&quot; [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 348C 8651 2066 33FD 983A  8FC4 DEAC EA00 075E 1D76

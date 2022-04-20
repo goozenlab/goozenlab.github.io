@@ -216,9 +216,9 @@
 $ git init
 $ git remote add origin https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
 $ git add -A
-$ git commit -m &#34;initial commit&#34;
+$ git commit -m &quot;initial commit&quot;
 $ git push origin master
-Password for &#39;https://YOUR_ACCOUNT@bitbucket.org&#39;:
+Password for 'https://YOUR_ACCOUNT@bitbucket.org':
 Counting objects: 166, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (163/163), done.
@@ -227,7 +227,7 @@ Total 166 (delta 3), reused 0 (delta 0)
 To https://YOUR_ACCOUNT@bitbucket.org/YOUR_ACCOUNT/YOUR_REPOSITORY.git
  * [new branch]      master -&gt; master
 $ git submodule add https://github.com/YOUR_ACCOUNT/goozenlab.github.io.git public
-Cloning into &#39;public&#39;...
+Cloning into 'public'...
 remote: Counting objects: 9437, done.
 remote: Compressing objects: 100% (419/419), done.
 remote: Total 9437 (delta 271), reused 0 (delta 0), pack-reused 8762
@@ -244,18 +244,19 @@ $
 <p><code>hugo_preview.sh</code></p>
 <pre tabindex="0"><code>#!/bin/bash
 
-echo -e &#34;\033[0;32m---- rsync ----\033[0m&#34;
+echo -e &quot;\033[0;32m---- rsync ----\033[0m&quot;
 
-rsync -avz --delete --exclude &#39;Notes &amp; Settings&#39; --exclude &#39;Untitled*&#39; --exclude &#39;.*&#39; /&#34;保存先のフォルダ&#34;/ /&#34;HugoSites&#34;/content/post
+rsync -avz --delete --exclude 'Notes &amp; Settings' --exclude 'Untitled*' --exclude '.*' /&quot;保存先のフォルダ&quot;/ /&quot;HugoSites&quot;/content/post
 
-echo -e &#34;\033[0;32mhugo preview...\033[0m&#34;
+echo -e &quot;\033[0;32mhugo preview...\033[0m&quot;
 
 hugo server --buildDrafts --theme=default
+
 </code></pre><h2 id="デプロイの方法">デプロイの方法</h2>
 <p><code>deploy.sh</code></p>
 <pre tabindex="0"><code>#!/bin/bash
 
-echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
 
 # Build the project. 
 # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
@@ -269,22 +270,23 @@ cd public
 git add -A
 
 # Commit changes.
-msg=&#34;rebuilding site `date`&#34;
+msg=&quot;rebuilding site `date`&quot;
 if [ $# -eq 1 ]
-  then msg=&#34;$1&#34;
+  then msg=&quot;$1&quot;
 fi
-git commit -m &#34;$msg&#34;
+git commit -m &quot;$msg&quot;
 
 # Push source and build repos.
 git push origin master
 
 # Come Back
 cd ..
+
 </code></pre><p>その他のファイルの更新は、タイミングを計って手動でdeployしています。自動でbitbukket にも更新を入れたい時は</p>
-<pre tabindex="0"><code>echo -e &#34;\033[0;32mDeploying updates to Bitbukket...\033[0m&#34;
+<pre tabindex="0"><code>echo -e &quot;\033[0;32mDeploying updates to Bitbukket...\033[0m&quot;
 
 git add -A
-git commit -m &#34;$msg&#34;
+git commit -m &quot;$msg&quot;
 git push origin master
 </code></pre><p>をdeploy.sh に追加すれば良いのかな。</p>
 <p>実行のフラグを付けておしまい。</p>

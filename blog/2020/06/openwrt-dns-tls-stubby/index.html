@@ -221,14 +221,14 @@ root@OpenWrt:~＄ opkg install dnsmasq stubby
 </code></pre><p>DNSの暗号化を有効化します。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ uci -q delete dhcp.@dnsmasq[0].server
 root@OpenWrt:~＄ uci get stubby.global.listen_address \
-| sed -e &#34;s/\s/\n/g;s/@/#/g&#34; \
+| sed -e &quot;s/\s/\n/g;s/@/#/g&quot; \
 | while read -r STUBBY_SERV
 do
-uci add_list dhcp.@dnsmasq[0].server=&#34;${STUBBY_SERV}&#34;
+uci add_list dhcp.@dnsmasq[0].server=&quot;${STUBBY_SERV}&quot;
 done
 root@OpenWrt:~＄ 
 # Enforce DNS encryption for LAN clients
-root@OpenWrt:~＄ uci set dhcp.@dnsmasq[0].noresolv=&#34;1&#34;
+root@OpenWrt:~＄ uci set dhcp.@dnsmasq[0].noresolv=&quot;1&quot;
 root@OpenWrt:~＄ uci commit dhcp
 </code></pre><p>サービスを再起動、stubbyを起動時に動くように登録します。</p>
 <pre tabindex="0"><code>root@OpenWrt:~＄ /etc/init.d/dnsmasq restart

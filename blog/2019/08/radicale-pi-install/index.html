@@ -273,7 +273,7 @@ pi@tacos:~ $ sudo vi /etc/radicale/config
 <pre tabindex="0"><code>pi@tacos:~ $ sudo apt-get install apache2-utils
 </code></pre><p>$USERと$USER２のパスワードを<code>home/pi/.radicale_htpasswd</code>に保存します。
 暗号化タイプは<code>bcrypt</code>、とても安全ということです。</p>
-<pre tabindex="0"><code># Create a new htpasswd file with the user &#34;$USER&#34;
+<pre tabindex="0"><code># Create a new htpasswd file with the user &quot;$USER&quot;
 pi@tacos:~ $ htpasswd -B -c /home/pi/.radicale_htpasswd $USER
 New password:
 Re-type new password:
@@ -288,6 +288,7 @@ Re-type new password:
 type = htpasswd
 htpasswd_filename = /home/pi/.radicale_htpasswd
 htpasswd_encryption = bcrypt
+
 </code></pre><p>ちなみに、ストレージ先は
 <code>/var/lib/radicale/collections</code>
 になります。</p>

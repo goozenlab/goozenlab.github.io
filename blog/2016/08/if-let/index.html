@@ -224,6 +224,7 @@ if let lock  = event.isLocked as? Bool {
 
 guard let lock  = event.isLocked as? Bool else { return }
 cell.isLocked = lock
+
 </code></pre><p>そしてしかも、簡略した（?：ニル、？：なの）<code>xx = yy ??</code> もある。</p>
 <pre tabindex="0"><code># xx = yy ??
 cell.isLocked = event.isLocked as? Bool ?? false

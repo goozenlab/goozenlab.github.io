@@ -219,18 +219,19 @@ import CoreData
 import ReachabilitySwift
 import MBProgressHUD
 import SwiftyDropbox
+
 </code></pre><p>でも、なんか、XCodeが半落ち状態になることが頻発するようになった。。</p>
 <p>ちなみに、Podfileはこんな感じです。</p>
-<pre tabindex="0"><code>project &#39;(a).xcodeproj&#39;
-platform :ios, &#39;8.0&#39;
+<pre tabindex="0"><code>project '(a).xcodeproj'
+platform :ios, '8.0'
 
-target &#39;(a)&#39; do
+target '(a)' do
   use_frameworks!
 
   # Pods for (a)
-  pod &#39;ReachabilitySwift&#39;
-  pod &#39;MBProgressHUD&#39;
-  pod &#39;SwiftyDropbox&#39;
+  pod 'ReachabilitySwift'
+  pod 'MBProgressHUD'
+  pod 'SwiftyDropbox'
   
 end
 </code></pre>

@@ -212,15 +212,16 @@
 <p>このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレートを２種類使ってます。</p>
 <pre tabindex="0"><code>---
 layout: app_page
-title: &#34;(a)のちょっと詳しい使い方&#34;
-subtitle: &#34;タスク管理をマークダウンで&#34;
-appid: &#34;929324285&#34;
-date: &#34;2015-01-25&#34;
-updated: &#34;2015-01-25&#34;
+title: &quot;(a)のちょっと詳しい使い方&quot;
+subtitle: &quot;タスク管理をマークダウンで&quot;
+appid: &quot;929324285&quot;
+date: &quot;2015-01-25&quot;
+updated: &quot;2015-01-25&quot;
 footer: true
 ---
 
 # アプリページのオクトプレスより移行のyaml
+
 </code></pre><p><code>layout: app_page</code> がある事で <code>layout/_default/app_page.html</code> を探しにいき、もしくはコンテンツファイルを別のフォルダー<code>iapp</code>に入れておくと、<code>layout: app_page</code>が無くても<code>layout/iapp/single.html</code>があれば優先して使われるよう。</p>
 <p><img src="/images/2015-03-07_hugo-template.png" alt="Hugo Template">
 <img src="/images/2015-03-07_hugo-template2.png" alt="Hugo Template"></p>
@@ -228,7 +229,7 @@ footer: true
 <p>yaml内にあるスマートバナー広告で使う<code>appid: &quot;929324285&quot;</code>は
 以下のようにして <code>partials/header.html</code> に 取り込む事ができました。だめ元でPage.等を書き込んで試したりしましたが、<code>.Params</code>を使うのが正解のようです。</p>
 <pre tabindex="0"><code>{{ if .Params.appid }}
-  &lt;meta name=&#34;apple-itunes-app&#34; content=&#34;app-id={{ .Params.appid }}&#34;&gt;
+  &lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id={{ .Params.appid }}&quot;&gt;
 {{ end }}
 </code></pre><p>しかし、未だページングは手に着かず。。でも何となく構造がつかめてきたような、、、</p>
 
