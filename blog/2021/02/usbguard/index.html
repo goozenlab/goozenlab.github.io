@@ -205,7 +205,6 @@
                 </p>
                 <h1>USBが使えない</h1>
             </div>
-
             <div class="post-content">
                 <p>デビアン端末で久しぶりにUSBのディスクを繋げてみると無反応。</p>
 <!-- カーネルのアップグレーなどをしているので、 -->
@@ -233,7 +232,7 @@ allow id 054c:0243 serial &#34;112143&#34; name &#34;Storage Media&#34; hash &#3
 <p>追記：こんな感じのスクリプトでいけるのかな。。</p>
 <pre tabindex="0"><code>$ sudo usbguard generate-policy | tail -n 1 | sudo tee -a /etc/usbguard/rules.conf
 </code></pre>
-				
+                
 
 <h3>See Also</h3>
 <ul>
@@ -246,16 +245,35 @@ allow id 054c:0243 serial &#34;112143&#34; name &#34;Storage Media&#34; hash &#3
 	
 	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
 	
-	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
+	<li><a href="/blog/2020/02/appimage-debian/">AppImageをデビアンで：AppImage Launcher</a></li>
 	
 </ul>
 
 
-                
-				
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2021/02/usbguard/";  
+    this.page.identifier = "2021-02-06-usbguard"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />

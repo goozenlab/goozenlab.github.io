@@ -203,7 +203,6 @@
                 </p>
                 <h1>SSH簡単ログイン</h1>
             </div>
-
             <div class="post-content">
                 <p>あっちにアクセス、こっちにアクセス、で、ちょっとWifi通信が切れたりと、なかなか面倒が増えてストレスになりつつあるので、SSHをパスワードなしでログインできるようにしました。公開鍵をサーバーに登録するだけの作業でできます。</p>
 <p>追記7月10日：<strong>openWrt</strong>での設定を一番下に追加しました。</p>
@@ -297,14 +296,33 @@ root@shadow:~# chmod 600 /etc/dropbear/authorized_keys
 root@shadow:~# uci commit dropbear
 </code></pre><p>そして、上記のように<code>~/.ssh/config</code>を編集して簡単にアクセスできるようにして終了。</p>
 
-				
-
-
                 
-				
+
+
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2019/06/rsa-ssh-login/";  
+    this.page.identifier = "2019-06-29-rsa-ssh-login"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />

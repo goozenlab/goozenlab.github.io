@@ -37,24 +37,6 @@
     </item>
     
     <item>
-      <title>Mozcの環境構築まとめ</title>
-      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
-      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
-    </item>
-    
-    <item>
-      <title>Mozcの環境構築まとめ</title>
-      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
-      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
-    </item>
-    
-    <item>
       <title>TLP on Arch</title>
       <link>https://goozenlab.github.io/blog/2020/02/tlp-arch/</link>
       <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>

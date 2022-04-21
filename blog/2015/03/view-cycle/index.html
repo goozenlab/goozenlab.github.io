@@ -205,7 +205,6 @@
                 </p>
                 <h1>ビューサイクルとアプリ復帰時の処理</h1>
             </div>
-
             <div class="post-content">
                 <p>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。</p>
 <h2 id="起動時">起動時</h2>
@@ -238,7 +237,7 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 <p>逆にスリープに入る時には復帰時と同じで、<code>ApplicationWillEnterForeground</code> の代わりに <code>ApplicationDidEnterBackground</code> を使えば良い。</p>
 <pre tabindex="0"><code> NSNotificationCenter.defaultCenter().addObserver(self, selector: &#34;applicationDidEnterBackground:&#34;, name: UIApplicationDidEnterBackgroundNotification, object: app)
 </code></pre>
-				
+                
 
 <h3>See Also</h3>
 <ul>
@@ -256,11 +255,30 @@ NSNotificationCenter.defaultCenter().addObserver(self,
 </ul>
 
 
-                
-				
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2015/03/view-cycle/";  
+    this.page.identifier = "2015-03-20-view-cycle"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />

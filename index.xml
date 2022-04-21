@@ -55,12 +55,48 @@
     </item>
     
     <item>
+      <title>SEEDとは</title>
+      <link>https://goozenlab.github.io/crypto/seed/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/seed/</guid>
+      <description>暗号通貨の管理に欠かせない、 無くなったら全てを失う事になりリカバリー不可能。 厄介な シード(SEED) とは何者か？ いかに管理するかのが良いか、</description>
+    </item>
+    
+    <item>
+      <title>BTC Core : macOS</title>
+      <link>https://goozenlab.github.io/crypto/macos-btccore/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/macos-btccore/</guid>
+      <description>Spectorというウォレット・アプリを使うにはフルノードへの接続が必要ということで、 勉強の一環として、BTCのフルノードをMacOSにイン</description>
+    </item>
+    
+    <item>
+      <title>Tor : macOS</title>
+      <link>https://goozenlab.github.io/crypto/macos-tor/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/macos-tor/</guid>
+      <description>BTCのフルノードを走らせてみたいのもあって、 接続回線の隠匿化に使うオニオンルーターことTorをインストールしてみました。 思ったより割とあっ</description>
+    </item>
+    
+    <item>
       <title>アドセンス抜き</title>
       <link>https://goozenlab.github.io/blog/2022/03/remove-gad/</link>
       <pubDate>Tue, 01 Mar 2022 12:00:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/03/remove-gad/</guid>
       <description>脱Googleの一環として 昨年のいつ頃からかGoogleアナリティクスを無効化しました。 今回は（ほとんどの方は広告ブロッカーを利用をしている</description>
+    </item>
+    
+    <item>
+      <title>BTCのアダプション・ニュース</title>
+      <link>https://goozenlab.github.io/crypto/crypto-news/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/crypto-news/</guid>
+      <description>BTCのアダプション（適応・適用）に関するニュースアーカイブです。 テスラやマイクロストラテジーなど、企業資産の一部をBTCに配分したり、 エル</description>
     </item>
     
     <item>
@@ -244,6 +280,24 @@
     </item>
     
     <item>
+      <title>暗号通貨ハードウェア・ウォレット</title>
+      <link>https://goozenlab.github.io/crypto/wallet-hardware/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/wallet-hardware/</guid>
+      <description>暗号通貨を勉強していくと、 取引所にビットコインなどを置いていることに対する不安が大きくなってきます。 取引所がハックされて問題が起きたら、手続</description>
+    </item>
+    
+    <item>
+      <title>親クリプト国</title>
+      <link>https://goozenlab.github.io/crypto/crypto-friendly-countires/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/crypto-friendly-countires/</guid>
+      <description>暗号通貨にやさしい国々をリストアップしました。 エルサルバドル：🇸🇻 世界で最初にBTC（＋米ドルと）を法定通貨にした国家。火山があり、その地熱</description>
+    </item>
+    
+    <item>
       <title>NextDNS</title>
       <link>https://goozenlab.github.io/blog/2021/02/nextdns/</link>
       <pubDate>Fri, 26 Feb 2021 09:30:00 +0700</pubDate>
@@ -295,6 +349,24 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/blockstream-green/</guid>
       <description>東京都の緑のおばさんにはイライラさせられますが、BTC用のシックな緑の財布をご紹介。 クリプト・カレンシーの管理を複数でのマルチセグ・ウォレッ</description>
+    </item>
+    
+    <item>
+      <title>クリプトライフ</title>
+      <link>https://goozenlab.github.io/crypto/living-with-cryptos/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/living-with-cryptos/</guid>
+      <description>のんびりとまとめ中、随時加筆中。まぁ、いったいどこまで値が上がるんでしょうかね。（ある意味心配） 国によって温度差がありますが、じわじわとサー</description>
+    </item>
+    
+    <item>
+      <title>クリプトライフ：ウェブ・サービス</title>
+      <link>https://goozenlab.github.io/crypto/web-services/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/web-services/</guid>
+      <description>不定期+随時更新。書き込んだり消したりしてます。 ウェブ・サービスでクリプトが使えるところをリストアップしました。 メールアドレスなしで Gandi (Domain ho</description>
     </item>
     
     <item>
@@ -854,24 +926,6 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
       <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-config fcitx-mozc をインストール、im-config</description>
-    </item>
-    
-    <item>
-      <title>Mozcの環境構築まとめ</title>
-      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
-      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
-    </item>
-    
-    <item>
-      <title>Mozcの環境構築まとめ</title>
-      <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
-      <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
-      <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-congig fcitx-mozc をインストール、im-congif</description>
     </item>
     
     <item>

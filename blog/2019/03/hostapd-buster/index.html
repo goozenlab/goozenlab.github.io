@@ -205,7 +205,6 @@
                 </p>
                 <h1>アクセスポイント</h1>
             </div>
-
             <div class="post-content">
                 <p>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。プロキシー（とTorも)・サーバーを入れて串刺しにするかちょっと考えてます。</p>
 <p>アクセス・ポイント化する為に必要なソフトは以下の二つ＋最後の方でもう一つ（任意）です。aptでインストールします。</p>
@@ -329,7 +328,7 @@ pi@cashu:~ $ sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 </code></pre><div class="attention"><b>※</b> 無線のdhcpで使うIP番号割り当てを有線で使っているIP番号とちょっとバッティングさせてしまい、有線LANが外に出てかない、という不具合がありました。まったくの凡ミスですが、お気をつけのほど。</div>
 <p>と、Debianの64bit対応Busterは割と問題なく今の所動いてます。大ハマりだった、ドッカーも起動してます。動作が機敏な感じが。。（RPi0Wと比べたら当たり前か。）あとはBTが動いてくれれば、、。</p>
 
-				
+                
 
 <h3>See Also</h3>
 <ul>
@@ -347,11 +346,30 @@ pi@cashu:~ $ sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 </ul>
 
 
-                
-				
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2019/03/hostapd-buster/";  
+    this.page.identifier = "2019-03-17-hostapd-buster"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />

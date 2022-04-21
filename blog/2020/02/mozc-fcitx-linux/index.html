@@ -205,21 +205,20 @@
                 </p>
                 <h1>Mozcの環境構築まとめ</h1>
             </div>
-
             <div class="post-content">
                 <p>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。
 インストール、設定方法をまとめる。</p>
 <h2 id="debian--ubuntu">Debian / Ubuntu</h2>
 <p>Debian と Ubuntu では</p>
-<pre tabindex="0"><code>$ sudo apt-get install im-congig fcitx-mozc
-</code></pre><p>をインストール、im-congif より fcitx を指定します。</p>
+<pre tabindex="0"><code>$ sudo apt-get install im-config fcitx-mozc
+</code></pre><p>をインストール、im-config より fcitx を指定します。</p>
 <p><img src="/images/2020-02-02-mozc-imconfig.png" alt="Mozc Install"></p>
 <p>次にペンギンアイコンの<code>fcitx configurator</code>を立ち上げます。
 mozc を追加して、キーバインドや候補表示のフォント設定などが行なえます。</p>
 <p><img src="/images/2020-02-04-setting-input-00.png" alt="Mozc Install"></p>
 <p>そして、再起動でつかえるようになります。</p>
 <p>ただし、Mozc ツールはバグがあるらしく backport よりインストールする必要があります。コマンドで詳細設定のツールを起動する必要があります。</p>
-<p>コマンドからの辞書ツール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
+<p>コマンドからの辞書ツfiール（上からコンフィグ、辞書ツール、単語登録）へのアクセスは</p>
 <pre tabindex="0"><code>$ /usr/lib/mozc/mozc_tool --mode=config_dialog
 $ /usr/lib/mozc/mozc_tool --mode=dictionary_tool
 $ /usr/lib/mozc/mozc_tool --mode=word_register_dialog
@@ -245,14 +244,10 @@ export QT_IM_MODULE=fcitx
 <p>キーバインディングをハッキントッシュと合わせたいんだけどね、、
 ctl か alt のどっちのキーをメインにするか悩む。。</p>
 
-				
+                
 
 <h3>See Also</h3>
 <ul>
-	
-	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
-	
-	<li><a href="/blog/2020/02/mozc-fcitx-linux/">Mozcの環境構築まとめ</a></li>
 	
 	<li><a href="/blog/2020/01/fast-mirror-list/">最適なミラーサイト</a></li>
 	
@@ -260,14 +255,37 @@ ctl か alt のどっちのキーをメインにするか悩む。。</p>
 	
 	<li><a href="/blog/2020/01/firmware-linux-nonfree/">ファームウェアをアップデート</a></li>
 	
+	<li><a href="/blog/2019/12/linux-update/">Linuxをアップデート</a></li>
+	
+	<li><a href="/blog/2020/02/appimage-debian/">AppImageをデビアンで：AppImage Launcher</a></li>
+	
 </ul>
 
 
-                
-				
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/";  
+    this.page.identifier = "2020-02-04-mozc-fcitx-linux"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />

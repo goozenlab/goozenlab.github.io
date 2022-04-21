@@ -218,7 +218,7 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ==&gt; tor
 To restart tor after an upgrade:
   brew services restart tor
-Or, if you don't want/need a background service you can just run:
+Or, if you don&#39;t want/need a background service you can just run:
   /opt/homebrew/opt/tor/bin/tor
 </code></pre><p>セッションを確立するのにしばしかかります。</p>
 <p><img src="/images/2022-02-10-start-tor.png" alt="Starting tor"></p>
@@ -232,7 +232,7 @@ Or, if you don't want/need a background service you can just run:
 <pre tabindex="0"><code>% /opt/homebrew/opt/tor/bin/tor
 % curl --socks5 localhost:9050 --socks5-hostname localhost:9050 -s https://check.torproject.org/api/ip
 
-{&quot;IsTor&quot;:true,&quot;IP&quot;:&quot;185.100.85.25&quot;}%
+{&#34;IsTor&#34;:true,&#34;IP&#34;:&#34;185.100.85.25&#34;}%
 </code></pre><p>ただしこのまま普通に使ってもTor経由でのアクセスにはなりませんので
 アプリ毎、もしくはシステム設定が必要になります。</p>
 <h2 id="firefoxをtor経由にてアクセスする方法">FirefoxをTOR経由にてアクセスする方法</h2>
@@ -300,6 +300,27 @@ Or, if you don't want/need a background service you can just run:
 
 
             </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/crypto/macos-tor/";  
+    this.page.identifier = "macos-tor"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
             
             <div>
                 <h2>tip 🏝</h2>

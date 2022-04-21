@@ -205,7 +205,6 @@
                 </p>
                 <h1>パイで64bitカーネルビルド</h1>
             </div>
-
             <div class="post-content">
                 <p>Bluetoothが使えなかったり、cpufreqが効かなかったり、iptablesで不具合がでたりしたので、カーネルを自前でビルドしました。（オプションがありすぎて、目がしょぼしょぼします。）</p>
 <p>まず、64bit化したカーネルをビルドするためには、<strong>64bit環境で動いている端末が必要</strong>ということです。
@@ -324,7 +323,7 @@ $ make -j4 O=../kernel-out/ ARCH=arm64
 [pre-compiled binaries of the current Raspberry Pi kernel and modules](https://github.com/raspberrypi/firmware)  
 -->
 
-				
+                
 
 <h3>See Also</h3>
 <ul>
@@ -342,11 +341,30 @@ $ make -j4 O=../kernel-out/ ARCH=arm64
 </ul>
 
 
-                
-				
             </div>
             
-            <div>
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2019/04/building-kernel/";  
+    this.page.identifier = "2019-04-02-building-kernel"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
                 <h2>🏝 tipping</h2>
                 <p>
                     🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
