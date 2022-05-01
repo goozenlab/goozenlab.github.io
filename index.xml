@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 22:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 22:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Twitter</title>
+      <link>https://goozenlab.github.io/blog/2022/04/twitter/</link>
+      <pubDate>Sat, 30 Apr 2022 22:30:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/04/twitter/</guid>
+      <description>Twitterがイーロン・マスク氏によって買収との報道。 流通している株を全て所得し、非公開化されるとのことです。 イーロン・マスク氏ですが、 ビ</description>
+    </item>
+    
     <item>
       <title>MacBook Pro14: レビュー</title>
       <link>https://goozenlab.github.io/blog/2022/04/review-mbp14-2021/</link>
@@ -37,12 +46,30 @@
     </item>
     
     <item>
+      <title>セキュリティ</title>
+      <link>https://goozenlab.github.io/computing/index-security/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/index-security/</guid>
+      <description>ネットワークのセキュリティ TOR VPN Mullvad iVPN Mail Messaging Application Hardened システムを堅固にする方法 MacOS 堅固なOSというわけではないです。利用者が少ないが上相手にされていないだ</description>
+    </item>
+    
+    <item>
       <title>投げ銭：tippin.me</title>
       <link>https://goozenlab.github.io/blog/2022/03/add-tipping/</link>
       <pubDate>Thu, 17 Mar 2022 12:00:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/03/add-tipping/</guid>
       <description>少額での寄付のやり取りには最適解のようなので https://tippin.me を登録してみました。 利用するには、ウェブ・エクステンションが必要、FireFox、Chrome</description>
+    </item>
+    
+    <item>
+      <title>暗号通貨ハードウェア・ウォレット</title>
+      <link>https://goozenlab.github.io/crypto/wallet-hardware/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/wallet-hardware/</guid>
+      <description>暗号通貨を勉強していくと、 取引所にビットコインなどを置いていることに対する不安が大きくなってきます。 取引所がハックされて問題が起きたら、手続</description>
     </item>
     
     <item>
@@ -61,6 +88,15 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/crypto/seed/</guid>
       <description>暗号通貨の管理に欠かせない、 無くなったら全てを失う事になりリカバリー不可能。 厄介な シード(SEED) とは何者か？ いかに管理するかのが良いか、</description>
+    </item>
+    
+    <item>
+      <title>親クリプト国</title>
+      <link>https://goozenlab.github.io/crypto/crypto-friendly-countires/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/crypto/crypto-friendly-countires/</guid>
+      <description>暗号通貨にやさしい国々をリストアップしました。 エルサルバドル：🇸🇻 世界で最初にBTC（＋米ドルと）を法定通貨にした国家。火山があり、その地熱</description>
     </item>
     
     <item>
@@ -253,6 +289,15 @@
     </item>
     
     <item>
+      <title>Android Securities</title>
+      <link>https://goozenlab.github.io/computing/android-securities/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/android-securities/</guid>
+      <description>まとめ中にも関わらず、ひっそり公開。厄介ですね、このプライバシーってやつは。。 携帯を持っている限り、少なからずプライバシーは侵害されてしまう</description>
+    </item>
+    
+    <item>
       <title>Mi Max3をマックス</title>
       <link>https://goozenlab.github.io/blog/2021/03/mi-max-out/</link>
       <pubDate>Wed, 10 Mar 2021 06:30:00 +0900</pubDate>
@@ -277,24 +322,6 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</guid>
       <description>取り立てて不具合もないのでMullvadの契約延長を決定。 現金払いも可能という昭和な感じのVPNサービスカンパニー。 セキュリティーを考えたら</description>
-    </item>
-    
-    <item>
-      <title>暗号通貨ハードウェア・ウォレット</title>
-      <link>https://goozenlab.github.io/crypto/wallet-hardware/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/crypto/wallet-hardware/</guid>
-      <description>暗号通貨を勉強していくと、 取引所にビットコインなどを置いていることに対する不安が大きくなってきます。 取引所がハックされて問題が起きたら、手続</description>
-    </item>
-    
-    <item>
-      <title>親クリプト国</title>
-      <link>https://goozenlab.github.io/crypto/crypto-friendly-countires/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/crypto/crypto-friendly-countires/</guid>
-      <description>暗号通貨にやさしい国々をリストアップしました。 エルサルバドル：🇸🇻 世界で最初にBTC（＋米ドルと）を法定通貨にした国家。火山があり、その地熱</description>
     </item>
     
     <item>
@@ -349,6 +376,15 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/blockstream-green/</guid>
       <description>東京都の緑のおばさんにはイライラさせられますが、BTC用のシックな緑の財布をご紹介。 クリプト・カレンシーの管理を複数でのマルチセグ・ウォレッ</description>
+    </item>
+    
+    <item>
+      <title>クリプトライフ</title>
+      <link>https://goozenlab.github.io/computing/living-with-cryptos/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/living-with-cryptos/</guid>
+      <description>のんびりとまとめ中、随時加筆中。まぁ、いったいどこまで値が上がるんでしょうかね。（ある意味心配） 国によって温度差がありますが、じわじわとサー</description>
     </item>
     
     <item>
@@ -475,6 +511,15 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/travel-router-update/</guid>
       <description>夏頃からふらっと自転車で旅行しています。現在沖縄。 キャンプサイトがメインで動いてましたが、Gotoトラベルも大都市では活用させていただきまし</description>
+    </item>
+    
+    <item>
+      <title>オープンソースで作るネットワーク環境</title>
+      <link>https://goozenlab.github.io/computing/opensource-network-environment/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/opensource-network-environment/</guid>
+      <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 同じファームウェアを使うことで管理も楽ですし、異なった</description>
     </item>
     
     <item>
@@ -974,6 +1019,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
     </item>
     
     <item>
+      <title>Arch T480s</title>
+      <link>https://goozenlab.github.io/computing/tpt480s-linux-arch/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/tpt480s-linux-arch/</guid>
+      <description>2020年1月下旬に行ったBTRFSパーティションにArchをインストールした際のメモ。 一気にミニマムなGnomeまで、 ネットワークやディス</description>
+    </item>
+    
+    <item>
       <title>VSCodium</title>
       <link>https://goozenlab.github.io/blog/2020/01/vscodium/</link>
       <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
@@ -1079,6 +1133,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/</guid>
       <description>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。 11月ごろに一回あったシステムアップデートもでき、MagicTrack</description>
+    </item>
+    
+    <item>
+      <title>Make Hackintosh T480s</title>
+      <link>https://goozenlab.github.io/computing/tpt480s-hackintosh/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/tpt480s-hackintosh/</guid>
+      <description>現在ビチビと更新中です。アップしないとやる気が出ないので公開。 ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたり</description>
     </item>
     
     <item>
@@ -1223,6 +1286,33 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-windowmamager/</guid>
       <description>さて、ちまちまとLINUX（busterとmanjaro）をいじってます。 とりあえず２つのディストリビューションを使っています。 安定：deb</description>
+    </item>
+    
+    <item>
+      <title>De-Googled Phone</title>
+      <link>https://goozenlab.github.io/computing/optout-phone/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/optout-phone/</guid>
+      <description>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、 できる範囲のことはしたいと思い。 自由へむけカスタムロムを使いグーグル</description>
+    </item>
+    
+    <item>
+      <title>Raspbeery Pi References</title>
+      <link>https://goozenlab.github.io/computing/pi/raspbeery-pi-references/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/pi/raspbeery-pi-references/</guid>
+      <description>ラズベリー・パイのリファレンス ラズビアンのイメージファイル・アーカイブ ちょっと古いUSB-Wifiドライバーを動かすのに特定のカーネルが必要</description>
+    </item>
+    
+    <item>
+      <title>Ryzentosh</title>
+      <link>https://goozenlab.github.io/computing/ryzentosh/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/ryzentosh/</guid>
+      <description>現在リサーチ中、作るかどうかはちょっと予算次第ですが、問題なく使えているそうです。 ラップトップでのハッキントッシュの使い心地が思いの外良いの</description>
     </item>
     
     <item>
@@ -1424,6 +1514,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
     </item>
     
     <item>
+      <title>iPod Here Now</title>
+      <link>https://goozenlab.github.io/computing/ipod-here-now/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/ipod-here-now/</guid>
+      <description>Rockbox 更新履歴 2022-02-25：ザックリと書いてみる。 不定期更新です。書き込んだり消したりしてます。</description>
+    </item>
+    
+    <item>
       <title>パイ・3AサーバーのSDカードを3Bへ</title>
       <link>https://goozenlab.github.io/blog/2019/09/pi-3b-server-comparison/</link>
       <pubDate>Tue, 17 Sep 2019 12:00:00 +0700</pubDate>
@@ -1610,6 +1709,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/amazfit-bip-one-month/</guid>
       <description>タイから日本へ、あと数週間。今年はインドに行った２か月を除き、 ほぼ6ヶ月間フルータリアン生活でした。（牛乳は飲みますので、ビーガンでは無い）</description>
+    </item>
+    
+    <item>
+      <title>VaioP Reloaded</title>
+      <link>https://goozenlab.github.io/computing/vaiop-reloaded/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/vaiop-reloaded/</guid>
+      <description>Strechで問題なく動いているタンスタンマツ、Sony Vaio P リバイバル 希望、ほんと今のスペックで作っていただきたい。 VPC-P111KX (Green) Intel Atom Z530 @ 1.6 GHz RAM: 2GB DDR2 Storage:</description>
     </item>
     
     <item>
@@ -1847,6 +1955,15 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
     </item>
     
     <item>
+      <title>multiBoot Thinkpad T480s</title>
+      <link>https://goozenlab.github.io/computing/tpt480s/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/tpt480s/</guid>
+      <description>ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたりから不自由な感じがしてきたので、 ちょっと環境を変えることにしま</description>
+    </item>
+    
+    <item>
       <title>DNSとアンドロイド</title>
       <link>https://goozenlab.github.io/blog/2019/07/local-dns-android/</link>
       <pubDate>Thu, 18 Jul 2019 12:30:00 +0700</pubDate>
@@ -1988,6 +2105,33 @@ This application uses AdMob(Google Inc.) for delivering advatisment. Link below 
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/06/raspbian-pi-zero-install/</guid>
       <description>インドからタイに戻ってきました。アパートを変えようと思って色々探すも、結局馴染みのアパートに戻ってきました。 酷暑インドから戻ってきたので、３</description>
+    </item>
+    
+    <item>
+      <title>トラベル・パイ・ルーター</title>
+      <link>https://goozenlab.github.io/computing/pi/travel-pi/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/pi/travel-pi/</guid>
+      <description>トラベルルーターはTP-LinkやBuffaloから市販されていて数千円で買えますし、 あえて自分で構築するのは若干微妙ではありますが、 安全・</description>
+    </item>
+    
+    <item>
+      <title>ノマド緊急用端末</title>
+      <link>https://goozenlab.github.io/computing/nomad-stick-machine/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/nomad-stick-machine/</guid>
+      <description>旅先で端末が立ち上がらなくなる、最悪端末が盗難にあう。などの緊急事態発生時に使えるスティック端末を構築。 ラップトップで様々なディストリビュー</description>
+    </item>
+    
+    <item>
+      <title>家鯖：ホーム・パイ</title>
+      <link>https://goozenlab.github.io/computing/pi/home-pi/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/pi/home-pi/</guid>
+      <description>一家に一台 多分、ほとんどの家庭ではインターネット回線がつながっていると思いますし、 スマートフォンも一人一台の時代です。 家にあるインターネット</description>
     </item>
     
     <item>
@@ -7145,6 +7289,24 @@ It is pleasant and fun to use, and stimulate your Right Brain. You may like to t
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/iapp/littlist/</guid>
       <description>小ないリストを大きな文字で。ちょっとした事を気持ち良く。 カテゴリやちょっと面倒なタグなどを排除しシンプルさを追求。 ビジネスが中心のタスク管理</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.github.io/computing/nomad-goods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/nomad-goods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goozenlab.github.io/computing/sovereign/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/computing/sovereign/</guid>
+      <description>Sovereign Computing/Indivisual</description>
     </item>
     
     <item>

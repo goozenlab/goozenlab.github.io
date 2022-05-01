@@ -19,33 +19,6 @@
     </item>
     
     <item>
-      <title>SEEDとは</title>
-      <link>https://goozenlab.github.io/computing/crypto/seed/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/seed/</guid>
-      <description>暗号通貨の管理に欠かせない、 無くなったら全てを失う事になりリカバリー不可能。 厄介な シード(SEED) とは何者か？ いかに管理するかのが良いか、</description>
-    </item>
-    
-    <item>
-      <title>BTC Core : macOS</title>
-      <link>https://goozenlab.github.io/computing/crypto/macos-btccore/</link>
-      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/macos-btccore/</guid>
-      <description>Spectorというウォレット・アプリを使うにはフルノードへの接続が必要ということで、 勉強の一環として、BTCのフルノードをMacOSにイン</description>
-    </item>
-    
-    <item>
-      <title>Tor : macOS</title>
-      <link>https://goozenlab.github.io/computing/crypto/macos-tor/</link>
-      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/macos-tor/</guid>
-      <description>BTCのフルノードを走らせてみたいのもあって、 接続回線の隠匿化に使うオニオンルーターことTorをインストールしてみました。 思ったより割とあっ</description>
-    </item>
-    
-    <item>
       <title>Android Securities</title>
       <link>https://goozenlab.github.io/computing/android-securities/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
@@ -55,39 +28,12 @@
     </item>
     
     <item>
-      <title>親クリプト国</title>
-      <link>https://goozenlab.github.io/computing/crypto/crypto-friendly-countires/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/crypto-friendly-countires/</guid>
-      <description>暗号通貨にやさしい国々をリストアップしました。 エルサルバドル：🇸🇻 世界で最初にBTC（＋米ドルと）を法定通貨にした国家。火山があり、その地熱</description>
-    </item>
-    
-    <item>
-      <title>BTCのアダプション・ニュース</title>
-      <link>https://goozenlab.github.io/computing/crypto/crypto-news/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/crypto-news/</guid>
-      <description>BTCのアダプション（適応・適用）に関するニュースアーカイブです。 世界各所で社会との融合にむけて試みが行われています。 このような情報がある程</description>
-    </item>
-    
-    <item>
       <title>クリプトライフ</title>
-      <link>https://goozenlab.github.io/computing/crypto/living-with-cryptos/</link>
+      <link>https://goozenlab.github.io/computing/living-with-cryptos/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/living-with-cryptos/</guid>
+      <guid>https://goozenlab.github.io/computing/living-with-cryptos/</guid>
       <description>のんびりとまとめ中、随時加筆中。まぁ、いったいどこまで値が上がるんでしょうかね。（ある意味心配） 国によって温度差がありますが、じわじわとサー</description>
-    </item>
-    
-    <item>
-      <title>クリプトライフ：ウェブ・サービス</title>
-      <link>https://goozenlab.github.io/computing/crypto/web-services/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/web-services/</guid>
-      <description>不定期+随時更新。書き込んだり消したりしてます。 ウェブ・サービスでクリプトが使えるところをリストアップしました。 メールアドレスなしで Gandi (Domain ho</description>
     </item>
     
     <item>
@@ -200,15 +146,6 @@
     
     <item>
       <title></title>
-      <link>https://goozenlab.github.io/computing/crypto/lightning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/computing/crypto/lightning/</guid>
-      <description>lightning</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://goozenlab.github.io/computing/nomad-goods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
@@ -222,7 +159,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/sovereign/</guid>
-      <description>Sovereign Computing/Indivisual 気候変動、富の格差、暗号通貨、 ウクライナや、社会制度、 個人の主権が侵されつつあるのを感じます。 &amp;ldquo;Sovereign&amp;rdquo; という言葉をよく聞くようになってきました</description>
+      <description>Sovereign Computing/Indivisual</description>
     </item>
     
   </channel>
