@@ -406,7 +406,14 @@ OpenVPNを使ってアクセスすることにします。
 クライアントは使わずにプロファイルを落として利用します。
 こちらのページを参照にして行いました。
 
-画像日本語を使って -->
+
+Waylandでのみ、dconfから実験的機能を有効化することで拡大率を細かく設定できることが判明しました。
+
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+上記のコマンドを実行すると、150%や175%、125%などを選択できるようになります。
+
+ -->
 
                 
 
