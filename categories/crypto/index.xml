@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on goozenlab</title>
+    <link>https://goozenlab.github.io/categories/crypto/</link>
+    <description>Recent content in crypto on goozenlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
+    <webMaster>goozenlab@icloud.com (jin)</webMaster>
+    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 07 Jun 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ColdCard mk4</title>
+      <link>https://goozenlab.github.io/blog/2022/06/coldcard-mk4/</link>
+      <pubDate>Tue, 07 Jun 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/06/coldcard-mk4/</guid>
+      <description>BTCのみの対応を謳っている、一見さんお断り？のハードウェア・ウォレット。 NFCに対応をした第４世代が発表され事前予約だと割引がきいたので２</description>
+    </item>
+    
+    <item>
+      <title>投げ銭：tippin.me</title>
+      <link>https://goozenlab.github.io/blog/2022/03/add-tipping/</link>
+      <pubDate>Thu, 17 Mar 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/03/add-tipping/</guid>
+      <description>少額での寄付のやり取りには最適解のようなので https://tippin.me を登録してみました。 利用するには、ウェブ・エクステンションが必要、FireFox、Chrome</description>
+    </item>
+    
+    <item>
+      <title>Transaction Fee</title>
+      <link>https://goozenlab.github.io/blog/2021/05/transaction-fee/</link>
+      <pubDate>Tue, 04 May 2021 14:00:00 +0900</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/05/transaction-fee/</guid>
+      <description>ビットコインの送金手数料の下限を適当に調査？まとめ？て見ました。 まずは、ほぼ最低手数料の 2sat/b で送金。 ビットコインでは送金の手続きをすると、その</description>
+    </item>
+    
+    <item>
+      <title>ブロックストリーム：グリーン</title>
+      <link>https://goozenlab.github.io/blog/2021/02/blockstream-green/</link>
+      <pubDate>Mon, 01 Feb 2021 14:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2021/02/blockstream-green/</guid>
+      <description>東京都の緑のおばさんにはイライラさせられますが、BTC用のシックな緑の財布をご紹介。 クリプト・カレンシーの管理を複数でのマルチセグ・ウォレッ</description>
+    </item>
+    
+    <item>
+      <title>タイでのビットコイン取引所(Bitkub, Satan)</title>
+      <link>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</link>
+      <pubDate>Fri, 21 Feb 2020 14:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</guid>
+      <description>東京への帰国を３月初めに控えコロナが気になるここ数週間です。 タイでの感染者は中国の観光客が多い割には３５人と少なく、 これはちょっと適当なお国</description>
+    </item>
+    
+  </channel>
+</rss>
