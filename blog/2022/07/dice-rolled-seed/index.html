@@ -208,12 +208,14 @@
             <div class="post-content">
                 <p><img src="/images/2022-07-27-dice-rolled-seed.jpg" alt="Dice"></p>
 <p>コンピューターの乱数というのが厳密にいうと乱数（計算されている）ではないようです。
-ということで、原始的にサイコロを振ってSEEDを生成する方法をご紹介。</p>
-<p>ちなみにColdCard本体にはその機能がついているので、初期化を行う時に行えます。
-製造元のコインカイト社からPerlスクリプトも公開されています。</p>
+ということで、原始的にサイコロを振ってSEEDを生成する方法をご紹介。
+サイコロもできれば良いものがいいかも、、写真はDAISOの物。。</p>
+<p>ColdCard製造元のコインカイト社からPerlスクリプトも公開されていますので、
+そちらを利用することができます。
+ちなみにColdCard本体にはその機能がついているので、初期化を行う時に行えます。</p>
 <p>ダウンロード先はこちら、
 <a href="https://github.com/Cockie/rektrolls/blob/master/rolls.py">https://github.com/Cockie/rektrolls/blob/master/rolls.py</a></p>
-<p><code>Downloads</code>フォルダーにスクリプトを落として、ターミナルより以下のように使うことができます。
+<p>（Downloadsフォルダーに）スクリプトを落として、ターミナルより以下のように使うことができます。
 Windowsユーザーの方はPerlを使える環境を整える必要があります。
 MacOSでは付属のターミナルより作業することができます。</p>
 <pre tabindex="0"><code> % echo 124435121244351212443512&lt;-サイコロの目 | python3 ~/Downloads/rolls.py
@@ -248,8 +250,8 @@ WARNING: Input is only 62 bits of entropy
   24: figure
 %
 </code></pre><p>１００回サイコロを振ることで２５６ビットのエントロピーでSEEDを作ることができます。</p>
-<p>BIP39対応なので、他のウォレットのElectrumやSparrowなどで利用したい時に利用できます。
-（Metamaskでも使うことも可能だと思います。）</p>
+<p>BIP39対応なので、他のウォレットのElectrumやSparrowなどでも利用できます。
+（＋イーサリアムなど、Metamaskでも使うことも可能。）</p>
 <p>と、まぁ、コンピューターが信用できない人には、こんな方法もありますよ。</p>
 <!--
 Roll dice 53 times, write down each result (writing "0" for every 6 rolled) as a 53 digit long number
