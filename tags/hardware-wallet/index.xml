@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Jun 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BIP85で変幻自在のコールドカード</title>
+      <link>https://goozenlab.github.io/blog/2022/07/bip85/</link>
+      <pubDate>Sun, 31 Jul 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/07/bip85/</guid>
+      <description>ビットコインナーだけでなくハードウェア・ウォレットをお持ちの方にも、めちゃお勧めのColdCard。 SEEDの管理が楽になります。 BIP85</description>
+    </item>
+    
     <item>
       <title>ColdCard mk4</title>
       <link>https://goozenlab.github.io/blog/2022/06/coldcard-mk4/</link>
