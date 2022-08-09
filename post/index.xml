@@ -15,7 +15,7 @@
       <pubDate>Tue, 09 Aug 2022 12:00:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/08/bitcoin-dca/</guid>
-      <description>仮想通貨をどのように買うのがいいのかという問いがあります。 値動きがかなり激しいので、価格を追っているとなかなか買いのタイミングが掴めません。</description>
+      <description>注意： こちらの記事は情報提供が目的であって、投資アドバイスではありません。仮想通貨全般に言えることですが、気になったことは、DYOR (Do Your Own R</description>
     </item>
     
     <item>
@@ -25,6 +25,15 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/08/bitcoin-beach-white-paper/</guid>
       <description>このビットコインビーチ白書から始まり、去年（2021）9月にエル・サルバドルがビットコインの法定通貨化（USドルとの併用）に踏み切りました。</description>
+    </item>
+    
+    <item>
+      <title>ライトニング・ウォレット</title>
+      <link>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</link>
+      <pubDate>Mon, 08 Aug 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</guid>
+      <description>ライトニング・ネットワークはビットコインのサブチェーン、レイヤー２、オフチェーンなどいろいろと呼びばれています。 ビットコインでのスケーラビリ</description>
     </item>
     
     <item>

@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 14:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ライトニング・ウォレット</title>
+      <link>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</link>
+      <pubDate>Mon, 08 Aug 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</guid>
+      <description>ライトニング・ネットワークはビットコインのサブチェーン、レイヤー２、オフチェーンなどいろいろと呼びばれています。 ビットコインでのスケーラビリ</description>
+    </item>
+    
     <item>
       <title>ブロックストリーム：グリーン</title>
       <link>https://goozenlab.github.io/blog/2021/02/blockstream-green/</link>
