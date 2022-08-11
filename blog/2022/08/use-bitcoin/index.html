@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ビットコインを使い始める必要がある理由 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-08-12</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/reading">reading</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>ビットコインを使い始める必要がある理由</h1>
+            </div>
+            <div class="post-content">
+                <p>ビットコインが一般的に普及に至らないのは、
+貨幣の機能の一つである交換媒体としてあまり利用されていないからです。
+ビットコインを使うことで、お金としての有用性を示すことができます。</p>
+<p>※ 貨幣には3つの機能（価値尺度、交換手段、価値貯蔵手段）</p>
+<p>ビットコインの購入も比較的楽になり、利用するためのウォレットも使いやすくなりました。
+（日本ではまだ税制上での問題があって導入にあたって障害があります。）
+乗り越えていく壁はまだいくつもあって、その足枷になっている要因を下記の記事は解説してます。
+（対応した法案も整備されつつありますし、いくつかの懸念は払拭されつつあります。）</p>
+<p>WHY MORE PEOPLE NEED TO START SPENDING BITCOIN　　
+<a href="https://www.nasdaq.com/articles/why-more-people-need-to-start-spending-bitcoin">https://www.nasdaq.com/articles/why-more-people-need-to-start-spending-bitcoin</a></p>
+<hr>
+<p>ビットコインは、主に価値の保存とみなされ、多くの人が素晴らしい価値貯蔵手段だと考えていますが、
+まだ一般的に普及されるには至っていません。
+その理由はさまざまですが、
+今回は、その足かせになっている特定の潜在的側面について探ってみたいと思います。</p>
+<h4 id="人々はビットコインを使うことに消極的です">人々はビットコインを使うことに消極的です。</h4>
+<p>なぜこれが悪いことなのでしょうか？</p>
+<p>ビットコインの普及を阻む要因の1つは、ビットコイン初心者が、その背後にあるコンセプトのいくつかに難儀していることです。
+彼らはこの技術の使用例をすぐに見い出すことができず、ビットコインが健全なお金であることを認識することができないのです。
+結局のところ、お金を使うことができなければ、お金に何の意味があるのでしょうか？
+歴史的にビットコインはその技術の性質上使うことが難しく、さらにビットコインを受け入れる人々や企業に対するサポートが不足していることも原因になっています。
+もし人々がビットコインが実際のお金として、
+淀みのない方法かつ目に見えるメリットとともに使われていることを実感できなければ、
+普及はより難しくなるでしょう。
+つまり、まだビットコインは交換媒体として一般的に利用されていないのです。</p>
+<p>ビットコインが交換媒体とみなされるためには、ビットコインを物品やサービスと自由に交換できること、
+言い換えれば、ビットコインを使って商品を買うことができるようになることが必要です。
+ビットコインのホワイトペーパーでは、ビットコインを「A Peer-to-Peer Electronic Cash System」と定義しており、
+ビットコインはもともとデジタルキャッシュとして推進されてきました。</p>
+<p>しかし価値の保存に優れているため、ビットコインを持っている人は、
+ビットコインが普及することで価格が10倍、100倍になる日を心待ちにしているのです。
+では、時間が経てば大きく価値が上がる可能性があるものを、一体なぜ使ってしまうのでしょうか。</p>
+<p>今回は、ビットコインの消費を阻む障壁を探り、急速に変化するビットコイン消費状況を確認します。</p>
+<h2 id="貯蓄と消費">貯蓄と消費</h2>
+<p><strong>&ldquo;stacking sats&rdquo;</strong>
+というミームを聞いたことがあるかもしれません。
+これは、将来の利益のためにビットコインを貯めたいと考えるビットコイナーたちの間でよく使われる言葉です。
+&ldquo;sat&quot;とは、ビットコインの最小額面であるサトシの省略形です。
+1ビットコインは100,000,000satsに分割することができます。（１億サトシ君＝１ビットコイン）
+個人的な好みとしては&quot;bits&quot;すなわち、
+1ビットコインを細分化する別の方法で、1ビットコインは1,000,000bitsになります。</p>
+<p>実際のところ、私たちは永遠に「Stacking Sats」ことができないのです。
+手に入れた不換紙幣を残さずビットコインに変換して、永遠にHODL（保持）することには無理があります。
+誰もが日々の生活の中で、請求書の支払い、食料の購入、レジャーのためなどにお金を使う必要があります。</p>
+<p>私が提唱するアプローチは、ビットコインが使いやすくなってきたら、
+現在日々の支出に充てている不換紙幣の何割かを月、週、あるいは日単位でSatsに換金し、
+それを支出に充てましょうというものです。</p>
+<p>大前提ができたところで、これまでビットコインが決済システムとして普及しなかった理由と、
+それが大きく変わろうとしている理由を見ていきましょう。</p>
+<h2 id="ビットコインの購入コスト">ビットコインの購入コスト</h2>
+<p>ビットコインの普及はまだ初期段階であり、
+取引所からビットコインを購入する際には手数料などのコストが発生します。</p>
+<p>しかし、これらのコストは減少し始めています。
+その好例が、米国を拠点とするStrike社です。
+彼らは、自社のアプリを通じてビットコインを購入する際の手数料を最低限に設定すると発表している。
+スワンなど他の企業も非常に低い手数料を誇っており、さらなる手数料の引き下げに取り組んでいる。</p>
+<p>しかし、必ずしもビットコインを購入する必要はなく、手数料ゼロでビットコインを獲得することも可能です。</p>
+<p>先日のBitcoin 2022カンファレンスで、
+Cash Appは給与を無料でビットコインに自動変換することが可能になると発表しました。
+定期的にフィアット収入をビットコインに変換することで、
+長期的な貯蓄のためにビットコインをHODLするための隠し場所を簡単に作ることができ、
+同時に近い将来の買い物にも利用できます。</p>
+<p>さらに、提供した商品やサービスに対して、ビットコインで支払われることは本当に簡単です。
+ライトニングネットワークとライトニングネットワークアドレス（下記参照）の拡大により、
+ビットコインを瞬時に、場合によっては手数料ゼロで受け取ることができます。</p>
+<h2 id="取引スピードとコスト">取引スピードとコスト</h2>
+<p>ビットコインの取引は、分散型のブロックチェーンに記録されます。
+ビットコインの根底にある分散型、パーミッションレスという性質は、従来のフィアットマネーに対する主な利点の1つです。
+ブロックチェーンに投稿される典型的なビットコイン取引は、一般的に &ldquo;オンチェーン&quot;と呼ばれます。</p>
+<p>オンチェーンでのビットコイン取引は、しばしば遅いと認識されています。
+ビットコインのブロックチェーンは、迅速な取引処理のために開発されたものではなく、
+設計上、スループットが極めて制限されています。
+取引は約10分ごとに処理されるブロックにまとめられ、
+その結果ブロックチェーン上で取引が確認できるまでに遅れが生じます。
+ブロック再編成の可能性があるため、取引を確定とみなす前にいくつかのブロックを待つことが賢明とされています。
+これは、価値の低い金額であれば1回の確認で済みますが、大きな取引の場合は、通常4～6回の確認が必要とされています。</p>
+<p>その時の状況にもよりますが、ビットコインのオンチェーン取引は高額になることもあります。
+高額取引の場合、取引手数料は比較的安価ですが、少額の取引の場合、オンチェーン手数料が送金額のかなりの割合を占めることがありますが、これには多少ばらつきがあります。
+ビットコインが導入された当初、価格が極めて低かった頃は、取引手数料は（フィアットベースで）ごくわずかでした。
+しかし、その後、ビットコインの価値が上がるにつれ、手数料もそれに応じて上がっていきました。
+オンチェーンでのビットコイン取引は時間がかかりすぎるし、手数料が高いので、ちょっとした買い物に使うのは現実的ではありません。</p>
+<p>ライトニング・ネットワークの導入により、スピードとコストの問題はほぼ解決された。
+ライトニング・ネットワークは、ビットコインのネットワーク上に位置するレイヤー2プロトコルであり、
+実質的にコストをかけずにほぼ即時の決済を可能にします。
+また、拡張性も高く、VISAやMastercardといった現行の決済システムを超える取引処理数も実現します。</p>
+<p>ライトニングネットワークのサポートは現在、ほぼすべてのビットコインウォレット、
+さらにはCoinCorner、Bitfinex、Krakenといった一部の取引所にも組み込まれています。
+さらに、Cash Appのような暗号通貨アプリにもライトニングのサポートが組み込まれています。</p>
+<h2 id="ビットコイン価格のボラティリティ">ビットコイン価格のボラティリティ</h2>
+<p>ビットコイン価格は変動が激しいことで知られており、
+これまで商社やベンダー（および消費者）にとって懸念材料となっていました。</p>
+<p>現在では、ライトニングネットワークを介したビットコインによる支払いを受け取ることができる商人向けの多くのソリューションが存在し、
+ビットコインのまま保管するか、ボラティリティが懸念される場合は、すぐに不換紙幣に交換することができます。
+この交換はほぼ瞬時に行えるため、ビットコインの価格変動による影響を排除することができます。</p>
+<p>ソリューションは、BTCPay Server（加盟店がライトニング決済を直接受け入れることができるオープンソースプロジェクト）、
+またはBitPayやCoinCornerなどのサードパーティサービスを使って構築でき、
+加盟店はライトニングとオンチェーン決済の両方を受け入れることができ、
+オプションとしてほぼ瞬時にフィアットに変換することもできる。</p>
+<p>もちろん、ビットコインはそのままにしておきたい、あるいは一部だけ不換紙幣に換えたいと考える加盟店もあるだろう。
+現在のシステムは非常に柔軟性が高く、こうしたシナリオにすべて対応することができます。</p>
+<p>価格変動は、消費者にとっても懸念事項です。消費者が最も望まないのは、住宅ローンの支払いのために3週間前にフィアット通貨を換金し、
+価格変動のために支払いの相対的価値が下がることだ。
+これはいずれビットコインが安定することで解決されるでしょうが、それまでは、資金を使う直前にのみビットコインに変換して、
+価格変動の影響を緩和することが解決策となります。</p>
+<h2 id="小売業者にとってのメリット">小売業者にとってのメリット</h2>
+<p>ビットコインでの支払いは、オンライン商店にとっては比較的簡単に設定できますが、
+実店舗がビットコインでの支払いを受け付けられるようにするには、物理的なソリューションが必要です。</p>
+<p>最近、ストライク社はShopifyおよびNCRなどのPOSデバイスメーカーとの画期的なパートナーシップを発表し、
+米国の多くの小売店、そして最終的には世界中の小売店にライトニングの統合を直接もたらすことになります。
+店舗内のPOS端末との直接統合により、ライトニングネットワークを利用したビットコインでの支払いは、
+QRコードをスキャンするのと同じくらい簡単になる予定です。</p>
+<p>これらの開発は、消費者と小売業者の双方に大きなメリットをもたらします。</p>
+<p>小売業者は、非常に低いコストで迅速に取引を処理することができるようになります。
+従来、現在の決済技術では即時決済ができず、既存の金融機関が多くの手数料を徴収していました。
+これは、各取引に対して3％以上にもなります。
+ライトニング・ネットワークを利用することで、小売業者はビットコインによる決済を瞬時に行うことができ、
+その過程で3％以上の手数料を節約できる可能性があります。
+手数料が不要になるか大幅に削減されるだけでなく、
+小売業者は最終的な決済をほぼ瞬時に行うことができるようになります。
+取引中に送金された資金はすぐに利用できるようになり、クレジットカード決済の取り消し問題も解消されます。
+ただし、返金やチャージバックが外部の第三者によって処理されないという点で、消費者保護の要素がなくなります。
+ただし、顧客から要求があった場合、加盟店が支払いを払い戻すことを止めることはできません。</p>
+<h2 id="消費者のメリット">消費者のメリット</h2>
+<p>消費者にも同じようなメリットがあります。
+取引手数料の削減により発生する節約分の一部を、割引という形で消費者に還元し、顧客がこの新しい決済技術を使用するよう促すことができます。
+これは、Win-Winの関係である。</p>
+<p>さらに、淀みのない取引プロセスは非常に迅速で、通常はQRコードをスキャンするだけで済みます。
+さらに、RFIDチップを使ってビットコインカードを作り、タップするだけで商品やサービスの支払いができるようにするための開発も進められています。</p>
+<p>これは純粋な推測ですが、AppleがすべてのiPhoneとApple Watchにビットコイン/Lightningウォレットを内蔵し始める日はそう遠くはないでしょう。</p>
+<p>消費者にとってのさらなる利点は、完全に自己主権的でセルフバンキングが可能になることだ。
+おそらく一般的な普及のための機能ではありませんが、
+自宅で自分自身のビットコインノードを実行し、ライトニングウォレットを自宅のノードに接続することが可能です。
+それによって信頼できる第３者機関への依存をすべて取り除くことができるのです。</p>
+<h2 id="個人間送金">個人間送金</h2>
+<p>ビットコインを使った支払いのユーザーエクスペリエンスを向上させるためには、まだやるべきことがあります。
+QRコードをスキャンするのは簡単でも、個人間をリモートでビットコインを送るのは難しく、
+通常はLightningインボイスの作成、長い複数桁のアドレス、不器用なスクリーンショットや電子メールが必要です。</p>
+<p>最近の動きとしては、ライトニングアドレスまたはLNURLの導入があります。
+この仕組みは、電子メールと同じくらいシンプルに使用することができます。
+実際、見た目は電子メールアドレスと同じです：name@service.io</p>
+<p>ライトニングアドレスをサポートしている
+取引所（例：CoinCorner）や
+ウォレット（例：Wallet of Satoshi）に口座を持つと、
+個人用のライトニングアドレスが発行されます。</p>
+<p>このアドレスの使い方は、誰かにメールを送るのと同じくらい簡単ですが、
+その代わりにライトニングネットワーク上でビットコインを送ることになります。</p>
+<h2 id="bolt-card">Bolt Card</h2>
+<p>この記事を出版するために投稿した矢先、ビットコインを使うための全く新しい革新的な方法、
+CoinCornerによるBolt Cardが英国で発売されました。</p>
+<p>イギリスでは、VISAかMasterCardのネットワークを使った非接触決済がかなり主流になっています。
+アプリは不要で、NFC（Near Field Communication）カードを店頭でタップして決済することができます。
+VisaやMasterCardを使った決済は、ベンダーにとって手数料が高く、決済が遅れるというデメリットがあります。</p>
+<p>ビットコインでの決済は、手数料がほとんどかからず、すぐに現金決済が可能ですが、
+必ずビットコインのウォレットが必要で、通常はモバイル端末に搭載されています。
+そのため、スマホが必要で、ウォレットアプリを開き、QRコードをスキャンし、ボタンをタップして取引を確定する必要があります。
+また、取引を完了させるためには、安定した高速インターネット接続に依存します。</p>
+<p>しかし、あまり使い勝手の良いものではありません。</p>
+<p>Bolt Cardはこれを解決します。
+基本的に、CoinCornerのアカウントとペアリングしてBoltCardをセットアップしたら（非親告罪のソリューションは開発中）、
+ビットコインを使って何かを買うには、VisaやMasterCardのカードと同じように、POSデバイスでBolt Cardをタップするだけでいいのです。
+Bolt CardはNFCを利用してPOSデバイス（あるいはNFC対応モバイルデバイスのウェブサイト）と通信し、インターネット接続なしで取引を開始し取引を完了させます。
+これはすべて業界標準のLNURLメカニズムを使用して構築されており、Bolt Cardは独自のメカニズムを使用せずに業界標準と互換性を持っています。</p>
+<p>CoinCornerのGBP（英ポンド）またはユーロの口座を利用するようにBolt Cardを設定すれば、
+ビットコインに変換してライトニングネットワークを使って支払いを転送し、
+瞬時にキャピタルゲイン税の影響を受けない結果となります。
+もちろん、代わりにビットコインを使うようにカードを設定することも可能です。</p>
+<p>Bolt Cardは完全に再利用可能で、ギフトカードとして設定することもできますので、友人や家族に渡すためにビットコインを装填することができます。
+一度、一定額のビットコインをセットすれば、ほぼすべてのモバイルウォレットに送金したり、支払いに利用したりすることができます。</p>
+<p>物理的なカードをPOS端末に叩きつけるという単純な動作は、多くの人が慣れ親しんでいる現在の非接触型技術をそっくりそのまま模倣しています。
+また、モバイルアプリを使ったライトニング決済の複雑さを解消し、取引時間を大幅に短縮することで、ベンダーのスループットを向上させ、顧客にとって非常に使いやすい決済体験を提供することができます。</p>
+<p>Bolt Cardは、すべてのビットコイン決済に最適であるだけでなく、
+インターネットアクセスや携帯電話の所有に問題がある低開発国にも大きな影響を与える可能性があります。
+プリロードされたBolt Cardは、簡単かつ効果的に購入・使用することができ、銀行口座を持たない人にも金融ツールを利用できるようになります。
+Bolt Cardにリロードする機能があれば、この決済技術は、従来の銀行の現在の金融インフラでは考えられなかったような地域にも落とし込むことができる。</p>
+<p>現在、Bolt Cardはマン島と英国でのみ利用可能ですが、
+今後12ヶ月の間にこの決済ソリューションが世界中に展開されることが予想されます。</p>
+<h2 id="マイクロペイメント">マイクロペイメント</h2>
+<p>ビットコインはプログラマブル・マネーです。
+ライトニングネットワークの追加により、価値の低いサービスの支払いにマイクロペイメントを使用することができます。
+ウェブで面白い記事を見つけたとき、それが有料であることを何度発見したことでしょう。
+無料のトライアルが用意されていることもありますが、必ずデジタル購読に申し込む必要があります。
+私は、たとえその記事が最高に面白くても、1つの記事にアクセスするために無料トライアルの登録と解約の手続きをするのは面倒だし、
+1つの記事のために完全な購読を申し込むこともないだろうと思っている。</p>
+<p>しかし、1つの記事にアクセスするために必要な金額を支払うことができるとしたらどうでしょうか。</p>
+<p>それこそがライトニング・ネットワークでできることなのです。</p>
+<p>この例では、0.25ドル（635サット、6.35ビット、私が支払った場合）で記事にアクセスすることができる。
+この取引はシームレスで摩擦がない。支払いボタンをクリックすると、Lightningウォレットが開かれ、支払い可能な状態になります。
+ワンタップで支払いが完了し、記事を読むことができるようになる。</p>
+<h2 id="キャピタルゲイン税">キャピタルゲイン税</h2>
+<p>国によっては、ビットコインの売却や譲渡がキャピタルゲイン税の発生要因になることがあります。
+最終的には、ビットコインが通貨に再分類され、この負担がなくなることが期待されていますが、
+それまではキャピタルゲイン税に注意する必要があります。
+ただし、これが問題になりやすいのは、長期間保有しているビットコインの場合です。</p>
+<p>請求書の支払いや物の購入にビットコインを利用している状況では、
+1週間に必要なビットコインを取得してそれを使うというシナリオが考えられます。
+1週間の間に、ビットコインの価格が修正されれば、最小限のキャピタルゲイン（または損失の可能性）になる可能性が高いです。
+週単位で必要な量のビットコインを補充して使えば、キャピタルゲインは理論上、取るに足らないものになる。
+期間終了後、余ったビットコインは長期HODL用コールドストレージに流し、新たに購入して日々のビットコインを補充すればよいのです。</p>
+<h2 id="公共料金などの支払">公共料金などの支払</h2>
+<p>最近導入された新しいサービス（当初は米国のみで利用可能）は、Bitrefillによる新しいPay Billサービスです。
+これは、プロバイダー（電力会社や住宅ローン会社など）をサービスで検索し、情報を入力すると、ビットコインを使って支払うことができます。
+このサービスは今のところまだ招待制だが、大手企業がビットコインを直接支払いとして受け入れるようになるまでの間、
+将来的にどのようなものになるのかを知ることができる。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ビットコインを使い始める方法は今やたくさんあり、もうすぐ多くの場所で受け入れが開始されるでしょう。
+フィアットからビットコインへの変換には不便な要素がありますが、ビットコイナーはできるだけ早くビットコインでの使用を開始するよう努力すべきです。</p>
+<p>ビットコインが便利でストレスフリーな支払い方法とみなされるまでは、プレコイナーはビットコインとそれがもたらす利点を理解するのに苦労することでしょう。
+より多くの人がビットコインを利用し、貯蓄するようになればなるほど、ビットコインの謎は解かれ、その真価が評価されるでしょう。</p>
+<p>ライトニングネットワークがより広く採用されれば、ビットコインがアカウント単位としても使用される道が開かれ、
+ビットコイン、ビット、サトシで価格が付けられるようになるはずです。
+ビットコインのネットワークとライトニングネットワークは世界的な広がりを見せており、ビットコインは世界的な口座単位になるのに適しています。
+ライトニングウォレット1つで世界中を移動し、グローバルな通貨基準に基づいて商品やサービスの支払いができることを想像してみてください。
+通貨換算もなく、ローカル価格もなく、ただ一つのグローバルな通貨があるだけです。</p>
+<p>Lightningウォレットをダウンロードし（英国の場合はBolt Cardを入手し）、
+SATをいくつかロードして、使ってみてください。</p>
+
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/08/bitcoin-dca/">ビットコインの購入法</a></li>
+	
+	<li><a href="/blog/2022/08/bitcoin-beach-white-paper/">ビットコインビーチ白書</a></li>
+	
+	<li><a href="/blog/2022/08/7-famous-economic-principles-for-bitcoin/">ビットコイナーが知っておくべき7つの有名な経済原則</a></li>
+	
+	<li><a href="/blog/2022/08/taking-the-orange-pill/">オレンジ・ピルを飲む</a></li>
+	
+	<li><a href="/blog/2022/08/bitcoin-customer-service/">ビットコインカスタマーサービス部</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/08/use-bitcoin/";  
+    this.page.identifier = "2022-08-12-use-bitcoin"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+                    
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
+
+
+
