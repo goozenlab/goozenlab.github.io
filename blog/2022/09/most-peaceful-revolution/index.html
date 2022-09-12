@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ビットコインのために何ができるのか？ | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-news" class="pure-menu-link">news archives</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/goods/" class="pure-menu-link">goods</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-09-11</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/reading">reading</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>ビットコインのために何ができるのか？</h1>
+            </div>
+            <div class="post-content">
+                <p>ビットコインは必然的に見えるかもしれませんが、
+その背景での地道な活動を忘れてはいけない。
+国や投資家などの関心・援助を全く受けずに、可能性を信じたサポーターによりここまで大きくなりましたが、
+未だ初期の段階であるビットコイン、まだまだ人々の様々な働きかけが必要です。</p>
+<p>これは、「Stephan Livera Podcast」のホストであり、Swan Bitcoin InternationalのマネージングディレクターであるStephan Livera氏によるオ論説。
+テキサス州オースティンで開催されたBitBlockBoom 2022の講演を記事化したものです。</p>
+<p>Aug 30, 2022<br>
+What Can You Do For Bitcoin?<br>
+<a href="https://bitcoinmagazine.com/culture/what-can-you-do-for-bitcoin">https://bitcoinmagazine.com/culture/what-can-you-do-for-bitcoin</a></p>
+<hr>
+<p>私たちは計り知れない変化の時代を生きており、お金は壊れている。
+しかし、明るい面では、ビットコインという貨幣技術がある。
+マイナス面では、多くの人がフィアットマインドセットに囚われているため、ビットコインのポイントを理解していないことです。</p>
+<p><img src="/images/2022-09-11-what-can-you-do-for-bitcoin.gif" alt="Push Train"></p>
+<p>この上の短いGIFを考えてみてください。この男のようなビットコイナーは、無駄に <strong>列車を押している</strong> のだろうか？私たちがどうしようと、
+すべては起こるべくして起こっているのでしょうか？</p>
+<h2 id="ビットコインは必然なのか">ビットコインは必然なのか？</h2>
+<p>時にTwitter内でのBitcoinコミュニティでは、「Bitcoin is inevitable (ビットコインは必然)」というような話し方がされることがありますが、これは面白い質問を投げかけています。
+ほんとに？どのような意味で？私たちは何もせずにただ座っているだけでいい？と、</p>
+<p>そうではありません。ビットコインはシステムとして維持するために、
+コードレビューやメンテナンス、システムの安全性を確保するマイナー、
+価値を与えるユーザーやHODLerといったものを依然として必要としています。
+おそらく、ある総体的な意味では、ビットコインは必然とは言えないが、希少性、中立性、開放性など、ある種の特質に基づいて勝つ可能性は極めて高いと言えるでしょう。
+しかし、ビットコインが必然的であろうとなかろうと、システムを維持することを行う現実の人々に非常に依存しているのです。</p>
+<h2 id="ではあなたは何ができるのか">では、あなたは何ができるのか？</h2>
+<p>あなたはビットコインとその周辺において、先行導入・進歩的な技術を推し進めることができます。
+開発者である必要はありません、以下のことができます。</p>
+<ul>
+<li>ビットコインのアプリをテスト、レビュー、フィードバックする。多くの場合、Telegramチャットなどに開発者やユーザーのコミュニティがあります。</li>
+<li>地元のビットコインミートアップを組織したり、貢献したりする</li>
+<li>ビットコイン企業に投資したり、その企業で働いたりする</li>
+<li>影響力のあるビットコインコンテンツの外国語翻訳を行う</li>
+<li>ビットコインの開発およびレビューに資金を提供する</li>
+<li>ビットコインサークル以外のメディアに情報を広める</li>
+</ul>
+<h2 id="ビットコインの標準化">ビットコインの標準化</h2>
+<p>友人たちの間でビットコインの利用を正常化する力を過小評価しないでください。
+例えば、友人や家族と食事をしているときに、
+一人が現金で支払いをした場合、MuunやBreez（個人的にお勧め）、Phoenixウォレットをセットアップしあげて、
+Lightningで返済するように提案することができます。
+このような積み重ねが、やがてその人の「ビットコイン<del>欲</del>道」の引き金になる可能性があります。
+最高のケースでは、新しいビットコインHODLer/stackerを生み出すことができるかもしれません。</p>
+<p>あるいは、海外に友人や家族がいて、そこに送金している人はいませんか？
+その際は遠慮なくビットコインを使い、必要ならそのビットコインを現地で売って現金にしてもらいましょう。
+現地でビットコインを売れば、少しプレミアがつく可能性が高いです。
+あるいは、Bitrefill.comなどのクーポンサイトを利用して、必要なものに間接的にビットコインを使うこともできます。</p>
+<p>もう一つのアイデアは、定期的にビットコインのミートアップを開催している地元のカフェやバーを見つけ、
+そこでビットコインの支払いを受けられるように申し出ることです。
+もし、あなたがお金を払ってくれるお客さんを連れてきてくれるなら、
+そのお店はあなたにもっと時間を割いてくれるでしょう。
+BreezにはPOSモードが組み込まれており、
+店主は携帯電話やタブレットのアプリとして簡単にインストールし使用することができることを忘れないでください。
+もちろん、大規模なセットアップの場合は、OpenNodeやIBEX Lightningペイソリューションのようなものを使用することも可能です。
+ノン・カストディアルのセットアップでは、彼らが技術に精通している場合、BTCPayサーバーをセットアップすることができます。</p>
+<h2 id="現在地について率直に言う">現在地について率直に言う</h2>
+<p>私たちはビットコインの使用に関して、とてもとても早い段階です。
+このようなことを言うと、壊れたレコードのように聞こえるかもしれませんが、世界的なユーザーの数という点では、本当にそうなのです。</p>
+<p>特にノン・カストディアルでの利用の話をするならば、2022年8月にこれを書いている時点でのUTXOのカウントは、8,500万程度です。
+これは事実上、ノン・カストディアルのビットコインユーザーの上限値である。
+もちろん、IOUコインを何らかのプラットフォームで表現しているカストディアルユーザーもいるだろうし、
+多くのUTXOを持つユーザーもいるだろうから、ユニークなビットコイン・オンチェーンユーザーの実数は、
+約80億人の世界において8500万人をはるかに下回ることになる。</p>
+<p>このような理由から、世界的にはビットコインを持って決済をする人すら非常に少ないため、ビットコイン決済で牽引するのは難しいかもしれません。
+しかし、これはシーンを成長させ、ビットコインユーザーのピアツーピア経済を構築するチャンスでもあるのです。</p>
+<h2 id="テクノロジーの導入と国民の意識">テクノロジーの導入と国民の意識</h2>
+<p>ビットコインが必然であるという考えに戻ると、ビットコインに対する国民の態度は、ビットコイナーにとって重要です。
+ビットコインというプロジェクトは存続するかもしれませんが、政府によって特別視されれば、個々の人々は苦しむかもしれません。
+さらに、今日、高いインフレや金融検閲に苦しんでいる多くの人々は、ビットコインが合理的に利用できない場合、引き続き苦しむことになります。</p>
+<p>歴史的なパラレルとして興味深いのは、産業革命を可能にした思想が歴史を変えたという点でしょう。
+Deirdre McCloskeyは「Bourgeois Equality」シリーズで、思想、そして平等と尊厳というリベラルな概念がそうさせたと主張している。
+商人や商業に対する文化的な態度が変化し、それが過去数百年にわたる人類の繁栄と生活水準の大幅な上昇を可能にしたのです。
+ビットコインコミュニティーのアイデアであるデジタル・サウンドマネーは、最も大きなアイデアの一つです。</p>
+<p>また、別の例えを考えてみましょう。原子力発電技術が犯罪化されれば、人類は原子力発電の恩恵を受けることができなくなります。
+そして、原子力発電はそれを維持するために工学的才能のエコシステムを必要とすることも覚えておいてください。
+同様にビットコインも、それを維持し発展させるために人間を必要とします。</p>
+<p>つまり、アイデアと文化は本当に世界を変えるものであり、必ずしも開発者でなくてもビットコインに貢献できるのです。</p>
+<p>だから、私たちみんなで列車を押しに行きましょう。</p>
+
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/09/btc-retirement-strategy/">ビットコインは新たな退職金戦略</a></li>
+	
+	<li><a href="/blog/2022/09/movement-for-financial-freedom/">ビットコインは金融の自由のためのムーブメント</a></li>
+	
+	<li><a href="/blog/2022/08/manifesto-bitcoin-freedom/">ビットコインは組織的束縛からの自由</a></li>
+	
+	<li><a href="/blog/2022/08/starlink-bitcoin-mining/">スターリンクとビットコイン</a></li>
+	
+	<li><a href="/blog/2022/08/road-to-bitcoiner/">ビットコイナーへの道</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/09/most-peaceful-revolution/";  
+    this.page.identifier = "2022-09-11-what-can-you-do-for-bitcoin"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat : <a href="https://tippin.me/@goozenlab">https://tippin.me/@goozenlab</a><br />
+                    
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>
+
+
+
