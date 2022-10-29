@@ -5688,5 +5688,14 @@
       <description>2020-02-18 idea-ce-linux アンドロイドの開発はするつもりはあまりないのだけれども、 オープンソースのアプリをちょっと自分仕様に変更したいなと思ったので、 開発環境をイ</description>
     </item>
     
+    <item>
+      <title>CLBossでライトニング・チャンネル運用</title>
+      <link>https://goozenlab.github.io/blog/1/01/lightning-clboss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/1/01/lightning-clboss/</guid>
+      <description>旅先にビットコイン・ノードを持参し、左手うちわで暮らせんかなと、不純な思いを持って始めたプロジェクト。 以前はMyNodeやUmbrelを実家</description>
+    </item>
+    
   </channel>
 </rss>

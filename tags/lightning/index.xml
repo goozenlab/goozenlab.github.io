@@ -27,5 +27,14 @@
       <description>少額での寄付のやり取りには最適解のようなので https://tippin.me を登録してみました。 利用するには、ウェブ・エクステンションが必要、FireFox、Chrome</description>
     </item>
     
+    <item>
+      <title>CLBossでライトニング・チャンネル運用</title>
+      <link>https://goozenlab.github.io/blog/1/01/lightning-clboss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/1/01/lightning-clboss/</guid>
+      <description>旅先にビットコイン・ノードを持参し、左手うちわで暮らせんかなと、不純な思いを持って始めたプロジェクト。 以前はMyNodeやUmbrelを実家</description>
+    </item>
+    
   </channel>
 </rss>
