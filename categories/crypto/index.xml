@@ -8,7 +8,34 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Sep 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Nov 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ライトニング・ウォレット: Alby</title>
+      <link>https://goozenlab.github.io/blog/2022/11/alby-lightning-wallet/</link>
+      <pubDate>Tue, 01 Nov 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/11/alby-lightning-wallet/</guid>
+      <description>ビットコインのLayer2のLightning。 ビットコインをDCA等で貯めていくのも悪いことではないけれども、 個人的にはそろそろ積極的に利</description>
+    </item>
+    
+    <item>
+      <title>クラウドソーシング型医療保険</title>
+      <link>https://goozenlab.github.io/blog/2022/10/btc-crowdsourced-health-insurance/</link>
+      <pubDate>Mon, 31 Oct 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/10/btc-crowdsourced-health-insurance/</guid>
+      <description>社会保険制度が崩壊に近い状態の国は多々あります。 新しいイノベーションにより、クラウドソーシング型医療保険や医療データのNFT化など、透明化、</description>
+    </item>
+    
+    <item>
+      <title>CLBossでライトニング・チャンネル運用</title>
+      <link>https://goozenlab.github.io/blog/2022/10/lightning-clboss/</link>
+      <pubDate>Sat, 29 Oct 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/10/lightning-clboss/</guid>
+      <description>旅先にビットコイン・ノードを持参し、左手うちわで暮らせんかなと、不純な思いを持って始めたプロジェクト。 以前はMyNodeやUmbrelを実家</description>
+    </item>
+    
     <item>
       <title>ビットコインの普及は現場から始まる</title>
       <link>https://goozenlab.github.io/blog/2022/09/bitcoin-adoption-on-the-groun/</link>
@@ -232,15 +259,6 @@
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/bitcoin-thailand/</guid>
       <description>東京への帰国を３月初めに控えコロナが気になるここ数週間です。 タイでの感染者は中国の観光客が多い割には３５人と少なく、 これはちょっと適当なお国</description>
-    </item>
-    
-    <item>
-      <title>CLBossでライトニング・チャンネル運用</title>
-      <link>https://goozenlab.github.io/blog/1/01/lightning-clboss/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/1/01/lightning-clboss/</guid>
-      <description>旅先にビットコイン・ノードを持参し、左手うちわで暮らせんかなと、不純な思いを持って始めたプロジェクト。 以前はMyNodeやUmbrelを実家</description>
     </item>
     
   </channel>
