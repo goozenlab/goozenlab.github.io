@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>分散型暗号通貨システムとハイエクの無計画経済 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-11-04</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/reading">reading</a> <a href="https://goozenlab.github.io/tags/orange-pill">orange pill</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>分散型暗号通貨システムとハイエクの無計画経済</h1>
+            </div>
+            <div class="post-content">
+                <p>ビットコイン界の重鎮の一人、自由を愛するリバタリアンのエリック・ヴォーヒーズ氏(Erik Voorhees)の講演の文字起こしです。
+（お陰様でリバタリアン思想にも関心を持つようになりました。）</p>
+<blockquote>
+<p>これは、計画がなされるべきか否かについての論争ではない。
+計画が経済システム全体に対して一つの権威によって<b>一元的</b>に行われるべきか、
+それとも<b>多くの個人に分割</b>されて行われるべきかという論争である。</p>
+</blockquote>
+<p>ビットコイン（分散型暗号通貨、DAOも含めてかな）は歴史的な文脈において、２１世紀の大きな出来事になるのではないかと、
+想像していたよりも大きな戦いなのだなと、</p>
+<p>日本だとここまでの議論はあまりされていないように思えますが（ご存知の方いたら教えてください）、
+<strong>平和的革命</strong> と言われているのがようやく腑に落ちました。
+ハイエクも勉強せねば、、</p>
+<!--
+ジョージ・メイソン大学マーカトゥス・センターとコイン・センターが共同で開催した
+「[クリプト通貨とハイエク会議](https://www.youtube.com/playlist?list=PLiZP3UYeZkfuxiIOaofMOCxzztn_Ds5s8)」: 
+のために用意されたものです。 
+-->
+<p>2021年6月19日<br>
+Decentralized Cryptocurrency Systems and Hayek’s Unplanned Economy : Erik Voorhees<br>
+<a href="https://www.aier.org/article/decentralized-cryptocurrency-systems-and-hayeks-unplanned-economy/">https://www.aier.org/article/decentralized-cryptocurrency-systems-and-hayeks-unplanned-economy/</a></p>
+<p>講演の録音
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/WSBt1pqo2qQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<hr>
+<p>1940年代、フリードリッヒ・A・ハイエクは、英国で進行している経済計画への傾倒に対して発言し、その名を知られるようになった。
+ハイエクは、この社会主義的傾向がファシズムの対極にあるのではなく、むしろその前兆であることを認識していたのである。</p>
+<p>この時期、このような懸念は単なる学問的なものではなかった。
+ナチス・ドイツはヨーロッパを暴力と混乱に巻き込んだが、ハイエクは他の多くの人が気づかなかったことを見抜いた。
+それは、ナチズムが「計画」への衝動によって育まれた、何年にもわたる集中化のプロセスの結果であったということだ。
+より大きな善のための計画、効率のための計画、正義、公平、平等、その他あらゆる利他的な理想のための「計画」。</p>
+<p>ハイエクの最も有名な著作である『農奴制への道』を読むと、戦争の最も悲惨な時期に書かれたものであり、その訴えには絶望的なものが感じられる。
+彼は同胞に向かってこう言っているのだ。「知らず知らずのうちに、最近敵が踏んだのと同じ道を歩まないでくれ！」。</p>
+<p>ハイエクは、イギリスや西欧諸国の多くが、古典的な自由主義の原則を疎外し、
+彼の言う<b>「国家への崇拝と、あらゆるものの『組織化』への熱狂」</b>を優先してきたと主張したのである。</p>
+<p>ハイエクの功績は、善意の経済計画と、その結果として生じる人間の豊かさの剥奪との間に、必然的とは言えないまでも、因果関係があることを明確に示したことにある。
+しかし、これは常識に反している。</p>
+<p>社会における思慮深い計画がより大きな成果をもたらすはずだと考えるのは、特に教養ある知識人にとっては自明のことであり、自然なことである。
+計画は重要である。そして、計画は最大のスケールで行うべきものではないだろうか。
+私たちのために社会を計画すること、それが政府の重要な役割ではないだろうか？</p>
+<p>ハイエクの洞察（オーストリア経済学者の間で広く共有されている）は複雑さが増すにつれ、
+合理的な計画の基礎となるすべての関連情報を、ある当事者、特に計画を担当する当事者が知ることは不可能になる、というのだ。</p>
+<p>ハイエクは、「これは、計画がなされるべきか否かについての論争ではない。
+計画が経済システム全体に対して一つの権威によって一元的に行われるべきか、それとも多くの個人に分割されて行われるべきかという論争である。」
+と書いている。</p>
+<p>この二項対立を設定することで、ハイエクは、中央計画の反対は全く計画を持たないことではなく、
+単に分散された計画、別名&quot;市場競争&quot;であることを思い出させるのである。</p>
+<p>したがって、我々の選択は、国家による中央組織か、個人と企業の競争による分散組織かのどちらかである。
+ハイエクは、社会が中央計画に傾き、競争から離れるほど、必然的に自由と繁栄を抑制しなければならないと熱弁している。</p>
+<p>個人の自由は、一般的には社会主義、当時はナチズムによって最も脅かされていた西洋社会の特徴であるとハイエクは正しく主張している。
+したがって、計画経済は農奴制に向かって突き進む。それが彼の主張であった。
+では、あの恐ろしい戦争の後、私たちはどこに向かって行進したのでしょうか？</p>
+<p>ハイエクの訴えからおよそ80年後の現代社会を見てみよう。
+表面的には、私たちの経済はかなり「無計画」に見えます。
+実際、ほとんどのアメリカ人やヨーロッパ人は自分たちの経済が市場経済であると信じているし、
+不満のほとんどは行き過ぎた資本主義が問題であると主張している。</p>
+<p>自由市場資本主義がここにある、と声高にマクドナルド（それほど美味しくないですし、）のロゴを独りよがりで持ち出す適当な活動家を何度見たことだろうか。
+そのような人々は、より多くの中央計画が必要であると強く信じている。そして、より大きな規制が彼らの答えである。</p>
+<p>しかし、ハイエクの仕事とオーストリア経済学一般に精通し、この文脈で通貨制度に関心を持つ者にとっては、現在あるものがいかなる種類のオープン・マーケットであるか懐疑的です。
+通貨自体が厳しく規制されているだけでなく、特定の独占機関によって集中的に計画されているのですから。</p>
+<p>では、私たちの経済は主に計画されたものなのでしょうか、それとも計画されていないものなのでしょうか？
+そして、暗号通貨現象は、その現状からどの程度離れているのでしょうか？</p>
+<p>私が提案したいのは、中央計画者たちは、経済の木の枝を自由に成長させ、はるかに本質的な幹である貨幣そのものを見つけたからである。
+彼らは、枝ではなく根を設計し、操作することに日々を費やしている。
+世間の人々は、社会は市場資本主義にあると信じて、はためく葉を観察しているのだ。</p>
+<p>社会におけるすべての取引には2つの財が含まれ、そのうちの1つは常に貨幣であることをよく考えてみましょう。
+このように、貨幣はすべての取引の半分を占めているが、貨幣の領域では基本的に競争はゼロである。どうしてだろうか？</p>
+<p>市場経済が何らかの理由でその最も重要な財を中央で計画することを容認してきたか、
+あるいはもっとオッカムの剃刀的な答えとして、結局のところ市場経済ではない、ということになるのだろう。</p>
+<p>※注：<a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%83%E3%82%AB%E3%83%A0%E3%81%AE%E5%89%83%E5%88%80">オッカムの剃刀</a>：「ある事柄を説明するためには、必要以上に多くを仮定するべきでない」とする指針。</p>
+<p>ハイエクの時代には、貨幣は金であったことを思い出してください。</p>
+<p>そのため、貨幣に関する中央計画の範囲は限られていました。計画することがあまりなかったのです。
+金は商品であり、気まぐれには作れないし、破壊もできない。
+そして、現代社会が金融化する以前は、貨幣制度の担当者は魔術師というより機械技師に近かった。
+貨幣制度担当者は魔術師というよりは機械工のようなもので、多少の創造性の余地はあっても、最終的には金属に制約されたままだった。</p>
+<p>しかし、ブレトン・ウッズが起こった。ハイエクの同時代人の多くがそこにいたが、ハイエクはいなかった。
+計画者の会議には、計画に対する批判者はあまり呼ばれない。
+ここでは、ホテルの数人の男たちが、公共の利益と世界の安定という崇高な旗印のもとに、市場の混乱した競争から世界を少し遠ざけたのです。
+お金はコントロールされるべきものである、というのが支配者たちの意見であった。</p>
+<p>※注：<a href="https://ja.wikipedia.org/wiki/%E3%83%96%E3%83%AC%E3%83%88%E3%83%B3%E3%83%BB%E3%82%A6%E3%83%83%E3%82%BA%E5%8D%94%E5%AE%9A">ブレトン・ウッズ協定</a>：アメリカ合衆国ドルを基軸とした固定為替相場制</p>
+<p>それ以来、貨幣は中央計画者によってますます管理され、作り出されるようになった。
+1970年代初頭には、金さえもその計画を阻害するものとして排除された。</p>
+<p>中央貨幣計画家は、もはや単なる機械屋ではなく、魔術師となったのです。
+そしてここに、ハイエクが警告した陰湿な農奴制が忍び込んできたのである。</p>
+<p>貨幣制度に対する中央集権的な計画が強化される過程で、世界経済全体が一人の人間とその議事録の言葉にかかっているという状況に、今日、私たちは陥っているのです。
+連邦準備制度理事会は、究極の計画立案者であり、貨幣の計画を通じて、人間社会の広い範囲の間接的な計画立案者となります。</p>
+<p>私達は皆、知らず知らずのうちに、この制度に捕らわれていました。
+政治家に対する、常に誤った信頼に誘われていたのです。</p>
+<p>私たちは、『隷属への道』の成功の一端が、そのタイトル自体にあったということにおそらく同意できるだろう。これは直感的だ。</p>
+<p>隷属への道: <a href="https://www.amazon.co.jp/dp/4393621824">https://www.amazon.co.jp/dp/4393621824</a></p>
+<p>農奴制は、現代人の感覚からすると、従順な服従の暗黒時代を伝えている。強圧的な階層制度。
+庶民が自分の置かれた環境の不公平さに無知であることを伝えている。
+すべての男女は法の下に平等であるべきで、いかなる者も他の者より特別な法的特権を持ってはならないという原則を徹底的に否定しているのである。</p>
+<p>私たちは大昔の農奴制を明らかに軽蔑している。しかし、現代の銀行制度の下で苦労している私たちは、どれほど違っているのだろうか。
+中世の領主には城があった。現代の領主には銀行がある。
+そして、中世の農奴が領主に疑問を持ったり対立したりしなかったのと同じように、現代の市民も自分のお金に疑問を持ったり対立したりすることはあまりない。</p>
+<p>ハイエクが警告した農奴制は、中央集権的に計画された貨幣を徐々に押し付けることで到来したのです。</p>
+<h2 id="しかしその後ビットコインが起こった">しかし、その後ビットコインが起こった。</h2>
+<p>ハイエクはかつて、&ldquo;私たちは二度と良い貨幣を持てないだろう&rdquo;、と書いた。そして、</p>
+<blockquote>
+<p>私たちが政府の手から物を取り上げるまでは - つまり、私たちは政府の手から暴力的に取り上げることはできず、
+できるのは、政府が止めることのできないものを、ずる賢く遠回しに導入するだけだ。</p>
+</blockquote>
+<p>と。<br>
+ハイエクは、社会が分権的な秩序を受け入れることを望んでいた。
+それは単に効率的だからではなく、人間の繁栄を最もよく保証するものだからである。
+サトシがデザインしたビットコインが、まさにこの分散型秩序の問題を、貨幣の領域で解決したことは、詩的な賛辞と言えるでしょう。</p>
+<p>ビットコインは、コンピュータサイエンスの長年の課題であった「<a href="https://ja.wikipedia.org/wiki/%E3%83%93%E3%82%B6%E3%83%B3%E3%83%81%E3%83%B3%E5%B0%86%E8%BB%8D%E5%95%8F%E9%A1%8C">ビザンチン将軍問題</a>」と呼ばれるものを解決したのです。
+信頼できない当事者がいるときに、失敗を避けるために複数の当事者が合意するにはどうしたらいいか？</p>
+<p>ビットコイン以前は、貨幣システムのような価値システムは、規模が大きくなると中央集権的にならざるを得ませんでした。
+支配者（農奴に例えると領主）がいなければ、異質なコンピュータ同士が信頼できないからです。<br>
+つまり、2009年にビットコインが誕生する以前は、ハイエクが主張した分散型競争は関係なかったと言えるでしょう。
+現代における貨幣は中央集権的に計画されなければならない。</p>
+<p>そして、貨幣が中央集権的に計画されたものであったならば、どのようにして適切な市場が形成されるのだろうか。
+資本主義は、不換紙幣の上に成り立っているとは言えない。</p>
+<p>ありがたいことに、中央の調整なしにお金そのものを規模や距離に応じて使えるようにすることで、サトシはハイエクの「無計画経済」を現代の文脈で実現可能にした。
+ブロックチェーンは一般に、離れたところにいる見知らぬ人たちの間で経済的な調整を行うための新しいツールとなった。</p>
+<p>そして、この新しい技術の後に起こった協調と経済ブームは、圧倒的であると同時に刺激的なものだった。
+ボラティリティ、定期的な損害、愚かな犬のミームの中で、人々はしばしば、社会的・経済的現象としての暗号通貨がどれほど深いものになったかを見逃しています。</p>
+<p>この現象は、わずか10年あまりで1兆5千億ドルの富を生み出しました。</p>
+<p>この場所は、地球上のどの人間も、他のどの人間にも瞬時に価値を譲渡することができ、誰もそれを邪魔したり止めたりすることができず、<br>
+どんな額面の価値を自分の脳の中に隠しておいて、それが作られた場所から何千マイルも離れた場所で再び実体化させることができ、<br>
+貸出市場と交換市場が形成され、1日に何十億ドルもの価値が取引されているにもかかわらず、<br>
+オフィスもCEOもなく、どの会社によっても運営されていない場所です。</p>
+<p>ここでは、何千もの価値あるシステムが超競争的にゲーム理論を試し、暗号技術そのものを発展させています。
+そして、これら全ては、政府のライセンスが一切関係することなく行われています。
+あらゆる中央計画者に対する<b>究極のアンチテーゼ</b>であるビットコインは、
+10年以上前にその生成された最初のブロックで初めてイギリスの首相と彼の銀行救済案を蹴散らして以来、
+現存する金融資産の中で最も優れたパフォーマンスを発揮しています。</p>
+<p>正直なところ、ビットコインは、資本主義的な文脈の中で急速に自然発生した、人類史上最も偉大な例です。
+それはきっとハイエクを涙ぐませることでしょう。そして、この急速な秩序は、ハイエクにとって完全に予測可能なものであっただろう。</p>
+<blockquote>
+<p>人間の創意工夫の自由な発揮を阻むものが取り除かれるたびに、人間は急速に欲望の範囲を広げ満足させることができるようになった</p>
+</blockquote>
+<p>まさに、今、暗号通貨業界で起きていることなのです。<br>
+ハイエクはこう続ける。</p>
+<blockquote>
+<p>産業自由が新しい知識の自由な使用への道を開いて以来、あらゆることが試されるようになって以来（自己責任でそれを支援する誰かが見つかれば）、科学は過去150年間に世界の様相を変えた偉大な進歩を遂げたのである。</p>
+</blockquote>
+<p>暗号通貨では、今、すべてが試され、自分のリスクでこれらの実験を支援しようとする人がたくさんいます。
+ハイエクは競争を崇拝していた。そして暗号通貨では、競争は普遍的で、激しく、冷酷で、しかも、、、平和的です。</p>
+<p>暗号通貨は、いかなる中央計画もなく繁栄しています。ハイエクは、まさに中央計画がないからこそ繁栄しているのだと主張するでしょう。
+奔放な資本主義が全面に押し出されている空間なのです。
+計画者にとって、これは反感を買うものであり、彼らはすぐに暗号通貨投資家に降りかかるボラティリティと定期的な損害を強調します。</p>
+<p>そして実際に、これまでに多くの損害がありました。多くの嘘、多くの詐欺、多くの間違いがありました。
+これらのことを軽視したり弁解したりするつもりはありませんが、これらは人間の経験の偉大なフロンティア、
+つまり中央計画家の視野をはるかに超えた非常に重要な領域を象徴するものでもあります。</p>
+<p>現実の世界では、イデオロギーの純粋な例を見つけるのは難しいことが多い。
+アメリカは資本主義か？中国は共産主義だろうか？どちらもそうとは言えない。
+ナイジェリアやメキシコ、ソビエト連邦では、中央計画と開放市場のどちらがうまくいったのだろうか。
+データは泥まみれで、頭のいい人はそこからほぼどんな物語でも紡ぎ出すことができる。</p>
+<p>しかし暗号通貨では、イデオロギーの純粋な表現に近いエコシステムの最良の例の1つがあります。
+この場合、<strong>国境なき市場競争</strong> というイデオロギーです。
+技術的なレベルでは国家は干渉できず、法的・政治的なレベルでも国家が効果的に統治できないほど急速に進化しています。</p>
+<p><em>今世界で起きていることの中で、最も魅力的なことの一つです。</em></p>
+<p>暗号技術、特にビットコインは、政府によって計画されていないお金と金融システムの実証的なデモンストレーションを提供しています。
+その対極にあるのが、不換紙幣と銀行システムであり、中央計画の究極の宿命的驕りである。<br>
+ハイエクの時代とは異なり、私たちはこれらのシステムの優劣を議論する必要はない。
+純粋な自由市場通貨が、ゴリアテ（旧約聖書の「サムエル記」に登場するペリシテ人の巨人兵士）のような体制に対してゼロの位置から競争するために、世界に出現しているのです。
+もしそれが勝てば、議論は決着する。</p>
+<p>運が良ければ、そしてありがたいことに、いかなる計画者の許可なくして、ハイエクの理想とする分散化が今後数年間、金融市場全体で実現されるのを目撃することができるのです。</p>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/09/movement-for-financial-freedom/">ビットコインは金融の自由のためのムーブメント</a></li>
+	
+	<li><a href="/blog/2022/08/manifesto-bitcoin-freedom/">ビットコインは組織的束縛からの自由</a></li>
+	
+	<li><a href="/blog/2022/08/bitcoin-dies-freedom-dies/">ビットコインが死すれば、自由もそれと共に死す</a></li>
+	
+	<li><a href="/blog/2022/08/bitcoin-beach-white-paper/">ビットコインビーチ白書</a></li>
+	
+	<li><a href="/blog/2022/08/7-famous-economic-principles-for-bitcoin/">ビットコイナーが知っておくべき7つの有名な経済原則</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/11/decentralized-cryptocurrency-systems-hayeks-unplanned-economy/";  
+    this.page.identifier = "2022-11-04-decentralized-cryptocurrency-systems-hayeks-unplanned-economy"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>
