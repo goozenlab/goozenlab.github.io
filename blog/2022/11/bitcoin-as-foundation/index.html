@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>基盤としてのビットコイン | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"> 
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-11-10</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/reading">reading</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>基盤としてのビットコイン</h1>
+            </div>
+            <div class="post-content">
+                <p>基盤が安定しないと、その上に構築されたものは脆弱性を伴うことになります。
+今、私たちが経験している景気後退（インフレ）はまさにその歪みから生じたものともいえます。</p>
+<p>新しい文明のための基盤づくりに、その実現に不可欠な金融システムをビットコインが提供します。</p>
+<p>ノン・カストディアル取引所（ちとLendingが気になる）: <a href="https://hodlhodl.com/">https://hodlhodl.com/</a> のブログより、</p>
+<!-- Nov 3, 2022 23:55   -->
+<p>Bitcoin as foundation : Creating bases for a new civilization<br>
+<a href="https://medium.com/hodl-hodl/bitcoin-as-foundation-4ff1201f5e36">https://medium.com/hodl-hodl/bitcoin-as-foundation-4ff1201f5e36</a></p>
+<hr>
+<p>建築家やエンジニアなら誰でも、新しい建物を建てるときに最も重要なことは基礎をしっかり固めること、つまり頑丈で耐久性のある土台を作ることだと知っています。
+この土台が安定していて丈夫でなければ、その上に建てられる構造物もそのようにはならない。</p>
+<h3 id="残念ながら今日の世界経済は強固な基盤の上に成り立っているとは言い難くむしろその逆である">残念ながら、今日の世界経済は強固な基盤の上に成り立っているとは言い難く、むしろその逆である。</h3>
+<p>私たちは100年以上にわたって、不確実性の沼の上に、伸縮性のある測定ツールを使って実質的な経済構造を構築してきたのです。
+輪ゴムのように伸び縮みするメジャーを使ってビルを建てることを想像してみてほしい。
+さらに悪いことに、最近では、このメジャーが予想以上に伸びているのだ。
+このメジャーで作ったものは、プロポーションを保てず、階を重ねるごとに大きくなっていくのです。
+2mの壁が2.2mになり、次の基礎では2.4mになるなど、どんどん尺が伸びていきます。
+やがて、建物が重さで倒壊するところまで来てしまうのです。</p>
+<p>今の世界経済がそうです。
+私たちは、絶対的に多様で柔軟な、そして一般的に言えば絶えず拡大する貨幣的測定基準を用いて、世界経済全体を組織化し構造化しようとしています。
+このような状況では、人類としての集団的構築は良い運命をたどらず、この問題が世界中で爆発する多くの経済危機や金融危機に毎年反映されているのを私たちは目の当たりにしています。</p>
+<p>このままでは、人類が築き上げてきた近代社会が目の前で崩壊してしまうという大きなリスクを抱えることになります。</p>
+<h2 id="どうすればこの泥沼から抜け出せるのだろうか">どうすればこの泥沼から抜け出せるのだろうか。</h2>
+<p>冒頭で述べたように、重要なのは、その上にしっかりと安全に、そして何よりも時間の経過に耐えられるような強固な基盤を作ることです。</p>
+<h2 id="安定的で耐久性のある貨幣測定システムが必要">安定的で耐久性のある貨幣測定システムが必要</h2>
+<p>今日、主流となっている不換紙幣制度は、これを提供できません。
+現在、事実上すべての世界貿易は、単一の権力集団が発行し管理する通貨を交換資源（測定基準）として行われており、
+彼らはその裁量と必要に応じて拡大・縮小を止めないため、すべての業務とすべての市場に巨大な歪みをもたらしています。
+バリューチェーンやサプライチェーンで引き起こされる損失は非常に大きく、大雑把に計測することすらできません。
+それでも、それらの損失は、現行システムの恐るべき欠陥を露呈させないために、公にされません。</p>
+<h3 id="グローバルな貿易には均質で透明性があり予測可能で堅実で堅牢でそして何よりも政治にとらわれない取引手段が早急に必要である">グローバルな貿易には、均質で、透明性があり、予測可能で、堅実で、堅牢で、そして何よりも政治にとらわれない取引手段が早急に必要である。</h3>
+<p>論理的には、異なる政治社会は、相反する一般に敵対する利益を持つ別の権力集団によって支配・統治・管理される通貨制度を信用しない。
+このような状況では、各セクターは、世界の交換通貨に対する通貨発行権を持つという大きな利点を享受するために、自分たちの交換手段を押し付けるために戦うことになる。
+この力学が続く限り、経済を活性化するために流動的な貿易を必要とするすべての権力空間にとって、公正で公平な貿易協定は望めないだろう。</p>
+<h2 id="ビットコインが提供するファンダメンタルズ">ビットコインが提供するファンダメンタルズ</h2>
+<p>ビットコインの通貨単位が純粋にデジタルであるため、インターネットを通じて地球上のあらゆる場所に送ることができます。
+また、電波などの他の電子通信手段や、耐久性のある素材に特定のキーを印刷することで物理的に送ることもでき、
+さらには、12または24の言葉を口述で受信者に伝えることもできます。
+この特性により、ビットコインはいつでも地球上のあらゆる場所で受け取ることができ、
+地理的に分散した異なる経済主体間の遠隔交換に必要な国境を越えた通貨の同質性の特性を与え、
+実質的に政治的境界を消し、今日の国際通貨交換システムが引き起こす大きな摩擦を回避することができるのです。</p>
+<p>オープンでパブリックなプロトコル（オープンソース・ソフトウェア）であるため、
+ビットコインの運営の詳細は、いつでも、誰でも、どこからでも検証することが可能です。
+このため、ビットコインはその仕組みの細部に至るまで絶対的な透明性があると言われています。</p>
+<p>ビットコインの通貨政策は構想時から書かれており、100年以上先の未来にどのように進化していくかも完全に分かっている。
+これは、通貨問題ではかつて見られなかったレベルの予測可能性を提供します。
+これは、世界規模での健全な貿易の発展に必要なもう一つの本質的な特徴です。</p>
+<p>ビットコインのデータベースには、その権利を主張するために必要な作業を行わなければ、データを書き込むことができません。
+この作業は採掘者によって行われ、「Proof of Work」（PoW）と呼ばれるプロセスにおいて、設備やインフラ、特に重要な電気エネルギーの使用に大きな投資が必要です。
+このいずれも改ざんはできません。
+機器は設計され、テスト後、製造・構築されなければなりません。
+それを収容するインフラは、厳格な品質基準で物理的に組み立てられなければならず、
+その運用に必要な電気エネルギーは、この目的のために第三者から生成または購入されなければならないのです。
+したがって、ビットコインはデジタル通貨システムであるにもかかわらず、
+私たちが「現実世界」として知っているものと必然的につながる、確固たる物理的なルートを持っているのです。</p>
+<p>これらのことが、ビットコインに上記のような強固で堅牢な特性を与えています。
+特定の個人やグループがビットコインをコントロールしたり、通貨発行を拡大したり縮小したりする力を持っていません。
+これは設立当初からプログラムされており、どんなに政治力や軍事力を持った市場関係者でも変更することはできない。
+このシステムは非常に透明性が高く、特別な許可や強力なグループに属していることの証明を必要とせず、誰でもそれを監査することができます。
+つまり、ビットコインは国際貿易のための政治的に不可知論的な通貨システムとして優れているのです。</p>
+<p>ビットコインは、真実と相互尊重に基づいた、新しく活気のある普遍的な文明を見出すための基盤を構築することを可能にします。</p>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/11/decentralized-cryptocurrency-systems-hayeks-unplanned-economy/">分散型暗号通貨システムとハイエクの無計画経済</a></li>
+	
+	<li><a href="/blog/2022/11/obscured-attribute-of-money/">お金というわかりにくい属性</a></li>
+	
+	<li><a href="/blog/2022/10/btc-crowdsourced-health-insurance/">クラウドソーシング型医療保険</a></li>
+	
+	<li><a href="/blog/2022/09/bitcoin-adoption-on-the-groun/">ビットコインの普及は現場から始まる</a></li>
+	
+	<li><a href="/blog/2022/09/bitcoin-requires-positive-freedom/">ビットコインの自由とは？</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/11/bitcoin-as-foundation/";  
+    this.page.identifier = "2022-11-10-bitcoin-as-foundation"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 04 Nov 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基盤としてのビットコイン</title>
+      <link>https://goozenlab.github.io/blog/2022/11/bitcoin-as-foundation/</link>
+      <pubDate>Thu, 10 Nov 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/11/bitcoin-as-foundation/</guid>
+      <description>基盤が安定しないと、その上に構築されたものは脆弱性を伴うことになります。 今、私たちが経験している景気後退（インフレ）はまさにその歪みから生じ</description>
+    </item>
+    
     <item>
       <title>分散型暗号通貨システムとハイエクの無計画経済</title>
       <link>https://goozenlab.github.io/blog/2022/11/decentralized-cryptocurrency-systems-hayeks-unplanned-economy/</link>
