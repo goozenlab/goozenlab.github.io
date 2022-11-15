@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 15 Nov 2022 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>トランザクション大混雑中</title>
+      <link>https://goozenlab.github.io/blog/2022/11/btc-mempool/</link>
+      <pubDate>Wed, 16 Nov 2022 11:30:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/11/btc-mempool/</guid>
+      <description>BTCの価格は変わらんのに、ビットコインのトランザクションが大混雑、久しぶりにカツカツな状況です。 こちらで、ブロックの状況が見れます。 なんで</description>
+    </item>
+    
     <item>
       <title>FTXの崩壊後</title>
       <link>https://goozenlab.github.io/blog/2022/11/after-ftx-implosion/</link>

@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>BIOS設定：ハッキントッシュT480s | goozenlab</title>
+  <title>トランザクション大混雑中 | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -196,140 +196,36 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2020-01-10</time>
+                    <time class="">2022-11-16</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.github.io/tags/hackintosh">hackintosh</a> <a href="https://goozenlab.github.io/tags/thinkpad">thinkpad</a> 
-                    
 
                     
-                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    categories:<a href="https://goozenlab.github.io/categories/mumble">mumble</a> 
                     
 
                     
                 </p>
-                <h1>BIOS設定：ハッキントッシュT480s</h1>
+                <h1>トランザクション大混雑中</h1>
             </div>
             <div class="post-content">
-                <p><img src="/images/2020-01-08-hackintosh-t480s.jpg" alt="about this"></p>
-<p>Thinkpad T480sにmacOSモハァ〜ベェ～をインストールして使っています。
-11月ごろに一回あったシステムアップデートもでき、MagicTrackpadやマルチディスプレイにも対応。
-不具合はトラックパッドが使えないことと２つ同時にUSBの使用ができないことくらい。
-ちょっともう少しバッテリーが持ってくれれば申し分はないのですが、
-思った以上に快適です。
-ただ動かなくなるのが怖いので、カタリーナへのアップデートは保留。。
-MojaveとXcode11でFIX。</p>
-<p>レビュー記事：</p>
-<ul>
-<li><a href="https://goozenlab.github.io/blog/2019/12/hackintosh-t480s-review2/">数ヶ月使ってのレビュー</a>：どんどん良くなってきてます。</li>
-<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s-wifi/">Broadcom Wifiに交換</a>：内蔵カードは使えないので対応しているWifiカードを無理くり使えるようにする。</li>
-<li><a href="https://goozenlab.github.io/blog/2019/10/hackintosh-t480s/">T480sでハッキントッシュ</a>：インストール後の雑感</li>
-</ul>
-<p>もう一度やり直すかもしれないので、インストール方法を少し細かくまとめます。
-記憶を辿りつつというのもあるので、ちょっと自信はないのですが、
-多分大丈夫（無保証かつ無責任、自己責任でよろしくです）。
-クローバーのコンフィグファイルも公開します。</p>
-<p>作業はマックで行いました。
-（インストールディスクの制作作業はWindowsでもできるようです。余裕があったら調べます。）</p>
-<h2 id="インストール作業">インストール作業</h2>
-<p>作業手順は以下になります。長くなりそうなので愚痴などを入れつつ３部に分けます。</p>
-<ol>
-<li><a href="https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/">T480sのBIOS設定</a></li>
-<li>Mojaveインストールメディア（Macにて）作成：一番面倒かつ大事な作業
-3. インストール（カタリーナでも大丈夫だと思う、誰か試してくれませんかね。）</li>
-<li>インストール後の設定：メンテナンス等</li>
-</ol>
-<h2 id="bios設定">BIOS設定</h2>
-<p><img src="/images/2020-01-08-tp480s-bios-main-00.jpg" alt="BIOS MAIN"></p>
-<p>会社によって違うのかもしれませんが、
-BIOSモードに入るにはThinkpadの場合ですと再起動後 <strong>[F1]</strong> 押したままにしておきます。</p>
-<h3 id="security">Security</h3>
-<p>上部のバーよりSecurityを選択、そしてセキュリティとスタートアップ関連を調整します。</p>
-<p><img src="/images/2020-01-08-tp480s-bios-security-00.jpg" alt="BIOS Security"></p>
-<ul>
-<li><strong>&raquo;</strong> Fingerprint
-<ul>
-<li>Fingerprint  Predesktop Authentication [DISABLED]：指紋認証は使えません（Linuxでも同様）</li>
-</ul>
-</li>
-<li><strong>&raquo;</strong> Security Chip
-<ul>
-<li>Security Chip [DISABLED]</li>
-</ul>
-</li>
-<li><strong>&raquo;</strong> Virtualization
-<ul>
-<li>Virtualization  Intel Virtualization Technology [ENABLE]</li>
-<li>Intel VT-d Feature [ENABLE]</li>
-</ul>
-  <div class=note>
-</li>
-</ul>
-<p><b>※</b>
-仮想化：バーチャライゼーションは<b>DISABLED</b> にせよとありましたが、
-Linux環境でkvmを使うかもしれんので<b>ENABLED</b> にしたままインストールしました。
-KVMでの検証はまだしてません。問題が発生したらDISABLEに変更予定。
-（使い始めて３カ月経過しましたが今の所問題なし。）</p>
-</div>
-+ **>>** I/O Port Access
-    + Wireless WAN [DISABLED]
-    + Memory Card Slot [DISABLED]：
-    + Fingerprint Reader [DISABLED]
-<div class=attention>
-<b>！！ </b> SDカードスロットは使えないと聞いていましたが、今回ブログを書くためにちょっと試しにENABLEにしたら使えました<b>！！ </b> でもバッテリーを割と食うと聞いたのでオフにします。
-</div>
-+ **>>**  Secure Boot    
-    + Secure Boot [DISABLED]
-+ **>>** Intel SGX
-    + Intel SGX Control [DISABLED]
-<h3 id="startup">Startup</h3>
-<p><img src="/images/2020-01-08-tp480s-bios-setup-efi.jpg" alt="BIOS Startup"></p>
-<ul>
-<li>UEFI/Legacy Boot [UEFI Only]</li>
-<li>CSM Support [Yes]</li>
-</ul>
-<h3 id="参照">参照：</h3>
-<ul>
-<li><a href="https://www.tonymacx86.com/threads/success-macos-10-14-on-thinkpad-t480s.261318/">https://www.tonymacx86.com/threads/success-macos-10-14-on-thinkpad-t480s.261318/</a></li>
-<li><a href="https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/">https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/</a></li>
-<li>Clover (EFI)
-<ul>
-<li><a href="https://github.com/linusyang92/macOS-ThinkPad-T480s">https://github.com/linusyang92/macOS-ThinkPad-T480s</a></li>
-<li><a href="https://github.com/lisovskiy01/T480s-hackintosh">https://github.com/lisovskiy01/T480s-hackintosh</a></li>
-</ul>
-</li>
-</ul>
-<!--
-+ https://github.com/vumvo/myt480s on Apr 24
-+ https://github.com/linusyang92/macOS-ThinkPad-T480s on May 4 with Tools
-+ https://github.com/lisovskiy01/T480s-hackintosh on Aug 6
-+ https://github.com/kk1987/T480s-hackintosh on Nov 13, 2018
-+ https://github.com/tylernguyen/x1c6-hackintosh
-
-+ https://github.com/xzhih/one-key-hidpi
-
--->
+                <p><img src="/images/2022-11-15-mempool-00.png" alt="MemPool"></p>
+<p>BTCの価格は変わらんのに、ビットコインのトランザクションが大混雑、久しぶりにカツカツな状況です。
+こちらで、ブロックの状況が見れます。
+なんでブロックチェーンで呼ばれているかを見事に可視化できます。</p>
+<p><a href="https://mempool.space/">https://mempool.space/</a></p>
+<p>ご存じブロックチェーンは公開されますで、中身のトランザクションも丸見えです。
+ほとんどがBinanceのアドレスらしいです。小さいUTXO（取引）をまとめてます。</p>
+<p><img src="/images/2022-11-15-mempool-01.png" alt="MemPool"></p>
+<p>出金ラッシュなのかと思いきや、Segwitへの移行をしているのか、Proof Of Reserveの準備ですかね。
+グラフ綺麗っすね。</p>
+<p>と、Mempoolはいつの間にか、LightningChannelにも対応してます、おー。</p>
 
                 
                 
-
-<h3>See Also</h3>
-<ul>
-	
-	<li><a href="/blog/2020/01/install-hackintosh-t480s/">BIOS設定：ハッキントッシュT480s</a></li>
-	
-	<li><a href="/blog/2020/01/hackintosh-t480s-batery/">ハッキントッシュのバッテリー</a></li>
-	
-	<li><a href="/blog/2019/12/hackintosh-t480s-review2/">ハッキントッシュで数ヶ月</a></li>
-	
-	<li><a href="/blog/2019/10/hackintosh-t480s/">T480sでハッキントッシュ</a></li>
-	
-	<li><a href="/blog/2018/11/hackintosh-x230/">HackPad X230</a></li>
-	
-</ul>
 
 
             </div>
@@ -341,8 +237,8 @@ KVMでの検証はまだしてません。問題が発生したらDISABLEに変�
 
     
     var disqus_config = function () {
-    this.page.url = "https://goozenlab.github.io/blog/2020/01/install-hackintosh-t480s/";  
-    this.page.identifier = "2020-01-10-hackintohs_install"; 
+    this.page.url = "https://goozenlab.github.io/blog/2022/11/btc-mempool/";  
+    this.page.identifier = "2022-11-16-btc-mempool"; 
     };
     
     (function() { 
