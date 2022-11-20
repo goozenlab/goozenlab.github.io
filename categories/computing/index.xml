@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Apr 2022 13:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Nov 2022 07:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whisperをインストール</title>
+      <link>https://goozenlab.github.io/blog/2022/11/whisper-install/</link>
+      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/11/whisper-install/</guid>
+      <description>OpenAI Whisper Transcription Testing OpenAI Whisper Transcription Testing https://blog.lopp.net/openai-whisper-transcription-testing/ の記事（ビットコインナーさんのフォロワー）をみて結構使えるとのことで、 ブログであげているYutubeの文字起こしに使えそう</description>
+    </item>
+    
     <item>
       <title>Brew：アプリのダウングレード方法</title>
       <link>https://goozenlab.github.io/blog/2022/04/brew-downgrade/</link>
