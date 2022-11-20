@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Whisperをインストール | goozenlab</title>
+  <title>Whisperで文字起こし | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -202,7 +202,7 @@
                     |
                     
                     
-                    tags:<a href="https://goozenlab.github.io/tags/macos-tipstricks">macos tips&amp;tricks</a> 
+                    tags:<a href="https://goozenlab.github.io/tags/macos">macos</a> <a href="https://goozenlab.github.io/tags/tipstricks">tips&amp;tricks</a> <a href="https://goozenlab.github.io/tags/ai">ai</a> 
                     
 
                     
@@ -211,18 +211,21 @@
 
                     
                 </p>
-                <h1>Whisperをインストール</h1>
+                <h1>Whisperで文字起こし</h1>
             </div>
             <div class="post-content">
-                <p>OpenAI Whisper Transcription Testing</p>
-<p>OpenAI Whisper Transcription Testing
+                <p>ちょっと色々と気になっているAI関連、
+フォローしているビットコインナーさんの記事をみて結構使えるとのことで、
+ブログであげているYutubeの文字起こしに使えそうなので、<strong>Whisper</strong>
+をインストールして試してみました。</p>
+<p>OpenAI Whisper Transcription Testing :
 <a href="https://blog.lopp.net/openai-whisper-transcription-testing/">https://blog.lopp.net/openai-whisper-transcription-testing/</a></p>
-<p>の記事（ビットコインナーさんのフォロワー）をみて結構使えるとのことで、
-ブログであげているYutubeの文字起こしに使えそうなので、インストールして試してみました。</p>
 <h2 id="python">Python</h2>
-<p>jin@bohemia ~ % python3 -V
-Python 3.8.9</p>
-<pre tabindex="0"><code>$ brew install python
+<p>MacOSにインストール済みのPythonはバージョン(3.8.9)が古いのでアップデートします。
+Brewが必要なのでインストールしていない方は、便利なパッケージマネージャーなので是非是非。</p>
+<p><a href="https://brew.sh/">https://brew.sh/</a></p>
+<p>ターミナルでインストールの作業、Whisperの利用を行います。</p>
+<pre tabindex="0"><code>% brew install python
 
 Python has been installed as
   /opt/homebrew/bin/python3
@@ -240,34 +243,51 @@ tkinter is no longer included with this formula, but it is available separately:
   brew install python-tk@3.10
 
 See: https://docs.brew.sh/Homebrew-and-Python
-$
-</code></pre><p>brew install virtualenv</p>
-<p>virtualenv env/
-source env/bin/activate</p>
-<p>*FYI: You need to run the command to use Whisper whenever you want.
-This is the activation command.</p>
-<h2 id="rust">Rust</h2>
-<p>Rustを使ったプログラミングを行えるように、Rustコンパイラのアップデートや開発に必要なツール類を管理するための rustup をインストールします。</p>
-<p>brew install rustup-init</p>
-<h2 id="whisper-install">Whisper install</h2>
-<h3 id="requirement">Requirement</h3>
-<pre tabindex="0"><code>$ brew install rust
-$ brew install ffmpeg 
+%
+</code></pre><p>インストール後は一度ターミナルを環境設定の再読み込みのため再起動します。</p>
+<!-- 
+brew install virtualenv
+virtualenv env/
+source env/bin/activate
+*FYI: You need to run the command to use Whisper whenever you want. 
+This is the activation command.
+
+## Rust
+Rustを使ったプログラミングを行えるように、Rustコンパイラのアップデートや開発に必要なツール類を管理するための rustup をインストールします。
+brew install rustup-init 
+-->
+<h2 id="whisperのインストール">Whisperのインストール</h2>
+<p>事前に必要なソフトウェアをインストールします。</p>
+<pre tabindex="0"><code>$ brew install ffmpeg 
+$ *brew install rust
 </code></pre><p>依存するソフトウェアも割とたくさんインストールされます。
 rustはエラーが出たらインストールを。（問題が出るとか出ないとか、私は既にインストール済みだったので検証できず）</p>
-<p>そして最後にメインのWhisperをインストールします。
-pipのバージョンが古いとインストール後に注意fが出たので、事前にアップデートしておくのが良いです。</p>
+<p>そしてメインのWhisperをインストールします。
+で、pipのバージョンが古いとインストール後に注意が出たので、事前にアップデートしておくのが良いです。</p>
 <pre tabindex="0"><code>% python3 -m pip install --upgrade pip
 % pip3 install git+https://github.com/openai/whisper.git
-</code></pre><p>アップグレードは以下のコマンドより行います。</p>
-<pre tabindex="0"><code>$ pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
-</code></pre><p>パケージ・マネージャ、pipかBrewか悩みましたが、Brewに全てのパッケージがある様ではないので、pipで統一しときました。
+</code></pre><p>先々のアップグレードは以下のコマンドより行います。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+</span></span></code></pre></div><p>で、あっさりとインストールできました。<br>
+で、お次は利用法、YouTubeより音声データーをとってきて文字起こしをします。</p>
+<!-- 
+パケージ・マネージャ、pipかBrewか悩みましたが、Brewに全てのパッケージがある様ではないので、pipで統一しときました。　　
 Brew vs. Pip: Which Package Installer Should You Use?
-<a href="https://www.stickyminds.com/article/brew-vs-pip-which-package-installer-should-you-use">https://www.stickyminds.com/article/brew-vs-pip-which-package-installer-should-you-use</a></p>
+https://www.stickyminds.com/article/brew-vs-pip-which-package-installer-should-you-use 
+-->
 <h2 id="youtubeビデオの文字起こし">Youtubeビデオの文字起こし</h2>
-<p>brew install youtube-dl</p>
-<p>youtube-dl &ndash;extract-audio &ndash;audio-format mp3 <YouTube video URL>
-whisper ./<audio filename>.mp3 &ndash;model medium</p>
+<p><img src="/images/2022-11-19-whisper-00.png" alt="Whisper on terminal"></p>
+<p>まず、<code>youtube-dl</code>
+というソフトウェアを使って、YouTubeの動画から音声ファイをダウンロードします。</p>
+<p><a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md">https://github.com/ytdl-org/youtube-dl/blob/master/README.md</a></p>
+<p>アプリのインストールはBrewを使って一発です。</p>
+<pre tabindex="0"><code>% brew install youtube-dl
+</code></pre><p>作業の流れはファイルのダウンロード、そして文字起こしと至ってシンプルです。
+YouTubeのURLは短いもので無いとエラーが出ましたので、そのときは画面から右クリックでURLをコピーしてください。</p>
+<pre tabindex="0"><code>% youtube-dl --extract-audio --audio-format mp3 &lt;YouTube video URL&gt;
+% whisper ./&lt;audio filename&gt;.mp3 --model medium
+</code></pre><p>で、実際の画面はこんな感じで、初回文字起こし時に、データーセットのダウンロードが行われます。
+mediumのサイズで1.4GBとちょっと大きいです。12分半の音声処理に28分かかりました。</p>
 <pre tabindex="0"><code>% youtube-dl --extract-audio --audio-format mp3 https://youtu.be/oHJN_iMvkJg
 [youtube] oHJN_iMvkJg: Downloading webpage
 [youtube] oHJN_iMvkJg: Downloading MPD manifest
@@ -287,22 +307,43 @@ Detected language: English
 
 [12:25.860 --&gt; 12:37.860]  Thank you.
 %
-</code></pre><p>12:38の音声 28分かかりました。</p>
-<p><code>FILE.mp3.srt, FILE.mp3.txt, FILE.mp3.vtt</code>の３つのファイルが書き出されます。</p>
-<p>6min44 whisper  &ndash;model medium  1630.12s user 721.49s system 285% cpu 13:43.79 total</p>
-<p><a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md">https://github.com/ytdl-org/youtube-dl/blob/master/README.md</a></p>
-<p>whisper ./<audio filename>.mp3 &ndash;model medium</p>
-<p>日本語の文字起こしは言語をしてして、</p>
-<p>whisper japanese.wav &ndash;language Japanese</p>
-<p>Adding &ndash;task translate will translate the speech into English:</p>
-<p>英語に翻訳したいときは、<code>--task translate</code>を追加します。逆方向もできるのかな。。</p>
-<p>whisper japanese.wav &ndash;language Japanese &ndash;task translate</p>
-<p><a href="https://github.com/openai/whisper">https://github.com/openai/whisper</a></p>
-<p>Struggling to get Whisper installed on an M1 Macbook Pro
-<a href="https://github.com/openai/whisper/discussions/403">https://github.com/openai/whisper/discussions/403</a></p>
+</code></pre><p>そして、
+<code>FILE.mp3.srt, FILE.mp3.txt, FILE.mp3.vtt</code>の３つのファイルが書き出されます。
+*.srtは動画の字幕ファイルかな。もう一つ行ってみましたが、大体２倍の時間がかかるみたいです。</p>
+<p>CPU・GPUの負荷はこんな感じです。ファンは回りませんでした。GPUはほとんど使ってない感じ、、
+肝心の正確度はかなり高いです。さらっ〜とみた感じでは、間違いは発見できず。</p>
+<p>つぎは、StableDiffusionで挿絵でも入れようかなと思ってます。
+いやぁ、これは仕事はなくなるわな。。</p>
+<h2 id="おまけ">おまけ</h2>
+<p>試してはいませんが、日本語の文字起こしもできます。</p>
+<p>日本語の文字起こしは言語を設定、<code>--language Japanese</code> を追加</p>
+<pre tabindex="0"><code>% whisper japanese.wav --language Japanese
+</code></pre><p>英語に翻訳したいときは、さらに <code>--task translate</code>を追加します。逆方向もできるのかな。。</p>
+<pre tabindex="0"><code>% whisper japanese.wav --language Japanese --task translate
+</code></pre><p>翻訳の精度はわからず。</p>
+<p>参照：</p>
+<ul>
+<li><a href="https://github.com/openai/whisper">https://github.com/openai/whisper</a></li>
+<li>Struggling to get Whisper installed on an M1 Macbook Pro : <a href="https://github.com/openai/whisper/discussions/403">https://github.com/openai/whisper/discussions/403</a></li>
+</ul>
 
                 
                 
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/04/brew-downgrade/">Brew：アプリのダウングレード方法</a></li>
+	
+	<li><a href="/blog/2020/02/add-mirroring-disk/">ミラーディスクを追加・削除方法</a></li>
+	
+	<li><a href="/blog/2019/08/openzfs-after/">OpenZFSをMBAにて１ヶ月使ってみて</a></li>
+	
+	<li><a href="/blog/2019/07/openzfs-mirroring-small/">OpenZFS ミラーリング</a></li>
+	
+	<li><a href="/blog/2019/07/openzfs-initial-setup/">OpenZFS on Mac</a></li>
+	
+</ul>
 
 
             </div>
