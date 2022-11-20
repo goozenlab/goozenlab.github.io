@@ -8,25 +8,7 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Nov 2022 07:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Stable Diffusionでブログの挿絵を</title>
-      <link>https://goozenlab.github.io/blog/2022/11/stable-difusion-install/</link>
-      <pubDate>Fri, 25 Nov 2022 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2022/11/stable-difusion-install/</guid>
-      <description>2022-11-25-stable-difusion-install Stable Diffusion Python jin@bohemia ~ % python3 -V Python 3.8.9 brew install python brew install virtualenv brew install libtensorflow set up AND Activate the virtualenv python3 -m virtualenv venv source venv/bin/activate *FYI: You need to run the command to use Stable Diffusion whenever you want. This is the activation command. install the dependencies: pip install -r requirements.txt brew install anaconda miniconda rust brew install Cmake protobuf rust $ brew</description>
-    </item>
-    
-    <item>
-      <title>環境のビジュアライズ</title>
-      <link>https://goozenlab.github.io/blog/2022/11/interaktiv-morgenpost/</link>
-      <pubDate>Tue, 22 Nov 2022 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/blog/2022/11/interaktiv-morgenpost/</guid>
-      <description>致命的な暑さ、海岸線の浸水、強力なハリケーン、水不足。 気候モデルによると、今世紀末には多くの場所で普段どおりの生活ができなくなることが予想さ</description>
-    </item>
-    
+    <lastBuildDate>Mon, 21 Nov 2022 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>吠えるメローニ氏</title>
       <link>https://goozenlab.github.io/blog/2022/11/meloni-on-fire/</link>

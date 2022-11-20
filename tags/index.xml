@@ -8,11 +8,20 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Nov 2022 07:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>reading</title>
+      <link>https://goozenlab.github.io/tags/reading/</link>
+      <pubDate>Sun, 20 Nov 2022 11:30:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/tags/reading/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ai</title>
       <link>https://goozenlab.github.io/tags/ai/</link>
-      <pubDate>Fri, 25 Nov 2022 07:30:00 +0700</pubDate>
+      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/tags/ai/</guid>
       <description></description>
@@ -21,7 +30,7 @@
     <item>
       <title>macos</title>
       <link>https://goozenlab.github.io/tags/macos/</link>
-      <pubDate>Fri, 25 Nov 2022 07:30:00 +0700</pubDate>
+      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/tags/macos/</guid>
       <description></description>
@@ -30,18 +39,9 @@
     <item>
       <title>tips&amp;tricks</title>
       <link>https://goozenlab.github.io/tags/tipstricks/</link>
-      <pubDate>Fri, 25 Nov 2022 07:30:00 +0700</pubDate>
+      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/tags/tipstricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reading</title>
-      <link>https://goozenlab.github.io/tags/reading/</link>
-      <pubDate>Sun, 20 Nov 2022 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/reading/</guid>
       <description></description>
     </item>
     
