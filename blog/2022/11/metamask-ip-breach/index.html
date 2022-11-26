@@ -4,7 +4,7 @@
 
   
   <meta charset="utf-8">
-  <title>Pranatice v0.10.1 | goozenlab</title>
+  <title>回避方法：メタマスクがユーザーデータ取得へ | goozenlab</title>
   <meta name="description" content="">
   <meta name="author" content="jin">
   
@@ -197,55 +197,50 @@
         <div class="post">
             <div class="post-title">
                 <p class="footnote">
-                    <time class="">2020-07-29</time>
+                    <time class="">2022-11-26</time>
 		            
                     
                     |
                     
                     
-                    tags:<a href="https://goozenlab.github.io/tags/pranatice">pranatice</a> <a href="https://goozenlab.github.io/tags/update">update</a> 
-                    
 
                     
-                    categories:<a href="https://goozenlab.github.io/categories/iapp">iapp</a> 
+                    categories:<a href="https://goozenlab.github.io/categories/mumble">mumble</a> 
                     
 
                     
                 </p>
-                <h1>Pranatice v0.10.1</h1>
+                <h1>回避方法：メタマスクがユーザーデータ取得へ</h1>
             </div>
             <div class="post-content">
-                <p>ダークモード対応のみのアップデート。
-ただし、「ヘルスキットをどのように取り込んでるか説明せい」と
-アプストアーに登録時に難癖をつけられる。</p>
-<p>以前も他のアプリで同様の問題があって起動時に認証するように変更した覚えがある。
-最初に確認する方がよいようですな。。</p>
-<h2 id="変更点">変更点</h2>
+                <p>多分ETHを使っている人の中で一番人気、月間アクティブユーザー2,000万超のウォレット、メタマスク。
+ユーザーのウォレットアドレスとIPアドレスを取得する方向になりました。</p>
+<p>問題点は以下参照記事に詳しく記載されていますので、ご参照のほど。</p>
+<p>11月24日<br>
+仮想通貨ウォレット・メタマスク、ユーザーデータ取得へ<br>
+<a href="https://coinpost.jp/?p=410508">https://coinpost.jp/?p=410508</a></p>
+<h2 id="変更方法">変更方法</h2>
+<p><strong>デフォルトRPC</strong>
+を他のイーサリアムノードやサードパーティ製のRPCを設定することで回避で来ます。</p>
+<p>こちら、とりあえず安全と言われているRPCに変更します。</p>
+<p><img src="/images/metamask-ip-bleach-00.png" alt="Metamask Bleach"></p>
+<p>1RPC | Web3 Private RPC Relay<br>
+to align a privacy-protected Web3<br>
+<a href="https://www.1rpc.io/">https://www.1rpc.io/</a></p>
+<p>RPCの追加設定より、</p>
 <ul>
-<li>レイアウトをダークモードへ対応（文字色やアイコンの変更）</li>
+<li>Network Name : Ethereum 1RPC Mainnet</li>
+<li>New RPC URL : <a href="https://1rpc.io/eth">https://1rpc.io/eth</a></li>
+<li>CHAIN ID: 1</li>
+<li>Currency Symbol : ETH</li>
+<li>Block Explorer URL : <a href="https://etherscan.io">https://etherscan.io</a></li>
 </ul>
-<hr>
-<h1 id="change-log">Change Log</h1>
-<p>[1.10.1] - 2020-07-29 @ Tokyo<br>
-[1.10.0 - swift3 release] - 2016-11-30 @ Chiangmai</p>
+<p><img src="/images/metamask-ip-bleach-01.png" alt="Metamask Bleach"></p>
+<p>以上でRPCを切り替えることで回避できますので、
+特にVPNサービスなとを利用していない方は対応しておくのが良いです。</p>
 
                 
                 
-
-<h3>See Also</h3>
-<ul>
-	
-	<li><a href="/blog/2016/11/pranatice-0100/">Pranatice v0.10.0</a></li>
-	
-	<li><a href="/blog/2015/02/pranatice-071/">Pranatice v0.7.1</a></li>
-	
-	<li><a href="/blog/2020/07/cosper-110/">cosper v1.10.0</a></li>
-	
-	<li><a href="/blog/2020/07/dandori-210/">dandori v2.10.0</a></li>
-	
-	<li><a href="/blog/2020/07/tapas-1100/">tapas v1.10.0</a></li>
-	
-</ul>
 
 
             </div>
@@ -257,8 +252,8 @@
 
     
     var disqus_config = function () {
-    this.page.url = "https://goozenlab.github.io/blog/2020/07/pranatice-0101/";  
-    this.page.identifier = "2020-07-29-pranatice-0101"; 
+    this.page.url = "https://goozenlab.github.io/blog/2022/11/metamask-ip-breach/";  
+    this.page.identifier = "2022-11-26-metamask-ip-breach"; 
     };
     
     (function() { 
