@@ -8,22 +8,22 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 01 Dec 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>crypto</title>
-      <link>https://goozenlab.github.io/categories/crypto/</link>
-      <pubDate>Thu, 01 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/categories/crypto/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 29 Nov 2022 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mumble</title>
       <link>https://goozenlab.github.io/categories/mumble/</link>
       <pubDate>Tue, 29 Nov 2022 11:30:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/categories/mumble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crypto</title>
+      <link>https://goozenlab.github.io/categories/crypto/</link>
+      <pubDate>Sat, 26 Nov 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/categories/crypto/</guid>
       <description></description>
     </item>
     
