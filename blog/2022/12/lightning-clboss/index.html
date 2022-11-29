@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>続CLBossでライトニング・チャンネル運用 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/bitcoin-reference-websites" class="pure-menu-link">reference websites</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24 pure-u-xl-12-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-12-01</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/lightning">lightning</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>続CLBossでライトニング・チャンネル運用</h1>
+            </div>
+            <div class="post-content">
+                <p>ちょうど、Electrumサーバーが不具合発生中というのもあって、
+ログインして見ると、コマンドを受け付けなくなってたりしたので、
+そろそろ旅立ちも近くなってきたので、テストを終了させました。</p>
+<p>さて、３ヶ月と短いテスト期間ででしたが、</p>
+<p>まとめてみます。あまり参考にはならないかな。。</p>
+<p class="note"><b>環境</b>：こんな環境でテストを行いました。通信環境が酷。<br>
+機材: Raspberry Pi4B 4GB , Samsung T7 1.0TB SSD<br>
+OS: RaspiBlits 1.8.0<br>
+回線: Wifi（回線の状況があまり良くないWifi）</p>
+<h2 id="収益">収益</h2>
+<p>運用した金額は40,000,000sat</p>
+<ul>
+<li>Transactions : 丰14,040 sat (753)</li>
+<li>Total Fee : 丰219,932 / ￥5,400 (rate@2022/11/26)</li>
+</ul>
+<p><img src="/images/2022-11-27-clboss-report-aug.png" alt="CLBoss"></p>
+<p><img src="/images/2022-11-27-clboss-report-sep.png" alt="CLBoss"></p>
+<p><img src="/images/2022-11-27-clboss-report-oct.png" alt="CLBoss"></p>
+<p><img src="/images/2022-11-27-clboss-report-nov.png" alt="CLBoss"></p>
+<h2 id="clbossについて">CLBossについて</h2>
+<blockquote>
+<p>CLBossのゴールは、収益性の高いルーティングノードを自動的に管理することではありません。
+手動でチャンネルの管理することなく送受信が可能なノードを使用する便利な方法です。
+もしあなたが利益を追求するのであれば使わない方が良いでしょう。
+手動で操作することなく送受信できる便利なInノードを得るための方法です。</p>
+</blockquote>
+<p>8月21日より11月26日までの期間での、</p>
+<p>トランザクション手数料収入は</p>
+<p>で、もろもろリバランシング料金やチャンネル開設・閉鎖料を引いてトータルなコストは</p>
+<p><img src="/images/2022-11-27-clboss-routing.png" alt="CLBoss Routing"></p>
+<p>停電が一回会ったのと、設定上のミスからの作業で
+それ以外は、安定稼働してました。</p>
+<p>ファンのついていないケースでの運用でしたが、
+だいたい60度にならない程度の温度で</p>
+<p>熱暴走などは起こしませんでした。</p>
+<p>どなたか、ネット環境の良いところで試して見る人いないかしら？</p>
+<h2 id="pi4b">Pi4B</h2>
+<p><img src="/images/2022-11-27-clboss-pi4.jpg" alt="RaspiBlitz Pi4B"></p>
+<p>と、DiamondHandというチャンネルが設定するといくらばかりか手数料を分配するという話でしたが、
+これといった入金らしきものはなかったです。
+チャンネルの大きさが小さかったからなのか、
+まぁあまり期待はしてなかったが、</p>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/11/alby-lightning-wallet/">ライトニング・ウォレット: Alby</a></li>
+	
+	<li><a href="/blog/2022/10/lightning-clboss/">CLBossでライトニング・チャンネル運用</a></li>
+	
+	<li><a href="/blog/2022/08/lightning-wallet/">ライトニング・ウォレット</a></li>
+	
+	<li><a href="/blog/2022/03/add-tipping/">投げ銭：tippin.me</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/12/lightning-clboss/";  
+    this.page.identifier = "2022-12-01-lightning-clboss"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

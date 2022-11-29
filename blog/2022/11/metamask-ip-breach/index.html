@@ -121,7 +121,9 @@
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <sapn class="pure-menu-link">crypto</sapn>
                     <ul class="pure-menu-children">
-                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/bitcoin-reference-websites" class="pure-menu-link">reference websites</a>
+                        </li>
                         <li class="pure-menu-item">
                             <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
                         </li>
@@ -214,16 +216,20 @@
             </div>
             <div class="post-content">
                 <p>多分ETHを使っている人の中で一番人気、月間アクティブユーザー2,000万超のウォレット、メタマスク。
-ユーザーのウォレットアドレスとIPアドレスを取得する方向になりました。</p>
+ユーザーのウォレットアドレスとIPアドレスを取得する方向になりました。
+特にVPNサービスなとを利用していない方は対応しておくのが良いです。</p>
 <p>問題点は以下参照記事に詳しく記載されていますので、ご参照のほど。</p>
-<p>11月24日<br>
-仮想通貨ウォレット・メタマスク、ユーザーデータ取得へ<br>
+<p>11月24日 仮想通貨ウォレット・メタマスク、ユーザーデータ取得へ<br>
 <a href="https://coinpost.jp/?p=410508">https://coinpost.jp/?p=410508</a></p>
-<h2 id="変更方法">変更方法</h2>
+<h2 id="対処方法">対処方法</h2>
+<p>方法としては、ウォレットを変えてしまう、もしくは問題のあるRPCの設定を変えて使う、の２つの方法があります。
+どちらでも、お好きな方法で、</p>
+<h3 id="設定変更">設定変更</h3>
 <p><strong>デフォルトRPC</strong>
-を他のイーサリアムノードやサードパーティ製のRPCを設定することで回避で来ます。</p>
+を他のイーサリアムノードやサードパーティ製のRPCを設定することで回避できます。
+（スパッと削除は出来ません。）</p>
 <p>こちら、とりあえず安全と言われているRPCに変更します。</p>
-<p><img src="/images/metamask-ip-bleach-00.png" alt="Metamask Bleach"></p>
+<p><img src="/images/2022-11-26-metamask-ip-breach-00.png" alt="1RPC"></p>
 <p>1RPC | Web3 Private RPC Relay<br>
 to align a privacy-protected Web3<br>
 <a href="https://www.1rpc.io/">https://www.1rpc.io/</a></p>
@@ -235,9 +241,18 @@ to align a privacy-protected Web3<br>
 <li>Currency Symbol : ETH</li>
 <li>Block Explorer URL : <a href="https://etherscan.io">https://etherscan.io</a></li>
 </ul>
-<p><img src="/images/metamask-ip-bleach-01.png" alt="Metamask Bleach"></p>
-<p>以上でRPCを切り替えることで回避できますので、
-特にVPNサービスなとを利用していない方は対応しておくのが良いです。</p>
+<p><img src="/images/2022-11-26-metamask-ip-breach-01.png" alt="1RPC"></p>
+<p>以上でRPCを切り替えることで対応終了。
+ただ、メタマスクアップデート時（勝手にデフォルト設定に戻ったりすることがあるので）には、
+確認が必要だとおもいます。</p>
+<h3 id="ウォレット">ウォレット</h3>
+<p>個人的にはこういうことがあると信頼が失落。
+メタマスクと問題のRPC提供企業、両方ともちょっといやらしい感じがします。
+これを機会に、ウォレットを変えるというも一つ。
+こちらが、おすすめ。 <a href="https://www.xdefi.io/">https://www.xdefi.io/</a></p>
+<p><img src="/images/2022-11-26-xdefi.png" alt="XDeFi Wallet"></p>
+<p>しかしながらTrezorにはまだ対応していないので、私は対応待ち。
+DeFiへの対応も要確認。</p>
 
                 
                 
