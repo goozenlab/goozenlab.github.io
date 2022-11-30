@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>StableCoinについて | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/bitcoin-reference-websites" class="pure-menu-link">reference websites</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24 pure-u-xl-12-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-11-30</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/reading">reading</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/crypto">crypto</a> 
+                    
+
+                    
+                </p>
+                <h1>StableCoinについて</h1>
+            </div>
+            <div class="post-content">
+                <p>仮想通貨とざっくり一括りにされますが、ざっくりと３つに分類できます。</p>
+<ul>
+<li>コモディティ型コイン：ビットコインなどPoWを使ったコイン、発行者が不在。</li>
+<li>ステーブルコイン：米ドルや債券などに裏付けされているコイン。</li>
+<li>証券型コイン：イーサリアムを筆頭に沢山。</li>
+</ul>
+<p>で、今回のお題は、安定コイン：「<b>ステーブル・コイン</b>」です。
+しかし、ステーブル：安定という意味ですが、実際はそうではありません。
+言葉に惑わされてはいけません。</p>
+<p>では、なんぞや？そしてなぜに必要で、誰がどのように使っているのか？の詳細記事です。
+ちと訳が分かりづらいかもしれないですが、ご勘弁のほど。</p>
+<p class="note">おまけ：銀行に預けているお金は安全か？？世界ではこんなことが<br>
+<b>アルゼンチン</b>ではデフォルト時に銀行に預けているUSドルの預金は海外持出し＆引出しは禁止・停止、でレートは最悪の強制両替（過去２回実施済）。<br>
+<b>ギリシャ</b>、デフォルト後３年間、銀行からの引き出しは1日６万円の上限設定。（多分カードは問題なし）<br>
+<b>インド</b>では突然旧紙幣の無効化（あたくし被害者の一人）。<br>
+<b>レバノン</b>では自分の口座からちょっとした金額を引き落とすために、銃を持って銀行強盗をしなければいけない。<br>
+（すでに２回。一人は女性で妹の病気の治療費のための自分の貯金をおろすための銀行強盗（書いててめちゃ違和感）。）
+日本でも破壊的な地震があったらATMはすぐに出金制限されると思う。</p>
+<!-- 
+利用価値は、例えば、トルコやアルゼンチンなど、
+自国の通貨が激しくインフレ中で資産を守るための移動先として
+重宝されています。
+ビットコインも人気があるようですが、値段が安定しないので、
+彼らにとってはより安定している
+を選択するのは理解できます。
+
+ただ、金は持ち運び・保管に問題があります。
+仮想通貨であれば、自分で管理をする限り、
+強制両替を避けることができます。
+-->
+<p>What&rsquo;s the Point of Stablecoins? and Why They Exist<br>
+<a href="https://coinsatoz.com/whats-the-point-of-stablecoins-and-why-they-exist/">https://coinsatoz.com/whats-the-point-of-stablecoins-and-why-they-exist/</a></p>
+<hr>
+<p>ステーブルコインは、基本的にデジタル構造のドルであることはご存知でしょう。
+しかし、ステーブルコインは、ユーロやオーストラリアドルなどの不換紙幣や、金などの現物資産にもアルゴリズムで接続できます。
+種類に関係なく、ステーブルコインは暗号通貨をより意外性のないものにするために存在します。
+ステーブルコインは、その名前が示すように、暗号通貨のトレードマークであるボラティリティに対抗しています。
+ステーブルコインの仕組みについて調査してみましょう。</p>
+<h2 id="ステーブルコインはどのように機能するのですか">ステーブルコインはどのように機能するのですか？</h2>
+<p>ステーブルコインの仕組みは、どのようなケースでもほぼ同じです。
+ブロックチェーン上で鋳造された暗号通貨で、ユーザーは他の暗号コインと同様に取引所で購入、売却、取引することができます。
+ステーブルコインは、ビットコインやアルトコインと同じように、ホットウォレットやコールドストレージに保管することができます。</p>
+<p>真っ直ぐに保つために、ほとんどのステーブルコインは、
+不換紙幣、金などの商品、コマーシャルペーパーなどの負債商品など、
+外部資産準備金またはその類似品に裏打ちされています。
+一般的に、ステーブルコインを鋳造する企業は、使用可能なステーブルコインの量に相当する準備金を求められます。
+これは、ステーブルコインの保有者が、いつでも1ドル分のステーブルコイン・トークンを取り戻すことができるようにすることを目的としています。</p>
+<h2 id="ステーブルコインの種類">ステーブルコインの種類</h2>
+<p>ステーブルコインには4つの種類があり、それぞれトークンの価値を安定した数値に固定するための特殊な方法があります。</p>
+<ul>
+<li>不換紙幣バック</li>
+<li>暗号通貨建て</li>
+<li>コモディティ・バックアップ</li>
+<li>アルゴリズム</li>
+</ul>
+<h3 id="不換紙幣バックアップ型ステーブルコイン">不換紙幣バックアップ型ステーブルコイン</h3>
+<p>市場で最もよく知られているステーブルコインは、不換紙幣に裏打ちされたものです。
+例えば、USDコイン（USDC）は、不換紙幣に裏打ちされ、米ドル（USD）と1対1の割合で固定されています。
+その他、ユーロ、英ポンド、日本円、中国の人民元のステーブルコインも存在します。</p>
+<h3 id="暗号通貨を裏付けとするステーブルコイン">暗号通貨を裏付けとするステーブルコイン</h3>
+<p>暗号通貨担保型ステーブルコインとは、より決済性の高い別の暗号通貨の価値に固定された暗号通貨のことです。
+例えば、MakerDAOは最も有名な暗号通貨担保型ステーブルコインの1つです。
+これは、イーサリアムのブロックチェーンに近いスマートコントラクト（自己実行型のコードベースの契約の一種）を利用し、イーサリアムをプールしているのです。
+そして、スマートコントラクトの特定のレベルにどれだけの担保があるのかによって、ユーザーはDAI-MakerDAOステーブルコインを鋳造することができます。</p>
+<h3 id="コモディティバックアップ型ステーブルコイン">コモディティバックアップ型ステーブルコイン</h3>
+<p>その名の通り、コモディティバック・ステーブルコインは、貴金属、現代金属、石油、土地などのコモディティの価値に裏打ちされています。
+商品投資家は、金の入手や保管の問題なしに金に投資することができるという点で、商品担保型ステーブルコインの選択を好んでいます。
+テザーゴールド（XAUT）は、商品担保型ステーブルコインの一例である。
+この通貨は、スイスの金庫内に保管されている金の準備金によって支えられている。
+1オンスの金は1XAUTに相当する。</p>
+<h3 id="アルゴリズム型ステーブルコイン">アルゴリズム型ステーブルコイン</h3>
+<p>このクラスのステーブルコインは、「現実の世界」の商品には裏打ちされておらず、市場の需要に基づいて在庫を調整するためにアルゴリズムを利用している。
+わかりやすく言うと、このアルゴリズムは、あるランダムな時間に変動するステーブルコインの需要に基づいて、
+コインを自然に燃やしたり（流通からコインを永遠に排除する）、新しいコインを鋳造したりするのです。</p>
+<p>アルゴリズムによるステーブルコインは、外に置いてある水の入ったバケツの中で、水位がバラバラに設定されていると想像してください。
+バケツの中の水を一定に保つために、水位が刻印からどれだけずれたかによって水を追加したり削除したりする仕組みを作ります。
+これはPCの計算で制約されており、雨が降ってバケツの水が増えてきたら、バケツの下部から水を出して、水位の刻印に到達するように計算で教えます。
+一方、暑い日にバケツから水がなくなってしまった場合、PCの計算で、適切な水位になるまでバケツに水を追加するようにメカニズムが構築されます。
+アルゴリズムによる安定化コインを暗号のエコシステムに効果的に組み込むために、多くの実験が行われいます。</p>
+<h2 id="ステーブルコインを使用する理由">ステーブルコインを使用する理由</h2>
+<p>グローバル経済のために設計されたステーブルコインは、現金のやり取りを妨げる2つの重要な問題に取り組んでいます。</p>
+<p>ステーブルコインのユーザーは、異なる国にいる仲間にステーブルコインを送るために、異なる国際銀行口座を持つ必要はありません。
+ステーブルコインは、取引を仲介するサードパーティーを必要としない、真のピアツーピアのデジタル交換を可能にします。</p>
+<p>原理的には、中央銀行の世界観の下で慣れ親しんできた手数料、送金時間、プライバシーの侵害の可能性を削減するのが、ステーブルコインなのです。
+例えば、あなたが中国の企業家で、日本にいるクライアントに請求書を支払う必要があり、同じようにヨーロッパに下請け業者がいると仮定しましょう。
+「中国の銀行口座、日本の銀行口座、ヨーロッパの銀行口座が必要です。」
+WAXブロックチェーンの支援者であり、USDTの支援者Tetherの主催者の一人であるウィリアム・クイグリー氏はこのように説明する。</p>
+<p>「誰かがあなたにユーロや円や人民元を送りたいという願望がある場合、それらの口座を保持できる代表者は、それらの通貨をあなたが保持できる通貨に交換し、あなたの銀行に送ります。
+しかも、その過程で、その分の手数料を大量にくすねているのです。」</p>
+<p>私たちは皆、50カ国の異なる銀行口座を持っているわけではない、とクイグリー氏は言う。
+いずれにせよ、ステーブルコインには説得力のある理由がある。
+KYC（顧客確認システム）と呼ばれる、写真付きの身分証明書や社会保障データを提出して口座を開設するプロセスを省くことができるからだ。
+KYCは、私たちの大多数にとって、お金を管理するための普通の一部となっていますが、暗号擁護派は、KYCがさまざまな国の中央銀行機関に適用された場合、制限的であると主張しています。<br>
+「このような理由から、ニューヨーク、カリフォルニア、またはテキサスの個人が彼らのネイティブ構造にとどまる10ユニークなトークン化された通貨基準を彼らのLedger（ウォレット）に保持できることは私には珍しいことです 」と、クイグリー氏は述べています。<br>
+「中国の銀行口座に手を出す必要はありません。その中国の通貨に対処するトークンを保持し、中国の通貨のように使用しながら、決して乗り換えることはありません。
+この即時的なピアツーピアのモデルであるステーブルコインは、どのような場合でも第三者仲介者の取扱手数料や規制費用を支払うために行く費用を節約するのに役立ちます。
+毎年、世界経済から1兆ドルが、組織やバイヤーから、こうした &ldquo;貨幣変換装置&quot;に向けられているのです」。とQuigleyは言います。</p>
+<p>「それは、通貨がトークン化され、銀行とは対照的に、一瞬でユーザーに開かれたブロックチェーンにぶら下がっているので、その独自の構造で維持することができる。」</p>
+<h2 id="どのように正しいステーブルコインを選ぶか">どのように正しいステーブルコインを選ぶか</h2>
+<p>現在、16,000を超える暗号通貨のエコシステムの中で、様々な種類のステーブルコインにアクセスすることができますが、
+どれを購入、取引、または通常の取引に使用するかを選ぶことは、専門家にとって常に試練となっています。</p>
+<p>暗号と同様に、中央集権と非中央集権、強固さと機会、規制と許可不要の間には、終わりのない均衡が存在します。
+例えば、フィアットに裏打ちされたステーブルコインは、米ドル（USD）や他の広く認められた通貨形態と同じくらい安定しているという理由で有名です。
+しかし、暗号を連邦通貨に接続すると、フィアットバックアップされた暗号通貨は政府の規制の対象となり、中央集権的になります。
+最も分散化された選択肢であるアルゴリズム型ステーブルコインと比較すると、これは特定のトレードオフとなります。
+さらに、各通貨の裏付けとなっているものが何であるかという問題もあります。
+例えば、米ドルを裏付けとするステーブルコイン（例を挙げるとUSDTとBUSD）のすべてが、ドルと暗号の割合が正確に1：1であるわけではありません。
+埋蔵金の中身は、そのコインの背後にある物質によって異なります。</p>
+<p>例えばTether（USDT）は、以前は準備金のドル額がUSDTの鋳造量と同じになるように設定されていました。
+これは変わったとクイグリー氏は言い、こう付け加えた。
+「テザー社(贈与会社)が行ったことは、彼らは、特別なテザー(USDT)の特定量をフィアットで保有し、その後、特定量を流動的な市場性証券で保有しています。」
+つまり、ドル紙幣ではなく、債券、CD、国債、現金同等物としての流動的な蓄えがあるかもしれないのです。</p>
+<p>「彼らは時折、その混合物を明らかにする」とクイグリー氏はテザー社について語る。
+もう一つの違いは、各ステーブルコインをどの取引所で見つけることができるかということだ。
+例えばUSDCは、有名な暗号取引所であるCoinbaseで取引することができる。しかし、USDTはそうではありません。
+どのステーブルコインをポートフォリオに加えるかを検討しながら、次のような問い合わせを考えてみてください。</p>
+<h2 id="ステーブルコインはどこで購入交換できますか">ステーブルコインはどこで購入・交換できますか？</h2>
+<p>ステーブルコインはどのようなプラットフォームで鋳造されるのですか？
+埋蔵量の監査はどのくらいの頻度で行われ、その報告はどの程度透明性がありますか？
+時価総額と流通供給量は？
+あるアナリストが指摘するように、2022年は、米国連邦準備制度が金融政策を修正しようとするため、グリーンバックを強化し、
+それに固定されたデジタル資産の需要を押し上げる、ステーブルコインにとって重要な年になる可能性があります。</p>
+<p class="attention">最近のステーブルコインは、情報公開（テザーは３ヶ月毎？）が進むと同時に、バイナンスではTetherやUSDCをBUSDに切替え（統合する）るとの方針だそうです。
+FTX以後、さまざまな取り組みが行われると思いますので、くれぐれも、リサーチのほど。</p>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/11/self-sovereign-lifestyle/">パーマネント・カルチャー＆マネー</a></li>
+	
+	<li><a href="/blog/2022/11/portugal-btc-beach/">ポルトガル：ビットコインビーチ</a></li>
+	
+	<li><a href="/blog/2022/11/economic-japanification/">経済の日本化</a></li>
+	
+	<li><a href="/blog/2022/11/elsalvador-gerson-martinez/">ようこそエルサルバドルへ、ここはビットコインの国です</a></li>
+	
+	<li><a href="/blog/2022/11/bitcoin-as-foundation/">基盤としてのビットコイン</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/11/about-stablecoins/";  
+    this.page.identifier = "2022-11-30-about-stablecoins"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>
