@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 30 Nov 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Dec 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>続CLBossでライトニング・チャンネル運用</title>
+      <link>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</link>
+      <pubDate>Thu, 01 Dec 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</guid>
+      <description>ビットコイナーとしてできる最もインパクトのあることは、自分のノードを動かすこと。 RaspiBlitzで運用中のホコリっぽいPiサーバー、ちょ</description>
+    </item>
+    
     <item>
       <title>StableCoinについて</title>
       <link>https://goozenlab.github.io/blog/2022/11/about-stablecoins/</link>
