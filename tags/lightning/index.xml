@@ -8,14 +8,23 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 01 Dec 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Dec 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>続CLBossでライトニング・チャンネル運用</title>
+      <title>ライトニング・ウォレット比較</title>
+      <link>https://goozenlab.github.io/blog/2022/12/lightning-wallet-2/</link>
+      <pubDate>Fri, 02 Dec 2022 12:00:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/12/lightning-wallet-2/</guid>
+      <description>ビットコインのオフ・チェーン決済、Lightningネットワーク。 日本ではあまり普及していない？ようですが、各地で草の根的に使えるところが増</description>
+    </item>
+    
+    <item>
+      <title>続・CLBossでライトニング・チャンネル運用</title>
       <link>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</link>
       <pubDate>Thu, 01 Dec 2022 12:00:00 +0700</pubDate>
       <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</guid>
-      <description>ビットコイナーとしてできる最もインパクトのあることは、自分のノードを動かすこと。 RaspiBlitzで運用中のホコリっぽいPiサーバー、ちょ</description>
+      <description>ビットコイナーとしてできる最もインパクトのあることは、自分のノードを動かすこと。 RaspiBlitz: https://github.com/rootzoll/raspiblitz で運用中のホコリっぽいPiサーバー、ちょうどElectr</description>
     </item>
     
     <item>
