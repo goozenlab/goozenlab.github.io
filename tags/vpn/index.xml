@@ -8,7 +8,16 @@
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 10:07:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ちょこっとVPN</title>
+      <link>https://goozenlab.github.io/blog/2022/12/vpn-lightning/</link>
+      <pubDate>Tue, 06 Dec 2022 10:07:00 +0700</pubDate>
+      <author>goozenlab@icloud.com (jin)</author>
+      <guid>https://goozenlab.github.io/blog/2022/12/vpn-lightning/</guid>
+      <description>https://lnvpn.net/ １時間単位で、しかもLightningで支払い、かつKYC無し、 で利用ができるVPNサービス、面白い。 接続先にインドがあったり、タイがある</description>
+    </item>
+    
     <item>
       <title>Mullvad：現金払</title>
       <link>https://goozenlab.github.io/blog/2021/03/mullvad-cash/</link>
