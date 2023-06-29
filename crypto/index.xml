@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cryptoes on goozenlab</title>
+    <title>Cryptos on goozenlab</title>
     <link>https://goozenlab.github.io/crypto/</link>
-    <description>Recent content in Cryptoes on goozenlab</description>
+    <description>Recent content in Cryptos on goozenlab</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
     <webMaster>goozenlab@icloud.com (jin)</webMaster>
     <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
