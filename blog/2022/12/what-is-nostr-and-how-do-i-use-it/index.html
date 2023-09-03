@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Nostrとは？（訳） | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="jin">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="https://goozenlab.github.io/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://goozenlab.github.io/highlight/styles/atom-one-dark.css">
+
+<script src="https://goozenlab.github.io/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="https://goozenlab.github.io//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://goozenlab.github.io/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+                        
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s/"
+                                 class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ryzentosh/"
+                                 class="pure-menu-link">ryzentosh itx</a></li>
+                    
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>                                
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">iapps</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/littlist/"
+                                class="pure-menu-link">littlist</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/sati/"
+                                class="pure-menu-link">sati</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/dandori/"
+                                class="pure-menu-link">dandori</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/ohayo/"
+                                class="pure-menu-link">ohayo</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/cosper/"
+                                class="pure-menu-link">cosper</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/doop/"
+                                class="pure-menu-link">doop</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/iapp/tapas/"
+                                class="pure-menu-link">tapas</a></li>
+    
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/tags/update/" class="pure-menu-link">update</a>
+                </li>
+
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/bitcoin-reference-websites" class="pure-menu-link">reference websites</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>               
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://goozenlab.github.io/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="https://goozenlab.github.io/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://goozenlab.github.io/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24 pure-u-xl-12-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2022-12-23</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://goozenlab.github.io/tags/tipstricks">tips&amp;tricks</a> 
+                    
+
+                    
+                    categories:<a href="https://goozenlab.github.io/categories/computing">computing</a> 
+                    
+
+                    
+                </p>
+                <h1>Nostrとは？（訳）</h1>
+            </div>
+            <div class="post-content">
+                <p>ビットコイン・レイヤー２のライトニングの飛躍もあり、コロナ禍、不景気、さらにクリプト・大混乱な2022年でしたが、
+地道に進歩し続けています。</p>
+<p>Twitterはマスク氏の買収により、
+代替候補になる、
+Nostr: <a href="https://github.com/nostr-protocol/nostr">https://github.com/nostr-protocol/nostr</a>
+がちょっと取り沙汰されています。</p>
+<p>ちょっと試しに使ってみたら、エロい画像がどかっと出てきて、ちとびびる。
+ムカッと（ちょっとムラっと）しましたが、</p>
+<p>2023年のキーワードになりそうな非中央集権サービス。我がグル、ジャックもお勧め。</p>
+<p>ちとタイミング良く「技術者でない人がNostrを使い始めるためのガイド」の記事が公開さていたので翻訳してみました。
+基本的な定義などの説明と、使い始めるためのステップバイステップのガイドです。</p>
+<p>What Is Nostr and How Do I Use It? - The BTC Times<br>
+<a href="https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it">https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it</a></p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">excellent writeup of problems and solutions...excited to see this. and public domain: <a href="https://t.co/bCXRwQNC0p">https://t.co/bCXRwQNC0p</a></p>&mdash; jack (@jack) <a href="https://twitter.com/jack/status/1602853632512516096?ref_src=twsrc%5Etfw">December 14, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- https://twitter.com/jack/status/1602853632512516096?s=20&t=r91sc78gXw1F0e4lpMFPuw -->
+<h2 id="nostrとは">Nostrとは？</h2>
+<p>Nostrは、&ldquo;Notes and Other Stuff Transmitted by Relays &ldquo;の略です。 </p>
+<p>NostrはTwitterのように作られたソーシャルネットワークで、投稿や「ノート」（ツイートのようなもの）の作成、投稿への「いいね」、フォローやアンフォロー、投稿の「ブースト」（リツイートのようなもの）などを行うことができると考えてください。Nostrでは、「投稿」と「ノート」が同じ意味で使われているのを見かけることがあります。Nostrの「イベント」は、先に述べたアクションのいずれかになります。 </p>
+<p>Nostrはプロトコルです。これは、サーバーとクライアントが通信するために使用する一連のルールです（Bitcoin、電子メール、Bittorrentと同様）。Nostrはアプリでも「プラットフォーム」（Twitter、Facebookなど）でもありませんが、多くのアプリケーションをNostrの上に構築することができます。 </p>
+<p>Twitterとは異なり、Nostrは非中央集権的です。中央のサーバーや企業が、あなたが何を投稿し、他の人が何を見ることができるかをコントロールすることはありません。Nostrは検閲に強く、オープンソースです。</p>
+<h2 id="nostrはどのように機能するのですか">Nostrはどのように機能するのですか？</h2>
+<p>Nostrを使用するには、クライアントを実行する必要があります。クライアントとは、あなたがNostrとやり取りする方法です（ブラウザのウェブクライアント、iPhoneのモバイルクライアント、ネイティブクライアントなど）。 </p>
+<p>Nostrで何かを公開するには、ポスト（ノート）を書き、自分の鍵で署名して、複数のリレーに送ります。鍵は2つあり、公開鍵と秘密鍵です。公開鍵はあなたのユーザー名（Twitterの@handleのようなもの）だと考えてください。秘密鍵は、あなたのパスワードのようなものだと考えてください。</p>
+<p>他のNostrユーザーを見つけるには、そのユーザーの公開鍵を使って、好きなクライアントで検索すればいいのです。多くの人がTwitterに自分の公開鍵を投稿しているのを見ることができます。</p>
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr">npub1cj8znuztfqkvq89pl8hceph0svvvqk0qay6nydgk9uyq7fhpfsgsqwrz4u<a href="https://twitter.com/hashtag/nostr?src=hash&amp;ref_src=twsrc%5Etfw">#nostr</a></p>&mdash; Walker⚡️ (@WalkerAmerica) <a href="https://twitter.com/WalkerAmerica/status/1603423704167419905?ref_src=twsrc%5Etfw">December 15, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- https://twitter.com/WalkerAmerica/status/1603423704167419905 -->
+<p>リレーとは、あなたや他の人がホストしているサーバーのことで、誰でもリレーを実行することができます。 </p>
+<p>他の人の更新情報を得るには、複数のリレーに、その人について何か知っているかどうかを尋ねます。リレーがすることは、人々からの投稿を受け入れ、他の人々に転送することだけです。署名はクライアント側（Nostrとやりとりする側）で検証されるので、リレーを信用する必要はありません。</p>
+<h2 id="なぜnostrが重要なのか">なぜNostrが重要なのか？</h2>
+<p>Nostrは検閲に強いパブリッシングを可能にします。 </p>
+<p>Twitterは素晴らしいものですが、いくつかの重大な欠点があります。広告があり、あなたを中毒にさせる奇妙なテクニックを使い、あなたがフォローしている人からの実際の履歴フィードを表示せず、人々を禁止し、影で人々を禁止し、ボットとスパムが蔓延しています。Mastodonのような他のTwitter代替ツールの制限に興味がある方は、GitHubのこちらのリソースをご覧ください。</p>
+<p>Nostrは、自由な言論と自由な出版のためのツールです。オンラインフォーラムで私たちの言論がますます制限され、私たちが見るものが不透明なアルゴリズムによってコントロールされている時代において、Nostrは新鮮で必要な変化です。</p>
+<h2 id="どうすればnostrを使い始めることができますか">どうすればNostrを使い始めることができますか？</h2>
+<p>iPhoneをお持ちの方は、TestFlightでDamusアプリのベータ版に参加してください（@jb55によって構築され、Android版は近日公開予定）。</p>
+<ol>
+<li>公開鍵と秘密鍵を生成する（npub、nsec）</li>
+<li>パスワードマネージャーなど、安全な場所に保存してください。</li>
+<li>いくつかのリレーを追加する (完全なリストは <a href="https://nostr.watch/">https://nostr.watch/</a> で確認できます)</li>
+<li><a href="https://www.nostr.directory/">https://www.nostr.directory/</a> を使って、Twitterから友達を見つけ、フォローする。 </li>
+<li>メモを投稿したり、投稿に「いいね！」をつけたり、ブーストを始めたりする。</li>
+</ol>
+<p>これだけでOK! Nostrの使い方は@damusappから、またはもっと詳しく（ウェブ上のNostr、プロフィール写真、NIP-05 ID）知りたい方はこちらをご覧ください。</p>
+<h2 id="nostrをwebで使うには">NostrをWebで使うには？</h2>
+<p>Damusで鍵を取得した後、Web上でNostrを使用したい場合は、Albyブラウザ拡張をダウンロードし、秘密鍵を入力してください。これにより、Webクライアント自体に直接秘密鍵を入力することなく、NostrのWebクライアントとやり取りができるようになります。Albyは@fiatjafによって構築されたnos2x Nostr Signer Extensionを使用しています。 </p>
+<p>iPhoneをお持ちでない方は、astral.ninjaにアクセスし、公開鍵と秘密鍵を作成した後、同じ手順を踏んでください。Androidユーザーの方はご安心ください。すでにNoskyというプロジェクトが進行中です。</p>
+<h2 id="プロフィール画像を追加するには">プロフィール画像を追加するには？</h2>
+<p>Damus またはウェブクライアントから鍵を生成し、Alby に秘密鍵を保存したら、https://metadata.nostr.com/ にアクセスしてください。</p>
+<p> </p>
+<p>Albyは、&ldquo;Allow metadata.nostr.com to read your public key&rdquo;（metadata.nostr.comに公開鍵の読み取りを許可する）と表示します。</p>
+<h2 id="これであなたの情報が入力されます">これで、あなたの情報が入力されます。</h2>
+<p>プロフィール画像を追加するには、Twitterアカウントにアクセスし、自分のPFPをクリックして、右クリックして &ldquo;新しいタブで画像を開く&rdquo; を選択します。画像のリンクをコピーして、画像フィールドに貼り付けてください。画像のURLは何でも構いませんが（例：末尾が.jpeg、.png）、Twitterから引っ張ってくるのが一番簡単な方法でしょう。</p>
+<p>また、ここに「About」セクションを追加することもできます。入力が終わったら、「送信」をクリックすると、アルビーが確認のメッセージを表示します。あなたの情報は、すべてのNostrクライアントに自動的に伝搬されます。</p>
+<h2 id="nip-05-idとは何ですかまたどのように取得するのですか">NIP-05 IDとは何ですか、またどのように取得するのですか？</h2>
+<p>NIP-05 IDは、あなたの公開鍵のフレンドリーなメールアドレスのようなもので、「検証済み」のチェックマークを取得し、Nostrであなたを検索しやすくするものだと考えてください。 </p>
+<p>もしあなたが技術者でないなら、@derekmrossに連絡すれば、satsと引き換えにnostrplebs.comのNIP-05 IDを提供してくれるでしょう。</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Get verified! If you&#39;d like a username@nostrplebs.com NIP-05 Identifier, hit me up! 10K sats will get you a verified checkmark and easy way for people to search for you across <a href="https://twitter.com/hashtag/Nostr?src=hash&amp;ref_src=twsrc%5Etfw">#Nostr</a>. It&#39;s kind of like a friendly email address for your public key. <a href="https://t.co/tNygssV1KI">pic.twitter.com/tNygssV1KI</a></p>&mdash; Derek Ross ⚡⛓️ (@derekmross) <a href="https://twitter.com/derekmross/status/1605025661789548544?ref_src=twsrc%5Etfw">December 20, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- https://twitter.com/derekmross/status/1605025661789548544 -->
+<p>技術者の方は、こちらで詳細をご覧ください。 NIP-05の詳細についてはこちらをご覧ください。自分で設定する場合は、公開鍵の16進版を /.well-known/nostr.json に入れる必要があることに注意してください（https://damus.io/key/ を使って npub 形式から 16 進数に変換してください）。</p>
+<h2 id="nostrでbitcoinやlightningは使えますか">NostrでBitcoinやLightningは使えますか？</h2>
+<p>はい！使えます。インボイスを生成してメモに貼り付けるだけで、Nostrで直接Lightningインボイスを送ることができます。Damusのようなクライアントでは、請求書のテキストは自動的に小さな支払いボタンに変更されます。現在、多くの人がNostrでSATを送信しています&hellip;</p>
+<h2 id="どうすればいい">どうすればいい？</h2>
+<p>Nostrを使い始めましょう @fiatjafや@jb55などのNostr開発者をフォローしましょう（TwitterとNostr上で）。人々が取り組んでいる他の素晴らしいNostrプロジェクトをチェックしてください。他の人がNostrの使い方を理解するのを手助けしましょう（@dergigiがまとめた素晴らしいチュートリアルがあります：<a href="https://gist.github.com/dergigi/1ee8dc7e3da4b6572ed785ab24bc9907">Nostr tips and tricks</a>）。あなたの公開鍵を友人と共有し、オープンソースで検閲に強いプロトコルで実験してみましょう。</p>
+<p>Nostrはまだ初期段階にあることを忘れないでください。現在、開発者はプロトコルの構築に専念しており、機能性が最優先です。UIとUXは改善され続けますが、技術者でないユーザーには初歩的なものに感じられるかもしれません。 </p>
+<p>辛抱強く、建設的なフィードバックをし、オープンソースの開発者をサポートしてください。
+Nostrで私を見つけることができます： npub1cj8znuztfqkvq89pl8hceph0svvvqk0qay6nydgk9uyq7fhpfsgsqwrz4u
+Nostrのアップデートやその他のヒントについては、TwitterとNostrでNostrich (@Nostr_Ostrich)をフォローしてください。</p>
+<p>npub1khd34txqv7s9vdgvfl925r6ytj8j4janalpq08z342ap7dwds3jskny9x4</p>
+<p>どうやらNostrichは今、非公式のNostrマスコットのようだ&hellip;。</p>
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/hCotR4OQPz">pic.twitter.com/hCotR4OQPz</a></p>&mdash; jack (@jack) <a href="https://twitter.com/jack/status/1605248689962123264?ref_src=twsrc%5Etfw">December 20, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- https://twitter.com/jack/status/1605248689962123264 -->
+<h2 id="オープンソースの開発者の皆さん私たちが実際に生きたいと思う未来を築いてくれてありがとうございます">オープンソースの開発者の皆さん、私たちが実際に生きたいと思う未来を築いてくれて、ありがとうございます。</h2>
+<hr>
+<p>参照：
+What Is Nostr and How Do I Use It? - The BTC Times<br>
+<a href="https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it">https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it</a></p>
+<p><em><strong>Nostr Resource List:</strong></em></p>
+<ul>
+<li><a href="https://github.com/nostr-protocol/nostr">Nostr Protocol GitHub</a></li>
+<li><a href="https://github.com/nostr-protocol/nips">Nostr Implementation Possibilities (NIP) GitHub</a></li>
+<li><a href="https://github.com/vishalxl/nostr_console/discussions/31">What is Nostr, and how to start using Nostr?</a></li>
+<li><a href="https://wiki.wellorder.net/post/nostr-intro/">Nostr, an Introduction</a></li>
+<li><a href="https://github.com/aljazceru/awesome-nostr">Awesome Nostr Projects</a></li>
+<li>Find Twitter friends: <a href="https://www.nostr.directory/">https://www.nostr.directory/</a> </li>
+<li>Update metadata: <a href="https://metadata.nostr.com/">https://metadata.nostr.com/</a></li>
+<li>Nostr web clients: <a href="https://astral.ninja/">https://astral.ninja/</a>, <a href="https://anigma.io/">https://anigma.io/</a>, <a href="https://damus.io/web/">https://damus.io/web/</a></li>
+<li>Nostr Telegram Group: <a href="https://t.me/nostr_protocol">https://t.me/nostr_protocol</a></li>
+<li>Follow <a href="https://twitter.com/damusapp">@damusapp</a> on twitter </li>
+<li>Join the <a href="https://testflight.apple.com/join/CLwjLxWl">Damus App beta on TestFlight</a>.</li>
+<li><a href="https://getalby.com/">Alby Browser Extension</a></li>
+<li>Most active nostr channels: <a href="https://damus.io/channels/">https://damus.io/channels/</a></li>
+<li>Nostr events: <a href="https://nostr.io/stats">https://nostr.io/stats</a></li>
+<li><a href="https://github.com/nostr-protocol/nips/blob/master/05.md">NIP-05</a></li>
+<li><a href="http://nostrich.farm/">http://nostrich.farm/</a> </li>
+<li><a href="https://twitter.com/TFTC21/status/1604898465158680578?s=20&amp;t=WrniUnKuua0xEsByuQaQeQ">TFTC rip with @jb55</a></li>
+<li><a href="https://gist.github.com/dergigi/1ee8dc7e3da4b6572ed785ab24bc9907">nostr tips and tricks</a></li>
+</ul>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2022/11/whisper-install/">Whisperで文字起こし</a></li>
+	
+	<li><a href="/blog/2022/04/brew-downgrade/">Brew：アプリのダウングレード方法</a></li>
+	
+	<li><a href="/blog/2022/04/install-asahi-debian/">Asahi Linux (Debian) のインストール</a></li>
+	
+	<li><a href="/blog/2022/03/curl/">ダウンロードの再開</a></li>
+	
+	<li><a href="/blog/2021/07/qemu/">今更ながらQEMUを使ってみる</a></li>
+	
+</ul>
+
+
+            </div>
+            
+            
+                <div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = "https://goozenlab.github.io/blog/2022/12/what-is-nostr-and-how-do-i-use-it/";  
+    this.page.identifier = "2022-12-23-what-is-nostr-and-how-do-i-use-it"; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://goozenlabgh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                    
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:goozenlab@icloud.com">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+                  <li class="pure-menu-heading" id="foot-name">Jin K.:</li>
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="mailto:goozenlab@icloud.com" class="pure-menu-link">Email</a>
+                  </li>
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2022, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="https://goozenlab.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://goozenlab.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>
