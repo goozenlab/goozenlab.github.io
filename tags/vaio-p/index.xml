@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vaio p on goozenlab</title>
+    <title>Vaio P on goozenlab</title>
     <link>https://goozenlab.github.io/tags/vaio-p/</link>
-    <description>Recent content in vaio p on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Vaio P on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 13:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/vaio-p/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 01 Apr 2018 13:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/vaio-p/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debian on VAIO type P</title>
       <link>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</link>
       <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/04/debian-vaio-p/</guid>
       <description>押入れにしまってあった懐かしの VAIO type P を取り出し、久しぶりに立ち上げライブイメージを使ってみたところ、意外と使えるようなので、新規にインストー</description>
     </item>
-    
     <item>
       <title>chroniumosをインストール</title>
       <link>https://goozenlab.github.io/blog/2016/06/chroniumos/</link>
       <pubDate>Tue, 28 Jun 2016 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/06/chroniumos/</guid>
       <description>暇というわけではないけれど、我が老兵、Vaio-PにChromiumOSのCloudReadyをインストールを試みる。サイトよりイメージファ</description>
     </item>
-    
     <item>
       <title>elementaryOSをインストール</title>
       <link>https://goozenlab.github.io/blog/2015/05/install-elementary-vaio-type-p/</link>
       <pubDate>Fri, 01 May 2015 14:50:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/05/install-elementary-vaio-type-p/</guid>
       <description>デザインがシンプルで気になっていた、elementaryOSを、開発が終了してしまったクランチバングをインストールしていた尻ポケマシーンのv</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>buster on goozenlab</title>
+    <title>Buster on goozenlab</title>
     <link>https://goozenlab.github.io/tags/buster/</link>
-    <description>Recent content in buster on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Buster on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 06:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/buster/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 18 Mar 2019 06:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/buster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker on RPi3B.arm64.buster</title>
       <link>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</link>
       <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/docker-install-buster/</guid>
       <description>root@iska:~$ docker -v Docker version 18.06.3-ce, build d7080c1 root@iska:~$ docker ps -a CONTAINER ID IMAGE COMMAND CREATED STATUS NAMES 0bd0dc6374b5 grafana/grafana &amp;#34;/run.sh&amp;#34; 19 hours ago Exited (0) pensive_elbakyan eb83f6879feb portainer/portainer &amp;#34;/portainer&amp;#34; 20 hours ago Exited (2) heuristic_lalande 9aa94e1c81af hello-world &amp;#34;/hello&amp;#34; 21 hours ago Exited (0) awesome_mirzakhani root@iska:~$ で、あっちに行って、こっちに行ってと、エラーに</description>
     </item>
-    
     <item>
       <title>アクセスポイント</title>
       <link>https://goozenlab.github.io/blog/2019/03/hostapd-buster/</link>
       <pubDate>Sun, 17 Mar 2019 03:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/hostapd-buster/</guid>
       <description>ルーターにイーサーネットで繋げたDebianの64bit対応・Busterのラズベリー・パイ3Bにアクセスポイントをインストールをしました。</description>
     </item>
-    
   </channel>
 </rss>

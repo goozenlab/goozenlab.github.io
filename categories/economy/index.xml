@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>economy on goozenlab</title>
+    <title>Economy on goozenlab</title>
     <link>https://goozenlab.github.io/categories/economy/</link>
-    <description>Recent content in economy on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Economy on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 29 Jun 2023 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/economy/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Jun 2023 11:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/categories/economy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>どのようにして国は破産するのか？10のステップ</title>
       <link>https://goozenlab.github.io/blog/2023/06/economic-japanification/</link>
       <pubDate>Thu, 29 Jun 2023 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2023/06/economic-japanification/</guid>
       <description>金融緩和は市場の競争力を奪い格差を広げると言われています。 日本の景気は秋には回復、インフレも落ち着き、円高に向かうとも声もありますが、 本文は</description>
     </item>
-    
     <item>
       <title>経済の日本化</title>
       <link>https://goozenlab.github.io/blog/2022/11/economic-japanification/</link>
       <pubDate>Wed, 23 Nov 2022 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/11/economic-japanification/</guid>
       <description>パンデミック期間中に書かれた、 マクロエコノミスト、リン・アルデンさん（ビットコイナーでもある）の経済の日本化についての考察。 アメリカからの視</description>
     </item>
-    
   </channel>
 </rss>

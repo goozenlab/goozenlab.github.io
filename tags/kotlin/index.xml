@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kotlin on goozenlab</title>
+    <title>Kotlin on goozenlab</title>
     <link>https://goozenlab.github.io/tags/kotlin/</link>
-    <description>Recent content in kotlin on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Kotlin on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 14 Mar 2015 12:30:00 +0545</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IntelliJ IDEA 14 CEとJavaSE</title>
       <link>https://goozenlab.github.io/blog/2015/03/intellij-setup/</link>
       <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/intellij-setup/</guid>
       <description>Androidの制作を始めて見ようかなとここ数ヶ月思っていてAndroidStudioとかもインストールはしてみたもののなかなか気が向きませ</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>objective-c on goozenlab</title>
+    <title>Objective-C on goozenlab</title>
     <link>https://goozenlab.github.io/tags/objective-c/</link>
-    <description>Recent content in objective-c on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Objective-C on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 27 Jul 2015 18:30:00 +0500</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NSUserDefaultsのキーの削除</title>
       <link>https://goozenlab.github.io/blog/2015/07/userdefaults-remove-keys/</link>
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/userdefaults-remove-keys/</guid>
       <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。 既</description>
     </item>
-    
     <item>
       <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
       <link>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</link>
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</guid>
       <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうま</description>
     </item>
-    
     <item>
       <title>Reminder：日時の書き込み</title>
       <link>https://goozenlab.github.io/blog/2015/02/reminder-duedatecomponents/</link>
       <pubDate>Mon, 23 Feb 2015 06:50:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/reminder-duedatecomponents/</guid>
       <description>リマインダーへの日時の書き込み 読み込み時には event.dueDate = eventToRead.dueDateComponents.date; event.timeZone = eventToRead.dueDateComponents.timeZone; と、あっさりと行くのですが、.dueDateComponents.date は readonly で書き</description>
     </item>
-    
     <item>
       <title>Reminderからの読込ではまる</title>
       <link>https://goozenlab.github.io/blog/2015/02/reminder-completion/</link>
       <pubDate>Sun, 22 Feb 2015 23:47:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/reminder-completion/</guid>
       <description>ここ数日 littlist.2.6.5にReminderへの書込み・取込みの機能の追加作業をしていました。 見事にハマったのが、取込みの - (id)fetchRemindersMatchingPredicate:(NSPredicate *)predicate completion:(void</description>
     </item>
-    
   </channel>
 </rss>

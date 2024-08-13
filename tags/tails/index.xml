@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tails on goozenlab</title>
+    <title>Tails on goozenlab</title>
     <link>https://goozenlab.github.io/tags/tails/</link>
-    <description>Recent content in tails on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tails on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/tails/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 22 Mar 2021 09:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/tails/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tails OS: Wasabiを使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</link>
       <pubDate>Mon, 22 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/tails-wassabee-wallet/</guid>
       <description>TailsOSをクリプトに利用してもおもしろいかなと思い、 カチカチでお固いやつですが、ちょっと試しにスパイシーにワサビ入りにしてみます。 ちと</description>
     </item>
-    
     <item>
       <title>Tails OS: コールド・ウォレットとして使う</title>
       <link>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</link>
       <pubDate>Fri, 05 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/tails-cold-wallet/</guid>
       <description>巷で流行りのTailsOSUSBスティックをコールド・ウォレットとして利用してみます。 （オフグリッドというのかオフラインというのか、どれが正</description>
     </item>
-    
     <item>
       <title>Tails OS: インストール</title>
       <link>https://goozenlab.github.io/blog/2021/02/tails-install/</link>
       <pubDate>Fri, 19 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/tails-install/</guid>
       <description>セキュリティーを念頭に置いたOS、QubeOSやらなんやらちょっと気になっていました。 しかしながら普段使いでは勝手が悪そうにみえたので、 イン</description>
     </item>
-    
   </channel>
 </rss>

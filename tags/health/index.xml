@@ -1,59 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>health on goozenlab</title>
+    <title>Health on goozenlab</title>
     <link>https://goozenlab.github.io/tags/health/</link>
-    <description>Recent content in health on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Health on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 17 Dec 2019 09:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Dec 2019 09:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>カロリー表</title>
       <link>https://goozenlab.github.io/blog/2019/12/calories/</link>
       <pubDate>Tue, 17 Dec 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/calories/</guid>
       <description>摂取と消費のカロリー表を作っておく。 ほぼフルータリアン生活（バナナが主食、牛乳付き）だと摂取カロリーは１０００kcalは行かなそう。 体重は5</description>
     </item>
-    
     <item>
       <title>重曹水でうがい</title>
       <link>https://goozenlab.github.io/blog/2019/09/baking-soda-gargle/</link>
       <pubDate>Thu, 05 Sep 2019 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/baking-soda-gargle/</guid>
       <description>Android10がリリースされました、9月の半ばにはiOS.13も発表されます。 OS祭りが始まります、そろそろ拙作のiアプリもなんとかせね</description>
     </item>
-    
     <item>
       <title>ドライ・ファスティング</title>
       <link>https://goozenlab.github.io/blog/2018/09/dry-fasting/</link>
       <pubDate>Wed, 26 Sep 2018 13:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/dry-fasting/</guid>
       <description>いろいろと、フルータリアンや、不食主義やら調べていたら、ドライ・ファスティングというのを見つけました。 断食中だったので、断食の３日目に1日だ</description>
     </item>
-    
     <item>
       <title>フルータリアン・１ヶ月</title>
       <link>https://goozenlab.github.io/blog/2018/09/fruitarianism-30/</link>
       <pubDate>Wed, 19 Sep 2018 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/fruitarianism-30/</guid>
       <description>なんとなく始めた三日断食も終了、半フルータリアン生活が１ヶ月経過しました。 途中から、豆乳・牛乳などを抜き、ナッツの食べる量を減らして、食を細</description>
     </item>
-    
     <item>
       <title>ナッツの効用と摂取量</title>
       <link>https://goozenlab.github.io/blog/2018/09/nuts-nutrition/</link>
       <pubDate>Fri, 07 Sep 2018 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/nuts-nutrition/</guid>
       <description>フルータリアン1実践中でちょうど１５日経過しました。体重が減らないということは、ちょっとナッツ は冬眠前のハムスターが如く？ボリボリと食べ過ぎ</description>
     </item>
-    
   </channel>
 </rss>

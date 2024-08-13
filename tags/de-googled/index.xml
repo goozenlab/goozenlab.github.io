@@ -1,77 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>de-googled on goozenlab</title>
+    <title>De-Googled on goozenlab</title>
     <link>https://goozenlab.github.io/tags/de-googled/</link>
-    <description>Recent content in de-googled on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in De-Googled on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 13 Jun 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/de-googled/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 13 Jun 2021 10:17:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/de-googled/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MapsMeの代替アプリ：OrganicMaps</title>
       <link>https://goozenlab.github.io/blog/2021/06/organicmaps/</link>
       <pubDate>Sun, 13 Jun 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/06/organicmaps/</guid>
       <description>オフラインでも使えトレッキングルートも網羅する旅人御用達のMaps.Me 非常にお世話になっている（た）アプリで、Version10まではお気</description>
     </item>
-    
     <item>
       <title>CalyxOS: 雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyxos-review/</link>
       <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyxos-review/</guid>
       <description>ここ２週間くらい、De-Googled PhoneのCalyxOS: https://calyxos.org/ を使ってます。 ストックロムから抜き出したGoogleCamera（Gra</description>
     </item>
-    
     <item>
       <title>Ubuntu Touchのインストールと雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</link>
       <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</guid>
       <description>Harden-Gのカスタムロムで使っていたOnePlus3tはPixel3を買ったことでちょっとおもちゃにする。 インストールはインストーラー</description>
     </item>
-    
     <item>
       <title>MacOSよりCalyxOSをインストールする</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyx-install/</link>
       <pubDate>Wed, 20 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyx-install/</guid>
       <description>事前作業 まず最初に、SIMカードは抜きましょう。入ったままインストールをすると何か不具合が起こるそうです。。 Macを使ってインストールするの</description>
     </item>
-    
     <item>
       <title>De-googled環境でのおすすめアプリ</title>
       <link>https://goozenlab.github.io/blog/2021/01/degoogled-application/</link>
       <pubDate>Thu, 14 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/degoogled-application/</guid>
       <description>なんかわざわざ今の時期に帰らんでもと思いつつも、 沖縄からコロナ大炎上中？の東京に戻ってきました。 De-googled環境でのおすすめアプリを</description>
     </item>
-    
     <item>
       <title>Mi Max3 GSI Romをインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</link>
       <pubDate>Wed, 13 Jan 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/install-gsi-max3/</guid>
       <description>不具合 : ヘッドフォンジャックが使用不可 モバイル通信機能が使用不可：SIMの認識はしているようなので、もしかしたらSIMの設定上（APN設定）</description>
     </item>
-    
     <item>
       <title>GrapheneOS：Pixel3にインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</link>
       <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</guid>
       <description>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。 プライバシー配慮モバイルOSのGrapheneOSとは: https://www.axion.zone/grapheneos/ インスト</description>
     </item>
-    
   </channel>
 </rss>

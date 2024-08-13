@@ -1,257 +1,209 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sati on goozenlab</title>
+    <title>Sati on goozenlab</title>
     <link>https://goozenlab.github.io/tags/sati/</link>
-    <description>Recent content in sati on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sati on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 25 Jul 2020 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/sati/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 05 Sep 2023 06:30:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/sati/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sati v1.13.0</title>
+      <link>https://goozenlab.github.io/blog/2023/09/sati-1130/</link>
+      <pubDate>Tue, 05 Sep 2023 06:30:00 +0900</pubDate>
+      <guid>https://goozenlab.github.io/blog/2023/09/sati-1130/</guid>
+      <description>追加機能はなく、一部表示不具合の修正のみのマイナーアップデートです。 鐘の音もちょっと「ぶちっ」と切れる感じがあるのでちょっと物色中。 サポート</description>
+    </item>
     <item>
       <title>Sati v1.10.1</title>
       <link>https://goozenlab.github.io/blog/2020/07/sati-1101/</link>
       <pubDate>Sat, 25 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/07/sati-1101/</guid>
       <description>ストレスの溜まるこの昨今ですが、マインドフルネスで乗り切りましょう。 マイナーアップデートです。システムダークモードに対応しました。 CoreD</description>
     </item>
-    
     <item>
       <title>Sati v1.10.0</title>
       <link>https://goozenlab.github.io/blog/2018/09/sati-1100/</link>
       <pubDate>Thu, 27 Sep 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/sati-1100/</guid>
       <description>Xcode10の速度に苛立ちを覚えながら、作業に勤しんでます。。。申請後、数日でレビュー終了、アップされてます。（以前よりプロセスが早くなっ</description>
     </item>
-    
     <item>
       <title>Sati v1.9.5</title>
       <link>https://goozenlab.github.io/blog/2018/03/sati-195/</link>
       <pubDate>Tue, 06 Mar 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/03/sati-195/</guid>
       <description>iOS10よりヘルスケアにマインドフルネスの項目ができてました。アップルの審査でちょっと手間取りましたが、瞑想ソフトということもあるので対応</description>
     </item>
-    
     <item>
       <title>Sati v1.9.4</title>
       <link>https://goozenlab.github.io/blog/2017/05/sati-194/</link>
       <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2017/05/sati-194/</guid>
       <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 つい</description>
     </item>
-    
     <item>
       <title>Sati v1.9.3</title>
       <link>https://goozenlab.github.io/blog/2017/05/sati-193/</link>
       <pubDate>Mon, 15 May 2017 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2017/05/sati-193/</guid>
       <description>久しぶりのマイナーアップデート。 ポージャーボタンがうまく機能していないところと、英語のスペルミス。。。 開発環境をXCode8.3に移行のため</description>
     </item>
-    
     <item>
       <title>サティの通知音</title>
       <link>https://goozenlab.github.io/blog/2016/10/notification_sound/</link>
       <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/10/notification_sound/</guid>
       <description>iOS10にてサティの通知音が TriTone になっているかもしれません。ネット上で調べたところ、リブート、もしくはハードリブートで直るということです。 が</description>
     </item>
-    
     <item>
       <title>サティを公開</title>
       <link>https://goozenlab.github.io/blog/2016/09/open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/open-sati/</guid>
       <description>簡単な履歴機能などがついた瞑想タイマーアプリ、サティをギットハブに公開 Link @ github しました。ということは、恥ずかしながらオープンソースにしたという</description>
     </item>
-    
     <item>
       <title>ギットハブ公開</title>
       <link>https://goozenlab.github.io/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/github-open-sati/</guid>
       <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。 問題点：ギットハブに公開するプロジェクトには、バン</description>
     </item>
-    
     <item>
       <title>Sati v1.9.2</title>
       <link>https://goozenlab.github.io/blog/2016/08/sati-192/</link>
       <pubDate>Mon, 15 Aug 2016 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/sati-192/</guid>
       <description>またちょっとしたミスを見つけていただきましたのでアップデートします。（なかなか一発で行かない、、先に進まん。） ついでと言ってはなんですが、履</description>
     </item>
-    
     <item>
       <title>Sati v1.9.1</title>
       <link>https://goozenlab.github.io/blog/2016/08/sati-191/</link>
       <pubDate>Wed, 10 Aug 2016 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/sati-191/</guid>
       <description>ユーザーの方から指摘をいただいたバグ、不具合を調整。マイナーアップデートです。次はSwift3への移行とwatchOS3（リソースが少ない＋</description>
     </item>
-    
     <item>
       <title>Sati v1.9.0</title>
       <link>https://goozenlab.github.io/blog/2016/06/sati-190/</link>
       <pubDate>Wed, 08 Jun 2016 19:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/06/sati-190/</guid>
       <description>2015年の2月以来、一年数ヶ月ぶりのアップデートです。使用者の方々にはあまり関係無いことですが、新しい言語のswiftに書き換えました。i</description>
     </item>
-    
     <item>
       <title>Iconを作り替え中</title>
       <link>https://goozenlab.github.io/blog/2016/05/icons-renew/</link>
       <pubDate>Tue, 31 May 2016 16:13:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/05/icons-renew/</guid>
       <description>アプリのSWIFT化をしている最中、気分転換を兼ねアイコン（右３つのアプリ）を少しいじってます。iOS8にアップデートした頃に少しフラット化</description>
     </item>
-    
     <item>
       <title>iOS9での不具合：Satiの通知音</title>
       <link>https://goozenlab.github.io/blog/2015/09/ios9-bug-notifications/</link>
       <pubDate>Wed, 23 Sep 2015 15:30:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/09/ios9-bug-notifications/</guid>
       <description>マインドフルな瞑想アプリのサティ、ユーザーの方からiOS9にアップデート以降、音が出なくなったとの報告を受けました。 iOS8がリリースされた</description>
     </item>
-    
     <item>
       <title>！Thanks alot for download Sati！</title>
       <link>https://goozenlab.github.io/blog/2015/03/thanx-dowload-sati/</link>
       <pubDate>Sun, 15 Mar 2015 23:50:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/thanx-dowload-sati/</guid>
       <description>!! Obligado, ขอบคุณ, teşekkür ederim, शुक्रिया., Danke, Merci, Gracias, Спасибо, אַ דאַנק, شكرا !! Satiのダウンロードがドカーーンと</description>
     </item>
-    
     <item>
       <title>Sati v1.6.5</title>
       <link>https://goozenlab.github.io/blog/2015/02/sati-165/</link>
       <pubDate>Thu, 26 Feb 2015 06:00:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/sati-165/</guid>
       <description>このアップデートで瞑想タイマーとしては完成形にたどり着いたのではと、自画自賛モードの Sati です。iOS6,7ユーザの方々には__最後のアップデー</description>
     </item>
-    
     <item>
       <title>次のアップデート進行状況</title>
       <link>https://goozenlab.github.io/blog/2015/02/sati-upcomming/</link>
       <pubDate>Wed, 11 Feb 2015 08:54:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/sati-upcomming/</guid>
       <description>1.6.4がホットフィックスだったため、製作中のものが入り込んでいたり、ちょっと中途半端なアップデートになってしまっています。現在、細部を詰</description>
     </item>
-    
     <item>
       <title>Sati v1.6.4</title>
       <link>https://goozenlab.github.io/blog/2015/02/sati-164/</link>
       <pubDate>Tue, 10 Feb 2015 19:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/sati-164/</guid>
       <description>iOS8上での音が鳴らない不具合は ホーム＞設定＞サティ＞通知より、 サウンドのスウィッチをオンにしてください。 これで、問題は解消するはずです。</description>
     </item>
-    
     <item>
       <title>Satiにて音が出ない件</title>
       <link>https://goozenlab.github.io/blog/2015/01/sati-nosound-erro/</link>
       <pubDate>Fri, 30 Jan 2015 17:02:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/01/sati-nosound-erro/</guid>
       <description>以前ユーザーの方より指摘をいただいた、サティで音が出ない件ですが、未だ継続問題になっていました。 勘違いとケアレスミスのダブルパンチです。 アプ</description>
     </item>
-    
     <item>
       <title>Sati v1.6.3</title>
       <link>https://goozenlab.github.io/blog/2015/01/sati-163/</link>
       <pubDate>Wed, 28 Jan 2015 08:54:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/01/sati-163/</guid>
       <description>長押しスタート マイナーアップデートですが、使用方法に変更があります。 瞑想の始まりを**長押し（ロングタップ）**に変更しました。 誤動作をさけ</description>
     </item>
-    
     <item>
       <title>Satiでの不具合</title>
       <link>https://goozenlab.github.io/blog/2014/12/sati-nosound/</link>
       <pubDate>Thu, 04 Dec 2014 13:55:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/12/sati-nosound/</guid>
       <description>iOS8にアップデートにあたりユーザーの方から、音が出なくなってしまったとの報告を受けました。 瞑想中に鳴る音はバックグランドの処理ではなく、</description>
     </item>
-    
     <item>
       <title>Sati v1.5.7</title>
       <link>https://goozenlab.github.io/blog/2014/09/sati-v1.5.7/</link>
       <pubDate>Sat, 20 Sep 2014 13:08:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/09/sati-v1.5.7/</guid>
       <description>一年近くコンピューターを持たずにふらふらしてました。 久しぶりに以下の調整および修正を行いました。 メイン 瞑想のはじめと終わりに流れる長い鐘の音</description>
     </item>
-    
     <item>
       <title>Sati v1.5.5</title>
       <link>https://goozenlab.github.io/blog/2013/08/sati-155/</link>
       <pubDate>Thu, 08 Aug 2013 13:08:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/08/sati-155/</guid>
       <description>30分以内のキャンセルが効かないバグがある事に気がつきました。 （キャンセルしますか -&amp;gt; はい -&amp;gt; 変化無し。。。） 瞑想時間が切れるまでほっておく ３０</description>
     </item>
-    
     <item>
       <title>sati v1.5.4</title>
       <link>https://goozenlab.github.io/blog/2013/08/sati-154/</link>
       <pubDate>Tue, 06 Aug 2013 18:29:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/08/sati-154/</guid>
       <description>見た目が質素だった設定ページを更新しました。 ついでに、瞑想時間も１時間以上、なんと３時間まで設定できるようにしました。 そして、割と厳しかった</description>
     </item>
-    
     <item>
       <title>sati v1.5.3</title>
       <link>https://goozenlab.github.io/blog/2013/07/sati-153/</link>
       <pubDate>Sat, 13 Jul 2013 00:59:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/sati-153/</guid>
       <description>これといった新機能は追加してません。変更点は以下、 アイコンをさっぱりかつアップル推奨のグリッドに合わせたものに変更 背景イメージを選択できるよ</description>
     </item>
-    
     <item>
       <title>DatePickerでの表示バグの修正</title>
       <link>https://goozenlab.github.io/blog/2013/05/bug-datepicker/</link>
       <pubDate>Sat, 25 May 2013 13:39:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/05/bug-datepicker/</guid>
       <description>デートピッカーがiOS6使用時に日本語環境でも表示が英語表示になってしまってました。 iOS5では問題はなく、二三日前に気が付きました。 OSの</description>
     </item>
-    
     <item>
       <title>Icon Renew and minor update</title>
       <link>https://goozenlab.github.io/blog/2013/05/icons-renew/</link>
       <pubDate>Fri, 24 May 2013 16:13:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/05/icons-renew/</guid>
       <description>ちょっと気になっていたアイコンにちょっと手を入れました。 リスタリアは文字の太さを調整してメリハリを付けて、商品名をコードネームとして、果物名</description>
     </item>
-    
     <item>
       <title>Sati v1.5.1</title>
       <link>https://goozenlab.github.io/blog/2012/12/sati-151/</link>
       <pubDate>Fri, 21 Dec 2012 12:47:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/12/sati-151/</guid>
       <description>サティ（旧名：サティマ）のプチアップデート。 ちょっとパーリー語を勘違いしてたかもしれないのでアプリの名前を変更（サティマからサティに） メイン</description>
     </item>
-    
   </channel>
 </rss>

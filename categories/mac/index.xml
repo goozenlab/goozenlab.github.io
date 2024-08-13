@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mac on goozenlab</title>
+    <title>Mac on goozenlab</title>
     <link>https://goozenlab.github.io/categories/mac/</link>
-    <description>Recent content in mac on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mac on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 10 Nov 2014 14:20:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Nov 2014 14:20:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/categories/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>さよならMBP15、サワディクラップMBA11</title>
       <link>https://goozenlab.github.io/blog/2014/11/macbookair11/</link>
       <pubDate>Mon, 10 Nov 2014 14:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/11/macbookair11/</guid>
       <description>さよなら、MBP15、サワディクラップ、MBA11。 タイにきて端末が壊れる、2011初期型によくあるグラフィックボードの故障らしく、数日間変</description>
     </item>
-    
   </channel>
 </rss>

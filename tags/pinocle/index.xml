@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pinocle on goozenlab</title>
+    <title>Pinocle on goozenlab</title>
     <link>https://goozenlab.github.io/tags/pinocle/</link>
-    <description>Recent content in pinocle on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Pinocle on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 05 Feb 2015 07:35:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/pinocle/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 05 Feb 2015 07:35:00 +0545</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/pinocle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pinocul v1.7.1</title>
       <link>https://goozenlab.github.io/blog/2015/02/pinocul-171/</link>
       <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/pinocul-171/</guid>
       <description>放置状態にあった、Pinhole Calc を久しぶりにアップデートしました。名前も変えてpinocul。 最初に躊躇しつつもアプストアーに申請したアプ</description>
     </item>
-    
   </channel>
 </rss>

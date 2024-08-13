@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>camp on goozenlab</title>
+    <title>Camp on goozenlab</title>
     <link>https://goozenlab.github.io/categories/camp/</link>
-    <description>Recent content in camp on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Camp on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 May 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/camp/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 01 May 2021 10:17:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/categories/camp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>離島・キャンプサイト</title>
       <link>https://goozenlab.github.io/blog/2021/05/okinawa-camp-site/</link>
       <pubDate>Sat, 01 May 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/05/okinawa-camp-site/</guid>
       <description>沖縄（思った以上に米軍の基地・演習場などが多くてちょっとびっくりしました。 こりゃジャパンなんとかせなあんやろと。。） にて、ちょっとキャンプ場</description>
     </item>
-    
     <item>
       <title>キャンプ調味料</title>
       <link>https://goozenlab.github.io/blog/2021/04/camp-herb-case/</link>
       <pubDate>Fri, 30 Apr 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/04/camp-herb-case/</guid>
       <description>中長期のキャンプに持っていく調味料などの整理して見ました。 バックパッカー時にはジップロッカーでしたが、 サイトや百均巡りをして良い組み合わせを</description>
     </item>
-    
     <item>
       <title>Naturehike: Mongar 2</title>
       <link>https://goozenlab.github.io/blog/2021/03/naturehike-mongar-review/</link>
       <pubDate>Sun, 21 Mar 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/03/naturehike-mongar-review/</guid>
       <description>名護の宿で一緒したバックパッカーのオススメ・アウトドア・ブランド、 ネイチャーハイクの二人用テントMongar 2を買ってしました。 決してハンモ</description>
     </item>
-    
   </channel>
 </rss>

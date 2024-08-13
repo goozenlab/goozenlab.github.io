@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://goozenlab.github.io/categories/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/categories/iapp/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/post/</loc>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/sati/</loc>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/blog/2023/09/sati-1130/</loc>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/</loc>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/update/</loc>
+    <lastmod>2023-09-05T06:30:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/tags/littlist/</loc>
     <lastmod>2023-09-03T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2023/09/littlist-2130/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/post/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/</loc>
-    <lastmod>2023-09-03T10:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/update/</loc>
     <lastmod>2023-09-03T10:00:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/tags/ohayo/</loc>
@@ -118,12 +124,6 @@
   </url><url>
     <loc>https://goozenlab.github.io/blog/2022/11/el-salvador-gdp/</loc>
     <lastmod>2022-11-29T11:30:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/bitcoin-reference-websites/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2022/11/self-sovereign-lifestyle/</loc>
     <lastmod>2022-11-26T12:00:00+07:00</lastmod>
@@ -338,32 +338,14 @@
     <loc>https://goozenlab.github.io/blog/2022/03/add-tipping/</loc>
     <lastmod>2022-03-17T12:00:00+07:00</lastmod>
   </url><url>
-    <loc>https://goozenlab.github.io/crypto/wallet-hardware/</loc>
-    <lastmod>2022-03-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://goozenlab.github.io/tags/linux/</loc>
     <lastmod>2022-03-15T16:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2022/03/curl/</loc>
     <lastmod>2022-03-15T16:00:00+07:00</lastmod>
   </url><url>
-    <loc>https://goozenlab.github.io/crypto/seed/</loc>
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/crypto-friendly-countires/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/macos-btccore/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/macos-tor/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://goozenlab.github.io/blog/2022/03/remove-gad/</loc>
     <lastmod>2022-03-01T12:00:00+07:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/crypto-news/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2022/01/new-year/</loc>
     <lastmod>2022-01-01T12:00:00+07:00</lastmod>
@@ -492,12 +474,6 @@
     <lastmod>2021-02-01T14:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/computing/living-with-cryptos/</loc>
-    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/living-with-cryptos/</loc>
-    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/web-services/</loc>
     <lastmod>2021-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/tags/gafa/</loc>
@@ -646,9 +622,6 @@
   </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/ippuku-1121/</loc>
     <lastmod>2020-07-26T06:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://goozenlab.github.io/tags/sati/</loc>
-    <lastmod>2020-07-25T06:30:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2020/07/sati-1101/</loc>
     <lastmod>2020-07-25T06:30:00+09:00</lastmod>
@@ -962,6 +935,9 @@
     <loc>https://goozenlab.github.io/categories/smart-phone/</loc>
     <lastmod>2019-11-23T13:00:00+07:00</lastmod>
   </url><url>
+    <loc>https://goozenlab.github.io/tags/linux/</loc>
+    <lastmod>2019-11-16T09:30:00+09:00</lastmod>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2019/11/linux-mail-client/</loc>
     <lastmod>2019-11-16T09:30:00+09:00</lastmod>
   </url><url>
@@ -973,6 +949,9 @@
   </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</loc>
     <lastmod>2019-10-17T09:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/tags/thinkpad/</loc>
+    <lastmod>2019-10-11T15:30:00+09:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2019/10/hackintosh-price/</loc>
     <lastmod>2019-10-11T15:30:00+09:00</lastmod>
@@ -1015,6 +994,9 @@
   </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/amazon-piu-caprim/</loc>
     <lastmod>2019-09-12T10:00:00+07:00</lastmod>
+  </url><url>
+    <loc>https://goozenlab.github.io/categories/computing/</loc>
+    <lastmod>2019-09-11T09:00:00+07:00</lastmod>
   </url><url>
     <loc>https://goozenlab.github.io/blog/2019/09/end-of-editor-war/</loc>
     <lastmod>2019-09-11T09:00:00+07:00</lastmod>
@@ -2069,6 +2051,9 @@
     <loc>https://goozenlab.github.io/blog/2017/01/new-year/</loc>
     <lastmod>2017-01-01T12:00:00+07:00</lastmod>
   </url><url>
+    <loc>https://goozenlab.github.io/tags/-laos/</loc>
+    <lastmod>2016-12-30T20:30:00+07:00</lastmod>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2016/12/thai-lao-border-by-bicycle/</loc>
     <lastmod>2016-12-30T20:30:00+07:00</lastmod>
   </url><url>
@@ -2615,6 +2600,9 @@
     <loc>https://goozenlab.github.io/blog/2015/03/ohayo-282/</loc>
     <lastmod>2015-03-07T21:30:00+05:45</lastmod>
   </url><url>
+    <loc>https://goozenlab.github.io/categories/-web/</loc>
+    <lastmod>2015-03-07T17:30:00+05:45</lastmod>
+  </url><url>
     <loc>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</loc>
     <lastmod>2015-03-07T17:30:00+05:45</lastmod>
   </url><url>
@@ -3143,8 +3131,6 @@
     <loc>https://goozenlab.github.io/computing/nomad-goods/</loc>
   </url><url>
     <loc>https://goozenlab.github.io/computing/sovereign/</loc>
-  </url><url>
-    <loc>https://goozenlab.github.io/crypto/btc-project/</loc>
   </url><url>
     <loc>https://goozenlab.github.io/blog/1/01/</loc>
   </url><url>

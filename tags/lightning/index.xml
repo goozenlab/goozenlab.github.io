@@ -1,77 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lightning on goozenlab</title>
+    <title>Lightning on goozenlab</title>
     <link>https://goozenlab.github.io/tags/lightning/</link>
-    <description>Recent content in lightning on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Lightning on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Dec 2022 10:07:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 06 Dec 2022 10:07:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ちょこっとVPN</title>
       <link>https://goozenlab.github.io/blog/2022/12/vpn-lightning/</link>
       <pubDate>Tue, 06 Dec 2022 10:07:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/12/vpn-lightning/</guid>
       <description>https://lnvpn.net/ １時間単位で、しかもLightningで支払い、かつKYC無し、 で利用ができるVPNサービス、面白い。 接続先にインドがあったり、タイがある</description>
     </item>
-    
     <item>
       <title>ライトニング・ウォレット比較</title>
       <link>https://goozenlab.github.io/blog/2022/12/lightning-wallet-2/</link>
       <pubDate>Fri, 02 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/12/lightning-wallet-2/</guid>
       <description>ビットコインのオフ・チェーン決済、Lightningネットワーク。 日本ではあまり普及していない？ようですが、各地で草の根的に使えるところが増</description>
     </item>
-    
     <item>
       <title>続・CLBossでライトニング・チャンネル運用</title>
       <link>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</link>
       <pubDate>Thu, 01 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/12/lightning-clboss/</guid>
       <description>ビットコイナーとしてできる最もインパクトのあることは、自分のノードを動かすこと。 RaspiBlitz: https://github.com/rootzoll/raspiblitz で運用中のホコリっぽいPiサーバー、ちょうどElectr</description>
     </item>
-    
     <item>
       <title>ライトニング・ウォレット: Alby</title>
       <link>https://goozenlab.github.io/blog/2022/11/alby-lightning-wallet/</link>
       <pubDate>Tue, 01 Nov 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/11/alby-lightning-wallet/</guid>
       <description>ビットコインのLayer2のLightning。 ビットコインをDCA等で貯めていくのも悪いことではないけれども、 個人的にはそろそろ積極的に利</description>
     </item>
-    
     <item>
       <title>CLBossでライトニング・チャンネル運用</title>
       <link>https://goozenlab.github.io/blog/2022/10/lightning-clboss/</link>
       <pubDate>Sat, 29 Oct 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/10/lightning-clboss/</guid>
       <description>旅先にビットコイン・ノードを持参し、左手うちわで暮らせんかなと、不純な思いを持って始めたプロジェクト。 以前はMyNodeやUmbrelを実家</description>
     </item>
-    
     <item>
       <title>ライトニング・ウォレット</title>
       <link>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</link>
       <pubDate>Mon, 08 Aug 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/08/lightning-wallet/</guid>
       <description>ライトニング・ネットワークはビットコインのサブチェーン、レイヤー２、オフチェーンなどいろいろと呼びばれています。 ビットコインでのスケーラビリ</description>
     </item>
-    
     <item>
       <title>投げ銭：tippin.me</title>
       <link>https://goozenlab.github.io/blog/2022/03/add-tipping/</link>
       <pubDate>Thu, 17 Mar 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/03/add-tipping/</guid>
       <description>少額での寄付のやり取りには最適解のようなので https://tippin.me を登録してみました。 利用するには、ウェブ・エクステンションが必要、FireFox、Chrome</description>
     </item>
-    
   </channel>
 </rss>

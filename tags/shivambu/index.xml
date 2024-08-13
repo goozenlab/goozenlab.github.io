@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shivambu on goozenlab</title>
+    <title>Shivambu on goozenlab</title>
     <link>https://goozenlab.github.io/tags/shivambu/</link>
-    <description>Recent content in shivambu on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Shivambu on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 22 Sep 2018 09:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/shivambu/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 22 Sep 2018 09:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/shivambu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>シバンブ（尿療法）</title>
       <link>https://goozenlab.github.io/blog/2018/09/shivambu/</link>
       <pubDate>Sat, 22 Sep 2018 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/shivambu/</guid>
       <description>インド式体操というより、ヨガというのであれば、尿療法ではなく、シバンブと呼びましょう。 「私、アユルベーダのシバンブをしております。毎朝、聖な</description>
     </item>
-    
     <item>
       <title>尿療法の実践</title>
       <link>https://goozenlab.github.io/blog/2018/09/urine-therapy-practice/</link>
       <pubDate>Tue, 18 Sep 2018 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/urine-therapy-practice/</guid>
       <description>全くお金のかからない、非常に効果の高い、そして壁もある意味で高い健康法・尿療法をご紹介というか、ちとお試し中。 ノーピクチャーでお届けします。</description>
     </item>
-    
   </channel>
 </rss>

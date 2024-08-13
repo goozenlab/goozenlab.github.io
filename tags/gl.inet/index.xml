@@ -4,56 +4,45 @@
     <title>GL.iNet on goozenlab</title>
     <link>https://goozenlab.github.io/tags/gl.inet/</link>
     <description>Recent content in GL.iNet on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 09:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/gl.inet/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 22 Feb 2021 09:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/gl.inet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GLiNet with Mullvad</title>
       <link>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</link>
       <pubDate>Mon, 22 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/02/glinet-mullvad/</guid>
       <description>手元にあるちっちゃいトラベル・ルーター： GLiNet Shadow にMulvadのWireguardを導入してみました。 GL.iNet GL-AR300M(shadow) https://mullvad.net 管理画面にて作業を行います。 Wire</description>
     </item>
-    
     <item>
       <title>ShadowでOpenVPNにつなげる</title>
       <link>https://goozenlab.github.io/blog/2019/04/openvpn-shadow/</link>
       <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/04/openvpn-shadow/</guid>
       <description>ちょっと、理解不足というのもあって手をつけていなかった、VPNを少しづつ弄りはじまてます。GL.iNetのルーターにVPN機能が付いているの</description>
     </item>
-    
     <item>
       <title>アンドロイドフォンとテザリング</title>
       <link>https://goozenlab.github.io/blog/2019/04/usb-tethering/</link>
       <pubDate>Wed, 03 Apr 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/04/usb-tethering/</guid>
       <description>手元にあるアンドロイド・フォン（Nokia 7PlusとMi Max3）にシムをいれてルーター：GL.iNet GL-AR150にてテザリングを行</description>
     </item>
-    
     <item>
       <title>GL.iNet ルーターのメジャー・アップデート</title>
       <link>https://goozenlab.github.io/blog/2019/03/ar300m-firmware-update/</link>
       <pubDate>Thu, 21 Mar 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/ar300m-firmware-update/</guid>
       <description>ルーターにバージョン・アップの告知が出てました。Ver. 2.27から3.019へと0.749アップのメジャー・アップグレード。 すでに上位機種</description>
     </item>
-    
     <item>
       <title>GL.iNet Shadow</title>
       <link>https://goozenlab.github.io/blog/2019/03/review-initial-setup-shadow/</link>
       <pubDate>Thu, 14 Mar 2019 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/review-initial-setup-shadow/</guid>
       <description>OpenWrtのおすすめルーターの一つに弟分のGL.iNet GL-AR150が入っている Shadow AR-300M のレビューをしたいと思います。 このルーターに辿り</description>
     </item>
-    
   </channel>
 </rss>

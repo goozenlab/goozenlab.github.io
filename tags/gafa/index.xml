@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GAFA on goozenlab</title>
+    <title>Gafa on goozenlab</title>
     <link>https://goozenlab.github.io/tags/gafa/</link>
-    <description>Recent content in GAFA on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Gafa on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 31 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/gafa/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 31 Jan 2021 10:17:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/gafa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>アノニマス・アマゾン</title>
       <link>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</link>
       <pubDate>Sun, 31 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/anonymous-amazon/</guid>
       <description>アマゾンのアカウントをグーグルと紐づいけているのは、 グーグルさんに購入履歴を無条件で渡している感じがして嫌だなとずっと思ってました。 アマゾン</description>
     </item>
-    
     <item>
       <title>GrapheneOS：Pixel3にインストール</title>
       <link>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</link>
       <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/graphene-pixel3-install/</guid>
       <description>GrapheneOSなんたるやは、こちらのページで詳しく説明されています。 プライバシー配慮モバイルOSのGrapheneOSとは: https://www.axion.zone/grapheneos/ インスト</description>
     </item>
-    
     <item>
       <title>Projects ページ</title>
       <link>https://goozenlab.github.io/blog/2019/09/projects/</link>
       <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/projects/</guid>
       <description>9月になりました。2019年残りも3分の１です。。タイ北部滞在中、そろそろ帰国。 かえりたくないぃぃ〜〜。 さて、作業の方が少し落ち着いてきまし</description>
     </item>
-    
     <item>
       <title>Max3でmicro-G</title>
       <link>https://goozenlab.github.io/blog/2019/07/max3-microg/</link>
       <pubDate>Wed, 03 Jul 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/max3-microg/</guid>
       <description>７月ですね、2019年後半戦スタートです。 さて、現在使っている、Xiaomi Mi Max3、ここ数年は毎年７月にアップグレードされていましたが、</description>
     </item>
-    
   </channel>
 </rss>

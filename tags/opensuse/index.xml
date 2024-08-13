@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>opensuse on goozenlab</title>
+    <title>Opensuse on goozenlab</title>
     <link>https://goozenlab.github.io/tags/opensuse/</link>
-    <description>Recent content in opensuse on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Opensuse on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 02 Sep 2019 14:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 Sep 2019 14:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/opensuse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenSuse on Pi 3B</title>
       <link>https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/</link>
       <pubDate>Mon, 02 Sep 2019 14:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/opensuse-on-pi3/</guid>
       <description>ヨーロッパでの人気は高いと言われているドイツのディストリビューション、openSUSE、 パイの64bitバージョンも配布されているので試して</description>
     </item>
-    
   </channel>
 </rss>

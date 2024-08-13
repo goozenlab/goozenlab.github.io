@@ -1,95 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>manjaro on goozenlab</title>
+    <title>Manjaro on goozenlab</title>
     <link>https://goozenlab.github.io/tags/manjaro/</link>
-    <description>Recent content in manjaro on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Manjaro on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 Dec 2020 19:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 19:00:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>日替わりディストロ</title>
       <link>https://goozenlab.github.io/blog/2020/12/distro-hopping/</link>
       <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/12/distro-hopping/</guid>
       <description>いくつかのLinuxをBtrfsで併用してます。 日替わりランチが如く、 日々違ったディストロを切り替えて使ってます。 同じ作業をするので、ちょっ</description>
     </item>
-    
     <item>
       <title>動画を撮って出し</title>
       <link>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</link>
       <pubDate>Wed, 12 Feb 2020 18:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/obs-kdenline/</guid>
       <description>ほとんど撮って出しのシンプルな Gnome デスクトップ動画をアップしました。お初でございます。 ショートカットやウィンドウ配置の動きなどを追ってます。 ラ</description>
     </item>
-    
     <item>
       <title>Mozcの環境構築まとめ</title>
       <link>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</link>
       <pubDate>Tue, 04 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/mozc-fcitx-linux/</guid>
       <description>Linux 環境にて日本語の入力には Mozc+fcitx を使っています。 インストール、設定方法をまとめる。 Debian / Ubuntu Debian と Ubuntu では $ sudo apt-get install im-config fcitx-mozc をインストール、im-config</description>
     </item>
-    
     <item>
       <title>TLP on Arch</title>
       <link>https://goozenlab.github.io/blog/2020/02/tlp-arch/</link>
       <pubDate>Sat, 01 Feb 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/02/tlp-arch/</guid>
       <description>TLPことAdvance Power Manager for Linux をデビアンではすでにインストールしましたが、 Manjaroにもインストールします。 ついでにバッテリーの持ち時</description>
     </item>
-    
     <item>
       <title>最適なミラーサイト</title>
       <link>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</link>
       <pubDate>Wed, 29 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/fast-mirror-list/</guid>
       <description>アップデート時の接続先を見てみるとエラーが出たり、タイにいるのにチャイナだったり、ヨーロッパだったりに繋がったりしています。。接続が安定しな</description>
     </item>
-    
     <item>
       <title>ファームウェアをアップデート</title>
       <link>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</link>
       <pubDate>Sat, 04 Jan 2020 11:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/firmware-linux-nonfree/</guid>
       <description>Thinkapd T480sでのdebian起動時にエラーがチラッと見えていて、 あっという間に消えてしまうし、字がちっちゃいし読めない。。 実害もないようだっ</description>
     </item>
-    
     <item>
       <title>Linuxをアップデート</title>
       <link>https://goozenlab.github.io/blog/2019/12/linux-update/</link>
       <pubDate>Tue, 31 Dec 2019 11:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/linux-update/</guid>
       <description>年が明ける前にまだ数ヶ月間のお付き合い中のLinux（デビアンとマンジャーロ）にアップデートを行いました。 Manjaro Manjaroでは524GBとか</description>
     </item>
-    
     <item>
       <title>manjaro、国境を越えて調子を崩す</title>
       <link>https://goozenlab.github.io/blog/2019/12/conflict-manjaro/</link>
       <pubDate>Mon, 16 Dec 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/conflict-manjaro/</guid>
       <description>manjaroで少々ほころびが出だす。 久しぶりにアップデートをするとコンフリクトが起こる。 しかもファイルが見つからんなど色々と不具合が広まり</description>
     </item>
-    
     <item>
       <title>Btrfsにマンジャーロ</title>
       <link>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</link>
       <pubDate>Mon, 07 Oct 2019 09:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/install-manjaro-btrfs/</guid>
       <description>2018年一番人気のディストリビューションManjaro、Arch Linuxがベースで安定性を重視しし、かつデザインも少し凝った作りになって</description>
     </item>
-    
   </channel>
 </rss>

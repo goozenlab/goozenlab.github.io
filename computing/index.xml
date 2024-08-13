@@ -4,164 +4,129 @@
     <title>Computings on goozenlab</title>
     <link>https://goozenlab.github.io/computing/</link>
     <description>Recent content in Computings on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://goozenlab.github.io/computing/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>セキュリティ</title>
       <link>https://goozenlab.github.io/computing/index-security/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/index-security/</guid>
       <description>ネットワークのセキュリティ TOR VPN Mullvad iVPN Mail Messaging Application Hardened システムを堅固にする方法 MacOS 堅固なOSというわけではないです。利用者が少ないが上相手にされていないだ</description>
     </item>
-    
     <item>
       <title>Android Securities</title>
       <link>https://goozenlab.github.io/computing/android-securities/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/android-securities/</guid>
       <description>まとめ中にも関わらず、ひっそり公開。厄介ですね、このプライバシーってやつは。。 携帯を持っている限り、少なからずプライバシーは侵害されてしまう</description>
     </item>
-    
     <item>
       <title>クリプトライフ</title>
       <link>https://goozenlab.github.io/computing/living-with-cryptos/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/living-with-cryptos/</guid>
       <description>のんびりとまとめ中、随時加筆中。まぁ、いったいどこまで値が上がるんでしょうかね。（ある意味心配） 国によって温度差がありますが、じわじわとサー</description>
     </item>
-    
     <item>
       <title>オープンソースで作るネットワーク環境</title>
       <link>https://goozenlab.github.io/computing/opensource-network-environment/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/opensource-network-environment/</guid>
       <description>自由と柔軟性を求めオープンソースプロジェクトを利用してのネットワーク環境を構築します。 同じファームウェアを使うことで管理も楽ですし、異なった</description>
     </item>
-    
     <item>
       <title>Arch T480s</title>
       <link>https://goozenlab.github.io/computing/tpt480s-linux-arch/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/tpt480s-linux-arch/</guid>
       <description>2020年1月下旬に行ったBTRFSパーティションにArchをインストールした際のメモ。 一気にミニマムなGnomeまで、 ネットワークやディス</description>
     </item>
-    
     <item>
       <title>Make Hackintosh T480s</title>
       <link>https://goozenlab.github.io/computing/tpt480s-hackintosh/</link>
       <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/tpt480s-hackintosh/</guid>
       <description>現在ビチビと更新中です。アップしないとやる気が出ないので公開。 ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたり</description>
     </item>
-    
     <item>
       <title>De-Googled Phone</title>
       <link>https://goozenlab.github.io/computing/optout-phone/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/optout-phone/</guid>
       <description>携帯を持っている限り、少なからずプライバシーは侵害されてしまうのですが、 できる範囲のことはしたいと思い。 自由へむけカスタムロムを使いグーグル</description>
     </item>
-    
     <item>
       <title>Raspbeery Pi References</title>
       <link>https://goozenlab.github.io/computing/pi/raspbeery-pi-references/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/pi/raspbeery-pi-references/</guid>
       <description>ラズベリー・パイのリファレンス ラズビアンのイメージファイル・アーカイブ ちょっと古いUSB-Wifiドライバーを動かすのに特定のカーネルが必要</description>
     </item>
-    
     <item>
       <title>Ryzentosh</title>
       <link>https://goozenlab.github.io/computing/ryzentosh/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/ryzentosh/</guid>
       <description>現在リサーチ中、作るかどうかはちょっと予算次第ですが、問題なく使えているそうです。 ラップトップでのハッキントッシュの使い心地が思いの外良いの</description>
     </item>
-    
     <item>
       <title>iPod Here Now</title>
       <link>https://goozenlab.github.io/computing/ipod-here-now/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/ipod-here-now/</guid>
       <description>Rockbox 更新履歴 2022-02-25：ザックリと書いてみる。 不定期更新です。書き込んだり消したりしてます。</description>
     </item>
-    
     <item>
       <title>VaioP Reloaded</title>
       <link>https://goozenlab.github.io/computing/vaiop-reloaded/</link>
       <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/vaiop-reloaded/</guid>
       <description>Strechで問題なく動いているタンスタンマツ、Sony Vaio P リバイバル 希望、ほんと今のスペックで作っていただきたい。 VPC-P111KX (Green) Intel Atom Z530 @ 1.6 GHz RAM: 2GB DDR2 Storage:</description>
     </item>
-    
     <item>
       <title>multiBoot Thinkpad T480s</title>
       <link>https://goozenlab.github.io/computing/tpt480s/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/tpt480s/</guid>
       <description>ずいぶん長いことマックユーザーでしたが、マックのユーザーランドがヨセミテあたりから不自由な感じがしてきたので、 ちょっと環境を変えることにしま</description>
     </item>
-    
     <item>
       <title>トラベル・パイ・ルーター</title>
       <link>https://goozenlab.github.io/computing/pi/travel-pi/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/pi/travel-pi/</guid>
       <description>トラベルルーターはTP-LinkやBuffaloから市販されていて数千円で買えますし、 あえて自分で構築するのは若干微妙ではありますが、 安全・</description>
     </item>
-    
     <item>
       <title>ノマド緊急用端末</title>
       <link>https://goozenlab.github.io/computing/nomad-stick-machine/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/nomad-stick-machine/</guid>
       <description>旅先で端末が立ち上がらなくなる、最悪端末が盗難にあう。などの緊急事態発生時に使えるスティック端末を構築。 ラップトップで様々なディストリビュー</description>
     </item>
-    
     <item>
       <title>家鯖：ホーム・パイ</title>
       <link>https://goozenlab.github.io/computing/pi/home-pi/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/pi/home-pi/</guid>
       <description>一家に一台 多分、ほとんどの家庭ではインターネット回線がつながっていると思いますし、 スマートフォンも一人一台の時代です。 家にあるインターネット</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://goozenlab.github.io/computing/nomad-goods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/nomad-goods/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>https://goozenlab.github.io/computing/sovereign/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/computing/sovereign/</guid>
       <description>Sovereign Computing/Indivisual</description>
     </item>
-    
   </channel>
 </rss>

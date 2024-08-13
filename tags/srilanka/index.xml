@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>srilanka on goozenlab</title>
+    <title>Srilanka on goozenlab</title>
     <link>https://goozenlab.github.io/tags/srilanka/</link>
-    <description>Recent content in srilanka on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Srilanka on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 25 Mar 2017 08:00:00 +0530</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/srilanka/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 25 Mar 2017 08:00:00 +0530</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/srilanka/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>アヌラーダプラ、スリランカのインターネット事情</title>
       <link>https://goozenlab.github.io/blog/2017/03/internet-anuradhapura/</link>
       <pubDate>Sat, 25 Mar 2017 08:00:00 +0530</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2017/03/internet-anuradhapura/</guid>
       <description>スリランカ、文化三角地帯のアヌラーダプラにいます。チャリダーデビューの予定でしたが、残念ながら単身での旅行。 道で声をかけられた宿にチェックイ</description>
     </item>
-    
     <item>
       <title>スリランカ、キャンディーのインターネット事情</title>
       <link>https://goozenlab.github.io/blog/2012/03/internet-kandy/</link>
       <pubDate>Sat, 10 Mar 2012 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/03/internet-kandy/</guid>
       <description>泊まった宿(YMBA:YoungManBuddhistAssosiation、横にはYMMAがありました。もちろんYMCAもあります。)には</description>
     </item>
-    
   </channel>
 </rss>

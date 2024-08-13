@@ -1,86 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on goozenlab</title>
+    <title>Hugo on goozenlab</title>
     <link>https://goozenlab.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Hugo on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 09 Nov 2022 08:30:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 09 Nov 2022 08:30:00 +0545</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでカスタムクラスを追加する方法</title>
       <link>https://goozenlab.github.io/blog/2022/11/hugo-custom-class/</link>
       <pubDate>Wed, 09 Nov 2022 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/11/hugo-custom-class/</guid>
       <description>テーブルにシンプルな PureTable : https://purecss.io/tables/ を使っています。 Hugoでカスタム・クラスを簡単に追加できる方法があるのは聞いたことがあったのですが、 まぁ、気にな</description>
     </item>
-    
     <item>
       <title>Hugo テーブルにクラスを割り当てる</title>
       <link>https://goozenlab.github.io/blog/2018/09/hugo-mmark/</link>
       <pubDate>Wed, 05 Sep 2018 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/hugo-mmark/</guid>
       <description>通常マークアップでテーブルを書くときには、下記のような表記になります。（いつも書き方を忘れます。） Name | Age --------|-----: Bob | 27 Alice | 23 ただ、hugoで出力さ</description>
     </item>
-    
     <item>
       <title>Hugo ショートコード</title>
       <link>https://goozenlab.github.io/blog/2018/08/hugo-shortcodes/</link>
       <pubDate>Wed, 29 Aug 2018 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/08/hugo-shortcodes/</guid>
       <description>Hugoには投稿記事から簡単なカスタムスニペットを呼び出すための、ショートコードと呼ばれるものがあります。 例のようにユーチューブの動画を埋め</description>
     </item>
-    
     <item>
       <title>Webサイト構築</title>
       <link>https://goozenlab.github.io/blog/2018/05/wp-pure-site/</link>
       <pubDate>Wed, 02 May 2018 17:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/05/wp-pure-site/</guid>
       <description>最近はちょっとした縁があって、Webサイト構築・更新に勤しんでます。 久しぶりのウェブ開発なので、ちょっとした浦島太郎状態。時代の流れをすごく</description>
     </item>
-    
     <item>
       <title>HugoとSimplenoteでgitHub-page</title>
       <link>https://goozenlab.github.io/blog/2015/03/hugo-simplenote/</link>
       <pubDate>Fri, 13 Mar 2015 13:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/hugo-simplenote/</guid>
       <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換え</description>
     </item>
-    
     <item>
       <title>HugoのPagenate</title>
       <link>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</link>
       <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</guid>
       <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。 index.h</description>
     </item>
-    
     <item>
       <title>Hugoを少し弄る</title>
       <link>https://goozenlab.github.io/blog/2015/03/hugo-template/</link>
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/hugo-template/</guid>
       <description>移行のためHugoをnofancyを基にして色々と調整しています。 テンプレート このサイトでは、違いは微妙ですがブログ用とアプリ用のテンプレー</description>
     </item>
-    
     <item>
       <title>Gem地獄で Hugo に移行</title>
       <link>https://goozenlab.github.io/blog/2015/03/moving-hugo/</link>
       <pubDate>Thu, 05 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/moving-hugo/</guid>
       <description>ヒンズーエリアですと、今日はホーリーというお祭りの日です。色の着いた粉を塗りかけられます。でも、インドに比べると地味な感じかな。 ちょっと開発</description>
     </item>
-    
   </channel>
 </rss>

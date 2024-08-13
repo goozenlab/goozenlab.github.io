@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kyrgyz on goozenlab</title>
+    <title>Kyrgyz on goozenlab</title>
     <link>https://goozenlab.github.io/tags/kyrgyz/</link>
-    <description>Recent content in kyrgyz on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Kyrgyz on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 26 Aug 2015 07:30:00 +0600</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/kyrgyz/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 26 Aug 2015 07:30:00 +0600</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/kyrgyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>チョルポンアタ、キルギスのインターネット事情</title>
       <link>https://goozenlab.github.io/blog/2015/08/internet-cholpon/</link>
       <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/08/internet-cholpon/</guid>
       <description>ビシュケクから３時間くらいはなれた避暑地かつビーチリゾートのチョルポンアタ。 イシククル湖： 湖なので水平線は見えませんが、対岸に連なる山々が見</description>
     </item>
-    
     <item>
       <title>オシュからホジャンドまで</title>
       <link>https://goozenlab.github.io/blog/2015/07/oshu-khojand/</link>
       <pubDate>Wed, 22 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/oshu-khojand/</guid>
       <description>オシュからタジキスタンに公共バスを乗り継いで（安く）向かうには、バトケン（キルギス）〜 国境 〜 イスファラ（タジキスタン）、を経由してホジャンド</description>
     </item>
-    
     <item>
       <title>トクトグルからオシュまで</title>
       <link>https://goozenlab.github.io/blog/2015/07/toktogul-oshu/</link>
       <pubDate>Tue, 21 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/toktogul-oshu/</guid>
       <description>ビシュケクから一気にオシュというのも味気ないし、移動時間も１０時間くらいと少々長い。景観も良いらしいし途中一息を入れるため、貯水池のあるトク</description>
     </item>
-    
     <item>
       <title>ビシュケク、キルギスのインターネット事情</title>
       <link>https://goozenlab.github.io/blog/2015/07/internet-bishkek/</link>
       <pubDate>Sun, 05 Jul 2015 07:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/internet-bishkek/</guid>
       <description>ビシケク、沈没宿の南旅館に到着。人に聞ききまくり、心優しい化粧品店勤務の女性に玄関先までついてきてもらう。。（迷子になった子供のような気分。</description>
     </item>
-    
   </channel>
 </rss>

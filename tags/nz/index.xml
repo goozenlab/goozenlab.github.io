@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nz on goozenlab</title>
+    <title>Nz on goozenlab</title>
     <link>https://goozenlab.github.io/tags/nz/</link>
-    <description>Recent content in nz on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nz on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 Mar 2011 14:41:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/nz/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 03 Mar 2011 14:41:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/nz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ネルソン、ニュージーランドのインターネット事情</title>
       <link>https://goozenlab.github.io/blog/2011/03/internet-nelson/</link>
       <pubDate>Thu, 03 Mar 2011 14:41:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2011/03/internet-nelson/</guid>
       <description>NZでは住みたい町ナンバーワンと言われているらしい街のネルソンに逗留中です。 宿（アーモンドという宿です。猫もいましたし、こぎれいで、オススメ</description>
     </item>
-    
   </channel>
 </rss>

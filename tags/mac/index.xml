@@ -1,203 +1,160 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mac on goozenlab</title>
+    <title>Mac on goozenlab</title>
     <link>https://goozenlab.github.io/tags/mac/</link>
-    <description>Recent content in mac on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mac on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Apr 2022 16:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Apr 2022 16:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asahi Linux (Debian) のインストール</title>
       <link>https://goozenlab.github.io/blog/2022/04/install-asahi-debian/</link>
       <pubDate>Tue, 12 Apr 2022 16:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/04/install-asahi-debian/</guid>
       <description>なんか最近はごにょごにょと色々と検証中だったりしてます。無為な時間が過ぎていく。。。 さて、気になっていたAsahi Linuxがアルファ・リリ</description>
     </item>
-    
     <item>
       <title>gpgでファイルを検証</title>
       <link>https://goozenlab.github.io/blog/2020/01/gpg-verify/</link>
       <pubDate>Thu, 30 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/gpg-verify/</guid>
       <description>Kde NeonのISOファイルを回線が不安定なので配布元でないところから配布されているトレントを使ってダウンロードしました。 まぁ大丈夫でしょうが</description>
     </item>
-    
     <item>
       <title>VSCodium</title>
       <link>https://goozenlab.github.io/blog/2020/01/vscodium/</link>
       <pubDate>Thu, 23 Jan 2020 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/01/vscodium/</guid>
       <description>VisualStudio Codeのピュア・オープンソースバージョンのVSCodium。 VSCodeはオープンソースで公開されていますがマイクロソフトから提供されて</description>
     </item>
-    
     <item>
       <title>youtube動画をダウンロード</title>
       <link>https://goozenlab.github.io/blog/2019/12/download-youtube/</link>
       <pubDate>Tue, 03 Dec 2019 18:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/download-youtube/</guid>
       <description>ユーチューブで気になった動画があったので、ダウンロードをする方法を探しました。 割とあっさり見つかり、割と簡単。。 インストール さて、インストー</description>
     </item>
-    
     <item>
       <title>ディスクユーティリティでソフトウェアRaidを構築：MacOS編</title>
       <link>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</link>
       <pubDate>Thu, 17 Oct 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/10/macos-software-raid/</guid>
       <description>持っていたファイルサーバーのハードが壊れていくつかのハードディスクが行き場なく手元に残ってました。 信頼失墜なので同じファイルサーバーを買って</description>
     </item>
-    
     <item>
       <title>boostnote</title>
       <link>https://goozenlab.github.io/blog/2019/09/boostnote/</link>
       <pubDate>Tue, 03 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/boostnote/</guid>
       <description>情報やメモの流れを考えています。 だらしないだけなのかもしてないけど、分散させると所在が掴めなって訳が分からなくなるし、 一箇所にまとめるとグジ</description>
     </item>
-    
     <item>
       <title>Netdata ダークモード・モニタリングソフト</title>
       <link>https://goozenlab.github.io/blog/2019/03/netdata-mac/</link>
       <pubDate>Sat, 23 Mar 2019 16:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/netdata-mac/</guid>
       <description>滞在中のタイ、チェンマイ。酷暑に向かい、日に日に熱くなってきてます。しかも、ここ数日はかーーなりガスってます。PMが飛びまくっているようです</description>
     </item>
-    
     <item>
       <title>さりげなく、再登場。</title>
       <link>https://goozenlab.github.io/blog/2019/03/macbook-air-2018/</link>
       <pubDate>Tue, 19 Mar 2019 06:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/macbook-air-2018/</guid>
       <description>控えめに、いきなり来ましたね、iPad mini5。わかりますよ、気分的には、お～ぴらに、紹介されてもね、ほとんどデザインの変更も無いし。謙虚</description>
     </item>
-    
     <item>
       <title>MBA11のロジックボード換装</title>
       <link>https://goozenlab.github.io/blog/2018/11/replace-mba-logicboard/</link>
       <pubDate>Thu, 15 Nov 2018 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/11/replace-mba-logicboard/</guid>
       <description>知人のMBA11/2014が故障したらしく、我が家の使っていなかったMBP15/2010と物々交換をする。 素直に直すのも面白みが無いので、新</description>
     </item>
-    
     <item>
       <title>新しいMacBook Air</title>
       <link>https://goozenlab.github.io/blog/2018/11/macbook-air-2018/</link>
       <pubDate>Tue, 13 Nov 2018 19:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/11/macbook-air-2018/</guid>
       <description>日本に帰国後、ちょっと山へ断食キャンプ（遭難キャンプとも）に行ったり、マックブックを分解、基盤をオーブンで焼いたり（失敗）、ミシンでズボンを</description>
     </item>
-    
     <item>
       <title>MacBook Pro15逝く</title>
       <link>https://goozenlab.github.io/blog/2018/10/dead-mbp15-2011/</link>
       <pubDate>Mon, 01 Oct 2018 11:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/10/dead-mbp15-2011/</guid>
       <description>あぁっ〜〜〜ーー。 アプリ更新作業の真只中、作業端末のMacbook Pro15/2011が逝ってまいましたーー。 なぜこのタイミグでくるんよ？？</description>
     </item>
-    
     <item>
       <title>MacBook Pro15のキーボードを交換する</title>
       <link>https://goozenlab.github.io/blog/2018/10/replace-keyboard/</link>
       <pubDate>Mon, 01 Oct 2018 08:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/10/replace-keyboard/</guid>
       <description>手元に両親に奪われ、挙句放置されていたMacBook Pro15/2010があります。 キーボードの不具合があって、アップルストアーに持ち込むも</description>
     </item>
-    
     <item>
       <title>アップルの新しい商品</title>
       <link>https://goozenlab.github.io/blog/2018/09/apple-event/</link>
       <pubDate>Fri, 14 Sep 2018 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/apple-event/</guid>
       <description>毎年恒例のイベントにて新しい商品が発表されました。見るつもりはなかったのだけれども、眠れず、結局ライブで見てしまいました。 さて、内容のほどは</description>
     </item>
-    
     <item>
       <title>MacBook Pro 2016</title>
       <link>https://goozenlab.github.io/blog/2016/11/mbp2016/</link>
       <pubDate>Sat, 26 Nov 2016 22:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/11/mbp2016/</guid>
       <description>MacBook Pro 15, Early 2011の所有者としてアップグレードのタイミングを伺いつつここ数年が経つ。液晶に滲みが出、重いのが難ではあるが、未だ現役。 ひさーーし</description>
     </item>
-    
     <item>
       <title>Fusion drive を作る</title>
       <link>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</link>
       <pubDate>Thu, 03 Mar 2016 12:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/03/create-fusiondrive/</guid>
       <description>MacBookProのディスク入替えついでにフュージョン化とElCapitanのクリーンインストールを行う。自分の為のメモとして書いておく。</description>
     </item>
-    
     <item>
       <title>SurfacePad</title>
       <link>https://goozenlab.github.io/blog/2015/05/surfacepad/</link>
       <pubDate>Wed, 20 May 2015 19:41:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/05/surfacepad/</guid>
       <description>MBP15でも使っていた革製パームレストのSurfacePadをMBA11にも付ける。 日本のアマゾンでは売っていなかったので、アメリカアマゾ</description>
     </item>
-    
     <item>
       <title>iTuneで他母艦接続のiPod音楽ファイルを再生</title>
       <link>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</link>
       <pubDate>Mon, 02 Feb 2015 15:35:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/02/play-ipod-library/</guid>
       <description>MBP15と繋げている240GB化iPodの音楽ファイル（ストアーで買った物以外）をMBA11のiTuneで再生できることに気がつきました！</description>
     </item>
-    
     <item>
       <title>MBA11を10日間使ってみて</title>
       <link>https://goozenlab.github.io/blog/2014/11/mba-review/</link>
       <pubDate>Fri, 21 Nov 2014 20:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/11/mba-review/</guid>
       <description>10日間ぐらいMBA11を使ってみて思った事を今更ながら書く。 軽い。 小さい。 電池の保ちが期待以上によい。ほぼ一日使える。 付属のアダプターが小</description>
     </item>
-    
     <item>
       <title>Chromiumの半自動更新</title>
       <link>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</link>
       <pubDate>Sat, 27 Jul 2013 10:07:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/chromium-autoupdate/</guid>
       <description>ここ最近、ウイルスに感染したかのようにサファリが良く落ちます。 ということで、Chromeから余計な機能を抜いたChromiumに変更しました</description>
     </item>
-    
     <item>
       <title>Textmate v2</title>
       <link>https://goozenlab.github.io/blog/2013/03/textmate2/</link>
       <pubDate>Mon, 04 Mar 2013 07:03:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/03/textmate2/</guid>
       <description>最近エディタをTextmateに替えました。一時期試しに使って日本語の表示／入力に不具合あってそれ以来手を付けていなかったのですが、去年オー</description>
     </item>
-    
     <item>
       <title>眼精疲労と白黒モニター</title>
       <link>https://goozenlab.github.io/blog/2012/11/gray-mode/</link>
       <pubDate>Tue, 20 Nov 2012 16:43:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/11/gray-mode/</guid>
       <description>最近乾燥地域にいるためか眼が疲れています。ショボショボ感がとれないので、気分転換も含め、白黒モードでマックを使ってます。システム環境のアクセ</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,1172 +4,934 @@
     <title>Tags on goozenlab</title>
     <link>https://goozenlab.github.io/tags/</link>
     <description>Recent content in Tags on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 03 Sep 2023 10:00:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 05 Sep 2023 06:30:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>littlist</title>
-      <link>https://goozenlab.github.io/tags/littlist/</link>
-      <pubDate>Sun, 03 Sep 2023 10:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/littlist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>update</title>
-      <link>https://goozenlab.github.io/tags/update/</link>
-      <pubDate>Sun, 03 Sep 2023 10:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/update/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ohayo</title>
-      <link>https://goozenlab.github.io/tags/ohayo/</link>
-      <pubDate>Sat, 02 Sep 2023 05:04:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/ohayo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reading</title>
-      <link>https://goozenlab.github.io/tags/reading/</link>
-      <pubDate>Sun, 02 Jul 2023 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips&amp;tricks</title>
-      <link>https://goozenlab.github.io/tags/tipstricks/</link>
-      <pubDate>Fri, 23 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/tipstricks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orange pill</title>
-      <link>https://goozenlab.github.io/tags/orange-pill/</link>
-      <pubDate>Sun, 11 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/orange-pill/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lightning</title>
-      <link>https://goozenlab.github.io/tags/lightning/</link>
-      <pubDate>Tue, 06 Dec 2022 10:07:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/lightning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vpn</title>
-      <link>https://goozenlab.github.io/tags/vpn/</link>
-      <pubDate>Tue, 06 Dec 2022 10:07:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/vpn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wallet</title>
-      <link>https://goozenlab.github.io/tags/wallet/</link>
-      <pubDate>Fri, 02 Dec 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/wallet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fire</title>
-      <link>https://goozenlab.github.io/tags/fire/</link>
-      <pubDate>Fri, 25 Nov 2022 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/fire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ai</title>
-      <link>https://goozenlab.github.io/tags/ai/</link>
-      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>macos</title>
-      <link>https://goozenlab.github.io/tags/macos/</link>
-      <pubDate>Sat, 19 Nov 2022 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://goozenlab.github.io/tags/hugo/</link>
-      <pubDate>Wed, 09 Nov 2022 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>esg</title>
-      <link>https://goozenlab.github.io/tags/esg/</link>
-      <pubDate>Thu, 25 Aug 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/esg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>coldcard</title>
-      <link>https://goozenlab.github.io/tags/coldcard/</link>
-      <pubDate>Sun, 31 Jul 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/coldcard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hardware wallet</title>
-      <link>https://goozenlab.github.io/tags/hardware-wallet/</link>
-      <pubDate>Sun, 31 Jul 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/hardware-wallet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>seed</title>
-      <link>https://goozenlab.github.io/tags/seed/</link>
-      <pubDate>Wed, 27 Jul 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/seed/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>herb</title>
-      <link>https://goozenlab.github.io/tags/herb/</link>
-      <pubDate>Mon, 02 May 2022 22:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/herb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>debian</title>
-      <link>https://goozenlab.github.io/tags/debian/</link>
-      <pubDate>Tue, 12 Apr 2022 16:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/debian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>https://goozenlab.github.io/tags/mac/</link>
-      <pubDate>Tue, 12 Apr 2022 16:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://goozenlab.github.io/tags/linux/</link>
-      <pubDate>Tue, 15 Mar 2022 16:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>turkey</title>
-      <link>https://goozenlab.github.io/tags/turkey/</link>
-      <pubDate>Wed, 18 Aug 2021 13:30:00 +0100</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/turkey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vegetarian</title>
-      <link>https://goozenlab.github.io/tags/vegetarian/</link>
-      <pubDate>Tue, 06 Jul 2021 12:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/vegetarian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>de-googled</title>
-      <link>https://goozenlab.github.io/tags/de-googled/</link>
-      <pubDate>Sun, 13 Jun 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/de-googled/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>open-source</title>
-      <link>https://goozenlab.github.io/tags/open-source/</link>
-      <pubDate>Sun, 13 Jun 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>okinawa</title>
-      <link>https://goozenlab.github.io/tags/okinawa/</link>
-      <pubDate>Sun, 06 Jun 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/okinawa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>xiaomi</title>
-      <link>https://goozenlab.github.io/tags/xiaomi/</link>
-      <pubDate>Sat, 05 Jun 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/xiaomi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>btc</title>
-      <link>https://goozenlab.github.io/tags/btc/</link>
-      <pubDate>Tue, 04 May 2021 14:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/btc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tails</title>
-      <link>https://goozenlab.github.io/tags/tails/</link>
-      <pubDate>Mon, 22 Mar 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/tails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://goozenlab.github.io/tags/review/</link>
-      <pubDate>Sun, 21 Mar 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>https://goozenlab.github.io/tags/network/</link>
-      <pubDate>Fri, 26 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GL.iNet</title>
-      <link>https://goozenlab.github.io/tags/gl.inet/</link>
-      <pubDate>Mon, 22 Feb 2021 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/gl.inet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GAFA</title>
-      <link>https://goozenlab.github.io/tags/gafa/</link>
-      <pubDate>Sun, 31 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/gafa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>custom rom</title>
-      <link>https://goozenlab.github.io/tags/custom-rom/</link>
-      <pubDate>Sat, 30 Jan 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/custom-rom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>calyxOS</title>
-      <link>https://goozenlab.github.io/tags/calyxos/</link>
-      <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/calyxos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pixel</title>
-      <link>https://goozenlab.github.io/tags/pixel/</link>
-      <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/pixel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oneplus</title>
-      <link>https://goozenlab.github.io/tags/oneplus/</link>
-      <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/oneplus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ubuntu touch</title>
-      <link>https://goozenlab.github.io/tags/ubuntu-touch/</link>
-      <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/ubuntu-touch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optout</title>
-      <link>https://goozenlab.github.io/tags/optout/</link>
-      <pubDate>Thu, 14 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/optout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gsi</title>
-      <link>https://goozenlab.github.io/tags/gsi/</link>
-      <pubDate>Wed, 13 Jan 2021 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/gsi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grapheneOS</title>
-      <link>https://goozenlab.github.io/tags/grapheneos/</link>
-      <pubDate>Tue, 12 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/grapheneos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arch</title>
-      <link>https://goozenlab.github.io/tags/arch/</link>
-      <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/arch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>manjaro</title>
-      <link>https://goozenlab.github.io/tags/manjaro/</link>
-      <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/manjaro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>neon</title>
-      <link>https://goozenlab.github.io/tags/neon/</link>
-      <pubDate>Tue, 22 Dec 2020 19:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/neon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>openwrt</title>
-      <link>https://goozenlab.github.io/tags/openwrt/</link>
-      <pubDate>Mon, 21 Dec 2020 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/openwrt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry pi</title>
-      <link>https://goozenlab.github.io/tags/raspberry-pi/</link>
-      <pubDate>Mon, 21 Dec 2020 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freenas</title>
-      <link>https://goozenlab.github.io/tags/freenas/</link>
-      <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/freenas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>thinkpad</title>
-      <link>https://goozenlab.github.io/tags/thinkpad/</link>
-      <pubDate>Thu, 30 Jul 2020 10:00:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/thinkpad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>doop</title>
-      <link>https://goozenlab.github.io/tags/doop/</link>
-      <pubDate>Thu, 30 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/doop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cosper</title>
-      <link>https://goozenlab.github.io/tags/cosper/</link>
-      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/cosper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pranatice</title>
-      <link>https://goozenlab.github.io/tags/pranatice/</link>
-      <pubDate>Wed, 29 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/pranatice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dandori</title>
-      <link>https://goozenlab.github.io/tags/dandori/</link>
-      <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/dandori/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tapas</title>
-      <link>https://goozenlab.github.io/tags/tapas/</link>
-      <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/tapas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ippuku</title>
-      <link>https://goozenlab.github.io/tags/ippuku/</link>
-      <pubDate>Sun, 26 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
-      <guid>https://goozenlab.github.io/tags/ippuku/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sati</title>
+      <title>Sati</title>
       <link>https://goozenlab.github.io/tags/sati/</link>
-      <pubDate>Sat, 25 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/sati/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Update</title>
+      <link>https://goozenlab.github.io/tags/update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/update/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Littlist</title>
+      <link>https://goozenlab.github.io/tags/littlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/littlist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ohayo</title>
+      <link>https://goozenlab.github.io/tags/ohayo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/ohayo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reading</title>
+      <link>https://goozenlab.github.io/tags/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/reading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips&amp;tricks</title>
+      <link>https://goozenlab.github.io/tags/tipstricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/tipstricks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orange Pill</title>
+      <link>https://goozenlab.github.io/tags/orange-pill/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/orange-pill/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lightning</title>
+      <link>https://goozenlab.github.io/tags/lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/lightning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vpn</title>
+      <link>https://goozenlab.github.io/tags/vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/vpn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wallet</title>
+      <link>https://goozenlab.github.io/tags/wallet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/wallet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fire</title>
+      <link>https://goozenlab.github.io/tags/fire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/fire/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>https://goozenlab.github.io/tags/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macos</title>
+      <link>https://goozenlab.github.io/tags/macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://goozenlab.github.io/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esg</title>
+      <link>https://goozenlab.github.io/tags/esg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/esg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coldcard</title>
+      <link>https://goozenlab.github.io/tags/coldcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/coldcard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware Wallet</title>
+      <link>https://goozenlab.github.io/tags/hardware-wallet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/hardware-wallet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seed</title>
+      <link>https://goozenlab.github.io/tags/seed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/seed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Herb</title>
+      <link>https://goozenlab.github.io/tags/herb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/herb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debian</title>
+      <link>https://goozenlab.github.io/tags/debian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac</title>
+      <link>https://goozenlab.github.io/tags/mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://goozenlab.github.io/tags/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Turkey</title>
+      <link>https://goozenlab.github.io/tags/turkey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/turkey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vegetarian</title>
+      <link>https://goozenlab.github.io/tags/vegetarian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/vegetarian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>De-Googled</title>
+      <link>https://goozenlab.github.io/tags/de-googled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/de-googled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>https://goozenlab.github.io/tags/open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Okinawa</title>
+      <link>https://goozenlab.github.io/tags/okinawa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/okinawa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiaomi</title>
+      <link>https://goozenlab.github.io/tags/xiaomi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/xiaomi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Btc</title>
+      <link>https://goozenlab.github.io/tags/btc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/btc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tails</title>
+      <link>https://goozenlab.github.io/tags/tails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/tails/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>https://goozenlab.github.io/tags/review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://goozenlab.github.io/tags/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GL.iNet</title>
+      <link>https://goozenlab.github.io/tags/gl.inet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/gl.inet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gafa</title>
+      <link>https://goozenlab.github.io/tags/gafa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/gafa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Custom Rom</title>
+      <link>https://goozenlab.github.io/tags/custom-rom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/custom-rom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CalyxOS</title>
+      <link>https://goozenlab.github.io/tags/calyxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/calyxos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pixel</title>
+      <link>https://goozenlab.github.io/tags/pixel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/pixel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oneplus</title>
+      <link>https://goozenlab.github.io/tags/oneplus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/oneplus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu Touch</title>
+      <link>https://goozenlab.github.io/tags/ubuntu-touch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/ubuntu-touch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optout</title>
+      <link>https://goozenlab.github.io/tags/optout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/optout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gsi</title>
+      <link>https://goozenlab.github.io/tags/gsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/gsi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GrapheneOS</title>
+      <link>https://goozenlab.github.io/tags/grapheneos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/grapheneos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arch</title>
+      <link>https://goozenlab.github.io/tags/arch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/arch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manjaro</title>
+      <link>https://goozenlab.github.io/tags/manjaro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neon</title>
+      <link>https://goozenlab.github.io/tags/neon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/neon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openwrt</title>
+      <link>https://goozenlab.github.io/tags/openwrt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/openwrt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://goozenlab.github.io/tags/raspberry-pi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freenas</title>
+      <link>https://goozenlab.github.io/tags/freenas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/freenas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thinkpad</title>
+      <link>https://goozenlab.github.io/tags/thinkpad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Doop</title>
+      <link>https://goozenlab.github.io/tags/doop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/doop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cosper</title>
+      <link>https://goozenlab.github.io/tags/cosper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/cosper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pranatice</title>
+      <link>https://goozenlab.github.io/tags/pranatice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/pranatice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dandori</title>
+      <link>https://goozenlab.github.io/tags/dandori/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/dandori/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tapas</title>
+      <link>https://goozenlab.github.io/tags/tapas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/tapas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ippuku</title>
+      <link>https://goozenlab.github.io/tags/ippuku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/ippuku/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Archer C7</title>
       <link>https://goozenlab.github.io/tags/archer-c7/</link>
-      <pubDate>Thu, 25 Jun 2020 10:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/archer-c7/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>laos</title>
+      <title>Laos</title>
       <link>https://goozenlab.github.io/tags/laos/</link>
-      <pubDate>Tue, 03 Mar 2020 15:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/laos/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>thailand</title>
+      <title>Thailand</title>
       <link>https://goozenlab.github.io/tags/thailand/</link>
-      <pubDate>Tue, 03 Mar 2020 15:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/thailand/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>zfs</title>
+      <title>Zfs</title>
       <link>https://goozenlab.github.io/tags/zfs/</link>
-      <pubDate>Sun, 23 Feb 2020 11:40:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/zfs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>exchanger</title>
+      <title>Exchanger</title>
       <link>https://goozenlab.github.io/tags/exchanger/</link>
-      <pubDate>Fri, 21 Feb 2020 14:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/exchanger/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>finance</title>
+      <title>Finance</title>
       <link>https://goozenlab.github.io/tags/finance/</link>
-      <pubDate>Fri, 21 Feb 2020 14:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/finance/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>obs</title>
+      <title>Obs</title>
       <link>https://goozenlab.github.io/tags/obs/</link>
-      <pubDate>Wed, 12 Feb 2020 18:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/obs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>arco</title>
+      <title>Arco</title>
       <link>https://goozenlab.github.io/tags/arco/</link>
-      <pubDate>Mon, 20 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/arco/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kde</title>
+      <title>Kde</title>
       <link>https://goozenlab.github.io/tags/kde/</link>
-      <pubDate>Sat, 18 Jan 2020 17:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/kde/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hackintosh</title>
+      <title>Hackintosh</title>
       <link>https://goozenlab.github.io/tags/hackintosh/</link>
-      <pubDate>Tue, 14 Jan 2020 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/hackintosh/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rayzen</title>
+      <title>Rayzen</title>
       <link>https://goozenlab.github.io/tags/rayzen/</link>
-      <pubDate>Tue, 14 Jan 2020 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/rayzen/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nokia7&#43;</title>
+      <title>Nokia7&#43;</title>
       <link>https://goozenlab.github.io/tags/nokia7&#43;/</link>
-      <pubDate>Sun, 12 Jan 2020 19:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/nokia7&#43;/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kali</title>
+      <title>Kali</title>
       <link>https://goozenlab.github.io/tags/kali/</link>
-      <pubDate>Sat, 11 Jan 2020 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/kali/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>xcode</title>
+      <title>Xcode</title>
       <link>https://goozenlab.github.io/tags/xcode/</link>
-      <pubDate>Wed, 18 Dec 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/xcode/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>health</title>
+      <title>Health</title>
       <link>https://goozenlab.github.io/tags/health/</link>
-      <pubDate>Tue, 17 Dec 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/health/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>password</title>
+      <title>“Linux”</title>
+      <link>https://goozenlab.github.io/tags/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>“Thinkpad”</title>
+      <link>https://goozenlab.github.io/tags/thinkpad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password</title>
       <link>https://goozenlab.github.io/tags/password/</link>
-      <pubDate>Tue, 10 Sep 2019 10:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/password/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sync</title>
+      <title>Sync</title>
       <link>https://goozenlab.github.io/tags/sync/</link>
-      <pubDate>Sat, 07 Sep 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/sync/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>logging</title>
+      <title>Logging</title>
       <link>https://goozenlab.github.io/tags/logging/</link>
-      <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/logging/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sway</title>
+      <title>Sway</title>
       <link>https://goozenlab.github.io/tags/sway/</link>
-      <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/sway/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>opensuse</title>
+      <title>Opensuse</title>
       <link>https://goozenlab.github.io/tags/opensuse/</link>
-      <pubDate>Mon, 02 Sep 2019 14:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/opensuse/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ipod</title>
+      <title>Ipod</title>
       <link>https://goozenlab.github.io/tags/ipod/</link>
-      <pubDate>Sun, 01 Sep 2019 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/ipod/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>music</title>
+      <title>Music</title>
       <link>https://goozenlab.github.io/tags/music/</link>
-      <pubDate>Wed, 01 May 2019 07:30:00 +0630</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/music/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cat</title>
+      <title>Cat</title>
       <link>https://goozenlab.github.io/tags/cat/</link>
-      <pubDate>Mon, 29 Apr 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/cat/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>india</title>
+      <title>India</title>
       <link>https://goozenlab.github.io/tags/india/</link>
-      <pubDate>Sun, 28 Apr 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/india/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>openVPN</title>
+      <title>OpenVPN</title>
       <link>https://goozenlab.github.io/tags/openvpn/</link>
-      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/openvpn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>VPNGate</title>
       <link>https://goozenlab.github.io/tags/vpngate/</link>
-      <pubDate>Wed, 17 Apr 2019 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/vpngate/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fasting</title>
+      <title>Fasting</title>
       <link>https://goozenlab.github.io/tags/fasting/</link>
-      <pubDate>Mon, 01 Apr 2019 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/fasting/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>buster</title>
+      <title>Buster</title>
       <link>https://goozenlab.github.io/tags/buster/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/buster/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>prepaid phone</title>
+      <title>Prepaid Phone</title>
       <link>https://goozenlab.github.io/tags/prepaid-phone/</link>
-      <pubDate>Thu, 21 Feb 2019 05:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/prepaid-phone/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>open</title>
+      <title>Open</title>
       <link>https://goozenlab.github.io/tags/open/</link>
-      <pubDate>Sat, 16 Feb 2019 17:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/open/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>swift</title>
+      <title>Swift</title>
       <link>https://goozenlab.github.io/tags/swift/</link>
-      <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/swift/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>komoot</title>
+      <title>Komoot</title>
       <link>https://goozenlab.github.io/tags/komoot/</link>
-      <pubDate>Sun, 23 Sep 2018 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/komoot/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>shivambu</title>
+      <title>Shivambu</title>
       <link>https://goozenlab.github.io/tags/shivambu/</link>
-      <pubDate>Sat, 22 Sep 2018 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/shivambu/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vaio p</title>
+      <title>Vaio P</title>
       <link>https://goozenlab.github.io/tags/vaio-p/</link>
-      <pubDate>Sun, 01 Apr 2018 13:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/vaio-p/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>internet</title>
+      <title>Internet</title>
       <link>https://goozenlab.github.io/tags/internet/</link>
-      <pubDate>Thu, 03 Aug 2017 18:00:00 +0530</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/internet/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>visa</title>
+      <title>Visa</title>
       <link>https://goozenlab.github.io/tags/visa/</link>
-      <pubDate>Fri, 21 Jul 2017 18:15:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/visa/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>dahon</title>
+      <title>Dahon</title>
       <link>https://goozenlab.github.io/tags/dahon/</link>
-      <pubDate>Tue, 16 May 2017 20:30:00 +1000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/dahon/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>srilanka</title>
+      <title>Srilanka</title>
       <link>https://goozenlab.github.io/tags/srilanka/</link>
-      <pubDate>Sat, 25 Mar 2017 08:00:00 +0530</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/srilanka/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>(a)</title>
+      <title> Laos</title>
+      <link>https://goozenlab.github.io/tags/-laos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/tags/-laos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>(A)</title>
       <link>https://goozenlab.github.io/tags/a/</link>
-      <pubDate>Tue, 29 Nov 2016 14:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/a/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bug</title>
+      <title>Bug</title>
       <link>https://goozenlab.github.io/tags/bug/</link>
-      <pubDate>Mon, 10 Oct 2016 10:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/bug/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>listaria</title>
+      <title>Listaria</title>
       <link>https://goozenlab.github.io/tags/listaria/</link>
-      <pubDate>Thu, 15 Sep 2016 07:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/listaria/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>design</title>
+      <title>Design</title>
       <link>https://goozenlab.github.io/tags/design/</link>
-      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/design/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>icon</title>
+      <title>Icon</title>
       <link>https://goozenlab.github.io/tags/icon/</link>
-      <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/icon/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cambodia</title>
+      <title>Cambodia</title>
       <link>https://goozenlab.github.io/tags/cambodia/</link>
-      <pubDate>Fri, 25 Dec 2015 17:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/cambodia/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>russia</title>
+      <title>Russia</title>
       <link>https://goozenlab.github.io/tags/russia/</link>
-      <pubDate>Sat, 19 Sep 2015 17:30:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/russia/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kazakhstan</title>
+      <title>Kazakhstan</title>
       <link>https://goozenlab.github.io/tags/kazakhstan/</link>
-      <pubDate>Sun, 06 Sep 2015 10:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/kazakhstan/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kyrgyz</title>
+      <title>Kyrgyz</title>
       <link>https://goozenlab.github.io/tags/kyrgyz/</link>
-      <pubDate>Wed, 26 Aug 2015 07:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/kyrgyz/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tajikistan</title>
       <link>https://goozenlab.github.io/tags/tajikistan/</link>
-      <pubDate>Tue, 04 Aug 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/tajikistan/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>taxi</title>
+      <title>Taxi</title>
       <link>https://goozenlab.github.io/tags/taxi/</link>
-      <pubDate>Tue, 28 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/taxi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>objective-c</title>
+      <title>Objective-C</title>
       <link>https://goozenlab.github.io/tags/objective-c/</link>
-      <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/objective-c/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pakistan</title>
+      <title>Pakistan</title>
       <link>https://goozenlab.github.io/tags/pakistan/</link>
-      <pubDate>Mon, 13 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/pakistan/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>uzbekistan</title>
+      <title>Uzbekistan</title>
       <link>https://goozenlab.github.io/tags/uzbekistan/</link>
-      <pubDate>Mon, 06 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/uzbekistan/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>china</title>
+      <title>China</title>
       <link>https://goozenlab.github.io/tags/china/</link>
-      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/china/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>train</title>
+      <title>Train</title>
       <link>https://goozenlab.github.io/tags/train/</link>
-      <pubDate>Mon, 29 Jun 2015 20:12:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/train/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>持ち物</title>
       <link>https://goozenlab.github.io/tags/%E6%8C%81%E3%81%A1%E7%89%A9/</link>
-      <pubDate>Sat, 20 Jun 2015 15:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/%E6%8C%81%E3%81%A1%E7%89%A9/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nepal</title>
+      <title>Nepal</title>
       <link>https://goozenlab.github.io/tags/nepal/</link>
-      <pubDate>Wed, 08 Apr 2015 18:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/nepal/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>backpack</title>
+      <title>Backpack</title>
       <link>https://goozenlab.github.io/tags/backpack/</link>
-      <pubDate>Sat, 04 Apr 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/backpack/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>iOS</title>
+      <title>IOS</title>
       <link>https://goozenlab.github.io/tags/ios/</link>
-      <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/ios/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kotlin</title>
+      <title>Kotlin</title>
       <link>https://goozenlab.github.io/tags/kotlin/</link>
-      <pubDate>Sat, 14 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/kotlin/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DIY</title>
       <link>https://goozenlab.github.io/tags/diy/</link>
-      <pubDate>Mon, 09 Mar 2015 14:50:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/diy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>coredb</title>
+      <title>Coredb</title>
       <link>https://goozenlab.github.io/tags/coredb/</link>
-      <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/coredb/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>malaysia</title>
+      <title>Malaysia</title>
       <link>https://goozenlab.github.io/tags/malaysia/</link>
-      <pubDate>Fri, 27 Feb 2015 18:00:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/malaysia/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>develop</title>
+      <title>Develop</title>
       <link>https://goozenlab.github.io/tags/develop/</link>
-      <pubDate>Thu, 26 Feb 2015 07:25:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/develop/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pinocle</title>
+      <title>Pinocle</title>
       <link>https://goozenlab.github.io/tags/pinocle/</link>
-      <pubDate>Thu, 05 Feb 2015 07:35:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/pinocle/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>viriya</title>
+      <title>Viriya</title>
       <link>https://goozenlab.github.io/tags/viriya/</link>
-      <pubDate>Tue, 30 Jul 2013 11:14:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/viriya/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cloud</title>
+      <title>Cloud</title>
       <link>https://goozenlab.github.io/tags/cloud/</link>
-      <pubDate>Wed, 05 Dec 2012 12:47:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/cloud/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>meditation</title>
+      <title>Meditation</title>
       <link>https://goozenlab.github.io/tags/meditation/</link>
-      <pubDate>Wed, 21 Nov 2012 10:29:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/meditation/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>dns</title>
+      <title>Dns</title>
       <link>https://goozenlab.github.io/tags/dns/</link>
-      <pubDate>Wed, 17 Oct 2012 07:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/dns/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>austraria</title>
+      <title>Austraria</title>
       <link>https://goozenlab.github.io/tags/austraria/</link>
-      <pubDate>Sun, 10 Jun 2012 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/austraria/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mexico</title>
+      <title>Mexico</title>
       <link>https://goozenlab.github.io/tags/mexico/</link>
-      <pubDate>Mon, 11 Jul 2011 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/mexico/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>canada</title>
+      <title>Canada</title>
       <link>https://goozenlab.github.io/tags/canada/</link>
-      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/canada/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nz</title>
+      <title>Nz</title>
       <link>https://goozenlab.github.io/tags/nz/</link>
-      <pubDate>Thu, 03 Mar 2011 14:41:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/nz/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>google app</title>
+      <title>Google App</title>
       <link>https://goozenlab.github.io/tags/google-app/</link>
-      <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/google-app/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mail server</title>
+      <title>Mail Server</title>
       <link>https://goozenlab.github.io/tags/mail-server/</link>
-      <pubDate>Thu, 10 Feb 2011 19:41:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/tags/mail-server/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

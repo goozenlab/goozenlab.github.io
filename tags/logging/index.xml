@@ -1,86 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>logging on goozenlab</title>
+    <title>Logging on goozenlab</title>
     <link>https://goozenlab.github.io/tags/logging/</link>
-    <description>Recent content in logging on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Logging on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 05 Sep 2019 11:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 05 Sep 2019 11:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ネットスピードを計測</title>
       <link>https://goozenlab.github.io/blog/2019/09/speedtest-cli/</link>
       <pubDate>Thu, 05 Sep 2019 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/speedtest-cli/</guid>
       <description>コマンドでサーバーから外へのネットスピードを計ります。 おなじみの https://www.speedtest.net を利用しているようです。 インストール パイソンのモジュールなのでpip install sp</description>
     </item>
-    
     <item>
       <title>AmazfitBipのデータを可視化</title>
       <link>https://goozenlab.github.io/blog/2019/08/amazfit-bip-data/</link>
       <pubDate>Thu, 22 Aug 2019 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/amazfit-bip-data/</guid>
       <description>昨日はビザ・クラアランスのため、 タイ・メーサイ、ミャンマー・タチレクへ日帰りで行ってきました。 国境を越えるときは、ちょっとドキドキするんです</description>
     </item>
-    
     <item>
       <title>ビットコイン価格をGrafanaでグラフ化</title>
       <link>https://goozenlab.github.io/blog/2019/08/grafana-bitcoin/</link>
       <pubDate>Tue, 20 Aug 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/grafana-bitcoin/</guid>
       <description>チェンライ二日連続晴天。 ビットコイン、どっかーーっと景気良く価格急上昇で年金確保！と行きたいところですが、、 あと10倍ぐらいに、早いことたの</description>
     </item>
-    
     <item>
       <title>天候情報を取得</title>
       <link>https://goozenlab.github.io/blog/2019/08/openweathermap-settings/</link>
       <pubDate>Sun, 18 Aug 2019 09:40:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/openweathermap-settings/</guid>
       <description>制約が少しありますが個人的な仕様であれば、ほぼ無料で使うことのできるAPIが https://openweathermap.org より提供されています。 行きたい国々の天気をチェック、旅情にあふ</description>
     </item>
-    
     <item>
       <title>Telegrafのインストール</title>
       <link>https://goozenlab.github.io/blog/2019/08/telegraf-pi-install/</link>
       <pubDate>Wed, 14 Aug 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/telegraf-pi-install/</guid>
       <description>システムのモニタリングはtelegraf(ログ収集）-&amp;gt; influxDB(データーベース）-&amp;gt; grafana(表示）で行います。</description>
     </item>
-    
     <item>
       <title>influxDBのインストール</title>
       <link>https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/</link>
       <pubDate>Tue, 13 Aug 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/influxdb-pi-install/</guid>
       <description>Grafanaで使うデーターベース、InfluxDBをインストールします。 InfluxDBはオープンソースの中でポピュラーな MySQLなどの</description>
     </item>
-    
     <item>
       <title>Grafanaのインストール</title>
       <link>https://goozenlab.github.io/blog/2019/08/grafana-pi-install/</link>
       <pubDate>Mon, 12 Aug 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/grafana-pi-install/</guid>
       <description>インストール バスターのパッケージではかなりの追加パッケージが必要なのですが、 開発会社レポジトリーのバージョンは追加のパッケージも全くありませ</description>
     </item>
-    
     <item>
       <title>Xiaomi 気温湿度計</title>
       <link>https://goozenlab.github.io/blog/2019/03/mi-temperature-monitor/</link>
       <pubDate>Sat, 02 Mar 2019 19:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/03/mi-temperature-monitor/</guid>
       <description>手元に、香港へ寄ったついでに買った、シャオミの気温湿度計があります。 携帯と連動で使えると思っていたのだけれども、ログを取るためにはホームゲー</description>
     </item>
-    
   </channel>
 </rss>

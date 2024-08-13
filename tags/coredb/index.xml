@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coredb on goozenlab</title>
+    <title>Coredb on goozenlab</title>
     <link>https://goozenlab.github.io/tags/coredb/</link>
-    <description>Recent content in coredb on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Coredb on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 02 Mar 2015 08:30:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/coredb/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 Mar 2015 08:30:00 +0545</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/coredb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
       <link>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</link>
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</guid>
       <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうま</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ubuntu touch on goozenlab</title>
+    <title>Ubuntu Touch on goozenlab</title>
     <link>https://goozenlab.github.io/tags/ubuntu-touch/</link>
-    <description>Recent content in ubuntu touch on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Ubuntu Touch on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 22 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/ubuntu-touch/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 22 Jan 2021 10:17:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/ubuntu-touch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu Touchのインストールと雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</link>
       <pubDate>Fri, 22 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/ubuntutouch-oneplus/</guid>
       <description>Harden-Gのカスタムロムで使っていたOnePlus3tはPixel3を買ったことでちょっとおもちゃにする。 インストールはインストーラー</description>
     </item>
-    
   </channel>
 </rss>

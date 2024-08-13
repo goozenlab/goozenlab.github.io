@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>music on goozenlab</title>
+    <title>Music on goozenlab</title>
     <link>https://goozenlab.github.io/tags/music/</link>
-    <description>Recent content in music on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Music on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 May 2019 07:30:00 +0630</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 May 2019 07:30:00 +0630</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>スポティファイ・プレミアム</title>
       <link>https://goozenlab.github.io/blog/2019/05/spotify-premium/</link>
       <pubDate>Wed, 01 May 2019 07:30:00 +0630</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/05/spotify-premium/</guid>
       <description>タイやらインドやらに旅行に来て、現地の携帯会社シムを入れてスポティファイを聴いていると、その国のプロモーション（広告）が入ります。 タイでのネ</description>
     </item>
-    
     <item>
       <title>デノンのDA-10</title>
       <link>https://goozenlab.github.io/blog/2015/06/denon-da10/</link>
       <pubDate>Mon, 15 Jun 2015 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/06/denon-da10/</guid>
       <description>快適な音楽環境を外へ持ち出すためのアイテム、私にとって重要なノマドグッズの一つでもあるポータブルアンプ。 以前は iBassoのD2を使っていた</description>
     </item>
-    
   </channel>
 </rss>

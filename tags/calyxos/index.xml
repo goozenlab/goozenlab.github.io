@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>calyxOS on goozenlab</title>
+    <title>CalyxOS on goozenlab</title>
     <link>https://goozenlab.github.io/tags/calyxos/</link>
-    <description>Recent content in calyxOS on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in CalyxOS on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 Jan 2021 10:17:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/calyxos/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 29 Jan 2021 10:17:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/calyxos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CalyxOS: 雑感</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyxos-review/</link>
       <pubDate>Fri, 29 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyxos-review/</guid>
       <description>ここ２週間くらい、De-Googled PhoneのCalyxOS: https://calyxos.org/ を使ってます。 ストックロムから抜き出したGoogleCamera（Gra</description>
     </item>
-    
     <item>
       <title>MacOSよりCalyxOSをインストールする</title>
       <link>https://goozenlab.github.io/blog/2021/01/calyx-install/</link>
       <pubDate>Wed, 20 Jan 2021 10:17:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/01/calyx-install/</guid>
       <description>事前作業 まず最初に、SIMカードは抜きましょう。入ったままインストールをすると何か不具合が起こるそうです。。 Macを使ってインストールするの</description>
     </item>
-    
   </channel>
 </rss>

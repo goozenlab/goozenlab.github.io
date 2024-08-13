@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sway on goozenlab</title>
+    <title>Sway on goozenlab</title>
     <link>https://goozenlab.github.io/tags/sway/</link>
-    <description>Recent content in sway on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sway on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Sep 2019 13:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/sway/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 Sep 2019 13:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/sway/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VaioP Reloaded 追記情報</title>
       <link>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</link>
       <pubDate>Tue, 03 Sep 2019 13:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/update-vaiop-reloaded/</guid>
       <description>お古のVaio Pにインストールする予定のSwayのリサーチ中です。 思いの外あまり有益な情報は見つからず、、インストールベースが少ないのか知ら</description>
     </item>
-    
   </channel>
 </rss>

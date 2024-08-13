@@ -1,59 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sync on goozenlab</title>
+    <title>Sync on goozenlab</title>
     <link>https://goozenlab.github.io/tags/sync/</link>
-    <description>Recent content in sync on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sync on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 07 Sep 2019 12:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/sync/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 07 Sep 2019 12:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/sync/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Syncthingのリソース消費状況</title>
       <link>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</link>
       <pubDate>Sat, 07 Sep 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/more-on-syncthing/</guid>
       <description>安宿にて、宿の猫が部屋に入り込み、ベッドを占領される。 扇風機の風が心地よいのかぐっすりと寝ている。 おかげで外には出れず、、部屋でちまちまと文</description>
     </item>
-    
     <item>
       <title>Unisonの設定</title>
       <link>https://goozenlab.github.io/blog/2019/08/setting-unison/</link>
       <pubDate>Wed, 21 Aug 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/setting-unison/</guid>
       <description>滞在先、タイ・チェンライで折りたたみ自転車のタイヤチューブ交換をしました。工賃込みで150バーツでした。 チューブの質がどうだかわかりませんが</description>
     </item>
-    
     <item>
       <title>Unisonをビルドする</title>
       <link>https://goozenlab.github.io/blog/2019/08/build-unison/</link>
       <pubDate>Mon, 19 Aug 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/08/build-unison/</guid>
       <description>雨季の中、珍しく天気の良い日（！暑い！）です。 滞在先、自転車がパンクしました。近所の自転車屋さんが割としっかりしていて、 なかなかの対応をして</description>
     </item>
-    
     <item>
       <title>Syncthingの詳細設定</title>
       <link>https://goozenlab.github.io/blog/2019/07/syncthing-settings/</link>
       <pubDate>Mon, 01 Jul 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/07/syncthing-settings/</guid>
       <description>デバイスの登録と、同期設定を行います。インストールと初期設定はこちらにあります。ご参照の程。 デバイスの登録 回線がつながっている状況で行えば、</description>
     </item>
-    
     <item>
       <title>Syncthingのインストールと設定</title>
       <link>https://goozenlab.github.io/blog/2019/06/syncthing-install/</link>
       <pubDate>Sun, 30 Jun 2019 12:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/06/syncthing-install/</guid>
       <description>Dropboxをブログの写真やスクリーンショットをマックブックに移動するために使っていました。 問題はインターネットの回線が必要なこと。 日本国</description>
     </item>
-    
   </channel>
 </rss>

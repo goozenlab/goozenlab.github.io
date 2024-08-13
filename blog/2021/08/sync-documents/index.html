@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+  
+  <meta charset="utf-8">
+  <title>書類の同期 | goozenlab</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css">
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/highlight/styles/atom-one-dark.css">
+
+<script src="http://localhost:1313/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link rel="shortcut icon" href="http://localhost:1313//img/favicon.ico"  type="image/x-icon">
+
+
+
+
+  
+
+
+    
+
+
+
+
+ 
+</head>
+
+<body>
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-2-24"></div>
+    <div class="pure-u-11-12 pure-u-md-21-24">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="http://localhost:1313/" class="site-title pure-menu-heading">goozenlab</a>
+            <ul class="pure-menu-list pull-right">
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link">projects</a>
+                    <ul class="pure-menu-children">
+                        
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/opensource-network-environment/"
+                            class="pure-menu-link">openSource network environment</a></li>
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/pi/home-pi/"
+                                class="pure-menu-link">pi home server</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/pi/travel-pi/"
+                                class="pure-menu-link">pi travel router</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/pi/music-pi/"
+                                class="pure-menu-link">pi music</a></li>
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/android-securities/"
+                                class="pure-menu-link">Android Securities</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/optout-phone/"
+                                class="pure-menu-link">optout phone</a></li>
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/nomad-stick-machine/"
+                            class="pure-menu-link">nomad stick machine</a></li>
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/tpt480s/"
+                            class="pure-menu-link">multi-os thinkpad t480s</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/tpt480s-hackintosh/"
+                                class="pure-menu-link">make hackintosh t480s</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/ryzentosh/"
+                                class="pure-menu-link">ryzentosh itx</a></li>
+
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/ipod-here-now/"
+                                class="pure-menu-link">ipod reborn</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/computing/vaiop-reloaded/"
+                                class="pure-menu-link">vaio-P reloaded: 2019</a></li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">crypto</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/bitcoin-reference-websites" class="pure-menu-link">reference websites</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/macos-tor" class="pure-menu-link">tor on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/macos-btccore" class="pure-menu-link">btc core on macOS</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/seed" class="pure-menu-link">seed</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/wallet-hardware" class="pure-menu-link">hardware wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/wallet-software" class="pure-menu-link">software wallets</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/selfhosted-node" class="pure-menu-link">self-hosted pi node</a>
+                        </li>
+
+                        
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/manage-cryptos-2022" class="pure-menu-link">managing cryptos</a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/crypto-friendly-countires" class="pure-menu-link">crypto friendly countries</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="http://localhost:1313/crypto/living-with-cryptos/" class="pure-menu-link">living with cryptos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <sapn class="pure-menu-link">about</sapn>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="http://localhost:1313/about/" class="pure-menu-link">this site</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/tags/orange-pill/" class="pure-menu-link">bitcoin</a></li>
+                        <li class="pure-menu-item"><a href="http://localhost:1313/about/vipassana/" class="pure-menu-link">vipassana</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">goozenlab</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://localhost:1313/categories/develop/" class="pure-menu-link">dev</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://localhost:1313/categories/update/" class="pure-menu-link">update</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://localhost:1313/categories/crypto/" class="pure-menu-link">crypto</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://localhost:1313/categories/nomad/" class="pure-menu-link">nomad</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://localhost:1313/about/" class="pure-menu-link">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+	<div class="pure-u-11-12 pure-u-md-14-24 pure-u-xl-12-24">
+        <div class="post">
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2021-08-27</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="http://localhost:1313/tags/sync">sync</a> <a href="http://localhost:1313/tags/"></a> 
+                    
+
+                    
+                    categories:
+                    
+
+                    
+                </p>
+                <h1>DRAFT: 書類の同期</h1>
+            </div>
+            <div class="post-content">
+                <p>大まかにzfsにてバックアップ・同期を行なっています。
+マックではタイムマシーンがありますが、
+頑なに拒否してます。（別に嫌な思い出があるわけはない）</p>
+<p>定期的にクリーンインストールするというのが良いものだとの思い込みがあるので、
+必要なものバックアップしておくという古典的な方法をとってます。</p>
+<p>個人的に複数箇所にバックアップを取っておくというのが良いと思っていて、
+ローカルディスク・バックアップディスク・クラウド
+の三箇所であれば安心できるかなと、、</p>
+<p>バックアップディスクはZFSを利用しミラーリングで２つ３つのディスクを使ってミラーリングしています。</p>
+<p>ローカル：ミラーリングディスク：クラウド保存</p>
+<p>AFP：Documents
+ZFS: LocalPartition Backup
+ZFS: LocalPartion Sync</p>
+<p>で各所に分散していればまぁ、kそこまで大事なファイルがあるわけではありませんが、
+大事には至らないのではとはと思ってます。
+（個人的に３箇所もしくは３つのバックアップ、３つ以上管理するのは）</p>
+<p>ミラーリングのディスクは実家（一時帰国時）・ノマド用（外部SSDと端末） ・タイ（海外滞在時）
+に置いてあって、自分の中でどれがどの状況なのかがわかります。</p>
+<p>最近はHDDの容量が大きいので</p>
+<p>しかしマック上のDocumentsフォルダー内のファイルに至っては手をつけていなかったので、
+同期・バックアップを行うことにしました。</p>
+<h2 id="方法">方法</h2>
+<p>色々と考えて末（でもないかな。。）以下の形にしました。</p>
+<ul>
+<li>fswatch: 更新ファイルの監視</li>
+<li>unison: フォルダーの同期</li>
+<li>rsync: バックアップ</li>
+</ul>
+<p><code>fswatch</code>でDocuments内とSyncthingで同期をしているフォルダーをチェックし、
+更新などがあった場合に同期とバックアップを同時に行います。</p>
+<hr>
+<h2 id="fswatch-フォルダーの監視">fswatch: フォルダーの監視</h2>
+<p>フォルダーを監視する。
+ファイルが追加されたり、更新された時に</p>
+<h1 id="fswatch">fswatch</h1>
+<p>ディレクトリを監視して任意のコマンドを実行する</p>
+<p>fswatchコマンドを使うと指定したディレクトリで変更のあったファイルを標準出力に吐いてくれる．fswatchコマンドはkqueueやionotifyを利用したツールで，MAC OS Xを含むUNIX上や，Linux上で動作する．</p>
+<p>emcrisostomo/fswatch · GitHub</p>
+<pre tabindex="0"><code># Homebrew
+$ brew install fswatch
+</code></pre><p>これを利用すると，指定したディレクトリで変更があった際に自動でbuildする，と言ったようなことが比較的手軽に実現できてお得．</p>
+<p>たとえばこういう感じ</p>
+<p>fswatch &lt;監視したいディレクトリ&gt; | xargs -n1 -I{} &lt;任意のコマンド&gt;
+ファイル名を引数にして渡したいときはxargsの-l{}を消したりすれば良い．詳しくはxargsのマニュアルを見てくれ!!!!</p>
+<p>Emacsでファイルとか編集すると一時ファイルとかできるから，現実的には以下のようになると思う．</p>
+<p>fswatch &lt;監視したいディレクトリ&gt; | grep -v &ndash;line-buffered &lsquo;# ‘ | xargs -n1 -I{} &lt;任意のコマンド&gt;</p>
+<p>fswatchを使うと楽っぽい。</p>
+<pre tabindex="0"><code>$ brew install fswatch
+$ fswatch . | xargs -n1 -I{} gofmt -w {}
+</code></pre><p>gofmt -w だと、stdoutに出力せずに直接対象ファイルに書き込まれる。</p>
+<pre tabindex="0"><code>$ fswatch -o /path/to/src1 /path/to/src2 | xargs -I{} unison -batch sync
+</code></pre><h2 id="rsyncでバックアップ">rsyncでバックアップ</h2>
+<p>1.<code>rsync</code>を走らせてバックアップ
+2. <code>unison</code>を走らせてsyncthingにて同期しているフォルダーを更新</p>
+<p>手元にあるNoodleでも実行は可能ですが、
+フリーな環境で仕上げてみました。</p>
+<h2 id="rsync">Rsync</h2>
+<p>バックアップは一方通行なので<code>rsync</code>で行います。
+~/Documets -&gt; /Volumes/backup/Documents (mirror zfs)</p>
+<h2 id="unisonでフォルダーの同期">Unisonでフォルダーの同期</h2>
+<p>同期先のフォルダーはローカルだけではなくて、アンドロイドとも同期をしているのでそちらの更新もあるので、</p>
+<p>vi ~/.unison/sync_documents.prf</p>
+<pre tabindex="0"><code># sync_documents.prf
+# 書類を同期＋zthumbへバックアップ
+
+# タイムスタンプをコピーする
+times = true
+
+# 新しいファイルを優先
+prefer = newer
+
+auto = true
+fastcheck = true
+
+# 動作確認が取れたらコメントを外してよし。
+#silent = true
+
+# ルート・ディレクトリの指定。同期時に最上位となるディレクトリを設定する。
+root=/Users/jin/Documents
+root=/Volumes/Sync/Documents
+
+# 同期したいディレクトリやファイル名を指定する：空白は全て
+path = Travel
+path = Finance
+path = 
+
+# 除外ファイルリスト
+include ignore_filelist_macos
+</code></pre><p>unisonによる同期を実行したい場合は<code>-batch</code>
+オプションを付けて実行すると非対話的に同期が実行されます。</p>
+<p>必要なコマンドは</p>
+<p>fswatch -o /Volumes/Work | xargs -n1 -I{} echo changed</p>
+<p>fswatch ~/Documents &ldquo;echo changed&rdquo;</p>
+<p>rsync -ahvn  /Users/jin/Documents/ /Volumes/Backup/Documents</p>
+<p>unison -batch sync_documents
+unison sync_documents</p>
+<p>$ fswatch -o /Users/jin/Documents /Volumes/Sync/Documents | xargs -I{} unison -batch sync</p>
+<h2 id="launched">Launched</h2>
+<p>ログイン時にスクリプトを走らせます。
+Launchedサービスを使い行います。</p>
+<p>サービスを登録します。</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>goozenlab.sync.documents</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/fswatch</string>
+      <string>/Users/jin/Documents</string>
+      <string>unison</string>
+      <string>-batch</string>
+      <string>sync_documents/</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>UserName</key>
+    <string>jin</string>
+  </dict>
+</plist>
+<pre><code>&lt;key&gt;KeepAlive&lt;/key&gt;
+&lt;dict&gt;
+  &lt;key&gt;Crashed&lt;/key&gt;
+  &lt;true/&gt;
+  &lt;key&gt;SuccessfulExit&lt;/key&gt;
+  &lt;false/&gt;
+&lt;/dict&gt;
+&lt;key&gt;ProcessType&lt;/key&gt;
+&lt;string&gt;Background&lt;/string&gt;
+</code></pre>
+<p>rsync
+ファイルを
+オプションはあたくさんありますが、</p>
+<p>RunAtLoad: 起動時に実行
+KeepAlive: 自動で再起動を試みる</p>
+<p>そしてロードします。</p>
+<p>$ sudo launchctl load /Library/LaunchDaemons/com.consul.plist
+ちなみに停止するには unload してやればいいです</p>
+<p>$ sudo launchctl unload /Library/LaunchDaemons/com.consul.plist</p>
+
+                
+                
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/blog/2021/02/nextdns/">NextDNS</a></li>
+	
+	<li><a href="/blog/2019/09/more-on-syncthing/">Syncthingのリソース消費状況</a></li>
+	
+	<li><a href="/blog/2019/08/setting-unison/">Unisonの設定</a></li>
+	
+	<li><a href="/blog/2019/08/build-unison/">Unisonをビルドする</a></li>
+	
+	<li><a href="/blog/2019/07/syncthing-settings/">Syncthingの詳細設定</a></li>
+	
+</ul>
+
+
+            </div>
+            	
+                
+            
+            <div class="post-content">
+                <h2>🏝 tipping</h2>
+                <p>
+                    🌷 sat ⚡️ goozenlab@getalby.com<br />
+                    🌻 <a href="/images/bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud.png">bitcoin</a> : bc1qnjhnsxgqah050995dkdveav4y3t3d7uxyme4ud<br />
+                </p>
+                <span style="color:#ff2222;">・</span><span class="footnote">If you do send a tip, Please <a href="mailto:">email me</a> so that I can say thank you.</span></sppan>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-5-24 pure-u-xl-6-24"></div>
+</div>
+
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-3-24"></div>
+    <div class="pure-u-11-12 pure-u-md-20-24">
+		<div style="margin-top:-26px; margin-left:-13px;"><img src="/images/site/footer-owl.png" alt="Owl" /></div>
+        <div class="footer-content">
+ 		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+
+
+
+
+
+
+
+			      
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/goozenlab" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+                  
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright 2023, goozenlab; all rights reserved.</p>
+		  
+		</div>
+      <div class="pure-u-1-24 pure-u-md-1-24"></div>
+</div>
+
+
+<script src="http://localhost:1313/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://localhost:1313/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+
+
+<script data-goatcounter="https://goozenlab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

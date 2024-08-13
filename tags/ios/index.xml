@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iOS on goozenlab</title>
+    <title>IOS on goozenlab</title>
     <link>https://goozenlab.github.io/tags/ios/</link>
-    <description>Recent content in iOS on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in IOS on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 15 Mar 2015 17:30:00 +0545</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 15 Mar 2015 17:30:00 +0545</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xcode 6.1とiOS8.2</title>
       <link>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</link>
       <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</guid>
       <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
     </item>
-    
   </channel>
 </rss>

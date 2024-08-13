@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>turkey on goozenlab</title>
+    <title>Turkey on goozenlab</title>
     <link>https://goozenlab.github.io/tags/turkey/</link>
-    <description>Recent content in turkey on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Turkey on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Aug 2021 13:30:00 +0100</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/turkey/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 Aug 2021 13:30:00 +0100</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/turkey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>イスタンブール</title>
       <link>https://goozenlab.github.io/blog/2021/08/istanbul-turkey/</link>
       <pubDate>Wed, 18 Aug 2021 13:30:00 +0100</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2021/08/istanbul-turkey/</guid>
       <description>日本のコロナ対策にはもう付き合っちゃおれんと、チケットの安さに負けてトルコにきてしました。 天気も良くサイコー。 街には普通に観光客もままいます</description>
     </item>
-    
   </channel>
 </rss>

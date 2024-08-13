@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coldcard on goozenlab</title>
+    <title>Coldcard on goozenlab</title>
     <link>https://goozenlab.github.io/tags/coldcard/</link>
-    <description>Recent content in coldcard on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Coldcard on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 31 Jul 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/coldcard/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 31 Jul 2022 12:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/coldcard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BIP85で変幻自在のコールドカード</title>
       <link>https://goozenlab.github.io/blog/2022/07/bip85/</link>
       <pubDate>Sun, 31 Jul 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/07/bip85/</guid>
       <description>ビットコインナーだけでなくハードウェア・ウォレットをお持ちの方にも、めちゃお勧めのColdCard。 SEEDの管理が楽になります。 BIP85</description>
     </item>
-    
     <item>
       <title>サイコロを使ってSEEDを作成する</title>
       <link>https://goozenlab.github.io/blog/2022/07/dice-rolled-seed/</link>
       <pubDate>Wed, 27 Jul 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/07/dice-rolled-seed/</guid>
       <description>コンピューターの乱数というのが厳密にいうと乱数（計算されている）ではないようです。 ということで、原始的にサイコロを振ってSEEDを生成する方</description>
     </item>
-    
     <item>
       <title>ColdCard mk4</title>
       <link>https://goozenlab.github.io/blog/2022/06/coldcard-mk4/</link>
       <pubDate>Tue, 07 Jun 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/06/coldcard-mk4/</guid>
       <description>BTCのみの対応を謳っている、一見さんお断り？のハードウェア・ウォレット。 NFCに対応をした第４世代が発表され事前予約だと割引がきいたので２</description>
     </item>
-    
   </channel>
 </rss>

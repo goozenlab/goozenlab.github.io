@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>crypt on goozenlab</title>
+    <title>Crypt on goozenlab</title>
     <link>https://goozenlab.github.io/categories/crypt/</link>
-    <description>Recent content in crypt on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Crypt on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Sep 2022 12:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/crypt/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 Sep 2022 12:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/categories/crypt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>サトシの宝物</title>
       <link>https://goozenlab.github.io/blog/2022/09/satoshis-tresure/</link>
       <pubDate>Mon, 12 Sep 2022 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2022/09/satoshis-tresure/</guid>
       <description>秘密鍵がブロックチェーンの中で見つかるのを待ち続けている。。 謎多き、サトシ・ナカモト。 サトシの宝物と呼ばれているものがあります。 サトシが初期</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>password on goozenlab</title>
+    <title>Password on goozenlab</title>
     <link>https://goozenlab.github.io/tags/password/</link>
-    <description>Recent content in password on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Password on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Sep 2019 10:00:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/password/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 10 Sep 2019 10:00:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/password/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>パスワードをK-9からリカバリー</title>
       <link>https://goozenlab.github.io/blog/2019/09/k9-password/</link>
       <pubDate>Tue, 10 Sep 2019 10:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/09/k9-password/</guid>
       <description>パスワードを忘れる。。 というか、enpassのものが使えない、、おかしい。 いろいろリセット・リカバリーを試すが、ちょっと面倒・無理だったので</description>
     </item>
-    
   </channel>
 </rss>

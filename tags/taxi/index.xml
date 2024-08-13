@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>taxi on goozenlab</title>
+    <title>Taxi on goozenlab</title>
     <link>https://goozenlab.github.io/tags/taxi/</link>
-    <description>Recent content in taxi on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Taxi on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2015 12:30:00 +0600</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/taxi/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Jul 2015 12:30:00 +0600</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/taxi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>デゥシャンベからホーローグ</title>
       <link>https://goozenlab.github.io/blog/2015/07/dushanbe-khorog/</link>
       <pubDate>Tue, 28 Jul 2015 12:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/dushanbe-khorog/</guid>
       <description>デゥシャンベからのシェアタクシーは、気合いを入れて５時起床、Green House Hostel からは５分ぐらいのタクシースタンドへ６時頃向かう。一人だと値段交渉</description>
     </item>
-    
     <item>
       <title>オシュからホジャンドまで</title>
       <link>https://goozenlab.github.io/blog/2015/07/oshu-khojand/</link>
       <pubDate>Wed, 22 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/oshu-khojand/</guid>
       <description>オシュからタジキスタンに公共バスを乗り継いで（安く）向かうには、バトケン（キルギス）〜 国境 〜 イスファラ（タジキスタン）、を経由してホジャンド</description>
     </item>
-    
     <item>
       <title>トクトグルからオシュまで</title>
       <link>https://goozenlab.github.io/blog/2015/07/toktogul-oshu/</link>
       <pubDate>Tue, 21 Jul 2015 19:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/toktogul-oshu/</guid>
       <description>ビシュケクから一気にオシュというのも味気ないし、移動時間も１０時間くらいと少々長い。景観も良いらしいし途中一息を入れるため、貯水池のあるトク</description>
     </item>
-    
   </channel>
 </rss>

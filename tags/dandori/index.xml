@@ -1,158 +1,125 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dandori on goozenlab</title>
+    <title>Dandori on goozenlab</title>
     <link>https://goozenlab.github.io/tags/dandori/</link>
-    <description>Recent content in dandori on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Dandori on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate><atom:link href="https://goozenlab.github.io/tags/dandori/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Jul 2020 06:30:00 +0900</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/tags/dandori/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dandori v2.10.0</title>
       <link>https://goozenlab.github.io/blog/2020/07/dandori-210/</link>
       <pubDate>Tue, 28 Jul 2020 06:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2020/07/dandori-210/</guid>
       <description>追加したいことはままあるのですが、、、 アプストアーから締め出しを食らっていたので復帰更新。 結局微妙な調整のみのマイナーアップデートです。 Changed レ</description>
     </item>
-    
     <item>
       <title>dandori v2.8.0</title>
       <link>https://goozenlab.github.io/blog/2016/08/dandori-280/</link>
       <pubDate>Mon, 22 Aug 2016 22:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/dandori-280/</guid>
       <description>まだまだ続く、Swift移植シリーズ第七弾。しかしながら、Swiftに関して理解が深まっているとはちょっと思えないのがちょっと悲しい。。 さて</description>
     </item>
-    
     <item>
       <title>dandori v2.6.4</title>
       <link>https://goozenlab.github.io/blog/2015/04/dandori-264/</link>
       <pubDate>Mon, 13 Apr 2015 22:20:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/04/dandori-264/</guid>
       <description>またまた、ケアレスミスのホットフィックスです。 タスクビュー（第二階層）でのスワイプが機能しない点を修正しました。</description>
     </item>
-    
     <item>
       <title>dandori v2.6.3</title>
       <link>https://goozenlab.github.io/blog/2015/03/dandori-263/</link>
       <pubDate>Sat, 21 Mar 2015 18:20:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/dandori-263/</guid>
       <description>Dandoriにてタスク画面にて編集に行き戻ってくると、インデントが詰まってしまう表示の不具合を直しました。 ついでに編集時に出る左の削除のボ</description>
     </item>
-    
     <item>
       <title>dandori v2.6.2</title>
       <link>https://goozenlab.github.io/blog/2014/11/dandori-262/</link>
       <pubDate>Tue, 18 Nov 2014 17:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/11/dandori-262/</guid>
       <description>隠して入れていたリマインダーへの書き出し機能をiOS7,8でのスワイプにてできるようにしました。iOS6でのサポートはこれで終了にしようと思</description>
     </item>
-    
     <item>
       <title>dandori v2.6.1</title>
       <link>https://goozenlab.github.io/blog/2014/10/dandori-261/</link>
       <pubDate>Mon, 27 Oct 2014 17:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2014/10/dandori-261/</guid>
       <description>タップの挙動を修正。今まではtoucheventを使っていましたがgestureRecognizerを使い挙動が非常に安定しました。ちょっと</description>
     </item>
-    
     <item>
       <title>dandori v2.5.0</title>
       <link>https://goozenlab.github.io/blog/2013/07/dandori-250/</link>
       <pubDate>Sat, 27 Jul 2013 17:20:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/dandori-250/</guid>
       <description>マイナーアップデートです。本当は期日機能を追加しよと思っていましたが、どのように表示するかが見出せせず、結局保留。 出し惜しみをしている訳では</description>
     </item>
-    
     <item>
       <title>カラーロック</title>
       <link>https://goozenlab.github.io/blog/2013/07/color-lock/</link>
       <pubDate>Wed, 10 Jul 2013 17:07:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/07/color-lock/</guid>
       <description>入力画面を大幅にリニューしてます。フラットなデザインに変更とともに、カラーロックの方法を変えました。 以前はキーボードの左上画面上では中心の右</description>
     </item>
-    
     <item>
       <title>Kawaii ColorMode x.4.2</title>
       <link>https://goozenlab.github.io/blog/2013/04/colormode/</link>
       <pubDate>Sat, 27 Apr 2013 12:27:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/04/colormode/</guid>
       <description>dandoriとcosperにlittlistで導入済みのカラーモード（カワイイモード）を追加しました。（doopは保留） ちょっと雰囲気を変</description>
     </item>
-    
     <item>
       <title>Update AdMob 6.2.1 for lite version</title>
       <link>https://goozenlab.github.io/blog/2013/01/admob-update/</link>
       <pubDate>Mon, 14 Jan 2013 14:53:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2013/01/admob-update/</guid>
       <description>不定期な広告のためのアップデートです。admobのバージョンが6.2.1になります。今回も新しいフレームワークの追加が必要でした。Store</description>
     </item>
-    
     <item>
       <title>年末感謝週末セール</title>
       <link>https://goozenlab.github.io/blog/2012/11/sale-on-weekend/</link>
       <pubDate>Mon, 19 Nov 2012 00:10:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/11/sale-on-weekend/</guid>
       <description>そろそろ12月です。年末感謝祭として、週末セールを今週末から（年内は毎週末+三が日）始めます。一気に無料大放出といきたい所ですが、littl</description>
     </item>
-    
     <item>
       <title>Update AdMob 6.2.0 for lite version</title>
       <link>https://goozenlab.github.io/blog/2012/10/admob-update/</link>
       <pubDate>Fri, 19 Oct 2012 21:53:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/10/admob-update/</guid>
       <description>AdMobをiOS6対応6.2.0にアップデートしました。 今まで通りおこなうとビルド時にエラーが出ます。うーん、こりゃまた面倒な事になったな</description>
     </item>
-    
     <item>
       <title>4系と5系</title>
       <link>https://goozenlab.github.io/blog/2012/09/version4-5/</link>
       <pubDate>Thu, 27 Sep 2012 05:16:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/09/version4-5/</guid>
       <description>機能は追加されていないのですが、バージョンを上げました。バージョンを４系と５系に分けました。 4系(x.4)は4.3をサポートし、5系(x.5</description>
     </item>
-    
     <item>
       <title>Update for Retina4</title>
       <link>https://goozenlab.github.io/blog/2012/09/update-retina/</link>
       <pubDate>Sat, 22 Sep 2012 12:06:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/09/update-retina/</guid>
       <description>とうとう発売になったiPhone5。予想通りサイズが縦長になりましたね。実機はまだ見ていないのですが、今回は購入しようかなとおもってます。今</description>
     </item>
-    
     <item>
       <title>Update for Navbar</title>
       <link>https://goozenlab.github.io/blog/2012/07/navbar-update/</link>
       <pubDate>Thu, 05 Jul 2012 15:15:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/07/navbar-update/</guid>
       <description>一気にほぼ全てのアプリをアップデートしました。ナビゲーションバーのタイトルを変更設定を追加しました。 これで、クールリストからデジモノ(Cos</description>
     </item>
-    
     <item>
       <title>XCode4.2と怒濤のアップデート</title>
       <link>https://goozenlab.github.io/blog/2012/02/xcode42-update/</link>
       <pubDate>Thu, 09 Feb 2012 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2012/02/xcode42-update/</guid>
       <description>インドを経てネパールのポカラに逗留中です。計画停電が週に88時間あり、インターネット環境もさほど良くない所ではありますが、ヒマラヤの山々が見</description>
     </item>
-    
   </channel>
 </rss>

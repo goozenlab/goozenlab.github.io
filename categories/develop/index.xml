@@ -1,365 +1,286 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>develop on goozenlab</title>
+    <title>Develop on goozenlab</title>
     <link>https://goozenlab.github.io/categories/develop/</link>
-    <description>Recent content in develop on goozenlab</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Develop on goozenlab</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>goozenlab@icloud.com (jin)</managingEditor>
-    <webMaster>goozenlab@icloud.com (jin)</webMaster>
-    <copyright>Copyright 2022, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate><atom:link href="https://goozenlab.github.io/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 Dec 2019 06:30:00 +0700</lastBuildDate>
+    <atom:link href="https://goozenlab.github.io/categories/develop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xcode11でビルドエラー</title>
       <link>https://goozenlab.github.io/blog/2019/12/error-xcode/</link>
       <pubDate>Wed, 18 Dec 2019 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2019/12/error-xcode/</guid>
       <description>端末を切り替えたり、Xcodeのメジャーアップデートをすると必ずといいほど起こる何かしらの不具合。 今回は Command CodeSign failed with a nonzero exit code のエラーでビルドがで</description>
     </item>
-    
     <item>
       <title>アプリのアップロード</title>
       <link>https://goozenlab.github.io/blog/2018/09/problem-uploading/</link>
       <pubDate>Fri, 28 Sep 2018 06:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2018/09/problem-uploading/</guid>
       <description>毎回というか、Xcodeをアップグレードすると問題なっているような気がする。 プロファイルを作り直したり、書き出しのオプションを変えたりとか、</description>
     </item>
-    
     <item>
       <title>Use Legacy Swift Language Version</title>
       <link>https://goozenlab.github.io/blog/2016/10/use_legacy_swift_version/</link>
       <pubDate>Fri, 07 Oct 2016 16:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/10/use_legacy_swift_version/</guid>
       <description>四十肩勃発、じわ〜ピッキーーっとした痛みの中、XCode8にてプロジェクトを移行中です。ほとんどのプロジェクトは立ち上げ時に問題なく変換をす</description>
     </item>
-    
     <item>
       <title>XCode8</title>
       <link>https://goozenlab.github.io/blog/2016/09/xcode8/</link>
       <pubDate>Mon, 19 Sep 2016 14:30:00 +0900</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/xcode8/</guid>
       <description>日本に一時帰国する。iOS10での動作チェックをしようと思いXCode８をインストールしました。 当分XCode7と共存させて使っていくつもり</description>
     </item>
-    
     <item>
       <title>NSRegularExpression</title>
       <link>https://goozenlab.github.io/blog/2016/09/nsregularexpression/</link>
       <pubDate>Thu, 15 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/nsregularexpression/</guid>
       <description>NSRegularExpressionでのパターンマッチングでドツボ。（NSStringが出てきたりしてちょっと厄介な感じがあります。） (a</description>
     </item>
-    
     <item>
       <title>ブロック表記</title>
       <link>https://goozenlab.github.io/blog/2016/09/block-3ways/</link>
       <pubDate>Mon, 12 Sep 2016 09:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/block-3ways/</guid>
       <description>３つの記述方法があるようです、毎回ブロックにぶち当たると作業が止まるのでメモとして残す。 ブロックでっせ！と、こんな感じで出てきます、 ダブルク</description>
     </item>
-    
     <item>
       <title>unWind segway</title>
       <link>https://goozenlab.github.io/blog/2016/09/segway-unwind/</link>
       <pubDate>Fri, 09 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/segway-unwind/</guid>
       <description>今までは、移行先のデレゲートで処理を行っていた事を、便利そうなSegueのunWindでやってみようと思いました。しかしながら、XCodeの</description>
     </item>
-    
     <item>
       <title>アイコンとネーミング</title>
       <link>https://goozenlab.github.io/blog/2016/09/app-icon-naming/</link>
       <pubDate>Wed, 07 Sep 2016 12:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/app-icon-naming/</guid>
       <description>アプリを作る最初の一歩。XCodeでプロジェクを新規、で・・・・。アプリを作ろうと思って最初につまずくところ、アプリの名前。 個人的にアイコン</description>
     </item>
-    
     <item>
       <title>ギットハブ公開</title>
       <link>https://goozenlab.github.io/blog/2016/09/github-open-sati/</link>
       <pubDate>Tue, 06 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/github-open-sati/</guid>
       <description>ギットハブ公開に向けて行ったこと。XCodeでのプロジェクト設定とこれからの管理について。 問題点：ギットハブに公開するプロジェクトには、バン</description>
     </item>
-    
     <item>
       <title>Podsを使う</title>
       <link>https://goozenlab.github.io/blog/2016/09/use-pods/</link>
       <pubDate>Sat, 03 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/use-pods/</guid>
       <description>XCode7.3.1にて先日インストール（記事）したポッドを使います。これがびっくり簡単で驚きました。 ただ、ヘッダーをインポートするだけ！で</description>
     </item>
-    
     <item>
       <title>XCodeにてアプリデーターの管理</title>
       <link>https://goozenlab.github.io/blog/2016/09/device-container/</link>
       <pubDate>Fri, 02 Sep 2016 08:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/device-container/</guid>
       <description>端末のアプリデータをバックアップ、復元。 クリーンインストールでのミス、弊害のひとつ。XCodeにてコードサインの変更またはRevokeによる</description>
     </item>
-    
     <item>
       <title>Podsをプロジェクトに</title>
       <link>https://goozenlab.github.io/blog/2016/09/install-pods/</link>
       <pubDate>Thu, 01 Sep 2016 07:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/09/install-pods/</guid>
       <description>プロジェクトにポッド・ライブラリーを追加します。でこれまたエラーが出る。とりあえず手動でインストールすることにする。 $ pod install Setting up CocoaPods master repo [!] Unable to add</description>
     </item>
-    
     <item>
       <title>Sudo-less Gem &amp; Cocoapods</title>
       <link>https://goozenlab.github.io/blog/2016/08/install-cocoapods/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/install-cocoapods/</guid>
       <description>ちょっと問題を抱えていたcocoapodsをEl Capitanにインストールしました。 以前インストールした時に、ちょっと須藤&amp;amp;ジェム</description>
     </item>
-    
     <item>
       <title>インストール: Homebrew</title>
       <link>https://goozenlab.github.io/blog/2016/08/install-homebrew/</link>
       <pubDate>Wed, 31 Aug 2016 13:00:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/install-homebrew/</guid>
       <description>Homebrew のインストール先は、デフォルトでは /usr/local になっています。インストール先をちょっと除いてみると、なーーんか荒らされている感じがある。 $ cd /usr/local/ total 24 drwxr-xr-x</description>
     </item>
-    
     <item>
       <title> 半透明のモーダルビュー</title>
       <link>https://goozenlab.github.io/blog/2016/08/modalview-over/</link>
       <pubDate>Sun, 28 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/modalview-over/</guid>
       <description>iOS6の頃はなんか面倒だったような気がした、下のViewが透けて見えるようなモーダルビューの設定。非常に簡単にできるようになってました。 半</description>
     </item>
-    
     <item>
       <title>StatusBarメモ</title>
       <link>https://goozenlab.github.io/blog/2016/08/statusbar-memo/</link>
       <pubDate>Fri, 26 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/statusbar-memo/</guid>
       <description>アプリにて、StatusBarを隠す事が多いのだけれど、いつもやり方を忘れるのでメモしておく。 まずは全体的な設定を、info.plistにて</description>
     </item>
-    
     <item>
       <title>Lite VersionとAdmob</title>
       <link>https://goozenlab.github.io/blog/2016/08/lite-admob/</link>
       <pubDate>Thu, 25 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/lite-admob/</guid>
       <description>Swiftへの移行がちょっと落ち着いてきたので、お次はライトバージョンの制作に移る。同じプロジェクト内でライト版のターゲットをもつ方法で行い</description>
     </item>
-    
     <item>
       <title>イフレット</title>
       <link>https://goozenlab.github.io/blog/2016/08/if-let/</link>
       <pubDate>Thu, 18 Aug 2016 09:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/if-let/</guid>
       <description>fatal error: unexpectedly found nil while unwrapping an Optional value nil値が戻ってくる可能性のある時の処理方法。 tableCellに値を渡す時を例に、 # if let xx = yy { } else { } if let lock = event.isLocked as? Bool</description>
     </item>
-    
     <item>
       <title>filteredArrayUsingPredicate</title>
       <link>https://goozenlab.github.io/blog/2016/08/array_filter/</link>
       <pubDate>Thu, 04 Aug 2016 18:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/08/array_filter/</guid>
       <description>拙作dandoriのswift移行中、中々進みません。 Objective-Cで使っていた、filteredArrayUsingPredica</description>
     </item>
-    
     <item>
       <title>乱数を発生させる</title>
       <link>https://goozenlab.github.io/blog/2016/03/arc4random_uniform/</link>
       <pubDate>Fri, 18 Mar 2016 11:30:00 +0700</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2016/03/arc4random_uniform/</guid>
       <description>rand() 今まではrand()使い、srand()にて乱数の初期化をし数値を得ていた。 srand(time(nil)); rand()%300; arc4random_uniform() 上記の形だとSwift時にエラーが出る為、乱数の初期化が</description>
     </item>
-    
     <item>
       <title>iOS9にて気になる機能の3DTouch</title>
       <link>https://goozenlab.github.io/blog/2015/09/3dtouch/</link>
       <pubDate>Sun, 20 Sep 2015 09:30:00 +0800</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/09/3dtouch/</guid>
       <description>iOS9にて操作動作が、強押し、さらに押込押しと深みが出る。 アップルの使い方のガイドラインではピーク＆ポップという形。 その対象に対しての関心</description>
     </item>
-    
     <item>
       <title>NSUserDefaultsのキーの削除</title>
       <link>https://goozenlab.github.io/blog/2015/07/userdefaults-remove-keys/</link>
       <pubDate>Mon, 27 Jul 2015 18:30:00 +0500</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/userdefaults-remove-keys/</guid>
       <description>アップデートをするたびに名前を変更したり、増えたり、減ったりしてグジャグジャになってしまう UserDefaults。私だけでは無いはず。。 既</description>
     </item>
-    
     <item>
       <title>midXで中心を求める</title>
       <link>https://goozenlab.github.io/blog/2015/07/midx-swift/</link>
       <pubDate>Sat, 11 Jul 2015 09:30:00 +0600</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/07/midx-swift/</guid>
       <description>今までは中心を求めるのに素直に、 let center: CGFloat = self.frame.width / 2 と行ってきたけれども、.midX/midY let center: CGFloat = self.frame.midX とスマート、かつ格好良くできます。</description>
     </item>
-    
     <item>
       <title>テーブルビューセルの境界線を消す</title>
       <link>https://goozenlab.github.io/blog/2015/04/tableview-separator/</link>
       <pubDate>Mon, 06 Apr 2015 19:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/04/tableview-separator/</guid>
       <description>テーブルビューセルの境界線を消すには下記のコードを追加。 self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None StoryBoardを使っている時は以下。</description>
     </item>
-    
     <item>
       <title>ShakeはUIEventで</title>
       <link>https://goozenlab.github.io/blog/2015/03/swift-shake/</link>
       <pubDate>Fri, 27 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/swift-shake/</guid>
       <description>色々と書き込んでいたシェイクの判別はUIEventを使うようになります。 えらく簡単になりました。 override func viewDidAppear(animated: Bool) { super.viewDidAppear(animated) self.becomeFirstResponder() } override func canBecomeFirstResponder() -&amp;gt; Bool { return true } override func motionEnded(motion: UIEventSubtype, withEvent</description>
     </item>
-    
     <item>
       <title>performSelectorは無くなる</title>
       <link>https://goozenlab.github.io/blog/2015/03/performselector-timer/</link>
       <pubDate>Thu, 26 Mar 2015 10:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/performselector-timer/</guid>
       <description>ほぼ全ての拙作のアプリでは、テーブルセルでのバーの色変更タップとアップデートは時間差を使って行っています。 [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(notifiyUpdate) object:nil]; [self performSelector:@selector(notifiyUpdate) withObject:nil afterDelay:kUpdateCellShortInterval]; object-cで</description>
     </item>
-    
     <item>
       <title>printlnは気楽</title>
       <link>https://goozenlab.github.io/blog/2015/03/println-swift/</link>
       <pubDate>Wed, 25 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/println-swift/</guid>
       <description>NSLogはまだ使えるようですが、swiftではprintln をログの書出しに使います。NSLogだとよく使っていた、 __PRETTY_FUNCTION__ は Swift では __FILE__, __FUNCTION__, __LINE__ and __COLUMN__ の</description>
     </item>
-    
     <item>
       <title>NSDate() = [NSDate date]</title>
       <link>https://goozenlab.github.io/blog/2015/03/nsdate-swift/</link>
       <pubDate>Tue, 24 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/nsdate-swift/</guid>
       <description>NSDateでの [NSDate date] はシンプルにイニシャライザーに統合され？、Swiftでは NSDate() でよろしい。 [NSDate dateWithTimeIntervalSinceNow:hoursGoodSleep * 60 * 60] を、Swiftで書いてみると、 NSDate(timeIntervalSinceNow: hoursGoodSleep * 60</description>
     </item>
-    
     <item>
       <title>ビューサイクルとアプリ復帰時の処理</title>
       <link>https://goozenlab.github.io/blog/2015/03/view-cycle/</link>
       <pubDate>Sat, 21 Mar 2015 12:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/view-cycle/</guid>
       <description>たまに、何処に何の処理を入れれば良いか分からなくなるので、簡単にまとめる。 起動時 アプリの起動時には以下の順で呼ばれる。 viewDidLoad() viewWillAppear viewDidAppear ※すべての画像の</description>
     </item>
-    
     <item>
       <title>NotificationSettings認証設定</title>
       <link>https://goozenlab.github.io/blog/2015/03/notification-setting/</link>
       <pubDate>Sat, 21 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/notification-setting/</guid>
       <description>iOS8になりアプリケーションバッジや音等、ユーザーの認証が必要になっています。 AppDelegateに処理を入れてしまいます。 application.registerUserNotificationSettings(UIUserNotificationSettings( forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert |</description>
     </item>
-    
     <item>
       <title>クラスが読み込めず [解決]</title>
       <link>https://goozenlab.github.io/blog/2015/03/load-managedobject/</link>
       <pubDate>Fri, 20 Mar 2015 10:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/load-managedobject/</guid>
       <description>もう、わざわざ動いている物をSwiftに移行するのも止めてしまおうか。どうせならAndroidに移植する方がまだよいか、、と思ってしまうほど</description>
     </item>
-    
     <item>
       <title>NSLocalizedString on swift</title>
       <link>https://goozenlab.github.io/blog/2015/03/nslocalizedstring-swift/</link>
       <pubDate>Thu, 19 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/nslocalizedstring-swift/</guid>
       <description>NSLocalizedStringでエラーがでる NSLocalizedString(&amp;#34;Timer&amp;#34;, comment: nil) nilを&amp;quot;&amp;quot;空白に変更する。 NSLocalizedString(&amp;#34;NavigationBar.Button.Timer&amp;#34;, comment: &amp;#34;&amp;#34;) Swiftではnilの扱いがちょ</description>
     </item>
-    
     <item>
       <title>delegate on swift</title>
       <link>https://goozenlab.github.io/blog/2015/03/delegate-swift/</link>
       <pubDate>Wed, 18 Mar 2015 11:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/delegate-swift/</guid>
       <description>デレゲートするクラス 以下の３つを書き加えればよい。 protocol MainHeaderViewDelegate { func sleepingTimerDidFinish(controller: MainHeaderView) } var delegate:MainHeaderViewDelegate? = nil self.delegate!.sleepingTimerDidFinish(self) デレゲートで値を受け取るクラス MainHeaderViewDelegate と、functionを追加、処理を</description>
     </item>
-    
     <item>
       <title>UIButttonをSwiftで書く</title>
       <link>https://goozenlab.github.io/blog/2015/03/uibutton-swift/</link>
       <pubDate>Tue, 17 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/uibutton-swift/</guid>
       <description>UIButttonをSwiftでプログラム的に書くと buttonMoodExecelent = UIButton.buttonWithType(UIButtonType.Custom) as UIButton buttonMoodExecelent.frame = CGRect(x: 0, y: 0, width: 30, height: 30) buttonMoodExecelent.tag = TagButtonMood.Execelent buttonMoodExecelent.addTarget(self, action: &amp;#34;selectedMood:&amp;#34;, forControlEvents: .TouchUpInside) buttonMoodExecelent.setBackgroundImage(UIImage(named: &amp;#34;MoodExecelent&amp;#34;), forState: UIControlState.Normal) self.vew.addSubview(buttonMoodExecelent) テキストタイトルの時には buttonCancel.setTitle(&amp;#34;cancel&amp;#34;, forState: UIControlState.Normal) テ</description>
     </item>
-    
     <item>
       <title>Xcode 6.1とiOS8.2</title>
       <link>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</link>
       <pubDate>Sun, 15 Mar 2015 17:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/xcode611-ios82/</guid>
       <description>検証機を何の迷いも無くiOS8.2にアップデートする。 で、XCodeにてアプリをビルドしインストールしようと思ったら、、、、できん。。 このX</description>
     </item>
-    
     <item>
       <title>SwiftでConstantを扱う</title>
       <link>https://goozenlab.github.io/blog/2015/03/constants-swift/</link>
       <pubDate>Sat, 14 Mar 2015 09:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/constants-swift/</guid>
       <description>Swiftへの移行はスタンフォードの講義を聞きつつ進めたいところなのですが、ここネパールだとちょっと無理。 ネットでの情報も増えつつはあるよう</description>
     </item>
-    
     <item>
       <title>クラスが読み込めず</title>
       <link>https://goozenlab.github.io/blog/2015/03/unable-to-load-class/</link>
       <pubDate>Thu, 12 Mar 2015 16:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/unable-to-load-class/</guid>
       <description>TapasをSwiftに移行中です。一番癖の無いアプリという事で白羽の矢があたりましたが、、、ブログに引っかかったところ等アップしていきたい</description>
     </item>
-    
     <item>
       <title>UserDefaultの初期値設定</title>
       <link>https://goozenlab.github.io/blog/2015/03/userdefault-register-defaults/</link>
       <pubDate>Sun, 08 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/userdefault-register-defaults/</guid>
       <description>AppDelegateで行なう処理の一つのUserDefaultの初期値設定をSwiftにて。 // UserDefault Initial values var userDefaultsDefaults = NSMutableDictionary() userDefaultsDefaults.setValue(&amp;#34;String&amp;#34;, forKey: KEY_SETTING) userDefaultsDefaults.setValue(50, forKey: KEY_SETTING2) NSUserDefaults.standardUserDefaults().registerDefaults(userDefaultsDefaults) 数値も文字も気に</description>
     </item>
-    
     <item>
       <title>ライトウェイト マイグレーションでのアトリビュートの名称変更</title>
       <link>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</link>
       <pubDate>Mon, 02 Mar 2015 08:30:00 +0545</pubDate>
-      <author>goozenlab@icloud.com (jin)</author>
       <guid>https://goozenlab.github.io/blog/2015/03/lightweight-migration-mapping/</guid>
       <description>タイトルが長げーーーーーーな。。 さて、lightweight migration での移行で、アトリビュートの名前の変更がうまく行かないときは、マッピングがうま</description>
     </item>
-    
   </channel>
 </rss>
