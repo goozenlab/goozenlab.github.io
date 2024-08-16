@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> Laos on goozenlab</title>
-    <link>https://goozenlab.github.io/tags/-laos/</link>
+    <link>http://localhost:1313/tags/-laos/</link>
     <description>Recent content in  Laos on goozenlab</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Fri, 30 Dec 2016 20:30:00 +0700</lastBuildDate>
-    <atom:link href="https://goozenlab.github.io/tags/-laos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/-laos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>インチキ自転車国境越え</title>
-      <link>https://goozenlab.github.io/blog/2016/12/thai-lao-border-by-bicycle/</link>
+      <link>http://localhost:1313/blog/2016/12/thai-lao-border-by-bicycle/</link>
       <pubDate>Fri, 30 Dec 2016 20:30:00 +0700</pubDate>
-      <guid>https://goozenlab.github.io/blog/2016/12/thai-lao-border-by-bicycle/</guid>
+      <guid>http://localhost:1313/blog/2016/12/thai-lao-border-by-bicycle/</guid>
       <description>ビザの期限が1月1日なので、ビザのリニューアルのためチェンコーン・フェイサイへビザランをする。国境が町から遠いと聞いていたので、自転車を持っ</description>
     </item>
   </channel>

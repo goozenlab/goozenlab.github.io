@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Sep 2023 06:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2024 12:00:00 +0700</lastBuildDate>
     <atom:link href="https://goozenlab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veniceの力を最大限に引き出すための入力方法（訳）</title>
+      <link>https://goozenlab.github.io/blog/2024/09/prompt-like-a-pro/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0700</pubDate>
+      <guid>https://goozenlab.github.io/blog/2024/09/prompt-like-a-pro/</guid>
+      <description>古き昭和に少年時代を送ったことに感謝をし、 ちと危機感を感じつつ、最近になってようやくAiを色々試してます。 マイナー好きというわけではなくて、</description>
+    </item>
     <item>
       <title>Sati v1.13.0</title>
       <link>https://goozenlab.github.io/blog/2023/09/sati-1130/</link>
@@ -3843,7 +3850,7 @@
       <link>https://goozenlab.github.io/blog/2017/05/sati-194/</link>
       <pubDate>Fri, 19 May 2017 06:30:00 +0700</pubDate>
       <guid>https://goozenlab.github.io/blog/2017/05/sati-194/</guid>
-      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が ”Tri-Tone” に変わってしまうバグのホットフィックスアップデートです。 つい</description>
+      <description>1.9.3をアップデートし、間髪を入れずにiOS10にて音が &amp;ldquo;Tri-Tone&amp;rdquo; に変わってしまうバグのホットフィックスアップデートです。 ついでに、瞑想開始時に</description>
     </item>
     <item>
       <title>ダホンで飛行機輪行</title>

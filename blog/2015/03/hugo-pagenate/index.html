@@ -187,7 +187,7 @@
                     
 
                     
-                    categories:<a href="https://goozenlab.github.io/categories/web"> web</a> 
+                    categories:<a href="https://goozenlab.github.io/categories/web">web</a> 
                     
 
                     
@@ -202,8 +202,8 @@
 
   &lt;ul class=&#34;posts&#34;&gt;
     {{ $baseurl := .Site.BaseUrl }}
-    {{ range $name, $page := .Site.Recent }} 
-    {{ if eq .Type &#34;post&#34; }}        
+    {{ range $name, $page := .Site.Recent }}
+    {{ if eq .Type &#34;post&#34; }}
     &lt;li&gt;
       &lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ $page.Title }}&lt;/a&gt;
 </code></pre><p>そして、<code>config.toml</code> に表示したい件数を書きます。（なぜか表示されるのは１件少ない）動いているから良いのですが、これも pagenate と　paginator と分かれているのがどうも分からない。</p>

@@ -275,7 +275,7 @@ passwd: password updated successfully
 <pre tabindex="0"><code>[root@alarm alarm]$ pacman -S sudo
 [root@alarm alarm]$ visudo
 </code></pre><p>以下の２項目を探し、コメントを除きます。</p>
-<pre tabindex="0"><code>Defaults env_keep += “HOME”`
+<pre tabindex="0"><code>Defaults env_keep += &#34;HOME&#34;`
 # sudo したときユーザの $HOME を参照できるようにする
 %wheel ALL=(ALL) ALL
 # wheel グループのユーザに sudo する権限を与える。

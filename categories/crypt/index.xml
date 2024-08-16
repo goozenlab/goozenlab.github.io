@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crypt on goozenlab</title>
-    <link>https://goozenlab.github.io/categories/crypt/</link>
+    <link>http://localhost:1313/categories/crypt/</link>
     <description>Recent content in Crypt on goozenlab</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
     <lastBuildDate>Mon, 12 Sep 2022 12:00:00 +0700</lastBuildDate>
-    <atom:link href="https://goozenlab.github.io/categories/crypt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/crypt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>サトシの宝物</title>
-      <link>https://goozenlab.github.io/blog/2022/09/satoshis-tresure/</link>
+      <link>http://localhost:1313/blog/2022/09/satoshis-tresure/</link>
       <pubDate>Mon, 12 Sep 2022 12:00:00 +0700</pubDate>
-      <guid>https://goozenlab.github.io/blog/2022/09/satoshis-tresure/</guid>
+      <guid>http://localhost:1313/blog/2022/09/satoshis-tresure/</guid>
       <description>秘密鍵がブロックチェーンの中で見つかるのを待ち続けている。。 謎多き、サトシ・ナカモト。 サトシの宝物と呼ばれているものがあります。 サトシが初期</description>
     </item>
   </channel>

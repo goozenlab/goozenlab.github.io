@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 Sep 2023 06:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2024 12:00:00 +0700</lastBuildDate>
     <atom:link href="https://goozenlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computing</title>
+      <link>https://goozenlab.github.io/categories/computing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://goozenlab.github.io/categories/computing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Iapp</title>
       <link>https://goozenlab.github.io/categories/iapp/</link>
@@ -38,24 +45,10 @@
       <description></description>
     </item>
     <item>
-      <title>Computing</title>
-      <link>https://goozenlab.github.io/categories/computing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goozenlab.github.io/categories/computing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Web</title>
       <link>https://goozenlab.github.io/categories/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/categories/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Crypt</title>
-      <link>https://goozenlab.github.io/categories/crypt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goozenlab.github.io/categories/crypt/</guid>
       <description></description>
     </item>
     <item>
@@ -112,13 +105,6 @@
       <link>https://goozenlab.github.io/categories/smart-phone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/categories/smart-phone/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>“Computing”</title>
-      <link>https://goozenlab.github.io/categories/computing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goozenlab.github.io/categories/computing/</guid>
       <description></description>
     </item>
     <item>
@@ -210,13 +196,6 @@
       <link>https://goozenlab.github.io/categories/backpack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goozenlab.github.io/categories/backpack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> Web</title>
-      <link>https://goozenlab.github.io/categories/-web/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goozenlab.github.io/categories/-web/</guid>
       <description></description>
     </item>
     <item>

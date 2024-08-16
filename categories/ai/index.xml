@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on goozenlab</title>
+    <link>http://localhost:1313/categories/ai/</link>
+    <description>Recent content in Ai on goozenlab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright 2023, goozenlab; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 01 Sep 2024 12:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veniceの力を最大限に引き出すための入力方法（訳）</title>
+      <link>http://localhost:1313/blog/2024/09/prompt-like-a-pro/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/blog/2024/09/prompt-like-a-pro/</guid>
+      <description>Aiを色々試してます。ちと危機感を感じつつ、古き昭和に少年時代を送ったことに感謝もしてる。 正しい質問をすることの大事さを痛感して、 調べ物をす</description>
+    </item>
+  </channel>
+</rss>

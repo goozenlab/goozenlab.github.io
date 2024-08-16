@@ -38,6 +38,13 @@
       <description>以前は、Octopress+nvALT(SimpleNote Client) でGitHubPageサイトを運用してました。ブログのシステムをHugoに換え</description>
     </item>
     <item>
+      <title>HugoのPagenate</title>
+      <link>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</link>
+      <pubDate>Sat, 07 Mar 2015 17:30:00 +0545</pubDate>
+      <guid>https://goozenlab.github.io/blog/2015/03/hugo-pagenate/</guid>
+      <description>ズラーーーっと並んでしまう、インデクスページを整理。ダウンロードした他のテーマファイルを覗き見しながらなんとか形になりました。 index.h</description>
+    </item>
+    <item>
       <title>Hugoを少し弄る</title>
       <link>https://goozenlab.github.io/blog/2015/03/hugo-template/</link>
       <pubDate>Sat, 07 Mar 2015 08:30:00 +0545</pubDate>

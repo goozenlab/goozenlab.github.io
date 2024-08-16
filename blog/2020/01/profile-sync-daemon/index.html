@@ -199,14 +199,14 @@
 <p>パッケージがあるのでAPTでインストール、設定をします。
 <code>.config/psd/psd.conf</code>を開きブラウザーを指定、オーバーレイを有効にします。
 ほとんどのブラウザーに対応してます。
-複数追加するにはスペースで間をあけて加えていきます。（例：”firefox vivaldi brave”）</p>
+複数追加するにはスペースで間をあけて加えていきます。（例：&ldquo;firefox vivaldi brave&rdquo;）</p>
 <pre tabindex="0"><code>jin@debian:~$ sudo apt install profile-sync-daemon
 jin@debian:~$ psd
  First time running psd so please edit /home/jin/.config/psd/psd.conf to your liking and run again.
 jin@debian:~$ vi .config/psd/psd.conf
 
 USE_OVERLAYFS=&#34;yes&#34;
-BROWSERS=&#34;firefox”
+BROWSERS=&#34;firefox&#34;
 </code></pre><p>そしてオーバーレイを使うための設定も行います。コマンドに権限を与えます。</p>
 <pre tabindex="0"><code>jin@debian:~$ sudo modprobe overlay
 jin@debian:~$ sudo visudo

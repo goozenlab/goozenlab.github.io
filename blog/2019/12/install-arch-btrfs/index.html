@@ -217,7 +217,7 @@ root@archiso $ btrfs subvolume create /mnt/@arch
 </code></pre><p>※ ちなみに削除は
 <code>btrfs subvolume delete /mnt/@arch</code>
 、パーティションのフォーマットは
-<code>mkfs.btrfs -L “Linuxes” /dev/nvme0n1p5</code></p>
+<code>mkfs.btrfs -L &quot;Linuxes&quot; /dev/nvme0n1p5</code></p>
 <p>/homeと/var/cacheは共有しているので、
 すでに
 @debian, @manjaro, @cache, @home
@@ -280,7 +280,7 @@ root@archiso $ mkinitcpio -P
 <p>パスワードとユーザーの設定、wheelユーザーにsudoの権限を与える。
 viがないと怒られるたら、vimにシンボリックリンクをはる。</p>
 <pre tabindex="0"><code>root@archiso $ passwd
-root@archiso $ useradd -m -G users,wheel,storage,power,network -s /bin/zsh -c “NAME” jin
+root@archiso $ useradd -m -G users,wheel,storage,power,network -s /bin/zsh -c &#34;NAME&#34; jin
 root@archiso $ passwd jin
 root@archiso $ passwd visudo
 </code></pre><h3 id="efi-ブートマネージャー">EFI ブートマネージャー</h3>
@@ -346,7 +346,7 @@ sudo cp 10-update_grub.conf /etc/systemd/system/snapper-cleanup.service.d/
 rm 10-update_grub.conf
 
 This will run the grub-mkconfig -o /etc/default/grub command each time a snapshot is created or deleted. 
-Your snapshots will now appear in the grub menu under “Snapshots”.
+Your snapshots will now appear in the grub menu under "Snapshots".
 
 
 #### Hardening
@@ -386,13 +386,13 @@ nano /etc/sysctl.conf
 	
 	<li><a href="/blog/2019/12/linux-thinkpad-tlp/">TLPの設定</a></li>
 	
+	<li><a href="/blog/2019/11/linux-mail-client/">Linuxのメールクライアント：Geary</a></li>
+	
+	<li><a href="/blog/2019/11/from-grub-clover/">ブートローダー</a></li>
+	
 	<li><a href="/blog/2019/10/multios-boot-loader/">ブートマネージャーの設定</a></li>
 	
 	<li><a href="/blog/2019/10/install-manjaro-btrfs/">Btrfsにマンジャーロ</a></li>
-	
-	<li><a href="/blog/2019/10/install-debian-btrfs/">デビアンをBtrfsにインストール</a></li>
-	
-	<li><a href="/blog/2019/09/live-linux-macbook-air/">Live Linux on Macbook Air </a></li>
 	
 </ul>
 

@@ -314,11 +314,11 @@ service --status-all
 Congratulations, you have just installed a Kali system with automatic snapshotting functionality! Next, we will cover some basic usage examples.
 Usage
 
-Then we set the default subvolume to “5” to satisfy “apt-btrfs-snapshot”:
+Then we set the default subvolume to "5" to satisfy "apt-btrfs-snapshot":
 
 btrfs subvolume set-default 5 /
 
-Now we can download and install the “apt-btrfs-snapshot” tool from the Ubuntu repository
+Now we can download and install the "apt-btrfs-snapshot" tool from the Ubuntu repository
 
 wget https://launchpad.net/ubuntu/+archive/primary/+files/apt-btrfs-snapshot_3.5.2_all.deb
 apt install ./apt-btrfs-snapshot_3.5.2_all.deb
@@ -353,12 +353,12 @@ There are more sophisticated ways to delete multiple snapshots, e.g. the followi
 
 apt-btrfs-snapshot delete-older-than 2d
 
-Refer to the help output for all the different features of “apt-btrfs-snapshot”
+Refer to the help output for all the different features of "apt-btrfs-snapshot"
 Rollback
 
-To roll back to a previous snapshot we have to remember two things: - the root “/” of the file system has been installed in a subvolume “/@” and not the root of the btrfs partition “/” - a snapshot is treated like just another subvolume
+To roll back to a previous snapshot we have to remember two things: - the root "/" of the file system has been installed in a subvolume "/@" and not the root of the btrfs partition "/" - a snapshot is treated like just another subvolume
 
-thus all we have to do is mount the btrfs partition and replace the current root subvolume “@” with the last snapshot. To be safe we’ll backup the curent root (“@”) subvolume. E.g.:
+thus all we have to do is mount the btrfs partition and replace the current root subvolume "@" with the last snapshot. To be safe we’ll backup the curent root ("@") subvolume. E.g.:
 
 mount /dev/nvme0n1p5 /mnt                                   # mount your root partition (replace "/dev/nvme0n1p5" with yours)
 mv /mnt/@ /mnt/@_badroot                                    # Move the old root away
@@ -390,7 +390,7 @@ If we list the snapshots again we can see the one that has just been created:
 btrfs-75-Rollback-06.png
 Rollback
 
-Remember that “/” itself is the subvolume “@”. To rollback to a snapshot, all we have to do is replace “@” with the snapshot we want.
+Remember that "/" itself is the subvolume "@". To rollback to a snapshot, all we have to do is replace "@" with the snapshot we want.
 
 
 First we have to mount the btrfs partition via:
@@ -401,19 +401,19 @@ If we list the content of that partition we can see all the subvolumes, includin
 
 btrfs-77-Rollback-08.png
 
-Before we replace the current root with our snapshot, let’s move “@” away just to be safe:
+Before we replace the current root with our snapshot, let’s move "@" away just to be safe:
 
 mv /mnt/@ /mnt/@_badroot
 
 btrfs-78-Rollback-09.png
 
-Now we can pick the snapshot from before the last upgrade and rename it to “@”:
+Now we can pick the snapshot from before the last upgrade and rename it to "@":
 
 mv /mnt/@apt-snapshot-2019-10-21_23:50:26 /mnt/@
 
 btrfs-79-Rollback-10.png
 
-And that’s all there is to it, here’s the new “@”:
+And that’s all there is to it, here’s the new "@":
 
 btrfs-80-Rollback-11.png
 
@@ -425,9 +425,9 @@ Confirming that the rollback worked
 
 After the reboot, we can see that the snapshot is gone, because we rolled back to it:
 
-And if we issue another “apt update”, we can see that we are back to where we were before the snapshot:
+And if we issue another "apt update", we can see that we are back to where we were before the snapshot:
 
-Once you confirmed that the system works you can delete the old “root” by mounting the btrfs partition and using the “btrfs subvolume delete” command:
+Once you confirmed that the system works you can delete the old "root" by mounting the btrfs partition and using the "btrfs subvolume delete" command:
 
 ```
 mount /dev/<your btrfs partition> /mnt

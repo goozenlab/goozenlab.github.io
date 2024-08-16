@@ -264,7 +264,7 @@
   &#34;name&#34;: &#34;Waimea&#34;,
   &#34;cod&#34;: 200
 }
-</code></pre><div class="attention">※{APIKey}は自分のAPIキーに、{CityID}は都市名を示すID（東京は”1850147″）に置き換えてください。</div>
+</code></pre><div class="attention">※{APIKey}は自分のAPIキーに、{CityID}は都市名を示すID（東京は"1850147″）に置き換えてください。</div>
 <p>ファイルをローカルにダウンロードします。</p>
 <pre tabindex="0"><code>curl -o /PATH/OUT_PUT_FILE.json &#34;https://api.openweathermap.org/data/2.5/weather?id=$CityID&amp;units=metric&amp;appid=$APPID&#34;
 </code></pre><h2 id="jsonファイルをinfluxdbへ登録-by-shell">JSONファイルをInfluxdbへ登録 by shell</h2>
